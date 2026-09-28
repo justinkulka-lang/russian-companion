@@ -44,15 +44,15 @@ class Units2630SourceIntakeTest {
         14 to "270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6",
         15 to "1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd",
         16 to "6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5",
-        17 to "52377652b325bffe7f652eeac353f0ea2350a75374ffabec47417730bd878d55",
+        17 to "a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c",
         18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
         19 to "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3",
-        20 to "7eca8b47f1286dc2b1718c03f4cefdfefe96f76979d9bf44616501e00faa71f3",
-        21 to "4d47fb693c7f8312b9bbc107a5d617185c5113d808f803604e1b365b60f147b4",
-        22 to "5b011fcc7c14df55148da679c20a50842de94dc65c4eb0bb6f0fc2a8daa69cf7",
-        23 to "044cddc59b24f009d455b989a3e31f0a585f757c582559288215d4038480745a",
-        24 to "1676c3bf2799cdc9d022ba8b0b951a83cfa9819087cad3810248bb6fe7a4202b",
-        25 to "e8d351d5e22da903bd0ceee1408855d7a127cad96c6bc7989b5f310a146698b6",
+        20 to "01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c",
+        21 to "53a04dc4f69a5f19af1c9d4b09984e06a3d54ba586148ecef3531a0f6e850afa",
+        22 to "d408624ff0aa05793384f6a2b4d9e2a27b008225f31498795e5ccf9b3225e169",
+        23 to "ea02b0454ea4c2b37095bc296f55c8eca78c42e671b4ac668a958bf2e9ab078f",
+        24 to "497c9978cd3a89159732f7c4b53a09d0923d98bbaa01f61722a769d1a808f74c",
+        25 to "c3f4c00de92e5d3d9b0c30ca0c9663fc723dfdc06c1e4b30baa2e9a8cd9b771e",
     )
 
     private val preservedMappingDigests = mapOf(
@@ -99,6 +99,12 @@ class Units2630SourceIntakeTest {
             "morfologiya" to "148939075",
             "neopredelennoe" to "149963314",
             "prichastie" to "153078996",
+            "ostavlyaemyj" to "74231596",
+            "obsuzhdaemyj" to "74233962",
+            "napisannyj" to "74228228",
+            "prochitannyj" to "74232159",
+            "guidelines" to "92541199",
+            "vechera" to "5336197",
         )
         freeze.getValue("pages").jsonArray.forEach { element ->
             val page = element.jsonObject
@@ -130,15 +136,19 @@ class Units2630SourceIntakeTest {
         val expected = mapOf(
             "cap-obj-u26-word-order" to Triple(26, "obj-u26-word-order", "word-order"),
             "cap-obj-u26-indefinite" to Triple(26, "obj-u26-indefinite", "indefinite-pronoun"),
+            "cap-obj-u26-letter-writing" to Triple(26, "obj-u26-letter-writing", "letter-writing"),
+            "cap-obj-u26-correspondence" to Triple(26, "obj-u26-correspondence", "correspondence-work"),
             "cap-obj-u27-passive" to Triple(27, "obj-u27-passive", "passive-participle"),
             "cap-obj-u28-imperfective-adverb" to Triple(28, "obj-u28-imperfective-adverb", "imperfective-verbal-adverb"),
             "cap-obj-u28-perfective-adverb" to Triple(28, "obj-u28-perfective-adverb", "perfective-verbal-adverb"),
+            "cap-obj-u28-readings" to Triple(28, "obj-u28-readings", "verbal-adverb-reading"),
             "cap-obj-u29-active" to Triple(29, "obj-u29-active", "active-participle"),
             "cap-obj-u29-punctuation" to Triple(29, "obj-u29-punctuation", "participle-punctuation"),
             "cap-obj-u29-short-adjective" to Triple(29, "obj-u29-short-adjective", "short-form-adjective"),
             "cap-obj-u30-letter-names" to Triple(30, "obj-u30-letter-names", "letter-name-review"),
             "cap-obj-u30-abbreviation" to Triple(30, "obj-u30-abbreviation", "abbreviation"),
             "cap-obj-u30-particle" to Triple(30, "obj-u30-particle", "particle"),
+            "cap-obj-u30-capstone" to Triple(30, "obj-u30-capstone", "capstone-reading"),
         )
         val admitted = pack.sourceCapabilities.filter { it.unitNumber in 26..30 }
         assertEquals(expected.keys, admitted.map { it.id }.toSet())
@@ -160,12 +170,30 @@ class Units2630SourceIntakeTest {
             assertEquals(sha256(host.originalSourceText), host.sourceHash)
             assertEquals(capability.unitNumber, host.unitNumber)
             assertEquals(capability.objectiveId, host.objectiveId)
-            assertEquals("CC BY-SA 4.0", host.licenseId)
-            assertEquals("https://creativecommons.org/licenses/by-sa/4.0/", host.licenseUrl)
-            assertTrue(host.attribution.contains("CC BY-SA 4.0"))
-            assertTrue(host.shareAlikeTreatment.contains("CC BY-SA 4.0"))
-            assertTrue(host.shareAlikeTreatment.contains("Application code"))
-            assertTrue(host.sourceUrl.contains("oldid="))
+            if (host.sourceId == "src-ruwikisource-vechera-5336197") {
+                assertEquals("Public domain", host.licenseId)
+                assertTrue(host.attribution.contains("Чернышевский"))
+                assertTrue(host.attribution.contains("5723825"))
+                assertFalse(host.shareAlikeTreatment.contains("CC BY-SA"))
+                assertTrue(host.shareAlikeTreatment.contains("public domain"))
+                assertTrue(host.sourceUrl.contains("oldid=${host.sourceRevision}"))
+            } else if (host.sourceId.startsWith("src-readyrussian-")) {
+                assertEquals("CC BY-SA 4.0", host.licenseId)
+                assertEquals("https://creativecommons.org/licenses/by-sa/4.0/", host.licenseUrl)
+                assertTrue(host.attribution.contains("ReadyRussian.org"))
+                assertTrue(host.attribution.contains(host.sourceRevision))
+                assertFalse(host.attribution.contains("Wikipedia:Copyrights"))
+                assertFalse(host.attribution.contains("Wiktionary:Copyrights"))
+                assertTrue(host.sourceUrl.contains("readyrussian.org"))
+                assertNull(host.audioAssetId)
+            } else {
+                assertEquals("CC BY-SA 4.0", host.licenseId)
+                assertEquals("https://creativecommons.org/licenses/by-sa/4.0/", host.licenseUrl)
+                assertTrue(host.attribution.contains("CC BY-SA 4.0"))
+                assertTrue(host.shareAlikeTreatment.contains("CC BY-SA 4.0"))
+                assertTrue(host.shareAlikeTreatment.contains("Application code"))
+                assertTrue(host.sourceUrl.contains("oldid="))
+            }
             assertEquals("PENDING_QUALIFIED_REVIEW", host.reviewStatus)
             assertTrue(host.reviewerIdentity.isBlank())
             assertNull(host.audioAssetId)
@@ -200,9 +228,14 @@ class Units2630SourceIntakeTest {
         listOf(26, 27, 28, 29, 30).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals("NOT_PREPARED", unit.readiness)
+            assertEquals(
+                if (number == 28) "CONTENT_COMPLETE_REVIEW_PENDING" else "NOT_PREPARED",
+                unit.readiness,
+            )
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
-            assertNotEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
+            if (number != 28) {
+                assertNotEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
+            }
             assertNotEquals("INSTALLABLE", unit.installState)
             assertNotEquals("INSTALLED", unit.installState)
             assertTrue(unit.sessions.any { session -> session.steps.any { !it.unavailableReason.isNullOrBlank() || !it.bookDirection.isNullOrBlank() } })
@@ -210,7 +243,7 @@ class Units2630SourceIntakeTest {
         }
         val blocked = advancementDecision(pack, pack.unit(26)!!, learner(26, book = true))
         assertFalse(blocked.allowed)
-        assertTrue(blocked.remaining.any { it.contains("postal-address") && it.contains("letter-writing") && it.contains("correspondence-work") })
+        assertTrue(blocked.remaining.any { it.contains("postal-address") && !it.contains("letter-writing") && !it.contains("correspondence-work") })
         assertFalse(blocked.remaining.any { it.contains("indefinite-pronoun") })
         assertFalse(blocked.remaining.any { it.contains("word-order") && it.contains("not content-complete") })
     }
@@ -492,16 +525,18 @@ class Units2630SourceIntakeTest {
         assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
         val unresolved = setOf(
             "postal-address",
-            "letter-writing",
-            "participle-stress",
             "bookish-register",
-            "dictionary-use",
-            "capstone-reading",
-            "verbal-adverb-reading",
-            "correspondence-work",
+            "participle-stress",
             "participle-comprehension",
             "bookish-reading",
+            "dictionary-use",
         )
+        assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "letter-writing" })
+        assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "correspondence-work" })
+        assertFalse(pack.sourceCapabilities.any { it.supportedClaim == "participle-stress" })
+        assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "verbal-adverb-reading" })
+        assertFalse(pack.sourceCapabilities.any { it.supportedClaim == "dictionary-use" })
+        assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "capstone-reading" })
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim in unresolved })
 
         val abbreviation = pack.sourceCapabilities.single { it.id == "cap-obj-u30-abbreviation" }
@@ -653,14 +688,24 @@ class Units2630SourceIntakeTest {
         assertTrue(unsupportedErrors.joinToString("\n"), unsupportedErrors.any { it.contains("keyed answer is not in the frozen span") })
 
         val readings = pack.unit(28)!!.objectives.single { it.id == "obj-u28-readings" }
-        assertEquals("GUIDANCE", readings.kind)
-        assertTrue(readings.checkItemIds.isEmpty())
-        assertTrue(readings.exampleIds.isEmpty())
-        assertEquals("NOT_PREPARED", pack.unit(28)!!.readiness)
-        val blocked = advancementDecision(pack, pack.unit(28)!!, learner(28, book = true))
-        assertFalse(blocked.allowed)
-        assertTrue(blocked.remaining.any { it.contains("not prepared") })
-        assertTrue(blocked.remaining.any { it.contains("verbal-adverb-reading") })
+        assertEquals("RECOGNITION", readings.kind)
+        assertTrue(readings.checkItemIds.size >= 2)
+        assertTrue(readings.exampleIds.size >= 2)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
+        val unit28 = pack.unit(28)!!
+        val advanced = advancementDecision(
+            pack,
+            unit28,
+            learner(28, book = true).copy(
+                completedStepIds = unit28.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+                correctItemIds = (
+                    unit28.objectives.flatMap { it.checkItemIds } +
+                        unit28.sessions.flatMap { it.steps }.flatMap { it.itemIds }
+                    ).toSet(),
+            ),
+        )
+        assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
+        assertFalse(advanced.remaining.any { it.contains("verbal-adverb-reading") })
 
         listOf(27, 29, 30).forEach { number ->
             assertEquals("NOT_PREPARED", pack.unit(number)!!.readiness)
@@ -679,21 +724,20 @@ class Units2630SourceIntakeTest {
     @Test
     fun readingAndCorrespondenceExperiencesFailClosed() {
         val pack = pack()
-        assertTrue(V2Validator.ADMITTED_CORRESPONDENCE_WORK.isEmpty())
+        assertFalse(V2Validator.ADMITTED_CORRESPONDENCE_WORK.isEmpty())
         assertTrue(V2Validator.ADMITTED_PARTICIPLE_COMPREHENSION.isEmpty())
-        assertTrue(V2Validator.ADMITTED_VERBAL_ADVERB_READING.isEmpty())
+        assertFalse(V2Validator.ADMITTED_VERBAL_ADVERB_READING.isEmpty())
         assertTrue(V2Validator.ADMITTED_BOOKISH_READING.isEmpty())
 
         val unit28 = V2Validator.validate(claimReady(pack, 28)).errors
-        assertTrue(unit28.joinToString("\n"), unit28.any { it.contains("verbal-adverb-reading") })
+        assertFalse(unit28.joinToString("\n"), unit28.any { it.contains("verbal-adverb-reading") })
         assertFalse(unit28.any { it.contains("unresolved authority variance") })
+        assertTrue(unit28.joinToString("\n"), unit28.isEmpty())
         val unit26 = V2Validator.validate(claimReady(pack, 26)).errors
-        assertTrue(unit26.joinToString("\n"), unit26.any { it.contains("correspondence-work") })
+        assertTrue(unit26.joinToString("\n"), unit26.any { it.contains("postal-address") })
+        assertFalse(unit26.any { it.contains("correspondence-work") })
         val unit26Claims = V2Validator.unresolvedRequiredSourceCapabilities(pack, 26).map { it.claim }
-        assertEquals(
-            listOf("correspondence-work"),
-            unit26Claims.filter { it !in setOf("indefinite-pronoun", "postal-address", "letter-writing", "word-order") },
-        )
+        assertEquals(listOf("postal-address"), unit26Claims)
         val unit27 = V2Validator.validate(claimReady(pack, 27)).errors
         assertTrue(unit27.any { it == "Unit 27 is blocked by an unresolved authority variance" })
         assertTrue(unit27.any { it.contains("participle-comprehension") })
@@ -712,10 +756,10 @@ class Units2630SourceIntakeTest {
                 if (review.unitNumber == 28) review.copy(status = "APPROVED") else review
             },
         )
-        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(approved, 28).any { it.claim == "verbal-adverb-reading" })
-        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(claimReady(pack, 28), 28).any { it.claim == "verbal-adverb-reading" })
+        assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(approved, 28).any { it.claim == "verbal-adverb-reading" })
+        assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(claimReady(pack, 28), 28).any { it.claim == "verbal-adverb-reading" })
         assertTrue(pack.unit(28)!!.objectives.any { it.checkItemIds.isNotEmpty() })
-        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 28).any { it.claim == "verbal-adverb-reading" })
+        assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 28).any { it.claim == "verbal-adverb-reading" })
 
         val attested = errorsForText(pack, "Self-attest Lesson 26", "cap-attest-correspondence", 26, "obj-u26-correspondence", "correspondence-work")
         assertTrue(attested.any { it.contains("book self-attestation does not clear correspondence-work") })
@@ -727,7 +771,8 @@ class Units2630SourceIntakeTest {
         val bookish = errorsForText(pack, "bookish reading passage", "cap-keyword-bookish", 29, "obj-u29-reading", "bookish-reading")
         assertTrue(bookish.any { it.contains("has no independent bookish-reading admission") })
 
-        val probe = pack.provenanceRecords.first { it.unitNumber == 28 }
+        val readingSpan = pack.sourceCapabilities.single { it.supportedClaim == "verbal-adverb-reading" }.exactSpan
+        val probe = pack.provenanceRecords.first { it.unitNumber == 28 && it.originalSourceText != readingSpan }
         val matched = V2Validator.LateExperienceAdmission(
             sourceId = probe.sourceId,
             sourceRevision = probe.sourceRevision,
@@ -804,7 +849,13 @@ class Units2630SourceIntakeTest {
 
     private fun V2SourceCapability.sourceUrlBound(pack: V2CurriculumPack): Boolean {
         return pack.provenanceRecords.any {
-            it.sourceId == sourceId && it.sourceRevision == sourceRevision && it.sourceUrl.contains("oldid=$sourceRevision")
+            it.sourceId == sourceId && it.sourceRevision == sourceRevision && (
+                it.sourceUrl.contains("oldid=$sourceRevision") ||
+                    (it.sourceId.startsWith("src-readyrussian-") &&
+                        it.sourceUrl.contains("readyrussian.org") &&
+                        sourceRevision.length == 64 &&
+                        it.attribution.contains(sourceRevision))
+                )
         }
     }
 

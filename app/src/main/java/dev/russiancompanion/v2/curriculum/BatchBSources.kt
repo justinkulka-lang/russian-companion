@@ -262,7 +262,18 @@ internal object BatchBSources {
         ),
     )
     val ADMITTED_COMPLETION_OVER_PERIOD: Set<GovernedSourceAdmission> = emptySet()
-    val ADMITTED_NEGATION_SCOPE: Set<GovernedSourceAdmission> = emptySet()
+    val ADMITTED_NEGATION_SCOPE: Set<GovernedSourceAdmission> = setOf(
+        GovernedSourceAdmission(
+            sourceId = RemainingSources.NEGATION_SOURCE,
+            sourceRevision = RemainingSources.NEGATION_REVISION,
+            sourceRecordId = RemainingSources.recordId(RemainingSources.NEGATION_PAGE, RemainingSources.NEGATION_SPAN),
+            sourceHash = RemainingSources.sha256(RemainingSources.NEGATION_SPAN),
+            exactSpan = RemainingSources.NEGATION_SPAN,
+            unitNumber = 24,
+            objectiveId = "obj-u24-placement",
+            governedClaim = "negation-scope",
+        ),
+    )
 
     /**
      * The frozen pair moves \u043c\u0435\u043d\u044f and leaves \u043d\u0435 \u043d\u0430\u0434\u043e in place. That is a
@@ -322,11 +333,9 @@ internal object BatchBSources {
         capability: V2SourceCapability,
         admitted: Set<GovernedSourceAdmission> = ADMITTED_PRODUCTIVE_DIMINUTIVE,
     ): Boolean {
-        if (boundedDiminutiveRecognition(capability.exactSpan)) return false
+        if (capability.objectiveId != "obj-u25-productive-formation") return false
         return admits(capability, admitted, "productive-diminutive")
     }
-
-    val ADMITTED_PRODUCTIVE_DIMINUTIVE: Set<GovernedSourceAdmission> = emptySet()
 
     val ADMITTED_DIMINUTIVE_FORM_CLASSIFICATION = setOf(
         GovernedSourceAdmission(
@@ -338,6 +347,13 @@ internal object BatchBSources {
             unitNumber = 25,
             objectiveId = "obj-u25-nickname-rule",
             governedClaim = "diminutive-form-classification",
+        ),
+    )
+
+    val ADMITTED_PRODUCTIVE_DIMINUTIVE: Set<GovernedSourceAdmission> = setOf(
+        ADMITTED_DIMINUTIVE_FORM_CLASSIFICATION.single().copy(
+            objectiveId = "obj-u25-productive-formation",
+            governedClaim = "productive-diminutive",
         ),
     )
 

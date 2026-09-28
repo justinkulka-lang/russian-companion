@@ -212,6 +212,8 @@ def _complements(lesson) -> None:
 
 def _calendar_partial(lesson) -> None:
     _frame(lesson)
+    lesson.builder.say(lesson.number, "The heading")
+    lesson.builder.say(lesson.number, "labels the section. It is not the gloss of the shown form.")
     age = _span("grammar", "age statements:", "20 years")
     days = _span("days", "Russians don't capitalize", "воскресенье || noun || Sunday")
     months = _span("months", "==Months of the year==", "Декабрь || December")
@@ -228,7 +230,7 @@ def _calendar_partial(lesson) -> None:
     age_why = _pair(age_ru, age_en)
     years_why = _pair(years_ru, years_en)
     literal_why = _pair(age_ru, literal)
-    heading_why = _pair(heading, heading)
+    heading_why = 'The heading "age statements" labels the section. It is not the gloss of the shown form.'
     lesson.objective(
         "age",
         "Choose the admitted gloss beside the shown age line",
@@ -379,8 +381,10 @@ def _clock_answers(lesson) -> None:
     )
     _bind(lesson, "clock-answers", "clock-expression-recognition", needle)
     from batch_a_remaining_intake import add_unit17_quarter
+    from remaining_lessons import add_clock_productive
 
     add_unit17_quarter(lesson)
+    add_clock_productive(lesson)
 
 
 def _calendar_date(lesson) -> None:
@@ -403,7 +407,7 @@ def _calendar_date(lesson) -> None:
     spoken_why = _pair(spoken, genitive, spoken_citation)
     order_why = _pair(written, order, order_citation)
     year_why = _pair(written, year, year_citation)
-    numeric_why = _pair(numeric, numeric, numeric_citation)
+    numeric_why = _pair(numeric, numeric_citation)
     lesson.objective(
         "calendar-date",
         "Choose the admitted date relation beside the shown form",
@@ -574,6 +578,10 @@ def _conditional_and_obligation(lesson) -> None:
 
 def _motion(lesson) -> None:
     _frame(lesson)
+    lesson.builder.say(lesson.number, "The table header")
+    lesson.builder.say(lesson.number, "names the other motion column.")
+    lesson.builder.say(lesson.number, "The source quotes")
+    lesson.builder.say(lesson.number, "as an English restatement.")
     table = _span("grammar", "! English !! unidirectional !! multidirectional", "тащи́ть || таска́ть")
     setting = _span("grammar", "The addition of the prefix по-", "Он шёл к другу.")
     paths = _span("grammar", "They will leave Vladivostok", "на крышу дома.")
@@ -629,10 +637,10 @@ def _motion(lesson) -> None:
             _wiki("grammar", paths, roof_ru, roof_en),
         ],
         [
-            _gloss_check(walk, uni, [_quoted(_pair(multi, multi), multi)], "MOTION_DIRECTION", _why(uni_row, walk, uni), WIKIPEDIA),
+            _gloss_check(walk, uni, [_quoted('The table header "multidirectional" names the other motion column.', multi)], "MOTION_DIRECTION", _why(uni_row, walk, uni), WIKIPEDIA),
             _gloss_check(walk, walk_en, [_other(ride_row, ride_en), _other(carry_row, carry_en)], "MOTION_FOOT", _why(walk_row, walk, walk_en), WIKIPEDIA),
             _gloss_check(carry, carry_en, [_other(lead_row, lead_en), _other(convey_row, convey_en)], "MOTION_CARRY", _why(carry_row, carry, carry_en), WIKIPEDIA),
-            _gloss_check(went, begin, [_quoted(_pair(set_out, set_out), set_out), _other(friend_row, friend)], "MOTION_PO", _why(begin_row, went, begin), WIKIPEDIA),
+            _gloss_check(went, begin, [_quoted('The source quotes "setting out" as an English restatement.', set_out), _other(friend_row, friend)], "MOTION_PO", _why(begin_row, went, begin), WIKIPEDIA),
             _gloss_check(back_ru, back_en, [_other(leave_row, leave_en), _other(roof_row, roof_en)], "MOTION_PREFIX", _why(back_row, back_ru, back_en), WIKIPEDIA),
         ],
         extra=_extra("grammar", table, ["unidirectional", "multidirectional", "to lead", "to convey, transport", "везти́"])

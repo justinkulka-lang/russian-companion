@@ -48,7 +48,7 @@ class Units1620SourceIntakeTest {
             val unit = pack.unit(number)!!
             val facts = governedMappingFacts(number)
             assertEquals("DEVELOPMENT", unit.installState)
-            val expectedReadiness = if (number == 17) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING"
+            val expectedReadiness = "CONTENT_COMPLETE_REVIEW_PENDING"
             assertEquals(expectedReadiness, unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
@@ -64,7 +64,9 @@ class Units1620SourceIntakeTest {
             assertEquals("PENDING_QUALIFIED_REVIEW", pack.unitReviews.first { it.unitNumber == number }.status)
             assertTrue(pack.unitReviews.first { it.unitNumber == number }.reviewer.isNullOrBlank())
         }
-        assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.readiness == "NOT_PREPARED" && it.sessions.isNotEmpty() })
+        assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.sessions.isNotEmpty() })
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
+        assertEquals(setOf(26, 27, 29, 30), pack.units.drop(25).filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
         preservedContentDigests.forEach { (number, digest) ->
             assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
         }
@@ -140,7 +142,20 @@ class Units1620SourceIntakeTest {
             )
             val page = byOldid[record.sourceRevision]
             if (page != null) {
-                assertTrue(record.itemId, page.contains(record.originalSourceText))
+                if (record.transformation == "readyrussian text extraction") {
+                    assertFalse(record.itemId, record.originalSourceText.contains("<"))
+                    assertFalse(record.itemId, record.originalSourceText.contains(">"))
+                    assertFalse(record.itemId, readyRussianMedia.containsMatchIn(record.originalSourceText))
+                    val visible = dev.russiancompanion.v2.curriculum.BatchARemainingSources.htmlVisible(page)
+                    record.originalSourceText.split("\n\n").filter { it.isNotBlank() }.forEach { piece ->
+                        assertTrue(
+                            "${record.itemId} extracted piece is not visible page text",
+                            visible.contains(piece),
+                        )
+                    }
+                } else {
+                    assertTrue(record.itemId, page.contains(record.originalSourceText))
+                }
             } else {
                 assertTrue(record.sourceRevision.startsWith("50e210c4803237779cb562bc1abcea529066031c"))
             }
@@ -156,7 +171,8 @@ class Units1620SourceIntakeTest {
     fun unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance() {
         val pack = pack()
         assertFalse(reason(pack, 16).contains("becoming complements"))
-        assertTrue(reason(pack, 17).contains("Productive clock-time"))
+        assertFalse(reason(pack, 17).contains("Productive clock-time"))
+        assertTrue(pack.references.first { it.id == "ref-u17-attribution" }.detail.contains("ReadyRussian Grammar 20"))
         assertFalse(reason(pack, 17).contains("Calendar-date"))
         assertFalse(reason(pack, 18).contains("Comparison forms"))
         assertFalse(reason(pack, 19).contains("Probability"))
@@ -173,8 +189,8 @@ class Units1620SourceIntakeTest {
                     steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet(),
                 ),
             )
-            assertFalse(decision.allowed)
-            assertTrue(decision.remaining.joinToString("\n"), decision.remaining.any { it.contains("not prepared") })
+            assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            assertFalse(decision.remaining.any { it.contains("not prepared") })
         }
         listOf(16, 18, 19, 20).forEach { number ->
             val unit = pack.unit(number)!!
@@ -309,7 +325,7 @@ class Units1620SourceIntakeTest {
             assertTrue(pack.provenanceRecords.any { it.unitNumber == number && it.shippedText.any { char -> char.code in 0x0400..0x04FF } })
         }
         assertEquals("DEVELOPMENT", pack.unit(17)!!.installState)
-        assertEquals("NOT_PREPARED", pack.unit(17)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
         assertEquals("DEVELOPMENT", pack.unit(19)!!.installState)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(19)!!.readiness)
         listOf(16, 17, 19).forEach { number ->
@@ -517,6 +533,8 @@ class Units1620SourceIntakeTest {
             if (field == "title") edited else edited
         }.also { _ -> unit.number }
     }
+
+    private val readyRussianMedia = Regex("(?i)<img|data:image|base64|<script|<audio|\\.ogg|data:audio")
 
     private fun normalized(text: String) = text.replace("\u0301", "").replace("'", "")
 

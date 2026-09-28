@@ -1,0 +1,12 @@
+==Russian==
+
+===Pronunciation===
+* {{ru-IPA|обсужда́емый}}
+
+===Participle===
+{{head|ru|present passive participle|head=обсужда́емый}}
+
+# {{participle of|ru|обсужда́ть||pres|pass|impfv}}
+
+====Declension====
+{{ru-decl-adj|обсужда́емый|a}}

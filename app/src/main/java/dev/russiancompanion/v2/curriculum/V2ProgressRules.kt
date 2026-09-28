@@ -181,6 +181,28 @@ internal data class V2AdvancementDecision(
     val remaining: List<String>,
 )
 
+/**
+ * Advancement counts a governed contrast once. A second item with the same
+ * prompt, cue, answer, options, and relationship is not a new check.
+ */
+internal fun advancementSignature(item: V2CheckItem): String {
+    val options = item.options.sorted().joinToString("\u0001")
+    val relation = item.assessment?.relationKind.orEmpty()
+    return listOf(item.prompt, item.promptLetter.orEmpty(), item.answer, options, relation).joinToString("\u0002")
+}
+
+internal fun distinctCorrectCheckCount(
+    pack: V2CurriculumPack,
+    checkIds: List<String>,
+    correctItemIds: Set<String>,
+): Int {
+    return checkIds.filter { it in correctItemIds }
+        .mapNotNull { pack.item(it) }
+        .map { advancementSignature(it) }
+        .toSet()
+        .size
+}
+
 internal fun advancementDecision(
     pack: V2CurriculumPack,
     unit: V2Unit,
@@ -206,7 +228,7 @@ internal fun advancementDecision(
     }
     if (rule.requireAppChecks) {
         val checkIds = unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }.distinct()
-        val correct = checkIds.count { it in learner.correctItemIds }
+        val correct = distinctCorrectCheckCount(pack, checkIds, learner.correctItemIds)
         if (correct < rule.minimumDistinctChecks) {
             remaining += "Demonstrate at least ${rule.minimumDistinctChecks} distinct in-app checks"
         }

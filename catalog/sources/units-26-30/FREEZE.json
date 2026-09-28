@@ -50,6 +50,51 @@
         "sha256": "a91323abe9ea35f846bf1fffd4feae46dc6bf7420cdce782e016d5c1141fb3bf",
         "requiredStatement": "лицензиями [[Википедия:Лицензия|Creative Commons «С указанием авторства — С сохранением условий»]] (CC BY-SA 4.0)",
         "statement": "Russian Wikipedia text is CC BY-SA 4.0 under the retained Википедия:Авторские права oldid 154562152. That route is not the English Wikipedia or Wikibooks copyrights snapshot."
+      },
+      "readyrussian": {
+        "appliesToSourceIds": [
+          "src-readyrussian-letter",
+          "src-readyrussian-reading5"
+        ],
+        "title": "ReadyRussian",
+        "url": "https://www.readyrussian.org/",
+        "file": "../readyrussian/home.html",
+        "sha256": "1ffd2c5a8f4b0dad271a5fd79fb545c8c6b629507ba39677825ffde4c66fe7d1",
+        "byteCount": 32857,
+        "retrieved": "2026-09-28T16:43:13Z",
+        "requiredStatement": "Creative Commons Attribution-ShareAlike 4.0 International License",
+        "licenseId": "CC BY-SA 4.0"
+      },
+      "wiktionary": {
+        "appliesToSourceIds": [
+          "src-enwiktionary-ostavlyaemyj-74231596",
+          "src-enwiktionary-obsuzhdaemyj-74233962",
+          "src-enwiktionary-napisannyj-74228228",
+          "src-enwiktionary-prochitannyj-74232159",
+          "src-enwiktionary-russian-entry-guidelines-92541199"
+        ],
+        "title": "Wiktionary:Copyrights",
+        "oldid": "87545419",
+        "url": "https://en.wiktionary.org/w/index.php?title=Wiktionary:Copyrights&oldid=87545419",
+        "file": "../units-16-20/wiktionary/copyrights-87545419.txt",
+        "revisionFile": "../units-16-20/wiktionary/copyrights-87545419.revision.json",
+        "sha256": "d184773bca30b7b23245a50d1d07c3d672b378a1e51757640e97b994b50c3689",
+        "requiredStatement": "The original texts of Wiktionary entries are dual-licensed to the public under both the '''[[WT:CC-BY-SA|Creative Commons Attribution-ShareAlike 4.0 International License]]''' (CC-BY-SA)",
+        "retrieved": "2026-09-25T15:45:47Z"
+      },
+      "ruwikisource": {
+        "appliesToSourceIds": [
+          "src-ruwikisource-vechera-5336197"
+        ],
+        "title": "Викитека:Авторские права",
+        "oldid": "5723825",
+        "url": "https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825",
+        "file": "wikisource/copyrights-5723825.txt",
+        "revisionFile": "wikisource/copyrights-5723825.revision.json",
+        "sha256": "6b4b5ca20482c80ba478db1e6eb045732939c4796c5b3f86e720f15920e497cd",
+        "requiredStatement": "Creative Commons «С указанием авторства — С сохранением условий»]] (CC BY-SA 4.0)",
+        "retrieved": "2026-09-28T16:43:13Z",
+        "note": "Project license snapshot. The Chernyshevsky literary span is public domain under the retained PD-old chain, not under this project text license."
       }
     },
     "wikibooksLicenseTextFile": "../units-3-5/wikibooks/copyrights-4622060.txt",
@@ -153,6 +198,54 @@
       "disposition": "EXCLUDED",
       "licenseId": null,
       "scope": "Russian Wiktionary article-format rules, abbreviation guide, and lexical entries were not frozen. The project states CC BY-SA 4.0 in a site message and the Wikimedia Foundation terms, not in a freezeable project copyright page with an oldid. The English Wiktionary:Copyrights snapshot is a different project. A dictionary heading does not clear dictionary-use."
+    },
+    {
+      "id": "readyrussian-letter",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Letter structure, the neutral greetings Здравствуйте! and Уважаемый Иван Иванович, and the dear-address limit. The malformed gloss, Дорогой, С любовью, and the magazine sample are outside the admitted spans."
+    },
+    {
+      "id": "readyrussian-reading5",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "The exact incident paragraph of Пожарные собаки only. Linked audio and generated vocabulary are not admitted."
+    },
+    {
+      "id": "enwiktionary-ostavlyaemyj-74231596",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Form-level written stress for оставля́емый. Not a productive stress rule."
+    },
+    {
+      "id": "enwiktionary-obsuzhdaemyj-74233962",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Form-level written stress for обсужда́емый. Not a productive stress rule."
+    },
+    {
+      "id": "enwiktionary-napisannyj-74228228",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Form-level written stress for напи́санный. Not a productive stress rule."
+    },
+    {
+      "id": "enwiktionary-prochitannyj-74232159",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Form-level written stress for прочи́танный. Not a productive stress rule."
+    },
+    {
+      "id": "enwiktionary-russian-entry-guidelines-92541199",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Offline recognition of stressed headword, meaning, declension, and conjugation fields. Audio templates are outside the admitted spans."
+    },
+    {
+      "id": "ruwikisource-vechera-5336197",
+      "disposition": "ADMITTED",
+      "licenseId": "Public domain",
+      "scope": "One short exact reading span from Вечера у княгини Старобельской oldid 5336197. Public-domain basis is the retained PD-old chain and the author death year 1889, not project hosting."
     }
   ],
   "pages": [
@@ -257,6 +350,141 @@
       "sourceId": "src-ruwiki-prichastie-153078996",
       "licenseRoute": "ruwiki",
       "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors."
+    },
+    {
+      "key": "ostavlyaemyj",
+      "title": "оставляемый",
+      "oldid": "74231596",
+      "url": "https://en.wiktionary.org/w/index.php?title=оставляемый&oldid=74231596",
+      "file": "wiktionary/ostavlyaemyj-74231596.txt",
+      "sha256": "c9907f343beac3f5aba33fe52a6f534496b5e1adc965f71c565926a79bc94c32",
+      "revisionFile": "wiktionary/ostavlyaemyj-74231596.revision.json",
+      "mediawikiSha1": "12117633b76c4abaa92bb5524696f48ec3624962",
+      "parentid": 44537888,
+      "timestamp": "2023-06-26T03:06:09Z",
+      "size": 282,
+      "retrieved": "2026-09-28T16:43:13Z",
+      "sourceId": "src-enwiktionary-ostavlyaemyj-74231596",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74231596 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted."
+    },
+    {
+      "key": "obsuzhdaemyj",
+      "title": "обсуждаемый",
+      "oldid": "74233962",
+      "url": "https://en.wiktionary.org/w/index.php?title=обсуждаемый&oldid=74233962",
+      "file": "wiktionary/obsuzhdaemyj-74233962.txt",
+      "sha256": "7d6734ecf6df49138d50236e8ce3290ab0370aa26ef3646513923d803d705ecd",
+      "revisionFile": "wiktionary/obsuzhdaemyj-74233962.revision.json",
+      "mediawikiSha1": "3227eab0c12aab41171cf9f5c2a31a2760feae88",
+      "parentid": 44538193,
+      "timestamp": "2023-06-26T03:18:03Z",
+      "size": 282,
+      "retrieved": "2026-09-28T16:43:13Z",
+      "sourceId": "src-enwiktionary-obsuzhdaemyj-74233962",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74233962 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted."
+    },
+    {
+      "key": "napisannyj",
+      "title": "написанный",
+      "oldid": "74228228",
+      "url": "https://en.wiktionary.org/w/index.php?title=написанный&oldid=74228228",
+      "file": "wiktionary/napisannyj-74228228.txt",
+      "sha256": "1ca7b59a1c3e355791a1a45565f75fe11b8b10f68f43fb963d895ecb5d4c776f",
+      "revisionFile": "wiktionary/napisannyj-74228228.revision.json",
+      "mediawikiSha1": "5624107e80c93d916638be293569b0c3330cbadb",
+      "parentid": 46371368,
+      "timestamp": "2023-06-26T02:50:14Z",
+      "size": 272,
+      "retrieved": "2026-09-28T16:43:13Z",
+      "sourceId": "src-enwiktionary-napisannyj-74228228",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74228228 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted."
+    },
+    {
+      "key": "prochitannyj",
+      "title": "прочитанный",
+      "oldid": "74232159",
+      "url": "https://en.wiktionary.org/w/index.php?title=прочитанный&oldid=74232159",
+      "file": "wiktionary/prochitannyj-74232159.txt",
+      "sha256": "dce1aca43746ad4682fba045980275e243eef332a958917a3862387bdb3ad5ef",
+      "revisionFile": "wiktionary/prochitannyj-74232159.revision.json",
+      "mediawikiSha1": "a3ccda00806ba97c0e43853a9464ef911c85c356",
+      "parentid": 44537968,
+      "timestamp": "2023-06-26T03:08:52Z",
+      "size": 280,
+      "retrieved": "2026-09-28T16:43:13Z",
+      "sourceId": "src-enwiktionary-prochitannyj-74232159",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74232159 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted."
+    },
+    {
+      "key": "guidelines",
+      "title": "Wiktionary:Russian entry guidelines",
+      "oldid": "92541199",
+      "url": "https://en.wiktionary.org/w/index.php?title=Wiktionary:Russian_entry_guidelines&oldid=92541199",
+      "file": "wiktionary/russian-entry-guidelines-92541199.txt",
+      "sha256": "c097b23e9853d742292c4655926939cbe4e8eaa7e6044a615cd614ba649950d0",
+      "revisionFile": "wiktionary/russian-entry-guidelines-92541199.revision.json",
+      "mediawikiSha1": "a92a42d9b24d12d68942046a7db8d0657463b7a5",
+      "parentid": 87646290,
+      "timestamp": "2026-09-10T15:15:07Z",
+      "size": 13089,
+      "retrieved": "2026-09-28T16:43:13Z",
+      "sourceId": "src-enwiktionary-russian-entry-guidelines-92541199",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 92541199 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted."
+    },
+    {
+      "key": "vechera",
+      "title": "Вечера у княгини Старобельской (Чернышевский)",
+      "oldid": "5336197",
+      "url": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+      "file": "wikisource/vechera-5336197.txt",
+      "sha256": "af0a1b2a4a79796a3523bb8a35b708df450e5970a96af050230b42cf6f604517",
+      "revisionFile": "wikisource/vechera-5336197.revision.json",
+      "mediawikiSha1": "1045b08284348dd6c58e5c1d0781ff4fee46e09d",
+      "parentid": 5323067,
+      "timestamp": "2025-03-06T02:24:05Z",
+      "size": 479184,
+      "retrieved": "2026-09-28T16:43:13Z",
+      "sourceId": "src-ruwikisource-vechera-5336197",
+      "licenseRoute": "ruwikisource",
+      "attribution": "Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.",
+      "licenseId": "Public domain",
+      "licenseUrl": "https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825",
+      "shareAlikeTreatment": "The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included."
+    }
+  ],
+  "supplemental": [
+    {
+      "key": "letter",
+      "title": "Phrasebook 12 — Letter Writing",
+      "oldid": "aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218",
+      "file": "../readyrussian/letter.html",
+      "sha256": "aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218",
+      "byteCount": 21279,
+      "retrieved": "2026-09-28T16:43:13Z",
+      "sourceId": "src-readyrussian-letter",
+      "url": "https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html",
+      "licenseRoute": "readyrussian",
+      "transform": "readyrussian-html",
+      "attribution": "ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted."
+    },
+    {
+      "key": "reading5",
+      "title": "Reading 5 — Пожарные собаки",
+      "oldid": "6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d",
+      "file": "../readyrussian/reading5.html",
+      "sha256": "6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d",
+      "byteCount": 86252,
+      "retrieved": "2026-09-28T16:43:13Z",
+      "sourceId": "src-readyrussian-reading5",
+      "url": "https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html",
+      "licenseRoute": "readyrussian",
+      "transform": "readyrussian-html",
+      "attribution": "ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Reading 5 — Пожарные собаки HTML sha256 6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted."
     }
   ]
 }

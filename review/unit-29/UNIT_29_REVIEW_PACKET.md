@@ -11,12 +11,12 @@ Unit 29 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4cf6007f69beadac5278bb42e5bf060a62fe3eb9
-- Unit content-review SHA-256: cb4d6f34dfceed300d75a350c07202534f1fa8973d7d6a54792d0b261fd1795c
+- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
+- Unit content-review SHA-256: 2172a1e97507bdfd0f4f7164ae3c2c6fb6784dc9b68490a4a3638acfa0fa210e
 - Mapping-package SHA-256: 54c2f00221054ced81fe17bea8b0f156073b830e54e70c47cf769e93bd56eb36
-- Pack content-review SHA-256: 68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4
-- Review-package SHA-256: a41035e292f92c41bca87cb9794fc75663483deebad5ec5965989c9eef0b8200
-- Repository source SHA-256: 7e73e724ef3895ff8fb3401f0a84411e74a62dfe0877fcf9015554215ee7a652
+- Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
+- Review-package SHA-256: ab48f6f0b2a5941292a2ed7b947fa07c4c0bd39e312f3af44fce68bef4fe5bab
+- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1589,11 +1589,11 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 9823eb1e44ca3064b8b60cc7a4663d6d989c7f3c94eb11874f96e73df2e6fd88
+- Content hash: 701f9b04e29347f0e87369c49139168bca4e66b3afbcb2ed25ea93770bfc6401
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, general letter conventions, participle stress, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, participle stress, a general bookish-register claim, and dictionary use are not prepared. ReadyRussian letter conventions cover structure, the Russian and English organizational difference, and the stranger address limit. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
@@ -2913,240 +2913,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u29-164`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9719d1e1d755d45f9b8b9f5d4be6dabd0e7f2dca6429f86b7bd9c56b3f204b52
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u29-165`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9d3595a507bd056762c3d09dba2c4a65a6c036e73dc3673d77951f9af8bf1924
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label on the other line for in the present.
-
-### AUTHORED_ENGLISH `en-u29-166`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c2d639539fa3013394054040b1b418ff8ffc366514641aa19636dbde0e617c1e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label as a different phrase on the past line for that read.
-
-### AUTHORED_ENGLISH `en-u29-167`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 61ce2643cd4d1eceff5e4e97ee3b81fa12635bee1a8b2b3e313e005d48eb3d0e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other form (in the present).
-
-### AUTHORED_ENGLISH `en-u29-168`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4fdcaac598ad0eb088c3abc928ed1adc289c0a4fc17b6579ca12443fd1cf3dce
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase is not the time label asked for here (that read).
-
-### AUTHORED_ENGLISH `en-u29-169`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6210a72a5f2034db8258c05781bd7bf46c1835de4f341e142bbe941d54f2b7d8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the form indicates actions that happened in the past. This label is written on the shown line.
-
-### AUTHORED_ENGLISH `en-u29-170`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae919858945c73cdad2620ad59d27eedb3ad546360c7e5bb365da730bb84465c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written on the line with the shown form?
-
-### AUTHORED_ENGLISH `en-u29-171`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 74958dedbb3c3d3dd5fe3a0a4c39bb1e67ede7ca1d48cb49dd85d13da6f41aee
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
-
-### AUTHORED_ENGLISH `en-u29-172`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2dc1218748b134e42e10b8eea23f5e38ca45af9b0cf460e1752c7ae4b4dc8634
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label on the other line for in the past.
-
-### AUTHORED_ENGLISH `en-u29-173`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 28f500ee68ee2641d416d52b75aafc29d3da90dacb88c4c9d9ed016ab3b87160
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this word inside the gloss, not as the time label for reading.
-
-### AUTHORED_ENGLISH `en-u29-174`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a3afa3e5a67add255a51365cdaf4f8d3c5351ba72e0512a7c5ebe38eaccf8682
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other form (in the past).
-
-### AUTHORED_ENGLISH `en-u29-175`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 572044623c7a38144978a93f560e4ea3037d08aa1984a92ccd3d3987b7b49bf9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This word is not the time label (reading).
-
-### AUTHORED_ENGLISH `en-u29-176`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e6492eb7baf766fe8548e4b44a6e4fb615bc849dd4468b5e75db39637a6762dc
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the other form is happening now, in the present. This label is written on the shown line.
-
-### AUTHORED_ENGLISH `en-u29-177`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af1cc3db64adaf4e41f2f98a9b4b98c4640bed20cd42833458c0fc9dea31eadf
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written on the line with this shown form?
-
-### AUTHORED_ENGLISH `en-u29-178`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ebbf29816bb4e12208b1baa51cb424768618d342254b068cae8a5f4ecfdcaad
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label on the shown line for in the past.
-
-### AUTHORED_ENGLISH `en-u29-179`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 56858ab840651d63703d53c50a097f1dd4f38b4ad38706512d83815393a3e670
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this phrase on the shown line, and it is not the other time label for that read.
-
-### AUTHORED_ENGLISH `en-u29-180`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5005e4247e5be62d48fe5fe47df4c43f8177d44e79f68c976aa9634be2a9f946
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is the one on the shown line (in the past).
-
-### AUTHORED_ENGLISH `en-u29-181`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1f367ce2ec2ac849118ec59ec03d374af45002120b2324a0cc358df295b367a8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase stays on the shown line (that read).
-
 ### AUTHORED_ENGLISH `en-u29-182`
 
 - Objectives: none
@@ -3155,10 +2921,10 @@ text=This phrase stays on the shown line (that read).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 09fbf56d5f20dbd0d02ecb754709c2bdc24c4569c29a682fc360b09313ea2be6
+- Content hash: 681087bccb3cd33520dcbc0c7723efa1210230a9c9a0b209ba9722dd49a92229
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the form indicates actions that happened in the past. This label is the other time label.
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u29-183`
 
@@ -3168,10 +2934,10 @@ text=The frozen line says the form indicates actions that happened in the past. 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba2663d511bd24a056b09ac3ea09f2f8570a94470931158403da8ff0ff6fd961
+- Content hash: dc436f25b52139a67039f7152f61abfee2d306c7dbc2c687c7dd8840b369bc7b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss names the other time, not the one on the shown line?
+text=The frozen line writes this label on the other line for in the present.
 
 ### AUTHORED_ENGLISH `en-u29-184`
 
@@ -3181,10 +2947,10 @@ text=Which admitted English gloss names the other time, not the one on the shown
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c2e0c38ad37cc22b79a4e5ae6b61e0c01589f39faca0a8b420182ef0ceca08f2
+- Content hash: 93291cfa5bcdc7af977b40c5a83695e884e94d9a3533463303d1b43b87e4851c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for beige.
+text=The frozen line writes this label as a different phrase on the past line for that read.
 
 ### AUTHORED_ENGLISH `en-u29-185`
 
@@ -3194,10 +2960,10 @@ text=The frozen line writes this label beside a different form for beige.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5d0a58337632a5700087750412419510e4da3ec0466aebc7ca2223fa66367666
+- Content hash: 895b33fc7a5f5011abfd055333dff1889b3c84753d07fc70c94751a75985ff65
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for khaki-colored.
+text=This label is paired with the other form (in the present).
 
 ### AUTHORED_ENGLISH `en-u29-186`
 
@@ -3207,10 +2973,10 @@ text=The frozen line writes this label beside a different form for khaki-colored
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5c4a59ccf43e5f41b42bc39f8de738a86dc61e16983cbb8b146f92da17a699bd
+- Content hash: 0b1e2cbe02a50bb5a1020a62f4258a21037eda486940b9e8dabe64328a6b1435
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with an invariant form (beige).
+text=This phrase is not the time label asked for here (that read).
 
 ### AUTHORED_ENGLISH `en-u29-187`
 
@@ -3220,10 +2986,10 @@ text=This label is paired with an invariant form (beige).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 50f359f80dc41fa4608cfb40a9d00474b5ef32ec849ae93f2ab7d524e7552ee4
+- Content hash: f19ae1f46190faa2e7a78abf7ff08a71e74d389f201858b29ab622cd3ac3f853
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other invariant form (khaki-colored).
+text=The frozen line says the form indicates actions that happened in the past. This label is written on the shown line.
 
 ### AUTHORED_ENGLISH `en-u29-188`
 
@@ -3233,10 +2999,10 @@ text=This label is paired with the other invariant form (khaki-colored).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 25947cfdaaceb48bc1bb235b5b779113026e89e904d63ab289596e05a6cf8624
+- Content hash: 4019e241c212c83d0d21afce6221c7614cf67bb806b1dc0e41d8f7fcb2d04136
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the short form appears in the stated role. This label is written beside the shown form.
+text=Which admitted English label is written on the line with the shown form?
 
 ### AUTHORED_ENGLISH `en-u29-189`
 
@@ -3246,10 +3012,10 @@ text=The frozen line says the short form appears in the stated role. This label 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 58e76ef1af7d5792a8f02b13e4c0ee7deb3c697078ab08c43f311fb61f666174
+- Content hash: 7484b5e29da33f49294ae9e8327b591376053aaec931e10027085ba59d791a1d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the shown form?
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u29-190`
 
@@ -3259,10 +3025,10 @@ text=Which admitted English label is written beside the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d7a274c479e30870532bc81f015cf050e7f17fa3871e507f45e44d45d00a6e77
+- Content hash: 4bf0202761efe2fba15194c41acba39cec2e9ed4bdede92ef0e7b9d872fdcd5c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside an invariant form for beige.
+text=The frozen line writes this label on the other line for in the past.
 
 ### AUTHORED_ENGLISH `en-u29-191`
 
@@ -3272,10 +3038,10 @@ text=The frozen line writes this label beside an invariant form for beige.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a2c36c50a8f7d184665f5f29ce63b77776cd13e565336afb4352806ddc77d39
+- Content hash: de57644c4994e78e173aadd76b42df61758e192a216158996ee41bb9884b70ba
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside an invariant form for khaki-colored.
+text=The frozen line writes this word inside the gloss, not as the time label for reading.
 
 ### AUTHORED_ENGLISH `en-u29-192`
 
@@ -3285,10 +3051,10 @@ text=The frozen line writes this label beside an invariant form for khaki-colore
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a977a3fc0af2eca6a5e1456d1acbea288645dacfcebd2be85bfeafc665bf32c
+- Content hash: 57ce312659e2ac8a39693f8dd6fa29874bbedd1683270df101b009b303d492c0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is not the gloss of the shown form (beige).
+text=This label is paired with the other form (in the past).
 
 ### AUTHORED_ENGLISH `en-u29-193`
 
@@ -3298,10 +3064,10 @@ text=This label is not the gloss of the shown form (beige).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c6acfbece8d1dd6f95b387893fc75e3ae23958432d5e1b67e3d0e5141ec8a2e
+- Content hash: 0a6fae41a59794a895c6a1c26ed45a07e8a51c9a5b605dc71760732b09c7489b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with a different form (khaki-colored).
+text=This word is not the time label (reading).
 
 ### AUTHORED_ENGLISH `en-u29-194`
 
@@ -3311,10 +3077,10 @@ text=This label is paired with a different form (khaki-colored).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b2f57a1100bc76b212777a4bb5128a7429c6427084ebb308c2dbbeda8ed2387
+- Content hash: 992b1fa111d9dfa21c6186da0558e21512601e0e06714a74d03041ef66665e4c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside this shown form?
+text=The frozen line says the other form is happening now, in the present. This label is written on the shown line.
 
 ### AUTHORED_ENGLISH `en-u29-195`
 
@@ -3324,10 +3090,10 @@ text=Which admitted English label is written beside this shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c988684f505af894ba9ab4626f6b8984bbd3a9e27a20f3f6f006f90afc404f95
+- Content hash: 5428200b3c72e562ff2623690f4871e335fb6d5ffcbd330b89d7860aeb7aceb1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the other forms for new.
+text=Which admitted English label is written on the line with this shown form?
 
 ### AUTHORED_ENGLISH `en-u29-196`
 
@@ -3337,10 +3103,10 @@ text=The frozen line writes this label beside the other forms for new.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0845df34d843a8db4dca47b37b1ff0e60ac4a1523fd5f5289248cb6b7a06e3b
+- Content hash: e59cf0fe2249d9e4de2bb3827bc3c865581eea17b27757818d89ce382e99c66f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the other invariant form for khaki-colored.
+text=The frozen line writes this label on the shown line for in the past.
 
 ### AUTHORED_ENGLISH `en-u29-197`
 
@@ -3350,10 +3116,10 @@ text=The frozen line writes this label beside the other invariant form for khaki
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a9b2be56acb60f679faa570c0e702b1ce101bc0719b0b55aa54661a762e0fa51
+- Content hash: 8a150e4fe2dda1b858e02b0d91e06c81e45a64da243ed7c8983686e16b53d7c2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with a different form (new).
+text=The frozen line writes this phrase on the shown line, and it is not the other time label for that read.
 
 ### AUTHORED_ENGLISH `en-u29-198`
 
@@ -3363,10 +3129,10 @@ text=This label is paired with a different form (new).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 635fdc695de2c2a896a7f14c578d1e770673e458fb6d28eb0f57bff818436f23
+- Content hash: 0f30f1a95bbc5adcd9afb73f16d6c3790e23182ae3ccca167bcc3ddd47c973a6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the short form appears in the stated role. This label is written beside the shown invariant form.
+text=This label is the one on the shown line (in the past).
 
 ### AUTHORED_ENGLISH `en-u29-199`
 
@@ -3376,10 +3142,10 @@ text=The frozen line says the short form appears in the stated role. This label 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 12013c87b8666a36edc53d03a775fc15f4f1c45a8458aa36347d97cb8ea14651
+- Content hash: 8086e629ac93c604ffdc2a3e8208a89f66781e13b287f0acd911f5d8470e3ed7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the invariant form?
+text=This phrase stays on the shown line (that read).
 
 ### AUTHORED_ENGLISH `en-u29-200`
 
@@ -3389,10 +3155,10 @@ text=Which admitted English label is written beside the invariant form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b69e39f89f2284f346a83f71111c1ca3219b29a202f147a45abfde1bdb55441a
+- Content hash: b80e0f81cca36d0055920884ed0caf34289021be24f6c206bf18df76b1be63b7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line gives this label to the replacement line for colloquial language.
+text=The frozen line says the form indicates actions that happened in the past. This label is the other time label.
 
 ### AUTHORED_ENGLISH `en-u29-201`
 
@@ -3402,10 +3168,10 @@ text=The frozen line gives this label to the replacement line for colloquial lan
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 597e05168952b08104e145e31c0d48af2166f69c0977abf2125df6b49a7b05a1
+- Content hash: f8b955c30171e7c1bd8575871439d79fdac468d8db9335b5ecf461ebade8a9b5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this as the gloss, not as the speech label for Having eaten, I went for a walk.
+text=Which admitted English gloss names the other time, not the one on the shown line?
 
 ### AUTHORED_ENGLISH `en-u29-202`
 
@@ -3415,10 +3181,10 @@ text=The frozen line writes this as the gloss, not as the speech label for Havin
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a55302de43ea072f1e63e9a15701506bbf726e52994e6e9ff6b80b32c5243f5
+- Content hash: abe3ec9048576f86358c3def822e81faacc17a4bf616c0f36a3449cf2a113cea
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other line (colloquial language).
+text=The frozen line writes this label beside a different form for beige.
 
 ### AUTHORED_ENGLISH `en-u29-203`
 
@@ -3428,10 +3194,10 @@ text=This label is paired with the other line (colloquial language).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cdfbca9f872eedc74f389970b5c7c0d77655a6e79915ba02d99100fe673b5816
+- Content hash: a618013961ac7161bd72df542a193d5c6511b75b3dd2ed33d5104fb6e800dedb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This gloss is not the speech label (Having eaten, I went for a walk).
+text=The frozen line writes this label beside a different form for khaki-colored.
 
 ### AUTHORED_ENGLISH `en-u29-204`
 
@@ -3441,10 +3207,10 @@ text=This gloss is not the speech label (Having eaten, I went for a walk).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dab1adc08d8476a041fc6e1b295bc12e00af1e1cda9080a060fde6e2b34d40b8
+- Content hash: b1740b032e129a4310aae7d95dfe009a6764d6d9c0e5539d4593152ce5bf0c71
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says adverbial participles are considered a feature of bookish speech. This label is the one given to that construction.
+text=This label is paired with an invariant form (beige).
 
 ### AUTHORED_ENGLISH `en-u29-205`
 
@@ -3454,10 +3220,10 @@ text=The frozen line says adverbial participles are considered a feature of book
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a48f95c8e49c8641bcd3089cdeb4fb06c8d6aaaa571b878543ed91a8a71ff2b9
+- Content hash: 5c7c495ea91fe18b3a9f27e1e6e38ea386adbd1528dc701700c3be150098c458
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label names the kind of speech the source gives the shown line?
+text=This label is paired with the other invariant form (khaki-colored).
 
 ### AUTHORED_ENGLISH `en-u29-206`
 
@@ -3467,10 +3233,10 @@ text=Which admitted English label names the kind of speech the source gives the 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb2900f454b5b8de2c7e9c2f1f64343246d68d0c68db48e8acc3f9bcaa22822e
+- Content hash: 960a482e2b1fa515d52f1c25a14b12a7daa18b5dbc044960080d333cf29e2566
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line gives this label to the other construction for bookish speech.
+text=The frozen line says the short form appears in the stated role. This label is written beside the shown form.
 
 ### AUTHORED_ENGLISH `en-u29-207`
 
@@ -3480,10 +3246,10 @@ text=The frozen line gives this label to the other construction for bookish spee
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9ccc3e4a192f81d5f8719f32bf78e3bacca46fed7e0f93bfa0413e4e11c471ee
+- Content hash: 5f0675c9f8b2142fba02759c21c886762a9b94d985dccf2ac799a0396dba9fbf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this gloss beside the other line for Having eaten, I went for a walk.
+text=Which admitted English label is written beside the shown form?
 
 ### AUTHORED_ENGLISH `en-u29-208`
 
@@ -3493,10 +3259,10 @@ text=The frozen line writes this gloss beside the other line for Having eaten, I
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 43025ae091ee3ea9853652409cbe7702a7eb86c5f96b13ddf8cdbaf8f67629f9
+- Content hash: 8b7599a0ea08b287ad988ed176f1f42425cd1320cf5af04371e1551daceb7b8d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other line (bookish speech).
+text=The frozen line writes this label beside an invariant form for beige.
 
 ### AUTHORED_ENGLISH `en-u29-209`
 
@@ -3506,10 +3272,10 @@ text=This label is paired with the other line (bookish speech).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 08b2e00e4a65081ac5b062ff14277d57a80673ff6e540f6dd813b8f6367be4dd
+- Content hash: 6725565057b662cf6ed5803a7192c071b7d4c317b69f8e90eb3c03f8c953b54f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This gloss is paired with the other line (Having eaten, I went for a walk).
+text=The frozen line writes this label beside an invariant form for khaki-colored.
 
 ### AUTHORED_ENGLISH `en-u29-210`
 
@@ -3519,10 +3285,10 @@ text=This gloss is paired with the other line (Having eaten, I went for a walk).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed3dab604afca5d5f2f0858c217a2ce4462abbc8021408e89e7e09312d30f01e
+- Content hash: 98c0f5afc9a9d76b0d038e13b39dfa438b96938a9d74c70b3eedfc2550ff9501
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says adverbial participles are considered a feature of bookish speech. This label names the replacement in colloquial language.
+text=This label is not the gloss of the shown form (beige).
 
 ### AUTHORED_ENGLISH `en-u29-211`
 
@@ -3532,10 +3298,10 @@ text=The frozen line says adverbial participles are considered a feature of book
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f0985ee3a3bf0474097c64666854bc7202568972e4d1b58b777c670540dd51f6
+- Content hash: 67ffe80eac07c7aa49b247e19c590de1a697ec50ecaa4b05230d4018c159f134
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label names the replacement named for the shown line?
+text=This label is paired with a different form (khaki-colored).
 
 ### AUTHORED_ENGLISH `en-u29-212`
 
@@ -3545,10 +3311,10 @@ text=Which admitted English label names the replacement named for the shown line
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2814caedea387e56b47090f6b6e071a30352ea39a30369636361f0705d91cdcb
+- Content hash: 4f21d7c254132c67f6820065674fb7fb24b0de7d42fa7ca2777bbea2c7c0240a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line uses this phrase for the kind of speech, not as the gloss for bookish speech.
+text=Which admitted English label is written beside this shown form?
 
 ### AUTHORED_ENGLISH `en-u29-213`
 
@@ -3558,10 +3324,10 @@ text=The frozen line uses this phrase for the kind of speech, not as the gloss f
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d243e8232a0451404025ab6378462d5cb61b1090ddb90306a8f95d7aed4bb54
+- Content hash: 1c0ea823fd525e049271f17725c1fff9fb9de2bd29d872161de2381793cedc5a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line uses this phrase for the replacement for colloquial language.
+text=The frozen line writes this label beside the other forms for new.
 
 ### AUTHORED_ENGLISH `en-u29-214`
 
@@ -3571,10 +3337,10 @@ text=The frozen line uses this phrase for the replacement for colloquial languag
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c9794208539521778efcab20a6de3f55225f0f1c016a443c29bb9f3540b64bbd
+- Content hash: 486be728e00ff9a0b17b74bd71b90cfd5ee13c258b27d8d0d0164766e5d0731b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase is the speech label (bookish speech).
+text=The frozen line writes this label beside the other invariant form for khaki-colored.
 
 ### AUTHORED_ENGLISH `en-u29-215`
 
@@ -3584,10 +3350,10 @@ text=This phrase is the speech label (bookish speech).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e678c51a1df9b55a19af0232a86dcafb6719fd51a862534315818fde63fab216
+- Content hash: 274e9eecc622ecdc2b7dca92eee412658e8cd6fecb9e36d53d5ecfe87a1f312c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase is the other label (colloquial language).
+text=This label is paired with a different form (new).
 
 ### AUTHORED_ENGLISH `en-u29-216`
 
@@ -3597,10 +3363,10 @@ text=This phrase is the other label (colloquial language).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7bcc1b6060342e35216c3e57cc7efdcb9518e7c9be8d5fe6ff01d694ba9842ca
+- Content hash: b5b3d08d5c3d31c10ef27a75475f140923e1a0d569e5255be1efcef807e62776
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says adverbial participles are considered a feature of bookish speech. This gloss is written beside the shown line.
+text=The frozen line says the short form appears in the stated role. This label is written beside the shown invariant form.
 
 ### AUTHORED_ENGLISH `en-u29-217`
 
@@ -3610,10 +3376,10 @@ text=The frozen line says adverbial participles are considered a feature of book
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce7fc563cd3d3f82701e637988ad36678a9bb707b62bfa8de1294e3514fc02f2
+- Content hash: 86e7b381ebe120243b11956ad877f15dcbe8a14953750998f2ab0d5b6e775df4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written beside the shown line?
+text=Which admitted English label is written beside the invariant form?
 
 ### AUTHORED_ENGLISH `en-u29-218`
 
@@ -3623,10 +3389,10 @@ text=Which admitted English gloss is written beside the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba2efae336037898d7f7bfb3f09718d1b225b0bd53b90f09774f19e15f82d947
+- Content hash: f1af1863f6ddca8fe37086846adf4a5358bc28ed1be5d5a3257a2024b3aae12b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source assigns запятые не ставятся when the phrase stands before the determined word.
+text=The frozen line gives this label to the replacement line for colloquial language.
 
 ### AUTHORED_ENGLISH `en-u29-219`
 
@@ -3636,10 +3402,10 @@ text=The source assigns запятые не ставятся when the phrase sta
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cd8e451a5842d6271f2ce2e07cc700d1bb6097b9de0f666ca02bc9d2692bf9d2
+- Content hash: a22c6efb83f5d17d4ea9f4b9a2c11f462a2140325623270dd49b5a81e5272ffa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source reserves кроме тех случаев for личным местоимением and for a phrase that обозначает причину.
+text=The frozen line writes this as the gloss, not as the speech label for Having eaten, I went for a walk.
 
 ### AUTHORED_ENGLISH `en-u29-220`
 
@@ -3649,10 +3415,10 @@ text=The source reserves кроме тех случаев for личным ме�
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53a74c49430d33f2383040b4fcae76eed430df046525b6a6d25fc3cf3a80a4fb
+- Content hash: 8d086e201452bbc4f9afa1314f6b3eb58ce240a417df0aa68c6fa927f441e6cc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=запятые не ставятся does not classify the shown form.
+text=This label is paired with the other line (colloquial language).
 
 ### AUTHORED_ENGLISH `en-u29-221`
 
@@ -3662,10 +3428,10 @@ text=запятые не ставятся does not classify the shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72ccca1fe1185880a7d18f749e66987c7b6dd3559cbe74b0c31d524036d52072
+- Content hash: b5ce07edd41bb8555c96122340f1f2955720e7a98beeafb61717bbf58d4034d1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=кроме тех случаев does not classify the shown form.
+text=This gloss is not the speech label (Having eaten, I went for a walk).
 
 ### AUTHORED_ENGLISH `en-u29-222`
 
@@ -3675,10 +3441,10 @@ text=кроме тех случаев does not classify the shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b4006682ef0fd2965bf5db08dc4dc9a981205aed35401213343c6d6d42d96b9f
+- Content hash: aa5c510b3e557c3601c5ff0ca25ddaf1a743c57c50a92d56e6efb211c1aca1cc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source says a phrase after the determined word выделяется запятыми с двух сторон and gives Программа, написанная в спешке, выполнила недопустимую операцию. The keyed phrase is выделяется запятыми с двух сторон.
+text=The frozen line says adverbial participles are considered a feature of bookish speech. This label is the one given to that construction.
 
 ### AUTHORED_ENGLISH `en-u29-223`
 
@@ -3688,10 +3454,10 @@ text=The source says a phrase after the determined word выделяется з�
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46c940c873703f4b3d523504bbf09da27a1344e258b134d4503ceaf242fb132c
+- Content hash: 792d3a31b48b081887649bbe8afc719db886b3cb9c110b9ea6c35c37793ecb5d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted phrase classifies the shown form?
+text=Which admitted English label names the kind of speech the source gives the shown line?
 
 ### AUTHORED_ENGLISH `en-u29-224`
 
@@ -3701,10 +3467,10 @@ text=Which admitted phrase classifies the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 90969b4d513052bafe2d81365641c131c546dad1156674a02217366a14c0c0a9
+- Content hash: ee1a800e207a3df56bccfc5bf4ab3f27d32dbc97737887abc1aec50142eb47d4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source assigns выделяется запятыми с двух сторон to Программа, написанная в спешке, выполнила недопустимую операцию.
+text=The frozen line gives this label to the other construction for bookish speech.
 
 ### AUTHORED_ENGLISH `en-u29-225`
 
@@ -3714,10 +3480,10 @@ text=The source assigns выделяется запятыми с двух сто
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: deb3381aadb09648db672a029c7f82aa2152fcae361e4e0be4d4e4235f7da48e
+- Content hash: a83bcb359cf962f1cfd1f39264f703636e1314c1c547a82d5a9c232c0ea57fbb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source assigns запятая ставится только перед причастным оборотом when the sentence ends after the phrase.
+text=The frozen line writes this gloss beside the other line for Having eaten, I went for a walk.
 
 ### AUTHORED_ENGLISH `en-u29-226`
 
@@ -3727,10 +3493,10 @@ text=The source assigns запятая ставится только перед 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 79c744c3ff50407b237cf2aed7bc714d28ccf3a4cbe05c6ec720d5c73f8a5092
+- Content hash: d8f682620f8502646a6ecff08a5f82eb31b8891dc44a848225b9010d9053a29e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=выделяется запятыми с двух сторон does not classify the shown form.
+text=This label is paired with the other line (bookish speech).
 
 ### AUTHORED_ENGLISH `en-u29-227`
 
@@ -3740,10 +3506,10 @@ text=выделяется запятыми с двух сторон does not cla
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 01252753e18020a1e30a92b67b173e59f55bfb38542dcec25463549202799b2a
+- Content hash: 703ba64b188ae435dabebe48232d6710325b14fa08462241fa68a78a76394d1f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=запятая ставится только перед причастным оборотом does not classify the shown form.
+text=This gloss is paired with the other line (Having eaten, I went for a walk).
 
 ### AUTHORED_ENGLISH `en-u29-228`
 
@@ -3753,10 +3519,10 @@ text=запятая ставится только перед причастны�
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed55e76d0590fae9702b663020dbb0b105bb098bacc3063a661086ce6ed5b864
+- Content hash: d31ea2e18a38ee1475c68fe0cc9576dcece3a302d87537504f82ad0a6cf1271d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source says a phrase before the determined word has запятые не ставятся and gives Написанная в спешке программа выполнила недопустимую операцию. The keyed phrase is запятые не ставятся.
+text=The frozen line says adverbial participles are considered a feature of bookish speech. This label names the replacement in colloquial language.
 
 ### AUTHORED_ENGLISH `en-u29-229`
 
@@ -3766,10 +3532,10 @@ text=The source says a phrase before the determined word has запятые не
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd45e4dccc0a4ae762c2f21282e842edcab866dea637bbf251c761a399627602
+- Content hash: 2026b863d138e5ea4e883cc24ba387b6688bae904544f2c69d9358a950d92a8e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source states запятые не ставятся as the default before the determined word.
+text=Which admitted English label names the replacement named for the shown line?
 
 ### AUTHORED_ENGLISH `en-u29-230`
 
@@ -3779,10 +3545,10 @@ text=The source states запятые не ставятся as the default befor
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 74638f6883d0b0df98aa5b826ebb36c55c696e56d548195812ae86cd769863cc
+- Content hash: 8e4019329b25be1ec2099f2d25a30553dc2a6aba9894b2910e209b42e6554dfe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source assigns выделяется запятыми с двух сторон to a phrase after the determined word.
+text=The frozen line uses this phrase for the kind of speech, not as the gloss for bookish speech.
 
 ### AUTHORED_ENGLISH `en-u29-231`
 
@@ -3792,10 +3558,10 @@ text=The source assigns выделяется запятыми с двух сто
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e003acd7706476d1e50f600e355e60259ce5a3e376fef7f01af3c39c79295dfe
+- Content hash: b58bfa63e06e6838d2b322e8c9eb8db35bacd78d2f4431774760c27004316bd0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source says the determined word can be личным местоимением. The keyed phrase is кроме тех случаев.
+text=The frozen line uses this phrase for the replacement for colloquial language.
 
 ### AUTHORED_ENGLISH `en-u29-232`
 
@@ -3805,10 +3571,10 @@ text=The source says the determined word can be личным местоимен�
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a91693fb52b35c3f7415856400d92fc79ab6cd8f84a8bfa9c23a4010649dfe5a
+- Content hash: 88145fe8f2641f10fd7e21f4632b2c0be9ff2f53ed22a455afdad4428be9db3e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted active and short-form lines
+text=This phrase is the speech label (bookish speech).
 
 ### AUTHORED_ENGLISH `en-u29-233`
 
@@ -3818,10 +3584,10 @@ text=Admitted active and short-form lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: efff1d3760d0e1a9ed340d0ac011f1b489ca4da2de65c7d392ef729363238d25
+- Content hash: c736c92c1dbf9f75bc6ad31dc03d7b2f7894596128aae8e4cdd49b43bea8dd4f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 29 uses admitted active lines, the frozen participial-phrase punctuation rule, the short-form contrast, and the bookish-speech note for adverbial forms. This note is not a claim about every bookish text. Qualified review is pending.
+text=This phrase is the other label (colloquial language).
 
 ### AUTHORED_ENGLISH `en-u29-234`
 
@@ -3831,10 +3597,10 @@ text=Proposed Unit 29 uses admitted active lines, the frozen participial-phrase 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d99a2083bfe5ceca400a70b73bbc07dff4b65fde6e4121a0e2c9809febfd76f
+- Content hash: 5acbeb8129ad9519a2b01d8ff160b86e49edf559d31be0812cec8c5f9ce5aa15
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 29 in the copy you own. The app records do not replace that lesson.
+text=The frozen line says adverbial participles are considered a feature of bookish speech. This gloss is written beside the shown line.
 
 ### AUTHORED_ENGLISH `en-u29-235`
 
@@ -3844,10 +3610,10 @@ text=Open Lesson 29 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f43e2a6337c27acd7c9a4d1a1131c6fc7eebb674a6ba53e67f62b89a17b9e3fb
+- Content hash: 805fb7b972951714c1b9a625fc0c347b5f1fe7b38200198a2706312b8e8982f6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=Which admitted English gloss is written beside the shown line?
 
 ### AUTHORED_ENGLISH `en-u29-236`
 
@@ -3857,10 +3623,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5566ec3c68d3d945ecfe8f65a0d0b1e00072e81aaf4941c3dcd4935fc0d4e7d9
+- Content hash: 65ef518f0ddfe2f2b8bc7070ca7a2bc424af4d7b98b28e9894a15f295235775f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=The source assigns запятые не ставятся when the phrase stands before the determined word.
 
 ### AUTHORED_ENGLISH `en-u29-237`
 
@@ -3870,10 +3636,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a83a2414c5b873f1d07b9422fa2733c0b0138b2013f2afbe416c38c1bd40055d
+- Content hash: 6d052b4108c342959f91ad42b932f1c48d147c1f910b4475b8e0d9157d526119
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=The source reserves кроме тех случаев for личным местоимением and for a phrase that обозначает причину.
 
 ### AUTHORED_ENGLISH `en-u29-238`
 
@@ -3883,10 +3649,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6193bb59306ff73fda0ecb8fa5a962536e5c95d70bcf1249e7352390320fdd27
+- Content hash: 45e5bc9f0be39c0a7172dd0e9f66caea00d5992a6ea0821d0c038f0865efe489
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=запятые не ставятся does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u29-239`
 
@@ -3896,10 +3662,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd5508079105ca2a1ce1788ee96d641639aa805721ca3b0daf4d62f58d5255a5
+- Content hash: 6448dc8b6bad0de194f2f854463b2dac6f0d73b30ca073ce2c07ae7fbf76084e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=кроме тех случаев does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u29-240`
 
@@ -3909,10 +3675,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 790946734ea55c373f38140bad7d57c24d5debc2093cf6c18d8e9c4bb7f616bd
+- Content hash: 392d886ee4fb610ab1dd3922acfd13ab19913f7d9290886c03dc94b8a7f085ab
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=The source says a phrase after the determined word выделяется запятыми с двух сторон and gives Программа, написанная в спешке, выполнила недопустимую операцию. The keyed phrase is выделяется запятыми с двух сторон.
 
 ### AUTHORED_ENGLISH `en-u29-241`
 
@@ -3922,10 +3688,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8d1d66c66b05f48e0da5ec9ccfa96f4334d102414cd03dae1440525113fa7519
+- Content hash: da64dfe4f0a289b943278765d36534f0558b199640023cfd0f1749048de2de57
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 29 in your copy
+text=Which admitted phrase classifies the shown form?
 
 ### AUTHORED_ENGLISH `en-u29-242`
 
@@ -3935,10 +3701,10 @@ text=Work Lesson 29 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f36fd54ba7d772d5e62b1094434f92ad4ebbc5747951107e5a4ac8eac923281d
+- Content hash: 37852cb5b270d74fde28855d67471126e201ab490654c31fd4f7b1119266f563
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 29 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=The source assigns выделяется запятыми с двух сторон to Программа, написанная в спешке, выполнила недопустимую операцию.
 
 ### AUTHORED_ENGLISH `en-u29-243`
 
@@ -3948,10 +3714,10 @@ text=Do Lesson 29 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 91e356a1cffb0a0e09adc505f47ff371c7ba973624c7077250e828409610b682
+- Content hash: 809f1ab2b9e91643df14a777d9e24838596583b42396967a9d1d58abad39dc86
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 29 in your copy and complete its lesson work.
+text=The source assigns запятая ставится только перед причастным оборотом when the sentence ends after the phrase.
 
 ### AUTHORED_ENGLISH `en-u29-244`
 
@@ -3961,10 +3727,10 @@ text=Open Lesson 29 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 32ab8d18661e44a780d4ac7d05dfe359de58c7c0567817bd4861c9f66004ec18
+- Content hash: 68a45765e1c9a7379c4c8f023970897668a7893298901855b4bee1f088458856
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 29 book work
+text=выделяется запятыми с двух сторон does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u29-245`
 
@@ -3974,10 +3740,10 @@ text=Record Lesson 29 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d4436d7e836034c9863043345ec7ace889227dd5a9614d03a14839f463be28f2
+- Content hash: ffff209bfba6a5a422c60915b9b32b409ff28623c10de68f92fef615c1acae8d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 29 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=запятая ставится только перед причастным оборотом does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u29-246`
 
@@ -3987,10 +3753,10 @@ text=When you have done Lesson 29 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a758e0eefc9bbc7897d0f57947ec2005a659cbeb711b070cf119555dd5b7cc3
+- Content hash: d641ebfc46d7eff1f2234476c45539f1eff7701390bbb0d17282e04f6f6905ff
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 29 work in your copy.
+text=The source says a phrase before the determined word has запятые не ставятся and gives Написанная в спешке программа выполнила недопустимую операцию. The keyed phrase is запятые не ставятся.
 
 ### AUTHORED_ENGLISH `en-u29-247`
 
@@ -4000,10 +3766,10 @@ text=Self-attest only after the Lesson 29 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e999e1dfaaf0d7131247355c8047b1b3ce2d79ab787029e21dbfb0b05a5cbc28
+- Content hash: bc4f3ae845a040260d8813cb69703725aa86e110a5f6705fdcb8a8b4a1889169
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general bookish-register claim stays in the copy you own
+text=The source states запятые не ставятся as the default before the determined word.
 
 ### AUTHORED_ENGLISH `en-u29-248`
 
@@ -4013,10 +3779,10 @@ text=A general bookish-register claim stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac882d5b1e1b183b21d94d7f8129c22512ed4c0392abc7c585966fe34dd204f3
+- Content hash: 7c3a2adabc421e25fa18c5bb881c683ad115a2bd79dbf646fc0795b9b95d3567
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general bookish-register claim stays in the copy you own. The adverbial note is only about adverbial forms.
+text=The source assigns выделяется запятыми с двух сторон to a phrase after the determined word.
 
 ### AUTHORED_ENGLISH `en-u29-249`
 
@@ -4026,10 +3792,10 @@ text=A general bookish-register claim stays in the copy you own. The adverbial n
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 05aded4819d86ecc3b6ead1295b0f75f158d77610ae67289067bbce018d231c7
+- Content hash: 583a254138ca4d22685921ed4fad35de9db46ddd0229761211a3b1e5ad1cf26c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The bookish reading stays in the copy you own
+text=The source says the determined word can be личным местоимением. The keyed phrase is кроме тех случаев.
 
 ### AUTHORED_ENGLISH `en-u29-250`
 
@@ -4039,7 +3805,241 @@ text=The bookish reading stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 843ca04fc69fce16a121c4eb87d80e17279957ff36bf48f8e6c3b02217d7fe87
+- Content hash: 96021c4fa2e1b0176170b9feedf9797fb2ebf5afc7fa7ed6cd7f649142bf4f2a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted active and short-form lines
+
+### AUTHORED_ENGLISH `en-u29-251`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 11f1de03615c97df841ad8cb71c5113b34c64b9f5d7b959129a4eae24c899e90
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 29 uses admitted active lines, the frozen participial-phrase punctuation rule, the short-form contrast, and the bookish-speech note for adverbial forms. This note is not a claim about every bookish text. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u29-252`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 32bf11fca4c4d666b18c2e87b5dca5bf672800dab4749b70cd45c836704b8f32
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 29 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u29-253`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 19b05c08dd9eb78d8611ef5f439e6a4977ac2cf50f3a73f48e61978a06324357
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read the admitted examples on this card.
+
+### AUTHORED_ENGLISH `en-u29-254`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0ab10dde8fbf82b6290bd33a14cc7cd2ce093fdc353e7d24fe6aa1f27264c0cf
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u29-255`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 056a51dcff869e0e2f1cfc4ff14f97ab78f1f8afb67eaf6180a6b1d22906bfff
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u29-256`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 448cecd899d8b535e470b4e4e8e568dd6b99901d1658b718c9063c8ea12f2381
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u29-257`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fd3679fcd4c26c7e885cf76be3546d5773a53d711b1f2c8382cf70a4a7f8d252
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u29-258`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e32bce834a956c402319dfacf216adcdfdd39b018cddbd30c6d4d82d20795b87
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u29-259`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a8835a63cfcdc9fe84ad5afbb2f0b2b614186acf73eced99b2be11f95b8d983d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 29 in your copy
+
+### AUTHORED_ENGLISH `en-u29-260`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f85c6b11d34436ac6d800a309461367ed780e98178456fec9434a4f344d43352
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 29 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u29-261`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 92b3f7c8fb251a42a29836c52431810fc48bf307874b6a4f334f1713efec7a12
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 29 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u29-262`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7a8c03448165fcde1179c1b92886e493177ba109b59d7422b6eade6b0296724d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 29 book work
+
+### AUTHORED_ENGLISH `en-u29-263`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6943d82375f860b9ccdcf8dd023544e50d3949734568141eda9a5b2bc7b4c10f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 29 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u29-264`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 12b6436e08e56c6eeaf0a6cc5369caf66380841541bae8721f35e8aa38091024
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 29 work in your copy.
+
+### AUTHORED_ENGLISH `en-u29-265`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 897fbd666140143dade1f4ecdd98b6d8e4c7ffff4d7300bcd819b4594c0e16b0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A general bookish-register claim stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u29-266`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d207b3ad5a6e772b8b80db0e6aa90272663ee0a13ccd93b090c1a295d399808c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A general bookish-register claim stays in the copy you own. The adverbial note is only about adverbial forms.
+
+### AUTHORED_ENGLISH `en-u29-267`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ca5129d60484ddb0dd25ba76f0983118276e856d18bf01ba8c55d45b539b0b10
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The bookish reading stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u29-268`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a27c28d2b0eceaaa27a003c2598038490f3b19463063d168b240671e903482ff
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The bookish reading stays in the copy you own. The admitted note is not that reading.

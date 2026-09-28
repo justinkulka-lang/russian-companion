@@ -11,12 +11,12 @@ Unit 26 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4cf6007f69beadac5278bb42e5bf060a62fe3eb9
-- Unit content-review SHA-256: 3e5c3819182d8e2d31cb001fffd4ebec8da3af4c28301e242d06b842baaf996d
+- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
+- Unit content-review SHA-256: bdaa9683a34b35717a7f4ab3f5d00f7e8a221d96eb6f718acbf2a0f4c6b36bc8
 - Mapping-package SHA-256: c3b63d48cd809527d6450916cfead9c419eb5a607a329c7def2d8b42df6bf725
-- Pack content-review SHA-256: 68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4
-- Review-package SHA-256: 454832054f75741f1d0bcc713e2abe33d4762eb03df9e79f9320fc5ec2f90cbf
-- Repository source SHA-256: 7e73e724ef3895ff8fb3401f0a84411e74a62dfe0877fcf9015554215ee7a652
+- Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
+- Review-package SHA-256: eb055c40aefb82da1781d6de10a28faff3e26be40e894b7fdafeaf81a6167ede
+- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -41,7 +41,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 26. Observed structural scope: Stock expressions; indefinite pronouns and adverbs; word order; postal addresses; letter writing; vocabulary and correspondence work. Admitted frozen spans are pending qualified review and do not approve alignment. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=26
 prerequisites=25
-estimatedMinutes=78
+estimatedMinutes=94
 
 ## Not yet approved
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 26.
 
 ### UNIT `unit-26`
 
-- Objectives: obj-u26-word-order, obj-u26-vy-capital, obj-u26-address-notation, obj-u26-indefinite, obj-u26-book, obj-u26-postal-address, obj-u26-letter-writing, obj-u26-correspondence
-- Sessions: u26-s-orient, u26-s-word-order, u26-s-vy-capital, u26-s-address-notation, u26-s-indefinite, u26-s-book, u26-s-gap-postal-address, u26-s-gap-letter-writing, u26-s-gap-correspondence
+- Objectives: obj-u26-word-order, obj-u26-vy-capital, obj-u26-address-notation, obj-u26-indefinite, obj-u26-letter-writing, obj-u26-correspondence, obj-u26-book, obj-u26-postal-address
+- Sessions: u26-s-orient, u26-s-word-order, u26-s-vy-capital, u26-s-address-notation, u26-s-indefinite, u26-s-letter-writing, u26-s-correspondence, u26-s-book, u26-s-gap-postal-address
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c5da5d11a2a8ee1948db6f579700dab441ef78f13dea47ef0426051150a6e498
+- Content hash: 74264c4792115e41dbb5b7a86ebcffdcf582c5a3b9c67c35dd52fd935a23fe73
 
 number=26
 title=Indefinite pronouns, word order, and letter writing
@@ -86,7 +86,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 26. Observed structural scope: Stock expressions; indefinite pronouns and adverbs; word order; postal addresses; letter writing; vocabulary and correspondence work. Admitted frozen spans are pending qualified review and do not approve alignment. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=26
 prerequisites=25
-estimatedMinutes=78
+estimatedMinutes=94
 
 ### ADVANCEMENT `unit-26-advancement`
 
@@ -96,12 +96,12 @@ estimatedMinutes=78
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7bdaa9eb141f5297a2cb5929c716fffdf0baeadaa330290cfa912ba72e269fda
+- Content hash: 4e5f3a5f8b827667cf2eaffbf1e6d1ad2fb506d718fc5183c1fa971fd5d5ec52
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
-minimumDistinctChecks=8
+minimumDistinctChecks=12
 requireDueReview=false
 tutorOptional=true
 
@@ -181,6 +181,44 @@ practice=u26-st-guided-indefinite-1
 checks=u26-i-indefinite-1,u26-i-indefinite-2
 remediation=u26-st-rem-indefinite
 
+### OBJECTIVE `obj-u26-letter-writing`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 21255c5977ade66e5cbf6f1770e0ec41be036b242890cf724faecfa5f59b08ae
+
+title=Apply the admitted letter convention
+kind=RECOGNITION
+unitNumber=26
+instruction=u26-st-orient,u26-st-teach-letter-writing-1,u26-st-teach-letter-writing-2
+examples=ex-u26-letter-writing-0,ex-u26-letter-writing-1
+practice=u26-st-guided-letter-writing-1
+checks=u26-i-letter-writing-1,u26-i-letter-writing-2
+remediation=u26-st-rem-letter-writing
+
+### OBJECTIVE `obj-u26-correspondence`
+
+- Objectives: obj-u26-correspondence
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 960414effa5366460dd8fdf0c21107fe577b50ebe7b430f2c8a24c83c041f7fb
+
+title=Choose the admitted neutral correspondence fragment
+kind=RECOGNITION
+unitNumber=26
+instruction=u26-st-orient,u26-st-teach-correspondence-1,u26-st-teach-correspondence-2
+examples=ex-u26-correspondence-0,ex-u26-correspondence-1
+practice=u26-st-guided-correspondence-1
+checks=u26-i-correspondence-1,u26-i-correspondence-2
+remediation=u26-st-rem-correspondence
+
 ### OBJECTIVE `obj-u26-book`
 
 - Objectives: obj-u26-book
@@ -219,72 +257,34 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u26-letter-writing`
-
-- Objectives: obj-u26-letter-writing
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6000099f3bdad8f8d56bcd441879fc9a15876ae67efea7dbf89aeba43ca1da46
-
-title=Other letter conventions stay in the copy you own
-kind=GUIDANCE
-unitNumber=26
-instruction=u26-st-gap-letter-writing
-examples=
-practice=
-checks=
-remediation=
-
-### OBJECTIVE `obj-u26-correspondence`
-
-- Objectives: obj-u26-correspondence
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f2be2a63fe9ac084d83e73eadf7da1795ce40284e2227f1330fe0b05b629cb23
-
-title=Correspondence work stays in the copy you own
-kind=GUIDANCE
-unitNumber=26
-instruction=u26-st-gap-correspondence
-examples=
-practice=
-checks=
-remediation=
-
 ### SESSION `u26-s-orient`
 
-- Objectives: obj-u26-word-order, obj-u26-vy-capital, obj-u26-address-notation, obj-u26-indefinite, obj-u26-book
+- Objectives: obj-u26-word-order, obj-u26-vy-capital, obj-u26-address-notation, obj-u26-indefinite, obj-u26-letter-writing, obj-u26-correspondence, obj-u26-book
 - Sessions: u26-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3b89ee526352b52ba289a566b42a43ac6028e65d14a420f2ce2caf00b92ced8d
+- Content hash: edd085f4e3de1b5130ec10031884214631924e7d44941f6011743f43915b8854
 
 title=Admitted word-order and address lines
 estimatedMinutes=8
-objectives=obj-u26-word-order,obj-u26-vy-capital,obj-u26-address-notation,obj-u26-indefinite,obj-u26-book
+objectives=obj-u26-word-order,obj-u26-vy-capital,obj-u26-address-notation,obj-u26-indefinite,obj-u26-letter-writing,obj-u26-correspondence,obj-u26-book
 steps=u26-st-orient
 
 ### STEP `u26-st-orient`
 
-- Objectives: obj-u26-word-order, obj-u26-vy-capital, obj-u26-address-notation, obj-u26-indefinite, obj-u26-book
+- Objectives: obj-u26-word-order, obj-u26-vy-capital, obj-u26-address-notation, obj-u26-indefinite, obj-u26-letter-writing, obj-u26-correspondence, obj-u26-book
 - Sessions: u26-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 35c3190054c164c0930ea9a14ca51f9ca92242e154e9466505e51e65e65670b2
+- Content hash: 8e7e52c89532a8d4580198b44ca347ac55138f4dd2a104c306db382d53b32eda
 
 kind=ORIENT
 title=Admitted word-order and address lines
-body=Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, and the frozen address marks. Complete postal practice and other letter conventions stay in the copy you own. Qualified review is pending.
+body=Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. Complete postal practice stays in the copy you own. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -904,6 +904,266 @@ bookDirection=
 companionDirection=
 remediationStepId=u26-st-rem-indefinite
 
+### SESSION `u26-s-letter-writing`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-letter-writing
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f523ae2383edea7b54fcbdf15b26d40da5705a973b99a47db026b342aff7a76a
+
+title=Apply the admitted letter convention
+estimatedMinutes=12
+objectives=obj-u26-letter-writing
+steps=u26-st-teach-letter-writing-1,u26-st-guided-letter-writing-1,u26-st-teach-letter-writing-2,u26-st-rem-letter-writing,u26-st-check-letter-writing
+
+### STEP `u26-st-teach-letter-writing-1`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-letter-writing
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 60a9f3c505bbd456d562838e0bf6010cf4aef70aa50b1e8db08e6fb9360e98d1
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u26-letter-writing-0,ex-u26-letter-writing-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-st-guided-letter-writing-1`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-letter-writing
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fc9d6d14f6afe2600bbd10fe597576e2547deb261037a45c15753944639a3133
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u26-g-letter-writing-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u26-st-rem-letter-writing
+
+### STEP `u26-st-teach-letter-writing-2`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-letter-writing
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4fcb6484e79d6c8fa0e07d17007b438ea4c73028b167a86fec7a088f59dd1e2f
+
+kind=TEACH
+title=Admitted instruction
+body=They have the same basic elements:
+
+Sender’s address and date
+Greeting
+Body
+Closing and signature
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-st-rem-letter-writing`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-letter-writing
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3e077017c09ecb3031a382cd223bb0f652bb59268491a84783729e853b617e12
+
+kind=REMEDIATE
+title=Remediation
+body=They have the same basic elements:
+
+Sender’s address and date
+Greeting
+Body
+Closing and signature
+dominantAction=Continue
+references=
+items=
+examples=ex-u26-letter-writing-0,ex-u26-letter-writing-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-st-check-letter-writing`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-letter-writing
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9ee5499f064014e6a4812bf1722b366fda2ad263b63af075ca71c0a6418b6630
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u26-i-letter-writing-1,u26-i-letter-writing-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u26-st-rem-letter-writing
+
+### SESSION `u26-s-correspondence`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-correspondence
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1707d726b8685e8b553f4f48abe77a68c535a78a046dd08cd8adfe2a8511f836
+
+title=Choose the admitted neutral correspondence fragment
+estimatedMinutes=12
+objectives=obj-u26-correspondence
+steps=u26-st-teach-correspondence-1,u26-st-guided-correspondence-1,u26-st-teach-correspondence-2,u26-st-rem-correspondence,u26-st-check-correspondence
+
+### STEP `u26-st-teach-correspondence-1`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-correspondence
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 7c389a62cc909bc31b12b25620941aac8af383a51b501bbaa17cb8018478ef90
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u26-correspondence-0,ex-u26-correspondence-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-st-guided-correspondence-1`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-correspondence
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e79bfc172cb7400c25ab1749666ed163f05dd57236cedbcd7cf6838b3473880
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u26-g-correspondence-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u26-st-rem-correspondence
+
+### STEP `u26-st-teach-correspondence-2`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-correspondence
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 80ae326250fc01d26c017584f273dbebcc3ff6bfd8cce7d0378756902abcd375
+
+kind=TEACH
+title=Admitted instruction
+body=к настоящему письму прилагается—enclosed please find
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-st-rem-correspondence`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-correspondence
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e668f5716e3390211a2ca129dcb68b8e853ef1cb19b564f5941a6316f6fa2834
+
+kind=REMEDIATE
+title=Remediation
+body=к настоящему письму прилагается—enclosed please find
+dominantAction=Continue
+references=
+items=
+examples=ex-u26-correspondence-0,ex-u26-correspondence-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-st-check-correspondence`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-correspondence
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d236cd2fb61e4e4fb3fcbbac30fee0761705dbafb36be2ac4d0b5b6e5ac019b4
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u26-i-correspondence-1,u26-i-correspondence-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u26-st-rem-correspondence
+
 ### SESSION `u26-s-book`
 
 - Objectives: obj-u26-book
@@ -996,80 +1256,6 @@ references=ref-u2630-attribution
 items=
 examples=
 unavailableReason=Complete modern postal practice has no admitted frozen span.
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### SESSION `u26-s-gap-letter-writing`
-
-- Objectives: obj-u26-letter-writing
-- Sessions: u26-s-gap-letter-writing
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9b0323c25fbaebf036c61c6fa5f6a20d72a0e02acb67099ab03639e24eab6907
-
-title=Other letter conventions stay in the copy you own
-estimatedMinutes=4
-objectives=obj-u26-letter-writing
-steps=u26-st-gap-letter-writing
-
-### STEP `u26-st-gap-letter-writing`
-
-- Objectives: obj-u26-letter-writing
-- Sessions: u26-s-gap-letter-writing
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c70eab8ade8cc77ddfec6a49198aa74967e2320a22af460091d12f6a6b67bc11
-
-kind=UNAVAILABLE
-title=Other letter conventions stay in the copy you own
-body=Other letter conventions stay in the copy you own. The written capital form is not a whole letter.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=General letter structure, openings, closings, and register have no admitted frozen span.
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### SESSION `u26-s-gap-correspondence`
-
-- Objectives: obj-u26-correspondence
-- Sessions: u26-s-gap-correspondence
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dd93914798cc0e0ae8fb40dd91f7dce7cb5b79efbcc3f2fa46a119f1741144d5
-
-title=Correspondence work stays in the copy you own
-estimatedMinutes=4
-objectives=obj-u26-correspondence
-steps=u26-st-gap-correspondence
-
-### STEP `u26-st-gap-correspondence`
-
-- Objectives: obj-u26-correspondence
-- Sessions: u26-s-gap-correspondence
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fbfed2e4c2c07f8869c435f89c7a3b211e0a35b724de7dc8686e4fa2eb33e515
-
-kind=UNAVAILABLE
-title=Correspondence work stays in the copy you own
-body=Correspondence work stays in the copy you own. The admitted lines do not supply it.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=Correspondence work has no admitted frozen span.
 bookDirection=
 companionDirection=
 remediationStepId=
@@ -1312,6 +1498,74 @@ note=референтный денотативный статус слабой �
 objectiveId=obj-u26-indefinite
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u26-letter-writing-0`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 142bd5c481929c2f2ae4876f150af6c5c8f4eb49aaebc2cd2fcbca7610cde085
+
+kind=LEXICAL
+letterId=
+display=Здравствуйте!
+note=Greetings
+objectiveId=obj-u26-letter-writing
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u26-letter-writing-1`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8714aa8185464def052da9b9b7cee055518776af213ea71eac6414ea5044de50
+
+kind=LEXICAL
+letterId=
+display=Уважаемый Иван Иванович
+note=Respected Ivan Ivanovich
+objectiveId=obj-u26-letter-writing
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u26-correspondence-0`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-correspondence
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 585e75884791a67bc974b48fd3b825ef3947fb215c324879013ea5d71c5ff676
+
+kind=LEXICAL
+letterId=
+display=к настоящему письму прилагается
+note=enclosed please find
+objectiveId=obj-u26-correspondence
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u26-correspondence-1`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-correspondence
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 089b54067b1502a1b3cceff769d4109eca039d971b249abe0ca40feb08131b3d
+
+kind=LEXICAL
+letterId=
+display=С уважением
+note=Respectfully
+objectiveId=obj-u26-correspondence
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u26-g-word-order-0`
 
 - Objectives: obj-u26-word-order
@@ -1451,6 +1705,76 @@ contrastMembers=референтность и неизвестность гов�
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u26-indefinite-0-ru | prov-ex-u26-indefinite-0-en | prov-ex-u26-indefinite-1-en | prov-ex-u26-indefinite-2-en
 responseKind=RUSSIAN_PHRASE
+
+### GUIDED_PRACTICE `u26-g-letter-writing-0`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7c274594cf7b7551a3f4f3b1f9e43bdb9fc4e4d350206b5449648106ec30cc9a
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English statement is the Russian organizational difference?
+promptLetter=In English we begin with a topic sentence and then follow with supporting facts.
+options=In Russian the facts come first with the topic sentence as the conclusion. | Strangers and people who are not closed friends should never be addressed as “dear”.
+answer=In Russian the facts come first with the topic sentence as the conclusion.
+feedback=The source states In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.
+objectiveId=obj-u26-letter-writing
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The source states Strangers and people who are not closed friends should never be addressed as “dear”. That is the address limit, not the organizational difference.
+testedFeature=LETTER_ORGANIZATION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-letter-writing-0
+cueLanguage=rule
+independent=false
+answerSourceIds=prov-u26-letter-writing-x-1
+distractorSourceIds= | prov-u26-letter-writing-x-2
+distractorDifference= | The source states Strangers and people who are not closed friends should never be addressed as “dear”. That is the address limit, not the organizational difference.
+whyAnswerDemonstratesObjective=The source states In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.
+contrastMembers=In Russian the facts come first with the topic sentence as the conclusion. | Strangers and people who are not closed friends should never be addressed as “dear”.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u26-letter-writing-x-0 | prov-u26-letter-writing-x-1 | prov-u26-letter-writing-x-2
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u26-g-correspondence-0`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-correspondence
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: aeb5f122bca9de7792010528ab087d8ab9710b424931a0dc8963b2ff541f43ec
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English correspondence label matches the shown fragment?
+promptLetter=к настоящему письму прилагается
+options=enclosed please find | Respectfully
+answer=enclosed please find
+feedback=The source pairs к настоящему письму прилагается with enclosed please find. enclosed please find.
+objectiveId=obj-u26-correspondence
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The source pairs С уважением with Respectfully.
+testedFeature=CORRESPONDENCE_ENCLOSURE
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u26-correspondence-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u26-correspondence-0-en
+distractorSourceIds= | prov-ex-u26-correspondence-1-en
+distractorDifference= | Respectfully closes the letter. It does not gloss the enclosure line.
+whyAnswerDemonstratesObjective=The source pairs к настоящему письму прилагается with enclosed please find.
+contrastMembers=enclosed please find | Respectfully
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u26-correspondence-0-ru | prov-ex-u26-correspondence-0-en | prov-ex-u26-correspondence-1-en
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u26-i-word-order-1`
 
@@ -1732,19 +2056,159 @@ relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u26-indefinite-2-ru | prov-ex-u26-indefinite-2-en | prov-ex-u26-indefinite-0-en | prov-ex-u26-indefinite-1-en
 responseKind=RUSSIAN_PHRASE
 
+### INDEPENDENT_CHECK `u26-i-letter-writing-1`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 695d6fde41a1dafbf2b2d292db5236981a2407e9ade74683d5aa6bc7fa704d0b
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English limit applies to the shown neutral greeting?
+promptLetter=Здравствуйте!
+options=Strangers and people who are not closed friends should never be addressed as “dear”. | In Russian the facts come first with the topic sentence as the conclusion.
+answer=Strangers and people who are not closed friends should never be addressed as “dear”.
+feedback=The source states Strangers and people who are not closed friends should never be addressed as “dear”. The shown greeting is Здравствуйте!
+objectiveId=obj-u26-letter-writing
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The source states In Russian the facts come first with the topic sentence as the conclusion. That is the organizational difference, not the address limit.
+testedFeature=LETTER_ADDRESS_LIMIT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-letter-writing-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u26-letter-writing-x-2
+distractorSourceIds= | prov-u26-letter-writing-x-1
+distractorDifference= | The source states In Russian the facts come first with the topic sentence as the conclusion. That is the organizational difference, not the address limit.
+whyAnswerDemonstratesObjective=The source states Strangers and people who are not closed friends should never be addressed as “dear”. The shown greeting is Здравствуйте!
+contrastMembers=Strangers and people who are not closed friends should never be addressed as “dear”. | In Russian the facts come first with the topic sentence as the conclusion.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ex-u26-letter-writing-0-ru | prov-u26-letter-writing-x-2 | prov-u26-letter-writing-x-1
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u26-i-letter-writing-2`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6396aba096887acee1ca28117f4d09b227df0b06e68d5968b1286af104d569fe
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English element follows the body?
+promptLetter=Body
+options=Closing and signature | Greeting | Sender’s address and date
+answer=Closing and signature
+feedback=The source names Body. The source names Closing and signature. They have the same basic elements:
+objectiveId=obj-u26-letter-writing
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The source names Greeting. That element does not follow the body. | The source names Sender’s address and date. That element does not follow the body.
+testedFeature=LETTER_STRUCTURE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-letter-writing-2
+cueLanguage=rule
+independent=true
+answerSourceIds=prov-u26-letter-writing-x-4
+distractorSourceIds= | prov-u26-letter-writing-x-5 | prov-u26-letter-writing-x-6
+distractorDifference= | The source names Greeting. That element does not follow the body. | The source names Sender’s address and date. That element does not follow the body.
+whyAnswerDemonstratesObjective=The source names Body. The source names Closing and signature. They have the same basic elements:
+contrastMembers=Closing and signature | Greeting | Sender’s address and date
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u26-letter-writing-x-3 | prov-u26-letter-writing-x-4 | prov-u26-letter-writing-x-5 | prov-u26-letter-writing-x-6
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u26-i-correspondence-1`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-correspondence
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 61a4a60b12d77c4b681fcb32ab204408af21718c00864fee5bbe3d0e56ea371b
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English correspondence label matches the shown fragment?
+promptLetter=С уважением
+options=Respectfully | enclosed please find
+answer=Respectfully
+feedback=The source pairs С уважением with Respectfully. Respectfully.
+objectiveId=obj-u26-correspondence
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The source pairs к настоящему письму прилагается with enclosed please find.
+testedFeature=CORRESPONDENCE_CLOSING
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u26-correspondence-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u26-correspondence-1-en
+distractorSourceIds= | prov-ex-u26-correspondence-0-en
+distractorDifference= | enclosed please find glosses the enclosure line, not the closing.
+whyAnswerDemonstratesObjective=The source pairs С уважением with Respectfully.
+contrastMembers=Respectfully | enclosed please find
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u26-correspondence-1-ru | prov-ex-u26-correspondence-1-en | prov-ex-u26-correspondence-0-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u26-i-correspondence-2`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-correspondence
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 51b06844005198453152b579cb3231a09a101cd73d0bd02fe129613f395f3699
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted fragment matches the shown correspondence meaning?
+promptLetter=enclosed please find
+options=к настоящему письму прилагается | С уважением
+answer=к настоящему письму прилагается
+feedback=The source pairs к настоящему письму прилагается with enclosed please find. к настоящему письму прилагается.
+objectiveId=obj-u26-correspondence
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The source pairs С уважением with Respectfully.
+testedFeature=CORRESPONDENCE_ENCLOSURE_FORM
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u26-correspondence-2
+cueLanguage=rule
+independent=true
+answerSourceIds=prov-ex-u26-correspondence-0-ru
+distractorSourceIds= | prov-ex-u26-correspondence-1-ru
+distractorDifference= | С уважением is the neutral closing, not the enclosure line.
+whyAnswerDemonstratesObjective=The source pairs к настоящему письму прилагается with enclosed please find.
+contrastMembers=к настоящему письму прилагается | С уважением
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u26-correspondence-0-en | prov-ex-u26-correspondence-0-ru | prov-ex-u26-correspondence-1-ru
+responseKind=RUSSIAN_PHRASE
+
 ### REFERENCE `ref-u2630-attribution`
 
 - Objectives: none
-- Sessions: u26-s-orient, u26-s-word-order, u26-s-vy-capital, u26-s-address-notation, u26-s-indefinite, u26-s-book, u26-s-gap-postal-address, u26-s-gap-letter-writing, u26-s-gap-correspondence
+- Sessions: u26-s-orient, u26-s-word-order, u26-s-vy-capital, u26-s-address-notation, u26-s-indefinite, u26-s-letter-writing, u26-s-correspondence, u26-s-book, u26-s-gap-postal-address
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 9fcc6f9c78f9e9e351395ed6e5e214627eb77d831223d62c49e66e77ac563c5d
+- Content hash: 0c9df32288df2606e1aaad52bc5d85c409cf08ffa4810cff4ff055ec72e86efa
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, general letter conventions, participle stress, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, participle stress, a general bookish-register claim, and dictionary use are not prepared. ReadyRussian letter conventions cover structure, the Russian and English organizational difference, and the stranger address limit. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
@@ -2140,6 +2604,134 @@ attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=aac5782cb4cd7c5e32803b2eb556277c4cb031d42edea97e57fc16c18e506467
 contentHash=9bf3f274b37a666757a5df6bf03a9b40d7816a78a9fb5f796cbb5cc85bffac7e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-correspondence-0-en`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: efd8918e82753a01d129c5f1c5ab9052067df0f9aa65c053a98be11bdf60e195
+
+recordType=meaning
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Headi
+originalSourceText=к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Heading_20_2" lang="en">Closing</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">С уважением</span>—Respectfully
+shippedText=enclosed please find
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=185bf403015f238efbb7ddd901f75f59b00d2e0dc23c395a8299d2a5ff6a3760
+contentHash=e38d302af85ad0fd7e79285487fe4f5688a57e2c1f3e0f006ee7f06121bd1819
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-correspondence-0-ru`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ee2ba43e2338fea056952238b9cc46a46a75e7f18052f2758d3f716e876b6901
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Headi
+originalSourceText=к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Heading_20_2" lang="en">Closing</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">С уважением</span>—Respectfully
+shippedText=к настоящему письму прилагается
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=185bf403015f238efbb7ddd901f75f59b00d2e0dc23c395a8299d2a5ff6a3760
+contentHash=9f78ae1601b8d8b10c0c6229b026d9cdb51637dd5c26fd9b929161d75221cf08
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-correspondence-1-en`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 61b9094da8191ef67f19f06e0fbd884095abfd93bbe8fa670cdb7d2be3aa7e76
+
+recordType=meaning
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Headi
+originalSourceText=к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Heading_20_2" lang="en">Closing</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">С уважением</span>—Respectfully
+shippedText=Respectfully
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=185bf403015f238efbb7ddd901f75f59b00d2e0dc23c395a8299d2a5ff6a3760
+contentHash=78d04ddc50bd235ab102c5f6c68f375b95bee94b38cf1ee61f253175a0608b1a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-correspondence-1-ru`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5c4e6221d4729deab7bc856fd6576063864a2511d94eed5705e81f6a31f48e83
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Headi
+originalSourceText=к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Heading_20_2" lang="en">Closing</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">С уважением</span>—Respectfully
+shippedText=С уважением
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=185bf403015f238efbb7ddd901f75f59b00d2e0dc23c395a8299d2a5ff6a3760
+contentHash=066e795890b69da33bb923164e56c156503331be31e6aa70dcc981a398a96a57
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2704,6 +3296,186 @@ attribution=Участники русской Википедии, CC BY-SA 4.0, 
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
 contentHash=3a071903d868786241f1f0b6e5e334fc02f83ec52ff1c3beb22ae319228bb0e4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-letter-writing-0-en`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9328ff8aab37b1784712d2bcd4f3f0bb83becbec015338168512a88d378d5722
+
+recordType=meaning
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+originalSourceText=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+shippedText=Greetings
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+contentHash=9eabb1416f00748823432e5316426992b80c61162e30a1b44c8e01247054c90c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-letter-writing-0-ru`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5f4cf0203b8c66a81057868a70b1bc64d49141e14ba26ce30f3094a4ab1e8583
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+originalSourceText=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+shippedText=Здравствуйте!
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+contentHash=92d6a4ecc0932cf01546d2935fe13ce8b839badfd28336e54b9072186c2241b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-letter-writing-1-en`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c7be2ee3359c75c8b69c3715ff68ab408d4cd1a4c7b2c77deaf1a2c6e123831f
+
+recordType=meaning
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+originalSourceText=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+shippedText=Respected Ivan Ivanovich
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+contentHash=e17f6c7e4f512b390f61728497752539c589e0ea40e0f45594dbdb415b531518
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-letter-writing-1-ru`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 85eb3a3621a3b8f9a1553c4e7e75ea24bad3d9c62d2a5c9211e4fc8fee9bc353
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+originalSourceText=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+shippedText=Уважаемый Иван Иванович
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+contentHash=aab6dc9a342328eebe3e5372f07eb01fad0b605a2a1d1e91f8a7bfa841192f27
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3327,6 +4099,70 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u26-correspondence-rem`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0dee97baec9f9d620d972b66f40935cbdb4e58adaa46f39c678d56cf5f99b8da
+
+recordType=instruction
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Headi
+originalSourceText=к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Heading_20_2" lang="en">Closing</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">С уважением</span>—Respectfully
+shippedText=к настоящему письму прилагается—enclosed please find
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=185bf403015f238efbb7ddd901f75f59b00d2e0dc23c395a8299d2a5ff6a3760
+contentHash=19d7ec626d674df04aea2fd29bd46c2e90d63fb12399652fcfd8de00aa1fb388
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-correspondence-rem-r0`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2c0e895c7089f914652aaa47008958e2a52751a0eab83d4643add9ea0dab924f
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Headi
+originalSourceText=к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Heading_20_2" lang="en">Closing</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">С уважением</span>—Respectfully
+shippedText=к настоящему письму прилагается
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=185bf403015f238efbb7ddd901f75f59b00d2e0dc23c395a8299d2a5ff6a3760
+contentHash=9f78ae1601b8d8b10c0c6229b026d9cdb51637dd5c26fd9b929161d75221cf08
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u26-indefinite-rem`
 
 - Objectives: obj-u26-indefinite
@@ -3509,6 +4345,416 @@ attribution=Участники русской Википедии, CC BY-SA 4.0, 
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
 contentHash=9d867296cbce7493866694609448411d6e50ec33cba857a98e60d7c308aa9fe4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-letter-writing-rem`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0ab36bc455dcc44462c1f1ef3c20ef67f32081bb6cc728c7f7d71374a63190e8
+
+recordType=instruction
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+originalSourceText=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+shippedText=They have the same basic elements:
+
+Sender’s address and date
+Greeting
+Body
+Closing and signature
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+contentHash=fb8d4e038c06e95e2f0d42f2cd0b201757b4b7505b5ab4682d83cc6d9e68d97b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-letter-writing-x-0`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6d10f31b5e1a766ef4b3f417113ee4e99874840d22793d3fb2ddeada9ab8eb0b
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+originalSourceText=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+shippedText=In English we begin with a topic sentence and then follow with supporting facts.
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+contentHash=cf430cb4590edaf7ee30173748806fbcba7f4475ae0208b377c0dadeaf7ab7a8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-letter-writing-x-1`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3d1c4d7b732ff6cd61e9cd04b01907f74fe60cb92e41ccc80cb484ec6f28b613
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+originalSourceText=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+shippedText=In Russian the facts come first with the topic sentence as the conclusion.
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+contentHash=42234c4f3aca388fe4663bdfc9b31def2bd0bb0c875057a664234dddc5535564
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-letter-writing-x-2`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bdb4d4a3e2446c25ae59a2745e808d8a0fd4384805c590f8d6893c2825cdde1f
+
+recordType=instruction
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+originalSourceText=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+shippedText=Strangers and people who are not closed friends should never be addressed as “dear”.
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+contentHash=81b8e01f615216b1cc387469c66f15ce486cdc14dd60d9fa78ba4fb055e37124
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-letter-writing-x-3`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b843a7c23584ab6a3a16fb11620abb303f936248dc9c6ab1a899ce59675decb9
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+originalSourceText=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+shippedText=Body
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+contentHash=6ccaa6415b5ee449e3c5c716f57b4608ebe3b780f5aa6b077bc5d8eee5d961f9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-letter-writing-x-4`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 832c0195883ed38e08b2d4bc4bc78d2149c7029f4b96b2e3227a010c0fd0b781
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+originalSourceText=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+shippedText=Closing and signature
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+contentHash=4689e0d661a2dfc5675b26496a1c32cfb89f5dfff382601c0627f486192c2e78
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-letter-writing-x-5`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 031f13e75ced3558abbf66875c3a9dc444514f283bcffebc6593cf2c577f0d97
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+originalSourceText=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+shippedText=Greeting
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+contentHash=2f35055d7f7e67b9560f58dfb588996dbdebbb568d14f488ce3870089405289a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-letter-writing-x-6`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 85fd4e5eefe131953f97755b90f11652f880430bf91bb49db3e20ef13033449c
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+originalSourceText=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+shippedText=Sender’s address and date
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+contentHash=6f07886fb3afd91f6c7d9e587d9013056b55f42e4340cc6f88a4b250fc026fa4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-letter-writing-x-7`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 42a30154783edec5b1d122f8f3ba1c0b32bcbb41dcf7a13f58417800ee925270
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+originalSourceText=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+shippedText=They have the same basic elements:
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+contentHash=b92e7e6acd58f99f2b30090179d365072c85ae869aad80da7c1f101cffd8274d
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4402,10 +5648,10 @@ text=The source says this series expresses референтный денотат
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fa8b12af478d47449ad38c624d52054e85f29c60fceeea9cb3b7111d44c8cbb1
+- Content hash: f6128f189b33654ca2e728e1aa9768ff9ce039bd3db6ec277035d4f4cba57bd3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted word-order and address lines
+text=The source states
 
 ### AUTHORED_ENGLISH `en-u26-060`
 
@@ -4415,10 +5661,10 @@ text=Admitted word-order and address lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 02efad5cbf81157c29291ecf703a032faea29868f429d85f399bf143f6b20e83
+- Content hash: cf0ce06775845d550f545d456b955ac6c94d4724c3d82a383777d7cc0163a2ea
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, and the frozen address marks. Complete postal practice and other letter conventions stay in the copy you own. Qualified review is pending.
+text=The source names
 
 ### AUTHORED_ENGLISH `en-u26-061`
 
@@ -4428,10 +5674,10 @@ text=Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-ser
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc090d65c194e4c671ff9fc6f08ad201a8a02350d3953f56118c543a6b07d035
+- Content hash: 77277e30c8c8226e1bcdcd9deb784841ad485955b31ad9ad6f02d68244f4b1c2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 26 in the copy you own. The app records do not replace that lesson.
+text=The shown greeting is
 
 ### AUTHORED_ENGLISH `en-u26-062`
 
@@ -4441,10 +5687,10 @@ text=Open Lesson 26 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca02266ca914cc201d77cbc72156b677ec80c12328b9a97e7ac5b3366b9e376b
+- Content hash: af7a856e27bb2a7138bbfea8673793a000055bb64c1378189835343d7d6c5a7d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=That is the address limit, not the organizational difference.
 
 ### AUTHORED_ENGLISH `en-u26-063`
 
@@ -4454,10 +5700,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 66553af4f47f586d9256b74cadab8fbc7d2f34beb048c26430643a6235d170fa
+- Content hash: 3a97790fe138776444170ebe85402b0b350dce86af05cf3d9061f3eb67c9c965
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=That is the organizational difference, not the address limit.
 
 ### AUTHORED_ENGLISH `en-u26-064`
 
@@ -4467,10 +5713,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0340db2f02b24a185329c762688469ab0544b4d49da7afb02c8284df97c5b541
+- Content hash: 6616391e0ac6bae2cfbb02dfa437d236826b8f083a5268d7d9336672fc720f52
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=That element does not follow the body.
 
 ### AUTHORED_ENGLISH `en-u26-065`
 
@@ -4480,10 +5726,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 02b8a5046e5ac8a52317d186b6fc06ae2895119b4c0d291e6a657c29911c36f3
+- Content hash: d3ba28a967539902c154b687d5a434f343d1ff39a1831b07aea2ef5d0947c620
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Which admitted English statement is the Russian organizational difference?
 
 ### AUTHORED_ENGLISH `en-u26-066`
 
@@ -4493,10 +5739,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65bdb78094e361eaa451245a970d187dd3aa5db11761ea12a2dc0e63e3f76563
+- Content hash: 972a814e630a3de13f8fd811d94d40572ea614076fb9888e93dad084f9dedb35
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Which admitted English limit applies to the shown neutral greeting?
 
 ### AUTHORED_ENGLISH `en-u26-067`
 
@@ -4506,10 +5752,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 41af2826f850d36a69ec7178046bdc130ee465ad0b46ac95004af79a9ba82189
+- Content hash: c21a137c986fbf95633c077e6afbe8cdf3db9bb526e3efcb65d6e3c8aa6c805f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Which admitted English element follows the body?
 
 ### AUTHORED_ENGLISH `en-u26-068`
 
@@ -4519,10 +5765,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 90e28c3a5984ffdef456497962369bd7ff9aafdc8c19f3e5978e0dbd13960878
+- Content hash: d0f4e2ab087429227e427c9890415ac71067436192e215f2c885e408fc0fd488
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 26 in your copy
+text=The source pairs С уважением with Respectfully.
 
 ### AUTHORED_ENGLISH `en-u26-069`
 
@@ -4532,10 +5778,10 @@ text=Work Lesson 26 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 958daad2defa8458264e557970f160f6311f73ae6204cfe0bc508caa6d2ba881
+- Content hash: f240b8c08962f83104d105e45e19284082016c0a9b38fc5c7c816e0ccdc42d7b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 26 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Respectfully closes the letter. It does not gloss the enclosure line.
 
 ### AUTHORED_ENGLISH `en-u26-070`
 
@@ -4545,10 +5791,10 @@ text=Do Lesson 26 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a01518c9008e3e74199becb19aff59e60bb5f2a157ce4b6ca9a60c16b4df87fa
+- Content hash: 1327a15deac068686f923eb74840156b7b2ef0f3a6d21af854053ebbba1de3ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 26 in your copy and complete its lesson work.
+text=The source pairs к настоящему письму прилагается with enclosed please find.
 
 ### AUTHORED_ENGLISH `en-u26-071`
 
@@ -4558,10 +5804,10 @@ text=Open Lesson 26 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 39c40de0efe2671fc5b4655aa9176e82ec64b6bd5a3f9b45641733482d631532
+- Content hash: 88a89d628767d4cb4189f85ee31778785e2e31306e65755fd5ea6b77d1b14075
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 26 book work
+text=Which admitted English correspondence label matches the shown fragment?
 
 ### AUTHORED_ENGLISH `en-u26-072`
 
@@ -4571,10 +5817,10 @@ text=Record Lesson 26 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4657c1c9339226d08c29818adbfb858e4df49a206be2285ba4d90eee8ef1c54
+- Content hash: 565765a411391b2e4d54397f55b2cb4e4b3b4ca17e687a8b942452fa279771b8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 26 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=enclosed please find glosses the enclosure line, not the closing.
 
 ### AUTHORED_ENGLISH `en-u26-073`
 
@@ -4584,10 +5830,10 @@ text=When you have done Lesson 26 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f9d6cb1335074b31479ac65f2f7a11f6dc941d2059580291a6b22749041d6285
+- Content hash: b6bf0ded2673328a06253c74942746abe4b07155ad3d7e63919eda6d742db3c9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 26 work in your copy.
+text=С уважением is the neutral closing, not the enclosure line.
 
 ### AUTHORED_ENGLISH `en-u26-074`
 
@@ -4597,10 +5843,10 @@ text=Self-attest only after the Lesson 26 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 927c3a5646fa0083ca42773ac9320a75dec9d6fa3e4797d388846cd5066d2638
+- Content hash: 607c50fc6d889b3fd1ab1e29597a2a150e5f0ad6267123606c741eef8bce4c09
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Complete postal practice stays in the copy you own
+text=Which admitted fragment matches the shown correspondence meaning?
 
 ### AUTHORED_ENGLISH `en-u26-075`
 
@@ -4610,10 +5856,10 @@ text=Complete postal practice stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7fe52258ab0c8a0f60cd9045c4dc72f5c2a55bfa1c721f8498608ad5f580a0c9
+- Content hash: 4da6c129fe29862d98a3ac022e40693124168ca804fce9b59cd9e35c5e7302d5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Complete postal practice stays in the copy you own. The frozen address marks are not that practice.
+text=Admitted word-order and address lines
 
 ### AUTHORED_ENGLISH `en-u26-076`
 
@@ -4623,10 +5869,10 @@ text=Complete postal practice stays in the copy you own. The frozen address mark
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 49df45b621d053af29e6523f2ee9f8f793e82306a9db20047cf8350a86882f46
+- Content hash: e35951b5c40449c8ab889c98da42c4c7f694fdb86d6b1aad4fdad069fa5c67bb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Other letter conventions stay in the copy you own
+text=Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. Complete postal practice stays in the copy you own. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u26-077`
 
@@ -4636,10 +5882,10 @@ text=Other letter conventions stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 213fe8bfced9bc04272157033fe97e259e1e0886850e3764202a05819b01e573
+- Content hash: 9bb8a6920f3e9f13176b3467214bd695da2d7a8cea4b7d14753bc7abef5643fb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Other letter conventions stay in the copy you own. The written capital form is not a whole letter.
+text=Open Lesson 26 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u26-078`
 
@@ -4649,10 +5895,10 @@ text=Other letter conventions stay in the copy you own. The written capital form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce0b814544c1d3d7d6544184ff4c47f6e2dd6990bd670d70f20b583dba865b37
+- Content hash: 30e8cc224584a8f0a724fcf4b97842d86cf07cc3b98c2efbbfaa9c5f31dc77d1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Correspondence work stays in the copy you own
+text=Read the admitted examples on this card.
 
 ### AUTHORED_ENGLISH `en-u26-079`
 
@@ -4662,10 +5908,186 @@ text=Correspondence work stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6e4135beeddbe465ad859f498f9c42c32447659bd7fbc48b7ad4d5151674315b
+- Content hash: 2ccddd5bd9557503e4d51f86377edc58bbf73dd9b96067b402d1f5443236a15d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Correspondence work stays in the copy you own. The admitted lines do not supply it.
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u26-080`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 95be7040458d486e94ba989f8063d8b2cf27e3890cd79a439c14c6d75062cd10
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u26-081`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6b6084ab401c5db28c29f63bc769446a89f357041de18ebaaf312d9d8522ae24
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u26-082`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 47d1d5846e728aa59318964b55c253d54b91ea68a7b440420673a1d7ae0b175f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u26-083`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cbb02ff46118e2d744682c20e4c64ad3dcef84e9a483e33d4c0d8fe566236223
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u26-084`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: edc59426b3ec876949dd698fbea816991d3f7f78bab3d28c91c22f1d383bbb93
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 26 in your copy
+
+### AUTHORED_ENGLISH `en-u26-085`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dfbac08966876ea15822f90ba5cf75c7bf70fd8038612e3aa792779a9bdf9524
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 26 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u26-086`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dbaecfbb5cc414e66cf48b4878e0242e77f29d5a25d00263aad64433ea6ad397
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 26 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u26-087`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d40be99093bfe4cb555e85ac1e2b2dc17da297bc367e6487a69a04768524ecb4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 26 book work
+
+### AUTHORED_ENGLISH `en-u26-088`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 51c1b34396e1f08bdf6dda948c51b99a5cf5b404eb4a656d039da55f29bfe526
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 26 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u26-089`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 24cca2316779a60b45b97228acbf1c62bceccd25708a12f1d97e13b5c5f21b31
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 26 work in your copy.
+
+### AUTHORED_ENGLISH `en-u26-090`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6fd164fa989aced920595a36c97a1bdaa83e96e56e9e7e02a39d966544ae1c67
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Complete postal practice stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u26-091`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 917a6652030551451dc13c829523a31f2068e120f4eeb579b4625e4de7b53eda
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Complete postal practice stays in the copy you own. The frozen address marks are not that practice.
+
+### SOURCE_CAPABILITY `cap-obj-u26-correspondence`
+
+- Objectives: obj-u26-correspondence
+- Sessions: none
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: SOURCE_CAPABILITY
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0f81a4d2aced48abab29034bd7a77ea7e6ec3f6b94664c703966307b6baa2442
+
+sourceId=src-readyrussian-letter
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Headi
+sourceHash=185bf403015f238efbb7ddd901f75f59b00d2e0dc23c395a8299d2a5ff6a3760
+supportedClaim=correspondence-work
+exactSpan=к настоящему письму прилагается</span>—enclosed please find</p>
+<h2 class="Heading_20_2" lang="en">Closing</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">С уважением</span>—Respectfully
 
 ### SOURCE_CAPABILITY `cap-obj-u26-indefinite`
 
@@ -4701,6 +6123,39 @@ exactSpan===== Серия на ''-то'' ====
 
 ==== Серия на ''кое-'' ====
 Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+
+### SOURCE_CAPABILITY `cap-obj-u26-letter-writing`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: none
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: SOURCE_CAPABILITY
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0490a894b7830e7044745e91efe11dda56cfd7cececeeba519b13a64f943b167
+
+sourceId=src-readyrussian-letter
+sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
+sourceRecordId=letter:They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en"
+sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+supportedClaim=letter-writing
+exactSpan=They have the same basic elements:</p>
+<ol class="L1">
+<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
+<li class="P15" lang="en">Greeting</li>
+<li class="P15" lang="en">Body</li>
+<li class="P15" lang="en">Closing and signature</li>
+</ol>
+<p class="P11" lang="en">But there are two important differences:</p>
+<ol class="L2">
+<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
+<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
+</ol>
+<h2 class="Heading_20_2" lang="en">Greeting</h2>
+<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
+<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
 
 ### SOURCE_CAPABILITY `cap-obj-u26-word-order`
 
@@ -4773,6 +6228,21 @@ CC BY-SA 4.0
 Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-readyrussian-letter`
+
+- Objectives: none
+- Sessions: none
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 812a73c4d5eeb4b51e9ae2c4411a12e65aa35b74a4a4faea1f396788a62f2dde
+
+Phrasebook 12 — Letter Writing
+CC BY-SA 4.0
+ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -4827,6 +6297,20 @@ permitsAppUse=true
 - Content hash: 3bdf5d4fc7cdb37198a732d1a8385b5c80cb75d9e24b2891c3d1bb04c49de075
 
 src-ruwiki-neopredelennoe-mestoimenie-149963314
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-readyrussian-letter`
+
+- Objectives: none
+- Sessions: none
+- Source: src-readyrussian-letter
+- Rights: rights-readyrussian-letter
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: eb86203367e288b1beda25c99de57f9e822821d36b1eb4a8c98b589872c9b855
+
+src-readyrussian-letter
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -4893,15 +6377,33 @@ permitsAppUse=true
 - `obj-u26-indefinite` CHECK `u26-i-indefinite-1`
 - `obj-u26-indefinite` CHECK `u26-i-indefinite-2`
 - `obj-u26-indefinite` REMEDIATION `u26-st-rem-indefinite`
+- `obj-u26-letter-writing` INSTRUCTION `u26-st-orient`
+- `obj-u26-letter-writing` INSTRUCTION `u26-st-teach-letter-writing-1`
+- `obj-u26-letter-writing` INSTRUCTION `u26-st-teach-letter-writing-2`
+- `obj-u26-letter-writing` EXAMPLE `ex-u26-letter-writing-0`
+- `obj-u26-letter-writing` EXAMPLE `ex-u26-letter-writing-1`
+- `obj-u26-letter-writing` PRACTICE `u26-st-guided-letter-writing-1`
+- `obj-u26-letter-writing` CHECK `u26-i-letter-writing-1`
+- `obj-u26-letter-writing` CHECK `u26-i-letter-writing-2`
+- `obj-u26-letter-writing` REMEDIATION `u26-st-rem-letter-writing`
+- `obj-u26-correspondence` INSTRUCTION `u26-st-orient`
+- `obj-u26-correspondence` INSTRUCTION `u26-st-teach-correspondence-1`
+- `obj-u26-correspondence` INSTRUCTION `u26-st-teach-correspondence-2`
+- `obj-u26-correspondence` EXAMPLE `ex-u26-correspondence-0`
+- `obj-u26-correspondence` EXAMPLE `ex-u26-correspondence-1`
+- `obj-u26-correspondence` PRACTICE `u26-st-guided-correspondence-1`
+- `obj-u26-correspondence` CHECK `u26-i-correspondence-1`
+- `obj-u26-correspondence` CHECK `u26-i-correspondence-2`
+- `obj-u26-correspondence` REMEDIATION `u26-st-rem-correspondence`
 - `obj-u26-book` INSTRUCTION `u26-st-book-work`
 - `obj-u26-book` INSTRUCTION `u26-st-book`
 - `obj-u26-postal-address` INSTRUCTION `u26-st-gap-postal-address`
-- `obj-u26-letter-writing` INSTRUCTION `u26-st-gap-letter-writing`
-- `obj-u26-correspondence` INSTRUCTION `u26-st-gap-correspondence`
 - `u26-s-orient` OBJECTIVE `obj-u26-word-order`
 - `u26-s-orient` OBJECTIVE `obj-u26-vy-capital`
 - `u26-s-orient` OBJECTIVE `obj-u26-address-notation`
 - `u26-s-orient` OBJECTIVE `obj-u26-indefinite`
+- `u26-s-orient` OBJECTIVE `obj-u26-letter-writing`
+- `u26-s-orient` OBJECTIVE `obj-u26-correspondence`
 - `u26-s-orient` OBJECTIVE `obj-u26-book`
 - `u26-st-orient` REFERENCE `ref-u2630-attribution`
 - `u26-s-word-order` OBJECTIVE `obj-u26-word-order`
@@ -4963,14 +6465,34 @@ permitsAppUse=true
 - `u26-st-check-indefinite` REMEDIATION `u26-st-rem-indefinite`
 - `u26-st-check-indefinite` ITEM `u26-i-indefinite-1`
 - `u26-st-check-indefinite` ITEM `u26-i-indefinite-2`
+- `u26-s-letter-writing` OBJECTIVE `obj-u26-letter-writing`
+- `u26-st-teach-letter-writing-1` EXAMPLE `ex-u26-letter-writing-0`
+- `u26-st-teach-letter-writing-1` EXAMPLE `ex-u26-letter-writing-1`
+- `u26-st-teach-letter-writing-1` REFERENCE `ref-u2630-attribution`
+- `u26-st-guided-letter-writing-1` REMEDIATION `u26-st-rem-letter-writing`
+- `u26-st-guided-letter-writing-1` ITEM `u26-g-letter-writing-0`
+- `u26-st-teach-letter-writing-2` REFERENCE `ref-u2630-attribution`
+- `u26-st-rem-letter-writing` EXAMPLE `ex-u26-letter-writing-0`
+- `u26-st-rem-letter-writing` EXAMPLE `ex-u26-letter-writing-1`
+- `u26-st-check-letter-writing` REMEDIATION `u26-st-rem-letter-writing`
+- `u26-st-check-letter-writing` ITEM `u26-i-letter-writing-1`
+- `u26-st-check-letter-writing` ITEM `u26-i-letter-writing-2`
+- `u26-s-correspondence` OBJECTIVE `obj-u26-correspondence`
+- `u26-st-teach-correspondence-1` EXAMPLE `ex-u26-correspondence-0`
+- `u26-st-teach-correspondence-1` EXAMPLE `ex-u26-correspondence-1`
+- `u26-st-teach-correspondence-1` REFERENCE `ref-u2630-attribution`
+- `u26-st-guided-correspondence-1` REMEDIATION `u26-st-rem-correspondence`
+- `u26-st-guided-correspondence-1` ITEM `u26-g-correspondence-0`
+- `u26-st-teach-correspondence-2` REFERENCE `ref-u2630-attribution`
+- `u26-st-rem-correspondence` EXAMPLE `ex-u26-correspondence-0`
+- `u26-st-rem-correspondence` EXAMPLE `ex-u26-correspondence-1`
+- `u26-st-check-correspondence` REMEDIATION `u26-st-rem-correspondence`
+- `u26-st-check-correspondence` ITEM `u26-i-correspondence-1`
+- `u26-st-check-correspondence` ITEM `u26-i-correspondence-2`
 - `u26-s-book` OBJECTIVE `obj-u26-book`
 - `u26-st-book-work` REFERENCE `ref-u2630-attribution`
 - `u26-s-gap-postal-address` OBJECTIVE `obj-u26-postal-address`
 - `u26-st-gap-postal-address` REFERENCE `ref-u2630-attribution`
-- `u26-s-gap-letter-writing` OBJECTIVE `obj-u26-letter-writing`
-- `u26-st-gap-letter-writing` REFERENCE `ref-u2630-attribution`
-- `u26-s-gap-correspondence` OBJECTIVE `obj-u26-correspondence`
-- `u26-st-gap-correspondence` REFERENCE `ref-u2630-attribution`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-en`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-ru`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-ru-r0`
@@ -4983,6 +6505,10 @@ permitsAppUse=true
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-1-ru-r3`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-2-en`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-2-ru`
+- `obj-u26-correspondence` PROVENANCE `prov-ex-u26-correspondence-0-en`
+- `obj-u26-correspondence` PROVENANCE `prov-ex-u26-correspondence-0-ru`
+- `obj-u26-correspondence` PROVENANCE `prov-ex-u26-correspondence-1-en`
+- `obj-u26-correspondence` PROVENANCE `prov-ex-u26-correspondence-1-ru`
 - `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-0-en`
 - `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-0-ru`
 - `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-0-ru-r0`
@@ -4995,6 +6521,10 @@ permitsAppUse=true
 - `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-2-ru`
 - `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-2-ru-r0`
 - `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-2-ru-r1`
+- `obj-u26-letter-writing` PROVENANCE `prov-ex-u26-letter-writing-0-en`
+- `obj-u26-letter-writing` PROVENANCE `prov-ex-u26-letter-writing-0-ru`
+- `obj-u26-letter-writing` PROVENANCE `prov-ex-u26-letter-writing-1-en`
+- `obj-u26-letter-writing` PROVENANCE `prov-ex-u26-letter-writing-1-ru`
 - `obj-u26-vy-capital` PROVENANCE `prov-ex-u26-vy-capital-0-en`
 - `obj-u26-vy-capital` PROVENANCE `prov-ex-u26-vy-capital-0-ru`
 - `obj-u26-vy-capital` PROVENANCE `prov-ex-u26-vy-capital-1-en`
@@ -5014,15 +6544,28 @@ permitsAppUse=true
 - `obj-u26-address-notation` PROVENANCE `prov-u26-address-notation-rem`
 - `obj-u26-address-notation` PROVENANCE `prov-u26-address-notation-x-0`
 - `obj-u26-address-notation` PROVENANCE `prov-u26-address-notation-x-1`
+- `obj-u26-correspondence` PROVENANCE `prov-u26-correspondence-rem`
+- `obj-u26-correspondence` PROVENANCE `prov-u26-correspondence-rem-r0`
 - `obj-u26-indefinite` PROVENANCE `prov-u26-indefinite-rem`
 - `obj-u26-indefinite` PROVENANCE `prov-u26-indefinite-rem-r0`
 - `obj-u26-indefinite` PROVENANCE `prov-u26-indefinite-rem-r1`
 - `obj-u26-indefinite` PROVENANCE `prov-u26-indefinite-rem-r2`
+- `obj-u26-letter-writing` PROVENANCE `prov-u26-letter-writing-rem`
+- `obj-u26-letter-writing` PROVENANCE `prov-u26-letter-writing-x-0`
+- `obj-u26-letter-writing` PROVENANCE `prov-u26-letter-writing-x-1`
+- `obj-u26-letter-writing` PROVENANCE `prov-u26-letter-writing-x-2`
+- `obj-u26-letter-writing` PROVENANCE `prov-u26-letter-writing-x-3`
+- `obj-u26-letter-writing` PROVENANCE `prov-u26-letter-writing-x-4`
+- `obj-u26-letter-writing` PROVENANCE `prov-u26-letter-writing-x-5`
+- `obj-u26-letter-writing` PROVENANCE `prov-u26-letter-writing-x-6`
+- `obj-u26-letter-writing` PROVENANCE `prov-u26-letter-writing-x-7`
 - `obj-u26-vy-capital` PROVENANCE `prov-u26-vy-capital-rem`
 - `obj-u26-vy-capital` PROVENANCE `prov-u26-vy-capital-x-0`
 - `obj-u26-vy-capital` PROVENANCE `prov-u26-vy-capital-x-1`
 - `obj-u26-word-order` PROVENANCE `prov-u26-word-order-rem`
+- `obj-u26-correspondence` SOURCE_CAPABILITY `cap-obj-u26-correspondence`
 - `obj-u26-indefinite` SOURCE_CAPABILITY `cap-obj-u26-indefinite`
+- `obj-u26-letter-writing` SOURCE_CAPABILITY `cap-obj-u26-letter-writing`
 - `obj-u26-word-order` SOURCE_CAPABILITY `cap-obj-u26-word-order`
 
 ## Book-directed experiences
@@ -5035,12 +6578,12 @@ permitsAppUse=true
 
 - `cap-obj-u26-word-order` supports `word-order` for `obj-u26-word-order`
 - `cap-obj-u26-indefinite` supports `indefinite-pronoun` for `obj-u26-indefinite`
+- `cap-obj-u26-letter-writing` supports `letter-writing` for `obj-u26-letter-writing`
+- `cap-obj-u26-correspondence` supports `correspondence-work` for `obj-u26-correspondence`
 
 Guidance objectives stay unsupported until an admitted frozen capability exists:
 
 - `obj-u26-postal-address` Complete postal practice stays in the copy you own
-- `obj-u26-letter-writing` Other letter conventions stay in the copy you own
-- `obj-u26-correspondence` Correspondence work stays in the copy you own
 
 ## Book-directed register
 
@@ -5048,8 +6591,6 @@ Guidance objectives stay unsupported until an admitted frozen capability exists:
 - `u26-st-book-work` Open Lesson 26 in your copy and complete its lesson work.
 - `u26-st-book` Self-attest only after the Lesson 26 work in your copy.
 - `u26-st-gap-postal-address` Complete modern postal practice has no admitted frozen span.
-- `u26-st-gap-letter-writing` General letter structure, openings, closings, and register have no admitted frozen span.
-- `u26-st-gap-correspondence` Correspondence work has no admitted frozen span.
 
 ## Optional non-gating register
 
@@ -5059,8 +6600,6 @@ None.
 ## Unavailable experiences
 
 - `u26-st-gap-postal-address`
-- `u26-st-gap-letter-writing`
-- `u26-st-gap-correspondence`
 
 ## Unresolved relationships
 

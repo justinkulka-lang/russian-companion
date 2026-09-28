@@ -36,6 +36,7 @@ RELATION_KINDS = (
     "RULE_CLASSIFIES_SOURCE_EXAMPLE",
     "EXPLICIT_PARENTHETICAL_GLOSS",
     "EXPLICIT_SOURCE_PAIR",
+    "STATED_APPLICATION",
 )
 
 
@@ -143,7 +144,9 @@ def _displayed_in_frozen(record: dict) -> bool:
         from source_transforms import unfold_wiktionary
 
         return bool(shipped) and shipped in unfold_wiktionary(original)
-    if transformation == "pressbooks markup selection":
+    if transformation == "readyrussian text extraction":
+        return bool(shipped) and "<" not in original and shipped in original
+    if transformation in ("pressbooks markup selection", "readyrussian markup selection"):
         from source_transforms import html_visible
 
         return bool(shipped) and shipped in html_visible(original)
@@ -288,6 +291,11 @@ def classify_relation(cue: dict, answer: dict, distractors: list[dict]) -> str |
             and all(_displayed_in_frozen(record) for record in group)
         ):
             return "SAME_LEMMA_DIFFERENT_FIELD"
+    stated = _stated_application(cue, answer, distractors)
+    if stated is False:
+        return None
+    if stated:
+        return stated
     if (
         _cyr(cue["shippedText"])
         and not _cyr(answer["shippedText"])
@@ -365,6 +373,31 @@ def classify_relation(cue: dict, answer: dict, distractors: list[dict]) -> str |
     ):
         return "SAME_CONSTRUCTION_DIFFERENT_FORM"
     return None
+
+
+def _stated_application(cue: dict, answer: dict, distractors: list[dict]) -> str | None | bool:
+    """Return STATED_APPLICATION, False when this span forbids the pair, or None."""
+    from stated_applications import STATED_APPLICATIONS
+
+    table = STATED_APPLICATIONS.get(cue.get("originalSourceText") or "")
+    if table is None:
+        return None
+    spec = table.get(cue.get("shippedText") or "")
+    if spec is None:
+        return False
+    keyed, allowed = spec
+    group = [cue, answer, *distractors]
+    distractor_texts = {record.get("shippedText") or "" for record in distractors}
+    if (
+        answer.get("shippedText") == keyed
+        and distractor_texts
+        and distractor_texts <= allowed
+        and keyed not in distractor_texts
+        and all(_same_span(cue, record) for record in group)
+        and all(_displayed_in_frozen(record) for record in group)
+    ):
+        return "STATED_APPLICATION"
+    return False
 
 
 def _cue_language(shown: str) -> str:

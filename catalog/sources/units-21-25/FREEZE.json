@@ -74,6 +74,19 @@
         "retrieved": "2026-09-27T06:05:00Z",
         "requiredStatement": "Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where otherwise noted.",
         "licenseId": "CC BY-SA 4.0"
+      },
+      "readyrussian": {
+        "appliesToSourceIds": [
+          "src-readyrussian-langgen3"
+        ],
+        "title": "ReadyRussian",
+        "url": "https://www.readyrussian.org/",
+        "file": "../readyrussian/home.html",
+        "sha256": "1ffd2c5a8f4b0dad271a5fd79fb545c8c6b629507ba39677825ffde4c66fe7d1",
+        "byteCount": 32857,
+        "retrieved": "2026-09-28T16:43:13Z",
+        "requiredStatement": "Creative Commons Attribution-ShareAlike 4.0 International License",
+        "licenseId": "CC BY-SA 4.0"
       }
     }
   },
@@ -149,6 +162,12 @@
       "disposition": "EXCLUDED",
       "licenseId": "CC BY-SA 4.0",
       "scope": "The Baltics travel grammar chapter states duration in the accusative and intended trip length with на plus the accusative. That contrast is not completion over a period. Its Pressbooks license route is separate from the USA grammar route and from Wikimedia routes. The chapter is retained and is not taught."
+    },
+    {
+      "id": "readyrussian-langgen3",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "The statement that не negates the following word and the two exact sentences Мне не холодно. and Не мне холодно. with their source meanings. The language-generator web application is not admitted."
     }
   ],
   "wikibooks": {
@@ -371,6 +390,20 @@
       "transform": "pressbooks-html",
       "authors": "Anna Tumarkin and Shannon Donnally Quinn",
       "attribution": "Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171 retrieved 2026-09-26T22:52:41Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license."
+    },
+    {
+      "key": "langgen3",
+      "title": "Language Generator 3",
+      "oldid": "27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c",
+      "file": "../readyrussian/langgen3.html",
+      "sha256": "27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c",
+      "byteCount": 11791,
+      "retrieved": "2026-09-28T16:43:13Z",
+      "sourceId": "src-readyrussian-langgen3",
+      "url": "https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html",
+      "licenseRoute": "readyrussian",
+      "transform": "readyrussian-html",
+      "attribution": "ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Language Generator 3 HTML sha256 27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted."
     }
   ]
 }

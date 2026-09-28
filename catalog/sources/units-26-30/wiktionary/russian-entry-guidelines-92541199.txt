@@ -1,0 +1,209 @@
+{{policy-TT}}{{shortcut|WT:ARU}}
+{{also|Wiktionary:Entry layout explained|:Category:Russian language}}
+
+This page is trying to provide a comprehensive guideline for any issues that arise in connection with the Russian language, in particular Russian words, in Wiktionary. It is mainly an instruction on how to format articles on Russian words (more precisely, how to format the Russian section of an entry). It is also concerned with Russian translations of English words.
+
+==Formatting of pages on Russian words==
+You are advised to read [[Wiktionary:Entry layout explained]] first. It sets forth the general formatting rules for pages, as well as those specific to the English language.
+
+The entry on the Russian word should be inserted into the article in alphabetical order. It begins with the level-two header
+
+ ==Russian==
+
+The headers allowed below the "Russian" header are the same as those used for English entries. They also have the same order and levels as for English words, and the format of their content will generally be identical as well, though certain differences between the two languages have to be taken into account, such as the "Declension" header.
+<!-- The headers below need to be filled in (I'll work on it, but I'm more than happy to let others do it).  As I've edited Russian entries in Wikipedia, these are some of the things I've come across that we ought to standardize, if you will. -->
+
+===Pronunciation===
+
+Each Russian section should start with
+
+ ===Pronunciation===
+ * {{temp|ru-IPA|<var>word with stress marking</var>|<var>etc.</var>}}
+ * <var>(repeat if word may be stressed or otherwise pronounced in more than one way)</var>
+(The stressed vowels may be copied from this list: Á á Ó ó É é У́ ý И́ и́ Ы́ ы́ Э́ э́ Ю́ ю́ Я́ я́)<br/>
+Usually no extra parameters (<code>|<var>etc.</var></code>) are necessary, as the Russian spelling with stress almost always results in an automatically generated correct IPA for the word;
+if this is not the case, see {{temp|ru-IPA}} for how to specify the correct pronunciation.
+
+This may be followed by
+ * {{temp|audio|ru|Ru-<var>word</var>.ogg|Audio}}
+if the corresponding file exists. <code><var>word</var></code> will normally be the word without stress marking, but in some cases a different convention may be followed.
+
+==Nouns==
+
+[[headword|Headwords]] for Russian entries should be in the nominative singular (or nominative plural if there is no nominative singular, e.g. {{m|ru|пери́ла}}).&nbsp; It is not necessary to list declined forms or plural forms of the word because every entry includes a declension table, or [[paradigm]].
+
+===Declensions===
+Russian nouns are declined (there are the occasional exceptions, e.g. {{lang|ru|[[Колорадо]]}}) for six cases ([[nominative]], [[genitive]], [[dative]], [[accusative]], [[instrumental]], and [[prepositional]]) and two numbers ([[singular]] and [[plural]]).&nbsp; The nominative singular of a noun is its "basic" form, on whose page we include the definitions and all further information.&nbsp; It would be ideal to provide a complete declension table for each noun, including those which do not decline for all cases.&nbsp; If the word is not used in either the singular or the plural, this should be noted, and the declension table should only include the number the word declines for.
+
+See [[Wiktionary:Russian inflection templates]] for instructions on how to use the appropriate templates.
+
+==Verbs==
+
+* Conjugations
+* Conjugation tables
+** All forms (command forms, participles, etc.)
+* Applicable templates
+:* {{temp|ru-conj}}, implemented by [[Module:ru-verb]]
+* Appendix
+:* [[Appendix:Russian verbs]]
+
+==Adjectives==
+
+* Comparative forms
+* Declensions and declension tables
+* Short forms
+* Applicable templates
+** Headword template: [[Template:ru-adj]] (-ее, {{lang|ru|-ейщий}})
+** Declensional template: [[Template:ru-decl-adj]] ({{lang|ru|[[новый]]}})
+
+==Adverbial participles==
+
+Examples:
+* {{m|ru|говоря́}}
+
+==Impersonal verbs==
+Examples:
+* {{m|ru|нет}}
+
+==Possessive adjectives==
+
+Examples:
+* {{m|ru|ада́мов}}, {{m|ru|ма́терин}}
+
+==Predicate adjectives==
+
+Examples:
+* {{m|ru|обы́чно}}, {{m|ru|жа́рко}}
+
+==Predicatives==
+
+Examples:
+* {{m|ru|на́до}}, {{m|ru|нельзя́}}, {{m|ru|жа́рко}}, {{m|ru|мо́жно}}
+
+==Idioms==
+
+Examples:
+* {{m|ru|толо́чь во́ду в сту́пе}}, {{m|ru|уйти́ по-англи́йски}}
+
+==Verb forms==
+
+Entries for most inflected verb forms (apart from participles) start
+
+====Verb====
+
+ {{temp|head|ru|verb form|head=<var>inflected form</var>}}
+ <var>blank line</var>
+followed by a list of the forms thus inflected in the form
+ # {{temp|inflection of|ru|<var>infinitive</var>||<var>person</var>|<var>number</var>|<var>tense</var>|<var>voice</var>|<var>[[grammatical aspect|aspect]]</var>}}
+and optional usage examples in the form
+ #: {{temp|ux|ru|<var>example</var>|<var>English translation</var>}}
+
+Examples:
+* {{m|ru|испо́льзуем}} — (first person plural indicative present imperfective & future perfective of {{m|ru|испо́льзовать}})
+
+===Uninflected participles===
+
+Entries for uninflected (long masculine singular) forms of participles have the form
+ ===Participle===
+ {{temp|head|ru|participle|head=<var>participle></var>}}
+ <var>blank line</var>
+ # {{temp|ru-participle of|<var>infinitive</var>||<var>tense</var>|<var>voice</var>|<var>[[grammatical aspect|aspect]]</var>}}
+ <var>blank line</var>
+ ====Declension====
+ {{temp|ru-decl-adj|<var>participle</var>|<var>declension</var>}}
+
+Examples:
+* {{m|ru|испо́льзуемый}} — (present passive imperfective participle of [[использовать]])
+
+===Inflected participles===
+
+Entries for inflected forms of participles have the form
+ ===Participle===
+ {{temp|head|ru|participle form|head=<var>inflected participle</var>}}
+ <var>blank line</var>
+ # {{temp|inflection of|ru|<var>uninflected participle</var>||<var>form</var>}} <var>(optional, helpful)</var>:<var> translation into English</var>
+ <var>(repeat as needed for all forms thus inflected)</var>
+Where
+: <code><var>form</var></code> is a sequence of parameters specifying the form thus inflected; this may be <code><var>gender/number</var>|<var>case</var></code> or  <code>short|<var>gender/number</var></code>.
+: <code><var>gender/number</var></code> may be <code>m|s</code>, <code>f|s</code>, <code>n|s</code> or <code>p</code>.
+: <code><var>case</var></code>  may be <code>nom</code>, <code>gen</code>, <code>dat</code>, <code>acc</code>, <code>ins</code> or <code>pre</code> preceded if needed (accusative), by <code><var>animacy</var>|</code>.
+: <code><var>[[animate|animacy]]</var></code> may be <code>[[Appendix:Glossary#animate|an]]</code>, <code>[[Appendix:Glossary#inanimate|inan]]</code> or, where appropriate, free text such as “<code>& mainly inanimate</code>” (as in {{m|ru|испо́льзуемое}}).
+: ''(these parameters may be in any order and need not be abbreviated, see {{temp|inflection of}} for more details)''
+
+Sometimes a case such as the feminine singular instrumental of {{m|ru|испо́льзуемый}} has two forms (here, {{m|ru|испо́льзуемой}} & {{m|ru|испо́льзуемою}}).
+In these cases, such entries should inform the user of this by including a subsection:
+
+ ====Synonyms====
+ * {{temp|l|ru|<var>synonym</var>}} {{gloss|for <var>relevant case</var>}}
+thus in the above example, in {{m|ru|испо́льзуемой}}:
+ * {{temp|l|ru|испо́льзуемою}} {{gloss|for feminine singular instrumental case}}
+
+Examples:
+* {{m|ru|испо́льзуемое}} — (neutral singular nominative & mainly inanimate accusative of {{m|ru|испо́льзуемый}})
+* {{m|ru|испо́льзуема}} — (short feminine singular of {{m|ru|испо́льзуемый}})
+
+==Verb prefixes==
+Examples:
+* {{lang|ru|[[на-]]}}, {{lang|ru|[[вы-]]}}, {{lang|ru|[[по-]]}}
+
+==Spellings with ‘е’ instead of ‘ё’==
+Since Russian words spelt with ‘ё’ are usually printed with ‘е’ instead, it should be possible for a user to find such spellings, especially as this confuses many learners. The issue is under discussion in {{section link|Wiktionary_talk:About_Russian#Category:Russian_spellings_with_%D0%B5_instead_of_%D1%91}}, but the following points seem fairly clear:
+* '''Hard redirects''' (with <code><nowiki>#REDIRECT [[</nowiki><var>spelling with ё</var><nowiki>]]</nowiki></code>) are definitely undesirable.
+* '''Soft redirects''' are definitely desirable when the form with ‘е’ is '''also a word''' (in any language).
+** Soft redirects should use the template family {{temp|ru-<var>part-of-speech</var>-alt-ё|<var>spelling with ё</var>}} (based on {{temp|ru-alt-ё}}, see there); see also {{m|ru|трехэтажный}} for an example.
+** A soft redirect page should ''probably'' start with {{temp|also|<var>spelling with ё</var>}}.
+** Soft redirects when the form with ‘е’ is '''only''' the '''alternative form''' of a Russian word with ‘ё’ may or may not be desirable: this is under discussion.
+
+==Translations into Russian==
+All translations into Russian (in entries for words in other languages) are to be transliterated with word stresses and gender for nouns; for verbs one may optionally specify their [[grammatical aspect|aspect]].
+Translations are specified with the usual templates {{Temp|t+}} and {{temp|t}}, which automatically generate the transliteration ([[WT:RU TR]]), remove stress marks from the link and link to the '''Russian''' section of the page.
+* If the translation is a '''single word''', use the template {{temp|t+|ru|<var>word with stress marking</var>|<var>etc.</var>}}. This generates a superscript link to Russian Wiktionary.
+** For a '''noun''', <code><var>etc.</var></code> should be <code>m</code>, <code>f</code> or <code>n</code> to specify the gender.
+** For a '''verb''', <code><var>etc.</var></code> may be specified as <code>impf</code> ([[imperfective aspect|imperfective]]) or <code>pf</code> ([[perfective aspect|perfective]]).
+** For other parts of speech,  <code>|<var>etc.</var></code> is not needed.
+** An '''inflected form''' can be linked to a different page (in both Wiktionaries) with the parameter {{para|alt}} as in {{temp|t+|ru|<var>target page</var>|<var>etc.</var>|alt=<var>inflected form</var>}}.
+* If the translation consists of '''more than one word''', use the template {{temp|t+|ru|<var>translation with stress markings</var>}}.
+** In this case, code links in the translation as <code><nowiki>[[</nowiki><var>target with stress</var>]]</code>  or <code><nowiki>[[</nowiki><var>target</var>|<var>inflected form with stress</var>]]</code>.
+
+{| class="wikitable"
+|-
+! !! Code !! Yields (only template expansions shown)
+|-
+| Noun with gender || <code><nowiki>* Russian: {{t+|ru|мы́ло|n}}</nowiki></code> || {{t+|ru|мы́ло|n}}
+|-
+| Verbs with aspects || <code><nowiki>* Russian: {{t+|ru|рисова́ть|impf}}, {{t+|ru|нарисова́ть|pf}}</nowiki></code> || {{t+|ru|рисова́ть|impf}}, {{t+|ru|нарисова́ть|pf}}
+|-
+| Inflected form with alternate target || <code><nowiki>* Russian: {{t+|ru|требовать|alt=тре́бующий}} </nowiki></code> || {{t+|ru|требовать|alt=тре́бующий}}
+|-
+| Multi-word translation || <code><nowiki>* Russian: {{t|ru|[[требовать|тре́бующий]] [[мно́го]] [[время|вре́мени]]}} </nowiki></code> || {{t|ru|[[требовать|тре́бующий]] [[мно́го]] [[время|вре́мени]]}}
+|}
+
+==Romanization==
+Russian transliterations (that is, romanizations) are not words. Russian entries are only permitted in the Cyrillic script. Please see [[Wiktionary:Russian transliteration]] for more complete information.
+
+==Tasks==
+* Add information about words displaced or discouraged by the Soviet Union Régime.<!---Note from Apisite: If I'm wrong for making the note, then revert the addition.--->
+* Add pre-reform orthography spellings from before the year 1918 where applicable; see the entry {{m|ru|эпи́граф}} for an example.
+* Add pre-reform declensions where applicable; see the entry {{m|ru|лосо́сь}} for an example.
+* Add any descendants, like loanwords in Karelian, Votic, Ingrian, Kildin Sami and others, where applicable.
+
+==Bibliography==
+{{Wiktionary:Russian entry guidelines/Bibliography}}
+
+==See also==
+* [[Wiktionary:Inflection templates#Russian|Russian inflection templates]]
+* [[Wiktionary: Languages with more than one grammatical gender|Languages with more than one grammatical gender]]
+* [[Appendix:Russian nouns]]
+* [[Appendix:Russian alphabet]]
+* [[Wiktionary:Russian transliteration]]
+* [[Appendix:Russian pronunciation]]
+
+[[Category:Russian language|*]]
+[[Category:Wiktionary language considerations]]
+
+[[de:Wiktionary:Russisch]]
+[[eo:Vikivortaro:Rusa]]
+[[la:Victionarium:Lingua Ruthenica]]
+[[nl:Wikiwoordenboek:Russisch]]
+[[pt:Portal:Russo]]
+[[ru:Викисловарь:Русский_язык]]

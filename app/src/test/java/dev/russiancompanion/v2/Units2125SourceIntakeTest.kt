@@ -52,10 +52,10 @@ class Units2125SourceIntakeTest {
         14 to "270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6",
         15 to "1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd",
         16 to "6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5",
-        17 to "52377652b325bffe7f652eeac353f0ea2350a75374ffabec47417730bd878d55",
+        17 to "a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c",
         18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
         19 to "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3",
-        20 to "7eca8b47f1286dc2b1718c03f4cefdfefe96f76979d9bf44616501e00faa71f3",
+        20 to "01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c",
     )
 
     private val preservedMappingDigests = mapOf(
@@ -88,8 +88,6 @@ class Units2125SourceIntakeTest {
 
     private val gapObjectives = mapOf(
         23 to listOf("obj-u23-completion"),
-        24 to listOf("obj-u24-placement"),
-        25 to listOf("obj-u25-productive-formation"),
     )
 
     @Test
@@ -101,7 +99,7 @@ class Units2125SourceIntakeTest {
             val facts = governedMappingFacts(number)
             val digest = mappingPackageDigest(facts)
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals(if (number in listOf(21, 22)) "CONTENT_COMPLETE_REVIEW_PENDING" else "NOT_PREPARED", unit.readiness)
+            assertEquals(if (number == 23 || number == 25) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.mappingNote.contains(range))
@@ -155,7 +153,9 @@ class Units2125SourceIntakeTest {
         preservedMappingDigests.forEach { (number, digest) ->
             assertEquals("mapping $number", digest, mappingPackageDigest(governedMappingFacts(number)))
         }
-        assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.readiness == "NOT_PREPARED" && it.sessions.isNotEmpty() })
+        assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.sessions.isNotEmpty() })
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
+        assertEquals(setOf(26, 27, 29, 30), pack.units.drop(25).filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
         assertTrue(File(repo(), "review/unit-23/UNIT_23_REVIEW_PACKET.md").isFile)
     }
 
@@ -215,6 +215,7 @@ class Units2125SourceIntakeTest {
                 "wikibooks-names-4660786",
                 "wikibooks-useful-words-3353859",
                 "pressbooks-usa-grammar-87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+                "readyrussian-langgen3",
             ),
             admitted,
         )
@@ -244,7 +245,7 @@ class Units2125SourceIntakeTest {
             supplementalByOldid[page.getValue("oldid").jsonPrimitive.content] = bytes.toString(Charsets.UTF_8)
         }
         val intake = pack.provenanceRecords.filter { it.unitNumber in 21..25 }
-        assertEquals(330, intake.size)
+        assertEquals(339, intake.size)
         assertEquals(setOf(21, 22, 23, 24, 25), intake.map { it.unitNumber }.toSet())
         assertTrue(intake.none { it.sourceId == "src-openrussian-50e210c4" })
         assertTrue(intake.all { it.audioAssetId == null })
@@ -257,6 +258,14 @@ class Units2125SourceIntakeTest {
                 assertFalse(record.sourceUrl.contains("oldid="))
                 assertTrue(record.attribution.contains(record.sourceRevision))
                 assertTrue(record.attribution.contains("2026-09-26T22:52:41Z"))
+                assertFalse(record.attribution.contains("Wikipedia:Copyrights"))
+                assertFalse(record.attribution.contains("Wiktionary:Copyrights"))
+                assertFalse(record.attribution.contains("Wikibooks:Copyrights"))
+            } else if (record.sourceId.startsWith("src-readyrussian-")) {
+                assertTrue(record.sourceUrl.contains("readyrussian.org"))
+                assertFalse(record.sourceUrl.contains("oldid="))
+                assertTrue(record.attribution.contains(record.sourceRevision))
+                assertTrue(record.attribution.contains("ReadyRussian.org"))
                 assertFalse(record.attribution.contains("Wikipedia:Copyrights"))
                 assertFalse(record.attribution.contains("Wiktionary:Copyrights"))
                 assertFalse(record.attribution.contains("Wikibooks:Copyrights"))
@@ -316,15 +325,16 @@ class Units2125SourceIntakeTest {
         assertTrue(reason(pack, 21).isBlank())
         assertTrue(reason(pack, 22).isBlank())
         assertTrue(reason(pack, 23).contains("Completion over a period"))
-        assertTrue(reason(pack, 24).contains("Scope-sensitive placement"))
+        assertTrue(reason(pack, 24).isBlank())
         val placement = pack.unit(24)!!.objectives.first { it.id == "obj-u24-placement" }
-        assertEquals("GUIDANCE", placement.kind)
-        assertTrue(placement.checkItemIds.isEmpty())
+        assertEquals("RECOGNITION", placement.kind)
+        assertTrue(placement.checkItemIds.size >= 2)
         val contrast = pack.unit(24)!!.objectives.first { it.id == "obj-u24-word-order-contrast" }
         assertEquals("RECOGNITION", contrast.kind)
         assertTrue(contrast.checkItemIds.size >= 2)
-        assertTrue(reason(pack, 25).contains("no admitted frozen span"))
-        listOf(21, 22).forEach { number ->
+        assertTrue(reason(pack, 25).isBlank())
+        assertTrue(pack.unit(25)!!.objectives.none { it.id == "obj-u25-productive-formation" })
+        listOf(21, 22, 24).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,
@@ -338,21 +348,35 @@ class Units2125SourceIntakeTest {
             )
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
         }
-        listOf(23, 24, 25).forEach { number ->
-            val unit = pack.unit(number)!!
-            val decision = advancementDecision(
-                pack,
-                unit,
-                learner(
-                    number,
-                    book = true,
-                    correct = unit.objectives.flatMap { it.checkItemIds }.toSet(),
-                    steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet(),
-                ),
-            )
-            assertFalse(decision.allowed)
-            assertTrue(decision.remaining.joinToString("\n"), decision.remaining.any { it.contains("not prepared") })
-        }
+        val unit25 = pack.unit(25)!!
+        val blocked25 = advancementDecision(
+            pack,
+            unit25,
+            learner(
+                25,
+                book = true,
+                correct = unit25.objectives.flatMap { it.checkItemIds }.toSet() +
+                    unit25.sessions.flatMap { it.steps }.flatMap { it.itemIds }.toSet(),
+                steps = unit25.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+            ),
+        )
+        assertFalse(blocked25.allowed)
+        assertTrue(blocked25.remaining.joinToString("\n"), blocked25.remaining.any { it.contains("not prepared") })
+        assertTrue(blocked25.remaining.any { it.contains("productive-diminutive") })
+        val unit23 = pack.unit(23)!!
+        val blocked = advancementDecision(
+            pack,
+            unit23,
+            learner(
+                23,
+                book = true,
+                correct = unit23.objectives.flatMap { it.checkItemIds }.toSet() +
+                    unit23.sessions.flatMap { it.steps }.flatMap { it.itemIds }.toSet(),
+                steps = unit23.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+            ),
+        )
+        assertFalse(blocked.allowed)
+        assertTrue(blocked.remaining.joinToString("\n"), blocked.remaining.any { it.contains("not prepared") })
     }
 
     @Test
@@ -523,7 +547,7 @@ class Units2125SourceIntakeTest {
         val pack = pack()
         listOf(21, 22, 23, 24, 25).forEach { number ->
             val unrelated = sample(pack, number, "9000001", "src-wikibooks-russian-cc-by-sa", keywordBlob)
-            val base = if (number in listOf(21, 22, 25)) withoutCapabilities(pack, number) else pack
+            val base = if (number in listOf(21, 22, 24, 25)) withoutCapabilities(pack, number) else pack
             val claimed = claimComplete(base.copy(provenanceRecords = base.provenanceRecords + unrelated), number)
             val errors = V2Validator.validate(claimed).errors
             assertTrue(errors.joinToString("\n"), errors.any { it.contains("source capability") || it.contains("source capabilities") })

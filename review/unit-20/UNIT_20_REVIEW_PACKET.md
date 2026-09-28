@@ -11,12 +11,12 @@ Unit 20 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 1e469c124966401a54f9a3da0d52606c1afd6ea2
-- Unit content-review SHA-256: 7eca8b47f1286dc2b1718c03f4cefdfefe96f76979d9bf44616501e00faa71f3
+- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
+- Unit content-review SHA-256: 01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c
 - Mapping-package SHA-256: 145bb8c75afc12e093bcc205093f95ffe81636a0c5cd1aee64d0aa8766f6e69f
-- Pack content-review SHA-256: 68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4
-- Review-package SHA-256: 673a496222fbfbd49a64b52ffcb1b580cc54549b6657c727bf2a76529fa1a689
-- Repository source SHA-256: 7e73e724ef3895ff8fb3401f0a84411e74a62dfe0877fcf9015554215ee7a652
+- Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
+- Review-package SHA-256: 87939a7a27d6b9a5b92b50e9d84ceecfb915a2ee6ca5968f93691a7c152a655a
+- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -574,7 +574,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3a9eb77c626afde2e04fd562bd6d7209629623d8088e87fa15e5916a60ce061
+- Content hash: 91ba8095a9b732594e6dcc5aaaba0403560d329df5c8945835abb3c6da900086
 
 kind=CONTRAST_SELECTION
 language=en
@@ -586,7 +586,7 @@ feedback=The frozen source pairs the shown form "идти́" with the admitted g
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "multidirectional" with the admitted gloss "multidirectional".
+distractorRationales= | The table header "multidirectional" names the other motion column.
 testedFeature=MOTION_DIRECTION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u20-motion-0
@@ -594,7 +594,7 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-u20-motion-rem
 distractorSourceIds= | prov-u20-motion-x-1
-distractorDifference= | The frozen source pairs the shown form "multidirectional" with the admitted gloss "multidirectional".
+distractorDifference= | The table header "multidirectional" names the other motion column.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "идти́" with the admitted gloss "unidirectional".
 contrastMembers=unidirectional | multidirectional
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -679,7 +679,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 51aac0753ce3fd2be3ca639b386f40200c1cf6efca6a560f91e3efe6a5586ddb
+- Content hash: 8dede84350300d3180096deb0a9f3dc85ee96abcef6c809691655a177132300b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -691,7 +691,7 @@ feedback=The frozen source pairs the shown form "Он пошёл к другу."
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "setting out" with the admitted gloss "setting out". | He went to a friend's place
+distractorRationales= | The source quotes "setting out" as an English restatement. | He went to a friend's place
 testedFeature=MOTION_PO
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u20-motion-3
@@ -699,7 +699,7 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u20-motion-4-en
 distractorSourceIds= | prov-u20-motion-x-5 | prov-ex-u20-motion-5-en
-distractorDifference= | The frozen source pairs the shown form "setting out" with the admitted gloss "setting out". | He went to a friend's place
+distractorDifference= | The source quotes "setting out" as an English restatement. | He went to a friend's place
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Он пошёл к другу." with the admitted gloss "beginning of a movement".
 contrastMembers=beginning of a movement | setting out | He went to a friend's place
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -2462,6 +2462,58 @@ text=When you have done Lesson 20 in your copy, self-attest here. Attestation re
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 20 work in your copy.
+
+### AUTHORED_ENGLISH `en-u20-180`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 570ca16e67633370e35436b852dbe0a611a0f4bc5621bb4ae5446643ad58d7ec
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The table header
+
+### AUTHORED_ENGLISH `en-u20-181`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 70656b13aab0771a3066f3718bf7ba343b2d3d135ef5b3496a5475aaac4b82b5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=names the other motion column.
+
+### AUTHORED_ENGLISH `en-u20-182`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b1cb56f835599fc5a27b4a138af6f9dbb14ce1150decfaa23137fc5183daa3ec
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The source quotes
+
+### AUTHORED_ENGLISH `en-u20-183`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 76ab5b29c6ea18371b29d9c568f06c2d86d8b50d41453cb0b6ec14da8887c6c2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=as an English restatement.
 
 ### SOURCE `src-wikipedia-russian-grammar-1369617627`
 

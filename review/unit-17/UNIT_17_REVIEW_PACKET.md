@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 17 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 17 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 17 remains in development. Its readiness is content-complete and review-pending. The Lesson 17 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 1e469c124966401a54f9a3da0d52606c1afd6ea2
-- Unit content-review SHA-256: 52377652b325bffe7f652eeac353f0ea2350a75374ffabec47417730bd878d55
+- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
+- Unit content-review SHA-256: a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c
 - Mapping-package SHA-256: f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e
-- Pack content-review SHA-256: 68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4
-- Review-package SHA-256: b92591edc3d5e3c0d521ec2e3f2be8243d7c2d5b5c74fce7a469715a2c4ecd60
-- Repository source SHA-256: 7e73e724ef3895ff8fb3401f0a84411e74a62dfe0877fcf9015554215ee7a652
+- Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
+- Review-package SHA-256: 81b6d1a8c1cd4e55721fcda66068464c06dc46ef5477efa678b2e4147ae369d3
+- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=17
 title=Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
-topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, the stated calendar-date constructions, and the admitted quarter-hour lines await qualified review. Productive clock-time answers have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 17 is in development. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, the stated calendar-date constructions, the admitted quarter-hour lines, and the admitted ReadyRussian clock system await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 17, printed pages 201-214. Independently stated topic scope: Time, weekdays, calendar dates, years, age expressions, and ordinal numbers. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=17
 prerequisites=16
-estimatedMinutes=154
+estimatedMinutes=162
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 17.
 
 ### UNIT `unit-17`
 
-- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-quarter-hour, obj-u17-calendar-date, obj-u17-book, obj-u17-clock-productive
-- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-clock-answers, u17-s-quarter-hour, u17-s-calendar-date, u17-s-book, u17-s-gap-clock-productive
+- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-quarter-hour, obj-u17-clock-productive, obj-u17-calendar-date, obj-u17-book
+- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-clock-answers, u17-s-quarter-hour, u17-s-clock-productive, u17-s-calendar-date, u17-s-book
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 094488a170e112e5f02c4513f6fc170d18ed067fba57d9435fde0a84b46bb965
+- Content hash: caed7308d06afc110bae41cc989a5fc2bd86175129d34e0a77288c25f187d80e
 
 number=17
 title=Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
-topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, the stated calendar-date constructions, and the admitted quarter-hour lines await qualified review. Productive clock-time answers have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 17 is in development. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, the stated calendar-date constructions, the admitted quarter-hour lines, and the admitted ReadyRussian clock system await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 17, printed pages 201-214. Independently stated topic scope: Time, weekdays, calendar dates, years, age expressions, and ordinal numbers. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=17
 prerequisites=16
-estimatedMinutes=154
+estimatedMinutes=162
 
 ### ADVANCEMENT `unit-17-advancement`
 
@@ -295,6 +295,25 @@ practice=u17-st-guided-quarter-hour-1
 checks=u17-i-quarter-hour-1,u17-i-quarter-hour-2,u17-i-quarter-hour-3
 remediation=u17-st-rem-quarter-hour
 
+### OBJECTIVE `obj-u17-clock-productive`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 66b8bf46a1860f75f77ce2d25417a7909c32840ce0431fc331c4d5922620da96
+
+title=Apply the admitted clock construction
+kind=RECOGNITION
+unitNumber=17
+instruction=u17-st-orient,u17-st-teach-clock-productive-1,u17-st-teach-clock-productive-2,u17-st-teach-clock-productive-3
+examples=ex-u17-clock-productive-0,ex-u17-clock-productive-1,ex-u17-clock-productive-2
+practice=u17-st-guided-clock-productive-1
+checks=u17-i-clock-productive-1,u17-i-clock-productive-2
+remediation=u17-st-rem-clock-productive
+
 ### OBJECTIVE `obj-u17-calendar-date`
 
 - Objectives: obj-u17-calendar-date
@@ -333,53 +352,34 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u17-clock-productive`
-
-- Objectives: obj-u17-clock-productive
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5347f99a6d535d668d2fd3453af1c567b3fe4826e273ceb9f1215a0b028ae416
-
-title=Productive clock-time answers stay in the copy you own
-kind=GUIDANCE
-unitNumber=17
-instruction=u17-st-gap-clock-productive
-examples=
-practice=
-checks=
-remediation=
-
 ### SESSION `u17-s-orient`
 
-- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-quarter-hour, obj-u17-calendar-date, obj-u17-book
+- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-quarter-hour, obj-u17-clock-productive, obj-u17-calendar-date, obj-u17-book
 - Sessions: u17-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b11e1173a8ddf9a87009455e919b6e5cc81b32e527d896d1bd5050219363bb00
+- Content hash: c352a96415f0efce504f160d231fb17745f0556da62839881721f15908649cd4
 
 title=Admitted number and quantity rows
 estimatedMinutes=8
-objectives=obj-u17-ordinals,obj-u17-hours,obj-u17-years,obj-u17-minutes,obj-u17-age,obj-u17-weekdays,obj-u17-months,obj-u17-clock,obj-u17-clock-answers,obj-u17-quarter-hour,obj-u17-calendar-date,obj-u17-book
+objectives=obj-u17-ordinals,obj-u17-hours,obj-u17-years,obj-u17-minutes,obj-u17-age,obj-u17-weekdays,obj-u17-months,obj-u17-clock,obj-u17-clock-answers,obj-u17-quarter-hour,obj-u17-clock-productive,obj-u17-calendar-date,obj-u17-book
 steps=u17-st-orient
 
 ### STEP `u17-st-orient`
 
-- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-quarter-hour, obj-u17-calendar-date, obj-u17-book
+- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-quarter-hour, obj-u17-clock-productive, obj-u17-calendar-date, obj-u17-book
 - Sessions: u17-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e93dd9b3d60f44de6fc8fcfbe273879558482ffcaf75de0f38fdac4a385f5117
+- Content hash: 4e5d6813f69cd82079dab4d6b57d1624ea94c2cefaef3b5eb43003e22cf09331
 
 kind=ORIENT
 title=Admitted number and quantity rows
-body=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, calendar-date, and quarter-hour spans. Productive clock-time answers stay unresolved. Qualified review is pending.
+body=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, calendar-date, quarter-hour, and the admitted ReadyRussian clock system. Qualified review is pending.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1859,6 +1859,153 @@ bookDirection=
 companionDirection=
 remediationStepId=u17-st-rem-quarter-hour
 
+### SESSION `u17-s-clock-productive`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 685d944c8fa14e57f66374aaf9bb80d29d3e4d8705e5e2672052bc89e7b40509
+
+title=Apply the admitted clock construction
+estimatedMinutes=12
+objectives=obj-u17-clock-productive
+steps=u17-st-teach-clock-productive-1,u17-st-guided-clock-productive-1,u17-st-teach-clock-productive-2,u17-st-teach-clock-productive-3,u17-st-rem-clock-productive,u17-st-check-clock-productive
+
+### STEP `u17-st-teach-clock-productive-1`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d9f56cb3ff504bc829efcfe937e735f7baa9a580562d741c1a4a021f0322a472
+
+kind=TEACH
+title=Admitted lines
+body=в пятнадцать минут второго — at the fifteenth minute of the second [hour]. без двадцати пяти два — lacking twenty five minutes to the two. 
+dominantAction=Continue
+references=ref-u17-attribution
+items=
+examples=ex-u17-clock-productive-0,ex-u17-clock-productive-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-guided-clock-productive-1`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d0a964c03e6cbfe480f3c7c95ce71ed8e9de1cfa986be1658f97793602d80c67
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u17-g-clock-productive-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-clock-productive
+
+### STEP `u17-st-teach-clock-productive-2`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 229a2a22f360f9943644feb6bf1de36d7cc061e6b419a635040f6150ae284d15
+
+kind=TEACH
+title=Admitted instruction
+body=In Russian we can state the number of minutes into the hour which is in progress.
+dominantAction=Continue
+references=ref-u17-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-teach-clock-productive-3`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8d520b86cefb15f6196780cf5cf72982503cbb3123e28139a0e5dbb1153eea8b
+
+kind=TEACH
+title=Admitted lines
+body=в двенадцать часов десять минут — at twelve hours ten minutes. 
+dominantAction=Continue
+references=ref-u17-attribution
+items=
+examples=ex-u17-clock-productive-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-rem-clock-productive`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b9af0bb25e617daa8999bc45217ed9b5969f4254a5d8574a83651fc7e8a8e08b
+
+kind=REMEDIATE
+title=Remediation
+body=In Russian we can state the number of minutes into the hour which is in progress.
+dominantAction=Continue
+references=
+items=
+examples=ex-u17-clock-productive-0,ex-u17-clock-productive-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-check-clock-productive`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9661e4d77dfda7359f88d814f088d23851f04bd328c15832943d7fe1f500d231
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u17-i-clock-productive-1,u17-i-clock-productive-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-clock-productive
+
 ### SESSION `u17-s-calendar-date`
 
 - Objectives: obj-u17-calendar-date
@@ -2044,43 +2191,6 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 17 work in your copy.
-companionDirection=
-remediationStepId=
-
-### SESSION `u17-s-gap-clock-productive`
-
-- Objectives: obj-u17-clock-productive
-- Sessions: u17-s-gap-clock-productive
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 353daab4e66219989aa2211249f8f539fcd8a564f835c6ea0487bc5fe37b30f1
-
-title=Productive clock-time answers stay in the copy you own
-estimatedMinutes=4
-objectives=obj-u17-clock-productive
-steps=u17-st-gap-clock-productive
-
-### STEP `u17-st-gap-clock-productive`
-
-- Objectives: obj-u17-clock-productive
-- Sessions: u17-s-gap-clock-productive
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 889538d7b7f0e0ce3371c997370afb60784b578564d40c7e40f3db166ce780a4
-
-kind=UNAVAILABLE
-title=Productive clock-time answers stay in the copy you own
-body=The three shown clock phrases are recognition only. Productive clock-time answers have no admitted frozen span.
-dominantAction=Continue
-references=ref-u17-attribution
-items=
-examples=
-unavailableReason=Productive clock-time answers have no admitted frozen span.
-bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -2713,6 +2823,57 @@ note=8.45 – 9 without 15 minutes
 objectiveId=obj-u17-quarter-hour
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u17-clock-productive-0`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c6b217e008f99f730af5f2bb71819a43c78fe8ad8fb34b6618975b560fe97d06
+
+kind=LEXICAL
+letterId=
+display=в пятнадцать минут второго
+note=at the fifteenth minute of the second [hour]
+objectiveId=obj-u17-clock-productive
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-clock-productive-1`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6f47c4779a5675b9c54c735c8d1cbb2634726f23b8492405708ae8f3b1dac54d
+
+kind=LEXICAL
+letterId=
+display=без двадцати пяти два
+note=lacking twenty five minutes to the two
+objectiveId=obj-u17-clock-productive
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-clock-productive-2`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 10877fcbd96227cc22bf96e0daaab54d229094b6bb450567899909a0bbd5b5bc
+
+kind=LEXICAL
+letterId=
+display=в двенадцать часов десять минут
+note=at twelve hours ten minutes
+objectiveId=obj-u17-clock-productive
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### EXAMPLE `ex-u17-calendar-date-0`
 
 - Objectives: obj-u17-calendar-date
@@ -3097,6 +3258,41 @@ relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u17-quarter-hour-0-ru | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-1-en | prov-ex-u17-quarter-hour-2-en
 responseKind=ENGLISH_CLASSIFICATION
 
+### GUIDED_PRACTICE `u17-g-clock-productive-0`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 63ace26886a809544714121bb275cdab083259649ac868d5808bc7e834a8ecbc
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted expression states the minutes into the hour in progress?
+promptLetter=In Russian we can state the number of minutes into the hour which is in progress.
+options=в пятнадцать минут второго | в час пятнадцать минут
+answer=в пятнадцать минут второго
+feedback=The frozen source pairs the shown form "в пятнадцать минут второго" with the admitted gloss "at the fifteenth minute of the second [hour]". The shown rule is "In Russian we can state the number of minutes into the hour which is in progress." That states the minutes into the hour in progress.
+objectiveId=obj-u17-clock-productive
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "в час пятнадцать минут" with the admitted gloss "at [one] hour fifteen minutes". That reads the numbers off the dial.
+testedFeature=CLOCK_MINUTES_INTO_HOUR
+evidenceMode=STATED_APPLICATION
+contrastSetId=u17-clock-productive-0
+cueLanguage=rule
+independent=false
+answerSourceIds=prov-ex-u17-clock-productive-0-ru
+distractorSourceIds= | prov-u17-clock-productive-x-3
+distractorDifference= | The frozen source pairs the shown form "в час пятнадцать минут" with the admitted gloss "at [one] hour fifteen minutes". That reads the numbers off the dial.
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "в пятнадцать минут второго" with the admitted gloss "at the fifteenth minute of the second [hour]". The shown rule is "In Russian we can state the number of minutes into the hour which is in progress." That states the minutes into the hour in progress.
+contrastMembers=в пятнадцать минут второго | в час пятнадцать минут
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u17-clock-productive-rem | prov-ex-u17-clock-productive-0-ru | prov-u17-clock-productive-x-3
+responseKind=RUSSIAN_PHRASE
+
 ### GUIDED_PRACTICE `u17-g-calendar-date-0`
 
 - Objectives: obj-u17-calendar-date
@@ -3105,7 +3301,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62c06d52ada5cc27aa81b505fdc74127bace3d00c1e2972246a6b6d9e90a8953
+- Content hash: c7dd14f5e2a9bef974d1e112b3d29dc2bf669886decbc7d53175e284a41b69ef
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3117,7 +3313,7 @@ feedback=The frozen source pairs the shown form "Двадцать восьмое
 objectiveId=obj-u17-calendar-date
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "28.08.17" ("the all-numeric date").
+distractorRationales= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
 testedFeature=DATE_SPOKEN
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u17-calendar-date-0
@@ -3125,7 +3321,7 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-calendar-date-0-en
 distractorSourceIds= | prov-ex-u17-calendar-date-1-en | prov-u17-calendar-date-x-1
-distractorDifference= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "28.08.17" ("the all-numeric date").
+distractorDifference= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first").
 contrastMembers=the month in genitive case | day month year | 28.08.17
 relationKind=EXPLICIT_SOURCE_PAIR
@@ -3420,7 +3616,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9e7bb00c9e1a608bab2c9729f1887701cacb4469ca2924f86a32d0a93ec29b0d
+- Content hash: e103095b18949bcec0a3ffcdcf43d3bb789eda166dc1b45e85fadf3e61090fb4
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3432,7 +3628,7 @@ feedback=The frozen source pairs the shown form "мне двадцать лет"
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "age statements" with the admitted gloss "age statements".
+distractorRationales= | The heading "age statements" labels the section. It is not the gloss of the shown form.
 testedFeature=AGE_HEADING
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-age-1
@@ -3440,7 +3636,7 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-age-0-en
 distractorSourceIds= | prov-u17-age-x-1
-distractorDifference= | The frozen source pairs the shown form "age statements" with the admitted gloss "age statements".
+distractorDifference= | The heading "age statements" labels the section. It is not the gloss of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
 contrastMembers=I am 20 (years old) | age statements
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3455,7 +3651,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1d9c2c8d1d5fee59454698896c035d8c181e721b26472c2a464f12767fa508ba
+- Content hash: a45c5319147f0365fee934f2619fce56574f77d25635df92ed825d9d179604d9
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3467,7 +3663,7 @@ feedback=The frozen source pairs the shown form "двадцать лет" with t
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "age statements" with the admitted gloss "age statements".
+distractorRationales= | The heading "age statements" labels the section. It is not the gloss of the shown form.
 testedFeature=AGE_YEARS
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-age-2
@@ -3475,7 +3671,7 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-age-1-en
 distractorSourceIds= | prov-u17-age-x-1
-distractorDifference= | The frozen source pairs the shown form "age statements" with the admitted gloss "age statements".
+distractorDifference= | The heading "age statements" labels the section. It is not the gloss of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "двадцать лет" with the admitted gloss "20 years".
 contrastMembers=20 years | age statements
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3867,6 +4063,76 @@ relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u17-quarter-hour-3-ru | prov-ex-u17-quarter-hour-3-en | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-1-en
 responseKind=ENGLISH_CLASSIFICATION
 
+### INDEPENDENT_CHECK `u17-i-clock-productive-1`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7212c71dfdeaade41cf54056b03f31e030e68f09f5d7fb8f0a5b0c99630024b0
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted expression states the minutes that remain after the half hour?
+promptLetter=This is used after the half hour.
+options=без двадцати пяти два | в час тридцать пять минут
+answer=без двадцати пяти два
+feedback=The frozen source pairs the shown form "без двадцати пяти два" with the admitted gloss "lacking twenty five minutes to the two". The shown rule is "This is used after the half hour." That says how many minutes remain after the half hour.
+objectiveId=obj-u17-clock-productive
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "в час тридцать пять минут" with the admitted gloss "at [one] hour thirty five minutes". That reads the numbers off the dial.
+testedFeature=CLOCK_MINUTES_REMAINING
+evidenceMode=STATED_APPLICATION
+contrastSetId=u17-clock-productive-1
+cueLanguage=rule
+independent=true
+answerSourceIds=prov-ex-u17-clock-productive-1-ru
+distractorSourceIds= | prov-u17-clock-productive-x-5
+distractorDifference= | The frozen source pairs the shown form "в час тридцать пять минут" with the admitted gloss "at [one] hour thirty five minutes". That reads the numbers off the dial.
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "без двадцати пяти два" with the admitted gloss "lacking twenty five minutes to the two". The shown rule is "This is used after the half hour." That says how many minutes remain after the half hour.
+contrastMembers=без двадцати пяти два | в час тридцать пять минут
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u17-clock-productive-x-1 | prov-ex-u17-clock-productive-1-ru | prov-u17-clock-productive-x-5
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u17-i-clock-productive-2`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d1946106262084d2b7dc013389913f22064a21d0021ef0a19067ed153c989569
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted expression reads the numbers off the dial?
+promptLetter=This option is always available.
+options=в двенадцать часов десять минут | в десять минут первого
+answer=в двенадцать часов десять минут
+feedback=The frozen source pairs the shown form "в двенадцать часов десять минут" with the admitted gloss "at twelve hours ten minutes". The shown rule is "This option is always available." That reads the numbers off the dial.
+objectiveId=obj-u17-clock-productive
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "в десять минут первого" with the admitted gloss "at ten minutes of the first". That states the minutes into the hour in progress.
+testedFeature=CLOCK_DIRECT_READING
+evidenceMode=STATED_APPLICATION
+contrastSetId=u17-clock-productive-2
+cueLanguage=rule
+independent=true
+answerSourceIds=prov-ex-u17-clock-productive-2-ru
+distractorSourceIds= | prov-u17-clock-productive-x-7
+distractorDifference= | The frozen source pairs the shown form "в десять минут первого" with the admitted gloss "at ten minutes of the first". That states the minutes into the hour in progress.
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "в двенадцать часов десять минут" with the admitted gloss "at twelve hours ten minutes". The shown rule is "This option is always available." That reads the numbers off the dial.
+contrastMembers=в двенадцать часов десять минут | в десять минут первого
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u17-clock-productive-x-2 | prov-ex-u17-clock-productive-2-ru | prov-u17-clock-productive-x-7
+responseKind=RUSSIAN_PHRASE
+
 ### INDEPENDENT_CHECK `u17-i-calendar-date-1`
 
 - Objectives: obj-u17-calendar-date
@@ -3875,7 +4141,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 87be18a083d1183bcfc5b5e01bff9f35067f6dc20d70958323ddc1138a63dc62
+- Content hash: 4991c0e4993843dd2b3b6fae3a96e0b4d2d3c69059a66cf0fde8a68c2b63e135
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3887,7 +4153,7 @@ feedback=The frozen source pairs the shown form "28 августа 2017 г." wit
 objectiveId=obj-u17-calendar-date
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "28.08.17" ("the all-numeric date").
+distractorRationales= | The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
 testedFeature=DATE_ORDER
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u17-calendar-date-1
@@ -3895,7 +4161,7 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-calendar-date-1-en
 distractorSourceIds= | prov-ex-u17-calendar-date-0-en | prov-u17-calendar-date-x-1
-distractorDifference= | The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "28.08.17" ("the all-numeric date").
+distractorDifference= | The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written").
 contrastMembers=day month year | the month in genitive case | 28.08.17
 relationKind=EXPLICIT_SOURCE_PAIR
@@ -3910,7 +4176,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81d5bab72543b9d486677fb50756a64fdb4453e45c518d313eeb4c859c892501
+- Content hash: 2b56779aa61fda12d9d499aab078e602e844b18257aaffe8e53dfd3de54c137a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3922,7 +4188,7 @@ feedback=The frozen source pairs the shown form "28 августа 2017 г." wit
 objectiveId=obj-u17-calendar-date
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "28.08.17" ("the all-numeric date").
+distractorRationales= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
 testedFeature=DATE_YEAR
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u17-calendar-date-2
@@ -3930,7 +4196,7 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u17-calendar-date-x-0
 distractorSourceIds= | prov-ex-u17-calendar-date-1-en | prov-u17-calendar-date-x-1
-distractorDifference= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "28.08.17" ("the all-numeric date").
+distractorDifference= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "of the year" ("is short for").
 contrastMembers=of the year | day month year | 28.08.17
 relationKind=EXPLICIT_SOURCE_PAIR
@@ -3940,16 +4206,16 @@ responseKind=ENGLISH_CLASSIFICATION
 ### REFERENCE `ref-u17-attribution`
 
 - Objectives: none
-- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-clock-answers, u17-s-calendar-date, u17-s-book, u17-s-gap-clock-productive
+- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-clock-answers, u17-s-clock-productive, u17-s-calendar-date, u17-s-book
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: ac3b611855b1a031906b708a2d19c7bc570391941209b6bf56912b4e4b2dd1ea
+- Content hash: c00145f96d85322d3f542ff0f223dc619f3a7fbb011d6d1d3b4a72e7c69167ba
 
 title=Unit 17 source notice
 summary=Proposed Unit 17 adapts CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and the admitted Wikipedia clock and date spans.
-detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The bounded clock phrases are frozen at Wikipedia oldid 1366690592. The calendar-date examples are frozen at Wikipedia oldid 1357134172. Those license routes are not interchangeable. The admitted calendar-date relationships remain admitted. The three clock phrases are bounded recognition. Quarter-hour lines use a separate Pressbooks notice and do not clear productive clock-time. Productive clock-time generation remains unresolved. Review is pending.
+detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The bounded clock phrases are frozen at Wikipedia oldid 1366690592. The calendar-date examples are frozen at Wikipedia oldid 1357134172. Those license routes are not interchangeable. The admitted calendar-date relationships remain admitted. The three clock phrases are bounded recognition. Quarter-hour lines use a separate Pressbooks notice and do not clear productive clock-time. Productive clock-time is the ReadyRussian Grammar 20 system applied to exact retained expressions for minutes into the hour, minutes remaining after the half hour, and dial reading. The governed span is a text extraction. The clock image, data URI, quarter-hour lines, and linked audio are not admitted. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=17
 searchTerms=unit 17 source notice
@@ -4567,6 +4833,312 @@ attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
 contentHash=f5ad95bcfbb06926a6f5bf73a8a6f9c57519dad44c4a14dfdbe58b3160b682e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-productive-0-en`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b24dbb50e7fe0abd2f0094719de19690b425ebd135ad59a74a40b619fb8e3254
+
+recordType=meaning
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=at the fifteenth minute of the second [hour]
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=ece657b04ff9c5c2e291d029ad9dc648142f300a4890acb810ab16e19b75a964
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-productive-0-ru`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a77fdf82a761f409427eb5dbd1211586109f6771c7bc943b10ff29eddae39ee8
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=в пятнадцать минут второго
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=fba8091dd6c8940d2a513ca35bf2efb400059061e882f85ef6fe23637fd9b866
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-productive-1-en`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dd252cfe62405df484fe9874e14371ab94a0740ed61ac280c07d69b2dea38cf5
+
+recordType=meaning
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=lacking twenty five minutes to the two
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=f5ba17c2fd46cebd195bbc517018d8855f272c4ff188123f20ebb4ca2daccb87
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-productive-1-ru`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 55b490a614fb2a8c52fb75de494335154c13548f94e93e158a23e418e5f35182
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=без двадцати пяти два
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=3471d689c2f76dd2b70c29b9dcd296a034556dff29c9c584fe9f507a2879212c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-productive-2-en`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ca17e42b0ea4df96060e95eba0ff18eded8357f70b7bba21f69d0fde5886c811
+
+recordType=meaning
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=at twelve hours ten minutes
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=a81f6bfcee826d8e26f6626fddb8c5a9aaeb04d07b4c1c3a3e099f6d453c7f08
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-productive-2-ru`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1a2937662f0f9dd39d3d01c69ae9b3366c9965578012fb251630752eca6a2975
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=в двенадцать часов десять минут
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=a5dc688590d7e49716e3545e4384b555a3a33632137133bee5d5650012fecb68
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -8903,6 +9475,516 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u17-clock-productive-rem`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 98b828cdd5c84e4801fc7509954196511cdfa6ea464a3894998ef47a66681d46
+
+recordType=instruction
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=In Russian we can state the number of minutes into the hour which is in progress.
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=aafb3e6e3912db26aa52c854d1af1b0e71c4760586dd220836575da2a95e2aec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-productive-x-0`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 069f9e6f76ee2fdf80d6e3a1789272fbf0c2aeff7eaa12db58fd734550746e62
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=In Russian we can state the number of minutes into the hour which is in progress.
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=aafb3e6e3912db26aa52c854d1af1b0e71c4760586dd220836575da2a95e2aec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-productive-x-1`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 315b85273d9027d0510c8054747f73da5f873390219aa4cfe9ef655134dfcb2b
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=This is used after the half hour.
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=b99635e260874f207bc09a7378b16471e6ba9217fe5c73c25c8f4b4a2cf4a475
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-productive-x-2`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 03136dcee208c7f867e456826c2159833329b02d47c6678c48e03af7a31c4df8
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=This option is always available.
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=a4e984293f4df18b9c32176f723b71348ac1b01b5737030df21b408f9db9e823
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-productive-x-3`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2496cab88bb3ae1b64750862fe01106a0b3e61638535f114642ab71609862184
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=в час пятнадцать минут
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=ab4d15edc906a538f006518c67c63104733416000f501b45a48e4f23bcd411b8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-productive-x-4`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 978e7b3b9dcb4b709a297a3849a74aad1324505d8b26d5202c9bdd13b03798b7
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=at [one] hour fifteen minutes
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=c6054bc6495f41aeea4440cdb84b76904ae5f85fc2fbcd50f291ecb61d1ecf30
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-productive-x-5`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 23b9fc87963be870c4569520e027189400a1fca8abcbafb485e912ae9b11a95a
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=в час тридцать пять минут
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=f81cac5dda02a12743025d40663cdbb8ba4ba30292dbefcc24cfa3693d39f34c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-productive-x-6`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 26d2d648ae7df9bc685e26e162a34d3c2d3c74fae05d1a38384779ae86fdf7b2
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=at [one] hour thirty five minutes
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=fae172e001e196c53fd2d3644a475da5ea7d658fbbb0e00ffe3b50811be83c38
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-productive-x-7`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bbaa953ce6f4c68c8b537decc5ba6c0a341458ae8a6ece2053e8a88a988eb4ff
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=в десять минут первого
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=d031a842bf35645ffa8515142ab9b1b3a3df008182a995ffe07b4381592ed667
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-productive-x-8`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ba6228600e8e98f2a0f3942dab2acd0de3a8aa8fce01b7af85d84c2673934669
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
+sourceRevision=b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff
+sourceRecordId=grammar20:We can read off the numbers shown on the dial. When we do so we are stating the 
+originalSourceText=We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.
+In Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.
+We can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.
+We can speak of quarters and halves of an hour rather than of minutes.
+If the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.
+
+The concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.
+
+The first hour began at 12 o'clock. To say that something happens at the time shown at left:
+в двенадцать часов десять минут—at twelve hours ten minutes
+в десять минут первого—at ten minutes of the first
+в начале первого часа—at the beginning of the first hour
+
+As the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:
+в час пятнадцать минут—at [one] hour fifteen minutes
+в пятнадцать минут второго—at the fifteenth minute of the second [hour]
+
+в час двадцать пять минут—at [one] hour twenty five minutes
+в двадцать пять минут второго—at twenty five minutes of the second [hour]
+
+Once the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:
+в час тридцать пять минут—at [one] hour thirty five minutes
+без двадцати пяти два—lacking twenty five minutes to the two
+shippedText=at ten minutes of the first
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795
+contentHash=6bfe48a8f1db05cf13d6afe7db023702c795876ce6eaaa0ff74696bb836b06f4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u17-clock-rem`
 
 - Objectives: obj-u17-clock
@@ -12039,6 +13121,32 @@ text=Choose the admitted record. The feedback states the frozen field.
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the one-year row?
 
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-065acdda0170`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b6e2de8223f1521028c58a6e5ec8cf6854064cef53795882d77fbc3a9e3edc58
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The heading
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-161776f0e76f`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7f9ffbf4a590d83a2a7dd40fb36042aaaabffc9062d5a4bf798b7374b71e46fc
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=That states the minutes into the hour in progress.
+
 ### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-2114923f3bee`
 
 - Objectives: none
@@ -12064,6 +13172,19 @@ text=Open Lesson 17 in your copy and complete its lesson work.
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the two-minute row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-2698594caaf9`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c217747b1e7d333ef9c931999b1ee4cd8807e3c5a574e6098107d10f2604c2c4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The shown rule is
 
 ### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-26f3fd1f76d9`
 
@@ -12182,19 +13303,6 @@ text=Does this row fail the five-minute row?
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the second ordinal?
 
-### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-3b45294d491a`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4a8ac5c6bfde64cb5a3eb6c01ad6971a46de3d8ac8d3b8b10609a94356b49f4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Productive clock-time answers stay in the copy you own
-
 ### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-3d4545c9821e`
 
 - Objectives: none
@@ -12273,7 +13381,7 @@ text=Does this row fail the first ordinal?
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the second ordinal?
 
-### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-50133fa53a4d`
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-542527c51916`
 
 - Objectives: none
 - Sessions: none
@@ -12281,10 +13389,10 @@ text=Does this row fail the second ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 784361112f6e847e6ec3700ea88287cd653701258818d98d82f5de55405beca5
+- Content hash: c335dbc7e954740b3c3efdd516cea07320b1c1cec39dd6e4e7dc2a289a20df7f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The three shown clock phrases are recognition only. Productive clock-time answers have no admitted frozen span.
+text=Which admitted expression states the minutes into the hour in progress?
 
 ### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-56c027a21a9d`
 
@@ -12429,19 +13537,6 @@ text=Which admitted English gloss is written beside the shown form?
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the two-hour row?
 
-### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-78b493cfd92f`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c99069144ba00bd0690f1e53f0a72e1f6bdc61da43f4442240907beab763167
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, calendar-date, and quarter-hour spans. Productive clock-time answers stay unresolved. Qualified review is pending.
-
 ### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-7b6d504d7e63`
 
 - Objectives: none
@@ -12454,6 +13549,19 @@ text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month,
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the one-hour row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-7ed38a30d474`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 13a9b85e2c7e9aa4be0dcf31312e3af6c985aff4f717232b510df416e0fb8ee6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=That says how many minutes remain after the half hour.
 
 ### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-8cb586ba7d43`
 
@@ -12545,6 +13653,19 @@ text=Work Lesson 17 in your copy
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the first ordinal?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-c18b7277adb2`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3f282fe4412f96ff8d24ecb7ec52a3156c13fc7654dc8bdd45221a1f4ac4dd47
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, calendar-date, quarter-hour, and the admitted ReadyRussian clock system. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-c2dcb6b4308a`
 
@@ -12689,6 +13810,45 @@ text=Which admitted line is the two-hour row?
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the two-year row?
 
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-ed5d66b360a7`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 57b0452646cd9c9d1e7dcef77fee3f7342c8445afacb70d8c9a4ffcda1cd16f3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=That reads the numbers off the dial.
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-eef34ccc9931`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 979daa850e75612b162f90a2b5b7fd861fd09a253ff65fd4634f76b8475a097b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=labels the section. It is not the gloss of the shown form.
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-f58f301768db`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e6b23439d8c62c37292ac1aafdbda54d72c1893560d9e0780bdf8fc33e91c515
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted expression reads the numbers off the dial?
+
 ### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-f7af114e6a9d`
 
 - Objectives: none
@@ -12714,6 +13874,19 @@ text=Does this row fail the five-hour row?
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the third ordinal?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-fcadd0911fce`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a08c3f8a822834c062fe86ec28207b0751dea934690e61acd0f41a41aacddf9d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted expression states the minutes that remain after the half hour?
 
 ### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-fe44eddb2d81`
 
@@ -12801,6 +13974,21 @@ CC BY-SA 4.0
 Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-readyrussian-grammar20`
+
+- Objectives: none
+- Sessions: none
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 71b975aa363efbff084ec02de6f210eff28a0a489ccd9aeb6204de84aaff85e6
+
+Grammar 20 — Telling Time
+CC BY-SA 4.0
+ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
 ### SOURCE `src-wikipedia-date-notation-russia-1357134172`
 
 - Objectives: none
@@ -12884,6 +14072,20 @@ permitsAppUse=true
 - Content hash: b7ef578d8224ab510acf5c9d9c6af80a522d28cd3c2dcb3449cee32b61f86596
 
 src-pressbooks-diverse-russian-traditions-grammar
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-readyrussian-grammar20`
+
+- Objectives: none
+- Sessions: none
+- Source: src-readyrussian-grammar20
+- Rights: rights-readyrussian-grammar20
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 838634980e7856df2eaccd3581ebbff8d66a3e367936f6fac3463fecbebc04e2
+
+src-readyrussian-grammar20
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -13035,6 +14237,17 @@ permitsAppUse=true
 - `obj-u17-quarter-hour` CHECK `u17-i-quarter-hour-2`
 - `obj-u17-quarter-hour` CHECK `u17-i-quarter-hour-3`
 - `obj-u17-quarter-hour` REMEDIATION `u17-st-rem-quarter-hour`
+- `obj-u17-clock-productive` INSTRUCTION `u17-st-orient`
+- `obj-u17-clock-productive` INSTRUCTION `u17-st-teach-clock-productive-1`
+- `obj-u17-clock-productive` INSTRUCTION `u17-st-teach-clock-productive-2`
+- `obj-u17-clock-productive` INSTRUCTION `u17-st-teach-clock-productive-3`
+- `obj-u17-clock-productive` EXAMPLE `ex-u17-clock-productive-0`
+- `obj-u17-clock-productive` EXAMPLE `ex-u17-clock-productive-1`
+- `obj-u17-clock-productive` EXAMPLE `ex-u17-clock-productive-2`
+- `obj-u17-clock-productive` PRACTICE `u17-st-guided-clock-productive-1`
+- `obj-u17-clock-productive` CHECK `u17-i-clock-productive-1`
+- `obj-u17-clock-productive` CHECK `u17-i-clock-productive-2`
+- `obj-u17-clock-productive` REMEDIATION `u17-st-rem-clock-productive`
 - `obj-u17-calendar-date` INSTRUCTION `u17-st-orient`
 - `obj-u17-calendar-date` INSTRUCTION `u17-st-teach-calendar-date-1`
 - `obj-u17-calendar-date` INSTRUCTION `u17-st-teach-calendar-date-2`
@@ -13046,7 +14259,6 @@ permitsAppUse=true
 - `obj-u17-calendar-date` REMEDIATION `u17-st-rem-calendar-date`
 - `obj-u17-book` INSTRUCTION `u17-st-book-work`
 - `obj-u17-book` INSTRUCTION `u17-st-book`
-- `obj-u17-clock-productive` INSTRUCTION `u17-st-gap-clock-productive`
 - `u17-s-orient` OBJECTIVE `obj-u17-ordinals`
 - `u17-s-orient` OBJECTIVE `obj-u17-hours`
 - `u17-s-orient` OBJECTIVE `obj-u17-years`
@@ -13057,6 +14269,7 @@ permitsAppUse=true
 - `u17-s-orient` OBJECTIVE `obj-u17-clock`
 - `u17-s-orient` OBJECTIVE `obj-u17-clock-answers`
 - `u17-s-orient` OBJECTIVE `obj-u17-quarter-hour`
+- `u17-s-orient` OBJECTIVE `obj-u17-clock-productive`
 - `u17-s-orient` OBJECTIVE `obj-u17-calendar-date`
 - `u17-s-orient` OBJECTIVE `obj-u17-book`
 - `u17-st-orient` REFERENCE `ref-u17-attribution`
@@ -13208,6 +14421,20 @@ permitsAppUse=true
 - `u17-st-check-quarter-hour` ITEM `u17-i-quarter-hour-1`
 - `u17-st-check-quarter-hour` ITEM `u17-i-quarter-hour-2`
 - `u17-st-check-quarter-hour` ITEM `u17-i-quarter-hour-3`
+- `u17-s-clock-productive` OBJECTIVE `obj-u17-clock-productive`
+- `u17-st-teach-clock-productive-1` EXAMPLE `ex-u17-clock-productive-0`
+- `u17-st-teach-clock-productive-1` EXAMPLE `ex-u17-clock-productive-1`
+- `u17-st-teach-clock-productive-1` REFERENCE `ref-u17-attribution`
+- `u17-st-guided-clock-productive-1` REMEDIATION `u17-st-rem-clock-productive`
+- `u17-st-guided-clock-productive-1` ITEM `u17-g-clock-productive-0`
+- `u17-st-teach-clock-productive-2` REFERENCE `ref-u17-attribution`
+- `u17-st-teach-clock-productive-3` EXAMPLE `ex-u17-clock-productive-2`
+- `u17-st-teach-clock-productive-3` REFERENCE `ref-u17-attribution`
+- `u17-st-rem-clock-productive` EXAMPLE `ex-u17-clock-productive-0`
+- `u17-st-rem-clock-productive` EXAMPLE `ex-u17-clock-productive-1`
+- `u17-st-check-clock-productive` REMEDIATION `u17-st-rem-clock-productive`
+- `u17-st-check-clock-productive` ITEM `u17-i-clock-productive-1`
+- `u17-st-check-clock-productive` ITEM `u17-i-clock-productive-2`
 - `u17-s-calendar-date` OBJECTIVE `obj-u17-calendar-date`
 - `u17-st-teach-calendar-date-1` EXAMPLE `ex-u17-calendar-date-0`
 - `u17-st-teach-calendar-date-1` EXAMPLE `ex-u17-calendar-date-1`
@@ -13222,8 +14449,6 @@ permitsAppUse=true
 - `u17-st-check-calendar-date` ITEM `u17-i-calendar-date-2`
 - `u17-s-book` OBJECTIVE `obj-u17-book`
 - `u17-st-book-work` REFERENCE `ref-u17-attribution`
-- `u17-s-gap-clock-productive` OBJECTIVE `obj-u17-clock-productive`
-- `u17-st-gap-clock-productive` REFERENCE `ref-u17-attribution`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-0-en`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-0-ru`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-1-en`
@@ -13244,6 +14469,12 @@ permitsAppUse=true
 - `obj-u17-clock-answers` PROVENANCE `prov-ex-u17-clock-answers-1-ru`
 - `obj-u17-clock-answers` PROVENANCE `prov-ex-u17-clock-answers-2-en`
 - `obj-u17-clock-answers` PROVENANCE `prov-ex-u17-clock-answers-2-ru`
+- `obj-u17-clock-productive` PROVENANCE `prov-ex-u17-clock-productive-0-en`
+- `obj-u17-clock-productive` PROVENANCE `prov-ex-u17-clock-productive-0-ru`
+- `obj-u17-clock-productive` PROVENANCE `prov-ex-u17-clock-productive-1-en`
+- `obj-u17-clock-productive` PROVENANCE `prov-ex-u17-clock-productive-1-ru`
+- `obj-u17-clock-productive` PROVENANCE `prov-ex-u17-clock-productive-2-en`
+- `obj-u17-clock-productive` PROVENANCE `prov-ex-u17-clock-productive-2-ru`
 - `obj-u17-hours` PROVENANCE `prov-ex-u17-hours-0-en`
 - `obj-u17-hours` PROVENANCE `prov-ex-u17-hours-0-ru`
 - `obj-u17-hours` PROVENANCE `prov-ex-u17-hours-1-en`
@@ -13326,6 +14557,16 @@ permitsAppUse=true
 - `obj-u17-clock-answers` PROVENANCE `prov-u17-clock-answers-x-0`
 - `obj-u17-clock-answers` PROVENANCE `prov-u17-clock-answers-x-1`
 - `obj-u17-clock-answers` PROVENANCE `prov-u17-clock-answers-x-2`
+- `obj-u17-clock-productive` PROVENANCE `prov-u17-clock-productive-rem`
+- `obj-u17-clock-productive` PROVENANCE `prov-u17-clock-productive-x-0`
+- `obj-u17-clock-productive` PROVENANCE `prov-u17-clock-productive-x-1`
+- `obj-u17-clock-productive` PROVENANCE `prov-u17-clock-productive-x-2`
+- `obj-u17-clock-productive` PROVENANCE `prov-u17-clock-productive-x-3`
+- `obj-u17-clock-productive` PROVENANCE `prov-u17-clock-productive-x-4`
+- `obj-u17-clock-productive` PROVENANCE `prov-u17-clock-productive-x-5`
+- `obj-u17-clock-productive` PROVENANCE `prov-u17-clock-productive-x-6`
+- `obj-u17-clock-productive` PROVENANCE `prov-u17-clock-productive-x-7`
+- `obj-u17-clock-productive` PROVENANCE `prov-u17-clock-productive-x-8`
 - `obj-u17-clock` PROVENANCE `prov-u17-clock-rem`
 - `obj-u17-clock` PROVENANCE `prov-u17-clock-x-0`
 - `obj-u17-clock` PROVENANCE `prov-u17-clock-x-1`
@@ -13377,7 +14618,8 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-- `u17-st-gap-clock-productive`
+None.
+
 
 ## Unresolved relationships
 

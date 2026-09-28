@@ -1605,14 +1605,14 @@ def build() -> dict:
     }
     intake_summaries = {
         16: "Proposed Unit 16 is in development. Admitted instrumental rows and the admitted complement span await qualified review. It is not installed and the owned-edition mapping is not signed.",
-        17: "Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, the stated calendar-date constructions, and the admitted quarter-hour lines await qualified review. Productive clock-time answers have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        17: "Proposed Unit 17 is in development. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, the stated calendar-date constructions, the admitted quarter-hour lines, and the admitted ReadyRussian clock system await qualified review. It is not installed and the owned-edition mapping is not signed.",
         18: "Proposed Unit 18 is in development. Admitted comparison lines and admitted relative lines await qualified review. It is not installed and the owned-edition mapping is not signed.",
         19: "Proposed Unit 19 is in development. Admitted prefix cautions, conditional lines, obligation lines, and the admitted likelihood example await qualified review. It is not installed and the owned-edition mapping is not signed.",
         20: "Proposed Unit 20 is in development. Admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths await qualified review. It is not installed and the owned-edition mapping is not signed.",
     }
     intake_readiness = {
         16: "CONTENT_COMPLETE_REVIEW_PENDING",
-        17: "NOT_PREPARED",
+        17: "CONTENT_COMPLETE_REVIEW_PENDING",
         18: "CONTENT_COMPLETE_REVIEW_PENDING",
         19: "CONTENT_COMPLETE_REVIEW_PENDING",
         20: "CONTENT_COMPLETE_REVIEW_PENDING",
@@ -1652,8 +1652,8 @@ def build() -> dict:
         21: "Proposed Unit 21 is in development. Admitted object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss await qualified review. It is not installed and the owned-edition mapping is not signed.",
         22: "Proposed Unit 22 is in development. Admitted numeral lines, the case table, the half-form usage note, and the collective column await qualified review. A numbered list is not taught as an ordinal distinction. It is not installed and the owned-edition mapping is not signed.",
         23: "Proposed Unit 23 is in development and is not prepared. Admitted time-expression spans await qualified review. Completion over a period has no admitted frozen span. Book self-attestation does not replace the app checks. It is not installed and the owned-edition mapping is not signed.",
-        24: "Proposed Unit 24 is in development and is not prepared. Admitted negation lines, the book compare, the prefix table, and a bounded word-order contrast await qualified review. Scope-sensitive placement has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
-        25: "Proposed Unit 25 is in development and is not prepared. Admitted name lines, a bounded classification of the frozen diminutive-formation span, courtesy lines, and the address-register sentences await qualified review. That classification does not clear a productive diminutive formation rule. It is not installed and the owned-edition mapping is not signed.",
+        24: "Proposed Unit 24 is in development. Admitted negation lines, the book compare, the prefix table, a bounded word-order contrast, and the admitted ReadyRussian placement contrast await qualified review. It is not installed and the owned-edition mapping is not signed.",
+        25: "Proposed Unit 25 is in development and is not prepared. Admitted name lines, a bounded classification of the frozen diminutive-formation span, courtesy lines, and the address-register sentences await qualified review. Listed name pairs do not establish a productive diminutive. It is not installed and the owned-edition mapping is not signed.",
     }
     for number, short, title in UNITS_3_30:
         if number < 21 or number > 25:
@@ -1668,7 +1668,7 @@ def build() -> dict:
                 next_intake_summaries[number],
                 proposed_unit["sessions"],
                 [number - 1],
-                readiness="CONTENT_COMPLETE_REVIEW_PENDING" if number in (21, 22) else "NOT_PREPARED",
+                readiness="CONTENT_COMPLETE_REVIEW_PENDING" if number in (21, 22, 24) else "NOT_PREPARED",
                 mapping_note=(
                     f"Proposed Lesson {number}, printed pages {pages}. Independently stated topic scope: {topic}. "
                     "The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. "
@@ -1701,13 +1701,21 @@ def build() -> dict:
                 title,
                 short,
                 (
-                    f"Proposed Unit {number} is in development and is not prepared. "
-                    "Admitted frozen spans await qualified review. Unsupported topics stay book-directed. "
-                    "It is not installed and the owned-edition mapping is not signed."
+                    (
+                        f"Proposed Unit {number} is in development. "
+                        "Admitted frozen spans, including the public-domain reading span, await qualified review. "
+                        "It is not installed and the owned-edition mapping is not signed."
+                    )
+                    if number == 28
+                    else (
+                        f"Proposed Unit {number} is in development and is not prepared. "
+                        "Admitted frozen spans await qualified review. Unsupported topics stay book-directed. "
+                        "It is not installed and the owned-edition mapping is not signed."
+                    )
                 ),
                 proposed_unit["sessions"],
                 [number - 1],
-                readiness="NOT_PREPARED",
+                readiness="CONTENT_COMPLETE_REVIEW_PENDING" if number == 28 else "NOT_PREPARED",
                 mapping_note=(
                     f"Proposed Lesson {number}. Observed structural scope: {topic}. "
                     "Admitted frozen spans are pending qualified review and do not approve alignment. "

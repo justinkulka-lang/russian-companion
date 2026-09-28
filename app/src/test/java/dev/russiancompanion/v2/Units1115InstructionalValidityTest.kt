@@ -67,7 +67,8 @@ class Units1115InstructionalValidityTest {
             }
         }
         assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
-        assertTrue(pack.units.drop(25).all { it.readiness == "NOT_PREPARED" && it.installState == "DEVELOPMENT" && it.sessions.isNotEmpty() })
+        assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.sessions.isNotEmpty() })
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
     }
 
     @Test
@@ -301,13 +302,16 @@ class Units1115InstructionalValidityTest {
             unit.readiness == "NOT_PREPARED" || unit.installState == "NOT_YET_INSTALLED"
         }.map { it.number }.toSet()
         assertTrue(unprepared.contains(7))
-        assertTrue(unprepared.contains(17))
+        assertFalse(unprepared.contains(17))
         assertFalse(unprepared.contains(19))
         assertFalse(unprepared.contains(21))
         assertFalse(unprepared.contains(22))
         assertTrue(unprepared.contains(23))
-        assertTrue(unprepared.contains(24))
+        assertFalse(unprepared.contains(24))
         assertTrue(unprepared.contains(25))
+        assertTrue(unprepared.contains(26))
+        assertFalse(unprepared.contains(28))
+        assertTrue(unprepared.contains(30))
         assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
         val falseClaim = "Units 19 through 23 contain proposed lesson bodies that still need qualified review."
         assertTrue(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(23))

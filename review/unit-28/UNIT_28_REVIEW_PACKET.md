@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 28 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 28 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 28 remains in development. Its readiness is content-complete and review-pending. The Lesson 28 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4cf6007f69beadac5278bb42e5bf060a62fe3eb9
-- Unit content-review SHA-256: 0bda9d8e6e4730e3b6ea31ebf42311bb0bbec98d8f6b02ed4990e340dc6e2886
+- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
+- Unit content-review SHA-256: afa29cbd6d710bcb853d74189d012584660996b25270af78c3d23efe35cf1cc5
 - Mapping-package SHA-256: bdf9618b16d9a96d9d359a01e7901617c7d8b97bcd601768695131da126497aa
-- Pack content-review SHA-256: 68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4
-- Review-package SHA-256: 04e8edb04da43239ba17bfac3a91e225b38ef67ba5926eb364667256a5d672c2
-- Repository source SHA-256: 7e73e724ef3895ff8fb3401f0a84411e74a62dfe0877fcf9015554215ee7a652
+- Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
+- Review-package SHA-256: 102b23c0a14714fc03a698e48a27307f2cdf95d0133e615ce622c571950c5016
+- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=28
 title=Verbal adverbs
-topicSummary=Proposed Unit 28 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 28 is in development. Admitted frozen spans, including the public-domain reading span, await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 28. Observed structural scope: Imperfective and perfective verbal adverbs, formation and use, vocabulary and readings. Admitted frozen spans are pending qualified review and do not approve alignment. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=28
 prerequisites=27
-estimatedMinutes=46
+estimatedMinutes=54
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 28.
 
 ### UNIT `unit-28`
 
-- Objectives: obj-u28-imperfective-adverb, obj-u28-perfective-adverb, obj-u28-book, obj-u28-readings
-- Sessions: u28-s-orient, u28-s-imperfective-adverb, u28-s-perfective-adverb, u28-s-book, u28-s-gap-readings
+- Objectives: obj-u28-imperfective-adverb, obj-u28-perfective-adverb, obj-u28-readings, obj-u28-book
+- Sessions: u28-s-orient, u28-s-imperfective-adverb, u28-s-perfective-adverb, u28-s-readings, u28-s-book
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 712dd06f6b5f3c02210fd6f6df1787f85cf396129a44f2ffc4c0b3a0380b0a53
+- Content hash: 57328bcf0adfa81754ef38e8b5c22ea9403156655ee453c5d769bd6c18b88762
 
 number=28
 title=Verbal adverbs
-topicSummary=Proposed Unit 28 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 28 is in development. Admitted frozen spans, including the public-domain reading span, await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 28. Observed structural scope: Imperfective and perfective verbal adverbs, formation and use, vocabulary and readings. Admitted frozen spans are pending qualified review and do not approve alignment. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=28
 prerequisites=27
-estimatedMinutes=46
+estimatedMinutes=54
 
 ### ADVANCEMENT `unit-28-advancement`
 
@@ -96,12 +96,12 @@ estimatedMinutes=46
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e73c994174305675d2f677e0ec7ed4ff8344a4648db30242b7ff3ac93fa44366
+- Content hash: 251ef7165462a9086478a3f368a3639323c1f6aaa45b4618162792819dde5703
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
-minimumDistinctChecks=4
+minimumDistinctChecks=6
 requireDueReview=false
 tutorOptional=true
 
@@ -143,6 +143,25 @@ practice=u28-st-guided-perfective-adverb-1
 checks=u28-i-perfective-adverb-1,u28-i-perfective-adverb-2
 remediation=u28-st-rem-perfective-adverb
 
+### OBJECTIVE `obj-u28-readings`
+
+- Objectives: obj-u28-readings
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f1a6876df680d655c75ea67e65be5c456dc56065e5c6907d86762c6e0c67ebd6
+
+title=Answer from the admitted verbal-adverb passage
+kind=RECOGNITION
+unitNumber=28
+instruction=u28-st-orient,u28-st-teach-readings-1,u28-st-teach-readings-2
+examples=ex-u28-readings-0,ex-u28-readings-1
+practice=u28-st-guided-readings-1
+checks=u28-i-readings-1,u28-i-readings-2
+remediation=u28-st-rem-readings
+
 ### OBJECTIVE `obj-u28-book`
 
 - Objectives: obj-u28-book
@@ -162,53 +181,34 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u28-readings`
-
-- Objectives: obj-u28-readings
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bd3a4148fe27cd2d1e34ac8afb605759b5cc2457d4503613522b93c723d91f0e
-
-title=Readings stay in the copy you own
-kind=GUIDANCE
-unitNumber=28
-instruction=u28-st-gap-readings
-examples=
-practice=
-checks=
-remediation=
-
 ### SESSION `u28-s-orient`
 
-- Objectives: obj-u28-imperfective-adverb, obj-u28-perfective-adverb, obj-u28-book
+- Objectives: obj-u28-imperfective-adverb, obj-u28-perfective-adverb, obj-u28-readings, obj-u28-book
 - Sessions: u28-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 30facfcf6eae5b93a45c93dc3098af16eb38c709d1f5824e4213ef8614a7adb9
+- Content hash: 0d052de053ac572c9446af13f4ded290c40e84aa2597d78410fbf8b61c67ddb1
 
 title=Admitted adverbial lines
 estimatedMinutes=8
-objectives=obj-u28-imperfective-adverb,obj-u28-perfective-adverb,obj-u28-book
+objectives=obj-u28-imperfective-adverb,obj-u28-perfective-adverb,obj-u28-readings,obj-u28-book
 steps=u28-st-orient
 
 ### STEP `u28-st-orient`
 
-- Objectives: obj-u28-imperfective-adverb, obj-u28-perfective-adverb, obj-u28-book
+- Objectives: obj-u28-imperfective-adverb, obj-u28-perfective-adverb, obj-u28-readings, obj-u28-book
 - Sessions: u28-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bcbd2c95d42d7858060d54352fab62f3fbd1b06405023ec64662d3ff77c967ed
+- Content hash: 888067839d9ae699471cdb9d877805666c36bcdb5d51a2b62f538101c73dda42
 
 kind=ORIENT
 title=Admitted adverbial lines
-body=Proposed Unit 28 uses admitted imperfective and perfective adverbial lines. Readings stay in the copy you own. Qualified review is pending.
+body=Proposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -490,6 +490,131 @@ bookDirection=
 companionDirection=
 remediationStepId=u28-st-rem-perfective-adverb
 
+### SESSION `u28-s-readings`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-readings
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c1f50cf22e100b7360d96a91d979f23a4d7bd98387a5e65590765d6c865657ba
+
+title=Answer from the admitted verbal-adverb passage
+estimatedMinutes=12
+objectives=obj-u28-readings
+steps=u28-st-teach-readings-1,u28-st-guided-readings-1,u28-st-teach-readings-2,u28-st-rem-readings,u28-st-check-readings
+
+### STEP `u28-st-teach-readings-1`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-readings
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 22a1e230989342cd1142d2a54c75d9fc5c2207bff1ae80bd89b915e574b501bc
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u28-readings-0,ex-u28-readings-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u28-st-guided-readings-1`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-readings
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4313d9d42735e5fbf7e7387e05a6f03062739cc936a07b602b460dbdf6880ede
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u28-g-readings-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u28-st-rem-readings
+
+### STEP `u28-st-teach-readings-2`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-readings
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 91d6257554bb4439aa9f81c0268ee04c3372b7ed240b4afe1393cae6faadff5f
+
+kind=TEACH
+title=Admitted instruction
+body=устав писать ложился на диван и отдыхал читая
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u28-st-rem-readings`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-readings
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 205227e85a81bbae9ca66ca70b68715341ef5670a1648e88e9b3d4f7e90966a1
+
+kind=REMEDIATE
+title=Remediation
+body=устав писать ложился на диван и отдыхал читая
+dominantAction=Continue
+references=
+items=
+examples=ex-u28-readings-0,ex-u28-readings-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u28-st-check-readings`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-readings
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9579ce06e824f13de2ed22cc624187e33a80e464bc4576b0b9df8370544ba741
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u28-i-readings-1,u28-i-readings-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u28-st-rem-readings
+
 ### SESSION `u28-s-book`
 
 - Objectives: obj-u28-book
@@ -546,43 +671,6 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 28 work in your copy.
-companionDirection=
-remediationStepId=
-
-### SESSION `u28-s-gap-readings`
-
-- Objectives: obj-u28-readings
-- Sessions: u28-s-gap-readings
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 27b5363b2cf34216b754b99ee9b40eeee5c706932a534b747ff3af35cfee0996
-
-title=Readings stay in the copy you own
-estimatedMinutes=4
-objectives=obj-u28-readings
-steps=u28-st-gap-readings
-
-### STEP `u28-st-gap-readings`
-
-- Objectives: obj-u28-readings
-- Sessions: u28-s-gap-readings
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 42fae2430473c436a101077b3125756eb7b313f6fb1ad7115bc14fad1b110138
-
-kind=UNAVAILABLE
-title=Readings stay in the copy you own
-body=Readings stay in the copy you own. The admitted lines do not supply a reading passage.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=Readings have no admitted frozen span.
-bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -671,6 +759,40 @@ note=can only be past
 objectiveId=obj-u28-perfective-adverb
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u28-readings-0`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: eb1f5ec1edca8acedc766edde5c34a1d963a879f8ba0d8ce1c8214e9a6c7f875
+
+kind=LEXICAL
+letterId=
+display=устав писать
+note=ложился на диван
+objectiveId=obj-u28-readings
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u28-readings-1`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dfabb716fde36123d7b3dcc777481dace895fa4b6f55119c8b16eba6728a6d76
+
+kind=LEXICAL
+letterId=
+display=стоит
+note=сложа руки
+objectiveId=obj-u28-readings
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u28-g-imperfective-adverb-0`
 
 - Objectives: obj-u28-imperfective-adverb
@@ -740,6 +862,41 @@ contrastMembers=can only be past | usually present | very rarely past
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-u28-perfective-adverb-x-0 | prov-ex-u28-perfective-adverb-0-en | prov-u28-perfective-adverb-x-1 | prov-u28-perfective-adverb-x-2
 responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u28-g-readings-0`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2cf00f590d25d11c2a7fc06c3ed9c5ae7ed72e17f6858a8afa5d04e67b608640
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted action is tied to the shown words in the passage?
+promptLetter=устав писать
+options=ложился на диван | сложа руки
+answer=ложился на диван
+feedback=The admitted line keeps устав писать ложился на диван и отдыхал читая together. ложился на диван.
+objectiveId=obj-u28-readings
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The passage places сложа руки with стоит.
+testedFeature=VERBAL_ADVERB_REST
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u28-readings-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u28-readings-0-en
+distractorSourceIds= | prov-ex-u28-readings-1-en
+distractorDifference= | сложа руки is a later posture, not the rest after устав писать.
+whyAnswerDemonstratesObjective=The admitted line keeps устав писать ложился на диван и отдыхал читая together.
+contrastMembers=ложился на диван | сложа руки
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u28-readings-0-ru | prov-ex-u28-readings-0-en | prov-ex-u28-readings-1-en
+responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u28-i-imperfective-adverb-1`
 
@@ -881,19 +1038,89 @@ relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-u28-perfective-adverb-x-0 | prov-ex-u28-perfective-adverb-0-en | prov-u28-perfective-adverb-x-1 | prov-u28-perfective-adverb-x-2
 responseKind=ENGLISH_CLASSIFICATION
 
+### INDEPENDENT_CHECK `u28-i-readings-1`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 81dfc3b169eca7e18771638b7e25dc1bd80f97a21d46797987c6f91ea77cbb91
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted action is tied to the shown words in the passage?
+promptLetter=стоит
+options=сложа руки | отдыхал читая
+answer=сложа руки
+feedback=The passage says стоит, сложа руки. сложа руки.
+objectiveId=obj-u28-readings
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The passage places отдыхал читая with устав писать.
+testedFeature=VERBAL_ADVERB_POSTURE
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u28-readings-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u28-readings-1-en
+distractorSourceIds= | prov-u28-readings-rem-r2
+distractorDifference= | отдыхал читая is the earlier rest, not the posture with стоит.
+whyAnswerDemonstratesObjective=The passage says стоит, сложа руки.
+contrastMembers=сложа руки | отдыхал читая
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u28-readings-1-ru | prov-ex-u28-readings-1-en | prov-u28-readings-rem-r2
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u28-i-readings-2`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f5248445555bb82df9d7daf2b3e32b3a379e2c751289f2f2756b1975b2563aa3
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted action is tied to the shown words in the passage?
+promptLetter=отдыхал читая
+options=устав писать | сложа руки
+answer=устав писать
+feedback=The admitted line keeps устав писать ложился на диван и отдыхал читая together. устав писать.
+objectiveId=obj-u28-readings
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The passage places сложа руки with стоит.
+testedFeature=VERBAL_ADVERB_READING_LINK
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u28-readings-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u28-readings-0-ru
+distractorSourceIds= | prov-ex-u28-readings-1-en
+distractorDifference= | сложа руки does not introduce отдыхал читая.
+whyAnswerDemonstratesObjective=The admitted line keeps устав писать ложился на диван и отдыхал читая together.
+contrastMembers=устав писать | сложа руки
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-u28-readings-rem-r2 | prov-ex-u28-readings-0-ru | prov-ex-u28-readings-1-en
+responseKind=RUSSIAN_PHRASE
+
 ### REFERENCE `ref-u2630-attribution`
 
 - Objectives: none
-- Sessions: u28-s-orient, u28-s-imperfective-adverb, u28-s-perfective-adverb, u28-s-book, u28-s-gap-readings
+- Sessions: u28-s-orient, u28-s-imperfective-adverb, u28-s-perfective-adverb, u28-s-readings, u28-s-book
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 9fa0208e099d7853055ab1375a1767a62c10c120a4d946d8074762a009300dc2
+- Content hash: b26fe560853d126bc1284595a06bb6ea3e3e9d9c2de0720af1d5bf95ea5078ce
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, general letter conventions, participle stress, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, participle stress, a general bookish-register claim, and dictionary use are not prepared. ReadyRussian letter conventions cover structure, the Russian and English organizational difference, and the stranger address limit. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
@@ -1487,6 +1714,122 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u28-readings-0-en`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-orient, u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2f904703f34a9502a6084111dacb19300da439dcc76250228777fbc0f54b76be
+
+recordType=meaning
+sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
+sourceRevision=5336197
+sourceRecordId=vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры
+originalSourceText=устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки
+shippedText=ложился на диван
+transformation=selection
+licenseId=Public domain
+licenseUrl=https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825
+attribution=Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.
+shareAlikeTreatment=The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.
+sourceHash=b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3
+contentHash=b85bba867eb28d312cb133e87aea9b09a87f5ce1b2bb935c255dabd96aef0cbe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u28-readings-0-ru`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-orient, u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f72ca3f0f5c55ff62916434ada5bc891e98bb5f1e1744acfe7609670ce95c3b2
+
+recordType=example
+sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
+sourceRevision=5336197
+sourceRecordId=vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры
+originalSourceText=устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки
+shippedText=устав писать
+transformation=selection
+licenseId=Public domain
+licenseUrl=https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825
+attribution=Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.
+shareAlikeTreatment=The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.
+sourceHash=b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3
+contentHash=e783ac31fb5530b786f8c7748cbf42211e5b9d6d36fe5bfd9383653ac5bf7372
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u28-readings-1-en`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-orient, u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e3840b3ccea96626511adab96bfcf0a06e42dcd4e83fb3050ed371b7c8800152
+
+recordType=meaning
+sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
+sourceRevision=5336197
+sourceRecordId=vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры
+originalSourceText=устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки
+shippedText=сложа руки
+transformation=selection
+licenseId=Public domain
+licenseUrl=https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825
+attribution=Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.
+shareAlikeTreatment=The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.
+sourceHash=b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3
+contentHash=04e219c663a0c55b144dd61614d39ca5974fcd841ce24430c0d4f774394e330c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u28-readings-1-ru`
+
+- Objectives: obj-u28-readings
+- Sessions: u28-s-orient, u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9eaa19671d6fb47828f17f0213f27118cd29e0946ae263fe8e06e2d56e441252
+
+recordType=example
+sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
+sourceRevision=5336197
+sourceRecordId=vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры
+originalSourceText=устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки
+shippedText=стоит
+transformation=selection
+licenseId=Public domain
+licenseUrl=https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825
+attribution=Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.
+shareAlikeTreatment=The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.
+sourceHash=b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3
+contentHash=39e127737ccee60d12e6e2c06f34004276d6f3cdf4717798744739cd26d9673f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u28-imperfective-adverb-rem`
 
 - Objectives: obj-u28-imperfective-adverb
@@ -1951,161 +2294,237 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u28-130`
+### PROVENANCE `prov-u28-readings-rem`
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Objectives: obj-u28-readings
+- Sessions: u28-s-orient, u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5406ce8c17c4dc289576c5903f1d2c9cf27f4192dac3f525869edfd127fafbe4
+- Content hash: 9714a9303ba3a8a41fadb506c82ac58968cba21b6779805a6b0ed5cff3d8427f
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
+recordType=instruction
+sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
+sourceRevision=5336197
+sourceRecordId=vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры
+originalSourceText=устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки
+shippedText=устав писать ложился на диван и отдыхал читая
+transformation=selection
+licenseId=Public domain
+licenseUrl=https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825
+attribution=Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.
+shareAlikeTreatment=The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.
+sourceHash=b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3
+contentHash=a64fa15f8a677aae23af70c0069322ceda1dfdda85eb8d1df6277767426c14f4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u28-131`
+### PROVENANCE `prov-u28-readings-rem-r0`
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Objectives: obj-u28-readings
+- Sessions: u28-s-orient, u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba5f1cfac9f3c8a093316bb58ee5500259c27ce8fb6b57068f3d81cbc2865c89
+- Content hash: 415f3a1fdf6c1089b00739a838b25dce2740e7d00531a12f2336fb54e4d0f94e
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source assigns can only be past to perfective ones.
+recordType=example
+sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
+sourceRevision=5336197
+sourceRecordId=vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры
+originalSourceText=устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки
+shippedText=устав писать ложился на
+transformation=selection
+licenseId=Public domain
+licenseUrl=https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825
+attribution=Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.
+shareAlikeTreatment=The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.
+sourceHash=b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3
+contentHash=741d0cddf8424766fe345b554d097bde817fd5338cf1477f4e02199c80c6aa46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u28-132`
+### PROVENANCE `prov-u28-readings-rem-r1`
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Objectives: obj-u28-readings
+- Sessions: u28-s-orient, u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 93a89b2f45523c79a210be8de4de2a6fdafafbcf5ac11877088ec7b2de6b0bef
+- Content hash: d7b6217baa6c8d600a9366a6b5f154847080bbaf3da2e63964e4b85100146cb3
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source uses very rarely past for a different construction.
+recordType=example
+sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
+sourceRevision=5336197
+sourceRecordId=vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры
+originalSourceText=устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки
+shippedText=диван и
+transformation=selection
+licenseId=Public domain
+licenseUrl=https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825
+attribution=Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.
+shareAlikeTreatment=The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.
+sourceHash=b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3
+contentHash=56f6937a27a0fa8ebc44c9969e94b7161da334c9ac35c10f4316e2fc6c8dbc61
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u28-133`
+### PROVENANCE `prov-u28-readings-rem-r2`
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Objectives: obj-u28-readings
+- Sessions: u28-s-orient, u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c01349afbc8556e38727f7fc32191f82f6b2e3c2da8fc3523e44fdf9bc088701
+- Content hash: ee4e518b0e68ee89f89857fe4e55cc662da546a719c77d99720908f0c000b852
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This relationship is the one stated for perfective ones (can only be past).
+recordType=example
+sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
+sourceRevision=5336197
+sourceRecordId=vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры
+originalSourceText=устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки
+shippedText=отдыхал читая
+transformation=selection
+licenseId=Public domain
+licenseUrl=https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825
+attribution=Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.
+shareAlikeTreatment=The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.
+sourceHash=b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3
+contentHash=0e8aed1a193faba14c8402c0a9c0e3eb3d5492d0114f89c4fe0bf88dcbbe8043
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u28-134`
+### PROVENANCE `prov-u28-readings-x-0`
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Objectives: obj-u28-readings
+- Sessions: u28-s-orient, u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9745c3601fa3d6f49f788c543955cf95d65b6b8ed2877d0b60e2129ea6a99bb5
+- Content hash: 21825c6263de527a859b4826e6b56a4df9dc11e024cc4c9be01bd11b8d79dbac
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase is a different construction in the same span (very rarely past).
+recordType=example
+sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
+sourceRevision=5336197
+sourceRecordId=vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры
+originalSourceText=устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки
+shippedText=отдыхал читая
+transformation=selection
+licenseId=Public domain
+licenseUrl=https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825
+attribution=Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.
+shareAlikeTreatment=The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.
+sourceHash=b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3
+contentHash=0e8aed1a193faba14c8402c0a9c0e3eb3d5492d0114f89c4fe0bf88dcbbe8043
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u28-135`
+### PROVENANCE `prov-u28-readings-x-1`
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Objectives: obj-u28-readings
+- Sessions: u28-s-orient, u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5066c200cb88c9b1d6506799f7808fef6e47c09cfe1f512e95aca6be262860d0
+- Content hash: ca0bf1e202c7b9e617f7b3d78b15260d2491f5d6657f1da5efb8d1ae006ec484
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source says imperfective ones are usually present.
+recordType=example
+sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
+sourceRevision=5336197
+sourceRecordId=vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры
+originalSourceText=устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки
+shippedText=ложился на
+transformation=selection
+licenseId=Public domain
+licenseUrl=https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825
+attribution=Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.
+shareAlikeTreatment=The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.
+sourceHash=b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3
+contentHash=cc7376edb70e168124a2474802b0fceaceaed8528b639b0ca703f7929411d939
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u28-136`
+### PROVENANCE `prov-u28-readings-x-2`
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Objectives: obj-u28-readings
+- Sessions: u28-s-orient, u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 357c4be5a0dca9eb3acf3932b284ba2acf39c43327c82f450df805f7b2d97e0e
+- Content hash: 2d371ec1f8ec190e3b29a4a3fa629b305e12a262b6fd2fe939ba9680a46fbc00
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which English time relationship does the source state for imperfective forms?
+recordType=example
+sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
+sourceRevision=5336197
+sourceRecordId=vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры
+originalSourceText=устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки
+shippedText=диван
+transformation=selection
+licenseId=Public domain
+licenseUrl=https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825
+attribution=Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.
+shareAlikeTreatment=The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.
+sourceHash=b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3
+contentHash=83722f041ea2b871b81319127a927f240afa05839e01a1c388dacb416656e924
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u28-137`
+### PROVENANCE `prov-u28-readings-x-3`
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Objectives: obj-u28-readings
+- Sessions: u28-s-orient, u28-s-readings
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e2cf5160559ec657b921908a5f62504d0e305dd4a3f96ee63f6f87e0b3045638
+- Content hash: 405e170c5fefa264e66c78bb06f83a1aaff337cc2ce5d138c4ec7c8761a1e2ab
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
-
-### AUTHORED_ENGLISH `en-u28-138`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 249287f837013dd200ad6897286547740712443b101d088913a36ac75408c876
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which English time relationship belongs to imperfective forms?
-
-### AUTHORED_ENGLISH `en-u28-139`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae6525c8427a2fee86f4017cf2ad04ed8c421eda29ebaca2d4990a4d087897a4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase names a different construction (very rarely past).
-
-### AUTHORED_ENGLISH `en-u28-140`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0cf86a3259b1a3530c2df0d0b47032dd85739b33f67d8437cc22c379a8935e40
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which English time relationship does the source state for these imperfective forms?
-
-### AUTHORED_ENGLISH `en-u28-141`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b099247f6bb84d825b3097e0d009e8510afb4081b7b175a40f2405bf56d4d192
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source assigns usually present to imperfective ones.
+recordType=example
+sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
+sourceRevision=5336197
+sourceRecordId=vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры
+originalSourceText=устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки
+shippedText=и
+transformation=selection
+licenseId=Public domain
+licenseUrl=https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825
+attribution=Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.
+shareAlikeTreatment=The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.
+sourceHash=b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3
+contentHash=eead37caf818d0fae6de8adfc9645ca50de4a3be6ff9756bbab0d0a139a801af
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### AUTHORED_ENGLISH `en-u28-142`
 
@@ -2115,10 +2534,10 @@ text=The source assigns usually present to imperfective ones.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b20fc958af8f95a14516fa8383958f22452d0e84742ae409059de2a12284aeb3
+- Content hash: 4c4dd7e8ef32c57201f48a46ab9571242a0acd89e736bd4101758fd1cc837717
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This relationship is the one stated for imperfective ones (usually present).
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u28-143`
 
@@ -2128,10 +2547,10 @@ text=This relationship is the one stated for imperfective ones (usually present)
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3960353f0cd69443828a5a62634723ea72d3269a1ea9f899874eb9057a90a4bd
+- Content hash: 9603c1b28b7215ede2c97645155385d2b02f3b8dbc44a40bddd1473664aca0ea
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source says perfective ones can only be past.
+text=The source assigns can only be past to perfective ones.
 
 ### AUTHORED_ENGLISH `en-u28-144`
 
@@ -2141,10 +2560,10 @@ text=The source says perfective ones can only be past.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 86091f38d3c149e566fee150bc7645e14a71641449b663824bc0e4f5d1a97230
+- Content hash: 09c7789494a98dfa77ef5d2615c4a72c2b95ccb1cbb058b6c559222939ca0b76
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which English time relationship does the source state for perfective forms?
+text=The source uses very rarely past for a different construction.
 
 ### AUTHORED_ENGLISH `en-u28-145`
 
@@ -2154,10 +2573,10 @@ text=Which English time relationship does the source state for perfective forms?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c9680ab7cd3c76b9e1d4989ad408a5f17b57fd06e41f5b3119713b59a7d1b0b0
+- Content hash: eba5f74321658ed59dc51d4664529dcd5ea3e5ff01a6925b41fb6288e5dfaac6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which English time relationship belongs to perfective forms?
+text=This relationship is the one stated for perfective ones (can only be past).
 
 ### AUTHORED_ENGLISH `en-u28-146`
 
@@ -2167,10 +2586,10 @@ text=Which English time relationship belongs to perfective forms?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9b5eb20170b7de7060c06a8c29be7365e0f21c3acfd67bf41312d15090044961
+- Content hash: 624a9bd46ef32075776a986989151abbe9a739d043f8f776193fcf9f6e5a2df5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which English time relationship does the source state for these perfective forms?
+text=This phrase is a different construction in the same span (very rarely past).
 
 ### AUTHORED_ENGLISH `en-u28-147`
 
@@ -2180,10 +2599,10 @@ text=Which English time relationship does the source state for these perfective 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f5243bbbdb8049fcf4cedde9fd90f359dfe78647e257d8c8142579886d92ace6
+- Content hash: ab448b309016a084702c629bbd55730e9047753e1715cab708e535dd22459303
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted adverbial lines
+text=The source says imperfective ones are usually present.
 
 ### AUTHORED_ENGLISH `en-u28-148`
 
@@ -2193,10 +2612,10 @@ text=Admitted adverbial lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 371ae66127c4cc09e805a3e3c2113cf92c4feeeba5039899adb03d9cf5f4291a
+- Content hash: 122a566a9c0eb70050abd8c36069775ba7f646ca720e58304d13591bea163eb4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 28 uses admitted imperfective and perfective adverbial lines. Readings stay in the copy you own. Qualified review is pending.
+text=Which English time relationship does the source state for imperfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-149`
 
@@ -2206,10 +2625,10 @@ text=Proposed Unit 28 uses admitted imperfective and perfective adverbial lines.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c4c5844be8c014e496bd50532b88598889c80206f91a3418b8df0304fc596f3
+- Content hash: 70f7a30283afa80ab398b6218dd5803f0a7cacbb62f16a4181cb160ae38b54e7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 28 in the copy you own. The app records do not replace that lesson.
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u28-150`
 
@@ -2219,10 +2638,10 @@ text=Open Lesson 28 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bcfecec17b606a342c449d0b2992f46fc64d64da3f29e70cef52396dd5e287d8
+- Content hash: 0c853ec8e3fabeb782aa6d755b028bae1d655908a92c78b92e5bdc55418ac1be
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=Which English time relationship belongs to imperfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-151`
 
@@ -2232,10 +2651,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6af3b0c3913a057df2a89d55266d52a5227f5b266ba161d90ce7ccf866727262
+- Content hash: 682a056d89f268e193482eb7fe9d51b636010253122ddecfcc5cf91464316b50
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=This phrase names a different construction (very rarely past).
 
 ### AUTHORED_ENGLISH `en-u28-152`
 
@@ -2245,10 +2664,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 87f76062ee9427c44ef6d3546c214161381d7a6c017b0ac2b3036def5fed7df6
+- Content hash: 4efb3ca3ea40c6e55669d182f6cc1d7c83bad2d40d3062ba48bda1fe971c5dbd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Which English time relationship does the source state for these imperfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-153`
 
@@ -2258,10 +2677,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2b69a7c352fcb0d5f8a8fbc0eb8a3d12f1c8221ce9ff09a766027a68f0afede7
+- Content hash: f3a769acf560a90cf2d23f97f8ade911b7271536c8a01e37bf02f16f4f31d493
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=The source assigns usually present to imperfective ones.
 
 ### AUTHORED_ENGLISH `en-u28-154`
 
@@ -2271,10 +2690,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3fb7dbded98de941aa204dc0c57946c9bf07cd76e29a6276d21bcd8009515116
+- Content hash: d34cf63d9455246b33a83fca3b3775c20d11eb7fb66fcb8937893d1834367fc9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=This relationship is the one stated for imperfective ones (usually present).
 
 ### AUTHORED_ENGLISH `en-u28-155`
 
@@ -2284,10 +2703,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 384c8d0f3d69c474d5e2f953f2729c7d75c1be61de71c4cc7f754de96ef9d11c
+- Content hash: c45854515c1c49d871838f58f894cc2bf0429aff07530a113a09fdcd21e85f2f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=The source says perfective ones can only be past.
 
 ### AUTHORED_ENGLISH `en-u28-156`
 
@@ -2297,10 +2716,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed62345920215a65433bbbae880bef880550cee9f74eb1149711b734b5d28cb5
+- Content hash: a531990dc04da1e61857b09b10140a1620c8f729027cb794fe3b10284daea2a9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 28 in your copy
+text=Which English time relationship does the source state for perfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-157`
 
@@ -2310,10 +2729,10 @@ text=Work Lesson 28 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5f3647534f861b31d77796b455db76374e9c70ef0537f6993be9a967506c91c8
+- Content hash: d8c140f1af2bdc9e099ff7b6591dbcc366236b6ea83f2d6a19e1f7fe40758c15
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 28 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Which English time relationship belongs to perfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-158`
 
@@ -2323,10 +2742,10 @@ text=Do Lesson 28 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a8d22f916f5b75aed94bccb656c22efe5bd11dbaa61fb88df8d8c417c61fd333
+- Content hash: a3e86372a9680a1212376ec8395797eabb8e72b6c5d5c39dad77e2eff2754e28
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 28 in your copy and complete its lesson work.
+text=Which English time relationship does the source state for these perfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-159`
 
@@ -2336,10 +2755,10 @@ text=Open Lesson 28 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9091caf8746ae8c11e747ad9fdd68a7f7ec240e21a6fe8b9c393af7a7b006d4d
+- Content hash: 9df783688ddd21541268c34b4a88cf896c5784cced498b2668df7e2656491b60
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 28 book work
+text=The passage places сложа руки with стоит.
 
 ### AUTHORED_ENGLISH `en-u28-160`
 
@@ -2349,10 +2768,10 @@ text=Record Lesson 28 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cbf098bebe0fadae50c15e5fa015ede533a27c5ea52762d3201bc4c24b134b29
+- Content hash: f38c377d0223fd9e6562a5fe02f9b3ed76a1ded7c6b41cd7363793724f27416c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 28 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=сложа руки is a later posture, not the rest after устав писать.
 
 ### AUTHORED_ENGLISH `en-u28-161`
 
@@ -2362,10 +2781,10 @@ text=When you have done Lesson 28 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82b0dee0f920ebb12b8b59fb44cfeb2d5c09734b0d280b846d71939ac152358f
+- Content hash: 1e627f507fd0f30aca3ef4663912f4ba771cf841174da90fa358eb7a55230d40
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 28 work in your copy.
+text=The admitted line keeps устав писать ложился на диван и отдыхал читая together.
 
 ### AUTHORED_ENGLISH `en-u28-162`
 
@@ -2375,10 +2794,10 @@ text=Self-attest only after the Lesson 28 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 340d45e9a2c872bdd6890109489c1002dfc838d4826335a0c4d924b5891b9026
+- Content hash: f1542077ec26441675cc4d2f3d7011ac7f2f32a3c932575fa585da30e9bc4a00
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Readings stay in the copy you own
+text=Which admitted action is tied to the shown words in the passage?
 
 ### AUTHORED_ENGLISH `en-u28-163`
 
@@ -2388,10 +2807,244 @@ text=Readings stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: accc523dfb4eedf0810698df640a4ccea3eddcd97b8e5154d21691006299699f
+- Content hash: 4ef37fb37189459e58fe69db6a0e22ca9b3dfa5cb0b8caff23bb24ae081e4418
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Readings stay in the copy you own. The admitted lines do not supply a reading passage.
+text=The passage places отдыхал читая with устав писать.
+
+### AUTHORED_ENGLISH `en-u28-164`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 51f5b45ea679abaeb6d0ca6fe3892e3341244dac6df6aede67d00dd8159b49d2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=отдыхал читая is the earlier rest, not the posture with стоит.
+
+### AUTHORED_ENGLISH `en-u28-165`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: aa7a918ba1e93a801a4d8ca71e2a0c7d37f02678e08889ce07baedec8e3b3b69
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The passage says стоит, сложа руки.
+
+### AUTHORED_ENGLISH `en-u28-166`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1834235ab4851b25fd49285a5b739e2f802c5a9c89f2b48b0572821ee7ec1017
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=сложа руки does not introduce отдыхал читая.
+
+### AUTHORED_ENGLISH `en-u28-167`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 53663c67cde60c4395b89266c837baa55b4b27bb5ac06251a134e4050c253106
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted adverbial lines
+
+### AUTHORED_ENGLISH `en-u28-168`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c284c58cd461adf142b9f9099753fa46d6348b1d15c001d2bea7cea403d06118
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u28-169`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b3063f3ed9b18ae7274907fc3c9d31222074c55f90fd45f0a67d8b286e522214
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 28 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u28-170`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d4ae4f49cc168d8f1d6f205eb80574c2fc6918f0a55ea9a4ecc96d1b55781d24
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read the admitted examples on this card.
+
+### AUTHORED_ENGLISH `en-u28-171`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a6c50688f5bdaeb3c18769d84aad85a47bd76bee09c51e298a611250321f9f70
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u28-172`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e6ceec7fab1d98cbbb24c2c45a6a7b5849c31429f027636e53aa4d308e73ed82
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u28-173`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: df61a522dca3422661111eb5e8621ea88a3ff343ca99558a7f56c77529af0fe0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u28-174`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2153f270b215f2eecc32e8b83b843dce42c52f209066d76e40a65a86dbfe4f87
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u28-175`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: abcb22fcba83f9cebf7ae9f678e5c31c6d3aef7515660e46896397547cff1ad7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u28-176`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 253f382bd94f96c970dcc6306e6240a2103be0eb1f57ff2afb7dfddd3b5175cd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 28 in your copy
+
+### AUTHORED_ENGLISH `en-u28-177`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 11bfa0bc1eb58f1dda3f2a14f784cad2ed5803a20aabdfa95563226b90a22aad
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 28 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u28-178`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3b76b8b29fe827c3daa58e0a083357e247bceaf7501148d8e90cf83d88c7eb15
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 28 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u28-179`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 240d45d07200c19249165d6098932f83c27811a8bd0e213c9e764a172d3e8ab8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 28 book work
+
+### AUTHORED_ENGLISH `en-u28-180`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2f9a57fe4d3261f85ed3064d8405207ffc8c434f3007a92d9052bd3b5aec39cd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 28 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u28-181`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 18591837cbaf95a6dc5f36358b9a12b4869a4a3594df6b1c42b75a6988193923
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 28 work in your copy.
 
 ### SOURCE_CAPABILITY `cap-obj-u28-imperfective-adverb`
 
@@ -2485,6 +3138,23 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 | [[wikt:войти|войти]] ''(to enter, {{abbr|pf.|perfective}})''
 | войдя (вошед
 
+### SOURCE_CAPABILITY `cap-obj-u28-readings`
+
+- Objectives: obj-u28-readings
+- Sessions: none
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: SOURCE_CAPABILITY
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 98c4e48539cee9429103980760ea696f3cc7f7f2a977b69d7b4d4b66511f79c7
+
+sourceId=src-ruwikisource-vechera-5336197
+sourceRevision=5336197
+sourceRecordId=vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры
+sourceHash=b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3
+supportedClaim=verbal-adverb-reading
+exactSpan=устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки
+
 ### SOURCE `src-wikipedia-russian-grammar-1369617627`
 
 - Objectives: none
@@ -2498,6 +3168,21 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 Russian grammar
 CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-ruwikisource-vechera-5336197`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c263433a2315f529a68b14f818b0c9591097382eff88a3982ee420b6e06d9e67
+
+Вечера у княгини Старобельской (Чернышевский)
+Public domain
+Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
@@ -2527,6 +3212,20 @@ Original
 
 src-wikipedia-russian-grammar-1369617627
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-ruwikisource-vechera-5336197`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwikisource-vechera-5336197
+- Rights: rights-ruwikisource-vechera-5336197
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d22c8604b28da4b307dea6320e321dce4b78a819df26e34f4d6f92bd36a8bd8d
+
+src-ruwikisource-vechera-5336197
+Public domain
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -2565,11 +3264,20 @@ permitsAppUse=true
 - `obj-u28-perfective-adverb` CHECK `u28-i-perfective-adverb-1`
 - `obj-u28-perfective-adverb` CHECK `u28-i-perfective-adverb-2`
 - `obj-u28-perfective-adverb` REMEDIATION `u28-st-rem-perfective-adverb`
+- `obj-u28-readings` INSTRUCTION `u28-st-orient`
+- `obj-u28-readings` INSTRUCTION `u28-st-teach-readings-1`
+- `obj-u28-readings` INSTRUCTION `u28-st-teach-readings-2`
+- `obj-u28-readings` EXAMPLE `ex-u28-readings-0`
+- `obj-u28-readings` EXAMPLE `ex-u28-readings-1`
+- `obj-u28-readings` PRACTICE `u28-st-guided-readings-1`
+- `obj-u28-readings` CHECK `u28-i-readings-1`
+- `obj-u28-readings` CHECK `u28-i-readings-2`
+- `obj-u28-readings` REMEDIATION `u28-st-rem-readings`
 - `obj-u28-book` INSTRUCTION `u28-st-book-work`
 - `obj-u28-book` INSTRUCTION `u28-st-book`
-- `obj-u28-readings` INSTRUCTION `u28-st-gap-readings`
 - `u28-s-orient` OBJECTIVE `obj-u28-imperfective-adverb`
 - `u28-s-orient` OBJECTIVE `obj-u28-perfective-adverb`
+- `u28-s-orient` OBJECTIVE `obj-u28-readings`
 - `u28-s-orient` OBJECTIVE `obj-u28-book`
 - `u28-st-orient` REFERENCE `ref-u2630-attribution`
 - `u28-s-imperfective-adverb` OBJECTIVE `obj-u28-imperfective-adverb`
@@ -2598,10 +3306,20 @@ permitsAppUse=true
 - `u28-st-check-perfective-adverb` REMEDIATION `u28-st-rem-perfective-adverb`
 - `u28-st-check-perfective-adverb` ITEM `u28-i-perfective-adverb-1`
 - `u28-st-check-perfective-adverb` ITEM `u28-i-perfective-adverb-2`
+- `u28-s-readings` OBJECTIVE `obj-u28-readings`
+- `u28-st-teach-readings-1` EXAMPLE `ex-u28-readings-0`
+- `u28-st-teach-readings-1` EXAMPLE `ex-u28-readings-1`
+- `u28-st-teach-readings-1` REFERENCE `ref-u2630-attribution`
+- `u28-st-guided-readings-1` REMEDIATION `u28-st-rem-readings`
+- `u28-st-guided-readings-1` ITEM `u28-g-readings-0`
+- `u28-st-teach-readings-2` REFERENCE `ref-u2630-attribution`
+- `u28-st-rem-readings` EXAMPLE `ex-u28-readings-0`
+- `u28-st-rem-readings` EXAMPLE `ex-u28-readings-1`
+- `u28-st-check-readings` REMEDIATION `u28-st-rem-readings`
+- `u28-st-check-readings` ITEM `u28-i-readings-1`
+- `u28-st-check-readings` ITEM `u28-i-readings-2`
 - `u28-s-book` OBJECTIVE `obj-u28-book`
 - `u28-st-book-work` REFERENCE `ref-u2630-attribution`
-- `u28-s-gap-readings` OBJECTIVE `obj-u28-readings`
-- `u28-st-gap-readings` REFERENCE `ref-u2630-attribution`
 - `obj-u28-imperfective-adverb` PROVENANCE `prov-ex-u28-imperfective-adverb-0-en`
 - `obj-u28-imperfective-adverb` PROVENANCE `prov-ex-u28-imperfective-adverb-0-ru`
 - `obj-u28-imperfective-adverb` PROVENANCE `prov-ex-u28-imperfective-adverb-1-en`
@@ -2612,6 +3330,10 @@ permitsAppUse=true
 - `obj-u28-perfective-adverb` PROVENANCE `prov-ex-u28-perfective-adverb-1-ru`
 - `obj-u28-perfective-adverb` PROVENANCE `prov-ex-u28-perfective-adverb-2-en`
 - `obj-u28-perfective-adverb` PROVENANCE `prov-ex-u28-perfective-adverb-2-ru`
+- `obj-u28-readings` PROVENANCE `prov-ex-u28-readings-0-en`
+- `obj-u28-readings` PROVENANCE `prov-ex-u28-readings-0-ru`
+- `obj-u28-readings` PROVENANCE `prov-ex-u28-readings-1-en`
+- `obj-u28-readings` PROVENANCE `prov-ex-u28-readings-1-ru`
 - `obj-u28-imperfective-adverb` PROVENANCE `prov-u28-imperfective-adverb-rem`
 - `obj-u28-imperfective-adverb` PROVENANCE `prov-u28-imperfective-adverb-x-0`
 - `obj-u28-imperfective-adverb` PROVENANCE `prov-u28-imperfective-adverb-x-1`
@@ -2620,8 +3342,17 @@ permitsAppUse=true
 - `obj-u28-perfective-adverb` PROVENANCE `prov-u28-perfective-adverb-x-0`
 - `obj-u28-perfective-adverb` PROVENANCE `prov-u28-perfective-adverb-x-1`
 - `obj-u28-perfective-adverb` PROVENANCE `prov-u28-perfective-adverb-x-2`
+- `obj-u28-readings` PROVENANCE `prov-u28-readings-rem`
+- `obj-u28-readings` PROVENANCE `prov-u28-readings-rem-r0`
+- `obj-u28-readings` PROVENANCE `prov-u28-readings-rem-r1`
+- `obj-u28-readings` PROVENANCE `prov-u28-readings-rem-r2`
+- `obj-u28-readings` PROVENANCE `prov-u28-readings-x-0`
+- `obj-u28-readings` PROVENANCE `prov-u28-readings-x-1`
+- `obj-u28-readings` PROVENANCE `prov-u28-readings-x-2`
+- `obj-u28-readings` PROVENANCE `prov-u28-readings-x-3`
 - `obj-u28-imperfective-adverb` SOURCE_CAPABILITY `cap-obj-u28-imperfective-adverb`
 - `obj-u28-perfective-adverb` SOURCE_CAPABILITY `cap-obj-u28-perfective-adverb`
+- `obj-u28-readings` SOURCE_CAPABILITY `cap-obj-u28-readings`
 
 ## Book-directed experiences
 
@@ -2633,17 +3364,16 @@ permitsAppUse=true
 
 - `cap-obj-u28-imperfective-adverb` supports `imperfective-verbal-adverb` for `obj-u28-imperfective-adverb`
 - `cap-obj-u28-perfective-adverb` supports `perfective-verbal-adverb` for `obj-u28-perfective-adverb`
+- `cap-obj-u28-readings` supports `verbal-adverb-reading` for `obj-u28-readings`
 
-Guidance objectives stay unsupported until an admitted frozen capability exists:
+No guidance objective is recorded.
 
-- `obj-u28-readings` Readings stay in the copy you own
 
 ## Book-directed register
 
 - `u28-st-orient` Open Lesson 28 in the copy you own. The app records do not replace that lesson.
 - `u28-st-book-work` Open Lesson 28 in your copy and complete its lesson work.
 - `u28-st-book` Self-attest only after the Lesson 28 work in your copy.
-- `u28-st-gap-readings` Readings have no admitted frozen span.
 
 ## Optional non-gating register
 
@@ -2652,7 +3382,8 @@ None.
 
 ## Unavailable experiences
 
-- `u28-st-gap-readings`
+None.
+
 
 ## Unresolved relationships
 

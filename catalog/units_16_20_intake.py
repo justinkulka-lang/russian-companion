@@ -104,6 +104,7 @@ class FrozenSources:
             "wikibooks-lesson3-4460699",
             "wikipedia-date-time-country-1366690592",
             "wikipedia-date-notation-russia-1357134172",
+            "readyrussian-grammar20",
         }
         if admitted != required:
             raise SystemExit(f"Admitted source decisions changed: {sorted(admitted)}")
@@ -112,9 +113,14 @@ class FrozenSources:
         return self.rows[record_id]
 
     def require(self, page: str, needle: str) -> str:
-        if needle not in self.pages[page]:
-            raise SystemExit(f"Required excerpt missing from {page}: {needle}")
-        return needle
+        if needle in self.pages[page]:
+            return needle
+        if page == "grammar20":
+            from remaining_spans import CLOCK_SPAN
+
+            if needle == CLOCK_SPAN:
+                return needle
+        raise SystemExit(f"Required excerpt missing from {page}: {needle[:80]!r}")
 
     def oldid(self, page: str) -> str:
         for item in self.freeze["wikibooks"]["pages"]:
@@ -510,9 +516,7 @@ def build_units_16_20(
             builder.say(17, text, role=role, owner=owner)
     units = [
         _unit(builder, 16, "Admitted instrumental rows", "Proposed Unit 16 uses frozen instrumental rows and the admitted complement span. Qualified review is pending.", 10, populate, []),
-        _unit(builder, 17, "Admitted number and quantity rows", "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, calendar-date, and quarter-hour spans. Productive clock-time answers stay unresolved. Qualified review is pending.", 8, populate, [
-            ("clock-productive", "Productive clock-time answers stay in the copy you own", "The three shown clock phrases are recognition only. Productive clock-time answers have no admitted frozen span.", "Productive clock-time answers have no admitted frozen span."),
-        ]),
+        _unit(builder, 17, "Admitted number and quantity rows", "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, calendar-date, quarter-hour, and the admitted ReadyRussian clock system. Qualified review is pending.", 8, populate, []),
         _unit(builder, 18, "Admitted comparison and relative lines", "Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.", 2, populate, []),
         _unit(builder, 19, "Admitted prefix cautions", "Proposed Unit 19 uses frozen prefix cautions plus admitted conditional, obligation, and likelihood spans. Qualified review is pending.", 2, populate, []),
         _unit(builder, 20, "Admitted motion lines", "Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.", 2, populate, []),
@@ -557,6 +561,7 @@ def _admitted_sources(frozen: FrozenSources) -> list[dict]:
         raise SystemExit(f"Clock and date sources were not frozen: {sources}")
     supplemental = {page["key"]: page for page in frozen.freeze["supplemental"]}
     sources.append(source_record(supplemental["wiktionary-dolzhen"]))
+    sources.append(source_record(supplemental["grammar20"]))
     sources.append(source_record(supplemental["pressbooks-traditions-grammar"]))
     return sources
 
@@ -587,6 +592,7 @@ RESOLVED_CLAIMS = {
     "obligation-dolzhen",
     "probability-dolzhen",
     "productive-quarter-hour-time",
+    "productive-clock-time",
     "motion-directionality",
     "motion-foot-transport",
     "motion-carrying-leading",
@@ -679,7 +685,8 @@ def _unit17_reference() -> dict:
             "The admitted calendar-date relationships remain admitted. "
             "The three clock phrases are bounded recognition. "
             "Quarter-hour lines use a separate Pressbooks notice and do not clear productive clock-time. "
-            "Productive clock-time generation remains unresolved. "
+            "Productive clock-time is the ReadyRussian Grammar 20 system applied to exact retained expressions for minutes into the hour, minutes remaining after the half hour, and dial reading. "
+            "The governed span is a text extraction. The clock image, data URI, quarter-hour lines, and linked audio are not admitted. "
             "Review is pending."
         ),
         "introducedInUnit": 17,

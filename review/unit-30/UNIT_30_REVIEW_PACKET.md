@@ -11,12 +11,12 @@ Unit 30 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 3
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4cf6007f69beadac5278bb42e5bf060a62fe3eb9
-- Unit content-review SHA-256: a1efd2ccc9fb002122efb8186b1e2dd4c450f6b869570e9ed6a88aa953b297eb
+- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
+- Unit content-review SHA-256: 60c27cc8efdb7e4ba36ca665be5f45b5106302ddc736e0db0465a733f653d33e
 - Mapping-package SHA-256: e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367
-- Pack content-review SHA-256: 68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4
-- Review-package SHA-256: 94d5d9b7da4ab3eca73de19735ceb9354064a6864b7754dadb7d26901eff83ac
-- Repository source SHA-256: 7e73e724ef3895ff8fb3401f0a84411e74a62dfe0877fcf9015554215ee7a652
+- Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
+- Review-package SHA-256: 3f93ed7beabaa02cf597a05f02a2f6a70f99edf979b4b75c451c18096191b6d8
+- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -41,7 +41,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 30. Observed structural scope: Course orientation, dictionary use, abbreviations, review and application of letter names, particles, vocabulary and a final reading. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=30
 prerequisites=29
-estimatedMinutes=86
+estimatedMinutes=90
 
 ## Not yet approved
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 30.
 
 ### UNIT `unit-30`
 
-- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-book, obj-u30-dictionary, obj-u30-capstone
-- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-book, u30-s-gap-dictionary, u30-s-gap-capstone
+- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-capstone, obj-u30-book
+- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-capstone, u30-s-book
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d2534219a993553b3b97c120474294627c7fe857c5b5670ce86c0e3f27990220
+- Content hash: c7caf0a4114a06d901a414eb2cc1e9e291c7130a0f5799fbe49738f1cb6fc5ff
 
 number=30
 title=Abbreviations, names of Russian letters, and particles
@@ -86,7 +86,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 30. Observed structural scope: Course orientation, dictionary use, abbreviations, review and application of letter names, particles, vocabulary and a final reading. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=30
 prerequisites=29
-estimatedMinutes=86
+estimatedMinutes=90
 
 ### ADVANCEMENT `unit-30-advancement`
 
@@ -96,12 +96,12 @@ estimatedMinutes=86
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7d2116f40d6773e62567189154cc653d51d6f7a1113a0a75862826ba01acd267
+- Content hash: 49a71638c84ac90a03060f1b52b7e10f8ebc2e8f0c031747165588309649dcc4
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
-minimumDistinctChecks=10
+minimumDistinctChecks=12
 requireDueReview=false
 tutorOptional=true
 
@@ -200,6 +200,25 @@ practice=u30-st-guided-particle-1
 checks=u30-i-particle-1,u30-i-particle-2
 remediation=u30-st-rem-particle
 
+### OBJECTIVE `obj-u30-capstone`
+
+- Objectives: obj-u30-capstone
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8235c8f72419a9441be73fdefd94a61f8a98bcc9b304d87a7c9b568288ea8032
+
+title=Answer from the admitted capstone story
+kind=RECOGNITION
+unitNumber=30
+instruction=u30-st-orient,u30-st-teach-capstone-1,u30-st-teach-capstone-2
+examples=ex-u30-capstone-0,ex-u30-capstone-1
+practice=u30-st-guided-capstone-1
+checks=u30-i-capstone-1,u30-i-capstone-2
+remediation=u30-st-rem-capstone
+
 ### OBJECTIVE `obj-u30-book`
 
 - Objectives: obj-u30-book
@@ -219,72 +238,34 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u30-dictionary`
-
-- Objectives: obj-u30-dictionary
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2d92f417d4011f285b34558e0ca173587e9512fbfc0dce637eaf809e2217a479
-
-title=Dictionary use stays in the copy you own
-kind=GUIDANCE
-unitNumber=30
-instruction=u30-st-gap-dictionary
-examples=
-practice=
-checks=
-remediation=
-
-### OBJECTIVE `obj-u30-capstone`
-
-- Objectives: obj-u30-capstone
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e69b94ce094cd654479c7896a0c3eab86fc7fbab7126193903e56c56ee40e006
-
-title=The final reading stays in the copy you own
-kind=GUIDANCE
-unitNumber=30
-instruction=u30-st-gap-capstone
-examples=
-practice=
-checks=
-remediation=
-
 ### SESSION `u30-s-orient`
 
-- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-book
+- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-capstone, obj-u30-book
 - Sessions: u30-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7cfdbbb52934d38cf8b5949bb233490a9d518cddacef303f844d7f1ed09f6695
+- Content hash: 06980f308f97981a8ccd5a7b67779ea3d3ea3e993983aba259814cf0650fdd79
 
 title=Review admitted table names and abbreviation examples
 estimatedMinutes=8
-objectives=obj-u30-letter-names,obj-u30-abbrev-examples,obj-u30-address-marks,obj-u30-abbreviation,obj-u30-particle,obj-u30-book
+objectives=obj-u30-letter-names,obj-u30-abbrev-examples,obj-u30-address-marks,obj-u30-abbreviation,obj-u30-particle,obj-u30-capstone,obj-u30-book
 steps=u30-st-orient
 
 ### STEP `u30-st-orient`
 
-- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-book
+- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-capstone, obj-u30-book
 - Sessions: u30-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0a0af0b929f91390407fd63c29873adcc37fc3084f2ea658d38044ca61c8d59e
+- Content hash: 2e203cee95dbccef80572dbdf7cff5e18214b58f054cdf8908d3874cddc81ea6
 
 kind=ORIENT
 title=Review admitted table names and abbreviation examples
-body=Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Dictionary use and the final reading stay in the copy you own. Qualified review is pending.
+body=Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Dictionary-field layout is not practical dictionary use. The admitted capstone story is included. Advancement stays blocked. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -1007,6 +988,131 @@ bookDirection=
 companionDirection=
 remediationStepId=u30-st-rem-particle
 
+### SESSION `u30-s-capstone`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-capstone
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5a6aec5e14dc9353fa37ed866889ac9f83d216a26effb9cd0e6a2395805a26ad
+
+title=Answer from the admitted capstone story
+estimatedMinutes=12
+objectives=obj-u30-capstone
+steps=u30-st-teach-capstone-1,u30-st-guided-capstone-1,u30-st-teach-capstone-2,u30-st-rem-capstone,u30-st-check-capstone
+
+### STEP `u30-st-teach-capstone-1`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-capstone
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1b0f424eaf75d051b6770e6bb4e212e801a9a067c0526948a66165402b1fcb98
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u30-capstone-0,ex-u30-capstone-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-guided-capstone-1`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-capstone
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 41cb3a96ebbfef81c071848ff7793d7b61959c0a1388de34d5eea3ef3131fd27
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u30-g-capstone-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u30-st-rem-capstone
+
+### STEP `u30-st-teach-capstone-2`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-capstone
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: bb0164a6594d34cc8da02c156ebbf013c35acf7673374d706770699904cd48b7
+
+kind=TEACH
+title=Admitted instruction
+body=Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-rem-capstone`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-capstone
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e4471fb6a67fa6f2d6e55bd3bb6efd5e5f08fd94262d6841d22ac7938bc8e3ea
+
+kind=REMEDIATE
+title=Remediation
+body=Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку.
+dominantAction=Continue
+references=
+items=
+examples=ex-u30-capstone-0,ex-u30-capstone-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-check-capstone`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-capstone
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 821b7fff626d53aefd89ac7308d637a06e80633adb4f1689f9c051882c50dcfe
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u30-i-capstone-1,u30-i-capstone-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u30-st-rem-capstone
+
 ### SESSION `u30-s-book`
 
 - Objectives: obj-u30-book
@@ -1063,80 +1169,6 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 30 work in your copy.
-companionDirection=
-remediationStepId=
-
-### SESSION `u30-s-gap-dictionary`
-
-- Objectives: obj-u30-dictionary
-- Sessions: u30-s-gap-dictionary
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 01023d37aa9c56b77fc378bef327edb59ec439497f277faadc1d493cc54f6d59
-
-title=Dictionary use stays in the copy you own
-estimatedMinutes=4
-objectives=obj-u30-dictionary
-steps=u30-st-gap-dictionary
-
-### STEP `u30-st-gap-dictionary`
-
-- Objectives: obj-u30-dictionary
-- Sessions: u30-s-gap-dictionary
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0056a8a426afbd44afc0cd90f4b78d8b4f1b2c6a398de3d0268dae8a33424e54
-
-kind=UNAVAILABLE
-title=Dictionary use stays in the copy you own
-body=Dictionary use stays in the copy you own. No admitted span gives that procedure.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=Dictionary use has no admitted frozen span.
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### SESSION `u30-s-gap-capstone`
-
-- Objectives: obj-u30-capstone
-- Sessions: u30-s-gap-capstone
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e712fd411b1a7f6a4ba46bcd8f89aa510040baf433eaae77edf6a5e826d4c0db
-
-title=The final reading stays in the copy you own
-estimatedMinutes=4
-objectives=obj-u30-capstone
-steps=u30-st-gap-capstone
-
-### STEP `u30-st-gap-capstone`
-
-- Objectives: obj-u30-capstone
-- Sessions: u30-s-gap-capstone
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 195bf8fb697ce6b596d068ff4348ee0e40b7e055a60591d7e897d9e1e5b3fd16
-
-kind=UNAVAILABLE
-title=The final reading stays in the copy you own
-body=The final reading stays in the copy you own. No admitted text supplies it.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=The final reading has no admitted frozen span.
-bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -1429,6 +1461,40 @@ note=предположительность или возможность
 objectiveId=obj-u30-particle
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u30-capstone-0`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-capstone
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 01dfceff5faf6ce5bae7e8b78ee61e5d0d765b4854ff6a8222f18bdc08d3847c
+
+kind=LEXICAL
+letterId=
+display=нёс де́вочку
+note=двухле́тняя де́вочка
+objectiveId=obj-u30-capstone
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u30-capstone-1`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-capstone
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7c5caadd1a8879efc5d7f58e119bdd48f30a7627107cf7229a7d02353f500a90
+
+kind=LEXICAL
+letterId=
+display=несла́ большу́ю ку́клу
+note=все расхохота́лись
+objectiveId=obj-u30-capstone
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u30-g-letter-names-0`
 
 - Objectives: obj-u30-letter-names
@@ -1602,6 +1668,41 @@ whyAnswerDemonstratesObjective=The frozen line says Повелительное �
 contrastMembers=Повелительное наклонение | предположительность или возможность
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u30-particle-0-ru | prov-ex-u30-particle-0-en | prov-ex-u30-particle-2-en
+responseKind=RUSSIAN_PHRASE
+
+### GUIDED_PRACTICE `u30-g-capstone-0`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-capstone
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 19881c0a96d33377f2d56423b734a80beb62dcbea0d00061c93708875d95c536
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted story event matches the shown sentence?
+promptLetter=в до́ме оста́лась двухле́тняя де́вочка
+options=нёс де́вочку | несла́ большу́ю ку́клу
+answer=нёс де́вочку
+feedback=The story says a двухле́тняя де́вочка remained, and then he нёс де́вочку. нёс де́вочку.
+objectiveId=obj-u30-capstone
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The story later says she несла́ большу́ю ку́клу.
+testedFeature=CAPSTONE_RESCUE
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u30-capstone-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u30-capstone-0-ru
+distractorSourceIds= | prov-ex-u30-capstone-1-ru
+distractorDifference= | несла́ большу́ю ку́клу is the later discovery, not the rescue of двухле́тняя де́вочка.
+whyAnswerDemonstratesObjective=The story says a двухле́тняя де́вочка remained, and then he нёс де́вочку.
+contrastMembers=нёс де́вочку | несла́ большу́ю ку́клу
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-u30-capstone-x-1 | prov-ex-u30-capstone-0-ru | prov-ex-u30-capstone-1-ru
 responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u30-i-letter-names-1`
@@ -1954,19 +2055,89 @@ relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u30-particle-1-ru | prov-ex-u30-particle-0-en | prov-ex-u30-particle-2-en
 responseKind=RUSSIAN_PHRASE
 
+### INDEPENDENT_CHECK `u30-i-capstone-1`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-capstone
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a4150765584df549e370da59024b12623ee721f0a8f7d159a6ec7ecb230b189b
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted reaction follows the shown discovery in the story?
+promptLetter=несла́ большу́ю ку́клу
+options=все расхохота́лись | нёс де́вочку
+answer=все расхохота́лись
+feedback=The story says she несла́ большу́ю ку́клу, and then everyone все расхохота́лись. все расхохота́лись.
+objectiveId=obj-u30-capstone
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The story says he нёс де́вочку before the doll.
+testedFeature=CAPSTONE_REACTION
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u30-capstone-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u30-capstone-1-en
+distractorSourceIds= | prov-ex-u30-capstone-0-ru
+distractorDifference= | нёс де́вочку is the earlier rescue, not the reaction to the doll.
+whyAnswerDemonstratesObjective=The story says she несла́ большу́ю ку́клу, and then everyone все расхохота́лись.
+contrastMembers=все расхохота́лись | нёс де́вочку
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u30-capstone-1-ru | prov-ex-u30-capstone-1-en | prov-ex-u30-capstone-0-ru
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u30-i-capstone-2`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-capstone
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a066aef69a18d8d9bb46b724d947455ff25788ae1e4b6ede50f3de12ffd7b953
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted rescue happens earlier in the story than the shown discovery?
+promptLetter=несла́ большу́ю ку́клу
+options=нёс де́вочку | все расхохота́лись
+answer=нёс де́вочку
+feedback=The story says he нёс де́вочку and later she несла́ большу́ю ку́клу. нёс де́вочку.
+objectiveId=obj-u30-capstone
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The story says everyone все расхохота́лись after the doll.
+testedFeature=CAPSTONE_SEQUENCE
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u30-capstone-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u30-capstone-0-ru
+distractorSourceIds= | prov-ex-u30-capstone-1-en
+distractorDifference= | все расхохота́лись comes with the doll, not before it.
+whyAnswerDemonstratesObjective=The story says he нёс де́вочку and later she несла́ большу́ю ку́клу.
+contrastMembers=нёс де́вочку | все расхохота́лись
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u30-capstone-1-ru | prov-ex-u30-capstone-0-ru | prov-ex-u30-capstone-1-en
+responseKind=RUSSIAN_PHRASE
+
 ### REFERENCE `ref-u2630-attribution`
 
 - Objectives: none
-- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-book, u30-s-gap-dictionary, u30-s-gap-capstone
+- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-capstone, u30-s-book
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 1e6c468ad2aecf4d31fa33720bf092cbcdc1d3f256d06b7185581dd277eac101
+- Content hash: 403d8f11b741dcf9fcde07e00363f6ab6361efdcaa8dd124a98c401df9aac067
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, general letter conventions, participle stress, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, participle stress, a general bookish-register claim, and dictionary use are not prepared. ReadyRussian letter conventions cover structure, the Russian and English organizational difference, and the stranger address limit. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
@@ -2848,6 +3019,122 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u30-capstone-0-en`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7e71752efe9677271c522a1dff2b92649b9149adfeb50e169deea2ea6cc0be99
+
+recordType=meaning
+sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
+sourceRevision=6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d
+sourceRecordId=reading5:Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала
+originalSourceText=Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала же́нщина. Она́ пла́кала и говори́ла, что в до́ме оста́лась двухле́тняя де́вочка. Пожа́рные посла́ли Бо́ба. Боб побежа́л по ле́стнице и скры́лся в ды́ме. Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку. Мать бро́силась к до́чери и пла́кала от ра́дости, что дочь была́ жива́. Пожа́рные ласка́ли соба́ку и осма́тривали её - не обгоре́ла ли она́; но Боб рвался опять в дом. Пожа́рные поду́мали, что в до́ме есть ещё что-нибу́дь живо́е, и пусти́ли его́. Соба́ка побежа́ла в дом и ско́ро вы́бежала с чем-то в зуба́х. Когда́ наро́д рассмотре́л то, что она́ несла́, то все расхохота́лись: она́ несла́ большу́ю ку́клу.
+shippedText=двухле́тняя де́вочка
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Reading 5 — Пожарные собаки HTML sha256 6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=01771aba0e8353e8fa771ecba0d074223056fa7710bfd15b8805ccad357079d8
+contentHash=c1e80436892f8b5545885ef07ea42e61c5a7a47d4163116a5bbbc17aa1dbbc36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-capstone-0-ru`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 440d757379dc6a072aeca206ef666b50fae7a2f0186a6a8ccdc632e872dff834
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
+sourceRevision=6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d
+sourceRecordId=reading5:Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала
+originalSourceText=Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала же́нщина. Она́ пла́кала и говори́ла, что в до́ме оста́лась двухле́тняя де́вочка. Пожа́рные посла́ли Бо́ба. Боб побежа́л по ле́стнице и скры́лся в ды́ме. Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку. Мать бро́силась к до́чери и пла́кала от ра́дости, что дочь была́ жива́. Пожа́рные ласка́ли соба́ку и осма́тривали её - не обгоре́ла ли она́; но Боб рвался опять в дом. Пожа́рные поду́мали, что в до́ме есть ещё что-нибу́дь живо́е, и пусти́ли его́. Соба́ка побежа́ла в дом и ско́ро вы́бежала с чем-то в зуба́х. Когда́ наро́д рассмотре́л то, что она́ несла́, то все расхохота́лись: она́ несла́ большу́ю ку́клу.
+shippedText=нёс де́вочку
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Reading 5 — Пожарные собаки HTML sha256 6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=01771aba0e8353e8fa771ecba0d074223056fa7710bfd15b8805ccad357079d8
+contentHash=fc95b778fe5ae08d3513d537b0fdbba78465e75b041c4f821fb4255357539cb3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-capstone-1-en`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4511b3cd34b39414d1b87c74cc510b8107b2072f73672094f3870412d83bf137
+
+recordType=meaning
+sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
+sourceRevision=6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d
+sourceRecordId=reading5:Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала
+originalSourceText=Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала же́нщина. Она́ пла́кала и говори́ла, что в до́ме оста́лась двухле́тняя де́вочка. Пожа́рные посла́ли Бо́ба. Боб побежа́л по ле́стнице и скры́лся в ды́ме. Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку. Мать бро́силась к до́чери и пла́кала от ра́дости, что дочь была́ жива́. Пожа́рные ласка́ли соба́ку и осма́тривали её - не обгоре́ла ли она́; но Боб рвался опять в дом. Пожа́рные поду́мали, что в до́ме есть ещё что-нибу́дь живо́е, и пусти́ли его́. Соба́ка побежа́ла в дом и ско́ро вы́бежала с чем-то в зуба́х. Когда́ наро́д рассмотре́л то, что она́ несла́, то все расхохота́лись: она́ несла́ большу́ю ку́клу.
+shippedText=все расхохота́лись
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Reading 5 — Пожарные собаки HTML sha256 6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=01771aba0e8353e8fa771ecba0d074223056fa7710bfd15b8805ccad357079d8
+contentHash=6f346f60711a4a0d1b2dbe0fdfd5fd3d2173e73e7ce7f1313aafe5bbaf172052
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-capstone-1-ru`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f8f88208ac6cce928f84a8d38d3d4b17ab758aabbb01fbc4ef041c68e28dfc2d
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
+sourceRevision=6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d
+sourceRecordId=reading5:Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала
+originalSourceText=Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала же́нщина. Она́ пла́кала и говори́ла, что в до́ме оста́лась двухле́тняя де́вочка. Пожа́рные посла́ли Бо́ба. Боб побежа́л по ле́стнице и скры́лся в ды́ме. Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку. Мать бро́силась к до́чери и пла́кала от ра́дости, что дочь была́ жива́. Пожа́рные ласка́ли соба́ку и осма́тривали её - не обгоре́ла ли она́; но Боб рвался опять в дом. Пожа́рные поду́мали, что в до́ме есть ещё что-нибу́дь живо́е, и пусти́ли его́. Соба́ка побежа́ла в дом и ско́ро вы́бежала с чем-то в зуба́х. Когда́ наро́д рассмотре́л то, что она́ несла́, то все расхохота́лись: она́ несла́ большу́ю ку́клу.
+shippedText=несла́ большу́ю ку́клу
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Reading 5 — Пожарные собаки HTML sha256 6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=01771aba0e8353e8fa771ecba0d074223056fa7710bfd15b8805ccad357079d8
+contentHash=f7e0b4ccae80501c9541d08bc848d1b6323bdd5adc086c5140fa9cfec121a9ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-u30-letter-names-0-en`
 
 - Objectives: obj-u30-letter-names
@@ -3545,6 +3832,93 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u30-capstone-rem`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3c1f169725a519abc3529444ad9fb3b3392c8281c025d765c26b80c8886cbde1
+
+recordType=instruction
+sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
+sourceRevision=6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d
+sourceRecordId=reading5:Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала
+originalSourceText=Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала же́нщина. Она́ пла́кала и говори́ла, что в до́ме оста́лась двухле́тняя де́вочка. Пожа́рные посла́ли Бо́ба. Боб побежа́л по ле́стнице и скры́лся в ды́ме. Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку. Мать бро́силась к до́чери и пла́кала от ра́дости, что дочь была́ жива́. Пожа́рные ласка́ли соба́ку и осма́тривали её - не обгоре́ла ли она́; но Боб рвался опять в дом. Пожа́рные поду́мали, что в до́ме есть ещё что-нибу́дь живо́е, и пусти́ли его́. Соба́ка побежа́ла в дом и ско́ро вы́бежала с чем-то в зуба́х. Когда́ наро́д рассмотре́л то, что она́ несла́, то все расхохота́лись: она́ несла́ большу́ю ку́клу.
+shippedText=Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку.
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Reading 5 — Пожарные собаки HTML sha256 6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=01771aba0e8353e8fa771ecba0d074223056fa7710bfd15b8805ccad357079d8
+contentHash=d5075b42c95b3d3828943cb9241b678c92fe075b9fc704bef2ea3f06809d2057
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-capstone-x-0`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ef4b8dc570bafbbec31c261119e42321f93fe44ceb3763f194ef96ed87d8e24e
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
+sourceRevision=6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d
+sourceRecordId=reading5:Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала
+originalSourceText=Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала же́нщина. Она́ пла́кала и говори́ла, что в до́ме оста́лась двухле́тняя де́вочка. Пожа́рные посла́ли Бо́ба. Боб побежа́л по ле́стнице и скры́лся в ды́ме. Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку. Мать бро́силась к до́чери и пла́кала от ра́дости, что дочь была́ жива́. Пожа́рные ласка́ли соба́ку и осма́тривали её - не обгоре́ла ли она́; но Боб рвался опять в дом. Пожа́рные поду́мали, что в до́ме есть ещё что-нибу́дь живо́е, и пусти́ли его́. Соба́ка побежа́ла в дом и ско́ро вы́бежала с чем-то в зуба́х. Когда́ наро́д рассмотре́л то, что она́ несла́, то все расхохота́лись: она́ несла́ большу́ю ку́клу.
+shippedText=Пожа́рные посла́ли Бо́ба
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Reading 5 — Пожарные собаки HTML sha256 6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=01771aba0e8353e8fa771ecba0d074223056fa7710bfd15b8805ccad357079d8
+contentHash=9bee772dd0cacc34ddf643b4b4729683f9f36341df85f9331035f0cec0873aab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-capstone-x-1`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b7765467519e15f4afec462dc6cea155aeb413c683091abf35045b6c0bd8fda6
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
+sourceRevision=6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d
+sourceRecordId=reading5:Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала
+originalSourceText=Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала же́нщина. Она́ пла́кала и говори́ла, что в до́ме оста́лась двухле́тняя де́вочка. Пожа́рные посла́ли Бо́ба. Боб побежа́л по ле́стнице и скры́лся в ды́ме. Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку. Мать бро́силась к до́чери и пла́кала от ра́дости, что дочь была́ жива́. Пожа́рные ласка́ли соба́ку и осма́тривали её - не обгоре́ла ли она́; но Боб рвался опять в дом. Пожа́рные поду́мали, что в до́ме есть ещё что-нибу́дь живо́е, и пусти́ли его́. Соба́ка побежа́ла в дом и ско́ро вы́бежала с чем-то в зуба́х. Когда́ наро́д рассмотре́л то, что она́ несла́, то все расхохота́лись: она́ несла́ большу́ю ку́клу.
+shippedText=в до́ме оста́лась двухле́тняя де́вочка
+transformation=readyrussian text extraction
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Reading 5 — Пожарные собаки HTML sha256 6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=01771aba0e8353e8fa771ecba0d074223056fa7710bfd15b8805ccad357079d8
+contentHash=56deba29d137b34bc2e415bd0e55df4f476c1332c49a61ef66af79c55c1b2b87
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u30-letter-names-rem`
 
 - Objectives: obj-u30-letter-names
@@ -3758,240 +4132,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u30-251`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d4c1c1b502d949e8e9f6c1c2223db3f83cbce26dadb0704c76017e46496dc184
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u30-252`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 124d01e63260822f6cecb6e74560a6f1ec00eed2dd0110beaeda1c4b67d1f5d3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this respelling beside a different name for be/beh.
-
-### AUTHORED_ENGLISH `en-u30-253`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 380f219171ea588cda9f645d6efc35d5b713bfe470262edf19fc4a05b55a5c24
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this equivalent in another column for father.
-
-### AUTHORED_ENGLISH `en-u30-254`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b39346a8e1d37b68c3fd9a24c3aba2e06fa70df065b0fa10ea848d4710a44485
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This respelling belongs to the other row (be/beh).
-
-### AUTHORED_ENGLISH `en-u30-255`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cfece2de4dc43b1856b749fe3bc5b89ffcf00994d84b6a8e2ea7885e185a47d4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This equivalent is not the respelling (father).
-
-### AUTHORED_ENGLISH `en-u30-256`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2e1d4a0f5b3a9b2cfcd05766f5f570c0043e9c7ae2b112a8f38d842c48ffec79
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name.
-
-### AUTHORED_ENGLISH `en-u30-257`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04c3cce078349ad0b65835bf30e8d93f531773dfe96b598bc664a9d8e9fdc3d9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English respelling is written beside the shown table name?
-
-### AUTHORED_ENGLISH `en-u30-258`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 99387383464758e48f1d65684092a003004cb75d51b6d888d64c1e42ab528969
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
-
-### AUTHORED_ENGLISH `en-u30-259`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: df87a3a78e6a9328b2b161997b670405bd2505449072bc78458386ee80b13213
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this respelling beside a different name for ah.
-
-### AUTHORED_ENGLISH `en-u30-260`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c1560ba6ee0b785d77532bc67427f6cfd4b3ab3ea42611616abe0d4fe71da999
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this equivalent in another column for bad.
-
-### AUTHORED_ENGLISH `en-u30-261`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3169d805969276e507dd94e92878bfe896929cba4f3b111737f76d9fc3dae96
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This respelling belongs to the other row (ah).
-
-### AUTHORED_ENGLISH `en-u30-262`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd51d0ca53f91ff8b778a05770b710a9ade51395754ed1a6423de46b9505cd9c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This equivalent is not the respelling (bad).
-
-### AUTHORED_ENGLISH `en-u30-263`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6709bc3786fd387e2ac8de71f9afc0404caeed255a81dd6605aeb462d2a8d860
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English respelling is written beside this shown table name?
-
-### AUTHORED_ENGLISH `en-u30-264`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 76f0d3e15c9e2884650d08c435273bf8789f2c18cf75ce55896af2168231586d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this equivalent in a different row for bad.
-
-### AUTHORED_ENGLISH `en-u30-265`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f5b547dff68193ca9408125022f5dcffe6d3b11e7bd18f1dd7200193dffb9f73
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this gloss in a different row for both.
-
-### AUTHORED_ENGLISH `en-u30-266`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6fb38dda804c15471dd69bc1c8ee67132542c33f462862293c4f7c372a4fbb07
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This equivalent belongs to the other row (bad).
-
-### AUTHORED_ENGLISH `en-u30-267`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1d4fcb28be1de70b7bf4cb6d56987cb57feff7cac924dcf47cc323a05fdb5b73
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This gloss belongs to the other row (both).
-
-### AUTHORED_ENGLISH `en-u30-268`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9b08e54b4f6c0a8a667ffdf7e8d4ba0abfac51f400fc3c17b7ade9c8b0c98021
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table places a respelling beside the name in the Approximate English row area. This equivalent is written in the shown row.
-
 ### AUTHORED_ENGLISH `en-u30-269`
 
 - Objectives: none
@@ -4000,10 +4140,10 @@ text=The frozen table places a respelling beside the name in the Approximate Eng
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b4812bc02a3ee2ca8a9fb21ec84552327c5a92c9229f55a806576808301244f2
+- Content hash: 8232b8e417fcaf3c1e00d21f76d65ac0da1ea6d77bd5ea24246e421f49e9f381
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English equivalent is written in the same row as the shown name?
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u30-270`
 
@@ -4013,10 +4153,10 @@ text=Which admitted English equivalent is written in the same row as the shown n
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ef3a1f8b1bc9b2b6bb66ab4c861664fd84642990f5f5ee8d99817498c8c0e5a
+- Content hash: 9ff5c8b3ddde455231f88f097ef3a03a4a6ae8724f74d2f4a07cd711709140ea
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the other example for USA.
+text=The frozen table writes this respelling beside a different name for be/beh.
 
 ### AUTHORED_ENGLISH `en-u30-271`
 
@@ -4026,10 +4166,10 @@ text=The frozen line writes this label beside the other example for USA.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6fb7104553c1ad9b9c340e6575bad84b62ce255bf3d585b760be7276c4579a5e
+- Content hash: d59faeffc9e6532a02b629cbcf726529e498aec3bd2548a2c6fbd5360ebd3ed8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line uses this word as the heading, not as the gloss for Abbreviations.
+text=The frozen table writes this equivalent in another column for father.
 
 ### AUTHORED_ENGLISH `en-u30-272`
 
@@ -4039,10 +4179,10 @@ text=The frozen line uses this word as the heading, not as the gloss for Abbrevi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb12e29b91a05c11c306a939fc0df755ce292bd4f241f31ab279300651cd0aae
+- Content hash: 376b6f346070bbd0af72e52ef8e0486593f835392c843e25babd5528f51e5fb7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other example (USA).
+text=This respelling belongs to the other row (be/beh).
 
 ### AUTHORED_ENGLISH `en-u30-273`
 
@@ -4052,10 +4192,10 @@ text=This label is paired with the other example (USA).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 25da4485f025c0288e4c316e91a453f251ecf473689b50e6ff6b00d61bac06ac
+- Content hash: 299624bf2b61ebf01c5c802b309dec31cba683779c8b2eac87bf861a864705e7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This word is the heading (Abbreviations).
+text=This equivalent is not the respelling (father).
 
 ### AUTHORED_ENGLISH `en-u30-274`
 
@@ -4065,10 +4205,10 @@ text=This word is the heading (Abbreviations).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0f698cef0d6eb08d218764fe9a8ded0248775f3cd35c9f1034afca721b855bf8
+- Content hash: 6d80c631c453d67e4cba063d6609d527de348b1744c17363b6cc80bf7df6cd87
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line lists these examples under Abbreviations. This label is written beside the shown example.
+text=The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name.
 
 ### AUTHORED_ENGLISH `en-u30-275`
 
@@ -4078,10 +4218,10 @@ text=The frozen line lists these examples under Abbreviations. This label is wri
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3d509d8dd013e9619b017c1fd408a1918d14e219d7c74f0f15cb385fc6c9e143
+- Content hash: 761432affc9d6c6ec86f468c46ff295fd7f17e9cea375e84e6208120d7babd09
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the shown example?
+text=Which admitted English respelling is written beside the shown table name?
 
 ### AUTHORED_ENGLISH `en-u30-276`
 
@@ -4091,10 +4231,10 @@ text=Which admitted English label is written beside the shown example?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea8dfa0c3a5ee8232245adba5e4fba293c0f2514b69b652dbb1df253ac140667
+- Content hash: c0a2eb5d99035ab2e8e7736a39c7f7f9e65ac747dfc995ec6126df39e5a8d9fd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the other example for USSR.
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u30-277`
 
@@ -4104,10 +4244,10 @@ text=The frozen line writes this label beside the other example for USSR.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04639c8e69189402d9bce1162731ff2088a90ff64f170e321d7ce2b46c5b240d
+- Content hash: c0eeaec899890175a15945a233de9a6853ca83e12fd34d5dd621714a78f25e03
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line uses this word as the heading for Abbreviations.
+text=The frozen table writes this respelling beside a different name for ah.
 
 ### AUTHORED_ENGLISH `en-u30-278`
 
@@ -4117,10 +4257,10 @@ text=The frozen line uses this word as the heading for Abbreviations.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a7f0c41f7ddce10ccd2688a490ca4c08dc8235582627905150c91d38201fe3c
+- Content hash: 4500b4ec56fce8b1781e041bcae4fa543ea9d8f67cd211735df3e9d307589039
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other example (USSR).
+text=The frozen table writes this equivalent in another column for bad.
 
 ### AUTHORED_ENGLISH `en-u30-279`
 
@@ -4130,10 +4270,10 @@ text=This label is paired with the other example (USSR).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8b90d50a0ade98db85ad348d2be47a0706994135b262b0ee90dff7c4f2a6bed8
+- Content hash: 16482bd47fdda7261a6ff264dd0bf83a8b3a1b27097b5cebbb3828a33e852cb8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This word is the heading, not the gloss (Abbreviations).
+text=This respelling belongs to the other row (ah).
 
 ### AUTHORED_ENGLISH `en-u30-280`
 
@@ -4143,10 +4283,10 @@ text=This word is the heading, not the gloss (Abbreviations).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b4cbe50eaeeeef3409045aba4e7bcbeafce30906a28610333640f93f92c3270d
+- Content hash: 44cfeb7f53b8ee728f494531a9207617a92182694a70067d61d0bc34efd78bd1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside this shown example?
+text=This equivalent is not the respelling (bad).
 
 ### AUTHORED_ENGLISH `en-u30-281`
 
@@ -4156,10 +4296,10 @@ text=Which admitted English label is written beside this shown example?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7cc10f3adb31646e8d801c2671bc805c16c1aadf8b221a97dbb711b7be417e20
+- Content hash: 91d8849a7f4d8b61394681b300cdd41efc95d7244738cfbf4762a2309e360e0a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the shown example for USSR.
+text=Which admitted English respelling is written beside this shown table name?
 
 ### AUTHORED_ENGLISH `en-u30-282`
 
@@ -4169,10 +4309,10 @@ text=The frozen line writes this label beside the shown example for USSR.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 05ebb2953eb4111b6ac5e9b5619d57f98300fd0616bd0874526d312ddfb8efe4
+- Content hash: a92e0c954750f5c5e9da5e97b570f6f0245e4d7b57e9afa8bcf6e65d8fc7e22a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is the gloss (USSR).
+text=The frozen table writes this equivalent in a different row for bad.
 
 ### AUTHORED_ENGLISH `en-u30-283`
 
@@ -4182,10 +4322,10 @@ text=This label is the gloss (USSR).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e6be3ae18dd3000e1cfd05c97cec32b18d3c7d78bca61722d72c5b05adf5d183
+- Content hash: 03d13068fc9e617259d00c78ed718a724565cf1f19e360f0d80a6901293fb0f2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is the other gloss (USA).
+text=The frozen table writes this gloss in a different row for both.
 
 ### AUTHORED_ENGLISH `en-u30-284`
 
@@ -4195,10 +4335,10 @@ text=This label is the other gloss (USA).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ad50350406b13215f956f77d66728eec065c5b718f9c226fdbf4ad0f772762f0
+- Content hash: a1f0a5b7077e73f857f485a8c8c2435c96f57200eae30767f0ada0df6025e28b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line lists these examples under Abbreviations. This word is the heading above the examples.
+text=This equivalent belongs to the other row (bad).
 
 ### AUTHORED_ENGLISH `en-u30-285`
 
@@ -4208,10 +4348,10 @@ text=The frozen line lists these examples under Abbreviations. This word is the 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c7f386db90a5e82cc557f42fd6b5755dbf657ee2530fcb160451698d9b4c9c48
+- Content hash: a3c3f819e0aa252523acd3dd2de887c6ae910f36c2eb9b8dc98b9308bbf788c3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English word is the heading rather than the gloss of the shown example?
+text=This gloss belongs to the other row (both).
 
 ### AUTHORED_ENGLISH `en-u30-286`
 
@@ -4221,10 +4361,10 @@ text=Which admitted English word is the heading rather than the gloss of the sho
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ede575a59615196430f0e08cc21b27be68eded5e0b2083d5ab72a1058bb30091
+- Content hash: fcdc922a4c3238d9b3886b8d5a9e10ab9b7c83e964d26cc9d4e3966530aec7c9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note glosses street for a different mark.
+text=The frozen table places a respelling beside the name in the Approximate English row area. This equivalent is written in the shown row.
 
 ### AUTHORED_ENGLISH `en-u30-287`
 
@@ -4234,10 +4374,10 @@ text=The frozen note glosses street for a different mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e8cc5e39249a69789f6830b07a87b5ef6a01e05e8f30c16bbe11b2c61cefea00
+- Content hash: bda91729ab76730f68d7975a4180137f0891eb146f979fad190fe26743d517d8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note glosses building for a different mark.
+text=Which admitted English equivalent is written in the same row as the shown name?
 
 ### AUTHORED_ENGLISH `en-u30-288`
 
@@ -4247,10 +4387,10 @@ text=The frozen note glosses building for a different mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7679c50ebb1a2786852e7cc99152851c398be642f69c28ca4fc4574934f09d9c
+- Content hash: ffe336855942036c3032b26017ee5a0f778788d76095bc53e2b907f6c1f47b7b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Street belongs to another mark.
+text=The frozen line writes this label beside the other example for USA.
 
 ### AUTHORED_ENGLISH `en-u30-289`
 
@@ -4260,10 +4400,10 @@ text=Street belongs to another mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 199394337527e0f2111466a5748846992bd500b41415643d4faec5c2054d3d45
+- Content hash: 8e797cb78dca4c91be8d6716cc4c1c3c8464933d9023a1c05a1a8e7479e84c7f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Building belongs to another mark.
+text=The frozen line uses this word as the heading, not as the gloss for Abbreviations.
 
 ### AUTHORED_ENGLISH `en-u30-290`
 
@@ -4273,10 +4413,10 @@ text=Building belongs to another mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0223536c5970399cb7c9dab3fd6ff91951492c79f77c96c042ff3aacee67b01
+- Content hash: f63905496b36171a1093867e39823ef74c58849968ab7ee09e9d58900ff73e70
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The lines are marked with abbreviations. This label glosses the mark in the shown line.
+text=This label is paired with the other example (USA).
 
 ### AUTHORED_ENGLISH `en-u30-291`
 
@@ -4286,10 +4426,10 @@ text=The lines are marked with abbreviations. This label glosses the mark in the
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f631b6944bd6ee8a959ab49ebdec947887b40a203dbbc5b94cfb7c6cc9570851
+- Content hash: c48ee3137b051a4f5fd8595dc1424f025cf4619e0eaf11310edd2c995905f253
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label glosses the mark in the shown line?
+text=This word is the heading (Abbreviations).
 
 ### AUTHORED_ENGLISH `en-u30-292`
 
@@ -4299,10 +4439,10 @@ text=Which admitted English label glosses the mark in the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0070b5608d6c26fd277b87bd90dd2eb36ea5c633616963c8143d18c41782159f
+- Content hash: 2d83ba49f63020ab30d7ef9e2d8388f6c359412641e19faa827a0b7a5fc20f48
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note glosses city for the place mark.
+text=The frozen line lists these examples under Abbreviations. This label is written beside the shown example.
 
 ### AUTHORED_ENGLISH `en-u30-293`
 
@@ -4312,10 +4452,10 @@ text=The frozen note glosses city for the place mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 49cf2a3ee40689a83cd635260c5e4d0fa9031093d5d232a9f68408075b19844e
+- Content hash: a7356ab30454ede0c694a67410427e3536e140024d994a3ff939b5026e83e972
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note glosses apartment for a later mark.
+text=Which admitted English label is written beside the shown example?
 
 ### AUTHORED_ENGLISH `en-u30-294`
 
@@ -4325,10 +4465,10 @@ text=The frozen note glosses apartment for a later mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 460338bb85a2606214f2b9dabb9c661af648ed1c35884ae5ed43e47d3c94e473
+- Content hash: b58e533cec2b25daca6f9bbc332a74196e5c6996a715110fce899c3cf947070e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=City belongs to another mark.
+text=The frozen line writes this label beside the other example for USSR.
 
 ### AUTHORED_ENGLISH `en-u30-295`
 
@@ -4338,10 +4478,10 @@ text=City belongs to another mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9bb6b6b27e10eadf72b8de87eec8a7e1755fa9c17228f787b3dac0302679a6c3
+- Content hash: ce50a21a3445bba312919f33984585d9507c9050dab746fe43e25cee100a0831
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Apartment belongs to a later mark.
+text=The frozen line uses this word as the heading for Abbreviations.
 
 ### AUTHORED_ENGLISH `en-u30-296`
 
@@ -4351,10 +4491,10 @@ text=Apartment belongs to a later mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 152f7b28dcb069c74d1f524f6975cac3bfd07f7bf267e54b28d458a5c14c873b
+- Content hash: 6f2cbb3ea7b71b955db0ce7c648789b680c94293495ecb41e12c5f1a86c6d590
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The lines are marked with abbreviations. This label glosses the first mark in the shown line.
+text=This label is paired with the other example (USSR).
 
 ### AUTHORED_ENGLISH `en-u30-297`
 
@@ -4364,10 +4504,10 @@ text=The lines are marked with abbreviations. This label glosses the first mark 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f2039975444ff02440efa4a92146c582efd479a16fe6b2d1bec547270ac02c38
+- Content hash: d0556e572ecd75f4da1574c3d967ae1a9f4ba609ea686394c865049c7c148908
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label glosses the first mark in the shown line?
+text=This word is the heading, not the gloss (Abbreviations).
 
 ### AUTHORED_ENGLISH `en-u30-298`
 
@@ -4377,10 +4517,10 @@ text=Which admitted English label glosses the first mark in the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf6b465e0faee6003f39680a2f4691601814989f669a00acd03eaa2c61c93b99
+- Content hash: 9cace67233cd5afbe7d348f3172c04884ec93dcaf3931c4aed2a02781360ebb3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note glosses city for a different mark.
+text=Which admitted English label is written beside this shown example?
 
 ### AUTHORED_ENGLISH `en-u30-299`
 
@@ -4390,10 +4530,10 @@ text=The frozen note glosses city for a different mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d5836006336e4d4fac98e78cae69a3f588ccf1700ce8164a29889635fdf973a8
+- Content hash: eedff04a2e00b6e954cb602fac4f3f6c6dc9678a0fa5e4acd60640f4df0fefac
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=City is the gloss of the place mark.
+text=The frozen line writes this label beside the shown example for USSR.
 
 ### AUTHORED_ENGLISH `en-u30-300`
 
@@ -4403,10 +4543,10 @@ text=City is the gloss of the place mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 35fb60ecaa73a39911acb978c0c2b6da4dceab9b6cae2779f995fb0274a79e24
+- Content hash: 8bb6feab6b31324894c8666fb0060ebf828f91ea883d4f26c40284984593d373
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Street is the gloss of a different mark.
+text=This label is the gloss (USSR).
 
 ### AUTHORED_ENGLISH `en-u30-301`
 
@@ -4416,10 +4556,10 @@ text=Street is the gloss of a different mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 24ffd9005fc4ed6b3495ef4220d27e4c826d6bbc31037e12dbaaa22c519673e5
+- Content hash: 754196d25c4dfd6c73581638893206e183e3fd41ee90e428d74926e4b77c5074
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The lines are marked with abbreviations. This label is the gloss written for the shown mark.
+text=This label is the other gloss (USA).
 
 ### AUTHORED_ENGLISH `en-u30-302`
 
@@ -4429,10 +4569,10 @@ text=The lines are marked with abbreviations. This label is the gloss written fo
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8d56d354048a87dcf3d987859767d659451ce87cc2d0914b00776b958e0ac9a7
+- Content hash: ef33a55e8ce8e6b4339778c849a32f3e63e4a08e6b203c52ab5d4256413c8d5c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written for the shown mark?
+text=The frozen line lists these examples under Abbreviations. This word is the heading above the examples.
 
 ### AUTHORED_ENGLISH `en-u30-303`
 
@@ -4442,10 +4582,10 @@ text=Which admitted English gloss is written for the shown mark?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 95a22843f7d790dabdd2bfcbc434692251a36bc2334c6d84ef6c960afc11c430
+- Content hash: 877c79bc825c056e760dd35ef54eb60dfb26261c4d1dedfe5a8a103dcfdca1fc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line assigns звуковые аббревиатуры на согласную to в МИД и в МИДе.
+text=Which admitted English word is the heading rather than the gloss of the shown example?
 
 ### AUTHORED_ENGLISH `en-u30-304`
 
@@ -4455,10 +4595,10 @@ text=The frozen line assigns звуковые аббревиатуры на со
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 689ad6a88c1c32ff5a84eabf66bb18f1f7d3b02043b0eb56bbb09c2fed9e5179
+- Content hash: d7f97fe4072d856584b199271e71ba3615d25ae42b4e496c3f3fe5aad6202ebe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line names названия населённых пунктов as a separate category.
+text=The frozen note glosses street for a different mark.
 
 ### AUTHORED_ENGLISH `en-u30-305`
 
@@ -4468,10 +4608,10 @@ text=The frozen line names названия населённых пунктов 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c97fe7a78397fb0fbf62d1b4bcdaa58ea6aacc6b7fa1c95a08f532ced52ec3a5
+- Content hash: 8af6fa8eb73992f03c109d0b57e973d4761734c6292299e43e846a9d8b2b314c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=звуковые аббревиатуры на согласную does not classify the shown form.
+text=The frozen note glosses building for a different mark.
 
 ### AUTHORED_ENGLISH `en-u30-306`
 
@@ -4481,10 +4621,10 @@ text=звуковые аббревиатуры на согласную does not 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: adae551ac941c8109aeb19f4beaa630b48a1ebc5187ae5f8bf937fdfed2c148b
+- Content hash: c95e4d58623f28431b775f1c45eb0a8dceb1bbeba3bb4b8f0b89b0e7cc199594
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=названия населённых пунктов does not classify the shown form.
+text=Street belongs to another mark.
 
 ### AUTHORED_ENGLISH `en-u30-307`
 
@@ -4494,10 +4634,10 @@ text=названия населённых пунктов does not classify the 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 748c9a9196b7f7181597e2631e3600b46df93535ed0373d42a654b8e3f84b2a6
+- Content hash: cc85970cd3e5527b3c6a0208bb847a1e98ce9ce6a32521e9983a0e83aa92f2c5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line classifies the shown form under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.
+text=Building belongs to another mark.
 
 ### AUTHORED_ENGLISH `en-u30-308`
 
@@ -4507,10 +4647,10 @@ text=The frozen line classifies the shown form under буквенные аббр
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3f18b7b0bb591ddf699a9008a372a6c2828ab2f7b7f30b8dbf63c1ead432ba0e
+- Content hash: c1d588354e33dbb51fb33eda9978afe1d2bedef7d00a3c3caeb92862c2660a32
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted category label classifies the shown form?
+text=The lines are marked with abbreviations. This label glosses the mark in the shown line.
 
 ### AUTHORED_ENGLISH `en-u30-309`
 
@@ -4520,10 +4660,10 @@ text=Which admitted category label classifies the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 90a8134015a60f12e77239b65721709786f87713aba5eeba49323cd72308c400
+- Content hash: cc685ebc1692ce7ecf31de4ee3c0326ed16089c67a6e66d08e50b65aec82d03c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line assigns буквенные аббревиатуры и звуковые аббревиатуры на гласную to СНГ, ЭВМ, ГАИ, and гороно.
+text=Which admitted English label glosses the mark in the shown line?
 
 ### AUTHORED_ENGLISH `en-u30-310`
 
@@ -4533,10 +4673,10 @@ text=The frozen line assigns буквенные аббревиатуры и зв
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9dd25e0886e3cc2d51422ac03fac16274b674f0786a6bd83547e6744a3390b8f
+- Content hash: 50025343c4367a583e049063ce1abc451d3ccf327108fc07b34c0b2c9e097dd8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line names названия населённых пунктов apart from звуковые аббревиатуры на согласную.
+text=The frozen note glosses city for the place mark.
 
 ### AUTHORED_ENGLISH `en-u30-311`
 
@@ -4546,10 +4686,10 @@ text=The frozen line names названия населённых пунктов 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 24dada3a9a5f49baf1a79c8bef1d21ca2deb3e26a452860d8e9304d44f275f32
+- Content hash: b4554821df52662ad4e3c8d1a6fc14d56b1254e44387dc78c3d8daf09cdbfbee
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=буквенные аббревиатуры и звуковые аббревиатуры на гласную does not classify the shown form.
+text=The frozen note glosses apartment for a later mark.
 
 ### AUTHORED_ENGLISH `en-u30-312`
 
@@ -4559,10 +4699,10 @@ text=буквенные аббревиатуры и звуковые аббре�
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 169e23114f28a28cf29c813f8f71882bcbbd5427f59fd188ddeba9b420ff1ad5
+- Content hash: ae01ed39ec484055171040edca9ea17f44e022a49287d521b03810bd1940e20a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=названия населённых пунктов does not classify the shown consonant-final form.
+text=City belongs to another mark.
 
 ### AUTHORED_ENGLISH `en-u30-313`
 
@@ -4572,10 +4712,10 @@ text=названия населённых пунктов does not classify the 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9d65fec3a57b7168d6d381ab30d5ce5e0d1904f682da578fe3fb77479ab77bc1
+- Content hash: 5a82dfe0e2770315f022415d62d7a0835e3a19cd574c26f5905fa1729f325864
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line classifies the shown form under звуковые аббревиатуры на согласную and writes в МИД и в МИДе. The keyed category is звуковые аббревиатуры на согласную.
+text=Apartment belongs to a later mark.
 
 ### AUTHORED_ENGLISH `en-u30-314`
 
@@ -4585,10 +4725,10 @@ text=The frozen line classifies the shown form under звуковые аббре
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7c4eac98aef0f13e18673fc0275316c7f1d802edb13c224e0bc10251b46dbec0
+- Content hash: fc226c38af41e0cd6ee60951a392a01bf1d4307358c45fb832e2c99af8855446
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line names сложносокращённые слова as its own category.
+text=The lines are marked with abbreviations. This label glosses the first mark in the shown line.
 
 ### AUTHORED_ENGLISH `en-u30-315`
 
@@ -4598,10 +4738,10 @@ text=The frozen line names сложносокращённые слова as its 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: df0f6a361db2ca5018e1d1737398ff48387cb54abfa00b511e2a31d49a4df0f2
+- Content hash: 2d8c0a0f8f0acf4edbc9771b03eeb553120e56a75fd961dbcf9ea27a1630b5d0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=звуковые аббревиатуры на согласную does not classify this shown form.
+text=Which admitted English label glosses the first mark in the shown line?
 
 ### AUTHORED_ENGLISH `en-u30-316`
 
@@ -4611,10 +4751,10 @@ text=звуковые аббревиатуры на согласную does not 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6df4ca3c3cd45b264bdf91deceaace8d71e8ca6bb6879b0b88ee0ab79820044c
+- Content hash: 5f05ef220476f77a4655311dcb26674885c7120eab1d5887af0d9e6e8d8c439d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=сложносокращённые слова does not classify the shown form.
+text=The frozen note glosses city for a different mark.
 
 ### AUTHORED_ENGLISH `en-u30-317`
 
@@ -4624,10 +4764,10 @@ text=сложносокращённые слова does not classify the shown f
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 843750e17e1a9dd1b0487534c68fb02849c562e00ed42b7ea4cc87413772419a
+- Content hash: a2628881e62373dccbb7cb2e64bd9d8d91e68c4b572577ec9878cf60c2d4da0c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line classifies гороно under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.
+text=City is the gloss of the place mark.
 
 ### AUTHORED_ENGLISH `en-u30-318`
 
@@ -4637,10 +4777,10 @@ text=The frozen line classifies гороно under буквенные аббре
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e121a0dcd11f90447b96a778fc8e0323f1f41fa0dbb7ed136c83e7ce0e48eb0b
+- Content hash: 7f95e413ca8c0751105b252c2157b0b06faa50f715d1a17af74d65a2def2ee57
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line assigns предположительность или возможность to читал бы and читали бы.
+text=Street is the gloss of a different mark.
 
 ### AUTHORED_ENGLISH `en-u30-319`
 
@@ -4650,10 +4790,10 @@ text=The frozen line assigns предположительность или во�
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b650ee67a035e8aada48fac2ad3d25950805ddd0173907122698875a2aa4f77f
+- Content hash: 0e67907847077168168b3d9f3e085a37fa3dc0074b143a96445a765a76895b88
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=предположительность или возможность does not apply to the shown line.
+text=The lines are marked with abbreviations. This label is the gloss written for the shown mark.
 
 ### AUTHORED_ENGLISH `en-u30-320`
 
@@ -4663,10 +4803,10 @@ text=предположительность или возможность does n
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 163d627854b03449059dd3974dd378d627c550460c43f8c9ebf4c5fc27ae0b28
+- Content hash: a0a3d0fe90f26aad494e42ee7eacee76dbd6b6498b8803b7fa8db2df3fd7f594
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Пусть он читает. The keyed use is Повелительное наклонение.
+text=Which admitted English gloss is written for the shown mark?
 
 ### AUTHORED_ENGLISH `en-u30-321`
 
@@ -4676,10 +4816,10 @@ text=The frozen line says Повелительное наклонение can al
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2b9f83bb60806cbb98b9c7fa2e0bcd35aa04fc870d5a465e99fd4e5a62158f53
+- Content hash: 0dbddcfaaeb3d04b17568665f843420659f714abeee2ff5456d70897c8e5d295
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted use label applies to the shown line?
+text=The frozen line assigns звуковые аббревиатуры на согласную to в МИД и в МИДе.
 
 ### AUTHORED_ENGLISH `en-u30-322`
 
@@ -4689,10 +4829,10 @@ text=Which admitted use label applies to the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 00a5ee4b1815b08685e2b5f4653f30d367431bf39423062891a6d5adbd0ba374
+- Content hash: 698b719f007e71bd9522ed79d354320b3f6d6330b27961f3d3cea586c77dbe82
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line assigns Повелительное наклонение to Пусть он читает and to Да будет мир!
+text=The frozen line names названия населённых пунктов as a separate category.
 
 ### AUTHORED_ENGLISH `en-u30-323`
 
@@ -4702,10 +4842,10 @@ text=The frozen line assigns Повелительное наклонение to 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f371aa98581b733631a84e2153dd745fb5da854df36841fe3e3ff635f17f22e4
+- Content hash: 6d8afe7d974284cf6b2bd59def052b49586db1c7f8d48808843a2a52f30cdf2b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Повелительное наклонение does not apply to the shown line.
+text=звуковые аббревиатуры на согласную does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u30-324`
 
@@ -4715,10 +4855,10 @@ text=Повелительное наклонение does not apply to the shown
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1da1637c229692d86dcab24bb59b9fb9214a30f0c292e871d9c60370257f0be3
+- Content hash: 69d9573e8219d6090547dcc7ff5d92aea61a2121e3f41348e9d4ed1d08f5a0a2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says читал бы expresses предположительность или возможность действия. The keyed use is предположительность или возможность.
+text=названия населённых пунктов does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u30-325`
 
@@ -4728,10 +4868,10 @@ text=The frozen line says читал бы expresses предположитель
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1a6d5ea875a810203a5c3f38601ae8155f39d4a9b0f4ff57bcf086d124041d8
+- Content hash: 2363b15584c8027125e3cc6335ad1b4e4326b3cc49adecd36b80e5bfd4730d76
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=предположительность или возможность applies to читал бы and читали бы, not to the shown line.
+text=The frozen line classifies the shown form under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.
 
 ### AUTHORED_ENGLISH `en-u30-326`
 
@@ -4741,10 +4881,10 @@ text=предположительность или возможность applie
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3153db0cc488828c13f6899a367cf35081ffe50a651a7d87aef9364cdb8660b
+- Content hash: 69cc5b6c80cb88501fa93eef70f6b7abd41e78540d5fb68583b5a025d605aa60
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Да будет мир! The keyed use is Повелительное наклонение.
+text=Which admitted category label classifies the shown form?
 
 ### AUTHORED_ENGLISH `en-u30-327`
 
@@ -4754,10 +4894,10 @@ text=The frozen line says Повелительное наклонение can al
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 007acbab39af90ee5afb9568d3f830106c0054cd5e1c36a2c06a087208794d1f
+- Content hash: 1b6620167f8390f262770d8699a766ebc2e9073630a66f3a923125c86fa240b7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Review admitted table names and abbreviation examples
+text=The frozen line assigns буквенные аббревиатуры и звуковые аббревиатуры на гласную to СНГ, ЭВМ, ГАИ, and гороно.
 
 ### AUTHORED_ENGLISH `en-u30-328`
 
@@ -4767,10 +4907,10 @@ text=Review admitted table names and abbreviation examples
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf2ea490bfa9fc40c64b0beb411c83e7a57565619d2c2fbbb4e8f949c48f0b3c
+- Content hash: 581a7a2e0ad23d588e9adebabcb017b6584ab795eb4be20ac2bcc27b4a44521c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Dictionary use and the final reading stay in the copy you own. Qualified review is pending.
+text=The frozen line names названия населённых пунктов apart from звуковые аббревиатуры на согласную.
 
 ### AUTHORED_ENGLISH `en-u30-329`
 
@@ -4780,10 +4920,10 @@ text=Unit 1 introduced the printed letter names. This unit reviews admitted tabl
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f11d5921eaf387fef3df2ace0b803edc9c5c5ce64b181ab3449f993e664adbb5
+- Content hash: fe01fb6bf36b69d560682a8b8c779b6014bcfd917881cbd27a35d12e84f14e7e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 30 in the copy you own. The app records do not replace that lesson.
+text=буквенные аббревиатуры и звуковые аббревиатуры на гласную does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u30-330`
 
@@ -4793,10 +4933,10 @@ text=Open Lesson 30 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 107a1ec92e215fd7ffed3921b04bd05abc874605d3354780ab831d18c153d3b0
+- Content hash: fbcc0b021869d918b625540d34d9e6ad2b4408482b0bdfc3528270e8d04b68a5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=названия населённых пунктов does not classify the shown consonant-final form.
 
 ### AUTHORED_ENGLISH `en-u30-331`
 
@@ -4806,10 +4946,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2125fae5de02674ea2490a9d94ff5a98dad3a0d6935fcec9921b68009db9f914
+- Content hash: 1b51939f4d7452c54c9a6c8ba5672ff6f0acc7ea5c0ef129c0b35e78ed0e0562
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=The frozen line classifies the shown form under звуковые аббревиатуры на согласную and writes в МИД и в МИДе. The keyed category is звуковые аббревиатуры на согласную.
 
 ### AUTHORED_ENGLISH `en-u30-332`
 
@@ -4819,10 +4959,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 093fec49f50ea8e0ca8eede3ac7cdba67727d7040e30fbb09f1af7ebd98ecd3c
+- Content hash: 9865dee6829c6a372f34afd3a68301242b33ab5d2de56434ecb1e8be76bb04c6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=The frozen line names сложносокращённые слова as its own category.
 
 ### AUTHORED_ENGLISH `en-u30-333`
 
@@ -4832,10 +4972,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a07b9b7bedc2af39cc9fb345cc62e93837933d7b8af26206aa435909c4ec8b77
+- Content hash: 4ffeb8b1029d1f8dc981a4ad089df2e161d36ade32938c758e2541ad5008821f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=звуковые аббревиатуры на согласную does not classify this shown form.
 
 ### AUTHORED_ENGLISH `en-u30-334`
 
@@ -4845,10 +4985,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45a1b024cf16fd621b1a7baa5ef15c1c7717b8d0abc92e39fefa234031f50de4
+- Content hash: b784b33d3911a188d951bed7acbe72abe3f262396b61be3096b6113b11cef0b1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=сложносокращённые слова does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u30-335`
 
@@ -4858,10 +4998,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 719334a71e0fe898bfb7c7a666fb499ecf0a2dc6522e1ac7d2563bf2fa7937c3
+- Content hash: edb4674e12925218bf92fada9841714f5677948ee6c64c75729b41a34da10d57
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=The frozen line classifies гороно under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.
 
 ### AUTHORED_ENGLISH `en-u30-336`
 
@@ -4871,10 +5011,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2b6a1c2b92df420844fdde14fc9233cdbb9792aff0ff81a3f880c4cb9c05e019
+- Content hash: 5dac2500748abf089606b92530567c075aac8cb4253842c9f79ac14c551e3f7b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 30 in your copy
+text=The frozen line assigns предположительность или возможность to читал бы and читали бы.
 
 ### AUTHORED_ENGLISH `en-u30-337`
 
@@ -4884,10 +5024,10 @@ text=Work Lesson 30 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a553c1235c38ce5a5779d87d8c19d584e6a5b2e70f4fcf57bf274cd52f25dcc1
+- Content hash: 2ccab436aababf200f927389f419af686f6f3cedf2e5139abc892b10bf6bd5d0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 30 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=предположительность или возможность does not apply to the shown line.
 
 ### AUTHORED_ENGLISH `en-u30-338`
 
@@ -4897,10 +5037,10 @@ text=Do Lesson 30 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6b60a3342a37588b2561af473788f00011077becc6c4efe58bc4c9722e0bb226
+- Content hash: 94c60cbf40a0d1b19423766399831cc7b61037781676f342f9cd5ea99280381f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 30 in your copy and complete its lesson work.
+text=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Пусть он читает. The keyed use is Повелительное наклонение.
 
 ### AUTHORED_ENGLISH `en-u30-339`
 
@@ -4910,10 +5050,10 @@ text=Open Lesson 30 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 818361160e7e54a7473e42395acc4b484cf943b3abf1d826ba1e49bd26297573
+- Content hash: c36a06fb9252deba22fa5d2dd5d628e733f5fccba1711b10671154fdccd29a86
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 30 book work
+text=Which admitted use label applies to the shown line?
 
 ### AUTHORED_ENGLISH `en-u30-340`
 
@@ -4923,10 +5063,10 @@ text=Record Lesson 30 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dfea0ad3ecfc3b92b3df7cb2fd106ef179679ce5143acf8445aaa92f16c4eca7
+- Content hash: 6bc20093bed618d6b0e11b42e4c033b234306c5aadec0d8ffc47f742a2808021
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 30 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=The frozen line assigns Повелительное наклонение to Пусть он читает and to Да будет мир!
 
 ### AUTHORED_ENGLISH `en-u30-341`
 
@@ -4936,10 +5076,10 @@ text=When you have done Lesson 30 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ded7f11caaab35612e3988ab726283af405558a1ec3a965561f7991214f4aa82
+- Content hash: cf319dc6c1995e84463e9c4b1360abcfb32f7254bd45745a7acbb7cfdfcf378d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 30 work in your copy.
+text=Повелительное наклонение does not apply to the shown line.
 
 ### AUTHORED_ENGLISH `en-u30-342`
 
@@ -4949,10 +5089,10 @@ text=Self-attest only after the Lesson 30 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3856f604599e8af171d1b4415514a04f2bee0e0c54e5e49a0bb386749f04d61e
+- Content hash: 629aadac8f021209900071cc729b19083a2785b37bee36e42a4467d8dab7d9c5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Dictionary use stays in the copy you own
+text=The frozen line says читал бы expresses предположительность или возможность действия. The keyed use is предположительность или возможность.
 
 ### AUTHORED_ENGLISH `en-u30-343`
 
@@ -4962,10 +5102,10 @@ text=Dictionary use stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5eb6df20acbfe5c0ba9a2e62d9483f52d16255c50282f193d7d6c25b71ae30d4
+- Content hash: 9e7029dd0a4acc26390a895c733288c3bbf68d9b40b411ea7349c44a74c4ff8e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Dictionary use stays in the copy you own. No admitted span gives that procedure.
+text=предположительность или возможность applies to читал бы and читали бы, not to the shown line.
 
 ### AUTHORED_ENGLISH `en-u30-344`
 
@@ -4975,10 +5115,10 @@ text=Dictionary use stays in the copy you own. No admitted span gives that proce
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea930a7ee5de4ffd80c38fe20b9aefb8b7771758b45b9189385323a88b1349ad
+- Content hash: 54bee5372bba356e283cce3a2302eab96d2987b3bccbce6104dbbded74164d2f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The final reading stays in the copy you own
+text=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Да будет мир! The keyed use is Повелительное наклонение.
 
 ### AUTHORED_ENGLISH `en-u30-345`
 
@@ -4988,10 +5128,348 @@ text=The final reading stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e32bdb81a485576f19a676c0249bae891eea28e53a3790b4fd7cc23f6adebcc2
+- Content hash: 99095a6b95a0732d7edcbe29aae187679a32f266796f104f83de48886ff437b2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The final reading stays in the copy you own. No admitted text supplies it.
+text=The story later says she несла́ большу́ю ку́клу.
+
+### AUTHORED_ENGLISH `en-u30-346`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 27f7dcfe8fc32ce3fc18c06017e92fc19205cf4863246a5b5511d8cbe3c730a4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=несла́ большу́ю ку́клу is the later discovery, not the rescue of двухле́тняя де́вочка.
+
+### AUTHORED_ENGLISH `en-u30-347`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 51e8e16d6d798cd14f89e670ad7cc52c81fd000637d983679d8ab0e004be7905
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The story says a двухле́тняя де́вочка remained, and then he нёс де́вочку.
+
+### AUTHORED_ENGLISH `en-u30-348`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f6af056008ea35cbbb19d36e845cdea2c637b1c74dd710ff010e485fc30a085a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted story event matches the shown sentence?
+
+### AUTHORED_ENGLISH `en-u30-349`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 82d540ba9ab83e6876b46c4de4ad660e4d0b5358008cd35978cc4f3deb164582
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The story says he нёс де́вочку before the doll.
+
+### AUTHORED_ENGLISH `en-u30-350`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5e20063cc5ec7ce085856caf15e010b399d4d3a109c8dd083ebc1eb3f921f7b3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=нёс де́вочку is the earlier rescue, not the reaction to the doll.
+
+### AUTHORED_ENGLISH `en-u30-351`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: acce77e412630938f382139a1da00c5614726ea06f8fbeb69a3a8b0b907c3cf4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The story says she несла́ большу́ю ку́клу, and then everyone все расхохота́лись.
+
+### AUTHORED_ENGLISH `en-u30-352`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f7a56c718c2deb9fb867c2f736b6db664f7ed1ea6c4d993c9e218b859daab2d1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted reaction follows the shown discovery in the story?
+
+### AUTHORED_ENGLISH `en-u30-353`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8eb120ce7dcd453eecdbb90ffdb745d88e4e22bc5b3cced29525bb8f8d0e0b7b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The story says everyone все расхохота́лись after the doll.
+
+### AUTHORED_ENGLISH `en-u30-354`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f809a7c34e48c6e9e1d301b764d619b1103df381cb917e4d3d01962cd4989a67
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=все расхохота́лись comes with the doll, not before it.
+
+### AUTHORED_ENGLISH `en-u30-355`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f2ef127cf2e1d13d9fad4f04f962d76c956e5a533df0cee5723122788a911820
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The story says he нёс де́вочку and later she несла́ большу́ю ку́клу.
+
+### AUTHORED_ENGLISH `en-u30-356`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3fcb088ee28e7465f828839e833ba1aa1763040df72d090b9e0a6bec82e7f172
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted rescue happens earlier in the story than the shown discovery?
+
+### AUTHORED_ENGLISH `en-u30-357`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ac250ed83ff485f2905fb134efcb9e9d564caf196a507133939c5efd2d1e69c9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Review admitted table names and abbreviation examples
+
+### AUTHORED_ENGLISH `en-u30-358`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 46aad2710dd2ba2b72e9b838d7b90f5999897d145004107b767915197c700381
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Dictionary-field layout is not practical dictionary use. The admitted capstone story is included. Advancement stays blocked. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u30-359`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8fc977a1ba27611ff8db90b56586c197086e1ff0d2bb760ed7bb0f26f23a8338
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 30 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u30-360`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 198ac9c086eefda4f67dad99127902dfbb57be1e5c1c62a71f301eae9ddb502e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read the admitted examples on this card.
+
+### AUTHORED_ENGLISH `en-u30-361`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 27f355183e107241e908bfb20641bc915d31de19a9ef14d511074bfa44546d03
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u30-362`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7699a848473286d67569b14119f6334c0efef88af6752adef31ef4873da53087
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u30-363`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a69c128b2da2a7afbed54f0b2558463afc085f0e6d262d46794fe1092f460105
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u30-364`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8071628ac0da7f2846f3f7c74ef3f556cec13d511d78e26ac3e132f9f0029c84
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u30-365`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 81354fa7af4dcfc28110a22909d726018c83210f56365cd32af6111ae2349505
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u30-366`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 638efe70f308e37ba3719ad3217d42ac2a6ee9ab0b15bd7a6604acef08c2083a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 30 in your copy
+
+### AUTHORED_ENGLISH `en-u30-367`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bfb479b85899e7936d725ce81699a492d628b4f35d6c04bb0345a2af0f01d47a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 30 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u30-368`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ad7f647491aaab10cfdac8359a62c75188f6e114c948298690c5d75624074814
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 30 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u30-369`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 072a9fe20ebd4764e47287c5a77bbeaf87c0a54f2eb09d296d1ab80d0d697489
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 30 book work
+
+### AUTHORED_ENGLISH `en-u30-370`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6603af9474572137002f70e0a8d47e0ebe8b5e35dca0aa707eef07fa467473bd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 30 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u30-371`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 379598d949ad6b695e50be35e35c62d3f5404ca33ab32c949b8b10da022bf173
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 30 work in your copy.
 
 ### SOURCE_CAPABILITY `cap-obj-u30-abbreviation`
 
@@ -5009,6 +5487,23 @@ sourceRecordId=morfologiya:Ряд существительных являютс�
 sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
 supportedClaim=abbreviation
 exactSpan=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+
+### SOURCE_CAPABILITY `cap-obj-u30-capstone`
+
+- Objectives: obj-u30-capstone
+- Sessions: none
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: SOURCE_CAPABILITY
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8282717676aadc4c2f446ad3ebc481459677ed6d46d5c7dc43795b106bf32b16
+
+sourceId=src-readyrussian-reading5
+sourceRevision=6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d
+sourceRecordId=reading5:Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала
+sourceHash=01771aba0e8353e8fa771ecba0d074223056fa7710bfd15b8805ccad357079d8
+supportedClaim=capstone-reading
+exactSpan=Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала же́нщина. Она́ пла́кала и говори́ла, что в до́ме оста́лась двухле́тняя де́вочка. Пожа́рные посла́ли Бо́ба. Боб побежа́л по ле́стнице и скры́лся в ды́ме. Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку. Мать бро́силась к до́чери и пла́кала от ра́дости, что дочь была́ жива́. Пожа́рные ласка́ли соба́ку и осма́тривали её - не обгоре́ла ли она́; но Боб рвался опять в дом. Пожа́рные поду́мали, что в до́ме есть ещё что-нибу́дь живо́е, и пусти́ли его́. Соба́ка побежа́ла в дом и ско́ро вы́бежала с чем-то в зуба́х. Когда́ наро́д рассмотре́л то, что она́ несла́, то все расхохота́лись: она́ несла́ большу́ю ку́клу.
 
 ### SOURCE_CAPABILITY `cap-obj-u30-letter-names`
 
@@ -5121,6 +5616,21 @@ CC BY-SA 4.0
 Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-readyrussian-reading5`
+
+- Objectives: none
+- Sessions: none
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8b34f65f0a0d966f7f9ea95a45507d6fb63f2b0f6fc562ed5b05819d1a3c6a05
+
+Reading 5 — Пожарные собаки
+CC BY-SA 4.0
+ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Reading 5 — Пожарные собаки HTML sha256 6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -5189,6 +5699,20 @@ permitsAppUse=true
 - Content hash: 64b2b1fff4da01a2cd1e0582ba76c0480076c42771867d43d75a30df6984680b
 
 src-ruwiki-morfologiya-148939075
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-readyrussian-reading5`
+
+- Objectives: none
+- Sessions: none
+- Source: src-readyrussian-reading5
+- Rights: rights-readyrussian-reading5
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 74519280b0fa81307d29520c2324eb7711f4207b50e65ddba1ccb7e5f5ca768a
+
+src-readyrussian-reading5
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -5264,15 +5788,23 @@ permitsAppUse=true
 - `obj-u30-particle` CHECK `u30-i-particle-1`
 - `obj-u30-particle` CHECK `u30-i-particle-2`
 - `obj-u30-particle` REMEDIATION `u30-st-rem-particle`
+- `obj-u30-capstone` INSTRUCTION `u30-st-orient`
+- `obj-u30-capstone` INSTRUCTION `u30-st-teach-capstone-1`
+- `obj-u30-capstone` INSTRUCTION `u30-st-teach-capstone-2`
+- `obj-u30-capstone` EXAMPLE `ex-u30-capstone-0`
+- `obj-u30-capstone` EXAMPLE `ex-u30-capstone-1`
+- `obj-u30-capstone` PRACTICE `u30-st-guided-capstone-1`
+- `obj-u30-capstone` CHECK `u30-i-capstone-1`
+- `obj-u30-capstone` CHECK `u30-i-capstone-2`
+- `obj-u30-capstone` REMEDIATION `u30-st-rem-capstone`
 - `obj-u30-book` INSTRUCTION `u30-st-book-work`
 - `obj-u30-book` INSTRUCTION `u30-st-book`
-- `obj-u30-dictionary` INSTRUCTION `u30-st-gap-dictionary`
-- `obj-u30-capstone` INSTRUCTION `u30-st-gap-capstone`
 - `u30-s-orient` OBJECTIVE `obj-u30-letter-names`
 - `u30-s-orient` OBJECTIVE `obj-u30-abbrev-examples`
 - `u30-s-orient` OBJECTIVE `obj-u30-address-marks`
 - `u30-s-orient` OBJECTIVE `obj-u30-abbreviation`
 - `u30-s-orient` OBJECTIVE `obj-u30-particle`
+- `u30-s-orient` OBJECTIVE `obj-u30-capstone`
 - `u30-s-orient` OBJECTIVE `obj-u30-book`
 - `u30-st-orient` REFERENCE `ref-u2630-attribution`
 - `u30-s-letter-names` OBJECTIVE `obj-u30-letter-names`
@@ -5346,12 +5878,20 @@ permitsAppUse=true
 - `u30-st-check-particle` REMEDIATION `u30-st-rem-particle`
 - `u30-st-check-particle` ITEM `u30-i-particle-1`
 - `u30-st-check-particle` ITEM `u30-i-particle-2`
+- `u30-s-capstone` OBJECTIVE `obj-u30-capstone`
+- `u30-st-teach-capstone-1` EXAMPLE `ex-u30-capstone-0`
+- `u30-st-teach-capstone-1` EXAMPLE `ex-u30-capstone-1`
+- `u30-st-teach-capstone-1` REFERENCE `ref-u2630-attribution`
+- `u30-st-guided-capstone-1` REMEDIATION `u30-st-rem-capstone`
+- `u30-st-guided-capstone-1` ITEM `u30-g-capstone-0`
+- `u30-st-teach-capstone-2` REFERENCE `ref-u2630-attribution`
+- `u30-st-rem-capstone` EXAMPLE `ex-u30-capstone-0`
+- `u30-st-rem-capstone` EXAMPLE `ex-u30-capstone-1`
+- `u30-st-check-capstone` REMEDIATION `u30-st-rem-capstone`
+- `u30-st-check-capstone` ITEM `u30-i-capstone-1`
+- `u30-st-check-capstone` ITEM `u30-i-capstone-2`
 - `u30-s-book` OBJECTIVE `obj-u30-book`
 - `u30-st-book-work` REFERENCE `ref-u2630-attribution`
-- `u30-s-gap-dictionary` OBJECTIVE `obj-u30-dictionary`
-- `u30-st-gap-dictionary` REFERENCE `ref-u2630-attribution`
-- `u30-s-gap-capstone` OBJECTIVE `obj-u30-capstone`
-- `u30-st-gap-capstone` REFERENCE `ref-u2630-attribution`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-en`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-ru`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-1-en`
@@ -5380,6 +5920,10 @@ permitsAppUse=true
 - `obj-u30-address-marks` PROVENANCE `prov-ex-u30-address-marks-1-ru-r3`
 - `obj-u30-address-marks` PROVENANCE `prov-ex-u30-address-marks-2-en`
 - `obj-u30-address-marks` PROVENANCE `prov-ex-u30-address-marks-2-ru`
+- `obj-u30-capstone` PROVENANCE `prov-ex-u30-capstone-0-en`
+- `obj-u30-capstone` PROVENANCE `prov-ex-u30-capstone-0-ru`
+- `obj-u30-capstone` PROVENANCE `prov-ex-u30-capstone-1-en`
+- `obj-u30-capstone` PROVENANCE `prov-ex-u30-capstone-1-ru`
 - `obj-u30-letter-names` PROVENANCE `prov-ex-u30-letter-names-0-en`
 - `obj-u30-letter-names` PROVENANCE `prov-ex-u30-letter-names-0-ru`
 - `obj-u30-letter-names` PROVENANCE `prov-ex-u30-letter-names-1-en`
@@ -5401,12 +5945,16 @@ permitsAppUse=true
 - `obj-u30-address-marks` PROVENANCE `prov-u30-address-marks-rem`
 - `obj-u30-address-marks` PROVENANCE `prov-u30-address-marks-x-0`
 - `obj-u30-address-marks` PROVENANCE `prov-u30-address-marks-x-1`
+- `obj-u30-capstone` PROVENANCE `prov-u30-capstone-rem`
+- `obj-u30-capstone` PROVENANCE `prov-u30-capstone-x-0`
+- `obj-u30-capstone` PROVENANCE `prov-u30-capstone-x-1`
 - `obj-u30-letter-names` PROVENANCE `prov-u30-letter-names-rem`
 - `obj-u30-letter-names` PROVENANCE `prov-u30-letter-names-x-0`
 - `obj-u30-letter-names` PROVENANCE `prov-u30-letter-names-x-1`
 - `obj-u30-letter-names` PROVENANCE `prov-u30-letter-names-x-2`
 - `obj-u30-particle` PROVENANCE `prov-u30-particle-rem`
 - `obj-u30-abbreviation` SOURCE_CAPABILITY `cap-obj-u30-abbreviation`
+- `obj-u30-capstone` SOURCE_CAPABILITY `cap-obj-u30-capstone`
 - `obj-u30-letter-names` SOURCE_CAPABILITY `cap-obj-u30-letter-names`
 - `obj-u30-particle` SOURCE_CAPABILITY `cap-obj-u30-particle`
 
@@ -5421,19 +5969,16 @@ permitsAppUse=true
 - `cap-obj-u30-letter-names` supports `letter-name-review` for `obj-u30-letter-names`
 - `cap-obj-u30-abbreviation` supports `abbreviation` for `obj-u30-abbreviation`
 - `cap-obj-u30-particle` supports `particle` for `obj-u30-particle`
+- `cap-obj-u30-capstone` supports `capstone-reading` for `obj-u30-capstone`
 
-Guidance objectives stay unsupported until an admitted frozen capability exists:
+No guidance objective is recorded.
 
-- `obj-u30-dictionary` Dictionary use stays in the copy you own
-- `obj-u30-capstone` The final reading stays in the copy you own
 
 ## Book-directed register
 
 - `u30-st-orient` Open Lesson 30 in the copy you own. The app records do not replace that lesson.
 - `u30-st-book-work` Open Lesson 30 in your copy and complete its lesson work.
 - `u30-st-book` Self-attest only after the Lesson 30 work in your copy.
-- `u30-st-gap-dictionary` Dictionary use has no admitted frozen span.
-- `u30-st-gap-capstone` The final reading has no admitted frozen span.
 
 ## Optional non-gating register
 
@@ -5442,8 +5987,8 @@ None.
 
 ## Unavailable experiences
 
-- `u30-st-gap-dictionary`
-- `u30-st-gap-capstone`
+None.
+
 
 ## Unresolved relationships
 

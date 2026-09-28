@@ -121,19 +121,21 @@ class BatchAUnits71620Test {
             val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
         }
-        listOf(7, 17).forEach { number ->
-            assertEquals("NOT_PREPARED", pack.unit(number)!!.readiness)
-            val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
-            assertFalse(decision.remaining.joinToString("\n"), decision.allowed)
-            assertTrue(decision.remaining.any { it.contains("not prepared") })
-            assertTrue(V2Validator.contentCompletenessErrors(pack, pack.unit(number)!!).isNotEmpty())
-        }
+        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
+        val unitSeven = advancementDecision(pack, pack.unit(7)!!, learner(pack, 7))
+        assertFalse(unitSeven.remaining.joinToString("\n"), unitSeven.allowed)
+        assertTrue(unitSeven.remaining.any { it.contains("not prepared") })
+        assertTrue(V2Validator.contentCompletenessErrors(pack, pack.unit(7)!!).isNotEmpty())
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
+        val unitSeventeen = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
+        assertTrue(unitSeventeen.remaining.joinToString("\n"), unitSeventeen.allowed)
+        assertTrue(V2Validator.contentCompletenessErrors(pack, pack.unit(17)!!).isEmpty())
         val flipped7 = pack.unit(7)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
         val paradigm = advancementDecision(pack, flipped7, learner(pack, 7))
         assertFalse(paradigm.allowed)
         assertTrue(paradigm.remaining.any { it.contains("adverb paradigm") })
-        val flipped17 = pack.unit(17)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
-        val clock = advancementDecision(pack, flipped17, learner(pack, 17))
+        val strippedClock = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "productive-clock-time" })
+        val clock = advancementDecision(strippedClock, strippedClock.unit(17)!!, learner(strippedClock, 17))
         assertFalse(clock.allowed)
         assertTrue(clock.remaining.any { it.contains("productive clock-time") })
         val strippedDate = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "calendar-date" })
@@ -165,7 +167,11 @@ class BatchAUnits71620Test {
             }
             val absent = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.id != capability.id })
             val absentDecision = advancementDecision(absent, absent.unit(capability.unitNumber)!!, learner(absent, capability.unitNumber))
-            assertFalse(absentDecision.allowed)
+            if (claim == "clock-expression-recognition") {
+                assertTrue(absentDecision.remaining.joinToString("\n"), absentDecision.allowed)
+            } else {
+                assertFalse(absentDecision.allowed)
+            }
         }
         val adverb = pack.provenanceRecords.first { it.objectiveId == "obj-u7-adverb" && it.shippedText == "быстро" }
         val quickly = pack.provenanceRecords.first { it.objectiveId == "obj-u7-adverb" && it.shippedText == "quickly" }
@@ -222,7 +228,12 @@ class BatchAUnits71620Test {
                     val rationale = item.distractorRationales[index]
                     val difference = assessment.distractorDifference[index]
                     assertEquals("${item.id} rationale", rationale, difference)
-                    assertCompleteRelationship(item.id, rationale, competingForm(rationale, option), option)
+                    val shownFormGloss = glossWhenOptionIsShownForm(rationale, option)
+                    if (shownFormGloss != null) {
+                        assertCompleteRelationship(item.id, rationale, option, shownFormGloss)
+                    } else {
+                        assertCompleteRelationship(item.id, rationale, competingForm(rationale, option), option)
+                    }
                     if (!option.contains(item.answer)) {
                         assertFalse("${item.id} rationale names ${item.answer}", rationale.contains(item.answer) || difference.contains(item.answer))
                     }
@@ -322,7 +333,18 @@ class BatchAUnits71620Test {
         if (subject != null) {
             return subject.groupValues[1] == answer && subject.groupValues[2] == shown
         }
+        val label = SOURCE_LABEL.matchEntire(text)
+        if (label != null) return label.groupValues[1] == answer
         return shown.isEmpty() && text == answer && (answer.trimEnd().endsWith(".") || answer.split(Regex("\\s+")).size >= 4)
+    }
+
+    /** The option is the shown form of a real pair, so the keyed gloss is the other side. */
+    private fun glossWhenOptionIsShownForm(text: String, option: String): String? {
+        val pair = PAIR_SENTENCE.matchEntire(text) ?: return null
+        val form = pair.groupValues[1]
+        val gloss = pair.groupValues[2]
+        if (form == option && form != gloss) return gloss
+        return null
     }
 
     private fun competingForm(text: String, answer: String): String {
@@ -433,6 +455,9 @@ class BatchAUnits71620Test {
         val SPEAKER_LINE = Regex("""^(?:while )?(a (?:male|female) speaker) would say (.+)$""")
         val HAVE_LINE = Regex("""^"([^"]+)" translates to (.+)$""")
         val SUBJECT_LINE = Regex("""^(If the subject is (?:feminine|neuter|plural)), it's (.+)\.$""")
+        val SOURCE_LABEL = Regex(
+            """^(?:The heading|The table header|The source quotes) "([^"]+)" (?:labels the section\. It is not the gloss of the shown form|names the other motion column|as an English restatement)\.$""",
+        )
         val BATCH_A_OBJECTIVES = setOf(
             "obj-u16-complements",
             "obj-u17-age",
