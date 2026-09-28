@@ -35,6 +35,19 @@
         "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
         "requiredStatement": "Creative Commons Attribution-ShareAlike 4.0",
         "statement": "English Wikibooks text is available under Creative Commons Attribution-ShareAlike 4.0 as stated by the retained Wikibooks:Copyrights oldid 4622060."
+      },
+      "ruwiki": {
+        "appliesToSourceIds": [
+          "src-ruwiki-morfologiya-148939075"
+        ],
+        "title": "Википедия:Авторские права",
+        "oldid": "154562152",
+        "url": "https://ru.wikipedia.org/w/index.php?title=Википедия:Авторские_права&oldid=154562152",
+        "file": "../units-6-10/ruwiki/copyrights-154562152.txt",
+        "revisionFile": "../units-6-10/ruwiki/copyrights-154562152.revision.json",
+        "sha256": "a91323abe9ea35f846bf1fffd4feae46dc6bf7420cdce782e016d5c1141fb3bf",
+        "requiredStatement": "лицензиями [[Википедия:Лицензия|Creative Commons «С указанием авторства — С сохранением условий»]] (CC BY-SA 4.0)",
+        "statement": "Russian Wikipedia text is CC BY-SA 4.0 under the retained Википедия:Авторские права oldid 154562152. That route is not the English Wikipedia or Wikibooks copyrights snapshot."
       }
     },
     "wikibooksLicenseTextFile": "../units-3-5/wikibooks/copyrights-4622060.txt",
@@ -66,6 +79,30 @@
       "disposition": "EXCLUDED",
       "licenseId": "CC BY-SA 4.0",
       "scope": "Claims that a postal index is not vital, that delivery time is predictable, personal recommendations, and international hearsay stay out of learner-facing content."
+    },
+    {
+      "id": "ruwiki-morfologiya-abbreviation-particle-148939075",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Two spans only. Letter abbreviations and vowel-final sound abbreviations stay uninflected, with the listed examples, while a consonant-final sound abbreviation is shown both ways as в МИД and в МИДе. The command particles пусть and да are illustrated by Пусть он читает and Да будет мир, and бы forms are stated to express supposition or possibility. The indefinite-pronoun inventory, the particle class list without those examples, participle stress, punctuation, postal practice, letter structure, and readings are not established."
+    },
+    {
+      "id": "ruwiki-morfologiya-indefinite-inventory-148939075",
+      "disposition": "EXCLUDED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "The list of indefinite pronouns and adverbs names forms. It does not state which series to select."
+    },
+    {
+      "id": "ruwiki-morfologiya-particle-class-list-148939075",
+      "disposition": "EXCLUDED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "A class list that names бы, пусть, and да without the command and supposition examples does not clear particle."
+    },
+    {
+      "id": "wikipedia-abbreviation-examples-1369617627",
+      "disposition": "EXCLUDED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "СССР and США with their glosses are two examples. They do not state the abbreviation declension contrast."
     },
     {
       "id": "wiktionary",
@@ -143,6 +180,23 @@
       "sourceId": "src-wikibooks-russian-various-stuff-3353858",
       "licenseRoute": "wikibooks",
       "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for oldid 3353858 identifies the contributors."
+    },
+    {
+      "key": "morfologiya",
+      "title": "Морфология русского языка",
+      "oldid": "148939075",
+      "url": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+      "file": "../units-21-25/supplemental/morfologiya-148939075.txt",
+      "sha256": "25c88e24ee9733f8b5803eeaa58e0d4d564033380a650a7c97f3bf35a219f809",
+      "revisionFile": "../units-21-25/supplemental/morfologiya-148939075.revision.json",
+      "mediawikiSha1": "4ec6ff4f85e5d19e4cf41451a14e581c3427b6b6",
+      "parentid": 148384776,
+      "timestamp": "2025-10-03T21:00:43Z",
+      "size": 160656,
+      "retrieved": "2026-09-24",
+      "sourceId": "src-ruwiki-morfologiya-148939075",
+      "licenseRoute": "ruwiki",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors."
     }
   ]
 }

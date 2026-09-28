@@ -3,8 +3,8 @@
 **Status:** RESEARCH HANDOFF — NOT AN APPROVAL  
 **Repository:** `justinkulka-lang/russian-companion`  
 **Canonical commit:** `fd69bd03298d69669d09daafe8d364b0e576d033`  
-**Pack content-review digest:** `2ec8673de5c4f5a0bee9208250afd2ec2b505a013ab848f30c0513a63b59acc5`  
-**Repository source digest:** `098eda693db0ae5113e89b6f26dda9eb65cd2cbf94c94296b2b14fec7388115e`  
+**Pack content-review digest:** `76879c3e98f1682f322651e830dd18c537a79135badad3c86c77a7e13cfa7c6f`  
+**Repository source digest:** `8819cf84360df77acebd15bb55dd4f090e1ce4f9f7962916f6927fbbc3b4496f`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -70,7 +70,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 25 | Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 26 | Indefinite pronouns, word order, and letter writing | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 27 | Participles: types and stress | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | PROPOSED_NOT_ACTIVATED | YES | Close documented source-supported curriculum gaps, then regenerate review materials; separately activate or reject the proposed variance |
-| 28 | Verbal adverbs | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
+| 28 | Verbal adverbs | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 29 | Bookish style, active participles, punctuation, and short-form adjectives | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | PROPOSED_NOT_ACTIVATED | YES | Close documented source-supported curriculum gaps, then regenerate review materials; separately activate or reject the proposed variance |
 | 30 | Abbreviations, names of Russian letters, and particles | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | PROPOSED_NOT_ACTIVATED | YES | Close documented source-supported curriculum gaps, then regenerate review materials; separately activate or reject the proposed variance |
 
@@ -276,7 +276,7 @@ Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-The frozen English Wikipedia “Russian grammar” oldid 1369617627 states that imperfective adverbial participles are usually present, while perfective ones can only be past. That sentence supports the two bounded recognition claims. It does not state a productive paradigm, participle stress, punctuation, or bookish register. The reading experience stays unresolved.
+The frozen English Wikipedia “Russian grammar” oldid 1369617627 states that imperfective adverbial participles are usually present, while perfective ones can only be past. That sentence supports the two bounded recognition claims. It does not state a productive paradigm. A later sentence in the same article says adverbial participles are a feature of bookish speech and pairs `Пообедав, я пошёл гулять` with `Я пообедал и пошёл гулять`. That pair is a register illustration for adverbial forms. It is not a reading passage, and it does not clear a general bookish-register claim. `verbal-adverb-reading` is a required source capability with an empty admission set. Guidance prose, a readiness label, and the bounded adverb records do not clear it. Unit 28 remains `NOT_PREPARED` and advancement stays blocked.
 
 #### `verbal-adverb-reading` — `obj-u28-readings`
 
@@ -346,29 +346,7 @@ Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 - **Variance dependency:** PROPOSED_NOT_ACTIVATED
 - **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
 
-#### `abbreviation` — `obj-u30-abbreviation`
-
-- **Required claim/skill:** A bounded abbreviation system beyond two examples and address marks.
-- **Why the current record is insufficient:** Two examples do not establish a general system.
-- **Required source:** Frozen licensed instruction explicitly supporting the selected abbreviation conventions and examples.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English cannot generalize from two examples.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** PROPOSED_NOT_ACTIVATED
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-#### `particle` — `obj-u30-particle`
-
-- **Required claim/skill:** A bounded particle system/use distinction with explicit examples.
-- **Why the current record is insufficient:** An isolated label is not a particle curriculum.
-- **Required source:** Frozen licensed grammar instruction explicitly explaining each admitted particle meaning/use and contrasts.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English cannot infer pragmatic meanings.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** PROPOSED_NOT_ACTIVATED
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+Russian Wikipedia “Морфология русского языка” oldid 148939075, under the separate Russian Wikipedia copyrights page oldid 154562152, is already frozen for Units 21–25. Two spans from that same revision are now admitted for Unit 30 only. Letter abbreviations and vowel-final sound abbreviations are grouped together, with СНГ, ЭВМ, ГАИ, and гороно, while a consonant-final sound abbreviation is shown both ways as в МИД and в МИДе. The command examples Пусть он читает and Да будет мир! are separated from the supposition forms читал бы and читали бы. Those spans clear `abbreviation` and `particle` as bounded recognition. They do not state a complete abbreviation system, a particle inventory, dictionary use, or a final reading. The СССР/США glosses and the address marks do not clear `abbreviation`. The class list that only names бы, пусть, and да does not clear `particle`. Unit 30 stays `NOT_PREPARED`. The inactive authority variance stays unactivated.
 
 #### `capstone-reading` — `obj-u30-capstone`
 

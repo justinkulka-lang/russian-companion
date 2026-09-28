@@ -102,6 +102,8 @@ class GapClosureDossierTest {
             "active-participle",
             "short-form-adjective",
             "letter-name-review",
+            "abbreviation",
+            "particle",
             "adverb-introduction",
             "instrumental-complements",
             "age",

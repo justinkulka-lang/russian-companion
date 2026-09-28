@@ -11,12 +11,12 @@ Unit 30 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 3
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: fd69bd03298d69669d09daafe8d364b0e576d033
-- Unit content-review SHA-256: a76e5b149793ad2cc6b1c279c23596b65ca28d428478416612fae184dd3f791f
+- Curriculum source commit: 5ab3cfe06e709ee605a3cbce320d6cbea9e11776
+- Unit content-review SHA-256: 2efaf1dc2c77c7e86351f9628be1f625995d16922817e2efbda534e8e58a4805
 - Mapping-package SHA-256: e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367
-- Pack content-review SHA-256: 2ec8673de5c4f5a0bee9208250afd2ec2b505a013ab848f30c0513a63b59acc5
-- Review-package SHA-256: 63ec93a71456bc6532b6c683a2195fd2544138f1c899e3547094d98f58e050a4
-- Repository source SHA-256: 098eda693db0ae5113e89b6f26dda9eb65cd2cbf94c94296b2b14fec7388115e
+- Pack content-review SHA-256: 76879c3e98f1682f322651e830dd18c537a79135badad3c86c77a7e13cfa7c6f
+- Review-package SHA-256: 7b3de00b925736b11790f23c4aa43533fb115334dff8fb8c11f5ed33f9bb6237
+- Repository source SHA-256: 8819cf84360df77acebd15bb55dd4f090e1ce4f9f7962916f6927fbbc3b4496f
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -41,7 +41,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 30. Observed structural scope: Course orientation, dictionary use, abbreviations, review and application of letter names, particles, vocabulary and a final reading. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=30
 prerequisites=29
-estimatedMinutes=70
+estimatedMinutes=86
 
 ## Not yet approved
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 30.
 
 ### UNIT `unit-30`
 
-- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-book, obj-u30-dictionary, obj-u30-abbreviation, obj-u30-particle, obj-u30-capstone
-- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-book, u30-s-gap-dictionary, u30-s-gap-abbreviation, u30-s-gap-particle, u30-s-gap-capstone
+- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-book, obj-u30-dictionary, obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-book, u30-s-gap-dictionary, u30-s-gap-capstone
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 475a6282b44fcf9f302f9145db4360492ee54c6ed4e7417874bd6a1f589119ea
+- Content hash: d2534219a993553b3b97c120474294627c7fe857c5b5670ce86c0e3f27990220
 
 number=30
 title=Abbreviations, names of Russian letters, and particles
@@ -86,7 +86,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 30. Observed structural scope: Course orientation, dictionary use, abbreviations, review and application of letter names, particles, vocabulary and a final reading. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=30
 prerequisites=29
-estimatedMinutes=70
+estimatedMinutes=86
 
 ### ADVANCEMENT `unit-30-advancement`
 
@@ -96,12 +96,12 @@ estimatedMinutes=70
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5543483e4ad17ca5b7c2d04ea14fc3e1a337bf15f6bb85415e8de7e6e1e7c121
+- Content hash: 7d2116f40d6773e62567189154cc653d51d6f7a1113a0a75862826ba01acd267
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
-minimumDistinctChecks=6
+minimumDistinctChecks=10
 requireDueReview=false
 tutorOptional=true
 
@@ -162,6 +162,44 @@ practice=u30-st-guided-address-marks-1
 checks=u30-i-address-marks-1,u30-i-address-marks-2
 remediation=u30-st-rem-address-marks
 
+### OBJECTIVE `obj-u30-abbreviation`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 184096d695680b28045e694987c8b454e772267c9c2262b26178a1434e85ea37
+
+title=Classify the shown form by its admitted category
+kind=RECOGNITION
+unitNumber=30
+instruction=u30-st-orient,u30-st-teach-abbreviation-1,u30-st-teach-abbreviation-2,u30-st-teach-abbreviation-3,u30-st-teach-abbreviation-4
+examples=ex-u30-abbreviation-0,ex-u30-abbreviation-1,ex-u30-abbreviation-2,ex-u30-abbreviation-3,ex-u30-abbreviation-4,ex-u30-abbreviation-5
+practice=u30-st-guided-abbreviation-1
+checks=u30-i-abbreviation-1,u30-i-abbreviation-2
+remediation=u30-st-rem-abbreviation
+
+### OBJECTIVE `obj-u30-particle`
+
+- Objectives: obj-u30-particle
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e51c72d5d261a2478afc1fcaf6e69df74ab0070dccc35e0add5a9a68558156fd
+
+title=Classify the shown line by its admitted use
+kind=RECOGNITION
+unitNumber=30
+instruction=u30-st-orient,u30-st-teach-particle-1,u30-st-teach-particle-2,u30-st-teach-particle-3
+examples=ex-u30-particle-0,ex-u30-particle-1,ex-u30-particle-2,ex-u30-particle-3
+practice=u30-st-guided-particle-1
+checks=u30-i-particle-1,u30-i-particle-2
+remediation=u30-st-rem-particle
+
 ### OBJECTIVE `obj-u30-book`
 
 - Objectives: obj-u30-book
@@ -200,44 +238,6 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u30-abbreviation`
-
-- Objectives: obj-u30-abbreviation
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f3fcac04c26702237f70d851dbd93fb144a7e73c07ea7fc28c5c9c4fd714c7d1
-
-title=A general abbreviation system stays in the copy you own
-kind=GUIDANCE
-unitNumber=30
-instruction=u30-st-gap-abbreviation
-examples=
-practice=
-checks=
-remediation=
-
-### OBJECTIVE `obj-u30-particle`
-
-- Objectives: obj-u30-particle
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: acfbf0e3d9521b64697a72322c01c4bd8c4a5902f5594d7bbdc42581b3c8c936
-
-title=A general particle system stays in the copy you own
-kind=GUIDANCE
-unitNumber=30
-instruction=u30-st-gap-particle
-examples=
-practice=
-checks=
-remediation=
-
 ### OBJECTIVE `obj-u30-capstone`
 
 - Objectives: obj-u30-capstone
@@ -259,32 +259,32 @@ remediation=
 
 ### SESSION `u30-s-orient`
 
-- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-book
+- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-book
 - Sessions: u30-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7d225406fbe4ef69c71990af534c3c8976ad511715cd254660a7bc47670ddbbb
+- Content hash: 7cfdbbb52934d38cf8b5949bb233490a9d518cddacef303f844d7f1ed09f6695
 
 title=Review admitted table names and abbreviation examples
 estimatedMinutes=8
-objectives=obj-u30-letter-names,obj-u30-abbrev-examples,obj-u30-address-marks,obj-u30-book
+objectives=obj-u30-letter-names,obj-u30-abbrev-examples,obj-u30-address-marks,obj-u30-abbreviation,obj-u30-particle,obj-u30-book
 steps=u30-st-orient
 
 ### STEP `u30-st-orient`
 
-- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-book
+- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-book
 - Sessions: u30-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 83154a4c46e59fc934e94ad1e6ec57192ed3f8e48650ce82daa6ef892c5e6ddd
+- Content hash: 0a0af0b929f91390407fd63c29873adcc37fc3084f2ea658d38044ca61c8d59e
 
 kind=ORIENT
 title=Review admitted table names and abbreviation examples
-body=Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. Those examples are not a complete abbreviation system. Dictionary use, a general particle system, and the final reading stay in the copy you own. Qualified review is pending.
+body=Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Dictionary use and the final reading stay in the copy you own. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -691,6 +691,322 @@ bookDirection=
 companionDirection=
 remediationStepId=u30-st-rem-address-marks
 
+### SESSION `u30-s-abbreviation`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 44808764c52795adb5749194592bb0b7507d23fd71cb1c66234adebf13ae8dfc
+
+title=Classify the shown form by its admitted category
+estimatedMinutes=12
+objectives=obj-u30-abbreviation
+steps=u30-st-teach-abbreviation-1,u30-st-guided-abbreviation-1,u30-st-teach-abbreviation-2,u30-st-teach-abbreviation-3,u30-st-teach-abbreviation-4,u30-st-rem-abbreviation,u30-st-check-abbreviation
+
+### STEP `u30-st-teach-abbreviation-1`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 7080bf12e58a040d1f9fb76450328b4d9139e86435a0fee8e2266f1641cd5be7
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u30-abbreviation-0,ex-u30-abbreviation-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-guided-abbreviation-1`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ce43900c080db18a9f6415258d08511f4886d7baa5455bef06fb5c4a61769096
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u30-g-abbreviation-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u30-st-rem-abbreviation
+
+### STEP `u30-st-teach-abbreviation-2`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 804e9091cdcc0442436f5c4ddd40013cc4be607ee9a6448c442900961825dc87
+
+kind=TEACH
+title=Admitted instruction
+body=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-teach-abbreviation-3`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2d208a12492710a69ef3811766ca4a511014e5dcbad1facf0c71b28066004124
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u30-abbreviation-2,ex-u30-abbreviation-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-teach-abbreviation-4`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e7b67e4f3407177d489917e53c46d910fb23dc38bd055b52736b44381c5905a3
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u30-abbreviation-4,ex-u30-abbreviation-5
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-rem-abbreviation`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a3e2dedf337ffeb077aae0f5f2ee76c1bf0a5b7a2808e269931def647b5daf9e
+
+kind=REMEDIATE
+title=Remediation
+body=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+dominantAction=Continue
+references=
+items=
+examples=ex-u30-abbreviation-0,ex-u30-abbreviation-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-check-abbreviation`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 70db1fb4f47b5cba25340e33d05c4fe075ab239b1d16949a0a27d9fb9dad5e5d
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u30-i-abbreviation-1,u30-i-abbreviation-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u30-st-rem-abbreviation
+
+### SESSION `u30-s-particle`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 39b1f9ad88fb0786aa3f3c5c3ec296194375ab7929a35d9f13bdb9a724916e13
+
+title=Classify the shown line by its admitted use
+estimatedMinutes=12
+objectives=obj-u30-particle
+steps=u30-st-teach-particle-1,u30-st-guided-particle-1,u30-st-teach-particle-2,u30-st-teach-particle-3,u30-st-rem-particle,u30-st-check-particle
+
+### STEP `u30-st-teach-particle-1`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6c05032f172bbf2ce717f8389cefe612be450c544003e7f8ad7e6bd1306e018a
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u30-particle-0,ex-u30-particle-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-guided-particle-1`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 72e7466a152ba6c9ab8c20040dbed97dd3e5bf4fde2014c11139ffc9faae366a
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u30-g-particle-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u30-st-rem-particle
+
+### STEP `u30-st-teach-particle-2`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 06b55cc4c3be65d4569723c2317b816b40d00d5d88ba1800bf8957bdfb21715c
+
+kind=TEACH
+title=Admitted instruction
+body=предположительность или возможность действия
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-teach-particle-3`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fec9cf98785e14bf792aeb553352e8c6c27107e8486de4c1107c3a3423415cdf
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u30-particle-2,ex-u30-particle-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-rem-particle`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 80d31e39d706790736f5d28372b523934b53ca4b71d76b1a1015e87585d5ced7
+
+kind=REMEDIATE
+title=Remediation
+body=предположительность или возможность действия
+dominantAction=Continue
+references=
+items=
+examples=ex-u30-particle-0,ex-u30-particle-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-check-particle`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: db2f50d5655281e95bce22a163db0c4851d580aa7410cbf7b042d15b59dd2e5e
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u30-i-particle-1,u30-i-particle-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u30-st-rem-particle
+
 ### SESSION `u30-s-book`
 
 - Objectives: obj-u30-book
@@ -783,80 +1099,6 @@ references=ref-u2630-attribution
 items=
 examples=
 unavailableReason=Dictionary use has no admitted frozen span.
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### SESSION `u30-s-gap-abbreviation`
-
-- Objectives: obj-u30-abbreviation
-- Sessions: u30-s-gap-abbreviation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 20a0f19bfe37495a5afcde3211bca250714ba89eab631b9ad491c526360b953f
-
-title=A general abbreviation system stays in the copy you own
-estimatedMinutes=4
-objectives=obj-u30-abbreviation
-steps=u30-st-gap-abbreviation
-
-### STEP `u30-st-gap-abbreviation`
-
-- Objectives: obj-u30-abbreviation
-- Sessions: u30-s-gap-abbreviation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 00320d478ac81ddee7afb40da070126f1e9313aa33ec6f10b1299033c67704f5
-
-kind=UNAVAILABLE
-title=A general abbreviation system stays in the copy you own
-body=A general abbreviation system stays in the copy you own. Two examples and the address marks are not that system.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=A complete abbreviation system has no admitted frozen span.
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### SESSION `u30-s-gap-particle`
-
-- Objectives: obj-u30-particle
-- Sessions: u30-s-gap-particle
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3a25b1bfbe364fd80a88e79f411079dc0c513d827bb5c0e052ac9c92c6a91757
-
-title=A general particle system stays in the copy you own
-estimatedMinutes=4
-objectives=obj-u30-particle
-steps=u30-st-gap-particle
-
-### STEP `u30-st-gap-particle`
-
-- Objectives: obj-u30-particle
-- Sessions: u30-s-gap-particle
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 48133160f8140126b48c3986c5612a768670a36ae2830d0cc36d6ea294b1c8c4
-
-kind=UNAVAILABLE
-title=A general particle system stays in the copy you own
-body=A general particle system stays in the copy you own. An isolated label is not that system.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=A general particle system has no admitted frozen span.
 bookDirection=
 companionDirection=
 remediationStepId=
@@ -1017,6 +1259,176 @@ note=building
 objectiveId=obj-u30-address-marks
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u30-abbreviation-0`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e5142538daf32000bdf6473783bd6aa558c17f41c1be48638cfcd5d9d18cb4a4
+
+kind=LEXICAL
+letterId=
+display=СНГ
+note=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+objectiveId=obj-u30-abbreviation
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u30-abbreviation-1`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e8003239866ee050332a60488d82e69668ca3db7ef330e2d8e938133204c385f
+
+kind=LEXICAL
+letterId=
+display=ЭВМ
+note=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+objectiveId=obj-u30-abbreviation
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u30-abbreviation-2`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a7cb93460b3ef495635483676571a1cd3862a2dd2904d737c5f8c79229cbc3e5
+
+kind=LEXICAL
+letterId=
+display=ГАИ
+note=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+objectiveId=obj-u30-abbreviation
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u30-abbreviation-3`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5106851b5a4d5673554d5ef0b422755c9869bb298cf7fa6568150c09966f8aa0
+
+kind=LEXICAL
+letterId=
+display=гороно
+note=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+objectiveId=obj-u30-abbreviation
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u30-abbreviation-4`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7cc720d7d4c102adba51d9473179f3630864e8852324b0c850429ae285859e8f
+
+kind=LEXICAL
+letterId=
+display=в МИД
+note=звуковые аббревиатуры на согласную
+objectiveId=obj-u30-abbreviation
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u30-abbreviation-5`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2791f0f7a7c57a91b2e9c01a5f6515330935cbb9a68e3b68a6adabd4852fa084
+
+kind=LEXICAL
+letterId=
+display=в МИДе
+note=звуковые аббревиатуры на согласную
+objectiveId=obj-u30-abbreviation
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u30-particle-0`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e41ef8e470cf7cee8ad538fd622b566a7b3d6c953b903f5934c1883cd275fb81
+
+kind=LEXICAL
+letterId=
+display=Пусть он читает
+note=Повелительное наклонение
+objectiveId=obj-u30-particle
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u30-particle-1`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 50268ac12ac6036f59bbb57354da6a619d3aee35723331499a4fd629940bbbcc
+
+kind=LEXICAL
+letterId=
+display=Да будет мир!
+note=Повелительное наклонение
+objectiveId=obj-u30-particle
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u30-particle-2`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 47d40935145da86a15aa31b4837291bddee855a4bec460155525037c5cc42c12
+
+kind=LEXICAL
+letterId=
+display=читал бы
+note=предположительность или возможность
+objectiveId=obj-u30-particle
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u30-particle-3`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 03e37b8af3b079a654fdfc0179ca53b88ee985b676a3a49bb7e1c1d23778ec1e
+
+kind=LEXICAL
+letterId=
+display=читали бы
+note=предположительность или возможность
+objectiveId=obj-u30-particle
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u30-g-letter-names-0`
 
 - Objectives: obj-u30-letter-names
@@ -1121,6 +1533,76 @@ contrastMembers=city | street | building
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u30-address-marks-0-ru | prov-ex-u30-address-marks-0-en | prov-ex-u30-address-marks-1-en | prov-ex-u30-address-marks-2-en
 responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u30-g-abbreviation-0`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0c7f7d4d4ee2fe7f4d182833993d2d02c190dedc26909af7b0f615c063182590
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted category label classifies the shown form?
+promptLetter=СНГ
+options=буквенные аббревиатуры и звуковые аббревиатуры на гласную | звуковые аббревиатуры на согласную | названия населённых пунктов
+answer=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+feedback=The frozen line classifies the shown form under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную. буквенные аббревиатуры и звуковые аббревиатуры на гласную.
+objectiveId=obj-u30-abbreviation
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen line assigns звуковые аббревиатуры на согласную to в МИД и в МИДе. | The frozen line names названия населённых пунктов as a separate category.
+testedFeature=ABBREVIATION_DECLENSION
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u30-abbreviation-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u30-abbreviation-0-en
+distractorSourceIds= | prov-ex-u30-abbreviation-4-en | prov-u30-abbreviation-x-0
+distractorDifference= | звуковые аббревиатуры на согласную does not classify the shown form. | названия населённых пунктов does not classify the shown form.
+whyAnswerDemonstratesObjective=The frozen line classifies the shown form under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.
+contrastMembers=буквенные аббревиатуры и звуковые аббревиатуры на гласную | звуковые аббревиатуры на согласную | названия населённых пунктов
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u30-abbreviation-0-ru | prov-ex-u30-abbreviation-0-en | prov-ex-u30-abbreviation-4-en | prov-u30-abbreviation-x-0
+responseKind=RUSSIAN_PHRASE
+
+### GUIDED_PRACTICE `u30-g-particle-0`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 697af92a4adec4113c9362eb892fabe13ceaaf278f29bc97e369217ba7138c37
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted use label applies to the shown line?
+promptLetter=Пусть он читает
+options=Повелительное наклонение | предположительность или возможность
+answer=Повелительное наклонение
+feedback=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Пусть он читает. The keyed use is Повелительное наклонение. Повелительное наклонение.
+objectiveId=obj-u30-particle
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen line assigns предположительность или возможность to читал бы and читали бы.
+testedFeature=PARTICLE_USE
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u30-particle-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u30-particle-0-en
+distractorSourceIds= | prov-ex-u30-particle-2-en
+distractorDifference= | предположительность или возможность does not apply to the shown line.
+whyAnswerDemonstratesObjective=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Пусть он читает. The keyed use is Повелительное наклонение.
+contrastMembers=Повелительное наклонение | предположительность или возможность
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u30-particle-0-ru | prov-ex-u30-particle-0-en | prov-ex-u30-particle-2-en
+responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u30-i-letter-names-1`
 
@@ -1332,19 +1814,159 @@ relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u30-address-marks-2-ru | prov-ex-u30-address-marks-2-en | prov-ex-u30-address-marks-0-en | prov-ex-u30-address-marks-1-en
 responseKind=ENGLISH_CLASSIFICATION
 
+### INDEPENDENT_CHECK `u30-i-abbreviation-1`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dd6217a2f5125154121a702dfebed65f9f01b7dfc4df824581428757b379e72f
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted category label classifies the shown form?
+promptLetter=в МИД
+options=звуковые аббревиатуры на согласную | буквенные аббревиатуры и звуковые аббревиатуры на гласную | названия населённых пунктов
+answer=звуковые аббревиатуры на согласную
+feedback=The frozen line classifies the shown form under звуковые аббревиатуры на согласную and writes в МИД и в МИДе. The keyed category is звуковые аббревиатуры на согласную. звуковые аббревиатуры на согласную.
+objectiveId=obj-u30-abbreviation
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen line assigns буквенные аббревиатуры и звуковые аббревиатуры на гласную to СНГ, ЭВМ, ГАИ, and гороно. | The frozen line names названия населённых пунктов apart from звуковые аббревиатуры на согласную.
+testedFeature=ABBREVIATION_DECLENSION
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u30-abbreviation-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u30-abbreviation-4-en
+distractorSourceIds= | prov-ex-u30-abbreviation-0-en | prov-u30-abbreviation-x-0
+distractorDifference= | буквенные аббревиатуры и звуковые аббревиатуры на гласную does not classify the shown form. | названия населённых пунктов does not classify the shown consonant-final form.
+whyAnswerDemonstratesObjective=The frozen line classifies the shown form under звуковые аббревиатуры на согласную and writes в МИД и в МИДе. The keyed category is звуковые аббревиатуры на согласную.
+contrastMembers=звуковые аббревиатуры на согласную | буквенные аббревиатуры и звуковые аббревиатуры на гласную | названия населённых пунктов
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u30-abbreviation-4-ru | prov-ex-u30-abbreviation-4-en | prov-ex-u30-abbreviation-0-en | prov-u30-abbreviation-x-0
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u30-i-abbreviation-2`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ee396fca2ef7602f952068f74360909a255bcb52e8ccce4e274171511fce897b
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted category label classifies the shown form?
+promptLetter=гороно
+options=буквенные аббревиатуры и звуковые аббревиатуры на гласную | звуковые аббревиатуры на согласную | сложносокращённые слова
+answer=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+feedback=The frozen line classifies гороно under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную. буквенные аббревиатуры и звуковые аббревиатуры на гласную.
+objectiveId=obj-u30-abbreviation
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen line assigns звуковые аббревиатуры на согласную to в МИД и в МИДе. | The frozen line names сложносокращённые слова as its own category.
+testedFeature=ABBREVIATION_DECLENSION
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u30-abbreviation-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u30-abbreviation-0-en
+distractorSourceIds= | prov-ex-u30-abbreviation-4-en | prov-u30-abbreviation-x-1
+distractorDifference= | звуковые аббревиатуры на согласную does not classify this shown form. | сложносокращённые слова does not classify the shown form.
+whyAnswerDemonstratesObjective=The frozen line classifies гороно under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.
+contrastMembers=буквенные аббревиатуры и звуковые аббревиатуры на гласную | звуковые аббревиатуры на согласную | сложносокращённые слова
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u30-abbreviation-3-ru | prov-ex-u30-abbreviation-0-en | prov-ex-u30-abbreviation-4-en | prov-u30-abbreviation-x-1
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u30-i-particle-1`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a9ee2d9c2c027d7ed590d20c9df63ffa0ddfda3a37d4b41995362a94d06813a0
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted use label applies to the shown line?
+promptLetter=читал бы
+options=предположительность или возможность | Повелительное наклонение
+answer=предположительность или возможность
+feedback=The frozen line says читал бы expresses предположительность или возможность действия. The keyed use is предположительность или возможность. предположительность или возможность.
+objectiveId=obj-u30-particle
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen line assigns Повелительное наклонение to Пусть он читает and to Да будет мир!
+testedFeature=PARTICLE_USE
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u30-particle-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u30-particle-2-en
+distractorSourceIds= | prov-ex-u30-particle-0-en
+distractorDifference= | Повелительное наклонение does not apply to the shown line.
+whyAnswerDemonstratesObjective=The frozen line says читал бы expresses предположительность или возможность действия. The keyed use is предположительность или возможность.
+contrastMembers=предположительность или возможность | Повелительное наклонение
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u30-particle-2-ru | prov-ex-u30-particle-2-en | prov-ex-u30-particle-0-en
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u30-i-particle-2`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 005a0551d698f19172e206b4188a8029ebda6da558528c64b724bcb150cc7f35
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted use label applies to the shown line?
+promptLetter=Да будет мир!
+options=Повелительное наклонение | предположительность или возможность
+answer=Повелительное наклонение
+feedback=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Да будет мир! The keyed use is Повелительное наклонение. Повелительное наклонение.
+objectiveId=obj-u30-particle
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen line assigns предположительность или возможность to читал бы and читали бы.
+testedFeature=PARTICLE_USE
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u30-particle-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u30-particle-0-en
+distractorSourceIds= | prov-ex-u30-particle-2-en
+distractorDifference= | предположительность или возможность applies to читал бы and читали бы, not to the shown line.
+whyAnswerDemonstratesObjective=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Да будет мир! The keyed use is Повелительное наклонение.
+contrastMembers=Повелительное наклонение | предположительность или возможность
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u30-particle-1-ru | prov-ex-u30-particle-0-en | prov-ex-u30-particle-2-en
+responseKind=RUSSIAN_PHRASE
+
 ### REFERENCE `ref-u2630-attribution`
 
 - Objectives: none
-- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-book, u30-s-gap-dictionary, u30-s-gap-abbreviation, u30-s-gap-particle, u30-s-gap-capstone
+- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-book, u30-s-gap-dictionary, u30-s-gap-capstone
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: a98333d1aace8537a671b090e052980a82863b7ce7f6b3b8f084ca28ac2b30b5
+- Content hash: 47d78821284c272e5bff100c6b772c8f377d916875f77d435761bd058b5c54e5
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, dictionary use, a general particle system, and the final reading are not prepared. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
@@ -1476,6 +2098,354 @@ attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
 contentHash=ff70c1501af7d0088c165e409b2296905021a7a9f63aceab44e9ccf4a23c205f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-abbreviation-0-en`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8ef3510b0bec36b73eb2e4d13265d8e93f652bb25a6a2fe85b5830b8f6097a44
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=d5f031e3951edeb4544604eca6acb079d52e68ddf6eb8b69c7727dc782e94b7f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-abbreviation-0-ru`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: db41c66955a80d8ecd9366493d105c65be185cc3c8ad556ff729d51e882c4b40
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=СНГ
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=82533c269b762d7dc0c4b684e8dcf7466d3eb3bb525f19294c7f3f7ff5021e50
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-abbreviation-1-en`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d1786ae7af5648e4c8c8d389a5f0d27c4048f57deef4818aa0195713f9b26491
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=d5f031e3951edeb4544604eca6acb079d52e68ddf6eb8b69c7727dc782e94b7f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-abbreviation-1-ru`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9fe378dcd74220dcc25337523548c72211dccc7719988ce005e5751625a77933
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=ЭВМ
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=f812ef34c7f4368b5c2c47cf18b9b2b8e5306eec55972ad3c0d971dbaba0fc3e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-abbreviation-2-en`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c7944ae04490f4ad84223166e59a11630d229ab68ac92c9c50439e92f38a4ae2
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=d5f031e3951edeb4544604eca6acb079d52e68ddf6eb8b69c7727dc782e94b7f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-abbreviation-2-ru`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fb50660b6c3ceda19680452853e06534518c863f8cd93e30a5826f19e5a87aed
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=ГАИ
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=73f044733f06e2912bee54f8144a1db61389868266501f61f9af378a06d037fd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-abbreviation-3-en`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 013509e6c959034770b91d01f5fdb5711d3624e5b786f9c6fecf6615e29fa4d0
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=d5f031e3951edeb4544604eca6acb079d52e68ddf6eb8b69c7727dc782e94b7f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-abbreviation-3-ru`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2bc67a8d860af1c65517c72426c4c75772544d77c799bf46ec07744bd672eb2c
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=гороно
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=a13584c2386410089f159cc14fd1dab13a2e87b66e31fb84d516d8a9de55c911
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-abbreviation-4-en`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9b145a66e712cb59c5651d9630dedb1239e22d8ae71d5aebb7a5f62e00736b4f
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=звуковые аббревиатуры на согласную
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=dac3ba642e4dafb37ab509a8e3abf546fae24f4ce4940839aa1d36540cc9e2b4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-abbreviation-4-ru`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8cca16a0a6fb1f16a96e2d3cb89b09dab6aeacd453090816f5a4a522fbeb2e46
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=в МИД
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=163874b4f0bf265f5637a9a306c2310260ece37e69c1ef0964a3160271efae28
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-abbreviation-5-en`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5082eb9f5184a60078615474299de86b2986162a2bddc22110f7c6c659b3c6cd
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=звуковые аббревиатуры на согласную
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=dac3ba642e4dafb37ab509a8e3abf546fae24f4ce4940839aa1d36540cc9e2b4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-abbreviation-5-ru`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4ade7c4be05beb6a2c7e29cafa15da5f305acfe50e5b356099d0f23717e51060
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=в МИДе
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=8dfdb4547f7a6e8e35d5fa79636e6b79cb94c867efd2f42da3a6346da1943fe8
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2062,6 +3032,238 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u30-particle-0-en`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: af51aaa46e21afd51672d274fc523a3bbd63f60f8b3e111527e45fb53db63014
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пу
+originalSourceText=Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает''; ''Да будет мир!''. Формы сослагательного наклонения (''читал бы'', ''читали бы'' и т. д.) выражают предположительность или возможность действия
+shippedText=Повелительное наклонение
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd
+contentHash=ecc89dcb0cbb2d2ae94fed6cd0fc123c453bb3f7bd5cc6b70753d4019cb3c207
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-particle-0-ru`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b3fc1528a30389566353515315808b587c864771bc34e0bf6862fa10c3b0e05e
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пу
+originalSourceText=Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает''; ''Да будет мир!''. Формы сослагательного наклонения (''читал бы'', ''читали бы'' и т. д.) выражают предположительность или возможность действия
+shippedText=Пусть он читает
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd
+contentHash=0f8063c276abcaff6fbc7dce7c72e906855d2b8afea1ea039efcd74834d0bb6b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-particle-1-en`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b046070f5e23064abf2bb8b7e85bcdc26452148a589bd477f254b6d5db92e38b
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пу
+originalSourceText=Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает''; ''Да будет мир!''. Формы сослагательного наклонения (''читал бы'', ''читали бы'' и т. д.) выражают предположительность или возможность действия
+shippedText=Повелительное наклонение
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd
+contentHash=ecc89dcb0cbb2d2ae94fed6cd0fc123c453bb3f7bd5cc6b70753d4019cb3c207
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-particle-1-ru`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c2fd26b79015970b29050b61eb2f7a39629a159a52b8f48293fd307ced5b6cc7
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пу
+originalSourceText=Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает''; ''Да будет мир!''. Формы сослагательного наклонения (''читал бы'', ''читали бы'' и т. д.) выражают предположительность или возможность действия
+shippedText=Да будет мир!
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd
+contentHash=f5000568992e32c1d73579ee0de49b9d9e66d0e95b085972621f824de202df53
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-particle-2-en`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 53174d932ca9dc0a9a4418b62c1a3b187f1840b5b126982c7a3eae42cf6f7a11
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пу
+originalSourceText=Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает''; ''Да будет мир!''. Формы сослагательного наклонения (''читал бы'', ''читали бы'' и т. д.) выражают предположительность или возможность действия
+shippedText=предположительность или возможность
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd
+contentHash=b257ece97aabda54fe99c2e3587763a7ded1f4f6ec6e99778a62824c54945e6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-particle-2-ru`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 739e810d11b698f64dd320e6a8035dd75df609df979995536a339077f371e3c3
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пу
+originalSourceText=Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает''; ''Да будет мир!''. Формы сослагательного наклонения (''читал бы'', ''читали бы'' и т. д.) выражают предположительность или возможность действия
+shippedText=читал бы
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd
+contentHash=7fe1882f164b7511a57b5ed8866acf9096abe3396fbbd9c1f24227c4b3a1ec10
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-particle-3-en`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 13e7e161273461396356bab7c9c4785b58075864ce9a3630ebb7d4217168512a
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пу
+originalSourceText=Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает''; ''Да будет мир!''. Формы сослагательного наклонения (''читал бы'', ''читали бы'' и т. д.) выражают предположительность или возможность действия
+shippedText=предположительность или возможность
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd
+contentHash=b257ece97aabda54fe99c2e3587763a7ded1f4f6ec6e99778a62824c54945e6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u30-particle-3-ru`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f54a8433f5ea82c8588515bfe1173a70d9f9c305665e7a040885c95fca735f88
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пу
+originalSourceText=Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает''; ''Да будет мир!''. Формы сослагательного наклонения (''читал бы'', ''читали бы'' и т. д.) выражают предположительность или возможность действия
+shippedText=читали бы
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd
+contentHash=904257c6db602b31224634cf365cc326ca419e042130ddd66fcb0aea5cc77e2e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u30-abbrev-examples-rem`
 
 - Objectives: obj-u30-abbrev-examples
@@ -2122,6 +3324,122 @@ attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
 contentHash=e05e2aeff5c60d2adf4d8541cd92e829ef16ade6198c4874b4975b44cc93bedb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-abbreviation-rem`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 362b24e68ef1b35789fe70652bc52ebeca51bf55e0493bd1a099100fd0f83bcd
+
+recordType=instruction
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=d5f031e3951edeb4544604eca6acb079d52e68ddf6eb8b69c7727dc782e94b7f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-abbreviation-x-0`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9e75446c2176914316352f07deef81a09f1c6d62018463f4ddb832860774a835
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=названия населённых пунктов
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=94fdf1e79fa701b88a9e563836764d8f136865963f93ad8d5fde93c42cdb1b3b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-abbreviation-x-1`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f4b9a2fe0132761d30de9fde1168dd9cfde161b7cfa668a96cddbb44d0920962
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=сложносокращённые слова
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=651506409a8d78c2d05ce80f7f14590caba53d7f241959491bbbb412261d40f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-abbreviation-x-2`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f3c10ab97d75dbdc34d6a22accfedf151605ea6c6aa53fa07d7771f34870be57
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+originalSourceText=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
+shippedText=в МИД и в МИДе
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+contentHash=1ba92df258f8a66d53860ec4517d68de78b83b6e23a5c2d4fd01c16691973d2e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2405,6 +3723,35 @@ attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
 contentHash=ff7772053abf7d817d6eec229a09e14f0d1552f1cb0aeedb2ac73784ac2d2e39
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-particle-rem`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b6b61a07fa0b98cead7a17c2eadf6d6eaf214d6f7d951192611b1bdfc9647160
+
+recordType=instruction
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пу
+originalSourceText=Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает''; ''Да будет мир!''. Формы сослагательного наклонения (''читал бы'', ''читали бы'' и т. д.) выражают предположительность или возможность действия
+shippedText=предположительность или возможность действия
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd
+contentHash=35f74bd4a9b69638bf043d66a7b63c139365a3cf99d624a399d08fa77577d17e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3095,10 +4442,10 @@ text=Which admitted English gloss is written for the shown mark?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c87e6057f170876cbf8f9c0f78c93cbbf8b08db8913b962e87cc30f8d8f26cc1
+- Content hash: e79d5d067d558a09d91bf304209c8a14ed79142bd66d0d63febf164a65fa6f59
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Review admitted table names and abbreviation examples
+text=The frozen line assigns звуковые аббревиатуры на согласную to в МИД и в МИДе.
 
 ### AUTHORED_ENGLISH `en-u30-283`
 
@@ -3108,10 +4455,10 @@ text=Review admitted table names and abbreviation examples
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 54cfb26df535aa5c8da04a483c82b526c661891376b05c6886e6391ebb12723d
+- Content hash: 42b5cefb4ee4d541eb8b236fc25b46d20848bb8faa326e48c302b262f76764a9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. Those examples are not a complete abbreviation system. Dictionary use, a general particle system, and the final reading stay in the copy you own. Qualified review is pending.
+text=The frozen line names названия населённых пунктов as a separate category.
 
 ### AUTHORED_ENGLISH `en-u30-284`
 
@@ -3121,10 +4468,10 @@ text=Unit 1 introduced the printed letter names. This unit reviews admitted tabl
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 35cb23fdf675a2970b7631032e7e42835420361754c243ec372d6675a9f9c6a0
+- Content hash: ffe207b73fa94bf6fc1d48b04ce3cfa173910075106ca152851b8baf6d5c5bc3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 30 in the copy you own. The app records do not replace that lesson.
+text=звуковые аббревиатуры на согласную does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u30-285`
 
@@ -3134,10 +4481,10 @@ text=Open Lesson 30 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ffc73dbc1bc048b236f9457bba1039a217a43424097061ef2893951a38e163d3
+- Content hash: 0e2054562c241cd8879061dcf8b02b6620d909727ca708c67fc41b0fae841460
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=названия населённых пунктов does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u30-286`
 
@@ -3147,10 +4494,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a54c15d407baed9085ad2bb88e89fa7b61cf2566946deb1a6aadc9bf932a67eb
+- Content hash: 0f7a3b18a184593d2485dabe6c3974d3a16c0e3ddb75c86d4817f7fcfbe7b4c2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=The frozen line classifies the shown form under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.
 
 ### AUTHORED_ENGLISH `en-u30-287`
 
@@ -3160,10 +4507,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 57a02bd266f86ceb522e0a3924d23ddbd7d0cf88733d6ce95071dab711c49590
+- Content hash: 8ad11f132fb63fa64b874b4c1e4eaa37c87d47f63867e3e3a3d8a072c097429a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Which admitted category label classifies the shown form?
 
 ### AUTHORED_ENGLISH `en-u30-288`
 
@@ -3173,10 +4520,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ebb2be4269ea7b2937fe7443220511918b95c36d5a830902dc18a205cea49836
+- Content hash: 128032d6e4945ded3211c5bd07b4aac73eb9206aa4bec643edee95b6203b483e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=The frozen line assigns буквенные аббревиатуры и звуковые аббревиатуры на гласную to СНГ, ЭВМ, ГАИ, and гороно.
 
 ### AUTHORED_ENGLISH `en-u30-289`
 
@@ -3186,10 +4533,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04ab1de72e4a5e1ba9197cc7d3a839d13cd43786b6eac4fd0448f918cbceab81
+- Content hash: 6e522ed42ebffbfa9d8be24fdb6605274f6fdde372c32ce639cbba536ff3fee7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=The frozen line names названия населённых пунктов apart from звуковые аббревиатуры на согласную.
 
 ### AUTHORED_ENGLISH `en-u30-290`
 
@@ -3199,10 +4546,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5ad23c3fb92c0a2b472fcf6682513c22dd3e5e38844b65fa230002b047e4774e
+- Content hash: 646e90a2b2d878106b8fd283762e2e02b75e2b8c5719598a2e670e1be099759a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=буквенные аббревиатуры и звуковые аббревиатуры на гласную does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u30-291`
 
@@ -3212,10 +4559,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0c1cb1079c301234a061a380b5eaca53628e1447899faf8573d362ea3230cd1
+- Content hash: 3f0734ca0d193f49fc16f321a3718562c1d9b8a5a6e78d1d8dc7685fe1b87200
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 30 in your copy
+text=названия населённых пунктов does not classify the shown consonant-final form.
 
 ### AUTHORED_ENGLISH `en-u30-292`
 
@@ -3225,10 +4572,10 @@ text=Work Lesson 30 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1dfd434086132b748cd403fbcb19daadeadfc3fa0654d79d1c59b3456bd03ec0
+- Content hash: b5dc6e120684108d5f819c1652de4409f7fe5b1f475221496cb4556fbb8af451
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 30 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=The frozen line classifies the shown form under звуковые аббревиатуры на согласную and writes в МИД и в МИДе. The keyed category is звуковые аббревиатуры на согласную.
 
 ### AUTHORED_ENGLISH `en-u30-293`
 
@@ -3238,10 +4585,10 @@ text=Do Lesson 30 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 667048e38776151f8d8b2f468d46bd22bf49bb946a3fa0bc609a19bfbe5f13eb
+- Content hash: 3d9d8eb227cb1c1e8a1f216a3ef4fe7a0969bc461c0fc0255673d56a84665638
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 30 in your copy and complete its lesson work.
+text=The frozen line names сложносокращённые слова as its own category.
 
 ### AUTHORED_ENGLISH `en-u30-294`
 
@@ -3251,10 +4598,10 @@ text=Open Lesson 30 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2ec5c8470dbc2cc9fcf82e182bde1f5b3d73a38daf2c73d7b0a038a458cd4294
+- Content hash: d2c532b334d8c503ef45ac7970c078bbe06e2f542f38172dd3b17ce41f1b3044
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 30 book work
+text=звуковые аббревиатуры на согласную does not classify this shown form.
 
 ### AUTHORED_ENGLISH `en-u30-295`
 
@@ -3264,10 +4611,10 @@ text=Record Lesson 30 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7dff3f5cb9fe6b838f8f9d482c321a63e97fc823e258c88cb84f61482b291b95
+- Content hash: b40127d5f0a6f408df03edd8f3b45fc2fe307dc43aae0be6a1c5cbe8699c1785
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 30 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=сложносокращённые слова does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u30-296`
 
@@ -3277,10 +4624,10 @@ text=When you have done Lesson 30 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2b59186afad0b888a7641e165a7a3721a21d5d85fff284be9d39264bd748ed62
+- Content hash: f62824deac3976aa210fd70cba9ffd13820565caec910600e99c32cf02b872b4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 30 work in your copy.
+text=The frozen line classifies гороно under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.
 
 ### AUTHORED_ENGLISH `en-u30-297`
 
@@ -3290,10 +4637,10 @@ text=Self-attest only after the Lesson 30 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8005ab4ca716a82b1d6f99b547833dc7d46d3e13bb5b1b15d7a43b63d8765ac4
+- Content hash: 201b01a9d398de898fce880351fbe2d2854308224bac4f1ccc5b65b51758aa5a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Dictionary use stays in the copy you own
+text=The frozen line assigns предположительность или возможность to читал бы and читали бы.
 
 ### AUTHORED_ENGLISH `en-u30-298`
 
@@ -3303,10 +4650,10 @@ text=Dictionary use stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 313c27b3ba5a5bb69c59c7c7280be0fce087dcf4cedb2cd6be0aeac815737a18
+- Content hash: 6c55d00aba732ac5096c16a6597401bb23d5e426746c93af4c22ba62af22f267
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Dictionary use stays in the copy you own. No admitted span gives that procedure.
+text=предположительность или возможность does not apply to the shown line.
 
 ### AUTHORED_ENGLISH `en-u30-299`
 
@@ -3316,10 +4663,10 @@ text=Dictionary use stays in the copy you own. No admitted span gives that proce
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 42509114e48c662f394d65ba1840b7fe174a905a874cd9291a8a8561f7a9b501
+- Content hash: e488459830c3555c6d83da9d1517e74f008469c936468b7abfec45cfdd20f108
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general abbreviation system stays in the copy you own
+text=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Пусть он читает. The keyed use is Повелительное наклонение.
 
 ### AUTHORED_ENGLISH `en-u30-300`
 
@@ -3329,10 +4676,10 @@ text=A general abbreviation system stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d3438abba45c527e987baa4cf06dea5faff6a2d8fbfcfcf5aaa6bc865fa3b97
+- Content hash: ba7136a96d93db25ddad7d24cb7f054b6e1b927b059857cffa9a20de4cf1db40
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general abbreviation system stays in the copy you own. Two examples and the address marks are not that system.
+text=Which admitted use label applies to the shown line?
 
 ### AUTHORED_ENGLISH `en-u30-301`
 
@@ -3342,10 +4689,10 @@ text=A general abbreviation system stays in the copy you own. Two examples and t
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0062b5a1496432bdfafa5633a7a3276ca8309ad3f17da8d22adcf6f12a72e145
+- Content hash: 2026b144b505124261de0714e75e9e6f42c8ade81ec5931d8b7b0e0c950741c7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general particle system stays in the copy you own
+text=The frozen line assigns Повелительное наклонение to Пусть он читает and to Да будет мир!
 
 ### AUTHORED_ENGLISH `en-u30-302`
 
@@ -3355,10 +4702,10 @@ text=A general particle system stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 944c456050b6095feae12f15f2b130210a6732ebf858f56a6c111fc00cf67358
+- Content hash: fa1a7a5812c21ce69cacc9db26aaf4e6175e5f06e4ef2acce764707a1ddcb8ee
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general particle system stays in the copy you own. An isolated label is not that system.
+text=Повелительное наклонение does not apply to the shown line.
 
 ### AUTHORED_ENGLISH `en-u30-303`
 
@@ -3368,10 +4715,10 @@ text=A general particle system stays in the copy you own. An isolated label is n
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc90d1b8b6bf3c54848c7c713035efb127626b26562273b4fcd0234af105089f
+- Content hash: 2d897adbb15ba82b3734c8c868f1f432d5b6867631cc4ba88763832c5977d753
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The final reading stays in the copy you own
+text=The frozen line says читал бы expresses предположительность или возможность действия. The keyed use is предположительность или возможность.
 
 ### AUTHORED_ENGLISH `en-u30-304`
 
@@ -3381,10 +4728,287 @@ text=The final reading stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4eb24cee43be2afd79ff55c6bf38d675e22e205f50d2314d896c49ccbbff58a9
+- Content hash: 0b2dfd0ed56ec4698e8b7f653475ec4c93bdd42c621b4fbeb55e3c1950ddb3ce
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=предположительность или возможность applies to читал бы and читали бы, not to the shown line.
+
+### AUTHORED_ENGLISH `en-u30-305`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5c6a1876028e81ecedc35aa9d04bab4c74dd66391e86f381e6edaf9a7fddea32
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Да будет мир! The keyed use is Повелительное наклонение.
+
+### AUTHORED_ENGLISH `en-u30-306`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 36fae2ad9579720c1ca175746a334c1b7f8ee9a9fc51e8de1f8c8d660bf04e5a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Review admitted table names and abbreviation examples
+
+### AUTHORED_ENGLISH `en-u30-307`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8aacb32361234f28f744ad73300be8e236a5b5dd8d708cb4913fc4290b3cc53b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Dictionary use and the final reading stay in the copy you own. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u30-308`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 146a43cf57a051a00a4bd50792f77d60d3dc5acb069ef5023f4b751fed31bd00
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 30 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u30-309`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5e4ba190ee4291e0c8ebba1c527457d6b8c878aea4e7b63440ee4dbc4f765030
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read the admitted examples on this card.
+
+### AUTHORED_ENGLISH `en-u30-310`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ad67de21fccd669a740feabea485bc0e696b4e8847bca0e0e21fa09d92c228e1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u30-311`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 187e854bea093b971956dba19ea2f6a797b957cf046d6f3e1127d27eac296c2c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u30-312`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a5e55518777ea8e135f07039cd0a70c9dfb7a9e865ddb4e1038ed33e36946e80
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u30-313`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dc8ca2a5c07046b22d440516a24fd253cfea9d0f223b8628fd66d2f041a1e2de
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u30-314`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d063c6b7d4cf05c592b0b8a43d99233c626b4c4c58ee6f519b3aa834dc13f3c2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u30-315`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0ea7ae59e5fedb96edba9c63863a53c7ba1f355a40ade8bf74deee09adf7e799
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 30 in your copy
+
+### AUTHORED_ENGLISH `en-u30-316`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1e56a3eda15b2304a61ad7f05ebf47265a69bdf6658f4afe74071cf493367dfa
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 30 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u30-317`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 462e9dc8fe602a8db06177ce9a9d750c9b80f501f2fdd016457d0b3363811105
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 30 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u30-318`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 322c92cc9df51486fde1dd35cb1206c67770d70ac521afd4676838612d0420f6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 30 book work
+
+### AUTHORED_ENGLISH `en-u30-319`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6812276cfbd19f7f1b1cb9a88cee02ee6a488fcc31846d88360f4e19dfb1dbd5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 30 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u30-320`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 72955f3ad1454adcbaa0996508644422c98f89e57dca3c9229ecb176e3462030
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 30 work in your copy.
+
+### AUTHORED_ENGLISH `en-u30-321`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ac159ffb6ff626a840b9ba4812f57186c4d7b46112e369ab63a254b9f8430950
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Dictionary use stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u30-322`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d65690600512aff00dbbb7bf49da7520475b6aea90b5fd6dccfd56c88b9c0fb8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Dictionary use stays in the copy you own. No admitted span gives that procedure.
+
+### AUTHORED_ENGLISH `en-u30-323`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b5f9a9d6b3e37168632c53817a06283437359effc4d3b5bb7b984f0dbb08ee1f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The final reading stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u30-324`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5781364affea2309960db8bde6a0e70299b6716b0b803bae7571d1ec26a241e6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The final reading stays in the copy you own. No admitted text supplies it.
+
+### SOURCE_CAPABILITY `cap-obj-u30-abbreviation`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: none
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: SOURCE_CAPABILITY
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6d699664124ba540c42b987ca17053cf890906d4572cd1eda178e3b499f5bbfc
+
+sourceId=src-ruwiki-morfologiya-148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени
+sourceHash=6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee
+supportedClaim=abbreviation
+exactSpan=Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов
 
 ### SOURCE_CAPABILITY `cap-obj-u30-letter-names`
 
@@ -3419,6 +5043,23 @@ exactSpan=! Name
 ! style="text-align: center;" | <big>{{lang|ru|[[Б]]б}}</big>
 | [[File:02-Russian alphabet-Б б.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Б б''</span> || {{lang|ru|бэ}}<br/>{{IPA|ru|bɛ|}} {{Respell|be/beh}}|| {{lang|ru-petr1708|буки}}<br/>{{IPA|[ˈbukʲɪ]}} || {{IPAblink|b}} or {{IPA|[bʲ]}} 
 |b|| '''b'''ad || {{lang|ru|о'''б'''а}} ''óba''<br/>"both"
+
+### SOURCE_CAPABILITY `cap-obj-u30-particle`
+
+- Objectives: obj-u30-particle
+- Sessions: none
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: SOURCE_CAPABILITY
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1edf352bbf76b1790b225cf2802db6300a19be0c6ea9dffb699937c572451bab
+
+sourceId=src-ruwiki-morfologiya-148939075
+sourceRevision=148939075
+sourceRecordId=morfologiya:Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пу
+sourceHash=d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd
+supportedClaim=particle
+exactSpan=Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает''; ''Да будет мир!''. Формы сослагательного наклонения (''читал бы'', ''читали бы'' и т. д.) выражают предположительность или возможность действия
 
 ### SOURCE `src-wikipedia-russian-alphabet-1371795481`
 
@@ -3463,6 +5104,21 @@ Selected spans only. Russian quotations are unchanged. English claims are quoted
 Russian/Various Stuff
 CC BY-SA 4.0
 Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for oldid 3353858 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-ruwiki-morfologiya-148939075`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 917c187ffe790c04146c81177bffe3f98824e8ce5d44cdca993d6374f7aa9b80
+
+Морфология русского языка
+CC BY-SA 4.0
+Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
@@ -3522,6 +5178,20 @@ src-wikibooks-russian-various-stuff-3353858
 CC BY-SA 4.0
 permitsAppUse=true
 
+### RIGHTS `rights-ruwiki-morfologiya-148939075`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-morfologiya-148939075
+- Rights: rights-ruwiki-morfologiya-148939075
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 64b2b1fff4da01a2cd1e0582ba76c0480076c42771867d43d75a30df6984680b
+
+src-ruwiki-morfologiya-148939075
+CC BY-SA 4.0
+permitsAppUse=true
+
 ### RIGHTS `rights-app-english-v2`
 
 - Objectives: none
@@ -3567,15 +5237,42 @@ permitsAppUse=true
 - `obj-u30-address-marks` CHECK `u30-i-address-marks-1`
 - `obj-u30-address-marks` CHECK `u30-i-address-marks-2`
 - `obj-u30-address-marks` REMEDIATION `u30-st-rem-address-marks`
+- `obj-u30-abbreviation` INSTRUCTION `u30-st-orient`
+- `obj-u30-abbreviation` INSTRUCTION `u30-st-teach-abbreviation-1`
+- `obj-u30-abbreviation` INSTRUCTION `u30-st-teach-abbreviation-2`
+- `obj-u30-abbreviation` INSTRUCTION `u30-st-teach-abbreviation-3`
+- `obj-u30-abbreviation` INSTRUCTION `u30-st-teach-abbreviation-4`
+- `obj-u30-abbreviation` EXAMPLE `ex-u30-abbreviation-0`
+- `obj-u30-abbreviation` EXAMPLE `ex-u30-abbreviation-1`
+- `obj-u30-abbreviation` EXAMPLE `ex-u30-abbreviation-2`
+- `obj-u30-abbreviation` EXAMPLE `ex-u30-abbreviation-3`
+- `obj-u30-abbreviation` EXAMPLE `ex-u30-abbreviation-4`
+- `obj-u30-abbreviation` EXAMPLE `ex-u30-abbreviation-5`
+- `obj-u30-abbreviation` PRACTICE `u30-st-guided-abbreviation-1`
+- `obj-u30-abbreviation` CHECK `u30-i-abbreviation-1`
+- `obj-u30-abbreviation` CHECK `u30-i-abbreviation-2`
+- `obj-u30-abbreviation` REMEDIATION `u30-st-rem-abbreviation`
+- `obj-u30-particle` INSTRUCTION `u30-st-orient`
+- `obj-u30-particle` INSTRUCTION `u30-st-teach-particle-1`
+- `obj-u30-particle` INSTRUCTION `u30-st-teach-particle-2`
+- `obj-u30-particle` INSTRUCTION `u30-st-teach-particle-3`
+- `obj-u30-particle` EXAMPLE `ex-u30-particle-0`
+- `obj-u30-particle` EXAMPLE `ex-u30-particle-1`
+- `obj-u30-particle` EXAMPLE `ex-u30-particle-2`
+- `obj-u30-particle` EXAMPLE `ex-u30-particle-3`
+- `obj-u30-particle` PRACTICE `u30-st-guided-particle-1`
+- `obj-u30-particle` CHECK `u30-i-particle-1`
+- `obj-u30-particle` CHECK `u30-i-particle-2`
+- `obj-u30-particle` REMEDIATION `u30-st-rem-particle`
 - `obj-u30-book` INSTRUCTION `u30-st-book-work`
 - `obj-u30-book` INSTRUCTION `u30-st-book`
 - `obj-u30-dictionary` INSTRUCTION `u30-st-gap-dictionary`
-- `obj-u30-abbreviation` INSTRUCTION `u30-st-gap-abbreviation`
-- `obj-u30-particle` INSTRUCTION `u30-st-gap-particle`
 - `obj-u30-capstone` INSTRUCTION `u30-st-gap-capstone`
 - `u30-s-orient` OBJECTIVE `obj-u30-letter-names`
 - `u30-s-orient` OBJECTIVE `obj-u30-abbrev-examples`
 - `u30-s-orient` OBJECTIVE `obj-u30-address-marks`
+- `u30-s-orient` OBJECTIVE `obj-u30-abbreviation`
+- `u30-s-orient` OBJECTIVE `obj-u30-particle`
 - `u30-s-orient` OBJECTIVE `obj-u30-book`
 - `u30-st-orient` REFERENCE `ref-u2630-attribution`
 - `u30-s-letter-names` OBJECTIVE `obj-u30-letter-names`
@@ -3616,20 +5313,61 @@ permitsAppUse=true
 - `u30-st-check-address-marks` REMEDIATION `u30-st-rem-address-marks`
 - `u30-st-check-address-marks` ITEM `u30-i-address-marks-1`
 - `u30-st-check-address-marks` ITEM `u30-i-address-marks-2`
+- `u30-s-abbreviation` OBJECTIVE `obj-u30-abbreviation`
+- `u30-st-teach-abbreviation-1` EXAMPLE `ex-u30-abbreviation-0`
+- `u30-st-teach-abbreviation-1` EXAMPLE `ex-u30-abbreviation-1`
+- `u30-st-teach-abbreviation-1` REFERENCE `ref-u2630-attribution`
+- `u30-st-guided-abbreviation-1` REMEDIATION `u30-st-rem-abbreviation`
+- `u30-st-guided-abbreviation-1` ITEM `u30-g-abbreviation-0`
+- `u30-st-teach-abbreviation-2` REFERENCE `ref-u2630-attribution`
+- `u30-st-teach-abbreviation-3` EXAMPLE `ex-u30-abbreviation-2`
+- `u30-st-teach-abbreviation-3` EXAMPLE `ex-u30-abbreviation-3`
+- `u30-st-teach-abbreviation-3` REFERENCE `ref-u2630-attribution`
+- `u30-st-teach-abbreviation-4` EXAMPLE `ex-u30-abbreviation-4`
+- `u30-st-teach-abbreviation-4` EXAMPLE `ex-u30-abbreviation-5`
+- `u30-st-teach-abbreviation-4` REFERENCE `ref-u2630-attribution`
+- `u30-st-rem-abbreviation` EXAMPLE `ex-u30-abbreviation-0`
+- `u30-st-rem-abbreviation` EXAMPLE `ex-u30-abbreviation-1`
+- `u30-st-check-abbreviation` REMEDIATION `u30-st-rem-abbreviation`
+- `u30-st-check-abbreviation` ITEM `u30-i-abbreviation-1`
+- `u30-st-check-abbreviation` ITEM `u30-i-abbreviation-2`
+- `u30-s-particle` OBJECTIVE `obj-u30-particle`
+- `u30-st-teach-particle-1` EXAMPLE `ex-u30-particle-0`
+- `u30-st-teach-particle-1` EXAMPLE `ex-u30-particle-1`
+- `u30-st-teach-particle-1` REFERENCE `ref-u2630-attribution`
+- `u30-st-guided-particle-1` REMEDIATION `u30-st-rem-particle`
+- `u30-st-guided-particle-1` ITEM `u30-g-particle-0`
+- `u30-st-teach-particle-2` REFERENCE `ref-u2630-attribution`
+- `u30-st-teach-particle-3` EXAMPLE `ex-u30-particle-2`
+- `u30-st-teach-particle-3` EXAMPLE `ex-u30-particle-3`
+- `u30-st-teach-particle-3` REFERENCE `ref-u2630-attribution`
+- `u30-st-rem-particle` EXAMPLE `ex-u30-particle-0`
+- `u30-st-rem-particle` EXAMPLE `ex-u30-particle-1`
+- `u30-st-check-particle` REMEDIATION `u30-st-rem-particle`
+- `u30-st-check-particle` ITEM `u30-i-particle-1`
+- `u30-st-check-particle` ITEM `u30-i-particle-2`
 - `u30-s-book` OBJECTIVE `obj-u30-book`
 - `u30-st-book-work` REFERENCE `ref-u2630-attribution`
 - `u30-s-gap-dictionary` OBJECTIVE `obj-u30-dictionary`
 - `u30-st-gap-dictionary` REFERENCE `ref-u2630-attribution`
-- `u30-s-gap-abbreviation` OBJECTIVE `obj-u30-abbreviation`
-- `u30-st-gap-abbreviation` REFERENCE `ref-u2630-attribution`
-- `u30-s-gap-particle` OBJECTIVE `obj-u30-particle`
-- `u30-st-gap-particle` REFERENCE `ref-u2630-attribution`
 - `u30-s-gap-capstone` OBJECTIVE `obj-u30-capstone`
 - `u30-st-gap-capstone` REFERENCE `ref-u2630-attribution`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-en`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-ru`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-1-en`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-1-ru`
+- `obj-u30-abbreviation` PROVENANCE `prov-ex-u30-abbreviation-0-en`
+- `obj-u30-abbreviation` PROVENANCE `prov-ex-u30-abbreviation-0-ru`
+- `obj-u30-abbreviation` PROVENANCE `prov-ex-u30-abbreviation-1-en`
+- `obj-u30-abbreviation` PROVENANCE `prov-ex-u30-abbreviation-1-ru`
+- `obj-u30-abbreviation` PROVENANCE `prov-ex-u30-abbreviation-2-en`
+- `obj-u30-abbreviation` PROVENANCE `prov-ex-u30-abbreviation-2-ru`
+- `obj-u30-abbreviation` PROVENANCE `prov-ex-u30-abbreviation-3-en`
+- `obj-u30-abbreviation` PROVENANCE `prov-ex-u30-abbreviation-3-ru`
+- `obj-u30-abbreviation` PROVENANCE `prov-ex-u30-abbreviation-4-en`
+- `obj-u30-abbreviation` PROVENANCE `prov-ex-u30-abbreviation-4-ru`
+- `obj-u30-abbreviation` PROVENANCE `prov-ex-u30-abbreviation-5-en`
+- `obj-u30-abbreviation` PROVENANCE `prov-ex-u30-abbreviation-5-ru`
 - `obj-u30-address-marks` PROVENANCE `prov-ex-u30-address-marks-0-en`
 - `obj-u30-address-marks` PROVENANCE `prov-ex-u30-address-marks-0-ru`
 - `obj-u30-address-marks` PROVENANCE `prov-ex-u30-address-marks-0-ru-r0`
@@ -3646,8 +5384,20 @@ permitsAppUse=true
 - `obj-u30-letter-names` PROVENANCE `prov-ex-u30-letter-names-0-ru`
 - `obj-u30-letter-names` PROVENANCE `prov-ex-u30-letter-names-1-en`
 - `obj-u30-letter-names` PROVENANCE `prov-ex-u30-letter-names-1-ru`
+- `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-0-en`
+- `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-0-ru`
+- `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-1-en`
+- `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-1-ru`
+- `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-2-en`
+- `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-2-ru`
+- `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-3-en`
+- `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-3-ru`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-u30-abbrev-examples-rem`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-u30-abbrev-examples-x-0`
+- `obj-u30-abbreviation` PROVENANCE `prov-u30-abbreviation-rem`
+- `obj-u30-abbreviation` PROVENANCE `prov-u30-abbreviation-x-0`
+- `obj-u30-abbreviation` PROVENANCE `prov-u30-abbreviation-x-1`
+- `obj-u30-abbreviation` PROVENANCE `prov-u30-abbreviation-x-2`
 - `obj-u30-address-marks` PROVENANCE `prov-u30-address-marks-rem`
 - `obj-u30-address-marks` PROVENANCE `prov-u30-address-marks-x-0`
 - `obj-u30-address-marks` PROVENANCE `prov-u30-address-marks-x-1`
@@ -3655,7 +5405,10 @@ permitsAppUse=true
 - `obj-u30-letter-names` PROVENANCE `prov-u30-letter-names-x-0`
 - `obj-u30-letter-names` PROVENANCE `prov-u30-letter-names-x-1`
 - `obj-u30-letter-names` PROVENANCE `prov-u30-letter-names-x-2`
+- `obj-u30-particle` PROVENANCE `prov-u30-particle-rem`
+- `obj-u30-abbreviation` SOURCE_CAPABILITY `cap-obj-u30-abbreviation`
 - `obj-u30-letter-names` SOURCE_CAPABILITY `cap-obj-u30-letter-names`
+- `obj-u30-particle` SOURCE_CAPABILITY `cap-obj-u30-particle`
 
 ## Book-directed experiences
 
@@ -3666,12 +5419,12 @@ permitsAppUse=true
 ## Unsupported-capability register
 
 - `cap-obj-u30-letter-names` supports `letter-name-review` for `obj-u30-letter-names`
+- `cap-obj-u30-abbreviation` supports `abbreviation` for `obj-u30-abbreviation`
+- `cap-obj-u30-particle` supports `particle` for `obj-u30-particle`
 
 Guidance objectives stay unsupported until an admitted frozen capability exists:
 
 - `obj-u30-dictionary` Dictionary use stays in the copy you own
-- `obj-u30-abbreviation` A general abbreviation system stays in the copy you own
-- `obj-u30-particle` A general particle system stays in the copy you own
 - `obj-u30-capstone` The final reading stays in the copy you own
 
 ## Book-directed register
@@ -3680,8 +5433,6 @@ Guidance objectives stay unsupported until an admitted frozen capability exists:
 - `u30-st-book-work` Open Lesson 30 in your copy and complete its lesson work.
 - `u30-st-book` Self-attest only after the Lesson 30 work in your copy.
 - `u30-st-gap-dictionary` Dictionary use has no admitted frozen span.
-- `u30-st-gap-abbreviation` A complete abbreviation system has no admitted frozen span.
-- `u30-st-gap-particle` A general particle system has no admitted frozen span.
 - `u30-st-gap-capstone` The final reading has no admitted frozen span.
 
 ## Optional non-gating register
@@ -3692,8 +5443,6 @@ None.
 ## Unavailable experiences
 
 - `u30-st-gap-dictionary`
-- `u30-st-gap-abbreviation`
-- `u30-st-gap-particle`
 - `u30-st-gap-capstone`
 
 ## Unresolved relationships
