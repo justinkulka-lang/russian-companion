@@ -78,7 +78,11 @@ class BatchAUnits71620Test {
             provenanceRecords = pack.provenanceRecords + keywordRecord(pack),
         )
         val keywordErrors = V2Validator.validate(claimComplete(keyword, 17)).errors
-        assertTrue(keywordErrors.joinToString("\n"), keywordErrors.any { it.contains("without telling-time, weekday, date, and age sources") })
+        assertTrue(
+            keywordErrors.joinToString("\n"),
+            keywordErrors.any { it.contains("Unit 17 is missing productive clock-time and calendar-date source capabilities") },
+        )
+        assertFalse(keywordErrors.joinToString("\n"), keywordErrors.any { it.contains("telling-time, weekday, date, and age") })
 
         val clockOnly = pack.sourceCapabilities.filter {
             it.unitNumber != 17 || it.supportedClaim == "clock-question" || it.supportedClaim == "age" ||
@@ -86,7 +90,11 @@ class BatchAUnits71620Test {
         }
         val clockPack = pack.copy(sourceCapabilities = clockOnly)
         val clockErrors = V2Validator.validate(claimComplete(clockPack, 17)).errors
-        assertTrue(clockErrors.joinToString("\n"), clockErrors.any { it.contains("without telling-time, weekday, date, and age sources") })
+        assertTrue(
+            clockErrors.joinToString("\n"),
+            clockErrors.any { it.contains("Unit 17 is missing productive clock-time and calendar-date source capabilities") },
+        )
+        assertFalse(clockErrors.joinToString("\n"), clockErrors.any { it.contains("telling-time, weekday, date, and age") })
 
         val conditional = pack.sourceCapabilities.first { it.supportedClaim == "conditional-by" }
         val probabilitySwap = pack.copy(

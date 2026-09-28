@@ -25,7 +25,10 @@ class GapClosureDossierTest {
 
         assertEquals(V2Validator.contentReviewDigest(pack), model.packContentReviewDigest)
         assertEquals(computeReleaseSourceDigest(root), model.repositorySourceDigest)
-        assertTrue(text.contains("**Canonical commit:** `$BASELINE_COMMIT`"))
+        assertTrue(text.contains("**Repository baseline main:** `$REPOSITORY_BASELINE_MAIN`"))
+        assertTrue(text.contains("**Unit 23 unprepared correction:** `$UNIT_23_UNPREPARED_CORRECTION`"))
+        assertTrue(text.contains("Keep Unit 23 unprepared until completion over a period is admitted."))
+        assertFalse(text.contains("**Canonical commit:**"))
         assertTrue(text.contains("**Pack content-review digest:** `${model.packContentReviewDigest}`"))
         assertTrue(text.contains("**Repository source digest:** `${model.repositorySourceDigest}`"))
         assertTrue(text.contains("**Public release:** **NOT_APPROVED**"))
@@ -143,8 +146,12 @@ class GapClosureDossierTest {
             headings.filter { it.unitNumber == 19 }.map { it.claim },
         )
         assertTrue(text.contains("0f0744dfeb76433fddb5604a065c92427c54848a"))
-        assertTrue(text.contains("merged into this Batch A branch only"))
-        assertTrue(text.contains("closed as superseded"))
+        assertTrue(text.contains("was merged into the Batch A branch"))
+        assertTrue(text.contains("reachable from `main`"))
+        assertTrue(text.contains("Batch E excluded only the six inspected Russian Wikipedia revisions."))
+        assertTrue(text.contains("do not establish that the five capabilities are impossible to source from a different licensed project"))
+        assertFalse(text.contains("merged into this Batch A branch only"))
+        assertFalse(text.contains("closed as superseded"))
         assertFalse(text.contains("PR #42 merged into main"))
     }
 
@@ -201,6 +208,7 @@ class GapClosureDossierTest {
 
     private companion object {
         const val DOSSIER = "audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md"
-        const val BASELINE_COMMIT = "fd69bd03298d69669d09daafe8d364b0e576d033"
+        const val REPOSITORY_BASELINE_MAIN = "c153103a0048f69f8de339b83e77d93572ebddb7"
+        const val UNIT_23_UNPREPARED_CORRECTION = "fd69bd03298d69669d09daafe8d364b0e576d033"
     }
 }
