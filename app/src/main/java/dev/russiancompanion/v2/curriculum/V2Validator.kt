@@ -1178,7 +1178,7 @@ internal object V2Validator {
      */
     /**
      * The indefinite span must state the three series meanings, a form from each,
-     * and the overlap of the -то series with the -нибудь meaning.
+     * and the overlap of the to-series with the nibud-series meaning.
      * A bare inventory of forms does not.
      */
     private fun clearsIndefinitePronoun(span: String): Boolean {

@@ -307,7 +307,7 @@ class Units1115InstructionalValidityTest {
         assertFalse(unprepared.contains(22))
         assertTrue(unprepared.contains(23))
         assertTrue(unprepared.contains(24))
-        assertTrue(unprepared.contains(25))
+        assertFalse(unprepared.contains(25))
         assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
         val falseClaim = "Units 19 through 23 contain proposed lesson bodies that still need qualified review."
         assertTrue(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(23))

@@ -169,15 +169,16 @@ class CurriculumReadinessReconciliationTest {
     fun keywordTextBookAttestationAndCountersDoNotClearRealBlockers() {
         val pack = pack()
         val keyword = pack.provenanceRecords.first { it.unitNumber == 26 }.copy(
-            itemId = "probe-keyword-indefinite",
-            objectiveId = "obj-u26-indefinite",
-            originalSourceText = "This keyword mentions indefinite-pronoun without a capability record.",
-            shippedText = "indefinite-pronoun",
+            itemId = "probe-keyword-postal",
+            objectiveId = "obj-u26-postal-address",
+            originalSourceText = "This keyword mentions postal-address without a capability record.",
+            shippedText = "postal-address",
             sourceHash = "not-the-frozen-hash",
         )
         val keywordPack = pack.copy(provenanceRecords = pack.provenanceRecords + keyword)
         val keywordRow = reconcileCurriculumReadiness(root(), keywordPack).units.first { it.unitNumber == 26 }
-        assertTrue(keywordRow.unresolvedRequiredSourceCapabilities.contains("indefinite-pronoun"))
+        assertTrue(keywordRow.unresolvedRequiredSourceCapabilities.contains("postal-address"))
+        assertFalse(keywordRow.unresolvedRequiredSourceCapabilities.contains("indefinite-pronoun"))
         val blankCapability = V2SourceCapability(
             id = "probe-blank-capability",
             sourceId = "src-wikipedia-russian-grammar-1369617627",
@@ -186,13 +187,14 @@ class CurriculumReadinessReconciliationTest {
             sourceHash = "abc",
             exactSpan = "",
             unitNumber = 26,
-            objectiveId = "obj-u26-indefinite",
-            supportedClaim = "indefinite-pronoun",
+            objectiveId = "obj-u26-postal-address",
+            supportedClaim = "postal-address",
         )
         val capabilityPack = pack.copy(sourceCapabilities = pack.sourceCapabilities + blankCapability)
         val capabilityRow = reconcileCurriculumReadiness(root(), capabilityPack).units.first { it.unitNumber == 26 }
         val liveUnit26 = liveModel().units.first { it.unitNumber == 26 }
-        assertTrue(capabilityRow.unresolvedRequiredSourceCapabilities.contains("indefinite-pronoun"))
+        assertTrue(capabilityRow.unresolvedRequiredSourceCapabilities.contains("postal-address"))
+        assertFalse(capabilityRow.unresolvedRequiredSourceCapabilities.contains("indefinite-pronoun"))
         assertFalse(capabilityRow.unresolvedRequiredSourceCapabilities.contains("word-order"))
         assertEquals(liveUnit26.resolvedSourceCapabilityCount, capabilityRow.resolvedSourceCapabilityCount)
 
