@@ -42,23 +42,40 @@ class Units35SourceIntakeTest {
             "src-pressbooks-diverse-russian-traditions-grammar",
             "src-pressbooks-diverse-russian-usa-grammar",
             "src-wikibooks-russian-various-stuff-3353858",
+            "src-readyrussian-grammar20",
+            "src-readyrussian-langgen3",
+            "src-readyrussian-letter",
+            "src-readyrussian-reading5",
+            "src-enwiktionary-ostavlyaemyj-74231596",
+            "src-enwiktionary-obsuzhdaemyj-74233962",
+            "src-enwiktionary-napisannyj-74228228",
+            "src-enwiktionary-prochitannyj-74232159",
+            "src-enwiktionary-russian-entry-guidelines-92541199",
+            "src-ruwikisource-vechera-5336197",
         )
         pack.provenanceRecords.forEach { record ->
             assertTrue(record.itemId, record.sourceId in admitted)
-            if (record.unitNumber in 26..30) {
+            if (record.sourceId.startsWith("src-readyrussian-")) {
+                assertTrue(record.itemId, record.sourceUrl.contains("readyrussian.org"))
+            } else if (record.unitNumber in 26..30) {
                 assertTrue(record.itemId, record.sourceUrl.contains("oldid=${record.sourceRevision}"))
             }
             assertTrue(record.sourceRevision.isNotBlank())
             assertTrue(record.sourceUrl.isNotBlank())
             assertTrue(record.attribution.isNotBlank())
-            assertEquals("CC BY-SA 4.0", record.licenseId)
+            if (record.sourceId == "src-ruwikisource-vechera-5336197") {
+                assertEquals("Public domain", record.licenseId)
+            } else {
+                assertEquals("CC BY-SA 4.0", record.licenseId)
+            }
             assertEquals("", record.reviewerIdentity)
             assertEquals("", record.reviewerQualification)
             assertEquals("", record.reviewDate)
             assertEquals("", record.reviewedDigest)
             assertEquals(null, record.audioAssetId)
-            assertTrue(pack.sources.any { it.id == record.sourceId && it.license == "CC BY-SA 4.0" })
-            assertTrue(pack.rights.any { it.sourceId == record.sourceId && it.permitsAppUse && it.license == "CC BY-SA 4.0" })
+            val expectedLicense = if (record.sourceId == "src-ruwikisource-vechera-5336197") "Public domain" else "CC BY-SA 4.0"
+            assertTrue(pack.sources.any { it.id == record.sourceId && it.license == expectedLicense })
+            assertTrue(pack.rights.any { it.sourceId == record.sourceId && it.permitsAppUse && it.license == expectedLicense })
         }
         assertEquals(
             "3f4f2543804372be1d6ef62fb280d452bc017fbadc0dd6534e863c86be50050c",

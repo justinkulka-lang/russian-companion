@@ -108,6 +108,12 @@
       "disposition": "ADMITTED_BOUNDED",
       "licenseId": "CC BY-SA 4.0",
       "scope": "Adverb invariance and the two suffixal pairs. Does not clear adverb-paradigm."
+    },
+    {
+      "id": "readyrussian-grammar20",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "The stated clock system and the three exact first-hour examples in the retained Grammar 20 HTML. Later quarter, half, and minutes-before Russian forms, linked audio, and the clock web application are not admitted."
     }
   ],
   "openrussian": {
@@ -424,6 +430,19 @@
         "sha256": "a91323abe9ea35f846bf1fffd4feae46dc6bf7420cdce782e016d5c1141fb3bf",
         "requiredStatement": "лицензиями [[Википедия:Лицензия|Creative Commons «С указанием авторства — С сохранением условий»]] (CC BY-SA 4.0)",
         "retrieved": "2026-09-25T15:45:47Z"
+      },
+      "readyrussian": {
+        "appliesToSourceIds": [
+          "src-readyrussian-grammar20"
+        ],
+        "title": "ReadyRussian",
+        "url": "https://www.readyrussian.org/",
+        "file": "../readyrussian/home.html",
+        "sha256": "1ffd2c5a8f4b0dad271a5fd79fb545c8c6b629507ba39677825ffde4c66fe7d1",
+        "byteCount": 32857,
+        "retrieved": "2026-09-28T16:43:13Z",
+        "requiredStatement": "Creative Commons Attribution-ShareAlike 4.0 International License",
+        "licenseId": "CC BY-SA 4.0"
       }
     }
   },
@@ -551,6 +570,20 @@
       "transform": "pressbooks-html",
       "authors": "Anna Tumarkin and Shannon Donnally Quinn",
       "attribution": "Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license."
+    },
+    {
+      "key": "grammar20",
+      "title": "Grammar 20 — Telling Time",
+      "oldid": "b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff",
+      "file": "../readyrussian/grammar20.html",
+      "sha256": "b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff",
+      "byteCount": 257411,
+      "retrieved": "2026-09-28T16:43:13Z",
+      "sourceId": "src-readyrussian-grammar20",
+      "url": "https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html",
+      "licenseRoute": "readyrussian",
+      "transform": "readyrussian-html",
+      "attribution": "ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 20 — Telling Time HTML sha256 b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted."
     }
   ]
 }

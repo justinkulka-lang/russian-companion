@@ -1,0 +1,12 @@
+==Russian==
+
+===Pronunciation===
+* {{ru-IPA|прочи́танный}}
+
+===Participle===
+{{head|ru|past passive participle|head=прочи́танный}}
+
+# {{participle of|ru|прочита́ть||past|pass|pfv}}
+
+====Declension====
+{{ru-decl-adj|прочи́танный|a(2)}}

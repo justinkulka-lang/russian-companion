@@ -69,8 +69,10 @@ class Aud44CorrectionTest {
         val pack = pack()
         val answers = pack.items.filter { it.objectiveId == "obj-u17-clock-answers" }.map { it.answer }
         assertEquals(listOf("7:15", "7:30", "7:45"), answers.distinct())
-        assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "productive-clock-time" })
-        assertTrue(unresolved(pack, 17).contains("productive-clock-time"))
+        assertTrue(pack.sourceCapabilities.any {
+            it.supportedClaim == "productive-clock-time" && it.objectiveId == "obj-u17-clock-productive"
+        })
+        assertFalse(unresolved(pack, 17).contains("productive-clock-time"))
         assertFalse(unresolved(pack, 17).contains("clock-expression-recognition"))
         val recognition = pack.sourceCapabilities.first { it.supportedClaim == "clock-expression-recognition" }
         val relabeled = pack.copy(
@@ -83,7 +85,7 @@ class Aud44CorrectionTest {
             errors.joinToString("\n"),
             errors.any { it.contains(recognition.id) && it.contains("do not clear productive-clock-time") },
         )
-        assertTrue(unresolved(relabeled, 17).contains("productive-clock-time"))
+        assertFalse(unresolved(relabeled, 17).contains("productive-clock-time"))
     }
 
     @Test
@@ -91,12 +93,16 @@ class Aud44CorrectionTest {
         val pack = pack()
         assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "calendar-date" && it.unitNumber == 17 })
         assertFalse(unresolved(pack, 17).contains("calendar-date"))
-        assertTrue(unresolved(pack, 17).contains("productive-clock-time"))
-        assertEquals("NOT_PREPARED", pack.unit(17)!!.readiness)
+        assertFalse(unresolved(pack, 17).contains("productive-clock-time"))
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
         val decision = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
-        assertFalse(decision.remaining.joinToString("\n"), decision.allowed)
-        val flipped = pack.unit(17)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
-        val stillBlocked = advancementDecision(pack, flipped, learner(pack, 17))
+        assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+        assertFalse(decision.remaining.any { it.contains("clock-time") || it.contains("calendar-date") })
+        val stripped = pack.copy(
+            sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "productive-clock-time" },
+        )
+        val flipped = stripped.unit(17)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
+        val stillBlocked = advancementDecision(stripped, flipped, learner(stripped, 17))
         assertFalse(stillBlocked.allowed)
         assertTrue(stillBlocked.remaining.any { it.contains("productive clock-time") })
         assertFalse(stillBlocked.remaining.joinToString("\n"), stillBlocked.remaining.any { it.contains("calendar-date") })
@@ -106,15 +112,9 @@ class Aud44CorrectionTest {
     fun unit17AdvancementNamesOnlyUnresolvedSourceCapabilities() {
         val pack = pack()
         val live = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
-        assertEquals("NOT_PREPARED", pack.unit(17)!!.readiness)
-        assertFalse(live.allowed)
-        assertEquals(
-            listOf(
-                "This unit is not prepared",
-                "Unit 17 is missing a productive clock-time source capability",
-            ),
-            live.remaining,
-        )
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
+        assertTrue(live.remaining.joinToString("\n"), live.allowed)
+        assertEquals(emptyList<String>(), live.remaining)
         assertFalse(unresolved(pack, 17).contains("calendar-date"))
         assertNoResolvedClaimCalledMissing(pack, live.remaining)
 
@@ -133,7 +133,8 @@ class Aud44CorrectionTest {
         assertEquals(emptyList<String>(), V2Validator.unit17SourceBlockers(emptySet()))
         assertFalse(V2Validator.unit17SourceBlockers(setOf("productive-clock-time")).any { it.contains("calendar-date") })
         assertFalse(V2Validator.unit17SourceBlockers(setOf("calendar-date")).any { it.contains("clock-time") })
-        assertTrue(V2Validator.ADMITTED_PRODUCTIVE_CLOCK_TIME.isEmpty())
+        assertEquals("obj-u17-clock-productive", V2Validator.ADMITTED_PRODUCTIVE_CLOCK_TIME.single().objectiveId)
+        assertEquals("productive-clock-time", V2Validator.ADMITTED_PRODUCTIVE_CLOCK_TIME.single().governedClaim)
     }
 
     @Test
@@ -243,13 +244,14 @@ class Aud44CorrectionTest {
         val unit17 = pack.references.first { it.id == "ref-u17-attribution" }
         assertTrue(unit17.detail.contains("calendar-date relationships remain admitted"))
         assertTrue(unit17.detail.contains("bounded recognition"))
-        assertTrue(unit17.detail.contains("Productive clock-time generation remains unresolved"))
+        assertTrue(unit17.detail.contains("Productive clock-time is the ReadyRussian Grammar 20 system"))
+        assertFalse(unit17.detail.contains("remains unresolved"))
         assertTrue(pack.sourceCapabilities.any { it.unitNumber == 17 && it.supportedClaim == "calendar-date" })
         assertFalse(unresolved(pack, 17).contains("calendar-date"))
-        assertTrue(unresolved(pack, 17).contains("productive-clock-time"))
-        assertEquals("NOT_PREPARED", pack.unit(17)!!.readiness)
-        val blocked = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
-        assertFalse(blocked.remaining.joinToString("\n"), blocked.allowed)
+        assertFalse(unresolved(pack, 17).contains("productive-clock-time"))
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
+        val advanced = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
+        assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
         assertFalse(unresolved(pack, 19).contains("probability-dolzhen"))
         assertFalse(
             pack.unit(19)!!.sessions.flatMap { it.steps }.any {
@@ -267,7 +269,7 @@ class Aud44CorrectionTest {
         )
         val errors = V2Validator.validate(relabeled).errors
         assertTrue(errors.joinToString("\n"), errors.any { it.contains("do not clear productive-clock-time") })
-        assertTrue(unresolved(relabeled, 17).contains("productive-clock-time"))
+        assertFalse(unresolved(relabeled, 17).contains("productive-clock-time"))
     }
 
     @Test
@@ -370,12 +372,11 @@ class Aud44CorrectionTest {
             sourceClaim + "\n" + errors.joinToString("\n"),
             errors.any { it.contains("cap-u17-productive-clock-$sourceClaim") && it.contains("no independent productive-clock-time admission") },
         )
-        assertTrue(unresolved(pack, 17).contains("productive-clock-time"))
+        assertFalse(unresolved(pack, 17).contains("productive-clock-time"))
         assertFalse(unresolved(pack, 17).contains("calendar-date"))
         assertFalse(unresolved(pack, 17).contains(sourceClaim) && sourceClaim != "productive-clock-time")
         val decision = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
-        assertFalse(decision.allowed)
-        assertTrue(decision.remaining.any { it.contains("productive clock-time") })
+        assertFalse(decision.remaining.joinToString("\n"), decision.remaining.any { it.contains("productive clock-time") })
         assertFalse(decision.remaining.joinToString("\n"), decision.remaining.any { it.contains("calendar-date") })
     }
 

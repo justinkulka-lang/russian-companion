@@ -1,0 +1,12 @@
+==Russian==
+
+===Pronunciation===
+* {{ru-IPA|оставля́емый}}
+
+===Participle===
+{{head|ru|present passive participle|head=оставля́емый}}
+
+# {{participle of|ru|оставля́ть||pres|pass|impfv}}
+
+====Declension====
+{{ru-decl-adj|оставля́емый|a}}

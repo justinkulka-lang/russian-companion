@@ -39,6 +39,9 @@ EXCLUDED_LEARNER_TEXT = (
     "Phonos",
     "[[File:",
     "The New Penguin",
+    "please me informed",
+    "Дорогой",
+    "С любовью",
 )
 OPTIONAL_OBJECTIVES = {"obj-u27-present-passive"}
 
@@ -61,6 +64,14 @@ class FrozenSources:
             "ruwiki-morfologiya-abbreviation-particle-148939075",
             "ruwiki-neopredelennoe-mestoimenie-149963314",
             "ruwiki-prichastie-153078996",
+            "readyrussian-letter",
+            "readyrussian-reading5",
+            "enwiktionary-ostavlyaemyj-74231596",
+            "enwiktionary-obsuzhdaemyj-74233962",
+            "enwiktionary-napisannyj-74228228",
+            "enwiktionary-prochitannyj-74232159",
+            "enwiktionary-russian-entry-guidelines-92541199",
+            "ruwikisource-vechera-5336197",
         }
         if admitted != required:
             raise SystemExit(f"Admitted source decisions changed: {sorted(admitted)}")
@@ -81,6 +92,10 @@ class FrozenSources:
             if "oldid=" not in page["url"] or page["url"].rstrip("/").endswith(".org"):
                 raise SystemExit(f"Source URL is not an immutable oldid for {page['file']}")
             self.pages[page["key"]] = data.decode("utf-8")
+        self.page_meta = {page["key"]: page for page in self.freeze["pages"]}
+        from source_transforms import load_supplemental_pages
+
+        load_supplemental_pages(self, SOURCE_ROOT)
 
     def require(self, page: str, needle: str) -> str:
         if needle not in self.pages[page]:
@@ -131,14 +146,23 @@ class Builder:
         return text
 
     def wiki(self, item_id, unit, objective, page, needle, shipped, record_type="example") -> str:
+        from source_transforms import special_transformation
+
         original = self.frozen.require(page, needle)
-        cleaned = format_wikibooks_emphasis(shipped)
-        if cleaned not in original and cleaned not in format_wikibooks_emphasis(original):
-            raise SystemExit(f"Shipped text {cleaned!r} is not in {page}")
-        if any(marker in cleaned for marker in ("'''", "''", "{{", "}}", "[[", "]]", ".ogg", "<ref")):
-            raise SystemExit(f"{item_id} ships markup: {cleaned!r}")
-        meta = self.frozen.by_key[page]
-        transformation = "selection" if cleaned in original else "wikimedia emphasis formatting"
+        meta = self.frozen.page_meta[page]
+        transformation = special_transformation(meta, original, shipped)
+        if transformation is None:
+            cleaned = format_wikibooks_emphasis(shipped)
+            if cleaned not in original and cleaned not in format_wikibooks_emphasis(original):
+                raise SystemExit(f"Shipped text {cleaned!r} is not in {page}")
+            if any(marker in cleaned for marker in ("'''", "''", "{{", "}}", "[[", "]]", ".ogg", "<ref")):
+                raise SystemExit(f"{item_id} ships markup: {cleaned!r}")
+            transformation = "selection" if cleaned in original else "wikimedia emphasis formatting"
+        else:
+            cleaned = shipped
+        license_id = meta.get("licenseId", LICENSE_ID)
+        license_url = meta.get("licenseUrl", LICENSE_URL)
+        share = meta.get("shareAlikeTreatment", SHARE_ALIKE)
         self.provenance.append({
             "itemId": item_id,
             "unitNumber": unit,
@@ -151,10 +175,10 @@ class Builder:
             "originalSourceText": original,
             "shippedText": cleaned,
             "transformation": transformation,
-            "licenseId": LICENSE_ID,
-            "licenseUrl": LICENSE_URL,
+            "licenseId": license_id,
+            "licenseUrl": license_url,
             "attribution": meta["attribution"],
-            "shareAlikeTreatment": SHARE_ALIKE,
+            "shareAlikeTreatment": share,
             "sourceHash": sha256_text(original),
             "contentHash": sha256_text(cleaned),
             "reviewStatus": PENDING,
@@ -374,6 +398,12 @@ def _unit(builder, number, title, body, populate, gaps, capabilities):
             "letter-name-review",
             "abbreviation",
             "particle",
+            "letter-writing",
+            "correspondence-work",
+            "participle-stress",
+            "verbal-adverb-reading",
+            "dictionary-use",
+            "capstone-reading",
         }:
             raise SystemExit(f"Refusing to satisfy a broad or unsupported claim: {spec}")
         resolved.append({
@@ -458,6 +488,12 @@ def license_admission_errors(
         if source_id.startswith("src-pressbooks-") and route_name != "pressbooks":
             errors.append(f"Pressbooks source {source_id} has the wrong project license evidence")
             continue
+        if source_id.startswith("src-readyrussian-") and route_name != "readyrussian":
+            errors.append(f"ReadyRussian source {source_id} has the wrong project license evidence")
+            continue
+        if source_id.startswith("src-ruwikisource-") and route_name != "ruwikisource":
+            errors.append(f"Russian Wikisource source {source_id} has the wrong project license evidence")
+            continue
         if route is None or source_id not in route.get("appliesToSourceIds", []):
             errors.append(f"Source {source_id} license route does not match its evidence")
     return errors
@@ -494,20 +530,25 @@ def _attribution_reference() -> dict:
 def _sources(frozen: FrozenSources) -> tuple[list[dict], list[dict]]:
     sources = []
     rights = []
-    for page in frozen.freeze["pages"]:
-        if page["sourceId"] == "src-ruwiki-morfologiya-148939075":
+    seen = set()
+    pages = list(frozen.freeze["pages"]) + list(frozen.freeze.get("supplemental") or [])
+    for page in pages:
+        source_id = page["sourceId"]
+        if source_id == "src-ruwiki-morfologiya-148939075" or source_id in seen:
             continue
+        seen.add(source_id)
+        license_id = page.get("licenseId", LICENSE_ID)
         sources.append({
-            "id": page["sourceId"],
+            "id": source_id,
             "title": page["title"],
-            "license": LICENSE_ID,
+            "license": license_id,
             "attribution": page["attribution"],
             "modification": "Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.",
         })
         rights.append({
-            "id": "rights-" + page["sourceId"].removeprefix("src-"),
-            "sourceId": page["sourceId"],
-            "license": LICENSE_ID,
+            "id": "rights-" + source_id.removeprefix("src-"),
+            "sourceId": source_id,
+            "license": license_id,
             "permitsAppUse": True,
         })
     return sources, rights
@@ -522,37 +563,38 @@ def build_units_26_30() -> dict:
         _unit(
             builder, 26,
             "Admitted word-order and address lines",
-            "Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, and the frozen address marks. Complete postal practice and other letter conventions stay in the copy you own. Qualified review is pending.",
+            "Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. Complete postal practice stays in the copy you own. Qualified review is pending.",
             populate,
             [
                 ("postal-address", "Complete postal practice stays in the copy you own", "Complete postal practice stays in the copy you own. The frozen address marks are not that practice.", "Complete modern postal practice has no admitted frozen span."),
-                ("letter-writing", "Other letter conventions stay in the copy you own", "Other letter conventions stay in the copy you own. The written capital form is not a whole letter.", "General letter structure, openings, closings, and register have no admitted frozen span."),
-                ("correspondence", "Correspondence work stays in the copy you own", "Correspondence work stays in the copy you own. The admitted lines do not supply it.", "Correspondence work has no admitted frozen span."),
             ],
-            [("obj-u26-word-order", "word-order"), ("obj-u26-indefinite", "indefinite-pronoun")],
+            [
+                ("obj-u26-word-order", "word-order"),
+                ("obj-u26-indefinite", "indefinite-pronoun"),
+                ("obj-u26-letter-writing", "letter-writing"),
+                ("obj-u26-correspondence", "correspondence-work"),
+            ],
         ),
         _unit(
             builder, 27,
             "Admitted past passive lines",
-            "Proposed Unit 27 uses admitted past passive lines. Present passive lines are optional and do not gate this unit. Stress stays in the copy you own. Active forms are not taught here. Qualified review is pending.",
+            "Proposed Unit 27 uses admitted past passive lines and four admitted stressed participle forms. Present passive lines are optional and do not gate this unit. Comprehension passages stay in the copy you own. Active forms are not taught here. Qualified review is pending.",
             populate,
             [
-                ("stress", "Participle stress stays in the copy you own", "Participle stress stays in the copy you own. A marked example is not a stress rule.", "A general participle-stress rule has no admitted frozen span."),
                 ("comprehension", "Comprehension passages stay in the copy you own", "Comprehension passages stay in the copy you own. The admitted lines do not supply them.", "Comprehension passages have no admitted frozen span."),
             ],
-            [("obj-u27-passive", "passive-participle")],
+            [("obj-u27-passive", "passive-participle"), ("obj-u27-stress", "participle-stress")],
         ),
         _unit(
             builder, 28,
             "Admitted adverbial lines",
-            "Proposed Unit 28 uses admitted imperfective and perfective adverbial lines. Readings stay in the copy you own. Qualified review is pending.",
+            "Proposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.",
             populate,
-            [
-                ("readings", "Readings stay in the copy you own", "Readings stay in the copy you own. The admitted lines do not supply a reading passage.", "Readings have no admitted frozen span."),
-            ],
+            [],
             [
                 ("obj-u28-imperfective-adverb", "imperfective-verbal-adverb"),
                 ("obj-u28-perfective-adverb", "perfective-verbal-adverb"),
+                ("obj-u28-readings", "verbal-adverb-reading"),
             ],
         ),
         _unit(
@@ -573,16 +615,15 @@ def build_units_26_30() -> dict:
         _unit(
             builder, 30,
             "Review admitted table names and abbreviation examples",
-            "Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Dictionary use and the final reading stay in the copy you own. Qualified review is pending.",
+            "Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Admitted dictionary-field recognition and the admitted capstone story are included. Advancement stays blocked. Qualified review is pending.",
             populate,
-            [
-                ("dictionary", "Dictionary use stays in the copy you own", "Dictionary use stays in the copy you own. No admitted span gives that procedure.", "Dictionary use has no admitted frozen span."),
-                ("capstone", "The final reading stays in the copy you own", "The final reading stays in the copy you own. No admitted text supplies it.", "The final reading has no admitted frozen span."),
-            ],
+            [],
             [
                 ("obj-u30-letter-names", "letter-name-review"),
                 ("obj-u30-abbreviation", "abbreviation"),
                 ("obj-u30-particle", "particle"),
+                ("obj-u30-dictionary", "dictionary-use"),
+                ("obj-u30-capstone", "capstone-reading"),
             ],
         ),
     ]

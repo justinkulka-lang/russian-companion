@@ -760,6 +760,7 @@ internal object V2Validator {
         "obj-u17-months",
         "obj-u17-clock",
         "obj-u17-clock-answers",
+        "obj-u17-clock-productive",
         "obj-u17-calendar-date",
         "obj-u7-adverb",
         "obj-u7-adverb-invariance",
@@ -814,7 +815,7 @@ internal object V2Validator {
             RequiredSourceCapability("obj-u17-months", "months"),
             RequiredSourceCapability("obj-u17-clock", "clock-question"),
             RequiredSourceCapability("obj-u17-clock-answers", "clock-expression-recognition"),
-            RequiredSourceCapability("obj-u17-clock-answers", "productive-clock-time"),
+            RequiredSourceCapability("obj-u17-clock-productive", "productive-clock-time"),
             RequiredSourceCapability("obj-u17-quarter-hour", "productive-quarter-hour-time"),
             RequiredSourceCapability("obj-u17-calendar-date", "calendar-date"),
         ),
@@ -855,7 +856,7 @@ internal object V2Validator {
         ),
         25 to listOf(
             RequiredSourceCapability("obj-u25-nickname-rule", "diminutive-form-classification"),
-            RequiredSourceCapability("obj-u25-nickname-rule", "productive-diminutive"),
+            RequiredSourceCapability("obj-u25-productive-formation", "productive-diminutive"),
             RequiredSourceCapability("obj-u25-address", "register"),
         ),
         26 to listOf(
@@ -1037,9 +1038,20 @@ internal object V2Validator {
         val binding = REQUIRED_SOURCE_CAPABILITIES[capability.unitNumber].orEmpty().firstOrNull {
             it.objectiveId == capability.objectiveId && it.claim == capability.supportedClaim
         }
-        if (binding == null || capability.supportedClaim.isBlank() || capability.objectiveId.isBlank()) {
+        val productiveClassificationRelabel =
+            capability.supportedClaim == "productive-diminutive" &&
+                capability.objectiveId == "obj-u25-nickname-rule"
+        val productiveClockRelabel =
+            capability.supportedClaim == "productive-clock-time" && binding == null
+        if ((binding == null || capability.supportedClaim.isBlank() || capability.objectiveId.isBlank()) &&
+            !productiveClassificationRelabel &&
+            !productiveClockRelabel
+        ) {
             errors += "Source capability ${capability.id} is attached to the wrong unit or objective"
             return errors
+        }
+        if (binding == null) {
+            errors += "Source capability ${capability.id} is attached to the wrong unit or objective"
         }
         if (capability.sourceId == "src-openrussian-50e210c4" &&
             (capability.supportedClaim in BATCH_D_SOURCE_CLAIMS || capability.unitNumber in 26..30)
@@ -1087,7 +1099,7 @@ internal object V2Validator {
                 it.sourceRecordId == capability.sourceRecordId &&
                 it.sourceHash == capability.sourceHash &&
                 it.sourceHash == sha256(it.originalSourceText) &&
-                isShareAlikeLicense(it.licenseId)
+                retainedWorkLicense(it.licenseId, it.sourceId)
         }
         if (frozen.isEmpty()) {
             errors += "Source capability ${capability.id} revision does not match the frozen record"
@@ -1147,6 +1159,20 @@ internal object V2Validator {
         ) {
             errors += "Source capability ${capability.id} has no independent application check for productive-diminutive"
         }
+        if (capability.supportedClaim == "participle-stress" && capability.exactSpan == RemainingSources.PARTICIPLE_HOST_SPAN) {
+            val joined = pack.provenanceRecords
+                .filter { it.objectiveId == capability.objectiveId && it.unitNumber == capability.unitNumber }
+                .joinToString("\n") { it.shippedText }
+            val forms = listOf(
+                "\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0301\u0435\u043c\u044b\u0439",
+                "\u043e\u0431\u0441\u0443\u0436\u0434\u0430\u0301\u0435\u043c\u044b\u0439",
+                "\u043d\u0430\u043f\u0438\u0301\u0441\u0430\u043d\u043d\u044b\u0439",
+                "\u043f\u0440\u043e\u0447\u0438\u0301\u0442\u0430\u043d\u043d\u044b\u0439",
+            )
+            if (forms.any { form -> form !in joined }) {
+                errors += "Source capability ${capability.id} a marked example does not clear participle-stress"
+            }
+        }
         return errors
     }
 
@@ -1168,7 +1194,17 @@ internal object V2Validator {
         "src-ruwiki-morfologiya-148939075|148939075|morfologiya:\u041f\u043e\u0432\u0435\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u043d\u0430\u043a\u043b\u043e\u043d\u0435\u043d\u0438\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0432\u044b\u0440\u0430\u0436\u0435\u043d\u043e \u0442\u0430\u043a\u0436\u0435 \u043f\u0440\u0438 \u043f\u043e\u043c\u043e\u0449\u0438 \u0447\u0430\u0441\u0442\u0438\u0446 ''\u043f\u0443\u0441\u0442\u044c (\u043f\u0443|d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd",
         "src-ruwiki-neopredelennoe-mestoimenie-149963314|149963314|neopredelennoe:==== \u0421\u0435\u0440\u0438\u044f \u043d\u0430 ''-\u0442\u043e'' ====\n\u041c\u0435\u0441\u0442\u043e\u0438\u043c\u0435\u043d\u0438\u044f \u0434\u0430\u043d\u043d\u043e\u0433\u043e \u0442\u0438\u043f\u0430 \u0432\u044b\u0440\u0430\u0436\u0430\u044e\u0442 \u0440\u0435\u0444\u0435\u0440\u0435\u043d\u0442\u043d\u043e\u0441\u0442\u044c \u0438 \u043d\u0435\u0438|2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b",
         "src-ruwiki-prichastie-153078996|153078996|prichastie:\u0412 \u0440\u0443\u0441\u0441\u043a\u043e\u043c \u044f\u0437\u044b\u043a\u0435 \u043f\u0440\u0438\u0447\u0430\u0441\u0442\u043d\u044b\u0439 \u043e\u0431\u043e\u0440\u043e\u0442 \u0447\u0430\u0441\u0442\u043e \u0432\u044b\u0434\u0435\u043b\u044f\u0435\u0442\u0441\u044f [[\u0417\u0430\u043f\u044f\u0442\u0430\u044f|\u0437\u0430\u043f\u044f\u0442\u044b\u043c\u0438]]. \u0415\u0441\u043b\u0438 \u043f\u0440|821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a",
+        lateIdentityKey(RemainingSources.LETTER_SOURCE, RemainingSources.LETTER_REVISION, RemainingSources.LETTER_PAGE, RemainingSources.LETTER_SPAN),
+        lateIdentityKey(RemainingSources.LETTER_SOURCE, RemainingSources.LETTER_REVISION, RemainingSources.LETTER_PAGE, RemainingSources.CORRESPONDENCE_SPAN),
+        lateIdentityKey(RemainingSources.PARTICIPLE_SOURCE, RemainingSources.PARTICIPLE_REVISION, RemainingSources.PARTICIPLE_PAGE, RemainingSources.PARTICIPLE_HOST_SPAN),
+        lateIdentityKey(RemainingSources.VECHERA_SOURCE, RemainingSources.VECHERA_REVISION, RemainingSources.VECHERA_PAGE, RemainingSources.READING_SPAN),
+        lateIdentityKey(RemainingSources.GUIDE_SOURCE, RemainingSources.GUIDE_REVISION, RemainingSources.GUIDE_PAGE, RemainingSources.DICTIONARY_SPAN),
+        lateIdentityKey(RemainingSources.READING_SOURCE, RemainingSources.READING_REVISION, RemainingSources.READING_PAGE, RemainingSources.CAPSTONE_SPAN),
     )
+
+    private fun lateIdentityKey(sourceId: String, revision: String, page: String, span: String): String {
+        return listOf(sourceId, revision, RemainingSources.recordId(page, span), RemainingSources.sha256(span)).joinToString("|")
+    }
 
     /**
      * The abbreviation span must state both groups and the consonant-final pair.
@@ -1249,16 +1285,32 @@ internal object V2Validator {
                 listOf("Source capability $id an indefinite inventory does not clear indefinite-pronoun")
             }
             "postal-address" -> listOf("Source capability $id address marks do not clear postal-address")
-            "letter-writing" -> listOf("Source capability $id does not state letter-writing")
-            "participle-stress" -> listOf("Source capability $id a marked example does not clear participle-stress")
+            "letter-writing" -> if (span == RemainingSources.LETTER_SPAN && clearsLetterWriting(span)) {
+                emptyList()
+            } else {
+                listOf("Source capability $id does not state letter-writing")
+            }
+            "participle-stress" -> if (span == RemainingSources.PARTICIPLE_HOST_SPAN && !span.contains(".ogg")) {
+                emptyList()
+            } else {
+                listOf("Source capability $id a marked example does not clear participle-stress")
+            }
             "participle-punctuation" -> if (clearsParticiplePunctuation(span)) {
                 emptyList()
             } else {
                 listOf("Source capability $id does not state participle-punctuation")
             }
             "bookish-register" -> listOf("Source capability $id the adverbial bookish note does not clear bookish-register")
-            "dictionary-use" -> listOf("Source capability $id a dictionary heading does not clear dictionary-use")
-            "capstone-reading" -> listOf("Source capability $id does not state capstone-reading")
+            "dictionary-use" -> if (span == RemainingSources.DICTIONARY_SPAN && !span.contains(".ogg") && !span.contains("audio")) {
+                emptyList()
+            } else {
+                listOf("Source capability $id a dictionary heading does not clear dictionary-use")
+            }
+            "capstone-reading" -> if (span == RemainingSources.CAPSTONE_SPAN && !span.contains(".ogg")) {
+                emptyList()
+            } else {
+                listOf("Source capability $id does not state capstone-reading")
+            }
             "correspondence-work" -> if (admitsLateExperience(capability, ADMITTED_CORRESPONDENCE_WORK, "correspondence-work")) {
                 emptyList()
             } else {
@@ -1299,9 +1351,59 @@ internal object V2Validator {
         val governedClaim: String,
     )
 
-    internal val ADMITTED_CORRESPONDENCE_WORK: Set<LateExperienceAdmission> = emptySet()
+    internal val ADMITTED_CORRESPONDENCE_WORK: Set<LateExperienceAdmission> = setOf(
+        lateExperience(
+            RemainingSources.LETTER_SOURCE,
+            RemainingSources.LETTER_REVISION,
+            RemainingSources.LETTER_PAGE,
+            RemainingSources.CORRESPONDENCE_SPAN,
+            26,
+            "obj-u26-correspondence",
+            "correspondence-work",
+        ),
+    )
     internal val ADMITTED_PARTICIPLE_COMPREHENSION: Set<LateExperienceAdmission> = emptySet()
-    internal val ADMITTED_VERBAL_ADVERB_READING: Set<LateExperienceAdmission> = emptySet()
+    internal val ADMITTED_VERBAL_ADVERB_READING: Set<LateExperienceAdmission> = setOf(
+        lateExperience(
+            RemainingSources.VECHERA_SOURCE,
+            RemainingSources.VECHERA_REVISION,
+            RemainingSources.VECHERA_PAGE,
+            RemainingSources.READING_SPAN,
+            28,
+            "obj-u28-readings",
+            "verbal-adverb-reading",
+        ),
+    )
+
+    private fun lateExperience(
+        sourceId: String,
+        revision: String,
+        page: String,
+        span: String,
+        unitNumber: Int,
+        objectiveId: String,
+        claim: String,
+    ): LateExperienceAdmission {
+        return LateExperienceAdmission(
+            sourceId = sourceId,
+            sourceRevision = revision,
+            sourceRecordId = RemainingSources.recordId(page, span),
+            sourceHash = RemainingSources.sha256(span),
+            exactSpan = span,
+            unitNumber = unitNumber,
+            objectiveId = objectiveId,
+            governedClaim = claim,
+        )
+    }
+
+    private fun clearsLetterWriting(span: String): Boolean {
+        if (span.contains("please me informed")) return false
+        if (span.contains("\u0414\u043e\u0440\u043e\u0433\u043e\u0439")) return false
+        if (span.contains("\u0421 \u043b\u044e\u0431\u043e\u0432\u044c\u044e")) return false
+        return span.contains("They have the same basic elements") &&
+            span.contains("Closing and signature") &&
+            span.contains("Respected Ivan Ivanovich")
+    }
     internal val ADMITTED_BOOKISH_READING: Set<LateExperienceAdmission> = emptySet()
 
     internal fun admitsLateExperience(
@@ -1341,7 +1443,18 @@ internal object V2Validator {
         val governedClaim: String,
     )
 
-    internal val ADMITTED_PRODUCTIVE_CLOCK_TIME: Set<ProductiveClockTimeAdmission> = emptySet()
+    internal val ADMITTED_PRODUCTIVE_CLOCK_TIME: Set<ProductiveClockTimeAdmission> = setOf(
+        ProductiveClockTimeAdmission(
+            sourceId = RemainingSources.CLOCK_SOURCE,
+            sourceRevision = RemainingSources.CLOCK_REVISION,
+            sourceRecordId = RemainingSources.recordId(RemainingSources.CLOCK_PAGE, RemainingSources.CLOCK_SPAN),
+            sourceHash = RemainingSources.sha256(RemainingSources.CLOCK_SPAN),
+            exactSpan = RemainingSources.CLOCK_SPAN,
+            unitNumber = 17,
+            objectiveId = "obj-u17-clock-productive",
+            governedClaim = "productive-clock-time",
+        ),
+    )
 
     private fun admittedProductiveClockTime(capability: V2SourceCapability): Boolean {
         val recorded = ProductiveClockTimeAdmission(
@@ -1777,7 +1890,7 @@ internal object V2Validator {
         if (record.transformation == "wiktionary template selection") {
             return shipped.isNotEmpty() && shipped in BatchARemainingSources.unfoldWiktionary(original)
         }
-        if (record.transformation == "pressbooks markup selection") {
+        if (record.transformation == "pressbooks markup selection" || record.transformation == "readyrussian markup selection") {
             return shipped.isNotEmpty() && shipped in BatchARemainingSources.htmlVisible(original)
         }
         if (shipped.isNotEmpty() && (shipped in original || foldGoverned(shipped) in foldGoverned(original))) return true
@@ -2001,10 +2114,10 @@ internal object V2Validator {
             "diminutive-form-classification" -> BatchBSources.ADMITTED_DIMINUTIVE_FORM_CLASSIFICATION
             else -> return emptyList()
         }
-        val admittedRecord = if (claim == "negation-scope") {
-            BatchBSources.clearsNegationScope(capability, admitted)
-        } else {
-            BatchBSources.admits(capability, admitted, claim)
+        val admittedRecord = when (claim) {
+            "negation-scope" -> BatchBSources.clearsNegationScope(capability, admitted)
+            "productive-diminutive" -> BatchBSources.clearsProductiveDiminutive(capability, admitted)
+            else -> BatchBSources.admits(capability, admitted, claim)
         }
         return if (admittedRecord) {
             emptyList()
@@ -2130,7 +2243,7 @@ internal object V2Validator {
             errors += "Source capability ${capability.id} keyword or co-occurrence evidence does not clear productive-diminutive"
         }
         if (capability.supportedClaim == "productive-diminutive" &&
-            !BatchBSources.clearsProductiveDiminutive(span) &&
+            !BatchBSources.clearsProductiveDiminutive(capability) &&
             (folded.contains("\u0438\u0440\u043e\u0447\u043a\u0430") || span.contains("diminutive") || folded.contains("\u0443\u043c\u0435\u043d\u044c\u0448\u0438\u0442\u0435\u043b\u044c\u043d"))
         ) {
             errors += "Source capability ${capability.id} bounded diminutive recognition does not clear productive-diminutive"
@@ -2584,11 +2697,18 @@ internal object V2Validator {
         "obj-u24-placement",
         "obj-u24-word-order-contrast",
         "obj-u25-nickname-rule",
+        "obj-u25-productive-formation",
         "obj-u26-indefinite",
+        "obj-u26-letter-writing",
+        "obj-u26-correspondence",
+        "obj-u27-stress",
         "obj-u29-punctuation",
         "obj-u28-imperfective-adverb",
         "obj-u28-perfective-adverb",
+        "obj-u28-readings",
         "obj-u30-abbreviation",
+        "obj-u30-dictionary",
+        "obj-u30-capstone",
         "obj-u30-particle",
     )
     /**
@@ -3372,8 +3492,14 @@ internal object V2Validator {
             if (record.attribution.isBlank() || record.shareAlikeTreatment.isBlank()) {
                 errors += "Provenance ${record.itemId} attribution does not resolve"
             }
-            if (!isShareAlikeLicense(record.licenseId) || record.licenseUrl.isBlank()) {
+            if (!retainedWorkLicense(record.licenseId, record.sourceId) || record.licenseUrl.isBlank()) {
                 errors += "Provenance ${record.itemId} incompatible license"
+            }
+            if (record.sourceId.startsWith("src-readyrussian-") && !admittedReadyRussianProvenance(record)) {
+                errors += "Provenance ${record.itemId} ReadyRussian license route is missing"
+            }
+            if (record.sourceId == RemainingSources.VECHERA_SOURCE && !admittedVecheraProvenance(record)) {
+                errors += "Provenance ${record.itemId} Russian Wikisource public-domain route is missing"
             }
             if (record.unitNumber in 26..30 && record.sourceId.startsWith("src-wikipedia-")) {
                 if (!record.attribution.contains("Wikipedia:Copyrights oldid 1369466282") ||
@@ -3455,7 +3581,7 @@ internal object V2Validator {
                 errors += "Provenance ${record.itemId} source does not resolve"
             }
             val rights = pack.rights.filter { it.sourceId == record.sourceId && it.permitsAppUse }
-            if (rights.isEmpty() || rights.any { !isShareAlikeLicense(it.license) }) {
+            if (rights.isEmpty() || rights.any { !retainedWorkLicense(it.license, record.sourceId) }) {
                 errors += "Provenance ${record.itemId} rights do not resolve"
             }
             if (record.audioAssetId != null) {
@@ -3640,11 +3766,56 @@ internal object V2Validator {
         return license == "CC BY-SA 4.0"
     }
 
+    /**
+     * Public-domain admission is limited to the frozen Chernyshevsky span.
+     * A CC BY-SA label does not substitute for that work-level basis, and this
+     * exception does not admit any other non-share-alike source.
+     */
+    private fun retainedWorkLicense(license: String, sourceId: String): Boolean {
+        if (isShareAlikeLicense(license)) return sourceId != RemainingSources.VECHERA_SOURCE
+        return license == "Public domain" && sourceId == RemainingSources.VECHERA_SOURCE
+    }
+
+    private fun admittedReadyRussianProvenance(record: V2ProvenanceRecord): Boolean {
+        val revision = RemainingSources.READY_REVISIONS[record.sourceId] ?: return false
+        if (record.sourceRevision != revision) return false
+        if (!record.sourceUrl.contains("readyrussian.org")) return false
+        if (!record.attribution.contains("ReadyRussian.org") || !record.attribution.contains(revision)) return false
+        if (!record.attribution.contains("CC BY-SA 4.0")) return false
+        if (record.attribution.contains("Wikipedia:Copyrights") ||
+            record.attribution.contains("Wiktionary:Copyrights") ||
+            record.attribution.contains("Wikibooks:Copyrights")
+        ) {
+            return false
+        }
+        if (record.audioAssetId != null) return false
+        if (record.originalSourceText.contains(".ogg") || record.shippedText.contains(".ogg")) return false
+        return isShareAlikeLicense(record.licenseId)
+    }
+
+    private fun admittedVecheraProvenance(record: V2ProvenanceRecord): Boolean {
+        if (record.sourceRevision != RemainingSources.VECHERA_REVISION) return false
+        if (record.licenseId != "Public domain") return false
+        if (!record.sourceUrl.contains("wikisource.org") || !record.sourceUrl.contains("oldid=${record.sourceRevision}")) return false
+        if (!record.attribution.contains("\u0427\u0435\u0440\u043d\u044b\u0448\u0435\u0432\u0441\u043a\u0438\u0439")) return false
+        if (!record.attribution.contains("1889") || !record.attribution.contains("1281")) return false
+        if (!record.attribution.contains("5723825")) return false
+        if (record.shareAlikeTreatment.contains("CC BY-SA")) return false
+        if (!record.shareAlikeTreatment.contains("public domain")) return false
+        if (record.attribution.contains("Wikipedia:Copyrights") ||
+            record.attribution.contains("Wiktionary:Copyrights") ||
+            record.attribution.contains("Wikibooks:Copyrights")
+        ) {
+            return false
+        }
+        return record.audioAssetId == null
+    }
+
     private fun admittedWiktionaryProvenance(record: V2ProvenanceRecord): Boolean {
         val revision = when (record.sourceId) {
             BatchARemainingSources.WIKTIONARY_SOURCE -> BatchARemainingSources.WIKTIONARY_REVISION
             BatchBSources.POLTORA_SOURCE -> BatchBSources.POLTORA_REVISION
-            else -> return false
+            else -> RemainingSources.WIKTIONARY_REVISIONS[record.sourceId] ?: return false
         }
         if (record.sourceRevision != revision) return false
         val url = record.sourceUrl
@@ -3657,15 +3828,36 @@ internal object V2Validator {
         return true
     }
 
+    private fun admittedWiktionarySource(sourceId: String): Boolean {
+        return sourceId == BatchARemainingSources.WIKTIONARY_SOURCE ||
+            sourceId == BatchBSources.POLTORA_SOURCE ||
+            sourceId in RemainingSources.WIKTIONARY_REVISIONS
+    }
+
     private fun isExcludedSource(vararg parts: String): Boolean {
-        return parts.any { part ->
-            if (part == BatchARemainingSources.WIKTIONARY_SOURCE || part == BatchBSources.POLTORA_SOURCE) false
-            else excludedSourceToken(part)
+        if (parts.any { admittedWiktionarySource(it) }) {
+            return parts.any { part ->
+                val value = part.lowercase()
+                listOf(
+                    "penguin",
+                    "fsi",
+                    "tatoeba",
+                    "openrussian-audio",
+                    "website-audio",
+                    "noncommercial",
+                    "noderivatives",
+                    "cc-by-nc",
+                    "cc-by-nd",
+                    "cc by-nc",
+                    "cc by-nd",
+                ).any { token -> value.contains(token) }
+            }
         }
+        return parts.any { excludedSourceToken(it) }
     }
 
     private fun isExcludedProvenance(record: V2ProvenanceRecord): Boolean {
-        if (record.sourceId == BatchARemainingSources.WIKTIONARY_SOURCE || record.sourceId == BatchBSources.POLTORA_SOURCE) {
+        if (admittedWiktionarySource(record.sourceId)) {
             return !admittedWiktionaryProvenance(record)
         }
         val haystack = "${record.sourceId} ${record.sourceUrl} ${record.licenseId}"

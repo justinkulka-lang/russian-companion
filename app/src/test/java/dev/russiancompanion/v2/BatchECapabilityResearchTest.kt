@@ -71,10 +71,14 @@ class BatchECapabilityResearchTest {
             val errors = errors(pack, capability)
             assertTrue(errors, errors.contains("no independent $claim admission"))
             assertTrue(errors, errors.contains("revision does not match the frozen record"))
-            assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(
-                pack.copy(sourceCapabilities = pack.sourceCapabilities + capability),
-                unitNumber,
-            ).any { it.claim == claim })
+            val stillOpen = claim == "adverb-paradigm" || claim == "completion-over-period"
+            assertEquals(
+                stillOpen,
+                V2Validator.unresolvedRequiredSourceCapabilities(
+                    pack.copy(sourceCapabilities = pack.sourceCapabilities + capability),
+                    unitNumber,
+                ).any { it.claim == claim },
+            )
         }
         assertTrue(dossier.contains("Units 26–30 were not modified."))
     }
@@ -164,7 +168,11 @@ class BatchECapabilityResearchTest {
             admissions = pack.admissions.copy(penguinProseAssets = 9, generatedRussianWords = 4),
         )
         claims.forEach { (unitNumber, _, claim) ->
-            assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, unitNumber).any { it.claim == claim })
+            val stillOpen = claim == "adverb-paradigm" || claim == "completion-over-period"
+            assertEquals(
+                stillOpen,
+                V2Validator.unresolvedRequiredSourceCapabilities(stamped, unitNumber).any { it.claim == claim },
+            )
         }
     }
 
@@ -185,15 +193,22 @@ class BatchECapabilityResearchTest {
             24 to "negation-scope",
             25 to "productive-diminutive",
         )
+        val closed = setOf(17, 24, 25)
         gaps.forEach { (unitNumber, gap) ->
             val unit = pack.unit(unitNumber)!!
-            assertEquals("NOT_PREPARED", unit.readiness)
             assertEquals("DEVELOPMENT", unit.installState)
             val learner = prepared(unit)
-            val blocked = advancementDecision(pack, unit, learner)
-            assertFalse(blocked.allowed)
-            assertTrue(blocked.remaining.any { it.contains("not prepared") })
-            assertTrue(blocked.remaining.any { it.contains(blockers.getValue(unitNumber)) })
+            if (unitNumber in closed) {
+                assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
+                val advanced = advancementDecision(pack, unit, learner)
+                assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
+            } else {
+                assertEquals("NOT_PREPARED", unit.readiness)
+                val blocked = advancementDecision(pack, unit, learner)
+                assertFalse(blocked.allowed)
+                assertTrue(blocked.remaining.any { it.contains("not prepared") })
+                assertTrue(blocked.remaining.any { it.contains(blockers.getValue(unitNumber)) })
+            }
 
             val stripped = pack.copy(
                 units = pack.units.map { current ->
@@ -221,7 +236,7 @@ class BatchECapabilityResearchTest {
             assertTrue(flippedErrors, flippedErrors.contains("missing instruction, examples, guided practice, independent checks, or remediation"))
             val decision = advancementDecision(stripped, stripped.unit(unitNumber)!!, learner)
             assertFalse(decision.allowed)
-            assertTrue(decision.remaining.any { it.contains(blockers.getValue(unitNumber)) })
+            assertTrue(decision.remaining.joinToString("\n"), decision.remaining.any { it.contains(blockers.getValue(unitNumber)) })
         }
     }
 
@@ -243,23 +258,31 @@ class BatchECapabilityResearchTest {
         assertFalse(V2Validator.unit17SourceBlockers(setOf("productive-clock-time")).any { it.contains("weekday") || it.contains("age") })
 
         val liveClaims = V2Validator.unresolvedRequiredSourceCapabilities(pack, 17).map { it.claim }.toSet()
-        assertEquals(setOf("productive-clock-time"), liveClaims)
-        val liveUnit = pack.unit(17)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
-        val livePack = pack.copy(units = pack.units.map { if (it.number == 17) liveUnit else it })
-        val liveErrors = V2Validator.validate(livePack).errors
-        assertEquals(listOf(clockOnly), liveErrors.filter { it.startsWith("Unit 17 is missing") })
+        assertEquals(emptySet<String>(), liveClaims)
+        val liveUnit = pack.unit(17)!!
+        val liveErrors = V2Validator.validate(pack).errors
+        assertEquals(emptyList<String>(), liveErrors.filter { it.startsWith("Unit 17 is missing") })
         assertFalse(liveErrors.joinToString("\n"), liveErrors.any { it.contains("telling-time") || it.contains("weekday") || it.contains("age sources") })
-        val liveDecision = advancementDecision(livePack, liveUnit, prepared(liveUnit))
-        assertFalse(liveDecision.allowed)
-        val sourceLines = liveDecision.remaining.filter { it.startsWith("Unit 17 is missing") }
-        assertEquals(listOf(clockOnly), sourceLines)
-        assertFalse(sourceLines.any { it.contains("calendar-date") || it.contains("weekday") || it.contains("age") })
+        val liveDecision = advancementDecision(pack, liveUnit, prepared(liveUnit))
+        assertTrue(liveDecision.remaining.joinToString("\n"), liveDecision.allowed)
+        assertFalse(liveDecision.remaining.any { it.contains("calendar-date") || it.contains("weekday") || it.contains("age") || it.contains("clock-time") })
 
+        val withoutClock = pack.copy(
+            sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "productive-clock-time" },
+        )
+        val clockErrors = V2Validator.validate(withoutClock).errors
+        assertEquals(listOf(clockOnly), clockErrors.filter { it.startsWith("Unit 17 is missing") })
         val withoutDate = pack.copy(
             sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "calendar-date" },
-            units = pack.units.map { if (it.number == 17) liveUnit else it },
         )
-        val bothErrors = V2Validator.validate(withoutDate).errors
+        val dateErrors = V2Validator.validate(withoutDate).errors
+        assertEquals(listOf(dateOnly), dateErrors.filter { it.startsWith("Unit 17 is missing") })
+        val withoutBoth = pack.copy(
+            sourceCapabilities = pack.sourceCapabilities.filter {
+                it.supportedClaim != "productive-clock-time" && it.supportedClaim != "calendar-date"
+            },
+        )
+        val bothErrors = V2Validator.validate(withoutBoth).errors
         assertEquals(listOf(both), bothErrors.filter { it.startsWith("Unit 17 is missing") })
 
         listOf(
@@ -285,7 +308,7 @@ class BatchECapabilityResearchTest {
                 assertTrue(errors, errors.contains("quarter-hour patterns do not clear productive-clock-time"))
             }
             val hosted = pack.copy(sourceCapabilities = pack.sourceCapabilities + relabeled)
-            assertTrue(
+            assertFalse(
                 V2Validator.unresolvedRequiredSourceCapabilities(hosted, 17).any { it.claim == "productive-clock-time" },
             )
         }
@@ -297,7 +320,7 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4", model.packContentReviewDigest)
+        assertEquals("9084ed0a9a8037bd244f2b2fe3b18f1f9ed6e64f22637530bbdcd0dda1755162", model.packContentReviewDigest)
         assertEquals("7e73e724ef3895ff8fb3401f0a84411e74a62dfe0877fcf9015554215ee7a652", model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
@@ -316,15 +339,15 @@ class BatchECapabilityResearchTest {
         }
         val content = mapOf(
             7 to "9db2b449a150d96b668230738731655cf01a163a552fbacd4152579be638989f",
-            17 to "52377652b325bffe7f652eeac353f0ea2350a75374ffabec47417730bd878d55",
-            23 to "044cddc59b24f009d455b989a3e31f0a585f757c582559288215d4038480745a",
-            24 to "1676c3bf2799cdc9d022ba8b0b951a83cfa9819087cad3810248bb6fe7a4202b",
-            25 to "e8d351d5e22da903bd0ceee1408855d7a127cad96c6bc7989b5f310a146698b6",
-            26 to "3e5c3819182d8e2d31cb001fffd4ebec8da3af4c28301e242d06b842baaf996d",
-            27 to "517bc0ac21360e0fd46727d38ca375b43799d14259dc74bc400ab1de98a23044",
-            28 to "0bda9d8e6e4730e3b6ea31ebf42311bb0bbec98d8f6b02ed4990e340dc6e2886",
-            29 to "cb4d6f34dfceed300d75a350c07202534f1fa8973d7d6a54792d0b261fd1795c",
-            30 to "a1efd2ccc9fb002122efb8186b1e2dd4c450f6b869570e9ed6a88aa953b297eb",
+            17 to "31939e0feab01eb6726077682cc4d10f39614fe63fda2ea0ffe7b0f1ba1079d2",
+            23 to "ea02b0454ea4c2b37095bc296f55c8eca78c42e671b4ac668a958bf2e9ab078f",
+            24 to "66c55c2586ea28b908ef9bb8159c008dd119c747f39a80ca9788a10266aa9b7b",
+            25 to "9bff6481102c3f713e0b70e29b0b59310e36e58634a14ea6ebf2405975808901",
+            26 to "2043a4b2905c7cb6c254969c926359042667e5e97a57abfeabde29f483100406",
+            27 to "d8c535a602ab930589ca2dfc52c67abd15c0c30dbadb6d4770af0439d2f4c3ca",
+            28 to "a1507156696e731bdee78abe38fbd4a7962a1f043adfb809b7b5436140d25c79",
+            29 to "fd4f4603274025eabc5683486b21daa914040d03f34fb2f638ef196f5ce8f9d0",
+            30 to "45c5c1632fb20cb8c14d45577f4d76a325b2d3557d63cd36a31a917f8d932e9e",
         )
         val mapping = mapOf(
             7 to "20298ccd10fadcd359b2fa73bebf0e7309772c6c78ffbc71730225664717b28c",
@@ -360,7 +383,7 @@ class BatchECapabilityResearchTest {
         assertTrue(candidateText.contains("0bd4dbf5a24738b9ff9bb7e782a1370021ea59b065c9e764c556f16c1e0784b4"))
         assertTrue(candidateText.contains("7a24899055474d1d7913213b0af1dedade528d4015cd1faef35c0f71d4e8c37e"))
         assertEquals(
-            "postal-address, letter-writing, correspondence-work",
+            "postal-address",
             model.units.single { it.unitNumber == 26 }.unresolvedRequiredSourceCapabilities,
         )
         assertEquals(
@@ -443,7 +466,10 @@ class BatchECapabilityResearchTest {
         currentSessionId = null,
         currentStepIndex = 0,
         completedStepIds = unit.sessions.flatMap { it.steps }.map { it.id }.toSet(),
-        correctItemIds = unit.objectives.flatMap { it.checkItemIds }.toSet(),
+        correctItemIds = (
+            unit.objectives.flatMap { it.checkItemIds } +
+                unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }
+            ).toSet(),
         bookAttestedUnits = setOf(unit.number),
         completedUnitNumbers = emptySet(),
     )

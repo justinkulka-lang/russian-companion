@@ -53,13 +53,15 @@ def special_transformation(meta: dict, original: str, shipped: str) -> str | Non
         if "{{" in shipped or "[[" in shipped or ".ogg" in shipped:
             raise SystemExit(f"Shipped Wiktionary text keeps markup or audio: {shipped!r}")
         return "selection" if shipped in original else "wiktionary template selection"
-    if kind == "pressbooks-html":
+    if kind in ("pressbooks-html", "readyrussian-html"):
         visible = html_visible(original)
         if shipped not in visible:
-            raise SystemExit(f"Shipped text is not in the Pressbooks span: {shipped!r}")
-        if "<" in shipped or ">" in shipped:
-            raise SystemExit(f"Shipped Pressbooks text keeps markup: {shipped!r}")
-        return "pressbooks markup selection"
+            raise SystemExit(f"Shipped text is not in the HTML span: {shipped!r}")
+        if "<" in shipped or ">" in shipped or ".ogg" in shipped:
+            raise SystemExit(f"Shipped HTML text keeps markup or audio: {shipped!r}")
+        if kind == "pressbooks-html":
+            return "pressbooks markup selection"
+        return "readyrussian markup selection"
     raise SystemExit(f"Unknown source transform {kind}")
 
 

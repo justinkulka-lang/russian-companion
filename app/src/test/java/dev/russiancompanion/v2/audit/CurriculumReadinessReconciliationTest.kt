@@ -136,8 +136,13 @@ class CurriculumReadinessReconciliationTest {
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
         }
-        (listOf(7, 17, 23, 24, 25) + (26..30).toList()).forEach { number ->
+        listOf(7, 23, 26, 27, 29).forEach { number ->
             assertTrue(
+                model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
+            )
+        }
+        listOf(17, 24, 25, 28).forEach { number ->
+            assertFalse(
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
         }
@@ -261,7 +266,11 @@ class CurriculumReadinessReconciliationTest {
     @Test
     fun notPreparedUnitsCannotAdvanceAndReadinessChangeDoesNotClearOtherBlockers() {
         val pack = pack()
-        listOf(17, 30).forEach { number ->
+        val seventeen = pack.unit(17)
+        val seventeenDecision = advancementDecision(pack, seventeen, idealizedLearner(pack, seventeen))
+        assertTrue(seventeenDecision.remaining.joinToString("\n"), seventeenDecision.allowed)
+        assertTrue(liveModel().units.first { it.unitNumber == 17 }.advancementCanPresentlySucceed)
+        listOf(7, 30).forEach { number ->
             val unit = pack.unit(number)
             val decision = advancementDecision(pack, unit, idealizedLearner(pack, unit))
             assertFalse(decision.allowed)
@@ -284,7 +293,8 @@ class CurriculumReadinessReconciliationTest {
         assertFalse(lateDecision.allowed)
         assertFalse(lateDecision.remaining.any { it == "This unit is not prepared" })
         assertTrue(lateDecision.remaining.any { it == "Unit 27 is blocked by an unresolved authority variance" })
-        assertTrue(lateDecision.remaining.any { it.contains("participle-stress") })
+        assertTrue(lateDecision.remaining.any { it.contains("participle-comprehension") })
+        assertFalse(lateDecision.remaining.any { it.contains("participle-stress") })
 
         val missingChecks = pack.unit(1)
         val starved = idealizedLearner(pack, missingChecks).copy(correctItemIds = emptySet())
@@ -299,8 +309,8 @@ class CurriculumReadinessReconciliationTest {
         val inconsistent = reconcileCurriculumReadiness(
             root(),
             pack,
-            runtimeAdvancementAllowed = { _, unit -> unit.number == 17 },
-        ).units.first { it.unitNumber == 17 }
+            runtimeAdvancementAllowed = { _, unit -> unit.number == 7 },
+        ).units.first { it.unitNumber == 7 }
         assertFalse(inconsistent.advancementCanPresentlySucceed)
         assertTrue(inconsistent.finalDisposition.startsWith("INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"))
         val closed = reportAdvancement("NOT_PREPARED", runtimeAllowed = false)
@@ -358,7 +368,7 @@ class CurriculumReadinessReconciliationTest {
         assertEquals("NONE", live.units.first { it.unitNumber == 16 }.localExperienceBlocker)
         assertFalse(live.units.first { it.unitNumber == 16 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
         assertEquals("NONE", live.units.first { it.unitNumber == 17 }.assetBlocker)
-        assertTrue(live.units.first { it.unitNumber == 17 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
+        assertFalse(live.units.first { it.unitNumber == 17 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
         assertFalse(live.units.first { it.unitNumber == 19 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
         assertTrue(live.units.first { it.unitNumber == 1 }.assetBlocker.contains("REQUIRED_LICENSED_AUDIO_ABSENT"))
         assertEquals("NONE", live.units.first { it.unitNumber == 1 }.localExperienceBlocker)

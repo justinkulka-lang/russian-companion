@@ -143,7 +143,7 @@ def _displayed_in_frozen(record: dict) -> bool:
         from source_transforms import unfold_wiktionary
 
         return bool(shipped) and shipped in unfold_wiktionary(original)
-    if transformation == "pressbooks markup selection":
+    if transformation in ("pressbooks markup selection", "readyrussian markup selection"):
         from source_transforms import html_visible
 
         return bool(shipped) and shipped in html_visible(original)

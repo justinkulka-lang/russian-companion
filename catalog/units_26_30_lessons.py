@@ -114,6 +114,9 @@ def populate(lesson, number: int) -> None:
         29: _unit_29,
         30: _unit_30,
     }[number](lesson)
+    from remaining_lessons import add_late
+
+    add_late(lesson, number)
 
 
 def _bind(lesson, objective: str, claim: str, page: str, needle: str) -> None:

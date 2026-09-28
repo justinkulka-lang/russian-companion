@@ -25,13 +25,13 @@ class BatchARemainingSourceIntakeTest {
         val pack = pack()
         assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
         assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
-        assertEquals("NOT_PREPARED", pack.unit(17)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(19)!!.readiness)
         assertEquals("DEVELOPMENT", pack.unit(19)!!.installState)
         assertTrue(unresolved(pack, 7).contains("adverb-paradigm"))
         assertFalse(unresolved(pack, 7).contains("adverb-invariance"))
         assertFalse(unresolved(pack, 7).contains("adverb-bounded-pairs"))
-        assertTrue(unresolved(pack, 17).contains("productive-clock-time"))
+        assertFalse(unresolved(pack, 17).contains("productive-clock-time"))
         assertFalse(unresolved(pack, 17).contains("productive-quarter-hour-time"))
         assertFalse(unresolved(pack, 19).contains("probability-dolzhen"))
         assertTrue(pack.unitReviews.filter { it.unitNumber in setOf(7, 17, 19) }.all {
@@ -170,7 +170,7 @@ class BatchARemainingSourceIntakeTest {
         val clockErrors = V2Validator.validate(clockPack).errors.joinToString("\n")
         assertTrue(clockErrors, clockErrors.contains("quarter-hour patterns do not clear productive-clock-time"))
         assertTrue(clockErrors, clockErrors.contains("no independent productive-clock-time admission"))
-        assertTrue(unresolved(clockPack, 17).contains("productive-clock-time"))
+        assertFalse(unresolved(clockPack, 17).contains("productive-clock-time"))
 
         val pairs = capability(pack, "adverb-bounded-pairs")
         val paradigmPack = pack.copy(
@@ -195,7 +195,7 @@ class BatchARemainingSourceIntakeTest {
             ),
         )
         assertFails(ageAsClock, "no independent productive-clock-time admission")
-        assertTrue(unresolved(ageAsClock, 17).contains("productive-clock-time"))
+        assertFalse(unresolved(ageAsClock, 17).contains("productive-clock-time"))
     }
 
     @Test

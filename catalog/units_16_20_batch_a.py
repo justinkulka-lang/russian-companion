@@ -379,8 +379,10 @@ def _clock_answers(lesson) -> None:
     )
     _bind(lesson, "clock-answers", "clock-expression-recognition", needle)
     from batch_a_remaining_intake import add_unit17_quarter
+    from remaining_lessons import add_clock_productive
 
     add_unit17_quarter(lesson)
+    add_clock_productive(lesson)
 
 
 def _calendar_date(lesson) -> None:

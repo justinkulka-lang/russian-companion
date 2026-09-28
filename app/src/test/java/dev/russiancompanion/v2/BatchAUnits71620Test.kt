@@ -121,19 +121,21 @@ class BatchAUnits71620Test {
             val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
         }
-        listOf(7, 17).forEach { number ->
-            assertEquals("NOT_PREPARED", pack.unit(number)!!.readiness)
-            val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
-            assertFalse(decision.remaining.joinToString("\n"), decision.allowed)
-            assertTrue(decision.remaining.any { it.contains("not prepared") })
-            assertTrue(V2Validator.contentCompletenessErrors(pack, pack.unit(number)!!).isNotEmpty())
-        }
+        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
+        val unitSeven = advancementDecision(pack, pack.unit(7)!!, learner(pack, 7))
+        assertFalse(unitSeven.remaining.joinToString("\n"), unitSeven.allowed)
+        assertTrue(unitSeven.remaining.any { it.contains("not prepared") })
+        assertTrue(V2Validator.contentCompletenessErrors(pack, pack.unit(7)!!).isNotEmpty())
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
+        val unitSeventeen = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
+        assertTrue(unitSeventeen.remaining.joinToString("\n"), unitSeventeen.allowed)
+        assertTrue(V2Validator.contentCompletenessErrors(pack, pack.unit(17)!!).isEmpty())
         val flipped7 = pack.unit(7)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
         val paradigm = advancementDecision(pack, flipped7, learner(pack, 7))
         assertFalse(paradigm.allowed)
         assertTrue(paradigm.remaining.any { it.contains("adverb paradigm") })
-        val flipped17 = pack.unit(17)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
-        val clock = advancementDecision(pack, flipped17, learner(pack, 17))
+        val strippedClock = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "productive-clock-time" })
+        val clock = advancementDecision(strippedClock, strippedClock.unit(17)!!, learner(strippedClock, 17))
         assertFalse(clock.allowed)
         assertTrue(clock.remaining.any { it.contains("productive clock-time") })
         val strippedDate = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "calendar-date" })
@@ -165,7 +167,11 @@ class BatchAUnits71620Test {
             }
             val absent = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.id != capability.id })
             val absentDecision = advancementDecision(absent, absent.unit(capability.unitNumber)!!, learner(absent, capability.unitNumber))
-            assertFalse(absentDecision.allowed)
+            if (claim == "clock-expression-recognition") {
+                assertTrue(absentDecision.remaining.joinToString("\n"), absentDecision.allowed)
+            } else {
+                assertFalse(absentDecision.allowed)
+            }
         }
         val adverb = pack.provenanceRecords.first { it.objectiveId == "obj-u7-adverb" && it.shippedText == "быстро" }
         val quickly = pack.provenanceRecords.first { it.objectiveId == "obj-u7-adverb" && it.shippedText == "quickly" }

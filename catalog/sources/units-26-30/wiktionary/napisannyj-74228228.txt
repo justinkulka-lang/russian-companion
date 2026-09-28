@@ -1,0 +1,12 @@
+==Russian==
+
+===Pronunciation===
+* {{ru-IPA|напи́санный}}
+
+===Participle===
+{{head|ru|past passive participle|head=напи́санный}}
+
+# {{participle of|ru|написа́ть||past|pass|pfv}}
+
+====Declension====
+{{ru-decl-adj|напи́санный|a(2)}}

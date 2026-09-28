@@ -1,0 +1,33 @@
+<includeonly>{{#invoke:Copyright|template}}</includeonly><noinclude>{{doc}}
+<templatedata>
+{
+	"params": {
+		"ГОД": {
+			"description": "Год смерти автора",
+			"type": "number"
+		},
+		"ВОВ": {
+			"description": "Участие в Великой отечественной войне (значения: Участник или Работник)",
+			"type": "string"
+		},
+		"ГОДРЕАБИЛИТАЦИИ": {
+			"description": "Год реабилитации автора (если был репрессирован)",
+			"type": "number"
+		},
+		"СТРАНА": {
+			"description": "Название страны, если не Россия и отличается начисление срока охраны",
+			"type": "string"
+		},
+		"ВИКИЛИВРУ": {
+			"description": "Имя страницы автора на сайте Wikilivres.ru",
+			"type": "string"
+		},
+		"?": {
+			"description": "Для случая, когда год смерти автора точно не известен",
+			"type": "boolean"
+		}
+	},
+	"format": "inline",
+	"description": "Вычисляет дату перехода произведений автора (опубликованных при жизни) в общественное достояние"
+}
+</templatedata></noinclude>
