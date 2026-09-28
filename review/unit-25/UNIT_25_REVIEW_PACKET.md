@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 25 remains in development. Its readiness is content-complete and review-pending. The Lesson 25 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 25 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 25 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4cf6007f69beadac5278bb42e5bf060a62fe3eb9
-- Unit content-review SHA-256: 5bef263cd215e7b4d9b810e47dc8f2a0499aadaa87ee623f0eeccfd88d91aeb7
+- Curriculum source commit: 369bff869c72b90b9180a9ec9fbb178f1e185750
+- Unit content-review SHA-256: e8d351d5e22da903bd0ceee1408855d7a127cad96c6bc7989b5f310a146698b6
 - Mapping-package SHA-256: 93039c677b2f820c58bf274ebe94000f3a66541e821250bd478f9ed4c12b8431
-- Pack content-review SHA-256: 129c7ebe726af56e5d9efe7bc363dd0224c6d6a4e1667c1dbb264a884fd24e71
-- Review-package SHA-256: 7ec2d4a987a59e04741dd12496a7176ba75ce4a08151a125ed90ffb1407f8a33
-- Repository source SHA-256: a6fff097ab674d5047bfd8c5ed73a360e3cd33334bd39f3808b0ef5f0a6c8589
+- Pack content-review SHA-256: 68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4
+- Review-package SHA-256: 1b8012ba1badf1d19a297064e3399d85479ac579c146d5cee2f5aa452652ce92
+- Repository source SHA-256: 8f4aef42a2133c0818b32a58197097c16478c62ed49be67684780a5802f9bcdd
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=25
 title=Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions
-topicSummary=Proposed Unit 25 is in development. Admitted name lines, the frozen diminutive-formation span, courtesy lines, and the address-register sentences await qualified review. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 25 is in development and is not prepared. Admitted name lines, a bounded classification of the frozen diminutive-formation span, courtesy lines, and the address-register sentences await qualified review. That classification does not clear a productive diminutive formation rule. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=CONTENT_COMPLETE_REVIEW_PENDING
+readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 25, printed pages 307-321. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=25
 prerequisites=24
-estimatedMinutes=90
+estimatedMinutes=94
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 25.
 
 ### UNIT `unit-25`
 
-- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-nickname-rule, obj-u25-address, obj-u25-book
-- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-nickname-rule, u25-s-address, u25-s-book
+- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-nickname-rule, obj-u25-address, obj-u25-book, obj-u25-productive-formation
+- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-nickname-rule, u25-s-address, u25-s-book, u25-s-gap-productive-formation
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c42df0dc9c881956b954621aece18825c341c76d3cfbad5e8a99037f39128bdd
+- Content hash: 2f96fd49b66df9c407c3948cf3f7478a94ecbd6b45b85ce12b3fb06558193960
 
 number=25
 title=Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions
-topicSummary=Proposed Unit 25 is in development. Admitted name lines, the frozen diminutive-formation span, courtesy lines, and the address-register sentences await qualified review. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 25 is in development and is not prepared. Admitted name lines, a bounded classification of the frozen diminutive-formation span, courtesy lines, and the address-register sentences await qualified review. That classification does not clear a productive diminutive formation rule. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=CONTENT_COMPLETE_REVIEW_PENDING
+readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 25, printed pages 307-321. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=25
 prerequisites=24
-estimatedMinutes=90
+estimatedMinutes=94
 
 ### ADVANCEMENT `unit-25-advancement`
 
@@ -238,6 +238,25 @@ practice=
 checks=
 remediation=
 
+### OBJECTIVE `obj-u25-productive-formation`
+
+- Objectives: obj-u25-productive-formation
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5f8b74fbd3e890208f0b778f481f53d65c9a684358903d7444754556053f8150
+
+title=Productive diminutive formation stays in the copy you own
+kind=GUIDANCE
+unitNumber=25
+instruction=u25-st-gap-productive-formation
+examples=
+practice=
+checks=
+remediation=
+
 ### SESSION `u25-s-orient`
 
 - Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-nickname-rule, obj-u25-address, obj-u25-book
@@ -261,11 +280,11 @@ steps=u25-st-orient
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b4cf73111666883583eb5fb8c34746d8277f7c3fb16300bc740e4139e485677d
+- Content hash: 5c4d6ae215bc1fa6bd07d528cd0c7e33292304fefc28ebe71cac36c96c0302d9
 
 kind=ORIENT
 title=Admitted name and courtesy lines
-body=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, the frozen formation span, courtesy lines, and the frozen address-register sentences. Qualified review is pending.
+body=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, courtesy lines, and the frozen address-register sentences. That classification does not clear a productive diminutive formation rule. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -1216,6 +1235,43 @@ bookDirection=Self-attest only after the Lesson 25 work in your copy.
 companionDirection=
 remediationStepId=
 
+### SESSION `u25-s-gap-productive-formation`
+
+- Objectives: obj-u25-productive-formation
+- Sessions: u25-s-gap-productive-formation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a31c2f018babec5709f92748996bb97919bcbd961db19f7bd8a04db6a92f78ff
+
+title=Productive diminutive formation stays in the copy you own
+estimatedMinutes=4
+objectives=obj-u25-productive-formation
+steps=u25-st-gap-productive-formation
+
+### STEP `u25-st-gap-productive-formation`
+
+- Objectives: obj-u25-productive-formation
+- Sessions: u25-s-gap-productive-formation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a9686d2817ce4be22b6b71693177475843524a82edb69c5958e662ff6ca12051
+
+kind=UNAVAILABLE
+title=Productive diminutive formation stays in the copy you own
+body=The shown forms are classification of listed source labels. A productive diminutive formation rule has no admitted frozen span.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
+unavailableReason=A productive diminutive formation rule has no admitted frozen span.
+bookDirection=
+companionDirection=
+remediationStepId=
+
 ### EXAMPLE `ex-u25-name-structure-0`
 
 - Objectives: obj-u25-name-structure
@@ -1721,7 +1777,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e98544a23e006a6f1961ec11556303d783b774a347824e3695ab84c3bde05353
+- Content hash: ee7d50a92711ddda24ca656cd055d57e273c3e6d35474a75829151a3ed11459d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1734,7 +1790,7 @@ objectiveId=obj-u25-nickname-rule
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | The source assigns от краткой формы to Машенька. | The source assigns оттенок пренебрежения to Сашка.
-testedFeature=PRODUCTIVE_DIMINUTIVE
+testedFeature=DIMINUTIVE_FORM_CLASSIFICATION
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-nickname-rule-0
 cueLanguage=ru
@@ -2071,7 +2127,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cf79422e0807f2c2f1586e37dd25d1ede60a442ca53b8be0ac1a0aad1f4262b8
+- Content hash: c6e1c63497abdfd1b09ee55ddfd0e6b747edc48da8039519a55079698c254c04
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2084,7 +2140,7 @@ objectiveId=obj-u25-nickname-rule
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | The source assigns от полной формы имени to Марюня. | The source assigns оттенок пренебрежения to Сашка.
-testedFeature=PRODUCTIVE_DIMINUTIVE
+testedFeature=DIMINUTIVE_FORM_CLASSIFICATION
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-nickname-rule-1
 cueLanguage=ru
@@ -2106,7 +2162,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e86bf02b3bf4165f26dd5a6302d55f49480e50b634cbdb33faf4394488676fbd
+- Content hash: f68df3c2168891f4d203bbe8878f2dce4ba7d62f57328ffb52bd3db905cf06f9
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2119,7 +2175,7 @@ objectiveId=obj-u25-nickname-rule
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | The source assigns от полной формы имени to Марюня. | The source assigns от краткой формы to Машенька.
-testedFeature=PRODUCTIVE_DIMINUTIVE
+testedFeature=DIMINUTIVE_FORM_CLASSIFICATION
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-nickname-rule-2
 cueLanguage=ru
@@ -2241,16 +2297,16 @@ responseKind=RUSSIAN_PHRASE
 ### REFERENCE `ref-u2125-attribution`
 
 - Objectives: none
-- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-nickname-rule, u25-s-address, u25-s-book
+- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-nickname-rule, u25-s-address, u25-s-book, u25-s-gap-productive-formation
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: a6b4cda11a13ea8ad60bfa947050e7b4f42455892fe6caacd200f80030f1eed4
+- Content hash: cb4669a753b8044d5a5c788b3ca7a989df6d4dc6c8ac8425a64f99b7376f642f
 
 title=Units 21–25 source notice
 summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.
-detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is admitted for the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. A listed pair is not that rule. Completion over a period is not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Review is pending.
+detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. That classification does not clear a productive diminutive formation rule. A listed pair is not that rule. Completion over a period is not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=21
 searchTerms=units 21-25 source notice
@@ -6687,10 +6743,10 @@ text=Admitted name and courtesy lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7feb1f0b0d795b0d89980ccd3c1c22ca235ee0121895856803e429655ca4385
+- Content hash: 7bba9552532c74ea7246b87adcfae9f4621ea21845c1438e7ceb786bd523bac2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, the frozen formation span, courtesy lines, and the frozen address-register sentences. Qualified review is pending.
+text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, courtesy lines, and the frozen address-register sentences. That classification does not clear a productive diminutive formation rule. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u25-263`
 
@@ -6847,6 +6903,32 @@ text=When you have done Lesson 25 in your copy, self-attest here. Attestation re
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 25 work in your copy.
+
+### AUTHORED_ENGLISH `en-u25-275`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f31fe352ed0e609621ac069eabb862d0b97fdadb4c5403ac3815af9cf35ef58e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Productive diminutive formation stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u25-276`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 62e75118c42e1bafe9cafc249a5bc3b6c7c548200493b51aafddadb2eb2f8152
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The shown forms are classification of listed source labels. A productive diminutive formation rule has no admitted frozen span.
 
 ### SOURCE `src-wikibooks-russian-cc-by-sa`
 
@@ -7038,6 +7120,7 @@ permitsAppUse=true
 - `obj-u25-address` REMEDIATION `u25-st-rem-address`
 - `obj-u25-book` INSTRUCTION `u25-st-book-work`
 - `obj-u25-book` INSTRUCTION `u25-st-book`
+- `obj-u25-productive-formation` INSTRUCTION `u25-st-gap-productive-formation`
 - `u25-s-orient` OBJECTIVE `obj-u25-name-structure`
 - `u25-s-orient` OBJECTIVE `obj-u25-diminutives`
 - `u25-s-orient` OBJECTIVE `obj-u25-courtesy`
@@ -7136,6 +7219,8 @@ permitsAppUse=true
 - `u25-st-check-address` ITEM `u25-i-address-3`
 - `u25-s-book` OBJECTIVE `obj-u25-book`
 - `u25-st-book-work` REFERENCE `ref-u2125-attribution`
+- `u25-s-gap-productive-formation` OBJECTIVE `obj-u25-productive-formation`
+- `u25-st-gap-productive-formation` REFERENCE `ref-u2125-attribution`
 - `obj-u25-address` PROVENANCE `prov-ex-u25-address-0-en`
 - `obj-u25-address` PROVENANCE `prov-ex-u25-address-0-ru`
 - `obj-u25-address` PROVENANCE `prov-ex-u25-address-1-en`
@@ -7235,8 +7320,7 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-None.
-
+- `u25-st-gap-productive-formation`
 
 ## Unresolved relationships
 
