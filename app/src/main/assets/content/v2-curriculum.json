@@ -29590,7 +29590,7 @@
         "The source assigns оттенок пренебрежения to Сашка."
       ],
       "assessment": {
-        "testedFeature": "PRODUCTIVE_DIMINUTIVE",
+        "testedFeature": "DIMINUTIVE_FORM_CLASSIFICATION",
         "evidenceMode": "SOURCE_SUPPLIED_PAIR",
         "contrastSetId": "u25-nickname-rule-0",
         "cueLanguage": "ru",
@@ -29647,7 +29647,7 @@
         "The source assigns оттенок пренебрежения to Сашка."
       ],
       "assessment": {
-        "testedFeature": "PRODUCTIVE_DIMINUTIVE",
+        "testedFeature": "DIMINUTIVE_FORM_CLASSIFICATION",
         "evidenceMode": "SOURCE_SUPPLIED_PAIR",
         "contrastSetId": "u25-nickname-rule-1",
         "cueLanguage": "ru",
@@ -29704,7 +29704,7 @@
         "The source assigns от краткой формы to Машенька."
       ],
       "assessment": {
-        "testedFeature": "PRODUCTIVE_DIMINUTIVE",
+        "testedFeature": "DIMINUTIVE_FORM_CLASSIFICATION",
         "evidenceMode": "SOURCE_SUPPLIED_PAIR",
         "contrastSetId": "u25-nickname-rule-2",
         "cueLanguage": "ru",
@@ -33108,7 +33108,7 @@
       "id": "ref-u2125-attribution",
       "title": "Units 21–25 source notice",
       "summary": "Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.",
-      "detail": "Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is admitted for the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. A listed pair is not that rule. Completion over a period is not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Review is pending.",
+      "detail": "Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. That classification does not clear a productive diminutive formation rule. A listed pair is not that rule. Completion over a period is not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Review is pending.",
       "introducedInUnit": 21,
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "classification": "LICENSE_OR_ATTRIBUTION",
@@ -55298,16 +55298,16 @@
       "id": "unit-25",
       "title": "Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions",
       "shortLabel": "Names",
-      "topicSummary": "Proposed Unit 25 is in development. Admitted name lines, the frozen diminutive-formation span, courtesy lines, and the address-register sentences await qualified review. It is not installed and the owned-edition mapping is not signed.",
+      "topicSummary": "Proposed Unit 25 is in development and is not prepared. Admitted name lines, a bounded classification of the frozen diminutive-formation span, courtesy lines, and the address-register sentences await qualified review. That classification does not clear a productive diminutive formation rule. It is not installed and the owned-edition mapping is not signed.",
       "installState": "DEVELOPMENT",
-      "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 25,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
       "mappingNote": "Proposed Lesson 25, printed pages 307-321. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
       "prerequisiteUnitNumbers": [
         24
       ],
-      "estimatedMinutes": 90,
+      "estimatedMinutes": 94,
       "objectives": [
         {
           "id": "obj-u25-name-structure",
@@ -55488,6 +55488,19 @@
           "practiceStepIds": [],
           "checkItemIds": [],
           "remediationStepIds": []
+        },
+        {
+          "id": "obj-u25-productive-formation",
+          "unitNumber": 25,
+          "title": "Productive diminutive formation stays in the copy you own",
+          "kind": "GUIDANCE",
+          "instructionStepIds": [
+            "u25-st-gap-productive-formation"
+          ],
+          "exampleIds": [],
+          "practiceStepIds": [],
+          "checkItemIds": [],
+          "remediationStepIds": []
         }
       ],
       "sessions": [
@@ -55509,7 +55522,7 @@
               "id": "u25-st-orient",
               "kind": "ORIENT",
               "title": "Admitted name and courtesy lines",
-              "body": "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, the frozen formation span, courtesy lines, and the frozen address-register sentences. Qualified review is pending.",
+              "body": "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, courtesy lines, and the frozen address-register sentences. That classification does not clear a productive diminutive formation rule. Qualified review is pending.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u2125-attribution"
@@ -56240,6 +56253,32 @@
               "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": "Self-attest only after the Lesson 25 work in your copy.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u25-s-gap-productive-formation",
+          "title": "Productive diminutive formation stays in the copy you own",
+          "estimatedMinutes": 4,
+          "objectiveIds": [
+            "obj-u25-productive-formation"
+          ],
+          "steps": [
+            {
+              "id": "u25-st-gap-productive-formation",
+              "kind": "UNAVAILABLE",
+              "title": "Productive diminutive formation stays in the copy you own",
+              "body": "The shown forms are classification of listed source labels. A productive diminutive formation rule has no admitted frozen span.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-u2125-attribution"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": "A productive diminutive formation rule has no admitted frozen span.",
+              "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
             }
@@ -121550,7 +121589,7 @@
     {
       "id": "en-u25-262",
       "unitNumber": 25,
-      "text": "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, the frozen formation span, courtesy lines, and the frozen address-register sentences. Qualified review is pending.",
+      "text": "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, courtesy lines, and the frozen address-register sentences. That classification does not clear a productive diminutive formation rule. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
@@ -121623,6 +121662,18 @@
       "id": "en-u25-274",
       "unitNumber": 25,
       "text": "Self-attest only after the Lesson 25 work in your copy.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u25-275",
+      "unitNumber": 25,
+      "text": "Productive diminutive formation stays in the copy you own",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u25-276",
+      "unitNumber": 25,
+      "text": "The shown forms are classification of listed source labels. A productive diminutive formation rule has no admitted frozen span.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
@@ -124028,7 +124079,7 @@
       "supportedClaim": "negative-pronoun"
     },
     {
-      "id": "cap-u25-productive-diminutive",
+      "id": "cap-u25-diminutive-form-classification",
       "sourceId": "src-ruwiki-lichnoe-imya-154915954",
       "sourceRevision": "154915954",
       "sourceRecordId": "lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн",
@@ -124036,7 +124087,7 @@
       "exactSpan": "В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name=\"ОРИ-5\" />.\n\nУменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group=\"с\">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными",
       "unitNumber": 25,
       "objectiveId": "obj-u25-nickname-rule",
-      "supportedClaim": "productive-diminutive"
+      "supportedClaim": "diminutive-form-classification"
     },
     {
       "id": "cap-u25-register",

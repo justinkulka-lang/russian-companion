@@ -3,8 +3,8 @@
 **Status:** RESEARCH HANDOFF — NOT AN APPROVAL  
 **Repository:** `justinkulka-lang/russian-companion`  
 **Canonical commit:** `fd69bd03298d69669d09daafe8d364b0e576d033`  
-**Pack content-review digest:** `129c7ebe726af56e5d9efe7bc363dd0224c6d6a4e1667c1dbb264a884fd24e71`  
-**Repository source digest:** `a6fff097ab674d5047bfd8c5ed73a360e3cd33334bd39f3808b0ef5f0a6c8589`  
+**Pack content-review digest:** `68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4`  
+**Repository source digest:** `8f4aef42a2133c0818b32a58197097c16478c62ed49be67684780a5802f9bcdd`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -15,8 +15,8 @@ PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` is merged into this Batch
 
 ## Executive result
 
-- Content blockers: **9 units** — Units 7, 17, 23, 24, and 26–30.
-- Units 16, 18, 19, 20, 21, 22, and 25: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7, 17, 23, and 24 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. The frozen adverb paragraph states a productive method and four examples and does not state limits, so `adverb-paradigm` stays unresolved. Unit 17 has no admitted productive clock-time construction. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21, 22, and 25 are review-pending development curriculum and are not approved. Unit 23 keeps the admitted duration span and stays `NOT_PREPARED` because completion over a period has no admitted span. Unit 24 keeps a bounded word-order contrast and stays `NOT_PREPARED` because that contrast does not clear `negation-scope`. Unit 25 admits the frozen personal-name formation span for `productive-diminutive` and stays unsigned. Units 26–30 stay `NOT_PREPARED`. Unit 26 admits `indefinite-pronoun` and still lacks postal practice, letter writing, and correspondence work. Unit 29 admits `participle-punctuation` and still lacks a general bookish-register claim and a bookish reading. Unit 30 `dictionary-use` stays unresolved because Russian Wiktionary has no freezeable project copyright page.
+- Content blockers: **10 units** — Units 7, 17, 23, 24, 25, and 26–30.
+- Units 16, 18, 19, 20, 21, and 22: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7, 17, 23, 24, and 25 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. The frozen adverb paragraph states a productive method and four examples and does not state limits, so `adverb-paradigm` stays unresolved. Unit 17 has no admitted productive clock-time construction. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21 and 22 are review-pending development curriculum and are not approved. Unit 23 keeps the admitted duration span and stays `NOT_PREPARED` because completion over a period has no admitted span. Unit 24 keeps a bounded word-order contrast and stays `NOT_PREPARED` because that contrast does not clear `negation-scope`. Unit 25 keeps bounded classification of the frozen personal-name formation span and stays `NOT_PREPARED` because that classification does not clear `productive-diminutive`. Units 26–30 stay `NOT_PREPARED`. Unit 26 admits `indefinite-pronoun` and still lacks postal practice, letter writing, and correspondence work. Unit 29 admits `participle-punctuation` and still lacks a general bookish-register claim and a bookish reading. Unit 30 `dictionary-use` stays unresolved because Russian Wiktionary has no freezeable project copyright page.
 - Qualified linguistic review: **all 30 units**.
 - Owned-edition mapping review: **all 30 units**.
 - Licensed-asset blockers: **Units 1–2**.
@@ -67,7 +67,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 22 | Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified review and owned-edition mapping remain pending |
 | 23 | Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 24 | Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
-| 25 | Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified review and owned-edition mapping remain pending |
+| 25 | Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 26 | Indefinite pronouns, word order, and letter writing | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 27 | Participles: types and stress | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | PROPOSED_NOT_ACTIVATED | YES | Close documented source-supported curriculum gaps, then regenerate review materials; separately activate or reject the proposed variance |
 | 28 | Verbal adverbs | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
@@ -176,9 +176,21 @@ The same grammar page's word-order pair remains as optional bounded recognition 
 
 ### Unit 25 — Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions
 
-Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `YES`.
+Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-`register` remains admitted as recognition of the frozen address-page lists and register sentences on Russian Wikipedia oldid 153012874. Those listed forms do not clear `productive-diminutive`. `productive-diminutive` is admitted from the frozen formation span on Russian Wikipedia personal-name page oldid 154915954, under the Russian Wikipedia copyrights page oldid 154562152. The span states the documented suffix patterns, full-form and short-form bases, the listed examples, the dismissive limitation, and the modern lowered status. It is not a generator for arbitrary names. A listed pair, including the address-page forms, remains narrower evidence. Qualified review is pending. The unit is not installed and the owned-edition mapping is unsigned.
+`register` remains admitted as recognition of the frozen address-page lists and register sentences on Russian Wikipedia oldid 153012874. Those listed forms do not clear `productive-diminutive`. The frozen formation span on Russian Wikipedia personal-name page oldid 154915954, under the Russian Wikipedia copyrights page oldid 154562152, remains. It states the documented suffix patterns, full-form and short-form bases, the listed examples, the dismissive limitation, and the modern lowered status. The shipped checks classify three listed forms by source labels. That bounded recognition is `diminutive-form-classification`. It does not apply a base and suffix, and it does not clear `productive-diminutive`. It is not a generator for arbitrary names. A listed pair, including the address-page forms, remains narrower evidence. Qualified review is pending. The unit is not installed and the owned-edition mapping is unsigned.
+
+#### `productive-diminutive` — `obj-u25-nickname-rule`
+
+- **Required claim/skill:** A productive diminutive formation rule limited to base and suffix relationships an admitted frozen source explicitly states, including how to tell a source-supported formation from one the source does not support.
+- **Why the current record is insufficient:** Three checks classify the already listed forms by source labels. They do not ask the learner to apply a base and suffix, and they do not distinguish a valid formation from an invalid one. Exact source identity does not turn that classification into the productive claim.
+- **Required source:** The frozen span may remain. A future chain must add reviewable instruction, guided practice, independent application checks, answer-specific feedback, and remediation. Every Russian form and distractor must stay inside that frozen span. Label classification is not enough.
+- **Russian examples required:** Yes
+- **English scaffold boundary:** English may name only the source-stated base, suffix, and limitation.
+- **Book-directed disposition:** Current guidance remains book-directed.
+- **Blocks content completeness and advancement:** Yes
+- **Variance dependency:** NONE
+- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
 
 ### Unit 26 — Indefinite pronouns, word order, and letter writing
 
@@ -381,9 +393,9 @@ Every unit also needs owned-edition mapping review: owned-copy verification, ISB
 1. **Mechanical cleanup decision:** resolve the two Unit 4 orphan examples without altering curriculum merely to improve a count.
 2. **Asset research:** licensed letter/pronunciation audio for Units 1–2 and verified handwriting assets for Unit 2.
 3. **Remaining Batch A research:** Unit 7 adverb-paradigm and Unit 17 productive-clock-time. Unit 19 probability-dolzhen is admitted as review-pending development curriculum. Calendar-date stays admitted. Units 16, 18, and 20 research requests stay closed.
-4. **Curriculum research batch B:** Units 21–25. Units 21, 22, and 25 are review-pending. Unit 23 stays `NOT_PREPARED` on completion over a period. Unit 25 admits the frozen personal-name formation span for `productive-diminutive` and stays unsigned.
+4. **Curriculum research batch B:** Units 21–25. Units 21 and 22 are review-pending. Unit 23 stays `NOT_PREPARED` on completion over a period. Unit 25 stays `NOT_PREPARED` because bounded classification of the frozen personal-name formation span does not clear `productive-diminutive`.
 5. **Curriculum research batch C:** Unit 23 elapsed time stays admitted on the Pressbooks duration span and does not clear completion over a period. Units 26–30 stay `NOT_PREPARED`. Unit 26 admits `indefinite-pronoun` and still lacks postal practice, letter writing, and correspondence work. Unit 28 admits only the stated present-versus-past verbal-adverb relationship. Unit 29 admits `participle-punctuation` and still lacks a general bookish-register claim and a bookish reading. Unit 30 `dictionary-use` stays unresolved.
-6. **Curriculum research batch D:** Unit 24 `negation-scope` stays unresolved. The frozen word-order pair is bounded sentence recognition and does not clear that claim. Units 7, 17, 23, and 24 stay `NOT_PREPARED`. Unit 25 is `CONTENT_COMPLETE_REVIEW_PENDING`. Unit 7 has no admitted adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 23 completion over a period stays unresolved.
+6. **Curriculum research batch D:** Unit 24 `negation-scope` stays unresolved. The frozen word-order pair is bounded sentence recognition and does not clear that claim. Units 7, 17, 23, 24, and 25 stay `NOT_PREPARED`. Unit 7 has no admitted adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 23 completion over a period stays unresolved. Unit 25 `productive-diminutive` stays unresolved.
 7. Keep Unit 23's unsigned packet bound to the instructional chain. Do not sign it in this dossier. Do not delete the completion-over-period mapping scope to clear readiness.
 8. Activate, reject, or revise the Units 27/29/30 variance through a separate owner/reviewer decision.
 9. Obtain qualified linguistic review and owned-edition mapping signatures unit by unit.

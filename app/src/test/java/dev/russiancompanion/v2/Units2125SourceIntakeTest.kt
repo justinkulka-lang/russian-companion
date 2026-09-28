@@ -89,6 +89,7 @@ class Units2125SourceIntakeTest {
     private val gapObjectives = mapOf(
         23 to listOf("obj-u23-completion"),
         24 to listOf("obj-u24-placement"),
+        25 to listOf("obj-u25-productive-formation"),
     )
 
     @Test
@@ -100,7 +101,7 @@ class Units2125SourceIntakeTest {
             val facts = governedMappingFacts(number)
             val digest = mappingPackageDigest(facts)
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals(if (number in listOf(21, 22, 25)) "CONTENT_COMPLETE_REVIEW_PENDING" else "NOT_PREPARED", unit.readiness)
+            assertEquals(if (number in listOf(21, 22)) "CONTENT_COMPLETE_REVIEW_PENDING" else "NOT_PREPARED", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.mappingNote.contains(range))
@@ -322,8 +323,8 @@ class Units2125SourceIntakeTest {
         val contrast = pack.unit(24)!!.objectives.first { it.id == "obj-u24-word-order-contrast" }
         assertEquals("RECOGNITION", contrast.kind)
         assertTrue(contrast.checkItemIds.size >= 2)
-        assertTrue(reason(pack, 25).isBlank())
-        listOf(21, 22, 25).forEach { number ->
+        assertTrue(reason(pack, 25).contains("no admitted frozen span"))
+        listOf(21, 22).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,
@@ -337,7 +338,7 @@ class Units2125SourceIntakeTest {
             )
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
         }
-        listOf(23, 24).forEach { number ->
+        listOf(23, 24, 25).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,

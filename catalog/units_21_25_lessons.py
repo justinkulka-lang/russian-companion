@@ -613,7 +613,7 @@ def _unit_25(lesson) -> None:
                     (dismissive, f"The source assigns {dismissive} to Сашка.", f"{dismissive} does not classify the shown form."),
                 ],
                 source=LICHNOE_SOURCE,
-                feature="PRODUCTIVE_DIMINUTIVE",
+                feature="DIMINUTIVE_FORM_CLASSIFICATION",
                 why=f"The source says {full_base} and gives Марюня. The keyed phrase is {full_base}.",
                 response_kind=_shared_response_kind([full_base, short_base, dismissive]),
             ),
@@ -626,7 +626,7 @@ def _unit_25(lesson) -> None:
                     (dismissive, f"The source assigns {dismissive} to Сашка.", f"{dismissive} does not classify this shown form."),
                 ],
                 source=LICHNOE_SOURCE,
-                feature="PRODUCTIVE_DIMINUTIVE",
+                feature="DIMINUTIVE_FORM_CLASSIFICATION",
                 why=f"The source says {short_base} and gives Машенька. The keyed phrase is {short_base}.",
                 response_kind=_shared_response_kind([full_base, short_base, dismissive]),
             ),
@@ -639,7 +639,7 @@ def _unit_25(lesson) -> None:
                     (short_base, f"The source assigns {short_base} to Машенька.", f"{short_base} does not classify the shown form."),
                 ],
                 source=LICHNOE_SOURCE,
-                feature="PRODUCTIVE_DIMINUTIVE",
+                feature="DIMINUTIVE_FORM_CLASSIFICATION",
                 why=f"The source says these forms carry {dismissive} and gives Сашка. The keyed phrase is {dismissive}.",
                 response_kind=_shared_response_kind([full_base, short_base, dismissive]),
             ),
@@ -655,6 +655,6 @@ def _unit_25(lesson) -> None:
         lesson.capabilities = []
     lesson.capabilities.append({
         "objectiveId": "obj-u25-nickname-rule",
-        "supportedClaim": "productive-diminutive",
+        "supportedClaim": "diminutive-form-classification",
         "exactSpan": formation,
     })

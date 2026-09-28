@@ -856,6 +856,7 @@ internal object V2Validator {
             RequiredSourceCapability("obj-u24-placement", "negation-scope"),
         ),
         25 to listOf(
+            RequiredSourceCapability("obj-u25-nickname-rule", "diminutive-form-classification"),
             RequiredSourceCapability("obj-u25-nickname-rule", "productive-diminutive"),
             RequiredSourceCapability("obj-u25-address", "register"),
         ),
@@ -922,6 +923,11 @@ internal object V2Validator {
             }
             24 -> if ("negation-scope" in unresolved) {
                 listOf("Unit 24 is missing a negation-scope source capability")
+            } else {
+                emptyList()
+            }
+            25 -> if ("productive-diminutive" in unresolved) {
+                listOf("Unit 25 is missing a productive-diminutive source capability")
             } else {
                 emptyList()
             }
@@ -1137,6 +1143,11 @@ internal object V2Validator {
         }
         if (!capabilityHasCheckChain(pack, capability, spanHost)) {
             errors += "Source capability ${capability.id} has no reviewable instruction and check chain"
+        }
+        if (capability.supportedClaim == "productive-diminutive" &&
+            !hasProductiveDiminutiveApplication(pack, capability, spanHost)
+        ) {
+            errors += "Source capability ${capability.id} has no independent application check for productive-diminutive"
         }
         return errors
     }
@@ -1467,6 +1478,56 @@ internal object V2Validator {
                     it.objectiveId == capability.objectiveId
             }
             bound && item.assessment?.independent == true && structureValid(pack, item).isEmpty()
+        }
+    }
+
+    /**
+     * Classifying a listed source label is not an application of a base and
+     * suffix. A future productive chain needs an independent check that is
+     * bound to the span, names its answer in the feedback, and is not one of
+     * the bounded classification labels.
+     */
+    private fun hasProductiveDiminutiveApplication(
+        pack: V2CurriculumPack,
+        capability: V2SourceCapability,
+        spanHost: V2ProvenanceRecord,
+    ): Boolean {
+        val unit = pack.units.firstOrNull { it.number == capability.unitNumber } ?: return false
+        val objective = unit.objectives.firstOrNull { it.id == capability.objectiveId } ?: return false
+        if (objective.kind != "RECOGNITION" ||
+            objective.instructionStepIds.isEmpty() ||
+            objective.exampleIds.size < 2 ||
+            objective.practiceStepIds.isEmpty() ||
+            objective.checkItemIds.isEmpty() ||
+            objective.remediationStepIds.isEmpty()
+        ) {
+            return false
+        }
+        return objective.checkItemIds.mapNotNull { pack.item(it) }.any { item ->
+            val assessment = item.assessment ?: return@any false
+            if (!assessment.independent || item.feedback.isBlank()) return@any false
+            if (!item.feedback.contains(item.answer)) return@any false
+            if (!assessment.whyAnswerDemonstratesObjective.contains(item.answer)) return@any false
+            if (item.prompt.contains("classifies", ignoreCase = true)) return@any false
+            if (assessment.testedFeature == "DIMINUTIVE_FORM_CLASSIFICATION") return@any false
+            if (BatchBSources.diminutiveClassificationLabel(item.answer)) return@any false
+            if (!capability.exactSpan.contains(item.answer)) return@any false
+            val distractorInSpan = item.options.any { option ->
+                option != item.answer && capability.exactSpan.contains(option)
+            }
+            if (!distractorInSpan) return@any false
+            val participants = assessment.relationParticipantIds.mapNotNull { id ->
+                pack.provenanceRecords.firstOrNull { it.itemId == id }
+            }
+            val bound = participants.any {
+                it.sourceId == spanHost.sourceId &&
+                    it.sourceRevision == spanHost.sourceRevision &&
+                    it.sourceRecordId == spanHost.sourceRecordId &&
+                    it.sourceHash == spanHost.sourceHash &&
+                    it.originalSourceText == capability.exactSpan &&
+                    it.objectiveId == capability.objectiveId
+            }
+            bound && structureValid(pack, item).isEmpty()
         }
     }
 
@@ -1939,6 +2000,7 @@ internal object V2Validator {
             "completion-over-period" -> BatchBSources.ADMITTED_COMPLETION_OVER_PERIOD
             "negation-scope" -> BatchBSources.ADMITTED_NEGATION_SCOPE
             "productive-diminutive" -> BatchBSources.ADMITTED_PRODUCTIVE_DIMINUTIVE
+            "diminutive-form-classification" -> BatchBSources.ADMITTED_DIMINUTIVE_FORM_CLASSIFICATION
             else -> return emptyList()
         }
         val admittedRecord = if (claim == "negation-scope") {
