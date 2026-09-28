@@ -47,23 +47,39 @@ def _pair(shown: str, answer: str) -> str:
     )
 
 
-def _gloss(shown, answer, wrongs, feature, source):
-    why = _pair(shown, answer)
+def _competing(option: str, form: str, gloss: str, limitation: str) -> tuple[str, str, str]:
+    """Cite the competing form's real source gloss, then say why it is not the keyed pair."""
+    if form == gloss:
+        raise SystemExit(f"Refusing a self-pair rationale for {form!r}")
+    rationale = f'{_pair(form, gloss)[:-1]}. {limitation}'
+    if option not in rationale or gloss not in rationale:
+        raise SystemExit(f"Competing rationale omits {option!r} / {gloss!r}")
+    return (option, rationale, rationale)
+
+
+def _application(prompt, shown, answer, wrongs, feature, why, source):
+    if shown not in why or answer not in why:
+        raise SystemExit(f"Explanation does not name {shown!r} -> {answer!r}")
     labeled = []
-    for text in wrongs:
-        rationale = _pair(text, text)
-        if answer in rationale and answer not in text:
+    for text, rationale, difference in wrongs:
+        if text == rationale or _pair(text, text) in rationale:
+            raise SystemExit(f"Distractor rationale is a self-pair: {rationale}")
+        if answer not in text and answer in rationale:
             raise SystemExit(f"Distractor rationale names the keyed answer: {rationale}")
-        labeled.append((text, rationale, rationale))
+        if text not in why or text in shown:
+            pass
+        if text in why and text not in answer:
+            raise SystemExit(f"Explanation names competing option {text!r}")
+        labeled.append((text, rationale, difference))
     return _check(
-        MEANING_PROMPT,
+        prompt,
         shown,
         answer,
         labeled,
         source=source,
         feature=feature,
         why=why,
-        response_kind=_shared_response_kind([answer, *wrongs]),
+        response_kind=_shared_response_kind([answer, *[text for text, _rationale, _difference in labeled]]),
         frozen_quote=True,
     )
 
@@ -79,36 +95,80 @@ def _frame(lesson) -> None:
 
 def add_clock_productive(lesson) -> None:
     _frame(lesson)
+    lesson.builder.say(lesson.number, "The shown rule is")
+    lesson.builder.say(lesson.number, "That states the minutes into the hour in progress.")
+    lesson.builder.say(lesson.number, "That says how many minutes remain after the half hour.")
+    lesson.builder.say(lesson.number, "That reads the numbers off the dial.")
+    into_rule = "In Russian we can state the number of minutes into the hour which is in progress."
+    remain_rule = "This is used after the half hour."
+    direct_rule = "This option is always available."
+    into = "в пятнадцать минут второго"
+    into_en = "at the fifteenth minute of the second [hour]"
+    into_direct = "в час пятнадцать минут"
+    into_direct_en = "at [one] hour fifteen minutes"
+    remain = "без двадцати пяти два"
+    remain_en = "lacking twenty five minutes to the two"
+    remain_direct = "в час тридцать пять минут"
+    remain_direct_en = "at [one] hour thirty five minutes"
     direct = "в двенадцать часов десять минут"
     direct_en = "at twelve hours ten minutes"
-    into = "в десять минут первого"
-    into_en = "at ten minutes of the first"
-    begin = "в начале первого часа"
-    begin_en = "at the beginning of the first hour"
-    system = "This makes sense up to the half hour."
-    minutes = "minutes into the hour"
-    remain = "minutes remain until the little hand"
+    direct_into = "в десять минут первого"
+    direct_into_en = "at ten minutes of the first"
+    for text in (
+        into_rule, remain_rule, direct_rule, into, into_en, into_direct, into_direct_en,
+        remain, remain_en, remain_direct, remain_direct_en, direct, direct_en, direct_into, direct_into_en,
+    ):
+        if text not in CLOCK_SPAN:
+            raise SystemExit(f"Clock application text is outside the extracted span: {text}")
     lesson.objective(
         "clock-productive",
-        "Choose the admitted clock meaning for the shown system",
+        "Apply the admitted clock construction",
         "CONTRAST_SELECTION",
-        ("grammar20", CLOCK_SPAN, "In Russian we can state the number of minutes into the hour which is in progress."),
+        ("grammar20", CLOCK_SPAN, into_rule),
         [
-            _wiki_row("grammar20", CLOCK_SPAN, direct, direct_en),
             _wiki_row("grammar20", CLOCK_SPAN, into, into_en),
-            _wiki_row("grammar20", CLOCK_SPAN, begin, begin_en),
+            _wiki_row("grammar20", CLOCK_SPAN, remain, remain_en),
+            _wiki_row("grammar20", CLOCK_SPAN, direct, direct_en),
         ],
         [
-            _gloss(direct, direct_en, [into_en, begin_en], "CLOCK_DIRECT_READING", CLOCK_SOURCE),
-            _gloss(into, into_en, [direct_en, begin_en], "CLOCK_MINUTES_OF_HOUR", CLOCK_SOURCE),
-            _gloss(system, minutes, [remain, begin_en], "CLOCK_MINUTES_INTO_HOUR", CLOCK_SOURCE),
+            _application(
+                "Which admitted expression states the minutes into the hour in progress?",
+                into_rule,
+                into,
+                [_competing(into_direct, into_direct, into_direct_en, "That reads the numbers off the dial.")],
+                "CLOCK_MINUTES_INTO_HOUR",
+                f'{_pair(into, into_en)[:-1]}. The shown rule is "{into_rule}" That states the minutes into the hour in progress.',
+                CLOCK_SOURCE,
+            ),
+            _application(
+                "Which admitted expression states the minutes that remain after the half hour?",
+                remain_rule,
+                remain,
+                [_competing(remain_direct, remain_direct, remain_direct_en, "That reads the numbers off the dial.")],
+                "CLOCK_MINUTES_REMAINING",
+                f'{_pair(remain, remain_en)[:-1]}. The shown rule is "{remain_rule}" That says how many minutes remain after the half hour.',
+                CLOCK_SOURCE,
+            ),
+            _application(
+                "Which admitted expression reads the numbers off the dial?",
+                direct_rule,
+                direct,
+                [_competing(direct_into, direct_into, direct_into_en, "That states the minutes into the hour in progress.")],
+                "CLOCK_DIRECT_READING",
+                f'{_pair(direct, direct_en)[:-1]}. The shown rule is "{direct_rule}" That reads the numbers off the dial.',
+                CLOCK_SOURCE,
+            ),
         ],
         extra=[
-            ("grammar20", CLOCK_SPAN, "We can read off the numbers shown on the dial.", "label"),
-            ("grammar20", CLOCK_SPAN, "We can say how many minutes remain until the little hand passes the next number on the dial.", "label"),
-            ("grammar20", CLOCK_SPAN, system, "label"),
-            ("grammar20", CLOCK_SPAN, minutes, "label"),
-            ("grammar20", CLOCK_SPAN, remain, "label"),
+            ("grammar20", CLOCK_SPAN, into_rule, "label"),
+            ("grammar20", CLOCK_SPAN, remain_rule, "label"),
+            ("grammar20", CLOCK_SPAN, direct_rule, "label"),
+            ("grammar20", CLOCK_SPAN, into_direct, "example"),
+            ("grammar20", CLOCK_SPAN, into_direct_en, "label"),
+            ("grammar20", CLOCK_SPAN, remain_direct, "example"),
+            ("grammar20", CLOCK_SPAN, remain_direct_en, "label"),
+            ("grammar20", CLOCK_SPAN, direct_into, "example"),
+            ("grammar20", CLOCK_SPAN, direct_into_en, "label"),
         ],
     )
     from units_16_20_batch_a import _bind
@@ -120,6 +180,9 @@ def add_clock_productive(lesson) -> None:
 
 def add_negation_scope(lesson) -> None:
     _frame(lesson)
+    lesson.builder.say(lesson.number, "Moving the modifier in front of a different word produces that meaning.")
+    lesson.builder.say(lesson.number, "That placement negates the following word.")
+    lesson.builder.say(lesson.number, "That parenthetical belongs to the other placement.")
     first = "Мне не холодно."
     first_en = "To me it is not cold."
     second = "Не мне холодно."
@@ -134,9 +197,33 @@ def add_negation_scope(lesson) -> None:
             _wiki_row("langgen3", NEGATION_SPAN, second, second_en),
         ],
         [
-            _gloss(first, first_en, [second_en], "NEGATION_FOLLOWING_WORD", NEGATION_SOURCE),
-            _gloss(second, second_en, [first_en], "NEGATION_SCOPE_CONTRAST", NEGATION_SOURCE),
-            _gloss(second, second_en, ["I am not cold."], "NEGATION_SCOPE_NOT_COLD", NEGATION_SOURCE),
+            _application(
+                MEANING_PROMPT,
+                first,
+                first_en,
+                [_competing(second_en, second, second_en, "Moving the modifier in front of a different word produces that meaning.")],
+                "NEGATION_FOLLOWING_WORD",
+                _pair(first, first_en),
+                NEGATION_SOURCE,
+            ),
+            _application(
+                MEANING_PROMPT,
+                second,
+                second_en,
+                [_competing(first_en, first, first_en, "That placement negates the following word.")],
+                "NEGATION_SCOPE_CONTRAST",
+                _pair(second, second_en),
+                NEGATION_SOURCE,
+            ),
+            _application(
+                MEANING_PROMPT,
+                second,
+                second_en,
+                [_competing("I am not cold.", first, "I am not cold.", "That parenthetical belongs to the other placement.")],
+                "NEGATION_SCOPE_NOT_COLD",
+                _pair(second, second_en),
+                NEGATION_SOURCE,
+            ),
         ],
         extra=[
             ("langgen3", NEGATION_SPAN, "If you were to move it in front of a different word, you would produce a different meaning.", "label"),
@@ -156,88 +243,8 @@ def add_negation_scope(lesson) -> None:
 
 
 def add_productive_diminutive(lesson) -> None:
-    from units_21_25_lessons import LICHNOE_SOURCE, _span
-
-    formation = _span(
-        "lichnoe-imya",
-        "В словообразовании уменьшительных и ласкательных форм имён участвуют",
-        "считаются стилистически приниженными",
-    )
-    base = "Маша"
-    short = "Машенька"
-    full = "Марюня"
-    dismissive = "Сашка"
-    full_name = "Мария"
-    limitation = "Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения"
-    for text in (base, short, full, dismissive, full_name, limitation):
-        if text not in formation:
-            raise SystemExit(f"Diminutive chain text is outside the frozen span: {text}")
-    prompt = "Which admitted short form applies the shown base?"
-    lesson.objective(
-        "productive-formation",
-        "Apply the admitted short-form pattern to the shown base",
-        "CONTRAST_SELECTION",
-        ("lichnoe-imya", formation, limitation),
-        [
-            _wiki_row("lichnoe-imya", formation, base, short),
-            _wiki_row("lichnoe-imya", formation, full_name, full),
-        ],
-        [
-            _check(
-                prompt,
-                base,
-                short,
-                [
-                    (full, f"The source forms {full} from {full_name}.", f"{full} comes from the full form, not from {base}."),
-                    (dismissive, f"The source gives {dismissive} with the dismissive suffix.", f"{dismissive} is the dismissive suffix example, not the short form of {base}."),
-                ],
-                source=LICHNOE_SOURCE,
-                feature="DIMINUTIVE_SHORT_FORM_APPLICATION",
-                why=f"The source shows {short}, \u041c\u0430\u0448\u0443\u043b\u044f as the short-form pair from {base}.",
-                response_kind=_shared_response_kind([short, full, dismissive]),
-            ),
-            _check(
-                prompt,
-                base,
-                short,
-                [
-                    (full, f"The source forms {full} from {full_name}.", f"{full} is not the short form named for {base}."),
-                    (dismissive, f"The source gives {dismissive} with the dismissive suffix.", f"{dismissive} carries the dismissive suffix, unlike {short}."),
-                ],
-                source=LICHNOE_SOURCE,
-                feature="DIMINUTIVE_SHORT_FORM_APPLICATION",
-                why=f"The source shows {short}, \u041c\u0430\u0448\u0443\u043b\u044f as the short-form pair from {base}.",
-                response_kind=_shared_response_kind([short, full, dismissive]),
-            ),
-            _check(
-                prompt,
-                full_name,
-                full,
-                [
-                    (short, f"The source shows the short-form arrow from {base} to {short}.", f"{short} applies to {base}, not to {full_name}."),
-                    (dismissive, f"The source gives {dismissive} with the dismissive suffix.", f"{dismissive} is not the full-form example {full}."),
-                ],
-                source=LICHNOE_SOURCE,
-                feature="DIMINUTIVE_FULL_FORM_APPLICATION",
-                why=f"The source lists {full}, \u041c\u0430\u0440\u0443\u043d\u044f from the full form {full_name}.",
-                response_kind=_shared_response_kind([full, short, dismissive]),
-            ),
-        ],
-        extra=[
-            ("lichnoe-imya", formation, dismissive, "example"),
-            ("lichnoe-imya", formation, "\u041c\u0430\u0448\u0435\u043d\u044c\u043a\u0430, \u041c\u0430\u0448\u0443\u043b\u044f", "example"),
-            ("lichnoe-imya", formation, "\u041c\u0430\u0440\u044e\u043d\u044f, \u041c\u0430\u0440\u0443\u043d\u044f", "example"),
-            ("lichnoe-imya", formation, "\u0412\u0430\u0441\u044c\u043a\u0430, \u041c\u0430\u0440\u0438\u043d\u043a\u0430, \u0410\u043b\u043a\u0430", "label"),
-            ("lichnoe-imya", formation, limitation, "instruction"),
-        ],
-    )
-    if not hasattr(lesson, "capabilities"):
-        lesson.capabilities = []
-    lesson.capabilities.append({
-        "objectiveId": "obj-u25-productive-formation",
-        "supportedClaim": "productive-diminutive",
-        "exactSpan": formation,
-    })
+    """Listed name pairs do not apply a formation rule. The claim stays unresolved."""
+    del lesson
 
 
 def _visible_piece(span: str, start: str, end: str) -> str:
@@ -254,16 +261,26 @@ def add_letter_writing(lesson) -> None:
     greetings = "Greetings"
     respected = "Уважаемый Иван Иванович"
     respected_en = "Respected Ivan Ivanovich"
+    english_order = "In English we begin with a topic sentence and then follow with supporting facts."
+    russian_order = "In Russian the facts come first with the topic sentence as the conclusion."
+    dear_limit = "Strangers and people who are not closed friends should never be addressed as “dear”."
+    body = "Body"
+    closing = "Closing and signature"
+    greeting_element = "Greeting"
+    sender = "Sender’s address and date"
     structure = _visible_piece(LETTER_SPAN, "They have the same basic elements:", "Closing and signature")
-    limit = _visible_piece(
-        LETTER_SPAN,
-        "Strangers and people who are not closed friends",
-        "“dear”.",
-    )
-    prompt = "Which admitted English greeting label matches the shown greeting?"
+    for text in (greeting, greetings, respected, respected_en, english_order, russian_order, dear_limit, body, closing, greeting_element, sender):
+        if text not in html_visible(LETTER_SPAN):
+            raise SystemExit(f"Letter convention text is outside the visible span: {text}")
+    lesson.builder.say(lesson.number, "The source states")
+    lesson.builder.say(lesson.number, "The source names")
+    lesson.builder.say(lesson.number, "The shown greeting is")
+    lesson.builder.say(lesson.number, "That is the address limit, not the organizational difference.")
+    lesson.builder.say(lesson.number, "That is the organizational difference, not the address limit.")
+    lesson.builder.say(lesson.number, "That element does not follow the body.")
     lesson.objective(
         "letter-writing",
-        "Choose the admitted neutral greeting for the shown letter line",
+        "Apply the admitted letter convention",
         "CONTRAST_SELECTION",
         ("letter", LETTER_SPAN, structure),
         [
@@ -271,40 +288,46 @@ def add_letter_writing(lesson) -> None:
             _wiki_row("letter", LETTER_SPAN, respected, respected_en),
         ],
         [
-            _check(
-                prompt,
-                greeting,
-                greetings,
-                [(respected_en, f"The source glosses the respected-name line as {respected_en}.", f"{respected_en} names the respected line, not the greeting {greeting}")],
-                source=LETTER_SOURCE,
-                feature="LETTER_GREETING",
-                why=f"The source pairs {greeting} with {greetings}. Strangers and people who are not closed friends should never be addressed as dear.",
-                response_kind=_shared_response_kind([greetings, respected_en]),
+            _application(
+                "Which admitted English statement is the Russian organizational difference?",
+                english_order,
+                russian_order,
+                [(dear_limit, f"The source states {dear_limit} That is the address limit, not the organizational difference.", f"The source states {dear_limit} That is the address limit, not the organizational difference.")],
+                "LETTER_ORGANIZATION",
+                f"The source states {english_order} {russian_order}",
+                LETTER_SOURCE,
             ),
-            _check(
-                prompt,
-                respected,
-                respected_en,
-                [(greetings, f"The source pairs {greeting} with {greetings}.", f"{greetings} is the neutral greeting, not the respected-name line.")],
-                source=LETTER_SOURCE,
-                feature="LETTER_RESPECTED_NAME",
-                why=f"The source pairs {respected} with {respected_en}.",
-                response_kind=_shared_response_kind([respected_en, greetings]),
-            ),
-            _check(
-                prompt,
+            _application(
+                "Which admitted English limit applies to the shown neutral greeting?",
                 greeting,
-                greetings,
-                [("Closing and signature", "The source names Closing and signature as a separate letter element.", "Closing and signature is a letter element, not the greeting meaning.")],
-                source=LETTER_SOURCE,
-                feature="LETTER_GREETING_NOT_CLOSING",
-                why=f"The source pairs {greeting} with {greetings}. They have the same basic elements.",
-                response_kind=_shared_response_kind([greetings, "Closing and signature"]),
+                dear_limit,
+                [(russian_order, f"The source states {russian_order} That is the organizational difference, not the address limit.", f"The source states {russian_order} That is the organizational difference, not the address limit.")],
+                "LETTER_ADDRESS_LIMIT",
+                f"The source states {dear_limit} The shown greeting is {greeting}",
+                LETTER_SOURCE,
+            ),
+            _application(
+                "Which admitted English element follows the body?",
+                body,
+                closing,
+                [
+                    (greeting_element, f"The source names {greeting_element}. That element does not follow the body.", f"The source names {greeting_element}. That element does not follow the body."),
+                    (sender, f"The source names {sender}. That element does not follow the body.", f"The source names {sender}. That element does not follow the body."),
+                ],
+                "LETTER_STRUCTURE",
+                f"The source names {body}. The source names {closing}. They have the same basic elements:",
+                LETTER_SOURCE,
             ),
         ],
         extra=[
-            ("letter", LETTER_SPAN, limit, "instruction"),
-            ("letter", LETTER_SPAN, "Closing and signature", "label"),
+            ("letter", LETTER_SPAN, english_order, "label"),
+            ("letter", LETTER_SPAN, russian_order, "label"),
+            ("letter", LETTER_SPAN, dear_limit, "instruction"),
+            ("letter", LETTER_SPAN, body, "label"),
+            ("letter", LETTER_SPAN, closing, "label"),
+            ("letter", LETTER_SPAN, greeting_element, "label"),
+            ("letter", LETTER_SPAN, sender, "label"),
+            ("letter", LETTER_SPAN, "They have the same basic elements:", "label"),
         ],
     )
     from units_26_30_lessons import _bind
@@ -368,76 +391,25 @@ def add_correspondence(lesson) -> None:
 
 
 def add_participle_stress(lesson) -> None:
+    """Keep the four stressed headwords as reference. Headword-versus-infinitive selection does not test stress."""
     forms = (
-        ("ostavlyaemyj", "оставля́емый", "оставля́ть", "present passive participle"),
-        ("obsuzhdaemyj", "обсужда́емый", "обсужда́ть", "present passive participle"),
-        ("napisannyj", "напи́санный", "написа́ть", "past passive participle"),
-        ("prochitannyj", "прочи́танный", "прочита́ть", "past passive participle"),
+        ("ostavlyaemyj", "оставля́емый", "present passive participle"),
+        ("obsuzhdaemyj", "обсужда́емый", "present passive participle"),
+        ("napisannyj", "напи́санный", "past passive participle"),
+        ("prochitannyj", "прочи́танный", "past passive participle"),
     )
-    examples = []
-    for page, form, verb, label in forms:
+    objective = "obj-u27-stress-reference"
+    example_ids = []
+    for index, (page, form, label) in enumerate(forms):
         span = PARTICIPLE_SPANS[page]
-        for text in (form, verb, label):
-            if text not in span:
-                raise SystemExit(f"{page} is missing {text}")
-        examples.append(_wiki_row(page, span, form, label))
-    host_page, host_form, host_verb, host_label = forms[0]
-    host_span = PARTICIPLE_SPANS[host_page]
-    past_page, past_form, past_verb, past_label = forms[2]
-    past_span = PARTICIPLE_SPANS[past_page]
-    prompt = "Which admitted stressed form matches the shown participle label?"
-    third_page, third_form, third_verb, third_label = forms[1]
-    third_span = PARTICIPLE_SPANS[third_page]
-    lesson.objective(
-        "stress",
-        "Recognize the admitted stressed participle form",
-        "CONTRAST_SELECTION",
-        (host_page, host_span, host_label),
-        examples,
-        [
-            _check(
-                prompt,
-                host_label,
-                host_form,
-                [(host_verb, f"The entry names {host_verb} inside the participle template.", f"{host_verb} is not the head form.")],
-                source=PARTICIPLE_SOURCES[host_page],
-                feature="PARTICIPLE_STRESSED_HEAD",
-                why=f"The entry head {host_form} is the {host_label}.",
-                response_kind=_shared_response_kind([host_form, host_verb]),
-            ),
-            _check(
-                prompt,
-                host_label,
-                host_form,
-                [(host_verb, f"The entry names {host_verb} inside the participle template.", f"{host_verb} is inside the template, not the head form.")],
-                source=PARTICIPLE_SOURCES[host_page],
-                feature="PARTICIPLE_STRESSED_FORM",
-                why=f"The entry head {host_form} is the {host_label}.",
-                response_kind=_shared_response_kind([host_form, host_verb]),
-            ),
-            _check(
-                prompt,
-                past_label,
-                past_form,
-                [(past_verb, f"The entry names {past_verb} inside the participle template.", f"{past_verb} is not the head form.")],
-                source=PARTICIPLE_SOURCES[past_page],
-                feature="PARTICIPLE_PAST_STRESSED_FORM",
-                why=f"The entry head {past_form} is the {past_label}.",
-                response_kind=_shared_response_kind([past_form, past_verb]),
-            ),
-        ],
-        extra=[
-            (host_page, host_span, host_verb, "example"),
-            (past_page, past_span, past_verb, "example"),
-            (third_page, third_span, third_form, "example"),
-            (third_page, third_span, third_verb, "example"),
-            ("prochitannyj", PARTICIPLE_SPANS["prochitannyj"], "прочи́танный", "example"),
-            ("prochitannyj", PARTICIPLE_SPANS["prochitannyj"], "прочита́ть", "example"),
-        ],
-    )
-    from units_26_30_lessons import _bind
-
-    _bind(lesson, "obj-u27-stress", "participle-stress", host_page, host_span)
+        if form not in span or label not in span:
+            raise SystemExit(f"{page} is missing the stressed headword")
+        example_id = f"ex-u27-stress-ref-{index}"
+        lesson.builder.wiki(f"prov-{example_id}-ru", lesson.number, objective, page, span, form, record_type="example")
+        lesson.builder.wiki(f"prov-{example_id}-en", lesson.number, objective, page, span, label, record_type="meaning")
+        lesson.builder.example(example_id, form, label, objective)
+        example_ids.append(example_id)
+    lesson.stress_reference = example_ids
     for form in STRESSED_FORMS:
         if form not in " ".join(PARTICIPLE_SPANS.values()):
             raise SystemExit(f"Missing stressed form {form}")
@@ -648,5 +620,4 @@ def add_late(lesson, number: int) -> None:
     elif number == 28:
         add_verbal_adverb_reading(lesson)
     elif number == 30:
-        add_dictionary_use(lesson)
         add_capstone_reading(lesson)

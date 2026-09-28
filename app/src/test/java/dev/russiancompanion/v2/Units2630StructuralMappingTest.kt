@@ -54,8 +54,9 @@ class Units2630StructuralMappingTest {
 
     private val liveGap = mapOf(
         26 to "Unit 26 is not content-complete without admitted postal-address source capabilities",
-        27 to "Unit 27 is not content-complete without admitted participle-comprehension source capabilities",
+        27 to "Unit 27 is not content-complete without admitted participle-stress and participle-comprehension source capabilities",
         29 to "Unit 29 is not content-complete without admitted bookish-register and bookish-reading source capabilities",
+        30 to "Unit 30 is not content-complete without admitted dictionary-use source capabilities",
     )
 
     private val keywordBlob = (
@@ -241,9 +242,6 @@ class Units2630StructuralMappingTest {
             val errors = V2Validator.validate(claimed).errors
             if (number in liveGap) {
                 assertTrue(errors.joinToString("\n"), errors.any { it == liveGap.getValue(number) })
-            } else if (number == 30) {
-                assertTrue(errors.joinToString("\n"), errors.any { it == "Unit 30 is blocked by an unresolved authority variance" })
-                assertFalse(errors.any { it.contains("not content-complete without admitted") })
             } else {
                 assertFalse(errors.joinToString("\n"), errors.any { it.contains("verbal-adverb-reading") || it.contains("not content-complete") })
             }
@@ -301,9 +299,6 @@ class Units2630StructuralMappingTest {
             assertTrue(rangedErrors.joinToString("\n"), rangedErrors.any { it.contains("structural page range is not linguistic evidence") })
             if (number == 28) {
                 assertTrue(rangedDecision.remaining.joinToString("\n"), rangedDecision.allowed)
-            } else if (number == 30) {
-                assertFalse(rangedDecision.allowed)
-                assertFalse(rangedDecision.remaining.any { it.contains("not content-complete") })
             } else {
                 assertFalse(rangedDecision.allowed)
                 assertTrue(rangedDecision.remaining.joinToString("\n"), rangedDecision.remaining.any { it == liveGap.getValue(number) })

@@ -34,6 +34,7 @@ internal object V2Validator {
         validateLateUnitRussian(pack, errors)
         validateAuthoredEnglish(pack, errors)
         validateLearnerFacingMarkup(pack, errors)
+        validateGovernedReadyRussianText(pack, errors)
         validateReview(pack, errors)
         validateUnitReviews(pack, errors)
         validateSourcesAndRights(pack, errors)
@@ -1159,6 +1160,35 @@ internal object V2Validator {
         ) {
             errors += "Source capability ${capability.id} has no independent application check for productive-diminutive"
         }
+        if (capability.supportedClaim == "productive-diminutive" &&
+            exactPairMemorization(pack, capability)
+        ) {
+            errors += "Source capability ${capability.id} exact-pair memorization does not clear productive-diminutive"
+        }
+        if (capability.supportedClaim == "productive-clock-time" &&
+            !hasProductiveClockApplication(pack, capability, spanHost)
+        ) {
+            val objective = pack.units.firstOrNull { it.number == capability.unitNumber }
+                ?.objectives?.firstOrNull { it.id == capability.objectiveId }
+            errors += "Source capability ${capability.id} exact-pair memorization does not clear productive-clock-time"
+        }
+        if (capability.supportedClaim == "letter-writing" &&
+            !hasLetterConventionApplication(pack, capability, spanHost)
+        ) {
+            val objective = pack.units.firstOrNull { it.number == capability.unitNumber }
+                ?.objectives?.firstOrNull { it.id == capability.objectiveId }
+            errors += "Source capability ${capability.id} greeting recognition does not clear letter-writing"
+        }
+        if (capability.supportedClaim == "participle-stress" &&
+            !hasParticipleStressDistinction(pack, capability, spanHost)
+        ) {
+            errors += "Source capability ${capability.id} headword-versus-infinitive selection does not clear participle-stress"
+        }
+        if (capability.supportedClaim == "dictionary-use" &&
+            !hasPracticalDictionaryUse(pack, capability, spanHost)
+        ) {
+            errors += "Source capability ${capability.id} field-label recall does not clear dictionary-use"
+        }
         if (capability.supportedClaim == "participle-stress" && capability.exactSpan == RemainingSources.PARTICIPLE_HOST_SPAN) {
             val joined = pack.provenanceRecords
                 .filter { it.objectiveId == capability.objectiveId && it.unitNumber == capability.unitNumber }
@@ -1642,6 +1672,134 @@ internal object V2Validator {
         }
     }
 
+    private val CLOCK_APPLICATION_FEATURES = setOf(
+        "CLOCK_MINUTES_INTO_HOUR",
+        "CLOCK_MINUTES_REMAINING",
+        "CLOCK_DIRECT_READING",
+    )
+
+    private val LETTER_APPLICATION_FEATURES = setOf(
+        "LETTER_ORGANIZATION",
+        "LETTER_ADDRESS_LIMIT",
+        "LETTER_STRUCTURE",
+    )
+
+    /**
+     * Listed-pair selection is not formation. Classification labels stay out of
+     * this predicate so a relabeled classification chain keeps its own errors.
+     */
+    private fun exactPairMemorization(pack: V2CurriculumPack, capability: V2SourceCapability): Boolean {
+        val objective = pack.units.firstOrNull { it.number == capability.unitNumber }
+            ?.objectives?.firstOrNull { it.id == capability.objectiveId }
+            ?: return false
+        return objective.checkItemIds.mapNotNull { pack.item(it) }.any { item ->
+            val feature = item.assessment?.testedFeature.orEmpty()
+            val relation = item.assessment?.relationKind.orEmpty()
+            feature != "DIMINUTIVE_FORM_CLASSIFICATION" &&
+                (relation == "EXPLICIT_SOURCE_PAIR" || relation == "SOURCE_SUPPLIED_PAIR")
+        }
+    }
+
+    private fun applicationChecks(
+        pack: V2CurriculumPack,
+        capability: V2SourceCapability,
+        spanHost: V2ProvenanceRecord,
+        independentOnly: Boolean = true,
+    ): List<V2CheckItem> {
+        val unit = pack.units.firstOrNull { it.number == capability.unitNumber } ?: return emptyList()
+        val objective = unit.objectives.firstOrNull { it.id == capability.objectiveId } ?: return emptyList()
+        val ids = objective.checkItemIds.toMutableList()
+        if (!independentOnly) {
+            unit.sessions.flatMap { it.steps }
+                .filter { it.id in objective.practiceStepIds }
+                .forEach { step -> ids += step.itemIds }
+        }
+        return ids.distinct().mapNotNull { pack.item(it) }.filter { item ->
+            val assessment = item.assessment ?: return@filter false
+            if ((independentOnly && !assessment.independent) || structureValid(pack, item).isNotEmpty()) return@filter false
+            val participants = assessment.relationParticipantIds.mapNotNull { id ->
+                pack.provenanceRecords.firstOrNull { it.itemId == id }
+            }
+            participants.any {
+                it.sourceId == spanHost.sourceId &&
+                    it.sourceRevision == spanHost.sourceRevision &&
+                    it.sourceRecordId == spanHost.sourceRecordId &&
+                    it.sourceHash == spanHost.sourceHash &&
+                    it.originalSourceText == capability.exactSpan &&
+                    it.objectiveId == capability.objectiveId
+            }
+        }
+    }
+
+    private fun hasProductiveClockApplication(
+        pack: V2CurriculumPack,
+        capability: V2SourceCapability,
+        spanHost: V2ProvenanceRecord,
+    ): Boolean {
+        val checks = applicationChecks(pack, capability, spanHost, independentOnly = false)
+        val features = checks.map { it.assessment?.testedFeature }.toSet()
+        val independent = checks.filter { it.assessment?.independent == true }
+        return CLOCK_APPLICATION_FEATURES.all { it in features } &&
+            independent.count { it.assessment?.testedFeature in CLOCK_APPLICATION_FEATURES } >= 2 &&
+            checks.filter { it.assessment?.testedFeature in CLOCK_APPLICATION_FEATURES }
+                .all { it.assessment?.relationKind == "STATED_APPLICATION" }
+    }
+
+    private fun hasLetterConventionApplication(
+        pack: V2CurriculumPack,
+        capability: V2SourceCapability,
+        spanHost: V2ProvenanceRecord,
+    ): Boolean {
+        val checks = applicationChecks(pack, capability, spanHost, independentOnly = false)
+        val features = checks.map { it.assessment?.testedFeature }.toSet()
+        val independent = checks.filter { it.assessment?.independent == true }
+        return LETTER_APPLICATION_FEATURES.all { it in features } &&
+            independent.count { it.assessment?.testedFeature in LETTER_APPLICATION_FEATURES } >= 2 &&
+            checks.filter { it.assessment?.testedFeature in LETTER_APPLICATION_FEATURES }
+                .all { it.assessment?.relationKind == "STATED_APPLICATION" }
+    }
+
+    /**
+     * Stress is a placement contrast on one form. Choosing the headword instead
+     * of its infinitive can be answered from category alone.
+     */
+    private fun hasParticipleStressDistinction(
+        pack: V2CurriculumPack,
+        capability: V2SourceCapability,
+        spanHost: V2ProvenanceRecord,
+    ): Boolean {
+        return applicationChecks(pack, capability, spanHost).any { item ->
+            val stressed = item.options.filter { option ->
+                option.any { it == '\u0301' } && capability.exactSpan.contains(option)
+            }
+            stressed.size >= 2 &&
+                stressed.map { foldGoverned(it) }.toSet().size == 1 &&
+                item.answer in stressed
+        }
+    }
+
+    private val DICTIONARY_FIELD_LABEL = Regex(
+        "(?i)\\b(?:headwords?|declensions?|definitions?|pronunciations?|conjugations?|field|fields|section|sections)\\b",
+    )
+
+    /**
+     * Practical dictionary use looks up a retained entry. Asking which field
+     * label holds a shown form is source layout.
+     */
+    private fun hasPracticalDictionaryUse(
+        pack: V2CurriculumPack,
+        capability: V2SourceCapability,
+        spanHost: V2ProvenanceRecord,
+    ): Boolean {
+        return applicationChecks(pack, capability, spanHost).any { item ->
+            val feature = item.assessment?.testedFeature.orEmpty()
+            item.assessment?.relationKind == "STATED_APPLICATION" &&
+                feature.startsWith("DICTIONARY_LOOKUP") &&
+                !DICTIONARY_FIELD_LABEL.containsMatchIn(item.prompt) &&
+                !DICTIONARY_FIELD_LABEL.containsMatchIn(item.answer)
+        }
+    }
+
     private fun validateSubstantiveContent(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
         if (unit.sessions.isEmpty() || unit.objectives.isEmpty()) {
             errors += "Unit ${unit.number} is not content-complete: empty sessions or objectives do not count"
@@ -1778,6 +1936,7 @@ internal object V2Validator {
         "EXPLICIT_PARENTHETICAL_GLOSS",
         "EXPLICIT_SOURCE_PAIR",
         "GOVERNED_SENSE_CONTRAST",
+        "STATED_APPLICATION",
     )
     private val LEMMA_RECORD = Regex("^(nouns|adjectives|others|verbs)\\.csv:(.+)#([A-Za-z0-9_]+)$")
     private val OPENRUSSIAN_SOURCE = "src-openrussian-50e210c4"
@@ -1889,6 +2048,9 @@ internal object V2Validator {
         val shipped = record.shippedText
         if (record.transformation == "wiktionary template selection") {
             return shipped.isNotEmpty() && shipped in BatchARemainingSources.unfoldWiktionary(original)
+        }
+        if (record.transformation == "readyrussian text extraction") {
+            return shipped.isNotEmpty() && "<" !in original && ">" !in original && shipped in original
         }
         if (record.transformation == "pressbooks markup selection" || record.transformation == "readyrussian markup selection") {
             return shipped.isNotEmpty() && shipped in BatchARemainingSources.htmlVisible(original)
@@ -2339,6 +2501,65 @@ internal object V2Validator {
         return ""
     }
 
+    /**
+     * A stated application names one frozen construction and the competing
+     * construction the same page pairs with a different meaning. Any other
+     * combination on that span is not co-occurrence.
+     */
+    private fun statedApplication(
+        cue: V2ProvenanceRecord,
+        answer: V2ProvenanceRecord,
+        distractors: List<V2ProvenanceRecord>,
+    ): String? {
+        val table = STATED_APPLICATIONS[cue.originalSourceText] ?: return null
+        val spec = table[cue.shippedText] ?: return ""
+        val keyed = spec.first
+        val allowed = spec.second
+        val group = listOf(cue, answer) + distractors
+        val distractorTexts = distractors.map { it.shippedText }.toSet()
+        if (
+            answer.shippedText == keyed &&
+            distractorTexts.isNotEmpty() &&
+            allowed.containsAll(distractorTexts) &&
+            keyed !in distractorTexts &&
+            group.all { sameFrozenSpan(cue, it) } &&
+            group.all { displayedInFrozen(it) }
+        ) {
+            return "STATED_APPLICATION"
+        }
+        return ""
+    }
+
+    private val STATED_APPLICATIONS: Map<String, Map<String, Pair<String, Set<String>>>> = mapOf(
+        RemainingSources.CLOCK_SPAN to mapOf(
+            "In Russian we can state the number of minutes into the hour which is in progress." to (
+                "\u0432 \u043f\u044f\u0442\u043d\u0430\u0434\u0446\u0430\u0442\u044c \u043c\u0438\u043d\u0443\u0442 \u0432\u0442\u043e\u0440\u043e\u0433\u043e" to
+                    setOf("\u0432 \u0447\u0430\u0441 \u043f\u044f\u0442\u043d\u0430\u0434\u0446\u0430\u0442\u044c \u043c\u0438\u043d\u0443\u0442")
+                ),
+            "This is used after the half hour." to (
+                "\u0431\u0435\u0437 \u0434\u0432\u0430\u0434\u0446\u0430\u0442\u0438 \u043f\u044f\u0442\u0438 \u0434\u0432\u0430" to
+                    setOf("\u0432 \u0447\u0430\u0441 \u0442\u0440\u0438\u0434\u0446\u0430\u0442\u044c \u043f\u044f\u0442\u044c \u043c\u0438\u043d\u0443\u0442")
+                ),
+            "This option is always available." to (
+                "\u0432 \u0434\u0432\u0435\u043d\u0430\u0434\u0446\u0430\u0442\u044c \u0447\u0430\u0441\u043e\u0432 \u0434\u0435\u0441\u044f\u0442\u044c \u043c\u0438\u043d\u0443\u0442" to
+                    setOf("\u0432 \u0434\u0435\u0441\u044f\u0442\u044c \u043c\u0438\u043d\u0443\u0442 \u043f\u0435\u0440\u0432\u043e\u0433\u043e")
+                ),
+        ),
+        RemainingSources.LETTER_SPAN to mapOf(
+            "In English we begin with a topic sentence and then follow with supporting facts." to (
+                "In Russian the facts come first with the topic sentence as the conclusion." to
+                    setOf("Strangers and people who are not closed friends should never be addressed as \u201cdear\u201d.")
+                ),
+            "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435!" to (
+                "Strangers and people who are not closed friends should never be addressed as \u201cdear\u201d." to
+                    setOf("In Russian the facts come first with the topic sentence as the conclusion.")
+                ),
+            "Body" to (
+                "Closing and signature" to setOf("Greeting", "Sender\u2019s address and date")
+                ),
+        ),
+    )
+
     internal fun classifyRelation(
         cue: V2ProvenanceRecord,
         answer: V2ProvenanceRecord,
@@ -2369,6 +2590,9 @@ internal object V2Validator {
                 return "SAME_LEMMA_DIFFERENT_FIELD"
             }
         }
+        val stated = statedApplication(cue, answer, distractors)
+        if (stated == "") return null
+        if (stated != null) return stated
         if (
             hasCyrillic(cue.shippedText) &&
             !hasCyrillic(answer.shippedText) &&
@@ -2807,7 +3031,143 @@ internal object V2Validator {
             errors += "Item ${item.id} answer rationale does not cite the frozen evidence"
         }
         errors += keyedGlossErrors(item)
+        errors += falseRelationshipErrors(item, originals)
         return errors
+    }
+
+    private val CLAIMED_PAIR = Regex(
+        """The frozen source pairs (?:the shown form )?"([^"]+)" with (?:the admitted gloss )?"([^"]+)"""",
+    )
+    private val CO_OCCURRENCE_CLAIM = Regex("(?i)co-occur|appear together")
+    private val DASH_PAIR = Regex("""([^\n—–]{1,90})\s*[—–]\s*([^\n—–]{1,160})""")
+
+    /**
+     * A rationale may cite only a relationship the frozen record states.
+     * Pairing a gloss with itself, swapping two rows, or calling co-occurrence
+     * a relationship fails closed.
+     */
+    private fun falseRelationshipErrors(item: V2CheckItem, originals: List<String>): List<String> {
+        val errors = mutableListOf<String>()
+        val explicit = linkedMapOf<String, MutableSet<String>>()
+        originals.forEach { original ->
+            explicitPairs(original).forEach { (left, rights) ->
+                explicit.getOrPut(left) { linkedSetOf() }.addAll(rights)
+            }
+        }
+        val hosted = listOf(item.assessment?.whyAnswerDemonstratesObjective.orEmpty(), item.feedback) +
+            item.distractorRationales +
+            item.assessment?.distractorDifference.orEmpty()
+        hosted.forEach { text ->
+            if (text.isBlank()) return@forEach
+            val claims = CLAIMED_PAIR.findAll(text).map { it.groupValues[1] to it.groupValues[2] }.toList()
+            claims.forEach { (left, right) ->
+                if (left == right && !explicitSelfPair(originals, left)) {
+                    errors += "Item ${item.id} false self-pair"
+                } else if (left != right && left in explicit && !pairSupported(explicit.getValue(left), right)) {
+                    val swapped = explicit.any { (other, rights) -> other != left && pairSupported(rights, right) }
+                    if (swapped) {
+                        errors += "Item ${item.id} swapped source relationship"
+                    } else {
+                        errors += "Item ${item.id} unsupported by the cited frozen record"
+                    }
+                }
+            }
+            if (CO_OCCURRENCE_CLAIM.containsMatchIn(text) && claims.none { (left, right) ->
+                    left != right && left in explicit && pairSupported(explicit.getValue(left), right)
+                }
+            ) {
+                errors += "Item ${item.id} co-occurrence without the stated relationship"
+            }
+        }
+        return errors
+    }
+
+    private fun pairSupported(rights: Set<String>, claimed: String): Boolean {
+        return rights.any { gloss ->
+            gloss == claimed ||
+                (claimed.length >= 4 && (gloss.startsWith(claimed) || claimed.startsWith(gloss)))
+        }
+    }
+
+    private fun explicitSelfPair(originals: List<String>, text: String): Boolean {
+        return originals.any { original ->
+            val visible = BatchARemainingSources.htmlVisible(original)
+            visible.contains("$text—$text") || visible.contains("$text – $text") || visible.contains("$text - $text")
+        }
+    }
+
+    private fun explicitPairs(original: String): Map<String, Set<String>> {
+        val visible = BatchARemainingSources.htmlVisible(unfoldWikiLabels(original))
+        val found = linkedMapOf<String, MutableSet<String>>()
+        fun add(left: String, right: String) {
+            val key = left.trim().trim('\'', '"', '\u201c', '\u201d', '{', '}')
+            val value = right.trim().trim('\'', '"', '\u201c', '\u201d')
+            if (key.isNotEmpty() && value.isNotEmpty() && key != value) {
+                found.getOrPut(key) { linkedSetOf() }.add(value)
+            }
+        }
+        DASH_PAIR.findAll(visible).forEach { match ->
+            val left = match.groupValues[1].substringAfterLast("}}")
+            val right = match.groupValues[2].trim()
+            val paren = Regex("""^([^()]{1,140}?)\s*\(([^()]*)\)\s*$""").find(right)
+            if (paren != null) {
+                add(left, paren.groupValues[1])
+                add(left, paren.groupValues[2])
+            } else {
+                add(left, right)
+            }
+        }
+        Regex("""((?:"[^"]+"\s*,\s*)+"[^"]+")\s*\(([^)]+)\)""").findAll(visible).forEach { match ->
+            val forms = Regex(""""([^"]+)"""").findAll(match.groupValues[1]).map { it.groupValues[1] }.toList()
+            val glosses = match.groupValues[2].split(",").map { it.trim() }
+            if (forms.size == glosses.size) {
+                forms.zip(glosses).forEach { (form, gloss) -> add(form, gloss) }
+            }
+        }
+        return found
+    }
+
+    private val READY_RUSSIAN_MEDIA = Regex(
+        "(?i)<img|data:image|base64|<script|<audio|\\.ogg|data:audio",
+    )
+
+    private fun validateGovernedReadyRussianText(pack: V2CurriculumPack, errors: MutableList<String>) {
+        fun reject(field: String, text: String?) {
+            if (!text.isNullOrEmpty() && READY_RUSSIAN_MEDIA.containsMatchIn(text)) {
+                errors += "governed ReadyRussian span contains embedded media in $field"
+            }
+        }
+        pack.provenanceRecords.filter { it.sourceId.startsWith("src-readyrussian-") }.forEach { record ->
+            reject("provenance ${record.itemId}", record.originalSourceText)
+            reject("provenance ${record.itemId}", record.shippedText)
+        }
+        val readyUnits = pack.provenanceRecords
+            .filter { it.sourceId.startsWith("src-readyrussian-") }
+            .map { it.unitNumber }
+            .toSet()
+        pack.units.filter { it.number in readyUnits }.forEach { unit ->
+            reject("unit ${unit.number} title", unit.title)
+            reject("unit ${unit.number} topic", unit.topicSummary)
+            unit.sessions.forEach { session ->
+                session.steps.forEach { step ->
+                    reject("step ${step.id}", step.title)
+                    reject("step ${step.id}", step.body)
+                }
+            }
+        }
+        val readyObjectives = pack.units.filter { it.number in readyUnits }.flatMap { it.objectives }.map { it.id }.toSet()
+        pack.items.filter { it.objectiveId in readyObjectives }.forEach { item ->
+            reject("item ${item.id}", item.prompt)
+            reject("item ${item.id}", item.promptLetter)
+            reject("item ${item.id}", item.answer)
+            reject("item ${item.id}", item.feedback)
+            item.options.forEach { reject("item ${item.id}", it) }
+            item.distractorRationales.forEach { reject("item ${item.id}", it) }
+        }
+        pack.examples.filter { it.objectiveId in readyObjectives }.forEach { example ->
+            reject("example ${example.id}", example.display)
+            reject("example ${example.id}", example.note)
+        }
     }
 
     /**

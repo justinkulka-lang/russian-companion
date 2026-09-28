@@ -1,13 +1,16 @@
 """Exact spans for the remaining-curriculum admissions.
 
-Each span is a contiguous substring of a retained file. This module does not
-compose Russian.
+ReadyRussian clock evidence is a recorded text extraction. Other spans are
+contiguous substrings of a retained file. This module does not compose Russian.
 """
 
 from __future__ import annotations
 
 import hashlib
+import re
 from pathlib import Path
+
+from source_transforms import html_visible
 
 ROOT = Path(__file__).resolve().parents[1]
 READY = ROOT / "catalog/sources/readyrussian"
@@ -45,12 +48,59 @@ LETTER_SHA = _sha(LETTER_FILE)
 READING5_SHA = _sha(READING5_FILE)
 HOME_SHA = _sha(HOME_FILE)
 
-CLOCK_SPAN = _between(
-    _read(GRAMMAR20_FILE),
-    "We can read off the numbers shown on the dial",
-    "at the beginning of the first hour",
-    "clock",
-)
+def _visible_between(text: str, start: str, end: str, label: str) -> str:
+    raw = _between(text, start, end, label)
+    if re.search(r"<img\b|data:image|base64|<script\b|<audio\b|\.ogg", raw, re.IGNORECASE):
+        raise SystemExit(f"{label} piece contains embedded media")
+    visible = html_visible(raw).strip()
+    if not visible:
+        raise SystemExit(f"{label} piece has no visible text")
+    return visible
+
+
+def _clock_extraction(page: str) -> str:
+    """Join media-free visible pieces. Quarter-hour lines stay on the frozen page only."""
+    pieces = [
+        _visible_between(
+            page,
+            "We can read off the numbers shown on the dial",
+            "shaded pie slice.",
+            "clock-rules",
+        ),
+        _visible_between(
+            page,
+            "The first hour began at 12 o'clock.",
+            "at the beginning of the first hour",
+            "clock-first",
+        ),
+        _visible_between(
+            page,
+            "As the little hand passes the 1",
+            "at the fifteenth minute of the second [hour]",
+            "clock-into",
+        ),
+        _visible_between(
+            page,
+            "в час двадцать пять минут",
+            "at twenty five minutes of the second [hour]",
+            "clock-twenty-five",
+        ),
+        _visible_between(
+            page,
+            "Once the hour is half-way done",
+            "lacking twenty five minutes to the two",
+            "clock-remain",
+        ),
+    ]
+    extracted = "\n\n".join(pieces)
+    for item in ("в четверть", "без четверти", ".ogg", "<img", "data:image", "base64", "<script", "<audio", "<"):
+        if item in extracted:
+            raise SystemExit(f"clock extraction contains excluded material: {item}")
+    return extracted
+
+
+_GRAMMAR20_PAGE = _read(GRAMMAR20_FILE)
+CLOCK_SPAN = _clock_extraction(_GRAMMAR20_PAGE)
 NEGATION_SPAN = _between(
     _read(LANGGEN3_FILE),
     "Note that the modifier",
@@ -120,8 +170,6 @@ _forbid("dictionary", DICTIONARY_SPAN, (".ogg", "audio"))
 _forbid("letter", LETTER_SPAN, ("please me informed", "Дорогой", "С любовью", ".ogg"))
 _forbid("correspondence", CORRESPONDENCE_SPAN, ("please me informed", "Дорогой", "С любовью", ".ogg"))
 _forbid("capstone", CAPSTONE_SPAN, (".ogg", "audio", "<"))
-_forbid("clock", CLOCK_SPAN, ("в четверть", "без четверти", ".ogg"))
-
 if "в двенадцать часов десять минут" not in CLOCK_SPAN:
     raise SystemExit("Clock span lost the direct-reading example")
 if "This makes sense up to the half hour." not in CLOCK_SPAN:

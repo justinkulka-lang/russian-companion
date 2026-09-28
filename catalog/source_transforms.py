@@ -54,6 +54,17 @@ def special_transformation(meta: dict, original: str, shipped: str) -> str | Non
             raise SystemExit(f"Shipped Wiktionary text keeps markup or audio: {shipped!r}")
         return "selection" if shipped in original else "wiktionary template selection"
     if kind in ("pressbooks-html", "readyrussian-html"):
+        lowered = original.lower()
+        if any(token in lowered for token in ("<img", "data:image", "base64", "<script", "<audio", ".ogg", "data:audio")):
+            raise SystemExit(f"Governed HTML span contains embedded media or audio: {shipped!r}")
+        if "<" not in original and ">" not in original:
+            if shipped not in original:
+                raise SystemExit(f"Shipped text is not in the extracted span: {shipped!r}")
+            if "<" in shipped or ">" in shipped or ".ogg" in shipped:
+                raise SystemExit(f"Shipped extracted text keeps markup or audio: {shipped!r}")
+            if kind == "pressbooks-html":
+                return "pressbooks markup selection"
+            return "readyrussian text extraction"
         visible = html_visible(original)
         if shipped not in visible:
             raise SystemExit(f"Shipped text is not in the HTML span: {shipped!r}")

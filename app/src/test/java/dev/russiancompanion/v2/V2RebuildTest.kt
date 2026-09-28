@@ -22,6 +22,7 @@ import dev.russiancompanion.v2.curriculum.V2UnitReviewRecord
 import dev.russiancompanion.v2.curriculum.V2UnitState
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.distinctCorrectCheckCount
 import dev.russiancompanion.v2.curriculum.canOpenUnit
 import dev.russiancompanion.v2.curriculum.continueTarget
 import dev.russiancompanion.v2.curriculum.todaysSession
@@ -921,7 +922,7 @@ class V2RebuildTest {
         assertEquals("deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals("5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c", V2Validator.unitContentReviewDigest(pack, 4))
         assertEquals("9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d", V2Validator.unitContentReviewDigest(pack, 5))
-        assertEquals("9084ed0a9a8037bd244f2b2fe3b18f1f9ed6e64f22637530bbdcd0dda1755162", V2Validator.contentReviewDigest(pack))
+        assertEquals("19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75", V2Validator.contentReviewDigest(pack))
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(seed.contains("The New Penguin Russian Course"))
         assertEquals(0, pack.admissions.penguinProseAssets)
@@ -1028,7 +1029,11 @@ class V2RebuildTest {
             store.v2RecordAttempt(item.id, item.answer, true, "2026-09-23T12:02")
         }
         val learner = store.v2LearnerView()
-        val correct = unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }.distinct().count { it in learner.correctItemIds }
+        val correct = distinctCorrectCheckCount(
+            pack,
+            unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }.distinct(),
+            learner.correctItemIds,
+        )
         assertTrue("Unit $unitNumber recorded $correct checks", correct >= unit.advancement!!.minimumDistinctChecks)
         val blocked = advancementDecision(pack, unit, learner)
         assertFalse(blocked.remaining.joinToString(), blocked.allowed)

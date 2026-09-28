@@ -437,7 +437,7 @@ def build_units_21_25() -> dict:
             ("completion", "Completion over a period stays in the copy you own", "Completion over a period stays in the copy you own. A duration span does not state that distinction.", "Completion over a period has no admitted frozen span."),
         ]),
         _unit(builder, 24, "Admitted negation lines", "Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, a bounded word-order contrast, and the admitted ReadyRussian placement contrast. Qualified review is pending.", 6, populate, []),
-        _unit(builder, 25, "Admitted name and courtesy lines", "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, an application of that same span, courtesy lines, and the frozen address-register sentences. Qualified review is pending.", 8, populate, []),
+        _unit(builder, 25, "Admitted name and courtesy lines", "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, courtesy lines, and the frozen address-register sentences. Listed pairs do not establish a productive diminutive. Qualified review is pending.", 8, populate, []),
     ]
     units = prepared
     _assert(builder, units)
@@ -476,9 +476,9 @@ def _unit(builder, number, title, body, minimum, populate, gaps):
 
             add_negation_scope(lesson)
         if number == 25:
-            from remaining_lessons import add_productive_diminutive
-
-            add_productive_diminutive(lesson)
+            # The frozen name span lists pairs and a dismissive limitation.
+            # It does not supply an unseen base the learner can form without new Russian.
+            pass
     independent = sum(len(spec["checks"]) for spec in lesson.specs)
     if independent < minimum:
         raise SystemExit(f"Unit {number} has {independent} independent checks, needs {minimum}")

@@ -71,7 +71,7 @@ class BatchECapabilityResearchTest {
             val errors = errors(pack, capability)
             assertTrue(errors, errors.contains("no independent $claim admission"))
             assertTrue(errors, errors.contains("revision does not match the frozen record"))
-            val stillOpen = claim == "adverb-paradigm" || claim == "completion-over-period"
+            val stillOpen = claim == "adverb-paradigm" || claim == "completion-over-period" || claim == "productive-diminutive"
             assertEquals(
                 stillOpen,
                 V2Validator.unresolvedRequiredSourceCapabilities(
@@ -168,7 +168,7 @@ class BatchECapabilityResearchTest {
             admissions = pack.admissions.copy(penguinProseAssets = 9, generatedRussianWords = 4),
         )
         claims.forEach { (unitNumber, _, claim) ->
-            val stillOpen = claim == "adverb-paradigm" || claim == "completion-over-period"
+            val stillOpen = claim == "adverb-paradigm" || claim == "completion-over-period" || claim == "productive-diminutive"
             assertEquals(
                 stillOpen,
                 V2Validator.unresolvedRequiredSourceCapabilities(stamped, unitNumber).any { it.claim == claim },
@@ -193,7 +193,7 @@ class BatchECapabilityResearchTest {
             24 to "negation-scope",
             25 to "productive-diminutive",
         )
-        val closed = setOf(17, 24, 25)
+        val closed = setOf(17, 24)
         gaps.forEach { (unitNumber, gap) ->
             val unit = pack.unit(unitNumber)!!
             assertEquals("DEVELOPMENT", unit.installState)
@@ -320,8 +320,8 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("9084ed0a9a8037bd244f2b2fe3b18f1f9ed6e64f22637530bbdcd0dda1755162", model.packContentReviewDigest)
-        assertEquals("2b3608febd67cb6e43faf302a490420dd1480ee28d9991efc5ddbbc12817bc35", model.repositorySourceDigest)
+        assertEquals("19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75", model.packContentReviewDigest)
+        assertEquals("bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339", model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
         assertEquals("NOT_APPROVED", candidate?.publicRelease)
@@ -339,15 +339,15 @@ class BatchECapabilityResearchTest {
         }
         val content = mapOf(
             7 to "9db2b449a150d96b668230738731655cf01a163a552fbacd4152579be638989f",
-            17 to "31939e0feab01eb6726077682cc4d10f39614fe63fda2ea0ffe7b0f1ba1079d2",
+            17 to "a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c",
             23 to "ea02b0454ea4c2b37095bc296f55c8eca78c42e671b4ac668a958bf2e9ab078f",
-            24 to "66c55c2586ea28b908ef9bb8159c008dd119c747f39a80ca9788a10266aa9b7b",
-            25 to "9bff6481102c3f713e0b70e29b0b59310e36e58634a14ea6ebf2405975808901",
-            26 to "2043a4b2905c7cb6c254969c926359042667e5e97a57abfeabde29f483100406",
-            27 to "d8c535a602ab930589ca2dfc52c67abd15c0c30dbadb6d4770af0439d2f4c3ca",
-            28 to "a1507156696e731bdee78abe38fbd4a7962a1f043adfb809b7b5436140d25c79",
-            29 to "fd4f4603274025eabc5683486b21daa914040d03f34fb2f638ef196f5ce8f9d0",
-            30 to "45c5c1632fb20cb8c14d45577f4d76a325b2d3557d63cd36a31a917f8d932e9e",
+            24 to "497c9978cd3a89159732f7c4b53a09d0923d98bbaa01f61722a769d1a808f74c",
+            25 to "c3f4c00de92e5d3d9b0c30ca0c9663fc723dfdc06c1e4b30baa2e9a8cd9b771e",
+            26 to "bdaa9683a34b35717a7f4ab3f5d00f7e8a221d96eb6f718acbf2a0f4c6b36bc8",
+            27 to "e6805db24810cc3cc64061f70cd32a8b15b885611f7a0c29150009f461e795fc",
+            28 to "afa29cbd6d710bcb853d74189d012584660996b25270af78c3d23efe35cf1cc5",
+            29 to "2172a1e97507bdfd0f4f7164ae3c2c6fb6784dc9b68490a4a3638acfa0fa210e",
+            30 to "60c27cc8efdb7e4ba36ca665be5f45b5106302ddc736e0db0465a733f653d33e",
         )
         val mapping = mapOf(
             7 to "20298ccd10fadcd359b2fa73bebf0e7309772c6c78ffbc71730225664717b28c",

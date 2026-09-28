@@ -52,10 +52,10 @@ class Units2125SourceIntakeTest {
         14 to "270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6",
         15 to "1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd",
         16 to "6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5",
-        17 to "31939e0feab01eb6726077682cc4d10f39614fe63fda2ea0ffe7b0f1ba1079d2",
+        17 to "a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c",
         18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
         19 to "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3",
-        20 to "7eca8b47f1286dc2b1718c03f4cefdfefe96f76979d9bf44616501e00faa71f3",
+        20 to "01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c",
     )
 
     private val preservedMappingDigests = mapOf(
@@ -99,7 +99,7 @@ class Units2125SourceIntakeTest {
             val facts = governedMappingFacts(number)
             val digest = mappingPackageDigest(facts)
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals(if (number == 23) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
+            assertEquals(if (number == 23 || number == 25) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.mappingNote.contains(range))
@@ -333,8 +333,8 @@ class Units2125SourceIntakeTest {
         assertEquals("RECOGNITION", contrast.kind)
         assertTrue(contrast.checkItemIds.size >= 2)
         assertTrue(reason(pack, 25).isBlank())
-        assertEquals("RECOGNITION", pack.unit(25)!!.objectives.first { it.id == "obj-u25-productive-formation" }.kind)
-        listOf(21, 22, 24, 25).forEach { number ->
+        assertTrue(pack.unit(25)!!.objectives.none { it.id == "obj-u25-productive-formation" })
+        listOf(21, 22, 24).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,
@@ -348,6 +348,21 @@ class Units2125SourceIntakeTest {
             )
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
         }
+        val unit25 = pack.unit(25)!!
+        val blocked25 = advancementDecision(
+            pack,
+            unit25,
+            learner(
+                25,
+                book = true,
+                correct = unit25.objectives.flatMap { it.checkItemIds }.toSet() +
+                    unit25.sessions.flatMap { it.steps }.flatMap { it.itemIds }.toSet(),
+                steps = unit25.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+            ),
+        )
+        assertFalse(blocked25.allowed)
+        assertTrue(blocked25.remaining.joinToString("\n"), blocked25.remaining.any { it.contains("not prepared") })
+        assertTrue(blocked25.remaining.any { it.contains("productive-diminutive") })
         val unit23 = pack.unit(23)!!
         val blocked = advancementDecision(
             pack,

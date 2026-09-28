@@ -400,9 +400,7 @@ def _unit(builder, number, title, body, populate, gaps, capabilities):
             "particle",
             "letter-writing",
             "correspondence-work",
-            "participle-stress",
             "verbal-adverb-reading",
-            "dictionary-use",
             "capstone-reading",
         }:
             raise SystemExit(f"Refusing to satisfy a broad or unsupported claim: {spec}")
@@ -420,6 +418,35 @@ def _unit(builder, number, title, body, populate, gaps, capabilities):
     expected = {item[0] for item in capabilities}
     if {item["objectiveId"] for item in resolved} != expected:
         raise SystemExit(f"Unit {number} capabilities { {item['objectiveId'] for item in resolved} } != {expected}")
+    reference = getattr(lesson, "stress_reference", None)
+    if reference:
+        title = "Stressed participle headwords stay reference"
+        body = "Four admitted stressed headwords stay on this card. Choosing a headword instead of its infinitive does not test stress."
+        step_id = f"u{number}-st-stress-reference"
+        step = _step(
+            step_id, "TEACH", builder.say(number, title), builder.say(number, body),
+            example_ids=reference, reference_ids=[REFERENCE],
+        )
+        objective = {
+            "id": "obj-u27-stress-reference",
+            "unitNumber": number,
+            "title": title,
+            "kind": "GUIDANCE",
+            "instructionStepIds": [step_id],
+            "exampleIds": reference,
+            "practiceStepIds": [],
+            "checkItemIds": [],
+            "remediationStepIds": [],
+            "gating": False,
+        }
+        sessions.append({
+            "id": f"u{number}-s-stress-reference",
+            "title": title,
+            "estimatedMinutes": 4,
+            "objectiveIds": [objective["id"]],
+            "steps": [step],
+        })
+        objectives.append(objective)
     return {
         "number": number,
         "sessions": sessions,
@@ -515,8 +542,9 @@ def _attribution_reference() -> dict:
             "Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. "
             "Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. "
             "Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. "
-            "Complete postal practice, general letter conventions, participle stress, "
-            "a general bookish-register claim, dictionary use, and the final reading are not prepared. "
+            "Complete postal practice, participle stress, "
+            "a general bookish-register claim, and dictionary use are not prepared. "
+            "ReadyRussian letter conventions cover structure, the Russian and English organizational difference, and the stranger address limit. "
             "The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending."
         ),
         "introducedInUnit": 26,
@@ -578,12 +606,12 @@ def build_units_26_30() -> dict:
         _unit(
             builder, 27,
             "Admitted past passive lines",
-            "Proposed Unit 27 uses admitted past passive lines and four admitted stressed participle forms. Present passive lines are optional and do not gate this unit. Comprehension passages stay in the copy you own. Active forms are not taught here. Qualified review is pending.",
+            "Proposed Unit 27 uses admitted past passive lines. Four stressed participle headwords stay as reference and do not establish a stress rule. Present passive lines are optional and do not gate this unit. Comprehension passages stay in the copy you own. Active forms are not taught here. Qualified review is pending.",
             populate,
             [
                 ("comprehension", "Comprehension passages stay in the copy you own", "Comprehension passages stay in the copy you own. The admitted lines do not supply them.", "Comprehension passages have no admitted frozen span."),
             ],
-            [("obj-u27-passive", "passive-participle"), ("obj-u27-stress", "participle-stress")],
+            [("obj-u27-passive", "passive-participle")],
         ),
         _unit(
             builder, 28,
@@ -615,14 +643,13 @@ def build_units_26_30() -> dict:
         _unit(
             builder, 30,
             "Review admitted table names and abbreviation examples",
-            "Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Admitted dictionary-field recognition and the admitted capstone story are included. Advancement stays blocked. Qualified review is pending.",
+            "Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Dictionary-field layout is not practical dictionary use. The admitted capstone story is included. Advancement stays blocked. Qualified review is pending.",
             populate,
             [],
             [
                 ("obj-u30-letter-names", "letter-name-review"),
                 ("obj-u30-abbreviation", "abbreviation"),
                 ("obj-u30-particle", "particle"),
-                ("obj-u30-dictionary", "dictionary-use"),
                 ("obj-u30-capstone", "capstone-reading"),
             ],
         ),

@@ -44,15 +44,15 @@ class Units2630SourceIntakeTest {
         14 to "270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6",
         15 to "1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd",
         16 to "6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5",
-        17 to "31939e0feab01eb6726077682cc4d10f39614fe63fda2ea0ffe7b0f1ba1079d2",
+        17 to "a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c",
         18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
         19 to "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3",
-        20 to "7eca8b47f1286dc2b1718c03f4cefdfefe96f76979d9bf44616501e00faa71f3",
+        20 to "01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c",
         21 to "53a04dc4f69a5f19af1c9d4b09984e06a3d54ba586148ecef3531a0f6e850afa",
         22 to "d408624ff0aa05793384f6a2b4d9e2a27b008225f31498795e5ccf9b3225e169",
         23 to "ea02b0454ea4c2b37095bc296f55c8eca78c42e671b4ac668a958bf2e9ab078f",
-        24 to "66c55c2586ea28b908ef9bb8159c008dd119c747f39a80ca9788a10266aa9b7b",
-        25 to "9bff6481102c3f713e0b70e29b0b59310e36e58634a14ea6ebf2405975808901",
+        24 to "497c9978cd3a89159732f7c4b53a09d0923d98bbaa01f61722a769d1a808f74c",
+        25 to "c3f4c00de92e5d3d9b0c30ca0c9663fc723dfdc06c1e4b30baa2e9a8cd9b771e",
     )
 
     private val preservedMappingDigests = mapOf(
@@ -139,7 +139,6 @@ class Units2630SourceIntakeTest {
             "cap-obj-u26-letter-writing" to Triple(26, "obj-u26-letter-writing", "letter-writing"),
             "cap-obj-u26-correspondence" to Triple(26, "obj-u26-correspondence", "correspondence-work"),
             "cap-obj-u27-passive" to Triple(27, "obj-u27-passive", "passive-participle"),
-            "cap-obj-u27-stress" to Triple(27, "obj-u27-stress", "participle-stress"),
             "cap-obj-u28-imperfective-adverb" to Triple(28, "obj-u28-imperfective-adverb", "imperfective-verbal-adverb"),
             "cap-obj-u28-perfective-adverb" to Triple(28, "obj-u28-perfective-adverb", "perfective-verbal-adverb"),
             "cap-obj-u28-readings" to Triple(28, "obj-u28-readings", "verbal-adverb-reading"),
@@ -149,7 +148,6 @@ class Units2630SourceIntakeTest {
             "cap-obj-u30-letter-names" to Triple(30, "obj-u30-letter-names", "letter-name-review"),
             "cap-obj-u30-abbreviation" to Triple(30, "obj-u30-abbreviation", "abbreviation"),
             "cap-obj-u30-particle" to Triple(30, "obj-u30-particle", "particle"),
-            "cap-obj-u30-dictionary" to Triple(30, "obj-u30-dictionary", "dictionary-use"),
             "cap-obj-u30-capstone" to Triple(30, "obj-u30-capstone", "capstone-reading"),
         )
         val admitted = pack.sourceCapabilities.filter { it.unitNumber in 26..30 }
@@ -528,14 +526,16 @@ class Units2630SourceIntakeTest {
         val unresolved = setOf(
             "postal-address",
             "bookish-register",
+            "participle-stress",
             "participle-comprehension",
             "bookish-reading",
+            "dictionary-use",
         )
         assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "letter-writing" })
         assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "correspondence-work" })
-        assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "participle-stress" })
+        assertFalse(pack.sourceCapabilities.any { it.supportedClaim == "participle-stress" })
         assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "verbal-adverb-reading" })
-        assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "dictionary-use" })
+        assertFalse(pack.sourceCapabilities.any { it.supportedClaim == "dictionary-use" })
         assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "capstone-reading" })
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim in unresolved })
 

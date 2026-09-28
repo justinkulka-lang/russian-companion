@@ -294,7 +294,7 @@ class CurriculumReadinessReconciliationTest {
         assertFalse(lateDecision.remaining.any { it == "This unit is not prepared" })
         assertTrue(lateDecision.remaining.any { it == "Unit 27 is blocked by an unresolved authority variance" })
         assertTrue(lateDecision.remaining.any { it.contains("participle-comprehension") })
-        assertFalse(lateDecision.remaining.any { it.contains("participle-stress") })
+        assertTrue(lateDecision.remaining.any { it.contains("participle-stress") })
 
         val missingChecks = pack.unit(1)
         val starved = idealizedLearner(pack, missingChecks).copy(correctItemIds = emptySet())

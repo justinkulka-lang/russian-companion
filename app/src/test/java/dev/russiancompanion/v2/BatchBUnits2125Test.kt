@@ -84,12 +84,13 @@ class BatchBUnits2125Test {
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 7).any { it.claim == "adverb-paradigm" })
         assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 17).any { it.claim == "productive-clock-time" })
         assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 24).any { it.claim == "negation-scope" })
-        assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 25).any { it.claim == "productive-diminutive" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 25).any { it.claim == "productive-diminutive" })
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 25).none { it.claim == "diminutive-form-classification" })
-        listOf(21, 22, 24, 25).forEach { number ->
+        listOf(21, 22, 24).forEach { number ->
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(number)!!.readiness)
             assertEquals("DEVELOPMENT", pack.unit(number)!!.installState)
         }
+        assertEquals("NOT_PREPARED", pack.unit(25)!!.readiness)
         assertEquals("NOT_PREPARED", pack.unit(23)!!.readiness)
         assertEquals("DEVELOPMENT", pack.unit(23)!!.installState)
         assertTrue(pack.unitReviews.filter { it.unitNumber in 21..25 }.all {
@@ -736,9 +737,9 @@ class BatchBUnits2125Test {
         assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 17).any { it.claim == "productive-clock-time" })
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 23).any { it.claim == "completion-over-period" })
         assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 24).any { it.claim == "negation-scope" })
-        assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 25).any { it.claim == "productive-diminutive" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 25).any { it.claim == "productive-diminutive" })
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", stamped.unit(24)!!.readiness)
-        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", stamped.unit(25)!!.readiness)
+        assertEquals("NOT_PREPARED", stamped.unit(25)!!.readiness)
         assertEquals("DEVELOPMENT", stamped.unit(25)!!.installState)
         val formation = "Наиболее продуктивно образование от прилагательных суффиксальным или префиксально-суффиксальным способами: умело"
         val adverbParagraph = overreach(pack, formation, 7, "obj-u7-adverb", "adverb-paradigm", "cap-adverb-formation")
@@ -747,7 +748,7 @@ class BatchBUnits2125Test {
         val live = pack.sourceCapabilities.single { it.supportedClaim == "diminutive-form-classification" }
         val brokenHash = live.copy(sourceHash = "0".repeat(64))
         val hashReplaced = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.id != live.id } + brokenHash)
-        assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(hashReplaced, 25).any { it.claim == "productive-diminutive" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(hashReplaced, 25).any { it.claim == "productive-diminutive" })
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(hashReplaced, 25).any { it.claim == "diminutive-form-classification" })
         val wrongObjective = live.copy(id = "cap-diminutive-wrong-objective", objectiveId = "obj-u25-address", supportedClaim = "register")
         val wrongObjectiveErrors = V2Validator.validate(pack.copy(sourceCapabilities = pack.sourceCapabilities + wrongObjective)).errors.joinToString("\n")
@@ -770,11 +771,9 @@ class BatchBUnits2125Test {
         assertTrue(checks.all { it.assessment!!.testedFeature == "DIMINUTIVE_FORM_CLASSIFICATION" })
         assertTrue(checks.all { BatchBSources.diminutiveClassificationLabel(it.answer) })
         assertTrue(checks.all { it.prompt.contains("classifies") })
-        assertTrue(pack.sourceCapabilities.any {
-            it.supportedClaim == "productive-diminutive" && it.objectiveId == "obj-u25-productive-formation"
-        })
-        assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 25).any { it.claim == "productive-diminutive" })
-        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(25)!!.readiness)
+        assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "productive-diminutive" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 25).any { it.claim == "productive-diminutive" })
+        assertEquals("NOT_PREPARED", pack.unit(25)!!.readiness)
         assertEquals("DEVELOPMENT", pack.unit(25)!!.installState)
         val unit = pack.unit(25)!!
         val preparedLearner = V2LearnerView(
@@ -798,8 +797,9 @@ class BatchBUnits2125Test {
             completedUnitNumbers = emptySet(),
         )
         val advanced = advancementDecision(pack, unit, preparedLearner)
-        assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
-        assertFalse(advanced.remaining.any { it.contains("productive-diminutive") })
+        assertFalse(advanced.remaining.joinToString("\n"), advanced.allowed)
+        assertTrue(advanced.remaining.any { it.contains("not prepared") })
+        assertTrue(advanced.remaining.any { it.contains("productive-diminutive") })
 
         val removed = pack.copy(
             sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "productive-diminutive" },
@@ -826,7 +826,7 @@ class BatchBUnits2125Test {
         assertTrue(relabeledErrors, relabeledErrors.contains("no independent productive-diminutive admission"))
         assertTrue(relabeledErrors, relabeledErrors.contains("no independent application check for productive-diminutive"))
         assertFalse(relabeledErrors, relabeledErrors.contains("cap-u25-diminutive-form-classification has no reviewable instruction and check chain"))
-        assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(relabeledPack, 25).any { it.claim == "productive-diminutive" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(relabeledPack, 25).any { it.claim == "productive-diminutive" })
         val forgedAdmission = GovernedSourceAdmission(
             sourceId = bounded.sourceId,
             sourceRevision = bounded.sourceRevision,
@@ -845,7 +845,7 @@ class BatchBUnits2125Test {
             provenanceRecords = pack.provenanceRecords.map { it.copy(reviewStatus = "APPROVED") },
             admissions = pack.admissions.copy(penguinProseAssets = 9, generatedRussianWords = 4),
         )
-        assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 25).any { it.claim == "productive-diminutive" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 25).any { it.claim == "productive-diminutive" })
         val coOccurrence = overreach(
             pack,
             "productive diminutive co-occurrence",
@@ -856,7 +856,7 @@ class BatchBUnits2125Test {
         )
         assertTrue(coOccurrence, coOccurrence.contains("keyword or co-occurrence evidence does not clear productive-diminutive"))
         assertTrue(coOccurrence, coOccurrence.contains("no independent productive-diminutive admission"))
-        assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 25).any { it.claim == "productive-diminutive" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 25).any { it.claim == "productive-diminutive" })
 
         val stripped = pack.copy(
             units = pack.units.map { current ->
@@ -908,7 +908,7 @@ class BatchBUnits2125Test {
                     errors.contains("wrong unit or objective") ||
                     errors.contains("no independent")
                 ))
-            assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(
+            assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(
                 pack.copy(sourceCapabilities = pack.sourceCapabilities + broken.copy(id = "cap-closed-live")),
                 25,
             ).any { it.claim == "productive-diminutive" })
