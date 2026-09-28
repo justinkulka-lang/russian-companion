@@ -11,12 +11,12 @@ Unit 24 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 3f1e8f4016b1d803cccc0840011e5a4f5a4b4529
-- Unit content-review SHA-256: 66c55c2586ea28b908ef9bb8159c008dd119c747f39a80ca9788a10266aa9b7b
+- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
+- Unit content-review SHA-256: 497c9978cd3a89159732f7c4b53a09d0923d98bbaa01f61722a769d1a808f74c
 - Mapping-package SHA-256: f09634aaa924c3c31527894fb61b0aafc421ad745f9e12620235805d88ded22f
-- Pack content-review SHA-256: 9084ed0a9a8037bd244f2b2fe3b18f1f9ed6e64f22637530bbdcd0dda1755162
-- Review-package SHA-256: b00665d4003e9391bfb26f427033d801f183a29594c9a7bc00ff7ca4bcb01038
-- Repository source SHA-256: 2b3608febd67cb6e43faf302a490420dd1480ee28d9991efc5ddbbc12817bc35
+- Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
+- Review-package SHA-256: 800a92026dc5518488b732dfc334388a623d15a62cc5de4e07a5b6c264e1ddf8
+- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1857,7 +1857,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-readyrussian-langgen3
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d351d77a193b031e21ae8e4943c877aefa5b4a5749e32023c2eaa90554df9659
+- Content hash: ec912c87cf7d8a6c94f8b8af26573291ffec51ec3c9974bbf2925c889e0ed6fc
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1869,7 +1869,7 @@ feedback=The frozen source pairs the shown form "Мне не холодно." wi
 objectiveId=obj-u24-placement
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "It is not to me that it is cold." with the admitted gloss "It is not to me that it is cold.".
+distractorRationales= | The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.". Moving the modifier in front of a different word produces that meaning.
 testedFeature=NEGATION_FOLLOWING_WORD
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u24-placement-0
@@ -1877,7 +1877,7 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u24-placement-0-en
 distractorSourceIds= | prov-ex-u24-placement-1-en
-distractorDifference= | The frozen source pairs the shown form "It is not to me that it is cold." with the admitted gloss "It is not to me that it is cold.".
+distractorDifference= | The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.". Moving the modifier in front of a different word produces that meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.".
 contrastMembers=To me it is not cold. | It is not to me that it is cold.
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -2312,7 +2312,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-readyrussian-langgen3
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d3494fa1871ffe4b10008fb6af084b350a6e4ee05baf4570a629abd3258ef07
+- Content hash: be9380a68becfa8c77635534226af21904f917e04c5b37797464ef126087afb4
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2324,7 +2324,7 @@ feedback=The frozen source pairs the shown form "Не мне холодно." wi
 objectiveId=obj-u24-placement
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "To me it is not cold." with the admitted gloss "To me it is not cold.".
+distractorRationales= | The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.". That placement negates the following word.
 testedFeature=NEGATION_SCOPE_CONTRAST
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u24-placement-1
@@ -2332,7 +2332,7 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-placement-1-en
 distractorSourceIds= | prov-ex-u24-placement-0-en
-distractorDifference= | The frozen source pairs the shown form "To me it is not cold." with the admitted gloss "To me it is not cold.".
+distractorDifference= | The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.". That placement negates the following word.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
 contrastMembers=It is not to me that it is cold. | To me it is not cold.
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -2347,7 +2347,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-readyrussian-langgen3
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a102765ded685451ff92877e64ac1189c3aa7036c0fe558fd472a473d57c3ff
+- Content hash: 589debadfea2df80c0a29512526cafdddb1b2fd9a57fd16d807f47260a358337
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2359,7 +2359,7 @@ feedback=The frozen source pairs the shown form "Не мне холодно." wi
 objectiveId=obj-u24-placement
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "I am not cold." with the admitted gloss "I am not cold.".
+distractorRationales= | The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "I am not cold.". That parenthetical belongs to the other placement.
 testedFeature=NEGATION_SCOPE_NOT_COLD
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u24-placement-2
@@ -2367,7 +2367,7 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-placement-1-en
 distractorSourceIds= | prov-u24-placement-x-1
-distractorDifference= | The frozen source pairs the shown form "I am not cold." with the admitted gloss "I am not cold.".
+distractorDifference= | The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "I am not cold.". That parenthetical belongs to the other placement.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
 contrastMembers=It is not to me that it is cold. | I am not cold.
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -5944,10 +5944,10 @@ text=Which English meaning matches the shown sentence?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 34a6c006d2b6f89c0a81dc14e235bc7a3a678e656ac871ae3db004730aecce41
+- Content hash: 70d889d0926b61f855502c97005849352884cdf8145564061c7667f3256a87d0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English meaning matches the shown sentence?
+text=Moving the modifier in front of a different word produces that meaning.
 
 ### AUTHORED_ENGLISH `en-u24-170`
 
@@ -5957,10 +5957,10 @@ text=Which admitted English meaning matches the shown sentence?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb289457d68e87c9059672c0ebf6e3329f0d6a70dc9d2bde4ecc5cec80640941
+- Content hash: 528cea47ac810972007464133c3c2494630c71c4279c36d1820ca1ce21b69130
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted negation lines
+text=That placement negates the following word.
 
 ### AUTHORED_ENGLISH `en-u24-171`
 
@@ -5970,10 +5970,10 @@ text=Admitted negation lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 446e43f572d831ecd6e23c70429d9793aa96563366b89415e11508e690bd9aba
+- Content hash: 1d399ca4f4ea3e4c79bf1433f6dbd798158187c7414575e4d9b98091cbab3f8c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, a bounded word-order contrast, and the admitted ReadyRussian placement contrast. Qualified review is pending.
+text=That parenthetical belongs to the other placement.
 
 ### AUTHORED_ENGLISH `en-u24-172`
 
@@ -5983,10 +5983,10 @@ text=Proposed Unit 24 uses the frozen genitive and accusative compare, the froze
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9f5641652709a49c2fbe3ccdfce3c2b2d9e12c5aaa48619ccb04e7a153352ba0
+- Content hash: 478944113d1a269223e48195e32f82d2cb0b26d09ea824bc5ee65fbe8eb71108
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 24 in the copy you own. The app records do not replace that lesson.
+text=Which admitted English meaning matches the shown sentence?
 
 ### AUTHORED_ENGLISH `en-u24-173`
 
@@ -5996,10 +5996,10 @@ text=Open Lesson 24 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 97ffd0642e273a4ddeb2f5fd28496b9f7436e312fa892cc669c1e75bdd634153
+- Content hash: cde1053508b5e48479a874121872b435b1a0a3f2f860df27d4a021a21c3b5ac2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Admitted negation lines
 
 ### AUTHORED_ENGLISH `en-u24-174`
 
@@ -6009,10 +6009,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7143edeeaab6af3af8855f054510da1c18b627f24477a3c6b07bafdf9ac52a82
+- Content hash: 2584517d9df5bf36b9419574ebdd18a0d047d98224de87d993e7e86ef9056c16
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, a bounded word-order contrast, and the admitted ReadyRussian placement contrast. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u24-175`
 
@@ -6022,10 +6022,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4df2a74a15b2b33e4f9e24841290eb7368fd42de54b7c653b35d5a786d5fcf12
+- Content hash: 5620072d6d548eb5a099578a9c3343847e2471a3cefe0ab2a75b43e2a4c04616
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Open Lesson 24 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u24-176`
 
@@ -6035,10 +6035,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff9bbd0838e576f02e7ff7e5d6b59393729a695a0e35fcf34d0d3070faadb9ec
+- Content hash: e7419bcfae1280595f4a9fb2bab5b617d0bf30c7b942a5e760fa42641f7c24d9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u24-177`
 
@@ -6048,10 +6048,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b6389ed0be97513d46c2a5ac7448195d4c79e10a692a33494c9a0aaea874ec91
+- Content hash: 83f795e5930c87647cba583b3244d8cb18e0cdf2e0e8a4bf5b0506013dc39444
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u24-178`
 
@@ -6061,10 +6061,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b465753b3acce17f9dbd6037d04ea303492c9e619ec37cd6309deb2546aa03e
+- Content hash: 1c742f42a7a031778c5c87507967e0ed6b4f6ba13d340105dc784b32b409c874
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 24 in your copy
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u24-179`
 
@@ -6074,10 +6074,10 @@ text=Work Lesson 24 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 40fdc50fb1c187fb14a3724933a05fba2a8ba693a8396e65e044fb30aef6c2cc
+- Content hash: 4c1062fede277ecdd185b8137c971ee5c8f0bf398a1bdb03a6fb0c2ab5a41a00
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u24-180`
 
@@ -6087,10 +6087,10 @@ text=Do Lesson 24 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 91bfbba0fbcf6e1c504ff6ff798187194daa9ba20bc4fa72b80c98c8802599a2
+- Content hash: 68c28ccc94c3f2e7c477ff5bc83b8971adc7a100e6673319e28517821e26fa41
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 24 in your copy and complete its lesson work.
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u24-181`
 
@@ -6100,10 +6100,10 @@ text=Open Lesson 24 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ef42c0dacbc5813ff9d3ed218e5db7dae2a023796c1f3343ed2a228cb339f422
+- Content hash: a1dae8591414954434790a2cc2740d140692d0860adc131ff66cc76b7aebb13e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 24 book work
+text=Work Lesson 24 in your copy
 
 ### AUTHORED_ENGLISH `en-u24-182`
 
@@ -6113,10 +6113,10 @@ text=Record Lesson 24 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5531b278fed12ec3de198ceed911fc078a8be421da26c82e0512b86e2593db4e
+- Content hash: 99a822c718b79af8176cadba42d39e47bd578d8ecd8a9af8c00c60d1f25b58db
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u24-183`
 
@@ -6126,7 +6126,46 @@ text=When you have done Lesson 24 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 756fad1c2eac261b3ee95c99f4c81683c357b47208b1107f2816ad667a5eef1d
+- Content hash: e4149e66f42b1e3d3388baf03e97eaf5021259ed31bd75476538b3b604dd3a66
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 24 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u24-184`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 39f3671cfa9b3590cfed271264b6a2713fecc0d7cc8bc6e000cd03bbdfb8b254
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 24 book work
+
+### AUTHORED_ENGLISH `en-u24-185`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 024afd6e1cc0e901739fc49b413ec7c753a88816bce378f5db349d0717a73a14
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u24-186`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b84260a1729793d2dfb2c9032b440efcf47798c64d2fa74e5c44199fb3ffa373
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 24 work in your copy.

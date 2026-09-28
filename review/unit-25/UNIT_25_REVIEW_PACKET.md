@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 25 remains in development. Its readiness is content-complete and review-pending. The Lesson 25 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 25 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 25 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 3f1e8f4016b1d803cccc0840011e5a4f5a4b4529
-- Unit content-review SHA-256: 9bff6481102c3f713e0b70e29b0b59310e36e58634a14ea6ebf2405975808901
+- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
+- Unit content-review SHA-256: c3f4c00de92e5d3d9b0c30ca0c9663fc723dfdc06c1e4b30baa2e9a8cd9b771e
 - Mapping-package SHA-256: 93039c677b2f820c58bf274ebe94000f3a66541e821250bd478f9ed4c12b8431
-- Pack content-review SHA-256: 9084ed0a9a8037bd244f2b2fe3b18f1f9ed6e64f22637530bbdcd0dda1755162
-- Review-package SHA-256: 5fcd4dfe5553df2372f874f7bae5b54c12cc2938341241f63bec5a716bd003e9
-- Repository source SHA-256: 2b3608febd67cb6e43faf302a490420dd1480ee28d9991efc5ddbbc12817bc35
+- Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
+- Review-package SHA-256: c2bda100e1ce0c0092beda43747f598514591ac174be21c32d734f15f9efc567
+- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=25
 title=Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions
-topicSummary=Proposed Unit 25 is in development. Admitted name lines, a bounded classification of the frozen diminutive-formation span, an application of names inside that span, courtesy lines, and the address-register sentences await qualified review. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 25 is in development and is not prepared. Admitted name lines, a bounded classification of the frozen diminutive-formation span, courtesy lines, and the address-register sentences await qualified review. Listed name pairs do not establish a productive diminutive. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=CONTENT_COMPLETE_REVIEW_PENDING
+readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 25, printed pages 307-321. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=25
 prerequisites=24
-estimatedMinutes=102
+estimatedMinutes=90
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 25.
 
 ### UNIT `unit-25`
 
-- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-nickname-rule, obj-u25-address, obj-u25-productive-formation, obj-u25-book
-- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-nickname-rule, u25-s-address, u25-s-productive-formation, u25-s-book
+- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-nickname-rule, obj-u25-address, obj-u25-book
+- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-nickname-rule, u25-s-address, u25-s-book
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e998ddbd71569864770472efe09ecc900c658f0932942db389a530fe42fa1947
+- Content hash: 837606a03ef11e23e678192080a974d8cedd89d7bd9f236998fa7234f25f8910
 
 number=25
 title=Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions
-topicSummary=Proposed Unit 25 is in development. Admitted name lines, a bounded classification of the frozen diminutive-formation span, an application of names inside that span, courtesy lines, and the address-register sentences await qualified review. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 25 is in development and is not prepared. Admitted name lines, a bounded classification of the frozen diminutive-formation span, courtesy lines, and the address-register sentences await qualified review. Listed name pairs do not establish a productive diminutive. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=CONTENT_COMPLETE_REVIEW_PENDING
+readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 25, printed pages 307-321. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=25
 prerequisites=24
-estimatedMinutes=102
+estimatedMinutes=90
 
 ### ADVANCEMENT `unit-25-advancement`
 
@@ -219,25 +219,6 @@ practice=u25-st-guided-address-1
 checks=u25-i-address-1,u25-i-address-2,u25-i-address-3
 remediation=u25-st-rem-address
 
-### OBJECTIVE `obj-u25-productive-formation`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 48b3a1d915aad6e696f9120b9b207f06c45c263c9bfd8958167a2f84e4110e15
-
-title=Apply the admitted short-form pattern to the shown base
-kind=RECOGNITION
-unitNumber=25
-instruction=u25-st-orient,u25-st-teach-productive-formation-1,u25-st-teach-productive-formation-2
-examples=ex-u25-productive-formation-0,ex-u25-productive-formation-1
-practice=u25-st-guided-productive-formation-1
-checks=u25-i-productive-formation-1,u25-i-productive-formation-2
-remediation=u25-st-rem-productive-formation
-
 ### OBJECTIVE `obj-u25-book`
 
 - Objectives: obj-u25-book
@@ -259,32 +240,32 @@ remediation=
 
 ### SESSION `u25-s-orient`
 
-- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-nickname-rule, obj-u25-address, obj-u25-productive-formation, obj-u25-book
+- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-nickname-rule, obj-u25-address, obj-u25-book
 - Sessions: u25-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ea726fdc37b2107f0420f96023741049af1052b6f7b4ef338c8ca7db38dc8297
+- Content hash: 7cf8aea4f2affea19f70a303645fb1b381cf971ac76948158c6aaec7711e0749
 
 title=Admitted name and courtesy lines
 estimatedMinutes=8
-objectives=obj-u25-name-structure,obj-u25-diminutives,obj-u25-courtesy,obj-u25-name-question,obj-u25-nickname-rule,obj-u25-address,obj-u25-productive-formation,obj-u25-book
+objectives=obj-u25-name-structure,obj-u25-diminutives,obj-u25-courtesy,obj-u25-name-question,obj-u25-nickname-rule,obj-u25-address,obj-u25-book
 steps=u25-st-orient
 
 ### STEP `u25-st-orient`
 
-- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-nickname-rule, obj-u25-address, obj-u25-productive-formation, obj-u25-book
+- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-nickname-rule, obj-u25-address, obj-u25-book
 - Sessions: u25-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4b5f15286dcb962caf918891951fe11fb7b563ed7c4807003c0c769901625232
+- Content hash: 5524cf84904894502d153904566129996a959f6c067372e839f15d4f1e899cbf
 
 kind=ORIENT
 title=Admitted name and courtesy lines
-body=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, an application of that same span, courtesy lines, and the frozen address-register sentences. Qualified review is pending.
+body=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, courtesy lines, and the frozen address-register sentences. Listed pairs do not establish a productive diminutive. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -1176,131 +1157,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u25-st-rem-address
 
-### SESSION `u25-s-productive-formation`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-productive-formation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0b1e01a9dde619d3ca6d4f84bf96d1623f83cea8ff857c5f64651b852a616d33
-
-title=Apply the admitted short-form pattern to the shown base
-estimatedMinutes=12
-objectives=obj-u25-productive-formation
-steps=u25-st-teach-productive-formation-1,u25-st-guided-productive-formation-1,u25-st-teach-productive-formation-2,u25-st-rem-productive-formation,u25-st-check-productive-formation
-
-### STEP `u25-st-teach-productive-formation-1`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-productive-formation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: eb5ec20fb3158ef22ac064c8209820f743d9f5abd0bc1997ec78276608bf1db9
-
-kind=TEACH
-title=Admitted lines
-body=Маша — Машенька. Мария — Марюня. 
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=ex-u25-productive-formation-0,ex-u25-productive-formation-1
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u25-st-guided-productive-formation-1`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-productive-formation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a13f05fbe6fe1ec260be01f7639f277680f6ab4e9693c599503ae074fe0da31b
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u25-g-productive-formation-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u25-st-rem-productive-formation
-
-### STEP `u25-st-teach-productive-formation-2`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-productive-formation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c80da850cd90b709351b4b740a70d01478446c3e807ec39f7bf5e1c3e9dec631
-
-kind=TEACH
-title=Admitted instruction
-body=Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u25-st-rem-productive-formation`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-productive-formation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 15e46704c921b868b765c18a7425c7daa9e7efc649a4db42977d5f4daa12d204
-
-kind=REMEDIATE
-title=Remediation
-body=Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения
-dominantAction=Continue
-references=
-items=
-examples=ex-u25-productive-formation-0,ex-u25-productive-formation-1
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u25-st-check-productive-formation`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-productive-formation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c3738d2f85922ed7a6a5d3bd582ad6a749a79e84fbfa9b75c0adcf1d4fef87f2
-
-kind=CHECK
-title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
-dominantAction=Continue
-references=
-items=u25-i-productive-formation-1,u25-i-productive-formation-2
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u25-st-rem-productive-formation
-
 ### SESSION `u25-s-book`
 
 - Objectives: obj-u25-book
@@ -1717,40 +1573,6 @@ note=отстранённо-официального регистра
 objectiveId=obj-u25-address
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
-### EXAMPLE `ex-u25-productive-formation-0`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e4dc431175d316b21618567b299dab3f6ff44d293b57cfdb3cbc946d3649aa7
-
-kind=LEXICAL
-letterId=
-display=Маша
-note=Машенька
-objectiveId=obj-u25-productive-formation
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### EXAMPLE `ex-u25-productive-formation-1`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e511246d8c2a41f775a696f4ee8bd7176026357ed80a5f86cbcd999115e080e4
-
-kind=LEXICAL
-letterId=
-display=Мария
-note=Марюня
-objectiveId=obj-u25-productive-formation
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
 ### GUIDED_PRACTICE `u25-g-name-structure-0`
 
 - Objectives: obj-u25-name-structure
@@ -1960,41 +1782,6 @@ contrastMembers=полные имена | краткие имена | умень
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u25-address-0-ru | prov-ex-u25-address-0-en | prov-ex-u25-address-1-en | prov-ex-u25-address-2-en
 responseKind=RUSSIAN_PHRASE
-
-### GUIDED_PRACTICE `u25-g-productive-formation-0`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1d55983f6fa0accd8a421318ccbad66b447f4c4088e0595bd2cb760fcaba93a0
-
-kind=CONTRAST_SELECTION
-language=en
-prompt=Which admitted short form applies the shown base?
-promptLetter=Маша
-options=Машенька | Марюня | Сашка
-answer=Машенька
-feedback=The source shows Машенька, Машуля as the short-form pair from Маша. Машенька.
-objectiveId=obj-u25-productive-formation
-containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The source forms Марюня from Мария. | The source gives Сашка with the dismissive suffix.
-testedFeature=DIMINUTIVE_SHORT_FORM_APPLICATION
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u25-productive-formation-0
-cueLanguage=ru
-independent=false
-answerSourceIds=prov-ex-u25-productive-formation-0-en
-distractorSourceIds= | prov-ex-u25-productive-formation-1-en | prov-u25-productive-formation-x-0
-distractorDifference= | Марюня comes from the full form, not from Маша. | Сашка is the dismissive suffix example, not the short form of Маша.
-whyAnswerDemonstratesObjective=The source shows Машенька, Машуля as the short-form pair from Маша.
-contrastMembers=Машенька | Марюня | Сашка
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u25-productive-formation-0-ru | prov-ex-u25-productive-formation-0-en | prov-ex-u25-productive-formation-1-en | prov-u25-productive-formation-x-0
-responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u25-i-name-structure-1`
 
@@ -2451,85 +2238,15 @@ relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u25-address-3-ru | prov-ex-u25-address-3-en | prov-u25-address-x-4 | prov-u25-address-x-5
 responseKind=RUSSIAN_PHRASE
 
-### INDEPENDENT_CHECK `u25-i-productive-formation-1`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b6ba6479c3cd265cd558f2ca268cd1a028a290693ea5b6f9d8855e523fe0c68
-
-kind=CONTRAST_SELECTION
-language=en
-prompt=Which admitted short form applies the shown base?
-promptLetter=Маша
-options=Машенька | Марюня | Сашка
-answer=Машенька
-feedback=The source shows Машенька, Машуля as the short-form pair from Маша. Машенька.
-objectiveId=obj-u25-productive-formation
-containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The source forms Марюня from Мария. | The source gives Сашка with the dismissive suffix.
-testedFeature=DIMINUTIVE_SHORT_FORM_APPLICATION
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u25-productive-formation-1
-cueLanguage=ru
-independent=true
-answerSourceIds=prov-ex-u25-productive-formation-0-en
-distractorSourceIds= | prov-ex-u25-productive-formation-1-en | prov-u25-productive-formation-x-0
-distractorDifference= | Марюня is not the short form named for Маша. | Сашка carries the dismissive suffix, unlike Машенька.
-whyAnswerDemonstratesObjective=The source shows Машенька, Машуля as the short-form pair from Маша.
-contrastMembers=Машенька | Марюня | Сашка
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u25-productive-formation-0-ru | prov-ex-u25-productive-formation-0-en | prov-ex-u25-productive-formation-1-en | prov-u25-productive-formation-x-0
-responseKind=RUSSIAN_TOKEN
-
-### INDEPENDENT_CHECK `u25-i-productive-formation-2`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bee3c8c81c174d50904e66b413ec80a3ba44c1d5d51a3b4f91541719c7a70556
-
-kind=CONTRAST_SELECTION
-language=en
-prompt=Which admitted short form applies the shown base?
-promptLetter=Мария
-options=Марюня | Машенька | Сашка
-answer=Марюня
-feedback=The source lists Марюня, Маруня from the full form Мария. Марюня.
-objectiveId=obj-u25-productive-formation
-containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The source shows the short-form arrow from Маша to Машенька. | The source gives Сашка with the dismissive suffix.
-testedFeature=DIMINUTIVE_FULL_FORM_APPLICATION
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u25-productive-formation-2
-cueLanguage=ru
-independent=true
-answerSourceIds=prov-ex-u25-productive-formation-1-en
-distractorSourceIds= | prov-ex-u25-productive-formation-0-en | prov-u25-productive-formation-x-0
-distractorDifference= | Машенька applies to Маша, not to Мария. | Сашка is not the full-form example Марюня.
-whyAnswerDemonstratesObjective=The source lists Марюня, Маруня from the full form Мария.
-contrastMembers=Марюня | Машенька | Сашка
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u25-productive-formation-1-ru | prov-ex-u25-productive-formation-1-en | prov-ex-u25-productive-formation-0-en | prov-u25-productive-formation-x-0
-responseKind=RUSSIAN_TOKEN
-
 ### REFERENCE `ref-u2125-attribution`
 
 - Objectives: none
-- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-nickname-rule, u25-s-address, u25-s-productive-formation, u25-s-book
+- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-nickname-rule, u25-s-address, u25-s-book
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 35ff9c90b7b752b0df5ee556c86d71df0edeaf497c666e55d06ec31e7fa4a83f
+- Content hash: a278a4dea894f5af23c706402eff6339b5c761949454c0e82237db14c5ca72ec
 
 title=Units 21–25 source notice
 summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.
@@ -4257,130 +3974,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u25-productive-formation-0-en`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 13c6d6ae7f095132368be6d8b1cc87c86dd7392c384467c8f970af507cc71579
-
-recordType=meaning
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Машенька
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=65060267386b8efcfecc82efb6044357d337457acaf2c06a8a68c0631db42d6b
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u25-productive-formation-0-ru`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: da1fca2c7892a0fa7b333f52a6471fce6a800fb05943d90f636c1390bb272759
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Маша
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=193d463c68a1ec9b2f47d85e6035daebe8b5403bd5f0d818223e4655bbd20445
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u25-productive-formation-1-en`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b2fcb940c7c09cce6481dc0c2fcc9b1e38bd4c87d6eae98e6397b2037dce10a0
-
-recordType=meaning
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Марюня
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=4e4a45295cd16814eadc8812b8cb9badf0124df16ba4297b77d4e55115827e69
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u25-productive-formation-1-ru`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5564bfbd0c14e230fad2e27a362990ca7bde88a18215fc47579a416ca67fe980
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Мария
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=e70124977db3d82b7a94a929a755d2ae06eea74ee17296c4807347749be5665f
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
 ### PROVENANCE `prov-u25-address-rem`
 
 - Objectives: obj-u25-address
@@ -6085,696 +5678,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-u25-productive-formation-rem`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 29d182c8d77925a7101efb4ebb26a57bf1db7e8bd4773df89fbb8538d254696a
-
-recordType=instruction
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=5dc47abc417cabcf808c8ecc89ec8f3de356d9d54ab2863efbfa1bfeabc67e94
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-rem-r0`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d63d17cfccad651709ed68fb6bb318f731a097db8fbe857eb2df797744a8da0e
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Уменьшительные имена
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=fa5057cca6c1b5a4b30e53de438b305369a5807abb8f18020abeca94110c5794
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-rem-r1`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff86a86f3e0f97006c6bf46cbb8a31145c2c6d8f3674aa3dfc0ac1ddb78e5f6e
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=образованные при помощи суффикса
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=5ae337e287c7dba4c4d67b6ee9822d178165607004419ae5c361bd975b8c86e3
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-rem-r2`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1920c624109744e9f768827b7e03899bb08e73e5fdd36b4655c6e208d7c7da0c
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=к
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=5225a95b111d47bf4c85281b89d99e31140bf124048d2b574b189225244da605
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-rem-r3`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 086f3481a778bd4169e4c9c988cb09bd76604b8de78b5dd72a18a7cbb58ec2d4
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=несут в себе оттенок пренебрежения
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=8469d7d2eca271c3751ff26fe09561dfcc1711ea4ca934daf3fcae75ebd3f847
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-0`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 43d8a28c2bfbaf50667af80059022e7542a934c1d2ab9f5ca67dd0e161154b3e
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Сашка
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=09ebad1273e0075f96936963ac412598522de640917bd2d4593e1b8231eb7976
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-1`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3aea23ca5392502f639288fd2ed0b75e17c883dfedf0d36824d9893373b1e333
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Машенька, Машуля
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=fb40323f56b3c0ae876bd6710c0b150c131f322753ba265bbd482a162490df04
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-1-r0`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 559e79b3b12860dcb3c50583ca964f201ed6d22cc3f2e191ff7aef7dff413762
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Машенька
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=65060267386b8efcfecc82efb6044357d337457acaf2c06a8a68c0631db42d6b
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-1-r1`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46f7db466f018819cae530a19796797f85166e6a05f477fef0b979e142e2beb2
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Машуля
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=91e9ac0a614f14c4221417e720bfd54493fad3befb38cbecdbbbb0631e9b0118
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-2`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f9779ee4ba8e910f8946566af1d4c56ec9b43fcd2e3b80febc50b58cf6cd2a4
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Марюня, Маруня
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=c158132d1f2698f776f9085bafbe37e1b90cfad11d75b6602de7c98021e01a74
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-2-r0`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a70eb7a14683faf8d6f63822c74f53fe2907ca217a8b91c4cd08941470ff14c8
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Марюня
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=4e4a45295cd16814eadc8812b8cb9badf0124df16ba4297b77d4e55115827e69
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-2-r1`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 44fea64a61dce097032a6a604769e5b512c04ac7010a056700abed291d47489a
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Маруня
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=c7ddd990dd552f91dd2b644159f200c2ceb487182e4c2399afadb1e897d08285
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-3`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fafe43d88b41c6340ec141fc56c1d72ae1f83cb05469134e46a3440c007f2169
-
-recordType=label
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Васька, Маринка, Алка
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=190b3ec02be4afe2d2de183ae08e5328163ea4bfb116ef0c787461cd5fe2c05e
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-3-r0`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 241e190fed5f7ceab406d97231147d00917aa551216265db8a01ee056656edba
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Васька
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=7b1a4b025a671008977b905a61d1244ce95dc0bee2e0ceb2d2802602b7fbf9e7
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-3-r1`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dabceef9e782dd332df302e36235d8bc155c9fbaf80280bfcaeb16f611030a87
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Маринка
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=bbb330d45940e8907e04ced1191632596825555526f235e1cb946089f904cb05
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-3-r2`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0151cb1a9189356b95507be855840114a43140062234814bd2e3e515a5bad20f
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Алка
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=b377a18bcb9bb188456929a464c75d42f41a0ee0dd1f9e9e3f1a9faec0348e73
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-4`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 24ba5d401eddf5e085ac2f38c4c34c827fcee72e9829b68213985354d591a611
-
-recordType=instruction
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=5dc47abc417cabcf808c8ecc89ec8f3de356d9d54ab2863efbfa1bfeabc67e94
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-4-r0`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: daef6d14392ca1446090d9b24efe0496f4624c2a748ad4c256fcf6bb316452ad
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=Уменьшительные имена
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=fa5057cca6c1b5a4b30e53de438b305369a5807abb8f18020abeca94110c5794
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-4-r1`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 250d303fc42430e87556a40e13451a4cc7d3291edb980a2e2e75d364f627e5c4
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=образованные при помощи суффикса
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=5ae337e287c7dba4c4d67b6ee9822d178165607004419ae5c361bd975b8c86e3
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-4-r2`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff25c45977e5e031cde93c644bbf7c2245753c2f8fc14a1df94e2492ca7d9d3b
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=к
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=5225a95b111d47bf4c85281b89d99e31140bf124048d2b574b189225244da605
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u25-productive-formation-x-4-r3`
-
-- Objectives: obj-u25-productive-formation
-- Sessions: u25-s-orient, u25-s-productive-formation
-- Source: src-ruwiki-lichnoe-imya-154915954
-- Rights: rights-ruwiki-lichnoe-imya-154915954
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d1608eba0012f5ccda6fd93101d5f6c7c9293495a735caba252fed616942ee72
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
-sourceRevision=154915954
-sourceRecordId=lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн
-originalSourceText=В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name="ОРИ-5" />.
-
-Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group="с">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными
-shippedText=несут в себе оттенок пренебрежения
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020
-contentHash=8469d7d2eca271c3751ff26fe09561dfcc1711ea4ca934daf3fcae75ebd3f847
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### AUTHORED_ENGLISH `en-u25-184`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a082cebdcc3725d4cfb8e53fb8a1536d29e17d411ee44cc1314a096c090db192
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u25-185`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d151c254a06f3dd60af66f2b98eccd3d8951de3aed5644ae383251dc40685713
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs this form with patronymic name, not with the shown words.
-
-### AUTHORED_ENGLISH `en-u25-186`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee451919198877a227aa1a766d3d24e86a0379bc1c92a20b5b5742242781f834
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs this form with family name, not with the shown words.
-
 ### AUTHORED_ENGLISH `en-u25-187`
 
 - Objectives: none
@@ -6783,10 +5686,10 @@ text=The frozen sentence pairs this form with family name, not with the shown wo
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04b6179ea0046ff13228b356c6c0d94c55f71cf91db0450cd3e33816c01f58bd
+- Content hash: 2e2892d87174524720e67d182f2dd3b1e669cdad3d73c5514e5d2c4c81e38ead
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence gives this ending for son of, not as the pair for the shown words.
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u25-188`
 
@@ -6796,10 +5699,10 @@ text=The frozen sentence gives this ending for son of, not as the pair for the s
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c04ceb209250a9e4b3c2ec81a5a7aea73116db3d6bf019ffc6e03b1b2e55b2a7
+- Content hash: ba0614d4f99367b667efb28f7f73d27137a0ed648a404993b460090dfe3b15a5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is paired with patronymic name.
+text=The frozen sentence pairs this form with patronymic name, not with the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-189`
 
@@ -6809,10 +5712,10 @@ text=This form is paired with patronymic name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dfeba5108f5445654ac16164fd194574bdb8546a2527247abc78617a0461f50e
+- Content hash: 1e82c712860c66ebbf0ba7de3f1c2f1f9a673d5fdcdc04897d20e58911efed05
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is paired with family name.
+text=The frozen sentence pairs this form with family name, not with the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-190`
 
@@ -6822,10 +5725,10 @@ text=This form is paired with family name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70f3bc0c5a2b2830f32e23e10a7620847d74f3f281ad8926ca2e0d459a0d00de
+- Content hash: 03e7992768e5a1f288abc657fa1bc4035f9f115e323f7eda57ef1e33183d7c9f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This ending means son of, rather than the paired form.
+text=The frozen sentence gives this ending for son of, not as the pair for the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-191`
 
@@ -6835,10 +5738,10 @@ text=This ending means son of, rather than the paired form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1cd414aaeadf4cd6f2619849216d5114244cb3bd82d50d0150dc5fc597bb07ad
+- Content hash: ba5054cd402903eeaafc1e932fd5f0bfccd3b84d144eb8b385c8ee4bb705f7cf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence says Russians use three names and pairs the shown words with this form.
+text=This form is paired with patronymic name.
 
 ### AUTHORED_ENGLISH `en-u25-192`
 
@@ -6848,10 +5751,10 @@ text=The frozen sentence says Russians use three names and pairs the shown words
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 80288495af2522eb52771f56b2ac3362be440335e3776126e9b504a6a942d49e
+- Content hash: 7731a445655dcf6ef92f6186b07892faed7a07786c093cd0182b0a1e9e058838
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs the shown words with one form. Which admitted form is that pair?
+text=This form is paired with family name.
 
 ### AUTHORED_ENGLISH `en-u25-193`
 
@@ -6861,10 +5764,10 @@ text=The frozen sentence pairs the shown words with one form. Which admitted for
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 305e177826dda92e5a178dbc61c3d860e5376d0575307945a34e31eeb464ba20
+- Content hash: fc4148f6e8f9072a0cf605f71ac3b64c939a6ce08333224f4403d7d5b5833879
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=This ending means son of, rather than the paired form.
 
 ### AUTHORED_ENGLISH `en-u25-194`
 
@@ -6874,10 +5777,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb24e9c7f258b78d0d26d059281d5c61bbbf87c9d03973ca5a3d07ecd1a68ff4
+- Content hash: fb3b0c26b122e5409db88fa269af7397c00c630775861fca6364f1526f8dbc9b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs this form with first name, not with the shown words.
+text=The frozen sentence says Russians use three names and pairs the shown words with this form.
 
 ### AUTHORED_ENGLISH `en-u25-195`
 
@@ -6887,10 +5790,10 @@ text=The frozen sentence pairs this form with first name, not with the shown wor
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6b5e2b2adfd4e4bfb3ec647808636e9e6d5998345b8143a2d55ade84c27a98f2
+- Content hash: 50b5bb50ecf38030b0ae52970c3228df8d9607475696389ea32b0c6dbffe8420
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
+text=The frozen sentence pairs the shown words with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-196`
 
@@ -6900,10 +5803,10 @@ text=The frozen sentence gives this ending for daughter of, not as the pair for 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a202dacc19f0d00e7d5d186586f3555fa4610a0c5fbb18c1df9a4a43064767f8
+- Content hash: 85137afb4a380b4428e80eeace472afd132bdf6178ba65110720cedc6048f287
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is paired with first name.
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u25-197`
 
@@ -6913,10 +5816,10 @@ text=This form is paired with first name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a1fd061cf9ec6e8f5a663f466e6a53b147b469a089adc3a0709f3a2e9b4c910
+- Content hash: ea6a7acea9011964872f7fd36f39ebd752739a78efdf38b72fcdc4ce65c13dce
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This ending means daughter of, rather than the paired form.
+text=The frozen sentence pairs this form with first name, not with the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-198`
 
@@ -6926,10 +5829,10 @@ text=This ending means daughter of, rather than the paired form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f8662da8aaaf14085483e5ca66ab6a2f0567aa6d6fac6a905058d524371342a5
+- Content hash: 7ac46ee139bc127b4d21498114cb1d47828a645c9395fd22b3fda3d2c2a83fa7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence says Russians use three names and pairs patronymic name with this form.
+text=The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-199`
 
@@ -6939,10 +5842,10 @@ text=The frozen sentence says Russians use three names and pairs patronymic name
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7f5f9862db6c6963fc525db9bdbb4f860e58fc66ca176022189da6c80f979c69
+- Content hash: 56c4554ab369188ed037b7449f17a55045e9d081481154f3cc3ed338f4fc4d94
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?
+text=This form is paired with first name.
 
 ### AUTHORED_ENGLISH `en-u25-200`
 
@@ -6952,10 +5855,10 @@ text=The frozen sentence pairs the shown patronymic words with one form. Which a
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96bd8ee762e2dafd193bbe34d62a5664e7e65c0d1adfe08f3eba0cf7ccd770b5
+- Content hash: caa60c4a2b3619cca9b6fcb7a8fc03f14dc3ffe8d19347b49cffd86a298b8a09
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence says Russians use three names and pairs family name with this form.
+text=This ending means daughter of, rather than the paired form.
 
 ### AUTHORED_ENGLISH `en-u25-201`
 
@@ -6965,10 +5868,10 @@ text=The frozen sentence says Russians use three names and pairs family name wit
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 44f7b35fe3fa4ecf7d569de0be043ca67c180406d813a02f8c6263f32c7b5c9e
+- Content hash: 20fa4bf43171563ae6ac13a0524a24fdb5026f1bd5eacd9aa5bfc524e565e563
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?
+text=The frozen sentence says Russians use three names and pairs patronymic name with this form.
 
 ### AUTHORED_ENGLISH `en-u25-202`
 
@@ -6978,10 +5881,10 @@ text=The frozen sentence pairs the shown family words with one form. Which admit
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d64f3c2e638427447693fe7f6ab43b2a85823bc0580e0bbe473e0571cdc26c8
+- Content hash: abb9bdd882fbfbe88fc95a1ecb7098c34d503ebe495ec21a7523bd11e9fd906c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs Alyosha for Alexei with a different name.
+text=The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-203`
 
@@ -6991,10 +5894,10 @@ text=The frozen list pairs Alyosha for Alexei with a different name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 47c090b98063e1d92a0170143d4b9c7976dff8cc323a460cdbb2a79f809872fa
+- Content hash: 4e2d21e36b076f6cde3a5736098fe3fed003e6e048f77c63a5ddd1f4bc1522f1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs Dima for Dmitri with a different name.
+text=The frozen sentence says Russians use three names and pairs family name with this form.
 
 ### AUTHORED_ENGLISH `en-u25-204`
 
@@ -7004,10 +5907,10 @@ text=The frozen list pairs Dima for Dmitri with a different name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 68efefd8903039473820091b6fa99f49c27cad83845b5c4f43920c734d7908ed
+- Content hash: 894422e429f196ddbc132eee7a9a00f6c3810e8c73f374410efc6ab9cb7f6678
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Alyosha is paired with Alexei, not with the shown name.
+text=The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-205`
 
@@ -7017,10 +5920,10 @@ text=Alyosha is paired with Alexei, not with the shown name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b510a23dd6fca5e5383a5a875aa32afab1041c7f386ed5c0d3a90d62f0d342a
+- Content hash: c0032394ebf968d1d3c45223b4557eb05f6837ef689e491e3dddeb2a5b787ca8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Dima is paired with Dmitri, not with the shown name.
+text=The frozen list pairs Alyosha for Alexei with a different name.
 
 ### AUTHORED_ENGLISH `en-u25-206`
 
@@ -7030,10 +5933,10 @@ text=Dima is paired with Dmitri, not with the shown name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 956d047de25ec22d7bf91786bb80b5b1a2f2dfb042952945210a75645d86d7ad
+- Content hash: 0fefeb7621b0d95230593be8d5f28b63e8013429718e94dcc69d827b5d2e97e2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list includes Sasha for Alexander as the pair for the shown name.
+text=The frozen list pairs Dima for Dmitri with a different name.
 
 ### AUTHORED_ENGLISH `en-u25-207`
 
@@ -7043,10 +5946,10 @@ text=The frozen list includes Sasha for Alexander as the pair for the shown name
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c98ed9580c8b9aaabbe1b764696dfbddd10d24f8e91c7b479897161af078cffe
+- Content hash: ec58b077f7bd544e1db79b78cfa629b378d5d603a3be4aff59742734d8208950
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
+text=Alyosha is paired with Alexei, not with the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-208`
 
@@ -7056,10 +5959,10 @@ text=The frozen English list pairs one short form with the shown name. Which adm
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a52dc04d17aac081fcf8ee452f32c08d3a400ca38592cd1884229da9db57e00c
+- Content hash: dc8015656e5668a7a07569838a3322253f805e8fba32964a0273918a35787ab7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs Sasha for Alexander with a different name.
+text=Dima is paired with Dmitri, not with the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-209`
 
@@ -7069,10 +5972,10 @@ text=The frozen list pairs Sasha for Alexander with a different name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1fffb4d6517e57276a2c0506864198c95d5bab2670e80f22660b1fe76e8aff01
+- Content hash: 90234b7a18d60b61e39f83fad2594698a933559604cd5754efd729994ce5e54f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Sasha is paired with Alexander, not with the shown name.
+text=The frozen list includes Sasha for Alexander as the pair for the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-210`
 
@@ -7082,10 +5985,10 @@ text=Sasha is paired with Alexander, not with the shown name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9336318e6e5b4c538e47d2b0dd7659636049fa79b65d6603ed8095d877be0ac4
+- Content hash: 9e3fd32d84ebec41a3e80fa5fab154200c9a81fe382314d9c111b2bdbe88dfbf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list includes Alyosha for Alexei as the pair for the shown name.
+text=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-211`
 
@@ -7095,10 +5998,10 @@ text=The frozen list includes Alyosha for Alexei as the pair for the shown name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 16d63e23641570b39252ccd12d41202920f69f6f4bcc342d10ddd946e654989d
+- Content hash: f2929c1a0572723b1a15d754f26ac5176a5b42530154a3f00d18492c06d0df07
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list includes Dima for Dmitri as the pair for the shown name.
+text=The frozen list pairs Sasha for Alexander with a different name.
 
 ### AUTHORED_ENGLISH `en-u25-212`
 
@@ -7108,10 +6011,10 @@ text=The frozen list includes Dima for Dmitri as the pair for the shown name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3eedaabf695dc2a3da91f3e2392ed3ef2c943512dbecbee756b29620ba82afdb
+- Content hash: d0b68a1ebd380b972f134a8f9c6f7e4d44356800465d5bd76314e26a6e7f796f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs thanks with a different form.
+text=Sasha is paired with Alexander, not with the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-213`
 
@@ -7121,10 +6024,10 @@ text=The frozen list pairs thanks with a different form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a9fa3922bc54ebbd96d957ccd2f1ba533e920f6e6aa9081f0795ab38c16c52f7
+- Content hash: 3f0b0627ecdccdda9709ff66ca1520909b00013522a81fa3525a49cb488f9fc9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs I'm sorry / excuse me (informal) with a different form.
+text=The frozen list includes Alyosha for Alexei as the pair for the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-214`
 
@@ -7134,10 +6037,10 @@ text=The frozen list pairs I'm sorry / excuse me (informal) with a different for
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e3922163830aec5fa7778d8e1ba64bebe25f0f5ef763a6f9e4cad7ea2cc89d88
+- Content hash: 157100be3820a9d7f6e58d34b509b5beb2b97c0ff85b6a9b7eb30b18f9cbf80d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Thanks is a different courtesy word.
+text=The frozen list includes Dima for Dmitri as the pair for the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-215`
 
@@ -7147,10 +6050,10 @@ text=Thanks is a different courtesy word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dfdbd88cbc9506f6c66bd4f155e07ab96360852b42e583916d8b81a1a46f59ac
+- Content hash: 8aa5cc0c3454bab88f0c4d40c295f2db585e041e7ec5ed4ccab0a6219fba800b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The informal apology is a different courtesy word.
+text=The frozen list pairs thanks with a different form.
 
 ### AUTHORED_ENGLISH `en-u25-216`
 
@@ -7160,10 +6063,10 @@ text=The informal apology is a different courtesy word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 636ed4111ddab9a75ea5484774f290bbe9617fd1fbd80d6ff5eef0bd843581b2
+- Content hash: c4f1262ee474de7d071369191d7a9fab291ca5e90ea211df99491fdd2d607b58
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list says please; also used for a request and pairs that word with this form.
+text=The frozen list pairs I'm sorry / excuse me (informal) with a different form.
 
 ### AUTHORED_ENGLISH `en-u25-217`
 
@@ -7173,10 +6076,10 @@ text=The frozen list says please; also used for a request and pairs that word wi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2496cd7f1b7e86b73ad4017d2149a50735e0f56680958e19900c97f3c7adf63b
+- Content hash: 53f54bb61cbd5d3fb1bb1baac7a42be2fa8ee9f093a72885c60d1dee99290896
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown request word with one form. Which admitted form is that pair?
+text=Thanks is a different courtesy word.
 
 ### AUTHORED_ENGLISH `en-u25-218`
 
@@ -7186,10 +6089,10 @@ text=The frozen list pairs the shown request word with one form. Which admitted 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 821e9bf881d3b4f4342f8031ab315d216bcf1a3de268c4f4fa480e590e5ae0a2
+- Content hash: d908d7ff1438ec1f1b3809c4250d34fc3d66b5a17987e5a424c44258edc2663e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list says please; also used for a request, not for thanks.
+text=The informal apology is a different courtesy word.
 
 ### AUTHORED_ENGLISH `en-u25-219`
 
@@ -7199,10 +6102,10 @@ text=The frozen list says please; also used for a request, not for thanks.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 045399e46d2667ee19ea39a5f36561d8f160ba42c90c3e30939777252b348c19
+- Content hash: d4ba792c28a159462999f54151b1fe4a9b6396d9ee880735cc0fb4eba49b9376
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Please is the request word, not the thanks word.
+text=The frozen list says please; also used for a request and pairs that word with this form.
 
 ### AUTHORED_ENGLISH `en-u25-220`
 
@@ -7212,10 +6115,10 @@ text=Please is the request word, not the thanks word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4dd5eef32223906758134bc50fb0537d7b38d666c31366c502cd8cad8af4f812
+- Content hash: 72fd56f4c709058d6d84cd5aa800fdca1f27bedcb47cc54ed48a0fc2f6e917a3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The informal apology is not the thanks word.
+text=The frozen list pairs the shown request word with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-221`
 
@@ -7225,10 +6128,10 @@ text=The informal apology is not the thanks word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9b42fb9960f5d33238c96edf83f11a818e6b36b3d1ca09c742974d6a9db01e1a
+- Content hash: 55a71790a970a155f4ca10e521101c18b6893e2d564fd539408c8d77e5198bd5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.
+text=The frozen list says please; also used for a request, not for thanks.
 
 ### AUTHORED_ENGLISH `en-u25-222`
 
@@ -7238,10 +6141,10 @@ text=The frozen list pairs thanks with this form and I'm sorry / excuse me (info
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c6a977ff7d9206dfe0f61d97fc831279082107b435c01ed989c74b8399eec28
+- Content hash: 5545f952525c37efb1bb11f86881825ca8added44ec1ef280ed31a198876308c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?
+text=Please is the request word, not the thanks word.
 
 ### AUTHORED_ENGLISH `en-u25-223`
 
@@ -7251,10 +6154,10 @@ text=The frozen list pairs the shown thanks word with one form. Which admitted f
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f39ffa989d36b5ffd1007ec0b258578ec0bc3cb5529d83ab06b879012c37be38
+- Content hash: b0b24ef63751f75d6943e0f66d8a462adb3de07711ab498c18458a0d55b79363
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list says please; also used for a request, not for the informal apology.
+text=The informal apology is not the thanks word.
 
 ### AUTHORED_ENGLISH `en-u25-224`
 
@@ -7264,10 +6167,10 @@ text=The frozen list says please; also used for a request, not for the informal 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5af5a413558a0e5b480744161bda48f95f08018e1a01a5722a9a973dca65167
+- Content hash: d4a65a891d6508677efa1eb7878f9831492a519f56dfba3872dbf57ae7396f6c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Please is the request word, not the informal apology.
+text=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.
 
 ### AUTHORED_ENGLISH `en-u25-225`
 
@@ -7277,10 +6180,10 @@ text=Please is the request word, not the informal apology.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 71202dffbafab56bda40bd65e7065e2e45fd39d9fcb9001cd0f7f9dfa4c9003e
+- Content hash: 3620f2e7cf7b85eb755b27eac68af4aa2071dd1a6dc78955a48e8af95b2f0e4e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Thanks is not the informal apology.
+text=The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-226`
 
@@ -7290,10 +6193,10 @@ text=Thanks is not the informal apology.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7c4344128924eac0aeead1422762d0bd0636ead87bb11223307629115d24146a
+- Content hash: 1138db14c8f5890aeea7dccb70734fdc0185fd5a79dd4d36971e7e259ea1650f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs I'm sorry / excuse me (informal) with this form.
+text=The frozen list says please; also used for a request, not for the informal apology.
 
 ### AUTHORED_ENGLISH `en-u25-227`
 
@@ -7303,10 +6206,10 @@ text=The frozen list pairs I'm sorry / excuse me (informal) with this form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 71ec5f9746dda50f75e8aef410b7453e68273593d04e4d1da58752dba8fce0f4
+- Content hash: 1548c984b87b3461bc664118cebeb9e42159aa3dc3fe0444b5387a2fc88ad33f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?
+text=Please is the request word, not the informal apology.
 
 ### AUTHORED_ENGLISH `en-u25-228`
 
@@ -7316,10 +6219,10 @@ text=The frozen list pairs the shown informal apology with one form. Which admit
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cbd348bbd4842a2d89f806d4288cdfbcb17923c4cfe75a37e71260b45e63e970
+- Content hash: 29274fc2cf97c0fc243bf1b169150358f25d313242d967fca2136a64f1836d15
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs My name is... with the reply, not with the shown question.
+text=Thanks is not the informal apology.
 
 ### AUTHORED_ENGLISH `en-u25-229`
 
@@ -7329,10 +6232,10 @@ text=The frozen list pairs My name is... with the reply, not with the shown ques
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0bd22b8f8be2a8d370ac56a3b5ccc90f2cfc5a9461c4da5edb9d6f6e8dfffccf
+- Content hash: 4091083d416c4be8fc7c551d3cdefeac5a7fea737ca435efc9b9b921c0fa9105
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs I'm sorry / excuse me (formal) with a different form.
+text=The frozen list pairs I'm sorry / excuse me (informal) with this form.
 
 ### AUTHORED_ENGLISH `en-u25-230`
 
@@ -7342,10 +6245,10 @@ text=The frozen list pairs I'm sorry / excuse me (formal) with a different form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e447ab50eedafdb53f5d2b5c7f29607bf92b98599cdc38126a807183616a8d17
+- Content hash: 2031e27830b256cfc2e197259ff6b40f2580b5c387f875dc509eb725aebdcd45
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the reply, not the question.
+text=The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-231`
 
@@ -7355,10 +6258,10 @@ text=This form is the reply, not the question.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a831d4c075f27e90c1e2bd22e1c8ea7177a7753d65e517cf5e3f915cba5e03b9
+- Content hash: 61e11970ef1aa17a77d45bbc60a1a58352f0d325f52b7aaa927729b2373c454c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the formal apology, not the question.
+text=The frozen list pairs My name is... with the reply, not with the shown question.
 
 ### AUTHORED_ENGLISH `en-u25-232`
 
@@ -7368,10 +6271,10 @@ text=This form is the formal apology, not the question.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1853dd3d70792015c6cd839829d097eedf45c506d556892d49786233d911c2a8
+- Content hash: fe6afdd8b7c78494602c6d5c36bd7d9521f16ac12c11fd3e14ea199c3579d252
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs What is your name? with this form and My name is... with the reply.
+text=The frozen list pairs I'm sorry / excuse me (formal) with a different form.
 
 ### AUTHORED_ENGLISH `en-u25-233`
 
@@ -7381,10 +6284,10 @@ text=The frozen list pairs What is your name? with this form and My name is... w
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee72f55443d9c5066faeaa9c61da9d192f0406b2d436bf5a48b8ec583aa69f89
+- Content hash: 3b4c539092ff24099edc5c2765bd5a3ff8368fbe91db53b08336bab1dafdc6da
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown question with one form. Which admitted form is that pair?
+text=This form is the reply, not the question.
 
 ### AUTHORED_ENGLISH `en-u25-234`
 
@@ -7394,10 +6297,10 @@ text=The frozen list pairs the shown question with one form. Which admitted form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 76f6146813e7db717dfff6f207385c036b4185a0ef9fa9acb6b4f5ff17ea008d
+- Content hash: ed4e25864feb391d526246791961dcdf83a1377405e107a622f28a0434e77d21
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs What is your name? with the question, not with the shown reply.
+text=This form is the formal apology, not the question.
 
 ### AUTHORED_ENGLISH `en-u25-235`
 
@@ -7407,10 +6310,10 @@ text=The frozen list pairs What is your name? with the question, not with the sh
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c6bc0793cc249274b2ade0d3661dacddcf4a8e73070cc44d26b3d7ec7534750
+- Content hash: 8b6e876cd70eeb5705b93e690f197718ff935bf180ec9c33d48a79f88d420524
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the question, not the reply.
+text=The frozen list pairs What is your name? with this form and My name is... with the reply.
 
 ### AUTHORED_ENGLISH `en-u25-236`
 
@@ -7420,10 +6323,10 @@ text=This form is the question, not the reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e310f90fea813a1131513bded1966a362b3c2ea6dc245ae04ceabb94c9bb88b8
+- Content hash: 0de04ddebfc2b4c9464ff0310a2a618d292ef77619f3a3b5ad45ec3e45edb60e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the formal apology, not the reply.
+text=The frozen list pairs the shown question with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-237`
 
@@ -7433,10 +6336,10 @@ text=This form is the formal apology, not the reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 79cb49ec3302019c3826f827ea3a25b210572c5a51bac7adc50da73021c22b67
+- Content hash: 4f8f3edee69a833cd8704d5afd19a2040d2e1ebb1377ed5e8906916570c6e279
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs My name is... with this reply and What is your name? with the question.
+text=The frozen list pairs What is your name? with the question, not with the shown reply.
 
 ### AUTHORED_ENGLISH `en-u25-238`
 
@@ -7446,10 +6349,10 @@ text=The frozen list pairs My name is... with this reply and What is your name? 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0968f35290a6298c772dd78feed3c9f85ecd0213885bc85735edb1e8d8d449e6
+- Content hash: c014adb2d33f6370c0849a80c5cf8eb71894449ec23ab87dba14f11f9f6060a1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown reply with one form. Which admitted form is that pair?
+text=This form is the question, not the reply.
 
 ### AUTHORED_ENGLISH `en-u25-239`
 
@@ -7459,10 +6362,10 @@ text=The frozen list pairs the shown reply with one form. Which admitted form is
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: edc24708823eab078d281c8ed946f8d795c9ee1bc7c9c3e7d20aa2c0cdb97b4f
+- Content hash: ae0d82d4d1ca426ab9e3c016b4707e9c9d96d1b29b629f68f7824a3cbdd054e1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.
+text=This form is the formal apology, not the reply.
 
 ### AUTHORED_ENGLISH `en-u25-240`
 
@@ -7472,10 +6375,10 @@ text=The frozen list pairs I'm sorry / excuse me (formal) with this form, not wi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 960a8ba64fb943d1442c5036111bb37d06f4e67132af5d69b27dcd6b13d83923
+- Content hash: 4624a5d2acd88662d140335fb16e91a997c7a2221fe4d8f5a8d2f4c2d3ffe35f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs How are you? with this form, not with the name reply.
+text=The frozen list pairs My name is... with this reply and What is your name? with the question.
 
 ### AUTHORED_ENGLISH `en-u25-241`
 
@@ -7485,10 +6388,10 @@ text=The frozen list pairs How are you? with this form, not with the name reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 19db20308a9ebafd37b51c2c6962bfc603842f794314c0e8c745e521c02c56ba
+- Content hash: a516ec223ed4cbb07bd031601345ced7545771a93f728de7f62a7a73eaf4bac4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the formal apology, not the name reply.
+text=The frozen list pairs the shown reply with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-242`
 
@@ -7498,10 +6401,10 @@ text=This form is the formal apology, not the name reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: db1dbbd4587119e0fc193b3cf5d1ab4a7227a39a3fb9626e07c2baea61f99bcd
+- Content hash: f060be0c69c859ed9e59bd982361d6250e696f7b471b54c6ee5010541470a4d5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form asks how someone is, rather than giving the name reply.
+text=The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.
 
 ### AUTHORED_ENGLISH `en-u25-243`
 
@@ -7511,10 +6414,10 @@ text=This form asks how someone is, rather than giving the name reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 80b3a201734c8577669b6ba3cf58ed2b91af9aff0a4e1c3ec2a9adf4de50da22
+- Content hash: 90f383fb92703d26cb4bf309c9f2793dbce0395482f688480e52fe95e6881594
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs My name is... with this reply and What is your name? with the shown question.
+text=The frozen list pairs How are you? with this form, not with the name reply.
 
 ### AUTHORED_ENGLISH `en-u25-244`
 
@@ -7524,10 +6427,10 @@ text=The frozen list pairs My name is... with this reply and What is your name? 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed0e83ebcf2947e7d9a925cc94b8e0015de94ad7f8c4dbdc7577cb74e4919c5f
+- Content hash: 4e5259663923ce780419148cff8a0e3b2e989dcddd6057e10424d1bf7c5a48ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?
+text=This form is the formal apology, not the name reply.
 
 ### AUTHORED_ENGLISH `en-u25-245`
 
@@ -7537,10 +6440,10 @@ text=The frozen list gives the shown question and a separate reply. Which admitt
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b0d6e08903429e143c456e817aa543f12e4eaef62777e0a30d04efbc9448ef3
+- Content hash: 107e06bde7ec92bd930480fa44219fd327fc13fdb2c33b6049d1cdedaae517ac
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source assigns от краткой формы to Машенька.
+text=This form asks how someone is, rather than giving the name reply.
 
 ### AUTHORED_ENGLISH `en-u25-246`
 
@@ -7550,10 +6453,10 @@ text=The source assigns от краткой формы to Машенька.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5af87b54741fb37cea720cb3f71c3647cdfcb509e765cb03b025e1b0cd8bde6
+- Content hash: 0179e5a5cb3c582e7e9c96c7d3d73a181de0c4aa98da0e919e4d589b53c40e5a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source assigns оттенок пренебрежения to Сашка.
+text=The frozen list pairs My name is... with this reply and What is your name? with the shown question.
 
 ### AUTHORED_ENGLISH `en-u25-247`
 
@@ -7563,10 +6466,10 @@ text=The source assigns оттенок пренебрежения to Сашка.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a59655c26703bf87554bd114046006c55fe35936711465ec062c1b36e8427275
+- Content hash: ece91fb9f47ecf9ab2c4337776e3afb2210006020a7880e554aeff93d7f972bd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=от краткой формы does not classify the shown form.
+text=The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?
 
 ### AUTHORED_ENGLISH `en-u25-248`
 
@@ -7576,10 +6479,10 @@ text=от краткой формы does not classify the shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 161c043cc5fd4c804f39cf6a3aad5d7eb15bd54a1f3b13907b6744970959235c
+- Content hash: 494d710120190b46b31b303691a8395348db57bfa1b604b47fe2cda4b8bb28c9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=оттенок пренебрежения does not classify the shown form.
+text=The source assigns от краткой формы to Машенька.
 
 ### AUTHORED_ENGLISH `en-u25-249`
 
@@ -7589,10 +6492,10 @@ text=оттенок пренебрежения does not classify the shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a00b491ee36c396694fe9fa396ae459a363c345fee1865bd3c4e53ea9fd0be44
+- Content hash: 6dd719450edc5ceae9b00c3acb26dcc06e89328fd8fea5e2f95892f363e604cf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени.
+text=The source assigns оттенок пренебрежения to Сашка.
 
 ### AUTHORED_ENGLISH `en-u25-250`
 
@@ -7602,10 +6505,10 @@ text=The source says от полной формы имени and gives Марю�
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 405877d9769e072dcee5e3c48bab638b697f9d8c18dd21e3e20baf255e8d82f5
+- Content hash: def899c302df79ed3d3d3b8af3bc4b76acfc717fce9f645f9a0f8fe996804a29
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted phrase classifies the shown form?
+text=от краткой формы does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u25-251`
 
@@ -7615,10 +6518,10 @@ text=Which admitted phrase classifies the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f139af3c32038c0db075e7bd879288dd951d3fc02e97364716fad94e8bfe743
+- Content hash: c465f252a95fcbb3dff1abc70da03a171b477ceed8bb6c588be7bfa976d29805
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source assigns от полной формы имени to Марюня.
+text=оттенок пренебрежения does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u25-252`
 
@@ -7628,10 +6531,10 @@ text=The source assigns от полной формы имени to Марюня.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d00714de7cbdb72262bef8df4c7298e7dadb2293c72354e1035ff768eb71008e
+- Content hash: 1bfae7c2817e1dc506775f62c6e30fe80d8d9c6e0daff42376d8e5570c729024
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=от полной формы имени does not classify the shown form.
+text=The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени.
 
 ### AUTHORED_ENGLISH `en-u25-253`
 
@@ -7641,10 +6544,10 @@ text=от полной формы имени does not classify the shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3160f7686191d554096ff5420320b8c31e20432be4fc45589e0c2d4f358e9b65
+- Content hash: 9b78cb7a1b6ab1292c265c5baa992524321766a80019d0e78ed362373ff44160
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=оттенок пренебрежения does not classify this shown form.
+text=Which admitted phrase classifies the shown form?
 
 ### AUTHORED_ENGLISH `en-u25-254`
 
@@ -7654,10 +6557,10 @@ text=оттенок пренебрежения does not classify this shown form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 208481b36015e8f280f09ce8fc270d7141d1ceadee21115e90b38d1d60e7b3e8
+- Content hash: 76a8ae3791bd2cbfc52c30e2300f1ece671113da8784a9bbc2c5ef3e242331ee
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы.
+text=The source assigns от полной формы имени to Марюня.
 
 ### AUTHORED_ENGLISH `en-u25-255`
 
@@ -7667,10 +6570,10 @@ text=The source says от краткой формы and gives Машенька. 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 02530d006e2ae0f22a0124d327646af7e7d7cdffb79d25ff90071445d2ad571b
+- Content hash: 49353d006e22a898075d0b77f35bca63134a3fba5244253e9a1514bb117eebb3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения.
+text=от полной формы имени does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u25-256`
 
@@ -7680,10 +6583,10 @@ text=The source says these forms carry оттенок пренебрежения
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f42ae8f17808dc887b91e4fde50b238ef9c9edf70c9cfd6987b71931bf5799ef
+- Content hash: dfc51fa08238d4bcb224f6aec9b4038aa6132ce3f2aaf60e7f2b445780b26149
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen source pairs the shown form
+text=оттенок пренебрежения does not classify this shown form.
 
 ### AUTHORED_ENGLISH `en-u25-257`
 
@@ -7693,10 +6596,10 @@ text=The frozen source pairs the shown form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3639bacb78d0f0f089e72915cec02632e05a2f976772a487102a223fb272dd2d
+- Content hash: 2d676efdbd78124d38a3d9d1730976f171394f4e08a64d17fe7575396b974e1a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=with the admitted gloss
+text=The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы.
 
 ### AUTHORED_ENGLISH `en-u25-258`
 
@@ -7706,10 +6609,10 @@ text=with the admitted gloss
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3aed6d5c6bb0f2604a8f14b0c90448e5ab52aa76532ad8615562868f22557aac
+- Content hash: eb83ea54927327b0cc0c0cbcc4ff991b436202fe36770a639c70a96c1c95488c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted list name is written for the shown form?
+text=The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения.
 
 ### AUTHORED_ENGLISH `en-u25-259`
 
@@ -7719,10 +6622,10 @@ text=Which admitted list name is written for the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff6096daba323cc17dd41834180f1fd29afd0a0c71aa7726d74c610882b16874
+- Content hash: eefb714b5af2d658f4123f49954254a6b1679946d05fd0556603b94355bbda2e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted setting is written for the shown address form?
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u25-260`
 
@@ -7732,10 +6635,10 @@ text=Which admitted setting is written for the shown address form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89d91e25cf56a7a9c537a76960397fa19386e0a4295a5bebc69247239338e592
+- Content hash: bcd88bbaacf255023d22e7cfd65feddbb8d716234f68bdd8eedfa25db50d55d1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source forms Марюня from Мария.
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u25-261`
 
@@ -7745,10 +6648,10 @@ text=The source forms Марюня from Мария.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c5fef76f4bbbe62792fcf96bba502c2737fbc3891cc41ed3b49c6f5dfccb9c12
+- Content hash: c689c6195068d19aa2e01a8db2b329c970c5ebc48255019949bb1c96858399a8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source gives Сашка with the dismissive suffix.
+text=Which admitted list name is written for the shown form?
 
 ### AUTHORED_ENGLISH `en-u25-262`
 
@@ -7758,10 +6661,10 @@ text=The source gives Сашка with the dismissive suffix.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4d7c95b756201e601a2bfd75f5739b6fc921b61f060d4f463f318d63c7a1bc4e
+- Content hash: cc0deac25a4d94807b2bf1c89e9a06e83040953b1c234f5b121d1fc5eab380a6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Марюня comes from the full form, not from Маша.
+text=Which admitted setting is written for the shown address form?
 
 ### AUTHORED_ENGLISH `en-u25-263`
 
@@ -7771,10 +6674,10 @@ text=Марюня comes from the full form, not from Маша.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f558a7e6b437d18e8c6bafb08332f7102a1e13e6e7bbc7ebbca220a6190ae57
+- Content hash: 7893201880b7200c15b3a5ddad0164ba24654dac39ae9d6269271f3d0c1069e9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Сашка is the dismissive suffix example, not the short form of Маша.
+text=Admitted name and courtesy lines
 
 ### AUTHORED_ENGLISH `en-u25-264`
 
@@ -7784,10 +6687,10 @@ text=Сашка is the dismissive suffix example, not the short form of Маша
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f2d9de6120eee342bed9364a3846b8859c90b4675ef8ed0177bf7c9ffdf1a9db
+- Content hash: 3462adbd30c5244ebeec0cbd218a5f97c843ebb72cb11113a3c3d562a4af50e2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source shows Машенька, Машуля as the short-form pair from Маша.
+text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, courtesy lines, and the frozen address-register sentences. Listed pairs do not establish a productive diminutive. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u25-265`
 
@@ -7797,10 +6700,10 @@ text=The source shows Машенька, Машуля as the short-form pair from
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e6102b09f10a35a5b16c49873c7a582173edcdbe540b2f721daa59285e756fd4
+- Content hash: f82a97306127d80ed3193d80338770bdf83baadabc1a5514aef76f0370b10be6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted short form applies the shown base?
+text=Open Lesson 25 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u25-266`
 
@@ -7810,10 +6713,10 @@ text=Which admitted short form applies the shown base?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b66cf021f6959f4415dc3c37cbf7efa6a623e2237fd685ff88f65eb89ae640f
+- Content hash: 7f78f75bbc5585584ac86f6ed124d98a592f3a549504d53a4b9d3502d471c1d5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Марюня is not the short form named for Маша.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u25-267`
 
@@ -7823,10 +6726,10 @@ text=Марюня is not the short form named for Маша.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 656887f5a2e6e5a2fbe877e7c0422a25ca048666b4c229fc283f740920bf2710
+- Content hash: 346ded9bd4b3e57a856f3705dec1a87105474bd95743367c9fe5bda460c107c3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Сашка carries the dismissive suffix, unlike Машенька.
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u25-268`
 
@@ -7836,10 +6739,10 @@ text=Сашка carries the dismissive suffix, unlike Машенька.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4511d464787e316bf8e42d78ded6294ad846b8b3c267e203c059d6d6d3e5dfe1
+- Content hash: 4fcf5f573b56bdf2ff10f907eb3da9149671122ee11951b40b9752b4c36d57a7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source shows the short-form arrow from Маша to Машенька.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u25-269`
 
@@ -7849,10 +6752,10 @@ text=The source shows the short-form arrow from Маша to Машенька.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 51457228dfaf06e98597ee3108fe1a7f797e027e6b871dc25dda6f6f0dc3e4a3
+- Content hash: 797a6e2fbc6d3abaf27f763412694e9887fedf7df4939479525da2031dea2dbe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Машенька applies to Маша, not to Мария.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u25-270`
 
@@ -7862,10 +6765,10 @@ text=Машенька applies to Маша, not to Мария.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 90a579f861186d8046b9b4c5d2796765f9fa3015016d43af3e24e7bda52a1470
+- Content hash: bd30aaa3b6835206e8990deda478eb76604dd978e98468179bca20279211778e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Сашка is not the full-form example Марюня.
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u25-271`
 
@@ -7875,10 +6778,10 @@ text=Сашка is not the full-form example Марюня.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a451c6b801a08b2cbe55a41908758dd7bc7c67925a328ee8e6df88ee74889ab
+- Content hash: 406851baadbfc53eb6341c0324c06467e4b39fba2a099c3e2a1aea1b875c95e1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source lists Марюня, Маруня from the full form Мария.
+text=Work Lesson 25 in your copy
 
 ### AUTHORED_ENGLISH `en-u25-272`
 
@@ -7888,10 +6791,10 @@ text=The source lists Марюня, Маруня from the full form Мария.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e9270110d8126260f9a41fad37bda1343400511b313e3112319623be7df60c2c
+- Content hash: 22ec53639b945530651a96bd12a3c29b9ee9213ff538e8a5088745471bdb660e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted name and courtesy lines
+text=Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u25-273`
 
@@ -7901,10 +6804,10 @@ text=Admitted name and courtesy lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8dd824abce21e344a5e554c57e4b777d85b22654983a661840debcff435cbcfa
+- Content hash: 428ec9fbfa144d85c8e7774549bfa6f5c32bfdb6bd0337b1f2ed3a408f55a2f6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, an application of that same span, courtesy lines, and the frozen address-register sentences. Qualified review is pending.
+text=Open Lesson 25 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u25-274`
 
@@ -7914,10 +6817,10 @@ text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d131bef995d0d936cd958c898c4d97efe34d19283df6c63924ef50b95c6c4586
+- Content hash: 62efb36c43cf55fa9fa12e0b8de1c2211cd40a46f0b97cb4b88a0bfc18f5641e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 25 in the copy you own. The app records do not replace that lesson.
+text=Record Lesson 25 book work
 
 ### AUTHORED_ENGLISH `en-u25-275`
 
@@ -7927,10 +6830,10 @@ text=Open Lesson 25 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bef1691701f49c66c058fbb92267307dd988aa5bdd552e607a300a25fb31709f
+- Content hash: 8f13f4e8ae8c3eb2abfc2eac7f678916de4f1190207395ee5db6848a253a42aa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u25-276`
 
@@ -7940,124 +6843,7 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5450f355e84f5a6e00f0f552ac3f271444883c5fc368e251368a33a6e937ddf
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
-
-### AUTHORED_ENGLISH `en-u25-277`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bec118bde7bede2769065094703566a24484bcbfff6c4dc433bf81d31ec9752c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
-
-### AUTHORED_ENGLISH `en-u25-278`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e4d9641c5ccaa20423ad3d63157c88942229727112e57619f4b57c1f5ed0278
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
-
-### AUTHORED_ENGLISH `en-u25-279`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9850ff5bb2a3cf99a8069e1c1f69662e07cbcb3c83f6fc20c82667f27ec53f7c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
-
-### AUTHORED_ENGLISH `en-u25-280`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f6045b05ecdbef3c8c52b8223db9ed5a111e216751d896fd4b8beba0cc6bf8c3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 25 in your copy
-
-### AUTHORED_ENGLISH `en-u25-281`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2b18ba5b3c1a601c14336b3ca3cf3c822348c9e8049585765558cf5d0a88be11
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
-
-### AUTHORED_ENGLISH `en-u25-282`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc6d9626daf7a0a4772e989929673e8ec072fea9678a510cdd1c24784900c2b4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 25 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u25-283`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a665a1a7c5507eaea4fc6133fb6aa07763beaf50cd2ca8fb9808212db96bfc9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 25 book work
-
-### AUTHORED_ENGLISH `en-u25-284`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ead72ce8f856dd5177bf07a584b6ec3608f688877ded5be8b9e9e78348f00998
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
-
-### AUTHORED_ENGLISH `en-u25-285`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fafeb17805cf2e118a0064cf4786cdf9327ec688e0c668da7fde7e063b4fc6fd
+- Content hash: de9d1008ddcf2f825673c0f27adbfdb6cb25fa0126ecf792051e69e7ba21f214
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 25 work in your copy.
@@ -8250,15 +7036,6 @@ permitsAppUse=true
 - `obj-u25-address` CHECK `u25-i-address-2`
 - `obj-u25-address` CHECK `u25-i-address-3`
 - `obj-u25-address` REMEDIATION `u25-st-rem-address`
-- `obj-u25-productive-formation` INSTRUCTION `u25-st-orient`
-- `obj-u25-productive-formation` INSTRUCTION `u25-st-teach-productive-formation-1`
-- `obj-u25-productive-formation` INSTRUCTION `u25-st-teach-productive-formation-2`
-- `obj-u25-productive-formation` EXAMPLE `ex-u25-productive-formation-0`
-- `obj-u25-productive-formation` EXAMPLE `ex-u25-productive-formation-1`
-- `obj-u25-productive-formation` PRACTICE `u25-st-guided-productive-formation-1`
-- `obj-u25-productive-formation` CHECK `u25-i-productive-formation-1`
-- `obj-u25-productive-formation` CHECK `u25-i-productive-formation-2`
-- `obj-u25-productive-formation` REMEDIATION `u25-st-rem-productive-formation`
 - `obj-u25-book` INSTRUCTION `u25-st-book-work`
 - `obj-u25-book` INSTRUCTION `u25-st-book`
 - `u25-s-orient` OBJECTIVE `obj-u25-name-structure`
@@ -8267,7 +7044,6 @@ permitsAppUse=true
 - `u25-s-orient` OBJECTIVE `obj-u25-name-question`
 - `u25-s-orient` OBJECTIVE `obj-u25-nickname-rule`
 - `u25-s-orient` OBJECTIVE `obj-u25-address`
-- `u25-s-orient` OBJECTIVE `obj-u25-productive-formation`
 - `u25-s-orient` OBJECTIVE `obj-u25-book`
 - `u25-st-orient` REFERENCE `ref-u2125-attribution`
 - `u25-s-name-structure` OBJECTIVE `obj-u25-name-structure`
@@ -8358,18 +7134,6 @@ permitsAppUse=true
 - `u25-st-check-address` ITEM `u25-i-address-1`
 - `u25-st-check-address` ITEM `u25-i-address-2`
 - `u25-st-check-address` ITEM `u25-i-address-3`
-- `u25-s-productive-formation` OBJECTIVE `obj-u25-productive-formation`
-- `u25-st-teach-productive-formation-1` EXAMPLE `ex-u25-productive-formation-0`
-- `u25-st-teach-productive-formation-1` EXAMPLE `ex-u25-productive-formation-1`
-- `u25-st-teach-productive-formation-1` REFERENCE `ref-u2125-attribution`
-- `u25-st-guided-productive-formation-1` REMEDIATION `u25-st-rem-productive-formation`
-- `u25-st-guided-productive-formation-1` ITEM `u25-g-productive-formation-0`
-- `u25-st-teach-productive-formation-2` REFERENCE `ref-u2125-attribution`
-- `u25-st-rem-productive-formation` EXAMPLE `ex-u25-productive-formation-0`
-- `u25-st-rem-productive-formation` EXAMPLE `ex-u25-productive-formation-1`
-- `u25-st-check-productive-formation` REMEDIATION `u25-st-rem-productive-formation`
-- `u25-st-check-productive-formation` ITEM `u25-i-productive-formation-1`
-- `u25-st-check-productive-formation` ITEM `u25-i-productive-formation-2`
 - `u25-s-book` OBJECTIVE `obj-u25-book`
 - `u25-st-book-work` REFERENCE `ref-u2125-attribution`
 - `obj-u25-address` PROVENANCE `prov-ex-u25-address-0-en`
@@ -8414,10 +7178,6 @@ permitsAppUse=true
 - `obj-u25-nickname-rule` PROVENANCE `prov-ex-u25-nickname-rule-1-ru`
 - `obj-u25-nickname-rule` PROVENANCE `prov-ex-u25-nickname-rule-2-en`
 - `obj-u25-nickname-rule` PROVENANCE `prov-ex-u25-nickname-rule-2-ru`
-- `obj-u25-productive-formation` PROVENANCE `prov-ex-u25-productive-formation-0-en`
-- `obj-u25-productive-formation` PROVENANCE `prov-ex-u25-productive-formation-0-ru`
-- `obj-u25-productive-formation` PROVENANCE `prov-ex-u25-productive-formation-1-en`
-- `obj-u25-productive-formation` PROVENANCE `prov-ex-u25-productive-formation-1-ru`
 - `obj-u25-address` PROVENANCE `prov-u25-address-rem`
 - `obj-u25-address` PROVENANCE `prov-u25-address-rem-r0`
 - `obj-u25-address` PROVENANCE `prov-u25-address-rem-r1`
@@ -8466,27 +7226,6 @@ permitsAppUse=true
 - `obj-u25-nickname-rule` PROVENANCE `prov-u25-nickname-rule-x-1-r2`
 - `obj-u25-nickname-rule` PROVENANCE `prov-u25-nickname-rule-x-2`
 - `obj-u25-nickname-rule` PROVENANCE `prov-u25-nickname-rule-x-3`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-rem`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-rem-r0`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-rem-r1`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-rem-r2`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-rem-r3`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-0`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-1`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-1-r0`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-1-r1`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-2`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-2-r0`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-2-r1`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-3`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-3-r0`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-3-r1`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-3-r2`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-4`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-4-r0`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-4-r1`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-4-r2`
-- `obj-u25-productive-formation` PROVENANCE `prov-u25-productive-formation-x-4-r3`
 
 ## Book-directed experiences
 
