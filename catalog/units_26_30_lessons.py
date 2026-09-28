@@ -16,6 +16,8 @@ _PAGE_FILE = {
     "alphabet": ROOT / "catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt",
     "address": ROOT / "catalog/sources/units-26-30/wikibooks/various-stuff-3353858.txt",
     "morfologiya": ROOT / "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+    "neopredelennoe": ROOT / "catalog/sources/units-26-30/ruwiki/neopredelennoe-mestoimenie-149963314.txt",
+    "prichastie": ROOT / "catalog/sources/units-26-30/ruwiki/prichastie-153078996.txt",
 }
 _CIRCULAR = (
     "does this answer",
@@ -28,6 +30,8 @@ SOURCE_IDS = {
     "alphabet": "src-wikipedia-russian-alphabet-1371795481",
     "address": "src-wikibooks-russian-various-stuff-3353858",
     "morfologiya": "src-ruwiki-morfologiya-148939075",
+    "neopredelennoe": "src-ruwiki-neopredelennoe-mestoimenie-149963314",
+    "prichastie": "src-ruwiki-prichastie-153078996",
 }
 
 
@@ -314,6 +318,69 @@ def _unit_26(lesson) -> None:
             _extra("address", address, "apartment"),
         ],
     )
+    indefinite = _span(
+        "neopredelennoe",
+        "==== Серия на ''-то'' ====",
+        "Надо сдать кое-какие бумаги''.",
+    )
+    referential = "референтность и неизвестность говорящему"
+    nonreferential = "являются нереферентными"
+    known = "референтный денотативный статус слабой определённости"
+    overlap = "Местоимение на -то может употребляться также и в значении местоимения на -нибудь"
+    shown_to = "В доме действительно кто-то был"
+    shown_any = "куда-нибудь"
+    shown_koe = "кое-какие"
+    meaning_prompt = "Which admitted phrase classifies the shown form?"
+    lesson.objective(
+        "indefinite",
+        "Classify the shown form by its admitted series meaning",
+        "CONTRAST_SELECTION",
+        ("neopredelennoe", indefinite, overlap),
+        [
+            _wiki("neopredelennoe", indefinite, shown_to, referential),
+            _wiki("neopredelennoe", indefinite, shown_any, nonreferential),
+            _wiki("neopredelennoe", indefinite, shown_koe, known),
+        ],
+        [
+            _distinction(
+                "neopredelennoe",
+                meaning_prompt,
+                shown_to,
+                referential,
+                [
+                    (nonreferential, f"The source assigns {nonreferential} to {shown_any}.", f"{nonreferential} does not classify the shown form."),
+                    (known, f"The source assigns {known} to {shown_koe}.", f"{known} does not classify the shown form."),
+                ],
+                feature="INDEFINITE_PRONOUN",
+                why=f"The source says this series expresses {referential} and gives {shown_to}. The keyed phrase is {referential}.",
+            ),
+            _distinction(
+                "neopredelennoe",
+                meaning_prompt,
+                shown_any,
+                nonreferential,
+                [
+                    (referential, f"The source assigns {referential} to {shown_to}.", f"{referential} does not classify the shown form."),
+                    (known, f"The source assigns {known} to {shown_koe}.", f"{known} does not classify this shown form."),
+                ],
+                feature="INDEFINITE_PRONOUN",
+                why=f"The source says the series {nonreferential} and gives {shown_any}. The keyed phrase is {nonreferential}.",
+            ),
+            _distinction(
+                "neopredelennoe",
+                meaning_prompt,
+                shown_koe,
+                known,
+                [
+                    (referential, f"The source assigns {referential} to {shown_to}.", f"{referential} does not classify the shown form."),
+                    (nonreferential, f"The source assigns {nonreferential} to {shown_any}.", f"{nonreferential} does not classify the shown form."),
+                ],
+                feature="INDEFINITE_PRONOUN",
+                why=f"The source says this series expresses {known} and gives {shown_koe}. The keyed phrase is {known}.",
+            ),
+        ],
+    )
+    _bind(lesson, "obj-u26-indefinite", "indefinite-pronoun", "neopredelennoe", indefinite)
 
 
 def _unit_27(lesson) -> None:
@@ -769,6 +836,76 @@ def _unit_29(lesson) -> None:
         ],
         extra=[_extra("grammar", bookish, "Having eaten, I went for a walk")],
     )
+    punctuation = _span(
+        "prichastie",
+        "В русском языке причастный оборот часто выделяется",
+        "Написанная в спешке программа выполнила недопустимую операцию.",
+    )
+    both_sides = "выделяется запятыми с двух сторон"
+    no_commas = "запятые не ставятся"
+    exception = "кроме тех случаев"
+    after_example = "Программа, написанная в спешке, выполнила недопустимую операцию."
+    before_example = "Написанная в спешке программа выполнила недопустимую операцию."
+    personal = "личным местоимением"
+    cause = "обозначает причину"
+    end_rule = "запятая ставится только перед причастным оборотом"
+    exception_sentence = "Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину."
+    punctuation_prompt = "Which admitted phrase classifies the shown form?"
+    lesson.objective(
+        "punctuation",
+        "Classify the shown phrase by the admitted punctuation rule",
+        "CONTRAST_SELECTION",
+        ("prichastie", punctuation, exception_sentence),
+        [
+            _wiki("prichastie", punctuation, after_example, both_sides),
+            _wiki("prichastie", punctuation, before_example, no_commas),
+            _wiki("prichastie", punctuation, personal, exception),
+        ],
+        [
+            _distinction(
+                "prichastie",
+                punctuation_prompt,
+                after_example,
+                both_sides,
+                [
+                    (no_commas, f"The source assigns {no_commas} when the phrase stands before the determined word.", f"{no_commas} does not classify the shown form."),
+                    (exception, f"The source reserves {exception} for {personal} and for a phrase that {cause}.", f"{exception} does not classify the shown form."),
+                ],
+                feature="PARTICIPLE_PUNCTUATION",
+                why=f"The source says a phrase after the determined word {both_sides} and gives {after_example} The keyed phrase is {both_sides}.",
+            ),
+            _distinction(
+                "prichastie",
+                punctuation_prompt,
+                before_example,
+                no_commas,
+                [
+                    (both_sides, f"The source assigns {both_sides} to {after_example}", f"{both_sides} does not classify the shown form."),
+                    (end_rule, f"The source assigns {end_rule} when the sentence ends after the phrase.", f"{end_rule} does not classify the shown form."),
+                ],
+                feature="PARTICIPLE_PUNCTUATION",
+                why=f"The source says a phrase before the determined word has {no_commas} and gives {before_example} The keyed phrase is {no_commas}.",
+            ),
+            _distinction(
+                "prichastie",
+                punctuation_prompt,
+                personal,
+                exception,
+                [
+                    (no_commas, f"The source states {no_commas} as the default before the determined word.", f"{no_commas} does not classify the shown form."),
+                    (both_sides, f"The source assigns {both_sides} to a phrase after the determined word.", f"{both_sides} does not classify the shown form."),
+                ],
+                feature="PARTICIPLE_PUNCTUATION",
+                why=f"The source says the determined word can be {personal}. The keyed phrase is {exception}.",
+            ),
+        ],
+        extra=[
+            _extra("prichastie", punctuation, cause),
+            _extra("prichastie", punctuation, end_rule),
+            _extra("prichastie", punctuation, "конец предложения"),
+        ],
+    )
+    _bind(lesson, "obj-u29-punctuation", "participle-punctuation", "prichastie", punctuation)
 
 
 def _unit_30(lesson) -> None:

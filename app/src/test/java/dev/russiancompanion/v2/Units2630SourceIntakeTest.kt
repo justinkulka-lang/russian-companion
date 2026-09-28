@@ -48,11 +48,11 @@ class Units2630SourceIntakeTest {
         18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
         19 to "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3",
         20 to "7eca8b47f1286dc2b1718c03f4cefdfefe96f76979d9bf44616501e00faa71f3",
-        21 to "48435b68bc59e0cbb8ac5a52b3683c9da0afc29e8ede97e39aa449fb899aa40e",
-        22 to "359ef3b0fe033e757595e572e3fc157970a5caf6299b789e430223f1a08255d1",
-        23 to "09576530b95bb95d1242412d2b8aa06df126634b2bc00fe371a3ead8a7d87561",
-        24 to "53cd0f858aa788088c3a98844351f844cc9ecd35effc866f6d5394b428845890",
-        25 to "552b4b97d5025784aebbf3a2f8af7615b6b90e4e353836efb3df3da6b6db1289",
+        21 to "8d39d7c0d821859a1861f06292ab9f7454a6999e6a63f5d7821a4eddb391ac1b",
+        22 to "23026dc0579ee8f06e95f28bf95f80d40413095e1fd019632a2b48768416517d",
+        23 to "31fe0070e1cfe203dfa4052cf23caa07a73bc3fa40cf5ff35d8a8971d7539f09",
+        24 to "097f8c5961572bd93de29a3a0a762d9dbecfab7eebe28cb73d76c44b0027b089",
+        25 to "5bef263cd215e7b4d9b810e47dc8f2a0499aadaa87ee623f0eeccfd88d91aeb7",
     )
 
     private val preservedMappingDigests = mapOf(
@@ -97,6 +97,8 @@ class Units2630SourceIntakeTest {
             "alphabet" to "1371795481",
             "address" to "3353858",
             "morfologiya" to "148939075",
+            "neopredelennoe" to "149963314",
+            "prichastie" to "153078996",
         )
         freeze.getValue("pages").jsonArray.forEach { element ->
             val page = element.jsonObject
@@ -127,10 +129,12 @@ class Units2630SourceIntakeTest {
         val pack = pack()
         val expected = mapOf(
             "cap-obj-u26-word-order" to Triple(26, "obj-u26-word-order", "word-order"),
+            "cap-obj-u26-indefinite" to Triple(26, "obj-u26-indefinite", "indefinite-pronoun"),
             "cap-obj-u27-passive" to Triple(27, "obj-u27-passive", "passive-participle"),
             "cap-obj-u28-imperfective-adverb" to Triple(28, "obj-u28-imperfective-adverb", "imperfective-verbal-adverb"),
             "cap-obj-u28-perfective-adverb" to Triple(28, "obj-u28-perfective-adverb", "perfective-verbal-adverb"),
             "cap-obj-u29-active" to Triple(29, "obj-u29-active", "active-participle"),
+            "cap-obj-u29-punctuation" to Triple(29, "obj-u29-punctuation", "participle-punctuation"),
             "cap-obj-u29-short-adjective" to Triple(29, "obj-u29-short-adjective", "short-form-adjective"),
             "cap-obj-u30-letter-names" to Triple(30, "obj-u30-letter-names", "letter-name-review"),
             "cap-obj-u30-abbreviation" to Triple(30, "obj-u30-abbreviation", "abbreviation"),
@@ -206,7 +210,8 @@ class Units2630SourceIntakeTest {
         }
         val blocked = advancementDecision(pack, pack.unit(26)!!, learner(26, book = true))
         assertFalse(blocked.allowed)
-        assertTrue(blocked.remaining.any { it.contains("indefinite-pronoun") })
+        assertTrue(blocked.remaining.any { it.contains("postal-address") && it.contains("letter-writing") && it.contains("correspondence-work") })
+        assertFalse(blocked.remaining.any { it.contains("indefinite-pronoun") })
         assertFalse(blocked.remaining.any { it.contains("word-order") && it.contains("not content-complete") })
     }
 
@@ -422,7 +427,8 @@ class Units2630SourceIntakeTest {
 
         val unrelated = sample(pack, 26, "4220315", "src-wikibooks-russian-cc-by-sa", "An unrelated CC BY-SA sentence does not state the indefinite series.")
         val unrelatedErrors = V2Validator.validate(claimReady(pack.copy(provenanceRecords = pack.provenanceRecords + unrelated), 26)).errors
-        assertTrue(unrelatedErrors.any { it.contains("indefinite-pronoun") })
+        assertTrue(unrelatedErrors.any { it.contains("postal-address") })
+        assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 26).any { it.claim == "indefinite-pronoun" })
 
         val pages = host.copy(id = "cap-pages", exactSpan = "320-331", supportedClaim = "indefinite-pronoun", objectiveId = "obj-u26-indefinite")
         val pageErrors = errorsFor(pack, pages)
@@ -485,11 +491,9 @@ class Units2630SourceIntakeTest {
         val pack = pack()
         assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
         val unresolved = setOf(
-            "indefinite-pronoun",
             "postal-address",
             "letter-writing",
             "participle-stress",
-            "participle-punctuation",
             "bookish-register",
             "dictionary-use",
             "capstone-reading",
@@ -529,6 +533,37 @@ class Units2630SourceIntakeTest {
         assertTrue(
             errorsForText(pack, "\u043a\u0442\u043e-\u0442\u043e \u043a\u0442\u043e-\u043d\u0438\u0431\u0443\u0434\u044c \u043a\u043e\u0435-\u0447\u0442\u043e", "cap-inventory", 26, "obj-u26-indefinite", "indefinite-pronoun")
                 .any { it.contains("indefinite inventory does not clear") },
+        )
+        val oneExample = "\u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430, \u043d\u0430\u043f\u0438\u0441\u0430\u043d\u043d\u0430\u044f \u0432 \u0441\u043f\u0435\u0448\u043a\u0435, \u0432\u044b\u043f\u043e\u043b\u043d\u0438\u043b\u0430 \u043d\u0435\u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c\u0443\u044e \u043e\u043f\u0435\u0440\u0430\u0446\u0438\u044e."
+        assertTrue(
+            errorsForText(pack, oneExample, "cap-one-example", 29, "obj-u29-punctuation", "participle-punctuation")
+                .any { it.contains("does not state participle-punctuation") },
+        )
+        val indefinite = pack.sourceCapabilities.single { it.supportedClaim == "indefinite-pronoun" }
+        val punctuation = pack.sourceCapabilities.single { it.supportedClaim == "participle-punctuation" }
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 26).none { it.claim == "indefinite-pronoun" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 29).none { it.claim == "participle-punctuation" })
+        val brokenIndefinite = pack.copy(
+            sourceCapabilities = pack.sourceCapabilities.filter { it.id != indefinite.id } + indefinite.copy(sourceHash = "0".repeat(64)),
+        )
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(brokenIndefinite, 26).any { it.claim == "indefinite-pronoun" })
+        val brokenPunctuation = pack.copy(
+            sourceCapabilities = pack.sourceCapabilities.filter { it.id != punctuation.id } + punctuation.copy(sourceRevision = "9999999"),
+        )
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(brokenPunctuation, 29).any { it.claim == "participle-punctuation" })
+        val indefiniteHost = pack.provenanceRecords.first {
+            it.sourceRecordId == indefinite.sourceRecordId && it.originalSourceText == indefinite.exactSpan
+        }
+        assertTrue(
+            errorsForRebound(pack, indefiniteHost, "cap-indefinite-as-postal", 26, "obj-u26-postal-address", "postal-address")
+                .any { it.contains("address marks do not clear postal-address") },
+        )
+        val punctuationHost = pack.provenanceRecords.first {
+            it.sourceRecordId == punctuation.sourceRecordId && it.originalSourceText == punctuation.exactSpan
+        }
+        assertTrue(
+            errorsForRebound(pack, punctuationHost, "cap-punctuation-as-register", 29, "obj-u29-register", "bookish-register")
+                .any { it.contains("adverbial bookish note does not clear bookish-register") },
         )
         assertTrue(
             errorsForText(pack, "\u0444\u043e\u0440\u043c\u043e\u043e\u0431\u0440\u0430\u0437\u0443\u044e\u0449\u0438\u0435 (\u0431\u044b, \u043f\u0443\u0441\u0442\u044c, \u0434\u0430)", "cap-class-list", 30, "obj-u30-particle", "particle")
