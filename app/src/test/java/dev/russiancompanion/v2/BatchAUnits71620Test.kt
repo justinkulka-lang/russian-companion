@@ -228,7 +228,12 @@ class BatchAUnits71620Test {
                     val rationale = item.distractorRationales[index]
                     val difference = assessment.distractorDifference[index]
                     assertEquals("${item.id} rationale", rationale, difference)
-                    assertCompleteRelationship(item.id, rationale, competingForm(rationale, option), option)
+                    val shownFormGloss = glossWhenOptionIsShownForm(rationale, option)
+                    if (shownFormGloss != null) {
+                        assertCompleteRelationship(item.id, rationale, option, shownFormGloss)
+                    } else {
+                        assertCompleteRelationship(item.id, rationale, competingForm(rationale, option), option)
+                    }
                     if (!option.contains(item.answer)) {
                         assertFalse("${item.id} rationale names ${item.answer}", rationale.contains(item.answer) || difference.contains(item.answer))
                     }
@@ -328,7 +333,18 @@ class BatchAUnits71620Test {
         if (subject != null) {
             return subject.groupValues[1] == answer && subject.groupValues[2] == shown
         }
+        val label = SOURCE_LABEL.matchEntire(text)
+        if (label != null) return label.groupValues[1] == answer
         return shown.isEmpty() && text == answer && (answer.trimEnd().endsWith(".") || answer.split(Regex("\\s+")).size >= 4)
+    }
+
+    /** The option is the shown form of a real pair, so the keyed gloss is the other side. */
+    private fun glossWhenOptionIsShownForm(text: String, option: String): String? {
+        val pair = PAIR_SENTENCE.matchEntire(text) ?: return null
+        val form = pair.groupValues[1]
+        val gloss = pair.groupValues[2]
+        if (form == option && form != gloss) return gloss
+        return null
     }
 
     private fun competingForm(text: String, answer: String): String {
@@ -439,6 +455,9 @@ class BatchAUnits71620Test {
         val SPEAKER_LINE = Regex("""^(?:while )?(a (?:male|female) speaker) would say (.+)$""")
         val HAVE_LINE = Regex("""^"([^"]+)" translates to (.+)$""")
         val SUBJECT_LINE = Regex("""^(If the subject is (?:feminine|neuter|plural)), it's (.+)\.$""")
+        val SOURCE_LABEL = Regex(
+            """^(?:The heading|The table header|The source quotes) "([^"]+)" (?:labels the section\. It is not the gloss of the shown form|names the other motion column|as an English restatement)\.$""",
+        )
         val BATCH_A_OBJECTIVES = setOf(
             "obj-u16-complements",
             "obj-u17-age",

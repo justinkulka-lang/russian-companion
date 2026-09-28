@@ -308,7 +308,7 @@ class Units1115InstructionalValidityTest {
         assertFalse(unprepared.contains(22))
         assertTrue(unprepared.contains(23))
         assertFalse(unprepared.contains(24))
-        assertFalse(unprepared.contains(25))
+        assertTrue(unprepared.contains(25))
         assertTrue(unprepared.contains(26))
         assertFalse(unprepared.contains(28))
         assertTrue(unprepared.contains(30))

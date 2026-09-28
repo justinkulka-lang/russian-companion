@@ -142,7 +142,20 @@ class Units1620SourceIntakeTest {
             )
             val page = byOldid[record.sourceRevision]
             if (page != null) {
-                assertTrue(record.itemId, page.contains(record.originalSourceText))
+                if (record.transformation == "readyrussian text extraction") {
+                    assertFalse(record.itemId, record.originalSourceText.contains("<"))
+                    assertFalse(record.itemId, record.originalSourceText.contains(">"))
+                    assertFalse(record.itemId, readyRussianMedia.containsMatchIn(record.originalSourceText))
+                    val visible = dev.russiancompanion.v2.curriculum.BatchARemainingSources.htmlVisible(page)
+                    record.originalSourceText.split("\n\n").filter { it.isNotBlank() }.forEach { piece ->
+                        assertTrue(
+                            "${record.itemId} extracted piece is not visible page text",
+                            visible.contains(piece),
+                        )
+                    }
+                } else {
+                    assertTrue(record.itemId, page.contains(record.originalSourceText))
+                }
             } else {
                 assertTrue(record.sourceRevision.startsWith("50e210c4803237779cb562bc1abcea529066031c"))
             }
@@ -520,6 +533,8 @@ class Units1620SourceIntakeTest {
             if (field == "title") edited else edited
         }.also { _ -> unit.number }
     }
+
+    private val readyRussianMedia = Regex("(?i)<img|data:image|base64|<script|<audio|\\.ogg|data:audio")
 
     private fun normalized(text: String) = text.replace("\u0301", "").replace("'", "")
 
