@@ -11,12 +11,12 @@ Unit 29 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 5ab3cfe06e709ee605a3cbce320d6cbea9e11776
-- Unit content-review SHA-256: 9646dad79ce6929e4010db1c27229bd6bb4f370d225d203d106ef9864134647d
+- Curriculum source commit: 4cf6007f69beadac5278bb42e5bf060a62fe3eb9
+- Unit content-review SHA-256: cb4d6f34dfceed300d75a350c07202534f1fa8973d7d6a54792d0b261fd1795c
 - Mapping-package SHA-256: 54c2f00221054ced81fe17bea8b0f156073b830e54e70c47cf769e93bd56eb36
-- Pack content-review SHA-256: 76879c3e98f1682f322651e830dd18c537a79135badad3c86c77a7e13cfa7c6f
-- Review-package SHA-256: 881ec0598355198f12772567d9f6307ffd56b2eefa61a97ccdc9ca4d118409c9
-- Repository source SHA-256: 8819cf84360df77acebd15bb55dd4f090e1ce4f9f7962916f6927fbbc3b4496f
+- Pack content-review SHA-256: 129c7ebe726af56e5d9efe7bc363dd0224c6d6a4e1667c1dbb264a884fd24e71
+- Review-package SHA-256: a41035e292f92c41bca87cb9794fc75663483deebad5ec5965989c9eef0b8200
+- Repository source SHA-256: 1a183504385f362fdd28a371a52f585a1d1df18a9daf4aa8e11936031ccda885
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -41,7 +41,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 29. Observed structural scope: Present and past active participles, participles as adjectives, optional punctuation, long and short adjectives, and bookish reading. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=29
 prerequisites=28
-estimatedMinutes=66
+estimatedMinutes=74
 
 ## Not yet approved
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 29.
 
 ### UNIT `unit-29`
 
-- Objectives: obj-u29-active, obj-u29-short-adjective, obj-u29-bookish-note, obj-u29-book, obj-u29-punctuation, obj-u29-register, obj-u29-reading
-- Sessions: u29-s-orient, u29-s-active, u29-s-short-adjective, u29-s-bookish-note, u29-s-book, u29-s-gap-punctuation, u29-s-gap-register, u29-s-gap-reading
+- Objectives: obj-u29-active, obj-u29-short-adjective, obj-u29-bookish-note, obj-u29-punctuation, obj-u29-book, obj-u29-register, obj-u29-reading
+- Sessions: u29-s-orient, u29-s-active, u29-s-short-adjective, u29-s-bookish-note, u29-s-punctuation, u29-s-book, u29-s-gap-register, u29-s-gap-reading
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 85424579434a9b208ef6b6ed5e1220326dc67d86fa2090e81dff732d3fe16057
+- Content hash: 4cdd27a8f87c3eb57cb1c3f635e138bbdb91a3bccad722aa5f8a7878e3407879
 
 number=29
 title=Bookish style, active participles, punctuation, and short-form adjectives
@@ -86,7 +86,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 29. Observed structural scope: Present and past active participles, participles as adjectives, optional punctuation, long and short adjectives, and bookish reading. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=29
 prerequisites=28
-estimatedMinutes=66
+estimatedMinutes=74
 
 ### ADVANCEMENT `unit-29-advancement`
 
@@ -96,12 +96,12 @@ estimatedMinutes=66
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2e7293e359563c943109aca97bc2c848d229a6c4e0a552ef63bcab456c2c9a9a
+- Content hash: a17fafdd69e0c4432e6334c3521005cabbeed3b4af31a952d0160e779eacea08
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
-minimumDistinctChecks=6
+minimumDistinctChecks=8
 requireDueReview=false
 tutorOptional=true
 
@@ -162,6 +162,25 @@ practice=u29-st-guided-bookish-note-1
 checks=u29-i-bookish-note-1,u29-i-bookish-note-2
 remediation=u29-st-rem-bookish-note
 
+### OBJECTIVE `obj-u29-punctuation`
+
+- Objectives: obj-u29-punctuation
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 27784da498e0916a2f10d066ca39cb963b5a864e4d8aa782cf80d17615b2b87b
+
+title=Classify the shown phrase by the admitted punctuation rule
+kind=RECOGNITION
+unitNumber=29
+instruction=u29-st-orient,u29-st-teach-punctuation-1,u29-st-teach-punctuation-2,u29-st-teach-punctuation-3
+examples=ex-u29-punctuation-0,ex-u29-punctuation-1,ex-u29-punctuation-2
+practice=u29-st-guided-punctuation-1
+checks=u29-i-punctuation-1,u29-i-punctuation-2
+remediation=u29-st-rem-punctuation
+
 ### OBJECTIVE `obj-u29-book`
 
 - Objectives: obj-u29-book
@@ -176,25 +195,6 @@ title=Self-attest Lesson 29 book work
 kind=SELF_ATTESTATION
 unitNumber=29
 instruction=u29-st-book-work,u29-st-book
-examples=
-practice=
-checks=
-remediation=
-
-### OBJECTIVE `obj-u29-punctuation`
-
-- Objectives: obj-u29-punctuation
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2fe694b15bef1efe74b0ffccd0fa656189114cb66e94ed5edc6ace9af4070c71
-
-title=Participial punctuation stays in the copy you own
-kind=GUIDANCE
-unitNumber=29
-instruction=u29-st-gap-punctuation
 examples=
 practice=
 checks=
@@ -240,32 +240,32 @@ remediation=
 
 ### SESSION `u29-s-orient`
 
-- Objectives: obj-u29-active, obj-u29-short-adjective, obj-u29-bookish-note, obj-u29-book
+- Objectives: obj-u29-active, obj-u29-short-adjective, obj-u29-bookish-note, obj-u29-punctuation, obj-u29-book
 - Sessions: u29-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 031ed3e5a893b6de906c6a95a090bc1832431aef1370f971d7adbcaebef0bc6c
+- Content hash: 3ae79e6d3d0b0f7350c313b1d71aef037268dbde9e0f6cf5cc4002a7d6aa881f
 
 title=Admitted active and short-form lines
 estimatedMinutes=8
-objectives=obj-u29-active,obj-u29-short-adjective,obj-u29-bookish-note,obj-u29-book
+objectives=obj-u29-active,obj-u29-short-adjective,obj-u29-bookish-note,obj-u29-punctuation,obj-u29-book
 steps=u29-st-orient
 
 ### STEP `u29-st-orient`
 
-- Objectives: obj-u29-active, obj-u29-short-adjective, obj-u29-bookish-note, obj-u29-book
+- Objectives: obj-u29-active, obj-u29-short-adjective, obj-u29-bookish-note, obj-u29-punctuation, obj-u29-book
 - Sessions: u29-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: aab48c28a9c9ed423deaa7e28cb18b4b8cfac9e03507256e9ae2a5a9e0cb4629
+- Content hash: 59402cb9ac670895d9109d601333c4117c63bbfae183cdd41c7e8fdeac9b6f0d
 
 kind=ORIENT
 title=Admitted active and short-form lines
-body=Proposed Unit 29 uses admitted active lines, the short-form contrast, and the bookish-speech note for adverbial forms. Punctuation stays in the copy you own. This note is not a claim about every bookish text. Qualified review is pending.
+body=Proposed Unit 29 uses admitted active lines, the frozen participial-phrase punctuation rule, the short-form contrast, and the bookish-speech note for adverbial forms. This note is not a claim about every bookish text. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -694,6 +694,153 @@ bookDirection=
 companionDirection=
 remediationStepId=u29-st-rem-bookish-note
 
+### SESSION `u29-s-punctuation`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 98101a08b01fbc8d4276aa1322b24078ff173d5c80e24cb1803f3a47ff2f0f23
+
+title=Classify the shown phrase by the admitted punctuation rule
+estimatedMinutes=12
+objectives=obj-u29-punctuation
+steps=u29-st-teach-punctuation-1,u29-st-guided-punctuation-1,u29-st-teach-punctuation-2,u29-st-teach-punctuation-3,u29-st-rem-punctuation,u29-st-check-punctuation
+
+### STEP `u29-st-teach-punctuation-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: aeae4c8c0af7f30cf4ccd9319951cd0bccb2d3beae36f0f1dded495fa542d922
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u29-punctuation-0,ex-u29-punctuation-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-st-guided-punctuation-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e69744044a735f95accf19e6af868748e3333e19f4b7dfe4ab3d87cfeecff189
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u29-g-punctuation-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u29-st-rem-punctuation
+
+### STEP `u29-st-teach-punctuation-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c87ac1935b71c723f76012f7a8cc5f8edbf2b18e9cfbdd5e9f801867fc78ae63
+
+kind=TEACH
+title=Admitted instruction
+body=Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-st-teach-punctuation-3`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b91a939cb11e918ce2eef1f1b004e747d76dacf579b1c7dc881ece0c70850877
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u29-punctuation-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-st-rem-punctuation`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: edd9aab77be69af84c3868ed4bc94ef189d86c09665360bc9c8e3246f3c60410
+
+kind=REMEDIATE
+title=Remediation
+body=Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину.
+dominantAction=Continue
+references=
+items=
+examples=ex-u29-punctuation-0,ex-u29-punctuation-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-st-check-punctuation`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c215fdc04c9e36267c87f09baf1d38ea0835afa432746b3d731ce6b14c0f7a23
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u29-i-punctuation-1,u29-i-punctuation-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u29-st-rem-punctuation
+
 ### SESSION `u29-s-book`
 
 - Objectives: obj-u29-book
@@ -750,43 +897,6 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 29 work in your copy.
-companionDirection=
-remediationStepId=
-
-### SESSION `u29-s-gap-punctuation`
-
-- Objectives: obj-u29-punctuation
-- Sessions: u29-s-gap-punctuation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2f07522da20849e587d8b4efa0dee1463936d81769426ec0fd609840ca0008b5
-
-title=Participial punctuation stays in the copy you own
-estimatedMinutes=4
-objectives=obj-u29-punctuation
-steps=u29-st-gap-punctuation
-
-### STEP `u29-st-gap-punctuation`
-
-- Objectives: obj-u29-punctuation
-- Sessions: u29-s-gap-punctuation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d02a2a0f04b410a9f34c85d8349c80418f6b033c29e0cbc3a232fee02011a0b5
-
-kind=UNAVAILABLE
-title=Participial punctuation stays in the copy you own
-body=Participial punctuation stays in the copy you own. No admitted span states that rule.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=Participial punctuation has no admitted frozen span.
-bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -1000,6 +1110,57 @@ note=colloquial language
 objectiveId=obj-u29-bookish-note
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u29-punctuation-0`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9bb4b7b81b68caaa07e0e5586406b71c932891b50a9d54fceac4b8262168ecb2
+
+kind=LEXICAL
+letterId=
+display=Программа, написанная в спешке, выполнила недопустимую операцию.
+note=выделяется запятыми с двух сторон
+objectiveId=obj-u29-punctuation
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u29-punctuation-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6186e3919f9f7d259cdd0a6f7d1e437f3bbcd19c85f0b2467b154eeb5a76287e
+
+kind=LEXICAL
+letterId=
+display=Написанная в спешке программа выполнила недопустимую операцию.
+note=запятые не ставятся
+objectiveId=obj-u29-punctuation
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u29-punctuation-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 834bb5eca0b2cdf7b9aca0c93693d8e505e80ab111ba28d5a13a8ef78286e1ed
+
+kind=LEXICAL
+letterId=
+display=личным местоимением
+note=кроме тех случаев
+objectiveId=obj-u29-punctuation
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u29-g-active-0`
 
 - Objectives: obj-u29-active
@@ -1104,6 +1265,41 @@ contrastMembers=bookish speech | colloquial language | Having eaten, I went for 
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u29-bookish-note-0-ru | prov-ex-u29-bookish-note-0-en | prov-ex-u29-bookish-note-1-en | prov-u29-bookish-note-x-0
 responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u29-g-punctuation-0`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e942e4f46a0d1777964e59a1f3f9d469ac69041d2fc253765a8adbb6ba7b5769
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted phrase classifies the shown form?
+promptLetter=Программа, написанная в спешке, выполнила недопустимую операцию.
+options=выделяется запятыми с двух сторон | запятые не ставятся | кроме тех случаев
+answer=выделяется запятыми с двух сторон
+feedback=The source says a phrase after the determined word выделяется запятыми с двух сторон and gives Программа, написанная в спешке, выполнила недопустимую операцию. The keyed phrase is выделяется запятыми с двух сторон. выделяется запятыми с двух сторон.
+objectiveId=obj-u29-punctuation
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The source assigns запятые не ставятся when the phrase stands before the determined word. | The source reserves кроме тех случаев for личным местоимением and for a phrase that обозначает причину.
+testedFeature=PARTICIPLE_PUNCTUATION
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u29-punctuation-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u29-punctuation-0-en
+distractorSourceIds= | prov-ex-u29-punctuation-1-en | prov-ex-u29-punctuation-2-en
+distractorDifference= | запятые не ставятся does not classify the shown form. | кроме тех случаев does not classify the shown form.
+whyAnswerDemonstratesObjective=The source says a phrase after the determined word выделяется запятыми с двух сторон and gives Программа, написанная в спешке, выполнила недопустимую операцию. The keyed phrase is выделяется запятыми с двух сторон.
+contrastMembers=выделяется запятыми с двух сторон | запятые не ставятся | кроме тех случаев
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u29-punctuation-0-ru | prov-ex-u29-punctuation-0-en | prov-ex-u29-punctuation-1-en | prov-ex-u29-punctuation-2-en
+responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u29-i-active-1`
 
@@ -1315,19 +1511,89 @@ relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u29-bookish-note-0-ru | prov-u29-bookish-note-x-0 | prov-ex-u29-bookish-note-0-en | prov-ex-u29-bookish-note-1-en
 responseKind=ENGLISH_CLASSIFICATION
 
+### INDEPENDENT_CHECK `u29-i-punctuation-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d9cb922441dc33e8b708ae82f3718567f912baa93704387f14b77218feb75d74
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted phrase classifies the shown form?
+promptLetter=Написанная в спешке программа выполнила недопустимую операцию.
+options=запятые не ставятся | выделяется запятыми с двух сторон | запятая ставится только перед причастным оборотом
+answer=запятые не ставятся
+feedback=The source says a phrase before the determined word has запятые не ставятся and gives Написанная в спешке программа выполнила недопустимую операцию. The keyed phrase is запятые не ставятся. запятые не ставятся.
+objectiveId=obj-u29-punctuation
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The source assigns выделяется запятыми с двух сторон to Программа, написанная в спешке, выполнила недопустимую операцию. | The source assigns запятая ставится только перед причастным оборотом when the sentence ends after the phrase.
+testedFeature=PARTICIPLE_PUNCTUATION
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u29-punctuation-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u29-punctuation-1-en
+distractorSourceIds= | prov-ex-u29-punctuation-0-en | prov-u29-punctuation-x-1
+distractorDifference= | выделяется запятыми с двух сторон does not classify the shown form. | запятая ставится только перед причастным оборотом does not classify the shown form.
+whyAnswerDemonstratesObjective=The source says a phrase before the determined word has запятые не ставятся and gives Написанная в спешке программа выполнила недопустимую операцию. The keyed phrase is запятые не ставятся.
+contrastMembers=запятые не ставятся | выделяется запятыми с двух сторон | запятая ставится только перед причастным оборотом
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u29-punctuation-1-ru | prov-ex-u29-punctuation-1-en | prov-ex-u29-punctuation-0-en | prov-u29-punctuation-x-1
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u29-i-punctuation-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bc1c3f37f2e975b5fade1e177671f0c8f8722a02dfc34c4e822599d632433c80
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted phrase classifies the shown form?
+promptLetter=личным местоимением
+options=кроме тех случаев | запятые не ставятся | выделяется запятыми с двух сторон
+answer=кроме тех случаев
+feedback=The source says the determined word can be личным местоимением. The keyed phrase is кроме тех случаев. кроме тех случаев.
+objectiveId=obj-u29-punctuation
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The source states запятые не ставятся as the default before the determined word. | The source assigns выделяется запятыми с двух сторон to a phrase after the determined word.
+testedFeature=PARTICIPLE_PUNCTUATION
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u29-punctuation-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u29-punctuation-2-en
+distractorSourceIds= | prov-ex-u29-punctuation-1-en | prov-ex-u29-punctuation-0-en
+distractorDifference= | запятые не ставятся does not classify the shown form. | выделяется запятыми с двух сторон does not classify the shown form.
+whyAnswerDemonstratesObjective=The source says the determined word can be личным местоимением. The keyed phrase is кроме тех случаев.
+contrastMembers=кроме тех случаев | запятые не ставятся | выделяется запятыми с двух сторон
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u29-punctuation-2-ru | prov-ex-u29-punctuation-2-en | prov-ex-u29-punctuation-1-en | prov-ex-u29-punctuation-0-en
+responseKind=RUSSIAN_PHRASE
+
 ### REFERENCE `ref-u2630-attribution`
 
 - Objectives: none
-- Sessions: u29-s-orient, u29-s-active, u29-s-short-adjective, u29-s-bookish-note, u29-s-book, u29-s-gap-punctuation, u29-s-gap-register, u29-s-gap-reading
+- Sessions: u29-s-orient, u29-s-active, u29-s-short-adjective, u29-s-bookish-note, u29-s-punctuation, u29-s-book, u29-s-gap-register, u29-s-gap-reading
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 4abf27051a485b0668bb310bb7f0ff0b63e6b2c4e6c33758c598ff6d03faf7f4
+- Content hash: 9823eb1e44ca3064b8b60cc7a4663d6d989c7f3c94eb11874f96e73df2e6fd88
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, general letter conventions, participle stress, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
@@ -1697,6 +1963,303 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u29-punctuation-0-en`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e1e67cb16b6f4831d6ab3fd8c4fdcd8cc68a297a3966060f89d5d4e5acafa0e0
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=выделяется запятыми с двух сторон
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=4ab7796982c444f38373c5a8aa304d1cd9fdeb7f561b5d139efd571c7438d385
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u29-punctuation-0-ru`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c311d4c36402863e227c2c158728c39fe72333e80b5e5547854b57e1309f99c1
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=Программа, написанная в спешке, выполнила недопустимую операцию.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=a802a860291dc8fe10bff1da3482f5cfbfd572088e61fae81f2fc60119947526
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u29-punctuation-0-ru-r0`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e4c1f4175ee623c3585a893c76d6a904456484f7f1080fba01e3cff0acbfe25b
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=Программа
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=075f39ec5a4f02d5fa41a7b4772ef02c54003802910980456293e024c04c4b5a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u29-punctuation-0-ru-r1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9bb40921eae785ae53391d8c275d769feacefc4fe3c5236066986445fd4c09b0
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=написанная в спешке
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=133c33e681fb4721d102651045b033f43ac5dd56a657bda76b4cb221bfe0fbad
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u29-punctuation-0-ru-r2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 53470b13f29369abf8e18bc8bd8ca9c5f7a127da4094a73a66fc5506a8637978
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=выполнила недопустимую операцию
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=e169c53494b7b80b3908f09a12d86a42472b0c5baa0cd31200b2b0feb2158170
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u29-punctuation-1-en`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f73410d5919fee1becfeb95fc34e02e678d376875f93ec2d05cadbefcc4e24d0
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=запятые не ставятся
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=18bf2028dad255feb08a59d7993dae98c16d53a0653a72fb1193939debfc9d0b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u29-punctuation-1-ru`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0113757c74649f3aeed39de09b4c594658207e3de34fc23cb74f8ceb87517ee7
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=Написанная в спешке программа выполнила недопустимую операцию.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=3b9bf4a35376c759cf5c42349e157360d0ac8e34e100b807d4e913a97ea881b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u29-punctuation-2-en`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0b4d842edc4dfd80289e56cea07273b50625d69eae9544b0155a451ed39f45e4
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=кроме тех случаев
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=5d0cf4672d26ce9babcdd7fa489e10e2aedd4f8aed6b9f30dda7079abe6d42ab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u29-punctuation-2-ru`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7fe45e0cd8402d28e707147c01fc82735e23ddac9daaf7353fbe7e3f1a4a06c7
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=личным местоимением
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=b21573d1f76ae3e4f28da52ab9086ad59c4edd7247207211ab27c3597a797b9a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-u29-short-adjective-0-en`
 
 - Objectives: obj-u29-short-adjective
@@ -2028,6 +2591,270 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u29-punctuation-rem`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1746270b6f5b33cc20f41a1be5327e7906732f00c00b259e1637eb43f810e63a
+
+recordType=instruction
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=5c2c57922a276cdf95c4cbc38a4a7134b84b8d1170c2d3280c36d21e9d337ed6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-rem-r0`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1e80a9ded90024b3e4203a8b73ed50f773bb2fb79f4c440c0bcc5767377973df
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=Когда причастный оборот стоит перед определяемым словом
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=113bb2bd9cf2ba6ff8d579441e591d837cacdd30d40f3d42a2a8a03a5faa3327
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-rem-r1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fddb459e2eec0bbc9bed0b8bf3c575206b0eef10ebc48a1cfc096fe10fa97813
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=запятые не ставятся
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=18bf2028dad255feb08a59d7993dae98c16d53a0653a72fb1193939debfc9d0b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-rem-r2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bff267c5ecc8d1053994b25d6abf95bec680b7268d3ef866a9f841bd4ef3f1d8
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=кроме тех случаев
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=5d0cf4672d26ce9babcdd7fa489e10e2aedd4f8aed6b9f30dda7079abe6d42ab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-rem-r3`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ddfa90cf15576533dee54a2f8298597298f7a0a4d08b08e9eb9b670f99e42f66
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=874b637cb89f9be62d064c1874930aa99bcd3707523b578d7358522a4f8ef832
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-x-0`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: adf92bacaca6322721fedb115cdab6f8a50a33e409ab4d818bb3b0a1d453e8de
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=обозначает причину
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=4a3b6f2d177bc964c9c18bb2936746273fac66ec47f48165dd3b8dcc922ab91f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-x-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 94007e321889e4b57fe411393fec16e260cdecf52608db9d072bc54025906b3c
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=запятая ставится только перед причастным оборотом
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=8ebf1a2ad07bb4dd765bb185353313faa20237ae1da1b9ab49657001ea9dcc62
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-x-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 00f0f4fe0764ed6a854b1f8b156fe1e220b8d9646021ba1aed3554649d1facc1
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=конец предложения
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=3fc04530ac2b06cfdc7b2fcec0ed1ba3259d01e798267a797ddfd2333197fe5b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u29-short-adjective-rem`
 
 - Objectives: obj-u29-short-adjective
@@ -2086,123 +2913,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u29-155`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5c1328c26fbd0a1c89b5423df4196db8f3b70d7807024b91939d36311df88023
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u29-156`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0aa48c47f805d8d1a27cd9f2201a2ea0e97112c61add0c5aadcaffa35d0428df
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label on the other line for in the present.
-
-### AUTHORED_ENGLISH `en-u29-157`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 581acc7c4234b4e91dcb5729d6ca465d88dfe405285aef0783f6bb5d4e4176f7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label as a different phrase on the past line for that read.
-
-### AUTHORED_ENGLISH `en-u29-158`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d34bb9c3edab525b4be2ec974f88d711deda8e46873a22fbb4e65478b45bcbc2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other form (in the present).
-
-### AUTHORED_ENGLISH `en-u29-159`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f3d0add33d260fd5f4f59d7d06b840206137f7c87ea42e06bdcde5370b634a5c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase is not the time label asked for here (that read).
-
-### AUTHORED_ENGLISH `en-u29-160`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 93ac19c3ed71e5ad825034e3d39800b27be5b27446b952836979368682fb56e3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the form indicates actions that happened in the past. This label is written on the shown line.
-
-### AUTHORED_ENGLISH `en-u29-161`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a780ea5cf920d4194f299a351cae63ab70df271c9e0f80e672e10ed489b3ba8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written on the line with the shown form?
-
-### AUTHORED_ENGLISH `en-u29-162`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d6b8b5ba152d0ea6d87dbf5839bf781f36a8fec9eebb7f917108780de4178b88
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
-
-### AUTHORED_ENGLISH `en-u29-163`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: caabcb2d5ed7f2bddc54f0e26d2864d4cce8552e4910b0909050d3409aca07e2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label on the other line for in the past.
-
 ### AUTHORED_ENGLISH `en-u29-164`
 
 - Objectives: none
@@ -2211,10 +2921,10 @@ text=The frozen line writes this label on the other line for in the past.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8f4e88adb34facee5b9652e4a9e970037faa8d7513e6efccb73d6811165d7511
+- Content hash: 9719d1e1d755d45f9b8b9f5d4be6dabd0e7f2dca6429f86b7bd9c56b3f204b52
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this word inside the gloss, not as the time label for reading.
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u29-165`
 
@@ -2224,10 +2934,10 @@ text=The frozen line writes this word inside the gloss, not as the time label fo
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 194aadbcdf0b599f348344ccc3c33250d6c892538759d0f0da2e5dee7f5824d3
+- Content hash: 9d3595a507bd056762c3d09dba2c4a65a6c036e73dc3673d77951f9af8bf1924
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other form (in the past).
+text=The frozen line writes this label on the other line for in the present.
 
 ### AUTHORED_ENGLISH `en-u29-166`
 
@@ -2237,10 +2947,10 @@ text=This label is paired with the other form (in the past).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 517acc94cbe3f709e5d5cd80db6b990c2965a32d5d9e4010e30621f5efd03c57
+- Content hash: c2d639539fa3013394054040b1b418ff8ffc366514641aa19636dbde0e617c1e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This word is not the time label (reading).
+text=The frozen line writes this label as a different phrase on the past line for that read.
 
 ### AUTHORED_ENGLISH `en-u29-167`
 
@@ -2250,10 +2960,10 @@ text=This word is not the time label (reading).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a6c2af69e5401448c578622cd6ebf8200320405a7fabbcad4b518823422da088
+- Content hash: 61ce2643cd4d1eceff5e4e97ee3b81fa12635bee1a8b2b3e313e005d48eb3d0e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the other form is happening now, in the present. This label is written on the shown line.
+text=This label is paired with the other form (in the present).
 
 ### AUTHORED_ENGLISH `en-u29-168`
 
@@ -2263,10 +2973,10 @@ text=The frozen line says the other form is happening now, in the present. This 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 331931834b7be1f8c70c9b7fe912eba3852a4fcd4c6eea9f8c729a15105767e5
+- Content hash: 4fdcaac598ad0eb088c3abc928ed1adc289c0a4fc17b6579ca12443fd1cf3dce
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written on the line with this shown form?
+text=This phrase is not the time label asked for here (that read).
 
 ### AUTHORED_ENGLISH `en-u29-169`
 
@@ -2276,10 +2986,10 @@ text=Which admitted English label is written on the line with this shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03056f0832a468ccada127229e487e3426524a4eedb7fdbb19bda36204f819e4
+- Content hash: 6210a72a5f2034db8258c05781bd7bf46c1835de4f341e142bbe941d54f2b7d8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label on the shown line for in the past.
+text=The frozen line says the form indicates actions that happened in the past. This label is written on the shown line.
 
 ### AUTHORED_ENGLISH `en-u29-170`
 
@@ -2289,10 +2999,10 @@ text=The frozen line writes this label on the shown line for in the past.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a218c67478e81e6dc1956cac6f3b8823b53702cb633ad22b4ea159946c692ee9
+- Content hash: ae919858945c73cdad2620ad59d27eedb3ad546360c7e5bb365da730bb84465c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this phrase on the shown line, and it is not the other time label for that read.
+text=Which admitted English label is written on the line with the shown form?
 
 ### AUTHORED_ENGLISH `en-u29-171`
 
@@ -2302,10 +3012,10 @@ text=The frozen line writes this phrase on the shown line, and it is not the oth
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9c24119985cfdc5c6780672f07e725d12bfd8d3a146082f4dc4922c00290582b
+- Content hash: 74958dedbb3c3d3dd5fe3a0a4c39bb1e67ede7ca1d48cb49dd85d13da6f41aee
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is the one on the shown line (in the past).
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u29-172`
 
@@ -2315,10 +3025,10 @@ text=This label is the one on the shown line (in the past).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 88f18d9aacae7ba19a8aa95445afa46bee9bd20f94ecbfc76a375457da88d865
+- Content hash: 2dc1218748b134e42e10b8eea23f5e38ca45af9b0cf460e1752c7ae4b4dc8634
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase stays on the shown line (that read).
+text=The frozen line writes this label on the other line for in the past.
 
 ### AUTHORED_ENGLISH `en-u29-173`
 
@@ -2328,10 +3038,10 @@ text=This phrase stays on the shown line (that read).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 605b01689e6378353a1945760b54e586ea175a7d5cb7c994ae84dd13dbbb4e10
+- Content hash: 28f500ee68ee2641d416d52b75aafc29d3da90dacb88c4c9d9ed016ab3b87160
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the form indicates actions that happened in the past. This label is the other time label.
+text=The frozen line writes this word inside the gloss, not as the time label for reading.
 
 ### AUTHORED_ENGLISH `en-u29-174`
 
@@ -2341,10 +3051,10 @@ text=The frozen line says the form indicates actions that happened in the past. 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17af71ec5a11590640ea0772742401ae4fded11b7e258a8580df2b0609fa501a
+- Content hash: a3afa3e5a67add255a51365cdaf4f8d3c5351ba72e0512a7c5ebe38eaccf8682
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss names the other time, not the one on the shown line?
+text=This label is paired with the other form (in the past).
 
 ### AUTHORED_ENGLISH `en-u29-175`
 
@@ -2354,10 +3064,10 @@ text=Which admitted English gloss names the other time, not the one on the shown
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee81489f14047cf3c13a935a7eb59ffe648aaf64cf803b15ad7770f1d2f08b97
+- Content hash: 572044623c7a38144978a93f560e4ea3037d08aa1984a92ccd3d3987b7b49bf9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for beige.
+text=This word is not the time label (reading).
 
 ### AUTHORED_ENGLISH `en-u29-176`
 
@@ -2367,10 +3077,10 @@ text=The frozen line writes this label beside a different form for beige.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c1ff8fe2832cbe8e176cd9f498ea46b6db5f30cdc03fe405f699cda725369499
+- Content hash: e6492eb7baf766fe8548e4b44a6e4fb615bc849dd4468b5e75db39637a6762dc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for khaki-colored.
+text=The frozen line says the other form is happening now, in the present. This label is written on the shown line.
 
 ### AUTHORED_ENGLISH `en-u29-177`
 
@@ -2380,10 +3090,10 @@ text=The frozen line writes this label beside a different form for khaki-colored
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d61f7ab577eda76f755509029894d2d59d97b09d84e7adad2d943ea32bdeeeb
+- Content hash: af1cc3db64adaf4e41f2f98a9b4b98c4640bed20cd42833458c0fc9dea31eadf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with an invariant form (beige).
+text=Which admitted English label is written on the line with this shown form?
 
 ### AUTHORED_ENGLISH `en-u29-178`
 
@@ -2393,10 +3103,10 @@ text=This label is paired with an invariant form (beige).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e178fe58bc3cd4be13355754aa8b0f0a633693772e73fa43f53caaf9516c601c
+- Content hash: 7ebbf29816bb4e12208b1baa51cb424768618d342254b068cae8a5f4ecfdcaad
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other invariant form (khaki-colored).
+text=The frozen line writes this label on the shown line for in the past.
 
 ### AUTHORED_ENGLISH `en-u29-179`
 
@@ -2406,10 +3116,10 @@ text=This label is paired with the other invariant form (khaki-colored).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 36f48a20f3ef2609aa79e6d0a3c778d567983b2a3c2f998454c3caf421b6d6a3
+- Content hash: 56858ab840651d63703d53c50a097f1dd4f38b4ad38706512d83815393a3e670
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the short form appears in the stated role. This label is written beside the shown form.
+text=The frozen line writes this phrase on the shown line, and it is not the other time label for that read.
 
 ### AUTHORED_ENGLISH `en-u29-180`
 
@@ -2419,10 +3129,10 @@ text=The frozen line says the short form appears in the stated role. This label 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b4b9733cafe7e505cfc0c2c586f472416da28d083f682cbdaba48f4adb2d088a
+- Content hash: 5005e4247e5be62d48fe5fe47df4c43f8177d44e79f68c976aa9634be2a9f946
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the shown form?
+text=This label is the one on the shown line (in the past).
 
 ### AUTHORED_ENGLISH `en-u29-181`
 
@@ -2432,10 +3142,10 @@ text=Which admitted English label is written beside the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f1ec3450c12df1160a05ab46f839ad603b85b31cef81e91a73108e83a8371582
+- Content hash: 1f367ce2ec2ac849118ec59ec03d374af45002120b2324a0cc358df295b367a8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside an invariant form for beige.
+text=This phrase stays on the shown line (that read).
 
 ### AUTHORED_ENGLISH `en-u29-182`
 
@@ -2445,10 +3155,10 @@ text=The frozen line writes this label beside an invariant form for beige.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 08a6fba111642245757d100b7d6fb9fee04ffc83a9bafb9b77138da5c9ca9276
+- Content hash: 09fbf56d5f20dbd0d02ecb754709c2bdc24c4569c29a682fc360b09313ea2be6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside an invariant form for khaki-colored.
+text=The frozen line says the form indicates actions that happened in the past. This label is the other time label.
 
 ### AUTHORED_ENGLISH `en-u29-183`
 
@@ -2458,10 +3168,10 @@ text=The frozen line writes this label beside an invariant form for khaki-colore
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 92f71b7f80e5b5d3e3d8d25deb39c00286f4927c30f3a34286c7f4600acf51fc
+- Content hash: ba2663d511bd24a056b09ac3ea09f2f8570a94470931158403da8ff0ff6fd961
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is not the gloss of the shown form (beige).
+text=Which admitted English gloss names the other time, not the one on the shown line?
 
 ### AUTHORED_ENGLISH `en-u29-184`
 
@@ -2471,10 +3181,10 @@ text=This label is not the gloss of the shown form (beige).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c035dd35b6a54b1266ef43cc73749d7d2bad6da329cf5c203d57a28986d24ee
+- Content hash: c2e0c38ad37cc22b79a4e5ae6b61e0c01589f39faca0a8b420182ef0ceca08f2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with a different form (khaki-colored).
+text=The frozen line writes this label beside a different form for beige.
 
 ### AUTHORED_ENGLISH `en-u29-185`
 
@@ -2484,10 +3194,10 @@ text=This label is paired with a different form (khaki-colored).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea137d7ce655f113d2dc864072dbac05b2a69ad2d01e1b01a82c0fce05c1837a
+- Content hash: 5d0a58337632a5700087750412419510e4da3ec0466aebc7ca2223fa66367666
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside this shown form?
+text=The frozen line writes this label beside a different form for khaki-colored.
 
 ### AUTHORED_ENGLISH `en-u29-186`
 
@@ -2497,10 +3207,10 @@ text=Which admitted English label is written beside this shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 33ea3da69181b023b41c9e2082a294ab4e04d3314e151fbb4299e9c6325c9c7b
+- Content hash: 5c4a59ccf43e5f41b42bc39f8de738a86dc61e16983cbb8b146f92da17a699bd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the other forms for new.
+text=This label is paired with an invariant form (beige).
 
 ### AUTHORED_ENGLISH `en-u29-187`
 
@@ -2510,10 +3220,10 @@ text=The frozen line writes this label beside the other forms for new.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 71791b71def57643239a222428f41a307149e61204265e69b961a47c20f25894
+- Content hash: 50f359f80dc41fa4608cfb40a9d00474b5ef32ec849ae93f2ab7d524e7552ee4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the other invariant form for khaki-colored.
+text=This label is paired with the other invariant form (khaki-colored).
 
 ### AUTHORED_ENGLISH `en-u29-188`
 
@@ -2523,10 +3233,10 @@ text=The frozen line writes this label beside the other invariant form for khaki
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 712df8c82d036b54a91fc5e8c1319c41e2cc9f1ac5db19d0eac538f8d4b645b7
+- Content hash: 25947cfdaaceb48bc1bb235b5b779113026e89e904d63ab289596e05a6cf8624
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with a different form (new).
+text=The frozen line says the short form appears in the stated role. This label is written beside the shown form.
 
 ### AUTHORED_ENGLISH `en-u29-189`
 
@@ -2536,10 +3246,10 @@ text=This label is paired with a different form (new).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5aed6374cf868d4a7245fcf32b3dc30094662c6ed962970e22b0099687b13ad
+- Content hash: 58e76ef1af7d5792a8f02b13e4c0ee7deb3c697078ab08c43f311fb61f666174
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the short form appears in the stated role. This label is written beside the shown invariant form.
+text=Which admitted English label is written beside the shown form?
 
 ### AUTHORED_ENGLISH `en-u29-190`
 
@@ -2549,10 +3259,10 @@ text=The frozen line says the short form appears in the stated role. This label 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c215dc200c20f4180505a738afd4dec986de0f748b84d686aab611dbe391a003
+- Content hash: d7a274c479e30870532bc81f015cf050e7f17fa3871e507f45e44d45d00a6e77
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the invariant form?
+text=The frozen line writes this label beside an invariant form for beige.
 
 ### AUTHORED_ENGLISH `en-u29-191`
 
@@ -2562,10 +3272,10 @@ text=Which admitted English label is written beside the invariant form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 93c4133a59e1120d212abdeb2fa830f16fadd582dcd1e3c586bf75976f89666c
+- Content hash: 8a2c36c50a8f7d184665f5f29ce63b77776cd13e565336afb4352806ddc77d39
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line gives this label to the replacement line for colloquial language.
+text=The frozen line writes this label beside an invariant form for khaki-colored.
 
 ### AUTHORED_ENGLISH `en-u29-192`
 
@@ -2575,10 +3285,10 @@ text=The frozen line gives this label to the replacement line for colloquial lan
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9af0c05cb13e2ed0c506776cf0759410d2d1b58b85e1d2b4158931c2f2f1aca9
+- Content hash: 4a977a3fc0af2eca6a5e1456d1acbea288645dacfcebd2be85bfeafc665bf32c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this as the gloss, not as the speech label for Having eaten, I went for a walk.
+text=This label is not the gloss of the shown form (beige).
 
 ### AUTHORED_ENGLISH `en-u29-193`
 
@@ -2588,10 +3298,10 @@ text=The frozen line writes this as the gloss, not as the speech label for Havin
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d3241da5e44c0b627b1878ce36386c23ea29ef630c87f8b0c4ff528e6e28188
+- Content hash: 1c6acfbece8d1dd6f95b387893fc75e3ae23958432d5e1b67e3d0e5141ec8a2e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other line (colloquial language).
+text=This label is paired with a different form (khaki-colored).
 
 ### AUTHORED_ENGLISH `en-u29-194`
 
@@ -2601,10 +3311,10 @@ text=This label is paired with the other line (colloquial language).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb817cf4a92575a59f6d0f79549cf7772028c99b78c47a7036800c63053df11e
+- Content hash: 1b2f57a1100bc76b212777a4bb5128a7429c6427084ebb308c2dbbeda8ed2387
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This gloss is not the speech label (Having eaten, I went for a walk).
+text=Which admitted English label is written beside this shown form?
 
 ### AUTHORED_ENGLISH `en-u29-195`
 
@@ -2614,10 +3324,10 @@ text=This gloss is not the speech label (Having eaten, I went for a walk).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b0791e52222aadec8adb9170b98c16a9e6ac4f369b2e3e0482e13898a180f9a
+- Content hash: c988684f505af894ba9ab4626f6b8984bbd3a9e27a20f3f6f006f90afc404f95
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says adverbial participles are considered a feature of bookish speech. This label is the one given to that construction.
+text=The frozen line writes this label beside the other forms for new.
 
 ### AUTHORED_ENGLISH `en-u29-196`
 
@@ -2627,10 +3337,10 @@ text=The frozen line says adverbial participles are considered a feature of book
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b6d40ba61c2f766212aca746f911cca6dee07b8e237025f18ce9750bbb2b8d8f
+- Content hash: a0845df34d843a8db4dca47b37b1ff0e60ac4a1523fd5f5289248cb6b7a06e3b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label names the kind of speech the source gives the shown line?
+text=The frozen line writes this label beside the other invariant form for khaki-colored.
 
 ### AUTHORED_ENGLISH `en-u29-197`
 
@@ -2640,10 +3350,10 @@ text=Which admitted English label names the kind of speech the source gives the 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7506f4f9eca607e3eb6bd2c6ee7f4f39e0d9a265123aaacf8fd38021e489e3d8
+- Content hash: a9b2be56acb60f679faa570c0e702b1ce101bc0719b0b55aa54661a762e0fa51
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line gives this label to the other construction for bookish speech.
+text=This label is paired with a different form (new).
 
 ### AUTHORED_ENGLISH `en-u29-198`
 
@@ -2653,10 +3363,10 @@ text=The frozen line gives this label to the other construction for bookish spee
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b9352c7c7d51dbba7ce201f4c1d4a2cf090888a9e57377d85d6b1d6b43f7eb3c
+- Content hash: 635fdc695de2c2a896a7f14c578d1e770673e458fb6d28eb0f57bff818436f23
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this gloss beside the other line for Having eaten, I went for a walk.
+text=The frozen line says the short form appears in the stated role. This label is written beside the shown invariant form.
 
 ### AUTHORED_ENGLISH `en-u29-199`
 
@@ -2666,10 +3376,10 @@ text=The frozen line writes this gloss beside the other line for Having eaten, I
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 916aff2a0698455c7c6e0fe143bab9aae43a9a478335a3d4846797577ba7114d
+- Content hash: 12013c87b8666a36edc53d03a775fc15f4f1c45a8458aa36347d97cb8ea14651
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other line (bookish speech).
+text=Which admitted English label is written beside the invariant form?
 
 ### AUTHORED_ENGLISH `en-u29-200`
 
@@ -2679,10 +3389,10 @@ text=This label is paired with the other line (bookish speech).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 47df87e02ab28f012a80ff52ba01aa96bab96878b9544830455a7c9176476cec
+- Content hash: b69e39f89f2284f346a83f71111c1ca3219b29a202f147a45abfde1bdb55441a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This gloss is paired with the other line (Having eaten, I went for a walk).
+text=The frozen line gives this label to the replacement line for colloquial language.
 
 ### AUTHORED_ENGLISH `en-u29-201`
 
@@ -2692,10 +3402,10 @@ text=This gloss is paired with the other line (Having eaten, I went for a walk).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b77987060c0859c4055b0f34b902d4835ca1f00a54ecdf9fed5220b9bcd2621
+- Content hash: 597e05168952b08104e145e31c0d48af2166f69c0977abf2125df6b49a7b05a1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says adverbial participles are considered a feature of bookish speech. This label names the replacement in colloquial language.
+text=The frozen line writes this as the gloss, not as the speech label for Having eaten, I went for a walk.
 
 ### AUTHORED_ENGLISH `en-u29-202`
 
@@ -2705,10 +3415,10 @@ text=The frozen line says adverbial participles are considered a feature of book
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3c8f1277345dd9e8d46799eb900671082922e6590439d215fcfa4ac44fd36f83
+- Content hash: 8a55302de43ea072f1e63e9a15701506bbf726e52994e6e9ff6b80b32c5243f5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label names the replacement named for the shown line?
+text=This label is paired with the other line (colloquial language).
 
 ### AUTHORED_ENGLISH `en-u29-203`
 
@@ -2718,10 +3428,10 @@ text=Which admitted English label names the replacement named for the shown line
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8137919ffa8551d2d5c3d8acf0c42aae3daf0291453066cf6000364794f44e98
+- Content hash: cdfbca9f872eedc74f389970b5c7c0d77655a6e79915ba02d99100fe673b5816
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line uses this phrase for the kind of speech, not as the gloss for bookish speech.
+text=This gloss is not the speech label (Having eaten, I went for a walk).
 
 ### AUTHORED_ENGLISH `en-u29-204`
 
@@ -2731,10 +3441,10 @@ text=The frozen line uses this phrase for the kind of speech, not as the gloss f
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 657410b1f44a3c381045e3cc744ab67b98f643ed0be94a9bdeb638e98b4c1a73
+- Content hash: dab1adc08d8476a041fc6e1b295bc12e00af1e1cda9080a060fde6e2b34d40b8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line uses this phrase for the replacement for colloquial language.
+text=The frozen line says adverbial participles are considered a feature of bookish speech. This label is the one given to that construction.
 
 ### AUTHORED_ENGLISH `en-u29-205`
 
@@ -2744,10 +3454,10 @@ text=The frozen line uses this phrase for the replacement for colloquial languag
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4d060ed747684f614c32981922c14098591dc0cf156c2618e4a9be09977efa5e
+- Content hash: a48f95c8e49c8641bcd3089cdeb4fb06c8d6aaaa571b878543ed91a8a71ff2b9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase is the speech label (bookish speech).
+text=Which admitted English label names the kind of speech the source gives the shown line?
 
 ### AUTHORED_ENGLISH `en-u29-206`
 
@@ -2757,10 +3467,10 @@ text=This phrase is the speech label (bookish speech).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: be567d8e42caf05577fa0dc7a62edfc81176cf36adc6c8e8c947811391f2e51a
+- Content hash: eb2900f454b5b8de2c7e9c2f1f64343246d68d0c68db48e8acc3f9bcaa22822e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase is the other label (colloquial language).
+text=The frozen line gives this label to the other construction for bookish speech.
 
 ### AUTHORED_ENGLISH `en-u29-207`
 
@@ -2770,10 +3480,10 @@ text=This phrase is the other label (colloquial language).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f44a361b8f91e02ce2a8803e149bc7cdb905b07a5f9f4306236585e1b82c94b6
+- Content hash: 9ccc3e4a192f81d5f8719f32bf78e3bacca46fed7e0f93bfa0413e4e11c471ee
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says adverbial participles are considered a feature of bookish speech. This gloss is written beside the shown line.
+text=The frozen line writes this gloss beside the other line for Having eaten, I went for a walk.
 
 ### AUTHORED_ENGLISH `en-u29-208`
 
@@ -2783,10 +3493,10 @@ text=The frozen line says adverbial participles are considered a feature of book
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d03917395d85dcd5bdab8a0a174632676bd68c1340205628672aa957256f77a5
+- Content hash: 43025ae091ee3ea9853652409cbe7702a7eb86c5f96b13ddf8cdbaf8f67629f9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written beside the shown line?
+text=This label is paired with the other line (bookish speech).
 
 ### AUTHORED_ENGLISH `en-u29-209`
 
@@ -2796,10 +3506,10 @@ text=Which admitted English gloss is written beside the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4230364b6860b6c95ba208863fda17c104db56ab247724834b4540bb62879a5
+- Content hash: 08b2e00e4a65081ac5b062ff14277d57a80673ff6e540f6dd813b8f6367be4dd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted active and short-form lines
+text=This gloss is paired with the other line (Having eaten, I went for a walk).
 
 ### AUTHORED_ENGLISH `en-u29-210`
 
@@ -2809,10 +3519,10 @@ text=Admitted active and short-form lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cf863ba45bcb297436a7994f9dac09c3b97a572c2ec0facca5fd383479561b19
+- Content hash: ed3dab604afca5d5f2f0858c217a2ce4462abbc8021408e89e7e09312d30f01e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 29 uses admitted active lines, the short-form contrast, and the bookish-speech note for adverbial forms. Punctuation stays in the copy you own. This note is not a claim about every bookish text. Qualified review is pending.
+text=The frozen line says adverbial participles are considered a feature of bookish speech. This label names the replacement in colloquial language.
 
 ### AUTHORED_ENGLISH `en-u29-211`
 
@@ -2822,10 +3532,10 @@ text=Proposed Unit 29 uses admitted active lines, the short-form contrast, and t
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0d90c82d064f5b53f3c1e0344247f19c0b14500b840d4edcf14dd7b30060a60
+- Content hash: f0985ee3a3bf0474097c64666854bc7202568972e4d1b58b777c670540dd51f6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 29 in the copy you own. The app records do not replace that lesson.
+text=Which admitted English label names the replacement named for the shown line?
 
 ### AUTHORED_ENGLISH `en-u29-212`
 
@@ -2835,10 +3545,10 @@ text=Open Lesson 29 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62391867a53038bbe229db67d3b1157a523c5346a823159dc2fc879b0fd83899
+- Content hash: 2814caedea387e56b47090f6b6e071a30352ea39a30369636361f0705d91cdcb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=The frozen line uses this phrase for the kind of speech, not as the gloss for bookish speech.
 
 ### AUTHORED_ENGLISH `en-u29-213`
 
@@ -2848,10 +3558,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb705e89527063c8d9ff565e88bc8ce124ea75d047661b5df04728c137aef22f
+- Content hash: 0d243e8232a0451404025ab6378462d5cb61b1090ddb90306a8f95d7aed4bb54
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=The frozen line uses this phrase for the replacement for colloquial language.
 
 ### AUTHORED_ENGLISH `en-u29-214`
 
@@ -2861,10 +3571,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ab1e847895d78e750a1c6a9ee2f4d2760956b2615524cd48ad67d6ade2c960c
+- Content hash: c9794208539521778efcab20a6de3f55225f0f1c016a443c29bb9f3540b64bbd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=This phrase is the speech label (bookish speech).
 
 ### AUTHORED_ENGLISH `en-u29-215`
 
@@ -2874,10 +3584,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c2f40ad118e6964ab611ec066f8ca24e65a1dd393602f739c3c23ddd9578466a
+- Content hash: e678c51a1df9b55a19af0232a86dcafb6719fd51a862534315818fde63fab216
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=This phrase is the other label (colloquial language).
 
 ### AUTHORED_ENGLISH `en-u29-216`
 
@@ -2887,10 +3597,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 38e60cb2b4963cbf71ddba63580b6ef3882ee528a534e8fc8ebc56fafcd0b47d
+- Content hash: 7bcc1b6060342e35216c3e57cc7efdcb9518e7c9be8d5fe6ff01d694ba9842ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=The frozen line says adverbial participles are considered a feature of bookish speech. This gloss is written beside the shown line.
 
 ### AUTHORED_ENGLISH `en-u29-217`
 
@@ -2900,10 +3610,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c19a98fdb02bbdb5815f67f6d3365969f6637a83cdfd80ff7824bd833367fc60
+- Content hash: ce7fc563cd3d3f82701e637988ad36678a9bb707b62bfa8de1294e3514fc02f2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Which admitted English gloss is written beside the shown line?
 
 ### AUTHORED_ENGLISH `en-u29-218`
 
@@ -2913,10 +3623,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8fdd25a09c9507698c21437d2531216aff34b061f3497ad15e97146304ad693a
+- Content hash: ba2efae336037898d7f7bfb3f09718d1b225b0bd53b90f09774f19e15f82d947
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 29 in your copy
+text=The source assigns запятые не ставятся when the phrase stands before the determined word.
 
 ### AUTHORED_ENGLISH `en-u29-219`
 
@@ -2926,10 +3636,10 @@ text=Work Lesson 29 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e8a75b16959d2ab5b82cf3449a6439ea989457d86588b6caad78a59a19a2999e
+- Content hash: cd8e451a5842d6271f2ce2e07cc700d1bb6097b9de0f666ca02bc9d2692bf9d2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 29 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=The source reserves кроме тех случаев for личным местоимением and for a phrase that обозначает причину.
 
 ### AUTHORED_ENGLISH `en-u29-220`
 
@@ -2939,10 +3649,10 @@ text=Do Lesson 29 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d12fde35e18347a3cad0d1ee15be43a9f7eed14d6363d9d7dac9455d1fd59ea4
+- Content hash: 53a74c49430d33f2383040b4fcae76eed430df046525b6a6d25fc3cf3a80a4fb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 29 in your copy and complete its lesson work.
+text=запятые не ставятся does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u29-221`
 
@@ -2952,10 +3662,10 @@ text=Open Lesson 29 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b7d4ffcfccf84de2e0d674bef0a75e0bb018d1d3e8d55773035d4c731d6c1015
+- Content hash: 72ccca1fe1185880a7d18f749e66987c7b6dd3559cbe74b0c31d524036d52072
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 29 book work
+text=кроме тех случаев does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u29-222`
 
@@ -2965,10 +3675,10 @@ text=Record Lesson 29 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2509b88ad05d805beea1d6b7bcbd278c9a0a6ca3acbf8e91a5a91b5c7d9e51c8
+- Content hash: b4006682ef0fd2965bf5db08dc4dc9a981205aed35401213343c6d6d42d96b9f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 29 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=The source says a phrase after the determined word выделяется запятыми с двух сторон and gives Программа, написанная в спешке, выполнила недопустимую операцию. The keyed phrase is выделяется запятыми с двух сторон.
 
 ### AUTHORED_ENGLISH `en-u29-223`
 
@@ -2978,10 +3688,10 @@ text=When you have done Lesson 29 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 13f5f70379b785c909651f0eecac6f0c897deb5562416574b8e5d115f3c852c7
+- Content hash: 46c940c873703f4b3d523504bbf09da27a1344e258b134d4503ceaf242fb132c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 29 work in your copy.
+text=Which admitted phrase classifies the shown form?
 
 ### AUTHORED_ENGLISH `en-u29-224`
 
@@ -2991,10 +3701,10 @@ text=Self-attest only after the Lesson 29 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 31fae552b583f78e954f84fb219a05ccd4785d66da71516a9b68a4e1c6775c88
+- Content hash: 90969b4d513052bafe2d81365641c131c546dad1156674a02217366a14c0c0a9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Participial punctuation stays in the copy you own
+text=The source assigns выделяется запятыми с двух сторон to Программа, написанная в спешке, выполнила недопустимую операцию.
 
 ### AUTHORED_ENGLISH `en-u29-225`
 
@@ -3004,10 +3714,10 @@ text=Participial punctuation stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 896c203d5c8cc0d406d561c5b47eb43b447487d4e966b070ad0317fe3d6f4e1a
+- Content hash: deb3381aadb09648db672a029c7f82aa2152fcae361e4e0be4d4e4235f7da48e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Participial punctuation stays in the copy you own. No admitted span states that rule.
+text=The source assigns запятая ставится только перед причастным оборотом when the sentence ends after the phrase.
 
 ### AUTHORED_ENGLISH `en-u29-226`
 
@@ -3017,10 +3727,10 @@ text=Participial punctuation stays in the copy you own. No admitted span states 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a9701367d998d15f40021de1c3f7d5783826f725651f8b490e632660e75dbb26
+- Content hash: 79c744c3ff50407b237cf2aed7bc714d28ccf3a4cbe05c6ec720d5c73f8a5092
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general bookish-register claim stays in the copy you own
+text=выделяется запятыми с двух сторон does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u29-227`
 
@@ -3030,10 +3740,10 @@ text=A general bookish-register claim stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca992b16134d1933ab7fc139c61ff4dabf7d4e2de360f9d875a26e431a5bcf5b
+- Content hash: 01252753e18020a1e30a92b67b173e59f55bfb38542dcec25463549202799b2a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general bookish-register claim stays in the copy you own. The adverbial note is only about adverbial forms.
+text=запятая ставится только перед причастным оборотом does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u29-228`
 
@@ -3043,10 +3753,10 @@ text=A general bookish-register claim stays in the copy you own. The adverbial n
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae7bb584b4b169c5e27d710bcc2f9018d785780d57a541cb309dd5d465fb8e39
+- Content hash: ed55e76d0590fae9702b663020dbb0b105bb098bacc3063a661086ce6ed5b864
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The bookish reading stays in the copy you own
+text=The source says a phrase before the determined word has запятые не ставятся and gives Написанная в спешке программа выполнила недопустимую операцию. The keyed phrase is запятые не ставятся.
 
 ### AUTHORED_ENGLISH `en-u29-229`
 
@@ -3056,7 +3766,280 @@ text=The bookish reading stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6767bf3b350baacf54abd86186106050d77b41ed756a67f4fbd90f3d1afe29dc
+- Content hash: bd45e4dccc0a4ae762c2f21282e842edcab866dea637bbf251c761a399627602
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The source states запятые не ставятся as the default before the determined word.
+
+### AUTHORED_ENGLISH `en-u29-230`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 74638f6883d0b0df98aa5b826ebb36c55c696e56d548195812ae86cd769863cc
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The source assigns выделяется запятыми с двух сторон to a phrase after the determined word.
+
+### AUTHORED_ENGLISH `en-u29-231`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e003acd7706476d1e50f600e355e60259ce5a3e376fef7f01af3c39c79295dfe
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The source says the determined word can be личным местоимением. The keyed phrase is кроме тех случаев.
+
+### AUTHORED_ENGLISH `en-u29-232`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a91693fb52b35c3f7415856400d92fc79ab6cd8f84a8bfa9c23a4010649dfe5a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted active and short-form lines
+
+### AUTHORED_ENGLISH `en-u29-233`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: efff1d3760d0e1a9ed340d0ac011f1b489ca4da2de65c7d392ef729363238d25
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 29 uses admitted active lines, the frozen participial-phrase punctuation rule, the short-form contrast, and the bookish-speech note for adverbial forms. This note is not a claim about every bookish text. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u29-234`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7d99a2083bfe5ceca400a70b73bbc07dff4b65fde6e4121a0e2c9809febfd76f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 29 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u29-235`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f43e2a6337c27acd7c9a4d1a1131c6fc7eebb674a6ba53e67f62b89a17b9e3fb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read the admitted examples on this card.
+
+### AUTHORED_ENGLISH `en-u29-236`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5566ec3c68d3d945ecfe8f65a0d0b1e00072e81aaf4941c3dcd4935fc0d4e7d9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u29-237`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a83a2414c5b873f1d07b9422fa2733c0b0138b2013f2afbe416c38c1bd40055d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u29-238`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6193bb59306ff73fda0ecb8fa5a962536e5c95d70bcf1249e7352390320fdd27
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u29-239`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bd5508079105ca2a1ce1788ee96d641639aa805721ca3b0daf4d62f58d5255a5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u29-240`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 790946734ea55c373f38140bad7d57c24d5debc2093cf6c18d8e9c4bb7f616bd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u29-241`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8d1d66c66b05f48e0da5ec9ccfa96f4334d102414cd03dae1440525113fa7519
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 29 in your copy
+
+### AUTHORED_ENGLISH `en-u29-242`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f36fd54ba7d772d5e62b1094434f92ad4ebbc5747951107e5a4ac8eac923281d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 29 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u29-243`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 91e356a1cffb0a0e09adc505f47ff371c7ba973624c7077250e828409610b682
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 29 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u29-244`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 32ab8d18661e44a780d4ac7d05dfe359de58c7c0567817bd4861c9f66004ec18
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 29 book work
+
+### AUTHORED_ENGLISH `en-u29-245`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d4436d7e836034c9863043345ec7ace889227dd5a9614d03a14839f463be28f2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 29 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u29-246`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0a758e0eefc9bbc7897d0f57947ec2005a659cbeb711b070cf119555dd5b7cc3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 29 work in your copy.
+
+### AUTHORED_ENGLISH `en-u29-247`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e999e1dfaaf0d7131247355c8047b1b3ce2d79ab787029e21dbfb0b05a5cbc28
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A general bookish-register claim stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u29-248`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ac882d5b1e1b183b21d94d7f8129c22512ed4c0392abc7c585966fe34dd204f3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A general bookish-register claim stays in the copy you own. The adverbial note is only about adverbial forms.
+
+### AUTHORED_ENGLISH `en-u29-249`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 05aded4819d86ecc3b6ead1295b0f75f158d77610ae67289067bbce018d231c7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The bookish reading stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u29-250`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 843ca04fc69fce16a121c4eb87d80e17279957ff36bf48f8e6c3b02217d7fe87
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The bookish reading stays in the copy you own. The admitted note is not that reading.
@@ -3081,6 +4064,27 @@ exactSpan=The active past participle is used in order to indicate actions that h
 
 Compare:
 :Де́вушка, '''чита́ющая''' тут кни́гу, – моя́ сестра́ – The girl '''reading''' this book here is my sister (she is reading the book now, '''in the present''').
+
+### SOURCE_CAPABILITY `cap-obj-u29-punctuation`
+
+- Objectives: obj-u29-punctuation
+- Sessions: none
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: SOURCE_CAPABILITY
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 41f662d2f9fda1f2b5a7aa6733a19ecedaa95dc18c8c12f32e39d42939e7bfcb
+
+sourceId=src-ruwiki-prichastie-153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+supportedClaim=participle-punctuation
+exactSpan=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
 
 ### SOURCE_CAPABILITY `cap-obj-u29-short-adjective`
 
@@ -3114,6 +4118,21 @@ CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-ruwiki-prichastie-153078996`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5f2c88424869f523a70e2e0536f4534f0baf0647ed14df6f095224fdfef08755
+
+Причастие (лингвистика)
+CC BY-SA 4.0
+Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -3140,6 +4159,20 @@ Original
 - Content hash: 01f0218db3ba7a1fcd1d27d601ee1f3a41d4890505b9bde355184fe41a401cad
 
 src-wikipedia-russian-grammar-1369617627
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-ruwiki-prichastie-153078996`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 037810eea32f115d89eb66eb6e408aee2902f26a33a4b1940bace022880e2a58
+
+src-ruwiki-prichastie-153078996
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -3190,14 +4223,25 @@ permitsAppUse=true
 - `obj-u29-bookish-note` CHECK `u29-i-bookish-note-1`
 - `obj-u29-bookish-note` CHECK `u29-i-bookish-note-2`
 - `obj-u29-bookish-note` REMEDIATION `u29-st-rem-bookish-note`
+- `obj-u29-punctuation` INSTRUCTION `u29-st-orient`
+- `obj-u29-punctuation` INSTRUCTION `u29-st-teach-punctuation-1`
+- `obj-u29-punctuation` INSTRUCTION `u29-st-teach-punctuation-2`
+- `obj-u29-punctuation` INSTRUCTION `u29-st-teach-punctuation-3`
+- `obj-u29-punctuation` EXAMPLE `ex-u29-punctuation-0`
+- `obj-u29-punctuation` EXAMPLE `ex-u29-punctuation-1`
+- `obj-u29-punctuation` EXAMPLE `ex-u29-punctuation-2`
+- `obj-u29-punctuation` PRACTICE `u29-st-guided-punctuation-1`
+- `obj-u29-punctuation` CHECK `u29-i-punctuation-1`
+- `obj-u29-punctuation` CHECK `u29-i-punctuation-2`
+- `obj-u29-punctuation` REMEDIATION `u29-st-rem-punctuation`
 - `obj-u29-book` INSTRUCTION `u29-st-book-work`
 - `obj-u29-book` INSTRUCTION `u29-st-book`
-- `obj-u29-punctuation` INSTRUCTION `u29-st-gap-punctuation`
 - `obj-u29-register` INSTRUCTION `u29-st-gap-register`
 - `obj-u29-reading` INSTRUCTION `u29-st-gap-reading`
 - `u29-s-orient` OBJECTIVE `obj-u29-active`
 - `u29-s-orient` OBJECTIVE `obj-u29-short-adjective`
 - `u29-s-orient` OBJECTIVE `obj-u29-bookish-note`
+- `u29-s-orient` OBJECTIVE `obj-u29-punctuation`
 - `u29-s-orient` OBJECTIVE `obj-u29-book`
 - `u29-st-orient` REFERENCE `ref-u2630-attribution`
 - `u29-s-active` OBJECTIVE `obj-u29-active`
@@ -3240,10 +4284,22 @@ permitsAppUse=true
 - `u29-st-check-bookish-note` REMEDIATION `u29-st-rem-bookish-note`
 - `u29-st-check-bookish-note` ITEM `u29-i-bookish-note-1`
 - `u29-st-check-bookish-note` ITEM `u29-i-bookish-note-2`
+- `u29-s-punctuation` OBJECTIVE `obj-u29-punctuation`
+- `u29-st-teach-punctuation-1` EXAMPLE `ex-u29-punctuation-0`
+- `u29-st-teach-punctuation-1` EXAMPLE `ex-u29-punctuation-1`
+- `u29-st-teach-punctuation-1` REFERENCE `ref-u2630-attribution`
+- `u29-st-guided-punctuation-1` REMEDIATION `u29-st-rem-punctuation`
+- `u29-st-guided-punctuation-1` ITEM `u29-g-punctuation-0`
+- `u29-st-teach-punctuation-2` REFERENCE `ref-u2630-attribution`
+- `u29-st-teach-punctuation-3` EXAMPLE `ex-u29-punctuation-2`
+- `u29-st-teach-punctuation-3` REFERENCE `ref-u2630-attribution`
+- `u29-st-rem-punctuation` EXAMPLE `ex-u29-punctuation-0`
+- `u29-st-rem-punctuation` EXAMPLE `ex-u29-punctuation-1`
+- `u29-st-check-punctuation` REMEDIATION `u29-st-rem-punctuation`
+- `u29-st-check-punctuation` ITEM `u29-i-punctuation-1`
+- `u29-st-check-punctuation` ITEM `u29-i-punctuation-2`
 - `u29-s-book` OBJECTIVE `obj-u29-book`
 - `u29-st-book-work` REFERENCE `ref-u2630-attribution`
-- `u29-s-gap-punctuation` OBJECTIVE `obj-u29-punctuation`
-- `u29-st-gap-punctuation` REFERENCE `ref-u2630-attribution`
 - `u29-s-gap-register` OBJECTIVE `obj-u29-register`
 - `u29-st-gap-register` REFERENCE `ref-u2630-attribution`
 - `u29-s-gap-reading` OBJECTIVE `obj-u29-reading`
@@ -3260,6 +4316,15 @@ permitsAppUse=true
 - `obj-u29-bookish-note` PROVENANCE `prov-ex-u29-bookish-note-0-ru-r1`
 - `obj-u29-bookish-note` PROVENANCE `prov-ex-u29-bookish-note-1-en`
 - `obj-u29-bookish-note` PROVENANCE `prov-ex-u29-bookish-note-1-ru`
+- `obj-u29-punctuation` PROVENANCE `prov-ex-u29-punctuation-0-en`
+- `obj-u29-punctuation` PROVENANCE `prov-ex-u29-punctuation-0-ru`
+- `obj-u29-punctuation` PROVENANCE `prov-ex-u29-punctuation-0-ru-r0`
+- `obj-u29-punctuation` PROVENANCE `prov-ex-u29-punctuation-0-ru-r1`
+- `obj-u29-punctuation` PROVENANCE `prov-ex-u29-punctuation-0-ru-r2`
+- `obj-u29-punctuation` PROVENANCE `prov-ex-u29-punctuation-1-en`
+- `obj-u29-punctuation` PROVENANCE `prov-ex-u29-punctuation-1-ru`
+- `obj-u29-punctuation` PROVENANCE `prov-ex-u29-punctuation-2-en`
+- `obj-u29-punctuation` PROVENANCE `prov-ex-u29-punctuation-2-ru`
 - `obj-u29-short-adjective` PROVENANCE `prov-ex-u29-short-adjective-0-en`
 - `obj-u29-short-adjective` PROVENANCE `prov-ex-u29-short-adjective-0-ru`
 - `obj-u29-short-adjective` PROVENANCE `prov-ex-u29-short-adjective-1-en`
@@ -3271,9 +4336,18 @@ permitsAppUse=true
 - `obj-u29-active` PROVENANCE `prov-u29-active-x-1`
 - `obj-u29-bookish-note` PROVENANCE `prov-u29-bookish-note-rem`
 - `obj-u29-bookish-note` PROVENANCE `prov-u29-bookish-note-x-0`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-rem`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-rem-r0`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-rem-r1`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-rem-r2`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-rem-r3`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-x-0`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-x-1`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-x-2`
 - `obj-u29-short-adjective` PROVENANCE `prov-u29-short-adjective-rem`
 - `obj-u29-short-adjective` PROVENANCE `prov-u29-short-adjective-x-0`
 - `obj-u29-active` SOURCE_CAPABILITY `cap-obj-u29-active`
+- `obj-u29-punctuation` SOURCE_CAPABILITY `cap-obj-u29-punctuation`
 - `obj-u29-short-adjective` SOURCE_CAPABILITY `cap-obj-u29-short-adjective`
 
 ## Book-directed experiences
@@ -3286,10 +4360,10 @@ permitsAppUse=true
 
 - `cap-obj-u29-active` supports `active-participle` for `obj-u29-active`
 - `cap-obj-u29-short-adjective` supports `short-form-adjective` for `obj-u29-short-adjective`
+- `cap-obj-u29-punctuation` supports `participle-punctuation` for `obj-u29-punctuation`
 
 Guidance objectives stay unsupported until an admitted frozen capability exists:
 
-- `obj-u29-punctuation` Participial punctuation stays in the copy you own
 - `obj-u29-register` A general bookish-register claim stays in the copy you own
 - `obj-u29-reading` The bookish reading stays in the copy you own
 
@@ -3298,7 +4372,6 @@ Guidance objectives stay unsupported until an admitted frozen capability exists:
 - `u29-st-orient` Open Lesson 29 in the copy you own. The app records do not replace that lesson.
 - `u29-st-book-work` Open Lesson 29 in your copy and complete its lesson work.
 - `u29-st-book` Self-attest only after the Lesson 29 work in your copy.
-- `u29-st-gap-punctuation` Participial punctuation has no admitted frozen span.
 - `u29-st-gap-register` A claim about all bookish text has no admitted frozen span.
 - `u29-st-gap-reading` The bookish reading has no admitted frozen span.
 
@@ -3309,7 +4382,6 @@ None.
 
 ## Unavailable experiences
 
-- `u29-st-gap-punctuation`
 - `u29-st-gap-register`
 - `u29-st-gap-reading`
 

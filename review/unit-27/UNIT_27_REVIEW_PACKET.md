@@ -11,12 +11,12 @@ Unit 27 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 5ab3cfe06e709ee605a3cbce320d6cbea9e11776
-- Unit content-review SHA-256: ab6d63bef7065b2e64228722cd50eeb5fcb845740fcfddcebc6b6660040f5aff
+- Curriculum source commit: 4cf6007f69beadac5278bb42e5bf060a62fe3eb9
+- Unit content-review SHA-256: 517bc0ac21360e0fd46727d38ca375b43799d14259dc74bc400ab1de98a23044
 - Mapping-package SHA-256: f5da4227d7bdfa500293d76f3b48ab8ac7646ac0dd6c90b4e8ac4f10cc69a385
-- Pack content-review SHA-256: 76879c3e98f1682f322651e830dd18c537a79135badad3c86c77a7e13cfa7c6f
-- Review-package SHA-256: 07dcd79d7ec433bb04185ddce2b034f3573d2568b18002b69bfbedd812a8fd0f
-- Repository source SHA-256: 8819cf84360df77acebd15bb55dd4f090e1ce4f9f7962916f6927fbbc3b4496f
+- Pack content-review SHA-256: 129c7ebe726af56e5d9efe7bc363dd0224c6d6a4e1667c1dbb264a884fd24e71
+- Review-package SHA-256: 8d674aa5f90a29931380914014250d47c26137a06d6d8217edbd75763fc17885
+- Repository source SHA-256: 1a183504385f362fdd28a371a52f585a1d1df18a9daf4aa8e11936031ccda885
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1001,11 +1001,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 6b3b52fec023dc656e839507b6cc82d5e4e2c5ee0b8b5c1a4f574d76c7f8077c
+- Content hash: 9e36f77bd8e0dccaafe73b96d6c1b4c1960efa839faf05ff46f6a7e252065d5d
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, general letter conventions, participle stress, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
@@ -1735,123 +1735,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u27-071`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f83817f47b27bedce0cae51497658e1f61f3f656781573ef2f82dc72c7ff845b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u27-072`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3c31c6f9c8302146c53ebdfaf858e2449e5a99064f706e58edc77b3b963008f5
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for written.
-
-### AUTHORED_ENGLISH `en-u27-073`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 835b7acc1d6a5d679fb685f5842124b914951bb5a4aba704406ea7fe84467db2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for killed.
-
-### AUTHORED_ENGLISH `en-u27-074`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0eacbae093a37b66331749e3c90830d3179f6afb237cc503bb0a1c37e1bb4653
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the writing form (written).
-
-### AUTHORED_ENGLISH `en-u27-075`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a7b3dcaf8163db9ed15ded8812f92e062c1dc0953662b1b8975fb0bdf4018b96
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other listed form (killed).
-
-### AUTHORED_ENGLISH `en-u27-076`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3685d3fd9407854bb7ca92479d90fd56bb6179e4f66ab42ee9285bc453a8ab5d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form.
-
-### AUTHORED_ENGLISH `en-u27-077`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9722810d6d680f6755374edb58875d28078c2590f0ac138e849aea8b6b976661
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the shown form?
-
-### AUTHORED_ENGLISH `en-u27-078`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e61d3bbd3e52ba843918e5c1c566281a2086ca32871b614c2bca9ba45f57e594
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
-
-### AUTHORED_ENGLISH `en-u27-079`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dedf78a98cf9f057cf139b31b672a501031fcdfdf5a7be002f5fa141967fd0e3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for done/made.
-
 ### AUTHORED_ENGLISH `en-u27-080`
 
 - Objectives: none
@@ -1860,10 +1743,10 @@ text=The frozen line writes this label beside a different form for done/made.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9736434ff514bd2c851697c6fac2644ab1508347a4ded8b96e59ddab4d7e1c24
+- Content hash: b99d195f715b0857298433f2b38f8b06723f03b8b1eac02a1bae2ca36a1a2ded
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the making form (done/made).
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u27-081`
 
@@ -1873,10 +1756,10 @@ text=This label is paired with the making form (done/made).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c5e5886c4c04c354cd5dcaa6bf87f54e1081056a05ce065c30929f72a306ad2
+- Content hash: 490814697fa136d4b8b2655d00c8e03c5b4d443cf27a0d85c3568e0f85397ae0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside this shown form?
+text=The frozen line writes this label beside a different form for written.
 
 ### AUTHORED_ENGLISH `en-u27-082`
 
@@ -1886,10 +1769,10 @@ text=Which admitted English label is written beside this shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 41d339a417f4b2feab5a87a852da2f59bb031700190508f170abb5be536d0565
+- Content hash: bca6ed84dee3fb8a0ccb12f84ce48ba63014041a550b129e0ff85ad40d914af4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the writing form for written.
+text=The frozen line writes this label beside a different form for killed.
 
 ### AUTHORED_ENGLISH `en-u27-083`
 
@@ -1899,10 +1782,10 @@ text=The frozen line writes this label beside the writing form for written.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65729b40b02648c07876934a12ddc1a4590c9759f19b4386eb954faf5660d2f8
+- Content hash: cf62043d51bd9218df9a92ae8912cf711febe924787a2dd50f34b9aa984b559d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the making form for done/made.
+text=This label is paired with the writing form (written).
 
 ### AUTHORED_ENGLISH `en-u27-084`
 
@@ -1912,10 +1795,10 @@ text=The frozen line writes this label beside the making form for done/made.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 92aad5b80b49195abfa0cbc94cc39c32c90998af49d0244e91aa80526b91e034
+- Content hash: cfbde57fea4f85d1713eb737afd074e9097af7022466f4aa3f9c38c9e6352a0f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with a different form (written).
+text=This label is paired with the other listed form (killed).
 
 ### AUTHORED_ENGLISH `en-u27-085`
 
@@ -1925,10 +1808,10 @@ text=This label is paired with a different form (written).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 233a225ce4844c2bfaee69be9fdc4a3c0234565ef59cf2bb85f000f048d9d010
+- Content hash: f823a07c6c0fb704413e1d3c48716eaeaabe405daf6baf1beaaac0b8f8c0d5f9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with a different form (done/made).
+text=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form.
 
 ### AUTHORED_ENGLISH `en-u27-086`
 
@@ -1938,10 +1821,10 @@ text=This label is paired with a different form (done/made).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b127ee6052a5e26c82fc85b730b7cc9a9613af1499a52bf14a5bb6ea9fc60813
+- Content hash: 0bfb1b2dbe5a7b926dfc9691bf334d9d264b65714c12ca6d41088e9d8032313f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the remaining shown form?
+text=Which admitted English label is written beside the shown form?
 
 ### AUTHORED_ENGLISH `en-u27-087`
 
@@ -1951,10 +1834,10 @@ text=Which admitted English label is written beside the remaining shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5c7f2e82b47975bef5a2d5d88d62e9e9f7e0e2644a9b7fed7439499fabb08cfd
+- Content hash: 7ffb7532cef81515025b9670350400596f709bd24996d163d343b457f7374510
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen parenthetical we leave belongs to the plural form in the same note.
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u27-088`
 
@@ -1964,10 +1847,10 @@ text=The frozen parenthetical we leave belongs to the plural form in the same no
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 90f53d8eab8305f90c80878a66873af399dd48e5ee378c96e7fe16b3cac5a91f
+- Content hash: bb708942334faa8eadff457df54fa9e34e2749e0daf6ab4c3ce06dc17df6eaa3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes to discuss on the base, not as this gloss.
+text=The frozen line writes this label beside a different form for done/made.
 
 ### AUTHORED_ENGLISH `en-u27-089`
 
@@ -1977,10 +1860,10 @@ text=The frozen line writes to discuss on the base, not as this gloss.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 14c0bcdeb40303d84b079e3a6f6b463a40396d15fe3a01e0ce74512fc2db1890
+- Content hash: f2a5774387438e0f99fdf3da9fbd25b26613af6406d2fc3b7a66ff1fd90b9b14
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This parenthetical belongs to the plural form (we leave).
+text=This label is paired with the making form (done/made).
 
 ### AUTHORED_ENGLISH `en-u27-090`
 
@@ -1990,10 +1873,10 @@ text=This parenthetical belongs to the plural form (we leave).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa5eeb1bbfd1398d33117e0ad6e34496bef23aa37953f7d3f21add108d7364b0
+- Content hash: a3da5326990b20bfbc64a52a06c6d012dbc38669460b7146829ed476547958ac
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is the base gloss (to discuss).
+text=Which admitted English label is written beside this shown form?
 
 ### AUTHORED_ENGLISH `en-u27-091`
 
@@ -2003,10 +1886,10 @@ text=This label is the base gloss (to discuss).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9b3e4f37e09eae1d474000fe0d209406820396f663f45e7e60173935ad0e6fe
+- Content hash: 3c4eaaea189a432d040ec4a721d2d30dcea020065db3afa2d39ba6f74b3dc443
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.
+text=The frozen line writes this label beside the writing form for written.
 
 ### AUTHORED_ENGLISH `en-u27-092`
 
@@ -2016,10 +1899,10 @@ text=The frozen line says being discussed or able to be discussed after the list
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 78957dcb6bb9aa9c2ac781aa10673a7fc269279e9619836a4e7247b0b03aadb4
+- Content hash: ea7eab2e3cfcbec97fa9aaadf2e935c7c6ede522819119093d8a5e69699e67b6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss follows the listed forms for the shown form?
+text=The frozen line writes this label beside the making form for done/made.
 
 ### AUTHORED_ENGLISH `en-u27-093`
 
@@ -2029,10 +1912,10 @@ text=Which admitted English gloss follows the listed forms for the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f9dece1d4701bbd4c159c3cacc64dabd9f6b0b105519a4c314b187bfbd51ff6a
+- Content hash: 761af79544bc9792a0a087a93c02fb1b74ada1c717b3314e00471eaa7b5aa6ac
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line gives being discussed to the discuss forms, not this parenthetical.
+text=This label is paired with a different form (written).
 
 ### AUTHORED_ENGLISH `en-u27-094`
 
@@ -2042,10 +1925,10 @@ text=The frozen line gives being discussed to the discuss forms, not this parent
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b0e0a430e4e44868ed19d0668c2a6864c72189fb05ebe7ef07293c0d7d92943
+- Content hash: 9d2b073aae8248a3240f3519dde9d2c55ba692ef12362a97694848e407ab7b6d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen parenthetical to leave belongs to the other form in the same row.
+text=This label is paired with a different form (done/made).
 
 ### AUTHORED_ENGLISH `en-u27-095`
 
@@ -2055,10 +1938,10 @@ text=The frozen parenthetical to leave belongs to the other form in the same row
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 396a877375df8db49f6bd97893bd61985ace7c4fff8fd107e4d7bcd69a46eefe
+- Content hash: ecebdf9cd8a01add0482d102890dd78b9443729f297794fae3b01e91c39c8cae
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This gloss belongs to the discuss forms (being discussed).
+text=Which admitted English label is written beside the remaining shown form?
 
 ### AUTHORED_ENGLISH `en-u27-096`
 
@@ -2068,10 +1951,10 @@ text=This gloss belongs to the discuss forms (being discussed).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d6e056e5ba82b33cf2b7ecce71c07bb7965da324a4903daef617844fdfbfec18
+- Content hash: 4b75ecd2bfd63d36b6c83aa841504cbeaa98e6bb19b566cb5e363cc5243569c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This parenthetical belongs to the other form (to leave).
+text=The frozen parenthetical we leave belongs to the plural form in the same note.
 
 ### AUTHORED_ENGLISH `en-u27-097`
 
@@ -2081,10 +1964,10 @@ text=This parenthetical belongs to the other form (to leave).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3a502399a30fbdf895aa2778d73b5403bc965852382a5f9f7ce3d4e5ceb1fec
+- Content hash: 79cf5c2aa44ced04d331ab447590f3e3396c79d64bcb9b2035258f520348270f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes (we leave) after the shown form. This label is that parenthetical.
+text=The frozen line writes to discuss on the base, not as this gloss.
 
 ### AUTHORED_ENGLISH `en-u27-098`
 
@@ -2094,10 +1977,10 @@ text=The frozen line writes (we leave) after the shown form. This label is that 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5c145e11801b50a8f614215c302fef7d6d2cd4cef6db983f5323b7ad175db10
+- Content hash: e3371be602c970bc59939e4db99172d8f4856e0647db42e4b222bb8fd635cc92
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English parenthetical follows the shown form?
+text=This parenthetical belongs to the plural form (we leave).
 
 ### AUTHORED_ENGLISH `en-u27-099`
 
@@ -2107,10 +1990,10 @@ text=Which admitted English parenthetical follows the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 080080b06602653d1676deb66af8db093d47994ca2e3cf1d0ca9569b26650731
+- Content hash: 3beb5cdf967b542bfe1a03f3a03ddc7af0519dbdee91e34dc9b20703d089df6e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen parenthetical we leave belongs to the plural form, not this form.
+text=This label is the base gloss (to discuss).
 
 ### AUTHORED_ENGLISH `en-u27-100`
 
@@ -2120,10 +2003,10 @@ text=The frozen parenthetical we leave belongs to the plural form, not this form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf4654071ead42782e5c90731a96c15d77bc8f429eb00c11c53c6ac73e4e6c6c
+- Content hash: 3118d539707a0bb52fffcb70bd29f8cf807de7156eb9094fb086be1cc8adbebc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes (to leave) after the shown form. This label is that parenthetical.
+text=The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.
 
 ### AUTHORED_ENGLISH `en-u27-101`
 
@@ -2133,10 +2016,10 @@ text=The frozen line writes (to leave) after the shown form. This label is that 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa203f6d9968f02d58227c6d22706221af93d44c59c47fa7cce62e1db8e0bdaa
+- Content hash: 94162d11f91d53c267ee9866d50d02bf5ac7182a917b7ce7ecd5b6f2a0369436
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English parenthetical follows this shown form?
+text=Which admitted English gloss follows the listed forms for the shown form?
 
 ### AUTHORED_ENGLISH `en-u27-102`
 
@@ -2146,10 +2029,10 @@ text=Which admitted English parenthetical follows this shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5c7632fd303c2ce1e22ab6300cb2feb4d0ce03bfd6f81ce8a96de3f3093886a
+- Content hash: 3b1de8209fbdefe50381dfc01fc50c1fe1669fcdef15f02bdbcacee66f6339ae
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted past passive lines
+text=The frozen line gives being discussed to the discuss forms, not this parenthetical.
 
 ### AUTHORED_ENGLISH `en-u27-103`
 
@@ -2159,10 +2042,10 @@ text=Admitted past passive lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 187839d4800048c2fd22526601ccb398995b11b9bea876feb9165bbbe8328452
+- Content hash: 24838cff65b50202e361446a6397ebef4fc71cce94e7c201850637c105d830d5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 27 uses admitted past passive lines. Present passive lines are optional and do not gate this unit. Stress stays in the copy you own. Active forms are not taught here. Qualified review is pending.
+text=The frozen parenthetical to leave belongs to the other form in the same row.
 
 ### AUTHORED_ENGLISH `en-u27-104`
 
@@ -2172,10 +2055,10 @@ text=Proposed Unit 27 uses admitted past passive lines. Present passive lines ar
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9ebd6121bf9578fbd7c68cf260be22b24ab50ce4edfe60a96e3f3ef6fd9fe442
+- Content hash: 742b88c7d294faf25910b31f774f5cfebc2115a19a119303904e763e9d0ec209
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 27 in the copy you own. The app records do not replace that lesson.
+text=This gloss belongs to the discuss forms (being discussed).
 
 ### AUTHORED_ENGLISH `en-u27-105`
 
@@ -2185,10 +2068,10 @@ text=Open Lesson 27 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1254ab53d9cd3af84a6280b1b8b262ef35c3fb7a76c5d44828b7baa8346cefe0
+- Content hash: f7eb506be86342a9e776801bfd330640ed0dec54b358cbeb41a49807916e740e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=This parenthetical belongs to the other form (to leave).
 
 ### AUTHORED_ENGLISH `en-u27-106`
 
@@ -2198,10 +2081,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a8b0371cba864a09b0079ca8ef9af2bcd474939a1095582654ffe19138c5ffc
+- Content hash: 8aa4f130e67cd0821769a3b26b2826f1bba2d9cd4b89a43352677a40a5302131
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=The frozen line writes (we leave) after the shown form. This label is that parenthetical.
 
 ### AUTHORED_ENGLISH `en-u27-107`
 
@@ -2211,10 +2094,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 335e1294ecd43021f4e9a99a51db414c2e0eef9d099d7fa411a15e2b552b9f31
+- Content hash: 6f0f97af63e53e1e08622c19f081c51c4e65f656f8990436a077b756a5345329
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Which admitted English parenthetical follows the shown form?
 
 ### AUTHORED_ENGLISH `en-u27-108`
 
@@ -2224,10 +2107,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6360cbac4ba49a71af46aa069a5e905dc254e8a71b0d00cc1366e39235bc5b1a
+- Content hash: 4a3f6fb85678a4cd549a2c2b9348d50fb422b728aa5a595375c461f2c4455a25
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=The frozen parenthetical we leave belongs to the plural form, not this form.
 
 ### AUTHORED_ENGLISH `en-u27-109`
 
@@ -2237,10 +2120,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9d8bcf862b35e19b25907821c0ea67e49bf5f4e3d75573b22533f1544e574290
+- Content hash: 526920dc5927db7d6b373318a6204a609637d64526d384224f314bed4644f501
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=The frozen line writes (to leave) after the shown form. This label is that parenthetical.
 
 ### AUTHORED_ENGLISH `en-u27-110`
 
@@ -2250,10 +2133,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 06b3a032811026b797bbe2facc666bb72797a09f28668d3eadc748fe4acb35db
+- Content hash: 6d4987755cf98253cd49cf9bbb2e09584f4a89707a4240aa1113ffcebc5d7403
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Which admitted English parenthetical follows this shown form?
 
 ### AUTHORED_ENGLISH `en-u27-111`
 
@@ -2263,10 +2146,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 21c2905311dcdfa7e8d803ee43cc4b7ad4e9d9f279497c888a55db29008dc1eb
+- Content hash: d788568c1d1353eb7b47f65adf556a95ccd6c8bdef5522de360913029c69aafa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 27 in your copy
+text=Admitted past passive lines
 
 ### AUTHORED_ENGLISH `en-u27-112`
 
@@ -2276,10 +2159,10 @@ text=Work Lesson 27 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9f52ee7350e6afa8462922119be302e14b2f3f9661235afea022fddce6ff232e
+- Content hash: 525ce5d5e64005f1f415f3886ec1d93e3d2b61aa2abff78d749049682819598c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 27 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Proposed Unit 27 uses admitted past passive lines. Present passive lines are optional and do not gate this unit. Stress stays in the copy you own. Active forms are not taught here. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u27-113`
 
@@ -2289,10 +2172,10 @@ text=Do Lesson 27 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6396f2b81b39d811bb7fc593fecb81271eb5c0faa63a9aa1d58650871e0db4ea
+- Content hash: a7ff4676f33c02ac0a03978ba2c3f1910a09dba3e7086c7f60bbf1dbd28d47d1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 27 in your copy and complete its lesson work.
+text=Open Lesson 27 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u27-114`
 
@@ -2302,10 +2185,10 @@ text=Open Lesson 27 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 16ac5b4952da787dcd68a32289c4aba8b683f270375383a1d3583b973392effa
+- Content hash: 17a03de8aa4024ee492eae3159952c74e9bd65be85da03387647bd7e9091b046
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 27 book work
+text=Read the admitted examples on this card.
 
 ### AUTHORED_ENGLISH `en-u27-115`
 
@@ -2315,10 +2198,10 @@ text=Record Lesson 27 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d176cc177bf13a53dd6d3cfad8ce885e055524da0631fa0d3f3edfba869b7e75
+- Content hash: bfc3c80ff0df3379d9fc9b1024a2d4d07eb8d6abf4a0babb3ec2d5f2472c5ed2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 27 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u27-116`
 
@@ -2328,10 +2211,10 @@ text=When you have done Lesson 27 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c9ccd26550b26bd3d7d4ab56b715f6196602f88b3a1f6e385301575bff4df2e
+- Content hash: bed01d6acb70b2c4a76c65c4be04be7f039c4b92ace5b2bd662669cd3a5b5f25
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 27 work in your copy.
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u27-117`
 
@@ -2341,10 +2224,10 @@ text=Self-attest only after the Lesson 27 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c9bbd4b7a5b7b3bcc900b2b6b6e66636c8440a8becf0dea285ad6c2470393c10
+- Content hash: c4602bceecc8004dd2ebafe31cad1eac9fef39da9e4a80ef202592382348f77c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Participle stress stays in the copy you own
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u27-118`
 
@@ -2354,10 +2237,10 @@ text=Participle stress stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8ae002d85ee54a2bc0596f97b74b120ad1d1fb74fa0a82fcd7b9e221f752cc6f
+- Content hash: 706c06bde1b0f072b83039b6b89642410a488330ad3693132d40a23ad3fdc57d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Participle stress stays in the copy you own. A marked example is not a stress rule.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u27-119`
 
@@ -2367,10 +2250,10 @@ text=Participle stress stays in the copy you own. A marked example is not a stre
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c8cc2ecdcb91ab6a341ee602f039b0b99308584cbf67d56868739840e156a628
+- Content hash: bd6d6febbc3da501017a7c9baff32e63863ed2fd772b8292c95d0e9062ea8994
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Comprehension passages stay in the copy you own
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u27-120`
 
@@ -2380,7 +2263,124 @@ text=Comprehension passages stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b1ac19ab54fb8f1f4568131cdc9f82d3fb2a9da962d0bba0b60f227067f85908
+- Content hash: dc6e57a2ace1c92278b6254118638b333533e2340471a038725375aac85e8e6c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 27 in your copy
+
+### AUTHORED_ENGLISH `en-u27-121`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ae9957135fcf1281f4dd07a010e7c2ee9672831fa373a62bf9be921a5bd7fce3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 27 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u27-122`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 600e8608ae98ebdc9d76a78aa614d26ca213f5a8b14ebf56f6581fb593a6d51f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 27 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u27-123`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 94c3a958746323d42bd2370c1c554a6cc7e3bdca0a5a62e31da11c87062e0fdb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 27 book work
+
+### AUTHORED_ENGLISH `en-u27-124`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 62db31903bdee0f3213207f4d0122ea3a06d20a267d401ccacff0c4cdb5f20e8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 27 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u27-125`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8e85262b4fdd9f31beef65d62e832bc0ddb0eea79e3a064cd5ad3e1b8b13ddb0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 27 work in your copy.
+
+### AUTHORED_ENGLISH `en-u27-126`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b84fa24b4c23f8725b7f860772db8cba302ef818360a82940d00a8f4331b49af
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Participle stress stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u27-127`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 775e0c46b0af5341fac8e7273c86cfc66861e010065dbc3d7ba6495a494d1ed0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Participle stress stays in the copy you own. A marked example is not a stress rule.
+
+### AUTHORED_ENGLISH `en-u27-128`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0fdab985d5550ee951d5e8d45e0833fd72cdea696b0fbffdb467dd9f28eb1f06
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Comprehension passages stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u27-129`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 39916e0125011281c0ed178b26032f8f9c1068a6c67ef522469cdaad74325fe0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Comprehension passages stay in the copy you own. The admitted lines do not supply them.

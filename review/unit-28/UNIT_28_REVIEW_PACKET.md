@@ -11,12 +11,12 @@ Unit 28 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 5ab3cfe06e709ee605a3cbce320d6cbea9e11776
-- Unit content-review SHA-256: 81c550af310c4997fe285b3f82e6f8819232dc8236c62f37488cd4552d58cc45
+- Curriculum source commit: 4cf6007f69beadac5278bb42e5bf060a62fe3eb9
+- Unit content-review SHA-256: 0bda9d8e6e4730e3b6ea31ebf42311bb0bbec98d8f6b02ed4990e340dc6e2886
 - Mapping-package SHA-256: bdf9618b16d9a96d9d359a01e7901617c7d8b97bcd601768695131da126497aa
-- Pack content-review SHA-256: 76879c3e98f1682f322651e830dd18c537a79135badad3c86c77a7e13cfa7c6f
-- Review-package SHA-256: ef12aec6bad3494d40a106e11e8d64c06cdb9b211fdbfb998c3e6625c5540767
-- Repository source SHA-256: 8819cf84360df77acebd15bb55dd4f090e1ce4f9f7962916f6927fbbc3b4496f
+- Pack content-review SHA-256: 129c7ebe726af56e5d9efe7bc363dd0224c6d6a4e1667c1dbb264a884fd24e71
+- Review-package SHA-256: 04e8edb04da43239ba17bfac3a91e225b38ef67ba5926eb364667256a5d672c2
+- Repository source SHA-256: 1a183504385f362fdd28a371a52f585a1d1df18a9daf4aa8e11936031ccda885
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -889,11 +889,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: f20be6a80cd49c452b6887d3a39d725fd2161b9baab65edbca7ddb16e452c00a
+- Content hash: 9fa0208e099d7853055ab1375a1767a62c10c120a4d946d8074762a009300dc2
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, general letter conventions, participle stress, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
@@ -1951,123 +1951,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u28-121`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4fa308ac4100e4bae46f767a20288b32d936a6b754869a3f71cc69985f13d584
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u28-122`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 68e8d08ce43b86728c65b02097616bc69d0c235fdaf180653b9f22ac8d59d6d5
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source assigns can only be past to perfective ones.
-
-### AUTHORED_ENGLISH `en-u28-123`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4d61deb1db2c0e5ca2b2f3285070326ccf038cc9396317ab14edd613fd46281b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source uses very rarely past for a different construction.
-
-### AUTHORED_ENGLISH `en-u28-124`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 709d2d45eb95b029b57edc2adff88b31e00146a77fa400bba0e1196422dcafb0
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This relationship is the one stated for perfective ones (can only be past).
-
-### AUTHORED_ENGLISH `en-u28-125`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6062b79311798eac69c8f64403a5b3034e92e9728003222d9992049a42e50c56
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase is a different construction in the same span (very rarely past).
-
-### AUTHORED_ENGLISH `en-u28-126`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 77992daf7f9527e8e0243cb8237e3c0e5e8262fd383a8dc6cb2d0d848c542068
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source says imperfective ones are usually present.
-
-### AUTHORED_ENGLISH `en-u28-127`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 36e6be95086b42239de1d32383260a024be14ff4495c8aef19d3be79edc7c5ee
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which English time relationship does the source state for imperfective forms?
-
-### AUTHORED_ENGLISH `en-u28-128`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 957c65497965aa3c164e886690505b8eb829365c57bd329b4d50d5c28bf0c0d5
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
-
-### AUTHORED_ENGLISH `en-u28-129`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eef76ee0e741e5b1dc2e9928921f9b0abd69cd8a589c6ec91c2277f2ab1889b1
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which English time relationship belongs to imperfective forms?
-
 ### AUTHORED_ENGLISH `en-u28-130`
 
 - Objectives: none
@@ -2076,10 +1959,10 @@ text=Which English time relationship belongs to imperfective forms?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0c4c02a8988456778ec30011a9d2a00e1073799a4119766d5130310063d3b554
+- Content hash: 5406ce8c17c4dc289576c5903f1d2c9cf27f4192dac3f525869edfd127fafbe4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase names a different construction (very rarely past).
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u28-131`
 
@@ -2089,10 +1972,10 @@ text=This phrase names a different construction (very rarely past).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e58356760a586e59c0ca93893004f06a74062333e3ce2dcd994a4575e8e2e387
+- Content hash: ba5f1cfac9f3c8a093316bb58ee5500259c27ce8fb6b57068f3d81cbc2865c89
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which English time relationship does the source state for these imperfective forms?
+text=The source assigns can only be past to perfective ones.
 
 ### AUTHORED_ENGLISH `en-u28-132`
 
@@ -2102,10 +1985,10 @@ text=Which English time relationship does the source state for these imperfectiv
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 83ee5234ece74ab5bfb16ca7006b269c7f7faa885b71823bee53fba46c8af55e
+- Content hash: 93a89b2f45523c79a210be8de4de2a6fdafafbcf5ac11877088ec7b2de6b0bef
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source assigns usually present to imperfective ones.
+text=The source uses very rarely past for a different construction.
 
 ### AUTHORED_ENGLISH `en-u28-133`
 
@@ -2115,10 +1998,10 @@ text=The source assigns usually present to imperfective ones.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f367520e170c9ad3de523ba3718cf6aef42e0d885443d3761d95336bcf2f9fc1
+- Content hash: c01349afbc8556e38727f7fc32191f82f6b2e3c2da8fc3523e44fdf9bc088701
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This relationship is the one stated for imperfective ones (usually present).
+text=This relationship is the one stated for perfective ones (can only be past).
 
 ### AUTHORED_ENGLISH `en-u28-134`
 
@@ -2128,10 +2011,10 @@ text=This relationship is the one stated for imperfective ones (usually present)
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d84ac2aabf5a1e99e58a1abedaee5e980ff335135e7cc0759ca01f1d0266f63f
+- Content hash: 9745c3601fa3d6f49f788c543955cf95d65b6b8ed2877d0b60e2129ea6a99bb5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The source says perfective ones can only be past.
+text=This phrase is a different construction in the same span (very rarely past).
 
 ### AUTHORED_ENGLISH `en-u28-135`
 
@@ -2141,10 +2024,10 @@ text=The source says perfective ones can only be past.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 947b13d8b9ceee85623ee3072418a14998df815f118f4d4364d0a11a5757ad1c
+- Content hash: 5066c200cb88c9b1d6506799f7808fef6e47c09cfe1f512e95aca6be262860d0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which English time relationship does the source state for perfective forms?
+text=The source says imperfective ones are usually present.
 
 ### AUTHORED_ENGLISH `en-u28-136`
 
@@ -2154,10 +2037,10 @@ text=Which English time relationship does the source state for perfective forms?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae251b959b4778744864b7e38b81911dbd756e52b1c01959f90549f3759d2d5c
+- Content hash: 357c4be5a0dca9eb3acf3932b284ba2acf39c43327c82f450df805f7b2d97e0e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which English time relationship belongs to perfective forms?
+text=Which English time relationship does the source state for imperfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-137`
 
@@ -2167,10 +2050,10 @@ text=Which English time relationship belongs to perfective forms?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c784cb668d9d4647644abe880a5b9b7a8f4868d8be233c7b0ffac3b8c21a3f94
+- Content hash: e2cf5160559ec657b921908a5f62504d0e305dd4a3f96ee63f6f87e0b3045638
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which English time relationship does the source state for these perfective forms?
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u28-138`
 
@@ -2180,10 +2063,10 @@ text=Which English time relationship does the source state for these perfective 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a422bb5073a10ee59535e7c4c67fe132e0e6687ddf3fead8318471c6deb2010
+- Content hash: 249287f837013dd200ad6897286547740712443b101d088913a36ac75408c876
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted adverbial lines
+text=Which English time relationship belongs to imperfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-139`
 
@@ -2193,10 +2076,10 @@ text=Admitted adverbial lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4d88d0477e65a8a4a9a4cafcb64deaf250de92654d871fd013d573456d0473fd
+- Content hash: ae6525c8427a2fee86f4017cf2ad04ed8c421eda29ebaca2d4990a4d087897a4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 28 uses admitted imperfective and perfective adverbial lines. Readings stay in the copy you own. Qualified review is pending.
+text=This phrase names a different construction (very rarely past).
 
 ### AUTHORED_ENGLISH `en-u28-140`
 
@@ -2206,10 +2089,10 @@ text=Proposed Unit 28 uses admitted imperfective and perfective adverbial lines.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46b0e62b271b790450203be2d8e52b81f3dd827a5536c844d7da6f3ce6b9387a
+- Content hash: 0cf86a3259b1a3530c2df0d0b47032dd85739b33f67d8437cc22c379a8935e40
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 28 in the copy you own. The app records do not replace that lesson.
+text=Which English time relationship does the source state for these imperfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-141`
 
@@ -2219,10 +2102,10 @@ text=Open Lesson 28 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4966befbd35064189b71bef6459f4d922b16f5719e7cc8ad609eec0888dc7a14
+- Content hash: b099247f6bb84d825b3097e0d009e8510afb4081b7b175a40f2405bf56d4d192
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=The source assigns usually present to imperfective ones.
 
 ### AUTHORED_ENGLISH `en-u28-142`
 
@@ -2232,10 +2115,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b24214dd6700f57ec84feadac12520beebc49d5b6b1a3bfd74da753970be3d9
+- Content hash: b20fc958af8f95a14516fa8383958f22452d0e84742ae409059de2a12284aeb3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=This relationship is the one stated for imperfective ones (usually present).
 
 ### AUTHORED_ENGLISH `en-u28-143`
 
@@ -2245,10 +2128,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a383808efc2d140d9b04c97679b020e51f9aca9a4b12830d7b4e8bc477f9015
+- Content hash: 3960353f0cd69443828a5a62634723ea72d3269a1ea9f899874eb9057a90a4bd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=The source says perfective ones can only be past.
 
 ### AUTHORED_ENGLISH `en-u28-144`
 
@@ -2258,10 +2141,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 76695c4d52db7eccee4c56494291d8a87cef14061319948409ef4f8dd93c3c34
+- Content hash: 86091f38d3c149e566fee150bc7645e14a71641449b663824bc0e4f5d1a97230
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Which English time relationship does the source state for perfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-145`
 
@@ -2271,10 +2154,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 50485974facabbd12032a8fb6f55e2011885af85cae53a1a46b4e9c44fd5cce5
+- Content hash: c9680ab7cd3c76b9e1d4989ad408a5f17b57fd06e41f5b3119713b59a7d1b0b0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Which English time relationship belongs to perfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-146`
 
@@ -2284,10 +2167,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b12b2d03e7188e2a9c7292f7a3799988aa9880fbadd8a73792cc17f594928810
+- Content hash: 9b5eb20170b7de7060c06a8c29be7365e0f21c3acfd67bf41312d15090044961
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Which English time relationship does the source state for these perfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-147`
 
@@ -2297,10 +2180,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b6b481678ecaed8e47147fff28006891e99bcab7a31efb6d58601870733b8648
+- Content hash: f5243bbbdb8049fcf4cedde9fd90f359dfe78647e257d8c8142579886d92ace6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 28 in your copy
+text=Admitted adverbial lines
 
 ### AUTHORED_ENGLISH `en-u28-148`
 
@@ -2310,10 +2193,10 @@ text=Work Lesson 28 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 71321a996c2eea29f40d7770fa241a4d682454030908eed2a21a3c9dacb94a9d
+- Content hash: 371ae66127c4cc09e805a3e3c2113cf92c4feeeba5039899adb03d9cf5f4291a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 28 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Proposed Unit 28 uses admitted imperfective and perfective adverbial lines. Readings stay in the copy you own. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u28-149`
 
@@ -2323,10 +2206,10 @@ text=Do Lesson 28 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5e4fac4907617f63f49bf6e4b3cc60f87f11c366b7bfcc9c86704271fa39a13
+- Content hash: 4c4c5844be8c014e496bd50532b88598889c80206f91a3418b8df0304fc596f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 28 in your copy and complete its lesson work.
+text=Open Lesson 28 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u28-150`
 
@@ -2336,10 +2219,10 @@ text=Open Lesson 28 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 80e4fd9990114745623d36793e646fbb12ebc219216d84028666c2f38706523c
+- Content hash: bcfecec17b606a342c449d0b2992f46fc64d64da3f29e70cef52396dd5e287d8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 28 book work
+text=Read the admitted examples on this card.
 
 ### AUTHORED_ENGLISH `en-u28-151`
 
@@ -2349,10 +2232,10 @@ text=Record Lesson 28 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9dbf5b3df2aa33c928f9203c719f738e62d4489e396115ff891e24d182500eac
+- Content hash: 6af3b0c3913a057df2a89d55266d52a5227f5b266ba161d90ce7ccf866727262
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 28 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u28-152`
 
@@ -2362,10 +2245,10 @@ text=When you have done Lesson 28 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 12800308bf5cd72b1b9b45f3821c5cbf3d0ed82499c3e9ffc73568921b6c8824
+- Content hash: 87f76062ee9427c44ef6d3546c214161381d7a6c017b0ac2b3036def5fed7df6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 28 work in your copy.
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u28-153`
 
@@ -2375,10 +2258,10 @@ text=Self-attest only after the Lesson 28 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 860597fa3831d6464a740019d7f90bc8d5d289d2343933d2fd488d47732bedb3
+- Content hash: 2b69a7c352fcb0d5f8a8fbc0eb8a3d12f1c8221ce9ff09a766027a68f0afede7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Readings stay in the copy you own
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u28-154`
 
@@ -2388,7 +2271,124 @@ text=Readings stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 79007fcbe6b093fb6474cfbb4f81f2810890d27ea2f8d7a7d2dc8e97456938c4
+- Content hash: 3fb7dbded98de941aa204dc0c57946c9bf07cd76e29a6276d21bcd8009515116
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u28-155`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 384c8d0f3d69c474d5e2f953f2729c7d75c1be61de71c4cc7f754de96ef9d11c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u28-156`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ed62345920215a65433bbbae880bef880550cee9f74eb1149711b734b5d28cb5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 28 in your copy
+
+### AUTHORED_ENGLISH `en-u28-157`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5f3647534f861b31d77796b455db76374e9c70ef0537f6993be9a967506c91c8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 28 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u28-158`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a8d22f916f5b75aed94bccb656c22efe5bd11dbaa61fb88df8d8c417c61fd333
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 28 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u28-159`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9091caf8746ae8c11e747ad9fdd68a7f7ec240e21a6fe8b9c393af7a7b006d4d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 28 book work
+
+### AUTHORED_ENGLISH `en-u28-160`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cbf098bebe0fadae50c15e5fa015ede533a27c5ea52762d3201bc4c24b134b29
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 28 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u28-161`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 82b0dee0f920ebb12b8b59fb44cfeb2d5c09734b0d280b846d71939ac152358f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 28 work in your copy.
+
+### AUTHORED_ENGLISH `en-u28-162`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 340d45e9a2c872bdd6890109489c1002dfc838d4826335a0c4d924b5891b9026
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Readings stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u28-163`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: accc523dfb4eedf0810698df640a4ccea3eddcd97b8e5154d21691006299699f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Readings stay in the copy you own. The admitted lines do not supply a reading passage.

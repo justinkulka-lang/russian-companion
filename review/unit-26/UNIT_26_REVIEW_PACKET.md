@@ -11,12 +11,12 @@ Unit 26 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 5ab3cfe06e709ee605a3cbce320d6cbea9e11776
-- Unit content-review SHA-256: 4e8a9f4bf58aa1afd3b293b164e714f4ef2a46ad0c45415691d1b0059f6c563d
+- Curriculum source commit: 4cf6007f69beadac5278bb42e5bf060a62fe3eb9
+- Unit content-review SHA-256: 3e5c3819182d8e2d31cb001fffd4ebec8da3af4c28301e242d06b842baaf996d
 - Mapping-package SHA-256: c3b63d48cd809527d6450916cfead9c419eb5a607a329c7def2d8b42df6bf725
-- Pack content-review SHA-256: 76879c3e98f1682f322651e830dd18c537a79135badad3c86c77a7e13cfa7c6f
-- Review-package SHA-256: a9d53a96e2bd03b6799dd5706dcf6805685b80830d167208ee75970a5b221706
-- Repository source SHA-256: 8819cf84360df77acebd15bb55dd4f090e1ce4f9f7962916f6927fbbc3b4496f
+- Pack content-review SHA-256: 129c7ebe726af56e5d9efe7bc363dd0224c6d6a4e1667c1dbb264a884fd24e71
+- Review-package SHA-256: 454832054f75741f1d0bcc713e2abe33d4762eb03df9e79f9320fc5ec2f90cbf
+- Repository source SHA-256: 1a183504385f362fdd28a371a52f585a1d1df18a9daf4aa8e11936031ccda885
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -41,7 +41,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 26. Observed structural scope: Stock expressions; indefinite pronouns and adverbs; word order; postal addresses; letter writing; vocabulary and correspondence work. Admitted frozen spans are pending qualified review and do not approve alignment. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=26
 prerequisites=25
-estimatedMinutes=70
+estimatedMinutes=78
 
 ## Not yet approved
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 26.
 
 ### UNIT `unit-26`
 
-- Objectives: obj-u26-word-order, obj-u26-vy-capital, obj-u26-address-notation, obj-u26-book, obj-u26-indefinite, obj-u26-postal-address, obj-u26-letter-writing, obj-u26-correspondence
-- Sessions: u26-s-orient, u26-s-word-order, u26-s-vy-capital, u26-s-address-notation, u26-s-book, u26-s-gap-indefinite, u26-s-gap-postal-address, u26-s-gap-letter-writing, u26-s-gap-correspondence
+- Objectives: obj-u26-word-order, obj-u26-vy-capital, obj-u26-address-notation, obj-u26-indefinite, obj-u26-book, obj-u26-postal-address, obj-u26-letter-writing, obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-word-order, u26-s-vy-capital, u26-s-address-notation, u26-s-indefinite, u26-s-book, u26-s-gap-postal-address, u26-s-gap-letter-writing, u26-s-gap-correspondence
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0cf713dbf58521ba8720c8c5a235221683bab4b573a734401714fe8d9e98ab05
+- Content hash: c5da5d11a2a8ee1948db6f579700dab441ef78f13dea47ef0426051150a6e498
 
 number=26
 title=Indefinite pronouns, word order, and letter writing
@@ -86,7 +86,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 26. Observed structural scope: Stock expressions; indefinite pronouns and adverbs; word order; postal addresses; letter writing; vocabulary and correspondence work. Admitted frozen spans are pending qualified review and do not approve alignment. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=26
 prerequisites=25
-estimatedMinutes=70
+estimatedMinutes=78
 
 ### ADVANCEMENT `unit-26-advancement`
 
@@ -96,12 +96,12 @@ estimatedMinutes=70
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f6c0393ebde6816d6fcb9c035b73ae65e25ba627cee04e9165d7e68bd7665188
+- Content hash: 7bdaa9eb141f5297a2cb5929c716fffdf0baeadaa330290cfa912ba72e269fda
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
-minimumDistinctChecks=6
+minimumDistinctChecks=8
 requireDueReview=false
 tutorOptional=true
 
@@ -162,6 +162,25 @@ practice=u26-st-guided-address-notation-1
 checks=u26-i-address-notation-1,u26-i-address-notation-2
 remediation=u26-st-rem-address-notation
 
+### OBJECTIVE `obj-u26-indefinite`
+
+- Objectives: obj-u26-indefinite
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 010fc835ae73650ca793c387944d61561e2fa99ad5a488bdc53b0c3f287c6a45
+
+title=Classify the shown form by its admitted series meaning
+kind=RECOGNITION
+unitNumber=26
+instruction=u26-st-orient,u26-st-teach-indefinite-1,u26-st-teach-indefinite-2,u26-st-teach-indefinite-3
+examples=ex-u26-indefinite-0,ex-u26-indefinite-1,ex-u26-indefinite-2
+practice=u26-st-guided-indefinite-1
+checks=u26-i-indefinite-1,u26-i-indefinite-2
+remediation=u26-st-rem-indefinite
+
 ### OBJECTIVE `obj-u26-book`
 
 - Objectives: obj-u26-book
@@ -176,25 +195,6 @@ title=Self-attest Lesson 26 book work
 kind=SELF_ATTESTATION
 unitNumber=26
 instruction=u26-st-book-work,u26-st-book
-examples=
-practice=
-checks=
-remediation=
-
-### OBJECTIVE `obj-u26-indefinite`
-
-- Objectives: obj-u26-indefinite
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fd37dd051ec837c040fc729578c75d43fea54f0c1653cdc99e40f585ee4bd4df
-
-title=The indefinite series stays in the copy you own
-kind=GUIDANCE
-unitNumber=26
-instruction=u26-st-gap-indefinite
 examples=
 practice=
 checks=
@@ -259,32 +259,32 @@ remediation=
 
 ### SESSION `u26-s-orient`
 
-- Objectives: obj-u26-word-order, obj-u26-vy-capital, obj-u26-address-notation, obj-u26-book
+- Objectives: obj-u26-word-order, obj-u26-vy-capital, obj-u26-address-notation, obj-u26-indefinite, obj-u26-book
 - Sessions: u26-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 38987c1bcabba38dc45e199c40378a543febe192f531bb9d08cd759acad88900
+- Content hash: 3b89ee526352b52ba289a566b42a43ac6028e65d14a420f2ce2caf00b92ced8d
 
 title=Admitted word-order and address lines
 estimatedMinutes=8
-objectives=obj-u26-word-order,obj-u26-vy-capital,obj-u26-address-notation,obj-u26-book
+objectives=obj-u26-word-order,obj-u26-vy-capital,obj-u26-address-notation,obj-u26-indefinite,obj-u26-book
 steps=u26-st-orient
 
 ### STEP `u26-st-orient`
 
-- Objectives: obj-u26-word-order, obj-u26-vy-capital, obj-u26-address-notation, obj-u26-book
+- Objectives: obj-u26-word-order, obj-u26-vy-capital, obj-u26-address-notation, obj-u26-indefinite, obj-u26-book
 - Sessions: u26-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4ee408cea8371c9938a8f24160b685ea47a6a2024ca402c8b3207b9a234ae35c
+- Content hash: 35c3190054c164c0930ea9a14ca51f9ca92242e154e9466505e51e65e65670b2
 
 kind=ORIENT
 title=Admitted word-order and address lines
-body=Proposed Unit 26 uses admitted arrangement lines, the written capital form, and the frozen address marks. The indefinite series, complete postal practice, and other letter conventions stay in the copy you own. Qualified review is pending.
+body=Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, and the frozen address marks. Complete postal practice and other letter conventions stay in the copy you own. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -757,6 +757,153 @@ bookDirection=
 companionDirection=
 remediationStepId=u26-st-rem-address-notation
 
+### SESSION `u26-s-indefinite`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c52326b8546b836e52c13219ec75f3427b26f7befd02b495316fefdbc0cd940f
+
+title=Classify the shown form by its admitted series meaning
+estimatedMinutes=12
+objectives=obj-u26-indefinite
+steps=u26-st-teach-indefinite-1,u26-st-guided-indefinite-1,u26-st-teach-indefinite-2,u26-st-teach-indefinite-3,u26-st-rem-indefinite,u26-st-check-indefinite
+
+### STEP `u26-st-teach-indefinite-1`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 900c5e6a7dc3f8329cff6ee93fd584b22b298a1ceac282813e333a5b8a800141
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u26-indefinite-0,ex-u26-indefinite-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-st-guided-indefinite-1`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2e18836283ed68c8573f9b3e69f232add9634fa66b0794753724e6be810c988a
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u26-g-indefinite-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u26-st-rem-indefinite
+
+### STEP `u26-st-teach-indefinite-2`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5d0a39dc1dad3c92963874e2dc67e15ef73336f7436a037f3e588ef1690cb052
+
+kind=TEACH
+title=Admitted instruction
+body=Местоимение на -то может употребляться также и в значении местоимения на -нибудь
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-st-teach-indefinite-3`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 48bb0ce0f67f9a4f3ef135a5882e05d208e8170dc489318fec8193982228e5d8
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u26-indefinite-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-st-rem-indefinite`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a2fa1c07661fe607e816c1ee1111a17fff08b121ef43c4b64379bb0387c4da8d
+
+kind=REMEDIATE
+title=Remediation
+body=Местоимение на -то может употребляться также и в значении местоимения на -нибудь
+dominantAction=Continue
+references=
+items=
+examples=ex-u26-indefinite-0,ex-u26-indefinite-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-st-check-indefinite`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f6c3b5c006bc6a3f356dccac833a5082d17422c0012d7b635ca6102c933582f4
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u26-i-indefinite-1,u26-i-indefinite-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u26-st-rem-indefinite
+
 ### SESSION `u26-s-book`
 
 - Objectives: obj-u26-book
@@ -813,43 +960,6 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 26 work in your copy.
-companionDirection=
-remediationStepId=
-
-### SESSION `u26-s-gap-indefinite`
-
-- Objectives: obj-u26-indefinite
-- Sessions: u26-s-gap-indefinite
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ce458a2080d3f0add5c4fe092860bfd2059fbc186281149b202513218d7f618e
-
-title=The indefinite series stays in the copy you own
-estimatedMinutes=4
-objectives=obj-u26-indefinite
-steps=u26-st-gap-indefinite
-
-### STEP `u26-st-gap-indefinite`
-
-- Objectives: obj-u26-indefinite
-- Sessions: u26-s-gap-indefinite
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c60bf75040565c273b371fe05144da3c8d1c585d80515c9fb90ec892f705eadd
-
-kind=UNAVAILABLE
-title=The indefinite series stays in the copy you own
-body=The indefinite series stays in the copy you own. No admitted frozen span states that selection.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=The indefinite series has no admitted frozen span.
-bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -1151,6 +1261,57 @@ note=building
 objectiveId=obj-u26-address-notation
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u26-indefinite-0`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3cbd1791bd1ee48cd650f3978420fe40192570ea8770c286dac61b7e6cc08c39
+
+kind=LEXICAL
+letterId=
+display=В доме действительно кто-то был
+note=референтность и неизвестность говорящему
+objectiveId=obj-u26-indefinite
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u26-indefinite-1`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 28304318bf6db3521414bb9dca57800b256cf6a32bad38e3d1685e3d417470fb
+
+kind=LEXICAL
+letterId=
+display=куда-нибудь
+note=являются нереферентными
+objectiveId=obj-u26-indefinite
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u26-indefinite-2`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 654cd1d8ff5b0442960b534a9048faa5967aedbed7d1d4a42b272a681d3134b0
+
+kind=LEXICAL
+letterId=
+display=кое-какие
+note=референтный денотативный статус слабой определённости
+objectiveId=obj-u26-indefinite
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u26-g-word-order-0`
 
 - Objectives: obj-u26-word-order
@@ -1255,6 +1416,41 @@ contrastMembers=city | street | building
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u26-address-notation-0-ru | prov-ex-u26-address-notation-0-en | prov-ex-u26-address-notation-1-en | prov-ex-u26-address-notation-2-en
 responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u26-g-indefinite-0`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 23d38ac95080b353d6e38fe6e0c3e39806f90398934905ca037c93f44a115ea8
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted phrase classifies the shown form?
+promptLetter=В доме действительно кто-то был
+options=референтность и неизвестность говорящему | являются нереферентными | референтный денотативный статус слабой определённости
+answer=референтность и неизвестность говорящему
+feedback=The source says this series expresses референтность и неизвестность говорящему and gives В доме действительно кто-то был. The keyed phrase is референтность и неизвестность говорящему. референтность и неизвестность говорящему.
+objectiveId=obj-u26-indefinite
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The source assigns являются нереферентными to куда-нибудь. | The source assigns референтный денотативный статус слабой определённости to кое-какие.
+testedFeature=INDEFINITE_PRONOUN
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u26-indefinite-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u26-indefinite-0-en
+distractorSourceIds= | prov-ex-u26-indefinite-1-en | prov-ex-u26-indefinite-2-en
+distractorDifference= | являются нереферентными does not classify the shown form. | референтный денотативный статус слабой определённости does not classify the shown form.
+whyAnswerDemonstratesObjective=The source says this series expresses референтность и неизвестность говорящему and gives В доме действительно кто-то был. The keyed phrase is референтность и неизвестность говорящему.
+contrastMembers=референтность и неизвестность говорящему | являются нереферентными | референтный денотативный статус слабой определённости
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u26-indefinite-0-ru | prov-ex-u26-indefinite-0-en | prov-ex-u26-indefinite-1-en | prov-ex-u26-indefinite-2-en
+responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u26-i-word-order-1`
 
@@ -1466,19 +1662,89 @@ relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u26-address-notation-2-ru | prov-ex-u26-address-notation-2-en | prov-ex-u26-address-notation-0-en | prov-ex-u26-address-notation-1-en
 responseKind=ENGLISH_CLASSIFICATION
 
+### INDEPENDENT_CHECK `u26-i-indefinite-1`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d2dd2ee6d30483d1eda32c4fe06f91ab50d286ebaf366c865fd35e80f1c433a9
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted phrase classifies the shown form?
+promptLetter=куда-нибудь
+options=являются нереферентными | референтность и неизвестность говорящему | референтный денотативный статус слабой определённости
+answer=являются нереферентными
+feedback=The source says the series являются нереферентными and gives куда-нибудь. The keyed phrase is являются нереферентными. являются нереферентными.
+objectiveId=obj-u26-indefinite
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был. | The source assigns референтный денотативный статус слабой определённости to кое-какие.
+testedFeature=INDEFINITE_PRONOUN
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u26-indefinite-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u26-indefinite-1-en
+distractorSourceIds= | prov-ex-u26-indefinite-0-en | prov-ex-u26-indefinite-2-en
+distractorDifference= | референтность и неизвестность говорящему does not classify the shown form. | референтный денотативный статус слабой определённости does not classify this shown form.
+whyAnswerDemonstratesObjective=The source says the series являются нереферентными and gives куда-нибудь. The keyed phrase is являются нереферентными.
+contrastMembers=являются нереферентными | референтность и неизвестность говорящему | референтный денотативный статус слабой определённости
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u26-indefinite-1-ru | prov-ex-u26-indefinite-1-en | prov-ex-u26-indefinite-0-en | prov-ex-u26-indefinite-2-en
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u26-i-indefinite-2`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9506a552685e83a81145eb75dc5fd838a1daf755ecdedc8b6f41ecb649273d14
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted phrase classifies the shown form?
+promptLetter=кое-какие
+options=референтный денотативный статус слабой определённости | референтность и неизвестность говорящему | являются нереферентными
+answer=референтный денотативный статус слабой определённости
+feedback=The source says this series expresses референтный денотативный статус слабой определённости and gives кое-какие. The keyed phrase is референтный денотативный статус слабой определённости. референтный денотативный статус слабой определённости.
+objectiveId=obj-u26-indefinite
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был. | The source assigns являются нереферентными to куда-нибудь.
+testedFeature=INDEFINITE_PRONOUN
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u26-indefinite-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u26-indefinite-2-en
+distractorSourceIds= | prov-ex-u26-indefinite-0-en | prov-ex-u26-indefinite-1-en
+distractorDifference= | референтность и неизвестность говорящему does not classify the shown form. | являются нереферентными does not classify the shown form.
+whyAnswerDemonstratesObjective=The source says this series expresses референтный денотативный статус слабой определённости and gives кое-какие. The keyed phrase is референтный денотативный статус слабой определённости.
+contrastMembers=референтный денотативный статус слабой определённости | референтность и неизвестность говорящему | являются нереферентными
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u26-indefinite-2-ru | prov-ex-u26-indefinite-2-en | prov-ex-u26-indefinite-0-en | prov-ex-u26-indefinite-1-en
+responseKind=RUSSIAN_PHRASE
+
 ### REFERENCE `ref-u2630-attribution`
 
 - Objectives: none
-- Sessions: u26-s-orient, u26-s-word-order, u26-s-vy-capital, u26-s-address-notation, u26-s-book, u26-s-gap-indefinite, u26-s-gap-postal-address, u26-s-gap-letter-writing, u26-s-gap-correspondence
+- Sessions: u26-s-orient, u26-s-word-order, u26-s-vy-capital, u26-s-address-notation, u26-s-indefinite, u26-s-book, u26-s-gap-postal-address, u26-s-gap-letter-writing, u26-s-gap-correspondence
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 4e7911106a27d6c509cc69fc3b9a37651fabcaacef8599446330c0ebdfcf5f3c
+- Content hash: 9fcc6f9c78f9e9e351395ed6e5e214627eb77d831223d62c49e66e77ac563c5d
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, general letter conventions, participle stress, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
@@ -1874,6 +2140,570 @@ attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=aac5782cb4cd7c5e32803b2eb556277c4cb031d42edea97e57fc16c18e506467
 contentHash=9bf3f274b37a666757a5df6bf03a9b40d7816a78a9fb5f796cbb5cc85bffac7e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-indefinite-0-en`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 697ff28f99ed1fa443f42e7ee5c3c03818ee7c7510c91d1c6733d47ee1d172f3
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=референтность и неизвестность говорящему
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=5af23794650b542b74f6334f47fba5661d9d4904aacc7c05a3ee2eca8402d92b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-indefinite-0-ru`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bc2ad1f2ba8cdd5034bed9010aefbf095c506e5eec9647c1336cdd1e23c93111
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=В доме действительно кто-то был
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=797001ca41abd25dc4470c84ca6fe602d927401253eb2826a44b164d97f7943d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-indefinite-0-ru-r0`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d898f31f13e567bea108cc112bdc109a3ea9d399f574d9318019922c525735bc
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=В доме действительно кто
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=8e616c4d469c841c3cf5f395c224d73f9f2c7f3fbb3df45695125edcbd638380
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-indefinite-0-ru-r1`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a0008a1b94ceec25b641e6f20dc5416f0bc9ee441e206307d83f3a8e00fa7a9a
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=то был
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=9ecc1e5b57ea6b4aa59614d22b6ceff5669c3f806d540bbbfd56153b60267336
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-indefinite-1-en`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bf952699bb07bdae8fc66577da01895ce0d655e8b49c79af8b91537c4278877e
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=являются нереферентными
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=f3cde06559f7839a33c1208f0082faeffc16736427d050c77d35b28848533212
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-indefinite-1-ru`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d001d568a11420fba3a33fde19dfaee73eef0d551cd34d631a119143c33fabf4
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=куда-нибудь
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=32c23f2a72ca68777e8058b0f09857faa81c38634cc376ae89b812913215d94d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-indefinite-1-ru-r0`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 645dfa3c9694393c6ddd2592f8e7c3d402b2d1a48152ae31bf49bb9f36c20fb2
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=куда
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=fadd1a9420c739dc922486feae7f1764766adf7a24406d34633839142b6e0025
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-indefinite-1-ru-r1`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 730c3af0901dcbeceea22ba392e6cd069c869245fe94671fd980b3de5084cea7
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=нибудь
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=9d867296cbce7493866694609448411d6e50ec33cba857a98e60d7c308aa9fe4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-indefinite-2-en`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: af907b5078b5c95bb0a423804e82b57c86be36755adf97513e966068626a7206
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=референтный денотативный статус слабой определённости
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=3d754f2c6c6edabe078752232e6a67e685a3f2c14924b77d68f77ef1bd9a674f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-indefinite-2-ru`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 40c696bd2764a428ccd06ad2aa79c08e5d1c155360fb10452e27d5e76749da07
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=кое-какие
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=4efa613123a3e68efb7e34955bb19984aae6911654687d1f74099220e0454ee9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-indefinite-2-ru-r0`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 24dd4a42d25c15135488d8d0a9e8d56f353e257db28e1d86b38496aa18ddcee5
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=кое
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=7c3dca5f1b4cc2a8db1b227a4f4b96a424e01f8a61d9ba8840dbbecae58c6af9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u26-indefinite-2-ru-r1`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6510b689c3abf5a2a8d5f512ffeb4b4e8f956769395424de6fbde2bcfef45f3c
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=какие
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=3a071903d868786241f1f0b6e5e334fc02f83ec52ff1c3beb22ae319228bb0e4
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2491,6 +3321,194 @@ attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=aac5782cb4cd7c5e32803b2eb556277c4cb031d42edea97e57fc16c18e506467
 contentHash=6f347b04efac92cf6edc676ee3eb09ffb73c2d1fecf2bb4fdf2072917c8f1238
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-indefinite-rem`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c4b4a97283b1f45ae23ca9ca2f84694bc256c327aa2480d0487ba17ee1de0faa
+
+recordType=instruction
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=Местоимение на -то может употребляться также и в значении местоимения на -нибудь
+transformation=wikimedia emphasis formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=af73dcb38b7921b06fd9a787868dbe0bc3528405a56efd52266c3cf36605d3b8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-indefinite-rem-r0`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ea0869dfee079673c856589203e28390221d40e4d37b7f49e5c47360ee09f145
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=Местоимение на
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=c47103b533674145087e108797408c8b4e03ad88176dca00191f7362881557d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-indefinite-rem-r1`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 40d69f2eb0c1c9d62cd117829dd69134abc272aff198628c236d1c0a49554803
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=то может употребляться также и в значении местоимения на
+transformation=wikimedia emphasis formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=857affb38434c8a0e29f7da13fff59497f52ed1cf2680597f129eb1a5e8ce10f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u26-indefinite-rem-r2`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7b8775b7966dfd53c0e6a62816e79f8feb051d996e36fd432e01c95a9c9d9ac7
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+originalSourceText===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
+shippedText=нибудь
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+contentHash=9d867296cbce7493866694609448411d6e50ec33cba857a98e60d7c308aa9fe4
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3241,10 +4259,10 @@ text=Which admitted English gloss is written for the shown mark?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f36aa6bed78d185e75fd2d948080c3fdd707738387bb1e73d59b575fcc74da1f
+- Content hash: 059f2015750f13bb0bc055efab6f82a12fffc4def3b27bd919aaf425ecad3de0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted word-order and address lines
+text=The source assigns являются нереферентными to куда-нибудь.
 
 ### AUTHORED_ENGLISH `en-u26-049`
 
@@ -3254,10 +4272,10 @@ text=Admitted word-order and address lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b9337bc4dd31d4e13592927a0e5b67c615f06000828a82c6e9036c2d195f07b
+- Content hash: 2a26e9eefe226202597247349477352ef4514da9023aec1f4ef6eb3da8a16630
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 26 uses admitted arrangement lines, the written capital form, and the frozen address marks. The indefinite series, complete postal practice, and other letter conventions stay in the copy you own. Qualified review is pending.
+text=The source assigns референтный денотативный статус слабой определённости to кое-какие.
 
 ### AUTHORED_ENGLISH `en-u26-050`
 
@@ -3267,10 +4285,10 @@ text=Proposed Unit 26 uses admitted arrangement lines, the written capital form,
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f2f5922fe9e42b249b613b47d83e813f2d25bc9e549ad9dfc3206c10b9f33a25
+- Content hash: 18fa4601af78d4e22002e51a7733a0e3054426b4d6eb4f758703999a7c33343e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 26 in the copy you own. The app records do not replace that lesson.
+text=являются нереферентными does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u26-051`
 
@@ -3280,10 +4298,10 @@ text=Open Lesson 26 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 99181bfa933fb4b107013988af06b16f40891a9369fb6b3e48c0a6606f473765
+- Content hash: 17c004984be94894310844f48d3a3af8a8fd19f244e29cd6e675a360b991811e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=референтный денотативный статус слабой определённости does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u26-052`
 
@@ -3293,10 +4311,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a4901ca844a0b66c208501730d7e285ef16c8e6cb73f9294bcce9f0689f148a3
+- Content hash: cee739b4fe7e09ae5ea3fd237c05feabdc31571e5238d9d503e817ff024fe33b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=The source says this series expresses референтность и неизвестность говорящему and gives В доме действительно кто-то был. The keyed phrase is референтность и неизвестность говорящему.
 
 ### AUTHORED_ENGLISH `en-u26-053`
 
@@ -3306,10 +4324,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9b8c911c873578993e9eb2b4c232c38e7dff6cf1a0580d66053124b88bd505d0
+- Content hash: f2d16e9a848fdc207b64202a2466232b5498b4f38e46bc67d9d42a9ea33ea65a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Which admitted phrase classifies the shown form?
 
 ### AUTHORED_ENGLISH `en-u26-054`
 
@@ -3319,10 +4337,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 745a768ab9ec53ac8e1e2437bbc21b1fa72bba204136748819c94e4b99040c79
+- Content hash: 556b85ee7c0786106e26c133742943adf23cc6c93757f2dc698ef1b64ff892a8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был.
 
 ### AUTHORED_ENGLISH `en-u26-055`
 
@@ -3332,10 +4350,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 74d3aef719fa6e8939e4e783bceaec20d11f703ed5c54e1b99451b8a461f587d
+- Content hash: d40d37d5c511ec4b87260300af25e76370d464020e221ddd22549d67ae60de7e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=референтность и неизвестность говорящему does not classify the shown form.
 
 ### AUTHORED_ENGLISH `en-u26-056`
 
@@ -3345,10 +4363,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c16df72421a8facfa5c942087230814fb5924315a4780bc42abff17c56d89ce7
+- Content hash: 5e84b4e011dbe5d2702939368c969fe510067df6b1bbb9f3e51676cb08a7666b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=референтный денотативный статус слабой определённости does not classify this shown form.
 
 ### AUTHORED_ENGLISH `en-u26-057`
 
@@ -3358,10 +4376,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 000120018265c39994266822a9ee082cc95f3fd5569b414f2c92283761207212
+- Content hash: e1d42a10b66d9099c0e142c2534804d91359afb343caa7ea5314a27d70539044
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 26 in your copy
+text=The source says the series являются нереферентными and gives куда-нибудь. The keyed phrase is являются нереферентными.
 
 ### AUTHORED_ENGLISH `en-u26-058`
 
@@ -3371,10 +4389,10 @@ text=Work Lesson 26 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 68a1700246383b6ac1e26a26ed3dca920a8fff38de991c4bc1712a1657d3f0c1
+- Content hash: 46aece3e578fd54cf0a361b3bbcc6bb8ec571e077ace607a9736034c415ed44f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 26 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=The source says this series expresses референтный денотативный статус слабой определённости and gives кое-какие. The keyed phrase is референтный денотативный статус слабой определённости.
 
 ### AUTHORED_ENGLISH `en-u26-059`
 
@@ -3384,10 +4402,10 @@ text=Do Lesson 26 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fce575614e0f43a081e91c80d9fdd8b5d97a8470b1aa4aefc33bb936b01561f9
+- Content hash: fa8b12af478d47449ad38c624d52054e85f29c60fceeea9cb3b7111d44c8cbb1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 26 in your copy and complete its lesson work.
+text=Admitted word-order and address lines
 
 ### AUTHORED_ENGLISH `en-u26-060`
 
@@ -3397,10 +4415,10 @@ text=Open Lesson 26 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 307bd86aa0ec4d02a1e2e0c8aace25ee7523f04c953d9d6448656dde1c8f153b
+- Content hash: 02efad5cbf81157c29291ecf703a032faea29868f429d85f399bf143f6b20e83
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 26 book work
+text=Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, and the frozen address marks. Complete postal practice and other letter conventions stay in the copy you own. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u26-061`
 
@@ -3410,10 +4428,10 @@ text=Record Lesson 26 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 18b459b092191e5a25a98a67e2b4bae462e2c6eea59852db805e21f242827d7c
+- Content hash: cc090d65c194e4c671ff9fc6f08ad201a8a02350d3953f56118c543a6b07d035
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 26 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Open Lesson 26 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u26-062`
 
@@ -3423,10 +4441,10 @@ text=When you have done Lesson 26 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4ad12d3ef8ceb2c85b02b56d15530973078ba5990ae8d417361dd944bc2b32f2
+- Content hash: ca02266ca914cc201d77cbc72156b677ec80c12328b9a97e7ac5b3366b9e376b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 26 work in your copy.
+text=Read the admitted examples on this card.
 
 ### AUTHORED_ENGLISH `en-u26-063`
 
@@ -3436,10 +4454,10 @@ text=Self-attest only after the Lesson 26 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9474e151128a669d1306bf28a445ca3cee5e4e5cfff4ad336940f39033ccbad2
+- Content hash: 66553af4f47f586d9256b74cadab8fbc7d2f34beb048c26430643a6235d170fa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The indefinite series stays in the copy you own
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u26-064`
 
@@ -3449,10 +4467,10 @@ text=The indefinite series stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5720af33e098c9255db3ed5a3403a913eb854c40410390d882ba38fe90055444
+- Content hash: 0340db2f02b24a185329c762688469ab0544b4d49da7afb02c8284df97c5b541
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The indefinite series stays in the copy you own. No admitted frozen span states that selection.
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u26-065`
 
@@ -3462,10 +4480,10 @@ text=The indefinite series stays in the copy you own. No admitted frozen span st
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a967ea6e2166cdf164740af9adb81944830028e22a24a48331f5024077507da
+- Content hash: 02b8a5046e5ac8a52317d186b6fc06ae2895119b4c0d291e6a657c29911c36f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Complete postal practice stays in the copy you own
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u26-066`
 
@@ -3475,10 +4493,10 @@ text=Complete postal practice stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5bab302ebf980dc7b09212f5cfc12aa86624e3364fec6d54801d6b713af151aa
+- Content hash: 65bdb78094e361eaa451245a970d187dd3aa5db11761ea12a2dc0e63e3f76563
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Complete postal practice stays in the copy you own. The frozen address marks are not that practice.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u26-067`
 
@@ -3488,10 +4506,10 @@ text=Complete postal practice stays in the copy you own. The frozen address mark
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e7c441eaad2a4a6bf71f328919859bd7b3b4d8dac8d1eeb77526237d0073902
+- Content hash: 41af2826f850d36a69ec7178046bdc130ee465ad0b46ac95004af79a9ba82189
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Other letter conventions stay in the copy you own
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u26-068`
 
@@ -3501,10 +4519,10 @@ text=Other letter conventions stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5bb0f566e5cc02a0456eed8fcb5f07957c02bc10f995b1d7168f713298bcb245
+- Content hash: 90e28c3a5984ffdef456497962369bd7ff9aafdc8c19f3e5978e0dbd13960878
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Other letter conventions stay in the copy you own. The written capital form is not a whole letter.
+text=Work Lesson 26 in your copy
 
 ### AUTHORED_ENGLISH `en-u26-069`
 
@@ -3514,10 +4532,10 @@ text=Other letter conventions stay in the copy you own. The written capital form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e9ac6c315bbdf0320c59a7ff8d0c6577828516ca04fc34c25e5e4ac8408ebb7
+- Content hash: 958daad2defa8458264e557970f160f6311f73ae6204cfe0bc508caa6d2ba881
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Correspondence work stays in the copy you own
+text=Do Lesson 26 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u26-070`
 
@@ -3527,10 +4545,162 @@ text=Correspondence work stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d2127d8451d43203fa2067f511c4142cb40c8cf647cca9bd638699d8e0159035
+- Content hash: a01518c9008e3e74199becb19aff59e60bb5f2a157ce4b6ca9a60c16b4df87fa
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 26 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u26-071`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 39c40de0efe2671fc5b4655aa9176e82ec64b6bd5a3f9b45641733482d631532
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 26 book work
+
+### AUTHORED_ENGLISH `en-u26-072`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e4657c1c9339226d08c29818adbfb858e4df49a206be2285ba4d90eee8ef1c54
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 26 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u26-073`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f9d6cb1335074b31479ac65f2f7a11f6dc941d2059580291a6b22749041d6285
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 26 work in your copy.
+
+### AUTHORED_ENGLISH `en-u26-074`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 927c3a5646fa0083ca42773ac9320a75dec9d6fa3e4797d388846cd5066d2638
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Complete postal practice stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u26-075`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7fe52258ab0c8a0f60cd9045c4dc72f5c2a55bfa1c721f8498608ad5f580a0c9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Complete postal practice stays in the copy you own. The frozen address marks are not that practice.
+
+### AUTHORED_ENGLISH `en-u26-076`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 49df45b621d053af29e6523f2ee9f8f793e82306a9db20047cf8350a86882f46
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Other letter conventions stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u26-077`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 213fe8bfced9bc04272157033fe97e259e1e0886850e3764202a05819b01e573
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Other letter conventions stay in the copy you own. The written capital form is not a whole letter.
+
+### AUTHORED_ENGLISH `en-u26-078`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ce0b814544c1d3d7d6544184ff4c47f6e2dd6990bd670d70f20b583dba865b37
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Correspondence work stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u26-079`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6e4135beeddbe465ad859f498f9c42c32447659bd7fbc48b7ad4d5151674315b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Correspondence work stays in the copy you own. The admitted lines do not supply it.
+
+### SOURCE_CAPABILITY `cap-obj-u26-indefinite`
+
+- Objectives: obj-u26-indefinite
+- Sessions: none
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: SOURCE_CAPABILITY
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 14ab9f36de60058c85aacbbaa84433d3a882f387ea5ea84facb3b129c7ece5e6
+
+sourceId=src-ruwiki-neopredelennoe-mestoimenie-149963314
+sourceRevision=149963314
+sourceRecordId=neopredelennoe:==== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неи
+sourceHash=2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b
+supportedClaim=indefinite-pronoun
+exactSpan===== Серия на ''-то'' ====
+Местоимения данного типа выражают референтность и неизвестность говорящему (''В доме действительно кто-то был'').<br>
+Местоимение на ''-то'' может употребляться также и в значении местоимения на ''-нибудь'':
+
+: ''Но ведь кто-то должен знать?''
+
+Кроме того, могут выполнять интродуктивную функцию:
+
+: ''Как-то раз какой-то парень обратился ко мне с вопросом''.
+
+==== Серия на ''-нибудь'' ====
+Местоимения данной категории являются нереферентными. Значения таких местоимений определяются на основании типов контекстов и определённых семантических признаков. В случае местоимений на ''-нибудь'' одна возможность (альтернатива) рассматривается на фоне других. Такой фон возникает:
+* у ситуации, отнесённой к будущему (не только грамматическое будущее время, но и, например, установка на будущее, как ''Он хочет куда-нибудь поехать летом'', или императив: ''Сделай же что-нибудь!'');
+* у ситуации-альтернативы — в том числе, отнесённой к прошедшему или настоящему (например, условие (''Если она что-нибудь натворила, придётся сделать ей выговор''), эпистемическая модальность (''Кто-нибудь мог сказать ей правду!'') и др.);
+* в контексте дистрибутивности (''Каждый что-нибудь с собой принесёт, За каждым произведением искусства стоит чья-нибудь история'' и т. п.).
+
+==== Серия на ''кое-'' ====
+Местоимения этой серии выражают референтный денотативный статус слабой определённости, то есть соотносятся с индивидуализированным объектом, который известен говорящему, но предполагается неизвестным слушающему. Например, ''Надо сдать кое-какие бумаги''.
 
 ### SOURCE_CAPABILITY `cap-obj-u26-word-order`
 
@@ -3588,6 +4758,21 @@ CC BY-SA 4.0
 Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for oldid 3353858 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-ruwiki-neopredelennoe-mestoimenie-149963314`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 034f39808ef3ac50e2c230a11fc79946adacbbe86a262eff465a5f732ec26e53
+
+Неопределённое местоимение
+CC BY-SA 4.0
+Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -3628,6 +4813,20 @@ permitsAppUse=true
 - Content hash: e4853ce7bec1882e596dec46c536ba18454bc57ae39454269cf61bcbc9caa664
 
 src-wikibooks-russian-various-stuff-3353858
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-ruwiki-neopredelennoe-mestoimenie-149963314`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-neopredelennoe-mestoimenie-149963314
+- Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3bdf5d4fc7cdb37198a732d1a8385b5c80cb75d9e24b2891c3d1bb04c49de075
+
+src-ruwiki-neopredelennoe-mestoimenie-149963314
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -3683,15 +4882,26 @@ permitsAppUse=true
 - `obj-u26-address-notation` CHECK `u26-i-address-notation-1`
 - `obj-u26-address-notation` CHECK `u26-i-address-notation-2`
 - `obj-u26-address-notation` REMEDIATION `u26-st-rem-address-notation`
+- `obj-u26-indefinite` INSTRUCTION `u26-st-orient`
+- `obj-u26-indefinite` INSTRUCTION `u26-st-teach-indefinite-1`
+- `obj-u26-indefinite` INSTRUCTION `u26-st-teach-indefinite-2`
+- `obj-u26-indefinite` INSTRUCTION `u26-st-teach-indefinite-3`
+- `obj-u26-indefinite` EXAMPLE `ex-u26-indefinite-0`
+- `obj-u26-indefinite` EXAMPLE `ex-u26-indefinite-1`
+- `obj-u26-indefinite` EXAMPLE `ex-u26-indefinite-2`
+- `obj-u26-indefinite` PRACTICE `u26-st-guided-indefinite-1`
+- `obj-u26-indefinite` CHECK `u26-i-indefinite-1`
+- `obj-u26-indefinite` CHECK `u26-i-indefinite-2`
+- `obj-u26-indefinite` REMEDIATION `u26-st-rem-indefinite`
 - `obj-u26-book` INSTRUCTION `u26-st-book-work`
 - `obj-u26-book` INSTRUCTION `u26-st-book`
-- `obj-u26-indefinite` INSTRUCTION `u26-st-gap-indefinite`
 - `obj-u26-postal-address` INSTRUCTION `u26-st-gap-postal-address`
 - `obj-u26-letter-writing` INSTRUCTION `u26-st-gap-letter-writing`
 - `obj-u26-correspondence` INSTRUCTION `u26-st-gap-correspondence`
 - `u26-s-orient` OBJECTIVE `obj-u26-word-order`
 - `u26-s-orient` OBJECTIVE `obj-u26-vy-capital`
 - `u26-s-orient` OBJECTIVE `obj-u26-address-notation`
+- `u26-s-orient` OBJECTIVE `obj-u26-indefinite`
 - `u26-s-orient` OBJECTIVE `obj-u26-book`
 - `u26-st-orient` REFERENCE `ref-u2630-attribution`
 - `u26-s-word-order` OBJECTIVE `obj-u26-word-order`
@@ -3739,10 +4949,22 @@ permitsAppUse=true
 - `u26-st-check-address-notation` REMEDIATION `u26-st-rem-address-notation`
 - `u26-st-check-address-notation` ITEM `u26-i-address-notation-1`
 - `u26-st-check-address-notation` ITEM `u26-i-address-notation-2`
+- `u26-s-indefinite` OBJECTIVE `obj-u26-indefinite`
+- `u26-st-teach-indefinite-1` EXAMPLE `ex-u26-indefinite-0`
+- `u26-st-teach-indefinite-1` EXAMPLE `ex-u26-indefinite-1`
+- `u26-st-teach-indefinite-1` REFERENCE `ref-u2630-attribution`
+- `u26-st-guided-indefinite-1` REMEDIATION `u26-st-rem-indefinite`
+- `u26-st-guided-indefinite-1` ITEM `u26-g-indefinite-0`
+- `u26-st-teach-indefinite-2` REFERENCE `ref-u2630-attribution`
+- `u26-st-teach-indefinite-3` EXAMPLE `ex-u26-indefinite-2`
+- `u26-st-teach-indefinite-3` REFERENCE `ref-u2630-attribution`
+- `u26-st-rem-indefinite` EXAMPLE `ex-u26-indefinite-0`
+- `u26-st-rem-indefinite` EXAMPLE `ex-u26-indefinite-1`
+- `u26-st-check-indefinite` REMEDIATION `u26-st-rem-indefinite`
+- `u26-st-check-indefinite` ITEM `u26-i-indefinite-1`
+- `u26-st-check-indefinite` ITEM `u26-i-indefinite-2`
 - `u26-s-book` OBJECTIVE `obj-u26-book`
 - `u26-st-book-work` REFERENCE `ref-u2630-attribution`
-- `u26-s-gap-indefinite` OBJECTIVE `obj-u26-indefinite`
-- `u26-st-gap-indefinite` REFERENCE `ref-u2630-attribution`
 - `u26-s-gap-postal-address` OBJECTIVE `obj-u26-postal-address`
 - `u26-st-gap-postal-address` REFERENCE `ref-u2630-attribution`
 - `u26-s-gap-letter-writing` OBJECTIVE `obj-u26-letter-writing`
@@ -3761,6 +4983,18 @@ permitsAppUse=true
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-1-ru-r3`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-2-en`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-2-ru`
+- `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-0-en`
+- `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-0-ru`
+- `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-0-ru-r0`
+- `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-0-ru-r1`
+- `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-1-en`
+- `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-1-ru`
+- `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-1-ru-r0`
+- `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-1-ru-r1`
+- `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-2-en`
+- `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-2-ru`
+- `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-2-ru-r0`
+- `obj-u26-indefinite` PROVENANCE `prov-ex-u26-indefinite-2-ru-r1`
 - `obj-u26-vy-capital` PROVENANCE `prov-ex-u26-vy-capital-0-en`
 - `obj-u26-vy-capital` PROVENANCE `prov-ex-u26-vy-capital-0-ru`
 - `obj-u26-vy-capital` PROVENANCE `prov-ex-u26-vy-capital-1-en`
@@ -3780,10 +5014,15 @@ permitsAppUse=true
 - `obj-u26-address-notation` PROVENANCE `prov-u26-address-notation-rem`
 - `obj-u26-address-notation` PROVENANCE `prov-u26-address-notation-x-0`
 - `obj-u26-address-notation` PROVENANCE `prov-u26-address-notation-x-1`
+- `obj-u26-indefinite` PROVENANCE `prov-u26-indefinite-rem`
+- `obj-u26-indefinite` PROVENANCE `prov-u26-indefinite-rem-r0`
+- `obj-u26-indefinite` PROVENANCE `prov-u26-indefinite-rem-r1`
+- `obj-u26-indefinite` PROVENANCE `prov-u26-indefinite-rem-r2`
 - `obj-u26-vy-capital` PROVENANCE `prov-u26-vy-capital-rem`
 - `obj-u26-vy-capital` PROVENANCE `prov-u26-vy-capital-x-0`
 - `obj-u26-vy-capital` PROVENANCE `prov-u26-vy-capital-x-1`
 - `obj-u26-word-order` PROVENANCE `prov-u26-word-order-rem`
+- `obj-u26-indefinite` SOURCE_CAPABILITY `cap-obj-u26-indefinite`
 - `obj-u26-word-order` SOURCE_CAPABILITY `cap-obj-u26-word-order`
 
 ## Book-directed experiences
@@ -3795,10 +5034,10 @@ permitsAppUse=true
 ## Unsupported-capability register
 
 - `cap-obj-u26-word-order` supports `word-order` for `obj-u26-word-order`
+- `cap-obj-u26-indefinite` supports `indefinite-pronoun` for `obj-u26-indefinite`
 
 Guidance objectives stay unsupported until an admitted frozen capability exists:
 
-- `obj-u26-indefinite` The indefinite series stays in the copy you own
 - `obj-u26-postal-address` Complete postal practice stays in the copy you own
 - `obj-u26-letter-writing` Other letter conventions stay in the copy you own
 - `obj-u26-correspondence` Correspondence work stays in the copy you own
@@ -3808,7 +5047,6 @@ Guidance objectives stay unsupported until an admitted frozen capability exists:
 - `u26-st-orient` Open Lesson 26 in the copy you own. The app records do not replace that lesson.
 - `u26-st-book-work` Open Lesson 26 in your copy and complete its lesson work.
 - `u26-st-book` Self-attest only after the Lesson 26 work in your copy.
-- `u26-st-gap-indefinite` The indefinite series has no admitted frozen span.
 - `u26-st-gap-postal-address` Complete modern postal practice has no admitted frozen span.
 - `u26-st-gap-letter-writing` General letter structure, openings, closings, and register have no admitted frozen span.
 - `u26-st-gap-correspondence` Correspondence work has no admitted frozen span.
@@ -3820,7 +5058,6 @@ None.
 
 ## Unavailable experiences
 
-- `u26-st-gap-indefinite`
 - `u26-st-gap-postal-address`
 - `u26-st-gap-letter-writing`
 - `u26-st-gap-correspondence`
