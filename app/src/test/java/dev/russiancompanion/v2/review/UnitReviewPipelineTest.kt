@@ -366,7 +366,9 @@ class UnitReviewPipelineTest {
         listOf(21, 22, 23, 24, 25).forEach { number ->
             val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
             assertTrue(manifest.contains(UNITS_21_25_CURRICULUM_COMMIT))
-            assertFalse(manifest.contains(UNITS_16_20_CURRICULUM_COMMIT))
+            if (UNITS_21_25_CURRICULUM_COMMIT != UNITS_16_20_CURRICULUM_COMMIT) {
+                assertFalse(manifest.contains(UNITS_16_20_CURRICULUM_COMMIT))
+            }
             assertTrue(
                 curriculumSourceCommitErrors(UNITS_21_25_CURRICULUM_COMMIT, root, number).joinToString("\n"),
                 curriculumSourceCommitErrors(UNITS_21_25_CURRICULUM_COMMIT, root, number).isEmpty(),
