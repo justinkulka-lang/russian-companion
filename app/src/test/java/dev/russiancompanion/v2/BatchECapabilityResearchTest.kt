@@ -173,7 +173,7 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root())
         val gaps = mapOf(
             7 to "without an admitted introductory adverb paradigm source capability",
-            17 to "without telling-time, weekday, date, and age sources",
+            17 to "Unit 17 is missing productive clock-time and calendar-date source capabilities",
             23 to "completion-over-period",
             24 to "scope source capabilities",
             25 to "without admitted productive-diminutive and register source capabilities",
@@ -217,10 +217,77 @@ class BatchECapabilityResearchTest {
             )
             val flippedErrors = V2Validator.validate(stripped).errors.joinToString("\n")
             assertTrue(flippedErrors, flippedErrors.contains(gap))
+            assertFalse(flippedErrors, flippedErrors.contains("telling-time, weekday, date, and age"))
             assertTrue(flippedErrors, flippedErrors.contains("missing instruction, examples, guided practice, independent checks, or remediation"))
             val decision = advancementDecision(stripped, stripped.unit(unitNumber)!!, learner)
             assertFalse(decision.allowed)
             assertTrue(decision.remaining.any { it.contains(blockers.getValue(unitNumber)) })
+        }
+    }
+
+    @Test
+    fun unit17MessagesFollowTheUnresolvedCapabilitySet() {
+        val pack = loadCurriculumPack(root())
+        val clockOnly = "Unit 17 is missing a productive clock-time source capability"
+        val dateOnly = "Unit 17 is missing a calendar-date source capability"
+        val both = "Unit 17 is missing productive clock-time and calendar-date source capabilities"
+        assertEquals(listOf(clockOnly), V2Validator.unit17SourceBlockers(setOf("productive-clock-time")))
+        assertEquals(listOf(dateOnly), V2Validator.unit17SourceBlockers(setOf("calendar-date")))
+        assertEquals(
+            listOf(both),
+            V2Validator.unit17SourceBlockers(setOf("productive-clock-time", "calendar-date")),
+        )
+        assertEquals(emptyList<String>(), V2Validator.unit17SourceBlockers(emptySet()))
+        assertFalse(V2Validator.unit17SourceBlockers(setOf("productive-clock-time")).any { it.contains("calendar-date") })
+        assertFalse(V2Validator.unit17SourceBlockers(setOf("calendar-date")).any { it.contains("clock-time") })
+        assertFalse(V2Validator.unit17SourceBlockers(setOf("productive-clock-time")).any { it.contains("weekday") || it.contains("age") })
+
+        val liveClaims = V2Validator.unresolvedRequiredSourceCapabilities(pack, 17).map { it.claim }.toSet()
+        assertEquals(setOf("productive-clock-time"), liveClaims)
+        val liveUnit = pack.unit(17)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
+        val livePack = pack.copy(units = pack.units.map { if (it.number == 17) liveUnit else it })
+        val liveErrors = V2Validator.validate(livePack).errors
+        assertEquals(listOf(clockOnly), liveErrors.filter { it.startsWith("Unit 17 is missing") })
+        assertFalse(liveErrors.joinToString("\n"), liveErrors.any { it.contains("telling-time") || it.contains("weekday") || it.contains("age sources") })
+        val liveDecision = advancementDecision(livePack, liveUnit, prepared(liveUnit))
+        assertFalse(liveDecision.allowed)
+        val sourceLines = liveDecision.remaining.filter { it.startsWith("Unit 17 is missing") }
+        assertEquals(listOf(clockOnly), sourceLines)
+        assertFalse(sourceLines.any { it.contains("calendar-date") || it.contains("weekday") || it.contains("age") })
+
+        val withoutDate = pack.copy(
+            sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "calendar-date" },
+            units = pack.units.map { if (it.number == 17) liveUnit else it },
+        )
+        val bothErrors = V2Validator.validate(withoutDate).errors
+        assertEquals(listOf(both), bothErrors.filter { it.startsWith("Unit 17 is missing") })
+
+        listOf(
+            "clock-expression-recognition",
+            "clock-question",
+            "age",
+            "weekdays",
+            "calendar-date",
+            "productive-quarter-hour-time",
+        ).forEach { claim ->
+            val source = pack.sourceCapabilities.single { it.unitNumber == 17 && it.supportedClaim == claim }
+            val relabeled = source.copy(
+                id = "cap-e-relabel-$claim",
+                objectiveId = "obj-u17-clock-answers",
+                supportedClaim = "productive-clock-time",
+            )
+            val errors = planted(pack, relabeled)
+            assertTrue(errors, errors.contains("no independent productive-clock-time admission"))
+            if (claim == "clock-expression-recognition") {
+                assertTrue(errors, errors.contains("bounded clock phrases do not clear productive-clock-time"))
+            }
+            if (claim == "productive-quarter-hour-time") {
+                assertTrue(errors, errors.contains("quarter-hour patterns do not clear productive-clock-time"))
+            }
+            val hosted = pack.copy(sourceCapabilities = pack.sourceCapabilities + relabeled)
+            assertTrue(
+                V2Validator.unresolvedRequiredSourceCapabilities(hosted, 17).any { it.claim == "productive-clock-time" },
+            )
         }
     }
 
@@ -231,7 +298,7 @@ class BatchECapabilityResearchTest {
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
         assertEquals("68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4", model.packContentReviewDigest)
-        assertEquals("8f4aef42a2133c0818b32a58197097c16478c62ed49be67684780a5802f9bcdd", model.repositorySourceDigest)
+        assertEquals("7e73e724ef3895ff8fb3401f0a84411e74a62dfe0877fcf9015554215ee7a652", model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
         assertEquals("NOT_APPROVED", candidate?.publicRelease)
@@ -271,11 +338,27 @@ class BatchECapabilityResearchTest {
             29 to "54c2f00221054ced81fe17bea8b0f156073b830e54e70c47cf769e93bd56eb36",
             30 to "e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367",
         )
+        val reviewPackages = mapOf(
+            7 to "1886acce49873b53078a8c4cfe0cda01f901c3de87163db5d793f3e313f8b963",
+            17 to "b92591edc3d5e3c0d521ec2e3f2be8243d7c2d5b5c74fce7a469715a2c4ecd60",
+            23 to "cca01af622e633604201ec48f0f9874a081c150de1741ea5c13b12d181a5dfae",
+            24 to "b27f6d0be8b9aeea54d3f332088103cd5c5fc9795455b9d0ac6e1fe0bb3442e9",
+            25 to "1b8012ba1badf1d19a297064e3399d85479ac579c146d5cee2f5aa452652ce92",
+            26 to "454832054f75741f1d0bcc713e2abe33d4762eb03df9e79f9320fc5ec2f90cbf",
+            27 to "8d674aa5f90a29931380914014250d47c26137a06d6d8217edbd75763fc17885",
+            28 to "04e8edb04da43239ba17bfac3a91e225b38ef67ba5926eb364667256a5d672c2",
+            29 to "a41035e292f92c41bca87cb9794fc75663483deebad5ec5965989c9eef0b8200",
+            30 to "94d5d9b7da4ab3eca73de19735ceb9354064a6864b7754dadb7d26901eff83ac",
+        )
         (content.keys).forEach { number ->
             val row = model.units.single { it.unitNumber == number }
             assertEquals(content.getValue(number), row.unitContentReviewDigest)
             assertEquals(mapping.getValue(number), row.mappingPackageDigest)
+            assertEquals(reviewPackages.getValue(number), row.reviewPackageDigest)
         }
+        val candidateText = File(root, "release/acceptance/candidate.json").readText()
+        assertTrue(candidateText.contains("0bd4dbf5a24738b9ff9bb7e782a1370021ea59b065c9e764c556f16c1e0784b4"))
+        assertTrue(candidateText.contains("7a24899055474d1d7913213b0af1dedade528d4015cd1faef35c0f71d4e8c37e"))
         assertEquals(
             "postal-address, letter-writing, correspondence-work",
             model.units.single { it.unitNumber == 26 }.unresolvedRequiredSourceCapabilities,

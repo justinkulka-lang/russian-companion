@@ -16,7 +16,7 @@ Unit 22 remains in development. Its readiness is content-complete and review-pen
 - Mapping-package SHA-256: 997ae9e19ac8c160b37e5eee4e8c358254993aa481ffb14459e1d27c8a378284
 - Pack content-review SHA-256: 68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4
 - Review-package SHA-256: 3b5cab011415bde74744f8d45f85d8d74e3cd7695447e71b874c21017b86cb23
-- Repository source SHA-256: 8f4aef42a2133c0818b32a58197097c16478c62ed49be67684780a5802f9bcdd
+- Repository source SHA-256: 7e73e724ef3895ff8fb3401f0a84411e74a62dfe0877fcf9015554215ee7a652
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 

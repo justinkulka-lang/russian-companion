@@ -699,10 +699,8 @@ internal object V2Validator {
                 unit,
                 "Unit 16 is not content-complete without an admitted instrumental complement span source capability",
             )
-            17 -> missingCapabilityError(
-                pack,
-                unit,
-                "Unit 17 is not content-complete without telling-time, weekday, date, and age sources as required source capabilities",
+            17 -> unit17SourceBlockers(
+                unresolvedRequiredSourceCapabilities(pack, unit.number).map { it.claim }.toSet(),
             )
             18 -> missingCapabilityError(
                 pack,

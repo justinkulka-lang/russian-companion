@@ -2,21 +2,22 @@
 
 **Status:** RESEARCH HANDOFF — NOT AN APPROVAL  
 **Repository:** `justinkulka-lang/russian-companion`  
-**Canonical commit:** `fd69bd03298d69669d09daafe8d364b0e576d033`  
+**Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
+**Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
 **Pack content-review digest:** `68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4`  
-**Repository source digest:** `8f4aef42a2133c0818b32a58197097c16478c62ed49be67684780a5802f9bcdd`  
+**Repository source digest:** `7e73e724ef3895ff8fb3401f0a84411e74a62dfe0877fcf9015554215ee7a652`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
 
 This dossier converts the live curriculum-readiness reconciliation into an actionable research queue. It does not add curriculum, approve Russian, approve the owned-edition mapping, activate a variance, install a unit, freeze a candidate, complete AT-031, or authorize release.
 
-PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` is merged into this Batch A branch only. It is not merged into `main`. After PR #43 merges, PR #42 may be closed as superseded by PR #43. This dossier does not claim that PR #42 merged separately.
+PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` was merged into the Batch A branch. PR #43 later merged into `main`. That history makes the PR #42 head reachable from `main`.
 
 ## Executive result
 
 - Content blockers: **10 units** — Units 7, 17, 23, 24, 25, and 26–30.
-- Batch E inspected only Units 7, 17, 23, 24, and 25. Six newly retained Russian Wikipedia revisions are excluded. Those five capabilities stay unresolved and those units stay `NOT_PREPARED`. Units 26–30 were not modified.
+- Batch E inspected only Units 7, 17, 23, 24, and 25. Batch E excluded only the six inspected Russian Wikipedia revisions. Those exclusions do not establish that the five capabilities are impossible to source from a different licensed project. Those five capabilities stay unresolved and those units stay `NOT_PREPARED`. Units 26–30 were not modified.
 - Units 16, 18, 19, 20, 21, and 22: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7, 17, 23, 24, and 25 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. The frozen adverb paragraph states a productive method and four examples and does not state limits, so `adverb-paradigm` stays unresolved. Unit 17 has no admitted productive clock-time construction. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21 and 22 are review-pending development curriculum and are not approved. Unit 23 keeps the admitted duration span and stays `NOT_PREPARED` because completion over a period has no admitted span. Unit 24 keeps a bounded word-order contrast and stays `NOT_PREPARED` because that contrast does not clear `negation-scope`. Unit 25 keeps bounded classification of the frozen personal-name formation span and stays `NOT_PREPARED` because that classification does not clear `productive-diminutive`. Units 26–30 stay `NOT_PREPARED`. Unit 26 admits `indefinite-pronoun` and still lacks postal practice, letter writing, and correspondence work. Unit 29 admits `participle-punctuation` and still lacks a general bookish-register claim and a bookish reading. Unit 30 `dictionary-use` stays unresolved because Russian Wiktionary has no freezeable project copyright page.
 - Qualified linguistic review: **all 30 units**.
 - Owned-edition mapping review: **all 30 units**.
