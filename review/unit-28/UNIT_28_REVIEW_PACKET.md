@@ -11,12 +11,12 @@ Unit 28 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: fb6be57154f70c9b3df3b6a9c57d770349af7741
+- Curriculum source commit: 5ab3cfe06e709ee605a3cbce320d6cbea9e11776
 - Unit content-review SHA-256: 81c550af310c4997fe285b3f82e6f8819232dc8236c62f37488cd4552d58cc45
 - Mapping-package SHA-256: bdf9618b16d9a96d9d359a01e7901617c7d8b97bcd601768695131da126497aa
-- Pack content-review SHA-256: 8c019ec786edcb105211388bd78b266f356c0fe00ad1a3a0ea929ad77b21856e
-- Review-package SHA-256: 51cfa4c95118db3c09613540245c646be7c8546a754f2a00bf29b33da015e280
-- Repository source SHA-256: 0d0fa56ab018e3da46bec02fe216f5570eb0a56fb6631ada0b88cebae65ab8ea
+- Pack content-review SHA-256: 76879c3e98f1682f322651e830dd18c537a79135badad3c86c77a7e13cfa7c6f
+- Review-package SHA-256: ef12aec6bad3494d40a106e11e8d64c06cdb9b211fdbfb998c3e6625c5540767
+- Repository source SHA-256: 8819cf84360df77acebd15bb55dd4f090e1ce4f9f7962916f6927fbbc3b4496f
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
