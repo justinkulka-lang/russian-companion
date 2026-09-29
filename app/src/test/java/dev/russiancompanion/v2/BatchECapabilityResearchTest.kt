@@ -358,11 +358,11 @@ class BatchECapabilityResearchTest {
             30 to "e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367",
         )
         val reviewPackages = mapOf(
-            7 to "e00a37b2aecc4f2ae8df3f6dda7202461b844dc0b0b60c804bda06c5a9468d20",
+            7 to "03a5e7e85c290e1a961a051c1033ec7e5a49144b5dd058e903eb25f3e523acb7",
             17 to "cca9ccda9aaddd585a9979a06f5b48acf45b4c5ed42fdea04f923786843f33e1",
-            23 to "246261c3e8099f21ea4a20a5ff445c015e797ec8af7e77c4e08a593315f54264",
-            24 to "0752226067fd6b1f2e84fc3eec8a9913c74649c5cfbc100a2ec3b07b25a9abbc",
-            25 to "a1addb2984b12b209e0c46b1907cefd874c1da6aa99c580c5e589b14eebdf796",
+            23 to "f95b52303bc156d2ba67709accebf4c0738ef43a7241cbb14a1cc802ec9605e1",
+            24 to "0dca3948dbc066c4c3482ffde782e9ac3641e6b0bab6974d26afa7f375d68550",
+            25 to "74b4de706d5042d05b78e6707fa461225aae4d3a434a699adebe86d8d7e4ba3a",
             26 to "d99147f1bea12fbfb65c63aaecb8d38d2daf3334910b9e8e0446dde17e457bc6",
             27 to "7003b4f3ba9ac586b50e9aa58567f38fe48618cae93011507b94bf04630a186e",
             28 to "583b7e92bc1ac96942135e9043e712b62bd8779d47413f5d381f49d4493ad86a",

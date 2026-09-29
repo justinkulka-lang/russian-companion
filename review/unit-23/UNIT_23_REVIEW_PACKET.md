@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 23 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 23 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 23 remains in development. Its readiness is content-complete and review-pending. The Lesson 23 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
-- Unit content-review SHA-256: ea02b0454ea4c2b37095bc296f55c8eca78c42e671b4ac668a958bf2e9ab078f
+- Curriculum source commit: 15c044ed36cb2d2b698f59e2b220174587ddc107
+- Unit content-review SHA-256: d906ec0c2a354cdf89cda6b831877f1a542eadd1d96e1c4008c00084ad5ef5a6
 - Mapping-package SHA-256: d770e8ae0d705b5570604cc71b16049fdd260e35761e7a50159dcf5a8e1fa591
-- Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: 8330b71c6f0228e19fcdc3af1c817c05b6d030bd140ba46b18ed9b8e7fc8af73
-- Repository source SHA-256: a982d0f164e5dbd9192d2faf2ddd2858fcf84aa31985a7b87aaf8dc48fbc7cf7
+- Pack content-review SHA-256: 76f61c9948f7a7366410ff39f81f8295ceba3f03e28aea999891e5e873ad4f9d
+- Review-package SHA-256: f95b52303bc156d2ba67709accebf4c0738ef43a7241cbb14a1cc802ec9605e1
+- Repository source SHA-256: e3d53fd5df8b948f4c2bad92706a5c3c8724e56b3d9e56f5ed5d80a7cae6f271
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,9 +34,9 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=23
 title=Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period
-topicSummary=Proposed Unit 23 is in development and is not prepared. Admitted time-expression spans await qualified review. Completion over a period has no admitted frozen span. Book self-attestation does not replace the app checks. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 23 is in development. Admitted time-expression spans and an original duration-versus-completion contrast await qualified review. Book self-attestation does not replace the app checks. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 23, printed pages 285-295. Independently stated topic scope: Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=23
@@ -75,13 +75,13 @@ notes=No qualified reviewer has signed Unit 23.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0eaa963a8e4a355b705d8e26bea5840baff9e4b12e314b4e12db7f184836b9cc
+- Content hash: 1e8e062c7375246e9014e32d79418c4e0f0076910dd0487c0fe5f231deca1437
 
 number=23
 title=Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period
-topicSummary=Proposed Unit 23 is in development and is not prepared. Admitted time-expression spans await qualified review. Completion over a period has no admitted frozen span. Book self-attestation does not replace the app checks. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 23 is in development. Admitted time-expression spans and an original duration-versus-completion contrast await qualified review. Book self-attestation does not replace the app checks. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 23, printed pages 285-295. Independently stated topic scope: Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=23
@@ -227,16 +227,16 @@ remediation=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f3c25720502e6bd70fe3d30b664168aa0a82ba7fb2c917bc5d8c74f199eb1bb2
+- Content hash: 0ae0dfd04b428ab37f1637b5bea25786066d55c499c1be95254523ef223aba7a
 
-title=Completion over a period stays in the copy you own
-kind=GUIDANCE
+title=Duration versus completion within a period
+kind=RECOGNITION
 unitNumber=23
-instruction=u23-st-gap-completion
-examples=
-practice=
-checks=
-remediation=
+instruction=u23-st-teach-completion-1,u23-st-teach-completion-2
+examples=ex-u23-completion-0,ex-u23-completion-1
+practice=u23-st-guided-completion-1
+checks=u23-i-completion-1,u23-i-completion-2
+remediation=u23-st-rem-completion
 
 ### SESSION `u23-s-orient`
 
@@ -1011,14 +1011,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5bf156e94dc91cef88d910f2a9565ef7d2513f1c602724e81a804c108102c363
+- Content hash: 0de87bc9a422013712f0fb5060f917c5560e503c289e57461f0d9ad7b1b46a49
 
-title=Completion over a period stays in the copy you own
-estimatedMinutes=4
+title=Duration versus completion within a period
+estimatedMinutes=12
 objectives=obj-u23-completion
-steps=u23-st-gap-completion
+steps=u23-st-teach-completion-1,u23-st-guided-completion-1,u23-st-teach-completion-2,u23-st-rem-completion,u23-st-check-completion
 
-### STEP `u23-st-gap-completion`
+### STEP `u23-st-teach-completion-1`
 
 - Objectives: obj-u23-completion
 - Sessions: u23-s-gap-completion
@@ -1026,19 +1026,107 @@ steps=u23-st-gap-completion
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5729fc2684322a8faf4e739b0c1e6da88d72c37dc9692ce03898a819bc155a0b
+- Content hash: 6899beacc5ef3eaa42dfca00c5395fa620fd3976c594bdf129313b31c0bb5657
 
-kind=UNAVAILABLE
-title=Completion over a period stays in the copy you own
-body=Completion over a period stays in the copy you own. A duration span does not state that distinction.
+kind=TEACH
+title=Admitted instruction
+body=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
-examples=
-unavailableReason=Completion over a period has no admitted frozen span.
+examples=ex-u23-completion-0
+unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u23-st-guided-completion-1`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d88160c5b92a8d623015b683560f0ed355cb763f573c801333b9cd6fc692014d
+
+kind=GUIDED
+title=Guided practice
+body=The writing sentence states time spent writing and does not assert completion.
+dominantAction=Continue
+references=
+items=u23-g-completion-1
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u23-st-rem-completion
+
+### STEP `u23-st-teach-completion-2`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fea310cf3a80d4f4eac95fd404dc1d75a984ae8ba720d4c4167f2b0056a6a3a8
+
+kind=TEACH
+title=Admitted instruction
+body=A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+dominantAction=Continue
+references=
+items=
+examples=ex-u23-completion-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u23-st-rem-completion`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f0df62cec784a92b995bc777b7b8f34bc2222b4f3a932dc850b8dcce4b83a059
+
+kind=REMEDIATE
+title=Remediation
+body=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+dominantAction=Continue
+references=
+items=
+examples=ex-u23-completion-0,ex-u23-completion-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u23-st-check-completion`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e43264461e46c21d0ee87cf76aeed26d32a534a045a1aaef26439ece5c29bdd4
+
+kind=CHECK
+title=Independent checks
+body=A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+dominantAction=Continue
+references=
+items=u23-i-completion-1,u23-i-completion-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u23-st-rem-completion
 
 ### EXAMPLE `ex-u23-ranges-0`
 
@@ -1261,6 +1349,40 @@ note=ago
 objectiveId=obj-u23-elapsed
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u23-completion-0`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d0f49dc06928844fa5755e62f348059ea20895d3aaaf692a63aee10ff81e069
+
+kind=LEXICAL
+letterId=
+display=Анна читала статью два часа.
+note=time spent reading without asserting completion
+objectiveId=obj-u23-completion
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u23-completion-1`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 084c2f92640dc2e426aa0b0b8c6a2b4a874d316dd998a9f2e4fe3220e9f1a67f
+
+kind=LEXICAL
+letterId=
+display=Анна прочитала статью за два часа.
+note=the article was finished within two hours
+objectiveId=obj-u23-completion
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### GUIDED_PRACTICE `u23-g-ranges-0`
 
 - Objectives: obj-u23-ranges
@@ -1434,6 +1556,41 @@ whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Пере�
 contrastMembers=before | after
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-elapsed-0-ru | prov-ex-u23-elapsed-0-en | prov-ex-u23-elapsed-1-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u23-g-completion-1`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b83e34d15ee77610c192550326983218e4609a30ea5a764dade26f8ea4a2ed45
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English label matches the shown writing sentence?
+promptLetter=Борис писал письмо час.
+options=time spent writing without asserting completion | the article was finished within two hours
+answer=time spent writing without asserting completion
+feedback=The writing sentence states time spent writing and does not assert completion.
+objectiveId=obj-u23-completion
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+testedFeature=DURATION_WITHOUT_COMPLETION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u23-g-completion-1
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-u23-completion-10
+distractorSourceIds= | prov-u23-completion-9
+distractorDifference= | A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+whyAnswerDemonstratesObjective=The writing sentence states time spent writing and does not assert completion.
+contrastMembers=time spent writing without asserting completion | the article was finished within two hours
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u23-completion-7 | prov-u23-completion-10 | prov-u23-completion-9
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u23-i-ranges-1`
@@ -1784,6 +1941,76 @@ whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Мы ез
 contrastMembers=ago | in (a period of time)
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-elapsed-3-ru | prov-ex-u23-elapsed-3-en | prov-ex-u23-elapsed-2-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u23-i-completion-1`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6737a63922db19e545efcf6f5dc931ec11be95e71a63ee7b7b6c589d1ef5c890
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English label matches the shown reading sentence?
+promptLetter=Анна читала статью два часа.
+options=time spent reading without asserting completion | the article was finished within two hours
+answer=time spent reading without asserting completion
+feedback=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+objectiveId=obj-u23-completion
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+testedFeature=DURATION_WITHOUT_COMPLETION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u23-i-completion-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u23-completion-8
+distractorSourceIds= | prov-u23-completion-9
+distractorDifference= | A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+whyAnswerDemonstratesObjective=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+contrastMembers=time spent reading without asserting completion | the article was finished within two hours
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u23-completion-5 | prov-u23-completion-8 | prov-u23-completion-9
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u23-i-completion-2`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea20ada7619844e93841700605ca476f6616f8c7c92cd89090385fd028e3d6dc
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English label matches the shown completed sentence?
+promptLetter=Анна прочитала статью за два часа.
+options=the article was finished within two hours | time spent reading without asserting completion
+answer=the article was finished within two hours
+feedback=A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+objectiveId=obj-u23-completion
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+testedFeature=COMPLETED_WITHIN_PERIOD
+evidenceMode=STATED_APPLICATION
+contrastSetId=u23-i-completion-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u23-completion-9
+distractorSourceIds= | prov-u23-completion-8
+distractorDifference= | An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+whyAnswerDemonstratesObjective=A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+contrastMembers=the article was finished within two hours | time spent reading without asserting completion
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u23-completion-6 | prov-u23-completion-9 | prov-u23-completion-8
 responseKind=ENGLISH_CLASSIFICATION
 
 ### REFERENCE `ref-u2125-attribution`
@@ -2988,6 +3215,594 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u23-completion-0`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dcc829aeb6e17d2560ec46657407ee970b5c59625431e49ee67649d234d5bc53
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=1e63537d03cc0947c43aed879a4ffe5b056a575254b5776126a020942b9c534b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u23-completion-1`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58e06b66f24252d61f6294553affa49945c4a260aaf6b130001ffc5e58249e67
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=90f297d876fb75ed314aa131061e7d89872aef8194aa1e33232e63df3d9c23da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u23-completion-10`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 680e747c4d1d1ce329173d2f1be40e14c6512b6b90e00242e194796b3654ce2c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=time spent writing without asserting completion
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=9cca7f85fe9f4e53a62baa78e5b6fa6accc24f54b59bbafda64da81f9ffe55d3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u23-completion-11`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 820156042be4d02c2fe7d87a96e20c3e258388035f32c1ba9469e285bc3b98e3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=Which English label matches the shown writing sentence?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=0e0ce7955426fb9e574f0b9f6fc253fca4a72cfc6e5c2cd9a389ef4b5f7f5725
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u23-completion-12`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 93d5c324b291d9f4f7d4acf46ccad975e20920b6b06e121a91210c3802da5c7d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=Which English label matches the shown reading sentence?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=fd3880ed51dbd46c31a9e3490946c310c7ec40c50b8bce3b215526e22234a5e3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u23-completion-13`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bf30aae1ebd1c27f3aba7d54d400a6114efb9c5183c41dc64f8c6fc5cf087d61
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=Which English label matches the shown completed sentence?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=ab77737d3b534c5eac97693b33a04e60e6ad8bdc885c491cb48101f4e6920a2e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u23-completion-2`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ccd642b0380a1e38ba6ed8dabc733228927007f54f4daddd0b1c1ff558f8eff
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=The reading sentence states time spent reading and does not assert completion.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=1e5af1c88c9451196fd8167a14a961a748cc1e38ef85fa5ebc6bf42a4553de2d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u23-completion-3`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fcf4e82bebe0a319db050e750111c1a8a0c3d775b674e5018b66de92db4ccb3e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=The finished-article sentence states that the article was completed within the stated period.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=a75919cf2e1c7fe5ee8a1afb83cda5aa917a2abb089f63ad44639a4dfe92cc7e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u23-completion-4`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c697546a6f17a89c8563c014e95c16fe0d377ad845d149adcee8e131ec5cfa0
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=The writing sentence states time spent writing and does not assert completion.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=b54db4f0f86e8696b5e1a700e600801c42a73800150d72b31bb1d4ec3912049f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u23-completion-5`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36b06befcee7c68fd405c3a860aaf9f1a886ce2bc37884dfb5704801f2e0c6e2
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=Анна читала статью два часа.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=c0291f42c8579211da23e17671e74382f1b3e281c9111582a62677e295c3a4ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u23-completion-6`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9f60588d0cd91d00401f9facc5e7db8bf6da8c23b7bb2d053e4fc084b5fb9aa4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=Анна прочитала статью за два часа.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=64a3766ba4ebeefe8df8601d6611d14d20a118eb9656bb4e1db2a5cde88594e6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u23-completion-7`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f1ad25687d4983067ddaf018bc23eb9ef6394d1e9d62635ead8e991821d89534
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=Борис писал письмо час.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=077942a1a975187b2cf6523a16f773a8b2eed4f0593fb6969df5e5859d411a70
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u23-completion-8`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 22a25ecce00c90cea3b50251be4a8594043f6aef8850e3db4ad821df2e26f004
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=time spent reading without asserting completion
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=a38e2a76d9fcdae2ab893aa266d815daff494377efc69f9863983b9dad553049
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u23-completion-9`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 779c50633d5ac9bbd377a7a96c6a8edc202585c2580ee9027330f65eaafcbaf1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:completion-over-period
+originalSourceText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+The reading sentence states time spent reading and does not assert completion.
+The finished-article sentence states that the article was completed within the stated period.
+The writing sentence states time spent writing and does not assert completion.
+Анна читала статью два часа.
+Анна прочитала статью за два часа.
+Борис писал письмо час.
+time spent reading without asserting completion
+the article was finished within two hours
+time spent writing without asserting completion
+Which English label matches the shown writing sentence?
+Which English label matches the shown reading sentence?
+Which English label matches the shown completed sentence?
+shippedText=the article was finished within two hours
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+contentHash=9645be4c3a52abf425c568ec89151efb525bc214fd42695779da030ef8e639ed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u23-duration-rem`
 
 - Objectives: obj-u23-duration
@@ -3645,6 +4460,21 @@ CC BY-SA 4.0
 Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171 retrieved 2026-09-26T22:52:41Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 92eaa6f12bb405d916c9b9fc01fbc988620c90737878f13e1e61845a549d0bb5
+
+Independently authored research synthesis
+Original app text
+Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+Original research synthesis. Not a quotation of a third-party page.
+
 ### SOURCE `src-wikibooks-russian-cc-by-sa`
 
 - Objectives: none
@@ -3687,6 +4517,20 @@ Original
 
 src-pressbooks-diverse-russian-usa-grammar
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 65ca0e4f268b6158cbfafc95d43b79c9894d018f538d27b8cf21e7000b24fbed
+
+src-original-research-synthesis
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-wikibooks-russian-cc-by-sa`
@@ -3771,7 +4615,14 @@ permitsAppUse=true
 - `obj-u23-elapsed` REMEDIATION `u23-st-rem-elapsed`
 - `obj-u23-book` INSTRUCTION `u23-st-book-work`
 - `obj-u23-book` INSTRUCTION `u23-st-book`
-- `obj-u23-completion` INSTRUCTION `u23-st-gap-completion`
+- `obj-u23-completion` INSTRUCTION `u23-st-teach-completion-1`
+- `obj-u23-completion` INSTRUCTION `u23-st-teach-completion-2`
+- `obj-u23-completion` EXAMPLE `ex-u23-completion-0`
+- `obj-u23-completion` EXAMPLE `ex-u23-completion-1`
+- `obj-u23-completion` PRACTICE `u23-st-guided-completion-1`
+- `obj-u23-completion` CHECK `u23-i-completion-1`
+- `obj-u23-completion` CHECK `u23-i-completion-2`
+- `obj-u23-completion` REMEDIATION `u23-st-rem-completion`
 - `u23-s-orient` OBJECTIVE `obj-u23-ranges`
 - `u23-s-orient` OBJECTIVE `obj-u23-beginning`
 - `u23-s-orient` OBJECTIVE `obj-u23-during-event`
@@ -3847,7 +4698,16 @@ permitsAppUse=true
 - `u23-s-book` OBJECTIVE `obj-u23-book`
 - `u23-st-book-work` REFERENCE `ref-u2125-attribution`
 - `u23-s-gap-completion` OBJECTIVE `obj-u23-completion`
-- `u23-st-gap-completion` REFERENCE `ref-u2125-attribution`
+- `u23-st-teach-completion-1` EXAMPLE `ex-u23-completion-0`
+- `u23-st-teach-completion-1` REFERENCE `ref-u2125-attribution`
+- `u23-st-guided-completion-1` REMEDIATION `u23-st-rem-completion`
+- `u23-st-guided-completion-1` ITEM `u23-g-completion-1`
+- `u23-st-teach-completion-2` EXAMPLE `ex-u23-completion-1`
+- `u23-st-rem-completion` EXAMPLE `ex-u23-completion-0`
+- `u23-st-rem-completion` EXAMPLE `ex-u23-completion-1`
+- `u23-st-check-completion` REMEDIATION `u23-st-rem-completion`
+- `u23-st-check-completion` ITEM `u23-i-completion-1`
+- `u23-st-check-completion` ITEM `u23-i-completion-2`
 - `obj-u23-beginning` PROVENANCE `prov-ex-u23-beginning-0-en`
 - `obj-u23-beginning` PROVENANCE `prov-ex-u23-beginning-0-ru`
 - `obj-u23-beginning` PROVENANCE `prov-ex-u23-beginning-1-en`
@@ -3876,6 +4736,20 @@ permitsAppUse=true
 - `obj-u23-ranges` PROVENANCE `prov-ex-u23-ranges-1-ru`
 - `obj-u23-beginning` PROVENANCE `prov-u23-beginning-rem`
 - `obj-u23-beginning` PROVENANCE `prov-u23-beginning-x-0`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-0`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-1`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-10`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-11`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-12`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-13`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-2`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-3`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-4`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-5`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-6`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-7`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-8`
+- `obj-u23-completion` PROVENANCE `prov-u23-completion-9`
 - `obj-u23-duration` PROVENANCE `prov-u23-duration-rem`
 - `obj-u23-duration` PROVENANCE `prov-u23-duration-x-0`
 - `obj-u23-during-event` PROVENANCE `prov-u23-during-event-rem`
@@ -3893,7 +4767,8 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-- `u23-st-gap-completion`
+None.
+
 
 ## Unresolved relationships
 
