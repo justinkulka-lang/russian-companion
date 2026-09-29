@@ -1,9 +1,10 @@
 package dev.russiancompanion.v2.curriculum
 
+import java.io.File
 import java.security.MessageDigest
 
 internal object V2Validator {
-    fun validate(pack: V2CurriculumPack): V2Validation {
+    fun validate(pack: V2CurriculumPack, repositoryRoot: File? = null): V2Validation {
         val errors = mutableListOf<String>()
         if (pack.schemaVersion != 1) errors += "Unsupported curriculum schema ${pack.schemaVersion}"
         if (pack.units.size != 30) errors += "The map must contain exactly 30 Penguin-aligned units"
@@ -35,8 +36,8 @@ internal object V2Validator {
         validateAuthoredEnglish(pack, errors)
         validateLearnerFacingMarkup(pack, errors)
         validateGovernedReadyRussianText(pack, errors)
-        validateReview(pack, errors)
-        validateUnitReviews(pack, errors)
+        validateReview(pack, repositoryRoot, errors)
+        validateUnitReviews(pack, repositoryRoot, errors)
         validateSourcesAndRights(pack, errors)
         pack.units.forEach { unit ->
             if (unit.penguinLesson != unit.number) {
@@ -47,7 +48,7 @@ internal object V2Validator {
                 return@forEach
             }
             when (unit.installState) {
-                "INSTALLED" -> validateInstalled(pack, unit, errors)
+                "INSTALLED" -> validateInstalled(pack, unit, repositoryRoot, errors)
                 "DEVELOPMENT" -> validateDevelopment(pack, unit, errors)
                 "NOT_YET_INSTALLED" -> validateUninstalled(unit, errors)
             }
@@ -97,7 +98,7 @@ internal object V2Validator {
      * This is the same decision [validate] records when a chain claims
      * OWNER_ACCEPTED. A reduced review DTO cannot call it.
      */
-    internal fun linguisticReleaseAccepted(pack: V2CurriculumPack): Boolean {
+    internal fun linguisticReleaseAccepted(pack: V2CurriculumPack, repositoryRoot: File? = null): Boolean {
         val packReview = pack.linguisticReview
         if (!reviewReleaseAccepted(
                 packReview.status,
@@ -106,10 +107,12 @@ internal object V2Validator {
                 contentReviewDigest(pack),
                 packReview.evidence,
                 packReview.finalAudit,
+                repositoryRoot,
             )
         ) {
             return false
         }
+        val packArtifact = packReview.finalAudit?.artifactIdentity
         val byUnit = pack.unitReviews.groupBy { it.unitNumber }
         return (1..30).all { number ->
             val review = byUnit[number]?.singleOrNull() ?: return@all false
@@ -120,6 +123,9 @@ internal object V2Validator {
                 unitContentReviewDigest(pack, number),
                 review.evidence,
                 review.finalAudit,
+                repositoryRoot,
+                number,
+                packArtifact,
             )
         }
     }
@@ -551,7 +557,7 @@ internal object V2Validator {
         }
     }
 
-    private fun validateReview(pack: V2CurriculumPack, errors: MutableList<String>) {
+    private fun validateReview(pack: V2CurriculumPack, repositoryRoot: File?, errors: MutableList<String>) {
         val review = pack.linguisticReview
         if (review.status !in CLOSED_REVIEW_STATES) {
             errors += "Unrecognized linguistic review status ${review.status}"
@@ -581,11 +587,14 @@ internal object V2Validator {
             contentReviewDigest(pack),
             review.evidence,
             review.finalAudit,
+            repositoryRoot,
+            null,
+            null,
             errors,
         )
     }
 
-    private fun validateUnitReviews(pack: V2CurriculumPack, errors: MutableList<String>) {
+    private fun validateUnitReviews(pack: V2CurriculumPack, repositoryRoot: File?, errors: MutableList<String>) {
         val seen = mutableSetOf<Int>()
         pack.unitReviews.forEach { review ->
             if (review.unitNumber !in 1..30) {
@@ -621,6 +630,9 @@ internal object V2Validator {
                 unitContentReviewDigest(pack, review.unitNumber),
                 review.evidence,
                 review.finalAudit,
+                repositoryRoot,
+                review.unitNumber,
+                pack.linguisticReview.finalAudit?.artifactIdentity,
                 errors,
             )
         }
@@ -634,6 +646,9 @@ internal object V2Validator {
         currentContentDigest: String,
         evidence: V2PersistedEvidence?,
         finalAudit: V2FinalAuditIdentity?,
+        repositoryRoot: File?,
+        auditUnitNumber: Int?,
+        packArtifactIdentity: String?,
         errors: MutableList<String>,
     ) {
         if (status !in REVIEW_CHAIN) return
@@ -645,6 +660,9 @@ internal object V2Validator {
                 currentContentDigest,
                 evidence,
                 finalAudit,
+                repositoryRoot,
+                auditUnitNumber,
+                packArtifactIdentity,
             ),
         )
         defects.forEach { errors += "$label $it" }
@@ -671,7 +689,7 @@ internal object V2Validator {
         }
     }
 
-    private fun validateInstalled(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
+    private fun validateInstalled(pack: V2CurriculumPack, unit: V2Unit, repositoryRoot: File?, errors: MutableList<String>) {
         if (unit.number !in 1..2) {
             errors += "Only Units 1-2 may be installed in this pack"
         }
@@ -685,6 +703,9 @@ internal object V2Validator {
                 unitContentReviewDigest(pack, unit.number),
                 installedReview.evidence,
                 installedReview.finalAudit,
+                repositoryRoot,
+                unit.number,
+                pack.linguisticReview.finalAudit?.artifactIdentity,
             )
         if (!legacyApproved && !chainAccepted) {
             errors += "Installed unit ${unit.number} review chain is not OWNER_ACCEPTED"

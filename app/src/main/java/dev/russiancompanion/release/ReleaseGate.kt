@@ -627,7 +627,7 @@ private fun v2CurriculumBlockers(repositoryRoot: File): List<ReleaseBlocker> {
     val packFile = File(repositoryRoot, "app/src/main/assets/content/v2-curriculum.json")
     if (!packFile.isFile || packFile.length() == 0L) return V2_RELEASE_BLOCKERS
     return try {
-        curriculumBlockers(V2PackLoader.parse(packFile.readText()))
+        curriculumBlockers(V2PackLoader.parse(packFile.readText()), repositoryRoot)
     } catch (_: SerializationException) {
         V2_RELEASE_BLOCKERS
     } catch (_: IllegalArgumentException) {
@@ -635,11 +635,11 @@ private fun v2CurriculumBlockers(repositoryRoot: File): List<ReleaseBlocker> {
     }
 }
 
-internal fun curriculumBlockers(pack: V2CurriculumPack): List<ReleaseBlocker> {
+internal fun curriculumBlockers(pack: V2CurriculumPack, repositoryRoot: File): List<ReleaseBlocker> {
     val blockers = mutableListOf<ReleaseBlocker>()
     val installed = pack.units.filter { it.installState == "INSTALLED" }.map { it.number }.toSet()
     if ((1..30).any { it !in installed }) blockers += ReleaseBlocker.V2_UNITS_NOT_INSTALLED
-    if (!V2Validator.linguisticReleaseAccepted(pack)) blockers += ReleaseBlocker.LINGUISTIC_REVIEW_ABSENT
+    if (!V2Validator.linguisticReleaseAccepted(pack, repositoryRoot)) blockers += ReleaseBlocker.LINGUISTIC_REVIEW_ABSENT
     if (pack.units.any { it.mappingStatus != "APPROVED" }) {
         blockers += ReleaseBlocker.PENGUIN_MAPPING_UNAPPROVED
     }

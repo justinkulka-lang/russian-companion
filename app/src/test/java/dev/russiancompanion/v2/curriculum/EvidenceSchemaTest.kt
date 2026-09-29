@@ -7,6 +7,7 @@ import org.junit.Assert.assertNotEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
+import java.nio.file.Files
 
 class EvidenceSchemaTest {
     @Test
@@ -75,13 +76,15 @@ class EvidenceSchemaTest {
     @Test
     fun ownerAcceptanceRequiresThePriorChainAMatchingDigestAndEvidence() {
         val quoted = quotedEvidence()
+        val retained = retainPackAudit(DIGEST)
         val complete = ApprovalAttempt(
             stage = OWNER_ACCEPTED,
             priorStages = PRIOR_REVIEW_STAGES,
             reviewedContentDigest = DIGEST,
             currentContentDigest = DIGEST,
             evidence = quoted,
-            reviewFinalAudit = validAudit(),
+            reviewFinalAudit = retained.identity,
+            repositoryRoot = retained.root,
             ciGreen = true,
         )
         assertTrue(approvalGranted(complete))
@@ -116,13 +119,15 @@ class EvidenceSchemaTest {
 
     @Test
     fun stageSequenceMustEqualTheExactRequiredPrefix() {
+        val retained = retainPackAudit(DIGEST)
         val complete = ApprovalAttempt(
             stage = OWNER_ACCEPTED,
             priorStages = PRIOR_REVIEW_STAGES,
             reviewedContentDigest = DIGEST,
             currentContentDigest = DIGEST,
             evidence = quotedEvidence(),
-            reviewFinalAudit = validAudit(),
+            reviewFinalAudit = retained.identity,
+            repositoryRoot = retained.root,
         )
         assertTrue(reviewChainDefects(complete).isEmpty())
         assertTrue(reviewChainDefects(ApprovalAttempt(stage = IMPLEMENTED_PENDING_FINAL_AUDIT)).isEmpty())
@@ -148,6 +153,10 @@ class EvidenceSchemaTest {
         assertTrue(finalAuditDefects(validAudit().copy(artifactDigest = ""), DIGEST).any { it.contains("audit artifact digest") })
         assertTrue(finalAuditDefects(validAudit().copy(artifactDigest = "not yet passed"), DIGEST).any { it.contains("audit artifact digest") })
         assertTrue(finalAuditDefects(validAudit(EARLIER_DIGEST), DIGEST).any { it.contains("mismatch") })
+        assertTrue(finalAuditDefects(validAudit().copy(date = "2026-99-99"), DIGEST).any { it.contains("audit date") })
+        assertTrue(finalAuditDefects(validAudit().copy(date = "2026-02-31"), DIGEST).any { it.contains("audit date") })
+        assertTrue(reviewChainDefects(complete.copy(repositoryRoot = null)).any { it.contains("retained audit repository is absent") })
+        assertTrue(reviewChainDefects(complete.copy(reviewFinalAudit = retained.identity.copy(artifactDigest = ARTIFACT))).any { it.contains("do not match") })
     }
 
     @Test
@@ -262,13 +271,36 @@ class EvidenceSchemaTest {
     }
 
     private fun validAudit(digest: String = DIGEST) = V2FinalAuditIdentity(
-        artifactIdentity = "audit/final-curriculum-audit-v1.json",
+        artifactIdentity = "$AUTHORIZED_FINAL_AUDIT_DIRECTORY/final-curriculum-audit.json",
         artifactDigest = ARTIFACT,
         auditedContentDigest = digest,
         disposition = FINAL_CURRICULUM_AUDIT_PASSED,
         modelVersion = "claude-opus-4.1",
         date = "2026-09-29",
     )
+
+    private data class RetainedAudit(val root: File, val identity: V2FinalAuditIdentity)
+
+    private fun retainPackAudit(digest: String): RetainedAudit {
+        val root = Files.createTempDirectory("schema-final-audit").toFile()
+        val relative = "$AUTHORIZED_FINAL_AUDIT_DIRECTORY/final-curriculum-audit.json"
+        val bytes = encodeRetainedFinalAudit(
+            RetainedFinalAuditDocument(
+                schemaVersion = RETAINED_FINAL_AUDIT_SCHEMA,
+                disposition = FINAL_CURRICULUM_AUDIT_PASSED,
+                modelVersion = "claude-opus-4.1",
+                date = "2026-09-29",
+                auditedContentDigest = digest,
+            ),
+        )
+        val file = File(root, relative)
+        checkNotNull(file.parentFile).mkdirs()
+        file.writeBytes(bytes)
+        return RetainedAudit(
+            root,
+            validAudit(digest).copy(artifactDigest = sha256Bytes(bytes)),
+        )
+    }
 
     private fun quotedEvidence() = EvidenceRecord(
         evidenceClass = QUOTED_OR_ADAPTED_SOURCE,

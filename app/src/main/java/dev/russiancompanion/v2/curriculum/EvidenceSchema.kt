@@ -1,5 +1,7 @@
 package dev.russiancompanion.v2.curriculum
 
+import java.io.File
+
 /**
  * Amendment 1 review chain and evidence classes.
  * A pending stage, green CI, a counter, self-attestation, or a model name
@@ -46,7 +48,6 @@ internal val CLOSED_REVIEW_STATES = EVIDENCE_REVIEW_STATES
 internal const val RETAINED_BYTE_STATUS = "RETAINED"
 
 private val SHA256_HEX = Regex("^[0-9a-f]{64}$")
-private val ISO_DATE = Regex("^\\d{4}-\\d{2}-\\d{2}$")
 private val PLACEHOLDER = Regex(
     "(?i)(\\bnot yet passed\\b|\\btodo\\b|\\btbd\\b|\\bplaceholder\\b|\\bnone\\b|\\bpending\\b|\\bn/a\\b|^na$|\\bunspecified\\b)",
 )
@@ -64,6 +65,9 @@ internal data class ApprovalAttempt(
     val currentContentDigest: String? = null,
     val evidence: EvidenceRecord? = null,
     val reviewFinalAudit: V2FinalAuditIdentity? = null,
+    val repositoryRoot: File? = null,
+    val auditUnitNumber: Int? = null,
+    val packArtifactIdentity: String? = null,
     val ciGreen: Boolean = false,
     val countersComplete: Boolean = false,
     val selfAttested: Boolean = false,
@@ -96,7 +100,9 @@ internal fun finalAuditDefects(audit: V2FinalAuditIdentity?, governedDigest: Str
         missing += "audit disposition $FINAL_CURRICULUM_AUDIT_PASSED"
     }
     if (!isSubstantive(audit.modelVersion)) missing += "model version"
-    if (!ISO_DATE.matches(audit.date) || !isSubstantive(audit.date)) missing += "audit date"
+    if (!isIsoCalendarDate(audit.date) || !isSubstantive(audit.date)) missing += "audit date"
+    val pathDefect = finalAuditPathDefect(audit.artifactIdentity)
+    if (pathDefect != null && pathDefect != "retained audit artifact") missing += pathDefect
     return if (missing.isEmpty()) emptyList() else listOf("final audit is missing or invalid: ${missing.joinToString(", ")}")
 }
 
@@ -199,6 +205,13 @@ internal fun reviewChainDefects(attempt: ApprovalAttempt, enforceEvidence: Boole
             defects += "stage ${attempt.stage} digest does not match the governed content"
         }
         defects += finalAuditDefects(attempt.reviewFinalAudit, attempt.currentContentDigest)
+        defects += retainedFinalAuditDefects(
+            attempt.repositoryRoot,
+            attempt.reviewFinalAudit,
+            attempt.currentContentDigest,
+            attempt.auditUnitNumber,
+            attempt.packArtifactIdentity,
+        )
         val evidenceAudit = attempt.evidence?.originalSynthesis?.finalAudit
         if (attempt.evidence?.evidenceClass == ORIGINAL_RESEARCH_SYNTHESIS &&
             attempt.reviewFinalAudit != null &&
@@ -225,6 +238,9 @@ internal fun reviewAcceptanceAttempt(
     currentContentDigest: String,
     evidence: V2PersistedEvidence?,
     finalAudit: V2FinalAuditIdentity?,
+    repositoryRoot: File? = null,
+    auditUnitNumber: Int? = null,
+    packArtifactIdentity: String? = null,
 ): ApprovalAttempt = ApprovalAttempt(
     stage = status,
     priorStages = priorStages,
@@ -232,6 +248,9 @@ internal fun reviewAcceptanceAttempt(
     currentContentDigest = currentContentDigest,
     evidence = evidence?.toEvidenceRecord(),
     reviewFinalAudit = finalAudit,
+    repositoryRoot = repositoryRoot,
+    auditUnitNumber = auditUnitNumber,
+    packArtifactIdentity = packArtifactIdentity,
 )
 
 internal fun reviewReleaseAccepted(
@@ -241,6 +260,9 @@ internal fun reviewReleaseAccepted(
     currentContentDigest: String,
     evidence: V2PersistedEvidence?,
     finalAudit: V2FinalAuditIdentity?,
+    repositoryRoot: File? = null,
+    auditUnitNumber: Int? = null,
+    packArtifactIdentity: String? = null,
 ): Boolean = approvalGranted(
     reviewAcceptanceAttempt(
         status,
@@ -249,6 +271,9 @@ internal fun reviewReleaseAccepted(
         currentContentDigest,
         evidence,
         finalAudit,
+        repositoryRoot,
+        auditUnitNumber,
+        packArtifactIdentity,
     ),
 )
 

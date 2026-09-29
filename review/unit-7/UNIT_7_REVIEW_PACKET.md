@@ -16,7 +16,7 @@ Unit 7 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 7 
 - Mapping-package SHA-256: 20298ccd10fadcd359b2fa73bebf0e7309772c6c78ffbc71730225664717b28c
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
 - Review-package SHA-256: 2d4089058297e45e77ded2d1a80c879d570c0384697f78a4db2a337411a81627
-- Repository source SHA-256: 8eb2842505189a5f5ee09e841c6fb0837c5120bff069586fba8070e95be29f71
+- Repository source SHA-256: a982d0f164e5dbd9192d2faf2ddd2858fcf84aa31985a7b87aaf8dc48fbc7cf7
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
