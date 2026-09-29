@@ -243,7 +243,7 @@ class Units2125SourceIntakeTest {
             supplementalByOldid[page.getValue("oldid").jsonPrimitive.content] = bytes.toString(Charsets.UTF_8)
         }
         val intake = pack.provenanceRecords.filter { it.unitNumber in 21..25 }
-        assertEquals(339, intake.size)
+        assertEquals(374, intake.size)
         assertEquals(setOf(21, 22, 23, 24, 25), intake.map { it.unitNumber }.toSet())
         assertTrue(intake.none { it.sourceId == "src-openrussian-50e210c4" })
         assertTrue(intake.all { it.audioAssetId == null })
@@ -251,7 +251,13 @@ class Units2125SourceIntakeTest {
             assertEquals(sha256(record.originalSourceText), record.sourceHash)
             assertEquals(sha256(record.shippedText), record.contentHash)
             assertTrue(record.sourceRevision.isNotBlank())
-            if (record.sourceId == "src-pressbooks-diverse-russian-usa-grammar") {
+            if (record.sourceId == "src-original-research-synthesis") {
+                assertEquals("urn:russian-companion:original-research-synthesis:phase2-2026-09-29", record.sourceUrl)
+                assertEquals("phase2-2026-09-29", record.sourceRevision)
+                assertEquals("Original app text", record.licenseId)
+                assertEquals("urn:russian-companion:license:original-app-text", record.licenseUrl)
+                assertEquals("original research synthesis", record.transformation)
+            } else if (record.sourceId == "src-pressbooks-diverse-russian-usa-grammar") {
                 assertEquals("https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/", record.sourceUrl)
                 assertFalse(record.sourceUrl.contains("oldid="))
                 assertTrue(record.attribution.contains(record.sourceRevision))
@@ -259,6 +265,8 @@ class Units2125SourceIntakeTest {
                 assertFalse(record.attribution.contains("Wikipedia:Copyrights"))
                 assertFalse(record.attribution.contains("Wiktionary:Copyrights"))
                 assertFalse(record.attribution.contains("Wikibooks:Copyrights"))
+                assertEquals("CC BY-SA 4.0", record.licenseId)
+                assertEquals("https://creativecommons.org/licenses/by-sa/4.0/", record.licenseUrl)
             } else if (record.sourceId.startsWith("src-readyrussian-")) {
                 assertTrue(record.sourceUrl.contains("readyrussian.org"))
                 assertFalse(record.sourceUrl.contains("oldid="))
@@ -267,22 +275,24 @@ class Units2125SourceIntakeTest {
                 assertFalse(record.attribution.contains("Wikipedia:Copyrights"))
                 assertFalse(record.attribution.contains("Wiktionary:Copyrights"))
                 assertFalse(record.attribution.contains("Wikibooks:Copyrights"))
+                assertEquals("CC BY-SA 4.0", record.licenseId)
+                assertEquals("https://creativecommons.org/licenses/by-sa/4.0/", record.licenseUrl)
             } else {
                 assertTrue(record.sourceUrl.contains(record.sourceRevision))
+                assertEquals("CC BY-SA 4.0", record.licenseId)
+                assertEquals("https://creativecommons.org/licenses/by-sa/4.0/", record.licenseUrl)
+                val page = byOldid[record.sourceRevision] ?: supplementalByOldid.getValue(record.sourceRevision)
+                assertTrue(record.itemId, page.contains(record.originalSourceText))
+                if (record.sourceRevision in byOldid) {
+                    assertTrue(record.itemId, normalized(record.originalSourceText).contains(normalized(record.shippedText)))
+                }
             }
-            assertEquals("CC BY-SA 4.0", record.licenseId)
-            assertEquals("https://creativecommons.org/licenses/by-sa/4.0/", record.licenseUrl)
             assertTrue(record.attribution.isNotBlank())
             assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", record.reviewStatus)
             assertTrue(record.reviewerIdentity.isBlank())
             assertTrue(record.reviewerQualification.isBlank())
             assertTrue(record.reviewDate.isBlank())
             assertTrue(record.reviewedDigest.isBlank())
-            val page = byOldid[record.sourceRevision] ?: supplementalByOldid.getValue(record.sourceRevision)
-            assertTrue(record.itemId, page.contains(record.originalSourceText))
-            if (record.sourceRevision in byOldid) {
-                assertTrue(record.itemId, normalized(record.originalSourceText).contains(normalized(record.shippedText)))
-            }
             assertFalse(record.shippedText.contains("The New Penguin Russian Course"))
         }
         val brokenHash = pack.copy(

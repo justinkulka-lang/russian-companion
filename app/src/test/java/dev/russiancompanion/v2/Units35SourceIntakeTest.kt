@@ -52,6 +52,7 @@ class Units35SourceIntakeTest {
             "src-enwiktionary-prochitannyj-74232159",
             "src-enwiktionary-russian-entry-guidelines-92541199",
             "src-ruwikisource-vechera-5336197",
+            "src-original-research-synthesis",
         )
         pack.provenanceRecords.forEach { record ->
             assertTrue(record.itemId, record.sourceId in admitted)
@@ -65,6 +66,9 @@ class Units35SourceIntakeTest {
             assertTrue(record.attribution.isNotBlank())
             if (record.sourceId == "src-ruwikisource-vechera-5336197") {
                 assertEquals("Public domain", record.licenseId)
+            } else if (record.sourceId == "src-original-research-synthesis") {
+                assertEquals("Original app text", record.licenseId)
+                assertEquals("urn:russian-companion:license:original-app-text", record.licenseUrl)
             } else {
                 assertEquals("CC BY-SA 4.0", record.licenseId)
             }
@@ -73,7 +77,11 @@ class Units35SourceIntakeTest {
             assertEquals("", record.reviewDate)
             assertEquals("", record.reviewedDigest)
             assertEquals(null, record.audioAssetId)
-            val expectedLicense = if (record.sourceId == "src-ruwikisource-vechera-5336197") "Public domain" else "CC BY-SA 4.0"
+            val expectedLicense = when (record.sourceId) {
+                "src-ruwikisource-vechera-5336197" -> "Public domain"
+                "src-original-research-synthesis" -> "Original app text"
+                else -> "CC BY-SA 4.0"
+            }
             assertTrue(pack.sources.any { it.id == record.sourceId && it.license == expectedLicense })
             assertTrue(pack.rights.any { it.sourceId == record.sourceId && it.permitsAppUse && it.license == expectedLicense })
         }

@@ -1017,10 +1017,11 @@ internal object V2Validator {
     internal fun unresolvedPartialUnitAdvancementBlockers(pack: V2CurriculumPack, unit: V2Unit): List<String> {
         val unresolved = unresolvedRequiredSourceCapabilities(pack, unit.number).map { it.claim }.toSet()
         return when (unit.number) {
-            7 -> if ("bounded-manner-adverb-formation" in unresolved) {
-                listOf("Unit 7 is missing a bounded manner-adverb formation source capability")
-            } else {
-                emptyList()
+            7 -> when {
+                unresolved.isEmpty() -> emptyList()
+                "bounded-manner-adverb-formation" in unresolved ->
+                    listOf("Unit 7 is missing a bounded manner-adverb formation source capability")
+                else -> listOf("Unit 7 is missing a required source capability")
             }
             17 -> unit17SourceBlockers(unresolved)
             19 -> if ("probability-dolzhen" in unresolved) {

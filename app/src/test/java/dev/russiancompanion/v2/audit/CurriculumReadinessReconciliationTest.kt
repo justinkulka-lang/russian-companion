@@ -128,7 +128,7 @@ class CurriculumReadinessReconciliationTest {
         }
         val unit7 = model.units.first { it.unitNumber == 7 }
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit7.readiness)
-        assertFalse(unit7.advancementCanPresentlySucceed)
+        assertTrue(unit7.advancementCanPresentlySucceed)
         assertFalse(unit7.finalDisposition.contains("INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"))
         assertTrue((16..30).all { number -> model.units.first { it.unitNumber == number }.assetBlocker == "NONE" })
         listOf(16, 18, 20).forEach { number ->

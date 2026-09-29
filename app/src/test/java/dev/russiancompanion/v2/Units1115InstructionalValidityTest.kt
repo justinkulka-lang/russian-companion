@@ -313,9 +313,10 @@ class Units1115InstructionalValidityTest {
         assertFalse(unprepared.contains(28))
         assertTrue(unprepared.contains(30))
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(7)!!.readiness)
-        val falseClaim = "Units 19 through 23 contain proposed lesson bodies that still need qualified review."
-        assertTrue(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(23))
-        assertFalse(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(19))
+        val falseClaim = "Units 26 through 30 contain proposed lesson bodies that still need qualified review."
+        assertTrue(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(26))
+        assertTrue(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(30))
+        assertFalse(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(28))
         val reference = pack.references.first { it.id == "ref-book-topics" }
         assertEquals(
             "Some units contain proposed lesson bodies that still require qualified review.",
