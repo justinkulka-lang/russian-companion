@@ -10,10 +10,20 @@ The unresolved set below is `V2Validator.unresolvedRequiredSourceCapabilities` o
 | --- | --- |
 | Branch | `cursor/post-pr53-readiness-reconciliation-964f` |
 | Base commit | `6457e690776ff12349d55f0d1ffe03a95626ea23` |
-| Head commit | `ad813aa42e5172f3c993f5581b22782a0e0327c5` |
+| Recorded content commit | `ad813aa42e5172f3c993f5581b22782a0e0327c5` |
 | Draft PR | `https://github.com/justinkulka-lang/russian-companion/pull/54` |
 
-The base commit is the merge commit of PR #53 on canonical `main`. The recorded head commit is the commit that records the pull request URL and the local gate results. The regression test requires that recorded head to be `HEAD` or `HEAD`'s first parent. A pull-request checkout is a merge commit, so the same check uses that merge's second parent and its parent. The branch tip that corrects the pull-request checkout is the child of the recorded head.
+The base commit is the merge commit of PR #53 on canonical `main`. The recorded content commit is the commit that records the pull request URL and the local gate results. The regression test names it `reportContentCommit`. It is not the exact pull-request head.
+
+On a normal branch checkout the test diffs `reportContentCommit` against `HEAD`. On a GitHub pull-request checkout `HEAD` is a synthetic merge, and the test diffs `reportContentCommit` against `HEAD^2`, the pull-request branch head. Matching `HEAD^2^` is not acceptance.
+
+The only paths that may differ after the recorded content commit are:
+
+- `app/src/test/java/dev/russiancompanion/v2/audit/PostPr53ReadinessReconciliationTest.kt`
+- `audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.json`
+- `audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.md`
+
+Each of those paths must be a modification. A production source change, a curriculum or catalog change, any other path, or a curriculum-bearing change in this report fails the lock. Sections 2 through 11 of this report are unchanged from the recorded content commit.
 
 Public release remains `NOT_APPROVED`. The candidate remains unfrozen. `sourceCommit` remains null. Artifact status remains `NOT_RECORDED`. AT-031 remains `UNEXECUTED`.
 
@@ -244,3 +254,5 @@ Run on content commit `dc98eeba48ffbbeb17ce835f3700bde158d4a4d3`.
 ## 12. Regression lock
 
 `PostPr53ReadinessReconciliationTest` compares this report's unit matrix and named dispositions with `reconcileCurriculumReadiness` on the packaged pack. A stale unresolved claim, a disappeared unresolved claim, an empty-list mapping misread, a readiness flip, or a variance activation fails that test.
+
+The same test diffs `reportContentCommit` against the branch head: `HEAD` on a normal checkout, and `HEAD^2` on a synthetic pull-request merge. The diff may modify only the three paths in section 1. Any other path, any non-modification, a stale recorded commit, or a curriculum-bearing change in this report fails the test.

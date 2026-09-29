@@ -6,6 +6,7 @@ import dev.russiancompanion.v2.curriculum.BatchBSources
 import dev.russiancompanion.v2.curriculum.V2Validator
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonNull
+import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.boolean
 import kotlinx.serialization.json.jsonArray
 import kotlinx.serialization.json.jsonObject
@@ -18,8 +19,9 @@ import java.io.File
 
 /**
  * Locks the post-PR-53 diagnosis to the packaged curriculum.
- * A stale unresolved claim, a silently cleared claim, or a report that
- * drifts from the live reconciler fails this test.
+ * A stale unresolved claim, a silently cleared claim, a report that
+ * drifts from the live reconciler, or an unexpected path after the
+ * recorded content commit fails this test.
  */
 class PostPr53ReadinessReconciliationTest {
     @Test
@@ -32,23 +34,46 @@ class PostPr53ReadinessReconciliationTest {
 
         assertEquals("cursor/post-pr53-readiness-reconciliation-964f", report.getValue("branch").jsonPrimitive.content)
         assertEquals(BASE_COMMIT, report.getValue("baseCommit").jsonPrimitive.content)
-        val recordedHead = report.getValue("headCommit").jsonPrimitive.content
-        val head = git(root, "rev-parse", "HEAD")
-        val parent = git(root, "rev-parse", "HEAD^")
-        val pullRequestHead = gitOrNull(root, "rev-parse", "--verify", "HEAD^2")
-        if (pullRequestHead != null) {
-            val pullRequestParent = git(root, "rev-parse", "HEAD^2^")
-            assertTrue(
-                "pull-request checkout recorded=$recordedHead prHead=$pullRequestHead prParent=$pullRequestParent",
-                recordedHead == pullRequestHead || recordedHead == pullRequestParent,
-            )
-        } else {
-            assertTrue(
-                "recorded=$recordedHead head=$head parent=$parent",
-                recordedHead == head || recordedHead == parent,
-            )
+        assertFalse(report.containsKey("headCommit"))
+        val recorded = report.getValue("reportContentCommit").jsonPrimitive.content
+        assertEquals(REPORT_CONTENT_COMMIT, recorded)
+        val allowlist = report.getValue("postReportAllowlist").jsonArray.map { it.jsonPrimitive.content }
+        assertEquals(POST_REPORT_ALLOWLIST, allowlist)
+        val branchHead = reconciliationBranchHead(root)
+        assertTrue("recorded=$recorded branchHead=$branchHead", recorded != branchHead)
+        assertEquals(0, gitExit(root, "merge-base", "--is-ancestor", recorded, branchHead))
+        assertEquals(0, gitExit(root, "merge-base", "--is-ancestor", BASE_COMMIT, branchHead))
+        val secondParent = gitOrNull(root, "rev-parse", "--verify", "HEAD^2")
+        if (secondParent != null) {
+            assertEquals(secondParent, branchHead)
+            assertTrue(secondParent != git(root, "rev-parse", "HEAD^"))
         }
-        assertEquals(0, gitExit(root, "merge-base", "--is-ancestor", BASE_COMMIT, "HEAD"))
+        val entries = postReportNameStatus(root, recorded, branchHead)
+        assertTrue(
+            "post-report entries=$entries",
+            postReportStatusesAllowed(entries, POST_REPORT_ALLOWLIST),
+        )
+        val recordedReport = Json.parseToJsonElement(
+            git(root, "show", "$recorded:audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.json"),
+        ).jsonObject
+        assertEquals("dc98eeba48ffbbeb17ce835f3700bde158d4a4d3", recordedReport.getValue("headCommit").jsonPrimitive.content)
+        assertFalse(recordedReport.containsKey("reportContentCommit"))
+        assertFalse(recordedReport.getValue("localGates").jsonObject.containsKey("checkoutCorrectionRerun"))
+        assertEquals(curriculumPayload(recordedReport), curriculumPayload(report))
+        assertEquals(
+            "testDebugUnitTest 434 tests, 0 failures, 1 skipped; assembleDebug, lintDebug, verifyReleaseGateAttachment BUILD SUCCESSFUL; assembleRelease FAILED at checkReleaseGate; no release APK",
+            report.getValue("localGates").jsonObject.getValue("checkoutCorrectionRerun").jsonPrimitive.content,
+        )
+        val recordedMarkdown = git(root, "show", "$recorded:audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.md")
+        val body = "## 2. Units"
+        val lock = "## 12. Regression lock"
+        assertEquals(
+            recordedMarkdown.substring(recordedMarkdown.indexOf(body), recordedMarkdown.indexOf(lock)),
+            markdown.substring(markdown.indexOf(body), markdown.indexOf(lock)),
+        )
+        POST_REPORT_ALLOWLIST.forEach { path -> assertTrue(markdown.contains(path)) }
+        assertTrue(markdown.contains("HEAD^2"))
+        assertTrue(markdown.contains(recorded))
         assertTrue(markdown.contains(report.getValue("draftPullRequestUrl").jsonPrimitive.content))
 
         assertEquals(live.packContentReviewDigest, report.getValue("packContentReviewDigest").jsonPrimitive.content)
@@ -227,11 +252,116 @@ class PostPr53ReadinessReconciliationTest {
         assertEquals(setOf(27, 29, 30), (1..30).filter { V2Validator.authorityVarianceApplies(it) }.toSet())
     }
 
+    @Test
+    fun unexpectedFileBetweenRecordedContentCommitAndBranchHeadFailsTheLock() {
+        val allowed = POST_REPORT_ALLOWLIST.map { "M" to it }
+        assertTrue(postReportStatusesAllowed(allowed, POST_REPORT_ALLOWLIST))
+        assertFalse(
+            postReportStatusesAllowed(
+                allowed + ("M" to "app/src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt"),
+                POST_REPORT_ALLOWLIST,
+            ),
+        )
+        assertFalse(
+            postReportStatusesAllowed(
+                allowed + ("A" to "app/src/main/assets/content/v2-curriculum.json"),
+                POST_REPORT_ALLOWLIST,
+            ),
+        )
+        assertFalse(
+            postReportStatusesAllowed(
+                allowed + ("M" to "catalog/build_v2_curriculum.py"),
+                POST_REPORT_ALLOWLIST,
+            ),
+        )
+        assertFalse(
+            postReportStatusesAllowed(
+                allowed + ("M" to "audit/post-pr53-readiness/UNEXPECTED.md"),
+                POST_REPORT_ALLOWLIST,
+            ),
+        )
+        assertFalse(postReportStatusesAllowed(emptyList(), POST_REPORT_ALLOWLIST))
+        assertFalse(
+            postReportStatusesAllowed(
+                listOf("D" to POST_REPORT_ALLOWLIST.first()),
+                POST_REPORT_ALLOWLIST,
+            ),
+        )
+    }
+
+    @Test
+    fun syntheticMergeValidatesTheSecondParentRatherThanItsParent() {
+        val directory = File("build/post-pr53-synthetic-merge").apply {
+            deleteRecursively()
+            mkdirs()
+        }
+        try {
+            git(directory, "init", "-b", "main")
+            git(directory, "config", "user.email", "audit@example.com")
+            git(directory, "config", "user.name", "audit")
+            File(directory, "README").writeText("base\n")
+            git(directory, "add", "README")
+            git(directory, "-c", "commit.gpgsign=false", "commit", "-m", "base")
+            git(directory, "checkout", "-b", "pr")
+            File(directory, "report.txt").writeText("recorded\n")
+            git(directory, "add", "report.txt")
+            git(directory, "-c", "commit.gpgsign=false", "commit", "-m", "recorded")
+            val recorded = git(directory, "rev-parse", "HEAD")
+            File(directory, "app/src/main").mkdirs()
+            File(directory, "app/src/main/Evil.kt").writeText("change\n")
+            git(directory, "add", "app/src/main/Evil.kt")
+            git(directory, "-c", "commit.gpgsign=false", "commit", "-m", "unexpected production change")
+            val pullRequestHead = git(directory, "rev-parse", "HEAD")
+            git(directory, "checkout", "main")
+            git(directory, "-c", "commit.gpgsign=false", "merge", "--no-ff", "pr", "-m", "merge")
+            val branchHead = reconciliationBranchHead(directory)
+            assertEquals(pullRequestHead, branchHead)
+            assertEquals(pullRequestHead, git(directory, "rev-parse", "HEAD^2"))
+            assertEquals(recorded, git(directory, "rev-parse", "HEAD^2^"))
+            val againstBranchHead = postReportNameStatus(directory, recorded, branchHead)
+            assertEquals(listOf("A" to "app/src/main/Evil.kt"), againstBranchHead)
+            assertFalse(postReportStatusesAllowed(againstBranchHead, POST_REPORT_ALLOWLIST))
+            assertTrue(postReportNameStatus(directory, recorded, git(directory, "rev-parse", "HEAD^2^")).isEmpty())
+        } finally {
+            directory.deleteRecursively()
+        }
+    }
+
     private fun reportFile(root: File, extension: String): File {
         return File(root, "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.$extension")
     }
 
     private fun root(): File = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
+
+    private fun reconciliationBranchHead(root: File): String {
+        return gitOrNull(root, "rev-parse", "--verify", "HEAD^2")
+            ?: git(root, "rev-parse", "HEAD")
+    }
+
+    private fun postReportNameStatus(root: File, from: String, to: String): List<Pair<String, String>> {
+        val text = git(root, "diff", "--name-status", "--no-renames", from, to)
+        if (text.isEmpty()) return emptyList()
+        return text.lines().filter { it.isNotBlank() }.map { line ->
+            val parts = line.split('\t')
+            assertEquals(line, 2, parts.size)
+            parts[0] to parts[1]
+        }.sortedBy { it.second }
+    }
+
+    private fun postReportStatusesAllowed(
+        entries: List<Pair<String, String>>,
+        allowlist: List<String>,
+    ): Boolean {
+        if (entries.any { it.first != "M" }) return false
+        return entries.map { it.second } == allowlist.sorted()
+    }
+
+    private fun curriculumPayload(report: JsonObject): JsonObject {
+        val top = report.filterKeys { it !in IDENTITY_KEYS }
+        val gates = top.getValue("localGates").jsonObject
+        val strippedGates = JsonObject(gates.filterKeys { it != "checkoutCorrectionRerun" })
+        return JsonObject(top + ("localGates" to strippedGates))
+    }
 
     private fun git(root: File, vararg args: String): String {
         val text = gitOrNull(root, *args)
@@ -267,6 +397,13 @@ class PostPr53ReadinessReconciliationTest {
 
     private companion object {
         const val BASE_COMMIT = "6457e690776ff12349d55f0d1ffe03a95626ea23"
+        const val REPORT_CONTENT_COMMIT = "ad813aa42e5172f3c993f5581b22782a0e0327c5"
+        val POST_REPORT_ALLOWLIST = listOf(
+            "app/src/test/java/dev/russiancompanion/v2/audit/PostPr53ReadinessReconciliationTest.kt",
+            "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.json",
+            "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.md",
+        )
+        val IDENTITY_KEYS = setOf("headCommit", "reportContentCommit", "postReportAllowlist")
         val STALE_RESOLVED_CLAIMS = listOf(
             "productive-clock-time",
             "negation-scope",

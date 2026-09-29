@@ -3,7 +3,12 @@
   "kind": "post-pr53-curriculum-readiness-reconciliation",
   "branch": "cursor/post-pr53-readiness-reconciliation-964f",
   "baseCommit": "6457e690776ff12349d55f0d1ffe03a95626ea23",
-  "headCommit": "ad813aa42e5172f3c993f5581b22782a0e0327c5",
+  "reportContentCommit": "ad813aa42e5172f3c993f5581b22782a0e0327c5",
+  "postReportAllowlist": [
+    "app/src/test/java/dev/russiancompanion/v2/audit/PostPr53ReadinessReconciliationTest.kt",
+    "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.json",
+    "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.md"
+  ],
   "draftPullRequestUrl": "https://github.com/justinkulka-lang/russian-companion/pull/54",
   "phase": "DIAGNOSIS_AND_PLANNING_ONLY",
   "publicRelease": "NOT_APPROVED",
