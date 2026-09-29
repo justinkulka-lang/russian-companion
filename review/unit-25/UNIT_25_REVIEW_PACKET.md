@@ -15,8 +15,8 @@ Unit 25 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Unit content-review SHA-256: c3f4c00de92e5d3d9b0c30ca0c9663fc723dfdc06c1e4b30baa2e9a8cd9b771e
 - Mapping-package SHA-256: 93039c677b2f820c58bf274ebe94000f3a66541e821250bd478f9ed4c12b8431
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: c2bda100e1ce0c0092beda43747f598514591ac174be21c32d734f15f9efc567
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: a571464349edcd7c0e917436efb306dc2dcbdde8c0e354a614a4c508f3c54dec
+- Repository source SHA-256: 5d364a5c70e24735ca6e67032ef2d9ab65364ee4b168ef3afc41005fa750d3e9
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 744761e068f4a8170de7da6e318981964b0235e0b26a844d458c30a5e3fd1b31
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 236b8e3544db60873973032c8ac2d88bc5abe660fdcca4b256032f705df8eda4
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -1223,15 +1223,15 @@ remediationStepId=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 251c74f9cb9a4fab10efd108f9773f4ebc316da9c6a52de7593fc28f906cf939
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c3b9d7b88948693a631b46506d4eb6a222d99138b04b99d84f3da8ea45168180
 
 kind=LEXICAL
 letterId=
 display=имя
 note=first name
 objectiveId=obj-u25-name-structure
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-name-structure-1`
 
@@ -1240,15 +1240,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e54618f79176bcb777589db9a3392c67bf0dcbefb90c32f0d461709846da0e7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eac922e8e960758763350116bdfbeb327e17a3c2f9541ccd5f15ca28d53bcff4
 
 kind=LEXICAL
 letterId=
 display=отчество
 note=patronymic name
 objectiveId=obj-u25-name-structure
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-name-structure-2`
 
@@ -1257,15 +1257,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e798424bece0cbe181deecc5d009e6450b5a8225bcc85e3730283d27cae509a4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be241c3aa78747e20c0742b5b7ade851ff9d986ad8caa943a1335764c161d674
 
 kind=LEXICAL
 letterId=
 display=фамилия
 note=family name
 objectiveId=obj-u25-name-structure
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-name-structure-3`
 
@@ -1274,15 +1274,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2264508b4ffecb40270bcf76739259fc33326047406ec2265285ba951f146801
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d95db75a31a3f6ef84ce5f775759adaece34729f7d1fd0c1c57f7482d6bbf4a
 
 kind=LEXICAL
 letterId=
 display=Василий Иванович
 note=For instance
 objectiveId=obj-u25-name-structure
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-diminutives-0`
 
@@ -1291,15 +1291,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 02b78f6789e0a4e6213f30bf779695f259aec4eda5a3059935721d1489150a54
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8847281da9cc3b9caaf59f7a65dbdcd4cc701ea747f2a7895ad3d7f07937ad0a
 
 kind=LEXICAL
 letterId=
 display=Александр
 note=Alexander
 objectiveId=obj-u25-diminutives
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-diminutives-1`
 
@@ -1308,15 +1308,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8599b154e712b1843441d77f5aa77e829c5064f9aa31b1d81e600068a0ff5ab0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0fb0c2c2c3999ae506a0e8bcae186f43d3baa599e7eb8f9debbcc2037322bad1
 
 kind=LEXICAL
 letterId=
 display=Алексей
 note=Alexei
 objectiveId=obj-u25-diminutives
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-diminutives-2`
 
@@ -1325,15 +1325,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 556f9a8d48e4139c9aebc1c4d4859a0e2cb6cf5f836e05d6d2889b9c7b0d2419
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44add02b87a95e6b6e8ea03c4ae3ae361af6bf2309e0a3e3eeda582d4e65eb5a
 
 kind=LEXICAL
 letterId=
 display=Дмитрий
 note=Dmitri
 objectiveId=obj-u25-diminutives
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-courtesy-0`
 
@@ -1342,15 +1342,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d261da3ac6a6d5f119a92877f9bd2ee032dfdf14a6dbac607c9cb12db5fae2f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4e41a1b37d6c9d04232cd3fb88f707d66b6a77a6ee6e9fd1a425eeb09d4ea4d
 
 kind=LEXICAL
 letterId=
 display=Пожа́луйста
 note=please
 objectiveId=obj-u25-courtesy
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-courtesy-1`
 
@@ -1359,15 +1359,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 93cda172b7a4060ea87e384dd7f1ae9d2a34f8abb2c99711c6d4f8c5083f5832
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 90be63c59a4759f047380f6e9940946b8711938bfcb5bda07e93e841d3764665
 
 kind=LEXICAL
 letterId=
 display=Спаси́бо
 note=thanks
 objectiveId=obj-u25-courtesy
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-courtesy-2`
 
@@ -1376,15 +1376,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8078454416f5fc75253a48bcc3724b4a9b56ee466b268c59658e6b8357917020
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5249daa37838fbef226c67095fef33d4232442daccd5b8f5473c584119a10b2
 
 kind=LEXICAL
 letterId=
 display=Извини́те
 note=I'm sorry / excuse me (informal)
 objectiveId=obj-u25-courtesy
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-name-question-0`
 
@@ -1393,15 +1393,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba1a976bc515dc4da1f37bbc32c3ea6f7285f124208ac3bd98a1f4d03a5a5eb6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 03cc383bdae25af8f63d71261fe389017aa1edc387634bc4b6b3d6064be0c72d
 
 kind=LEXICAL
 letterId=
 display=Как Вас зову́т?
 note=What is your name?
 objectiveId=obj-u25-name-question
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-name-question-1`
 
@@ -1410,15 +1410,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8afbfb931d0c4973b72cb7be10d179c17f3f38af4094e3303ddf88b40de9a796
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 94a0d3d9cdaa3267f90beb198794d9495f3b072c1dac33a18a82cb05553518f0
 
 kind=LEXICAL
 letterId=
 display=Меня́ зову́т
 note=My name is...
 objectiveId=obj-u25-name-question
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-name-question-2`
 
@@ -1427,15 +1427,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3c28fca8cd7e73a4248fd3e65a3b1ba82c8070c9b861f40c4a40f3f1141109c1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b37f1741b4729c769405b0e1c86802d325e96cda25176c836dc41f22ad85eac5
 
 kind=LEXICAL
 letterId=
 display=Прошу́ проще́ния
 note=I'm sorry / excuse me (formal)
 objectiveId=obj-u25-name-question
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-name-question-3`
 
@@ -1444,15 +1444,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0aefb945ac58a2d5ff326de936832a18797547357dfd76bd7c7c70118f22af28
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3509d7200d294dee6669cbad2701caa3ff7619bf808af301353f4658a5a4d1cc
 
 kind=LEXICAL
 letterId=
 display=Как дела́?
 note=How are you?
 objectiveId=obj-u25-name-question
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-nickname-rule-0`
 
@@ -1461,15 +1461,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a853f2de41d12ed62d31c36c262dee8f8ae4fd48e2f931a0775aa8af04455b2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b3b81828f7ed671e2b917b4743b3275abc058fec7ed045a4616a0237a03ee0a8
 
 kind=LEXICAL
 letterId=
 display=Марюня
 note=от полной формы имени
 objectiveId=obj-u25-nickname-rule
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-nickname-rule-1`
 
@@ -1478,15 +1478,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 757eb01783ab514445c00aa0a69ad853702a57f990ade8dc5517d61101588d84
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f47ecb025342aaff7050d3e37b651d8574755ab555a31ab66cd49c62c9bf3d54
 
 kind=LEXICAL
 letterId=
 display=Машенька
 note=от краткой формы
 objectiveId=obj-u25-nickname-rule
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-nickname-rule-2`
 
@@ -1495,15 +1495,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a7e98a77e666cc1c550268f5ac535b8bdaa684f610afd67d50f101cbb1da1f5b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3dc735eff2a85468949a123b00189e84e906d28b3bdb79db9ee25846d18c571e
 
 kind=LEXICAL
 letterId=
 display=Сашка
 note=оттенок пренебрежения
 objectiveId=obj-u25-nickname-rule
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-address-0`
 
@@ -1512,15 +1512,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a29ead7c84cbdd26df49632e92bdd65a8db35c2c2c76b1c5052717b5b8f81a31
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2b374ee72a97e860240fb6c629e46755dc4351aceff0776722ea964c5cb8901
 
 kind=LEXICAL
 letterId=
 display=Ирина
 note=полные имена
 objectiveId=obj-u25-address
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-address-1`
 
@@ -1529,15 +1529,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 78ccb0a07324c3ed18306a9ea150cf5275103c353e7a91911a03147735948e56
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41c5dd326d52603a6c452c80b6b8f2a7e9319949274a2f9eeecd25bdfd3001e2
 
 kind=LEXICAL
 letterId=
 display=Ира
 note=краткие имена
 objectiveId=obj-u25-address
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-address-2`
 
@@ -1546,15 +1546,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e6d4193ac23ddf7eeaa6347dbddb59ea98bc7646577b70d2c827298ce0df8c9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b50026ca0c2fd1eb5156d4b872811b7f705a9f9778ac3fe140359e771ffc7361
 
 kind=LEXICAL
 letterId=
 display=Ирочка
 note=уменьшительно-ласкательные
 objectiveId=obj-u25-address
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u25-address-3`
 
@@ -1563,15 +1563,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5c3adf85d21af61bea684c952d06e421c1e19f4bce25a8c589793fc4d372632c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3e2df591ed0e8729304044ba48fdcc5e4bc4295f7cea2d11c351bb12db5c1312
 
 kind=LEXICAL
 letterId=
 display=полному имени
 note=отстранённо-официального регистра
 objectiveId=obj-u25-address
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u25-g-name-structure-0`
 
@@ -1580,8 +1580,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7330b2ae6b828f16c50f001ac3ca34188bc09ea63fab0d3266fe86d3740a6f58
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6bb21d592e42919ea07431c8aac45b6272a0534c7b1280296410f6b89cb61fe6
 
 kind=FORM_SELECTION
 language=en
@@ -1592,7 +1592,7 @@ answer=имя
 feedback=The frozen sentence says Russians use three names and pairs the shown words with this form. имя.
 objectiveId=obj-u25-name-structure
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen sentence pairs this form with patronymic name, not with the shown words. | The frozen sentence pairs this form with family name, not with the shown words. | The frozen sentence gives this ending for son of, not as the pair for the shown words.
 testedFeature=NAME_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1615,8 +1615,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b59f9ca7c0b9decce2a21e224c30f850ce7ed59a5d783ee8e45807095f95c7cf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f12e2db861c8716c5619a4616a3893cad79632c3f2dfdfe992ba035c5247bc1b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1627,7 +1627,7 @@ answer=Sasha
 feedback=The frozen list includes Sasha for Alexander as the pair for the shown name. Sasha.
 objectiveId=obj-u25-diminutives
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen list pairs Alyosha for Alexei with a different name. | The frozen list pairs Dima for Dmitri with a different name.
 testedFeature=SHORT_FORM_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1650,8 +1650,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e9dc87d9bd97cd3cc78e14b45c0df166c45ba2ed8ab4258e89c91df47a307f12
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a6d9d829fa0212179643722b48445af2cb0bbd05f4440685429c418de1528491
 
 kind=FORM_SELECTION
 language=en
@@ -1662,7 +1662,7 @@ answer=Пожа́луйста
 feedback=The frozen list says please; also used for a request and pairs that word with this form. Пожа́луйста.
 objectiveId=obj-u25-courtesy
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen list pairs thanks with a different form. | The frozen list pairs I'm sorry / excuse me (informal) with a different form.
 testedFeature=COURTESY_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1685,8 +1685,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5fa2218280f832a67e6c5678e8d897de561cd8b5526baa146a6804b7e5050deb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ccea6839c22e24cdefc6dc01a52bd12f76abc584a6f0c0439100060ba885ca40
 
 kind=FORM_SELECTION
 language=en
@@ -1697,7 +1697,7 @@ answer=Как Вас зову́т?
 feedback=The frozen list pairs What is your name? with this form and My name is... with the reply. Как Вас зову́т?
 objectiveId=obj-u25-name-question
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen list pairs My name is... with the reply, not with the shown question. | The frozen list pairs I'm sorry / excuse me (formal) with a different form.
 testedFeature=NAME_QUESTION_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1720,8 +1720,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee7d50a92711ddda24ca656cd055d57e273c3e6d35474a75829151a3ed11459d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1aa60b6b93ff3c5e6adb1235a0e67f261cd33af6227814cce3b338f2ece0a6c
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1732,7 +1732,7 @@ answer=от полной формы имени
 feedback=The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени. от полной формы имени.
 objectiveId=obj-u25-nickname-rule
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The source assigns от краткой формы to Машенька. | The source assigns оттенок пренебрежения to Сашка.
 testedFeature=DIMINUTIVE_FORM_CLASSIFICATION
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1755,8 +1755,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cdee00627b29d337abc24551b72e60bba028de478053fefa97755df07f2893e1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d462859684f55fa1cafab9b43899daef9286cbd2a1982f1731ee1eb86880ba8a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1767,7 +1767,7 @@ answer=полные имена
 feedback=The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина").
 objectiveId=obj-u25-address
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира"). | The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
 testedFeature=REGISTER_FULL
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1790,8 +1790,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1040efd01702ef89732ceb479cb0606ad83ca2fd5aa658e9b02b87808ae4f410
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ccfc755de84d66067bf19d5b0c1e5720efcaa49623af00cf9f328e7002375aa6
 
 kind=FORM_SELECTION
 language=en
@@ -1802,7 +1802,7 @@ answer=отчество
 feedback=The frozen sentence says Russians use three names and pairs patronymic name with this form. отчество.
 objectiveId=obj-u25-name-structure
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen sentence pairs this form with first name, not with the shown words. | The frozen sentence pairs this form with family name, not with the shown words. | The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
 testedFeature=NAME_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1825,8 +1825,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0e85470bb0909136524c854e898ecb9b8e693210e97eab9a589b55876419a285
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db476d68e149c3369f006fc730ba236f51e826bf2f620b2f37dcebc104335351
 
 kind=FORM_SELECTION
 language=en
@@ -1837,7 +1837,7 @@ answer=фамилия
 feedback=The frozen sentence says Russians use three names and pairs family name with this form. фамилия.
 objectiveId=obj-u25-name-structure
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen sentence pairs this form with first name, not with the shown words. | The frozen sentence pairs this form with patronymic name, not with the shown words. | The frozen sentence gives this ending for son of, not as the pair for the shown words.
 testedFeature=NAME_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1860,8 +1860,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c239a0a55d6d3fe814826035c2f5a896c635b9bac950a06340523736778f1368
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e204f8a0398e5f5fee70321682415927d6450d514b5929537a8ddab2e2c2f477
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1872,7 +1872,7 @@ answer=Alyosha
 feedback=The frozen list includes Alyosha for Alexei as the pair for the shown name. Alyosha.
 objectiveId=obj-u25-diminutives
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen list pairs Sasha for Alexander with a different name. | The frozen list pairs Dima for Dmitri with a different name.
 testedFeature=SHORT_FORM_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1895,8 +1895,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 038412db94c75edd733943bda22ba2cc27195766680544454354c7de1182a07c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a0b03d9aac2121bd5ed871e296442c29c8c08631c5ef9c746a60d9ff17319f12
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1907,7 +1907,7 @@ answer=Dima
 feedback=The frozen list includes Dima for Dmitri as the pair for the shown name. Dima.
 objectiveId=obj-u25-diminutives
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen list pairs Sasha for Alexander with a different name. | The frozen list pairs Alyosha for Alexei with a different name.
 testedFeature=SHORT_FORM_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1930,8 +1930,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e47668eb0f6145b2fbac1cd1a38a181a42b8bda39fe84bdcd30be3099b724a42
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2f404b72bb70d71fa44a57bc433e53b016f86f854c214167c3e03f2b925111b2
 
 kind=FORM_SELECTION
 language=en
@@ -1942,7 +1942,7 @@ answer=Спаси́бо
 feedback=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form. Спаси́бо.
 objectiveId=obj-u25-courtesy
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen list says please; also used for a request, not for thanks. | The frozen list pairs I'm sorry / excuse me (informal) with a different form.
 testedFeature=COURTESY_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1965,8 +1965,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c2ea987c19c31560694f4c0414ffd2fcfcf682137403a0778c8b3c56e9636694
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbcf73126940ba52636a312306912d365e325168db42244cb7e820fc3afc608c
 
 kind=FORM_SELECTION
 language=en
@@ -1977,7 +1977,7 @@ answer=Извини́те
 feedback=The frozen list pairs I'm sorry / excuse me (informal) with this form. Извини́те.
 objectiveId=obj-u25-courtesy
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen list says please; also used for a request, not for the informal apology. | The frozen list pairs thanks with a different form.
 testedFeature=COURTESY_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -2000,8 +2000,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3f6e09a11cc3555f4baed6e3da66d3785fbd2d9071c54d2a3a7173cc5e6ce1a8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f48a5d5ea5b68b0a55c21b50e3900478446345a8653a4da8013a53d9c1b3c511
 
 kind=FORM_SELECTION
 language=en
@@ -2012,7 +2012,7 @@ answer=Меня́ зову́т
 feedback=The frozen list pairs My name is... with this reply and What is your name? with the question. Меня́ зову́т.
 objectiveId=obj-u25-name-question
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen list pairs What is your name? with the question, not with the shown reply. | The frozen list pairs I'm sorry / excuse me (formal) with a different form.
 testedFeature=NAME_ANSWER_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -2035,8 +2035,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f8755fe6f917459fdaa9997e5c0a2c7cb62ef37b6de5616a4aec66978c0ce47c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 833f40ff6b98c2cb8a35b7b50935a5b4921657fb6cfc9c66fd6e70123ca013c8
 
 kind=FORM_SELECTION
 language=en
@@ -2047,7 +2047,7 @@ answer=Меня́ зову́т
 feedback=The frozen list pairs My name is... with this reply and What is your name? with the shown question. Меня́ зову́т.
 objectiveId=obj-u25-name-question
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply. | The frozen list pairs How are you? with this form, not with the name reply.
 testedFeature=NAME_ANSWER_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -2070,8 +2070,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c6e1c63497abdfd1b09ee55ddfd0e6b747edc48da8039519a55079698c254c04
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ab6c8df54f2a42b240ee99825d42e98a804da5fc931a8ce232638cfa7b8790b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2082,7 +2082,7 @@ answer=от краткой формы
 feedback=The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы. от краткой формы.
 objectiveId=obj-u25-nickname-rule
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The source assigns от полной формы имени to Марюня. | The source assigns оттенок пренебрежения to Сашка.
 testedFeature=DIMINUTIVE_FORM_CLASSIFICATION
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -2105,8 +2105,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f68df3c2168891f4d203bbe8878f2dce4ba7d62f57328ffb52bd3db905cf06f9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1aa72ef2c2d0036fad62e44de18d3ff31fbb0088dd75a011dcc7dfdca04560de
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2117,7 +2117,7 @@ answer=оттенок пренебрежения
 feedback=The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения. оттенок пренебрежения.
 objectiveId=obj-u25-nickname-rule
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The source assigns от полной формы имени to Марюня. | The source assigns от краткой формы to Машенька.
 testedFeature=DIMINUTIVE_FORM_CLASSIFICATION
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -2140,8 +2140,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 588407ff51fcccc0de764c779a60864474e9839f0e1e8086d2dcddbbe1e4dc99
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd8d992d7661f28d0339e93cc6c8ecf5fe8abc04bdffec28bbcf16049a00b7d7
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2152,7 +2152,7 @@ answer=краткие имена
 feedback=The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
 objectiveId=obj-u25-address
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
 testedFeature=REGISTER_SHORT
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2175,8 +2175,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 06e5a9e1ba7d954ccf1094a47cdbb1b70c74f253482ad2544f15567d3d053d32
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00707ca1433425bcee78e712fa42a45e6a113be27612d75266c065ffb8370121
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2187,7 +2187,7 @@ answer=уменьшительно-ласкательные
 feedback=The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
 objectiveId=obj-u25-address
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
 testedFeature=REGISTER_DIMINUTIVE
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2210,8 +2210,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f1d8b238ac766908c45e5b50b61a84a7a0f88e591a5033e54c560ecc481c13ea
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83e5ab311a63be6c95a4dd20b63b75c08acdf604fb7cf4a145cf3298f7da1444
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2222,7 +2222,7 @@ answer=отстранённо-официального регистра
 feedback=The frozen source pairs the shown form "полному имени" with the admitted gloss "отстранённо-официального регистра" ("отстранённо-официального регистра").
 objectiveId=obj-u25-address
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "полному имени" with the admitted gloss "дружески-неофициальном общении" ("дружески-неофициальном общении"). | The frozen source pairs the shown form "полному имени" with the admitted gloss "полуофициальной обстановке" ("полуофициальной обстановке").
 testedFeature=REGISTER_OFFICIAL
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2263,8 +2263,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 306e8266ae98be839c2437e511e95b4fd9710b3c5c0d5b579c56561527a5493f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3929d10cc0d1668b5ddead8369172154347ddbef8dc743940e371d88fe0d0970
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -2296,8 +2296,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45c6b2b3e5cce0c20fa425aa46f5c8162b974fde0d03062ca2d9729898eb290a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e257ab79d3d385a48c38836be11cbb6d1b78c10c960c5a45dc121f079786e3b8
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -2329,8 +2329,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b2917b59eaf4caa5f1fd90daecb0871307176645c83ed1264b1f6b999e39f7b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ebd40d96fa9163037b733f2033a413d1fd39f9476e8c7f68feed24667982e16
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -2362,8 +2362,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62e74d7072b1692786b1e330efefa41ab538e011be3ed74414ef80a21152a306
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 646b2503be0ff0c02719bcc44c1a14d14fcbd0ef59c4177b979e579e8e92f7b4
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -2395,8 +2395,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1eba34ed3ad7b5ab640e3f13a0fc25c555394d3ad2f082c00ce0fd03f24b869c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48ccc762ca89281ce7986d6ede2eb4049f985eeaabd908153794e97747bd9195
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -2428,8 +2428,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a62989e7e375761d17ec45e87919bdbd6bb9cae5429ae0efa3a2a602e607bb82
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad3b1d61191903fc4c1148859f313c4e6b848d2797bae6994a174bda9cfdda35
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -2461,8 +2461,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cd45d3b2a32cef0e35f3af6fe89c935c0108bbf0a81ef8ab2d9db6c16e97ada0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f771f0f1758d78dcff94e1cad85b6f05e792f7c5a2fdd068f5e814a2c7d20bcf
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -2494,8 +2494,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 943546f7ad5c143c244c8370b8fa6f92f0c52567884dfc4245e4e892734d41e6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b244b5fbe46acafec252388344a02a4fe68aa4783d6b9586b5f3f1c6925f0da0
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -2527,8 +2527,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 174f0879db8d21cc3bf95eb063a6afc19e9c0108b7a775b1e2104d7e00898d71
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8cc49b6638c52be75cd950f8f62b78aced4740293ed9828d6dc65f4e6bd95665
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -2575,8 +2575,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1eee55365f675304083bd38522d1f51974fa20a185b25008b705a0e9521c0844
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4a54c72a1d9371f89d8318557c1c51b0ac6e4632e625a31168668d2cba36f86
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -2623,8 +2623,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2b0a4a5a81d0a8b45a5292d49bf8cded87b57255d8c16bdf089e5fe21152745
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5595c8c3823070eb5aacc462f463d92901558c5cce61b9cb0930b4d82af15a27
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -2671,8 +2671,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1523d30b5afd8dc95d61e449dfb28c3d539dfad27cad52092fb48d1bdc01b15f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 22e3ead044c918282f148d8f31832e83257ecbc6560931420d02259075be8a95
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -2719,8 +2719,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0934db213fb8461217b2ebab92e8bb8ae1764d1862a052371b08dd1214380a62
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a40e17370fe31d84024d693e3f83f75b9b7fbde956066886fbf4e6c263c10e59
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -2767,8 +2767,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 91eb36b1b9fb0a1b9aa79dfbf39cc3e1725b9c307229d3b61f7756b2bf907148
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d647ebf5c1ba71c662d1398f3aea93ff58a27a37fa756d6123a68252c3cbc24
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -2815,8 +2815,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1b36661f67546ed4afd688220a774f67a3ed809ce8c1e5bbc340882cb5c7413
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4135480334d38e08889ea0577ce704b05af572369a3b2a54dcc27fde083b22e
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -2873,8 +2873,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f5623561148324e28418e85f42fca3891fa31101c4700c4b0a3e9e3944733e3f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fbd7f16a0b47fc83d97686ae5db759b0022e2d4cb727f7f7ff8fba178deab5a7
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -2931,8 +2931,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 398a912b5bedb22e888c1af44e0435a642e8f5c7fb2c0137c19b1b703c1daee6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2cf2b1a09546a7a0616e43e8644014cd3a6118e60aaffcc34a692f64e40baa8
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -2989,8 +2989,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 910ac8ff952961e193bbd796d40c40f270f9254f47b8463639e772c08df6bd25
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9794783a6b6e9590f43cbbe28d4296128e689c84420d17201696318b892afde
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -3047,8 +3047,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa5cf818e5c49ed92af307fdc4ff30cf8506da2a5c321ddc2e36e65d1181b7f7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a49b05c386fd3cd3a4a69c052154176027dbab8f7cc0d1f2418ac04199c239dc
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -3105,8 +3105,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bac674baf6487492bb61a6a91a95a4305589e5fce78ecf980ab83cebf0d5b055
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1bfee4f3593bbae8e4ddcbf86af78dbde168af6b6abe882c354c1622ab2e72f4
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -3163,8 +3163,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9729bf4de0b7340ed883ac907c43db6f487ca33d360c8ca67fe5b5391d145032
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 812edd4bfd866d16d6decd4fd221f72b2b9cf9ff98e0de1de645227f89a855d4
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -3211,8 +3211,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9d9311a61ddc4f35134ceadc238d377c22512155fab0cb8308538f8bce8a20b8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 249469fb0d9cc56c622df631c6a1adf859ebd399bda35857be6b9b1c01606214
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -3259,8 +3259,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4cb2dc7f4dff6c39cc3289ba98fa6b93b53c472d07488a7ba8dc043672c95ea2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d03f97f474cecf18420d615bd1537eb2a0ed612d5a688b3e6a3f6d09859ba22
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -3307,8 +3307,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fef5cba44e4afaf0196801dc922df0c6bd1846965b13f667c1b35288124cf782
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 106514f7fb15d5e346bf6341f41b09d2afd8d894da298e2a898ff47b89c225fc
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -3355,8 +3355,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a94f3e762e9d653c41afe04a010c8338b20ec058f6e8501a84f599d4e8a7360b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 51d3fa860fc6b42aa81e0a895e69d46aac7e9a010f84b91526f0b9788a358b9d
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -3403,8 +3403,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a1a030352382fb8b751e990b061948e4295f6f70c9844764dfc2b0ac4a5ccd0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bbd7777be708393cba6cbc890850c663a190dfe7ef27d26d181ea0821aa85297
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -3451,8 +3451,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2fc4e008a09c8bb6bffdf53b95cc92153aa51ac72a5f1d7540ccc4ba19bbc0e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e79757fd121e5833395b73df4325eba7b303e62973b82d8580acbd1c546a0cf1
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -3499,8 +3499,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc7830883e97bb96e477923f91cf5531067306332d51937e14f79d3a64a59a37
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48a8e4632918040b9bd69eb8b9f8eb412bbaa7541e6f0735c23fad382dd3c097
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -3547,8 +3547,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a924d61796f995d632c3e0b66a44b20a3190e413f1745594a07960a70c5a492f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 065e4bcbc8842d2a2fcbdca8c29d82160887678b61a37e2ebb77cc2441ef1bbd
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -3578,8 +3578,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0ac536c16343cb7ec1e870d5be1a3275e30e1926841c02af438f0f49e852498
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5fa726beb2b45f41394ba1f880026a27c204ddae624bc83c9ab5f5f96c01d0f
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -3609,8 +3609,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3675b3094f4465a97ef351482a6ee14204bff5d9ad1bc61e1ee6ab5ecf992ddc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 079d7f95de40d94b9ee20c762366779b6f0c868d40ed31ebaea8c4d1b3657e55
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -3640,8 +3640,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fa2c278333ef99f03330bc6e9ea05eda77727caea1bf282d1b8e31e8db9ccbf6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d55491515ef97a8370557a7eeb5c3d89d46bf141f131ead583d1fa80237abc2c
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -3671,8 +3671,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1183bc287fb08f35ec99ffd7974c69a179c5f95ab116527da37e423606b724ff
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1bc1f9f4d68c4e2f8fe0609c4813569896ad0714f913ad6ac07de364bdf49539
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -3702,8 +3702,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba2c1eb9a7a38bc024adf52671ac0ca62e5f1e29563315e0d614e6a847442acf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d77dd3fd36d718633b9e30059a3b263ff9362b91e25b3b1df4a0e270a1e9b5a0
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -3733,8 +3733,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9aba97faa939440a1de75fc6607eaf80bef4dae897b7ee5fba9b2f36404a8f3e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ca44c4f0f05709a79480b9717c5d5d7085b8e62d8ba648c1b96420f89156ac6
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -3764,8 +3764,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f26b9a35327a07eb93d4dd057d1b39f58fff77786ee620cd773b5e0800042aeb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe767beaa41eb030a6844d994fac78f8acd3276aeaab9d1233be0161e7a2c624
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -3795,8 +3795,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c826231a28138e3193e964aa2ceb81629ea9a9621d695b4cc1c5a06df0bbf9a4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e6fc2066ff09a99b8c26b4b6e5bacaea431622126a518dda47bd851b7b709b2
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -3826,8 +3826,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af91b509ef7b480c4efd49b851776fba9548ef9e837f38dbf1750aa0c2a105d9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50a8275d605378734ac7e48e66b28ee34790f91f7c25a459c0455e4489a2e0b4
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -3857,8 +3857,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e3c6235d2ef85ef14273593e4155ba60e081ca861a50a97fa61897efa5fe77a9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e858a0072873386fea4c1b6ca0c49b1705e38b547a3f6d67f1c01ef186bd2ceb
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -3888,8 +3888,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 048cb6006915611558b63d28677993acf626b33bbc434b4436ab118498d8340b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 342ad58a3cf92ee617513683cff3b7434a7e098d36212d4fc3bd3aaca4591a3f
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -3919,8 +3919,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 629cadb583a36736fc686c15a4590748a9b2a577a10cbb460442d565df59e1c7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8534958df1ca875645542f9618ee9e5a9c71e4a150910d2c8a4a3982680e83ec
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -3950,8 +3950,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6941057a45165f6893cf7384ea995f41489e7f110bcd5db399a42d2046640aec
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c730df0a8663f727e1568850b73097c73058ba578eb0fcdf394ba12691c99a64
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -3981,8 +3981,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc2677a144d3dfe553de8132d00b6f512fe7323b2098bde66fa6688a8c291489
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9c272840e503a7f22001be60ec4eeff902f302f70a1cdbb3bff14febbbf3ce7
 
 recordType=instruction
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4014,8 +4014,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9c6eca09fb6a2dffadc65d37e04460a9d9ba76d461087653a4f51a9fbdf1f90e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c2a1e2339c6e0925ad05259070c70ee2dcf9c0a679a71e573772131711389a9c
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4047,8 +4047,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3908742e5a388b69fdc36046eea2d0f528677b047d45bcb3ae02c492d2ac3857
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c42d9421b2a533e55a3b5c382eb74cc26f5c2d063940fe6b046bcd5c63546c07
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4080,8 +4080,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b615c30c643ca4072540d992ece6c7737b0566ab2d22066df64983e73fc574d0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4c01833e7e87f3cc0f511a08d5ac56781ad4856d2bca403cb03072d20177c63c
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4113,8 +4113,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a3152499c28240f3887096181a9a05401c73a46e2aa3e53fa969b8d5c16883d4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f336b990c5198c3e1814f525e3dae759dd9ce376787d651908e31abc7125a8c7
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4146,8 +4146,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 138dca6b2f405ddef51eb8c3957a2dc035580ee59d53e4f09f5c37a9c7a8ee74
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be5b3d774ff2fd2a2f74811e54e4e27c0ace3ce27f6efae73881cb1f2fadd726
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4179,8 +4179,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0092278ad1bad45e1d6479326afc41117ba2afa4c96ee45b0fd3f809fc9eec66
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cf432c70f9f851ed8097f8cf0f5bdd7a002faa88b83ec9813149aeff36897465
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4212,8 +4212,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 27925782365dd02ce25eb0e96c80f66875b8e28bfebfc4351a03b5769e3db55a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8dcb33407b8745fa2e2c586c6dd4b15d27c035e7d1f5c20ba56f053c8b8b91e9
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4245,8 +4245,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4300d13312525862dc694f9ab0613920744fb67832fbbc230245d449d928d975
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7b449889a79c527be2c10a705932749718935dcb5fff259d1ac8cbdc83c21b4
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4278,8 +4278,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: acd81064b05050478bbc10cf690a1bec4234613cf4d46380feea7e60c53b1243
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ebc156a570acb93ca413e2394aaae24c8fffc01ae52bb8f007d0ac31f143a162
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4311,8 +4311,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81adcdc7154fdb9df16152df2115b0048e85632b3500894e7ac0e2d37a825fa5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a464be1b61d9d839557d2a186505fc07fcc86b8dfd2194087b4278902d39c1cb
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4344,8 +4344,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7f62e348281a81ce29a22ad94366d6f75a69983824e0948be82c8c03efa6f34b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bde207ec317a20e8e04083cbd769cc677e297344ce8c848e220f1db8bfb31e54
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4377,8 +4377,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0a83099935b80110450f24cad57c5d442c0e8e424ff68abffe3e4458bf2a630
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c56dd64271e0226980d6b8a6e7110ae0a0e956e9a36b8c5d63ced5cf2dfb162
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4410,8 +4410,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 163a1dc4b56a2b18e4b7d0fc02c6022588ca83baad89960ce65c663ce54fb084
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e0378a3daab346d3fac716f454dc63b3b2e35b75325522991591187adcc3b168
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4443,8 +4443,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 646f4da73ca0afc185d3f201b46e49599a7ce7dd3f751d57b3948f37d9c3a444
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61a85fcae711ee9e6d329aa9e23ce68f54ce78bb3518fcdebdff16a27fe089da
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4476,8 +4476,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1fa8bed63c6b85ea0396873c13ef4d1ca555814b5947a30a03f0c835b1041a41
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41241d2f8577cf9457057ee67f9c3f1a5abab313f916c88ac4b7a0f96c7a0d8b
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4509,8 +4509,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ba845a0e6f60c41c942f55bec0d21ae03a52ce6a434e962b47d38a640589d7c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b8508b537347e7dc8a251f188dbb0400f77d05288dea2e3f84dfbd485f8cf53
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4542,8 +4542,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb306be62e25529ff2ba8e2fbeab90faee82708225335fb423340582fcfaf194
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a48543428187872050c261b603b0006dcd9504b04a36e6cd016f9c2877fda2d0
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4575,8 +4575,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7f8155de63a79215dfa942e76214fde5a222e1e990f20cc42253bfa46aa0aae3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c3d03a34a7197758efe1d036f3bdab91b4c4f185f8a6e69f7b787d9bbfbbf4d9
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4608,8 +4608,8 @@ reviewedDigest=
 - Source: src-ruwiki-obraschenie-153012874
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 10a79de79276c0575a535780571123a4fe73bc027888df80d3d301e597b5e291
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d0ee6a01eb9d200232162bde9cb57e3aea85dea5a133ccfe470f622fc9bd699
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
@@ -4641,8 +4641,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e968b238b6230c964ea9ec248371dfd0e8474f9b33dbff648c9e468c2ca6315
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6a6e490e569679990f1785aa1e34b7156251773bc0ea84c14f521a0a571acde9
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -4689,8 +4689,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f3c3e2fb5526cebb8f293f6b72f40abf20b16d521c48ab714fbcf28c512f69a7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d47e3caab20289e562aea28d03033f3baa7efe97cc77534a092fe7df91ce150
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -4737,8 +4737,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64fda8a6437b241a6e4090c4b490050ffe4a7ee1399546dccb6198b4234d5d27
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b36a484f4c194d64c34d085a4d2a2bbd23b010504c3479375f5657779b38219
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -4795,8 +4795,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc770d9fbc28a82ea763e0d8ab58f55c5af137199b6c7a07d8cfa17b31e22219
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd0249760d451e5d40bfe2d11bbf7b695bff324610ba15bf2b858c6fe8c443d1
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -4853,8 +4853,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c4a91087c101eb219079d8e1039996d18c00c179028b32b9c95e074f058ddbf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c286aebcef1ea7224bdce7abfa4e4d6641347b1a6f96af742d7ac3bc63f27537
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -4911,8 +4911,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0ee24c1dfc67dc9fb7ea2951d521f98c8d13850d0a01116a363c5c51188c61b1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4105b3df98bfb3ee190bd3fdbe5c94e77e218c58953c96d71881f2674a79202
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -4969,8 +4969,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 69eb0c6df38241e5fee12086f191f0d1826efb1549aa914ee56d1e8f6bf793b8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be7a44afbbb76d91cd2bced89c345deda0c452c7b743fa06581bfe033d4220e9
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -5017,8 +5017,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0418276e475150061715aa0641963882306560b9d8a278e0d9481e762215d01d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 37b52ba2d6fd0098e1bb21c621ee7f1cc08b75d1e26ec8ca3616f2beae2f9e9c
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -5065,8 +5065,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eaf8637e273098c3acaa7745ee0f1bd310cf357cd939a13b466387a9c43b2a05
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: abcc025d5900b1ab70b3460058963fdae8eb89693da8f73edccf37b60f89157a
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -5096,8 +5096,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b8e065bcb75541883a0045d23a8975f5df8055ea09bdf47bb8939e4a65a2c8af
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b9bd27196ece15d67eccc5f01e5aa3d11834be90554b0e817b808d5774cc67d0
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -5127,8 +5127,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e02fa719067f45cdeaf95e0cad1c4b97d908e41871c68a94335fd6ce157bfcc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b89178b54fd65aa03205eb4bea3e29579c6b09fbded73d3109982374769a7a70
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -5158,8 +5158,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4ca4d187d2a1ffd8682c42bb5883975edb2ce6f7429116e827267a9f7988e12e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9dd967cacd2e68213cc8a35a1a19947f2e1d5c47401b05196eefa03114f4bcf7
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -5189,8 +5189,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff7f9706fc9d5e3bdc09bda4ce3d3b0bb6fb4dfb04e5017f9433e810b88e1d7a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a59d10c67d00f252001617e801a28265d235d67ffd2ba6b313a0ad91c3d4a4e5
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -5220,8 +5220,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6eaf6ae83d193821ca15f66d8bc8e0faa368242bdca1fac665f16b12312ce740
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2af9156de8d225876ea4b62c361caffb5702d37581b243973ac5c5d0de0491c
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -5251,8 +5251,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c69409b03380315d7964609f98ae0f7fcbfcb22c24de4d62b8d13b718ef5dd1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 912ad8fb173e8630bb5c7e3df56339e9ef94a8a1cd5a6e666b89b1204e0f5a0f
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -5282,8 +5282,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5ad934eb287812f54a2ca84a1e3ee09142bd32334afcfc61cfe1088b90b05885
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eba7ced17e61affa251d434deb09b11653c37d50636fc95fa777799451458cf4
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -5313,8 +5313,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6767451fad406eb51cda6c4a097f10a82c74be4db62b2b73deccbc24ef2f0c72
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b53587123dd652c551b608cc4a2a771428d1734a2cc1eabd2a6057a10e89e83c
 
 recordType=instruction
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -5344,8 +5344,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 69fb5710104d8b894e7fe991d3ac9aa432b71223ce0a750dfdba128219b9a52b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81bd9ccdbf4f7b1e8bcdfa48dc2a0393cc23c6561f85736b95577520cb3ec945
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -5375,8 +5375,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70e2482f5558db349e951b7b880fefae883437f9cdb5a5982f568f46f280f8c4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61b0a1e586a206dbee6738ab3d261f7586f7497a03dd92c38d36d328c4ff0a42
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -5406,8 +5406,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a89b8fecc73ae7d6ac24e71a4646053161df7b1f8f36f82f05b6ea38409366e9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a08e625890cc002e157dfe124193e95a9cb88e87ccfac9fbc581a97af8e9392a
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -5437,8 +5437,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc660fc02f18d7449155e8c9b17f3a50977a6ee57d9a9913d51e248f4e464af6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9c162947c512ffea72353081535dce542a308764075cfa46c2db38c1894e41c
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -5468,8 +5468,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1f7a16d73e0bc783122ba0882be1f1b57c446169ff978031d3317fa1dc263eef
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 07613b4fbd412ba3768d93d3fdd4cc95d7b564306f398b3be9a410dd2fa7e200
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -5499,8 +5499,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 93dc3b1c5a414b033d35051febc17192ff346b7a5111f7ac1373ea16fdcd64c5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb6c19c28b885e35ef72b0475fec5977d54233c26af06e931d9eb9e996f90e4c
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -5530,8 +5530,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a9bd09a58b51de5d6f0d261afd7f4689296f38d450a4cadb1e4989c0ff45a42
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af6052c4166f3aa8ace768fa494623eb6eaed57d29b716399ba862525da2dfd4
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -5561,8 +5561,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 692df223246a609b8c9c96175c040840cd8c436157b4ec845196c67974afc756
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77d85fb965aba986d668f0c5a3f4e56d4e3de44d216408566a987d7f4fd8ba24
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -5592,8 +5592,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 180c8c52b69f86739f879760e28286f4fd2247ac742d9a42677630c32ba49a84
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 474ddc30edd390f385107cab9fb70bdde9a35fc6c22ea893869b553dcc54ce61
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -5623,8 +5623,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f4f4180a79fde37bb7258f0ebb80de0b76fa342eef3a273189f3555ec1d13e73
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cbe296928d008bbd1ea98283900bdac8c427729ec80fc2de9a1f045de361994
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -5654,8 +5654,8 @@ reviewedDigest=
 - Source: src-ruwiki-lichnoe-imya-154915954
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 73d24d7498b2fb43d862ef3026822d6bfb6e77485a024640da79ec7df137d05c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8580b477bcc722fa710f24250cd42ccd823c8317297c38e77b09f185e50030e0
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954
@@ -5685,8 +5685,8 @@ reviewedDigest=
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2e2892d87174524720e67d182f2dd3b1e669cdad3d73c5514e5d2c4c81e38ead
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67a91657291c2682524279e3b3f9bd0fc4d3c4844c64aee7eedf79b35cd90685
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
@@ -5698,8 +5698,8 @@ text=Admitted lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba0614d4f99367b667efb28f7f73d27137a0ed648a404993b460090dfe3b15a5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f1232e5b2f8918564f8f12d41f1cbfc3e74f7258d465f1081d815c4b5de8b8d4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen sentence pairs this form with patronymic name, not with the shown words.
@@ -5711,8 +5711,8 @@ text=The frozen sentence pairs this form with patronymic name, not with the show
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e82c712860c66ebbf0ba7de3f1c2f1f9a673d5fdcdc04897d20e58911efed05
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2fd8b7c3390ed887d0c1f49c53e020dbc5830b4a5ff7a677a665e920e27b786
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen sentence pairs this form with family name, not with the shown words.
@@ -5724,8 +5724,8 @@ text=The frozen sentence pairs this form with family name, not with the shown wo
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03e7992768e5a1f288abc657fa1bc4035f9f115e323f7eda57ef1e33183d7c9f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6cefde85723bf7436213f8ef43c80009a363b1ce6e9b6e156692044dd2324933
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen sentence gives this ending for son of, not as the pair for the shown words.
@@ -5737,8 +5737,8 @@ text=The frozen sentence gives this ending for son of, not as the pair for the s
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba5054cd402903eeaafc1e932fd5f0bfccd3b84d144eb8b385c8ee4bb705f7cf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3a6c89d2f48cd60a005a1e72fb2e7d61c11968cf89eeea25ab625f80bf2045b4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This form is paired with patronymic name.
@@ -5750,8 +5750,8 @@ text=This form is paired with patronymic name.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7731a445655dcf6ef92f6186b07892faed7a07786c093cd0182b0a1e9e058838
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4c074ffc40fbc4e20279e143b9dc9a1bdbb8378f93a2e8c4481a8aba94fee76
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This form is paired with family name.
@@ -5763,8 +5763,8 @@ text=This form is paired with family name.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc4148f6e8f9072a0cf605f71ac3b64c939a6ce08333224f4403d7d5b5833879
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e930ef8272ccb599a2e65d5aea037a0a5aa855c4120562d01df05a9b4c209583
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This ending means son of, rather than the paired form.
@@ -5776,8 +5776,8 @@ text=This ending means son of, rather than the paired form.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb3b0c26b122e5409db88fa269af7397c00c630775861fca6364f1526f8dbc9b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6664dc11392bd9fa3d168e3f450fd6d99fdea83cc02ed0da62cf67ad6d56f5ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen sentence says Russians use three names and pairs the shown words with this form.
@@ -5789,8 +5789,8 @@ text=The frozen sentence says Russians use three names and pairs the shown words
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 50b5bb50ecf38030b0ae52970c3228df8d9607475696389ea32b0c6dbffe8420
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bca9dfca0f284bf4b64a469b4de7ccb313967651810f5f0040ec837c54477265
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen sentence pairs the shown words with one form. Which admitted form is that pair?
@@ -5802,8 +5802,8 @@ text=The frozen sentence pairs the shown words with one form. Which admitted for
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 85137afb4a380b4428e80eeace472afd132bdf6178ba65110720cedc6048f287
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 059d5281a4728ca7524dec75f8ada769af9f62d6fb169831738d832a6a67f558
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
@@ -5815,8 +5815,8 @@ text=Admitted instruction
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea6a7acea9011964872f7fd36f39ebd752739a78efdf38b72fcdc4ce65c13dce
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2fa920ae277e971200707f8d19cf75e167bc74dc4dc028a5f1bc87409c6ed91
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen sentence pairs this form with first name, not with the shown words.
@@ -5828,8 +5828,8 @@ text=The frozen sentence pairs this form with first name, not with the shown wor
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ac46ee139bc127b4d21498114cb1d47828a645c9395fd22b3fda3d2c2a83fa7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9252ba11d74c4d2074bc79a62572406d27c784731b8644a993e6dc1e508f2c80
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
@@ -5841,8 +5841,8 @@ text=The frozen sentence gives this ending for daughter of, not as the pair for 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 56c4554ab369188ed037b7449f17a55045e9d081481154f3cc3ed338f4fc4d94
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1ee37f85d3e2c31ef957e708ebda6d41d9de1a2893674ad38056c7001813252
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This form is paired with first name.
@@ -5854,8 +5854,8 @@ text=This form is paired with first name.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: caa60c4a2b3619cca9b6fcb7a8fc03f14dc3ffe8d19347b49cffd86a298b8a09
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6a827fd1280f9040454afe6af91620f94bffdbd763ac0c49207d62004d8a45d9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This ending means daughter of, rather than the paired form.
@@ -5867,8 +5867,8 @@ text=This ending means daughter of, rather than the paired form.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 20fa4bf43171563ae6ac13a0524a24fdb5026f1bd5eacd9aa5bfc524e565e563
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b75c463f51cca035ba3f79d7b06573a591e4e74b0a39fc9ad0b4a075c3207be2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen sentence says Russians use three names and pairs patronymic name with this form.
@@ -5880,8 +5880,8 @@ text=The frozen sentence says Russians use three names and pairs patronymic name
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: abb9bdd882fbfbe88fc95a1ecb7098c34d503ebe495ec21a7523bd11e9fd906c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 104fbb42fd01dd55fbd69d680e899bd8eb44d345c12ef1c2d7529b9f49e77ce0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?
@@ -5893,8 +5893,8 @@ text=The frozen sentence pairs the shown patronymic words with one form. Which a
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4e2d21e36b076f6cde3a5736098fe3fed003e6e048f77c63a5ddd1f4bc1522f1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a580c9df235f3091932c7edfa0b12445348d4afd8195ac416820305e49bbea92
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen sentence says Russians use three names and pairs family name with this form.
@@ -5906,8 +5906,8 @@ text=The frozen sentence says Russians use three names and pairs family name wit
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 894422e429f196ddbc132eee7a9a00f6c3810e8c73f374410efc6ab9cb7f6678
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7223948a5d89c0d21f97575334e4f14806e452a2c3fedd25ee896e8619aff611
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?
@@ -5919,8 +5919,8 @@ text=The frozen sentence pairs the shown family words with one form. Which admit
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0032394ebf968d1d3c45223b4557eb05f6837ef689e491e3dddeb2a5b787ca8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 823476109556587942590f882ff0ba96188c978b12d8830dc6215f26214b1cc7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs Alyosha for Alexei with a different name.
@@ -5932,8 +5932,8 @@ text=The frozen list pairs Alyosha for Alexei with a different name.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0fefeb7621b0d95230593be8d5f28b63e8013429718e94dcc69d827b5d2e97e2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8273e64791cfa43915d9380c8ae8ac1430531ab656081d2b3b616bff56d61fb3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs Dima for Dmitri with a different name.
@@ -5945,8 +5945,8 @@ text=The frozen list pairs Dima for Dmitri with a different name.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec58b077f7bd544e1db79b78cfa629b378d5d603a3be4aff59742734d8208950
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea578c126e00147a3897828ce5d287f111ee5523e0679daa56704cb496207987
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Alyosha is paired with Alexei, not with the shown name.
@@ -5958,8 +5958,8 @@ text=Alyosha is paired with Alexei, not with the shown name.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc8015656e5668a7a07569838a3322253f805e8fba32964a0273918a35787ab7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: feaf3ec3d609ad2ad5dd6dded6bf456ab4e402c37586dfe822ee1848b728a475
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Dima is paired with Dmitri, not with the shown name.
@@ -5971,8 +5971,8 @@ text=Dima is paired with Dmitri, not with the shown name.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 90234b7a18d60b61e39f83fad2594698a933559604cd5754efd729994ce5e54f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5726c97fb36f2b111424afaf8fad3e3204c7b7e373324c0ccac69c2d6de27db0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list includes Sasha for Alexander as the pair for the shown name.
@@ -5984,8 +5984,8 @@ text=The frozen list includes Sasha for Alexander as the pair for the shown name
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9e3fd32d84ebec41a3e80fa5fab154200c9a81fe382314d9c111b2bdbe88dfbf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e041d2cee270a1086eb4631ee4c904697d144b63dd08c24add9f359b466d729c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
@@ -5997,8 +5997,8 @@ text=The frozen English list pairs one short form with the shown name. Which adm
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f2929c1a0572723b1a15d754f26ac5176a5b42530154a3f00d18492c06d0df07
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54d7b4cf8d1dcda84a12325615a61f671a0a1cb770a2d998b4c98b627004b2b5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs Sasha for Alexander with a different name.
@@ -6010,8 +6010,8 @@ text=The frozen list pairs Sasha for Alexander with a different name.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d0b68a1ebd380b972f134a8f9c6f7e4d44356800465d5bd76314e26a6e7f796f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e35886b51d43a7e92b53d2f2dccc30606aa0069870390c1f6019410207e38bf5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Sasha is paired with Alexander, not with the shown name.
@@ -6023,8 +6023,8 @@ text=Sasha is paired with Alexander, not with the shown name.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3f0b0627ecdccdda9709ff66ca1520909b00013522a81fa3525a49cb488f9fc9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7518ed322fb80f27b1f837d39347b2a556b1d9a4f53e98cb6993ae870720e217
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list includes Alyosha for Alexei as the pair for the shown name.
@@ -6036,8 +6036,8 @@ text=The frozen list includes Alyosha for Alexei as the pair for the shown name.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 157100be3820a9d7f6e58d34b509b5beb2b97c0ff85b6a9b7eb30b18f9cbf80d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b0f61c87c79b14cf2df19e4e4c15fb9dd29e66aa6bb6ea166869eeafed3164c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list includes Dima for Dmitri as the pair for the shown name.
@@ -6049,8 +6049,8 @@ text=The frozen list includes Dima for Dmitri as the pair for the shown name.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8aa5cc0c3454bab88f0c4d40c295f2db585e041e7ec5ed4ccab0a6219fba800b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b252d6649c36fd63ba6c8b9b236b3700a6c0fddeaa190858fe9964e506f6b325
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs thanks with a different form.
@@ -6062,8 +6062,8 @@ text=The frozen list pairs thanks with a different form.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c4f1262ee474de7d071369191d7a9fab291ca5e90ea211df99491fdd2d607b58
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f1f98b9ecfe4ddfc0189fb552bb8815a038bbfdd743c1a5d8529e307e91d994c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs I'm sorry / excuse me (informal) with a different form.
@@ -6075,8 +6075,8 @@ text=The frozen list pairs I'm sorry / excuse me (informal) with a different for
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53f54bb61cbd5d3fb1bb1baac7a42be2fa8ee9f093a72885c60d1dee99290896
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73028247c449231a7496e5022f3c10ec687a80063eec25356e44c2199568d03e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Thanks is a different courtesy word.
@@ -6088,8 +6088,8 @@ text=Thanks is a different courtesy word.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d908d7ff1438ec1f1b3809c4250d34fc3d66b5a17987e5a424c44258edc2663e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14d86aaa876cd20d3b9461f3c19c5aee882c03aec37e6d4d7f7b8381c2f54340
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The informal apology is a different courtesy word.
@@ -6101,8 +6101,8 @@ text=The informal apology is a different courtesy word.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d4ba792c28a159462999f54151b1fe4a9b6396d9ee880735cc0fb4eba49b9376
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 033f7cc35c11879b9429e957ada494e0c4d548c1d80d944cd85dafa341e08b30
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list says please; also used for a request and pairs that word with this form.
@@ -6114,8 +6114,8 @@ text=The frozen list says please; also used for a request and pairs that word wi
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72fd56f4c709058d6d84cd5aa800fdca1f27bedcb47cc54ed48a0fc2f6e917a3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2ac2ba0909f9289a02ebfc8b76f1f621c3a7da1883ee08b494b128c40c76f2c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs the shown request word with one form. Which admitted form is that pair?
@@ -6127,8 +6127,8 @@ text=The frozen list pairs the shown request word with one form. Which admitted 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55a71790a970a155f4ca10e521101c18b6893e2d564fd539408c8d77e5198bd5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 583b5568f84464c89a059f5efeaab4fbac974be2e2300f5d17f43631d62265a9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list says please; also used for a request, not for thanks.
@@ -6140,8 +6140,8 @@ text=The frozen list says please; also used for a request, not for thanks.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5545f952525c37efb1bb11f86881825ca8added44ec1ef280ed31a198876308c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd08e640337d242c2b488156a25fc7e360ffd2c8772ca91d9ddaf76ac7b3e3a7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Please is the request word, not the thanks word.
@@ -6153,8 +6153,8 @@ text=Please is the request word, not the thanks word.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b0b24ef63751f75d6943e0f66d8a462adb3de07711ab498c18458a0d55b79363
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b90588fda49f9ecc1d59a23039a8d48231e6da3091dca4bf643a8db905dbf08d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The informal apology is not the thanks word.
@@ -6166,8 +6166,8 @@ text=The informal apology is not the thanks word.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d4a65a891d6508677efa1eb7878f9831492a519f56dfba3872dbf57ae7396f6c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 258f339b9a793fc81cbca65bb8be99b5e5722299ac94e9feebb04dc555d0e62a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.
@@ -6179,8 +6179,8 @@ text=The frozen list pairs thanks with this form and I'm sorry / excuse me (info
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3620f2e7cf7b85eb755b27eac68af4aa2071dd1a6dc78955a48e8af95b2f0e4e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8e17b9d5d4d193718a4e1e13edd59f6a3e8299bbf5053ee7ed94641fb534ad20
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?
@@ -6192,8 +6192,8 @@ text=The frozen list pairs the shown thanks word with one form. Which admitted f
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1138db14c8f5890aeea7dccb70734fdc0185fd5a79dd4d36971e7e259ea1650f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1c2aafe68f73a1cabfd44e191a2a46aa3c511dcfe99c49d778696d4d746fd13
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list says please; also used for a request, not for the informal apology.
@@ -6205,8 +6205,8 @@ text=The frozen list says please; also used for a request, not for the informal 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1548c984b87b3461bc664118cebeb9e42159aa3dc3fe0444b5387a2fc88ad33f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39a5e4b82e81a55dbe8798cc75ca79b391de466945e32cbd924abbb13e56b74c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Please is the request word, not the informal apology.
@@ -6218,8 +6218,8 @@ text=Please is the request word, not the informal apology.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 29274fc2cf97c0fc243bf1b169150358f25d313242d967fca2136a64f1836d15
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4ecfa8817028831e4b058db5e322798fd0fcd0bac308893daa746c417889e95
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Thanks is not the informal apology.
@@ -6231,8 +6231,8 @@ text=Thanks is not the informal apology.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4091083d416c4be8fc7c551d3cdefeac5a7fea737ca435efc9b9b921c0fa9105
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db785f4ab6efed95185d7851bab765b38946b9a600bf742e97b132f3f684b4dc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs I'm sorry / excuse me (informal) with this form.
@@ -6244,8 +6244,8 @@ text=The frozen list pairs I'm sorry / excuse me (informal) with this form.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2031e27830b256cfc2e197259ff6b40f2580b5c387f875dc509eb725aebdcd45
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bbd6b69b6ecc90a76f715c17bbf3924d8e8f174e627f8a36070e143bc54ee1a4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?
@@ -6257,8 +6257,8 @@ text=The frozen list pairs the shown informal apology with one form. Which admit
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 61e11970ef1aa17a77d45bbc60a1a58352f0d325f52b7aaa927729b2373c454c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 309b8e74791f74bc3212c855cd0789e67252c87759881c93c0bd0b6338fc7353
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs My name is... with the reply, not with the shown question.
@@ -6270,8 +6270,8 @@ text=The frozen list pairs My name is... with the reply, not with the shown ques
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fe6afdd8b7c78494602c6d5c36bd7d9521f16ac12c11fd3e14ea199c3579d252
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bfba5dd28f6ad7894bea529247c46b7ee64546e0970e0cc7cef91bc60e72f884
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs I'm sorry / excuse me (formal) with a different form.
@@ -6283,8 +6283,8 @@ text=The frozen list pairs I'm sorry / excuse me (formal) with a different form.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b4c539092ff24099edc5c2765bd5a3ff8368fbe91db53b08336bab1dafdc6da
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1e5d488365f4c3d38f703e93e3f4006eccf85308ae316e49d3282bacc53b6802
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This form is the reply, not the question.
@@ -6296,8 +6296,8 @@ text=This form is the reply, not the question.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed4e25864feb391d526246791961dcdf83a1377405e107a622f28a0434e77d21
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 29dd4900bd81ced72e02c98107084d75745ae989694060d3c4946c60104ba882
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This form is the formal apology, not the question.
@@ -6309,8 +6309,8 @@ text=This form is the formal apology, not the question.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8b6e876cd70eeb5705b93e690f197718ff935bf180ec9c33d48a79f88d420524
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a9fdaa5a1d3ae3306f802828cb3b768a149d63ed3c7d8744cbae67205506971
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs What is your name? with this form and My name is... with the reply.
@@ -6322,8 +6322,8 @@ text=The frozen list pairs What is your name? with this form and My name is... w
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0de04ddebfc2b4c9464ff0310a2a618d292ef77619f3a3b5ad45ec3e45edb60e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3143ab7eea836d8ee78e63d3fefe12e71b49f2577906f5e19f169b566b0877c0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs the shown question with one form. Which admitted form is that pair?
@@ -6335,8 +6335,8 @@ text=The frozen list pairs the shown question with one form. Which admitted form
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f8f3edee69a833cd8704d5afd19a2040d2e1ebb1377ed5e8906916570c6e279
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2d6d863f22eebe08dd7b1de6794d23b5241eb6a3da28a2c591a87ce96bddd0de
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs What is your name? with the question, not with the shown reply.
@@ -6348,8 +6348,8 @@ text=The frozen list pairs What is your name? with the question, not with the sh
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c014adb2d33f6370c0849a80c5cf8eb71894449ec23ab87dba14f11f9f6060a1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e99154eb49d6e6f530673bf7878a0f61a78fbb65a3c4df958c0d91324665ee9b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This form is the question, not the reply.
@@ -6361,8 +6361,8 @@ text=This form is the question, not the reply.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae0d82d4d1ca426ab9e3c016b4707e9c9d96d1b29b629f68f7824a3cbdd054e1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb2e05147e405e8108a7e3b38e7d132cd7f8c55deea868c799197b294d8ee8cf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This form is the formal apology, not the reply.
@@ -6374,8 +6374,8 @@ text=This form is the formal apology, not the reply.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4624a5d2acd88662d140335fb16e91a997c7a2221fe4d8f5a8d2f4c2d3ffe35f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38bc803f8451fd03ab6846b6b5b716bb7bd1fce376434b2bdc39ae967f3d2f97
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs My name is... with this reply and What is your name? with the question.
@@ -6387,8 +6387,8 @@ text=The frozen list pairs My name is... with this reply and What is your name? 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a516ec223ed4cbb07bd031601345ced7545771a93f728de7f62a7a73eaf4bac4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2efcee9d403d9ab4d5a9b06b54a6a5d67a63c942b49c88e564eb667b38a67972
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs the shown reply with one form. Which admitted form is that pair?
@@ -6400,8 +6400,8 @@ text=The frozen list pairs the shown reply with one form. Which admitted form is
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f060be0c69c859ed9e59bd982361d6250e696f7b471b54c6ee5010541470a4d5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f555c2919e43b7d3255ed467529edc5a8a215eb79ac8b2cbefe46e5dae7a1fe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.
@@ -6413,8 +6413,8 @@ text=The frozen list pairs I'm sorry / excuse me (formal) with this form, not wi
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 90f383fb92703d26cb4bf309c9f2793dbce0395482f688480e52fe95e6881594
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f36c1469b93fa2b68f13f61044ea052f792be8f47eb819f65c7297feda3cebd6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs How are you? with this form, not with the name reply.
@@ -6426,8 +6426,8 @@ text=The frozen list pairs How are you? with this form, not with the name reply.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4e5259663923ce780419148cff8a0e3b2e989dcddd6057e10424d1bf7c5a48ca
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b4a10173b9dd408b6c84619885bb06f390cf33eee59d27b8f58f6919832f598
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This form is the formal apology, not the name reply.
@@ -6439,8 +6439,8 @@ text=This form is the formal apology, not the name reply.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 107e06bde7ec92bd930480fa44219fd327fc13fdb2c33b6049d1cdedaae517ac
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d88328639f43ed9b042bcf037e47ef3557c6c5c8fa56f02cb56da4a00c81d9b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This form asks how someone is, rather than giving the name reply.
@@ -6452,8 +6452,8 @@ text=This form asks how someone is, rather than giving the name reply.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0179e5a5cb3c582e7e9c96c7d3d73a181de0c4aa98da0e919e4d589b53c40e5a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69ce9268bae4734c44c819a3a7675dac395508bfd134764ca3ab3d9edc2df968
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list pairs My name is... with this reply and What is your name? with the shown question.
@@ -6465,8 +6465,8 @@ text=The frozen list pairs My name is... with this reply and What is your name? 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ece91fb9f47ecf9ab2c4337776e3afb2210006020a7880e554aeff93d7f972bd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4d7a927b94cf03a98dd8838597dba90c61763215cb88506418c7aa6b39f4cbe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?
@@ -6478,8 +6478,8 @@ text=The frozen list gives the shown question and a separate reply. Which admitt
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 494d710120190b46b31b303691a8395348db57bfa1b604b47fe2cda4b8bb28c9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ffc260e2501939574c932f7457a3cd17797ebb29a775f66becfbba6ecfa3e417
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source assigns от краткой формы to Машенька.
@@ -6491,8 +6491,8 @@ text=The source assigns от краткой формы to Машенька.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6dd719450edc5ceae9b00c3acb26dcc06e89328fd8fea5e2f95892f363e604cf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2617cac8ea75f96ff325579ee745dd982efb60d671743f29f552cb130670350b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source assigns оттенок пренебрежения to Сашка.
@@ -6504,8 +6504,8 @@ text=The source assigns оттенок пренебрежения to Сашка.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: def899c302df79ed3d3d3b8af3bc4b76acfc717fce9f645f9a0f8fe996804a29
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e558b544dc7b36af6c00666eec51843fb99f75ea3de7a7cc28931449805f395d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=от краткой формы does not classify the shown form.
@@ -6517,8 +6517,8 @@ text=от краткой формы does not classify the shown form.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c465f252a95fcbb3dff1abc70da03a171b477ceed8bb6c588be7bfa976d29805
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e4f98c74a009fcea32d4196d49dca629e0272f848cd7b102b0477ea624b4e6f5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=оттенок пренебрежения does not classify the shown form.
@@ -6530,8 +6530,8 @@ text=оттенок пренебрежения does not classify the shown form.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1bfae7c2817e1dc506775f62c6e30fe80d8d9c6e0daff42376d8e5570c729024
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b9e0a95fbdb53eb787f551e0c987d25d2ba0fee3c3e990abca269e465a545e8c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени.
@@ -6543,8 +6543,8 @@ text=The source says от полной формы имени and gives Марю�
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9b78cb7a1b6ab1292c265c5baa992524321766a80019d0e78ed362373ff44160
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed75e0c05da67544cc9ec0e39b859c39691ff258f75a5009a8c71aea3212ad20
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted phrase classifies the shown form?
@@ -6556,8 +6556,8 @@ text=Which admitted phrase classifies the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 76a8ae3791bd2cbfc52c30e2300f1ece671113da8784a9bbc2c5ef3e242331ee
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b24a14616a665709b0f0be2bdab85b966c11c2c83546597213dcb7ab44f055e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source assigns от полной формы имени to Марюня.
@@ -6569,8 +6569,8 @@ text=The source assigns от полной формы имени to Марюня.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 49353d006e22a898075d0b77f35bca63134a3fba5244253e9a1514bb117eebb3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 05402e5749a522abe051101f74125e599a3a28f8ef69e92a62ebc3554228230f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=от полной формы имени does not classify the shown form.
@@ -6582,8 +6582,8 @@ text=от полной формы имени does not classify the shown form.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dfc51fa08238d4bcb224f6aec9b4038aa6132ce3f2aaf60e7f2b445780b26149
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a160667dc1d2ce5504cc08182c39edf75595745de9bab13591d64083bb69e77
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=оттенок пренебрежения does not classify this shown form.
@@ -6595,8 +6595,8 @@ text=оттенок пренебрежения does not classify this shown form
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d676efdbd78124d38a3d9d1730976f171394f4e08a64d17fe7575396b974e1a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a0736bc3eba91fbeba306d2d674c467c7bbe6b743314b8a09d9980a03bf4697
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы.
@@ -6608,8 +6608,8 @@ text=The source says от краткой формы and gives Машенька. 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb83ea54927327b0cc0c0cbcc4ff991b436202fe36770a639c70a96c1c95488c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40f67c79ff4113722115687f9d0ac266363965818bfcdedf1de71e72bd5fbda4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения.
@@ -6621,8 +6621,8 @@ text=The source says these forms carry оттенок пренебрежения
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eefb714b5af2d658f4123f49954254a6b1679946d05fd0556603b94355bbda2e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9be2930c1bcf819fe896f0d998fec937c54bd3e0f42be9d256ff5798734d9bf5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen source pairs the shown form
@@ -6634,8 +6634,8 @@ text=The frozen source pairs the shown form
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bcd88bbaacf255023d22e7cfd65feddbb8d716234f68bdd8eedfa25db50d55d1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1807e023661f0f6435449c254cc86c41202cf449d80d0b8d93292ec36a7bd03
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=with the admitted gloss
@@ -6647,8 +6647,8 @@ text=with the admitted gloss
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c689c6195068d19aa2e01a8db2b329c970c5ebc48255019949bb1c96858399a8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a092e2840ba339a1e2ea05008c2cc1c64ed1b872508cb39610fead8f7b12c14f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted list name is written for the shown form?
@@ -6660,8 +6660,8 @@ text=Which admitted list name is written for the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc0deac25a4d94807b2bf1c89e9a06e83040953b1c234f5b121d1fc5eab380a6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17fd1f65099d7a1942991e30e8149aecbbd454fd04549e583f482b2e561abf62
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted setting is written for the shown address form?
@@ -6673,8 +6673,8 @@ text=Which admitted setting is written for the shown address form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7893201880b7200c15b3a5ddad0164ba24654dac39ae9d6269271f3d0c1069e9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c45804850dcf155dd758a6243845ab70257ea67112b08fb7449a878b732e357a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted name and courtesy lines
@@ -6686,8 +6686,8 @@ text=Admitted name and courtesy lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3462adbd30c5244ebeec0cbd218a5f97c843ebb72cb11113a3c3d562a4af50e2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9040dcb22a3e87296b4c6cd66bec9bf1e454f3b859b69746d94e794278e859f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, courtesy lines, and the frozen address-register sentences. Listed pairs do not establish a productive diminutive. Qualified review is pending.
@@ -6699,8 +6699,8 @@ text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f82a97306127d80ed3193d80338770bdf83baadabc1a5514aef76f0370b10be6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f7d77a7d64c7c0da4204afd709fd83a179bbba410c2c50470ea3d370ea48a79b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 25 in the copy you own. The app records do not replace that lesson.
@@ -6712,8 +6712,8 @@ text=Open Lesson 25 in the copy you own. The app records do not replace that les
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7f78f75bbc5585584ac86f6ed124d98a592f3a549504d53a4b9d3502d471c1d5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 80f94afba31e34acd665b328edf5c1814e44325c5db3f15b9e843f32db287a51
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
@@ -6725,8 +6725,8 @@ text=Guided practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 346ded9bd4b3e57a856f3705dec1a87105474bd95743367c9fe5bda460c107c3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e03305b67a6c452f7b3a7a49af700cdf26f8ad7dda1cf8d4baac226107609e46
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
@@ -6738,8 +6738,8 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4fcf5f573b56bdf2ff10f907eb3da9149671122ee11951b40b9752b4c36d57a7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ce3b6b27013c18f5c52459fcf66a0bd65e3423956d9a3ed7b9fe84046480abb3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
@@ -6751,8 +6751,8 @@ text=Remediation
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 797a6e2fbc6d3abaf27f763412694e9887fedf7df4939479525da2031dea2dbe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 74270dd7ea186df507b5b7546517834fe7536190850f940a454ed8cc8e89a150
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
@@ -6764,8 +6764,8 @@ text=Independent checks
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd30aaa3b6835206e8990deda478eb76604dd978e98468179bca20279211778e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a5ee8fa18dea92062f202b45d375496850f9ac1aacc6eefda90e2ab034c21bc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
@@ -6777,8 +6777,8 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 406851baadbfc53eb6341c0324c06467e4b39fba2a099c3e2a1aea1b875c95e1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 02ef1d6844b37341c5c23beab7e8529b4bb8d25f8d72b091557f44958a1d66a0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 25 in your copy
@@ -6790,8 +6790,8 @@ text=Work Lesson 25 in your copy
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 22ec53639b945530651a96bd12a3c29b9ee9213ff538e8a5088745471bdb660e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc5812d5310d1cbcb236b3d26c1cb183d6742bebb6b72c0ec9070ce24277a225
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
@@ -6803,8 +6803,8 @@ text=Do Lesson 25 in the copy you own. Use that book's explanations and practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 428ec9fbfa144d85c8e7774549bfa6f5c32bfdb6bd0337b1f2ed3a408f55a2f6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: deb4c3cfeb54c7f4de3e9a8e56f7f096dd1b7133dfb3b934e342a9cd0a503c91
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 25 in your copy and complete its lesson work.
@@ -6816,8 +6816,8 @@ text=Open Lesson 25 in your copy and complete its lesson work.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62efb36c43cf55fa9fa12e0b8de1c2211cd40a46f0b97cb4b88a0bfc18f5641e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3473cdd9834fbee650d4805d78b2506bdc572e73570e4439124087140977fc2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 25 book work
@@ -6829,8 +6829,8 @@ text=Record Lesson 25 book work
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8f13f4e8ae8c3eb2abfc2eac7f678916de4f1190207395ee5db6848a253a42aa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36c0ee7953f4091f70d3efa2208559a529dd5c67a4f209f131c85fd95af8dff7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
@@ -6842,8 +6842,8 @@ text=When you have done Lesson 25 in your copy, self-attest here. Attestation re
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: de9d1008ddcf2f825673c0f27adbfdb6cb25fa0126ecf792051e69e7ba21f214
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5af44167cc0912b9b18b41f6fc6ded153668e28a51f1483e8de6def00b2b4cb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 25 work in your copy.

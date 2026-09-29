@@ -35,7 +35,7 @@ class BatchARemainingSourceIntakeTest {
         assertFalse(unresolved(pack, 17).contains("productive-quarter-hour-time"))
         assertFalse(unresolved(pack, 19).contains("probability-dolzhen"))
         assertTrue(pack.unitReviews.filter { it.unitNumber in setOf(7, 17, 19) }.all {
-            it.status == "PENDING_QUALIFIED_REVIEW" &&
+            it.status == "IMPLEMENTED_PENDING_FINAL_AUDIT" &&
                 it.reviewer.isNullOrBlank() &&
                 it.reviewerQualification.isNullOrBlank() &&
                 it.reviewedContentDigest.isNullOrBlank()
@@ -48,7 +48,7 @@ class BatchARemainingSourceIntakeTest {
                 "obj-u19-probability",
             )
         }.forEach { record ->
-            assertEquals("PENDING_QUALIFIED_REVIEW", record.reviewStatus)
+            assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", record.reviewStatus)
             assertEquals("", record.reviewerIdentity)
             assertEquals("", record.reviewerQualification)
             assertEquals("", record.reviewDate)

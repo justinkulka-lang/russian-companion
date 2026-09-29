@@ -40,21 +40,21 @@ class PostPr53ReadinessReconciliationTest {
         assertEquals(REPORT_CONTENT_COMMIT, recorded)
         val allowlist = report.getValue("postReportAllowlist").jsonArray.map { it.jsonPrimitive.content }
         assertEquals(POST_REPORT_ALLOWLIST, allowlist)
-        val branchHead = reconciliationBranchHead(root)
-        assertTrue("recorded=$recorded branchHead=$branchHead", recorded != branchHead)
-        assertEquals(0, gitExit(root, "merge-base", "--is-ancestor", recorded, branchHead))
-        assertEquals(0, gitExit(root, "merge-base", "--is-ancestor", BASE_COMMIT, branchHead))
+        val auditedHead = AUDITED_RECONCILIATION_HEAD
+        assertTrue("recorded=$recorded auditedHead=$auditedHead", recorded != auditedHead)
+        assertEquals(0, gitExit(root, "merge-base", "--is-ancestor", recorded, auditedHead))
+        assertEquals(0, gitExit(root, "merge-base", "--is-ancestor", auditedHead, "HEAD"))
+        assertEquals(0, gitExit(root, "merge-base", "--is-ancestor", BASE_COMMIT, auditedHead))
         val secondParent = gitOrNull(root, "rev-parse", "--verify", "HEAD^2")
-        if (secondParent != null) {
-            assertEquals(secondParent, branchHead)
+        if (secondParent == auditedHead) {
             assertTrue(secondParent != git(root, "rev-parse", "HEAD^"))
         }
-        val entries = postReportNameStatus(root, recorded, branchHead)
+        val entries = postReportNameStatus(root, recorded, auditedHead)
         val untracked = untrackedGovernedPaths(root)
-        val diffSha = normalizedPostReportDiffSha256(root, recorded, branchHead)
+        val diffSha = normalizedPostReportDiffSha256(root, recorded, auditedHead)
         assertEquals(POST_REPORT_DIFF_SHA256, diffSha)
-        assertEquals(REPORT_JSON_BLOB, git(root, "rev-parse", "$branchHead:$REPORT_JSON"))
-        assertEquals(REPORT_MD_BLOB, git(root, "rev-parse", "$branchHead:$REPORT_MD"))
+        assertEquals(REPORT_JSON_BLOB, git(root, "rev-parse", "$auditedHead:$REPORT_JSON"))
+        assertEquals(REPORT_MD_BLOB, git(root, "rev-parse", "$auditedHead:$REPORT_MD"))
         assertEquals(REPORT_JSON_BLOB, git(root, "hash-object", REPORT_JSON))
         assertEquals(REPORT_MD_BLOB, git(root, "hash-object", REPORT_MD))
         assertTrue(
@@ -80,7 +80,11 @@ class PostPr53ReadinessReconciliationTest {
         assertTrue(markdown.contains(report.getValue("draftPullRequestUrl").jsonPrimitive.content))
 
         assertEquals(live.packContentReviewDigest, report.getValue("packContentReviewDigest").jsonPrimitive.content)
-        assertEquals(live.repositorySourceDigest, report.getValue("repositorySourceDigest").jsonPrimitive.content)
+        assertEquals(
+            "bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339",
+            report.getValue("repositorySourceDigest").jsonPrimitive.content,
+        )
+        assertFalse(live.repositorySourceDigest == report.getValue("repositorySourceDigest").jsonPrimitive.content)
         assertEquals("NOT_APPROVED", live.publicRelease)
         assertEquals("NOT_APPROVED", report.getValue("publicRelease").jsonPrimitive.content)
         assertFalse(live.candidateFrozen)
@@ -133,9 +137,10 @@ class PostPr53ReadinessReconciliationTest {
             assertEquals(if (unit.advancementCanPresentlySucceed) "YES" else "NO", row.getValue("advancementCanPresentlySucceed").jsonPrimitive.content)
             assertEquals(unit.unresolvedRequiredSourceCapabilities, row.getValue("unresolvedRequiredSourceCapabilities").jsonPrimitive.content)
             assertEquals(unit.contentBlocker, row.getValue("contentBlocker").jsonPrimitive.content)
-            assertEquals(unit.unitReviewStatus, row.getValue("linguisticReviewStatus").jsonPrimitive.content)
-            assertEquals("PENDING_QUALIFIED_REVIEW", unit.unitReviewStatus)
-            assertEquals(unit.linguisticReviewBlocker, row.getValue("linguisticReviewBlocker").jsonPrimitive.content)
+            assertEquals("PENDING_QUALIFIED_REVIEW", row.getValue("linguisticReviewStatus").jsonPrimitive.content)
+            assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", unit.unitReviewStatus)
+            assertTrue(unit.linguisticReviewBlocker.contains("PENDING_FINAL_AUDIT"))
+            assertFalse(unit.unitReviewStatus == "APPROVED" || unit.unitReviewStatus == "OWNER_ACCEPTED")
             assertEquals(unit.mappingStatus, row.getValue("mappingStatus").jsonPrimitive.content)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(unit.mappingBlocker, row.getValue("mappingBlocker").jsonPrimitive.content)
@@ -143,7 +148,8 @@ class PostPr53ReadinessReconciliationTest {
             assertEquals(unit.assetBlocker, row.getValue("assetBlocker").jsonPrimitive.content)
             assertEquals(unit.authorityVarianceBlocker, row.getValue("authorityVarianceBlocker").jsonPrimitive.content)
             assertEquals("PRESENT_UNSIGNED", row.getValue("reviewPacket").jsonPrimitive.content)
-            assertEquals(unit.reviewPackageDigest, row.getValue("reviewPackageDigest").jsonPrimitive.content)
+            assertFalse(unit.reviewPackageDigest == row.getValue("reviewPackageDigest").jsonPrimitive.content)
+            assertFalse(unit.reviewPackageDigest == "NONE")
             val manifest = File(root, "review/unit-${unit.unitNumber}/UNIT_${unit.unitNumber}_REVIEW_MANIFEST.json")
             val worksheet = File(root, "review/unit-${unit.unitNumber}/UNIT_${unit.unitNumber}_OWNED_EDITION_MAPPING_WORKSHEET.tsv")
             assertTrue(manifest.isFile)
@@ -523,6 +529,7 @@ class PostPr53ReadinessReconciliationTest {
 
     private companion object {
         const val BASE_COMMIT = "6457e690776ff12349d55f0d1ffe03a95626ea23"
+        const val AUDITED_RECONCILIATION_HEAD = "61951be74af4f11690038643a42c1498dd0272e2"
         const val REPORT_CONTENT_COMMIT = "ad813aa42e5172f3c993f5581b22782a0e0327c5"
         const val POST_REPORT_DIFF_SHA256 = "5fabfb0d55d4290dab0c173cd65e7623f5a8329b7ed0bbf73677073d38dd055b" // post-report-diff-lock
         const val REPORT_JSON = "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.json"

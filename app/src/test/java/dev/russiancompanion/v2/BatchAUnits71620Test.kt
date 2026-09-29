@@ -378,7 +378,7 @@ class BatchAUnits71620Test {
         val manifest = File(repo(), "app/src/main/AndroidManifest.xml").readText()
         assertFalse(manifest.contains("android.permission.INTERNET"))
         assertTrue(pack.provenanceRecords.none { it.originalSourceText.contains("The New Penguin Russian Course") })
-        assertTrue(pack.unitReviews.all { it.reviewer.isNullOrBlank() && it.status == "PENDING_QUALIFIED_REVIEW" })
+        assertTrue(pack.unitReviews.all { it.reviewer.isNullOrBlank() && it.status == "IMPLEMENTED_PENDING_FINAL_AUDIT" })
         assertTrue(pack.ownedEditionMappings.isEmpty())
     }
 

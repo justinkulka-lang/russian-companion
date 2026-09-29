@@ -15,8 +15,8 @@ Unit 27 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Unit content-review SHA-256: e6805db24810cc3cc64061f70cd32a8b15b885611f7a0c29150009f461e795fc
 - Mapping-package SHA-256: f5da4227d7bdfa500293d76f3b48ab8ac7646ac0dd6c90b4e8ac4f10cc69a385
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: 8b1aed8ea1557fbecd86fb5d949f906b6e4866e7ea9cfee423d1af58d0f702fc
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: 7003b4f3ba9ac586b50e9aa58567f38fe48618cae93011507b94bf04630a186e
+- Repository source SHA-256: 5d364a5c70e24735ca6e67032ef2d9ab65364ee4b168ef3afc41005fa750d3e9
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 486964910582a888aecd1edc1a3f9472c9838c0ce6b65e905678e15027499330
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 130e8fc6b2926b52400cc79b8dcd46787669f912ba9078b1668c1b3d56500ed6
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -671,15 +671,15 @@ remediationStepId=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 92b8f5e4cdcfd1df67b1bd8e3e18bffa564b28f9f5653b799a4c7fa8d0415054
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2f7b4ad74317fd0e9de45d8842581fd669a03afdbd8be98a2eafb5422b22271
 
 kind=LEXICAL
 letterId=
 display=сде́ланный
 note=done/made
 objectiveId=obj-u27-passive
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u27-passive-1`
 
@@ -688,15 +688,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec0663b66e51930332c615f598c838b01f92199241b058f1e220bd689efc5027
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8865528ca3faee23275a5e90ca7fba5c3b67ca50b5942fdb7043a9c5facc91c3
 
 kind=LEXICAL
 letterId=
 display=напи́санный
 note=written
 objectiveId=obj-u27-passive
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u27-passive-2`
 
@@ -705,15 +705,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a542ed59a3c876cf77d7836bcbcf95ac1a3e0d29bb6d9e70a0b91238825799d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78d13aa23524225885dee303ac940eeeff17c4b4572454d7a459f7db54a1ee9f
 
 kind=LEXICAL
 letterId=
 display=уби́тый
 note=killed
 objectiveId=obj-u27-passive
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u27-passive-3`
 
@@ -722,15 +722,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ca821c250ae60d4969e2e9724796926eb8b2ae4d1ddd3f7a6762034c5919c7b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e0816f35e7b49a0ae7089e04f37658d3f6b8e21e466b3b0660b905aa85f35aa
 
 kind=LEXICAL
 letterId=
 display=напи́сан
 note=short form
 objectiveId=obj-u27-passive
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u27-passive-4`
 
@@ -739,15 +739,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e8deab0ec6481f67c1c122b8350f36b54454bece76b28cbf6baec78b9bd0df75
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 720ae10305e5ebea936f56ba7e85cdfd824544d6a610814a03024f9c8d0f03be
 
 kind=LEXICAL
 letterId=
 display=письмо написано Иваном
 note=the letter was written by Ivan
 objectiveId=obj-u27-passive
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u27-present-passive-0`
 
@@ -756,15 +756,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 357547f6de4f43230bcab941ceea51cf9af5c9dfcd825a14a67c8d555860a59c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ba0c1f2847383345e64a4334d65a6013bbb657aa197d0327c46dcef44fbce3b9
 
 kind=LEXICAL
 letterId=
 display=обсужда́емый
 note=being discussed
 objectiveId=obj-u27-present-passive
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u27-present-passive-1`
 
@@ -773,15 +773,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fbfc2f38a20fffa94635a9b2bc259878f4c9a20fa6bc8e4a93caf323945223e2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f73e1d241126b0b7218802444e70541292f9403618118d02bc5e7c57cda0a8d8
 
 kind=LEXICAL
 letterId=
 display=оставля́ем
 note=we leave
 objectiveId=obj-u27-present-passive
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u27-stress-ref-0`
 
@@ -790,15 +790,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-enwiktionary-ostavlyaemyj-74231596
 - Rights: rights-enwiktionary-ostavlyaemyj-74231596
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e67c8794104dba9d6ee8616766d0d3e2a2331a9a0462ad34b1fb4db86114359f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 447c90d421acaa4f46b46e0975e17fe5c7b007b908410c6bb8fe8fa78740de75
 
 kind=LEXICAL
 letterId=
 display=оставля́емый
 note=present passive participle
 objectiveId=obj-u27-stress-reference
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u27-stress-ref-1`
 
@@ -807,15 +807,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-enwiktionary-obsuzhdaemyj-74233962
 - Rights: rights-enwiktionary-obsuzhdaemyj-74233962
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c43d1de559d177c1eb63d0f15959188feabc5878fa1e5d562610ef37eeec4441
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9f4fb907a2ab3a5cb4ea219a7ab267748f590fbf331bd7aa8542eacc4a38471e
 
 kind=LEXICAL
 letterId=
 display=обсужда́емый
 note=present passive participle
 objectiveId=obj-u27-stress-reference
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u27-stress-ref-2`
 
@@ -824,15 +824,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-enwiktionary-napisannyj-74228228
 - Rights: rights-enwiktionary-napisannyj-74228228
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65dfee8cc36e3847d9ab73d0d16122abd9fe26e39569065a232b4350aa17dbad
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d931141dd812e40b87bd9a929d123054bca819e267cd9dfa49a2ebaa3639fa1
 
 kind=LEXICAL
 letterId=
 display=напи́санный
 note=past passive participle
 objectiveId=obj-u27-stress-reference
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u27-stress-ref-3`
 
@@ -841,15 +841,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-enwiktionary-prochitannyj-74232159
 - Rights: rights-enwiktionary-prochitannyj-74232159
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 48d1597f80e9a9b84814bcadc12ae29808932910ebdfd91af57b6627b5e0d4b4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31d32ccd0bfe467445819efe9279b5b155e81c7808a1ba67b5528d7ab431a239
 
 kind=LEXICAL
 letterId=
 display=прочи́танный
 note=past passive participle
 objectiveId=obj-u27-stress-reference
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u27-g-passive-0`
 
@@ -858,8 +858,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 88c9db94ae8bcb74cf8fdc3f55b6427e0cfa4905dbd76ffee63f23cd84c3c35d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 698f01930351b07c905469c35974358d4df175d133c3b1d0e5e12b2081778dc2
 
 kind=CONTRAST_SELECTION
 language=en
@@ -870,7 +870,7 @@ answer=done/made
 feedback=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form. done/made.
 objectiveId=obj-u27-passive
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line writes this label beside a different form for written. | The frozen line writes this label beside a different form for killed.
 testedFeature=PAST_PASSIVE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -893,8 +893,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81b8ae0d4709dbeed2dc6f35458a3b29e1fd90bd15e5ed48e7f9e0ea6c40beb3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33d732b40c980d33134c17062aa8d9762b248cc61583607b19694653a1aeeefa
 
 kind=CONTRAST_SELECTION
 language=en
@@ -905,7 +905,7 @@ answer=being discussed
 feedback=The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss. being discussed.
 objectiveId=obj-u27-present-passive
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen parenthetical we leave belongs to the plural form in the same note. | The frozen line writes to discuss on the base, not as this gloss.
 testedFeature=PRESENT_PASSIVE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -928,8 +928,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 12d3a97d28c4a1b07c6c118eb7fb701b4ae366d8c8807b3e462e582dd091c040
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: de6b6386de99dfc3fa3935f9be8c25c3fe40d6d5398933c1e947b6bc829a6979
 
 kind=CONTRAST_SELECTION
 language=en
@@ -940,7 +940,7 @@ answer=written
 feedback=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form. written.
 objectiveId=obj-u27-passive
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line writes this label beside a different form for done/made. | The frozen line writes this label beside a different form for killed.
 testedFeature=PAST_PASSIVE
 evidenceMode=EXPLICIT_PARENTHETICAL_GLOSS
@@ -963,8 +963,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aeccdac7f4d94db9401d0b7f049623ce457b7dae3960c4707c4390b599ef7678
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5641d2a3b4b2befed580e673584acb8c62c9cf95ca5ec3121d74212e2337b01e
 
 kind=CONTRAST_SELECTION
 language=en
@@ -975,7 +975,7 @@ answer=killed
 feedback=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form. killed.
 objectiveId=obj-u27-passive
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line writes this label beside the writing form for written. | The frozen line writes this label beside the making form for done/made.
 testedFeature=PAST_PASSIVE
 evidenceMode=EXPLICIT_PARENTHETICAL_GLOSS
@@ -998,8 +998,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0027f5d1d40131ec1207e365fce6c340f208402f9ddf5eb5938d7eece3c25ec
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0140388ebe9c41381221f4a002a0106adacaddae90bb30aba130890694c8928c
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1010,7 +1010,7 @@ answer=we leave
 feedback=The frozen line writes (we leave) after the shown form. This label is that parenthetical. we leave.
 objectiveId=obj-u27-present-passive
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line gives being discussed to the discuss forms, not this parenthetical. | The frozen parenthetical to leave belongs to the other form in the same row.
 testedFeature=PRESENT_PASSIVE
 evidenceMode=EXPLICIT_PARENTHETICAL_GLOSS
@@ -1033,8 +1033,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fd5737faa23fae841450111055367bef0b99c8bbaea64cb1180bca6ed83310b1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9cdad1860b79d4757148e98919d53d911196ebddf02eee70494d212270edca5
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1045,7 +1045,7 @@ answer=to leave
 feedback=The frozen line writes (to leave) after the shown form. This label is that parenthetical. to leave.
 objectiveId=obj-u27-present-passive
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen parenthetical we leave belongs to the plural form, not this form. | The frozen line gives being discussed to the discuss forms, not this parenthetical.
 testedFeature=PRESENT_PASSIVE
 evidenceMode=EXPLICIT_PARENTHETICAL_GLOSS
@@ -1086,8 +1086,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fa97d9e494dd07abc5f013782df52a0e1f0acc94c10f93ed76752e34dc784e95
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b21580b174f1b19a3895bd09f334c905f17a1e9a4896e16e800976203603389f
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1128,8 +1128,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7dd0de8b6c9b6282d2381ece527875d0078e5fd99697dbb313c10a40139c139f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d5520cd9cc2b5d0a69e827bba00212afca5450aff274968434ac345f261836c2
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1170,8 +1170,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cfa528e9f951a6df2cd22850f278c02f7f65c84005be0ae2121941321786768e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8e07e47eae915c684e0ddc5c46113d544e18406a54cbc9016c4edaf2aa310b5d
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1212,8 +1212,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 77e2d5bc08ae782e497e3e33a4bcb993a09a6ef67d6877cc19263282941e82f8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e894a32415e30ca298a98a22e818bb4409b6da940e50f5c905542f9bd7eb07a0
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1254,8 +1254,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b0d92c13129c309a68862685aee85194965972bbd71d85545a743f6a0ccd0a26
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36ed62d31e29d49b8d07b4d0e718afa2df48255bef8d215de83184b72beeb30c
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1296,8 +1296,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a80c2d580ff107ba316e4fc574eb9cb826545ee3abb03b98e388b515e8e51844
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 56b9c33126a8996e24ea2b9addca994258a261efa6b97a05c52fc6fe8595c596
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1338,8 +1338,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1009112448076a862efd6ca61e38d118e3c724771c8516290fd66459cf0c0c4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb97ab4f1bc7baf4f03ce0aab3b096302ceeead720cc15d86809c088e3ee23aa
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1380,8 +1380,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f39f7ffc3e45efe6dc6f86d1261ddfed9834fc282ede5006f7151188def03b66
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ecf5dfec71bca2d591958ecb19b2d6ffa45fed658517906a293c75df9e93aaf
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1422,8 +1422,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45c00bd43b75ea7e0d45b93a3e21d76cce9c666784672de4bcf5838dca718814
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0fe5d237543369385f6bd06b4c60057c985c775569da421655a362b458a9909
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1451,8 +1451,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 36eade9ce46239600354ad80bf10b9f6faf362933689949c7238ca96585d947c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0275939cdc7e64b80046bd9d547d2f8f05c31e38b80d983905bd3d63dd8ecfdf
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1480,8 +1480,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7337a158ad0805978956a2ea10261375d0f1c7f4e6d8e5ac6994e28fc40b63b0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5993ad103bb82b4f4a97460f572b2f8195dade931940676507c98616b266b850
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1516,8 +1516,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72406d5079f4d6b368067f0918ab79ae389c79163a2e7e4e5c3e72d2df2741a6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d281089e50bb91ea91d13261fa2b427125f08070639290ff07eb5740d23455d2
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1552,8 +1552,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dec2da8c6bf8f6adab711b5b4ae1b8633a9b1e9baab1c373b25e9c220ab77939
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d63a8fd51a57facbb226776e5ee08fb63e62a11b28b26ad3f183c94804bee672
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1588,8 +1588,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e963408de1e3a3b12a18958b5d988afcffebe04d786f4be559524d2966a25736
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00efdbc5a254cbe93428ae438079a654ea74c33f67f49a16c3c9e51bca9c295b
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1624,8 +1624,8 @@ reviewedDigest=
 - Source: src-enwiktionary-ostavlyaemyj-74231596
 - Rights: rights-enwiktionary-ostavlyaemyj-74231596
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 39b7f5ea5ad856e48e50cf087b80aacef136764f97e143a5010973c086ca89a6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 52925d4ee37755e5fc26e0663a726e782faad5d4136c81d2b08dc4a2b9670380
 
 recordType=meaning
 sourceUrl=https://en.wiktionary.org/w/index.php?title=оставляемый&oldid=74231596
@@ -1670,8 +1670,8 @@ reviewedDigest=
 - Source: src-enwiktionary-ostavlyaemyj-74231596
 - Rights: rights-enwiktionary-ostavlyaemyj-74231596
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba511dda9bdb213666cd036e28fb23527f71764cb43418851db6f6cf3c1df684
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a13a31675cc72e9b94ae1ad0cc5bdb83e811c19f68269527a47ad063f13137bd
 
 recordType=example
 sourceUrl=https://en.wiktionary.org/w/index.php?title=оставляемый&oldid=74231596
@@ -1716,8 +1716,8 @@ reviewedDigest=
 - Source: src-enwiktionary-obsuzhdaemyj-74233962
 - Rights: rights-enwiktionary-obsuzhdaemyj-74233962
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 022d3e50c3bdde65160dc3799cb0848a6638c04e63a3360b987e2f55eb445c36
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a25f9c344f4ede047bff21157f5a8ec58f47a992396b9590ca7849463be4e46
 
 recordType=meaning
 sourceUrl=https://en.wiktionary.org/w/index.php?title=обсуждаемый&oldid=74233962
@@ -1762,8 +1762,8 @@ reviewedDigest=
 - Source: src-enwiktionary-obsuzhdaemyj-74233962
 - Rights: rights-enwiktionary-obsuzhdaemyj-74233962
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d49cf1a9ba8f539eff7b6c479b7743df04a57d17a214ab88de7779f9f8bf7d7d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44c23892f767af4ec4d1cbd8bb96169ca9e98620d260d20c290b0d7efc2200d1
 
 recordType=example
 sourceUrl=https://en.wiktionary.org/w/index.php?title=обсуждаемый&oldid=74233962
@@ -1808,8 +1808,8 @@ reviewedDigest=
 - Source: src-enwiktionary-napisannyj-74228228
 - Rights: rights-enwiktionary-napisannyj-74228228
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 239a51b7b68c29e5c1d616c147fa74609a626e6858eb542fbe3e8895ddb99d83
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b73e334d19947d228708a833d39449a6939f3cec38c2d035ae270db9b57815a1
 
 recordType=meaning
 sourceUrl=https://en.wiktionary.org/w/index.php?title=написанный&oldid=74228228
@@ -1854,8 +1854,8 @@ reviewedDigest=
 - Source: src-enwiktionary-napisannyj-74228228
 - Rights: rights-enwiktionary-napisannyj-74228228
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8f4bb6189dbe91cc3f6985a9c733aa4cecf83f540f46121a18ead43782ea53fe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2812647651f858d66c42b8dcc488354f5b20e68f20ab27091f2daa762b31f2ac
 
 recordType=example
 sourceUrl=https://en.wiktionary.org/w/index.php?title=написанный&oldid=74228228
@@ -1900,8 +1900,8 @@ reviewedDigest=
 - Source: src-enwiktionary-prochitannyj-74232159
 - Rights: rights-enwiktionary-prochitannyj-74232159
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a10df4b8618cf0d944d476fd88ddcefac6d8b07beed1bec8a8bc84e6b0e921f8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68970e63ccd138967df1efd801d92b3cf175a680bc7097f30dc7eb7172482f7f
 
 recordType=meaning
 sourceUrl=https://en.wiktionary.org/w/index.php?title=прочитанный&oldid=74232159
@@ -1946,8 +1946,8 @@ reviewedDigest=
 - Source: src-enwiktionary-prochitannyj-74232159
 - Rights: rights-enwiktionary-prochitannyj-74232159
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a77a2c62e9d34a782928ed82f471929555fbc66c8bd6fd45f91c0de2f067f00a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7e9b04ecdd1f21c9aa4480ca430b61ef3615b92ab7dd5758766f14540d0dbaf
 
 recordType=example
 sourceUrl=https://en.wiktionary.org/w/index.php?title=прочитанный&oldid=74232159
@@ -1992,8 +1992,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04b49e51fa1791157c7d93e9b73807f8f640a7a6547b3ba44cc1271edb34f3fc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d71f2c5501db865bfc84eae360dfc947268d2997e3af07f5cd083b39e3fa5798
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2034,8 +2034,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67dec443aa90ae076d9ecadfa9c1b23e883d436fda1fea0f92ba5995f2588446
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0c8d93ab1e97dbdf762a3ef825609b2139243da503e9f0cd0eb88ceaf2cd96a
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2070,8 +2070,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72b9afdd8e178811b35e336acdffca0d9cde95d538128bcfffc0a95027406402
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 20677a64fd976e7bf1cd82557d71813e3c1712eaccfd0b9c5118edcf364a9cd4
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2106,8 +2106,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2be321895cd5fd3279333593203a693a6562c658fc39f49dfdbaff0cf6578043
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 493b368becaeab6d1930f15dc95e7fe32888bfd093c8d3c40c79d9678f7318e0
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2142,8 +2142,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8ae4efa2ab56b91b551969fa79a9c19a9b28f265a665fe9fc70bb30735c1fa49
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83f53af9fb62c5a994b40b04e5ae29b51e4e75243e4282c83202a1359c21d2bb
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2178,8 +2178,8 @@ reviewedDigest=
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 505fcd25ca12455db79c566192c31fbf3c56aa6d8a825ec6d1560e4275319f67
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc5f9bbb701b3e72cf00cc636f74b915ef3365798bb4bbeda98addcbfe1d4ac4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
@@ -2191,8 +2191,8 @@ text=Admitted lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0fca374789f77298353fda1c1f108ccd3f14bd4191fe9f5d76e925073fb7f69
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45f27d5b728364f37bc84acd62fd22042736ace7be8b6a622528015c0dd5804d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside a different form for written.
@@ -2204,8 +2204,8 @@ text=The frozen line writes this label beside a different form for written.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc1dbfafe5304bf1fe89b3a8c43a73a47f6d50539c22c6d5525990f419217e60
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db21ef4630b338de507d577ec4dec450d284f30734098482e9a80192c4553f67
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside a different form for killed.
@@ -2217,8 +2217,8 @@ text=The frozen line writes this label beside a different form for killed.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cf99926fbd6ef0adf0571cc970d3c3bac8150f986660d3cf090dd4ae8a05a8b4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 529ec25ba2d0bb4bde0dd5340f17b5a1d3f1b940345efcd8e8fac990ef743805
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with the writing form (written).
@@ -2230,8 +2230,8 @@ text=This label is paired with the writing form (written).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c59927a893278233a54123eb50deccbd6eede36ebf8c7f65bbcd5b0cac3e81c5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb12620d310ddeaabfe3642266776e4cf91cd51dc03dfc8de0347d84b97f3c57
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with the other listed form (killed).
@@ -2243,8 +2243,8 @@ text=This label is paired with the other listed form (killed).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7175a82f53fdceb4760d503b7ea55a6e73a7ad8ab47c711b5d257d61f3817e1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef67d662c58433e01a77d02f14a51d628450345cc6240f1b7499e3b2965e83ad
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form.
@@ -2256,8 +2256,8 @@ text=The frozen line says these forms are formed by means of the listed suffixes
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c220abf1d03f4ebcd30e13e5a5545626fb7722a3f20c6f16f9ac9dd08c551cb6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e1b3f57f1c646abe0753b19892e466ab1ef9f970bfb84bacf16d44a6f6f4d8b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is written beside the shown form?
@@ -2269,8 +2269,8 @@ text=Which admitted English label is written beside the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 109b614af9657f491cfa67f7b32899e86846ef70433899e3319b1aeccc00a6c1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77f155a94912e29963f578e1db08357c52509544de83dc759f8fbcc80963059b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
@@ -2282,8 +2282,8 @@ text=Admitted instruction
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4488ee1ad0367ea95805c6c95d1812609d6fe823367020b9b698f2654215a241
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b97c0aea84a4dda6afbad971ed36d277643ff00a073eb3afc0c5512f0866ed1a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside a different form for done/made.
@@ -2295,8 +2295,8 @@ text=The frozen line writes this label beside a different form for done/made.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4ab9ebf44fb7237ce31f3d4a24e8138cc23d1eb4c1f17b0f803415a97a016d17
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb589429b3bc8596c397d12742e92f480c3a58beb68b19c353ff8ba78c7ffe55
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with the making form (done/made).
@@ -2308,8 +2308,8 @@ text=This label is paired with the making form (done/made).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec082a461d6ed242b42e651f25dc9031156fb8fa25e7d75edb290c45928043ba
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb9c7e3f1aa39800dcb7f5246dd427dc6ca47397b1ed0c4f24edfdc5529f2f52
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is written beside this shown form?
@@ -2321,8 +2321,8 @@ text=Which admitted English label is written beside this shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a3f076ce5ce7bdf93eea15cee547c044b7d2ae9843ee9ffb5c0694cc846a6450
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 32d8905b7a0a12d1d030ef3b797dc765fc4c8a44ede022023b293828550a80eb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside the writing form for written.
@@ -2334,8 +2334,8 @@ text=The frozen line writes this label beside the writing form for written.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5c1c315cf3401780b78bce49f389b0d47963774db5129d03a755a34cf62445b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64d5f1a6866b1d2ca6c5ef1c41826eb475e58acff4020110c306f2ed5c028942
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside the making form for done/made.
@@ -2347,8 +2347,8 @@ text=The frozen line writes this label beside the making form for done/made.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc1f7f50f7b4dd1e81563eacaabadc4e2d4c5cd093b48afa1d6864b23d6a5dbe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 62af2789d5093568268f8833d4d3b4dbb64ac876d45f29957faf224bfd3aa4ab
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with a different form (written).
@@ -2360,8 +2360,8 @@ text=This label is paired with a different form (written).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c349f18468f2910850d4bbb6b47c6e2f4bf09b5f66d2f2161e46990f8c6efa37
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 756d557fd34a25fa8bdea234a5d9e501a125eeb7f6bd6d4f5fde90229beb57da
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with a different form (done/made).
@@ -2373,8 +2373,8 @@ text=This label is paired with a different form (done/made).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd54a02daf057f477d44e1e9e4b09393e404c1993d969ffb2858d79469b875a4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9883106c37abfb5215a90483b099195f381c8f4cb66f62421655d192d103c563
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is written beside the remaining shown form?
@@ -2386,8 +2386,8 @@ text=Which admitted English label is written beside the remaining shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 20733c50f906594864b11f188f46af4da184f9fee9eedbe9f1dac6584103ce5f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5df7b13f4d2126d80642bc7c91b508d458333df7382d70fa8e202768bd300021
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen parenthetical we leave belongs to the plural form in the same note.
@@ -2399,8 +2399,8 @@ text=The frozen parenthetical we leave belongs to the plural form in the same no
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a8aaf78a210d60a07af660002006dde83e4ea1aa0f4e721b5aca7dbda1f22399
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9126e2da4353842f23fe8c19a46c71d83f9dd9a6c9615b5dec787407e476de10
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes to discuss on the base, not as this gloss.
@@ -2412,8 +2412,8 @@ text=The frozen line writes to discuss on the base, not as this gloss.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec0f078fcf3a6d1f1c3ab4e8f50ba29fbc0dbe6ebeb799cd39ac547e6b499b55
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9f189a9d075549f17ca67201b6fb5f1b13d105743a950890813bafcc82305583
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This parenthetical belongs to the plural form (we leave).
@@ -2425,8 +2425,8 @@ text=This parenthetical belongs to the plural form (we leave).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8f5670dd33a43b84e03fb7425b8ff6962851c1f6cca1be3a838cb2291828afc4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31ca25245e5b44efd2d4d4c2df2f9c13facea9afdde5c65932618003774a091b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is the base gloss (to discuss).
@@ -2438,8 +2438,8 @@ text=This label is the base gloss (to discuss).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e987fb6f9e6d0e790e5007830a64407217c739d7068ad8b9086eaf7751082674
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b13ff40abddbe032032235da06362839651a9f33864ea4a7ec3d5e4d36b72437
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.
@@ -2451,8 +2451,8 @@ text=The frozen line says being discussed or able to be discussed after the list
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2110620cdb2c6ba249885778692d4636d312c32f47f207954bb90254361f87b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 92f5582bb7da1950746fd773a9bc95f0f9e77df295bf3ff49c2a69bb414e8606
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English gloss follows the listed forms for the shown form?
@@ -2464,8 +2464,8 @@ text=Which admitted English gloss follows the listed forms for the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6df2381d9e89a79b3db5cac9fe718d6eaa08627878b47390f5c42b9f2981ced3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa93d9ca60500b0260f9e9e5801a02415ae74d19eb8a0f6a71206a40d4a3d35e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line gives being discussed to the discuss forms, not this parenthetical.
@@ -2477,8 +2477,8 @@ text=The frozen line gives being discussed to the discuss forms, not this parent
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04cbe4bca94ef84eab59cc48b0cf5463a32a570bfa84e7db65937d50f93c1046
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9685f8e8e8c6eb4bf878412869e472b276d5f4767953796fa294090a9c838e4d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen parenthetical to leave belongs to the other form in the same row.
@@ -2490,8 +2490,8 @@ text=The frozen parenthetical to leave belongs to the other form in the same row
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f4aa8c698e4bf58b68b9d30f7c2615bb5811a7eee345313dca394641d8659b2c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 529252f58e82cc28775626bfb445126944af1d55b4c1eb82c86d332bdaee4079
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This gloss belongs to the discuss forms (being discussed).
@@ -2503,8 +2503,8 @@ text=This gloss belongs to the discuss forms (being discussed).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a92dc26add5d23c3771db1535da30d6c11812b0c2cf910eaa20c2ba8b8a0aab5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21f01d44ca5137e782bff15550b01d12ebe38b63f7b04c44bfec0019287032b5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This parenthetical belongs to the other form (to leave).
@@ -2516,8 +2516,8 @@ text=This parenthetical belongs to the other form (to leave).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 822897199e569541b3713395053f16374c8af0f9b64fc9b9f6704cd1ffeecad7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5ce726367de5901bd678f6780e73d10fe29e7b254afb634307db019836f08eae
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes (we leave) after the shown form. This label is that parenthetical.
@@ -2529,8 +2529,8 @@ text=The frozen line writes (we leave) after the shown form. This label is that 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f864b131d2407b4b0cbf763d0e6e0283441fc90b9dee56f554254f9959815c49
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 86347113396fcec30f46e9d38e5228eedcd943c7c66581c1d9a820969042282c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English parenthetical follows the shown form?
@@ -2542,8 +2542,8 @@ text=Which admitted English parenthetical follows the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a692dd61973f5275b0358b90c535d37943059bea40ed06170c65f3182cce98e1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f9b09eb37f2dd418c3a7c798029e51826dbe8a32048d8a611a42a4dc4cf95baf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen parenthetical we leave belongs to the plural form, not this form.
@@ -2555,8 +2555,8 @@ text=The frozen parenthetical we leave belongs to the plural form, not this form
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 85b2e486c08c1f11012a7d1b46f432c30352f9be9c9f87923a7e459ea0529426
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fbc1200217fb77730fd05db4ec5d7a6a2df2cbcc01651dde73dec10bae78d130
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes (to leave) after the shown form. This label is that parenthetical.
@@ -2568,8 +2568,8 @@ text=The frozen line writes (to leave) after the shown form. This label is that 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b60a62eb22823cc1003bc74a843ffc34dcae1ce2a97aabd4110d82cc2621c6f5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f312c8a4a8ad4de872b0855877e15b082f212b07b640341497ecfccafa30c137
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English parenthetical follows this shown form?
@@ -2581,8 +2581,8 @@ text=Which admitted English parenthetical follows this shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f9b43fa0c2d8065b1be2100f569acf879bea9d002526641d4a9b9e9c03c6af1c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a8a3c2ec9ed134f1de3585d559f41f137f505d87a5d20cc49af14b2985e70b1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted past passive lines
@@ -2594,8 +2594,8 @@ text=Admitted past passive lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53ef7d0501e37eaddbda3ae89c7428fbef3ebee3c380b4bf985b16c2fb737000
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aefb56d0f2884f02f90e51c5c8596690dd31d1bebb998237f37ba635e85bde2a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 27 uses admitted past passive lines. Four stressed participle headwords stay as reference and do not establish a stress rule. Present passive lines are optional and do not gate this unit. Comprehension passages stay in the copy you own. Active forms are not taught here. Qualified review is pending.
@@ -2607,8 +2607,8 @@ text=Proposed Unit 27 uses admitted past passive lines. Four stressed participle
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e4994d660acf4738b2ea411f322f5c1bbdeb17128542b5185d584d77609bf49
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 261a8a94d1db5809feaf69500ccbb3f6cfdb12455376249d633aaffe5457963d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 27 in the copy you own. The app records do not replace that lesson.
@@ -2620,8 +2620,8 @@ text=Open Lesson 27 in the copy you own. The app records do not replace that les
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8cccd14e9f89e037bbc5361c6f7da9f51a7d1fd78da7cb27da4872a62cd8219c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ff03e1adba87dc02afc82a23efad986d8b10f65cfa1dc8bab789b1b29c873f6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Read the admitted examples on this card.
@@ -2633,8 +2633,8 @@ text=Read the admitted examples on this card.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 444404298cf890a2c12e98009e7d9c624da377539fedd2e4c164edc8ba055eab
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 731a564b817936c1e566bde87a9480505bd894663cd805d723a19277ed603454
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
@@ -2646,8 +2646,8 @@ text=Guided practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 785863385982b62a4eb8ff520b7bf0d1710660c351acc94c286965f206c00f03
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a01bfea491e895f5f553c142cf3146926366f5819044bf5957f3c6ebaf2716e6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
@@ -2659,8 +2659,8 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 481503ff6f5b205d608a0640309beb85feef19aad43d177a1c3987f645532d3c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c6b332e5fe1800332a4dc06b9fe1beeff43c1ce76b01771fb214cecdb0a5381
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
@@ -2672,8 +2672,8 @@ text=Remediation
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8ad1c4265f548fc2de6885aa7b80ac3583708c555e4b0367dfa14fff4ad39fd1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc0acf6a230b98b47ebce7062d3e850e8d57b8d3b4cba9cd84fd13747e0b16f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
@@ -2685,8 +2685,8 @@ text=Independent checks
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc6aa84dafb01bd50284f1a49d0cf1c9761e67470e0daf36462b3bdfdd012c48
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 47f7a8dd2225b714fdf43e845f3436f5bc4a34d753fbe204d751100898abf854
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
@@ -2698,8 +2698,8 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3974dc22ccc2f7bd0a9b76c3fc5b5ebe0bb77b0cb3f6366264f04b10aedf0ccd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 95507c27fe1f266248bd3585be9ddffb25d728495b6a88eafc03887e82606db6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 27 in your copy
@@ -2711,8 +2711,8 @@ text=Work Lesson 27 in your copy
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a33e8bee81ef4e46294100a8c224bd96f8b5aa03a60566cb0f7a4f340e02697
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad62d6b226b1a4fac73732a26ae2bc10b33c23168cd9a48eb4c23f66905e9b96
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 27 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
@@ -2724,8 +2724,8 @@ text=Do Lesson 27 in the copy you own. Use that book's explanations and practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 103613582489dccf657a5fe7015984c78e3c00f8b550f052d55bb5ca1ed4c431
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5915bcc10c38ebcb4ea32364fddc66a1b9a8871fa5616b931e4e35f0e4c7c329
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 27 in your copy and complete its lesson work.
@@ -2737,8 +2737,8 @@ text=Open Lesson 27 in your copy and complete its lesson work.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: db6f2f56d9adf1016316bf4ad5796bb16244ac43db6c811b92adaf2621341b71
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 71921f0ddbdc9ec3c1a96373cf6f6d9f18ece08d9742d74feb8409fea236c2a8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 27 book work
@@ -2750,8 +2750,8 @@ text=Record Lesson 27 book work
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 191c0a8a3890cd0f95f25d062ad5c887ad498f9a3dcf22c3f971572bb9e9e62a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: de31e8c6951a21935b31da20e442cb038248ee6ec606a5d5b00a3ac586f28cf5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 27 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
@@ -2763,8 +2763,8 @@ text=When you have done Lesson 27 in your copy, self-attest here. Attestation re
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cee323c5687bb0d17bb942d0ce5e2c54d69dcf312314fd9c1065ff8fc37daeaa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aafb316055104755951bb743cf920383f2ddfbbd4cd4b6e82fdc0fc407ea9b6e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 27 work in your copy.
@@ -2776,8 +2776,8 @@ text=Self-attest only after the Lesson 27 work in your copy.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 34410530c6f750af2ca50290f453e4b2f935353cb47382d8c4d6543465803465
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4e39895edf5c10675359a4f175ecb26f072f063b31bd2589bdaa0afd611691b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Comprehension passages stay in the copy you own
@@ -2789,8 +2789,8 @@ text=Comprehension passages stay in the copy you own
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6fe1c31221295ef4b44bb05f2a4765c0bffb01d8366c3dbac2e0d958cec40edf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f41312e9d8807007eed29054ba9747f5629080361085f9c46d66d4a7a1b807c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Comprehension passages stay in the copy you own. The admitted lines do not supply them.
@@ -2802,8 +2802,8 @@ text=Comprehension passages stay in the copy you own. The admitted lines do not 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e5a3b4510f9b980f7113aee1b29da19b1770a3db1512b653a745ec69cdca23c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42211f9a4c7f6541d685d7b052fbc9b955ce75478a88e33169f45e8d89364598
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Stressed participle headwords stay reference
@@ -2815,8 +2815,8 @@ text=Stressed participle headwords stay reference
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03c2d0dbcd31b10fcaae2f434bb81b078e61cf9c14b79ad217730a3689e6d574
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44d852ed41238f7dd5701979306eebfe36c4615b66957188b8aee44c5cac373f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Four admitted stressed headwords stay on this card. Choosing a headword instead of its infinitive does not test stress.
@@ -2828,8 +2828,8 @@ text=Four admitted stressed headwords stay on this card. Choosing a headword ins
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: SOURCE_CAPABILITY
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3ff6c30ac280dc4763558a9365681f354aa96fae9f875a85448567406047d143
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ffb618ecae16c0b129eef0142a589f90cca507451a644db16a9f6dc83919cf9c
 
 sourceId=src-wikipedia-russian-grammar-1369617627
 sourceRevision=1369617627

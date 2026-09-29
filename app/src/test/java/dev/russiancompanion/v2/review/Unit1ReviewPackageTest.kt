@@ -62,8 +62,8 @@ class Unit1ReviewPackageTest {
         }
         assertEquals("DEVELOPMENT", unit.installState)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
-        assertEquals("PENDING_QUALIFIED_REVIEW", pack.linguisticReview.status)
-        assertEquals("PENDING_QUALIFIED_REVIEW", pack.unitReviews.single { it.unitNumber == 1 }.status)
+        assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", pack.linguisticReview.status)
+        assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", pack.unitReviews.single { it.unitNumber == 1 }.status)
         assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
         assertTrue(review.records.any { it.type == "UNIT_REVIEW" && it.id == "rev-pending-unit-1" })
         assertTrue(review.records.none { it.type == "PACK_REVIEW" })

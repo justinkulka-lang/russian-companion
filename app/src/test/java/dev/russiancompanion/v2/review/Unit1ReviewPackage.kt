@@ -200,7 +200,7 @@ private const val UNITS_26_30_OBSERVATION_SOURCE =
     "Product Owner structural mapping input for Units 26-30, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum. Classification RESEARCH_GAPS_BLOCK_IMPLEMENTATION. This observation is not an approved alignment."
 
 private const val MAPPING_UNRESOLVED_QUESTIONS =
-    "Confirm the exact edition and ISBN from the purchase record. Confirm each printed page range against the owned copy. Record any variance. Confirm whether app objectives cover the required skill progression without later material. Confirm Unit 1 and Unit 2 linguistic accuracy. Review Units 3-5 only after lawful source-based content is prepared. The ownership statement is not reviewer verification. Qualified linguistic review is not recorded here."
+    "Confirm the exact edition and ISBN from the purchase record. Confirm each printed page range against the owned copy. Record any variance. Confirm whether app objectives cover the required skill progression without later material. Confirm Unit 1 and Unit 2 linguistic accuracy. Review Units 3-5 only after lawful source-based content is prepared. The ownership statement is not reviewer verification. Final curriculum audit is not recorded here."
 
 private data class StructuralMappingObservation(
     val unitNumber: Int,
@@ -711,7 +711,7 @@ internal fun buildUnitReviewPackage(
                     sourceId = capability.sourceId,
                     rightsIds = pack.rights.filter { it.sourceId == capability.sourceId }.map { it.id },
                     classification = "SOURCE_CAPABILITY",
-                    reviewStatus = "PENDING_QUALIFIED_REVIEW",
+                    reviewStatus = "IMPLEMENTED_PENDING_FINAL_AUDIT",
                 ),
             )
             if (unit.objectives.none { it.id == capability.objectiveId }) {
@@ -1121,7 +1121,7 @@ private fun mappingErrors(mapping: String, pack: V2CurriculumPack, unitNumber: I
     if (!mapping.contains("must not contain copied Penguin prose")) {
         errors += "Mapping worksheet omits the Penguin-prose warning"
     }
-    if (!mapping.contains("Observed edition facts") || !mapping.contains("Proposed structural mapping") || !mapping.contains("Unresolved facts") || !mapping.contains("Qualified linguistic review")) {
+    if (!mapping.contains("Observed edition facts") || !mapping.contains("Proposed structural mapping") || !mapping.contains("Unresolved facts") || !mapping.contains("Final curriculum audit is not recorded")) {
         errors += "Mapping worksheet does not distinguish observed, proposed, unresolved, and linguistic-review facts"
     }
     return errors.distinct()
@@ -1305,7 +1305,7 @@ private fun renderMappingWorksheet(pack: V2CurriculumPack, unitNumber: Int): Str
         "# Observed edition facts: edition_identification, author, publisher_edition, and observed_edition_notes.",
         "# Proposed structural mapping: corresponding_lesson, corresponding_pages, corresponding_topic, and alignment_disposition PENDING_CURRICULUM_REVIEWER.",
         "# Unresolved facts: isbn, owned_copy_verified, variance_conflict, and unresolved_questions. ISBN was not visible and must stay blank. isbn_observation stays UNRESOLVED.",
-        "# Qualified linguistic review is still required. Reviewer identity, qualification, date, notes, and reviewed digest stay blank. This worksheet is not an approval.",
+        "# Final curriculum audit is not recorded. Reviewer identity, qualification, date, notes, and reviewed digest stay blank. This worksheet is not an approval. IMPLEMENTED_PENDING_FINAL_AUDIT is not OWNER_ACCEPTED.",
         "# mappingRecordId: ${facts.mappingRecordId.orEmpty()}",
         "# mappingPackageDigest: $digest",
         "# mappingPackageDigest binds the proposed edition-mapping facts. Reviewer identity, qualification, date, notes, correction notes, and signature are outside this digest.",
@@ -1405,17 +1405,17 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
 
         ## Qualifications
 
-        A reviewer must possess demonstrable advanced Russian competence and sufficient language-teaching or curriculum-review competence to validate Cyrillic letter identity, phonetics, instructional explanations, answer keys, feedback, remediation, and owned-edition placement. The repository does not name, appoint, or attest any reviewer. The reviewer qualification field stays blank until that person attests their own qualification.
+        The repository does not name, appoint, or attest a reviewer. Reviewer identity and qualification stay blank. IMPLEMENTED_PENDING_FINAL_AUDIT records implementation only. It is not RESEARCH_VERIFIED, FINAL_CURRICULUM_AUDIT_PASSED, INDEPENDENT_AUDIT_VERIFIED, or OWNER_ACCEPTED. Green CI, a counter, self-attestation, or a model name does not fill those stages.
 
         ## What must be checked
 
         Check every Cyrillic identity, phonetic statement, instructional explanation, answer key, feedback item, remediation statement, lesson placement, and mapping row. Compare the mapping worksheet with the Product Owner's legally owned edition. Do not copy protected text, exercises, answer keys, screenshots, or scans into the repository or the worksheet.
 
-        The package marker scan detects only a fixed list of known prohibited mapping-input markers, such as the private mapping-input filename or a PDF extension inside the mapping worksheet. It is not comprehensive copyright detection. It cannot recognize every copy or close paraphrase of protected material. A qualified reviewer still has to make that comparison.
+        The package marker scan detects only a fixed list of known prohibited mapping-input markers, such as the private mapping-input filename or a PDF extension inside the mapping worksheet. It is not comprehensive copyright detection. It cannot recognize every copy or close paraphrase of protected material. The final curriculum audit still has to make that comparison. It does not claim physical possession of the owned book.
 
         ## What approval means
 
-        A later approval applies only to version $UNIT1_REVIEW_VERSION_NAME, unit content-review digest ${review.contentReviewDigest}, and mapping-package digest ${review.mappingPackageDigest}. Confirm review-package digest ${review.reviewPackageDigest} and curriculum source commit ${curriculumCommitForUnit(review.unitNumber)} before relying on this packet. Any later substantive instructional change reachable from Unit ${review.unitNumber} invalidates this unit's content approval. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed linguistic-review disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER.
+        A later OWNER_ACCEPTED disposition applies only to version $UNIT1_REVIEW_VERSION_NAME, unit content-review digest ${review.contentReviewDigest}, and mapping-package digest ${review.mappingPackageDigest}, and only after RESEARCH_VERIFIED, IMPLEMENTED_PENDING_FINAL_AUDIT, FINAL_CURRICULUM_AUDIT_PASSED, and INDEPENDENT_AUDIT_VERIFIED are recorded for that same digest. Confirm review-package digest ${review.reviewPackageDigest} and curriculum source commit ${curriculumCommitForUnit(review.unitNumber)} before relying on this packet. Any later substantive instructional change reachable from Unit ${review.unitNumber} invalidates downstream audit states. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER. CI does not approve that mapping.
 
         Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit ${review.unitNumber} reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 
@@ -1664,7 +1664,7 @@ private fun authoredEnglishRecord(
         sourceId = "src-app-english-v2",
         rightsIds = rightsIds(pack, "src-app-english-v2"),
         classification = authored.classification,
-        reviewStatus = "PENDING_QUALIFIED_REVIEW",
+        reviewStatus = "IMPLEMENTED_PENDING_FINAL_AUDIT",
     )
 }
 

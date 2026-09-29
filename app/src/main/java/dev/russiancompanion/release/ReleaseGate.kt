@@ -629,7 +629,11 @@ private fun v2CurriculumBlockers(repositoryRoot: File): List<ReleaseBlocker> {
         val installed = pack.units.filter { it.installState == "INSTALLED" }.map { it.number }.toSet()
         if ((1..30).any { it !in installed }) blockers += ReleaseBlocker.V2_UNITS_NOT_INSTALLED
         val approvedUnits = pack.unitReviews.filter { review ->
-            review.status == "APPROVED" && !review.reviewedContentDigest.isNullOrBlank()
+            dev.russiancompanion.v2.curriculum.releaseLinguisticReviewSatisfied(
+                review.status,
+                review.reviewedContentDigest,
+                review.reviewChainStages,
+            )
         }.map { it.unitNumber }.toSet()
         if ((1..30).any { it !in approvedUnits }) blockers += ReleaseBlocker.LINGUISTIC_REVIEW_ABSENT
         if (pack.units.any { it.mappingStatus != "APPROVED" }) {
@@ -669,6 +673,7 @@ private data class V2PackUnitReview(
     val unitNumber: Int = 0,
     val status: String = "",
     val reviewedContentDigest: String? = null,
+    val reviewChainStages: List<String> = emptyList(),
 )
 
 @Serializable

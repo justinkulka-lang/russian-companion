@@ -277,7 +277,7 @@ class Aud44CorrectionTest {
         val pack = pack()
         assertTrue(pack.units.all { it.installState == "DEVELOPMENT" })
         assertTrue(pack.unitReviews.all {
-            it.status == "PENDING_QUALIFIED_REVIEW" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank()
+            it.status == "IMPLEMENTED_PENDING_FINAL_AUDIT" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank()
         })
         assertTrue(pack.units.all { it.mappingStatus == "PENDING_CURRICULUM_REVIEWER" })
         assertTrue(pack.ownedEditionMappings.isEmpty())

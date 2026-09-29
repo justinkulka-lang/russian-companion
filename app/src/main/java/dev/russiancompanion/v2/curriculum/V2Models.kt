@@ -2,13 +2,6 @@ package dev.russiancompanion.v2.curriculum
 
 import kotlinx.serialization.Serializable
 
-internal val CLOSED_REVIEW_STATES = setOf(
-    "PENDING_QUALIFIED_REVIEW",
-    "APPROVED",
-    "REJECTED",
-    "NOT_REQUIRED",
-)
-
 internal val CLOSED_INSTALL_STATES = setOf(
     "DEVELOPMENT",
     "INSTALLED",
@@ -118,6 +111,8 @@ internal data class V2ReviewRecord(
     val reviewedContentDigest: String? = null,
     val curriculumMappingId: String? = null,
     val notes: String? = null,
+    val evidenceClass: String? = null,
+    val reviewChainStages: List<String> = emptyList(),
 )
 
 @Serializable
@@ -131,6 +126,8 @@ internal data class V2UnitReviewRecord(
     val reviewedContentDigest: String? = null,
     val curriculumMappingId: String? = null,
     val notes: String? = null,
+    val evidenceClass: String? = null,
+    val reviewChainStages: List<String> = emptyList(),
 )
 
 @Serializable
@@ -157,7 +154,7 @@ internal data class V2AudioAsset(
     val rightsId: String,
     val unitNumber: Int,
     val letterId: String,
-    val intakeReviewStatus: String = "PENDING_QUALIFIED_REVIEW",
+    val intakeReviewStatus: String = IMPLEMENTED_PENDING_FINAL_AUDIT,
 )
 
 @Serializable
@@ -167,7 +164,7 @@ internal data class V2HandwritingAsset(
     val rightsId: String,
     val unitNumber: Int,
     val letterId: String,
-    val intakeReviewStatus: String = "PENDING_QUALIFIED_REVIEW",
+    val intakeReviewStatus: String = IMPLEMENTED_PENDING_FINAL_AUDIT,
 )
 
 @Serializable
@@ -209,7 +206,7 @@ internal data class V2ProvenanceRecord(
     val shareAlikeTreatment: String,
     val sourceHash: String,
     val contentHash: String,
-    val reviewStatus: String = "PENDING_QUALIFIED_REVIEW",
+    val reviewStatus: String = IMPLEMENTED_PENDING_FINAL_AUDIT,
     val reviewerIdentity: String = "",
     val reviewerQualification: String = "",
     val reviewDate: String = "",

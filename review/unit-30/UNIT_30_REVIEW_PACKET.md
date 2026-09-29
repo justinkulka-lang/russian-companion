@@ -15,8 +15,8 @@ Unit 30 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 3
 - Unit content-review SHA-256: 60c27cc8efdb7e4ba36ca665be5f45b5106302ddc736e0db0465a733f653d33e
 - Mapping-package SHA-256: e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: 3f93ed7beabaa02cf597a05f02a2f6a70f99edf979b4b75c451c18096191b6d8
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: 0c36f3d2130a93b5302f07d7228694d29dc424635dc6ae7258bf0b4ec9222f03
+- Repository source SHA-256: 5d364a5c70e24735ca6e67032ef2d9ab65364ee4b168ef3afc41005fa750d3e9
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa374841c74089c874fb31b03063b682ffc63c1163f634453467b40621fd4647
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 919ace40cd4e32c527247894e29343c69bd841441e049f17040c0dfda9c3d131
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -1179,15 +1179,15 @@ remediationStepId=
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3662b71ced95bd6bd5cf710b93370fefb15f0dbb4652ff817b07f2ac281b3229
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 53989f19e60bd3c95b7757604c316041de951ff5562d11b91484c2d53d64e9fe
 
 kind=LEXICAL
 letterId=
 display=а
 note=ah
 objectiveId=obj-u30-letter-names
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-letter-names-1`
 
@@ -1196,15 +1196,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0ff549764f8681df0b4bf7aa35e99375494348be543596c81bf3057040eb71ab
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5dc6d8cc5a681baa73ccab1bff4bbf880138e0ccc4d69bc8f24caebe812ad3ec
 
 kind=LEXICAL
 letterId=
 display=бэ
 note=be/beh
 objectiveId=obj-u30-letter-names
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-abbrev-examples-0`
 
@@ -1213,15 +1213,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64ddd0013a21c86831a2af28504831e905ab7fe736aae14f6de58aa98fa5dd99
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bce2eb13e6065f96ec89f81d4417b79c577ea8bbd881d356670c60621ae29e2b
 
 kind=LEXICAL
 letterId=
 display=СССР
 note=USSR
 objectiveId=obj-u30-abbrev-examples
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-abbrev-examples-1`
 
@@ -1230,15 +1230,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af2b60546e442045d2fb734765defd81cbf6444e7eeeaf9f757bfc8f5a58e5b8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 29342978b6d32d6320eccdfcecdcaf7aef4e24439893526ff8cda1b6f780415a
 
 kind=LEXICAL
 letterId=
 display=США
 note=USA
 objectiveId=obj-u30-abbrev-examples
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-address-marks-0`
 
@@ -1247,15 +1247,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ebb88bc688df10ad8059ec4eef8a735a10584260034c2b48fdef84959c521d63
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 594368f8276d1fc132d1388cce1be4fe4309eaa0d5aaf1e0aaee8135c9fa0281
 
 kind=LEXICAL
 letterId=
 display=115114 г. Москва
 note=city
 objectiveId=obj-u30-address-marks
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-address-marks-1`
 
@@ -1264,15 +1264,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e10595c636b86e671a9bf95e0dba9d675ecf9fb0e64c4bd73da961dfb476201
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a256b8cb8b0882fc052d013fdb1f70f13db533db4a7cc6714213cbdcac1b9d4
 
 kind=LEXICAL
 letterId=
 display=ул. Петрова, д. 14, кв. 15
 note=street
 objectiveId=obj-u30-address-marks
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-address-marks-2`
 
@@ -1281,15 +1281,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ccded7d0eb92bf0eead5c79edf3748fcae5926dc67cd75ff15f3bbb763718656
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2b11cc060d4780b480123cc5ee181f3ab0a14e8479b953da1596377e123fb69
 
 kind=LEXICAL
 letterId=
 display=д.
 note=building
 objectiveId=obj-u30-address-marks
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-abbreviation-0`
 
@@ -1298,15 +1298,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5142538daf32000bdf6473783bd6aa558c17f41c1be48638cfcd5d9d18cb4a4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 59136ddba50da94b7165e33edd1f5e3617583ae506f2d55b2f5248bc8382c829
 
 kind=LEXICAL
 letterId=
 display=СНГ
 note=буквенные аббревиатуры и звуковые аббревиатуры на гласную
 objectiveId=obj-u30-abbreviation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-abbreviation-1`
 
@@ -1315,15 +1315,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e8003239866ee050332a60488d82e69668ca3db7ef330e2d8e938133204c385f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 96832421b7d906f30c2aa96353b73e13394cf0709203020a1ac91b007d639851
 
 kind=LEXICAL
 letterId=
 display=ЭВМ
 note=буквенные аббревиатуры и звуковые аббревиатуры на гласную
 objectiveId=obj-u30-abbreviation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-abbreviation-2`
 
@@ -1332,15 +1332,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a7cb93460b3ef495635483676571a1cd3862a2dd2904d737c5f8c79229cbc3e5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c856c17f29040c7fd75a0c17bb56171312194baf884174440ee7645bacfeb838
 
 kind=LEXICAL
 letterId=
 display=ГАИ
 note=буквенные аббревиатуры и звуковые аббревиатуры на гласную
 objectiveId=obj-u30-abbreviation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-abbreviation-3`
 
@@ -1349,15 +1349,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5106851b5a4d5673554d5ef0b422755c9869bb298cf7fa6568150c09966f8aa0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f9ffeb77cd4f5bfee439edfe4278711d4a4e62be8fd5ef7c6f48b83f20dbdc8
 
 kind=LEXICAL
 letterId=
 display=гороно
 note=буквенные аббревиатуры и звуковые аббревиатуры на гласную
 objectiveId=obj-u30-abbreviation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-abbreviation-4`
 
@@ -1366,15 +1366,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7cc720d7d4c102adba51d9473179f3630864e8852324b0c850429ae285859e8f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0f0d1f6d2fad0c74c4115d49f90554b7f007bc4a9edc2165fb149991b19c8e7c
 
 kind=LEXICAL
 letterId=
 display=в МИД
 note=звуковые аббревиатуры на согласную
 objectiveId=obj-u30-abbreviation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-abbreviation-5`
 
@@ -1383,15 +1383,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2791f0f7a7c57a91b2e9c01a5f6515330935cbb9a68e3b68a6adabd4852fa084
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0049e0d02c6370fddb1c34f62a7707d11d00aa44381e67e083c4ab8b98e8b0c4
 
 kind=LEXICAL
 letterId=
 display=в МИДе
 note=звуковые аббревиатуры на согласную
 objectiveId=obj-u30-abbreviation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-particle-0`
 
@@ -1400,15 +1400,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e41ef8e470cf7cee8ad538fd622b566a7b3d6c953b903f5934c1883cd275fb81
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 265ee8c379157319b90132bede45d5a5b5c7b977fbd80feea71ee8d3519b03ba
 
 kind=LEXICAL
 letterId=
 display=Пусть он читает
 note=Повелительное наклонение
 objectiveId=obj-u30-particle
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-particle-1`
 
@@ -1417,15 +1417,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 50268ac12ac6036f59bbb57354da6a619d3aee35723331499a4fd629940bbbcc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a973009c90061fe76f70c7934ad23e3416d0821d36722910a910efb86bb0146c
 
 kind=LEXICAL
 letterId=
 display=Да будет мир!
 note=Повелительное наклонение
 objectiveId=obj-u30-particle
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-particle-2`
 
@@ -1434,15 +1434,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 47d40935145da86a15aa31b4837291bddee855a4bec460155525037c5cc42c12
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 10ce65f680900f0cafe93ae1d3d62596d888417085f85c81a7b4bfa6c67a537c
 
 kind=LEXICAL
 letterId=
 display=читал бы
 note=предположительность или возможность
 objectiveId=obj-u30-particle
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-particle-3`
 
@@ -1451,15 +1451,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03e37b8af3b079a654fdfc0179ca53b88ee985b676a3a49bb7e1c1d23778ec1e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aeb0b2a0c61261e11d398dd5cbb6c28a396b5808f20a55a65b1a08bb7a5dc7e0
 
 kind=LEXICAL
 letterId=
 display=читали бы
 note=предположительность или возможность
 objectiveId=obj-u30-particle
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-capstone-0`
 
@@ -1468,15 +1468,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-readyrussian-reading5
 - Rights: rights-readyrussian-reading5
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 01dfceff5faf6ce5bae7e8b78ee61e5d0d765b4854ff6a8222f18bdc08d3847c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b6d999d39b0bb78eb113ad0474eb528aad4755e7d4657c5381e7ce54b6db8109
 
 kind=LEXICAL
 letterId=
 display=нёс де́вочку
 note=двухле́тняя де́вочка
 objectiveId=obj-u30-capstone
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u30-capstone-1`
 
@@ -1485,15 +1485,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-readyrussian-reading5
 - Rights: rights-readyrussian-reading5
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7c5caadd1a8879efc5d7f58e119bdd48f30a7627107cf7229a7d02353f500a90
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: efb80cb79a9949e006721fff70e2c1c9e7e8541dbee3170ea53df6b8a95d0134
 
 kind=LEXICAL
 letterId=
 display=несла́ большу́ю ку́клу
 note=все расхохота́лись
 objectiveId=obj-u30-capstone
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u30-g-letter-names-0`
 
@@ -1502,8 +1502,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 85f512d104b34fb889f809ed11020d9b1a5254491f67394efbffb8b41ab3ee93
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2647862bc69bd1972697ec471c23724f32a99c4b737555cfbb82c03598239f57
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1514,7 +1514,7 @@ answer=ah
 feedback=The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name. ah.
 objectiveId=obj-u30-letter-names
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen table writes this respelling beside a different name for be/beh. | The frozen table writes this equivalent in another column for father.
 testedFeature=LETTER_NAME
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1537,8 +1537,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4ba3656a2a23f5afb291769f68213df6ec99c956615dd4f983849b4e6637bfb9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d89ccf11daeac656f1b11d858defa9335ffd7b197c62a26fb52936ae8422d2c8
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1549,7 +1549,7 @@ answer=USSR
 feedback=The frozen line lists these examples under Abbreviations. This label is written beside the shown example. USSR.
 objectiveId=obj-u30-abbrev-examples
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line writes this label beside the other example for USA. | The frozen line uses this word as the heading, not as the gloss for Abbreviations.
 testedFeature=ABBREVIATION_EXAMPLE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1572,8 +1572,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b21cfc914949e4a93ef6296961e2082257910fe228684be8531d4475c27b16d8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 954c5012abe16d673d41bf91064d48af6c5f44cc250e85d66856b5ef37a8c685
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1584,7 +1584,7 @@ answer=city
 feedback=The lines are marked with abbreviations. This label glosses the mark in the shown line. city.
 objectiveId=obj-u30-address-marks
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen note glosses street for a different mark. | The frozen note glosses building for a different mark.
 testedFeature=ADDRESS_MARK
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1607,8 +1607,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0c7f7d4d4ee2fe7f4d182833993d2d02c190dedc26909af7b0f615c063182590
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 108e1289af063dd316e28cb9729ca7d9a5802d4f5790eaab4e45fe469409c8c9
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1619,7 +1619,7 @@ answer=буквенные аббревиатуры и звуковые аббр�
 feedback=The frozen line classifies the shown form under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную. буквенные аббревиатуры и звуковые аббревиатуры на гласную.
 objectiveId=obj-u30-abbreviation
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line assigns звуковые аббревиатуры на согласную to в МИД и в МИДе. | The frozen line names названия населённых пунктов as a separate category.
 testedFeature=ABBREVIATION_DECLENSION
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1642,8 +1642,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 697af92a4adec4113c9362eb892fabe13ceaaf278f29bc97e369217ba7138c37
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5d1c44e097f29150462c790355d3e1f0ed082d53857d545becad151368e8cc9
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1654,7 +1654,7 @@ answer=Повелительное наклонение
 feedback=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Пусть он читает. The keyed use is Повелительное наклонение. Повелительное наклонение.
 objectiveId=obj-u30-particle
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line assigns предположительность или возможность to читал бы and читали бы.
 testedFeature=PARTICLE_USE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1677,8 +1677,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-readyrussian-reading5
 - Rights: rights-readyrussian-reading5
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 19881c0a96d33377f2d56423b734a80beb62dcbea0d00061c93708875d95c536
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7cae961b795dc0966bbe867f7440f09e7f234a54e8ba59b68a1875e788aa1e36
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1689,7 +1689,7 @@ answer=нёс де́вочку
 feedback=The story says a двухле́тняя де́вочка remained, and then he нёс де́вочку. нёс де́вочку.
 objectiveId=obj-u30-capstone
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The story later says she несла́ большу́ю ку́клу.
 testedFeature=CAPSTONE_RESCUE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1712,8 +1712,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a62c4e532c834978f5d08b31a38bd627aa8255b84bf291b67d980828b2a6695
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ac0c1a239a0cb5cba1dfde61af621025c37150dceb144c04b2609c344ecc924
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1724,7 +1724,7 @@ answer=be/beh
 feedback=The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name. be/beh.
 objectiveId=obj-u30-letter-names
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen table writes this respelling beside a different name for ah. | The frozen table writes this equivalent in another column for bad.
 testedFeature=LETTER_NAME
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1747,8 +1747,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f84928bfef92496b2de21d541ba521dd0915c64bf7c22ed3ac8e1aa1f25859ad
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f3f7ef9957e195d59205b4978376312c6675cae3fc63bbd48b656eba517b7c69
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1759,7 +1759,7 @@ answer=father
 feedback=The frozen table places a respelling beside the name in the Approximate English row area. This equivalent is written in the shown row. father.
 objectiveId=obj-u30-letter-names
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen table writes this equivalent in a different row for bad. | The frozen table writes this gloss in a different row for both.
 testedFeature=LETTER_NAME
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1782,8 +1782,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a24eddc216823a008ceceb6798c83d70236c05af052c124dc6d6bd1d0e92bb4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 213688a759d623ffe5bed8ac1d94a5b872dda164a2db2fb7dead58fcb157176b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1794,7 +1794,7 @@ answer=USA
 feedback=The frozen line lists these examples under Abbreviations. This label is written beside the shown example. USA.
 objectiveId=obj-u30-abbrev-examples
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line writes this label beside the other example for USSR. | The frozen line uses this word as the heading for Abbreviations.
 testedFeature=ABBREVIATION_EXAMPLE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1817,8 +1817,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 07277819e13c8cd7cd77b6da1d8e8fe90df3af581a89d0bf6e19b1a04e14c71c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a9e689ded4cf877d1605db81f35d65c34558ed7bb5f209792386e8820c76ebe
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1829,7 +1829,7 @@ answer=Abbreviations
 feedback=The frozen line lists these examples under Abbreviations. This word is the heading above the examples. Abbreviations.
 objectiveId=obj-u30-abbrev-examples
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line writes this label beside the shown example for USSR. | The frozen line writes this label beside the other example for USA.
 testedFeature=ABBREVIATION_EXAMPLE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1852,8 +1852,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c77ed19860eeabefcb473d5a1a24c4d9a5961b31dbe92228b451dd350f7dd3b1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: beffb599d52226f5b63441f44e102825e809d27679a411e0121ecb6cb01b0e01
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1864,7 +1864,7 @@ answer=street
 feedback=The lines are marked with abbreviations. This label glosses the first mark in the shown line. street.
 objectiveId=obj-u30-address-marks
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen note glosses city for the place mark. | The frozen note glosses apartment for a later mark.
 testedFeature=ADDRESS_MARK
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1887,8 +1887,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 31184663f0c3a04b5aefe8507e9c25bffc005fd7fd53bd5400db520e51f6ecc9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4894916d600fd3a54c453e6793d23dc89e7bfae1cc1c041f5e917d55f05013a6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1899,7 +1899,7 @@ answer=building
 feedback=The lines are marked with abbreviations. This label is the gloss written for the shown mark. building.
 objectiveId=obj-u30-address-marks
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen note glosses city for a different mark. | The frozen note glosses street for a different mark.
 testedFeature=ADDRESS_MARK
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1922,8 +1922,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd6217a2f5125154121a702dfebed65f9f01b7dfc4df824581428757b379e72f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38f1c53c7e7e097ef36df16ebd030a2eeb24c15d11029f85ad51507e397bbf20
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1934,7 +1934,7 @@ answer=звуковые аббревиатуры на согласную
 feedback=The frozen line classifies the shown form under звуковые аббревиатуры на согласную and writes в МИД и в МИДе. The keyed category is звуковые аббревиатуры на согласную. звуковые аббревиатуры на согласную.
 objectiveId=obj-u30-abbreviation
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line assigns буквенные аббревиатуры и звуковые аббревиатуры на гласную to СНГ, ЭВМ, ГАИ, and гороно. | The frozen line names названия населённых пунктов apart from звуковые аббревиатуры на согласную.
 testedFeature=ABBREVIATION_DECLENSION
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1957,8 +1957,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee396fca2ef7602f952068f74360909a255bcb52e8ccce4e274171511fce897b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 28801d3da83467d40d3edac5ce1a8ebd21d18e0382774854b31b01d8b1475280
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1969,7 +1969,7 @@ answer=буквенные аббревиатуры и звуковые аббр�
 feedback=The frozen line classifies гороно under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную. буквенные аббревиатуры и звуковые аббревиатуры на гласную.
 objectiveId=obj-u30-abbreviation
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line assigns звуковые аббревиатуры на согласную to в МИД и в МИДе. | The frozen line names сложносокращённые слова as its own category.
 testedFeature=ABBREVIATION_DECLENSION
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1992,8 +1992,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a9ee2d9c2c027d7ed590d20c9df63ffa0ddfda3a37d4b41995362a94d06813a0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f0b3e459d8f7bbc9894bbb682dff8605279c83deec8826098213519a3448bb04
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2004,7 +2004,7 @@ answer=предположительность или возможность
 feedback=The frozen line says читал бы expresses предположительность или возможность действия. The keyed use is предположительность или возможность. предположительность или возможность.
 objectiveId=obj-u30-particle
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line assigns Повелительное наклонение to Пусть он читает and to Да будет мир!
 testedFeature=PARTICLE_USE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -2027,8 +2027,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 005a0551d698f19172e206b4188a8029ebda6da558528c64b724bcb150cc7f35
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1877d417d3633fc088dbe7a83ae2cf8750466838343c27639592f54ddf177764
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2039,7 +2039,7 @@ answer=Повелительное наклонение
 feedback=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Да будет мир! The keyed use is Повелительное наклонение. Повелительное наклонение.
 objectiveId=obj-u30-particle
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line assigns предположительность или возможность to читал бы and читали бы.
 testedFeature=PARTICLE_USE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -2062,8 +2062,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-readyrussian-reading5
 - Rights: rights-readyrussian-reading5
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a4150765584df549e370da59024b12623ee721f0a8f7d159a6ec7ecb230b189b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 24ca2cb6387939ba102ee3eb21dd86293c1b28a6c1d5cdec1616b161422be782
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2074,7 +2074,7 @@ answer=все расхохота́лись
 feedback=The story says she несла́ большу́ю ку́клу, and then everyone все расхохота́лись. все расхохота́лись.
 objectiveId=obj-u30-capstone
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The story says he нёс де́вочку before the doll.
 testedFeature=CAPSTONE_REACTION
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -2097,8 +2097,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-readyrussian-reading5
 - Rights: rights-readyrussian-reading5
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a066aef69a18d8d9bb46b724d947455ff25788ae1e4b6ede50f3de12ffd7b953
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f8b6b15aefada362229a13f303aef82c9324ada9f5fbe6e3be535fcc4770f4e8
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2109,7 +2109,7 @@ answer=нёс де́вочку
 feedback=The story says he нёс де́вочку and later she несла́ большу́ю ку́клу. нёс де́вочку.
 objectiveId=obj-u30-capstone
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The story says everyone все расхохота́лись after the doll.
 testedFeature=CAPSTONE_SEQUENCE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -2150,8 +2150,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a334b1002c8a4e70eb4af023073a97231cca276ade42b9fb765f74ebb077dd4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b39f626f2fc2f0b020a02fabb0c19b44b0e7ebb395ecc2042c8a0b325d426e7
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2183,8 +2183,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: abcd8f0ddb1218c05814b39d7194b2a3d315bd3b76e255051326e92c8b2958c7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2da49882c3bc1ca1ecb683b3947eb1d026d73f7c705079a76d639376cc1b5e9e
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2216,8 +2216,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9c669acf4e35bd870249d1af721e89a52ec7bf344143843e5247aa7a4a217fb2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 92154126f142b78c5f12b53b8f594510085598dabb9dc84c6bcb2656c3f8efe4
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2249,8 +2249,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c41864aa8bd3e0febca5648079e09e0863a14b4741dd5016e8c54c0d07e6f15
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c2029d38164ad4cd02477c3e2c68b1a6ff0f300ef87323d9ef7ab57f800184fe
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2282,8 +2282,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8ef3510b0bec36b73eb2e4d13265d8e93f652bb25a6a2fe85b5830b8f6097a44
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 29b696fc0791c4edbe2b4d5b84b3e84b72c4638429bb6de3995c018f3e169aae
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2311,8 +2311,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: db41c66955a80d8ecd9366493d105c65be185cc3c8ad556ff729d51e882c4b40
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae600951d3ff1358f3457f3891ed599ef297324a40def614d405493ecde3e0c2
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2340,8 +2340,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d1786ae7af5648e4c8c8d389a5f0d27c4048f57deef4818aa0195713f9b26491
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13daffa72a6092e4238ff4ccfe7f83f9339c960ca8acd2aafd452121c2b0877a
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2369,8 +2369,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9fe378dcd74220dcc25337523548c72211dccc7719988ce005e5751625a77933
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b21e9e7164f430429c8cb9211806b6bb1b75e0d85a2b84e7ee557b849ce0255f
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2398,8 +2398,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c7944ae04490f4ad84223166e59a11630d229ab68ac92c9c50439e92f38a4ae2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 354f9e24e597da48c05f71dc082fbce25b8598410ccce492d76bdcc2a07068db
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2427,8 +2427,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb50660b6c3ceda19680452853e06534518c863f8cd93e30a5826f19e5a87aed
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5766a1bca9bf97082f5c4682bd1a9eb9e25deb51946734ff730608b3d8435da3
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2456,8 +2456,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 013509e6c959034770b91d01f5fdb5711d3624e5b786f9c6fecf6615e29fa4d0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bda1ffe8f053e9c40c6a1084ebd451aa12d626335df9ddb9ff205c46162d9a01
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2485,8 +2485,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2bc67a8d860af1c65517c72426c4c75772544d77c799bf46ec07744bd672eb2c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f963898098ff5decb16c0d7ca2e28a95449385ed772713d524514ea9c166aaf8
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2514,8 +2514,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9b145a66e712cb59c5651d9630dedb1239e22d8ae71d5aebb7a5f62e00736b4f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4eb3057ce1f1ee842743b53f3c43498ba1252fe6359a879e44a76fbd44419c60
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2543,8 +2543,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8cca16a0a6fb1f16a96e2d3cb89b09dab6aeacd453090816f5a4a522fbeb2e46
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c675f73528de55bdc3c723f9faeb498850232046771a23a98169db257cf93da
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2572,8 +2572,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5082eb9f5184a60078615474299de86b2986162a2bddc22110f7c6c659b3c6cd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2bf830fbcbe88c4c5ab454923898af6500703e27077851f370631050ab14ffc7
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2601,8 +2601,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4ade7c4be05beb6a2c7e29cafa15da5f305acfe50e5b356099d0f23717e51060
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58533b061684766c1e75004b01954aa69048f6a7d526d913ec735b82b87dd6e9
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2630,8 +2630,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 376c9c0a07f49178be332ebd31bc293548526af9133c8b6fb5d727c1dd607d16
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 950c34e907b1449fb5d4a859f3fc72f3341c35b839af1a43233acf68f5ba888b
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -2663,8 +2663,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7b920067d3d93225c1be7e92a8b9c956f3b24817adc1ed25d79b5e998dbc4f53
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 52a5992fe38423a4614c4d5440eb1bec00fe984affc94252e9aec44ad669190d
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -2696,8 +2696,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 536c07c826a216547dce3191491bca0aefecff025c33e910495958cb5fb4a320
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1203a1a395ebba964d628d9838d1c7eb6f122d82e7e4f5ac2f2e2eb859efb39
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -2729,8 +2729,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6845eeec28fdef892bdc0cda2fce55e12ff9783af14e5f40368a8346b18f0b99
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f7a0751c3277fc9e74e2bd3f0779cd95fdcce710c5f2154e8d47996cf688f5e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -2762,8 +2762,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 05d280776cb3dc5e73c4cba9270eaf761610d435d8a59926e70629a08f5c54bb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1fe8a40e4d7ca86757b7c2bfd1ae929f18b3665c2ccc3ee3c95ed9cce31f3bf0
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -2795,8 +2795,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0c8cbba6365609fddf4c1121daac4de4c56b34bfde824b70cb0bb69f9cb8e62
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 905e8409d0b36b6df074146f4c4311ac68123770ea91d67e716c691cd8b9fcaf
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -2828,8 +2828,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd92c1114c31936a4b8d1547246f73f21c1d139589a705b67a0bba89ac63f0fa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 552b7e8c355749e97cdf57b7232924ea1396beb737e176ed8e02149f99e6ff8a
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -2861,8 +2861,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0484ef7ccde7c5d8f870c34437b1b258a9e75e395ad4d0e70305123cd3961dfe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 52f2cf8482f7dc0820ae0f3d7b0e2355adcd8d06daeb907622fc5f896a64b6bb
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -2894,8 +2894,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5dd3ea3b289adaf7cf3554615bedee04bc6610b9591ec45c99f608f7da9fbfb1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c093135b70001073edeec45e05481672e289d0f24554628fe3e02413ff00211a
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -2927,8 +2927,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 15cf9f0b2176128d111e88f3d89eb308c758646ab308cec1e0b98c4a91dc3a2f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 208bac1bf3456142c5cb75b9476ab5e1335be612ce2c2a62ded01d95af38f4ef
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -2960,8 +2960,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 08e1c2474b68c62eda6c0d7c464e312908ce2724960c585041e5b51626ad5629
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 766a27366ce2cf1e53464093777a1c929fcad4f2a3f556f41afdd8468b726cb4
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -2993,8 +2993,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0332f03ceaa18859d86dea731293aa02b5c0070f222da383797dabab4e6e7cf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 80657d19059353173c2bc564e3cc3c2e5f333ba61efab099f323a5ca6c135a0b
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -3026,8 +3026,8 @@ reviewedDigest=
 - Source: src-readyrussian-reading5
 - Rights: rights-readyrussian-reading5
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e71752efe9677271c522a1dff2b92649b9149adfeb50e169deea2ea6cc0be99
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 976f100f141c4dbe66152a1145bb532deef732615404e20690840bea0be43819
 
 recordType=meaning
 sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
@@ -3055,8 +3055,8 @@ reviewedDigest=
 - Source: src-readyrussian-reading5
 - Rights: rights-readyrussian-reading5
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 440d757379dc6a072aeca206ef666b50fae7a2f0186a6a8ccdc632e872dff834
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b470760880dde39c33049d38ee0adee9c1d6a48aef20b132a52e8509893beb0
 
 recordType=example
 sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
@@ -3084,8 +3084,8 @@ reviewedDigest=
 - Source: src-readyrussian-reading5
 - Rights: rights-readyrussian-reading5
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4511b3cd34b39414d1b87c74cc510b8107b2072f73672094f3870412d83bf137
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 937eca48abfdadab1fa19de9063978a56d024f1337f6e1e24bbff42c805f4654
 
 recordType=meaning
 sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
@@ -3113,8 +3113,8 @@ reviewedDigest=
 - Source: src-readyrussian-reading5
 - Rights: rights-readyrussian-reading5
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f8f88208ac6cce928f84a8d38d3d4b17ab758aabbb01fbc4ef041c68e28dfc2d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8e6e37cf754faa8f3fa5c8bbc5f316bbd8a53a417b6bc6d9e9eee94d817f50e8
 
 recordType=example
 sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
@@ -3142,8 +3142,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d35274bf4dc092ba9454f20cfa427c8bf88059ad66d8b3250aab389f87fcc33d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 846f215e2282746915874fee7832b3b71caee8888152a77bbc4c817e66978442
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -3188,8 +3188,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0b827de7af7d7c738b22111ad482bdb08d324dc4928176e45f7d637d594da45
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b15bf1c228be3c88f9e3ede37e6330af4f36939cdb389cae09693ea6a621661
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -3234,8 +3234,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 521a72194c3db4017f21e91387126df7bd1fbab2417eff45310c12e6feca8c02
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 29f5625ded87f3867fd1a172ceaf6de8f5b4d86338df79712131356146b7ebd4
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -3280,8 +3280,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d065b8dddc270f1fcf77dab46c872e6ba9d0f1875e11da3c7f63b6d33f87fac3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9413377665d027241f1de3cab0272b899446b1ed413cc69570abed25c9e45286
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -3326,8 +3326,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af51aaa46e21afd51672d274fc523a3bbd63f60f8b3e111527e45fb53db63014
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e44d53bfd592665e0918411985c69d3506f878003b3ac0d0f7ef5eeb83bff802
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3355,8 +3355,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3fc1528a30389566353515315808b587c864771bc34e0bf6862fa10c3b0e05e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b707b8d552853cb17929b5ba036607168925bcedc9e699e905173224766342d
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3384,8 +3384,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b046070f5e23064abf2bb8b7e85bcdc26452148a589bd477f254b6d5db92e38b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58cc2bf0514cd15d2146cb794bdb228388eb2d62cca714935c7ba6040a0e2711
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3413,8 +3413,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c2fd26b79015970b29050b61eb2f7a39629a159a52b8f48293fd307ced5b6cc7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b84531c2ff2cf2f85b666b5d9abd632933bfcb22a0771582edc8dedfa9b153d
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3442,8 +3442,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53174d932ca9dc0a9a4418b62c1a3b187f1840b5b126982c7a3eae42cf6f7a11
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9c365003b7268790e9a5a714ccad9bd28dfa83ceb6efbafa791dd42f0e0b3bbe
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3471,8 +3471,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 739e810d11b698f64dd320e6a8035dd75df609df979995536a339077f371e3c3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42effbe1484df99204c75c6a3190a79b2e0d9ca3e069c886b6b3cec39e2c346d
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3500,8 +3500,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 13e7e161273461396356bab7c9c4785b58075864ce9a3630ebb7d4217168512a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b6b6c34f3f8172bc30faf2d566dc22e6f35fd2f0d80fda00779dcb9dcfe50990
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3529,8 +3529,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f54a8433f5ea82c8588515bfe1173a70d9f9c305665e7a040885c95fca735f88
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef8bf4da7dfc9a276cbc1b35ecd03854a4c83f74a0f9edb90a2904da38491f3a
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3558,8 +3558,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd0f12f9b90adcd21965fadaf96673d84b650df8e9fc66a9903dc6f8d767afc4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f76dc9d313bd7838000311471b2c43d13dd546fc0f1bbbd364e51c950b9b15e3
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -3591,8 +3591,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 73350bb599f4bddf381b40ec6ca6f2a87c3baf3e8838ec77edfa08115812c2fc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb505ec8b9a3aed91ec18aa5b2184efd306313c06b6c149d4149620e9f76aed5
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -3624,8 +3624,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 362b24e68ef1b35789fe70652bc52ebeca51bf55e0493bd1a099100fd0f83bcd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4c1646b3f93c85d97264428f147a480ca20a537497430c5b16e225a850d8701
 
 recordType=instruction
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3653,8 +3653,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9e75446c2176914316352f07deef81a09f1c6d62018463f4ddb832860774a835
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2404658b7f1d3ff32a9865c469a674bc61af81fc79bf060f68f589b45d779e6e
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3682,8 +3682,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f4b9a2fe0132761d30de9fde1168dd9cfde161b7cfa668a96cddbb44d0920962
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd11cf139df41340fa1922a1f290c2cff30c2a9c4a19c1b9f8d44784a0603b2b
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3711,8 +3711,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f3c10ab97d75dbdc34d6a22accfedf151605ea6c6aa53fa07d7771f34870be57
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: caa46ee2c1071c5d3ecce4ad7e86f4ca9df4d7dec75ff0fd809e20b9c8adfe6c
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3740,8 +3740,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d7b21a9d928a8796b67fee46ce42b7d99e98d2fb329ff32ccad6966204374485
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 551ab2706ef832d94bd1a5cd41abe117ae85753fe2fcaa3f91dc83e5d4a23e51
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -3773,8 +3773,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c925802d34f30f21026a3a862282344ef86cc4c026ad9cdce17175d8010b184a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f0e75231c087d172321d461e0d78417805b554bc3bf7c72e39011ad2c2a9dd2
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -3806,8 +3806,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-various-stuff-3353858
 - Rights: rights-wikibooks-russian-various-stuff-3353858
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5ec6727b606070e1d543ce73ffb8236065dde9bbddd5db91ff7596eec56f2f1c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4122807e67b62a2ee1cfa5fbea4fdc0b9c01548bb27a162b14c52a49a937775
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858
@@ -3839,8 +3839,8 @@ reviewedDigest=
 - Source: src-readyrussian-reading5
 - Rights: rights-readyrussian-reading5
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3c1f169725a519abc3529444ad9fb3b3392c8281c025d765c26b80c8886cbde1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a603061208610253f51c453ae6ab0b43cc4cf1496daaba5099584ab0f16f095f
 
 recordType=instruction
 sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
@@ -3868,8 +3868,8 @@ reviewedDigest=
 - Source: src-readyrussian-reading5
 - Rights: rights-readyrussian-reading5
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ef4b8dc570bafbbec31c261119e42321f93fe44ceb3763f194ef96ed87d8e24e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2a96af44d88fc9379ef64e48b8230be532ae8a219672a68bb6ec89aed510028
 
 recordType=example
 sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
@@ -3897,8 +3897,8 @@ reviewedDigest=
 - Source: src-readyrussian-reading5
 - Rights: rights-readyrussian-reading5
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b7765467519e15f4afec462dc6cea155aeb413c683091abf35045b6c0bd8fda6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cb3984dd10ab3888c2190f5ad55f32797a9c7714dc5b6b4150321b1dcd6f0ee
 
 recordType=example
 sourceUrl=https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html
@@ -3926,8 +3926,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b0c6433af017ad48ac4b822de80e8b7c80ddfa9b6c3c07371869dd6f0a9123df
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe65008834ff6d4476e71fd3b3dc1b6d56777e9044749b9c18392f486572f280
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -3972,8 +3972,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3cda468848d3189c608fca22bc52bb601531331ebb38012213fe54c640ad72ee
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a4a1df9762757b49d2f3e7404710cf64e21c55ea82ce6cd2e051c03f34ab38e
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -4018,8 +4018,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70bbcb0a78ab7851ce94399801688451752ec56d1409e6144b7c451ef8135fd9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b23608d99200eabde3a578091d702e6a8b440b3dbcdbd1d2110415dfc44595f7
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -4064,8 +4064,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 83362ead05a52f5f6f4b3e0d2849f7d33c737e8eebdd3da64ed0be84fe5e404b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 992630d8ed7c9d6ed911a3e328d630a3abc6fd8532ed6186cc40a0d910637527
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -4110,8 +4110,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b6b61a07fa0b98cead7a17c2eadf6d6eaf214d6f7d951192611b1bdfc9647160
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b64553555825eb73792c63e0d0f3aacbfd08aeac085a7fc2336008c3c7d90a90
 
 recordType=instruction
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -4139,8 +4139,8 @@ reviewedDigest=
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8232b8e417fcaf3c1e00d21f76d65ac0da1ea6d77bd5ea24246e421f49e9f381
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4407ce69f9ee93a73cfd6f41c4c8809d15afbe38011b1af025917a83be9fb6fd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
@@ -4152,8 +4152,8 @@ text=Admitted lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9ff5c8b3ddde455231f88f097ef3a03a4a6ae8724f74d2f4a07cd711709140ea
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6bf7f99e272ca54b7c484d4bc4db843f6f305a807135278ddf898790a9b1956a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen table writes this respelling beside a different name for be/beh.
@@ -4165,8 +4165,8 @@ text=The frozen table writes this respelling beside a different name for be/beh.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d59faeffc9e6532a02b629cbcf726529e498aec3bd2548a2c6fbd5360ebd3ed8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33fd6c9ec4dbad022615f4881b6b82c293300f7d10c73bd8b7f4cc39021fc916
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen table writes this equivalent in another column for father.
@@ -4178,8 +4178,8 @@ text=The frozen table writes this equivalent in another column for father.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 376b6f346070bbd0af72e52ef8e0486593f835392c843e25babd5528f51e5fb7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5b3e2238416c6cdd816a18d3d5e8eb52047b1adadb906e808c1ac33688758e8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This respelling belongs to the other row (be/beh).
@@ -4191,8 +4191,8 @@ text=This respelling belongs to the other row (be/beh).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 299624bf2b61ebf01c5c802b309dec31cba683779c8b2eac87bf861a864705e7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 503139c3c81e79234eae939a9e63256e0542235d4c1c9626da96c91b55f87cdb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This equivalent is not the respelling (father).
@@ -4204,8 +4204,8 @@ text=This equivalent is not the respelling (father).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6d80c631c453d67e4cba063d6609d527de348b1744c17363b6cc80bf7df6cd87
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f5cc2598f7907658565a4599e6758e438130fbd882bc0f864d4000f404bb68b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name.
@@ -4217,8 +4217,8 @@ text=The frozen table places a respelling beside the name in the Approximate Eng
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 761432affc9d6c6ec86f468c46ff295fd7f17e9cea375e84e6208120d7babd09
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cc27632eb0dc8ca1167f8ab162e400ad84f2bc5c84a6adb494fe07c16ac39442
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English respelling is written beside the shown table name?
@@ -4230,8 +4230,8 @@ text=Which admitted English respelling is written beside the shown table name?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0a2eb5d99035ab2e8e7736a39c7f7f9e65ac747dfc995ec6126df39e5a8d9fd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ccc7de1febb2f16f647178c40fa546a7d8cccba1a74790e0f60144859669aa1d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
@@ -4243,8 +4243,8 @@ text=Admitted instruction
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0eeaec899890175a15945a233de9a6853ca83e12fd34d5dd621714a78f25e03
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e31f9fdff587d2a4cbb5abaf010487e481f467f47e26d35781830c9896241e40
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen table writes this respelling beside a different name for ah.
@@ -4256,8 +4256,8 @@ text=The frozen table writes this respelling beside a different name for ah.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4500b4ec56fce8b1781e041bcae4fa543ea9d8f67cd211735df3e9d307589039
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7104686c8277b84e55953acd6f13198136b4fd009d0a01e616e8fbae6255adc1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen table writes this equivalent in another column for bad.
@@ -4269,8 +4269,8 @@ text=The frozen table writes this equivalent in another column for bad.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 16482bd47fdda7261a6ff264dd0bf83a8b3a1b27097b5cebbb3828a33e852cb8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 63b32d9293498ee664579e2e989f9964d4268f40e82013143704a7afb1fc0ca8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This respelling belongs to the other row (ah).
@@ -4282,8 +4282,8 @@ text=This respelling belongs to the other row (ah).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 44cfeb7f53b8ee728f494531a9207617a92182694a70067d61d0bc34efd78bd1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ab215afde8fec1daa262b95ff89fc0ca2856b1c223c24577ef0028f5f03d551
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This equivalent is not the respelling (bad).
@@ -4295,8 +4295,8 @@ text=This equivalent is not the respelling (bad).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 91d8849a7f4d8b61394681b300cdd41efc95d7244738cfbf4762a2309e360e0a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77a60840e01430098412b5cb0f2b3d9511838a115ee9e974fc37bf7d9c908988
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English respelling is written beside this shown table name?
@@ -4308,8 +4308,8 @@ text=Which admitted English respelling is written beside this shown table name?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a92e0c954750f5c5e9da5e97b570f6f0245e4d7b57e9afa8bcf6e65d8fc7e22a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 02a56f54a210a05b2a70f58f7048f604c5f40dcfa2f5f479bd2e36b0f50d819e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen table writes this equivalent in a different row for bad.
@@ -4321,8 +4321,8 @@ text=The frozen table writes this equivalent in a different row for bad.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03d13068fc9e617259d00c78ed718a724565cf1f19e360f0d80a6901293fb0f2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2c91e5c28399e5a3481c4e5f224f700403a8768228e2664eb99ec6c484b8721
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen table writes this gloss in a different row for both.
@@ -4334,8 +4334,8 @@ text=The frozen table writes this gloss in a different row for both.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1f0a5b7077e73f857f485a8c8c2435c96f57200eae30767f0ada0df6025e28b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c31fdfd4fce9e05fc4bcd7c5da2e92b035d8990d3d13ef904b868a46a271983f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This equivalent belongs to the other row (bad).
@@ -4347,8 +4347,8 @@ text=This equivalent belongs to the other row (bad).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a3c3f819e0aa252523acd3dd2de887c6ae910f36c2eb9b8dc98b9308bbf788c3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 188c9416cbdcbfd64f19335516ed0120868aa806f506a6dae57588cd6b1c8299
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This gloss belongs to the other row (both).
@@ -4360,8 +4360,8 @@ text=This gloss belongs to the other row (both).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fcdc922a4c3238d9b3886b8d5a9e10ab9b7c83e964d26cc9d4e3966530aec7c9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50c31b47cf8fb2837bfd49862a4901de4ba0bf415be02a1869acffb683eca088
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen table places a respelling beside the name in the Approximate English row area. This equivalent is written in the shown row.
@@ -4373,8 +4373,8 @@ text=The frozen table places a respelling beside the name in the Approximate Eng
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bda91729ab76730f68d7975a4180137f0891eb146f979fad190fe26743d517d8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d7caddfb01755609f9dab2fd3125e344265f69751b807a708d439448a3f2b367
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English equivalent is written in the same row as the shown name?
@@ -4386,8 +4386,8 @@ text=Which admitted English equivalent is written in the same row as the shown n
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ffe336855942036c3032b26017ee5a0f778788d76095bc53e2b907f6c1f47b7b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9103183602f6b528fe88d30490522f169d6c70db0f75e6622f0073d0d5003cbe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside the other example for USA.
@@ -4399,8 +4399,8 @@ text=The frozen line writes this label beside the other example for USA.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e797cb78dca4c91be8d6716cc4c1c3c8464933d9023a1c05a1a8e7479e84c7f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f3254928adce250e3cc354674f6448942f74e7f4aa129dcc844d10f39804a7cc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line uses this word as the heading, not as the gloss for Abbreviations.
@@ -4412,8 +4412,8 @@ text=The frozen line uses this word as the heading, not as the gloss for Abbrevi
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f63905496b36171a1093867e39823ef74c58849968ab7ee09e9d58900ff73e70
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 130d928fe3aafd1a3870f42eaf108098d36c2ee9bdc22f0916cca1013a3901fb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with the other example (USA).
@@ -4425,8 +4425,8 @@ text=This label is paired with the other example (USA).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c48ee3137b051a4f5fd8595dc1424f025cf4619e0eaf11310edd2c995905f253
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1624e3bfcaa78f6357cb2f75d6f63b33f7274eb2fede9a1698dc7f71bd5b06ba
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This word is the heading (Abbreviations).
@@ -4438,8 +4438,8 @@ text=This word is the heading (Abbreviations).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d83ba49f63020ab30d7ef9e2d8388f6c359412641e19faa827a0b7a5fc20f48
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 990043b6c2cde9b7db4bcbf01bef519e2182079c22572300408f424ef47f2fc5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line lists these examples under Abbreviations. This label is written beside the shown example.
@@ -4451,8 +4451,8 @@ text=The frozen line lists these examples under Abbreviations. This label is wri
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a7356ab30454ede0c694a67410427e3536e140024d994a3ff939b5026e83e972
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2cd2d566fea54695b670ce31aabb00acb4f993ac7a4c8e5cb548acc4c816c04e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is written beside the shown example?
@@ -4464,8 +4464,8 @@ text=Which admitted English label is written beside the shown example?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b58e533cec2b25daca6f9bbc332a74196e5c6996a715110fce899c3cf947070e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2f2d1ad8c3aa0b364b75b547adb0a49c7f6988620ef9418a9b5c6c4673f50286
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside the other example for USSR.
@@ -4477,8 +4477,8 @@ text=The frozen line writes this label beside the other example for USSR.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce50a21a3445bba312919f33984585d9507c9050dab746fe43e25cee100a0831
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 461ddf46155e741355553dfb4730619b93cebaad3588bd0607d0ebfda6b08c97
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line uses this word as the heading for Abbreviations.
@@ -4490,8 +4490,8 @@ text=The frozen line uses this word as the heading for Abbreviations.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f2cbb3ea7b71b955db0ce7c648789b680c94293495ecb41e12c5f1a86c6d590
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f37159a9f6c06d54278555affd2fb4b61bd745dd2e08b4b892a8199eb18ee302
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with the other example (USSR).
@@ -4503,8 +4503,8 @@ text=This label is paired with the other example (USSR).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d0556e572ecd75f4da1574c3d967ae1a9f4ba609ea686394c865049c7c148908
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b3783d1a641845c967ff147be609169ac42f488af8bdb6c93d0eaa7f356b104
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This word is the heading, not the gloss (Abbreviations).
@@ -4516,8 +4516,8 @@ text=This word is the heading, not the gloss (Abbreviations).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9cace67233cd5afbe7d348f3172c04884ec93dcaf3931c4aed2a02781360ebb3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73d665b90847b44049e687f104406f94ef9a829e9284350e8eed4d8c79066722
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is written beside this shown example?
@@ -4529,8 +4529,8 @@ text=Which admitted English label is written beside this shown example?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eedff04a2e00b6e954cb602fac4f3f6c6dc9678a0fa5e4acd60640f4df0fefac
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c1945e4939c24dc3f00158c948ff8cc447588019fe3e2852ee806287f7241d7f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside the shown example for USSR.
@@ -4542,8 +4542,8 @@ text=The frozen line writes this label beside the shown example for USSR.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8bb6feab6b31324894c8666fb0060ebf828f91ea883d4f26c40284984593d373
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd07d034054e0f010792020d4bacd435f1e36839282789e86b03d083a6f8479a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is the gloss (USSR).
@@ -4555,8 +4555,8 @@ text=This label is the gloss (USSR).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 754196d25c4dfd6c73581638893206e183e3fd41ee90e428d74926e4b77c5074
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48321f4d7d71a38b57cccd2538b05dd24fc363f96fcff29cd739e8f82213204d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is the other gloss (USA).
@@ -4568,8 +4568,8 @@ text=This label is the other gloss (USA).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ef33a55e8ce8e6b4339778c849a32f3e63e4a08e6b203c52ab5d4256413c8d5c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 66011d062345f1ee88e079d7c5b9cc353abdfc44622169c838eb46cc9745432a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line lists these examples under Abbreviations. This word is the heading above the examples.
@@ -4581,8 +4581,8 @@ text=The frozen line lists these examples under Abbreviations. This word is the 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 877c79bc825c056e760dd35ef54eb60dfb26261c4d1dedfe5a8a103dcfdca1fc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c03bb51f095b18ad5068c09dfaa01dac82a760faa2996fb7cc019d21b131d5fc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English word is the heading rather than the gloss of the shown example?
@@ -4594,8 +4594,8 @@ text=Which admitted English word is the heading rather than the gloss of the sho
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d7f97fe4072d856584b199271e71ba3615d25ae42b4e496c3f3fe5aad6202ebe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d7852ff4af3968a3411cac658d8845998e91e2e15a9787be9fe34575031323f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note glosses street for a different mark.
@@ -4607,8 +4607,8 @@ text=The frozen note glosses street for a different mark.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8af6fa8eb73992f03c109d0b57e973d4761734c6292299e43e846a9d8b2b314c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7bf35dcc09ffc55cca1f959eede469a2437b2eda928771d1edc50afe44cbf81
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note glosses building for a different mark.
@@ -4620,8 +4620,8 @@ text=The frozen note glosses building for a different mark.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c95e4d58623f28431b775f1c45eb0a8dceb1bbeba3bb4b8f0b89b0e7cc199594
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3bf28bb91a1c39cf46630b682c6050666fbeb18a057e0e279d19f446d4f4980
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Street belongs to another mark.
@@ -4633,8 +4633,8 @@ text=Street belongs to another mark.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc85970cd3e5527b3c6a0208bb847a1e98ce9ce6a32521e9983a0e83aa92f2c5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 696a84285bb6d6b79d936418074ff1de4bfa229d241f635fcaaf2dcf10a13de6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Building belongs to another mark.
@@ -4646,8 +4646,8 @@ text=Building belongs to another mark.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c1d588354e33dbb51fb33eda9978afe1d2bedef7d00a3c3caeb92862c2660a32
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa0acec736de86f7ef91722b399f6ffee13f44ec33afc87a33aaa3ccb5faf9bc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The lines are marked with abbreviations. This label glosses the mark in the shown line.
@@ -4659,8 +4659,8 @@ text=The lines are marked with abbreviations. This label glosses the mark in the
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc685ebc1692ce7ecf31de4ee3c0326ed16089c67a6e66d08e50b65aec82d03c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6673ed8802e7351da471d78276c0e8ae89b484c2db486724a4702e36215e6a0e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label glosses the mark in the shown line?
@@ -4672,8 +4672,8 @@ text=Which admitted English label glosses the mark in the shown line?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 50025343c4367a583e049063ce1abc451d3ccf327108fc07b34c0b2c9e097dd8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 318557d157f03767ac8439dc97d73daf75b1d3c999306787b0666e3fc07dea9a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note glosses city for the place mark.
@@ -4685,8 +4685,8 @@ text=The frozen note glosses city for the place mark.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b4554821df52662ad4e3c8d1a6fc14d56b1254e44387dc78c3d8daf09cdbfbee
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac86b2367c28b587de71bdf18fc79943cebdcd488c3346511b2de2a32b7f6b40
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note glosses apartment for a later mark.
@@ -4698,8 +4698,8 @@ text=The frozen note glosses apartment for a later mark.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae01ed39ec484055171040edca9ea17f44e022a49287d521b03810bd1940e20a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0061a7bbdbcbe82dd3d40ebf74cf6c8a857e0ce78d2314246b04f826dc0d0426
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=City belongs to another mark.
@@ -4711,8 +4711,8 @@ text=City belongs to another mark.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a82dfe0e2770315f022415d62d7a0835e3a19cd574c26f5905fa1729f325864
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65ec122eaf9f1354c073959450b1dfa459bd6bc10b850802a3ef45f91d177a69
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Apartment belongs to a later mark.
@@ -4724,8 +4724,8 @@ text=Apartment belongs to a later mark.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc226c38af41e0cd6ee60951a392a01bf1d4307358c45fb832e2c99af8855446
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8fa799f76899a225725023ce296e672c9cbe351785cf1a6303263322ca4a4c3c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The lines are marked with abbreviations. This label glosses the first mark in the shown line.
@@ -4737,8 +4737,8 @@ text=The lines are marked with abbreviations. This label glosses the first mark 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d8c0a0f8f0acf4edbc9771b03eeb553120e56a75fd961dbcf9ea27a1630b5d0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 46b709b33e0bfbb7aabc3d95abdf20af50090ec49fd45e72ae023869d9189d93
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label glosses the first mark in the shown line?
@@ -4750,8 +4750,8 @@ text=Which admitted English label glosses the first mark in the shown line?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5f05ef220476f77a4655311dcb26674885c7120eab1d5887af0d9e6e8d8c439d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 59bd810367d1b929e34bd9d949e33ed467719b5c7b62ba2c29ffaa7ba1d235b9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note glosses city for a different mark.
@@ -4763,8 +4763,8 @@ text=The frozen note glosses city for a different mark.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2628881e62373dccbb7cb2e64bd9d8d91e68c4b572577ec9878cf60c2d4da0c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 671db32e6589c4fef974cf22f58b0ff73479fc937cbde6c8e810103c2d9cd289
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=City is the gloss of the place mark.
@@ -4776,8 +4776,8 @@ text=City is the gloss of the place mark.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7f95e413ca8c0751105b252c2157b0b06faa50f715d1a17af74d65a2def2ee57
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 28ab3dbeac623172d7920ba045e24eec79f8cf009c0724bad3636244704202d9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Street is the gloss of a different mark.
@@ -4789,8 +4789,8 @@ text=Street is the gloss of a different mark.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0e67907847077168168b3d9f3e085a37fa3dc0074b143a96445a765a76895b88
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 85a5a467369cb6d7f868a7277b04b31e3a10cc4e2a5da900f6f0cb54151ee850
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The lines are marked with abbreviations. This label is the gloss written for the shown mark.
@@ -4802,8 +4802,8 @@ text=The lines are marked with abbreviations. This label is the gloss written fo
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0a3d0fe90f26aad494e42ee7eacee76dbd6b6498b8803b7fa8db2df3fd7f594
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af630f2afbd14b306cadbe4b6f5c330b3fa5026211f07a9f8b4b2ae42ac644d9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English gloss is written for the shown mark?
@@ -4815,8 +4815,8 @@ text=Which admitted English gloss is written for the shown mark?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0dbddcfaaeb3d04b17568665f843420659f714abeee2ff5456d70897c8e5d295
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 09fe2a0311b8d9689f8af72c31361fa49f4ec613b0f142dde100ffdb3b6be0ad
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line assigns звуковые аббревиатуры на согласную to в МИД и в МИДе.
@@ -4828,8 +4828,8 @@ text=The frozen line assigns звуковые аббревиатуры на со
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 698b719f007e71bd9522ed79d354320b3f6d6330b27961f3d3cea586c77dbe82
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eeebf0b697d71420dee00d05cf1fe2a423003f1e3cddce25f8a244bf6b5d179a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line names названия населённых пунктов as a separate category.
@@ -4841,8 +4841,8 @@ text=The frozen line names названия населённых пунктов 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6d8afe7d974284cf6b2bd59def052b49586db1c7f8d48808843a2a52f30cdf2b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 189e901d5eaa6ded9dec6282e100dbf2c3bf1c15301c5eba99d4f7cb66cde320
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=звуковые аббревиатуры на согласную does not classify the shown form.
@@ -4854,8 +4854,8 @@ text=звуковые аббревиатуры на согласную does not 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 69d9573e8219d6090547dcc7ff5d92aea61a2121e3f41348e9d4ed1d08f5a0a2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec7446a99fd97b564b60b761ff3738101dcee211968374f148da0c48af3e986f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=названия населённых пунктов does not classify the shown form.
@@ -4867,8 +4867,8 @@ text=названия населённых пунктов does not classify the 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2363b15584c8027125e3cc6335ad1b4e4326b3cc49adecd36b80e5bfd4730d76
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6d981378cfd17762f0eb8e7c4ac9ba2ee210635d486f72ed20e8c296635ef2f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line classifies the shown form under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.
@@ -4880,8 +4880,8 @@ text=The frozen line classifies the shown form under буквенные аббр
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 69cc5b6c80cb88501fa93eef70f6b7abd41e78540d5fb68583b5a025d605aa60
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd2781dd2c779d4973b39d8fd95c2208a665a150851387fae1a7065128620475
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted category label classifies the shown form?
@@ -4893,8 +4893,8 @@ text=Which admitted category label classifies the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b6620167f8390f262770d8699a766ebc2e9073630a66f3a923125c86fa240b7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c218fc46f89456e260762c8bf437bf1c0a6f9d6f65764d221e9bcdbb068eb007
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line assigns буквенные аббревиатуры и звуковые аббревиатуры на гласную to СНГ, ЭВМ, ГАИ, and гороно.
@@ -4906,8 +4906,8 @@ text=The frozen line assigns буквенные аббревиатуры и зв
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 581a7a2e0ad23d588e9adebabcb017b6584ab795eb4be20ac2bcc27b4a44521c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 29a537d4e99b83b0e8d8d3ea86af678aea6fc772eabde0d3b71707902d3f79f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line names названия населённых пунктов apart from звуковые аббревиатуры на согласную.
@@ -4919,8 +4919,8 @@ text=The frozen line names названия населённых пунктов 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fe01fb6bf36b69d560682a8b8c779b6014bcfd917881cbd27a35d12e84f14e7e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9015abbd1d1f5a936a713ca5d1c37f0769052db98067dd013bdb4f2a20d11aba
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=буквенные аббревиатуры и звуковые аббревиатуры на гласную does not classify the shown form.
@@ -4932,8 +4932,8 @@ text=буквенные аббревиатуры и звуковые аббре�
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fbcc0b021869d918b625540d34d9e6ad2b4408482b0bdfc3528270e8d04b68a5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d09508ced40ca54ee3c17067c8a33fd5fa128b4846fbe965f809fa8f874e68a3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=названия населённых пунктов does not classify the shown consonant-final form.
@@ -4945,8 +4945,8 @@ text=названия населённых пунктов does not classify the 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b51939f4d7452c54c9a6c8ba5672ff6f0acc7ea5c0ef129c0b35e78ed0e0562
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b1e737e7997487ab34cb05b096bfe37b90960d2b19f12957c9bd443593b43fb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line classifies the shown form under звуковые аббревиатуры на согласную and writes в МИД и в МИДе. The keyed category is звуковые аббревиатуры на согласную.
@@ -4958,8 +4958,8 @@ text=The frozen line classifies the shown form under звуковые аббре
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9865dee6829c6a372f34afd3a68301242b33ab5d2de56434ecb1e8be76bb04c6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e7bf57c2fc0edfa9c9bd9378910b637d136310b62629cbfad11a755afd4290b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line names сложносокращённые слова as its own category.
@@ -4971,8 +4971,8 @@ text=The frozen line names сложносокращённые слова as its 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4ffeb8b1029d1f8dc981a4ad089df2e161d36ade32938c758e2541ad5008821f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d54a40f596df0357b0984f2d15d4c814a2f38ebd9ecfce7c923aa4c8a389ce6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=звуковые аббревиатуры на согласную does not classify this shown form.
@@ -4984,8 +4984,8 @@ text=звуковые аббревиатуры на согласную does not 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b784b33d3911a188d951bed7acbe72abe3f262396b61be3096b6113b11cef0b1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c75f1dd639983b0c3dc2d1f69474554007b532b914eea4ce200837236a4ed314
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=сложносокращённые слова does not classify the shown form.
@@ -4997,8 +4997,8 @@ text=сложносокращённые слова does not classify the shown f
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: edb4674e12925218bf92fada9841714f5677948ee6c64c75729b41a34da10d57
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d7800ce19764ed6df05658c5b6e238340e3dcd7a98847432bd038a16b6a71cc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line classifies гороно under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.
@@ -5010,8 +5010,8 @@ text=The frozen line classifies гороно under буквенные аббре
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5dac2500748abf089606b92530567c075aac8cb4253842c9f79ac14c551e3f7b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6051b922a3bdda51a3e2008da2f4de6fad406a2e49609b591a2804ba0f8e329
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line assigns предположительность или возможность to читал бы and читали бы.
@@ -5023,8 +5023,8 @@ text=The frozen line assigns предположительность или во�
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2ccab436aababf200f927389f419af686f6f3cedf2e5139abc892b10bf6bd5d0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0a5a83e2b02701397cad50284cb03fa904514ff2ce5d67ef236e640b416ea02f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=предположительность или возможность does not apply to the shown line.
@@ -5036,8 +5036,8 @@ text=предположительность или возможность does n
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 94c60cbf40a0d1b19423766399831cc7b61037781676f342f9cd5ea99280381f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b60f3630f6d81784c79dc8dab7868598af7d7a99cda2f8363efe34366632932
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Пусть он читает. The keyed use is Повелительное наклонение.
@@ -5049,8 +5049,8 @@ text=The frozen line says Повелительное наклонение can al
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c36a06fb9252deba22fa5d2dd5d628e733f5fccba1711b10671154fdccd29a86
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0bd225d6f4401ab1872364b07c853a3918e8a92358f0ab589921f221e0d7f78
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted use label applies to the shown line?
@@ -5062,8 +5062,8 @@ text=Which admitted use label applies to the shown line?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6bc20093bed618d6b0e11b42e4c033b234306c5aadec0d8ffc47f742a2808021
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f8360ddb46d4060d5c5fe1ba64573b5c1b011e0cc5b682c8832d5e3c4b1085bd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line assigns Повелительное наклонение to Пусть он читает and to Да будет мир!
@@ -5075,8 +5075,8 @@ text=The frozen line assigns Повелительное наклонение to 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cf319dc6c1995e84463e9c4b1360abcfb32f7254bd45745a7acbb7cfdfcf378d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e9042d6ef20242253cd1bb1536782864ceeb57e91964e68387194ea4cbf535e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Повелительное наклонение does not apply to the shown line.
@@ -5088,8 +5088,8 @@ text=Повелительное наклонение does not apply to the shown
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 629aadac8f021209900071cc729b19083a2785b37bee36e42a4467d8dab7d9c5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 373772bbaef7be8ac8c6465454d9cebe70a7305bf6da91127a6d873d1a13c8f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line says читал бы expresses предположительность или возможность действия. The keyed use is предположительность или возможность.
@@ -5101,8 +5101,8 @@ text=The frozen line says читал бы expresses предположитель
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9e7029dd0a4acc26390a895c733288c3bbf68d9b40b411ea7349c44a74c4ff8e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67add3f4012236d0b815bdc944973a6253a08c438ce5da7fca54587aa189a432
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=предположительность или возможность applies to читал бы and читали бы, not to the shown line.
@@ -5114,8 +5114,8 @@ text=предположительность или возможность applie
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 54bee5372bba356e283cce3a2302eab96d2987b3bccbce6104dbbded74164d2f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2fc533ffe97aad8b5d5d8695fe6ca9ed533feffe06a4649c8d3eb7e826a1fef
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line says Повелительное наклонение can also be expressed with these particles and gives Да будет мир! The keyed use is Повелительное наклонение.
@@ -5127,8 +5127,8 @@ text=The frozen line says Повелительное наклонение can al
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 99095a6b95a0732d7edcbe29aae187679a32f266796f104f83de48886ff437b2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 117d84b4669912c9cbc34a46738962d3c9a584218973196425318ca6488f0625
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The story later says she несла́ большу́ю ку́клу.
@@ -5140,8 +5140,8 @@ text=The story later says she несла́ большу́ю ку́клу.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 27f7dcfe8fc32ce3fc18c06017e92fc19205cf4863246a5b5511d8cbe3c730a4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3521dfb01941bab7eb5359378b9fc2295cf555feacd37e741e4afae3bddd6fc7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=несла́ большу́ю ку́клу is the later discovery, not the rescue of двухле́тняя де́вочка.
@@ -5153,8 +5153,8 @@ text=несла́ большу́ю ку́клу is the later discovery, not the 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 51e8e16d6d798cd14f89e670ad7cc52c81fd000637d983679d8ab0e004be7905
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ce22a97b4610356be7dbd03263d87321f8c20b37282d99c8f76d6ca1b9bbf10
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The story says a двухле́тняя де́вочка remained, and then he нёс де́вочку.
@@ -5166,8 +5166,8 @@ text=The story says a двухле́тняя де́вочка remained, and then
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f6af056008ea35cbbb19d36e845cdea2c637b1c74dd710ff010e485fc30a085a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 760fb18f415ed7540ee2c266161489061af8bdc0d2ca381beae12fc369a0d870
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted story event matches the shown sentence?
@@ -5179,8 +5179,8 @@ text=Which admitted story event matches the shown sentence?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82d540ba9ab83e6876b46c4de4ad660e4d0b5358008cd35978cc4f3deb164582
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e57dbe894702d893d94390bec1da3b5449aa33d6e5750aa02a6e4ecb6003494
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The story says he нёс де́вочку before the doll.
@@ -5192,8 +5192,8 @@ text=The story says he нёс де́вочку before the doll.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e20063cc5ec7ce085856caf15e010b399d4d3a109c8dd083ebc1eb3f921f7b3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9518c02757a58074398d4a2dbbbb3b3aaffbcc96ba29cf1d3bf3931a52482605
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=нёс де́вочку is the earlier rescue, not the reaction to the doll.
@@ -5205,8 +5205,8 @@ text=нёс де́вочку is the earlier rescue, not the reaction to the doll
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: acce77e412630938f382139a1da00c5614726ea06f8fbeb69a3a8b0b907c3cf4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36301e75fa3a47c26ece9bda9d8089b5cb69f3cff2574ac0e07df5baf4e98e4d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The story says she несла́ большу́ю ку́клу, and then everyone все расхохота́лись.
@@ -5218,8 +5218,8 @@ text=The story says she несла́ большу́ю ку́клу, and then eve
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7a56c718c2deb9fb867c2f736b6db664f7ed1ea6c4d993c9e218b859daab2d1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e8b21d48f0502e2f57ef19216f6d415adb12171038401c0785ea0a1661544889
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted reaction follows the shown discovery in the story?
@@ -5231,8 +5231,8 @@ text=Which admitted reaction follows the shown discovery in the story?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8eb120ce7dcd453eecdbb90ffdb745d88e4e22bc5b3cced29525bb8f8d0e0b7b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 307a5d126a8aa31a4e06e5960735edcbb8955159287194651d8652766c528330
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The story says everyone все расхохота́лись after the doll.
@@ -5244,8 +5244,8 @@ text=The story says everyone все расхохота́лись after the doll.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f809a7c34e48c6e9e1d301b764d619b1103df381cb917e4d3d01962cd4989a67
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b625f3b71edfca00ceee8b146053218f7be8152079a29400e8ee96ebcf368e4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=все расхохота́лись comes with the doll, not before it.
@@ -5257,8 +5257,8 @@ text=все расхохота́лись comes with the doll, not before it.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f2ef127cf2e1d13d9fad4f04f962d76c956e5a533df0cee5723122788a911820
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 970f6a1c8b7a9d13f00049ddffc9181a163f1830a1858e03ee4bf45b2c23e67a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The story says he нёс де́вочку and later she несла́ большу́ю ку́клу.
@@ -5270,8 +5270,8 @@ text=The story says he нёс де́вочку and later she несла́ бол
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3fcb088ee28e7465f828839e833ba1aa1763040df72d090b9e0a6bec82e7f172
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1dcf419f1e18562242c4ae52b2b608f1265fb5960a60a36697feab57ba0e186c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted rescue happens earlier in the story than the shown discovery?
@@ -5283,8 +5283,8 @@ text=Which admitted rescue happens earlier in the story than the shown discovery
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac250ed83ff485f2905fb134efcb9e9d564caf196a507133939c5efd2d1e69c9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 678667bb40932eabd96275f3b7722608ee1d1985bc8b5ab3f229394d30ee1843
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Review admitted table names and abbreviation examples
@@ -5296,8 +5296,8 @@ text=Review admitted table names and abbreviation examples
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46aad2710dd2ba2b72e9b838d7b90f5999897d145004107b767915197c700381
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 93af0252f60697e91b9b20ab6c66f929792e003fb3cefae614dfb36f88178504
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Dictionary-field layout is not practical dictionary use. The admitted capstone story is included. Advancement stays blocked. Qualified review is pending.
@@ -5309,8 +5309,8 @@ text=Unit 1 introduced the printed letter names. This unit reviews admitted tabl
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8fc977a1ba27611ff8db90b56586c197086e1ff0d2bb760ed7bb0f26f23a8338
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14dc8d97dfc4e75c88dc2dbabbfd228356f83886de7399cf700c39bde591d369
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 30 in the copy you own. The app records do not replace that lesson.
@@ -5322,8 +5322,8 @@ text=Open Lesson 30 in the copy you own. The app records do not replace that les
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 198ac9c086eefda4f67dad99127902dfbb57be1e5c1c62a71f301eae9ddb502e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 459a049a964655470fda2f6da5310e5775601ca12983cec6c8d613bea8be721e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Read the admitted examples on this card.
@@ -5335,8 +5335,8 @@ text=Read the admitted examples on this card.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 27f355183e107241e908bfb20641bc915d31de19a9ef14d511074bfa44546d03
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 853214c3a6f6909322b14e05ebb8fff669e822840dc6003723482c5cab855a42
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
@@ -5348,8 +5348,8 @@ text=Guided practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7699a848473286d67569b14119f6334c0efef88af6752adef31ef4873da53087
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2d5d1d711fc81f8727f05d96f3a14b591c89541fddf1b6436b9acc804a16697a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
@@ -5361,8 +5361,8 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a69c128b2da2a7afbed54f0b2558463afc085f0e6d262d46794fe1092f460105
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed55a2320f4c584f9f02b5e9fdd328c5e59d585dae0a9f3255c5cf768f582fb3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
@@ -5374,8 +5374,8 @@ text=Remediation
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8071628ac0da7f2846f3f7c74ef3f556cec13d511d78e26ac3e132f9f0029c84
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0db7f5075c3756fab212d8cd5d0cac4ac06c698562af4339634f1f73fde8bd99
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
@@ -5387,8 +5387,8 @@ text=Independent checks
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81354fa7af4dcfc28110a22909d726018c83210f56365cd32af6111ae2349505
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 880942ef107d2bea91385a610e9d41a5b078877413fd7183c2cc8e22f49ed07a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
@@ -5400,8 +5400,8 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 638efe70f308e37ba3719ad3217d42ac2a6ee9ab0b15bd7a6604acef08c2083a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: df8a3509ee23fb6f451cb849bfd264a98462b1e4b1c187f9ab0b6ef51a4ae114
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 30 in your copy
@@ -5413,8 +5413,8 @@ text=Work Lesson 30 in your copy
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bfb479b85899e7936d725ce81699a492d628b4f35d6c04bb0345a2af0f01d47a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f1ab83b7afc736f214b109b6c8144bc830a128f7a784329fd725cb4d16bc7a90
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 30 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
@@ -5426,8 +5426,8 @@ text=Do Lesson 30 in the copy you own. Use that book's explanations and practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ad7f647491aaab10cfdac8359a62c75188f6e114c948298690c5d75624074814
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44dc6341cf96b1c4708388c5ffbf84eb9e26e1fbb93c02f90563968aa09dd792
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 30 in your copy and complete its lesson work.
@@ -5439,8 +5439,8 @@ text=Open Lesson 30 in your copy and complete its lesson work.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 072a9fe20ebd4764e47287c5a77bbeaf87c0a54f2eb09d296d1ab80d0d697489
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be9e09da9d79d0b52de7343caf09880e380f2a145d4089e59c288868845341ab
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 30 book work
@@ -5452,8 +5452,8 @@ text=Record Lesson 30 book work
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6603af9474572137002f70e0a8d47e0ebe8b5e35dca0aa707eef07fa467473bd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe93e5aa0fead4d24f8f7e536e7778a4f1bfa09143d07d480f3ef020908799ef
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 30 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
@@ -5465,8 +5465,8 @@ text=When you have done Lesson 30 in your copy, self-attest here. Attestation re
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 379598d949ad6b695e50be35e35c62d3f5404ca33ab32c949b8b10da022bf173
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1e7d2e981265b0d196155def9428ab75658bdc5d8f125f713903e8c5e4fbcbc6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 30 work in your copy.
@@ -5478,8 +5478,8 @@ text=Self-attest only after the Lesson 30 work in your copy.
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: SOURCE_CAPABILITY
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6d699664124ba540c42b987ca17053cf890906d4572cd1eda178e3b499f5bbfc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00d92116a1c7c95e4f4e9e1d660d61f68a5d481260c892f141d402f109ade277
 
 sourceId=src-ruwiki-morfologiya-148939075
 sourceRevision=148939075
@@ -5495,8 +5495,8 @@ exactSpan=Ряд существительных являются несклон�
 - Source: src-readyrussian-reading5
 - Rights: rights-readyrussian-reading5
 - Classification: SOURCE_CAPABILITY
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8282717676aadc4c2f446ad3ebc481459677ed6d46d5c7dc43795b106bf32b16
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0fe7700b3c0e37f825943027be783482791c7704b4cf2f69a25252efbbd87ae5
 
 sourceId=src-readyrussian-reading5
 sourceRevision=6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d
@@ -5512,8 +5512,8 @@ exactSpan=Оди́н раз загоре́лся до́м. И когда́ по�
 - Source: src-wikipedia-russian-alphabet-1371795481
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: SOURCE_CAPABILITY
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 032cc153bc911d8482f77c1f6172d899900afc7d5b3132acf3639c1477b74d11
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5b5032301cf698bfd72cf159c19b8a989d850bcc0e1a7c1277c2aebf9bb0cd2
 
 sourceId=src-wikipedia-russian-alphabet-1371795481
 sourceRevision=1371795481
@@ -5546,8 +5546,8 @@ exactSpan=! Name
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: SOURCE_CAPABILITY
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1edf352bbf76b1790b225cf2802db6300a19be0c6ea9dffb699937c572451bab
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5ad1ffbb11bd8d1f6f96bf2623d0234dd80b78cda7a7fdabde456ca7fc0f098c
 
 sourceId=src-ruwiki-morfologiya-148939075
 sourceRevision=148939075

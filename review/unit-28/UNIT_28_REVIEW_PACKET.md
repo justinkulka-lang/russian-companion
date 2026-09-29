@@ -15,8 +15,8 @@ Unit 28 remains in development. Its readiness is content-complete and review-pen
 - Unit content-review SHA-256: afa29cbd6d710bcb853d74189d012584660996b25270af78c3d23efe35cf1cc5
 - Mapping-package SHA-256: bdf9618b16d9a96d9d359a01e7901617c7d8b97bcd601768695131da126497aa
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: 102b23c0a14714fc03a698e48a27307f2cdf95d0133e615ce622c571950c5016
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: 583b7e92bc1ac96942135e9043e712b62bd8779d47413f5d381f49d4493ad86a
+- Repository source SHA-256: 5d364a5c70e24735ca6e67032ef2d9ab65364ee4b168ef3afc41005fa750d3e9
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc8338ab48e696f5aff70151d3ad06e18cb2c863520beb2ed7ecf6c30583dc88
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f1be04b27cd786888626618073ae710454e178db707dae8fc7b450822eac43b
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -681,15 +681,15 @@ remediationStepId=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0c428fb1b6983f283aa3a16913114b46ec231f302c67b7c401f84c4a4cac1a27
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 01151ab8bf23a0c41245f7e069833b6428eca32602b9c2414b9bd878857a62f5
 
 kind=LEXICAL
 letterId=
 display=думая
 note=usually present
 objectiveId=obj-u28-imperfective-adverb
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u28-imperfective-adverb-1`
 
@@ -698,15 +698,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 111fad10e9b11e67df59d71a5dfe5f384df9e4fe28fac1b2c4c5cc619c3486b9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1dbef981fb0cfd3d9007475c85b6562c1738c5358b26975911ff4df6e6a52962
 
 kind=LEXICAL
 letterId=
 display=учась
 note=usually present
 objectiveId=obj-u28-imperfective-adverb
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u28-perfective-adverb-0`
 
@@ -715,15 +715,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb7bc91afbdd35a53bd4d2b3539c2fe9c0eccd485f2f01d887fde6f63e636d79
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 577041e0d2af6ca5cc8abce4b1e08a408ebc900e56b0050a742eb4a058946147
 
 kind=LEXICAL
 letterId=
 display=сказав
 note=can only be past
 objectiveId=obj-u28-perfective-adverb
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u28-perfective-adverb-1`
 
@@ -732,15 +732,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9e3e7223aa834d675dbcc83a1a700f9c269086a5f435c2fb524e2ffd1cf28e50
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 20f425700b5accfac8d197c0c76b138218c26f92818c99b6057318c662f1f4f5
 
 kind=LEXICAL
 letterId=
 display=научившись
 note=can only be past
 objectiveId=obj-u28-perfective-adverb
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u28-perfective-adverb-2`
 
@@ -749,15 +749,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8780f26c955e3be01d25e66fe5b14cb0e5d21b40b952ea49380151131cd0aa34
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 96ca217837876fea2a5fad9dc604b9c676857425a8806e89b715ed94bc7fadf5
 
 kind=LEXICAL
 letterId=
 display=войдя
 note=can only be past
 objectiveId=obj-u28-perfective-adverb
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u28-readings-0`
 
@@ -766,15 +766,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb1f5ec1edca8acedc766edde5c34a1d963a879f8ba0d8ce1c8214e9a6c7f875
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1a2af4dfbf0521edfc8f5f6cc1ae2cfe86edaa1d28e7864e1da983caa90fa4ab
 
 kind=LEXICAL
 letterId=
 display=устав писать
 note=ложился на диван
 objectiveId=obj-u28-readings
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u28-readings-1`
 
@@ -783,15 +783,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dfabb716fde36123d7b3dcc777481dace895fa4b6f55119c8b16eba6728a6d76
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5fa5b2cd678319b0e1d3cf7eaa8ac3daa369549b6be3f5afff02509fe5c04647
 
 kind=LEXICAL
 letterId=
 display=стоит
 note=сложа руки
 objectiveId=obj-u28-readings
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u28-g-imperfective-adverb-0`
 
@@ -800,8 +800,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 594bd2fc203877152ad911149d467cb57f25665891736a1d683788ffbc42a583
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8e7b56ccf5cf8d8ca85d62a10dece60a817f13d55166c7bb60db9d312fb9705
 
 kind=CONTRAST_SELECTION
 language=en
@@ -812,7 +812,7 @@ answer=usually present
 feedback=The source says imperfective ones are usually present. usually present.
 objectiveId=obj-u28-imperfective-adverb
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The source assigns can only be past to perfective ones. | The source uses very rarely past for a different construction.
 testedFeature=IMPERFECTIVE_ADVERB
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -835,8 +835,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d7c2a67a362f8d5e6f04bdfdb447aa82598c9f988b9fefa4ce6348af3ec90d1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 12664de205b7c5384cfb4530824fb64d21c7c9befd789339eb19e34cae4e0a4d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -847,7 +847,7 @@ answer=can only be past
 feedback=The source says perfective ones can only be past. can only be past.
 objectiveId=obj-u28-perfective-adverb
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The source assigns usually present to imperfective ones. | The source uses very rarely past for a different construction.
 testedFeature=PERFECTIVE_ADVERB
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -870,8 +870,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2cf00f590d25d11c2a7fc06c3ed9c5ae7ed72e17f6858a8afa5d04e67b608640
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 92defaf640156f0d10da4375357321b36fbeec118243e91cef43500ece455d3a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -882,7 +882,7 @@ answer=ложился на диван
 feedback=The admitted line keeps устав писать ложился на диван и отдыхал читая together. ложился на диван.
 objectiveId=obj-u28-readings
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The passage places сложа руки with стоит.
 testedFeature=VERBAL_ADVERB_REST
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -905,8 +905,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6a8c5dd01884d444e3a646151c800d31de15aa435c66b61725219c10011a34c5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2427249a30af01abc9c51a6d0f5dddc6b38e177a47ed4a6eb9966e3c74e5450
 
 kind=CONTRAST_SELECTION
 language=en
@@ -917,7 +917,7 @@ answer=usually present
 feedback=The source says imperfective ones are usually present. usually present.
 objectiveId=obj-u28-imperfective-adverb
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The source uses very rarely past for a different construction. | The source assigns can only be past to perfective ones.
 testedFeature=IMPERFECTIVE_ADVERB
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -940,8 +940,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fde05e8687a61b03b83640b9cedd1722d719757428a451ae771d9ee6daa15197
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b0d9caf054fa121bba66a752a52193330b92cc2f5d8ee723583cc3bb146da65
 
 kind=CONTRAST_SELECTION
 language=en
@@ -952,7 +952,7 @@ answer=usually present
 feedback=The source says imperfective ones are usually present. usually present.
 objectiveId=obj-u28-imperfective-adverb
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The source assigns can only be past to perfective ones. | The source uses very rarely past for a different construction.
 testedFeature=IMPERFECTIVE_ADVERB
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -975,8 +975,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 455fbad04c7d643027d158ddb917b607334ac53eb0ccc18af0931bf6f39c6418
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4953af3bf2dc4717dfb17a2cec96ff7f85a031a2691309d34b4df868a81fd496
 
 kind=CONTRAST_SELECTION
 language=en
@@ -987,7 +987,7 @@ answer=can only be past
 feedback=The source says perfective ones can only be past. can only be past.
 objectiveId=obj-u28-perfective-adverb
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The source uses very rarely past for a different construction. | The source assigns usually present to imperfective ones.
 testedFeature=PERFECTIVE_ADVERB
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1010,8 +1010,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d8a50de150885395065063aded38186283b9bd885b755449b76c3c3bd04e0e0d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 366c923d14da99c9c8292cc12a18bc239cbeaf6b78ece53a2a5414f0732af7f6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1022,7 +1022,7 @@ answer=can only be past
 feedback=The source says perfective ones can only be past. can only be past.
 objectiveId=obj-u28-perfective-adverb
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The source assigns usually present to imperfective ones. | The source uses very rarely past for a different construction.
 testedFeature=PERFECTIVE_ADVERB
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1045,8 +1045,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81dfc3b169eca7e18771638b7e25dc1bd80f97a21d46797987c6f91ea77cbb91
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 09e6b18d98e4690e49623697d111d0dcaf3c7fd3c5d54a25d294650a7b97ddd5
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1057,7 +1057,7 @@ answer=сложа руки
 feedback=The passage says стоит, сложа руки. сложа руки.
 objectiveId=obj-u28-readings
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The passage places отдыхал читая with устав писать.
 testedFeature=VERBAL_ADVERB_POSTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1080,8 +1080,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f5248445555bb82df9d7daf2b3e32b3a379e2c751289f2f2756b1975b2563aa3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a53f8877c3cfa811595f0de2692621be879e7843ee83d5967715896847d78c48
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1092,7 +1092,7 @@ answer=устав писать
 feedback=The admitted line keeps устав писать ложился на диван и отдыхал читая together. устав писать.
 objectiveId=obj-u28-readings
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The passage places сложа руки with стоит.
 testedFeature=VERBAL_ADVERB_READING_LINK
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1133,8 +1133,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6239c8842c813626d0501da8357153a6edef145c360e3bcf7eb7ec7d4425b3bc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0e83a8e6dc70712ff63070a928b32c1394457a9e7a8b50fcc79aa19ae23105b
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1187,8 +1187,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53b9936f8f605a8fc82bd85bf1cd5d4bfaecce815e5918a6943facbae47a9550
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 05fe9c8015ece52598289f55f723f3935aec34c2d31d4ff802b943247bd6beb6
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1241,8 +1241,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a1a166be6191ccf0fa044d672bbee96a0f22885795b221c7e850b1c672a8c5f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 35d5b758fa3882d5e2e553773abbb6873f6f2f2ba03443513a457498066a1d14
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1295,8 +1295,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d6799202b6337a73d0e9cd48b3ce9d17cdf19889666e321c8176df137465aa4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 938847bded8a3f0d87fdb2fba73140ba273da254272995042125eba04f327aee
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1349,8 +1349,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 49301810157c3f2c065be46abf4307d1d82e87206f581b0938839dce2f852407
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b6b7cf69ec343822eeb44e2ae933078331a02677c3afb181a8f9bf63b3ad2dfb
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1411,8 +1411,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f603bd979191264616c60d24a6a1c5b7df96a87e75a0efd72cacd248c121d29e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a78aad897319b07de6766c6182fe6d18b4fa1d9e065cba66bad66994b6d6bf48
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1473,8 +1473,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 38cf0ea5259690c9510b4e82090d9fc7832dbcc32b4ddda8b0841c5508fcf0f9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b54068cfdacc97573b75cbf40b091ef3241a24b91571637612feb66fb1815cb4
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1535,8 +1535,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cecd579abdf3012ff22214ed1d176df000b866077622c192638a0e00851e9f87
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e1a1e4e3b887e5defa5ed8ce8a4eed896316030649542827fe2e9242ce4ab4b
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1597,8 +1597,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f161c08454a5fbe1cf66fca008a102a6bb46ae9370cd44c08b1850eb23032fda
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 80a7646e32c195e9a0b2078889329d639789ff437b1f4bfb1c354e78576ed5cc
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1659,8 +1659,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: acf1c0b13c9160eac6ec083fe4517ef38376665cf8b1f47054b5c61bc5d52107
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 286fc9c9929c738aabb07c2ea18ac212738ae7b658211ea9bffb29bc2b54559f
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1721,8 +1721,8 @@ reviewedDigest=
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f904703f34a9502a6084111dacb19300da439dcc76250228777fbc0f54b76be
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72dac0fc53182655723e5f5ee50b1450e28f959910cf192ab08f714eb0169efe
 
 recordType=meaning
 sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
@@ -1750,8 +1750,8 @@ reviewedDigest=
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f72ca3f0f5c55ff62916434ada5bc891e98bb5f1e1744acfe7609670ce95c3b2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd14e7dbece195058252fc577b3f5796c0ceb13476c5f9f260ca382c1a28d18f
 
 recordType=example
 sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
@@ -1779,8 +1779,8 @@ reviewedDigest=
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e3840b3ccea96626511adab96bfcf0a06e42dcd4e83fb3050ed371b7c8800152
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 812d619acc4018b2254c8c52a526d3f44b2cfd07c3d5d77097fe9b6d7fbe96ef
 
 recordType=meaning
 sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
@@ -1808,8 +1808,8 @@ reviewedDigest=
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9eaa19671d6fb47828f17f0213f27118cd29e0946ae263fe8e06e2d56e441252
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e4d9596a745c0104f2994161f89061e1027e7a87ba0a20752941e4471fb930c5
 
 recordType=example
 sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
@@ -1837,8 +1837,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 980fc05d7f542eec583704d15a362ee6fae5a1f1c69e532b0bbc33cafa59de35
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5cf113b7556bc5f4ee037fa7bb69d52f9debef2f063a9a1f661d1eba989a1a68
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1891,8 +1891,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ff0452f9f4ca557a7952eb63e43da5f77252e5b699653d6e20ac78a60fc4adc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 63fb1dc71f763146adf794426c473ab21afe84cd522c17be08e21d57db9cee1d
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1945,8 +1945,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 992f9130e15a10e75360f42c8bc29fc4b514cc81da71ec3c66c617ac569ce488
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 329617ccb8e9a56585b7f99aa744154f3b963433085bf056fcadb54e4a73d74e
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1999,8 +1999,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7354a6b17de179cce663fd0ec59d97c886b824a4eca7ae55832b503fa84d9e11
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 74ff7c3c7bc064f4fc9a6eb545e575065f4222d64909d77efcf386631eca1a87
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2053,8 +2053,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5f646039a259bf8c13d91a92e8a53068014a2938e0edd31b3f0234c10615ba6f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42a8609becdd4bac4dee6d80470d18233e4d9b82504d1c813c7de6d52443d7e0
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2115,8 +2115,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f83078434939007334e75fafa1af96850af7dcdb3d238bb9fe5869628235483b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 85d26bc2fb0853d9dd28d216b8fcca8b6a6befc798f20555db3502d8b19f1c7a
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2177,8 +2177,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ecacdb34cd510c0b7ecce568f4e6e5d755dc1b7f6462d5a412ad589a7fa42413
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4fa25048e549eaee39db1b84faf5210b366f2a7aaa3d4de319eff4afec3b31b4
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2239,8 +2239,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 705b6d4688bf5dba1b29c7d83a8d10b3734fee4fe586dc21eda73cddae1260c0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9213330365dbbcc16e681a77f4d91336fd1524f837568bf1fabce6ae3861d7e1
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2301,8 +2301,8 @@ reviewedDigest=
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9714a9303ba3a8a41fadb506c82ac58968cba21b6779805a6b0ed5cff3d8427f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eef4964c522713ed3d20dd1f45e36db58cdecbe9d80b2be4d807551363fe6d89
 
 recordType=instruction
 sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
@@ -2330,8 +2330,8 @@ reviewedDigest=
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 415f3a1fdf6c1089b00739a838b25dce2740e7d00531a12f2336fb54e4d0f94e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f29e8b39d947311a9c92bd08a283b9a9214ba69357c73d0f5b28d41360d98c20
 
 recordType=example
 sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
@@ -2359,8 +2359,8 @@ reviewedDigest=
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d7b6217baa6c8d600a9366a6b5f154847080bbaf3da2e63964e4b85100146cb3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 885ebcc57a31403b5561b79ac7d33f6949b6e32674a3ad49f6007fde033c7744
 
 recordType=example
 sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
@@ -2388,8 +2388,8 @@ reviewedDigest=
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee4e518b0e68ee89f89857fe4e55cc662da546a719c77d99720908f0c000b852
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7612925c158aee7c2428d619d3e164b4ad253c9f64c0b3d414ed8e0dd2430e78
 
 recordType=example
 sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
@@ -2417,8 +2417,8 @@ reviewedDigest=
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 21825c6263de527a859b4826e6b56a4df9dc11e024cc4c9be01bd11b8d79dbac
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f6ccc52327ac96cbb0baf31b858e3e19612993d3c162a6cd5cfe4776f889178
 
 recordType=example
 sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
@@ -2446,8 +2446,8 @@ reviewedDigest=
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca0bf1e202c7b9e617f7b3d78b15260d2491f5d6657f1da5efb8d1ae006ec484
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38ea46f1c20b2446e848698b688158b39a3a978039d3e81148a9b352ded5aa8b
 
 recordType=example
 sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
@@ -2475,8 +2475,8 @@ reviewedDigest=
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d371ec1f8ec190e3b29a4a3fa629b305e12a262b6fd2fe939ba9680a46fbc00
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 046e8867da54ea9e6ce08d3090daf47bee7e6c0863ed83a8e7a411bdac2d2c69
 
 recordType=example
 sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
@@ -2504,8 +2504,8 @@ reviewedDigest=
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 405e170c5fefa264e66c78bb06f83a1aaff337cc2ce5d138c4ec7c8761a1e2ab
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b358d74b6122cd28e7dc8896fa2cc20ad8393cc29f2cf4578c9c1c712f2713a8
 
 recordType=example
 sourceUrl=https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197
@@ -2533,8 +2533,8 @@ reviewedDigest=
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c4dd7e8ef32c57201f48a46ab9571242a0acd89e736bd4101758fd1cc837717
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b3c2085294f3b90199c257c645a32fd18c436bfef2bcb2de6fd47d49d34e488
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
@@ -2546,8 +2546,8 @@ text=Admitted lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9603c1b28b7215ede2c97645155385d2b02f3b8dbc44a40bddd1473664aca0ea
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6074c224cb65d616ba315805c8a816f5ec87216ff4b013d8e40e0da69e1a5451
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source assigns can only be past to perfective ones.
@@ -2559,8 +2559,8 @@ text=The source assigns can only be past to perfective ones.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 09c7789494a98dfa77ef5d2615c4a72c2b95ccb1cbb058b6c559222939ca0b76
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4085f040d9b8c8859e30e985b3fbef463e235dc36684a0d5acb0e2a0caabfff
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source uses very rarely past for a different construction.
@@ -2572,8 +2572,8 @@ text=The source uses very rarely past for a different construction.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eba5f74321658ed59dc51d4664529dcd5ea3e5ff01a6925b41fb6288e5dfaac6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c9ebf334013d7e647977311be8fddd9b59f85699e2948f3506486a598f4582a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This relationship is the one stated for perfective ones (can only be past).
@@ -2585,8 +2585,8 @@ text=This relationship is the one stated for perfective ones (can only be past).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 624a9bd46ef32075776a986989151abbe9a739d043f8f776193fcf9f6e5a2df5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6a140103f03c363a4c262e87607072e27ebfe1141e3007e7419c308cb589950a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This phrase is a different construction in the same span (very rarely past).
@@ -2598,8 +2598,8 @@ text=This phrase is a different construction in the same span (very rarely past)
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab448b309016a084702c629bbd55730e9047753e1715cab708e535dd22459303
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 82d02d725024b0f152eee447e743aaa0d8d10b49670563bf29f023c8464c919f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source says imperfective ones are usually present.
@@ -2611,8 +2611,8 @@ text=The source says imperfective ones are usually present.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 122a566a9c0eb70050abd8c36069775ba7f646ca720e58304d13591bea163eb4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c87ce30cf4e58f2f1d3a3fa28e8ab7fc1fe8e713753513074d4f165b970f087a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which English time relationship does the source state for imperfective forms?
@@ -2624,8 +2624,8 @@ text=Which English time relationship does the source state for imperfective form
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70f7a30283afa80ab398b6218dd5803f0a7cacbb62f16a4181cb160ae38b54e7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6855d5e7d510149ac3b79b1c7e85cad9ca249c3f907b76f064677ee76a49b944
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
@@ -2637,8 +2637,8 @@ text=Admitted instruction
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0c853ec8e3fabeb782aa6d755b028bae1d655908a92c78b92e5bdc55418ac1be
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 34a0cc1c12919b70692ce6b4585370db7d2669fb0e75ac9f691c15249d53fc1d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which English time relationship belongs to imperfective forms?
@@ -2650,8 +2650,8 @@ text=Which English time relationship belongs to imperfective forms?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 682a056d89f268e193482eb7fe9d51b636010253122ddecfcc5cf91464316b50
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c71f2d2d848068da9323b58b734662f09e3e8ba6daf81d74e2149e9b4c68938b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This phrase names a different construction (very rarely past).
@@ -2663,8 +2663,8 @@ text=This phrase names a different construction (very rarely past).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4efb3ca3ea40c6e55669d182f6cc1d7c83bad2d40d3062ba48bda1fe971c5dbd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c23741d09538abbc93e1294344614d05afbdc8cbc075b4bf716a3a0db949fa1c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which English time relationship does the source state for these imperfective forms?
@@ -2676,8 +2676,8 @@ text=Which English time relationship does the source state for these imperfectiv
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f3a769acf560a90cf2d23f97f8ade911b7271536c8a01e37bf02f16f4f31d493
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 739916bcfdce67221c1113fc6437a65e5182b3545f1086071650707b6430e4ed
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source assigns usually present to imperfective ones.
@@ -2689,8 +2689,8 @@ text=The source assigns usually present to imperfective ones.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d34cf63d9455246b33a83fca3b3775c20d11eb7fb66fcb8937893d1834367fc9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6a64a65b7775a6fa4a35958bc8f38ce13a1544e94270964eb69d5ba32206ab4f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This relationship is the one stated for imperfective ones (usually present).
@@ -2702,8 +2702,8 @@ text=This relationship is the one stated for imperfective ones (usually present)
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c45854515c1c49d871838f58f894cc2bf0429aff07530a113a09fdcd21e85f2f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 75874ee83ca9f8775b142f7b2ec3984a7af279e6351e17a31389c34f5d3196b6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source says perfective ones can only be past.
@@ -2715,8 +2715,8 @@ text=The source says perfective ones can only be past.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a531990dc04da1e61857b09b10140a1620c8f729027cb794fe3b10284daea2a9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2af437acf2dfe6929ebf03e9e18dce0302db1760dafe7b6fb4cdb3adddbd5d73
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which English time relationship does the source state for perfective forms?
@@ -2728,8 +2728,8 @@ text=Which English time relationship does the source state for perfective forms?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d8c140f1af2bdc9e099ff7b6591dbcc366236b6ea83f2d6a19e1f7fe40758c15
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8aee6edb6e1f1bb1be0ad9287ad9380f4d943f5aa9ef5951349052d6e20f70bc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which English time relationship belongs to perfective forms?
@@ -2741,8 +2741,8 @@ text=Which English time relationship belongs to perfective forms?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a3e86372a9680a1212376ec8395797eabb8e72b6c5d5c39dad77e2eff2754e28
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ac5f71fbc394584c660e7470a179916d133f0cad8ec49110414f773b66e11d5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which English time relationship does the source state for these perfective forms?
@@ -2754,8 +2754,8 @@ text=Which English time relationship does the source state for these perfective 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9df783688ddd21541268c34b4a88cf896c5784cced498b2668df7e2656491b60
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca836e805ce454f07e0a118b77583a65e887ad58f5d7d9a7a570ad32e69c0c1d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The passage places сложа руки with стоит.
@@ -2767,8 +2767,8 @@ text=The passage places сложа руки with стоит.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f38c377d0223fd9e6562a5fe02f9b3ed76a1ded7c6b41cd7363793724f27416c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 604e137e60a24e337802ac56e1d8907a9b3f84c51f04fde835c7d3fbe904d43e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=сложа руки is a later posture, not the rest after устав писать.
@@ -2780,8 +2780,8 @@ text=сложа руки is a later posture, not the rest after устав пи�
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e627f507fd0f30aca3ef4663912f4ba771cf841174da90fa358eb7a55230d40
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c287921806da3b6bb2ea01bdae32a115cea77ba19ec0ae1b9e6534262bc69c2d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The admitted line keeps устав писать ложился на диван и отдыхал читая together.
@@ -2793,8 +2793,8 @@ text=The admitted line keeps устав писать ложился на див
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f1542077ec26441675cc4d2f3d7011ac7f2f32a3c932575fa585da30e9bc4a00
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f4fe6e0568ab17a63febb398eaed3662f0a4cc7bc04fcc362d262408f2b42e4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted action is tied to the shown words in the passage?
@@ -2806,8 +2806,8 @@ text=Which admitted action is tied to the shown words in the passage?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4ef37fb37189459e58fe69db6a0e22ca9b3dfa5cb0b8caff23bb24ae081e4418
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dfef9af4729bf3d06d37fb00bcf3f3a0edfe3f6fab1cc75c79d597d80cc6bd72
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The passage places отдыхал читая with устав писать.
@@ -2819,8 +2819,8 @@ text=The passage places отдыхал читая with устав писать.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 51f5b45ea679abaeb6d0ca6fe3892e3341244dac6df6aede67d00dd8159b49d2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fea9921eff70bb49db28e0724f00a40a306a701cdbc0be3316831822f523403a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=отдыхал читая is the earlier rest, not the posture with стоит.
@@ -2832,8 +2832,8 @@ text=отдыхал читая is the earlier rest, not the posture with сто�
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa7a918ba1e93a801a4d8ca71e2a0c7d37f02678e08889ce07baedec8e3b3b69
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd7bdc2218ad86d3d467c193c85b615b39dcec9b33e7fc5311b81aff19f4ad9f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The passage says стоит, сложа руки.
@@ -2845,8 +2845,8 @@ text=The passage says стоит, сложа руки.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1834235ab4851b25fd49285a5b739e2f802c5a9c89f2b48b0572821ee7ec1017
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 24e9e57da23f07a6f22d02de16db84face4053ddba60fda046cdf5863f16a6fb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=сложа руки does not introduce отдыхал читая.
@@ -2858,8 +2858,8 @@ text=сложа руки does not introduce отдыхал читая.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53663c67cde60c4395b89266c837baa55b4b27bb5ac06251a134e4050c253106
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97bb85c2b4ee8e03ab3f4e18711061b73c0586a2068294693e7d71fa6708d303
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted adverbial lines
@@ -2871,8 +2871,8 @@ text=Admitted adverbial lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c284c58cd461adf142b9f9099753fa46d6348b1d15c001d2bea7cea403d06118
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 419c4dfc9dcee470e53b751591d20474cc721c455d39595a11623ef5f487e563
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.
@@ -2884,8 +2884,8 @@ text=Proposed Unit 28 uses admitted imperfective and perfective adverbial lines 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3063f3ed9b18ae7274907fc3c9d31222074c55f90fd45f0a67d8b286e522214
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c49ec303e9d154f7fd4519b11e782476e33788e5c4f2fc17faab15878f9be397
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 28 in the copy you own. The app records do not replace that lesson.
@@ -2897,8 +2897,8 @@ text=Open Lesson 28 in the copy you own. The app records do not replace that les
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d4ae4f49cc168d8f1d6f205eb80574c2fc6918f0a55ea9a4ecc96d1b55781d24
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8db09dbca6b9753ebbf873972ea1c4c1238b17716c5103404ebdf712437f75c5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Read the admitted examples on this card.
@@ -2910,8 +2910,8 @@ text=Read the admitted examples on this card.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a6c50688f5bdaeb3c18769d84aad85a47bd76bee09c51e298a611250321f9f70
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d8040957d767597c3e67950777014134876f2380feebac99edd51fd80a9334b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
@@ -2923,8 +2923,8 @@ text=Guided practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e6ceec7fab1d98cbbb24c2c45a6a7b5849c31429f027636e53aa4d308e73ed82
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9157220b5207de402c8c016840863c7e7eb494c7080857d07b33e777baf5ade
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
@@ -2936,8 +2936,8 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: df61a522dca3422661111eb5e8621ea88a3ff343ca99558a7f56c77529af0fe0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 76f6357d857d02cede690f10ed369c09d904e67a01cc1896fc1928b51ee4d0a8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
@@ -2949,8 +2949,8 @@ text=Remediation
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2153f270b215f2eecc32e8b83b843dce42c52f209066d76e40a65a86dbfe4f87
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 273ecc8c4bbfc8cf5cec4251c05c891517e99baea407d6a408550e9d3801b41f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
@@ -2962,8 +2962,8 @@ text=Independent checks
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: abcb22fcba83f9cebf7ae9f678e5c31c6d3aef7515660e46896397547cff1ad7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78e826f3b5e531c23dc57abdec3763d8df65391ac840304408484d5fc281f4b5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
@@ -2975,8 +2975,8 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 253f382bd94f96c970dcc6306e6240a2103be0eb1f57ff2afb7dfddd3b5175cd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7e8d103784b7d2842493b4fdf9ca7305d9017d3375798299dadcbb20de035dd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 28 in your copy
@@ -2988,8 +2988,8 @@ text=Work Lesson 28 in your copy
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 11bfa0bc1eb58f1dda3f2a14f784cad2ed5803a20aabdfa95563226b90a22aad
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f702016f3d85641bf0f150d8d98e4ed47f20ff7c389e1113f58e488e8da16a85
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 28 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
@@ -3001,8 +3001,8 @@ text=Do Lesson 28 in the copy you own. Use that book's explanations and practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b76b8b29fe827c3daa58e0a083357e247bceaf7501148d8e90cf83d88c7eb15
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f53671f23b285d67fa3ba59ccb513ff29789e50dc7859075d71a79f5654895f2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 28 in your copy and complete its lesson work.
@@ -3014,8 +3014,8 @@ text=Open Lesson 28 in your copy and complete its lesson work.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 240d45d07200c19249165d6098932f83c27811a8bd0e213c9e764a172d3e8ab8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e9530adcc9e35acf226400d6e18a3a679bbfbb488b1dd8f1f608187148cc60f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 28 book work
@@ -3027,8 +3027,8 @@ text=Record Lesson 28 book work
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f9a57fe4d3261f85ed3064d8405207ffc8c434f3007a92d9052bd3b5aec39cd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 90cb5ab311b3181aee3837387384f7833c3ff4464324ee27960f0a8148c70a1d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 28 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
@@ -3040,8 +3040,8 @@ text=When you have done Lesson 28 in your copy, self-attest here. Attestation re
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 18591837cbaf95a6dc5f36358b9a12b4869a4a3594df6b1c42b75a6988193923
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 523d83dda71a5f28c224e5792c6df7b2a627cb8bb2f8f17a8b0fe0679b61a6e4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 28 work in your copy.
@@ -3053,8 +3053,8 @@ text=Self-attest only after the Lesson 28 work in your copy.
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: SOURCE_CAPABILITY
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 92a6a8beaef2c6970715b2a9249df895688153ee5ab8b7ae5e2a141fd8d9f3fb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2ce28b8f662cf8486da1f04f198b89e1e318e8facaf69618cabb96a619fbfa8
 
 sourceId=src-wikipedia-russian-grammar-1369617627
 sourceRevision=1369617627
@@ -3095,8 +3095,8 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: SOURCE_CAPABILITY
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 529ae1c3e07646b76fe6c6a080f6ee155e6ce39ba50a20d8cf0fa1d303d81e29
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41ed3276fbae91f9dfd3e118394a6a54141c2290543d118aba43e5fba3d5b6c9
 
 sourceId=src-wikipedia-russian-grammar-1369617627
 sourceRevision=1369617627
@@ -3145,8 +3145,8 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 - Source: src-ruwikisource-vechera-5336197
 - Rights: rights-ruwikisource-vechera-5336197
 - Classification: SOURCE_CAPABILITY
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 98c4e48539cee9429103980760ea696f3cc7f7f2a977b69d7b4d4b66511f79c7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: adaecc8b796098a3fec5f2580a1aaaa6964b48171888f6c1a4d79633b1a508f1
 
 sourceId=src-ruwikisource-vechera-5336197
 sourceRevision=5336197

@@ -60,7 +60,7 @@ RIGHTS = [
 
 REVIEW_PENDING = {
     "id": "rev-pending-v2-curriculum",
-    "status": "PENDING_QUALIFIED_REVIEW",
+    "status": "IMPLEMENTED_PENDING_FINAL_AUDIT",
     "reviewer": None,
     "packVersion": None,
     "reviewedContentDigest": None,
@@ -74,7 +74,7 @@ def pending_unit_review(number: int) -> dict:
     return {
         "id": f"rev-pending-unit-{number}",
         "unitNumber": number,
-        "status": "PENDING_QUALIFIED_REVIEW",
+        "status": "IMPLEMENTED_PENDING_FINAL_AUDIT",
         "reviewer": None,
         "reviewerQualification": None,
         "packVersion": None,
@@ -173,7 +173,7 @@ def letter_obj(upper: str, lower: str, group: str, note: str) -> dict:
         "group": group,
         "englishNote": note,
         "sourceId": SOURCE_LETTERS["id"],
-        "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
         "audioAssetId": None,
         "exampleWordId": None,
         "latinLookalike": LATIN_LOOKALIKES.get(upper),
@@ -188,7 +188,7 @@ def example(example_id: str, kind: str, upper: str, display: str, note: str, obj
         "display": display,
         "note": note,
         "sourceId": SOURCE_LETTERS["id"],
-        "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
         "objectiveId": objective,
     }
 
@@ -231,7 +231,7 @@ def item(
         "feedback": feedback,
         "objectiveId": objective,
         "sourceId": SOURCE_ENGLISH["id"],
-        "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
         "containsGeneratedRussian": False,
     }
 
@@ -261,7 +261,7 @@ def reference(
     detail: str,
     unit: int,
     classification: str,
-    review: str = "PENDING_QUALIFIED_REVIEW",
+    review: str = "IMPLEMENTED_PENDING_FINAL_AUDIT",
 ) -> dict:
     if classification not in REFERENCE_CLASSIFICATIONS:
         raise ValueError(f"{entry_id} has unknown classification {classification}")

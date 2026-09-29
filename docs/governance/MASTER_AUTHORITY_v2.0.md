@@ -8,6 +8,8 @@
 
 This authority governs outcomes. Cursor shall not reinterpret missing curriculum as permission to create placeholders, random bindings, generated Russian, or structural substitutes.
 
+`MASTER_AUTHORITY_v2.0_AMENDMENT_1.md` controls where it conflicts with the review-chain clauses named in that amendment. It does not replace this document.
+
 ---
 
 ## 1. Product identity and release reset
@@ -119,7 +121,7 @@ The following sequence is binding. Titles are topic-level identifiers derived fr
 
 **MA2-177.** A fixed expression containing an untaught form may appear only when the reviewer approves it as an unanalyzed communicative chunk and the app does not teach the later grammar through that expression.
 
-**MA2-178.** The app shall identify any deliberate variance from the publisher's public sequence as a release-blocking conflict until the owner and curriculum reviewer approve it in writing.
+**MA2-178.** The app shall identify any deliberate variance from the publisher's public sequence as a release-blocking conflict until the Product Owner accepts it under Amendment 1, after final curriculum audit and independent verification, with the exact sequence difference, bounded resolution, and versioned digest recorded. Units 27, 29, and 30 remain `PROPOSED_NOT_ACTIVATED` until that acceptance. Green CI does not activate a variance.
 
 ## 4. Penguin companion integrity
 
@@ -131,7 +133,7 @@ The following sequence is binding. Titles are topic-level identifiers derived fr
 
 **MA2-034.** A Penguin lesson mapping shall contain independently written objectives and directions.
 
-**MA2-035.** A Penguin lesson mapping shall be approved by the qualified Russian Curriculum Reviewer after comparison with the owned edition.
+**MA2-035.** A Penguin lesson mapping shall be accepted by the Product Owner after comparison with the owned edition, as specified in Amendment 1. The final curriculum audit checks internal consistency and recorded scope and does not claim physical possession of the book. Codex verifies signed mapping artifacts and their digests. CI does not approve a mapping. Penguin content never enters Git, the APK, logs, screenshots, or review packets.
 
 **MA2-036.** The app shall not label Russian content or audio as Penguin-aligned without an approved mapping record.
 
@@ -205,7 +207,7 @@ The following sequence is binding. Titles are topic-level identifiers derived fr
 
 **MA2-068.** The reference library shall cover the alphabet, pronunciation, stress, spelling, grammar terminology, cases, agreement, verbs, aspect, motion, numbers, time, questions, negation, and core prepositions at the installed curriculum level.
 
-**MA2-069.** Each reference entry containing Russian shall have provenance, rights, version, and qualified review records.
+**MA2-069.** Each reference entry containing Russian shall have provenance, rights, version, and an evidence record under `QUOTED_OR_ADAPTED_SOURCE` or `ORIGINAL_RESEARCH_SYNTHESIS`, as specified in Amendment 1. A pending final-audit state is not a completed record.
 
 **MA2-070.** Lessons, practice feedback, and error review shall deep-link to applicable reference entries.
 
@@ -261,7 +263,7 @@ The following sequence is binding. Titles are topic-level identifiers derived fr
 
 **MA2-093.** Every shipped Russian instructional item shall have a compatible redistribution basis.
 
-**MA2-094.** Every shipped Russian instructional item shall have a qualified review record for its shipped version.
+**MA2-094.** Every shipped Russian instructional item shall have a versioned evidence record for its shipped version, classified as `QUOTED_OR_ADAPTED_SOURCE` or `ORIGINAL_RESEARCH_SYNTHESIS`, and remains unapproved until the Amendment 1 chain reaches `OWNER_ACCEPTED` for that version.
 
 **MA2-095.** Every shipped audio file shall have per-file rights, provenance, file hash, and text-match records.
 
@@ -271,9 +273,9 @@ The following sequence is binding. Titles are topic-level identifiers derived fr
 
 **MA2-098.** Each audio-to-text relation shall be verified as the intended one-to-one instructional match.
 
-**MA2-099.** The qualified Russian Curriculum Reviewer shall approve Cyrillic, phonetics, grammar, examples, translations, answer keys, feedback, lesson placement, and Penguin mappings before release.
+**MA2-099.** Cyrillic, phonetics, grammar, examples, translations, answer keys, feedback, lesson placement, and Penguin mappings shall pass the Amendment 1 chain before release: `RESEARCH_VERIFIED`, `IMPLEMENTED_PENDING_FINAL_AUDIT`, `FINAL_CURRICULUM_AUDIT_PASSED`, `INDEPENDENT_AUDIT_VERIFIED`, and `OWNER_ACCEPTED`. No stage is inferred from green CI, a counter, self-attestation, or a model name.
 
-**MA2-100.** Qualified review shall be a bounded, versioned release role rather than an implied ongoing unfunded obligation.
+**MA2-100.** Review shall be the bounded, versioned Amendment 1 chain rather than an implied ongoing unfunded obligation or a mandatory outside-professor engagement.
 
 **MA2-101.** A post-review change to Russian content or its answer key shall invalidate the affected review record.
 
@@ -391,7 +393,7 @@ The following sequence is binding. Titles are topic-level identifiers derived fr
 
 **MA2-152.** Automated validators shall check identifiers, prerequisites, reachability, rights, review versions, answer keys, audio files, text matches, and curriculum-objective links.
 
-**MA2-153.** Automated structural validation shall not substitute for qualified linguistic review or physical usability testing.
+**MA2-153.** Automated structural validation shall not substitute for the Amendment 1 review chain or physical usability testing.
 
 ## 17. Feature admission and anti-bloat
 
@@ -435,7 +437,7 @@ The following sequence is binding. Titles are topic-level identifiers derived fr
 
 **MA2-171.** Acceptance shall verify every primary workflow without INTERNET permission and in airplane mode.
 
-**MA2-172.** Acceptance shall inspect the content-rights and qualified-review inventory for every shipped Russian instructional asset.
+**MA2-172.** Acceptance shall inspect the content-rights inventory and the Amendment 1 evidence-class and review-chain records for every shipped Russian instructional asset.
 
 **MA2-173.** Acceptance shall verify that no required lesson uses random, merely frequency-ranked, or pedagogically unmapped content.
 
@@ -445,4 +447,4 @@ The following sequence is binding. Titles are topic-level identifiers derived fr
 
 ## Authority confirmation
 
-This authority explicitly rejects the failed structural-pathway model. No requirement authorizes generated Russian, runtime AI, network dependence, Penguin reproduction, arbitrary catalog binding, or release based only on automated tests. A qualified, bounded curriculum-review role is now mandatory because a premium self-teaching language product cannot truthfully ship without linguistic and pedagogical validation.
+This authority explicitly rejects the failed structural-pathway model. No requirement authorizes generated Russian, runtime AI, network dependence, Penguin reproduction, arbitrary catalog binding, or release based only on automated tests. Linguistic and pedagogical validation remains mandatory before release and is recorded through the Amendment 1 chain. A separate outside professor is not a mandatory role. No stage of that chain is inferred from green CI.

@@ -10,6 +10,11 @@ import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2PackLoader
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Unit
+import dev.russiancompanion.v2.curriculum.IMPLEMENTED_PENDING_FINAL_AUDIT
+import dev.russiancompanion.v2.curriculum.INDEPENDENT_AUDIT_VERIFIED
+import dev.russiancompanion.v2.curriculum.FINAL_CURRICULUM_AUDIT_PASSED
+import dev.russiancompanion.v2.curriculum.OWNER_ACCEPTED
+import dev.russiancompanion.v2.curriculum.RESEARCH_VERIFIED
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
 import dev.russiancompanion.v2.curriculum.example
@@ -644,7 +649,12 @@ private fun linguisticCodes(
     val codes = linkedSetOf<String>()
     when (reviewStatus) {
         "MISSING", "DUPLICATE" -> codes += "MISSING_UNIT_REVIEW"
-        "PENDING_QUALIFIED_REVIEW" -> codes += "PENDING_REVIEW"
+        IMPLEMENTED_PENDING_FINAL_AUDIT -> codes += "PENDING_FINAL_AUDIT"
+        RESEARCH_VERIFIED -> codes += "PENDING_FINAL_AUDIT"
+        FINAL_CURRICULUM_AUDIT_PASSED -> codes += "PENDING_INDEPENDENT_AUDIT"
+        INDEPENDENT_AUDIT_VERIFIED -> codes += "PENDING_OWNER_ACCEPTANCE"
+        OWNER_ACCEPTED -> Unit
+        "PENDING_QUALIFIED_REVIEW" -> codes += "LEGACY_PENDING_QUALIFIED_REVIEW"
         "REJECTED" -> codes += "REJECTED_REVIEW"
         "APPROVED" -> Unit
         else -> codes += "PENDING_REVIEW"
@@ -913,13 +923,13 @@ private fun nextWork(model: CurriculumReadinessReconciliation): List<ReadinessNe
             id = "unresolved-authority-variances",
             title = "Unresolved authority variances",
             units = varianceUnits.map { it.unitNumber },
-            requiredInput = "A written Product Owner decision and a qualified-reviewer decision. Current proposal status is ${model.varianceProposalStatus}. Current proposed-resolution status is ${model.varianceResolutionStatus}. Production validation applies this unactivated variance to Units 27, 29, and 30 only. This report does not activate either proposal.",
+            requiredInput = "The exact observed sequence difference, the bounded implementation resolution, final curriculum-audit disposition, Product Owner acceptance, and a versioned digest and date. Current proposal status is ${model.varianceProposalStatus}. Current proposed-resolution status is ${model.varianceResolutionStatus}. Production validation applies this unactivated variance to Units 27, 29, and 30 only. This report does not activate either proposal. Green CI does not activate a variance.",
         ),
         ReadinessNextWork(
             id = "qualified-linguistic-review",
-            title = "Qualified linguistic review",
+            title = "Final curriculum audit pending",
             units = reviewUnits.map { it.unitNumber },
-            requiredInput = "A qualified human reviewer identity, qualification, review date, and signed reviewed digest matching that unit's content-review digest. Units 18, 20, and 23 also need a generated review packet before a signature can bind to one. An independent curriculum audit, including a future Claude audit, cannot supply that signature.",
+            requiredInput = "The five-stage chain remains incomplete. Migrated records are IMPLEMENTED_PENDING_FINAL_AUDIT and that state is not approval. Green CI, counters, self-attestation, and a model name do not create RESEARCH_VERIFIED, FINAL_CURRICULUM_AUDIT_PASSED, INDEPENDENT_AUDIT_VERIFIED, or OWNER_ACCEPTED. No reviewer identity is recorded by this migration.",
         ),
         ReadinessNextWork(
             id = "owned-edition-mapping-review",

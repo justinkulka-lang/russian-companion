@@ -114,7 +114,7 @@ class UnitReviewPipelineTest {
         val pack = pack()
         val unit30 = buildUnitReviewPackage(pack, 30)
         assertTrue(unit30.unresolved.joinToString("\n"), unit30.unresolved.isEmpty())
-        assertEquals("PENDING_QUALIFIED_REVIEW", unit30.unitReviewStatus)
+        assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", unit30.unitReviewStatus)
         assertTrue(unit30.unavailableIds.isEmpty())
         assertEquals("NOT_PREPARED", pack.unit(30)!!.readiness)
         assertTrue(unit30.records.none { it.type == "UNIT_REVIEW" && it.reviewStatus == "APPROVED" })

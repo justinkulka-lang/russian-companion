@@ -369,7 +369,7 @@ class Aud53CorrectionTest {
         val candidate = readAcceptanceCandidate(root)
         val assessment = assessRepositoryRelease(root)
         assertTrue(pack.units.all { it.installState == "DEVELOPMENT" })
-        assertTrue(pack.unitReviews.all { it.status == "PENDING_QUALIFIED_REVIEW" && it.reviewer.isNullOrBlank() })
+        assertTrue(pack.unitReviews.all { it.status == "IMPLEMENTED_PENDING_FINAL_AUDIT" && it.reviewer.isNullOrBlank() })
         assertTrue(pack.units.all { it.mappingStatus == "PENDING_CURRICULUM_REVIEWER" })
         assertEquals(false, candidate?.frozen)
         assertEquals(null, candidate?.sourceCommit)

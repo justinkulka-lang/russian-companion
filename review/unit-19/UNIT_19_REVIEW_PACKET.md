@@ -15,8 +15,8 @@ Unit 19 remains in development. Its readiness is content-complete and review-pen
 - Unit content-review SHA-256: 75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3
 - Mapping-package SHA-256: 907a9086e25bd1a87abef73f9271ccf32dbe4df12eedacba4eaf23603fe644b9
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: 987aff2e5d733bbfca7b83faac7b9985e3c063960ecfb178075c9cbff03ca8fb
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: 74c9646f33bfdc6a91331e2ce366b4d2a21ff583b2899412438692d69aaf1901
+- Repository source SHA-256: 5d364a5c70e24735ca6e67032ef2d9ab65364ee4b168ef3afc41005fa750d3e9
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b90249a5df0faa57db023997dbf4cdc183868b50371eb688f9116d817e9b7a0b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d7a46eba61f1ff1865801551b331d5aa52c136716b7a42a66391a55dbfacff8d
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -869,15 +869,15 @@ remediationStepId=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eacbde9e6dd6ad2d7c60f19d9677059c51bebb67092187d27a013ab2138b44b5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 07008bbf6aad1313a757e9a8217c24d6b4d08cec61cda5edc3eaeab1e3369196
 
 kind=LEXICAL
 letterId=
 display=отговорить
 note=to dissuade
 objectiveId=obj-u19-prefix-caution
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u19-prefix-caution-1`
 
@@ -886,15 +886,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a557533e1629c8af9f49e0492bde6cbfc2ce040f66191800b81b1e8139d63815
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 888c9a9a2861bab1bd631277de2d1702d82047c76ad42da918910466e373b381
 
 kind=LEXICAL
 letterId=
 display=договориться
 note=to agree
 objectiveId=obj-u19-prefix-caution
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u19-prefix-caution-2`
 
@@ -903,15 +903,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4df08a31df2beab509186dff84149765d647abb3a3a917b3758bd64ef0c32b15
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d54254f742bc30fae91e8a6fe14795dc4e9eec38265580aa9d65607b2e57335
 
 kind=LEXICAL
 letterId=
 display=написать
 note=to write
 objectiveId=obj-u19-prefix-caution
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u19-prefix-caution-3`
 
@@ -920,15 +920,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9a118d53259c5f033d6183e90e4caa323ca44d7ac187481f5c17e36b730810b2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d98a571d9590585529a59a3a2016a2327f4187de0e454e4f3c15cb96d315cb93
 
 kind=LEXICAL
 letterId=
 display=сделать
 note=to do
 objectiveId=obj-u19-prefix-caution
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u19-conditional-0`
 
@@ -937,15 +937,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67ccf89739dbda69f7c1819767c1c4821ffba395768ec9c7ac7b5121162b567f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b1e1cea2d238ec7150ce8cf8308d0c192d76c2030492407ce463d49e33f491fc
 
 kind=LEXICAL
 letterId=
 display=я спал бы
 note=a male speaker
 objectiveId=obj-u19-conditional
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u19-conditional-1`
 
@@ -954,15 +954,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0107b8137be17518ab4b0229b046f1b722827a32187c8a0d5615642701967e1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5309b6d404b3aeabcaab5f73f4ad912b8dfe1139f666f357828407b55b997c64
 
 kind=LEXICAL
 letterId=
 display=я спала́ бы
 note=a female speaker
 objectiveId=obj-u19-conditional
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u19-conditional-2`
 
@@ -971,15 +971,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0012cc7c797d9951a5fd117d85ed51df83a3755739ac8783b9a798dfd1c93ca
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 265fe4d1f85d0c174a740ff7660c1e145285c875b65f45d7395bb3f4c3d946fb
 
 kind=LEXICAL
 letterId=
 display=я бы поспа́л
 note=I would like to sleep
 objectiveId=obj-u19-conditional
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u19-conditional-3`
 
@@ -988,15 +988,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea14c7d836ef3f87d99f3bf7cb91e072ad340f7bf930010c59c1ac3ef295d7c9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2991636c8b5d23cda4c24e12f852b4c1b6cbf2be7701c21ef2868135f607afc6
 
 kind=LEXICAL
 letterId=
 display=я бы поспала́
 note=a female speaker
 objectiveId=obj-u19-conditional
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u19-obligation-0`
 
@@ -1005,15 +1005,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c00235bae93c996779d807f7f461107c5a488dc3600a991d23583a6b40fc3faa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 413cd9250fae79470090d2fa0305ce98a32aba229ac2208b8682cd11e7148cc5
 
 kind=LEXICAL
 letterId=
 display=я должен
 note=I have to
 objectiveId=obj-u19-obligation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u19-obligation-1`
 
@@ -1022,15 +1022,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c230dbcd147cf56e17ea5421de18d21142cd945eba01450bdaa912465b62470a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6526fab8d205f9a61d77749da9a7352e5961fd7e18bad93a8daf1210ed2d3af9
 
 kind=LEXICAL
 letterId=
 display=должна
 note=If the subject is feminine
 objectiveId=obj-u19-obligation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u19-obligation-2`
 
@@ -1039,15 +1039,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4ebc6bcc73a544bd02cf4ec48344d3372ec610d06ec493acbfc009943186738
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 023af562468331001dfb9bd4210b103392c919c1745e766abcbdac2c73b3c840
 
 kind=LEXICAL
 letterId=
 display=должно
 note=If the subject is neuter
 objectiveId=obj-u19-obligation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u19-obligation-3`
 
@@ -1056,15 +1056,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aaaeb0f19bba461752d612e4127ddef484f3367c1130dd593d16e4b487ee075d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d8c492f7d6fdcd5ba5d24d83957a512edd5e0e0efd5ecfb727fcaff202f77c6
 
 kind=LEXICAL
 letterId=
 display=должны
 note=If the subject is plural
 objectiveId=obj-u19-obligation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u19-probability-0`
 
@@ -1073,15 +1073,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-enwiktionary-dolzhen-84965088
 - Rights: rights-enwiktionary-dolzhen-84965088
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3567d424b88cfeffcadeb9ac87312e06407a4dbec285c97ab0678114d09d9d41
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5382bb5778260fceb9c0eb0235c09cb7ba132fa008038c44009ba5b21aa6c1ea
 
 kind=LEXICAL
 letterId=
 display=Затме́ние должно́ наступи́ть в три часа́.
 note=The eclipse should occur at three o'clock.
 objectiveId=obj-u19-probability
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u19-probability-1`
 
@@ -1090,15 +1090,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-enwiktionary-dolzhen-84965088
 - Rights: rights-enwiktionary-dolzhen-84965088
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 514ac0d00e89e8213851c055e6cf3d23e41c1c73f5294d4bc948aeabb4bf74b3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f7eefdab9abd7323af967ae6c6f74b765bef06c5df238280b4322f3f61038b00
 
 kind=LEXICAL
 letterId=
 display=Слу́жащие должны́ во́время явля́ться на рабо́ту.
 note=Employees must report to work on time.
 objectiveId=obj-u19-probability
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u19-g-prefix-caution-0`
 
@@ -1107,8 +1107,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e2ff2ec45760df86446bff22e82d510cc4b013042bf17729391a0e157259492b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5834b05f792a5fbfc3031d1942250d9d5c04f6db3febbba6b0aaf25cb24fa0c4
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1119,7 +1119,7 @@ answer=to dissuade
 feedback=Does this answer show the dissuade meaning? to dissuade.
 objectiveId=obj-u19-prefix-caution
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the dissuade meaning? | Does this row fail the dissuade meaning?
 testedFeature=DISSUADE_MEANING
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1142,8 +1142,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f23ad3c3a0c8e1fcd939d321871404e30e26831ae3a7be848e3d851f863ffd63
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 809cf885b017ffe1da9162d30ef5f4d014011bd697f61fae116a1350a1c1089b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1154,7 +1154,7 @@ answer=a male speaker
 feedback=a male speaker would say я спал бы
 objectiveId=obj-u19-conditional
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | while a female speaker would say я спала́ бы (or я бы поспала́) | I would like to sleep
 testedFeature=CONDITIONAL_MALE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1177,8 +1177,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3d0976f7a52443fd4e7cc22aa423d2ae1e990ece4f32c13de7bdabbdd11bc3c7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17837e19dac64acd34f092a4601cc8b5353b9cf4f8a0b0af908c6a224b8c437e
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1189,7 +1189,7 @@ answer=I have to
 feedback="I have to" translates to я должен
 objectiveId=obj-u19-obligation
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | If the subject is feminine, it's должна. | If the subject is plural, it's должны.
 testedFeature=OBLIGATION_HAVE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1212,8 +1212,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-enwiktionary-dolzhen-84965088
 - Rights: rights-enwiktionary-dolzhen-84965088
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f5cf6b59b60d4add7369bc2f5b01085a14f21194504dcff80ce9c599a58b2634
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1bf0bb5fe48ef093d534a78c9864ae9a2580cb50809d406887df56548d0dcdd4
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1224,7 +1224,7 @@ answer=Затме́ние должно́ наступи́ть в три часа
 feedback=(with a verb) Used to express likelihood. Usually translated as "should". Затме́ние должно́ наступи́ть в три часа́.
 objectiveId=obj-u19-probability
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Слу́жащие должны́ во́время явля́ться на рабо́ту." with the admitted gloss "Employees must report to work on time.".
 testedFeature=LIKELIHOOD_EXAMPLE
 evidenceMode=GOVERNED_SENSE_CONTRAST
@@ -1247,8 +1247,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f94f15bf19ef9708f8316c122c2c4ee97183807e13c5e64e2b83c9de6f1413c7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cf8994090078bb6b2df325440d52bfe076dfc38b3cacc205c31f300c9c06d0f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1259,7 +1259,7 @@ answer=to agree
 feedback=Does this answer show the agree meaning? to agree.
 objectiveId=obj-u19-prefix-caution
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the agree meaning? | Does this row fail the agree meaning?
 testedFeature=AGREE_MEANING
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1282,8 +1282,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9805c034a9d98d76a44c3fbfaaea3e600c81ccc84cb5d0069c5eee243f5f9635
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45b0aa80715df792b508283b304a2c50337aea7ec69e693dffb53ee4d8274d47
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1294,7 +1294,7 @@ answer=отговорить
 feedback=Does this answer show the dissuade perfective? отговорить.
 objectiveId=obj-u19-prefix-caution
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the dissuade perfective? | Does this row fail the dissuade perfective?
 testedFeature=DISSUADE_PERFECTIVE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1317,8 +1317,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: be7d581f496f58e5519980c81d1d1e8e2cb5f949a7f78697257312b5aaea52be
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 57bbced8cf5afb86c5ffb3a789fc4d3733fd5ac786538b0cd7f63fbe905c19b0
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1329,7 +1329,7 @@ answer=a female speaker
 feedback=while a female speaker would say я спала́ бы (or я бы поспала́)
 objectiveId=obj-u19-conditional
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | a male speaker would say я спал бы | I would like to sleep
 testedFeature=CONDITIONAL_FEMALE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1352,8 +1352,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82932ceb090b80773278a751c1f9eaac9548844f6a2f9b340a176edcc7456317
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1a7ed2c1b67ed288fc7c6075f059b9c23b8c0518a8515a761a3d9ac3af521f3e
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1364,7 +1364,7 @@ answer=a female speaker
 feedback=while a female speaker would say я спала́ бы (or я бы поспала́)
 objectiveId=obj-u19-conditional
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | a male speaker would say я спал бы | I would like to sleep
 testedFeature=CONDITIONAL_FEMALE_ALT
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1387,8 +1387,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 078e75d0310d96afd89a8203cc25772f827a3d598ed3ea053ec323282c4ac358
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d5bc5a87a4a62c4811c441659eefbb39aefa102f50f5c2f15b6b1b94e62d236d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1399,7 +1399,7 @@ answer=If the subject is feminine
 feedback=If the subject is feminine, it's должна.
 objectiveId=obj-u19-obligation
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | "I have to" translates to я должен | If the subject is plural, it's должны.
 testedFeature=OBLIGATION_FEMININE_FORM
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1422,8 +1422,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9a6af2130d6c7529fcf3b243890f9166e2f9c17d8f6e192b4bd399889b5d192a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ce9100fd648ea273c16d131ee1df613db369229a548e90e0c8891a19094a3cd2
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1434,7 +1434,7 @@ answer=If the subject is plural
 feedback=If the subject is plural, it's должны.
 objectiveId=obj-u19-obligation
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | "I have to" translates to я должен | If the subject is feminine, it's должна.
 testedFeature=OBLIGATION_PLURAL_FORM
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1457,8 +1457,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-enwiktionary-dolzhen-84965088
 - Rights: rights-enwiktionary-dolzhen-84965088
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 73134692fad7b5420a2a0e6f70ea066c62ccf66640260fd595813a365d47ca37
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bee955e0e8b5a0bf9daf5c61ed9f7d7ea46021647cb678169ad9dda81e69602d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1469,7 +1469,7 @@ answer=The eclipse should occur at three o'clock.
 feedback=The frozen source pairs the shown form "Затме́ние должно́ наступи́ть в три часа́." with the admitted gloss "The eclipse should occur at three o'clock.".
 objectiveId=obj-u19-probability
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | (with a verb) Used to express likelihood. Usually translated as "should".
 testedFeature=LIKELIHOOD_GLOSS
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1492,8 +1492,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-enwiktionary-dolzhen-84965088
 - Rights: rights-enwiktionary-dolzhen-84965088
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5dc7cf517df033c31cb20cfd4600fd51d56e008d461af763ec532761e696a912
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 998749cb214c71d2ad315e3c8894474991ce04783d8f02fe16581377283179f0
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1504,7 +1504,7 @@ answer=The eclipse should occur at three o'clock.
 feedback=The frozen source pairs the shown form "Затме́ние должно́ наступи́ть в три часа́." with the admitted gloss "The eclipse should occur at three o'clock.".
 objectiveId=obj-u19-probability
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | (with a verb)
 testedFeature=LIKELIHOOD_GLOSS_LABEL
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1563,8 +1563,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72b8dadb9198b806f1b8e2b93f1d658d059ad14eb821b83315c625024756a983
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5020e827278e66cfe7a1585f6fbe3df696e40bd70cb377b4d7425c2dbc58824d
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1592,8 +1592,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d65e1cc8b687d8fb3f90599222aeebbb2bde30963cd4052c48d3cb5f86ea5f93
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6edc6df1f35e62daf399476fa2852488ad5bae2dcf947d5b9322f7c8e9467021
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1621,8 +1621,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6665e23a41a41349b119a6d0e27e88305e73f71e4d124e1c330cdf59e4d8b6a5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8cab4bcf37d8d15ecdb49c64044151d86ecc444f793bd1b16763f8ba414c8c18
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1650,8 +1650,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 94c72475ca778e84d7c1564611fa899ec2dcc688455a0dd818e9d1c8f017719c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61241079e99a0a4f6b820cb0a19a4b0c70f64920d384fd831fa49b9f831b1d25
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1679,8 +1679,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b365761ae194ac98fadc7727aeef0888c06eedd5ccf80f1e448e3bb667c84287
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8928584dc1ae0dd56fedccb65ad56584749e87590833548ae30955248f7fc57b
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1708,8 +1708,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ec2ba2a83292812db07094345920da7d7cb3ef48e9f0ed7e3e061920e4a31cf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 22c39aea89879c1091349df08b63b0867ebed1f32af7e232dd71703d05f24659
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1737,8 +1737,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b499ad854cb1e7f608f126967fa34a69336dc26e2a99c33913477c0c5c70d931
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e09fc9f6b454e1ca15c8358c562e1342b83b17656d5d8fd6619b82948a4a682c
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1766,8 +1766,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 28e5ee30c839e7b908289231b0406d3e8433d5988d7e834d7b241f6b748325bc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ace2f8b52e17bedba0776efc8cfdeba95495e72adaab12d9fb02bb66502e09d
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1795,8 +1795,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 281f888e8103a2c41e121d39547c1a93f31065aa3dea0ab4d86f436924ce96ad
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2976a6b2d58183aa77068f7125f27709ea3183832668d7a98cbacd56d85f18c
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -1824,8 +1824,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bdc0bbdb22efa51f78fd3cedffbf6c4c6366d21e939b80ee44af0e77d6697531
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e00cd8e56e0eadae58325684756cbd48831db0e7b9ea86b0919605f0f9edc65
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -1853,8 +1853,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a93319d5b85d2f8c715f8fe7b2c2c7fc08a0ecfdd1dcefc64ee441f3a70a3b31
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 730cf8d11f990e13b955a46d4539f30610510283d7376d1ddfe737c8a18b47bf
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -1882,8 +1882,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 49baf6302ce3aa1c86e59afeb6d6577e9b424fbe456a177e3bb055727e18ca76
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e0127ac4b288cb101c7262623485a7c4998c220893ddac75c907fdd9838eba2
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -1911,8 +1911,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f6ae0897de2de2203a06d24b5d43740afbf0cd2475efd78fa5e72e8f320871b7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d556f3b7c370ca24fdfdf4302418be01315aae391768890ff66d65806a01248c
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -1940,8 +1940,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a98a9b032854c4f2323717eb712b2601a52d1843545a38e7b13fdbd0092adb8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa1f3ccabf157423c8220aa228f5df6a8d2aa6ae696a95dbf773eade882bf070
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -1969,8 +1969,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a9ebd5864f19ed5ac3a0d41eae7eaa61b84543a3572f91fdf21817bf1878759
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 08230904cd799277f425b033b0d55aed1749d66148315e1422bfcdc026a3c540
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -1998,8 +1998,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2fbd42adf00206ff753f9557235e5631af7db85662294b875a3ad23727e8c1ef
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b6447885975a64ce80d4af18ffd5631503f4c5a73c406abb6eb26e68b63a9f5
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -2027,8 +2027,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5d23e34b33ac42740017f5512443d5f8e60e18939f8470f3d0475435f2bbd851
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 852f7a16a246cd14956dfc2e0c7885489f3a0e60ee4f5a510c9b767669f50378
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
@@ -2062,8 +2062,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 487530643b10bfde2076e63f5ab6a641e1df6ce66d8226b5961f16eaf4b10dc0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f484bb3676f09af32c6fb207991b8fdbc9dae4cab716969e3729eee3a8860e3
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
@@ -2097,8 +2097,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce6da7be67bcd0562315a1e8716edd9a5ea4468a9559267f33229f4ccdaf70ad
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7219e392c777350b37e71520bef399be62b112b23cb882730a80c71fb9e578ea
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
@@ -2132,8 +2132,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4fd724dea68cb4b956034248f36ead986e78c181574ac9c5abfed9ff732443b5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70d3cdf70f1b143fbdde549627e7882bcdb360e28455c8208e3864306734d213
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
@@ -2167,8 +2167,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4ddb0932c926b02d92beae85b7756298b9c1cf762508d46339af343eddf1e45
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 71489ff07a8c83aaf6dc364a1294658f3fbba7e6461f5a1476aa514c44956012
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
@@ -2202,8 +2202,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1bd4b97f7c2efea2f8dfe1570318def1b0127837788e2f7e7dd2d7c9d5637b53
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 71d4933146295f10557f329d4c1459206b2dadead27d7832bf025ee29ac6ff55
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
@@ -2237,8 +2237,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b776edd055f0c1fac57c1c99bef0f678af1a3f16d83a59689514f21698488668
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5591e7b0b3415560cc97f5386535ddd10f784b3bdff29ae5252ab66f542f020
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
@@ -2272,8 +2272,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e2f6206d54681809ea52e61ed20dec8501fe41225790b4a7960bc8bd2ed0bc6d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 073bc4ff57205419c1c56b57e53247ccc5210b86ed64cb8c0f161bfa83f1cd67
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
@@ -2307,8 +2307,8 @@ reviewedDigest=
 - Source: src-enwiktionary-dolzhen-84965088
 - Rights: rights-enwiktionary-dolzhen-84965088
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bcf09de1242a44ba2c8ae162016ec0c3fc1c7dfae876688ecfbdc7e99560ed3d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33349ebb967347af2b596cb432e7a7301bfe6dbf7a01d56672a5adf1a77c973d
 
 recordType=meaning
 sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
@@ -2338,8 +2338,8 @@ reviewedDigest=
 - Source: src-enwiktionary-dolzhen-84965088
 - Rights: rights-enwiktionary-dolzhen-84965088
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 853b416e531f2c7fbd386158bd20daedddc3852b677638ed845e052f5c88e9a0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: abb9dc9878a1ed1c2d7a2ce663be85f290454972f8498876fa0727d3134a1073
 
 recordType=example
 sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
@@ -2369,8 +2369,8 @@ reviewedDigest=
 - Source: src-enwiktionary-dolzhen-84965088
 - Rights: rights-enwiktionary-dolzhen-84965088
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 06fc027a0a7d46c278d80b59cf7d1f84867fc20411b59214eccfe74332b5701a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a06e627ec6409e169f7783be9e24b4705c42b1eb02484216e2615d16f95f4c48
 
 recordType=meaning
 sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
@@ -2398,8 +2398,8 @@ reviewedDigest=
 - Source: src-enwiktionary-dolzhen-84965088
 - Rights: rights-enwiktionary-dolzhen-84965088
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3dcba441505f0e386c978b4899c17719c3496b3b706274efa86aa9eb8940c0a7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bff94f5aac84c1e9144186919a82db0daed5f9332a3f18ccc5461942b7ef83b
 
 recordType=example
 sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
@@ -2427,8 +2427,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a8d24b029747c770b83e9a8c09e64081912fced84ae7a9f59a36ed144997566
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6db3e2fa6aa993c0005c9f21389b5a942b010e39025f5060a35d9ef40a6c2cc
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2456,8 +2456,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4fa21442b1183dc349bc6434dafa648e44e8f3717b16f86494f1936ddf09c4e3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a1a1eda857328f94c3494aa87ab1eb32e4d00a2ebce0fc3d09e3edb27d819a1
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -2485,8 +2485,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0e73419ba3216b765de3b3ed72f58c92685d6b3b9c2b8ac0146191cdf08a4007
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 360b6763f6c01be03a7e0ee9d33aa41fdd6ccd27a59b5512d2d822488147792d
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -2514,8 +2514,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8d73098f3c941514b3c0ad3cff9a51eeb7b14e07e393e2e06488c8a322dba92e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 008d1845259085ea61b71c9cf7625fdb7b7df635d57e620acb03bb347c9bfa69
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -2543,8 +2543,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8467ee002bbea024a79cead9fa364dfcefe51a5e2c26e9bb8fec408dae3f7cb3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2f05137f5fa00ac1f85d83815c5448930f3dd42ec972f17c872bdded1975ab3c
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -2572,8 +2572,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9364daafa8606ea89a8a17b6a09f02a9ae7e7075214a0cd6c02efd249f490e00
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 830d8ec396ff591bfa454834c726bac2c499d50df460ac9f1caba9cc305979e1
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -2601,8 +2601,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f80e4337108111d880f3a5d787bc9deac0522ac778c78886ffc546af2b545fa3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c68d9a9fc088349112cd805c1a55303a50e696df96d2026d880e7cd6c018d8c
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -2630,8 +2630,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 743c297f653af92fec81631ff4e16c1d0b3f5534674c9c1e8a976bec407be1a5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ae93aa44d110c3ebf081dd954c0dad06b187aae9906de395dc2ef61b97a1b4a
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
@@ -2659,8 +2659,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5b30dcea23b23dec38e93dab4249e172e3aa940bed7336cc11688d06e34eb35
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 668530465d9fd2cf28d28416e9195f3bb1cb1a5eb143157457ceb187076993a4
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2688,8 +2688,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5d5f75c0f5862be5eadd763cee2ac8f01b960a194c50b607e714dc6711118a29
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6804f53660dc7c5e60eae4846793e5616883df251de26a8f043233cfdd2845c2
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2717,8 +2717,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8b6a4efd3ff349ffa993007b3d4a188d745374bd3223274d10ecb697f7740fa9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21bfe85a6fb1630f568758e646faafa6c8edd35e7bab24458008daf8b7ad47b0
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2746,8 +2746,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c3f0717ab480b2a3fdbac2cec9c57d59801169c544d21ecc719d24352159f58
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2a92a236e60b70b185588d734943f3bf372fcd4f98684f98db5ff235b23598a
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2775,8 +2775,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a46fb9293c094027d83ed565cadbf6273adee474b101018e23f29fb7f8133c1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b591d665b958925a59f0a30318ed96634e078e6936af62208add472bf2358b4f
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2804,8 +2804,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2efcfe64bc4c62678d14c09c958d21c51cc700e4daa6256d4d8d4689f69bb5b2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 10bc8a91ead0125ff80a868c37a994c69162915add8de799ea729dac58c960fb
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2833,8 +2833,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 01b79420366a0da5e4a314ffa91a5dccc76cdc807d8ddc3750cb37b437a8f47d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c17cef3d6fabfade0b4b88e0f77dbe6a36f81c4aa34330037246bcee9973de5
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
@@ -2868,8 +2868,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 98b8c05cd497d5a054b8d66c3984a350f6639df5505cd546b99659cc5a7197c0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bfc80ca907d3be420ce975aaada20cc5e68f2cd582ee5a26b9d6f0aa20a34a80
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
@@ -2903,8 +2903,8 @@ reviewedDigest=
 - Source: src-enwiktionary-dolzhen-84965088
 - Rights: rights-enwiktionary-dolzhen-84965088
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b76a3de9a9e533e1c2d9165f607b848fe455812cf09b2af1429f65686635379
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40100736defe9aded2faecb790c320ca7aceed3f2f1e4480f8a8ce87603e6b37
 
 recordType=instruction
 sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
@@ -2934,8 +2934,8 @@ reviewedDigest=
 - Source: src-enwiktionary-dolzhen-84965088
 - Rights: rights-enwiktionary-dolzhen-84965088
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e7026f1e43695ff5473c493fb75b5c749599d030e5ccac2b70454f63cefa30df
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b3190535d721a4697d6a3c9ae30cfc3601a9dc7802db917e6187145752ec568
 
 recordType=label
 sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
@@ -2965,8 +2965,8 @@ reviewedDigest=
 - Source: src-enwiktionary-dolzhen-84965088
 - Rights: rights-enwiktionary-dolzhen-84965088
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2cecf8a465b85a5bc33117dedc638cfca2a8011606944ef61b1a1259a6cdb0d5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3586c0d95a0e1a808cbbca7fe301a36b51e1e3c93c1ba9fc67f5cafbe26358da
 
 recordType=label
 sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
@@ -2996,8 +2996,8 @@ reviewedDigest=
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a9f28e0697c44bf402415af5b85951c5f748b60d2b74d3eb57c6ef93adb944a2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3326a0dab23999c1af0ee1acf74177d06f93365019b2c200b73cbc0d8ca82687
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
@@ -3009,8 +3009,8 @@ text=Admitted lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e1f09c457a4477cec11a5510836cf277c4a5c03da79bfe22a461d25d34e75ea3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd7b41aefe5cd0599bb92616075b4da2f57d73bb3eebdce3c9e96de112af8a98
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the dissuade meaning?
@@ -3022,8 +3022,8 @@ text=Does this row fail the dissuade meaning?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a2d0ac2f66005a1e078f2379f617e942cf9feb218b16439d6e123af3a0ff338
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 88ed7a743ecab382838f4e20e0db628776db98b38635b813127c48e631eaec2c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the dissuade meaning?
@@ -3035,8 +3035,8 @@ text=Does this answer show the dissuade meaning?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d7c60fefec80f04676ac6079ec7ebf27fc83ae3a96168f345bf4c1393c925dd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3fa1fb09f750f3666347fbed3ba6af3049d813e81fc6c2e62919a7bbed3c919
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is the dissuade meaning?
@@ -3048,8 +3048,8 @@ text=Which admitted English label is the dissuade meaning?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6b03d515084aaa7f7277bad2a2691596b508e288a8c1b6cc29d862a6d77481e6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0e9c4faee5ce26e2483df080a5ee8fb376157a8c969d0891941a2f560f0ff220
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
@@ -3061,8 +3061,8 @@ text=Admitted instruction
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec260ae6a4f6b20c65c854f59724a8ffbf8c09bf904f1b69b23090b6977a4976
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c819bffbf90b64c27ffca93b2ee3af754e9e78b785ade8a4cd5665194b046ef2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the agree meaning?
@@ -3074,8 +3074,8 @@ text=Does this row fail the agree meaning?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a026d20b845762aa21e6b74cee6353c499aa7659fd1f34992c055c519b365e3e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 93e0b912f6c88dc5dfd641541ad41cde022eb6f3d1c5de4acba8e3948663af73
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the agree meaning?
@@ -3087,8 +3087,8 @@ text=Does this answer show the agree meaning?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96be818631797665d7984f0fb27d315c8a1396e0adeeeeaa192726a64b04aeea
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae1043b947c86fc2e117a81d9df0400d27b08db649d1e3ff83c71838f6ebb067
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is the agree meaning?
@@ -3100,8 +3100,8 @@ text=Which admitted English label is the agree meaning?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 86b8d25986ba7821ba83f92bf56d6bd80c4bf068061da9cc7e7fc152474940b2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d73ae691496dbcd56a55832813ac07a29b9f2e64382de309ddfa64ff2621245b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the dissuade perfective?
@@ -3113,8 +3113,8 @@ text=Does this row fail the dissuade perfective?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e347c145560f625fe42ab242a8b4c46c94a2f9deeafcc2cb5d56bca19aa408c7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 35e31bd95d1020b36ba377514f67196a77ab67cb44ff45e014179c07950c659d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the dissuade perfective?
@@ -3126,8 +3126,8 @@ text=Does this answer show the dissuade perfective?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae0b45b5d604c665d0714255dc2b9809599f17362c13cc3100d09d21bb31d4a9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 59c60bf6dbd6b6020c6a4bd02b1f329c2cd7c45be7a08e4073d8ace672954971
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the dissuade perfective?
@@ -3139,8 +3139,8 @@ text=Which admitted line is the dissuade perfective?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3632dfe6d46a31e4928faf4af3e89789a62513ca9908dd3a6b5da8de6bcf7b7b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 907e4bef4e732716a477e2f077ceb3c061b8dd4b9d0de019e98466969ae701e8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen source pairs the shown form
@@ -3152,8 +3152,8 @@ text=The frozen source pairs the shown form
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3a4fe74cef83221d9c586c008235314c26cb9193681f793bbe53f15397745e0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bab51dca310faed6d63d312e3f284501c3d0c51add474322eb3ffbbfb1ee281e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=with the admitted gloss
@@ -3165,8 +3165,8 @@ text=with the admitted gloss
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 19bfdaff1258571487bd3c2aedf44b37992147d400c6a750efff47d990320b9d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3000e016a8bf5016140acefb346cf7cd0626068a7999941c0d70aba0197d8e9a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English gloss is written beside the shown form?
@@ -3178,8 +3178,8 @@ text=Which admitted English gloss is written beside the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89b03478a69026594b6502a7f063a586d4b35742d756b6e6ae0bc8cff8425ccc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f181e2d603e605ae3ee925634dc70e1dc64e04dbfa48151eb8190b724928004b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted prefix cautions
@@ -3191,8 +3191,8 @@ text=Admitted prefix cautions
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: efee18bf7fce70d65ac0eecf91e2b49040e34e04f2efaf58dd30b97f6397c95e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a6b6d421e5ce01ef662ec5b1ddb8e922629fb79e4f48bc9cf69812c82ef90b13
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 19 in the copy you own. The app records do not replace that lesson.
@@ -3204,8 +3204,8 @@ text=Open Lesson 19 in the copy you own. The app records do not replace that les
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d07af3425e00ce8944a0a531aebe71d0b648d4bfd7e43ee3897ea008041dbde
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3ff46b67f8331404fd21cee393b9f8fae433987868687f64bd77c6d81ece7cb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
@@ -3217,8 +3217,8 @@ text=Guided practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e65c22814bfd55608e485c1ffbd08f8a32fffd8c8ee81ae0955ef570391c86cd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef1f46b43ecf5bff9fc9589ce440847b3bdead3e4d584431630babff527bef9f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
@@ -3230,8 +3230,8 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81956ed5b237457e34100702b1dd4b04e5f428d694afe6a2e4c7f15055d6b0dc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0116266c1d8ba8d526bf0f9bedd98319e750e9128202c1430cf74ff09e5edeee
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
@@ -3243,8 +3243,8 @@ text=Remediation
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff7afc1610678cbf36e141af9bde4fad6bb84dd38733412b2b310060a7e57935
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a69477f46ddf7df35d33c715ff9f5ce0726ab197c2e494fc4e3a971b171155c9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
@@ -3256,8 +3256,8 @@ text=Independent checks
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8cbcb707a75f7d6667e013e25e67d57d1551050b5b12f674afd243f3e5c14d77
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd6b4761d033d90231bb9c81db5fdceff711bde7bfbe26e14e88b49954a53b85
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
@@ -3269,8 +3269,8 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2564f185bcaa67010e2cec20089b4d2f7d9e992080214094ed80bdb2c0fdeff0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c58f9f46bde437e87f16edde78c2f0bb8abf851374649c204f19fe0c86507284
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 19 in your copy
@@ -3282,8 +3282,8 @@ text=Work Lesson 19 in your copy
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81c9bfa5c82595f1de6b9da3808734cf1a3d8e7400f1d6d98436a62e9804a72b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ce84f7fab80bbd8c10249e64dedcff19b1e2778009fafc79761642996753dda
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
@@ -3295,8 +3295,8 @@ text=Do Lesson 19 in the copy you own. Use that book's explanations and practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a031d48a7240c9486c6da0afb85ed10d431293b6eacfee6c85785d7a93f2e011
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5cfc7d8c8dbc9f3e27b83f664f622a56d4dd52f3316e618e5c2dfce0a10a26a9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 19 in your copy and complete its lesson work.
@@ -3308,8 +3308,8 @@ text=Open Lesson 19 in your copy and complete its lesson work.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a702452ff50417a471069ff0a041aa7ce743e4fdf5cb05a9b649af77c8eccca
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14250c9b55d7b5af2b64248c9d10961987d152c7462b11fa80f234a6f45b7b01
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 19 book work
@@ -3321,8 +3321,8 @@ text=Record Lesson 19 book work
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 75eac4868db5ec00475e80d4d99b47a975e9576598a4807d1bee3469a501835d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 71db844ef95ef9579fea220c9b49677f1a0e851fe95501fe52e46c4769cb6da5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
@@ -3334,8 +3334,8 @@ text=When you have done Lesson 19 in your copy, self-attest here. Attestation re
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: baa27dabdfa3d82fd00f7e0b5f4d864157affe1fad875d6bca67da628e0ba48a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 318073732956d5d099bd51ea5bfd40d857f356a3d5aeb0b7bae2958352217d24
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 19 work in your copy.
@@ -3347,8 +3347,8 @@ text=Self-attest only after the Lesson 19 work in your copy.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 02bbd665df7487b97968b4ec475c5f316265702514c8e2941092f0b276b2119b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2cd03d8d18cda23634dee31a727ba0a8f38f6e3b0b10346727e0d1fbd45ea0c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional, obligation, and likelihood spans. Qualified review is pending.
@@ -3360,8 +3360,8 @@ text=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional, obl
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8f88044f98a2afad3322be43d700f1b2c3a5913c31f5a26b0d0c2a7df6cb5b4e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33e4982247cacd314038de905ee6ec322ddc9c9ccd1409a8fc53f54ec4074690
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which displayed example expresses likelihood?

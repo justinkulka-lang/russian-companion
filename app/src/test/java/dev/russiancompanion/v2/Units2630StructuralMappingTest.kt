@@ -84,7 +84,7 @@ class Units2630StructuralMappingTest {
             assertTrue(unit.sessions.isNotEmpty())
             assertTrue(unit.advancement != null)
             assertTrue(unit.openable())
-            assertEquals("PENDING_QUALIFIED_REVIEW", review.status)
+            assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", review.status)
             assertTrue(review.reviewer.isNullOrBlank())
             assertTrue(review.reviewerQualification.isNullOrBlank())
             assertTrue(review.reviewedContentDigest.isNullOrBlank())
@@ -423,7 +423,7 @@ class Units2630StructuralMappingTest {
             display = russian,
             note = "Probe",
             sourceId = pack.sources.first().id,
-            reviewStatus = "PENDING_QUALIFIED_REVIEW",
+            reviewStatus = "IMPLEMENTED_PENDING_FINAL_AUDIT",
             objectiveId = objective.id,
         )
         val withExample = pack.copy(

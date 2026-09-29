@@ -525,21 +525,31 @@ internal object V2Validator {
             errors += "Unrecognized linguistic review status ${review.status}"
             return
         }
-        if (review.status != "APPROVED") return
-        val missing = mutableListOf<String>()
-        if (review.reviewer.isNullOrBlank()) missing += "reviewer identity"
-        if (review.reviewerQualification.isNullOrBlank()) missing += "qualification attestation"
-        if (review.packVersion != pack.packVersion) missing += "matching pack version"
-        if (review.reviewedContentDigest.isNullOrBlank()) missing += "reviewed content digest"
-        if (review.curriculumMappingId.isNullOrBlank()) missing += "curriculum mapping"
-        if (missing.isNotEmpty()) {
-            errors += "APPROVED review is missing ${missing.joinToString(", ")}"
-            return
+        if (review.status == "APPROVED") {
+            val missing = mutableListOf<String>()
+            if (review.reviewer.isNullOrBlank()) missing += "reviewer identity"
+            if (review.reviewerQualification.isNullOrBlank()) missing += "qualification attestation"
+            if (review.packVersion != pack.packVersion) missing += "matching pack version"
+            if (review.reviewedContentDigest.isNullOrBlank()) missing += "reviewed content digest"
+            if (review.curriculumMappingId.isNullOrBlank()) missing += "curriculum mapping"
+            if (missing.isNotEmpty()) {
+                errors += "APPROVED review is missing ${missing.joinToString(", ")}"
+                return
+            }
+            val expected = contentReviewDigest(pack)
+            if (review.reviewedContentDigest != expected) {
+                errors += "APPROVED review digest does not match the shipped content-review digest"
+            }
         }
-        val expected = contentReviewDigest(pack)
-        if (review.reviewedContentDigest != expected) {
-            errors += "APPROVED review digest does not match the shipped content-review digest"
-        }
+        validateClaimedChain(
+            "Pack review",
+            review.status,
+            review.reviewChainStages,
+            review.reviewedContentDigest,
+            contentReviewDigest(pack),
+            review.evidenceClass,
+            errors,
+        )
     }
 
     private fun validateUnitReviews(pack: V2CurriculumPack, errors: MutableList<String>) {
@@ -555,20 +565,55 @@ internal object V2Validator {
                 errors += "Unrecognized unit review status ${review.status} for unit ${review.unitNumber}"
                 return@forEach
             }
-            if (review.status != "APPROVED") return@forEach
-            val missing = mutableListOf<String>()
-            if (review.reviewer.isNullOrBlank()) missing += "reviewer identity"
-            if (review.reviewerQualification.isNullOrBlank()) missing += "qualification attestation"
-            if (review.packVersion != pack.packVersion) missing += "matching pack version"
-            if (review.reviewedContentDigest.isNullOrBlank()) missing += "reviewed content digest"
-            if (review.curriculumMappingId.isNullOrBlank()) missing += "curriculum mapping"
-            if (missing.isNotEmpty()) {
-                errors += "Unit ${review.unitNumber} APPROVED review is missing ${missing.joinToString(", ")}"
-                return@forEach
+            if (review.status == "APPROVED") {
+                val missing = mutableListOf<String>()
+                if (review.reviewer.isNullOrBlank()) missing += "reviewer identity"
+                if (review.reviewerQualification.isNullOrBlank()) missing += "qualification attestation"
+                if (review.packVersion != pack.packVersion) missing += "matching pack version"
+                if (review.reviewedContentDigest.isNullOrBlank()) missing += "reviewed content digest"
+                if (review.curriculumMappingId.isNullOrBlank()) missing += "curriculum mapping"
+                if (missing.isNotEmpty()) {
+                    errors += "Unit ${review.unitNumber} APPROVED review is missing ${missing.joinToString(", ")}"
+                    return@forEach
+                }
+                if (review.reviewedContentDigest != unitContentReviewDigest(pack, review.unitNumber)) {
+                    errors += "Unit ${review.unitNumber} APPROVED review digest does not match the unit content-review digest"
+                }
             }
-            if (review.reviewedContentDigest != unitContentReviewDigest(pack, review.unitNumber)) {
-                errors += "Unit ${review.unitNumber} APPROVED review digest does not match the unit content-review digest"
-            }
+            validateClaimedChain(
+                "Unit ${review.unitNumber} review",
+                review.status,
+                review.reviewChainStages,
+                review.reviewedContentDigest,
+                unitContentReviewDigest(pack, review.unitNumber),
+                review.evidenceClass,
+                errors,
+            )
+        }
+    }
+
+    private fun validateClaimedChain(
+        label: String,
+        status: String,
+        stages: List<String>,
+        reviewedContentDigest: String?,
+        currentContentDigest: String,
+        evidenceClass: String?,
+        errors: MutableList<String>,
+    ) {
+        if (status !in DOWNSTREAM_AUDIT_STAGES && status != OWNER_ACCEPTED) return
+        val defects = reviewChainDefects(
+            ApprovalAttempt(
+                stage = status,
+                priorStages = stages,
+                reviewedContentDigest = reviewedContentDigest,
+                currentContentDigest = currentContentDigest,
+            ),
+            enforceEvidence = false,
+        )
+        defects.forEach { errors += "$label $it" }
+        if (status == OWNER_ACCEPTED && evidenceClass !in EVIDENCE_CLASSES) {
+            errors += "$label evidence class is not recorded"
         }
     }
 
@@ -597,8 +642,17 @@ internal object V2Validator {
         if (unit.number !in 1..2) {
             errors += "Only Units 1-2 may be installed in this pack"
         }
-        if (unitReview(pack, unit.number)?.status != "APPROVED") {
-            errors += "Installed unit ${unit.number} requires an APPROVED qualified-review record"
+        val installedReview = unitReview(pack, unit.number)
+        val legacyApproved = installedReview?.status == "APPROVED"
+        val chainAccepted = installedReview != null &&
+            releaseLinguisticReviewSatisfied(
+                installedReview.status,
+                installedReview.reviewedContentDigest,
+                installedReview.reviewChainStages,
+            ) &&
+            installedReview.reviewedContentDigest == unitContentReviewDigest(pack, unit.number)
+        if (!legacyApproved && !chainAccepted) {
+            errors += "Installed unit ${unit.number} review chain is not OWNER_ACCEPTED"
         }
         if (unit.mappingStatus != "APPROVED") {
             errors += "Installed unit ${unit.number} mapping must be APPROVED"
@@ -1905,7 +1959,13 @@ internal object V2Validator {
                     errors += "$label is linguistically relevant and cannot be NOT_REQUIRED"
                 }
             }
-            "PENDING_QUALIFIED_REVIEW", "REJECTED" -> {
+            IMPLEMENTED_PENDING_FINAL_AUDIT,
+            RESEARCH_VERIFIED,
+            FINAL_CURRICULUM_AUDIT_PASSED,
+            INDEPENDENT_AUDIT_VERIFIED,
+            OWNER_ACCEPTED,
+            "REJECTED",
+            -> {
                 errors += "$label review status $status is not approved for an installed unit"
             }
             else -> errors += "$label has unrecognized review status $status"

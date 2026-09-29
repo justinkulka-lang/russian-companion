@@ -157,7 +157,7 @@ Forty-nine JVM/Robolectric files. Many **enforce superseded v1 behavior**: 30-bu
 1. **Today** is the compact-width primary destination name (MA2-112). The user-facing “Home” request is implemented as Today.
 2. Units 3–30 exist in the map and are labeled **Not yet installed**. They have no invented lesson bodies.
 3. Catalog audio remains packaged for rights continuity and is **not** assigned to Units 1–2.
-4. Linguistic review is **unavailable** in this cycle. No review record is fabricated. Russian example words are not generated. Letter forms are admitted as public-domain writing-system facts with independently written English notes marked `PENDING_QUALIFIED_REVIEW`.
+4. Linguistic review is **unavailable** in this cycle. No review record is fabricated. Russian example words are not generated. Letter forms are admitted as public-domain writing-system facts with independently written English notes marked `IMPLEMENTED_PENDING_FINAL_AUDIT`.
 5. Penguin mappings for Units 1–2 are independently written topic-level directions. Mapping approval is `PENDING_CURRICULUM_REVIEWER` and blocks public release.
 6. Identity increments to `2.0.0-dev` / `versionCode` 5. Not frozen. Public release remains `NOT_APPROVED`.
 7. Restore-from-backup (MA2-134–138) is specified and scaffolded; a complete restore preview is a later phase if it cannot be finished without inventing a new backup format mid-cycle. Export and fail-closed restore absence remain truthful.

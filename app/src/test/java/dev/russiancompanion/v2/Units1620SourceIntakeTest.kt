@@ -61,7 +61,7 @@ class Units1620SourceIntakeTest {
             assertEquals("UNRESOLVED", facts.isbnObservation)
             assertNull(facts.isbn)
             assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
-            assertEquals("PENDING_QUALIFIED_REVIEW", pack.unitReviews.first { it.unitNumber == number }.status)
+            assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", pack.unitReviews.first { it.unitNumber == number }.status)
             assertTrue(pack.unitReviews.first { it.unitNumber == number }.reviewer.isNullOrBlank())
         }
         assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.sessions.isNotEmpty() })
@@ -306,7 +306,7 @@ class Units1620SourceIntakeTest {
             assertFalse(record.shippedText.contains("'''"))
             assertEquals(sha256(record.originalSourceText), record.sourceHash)
             assertEquals("4371358", record.sourceRevision)
-            assertEquals("PENDING_QUALIFIED_REVIEW", record.reviewStatus)
+            assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", record.reviewStatus)
             if (raw.contains("\u0451")) assertFalse(clean.contains("\u0301"))
         }
         val display = pack.examples.filter { it.id.startsWith("ex-u17-ordinals-") }.map { it.display }

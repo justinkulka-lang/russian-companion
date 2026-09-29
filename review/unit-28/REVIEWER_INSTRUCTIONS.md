@@ -6,8 +6,8 @@ Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
 Unit content-review digest: afa29cbd6d710bcb853d74189d012584660996b25270af78c3d23efe35cf1cc5
 Mapping-package digest: bdf9618b16d9a96d9d359a01e7901617c7d8b97bcd601768695131da126497aa
 Pack content-review digest: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-Review-package digest: 102b23c0a14714fc03a698e48a27307f2cdf95d0133e615ce622c571950c5016
-Repository source digest: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+Review-package digest: 583b7e92bc1ac96942135e9043e712b62bd8779d47413f5d381f49d4493ad86a
+Repository source digest: 5d364a5c70e24735ca6e67032ef2d9ab65364ee4b168ef3afc41005fa750d3e9
 
 This packet was generated from the packaged curriculum at curriculum source commit 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
 
@@ -27,17 +27,17 @@ This packet was generated from the packaged curriculum at curriculum source comm
 
 ## Qualifications
 
-A reviewer must possess demonstrable advanced Russian competence and sufficient language-teaching or curriculum-review competence to validate Cyrillic letter identity, phonetics, instructional explanations, answer keys, feedback, remediation, and owned-edition placement. The repository does not name, appoint, or attest any reviewer. The reviewer qualification field stays blank until that person attests their own qualification.
+The repository does not name, appoint, or attest a reviewer. Reviewer identity and qualification stay blank. IMPLEMENTED_PENDING_FINAL_AUDIT records implementation only. It is not RESEARCH_VERIFIED, FINAL_CURRICULUM_AUDIT_PASSED, INDEPENDENT_AUDIT_VERIFIED, or OWNER_ACCEPTED. Green CI, a counter, self-attestation, or a model name does not fill those stages.
 
 ## What must be checked
 
 Check every Cyrillic identity, phonetic statement, instructional explanation, answer key, feedback item, remediation statement, lesson placement, and mapping row. Compare the mapping worksheet with the Product Owner's legally owned edition. Do not copy protected text, exercises, answer keys, screenshots, or scans into the repository or the worksheet.
 
-The package marker scan detects only a fixed list of known prohibited mapping-input markers, such as the private mapping-input filename or a PDF extension inside the mapping worksheet. It is not comprehensive copyright detection. It cannot recognize every copy or close paraphrase of protected material. A qualified reviewer still has to make that comparison.
+The package marker scan detects only a fixed list of known prohibited mapping-input markers, such as the private mapping-input filename or a PDF extension inside the mapping worksheet. It is not comprehensive copyright detection. It cannot recognize every copy or close paraphrase of protected material. The final curriculum audit still has to make that comparison. It does not claim physical possession of the owned book.
 
 ## What approval means
 
-A later approval applies only to version 2.0.0-dev, unit content-review digest afa29cbd6d710bcb853d74189d012584660996b25270af78c3d23efe35cf1cc5, and mapping-package digest bdf9618b16d9a96d9d359a01e7901617c7d8b97bcd601768695131da126497aa. Confirm review-package digest 102b23c0a14714fc03a698e48a27307f2cdf95d0133e615ce622c571950c5016 and curriculum source commit 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee before relying on this packet. Any later substantive instructional change reachable from Unit 28 invalidates this unit's content approval. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed linguistic-review disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER.
+A later OWNER_ACCEPTED disposition applies only to version 2.0.0-dev, unit content-review digest afa29cbd6d710bcb853d74189d012584660996b25270af78c3d23efe35cf1cc5, and mapping-package digest bdf9618b16d9a96d9d359a01e7901617c7d8b97bcd601768695131da126497aa, and only after RESEARCH_VERIFIED, IMPLEMENTED_PENDING_FINAL_AUDIT, FINAL_CURRICULUM_AUDIT_PASSED, and INDEPENDENT_AUDIT_VERIFIED are recorded for that same digest. Confirm review-package digest 583b7e92bc1ac96942135e9043e712b62bd8779d47413f5d381f49d4493ad86a and curriculum source commit 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee before relying on this packet. Any later substantive instructional change reachable from Unit 28 invalidates downstream audit states. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER. CI does not approve that mapping.
 
 Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit 28 reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 

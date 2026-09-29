@@ -194,7 +194,7 @@ class Units2630SourceIntakeTest {
                 assertTrue(host.shareAlikeTreatment.contains("Application code"))
                 assertTrue(host.sourceUrl.contains("oldid="))
             }
-            assertEquals("PENDING_QUALIFIED_REVIEW", host.reviewStatus)
+            assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", host.reviewStatus)
             assertTrue(host.reviewerIdentity.isBlank())
             assertNull(host.audioAssetId)
         }

@@ -15,8 +15,8 @@ Unit 24 remains in development. Its readiness is content-complete and review-pen
 - Unit content-review SHA-256: 497c9978cd3a89159732f7c4b53a09d0923d98bbaa01f61722a769d1a808f74c
 - Mapping-package SHA-256: f09634aaa924c3c31527894fb61b0aafc421ad745f9e12620235805d88ded22f
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: 800a92026dc5518488b732dfc334388a623d15a62cc5de4e07a5b6c264e1ddf8
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: 0752226067fd6b1f2e84fc3eec8a9913c74649c5cfbc100a2ec3b07b25a9abbc
+- Repository source SHA-256: 5d364a5c70e24735ca6e67032ef2d9ab65364ee4b168ef3afc41005fa750d3e9
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5d0852ea2e1ce3317d7afd9ce4fa4c260b2ffd47cb3f3f54b836d59d4ca54bd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 86a4b9ab6b002ff2c7d7d7a692470f6c8ccc3c42b0a9c8afbdbcd31cc03ae4da
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -1323,15 +1323,15 @@ remediationStepId=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8ca068b40a680381f7ad32b62d52f258ff9b112785dc890f0d7b72428a2070fe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ebe1a8b2720e430c57da94165c76e5fee48f65ae7da6acb9c51cc4abd62bb62
 
 kind=LEXICAL
 letterId=
 display=Да, говорю́
 note=Yes, I'm speaking
 objectiveId=obj-u24-verbal-ne
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-verbal-ne-1`
 
@@ -1340,15 +1340,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 779a97e878d25ad71c21283f730a641c0e9821f6338211d8e9e27b27839de221
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d4e69fb5da5cdf52f55b178e1fb0769ac583b642b75e206f32e46df59bd7583
 
 kind=LEXICAL
 letterId=
 display=Нет, не говорю́
 note=No, I'm not speaking
 objectiveId=obj-u24-verbal-ne
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-verbal-ne-2`
 
@@ -1357,15 +1357,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9f97f2d7b27d5c33c15d63291a6b6061f58d2b1df6fbf75818a8ffaadf2daa8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c2219eb2b5e6b65a69b664823df37c808bd663152bd11c9e3eb74839f9b86a3
 
 kind=LEXICAL
 letterId=
 display=Вы говори́те?
 note=Are you speaking?
 objectiveId=obj-u24-verbal-ne
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-verbal-ne-3`
 
@@ -1374,15 +1374,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff0f71cd2ae2c77804631f3f0d3e49df83ea97d761fc8d023f107d5e7633395f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e227add9afe4aa08edbd0bd6a1a93905e8485e0894a4bdf8237992ad48e6deb0
 
 kind=LEXICAL
 letterId=
 display=Он не студент
 note=He's not a student
 objectiveId=obj-u24-verbal-ne
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-verbal-ne-4`
 
@@ -1391,15 +1391,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e20ae661a06d6e8f9ae6dd2421a22861b989cf62b07ca236923c7f75c42aea4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a60ad1d599bc3f51c0add196e159583e09dbc57dc9c4bd09f1464debb3b801b
 
 kind=LEXICAL
 letterId=
 display=Борис не приходит
 note=Boris isn't coming
 objectiveId=obj-u24-verbal-ne
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-absence-0`
 
@@ -1408,15 +1408,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a00a93c56c45e020c2d2563efa457afec079c6d70386e645e1d9f91bf94b9c6f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4aa539396b16c764971173fd1c196e4db82c787d0cccf39f6fceb1307bf959e5
 
 kind=LEXICAL
 letterId=
 display=есть
 note=exists
 objectiveId=obj-u24-absence
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-absence-1`
 
@@ -1425,15 +1425,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 54205c3cafcdfdf7c44ec13e23961d8325437b9948538ebd0a4ac4e5592a37a8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 899fff9732031a4eac8204d545f42098fdce036fb35218fc052626950bd238d1
 
 kind=LEXICAL
 letterId=
 display=нет
 note=no
 objectiveId=obj-u24-absence
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-absence-2`
 
@@ -1442,15 +1442,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f173a56323f9e5f0bbd9655f6eff522317842a2d300a8784b5986f1d6b6afe9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0f3b3a9193c8f2866c2551defe2b45e4cb6fda92cef0215941888e44b00d1208
 
 kind=LEXICAL
 letterId=
 display=не
 note=nye
 objectiveId=obj-u24-absence
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-alternation-0`
 
@@ -1459,15 +1459,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63b59b3c98a7d1fe86add034c525ac111dad6584f93c6f76787b989bd6cca6f0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa15e8b362578c82743d9f98c144ffc9b474daac440ad865287ff85cd66e4530
 
 kind=LEXICAL
 letterId=
 display=Я не ви́жу кни́ги
 note=I don't see any books
 objectiveId=obj-u24-alternation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-alternation-1`
 
@@ -1476,15 +1476,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1f345b3d6fbe4a289526e9959a05f3c50e2c2746a1def68c4a263a608247b691
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a56db8598c47bde7e61480a9d1638a49f1f2ea26c85e2429cde1729c1bef5385
 
 kind=LEXICAL
 letterId=
 display=Я не ви́жу кни́гу
 note=I don't see the book
 objectiveId=obj-u24-alternation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-stand-ins-0`
 
@@ -1493,15 +1493,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 310798389c51a6600d0be6b47b5ebd0b80bc98923aa2fe96b0761148b975140f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e26bcafa0fa8ee245ff08f357f5147c16381008e40a5186c6da90316961d4580
 
 kind=LEXICAL
 letterId=
 display=кто
 note=никто́
 objectiveId=obj-u24-stand-ins
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-stand-ins-1`
 
@@ -1510,15 +1510,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2cd03eac390e086707a9e05f391016eb2c51b7dfdbd86eab846df35887509975
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ab4d492df69c4820bf6d9f5ec5b15f41429a5115004f85e282eb46893a45ff9
 
 kind=LEXICAL
 letterId=
 display=что
 note=ничто́
 objectiveId=obj-u24-stand-ins
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-stand-ins-2`
 
@@ -1527,15 +1527,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0dc88518ced2caca9009e2a26f578f28f7c42595276e0520767122120a62f5fa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f14babb923c0bb58154ce5ebf872119dd515628672ef242f0ed1f9c2df198211
 
 kind=LEXICAL
 letterId=
 display=кто
 note=не́кто
 objectiveId=obj-u24-stand-ins
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-concord-0`
 
@@ -1544,15 +1544,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bec040ea1eaafced5da6dc8cef272e99498c10883b6dd0d452b70e890f5b8006
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 85b5c60b147cef16e53d36d69e535c6dbf054118b0a33b9b1dc8a79d6d7bbd4f
 
 kind=LEXICAL
 letterId=
 display=никто́
 note=не
 objectiveId=obj-u24-concord
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-concord-1`
 
@@ -1561,15 +1561,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 212b868992c4495e97f082186de7c7be65eb2f45588f53394d3ba01e75c31223
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7834d0e30d74d4b3cb7e2e4ea212ad9eec68577790541662b94179244e6b6dd4
 
 kind=LEXICAL
 letterId=
 display=ничто́
 note=не
 objectiveId=obj-u24-concord
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-word-order-contrast-0`
 
@@ -1578,15 +1578,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1977c96a6f81f19e85f1424707bbf932094af386061c506763a6442b6bac99ce
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 852bdc33b97d99ec98d183dc41fed7203ecf8789da4065f4993af61f271bac71
 
 kind=LEXICAL
 letterId=
 display=Не надо меня уговаривать.
 note=One should not persuade me
 objectiveId=obj-u24-word-order-contrast
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-word-order-contrast-1`
 
@@ -1595,15 +1595,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f776078b7390e75856fb631e49b443b48e0624be645ee85face9ffd0397e06d6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14a833483f41648ffd1bd5cc593b21aaeab4f565e663455cad7ee78d0e96415a
 
 kind=LEXICAL
 letterId=
 display=Меня не надо уговаривать.
 note=There is no need to persuade me
 objectiveId=obj-u24-word-order-contrast
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-placement-0`
 
@@ -1612,15 +1612,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 51d5f3ebe18eca615a1703fc6b917aee4a446fae94e21bfef86970edaf71332d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af4f2e417c5ef2bf7e96936d25a534d07dc2004db5077ec072440675f8f6eb37
 
 kind=LEXICAL
 letterId=
 display=Мне не холодно.
 note=To me it is not cold.
 objectiveId=obj-u24-placement
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u24-placement-1`
 
@@ -1629,15 +1629,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f1a4b9e791f772cfe37386295b8790ed1e6618dbbe7ee47f5da7c1f55bc3d68
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b0d2572e245675a70c6daa00e3f755c88d35fe347aeb7c7632c8aff03537baa7
 
 kind=LEXICAL
 letterId=
 display=Не мне холодно.
 note=It is not to me that it is cold.
 objectiveId=obj-u24-placement
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u24-g-verbal-ne-0`
 
@@ -1646,8 +1646,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f51f1fe394bc95b24a3288acae0e1e10d6ab45351e160b0fcf8c78001ce66f75
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17ebbb4253dde368d5c8662311c7b6f38a65ccede2c1ea1ebc8c25e8cfcb9c8d
 
 kind=FORM_SELECTION
 language=en
@@ -1658,7 +1658,7 @@ answer=Нет, не говорю́
 feedback=The frozen example No, I'm not speaking adds the particle before the speaking reply. Нет, не говорю́.
 objectiveId=obj-u24-verbal-ne
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen example He's not a student is omitted in the present form, so the particle stands on its own. | The frozen example Are you speaking? is the question before the reply.
 testedFeature=PARTICLE_BEFORE_SHOWN
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1681,8 +1681,8 @@ responseKind=RUSSIAN_CLAUSE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 51235c27f30d6fcb650fce5f9d2953c0261576dc92c157be651b51120107e580
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5e55ba4186ff613ed75ad72a4b6ae4a1aed0b4351ccd3039493e080beab4f3b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1693,7 +1693,7 @@ answer=нет
 feedback=The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word. нет.
 objectiveId=obj-u24-absence
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen note adds this particle before a word. It is not the replacement for the exists word. | The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.
 testedFeature=EXISTS_REPLACEMENT
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1716,8 +1716,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aed02d95c7839d9d5819bb9171761b9c4698befbd96d66da239b2c9a3adeef4c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d14a1431935ad86ed793b44328b317ae6ba5a5e7c5cb3b8694338fd65333f6b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1728,7 +1728,7 @@ answer=I don't see any books
 feedback=The frozen source pairs the shown form "Я не ви́жу кни́ги" with the admitted gloss "I don't see any books" ("I don't see any books").
 objectiveId=obj-u24-alternation
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Я не ви́жу кни́гу" with the admitted gloss "I don't see the book" ("I don't see the book").
 testedFeature=NEGATION_ANY
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1751,8 +1751,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e8eaa20d17fe9f349488b6cbd993ae4ed7a831793891d1e365fb3ffb35c9f26
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1970d35b161a13155acb31a3ac3ae099f1fbecf2aafd48918d8a9d229a356c97
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1763,7 +1763,7 @@ answer=никто́
 feedback=The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
 objectiveId=obj-u24-stand-ins
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения"). | The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("называются предикативными").
 testedFeature=PRONOUN_NIKTO
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1786,8 +1786,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: abfd9327291db26882aecff956f9dd95020c025067add030509d2d01e150d484
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 060b592ebacb710696425cb1841b6757ed4f04f97c0beae8c13b7d6f21944d90
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1798,7 +1798,7 @@ answer=не
 feedback=The frozen source pairs the shown form "никто́" with the admitted gloss "не" ("отрицательной частицы не").
 objectiveId=obj-u24-concord
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
 testedFeature=CONCORD_PARTICLE
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1821,8 +1821,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 85ac651ec89de3aa41c180c09c617b898231555fd16bd21d993aa7cee01df2e2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 74eb8e6385b51b00e367d8dc437cfd2fa11a47468795b365c3e56b294ca43ca9
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1833,7 +1833,7 @@ answer=One should not persuade me
 feedback=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
 objectiveId=obj-u24-word-order-contrast
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
 testedFeature=WORD_ORDER_NEVER
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1856,8 +1856,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec912c87cf7d8a6c94f8b8af26573291ffec51ec3c9974bbf2925c889e0ed6fc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 141b1422d7f72094185130dd5ba4dc8fb5d5e24773df84267c4458e10437a475
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1868,7 +1868,7 @@ answer=To me it is not cold.
 feedback=The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.".
 objectiveId=obj-u24-placement
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.". Moving the modifier in front of a different word produces that meaning.
 testedFeature=NEGATION_FOLLOWING_WORD
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1891,8 +1891,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8bd602398f2601eb89953b565ef32290b0e9e6ae1661142dcc6112d4c521a1fc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 16a1ba534a4954efa575ebfe1a4a50e0c78934840f496e3304d06dde5497cf34
 
 kind=FORM_SELECTION
 language=en
@@ -1903,7 +1903,7 @@ answer=Он не студент
 feedback=The frozen example He's not a student is the one omitted in the present form, with the particle on its own. Он не студент.
 objectiveId=obj-u24-verbal-ne
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen example No, I'm not speaking adds the particle before the speaking word. | The frozen example Yes, I'm speaking is the agreeing reply, without the particle.
 testedFeature=PARTICLE_ALONE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1926,8 +1926,8 @@ responseKind=RUSSIAN_CLAUSE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46fb2efdc6a3b6da828aaf73252669819b97337a2e3fce7cf1008be3a3e1fd94
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbc787c6318360f6cd416f9b6c1c94db00d268591269a367316f286fd5194678
 
 kind=FORM_SELECTION
 language=en
@@ -1938,7 +1938,7 @@ answer=Борис не приходит
 feedback=The frozen example Boris isn't coming places the particle before the coming word. Борис не приходит.
 objectiveId=obj-u24-verbal-ne
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen example He's not a student uses the particle on its own because the present form is omitted. | The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.
 testedFeature=PARTICLE_BEFORE_COMING
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1961,8 +1961,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cbfa85d4560cf4de48fbce13c7780f1e9394f224faba4571c90d74e38ee8ba67
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1121ffdde76512a61ef493fc42e9b360c242c7f23fdcf2d10cec56e82252aefa
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1973,7 +1973,7 @@ answer=есть
 feedback=The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement. есть.
 objectiveId=obj-u24-absence
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen note adds this particle before a word. It is not the form that means exists. | The frozen example Yes, I'm speaking uses this as the agreeing reply.
 testedFeature=EXISTS_WORD
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1996,8 +1996,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 788bddcd4542426fecd4a99e7fc69bc0522b1d2770388171e893ad89ad3a1c3f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7954b6876d4579a0128ef1712f9697f6eb11ebcb90566c05625db4b818af0f4
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2008,7 +2008,7 @@ answer=нет
 feedback=The frozen note says this replacement has a different meaning from the reply that means no. нет.
 objectiveId=obj-u24-absence
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen note uses this form to mean 'exists' before replacing it. | The frozen example Yes, I'm speaking uses this as the agreeing reply.
 testedFeature=EXISTS_REPLACEMENT
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -2031,8 +2031,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 781bf9f12d91edbef7912682be4f84aa5b4143542cc4c4d29f7f727567ce7e7b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bb7c698eb40e73bd2c6712de93cf6ed85dd9e8f122448d3c7af56808be5f339
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2043,7 +2043,7 @@ answer=I don't see the book
 feedback=The frozen source pairs the shown form "Я не ви́жу кни́гу" with the admitted gloss "I don't see the book" ("I don't see the book").
 objectiveId=obj-u24-alternation
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Я не ви́жу кни́ги" with the admitted gloss "I don't see any books" ("I don't see any books").
 testedFeature=NEGATION_THE
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2066,8 +2066,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5ec204054a00ff373877fd6146987158662e4788e90abac7e550a7a50f3d493f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4fb6a34db82477c21984efddab474e41ba6818890c888db2a290781d7e3fcbb1
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2078,7 +2078,7 @@ answer=I don't see any books
 feedback=The frozen source pairs the shown form "Я не ви́жу кни́ги" with the admitted gloss "I don't see any books" ("I don't see any books").
 objectiveId=obj-u24-alternation
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Я не ви́жу кни́гу" with the admitted gloss "I don't see the book" ("I don't see the book").
 testedFeature=NEGATION_GENITIVE_LINE
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2101,8 +2101,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd1ae1685e0c6ada8defad63c4f0dce43880f2734c18f25e399489e9cadf6326
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa5ccaebd719ff4911e68c56068aa0d149d31704b0e84323ff860ef9521f6789
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2113,7 +2113,7 @@ answer=ничто́
 feedback=The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения").
 objectiveId=obj-u24-stand-ins
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("называются предикативными"). | The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
 testedFeature=PRONOUN_NICHTO
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2136,8 +2136,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b6f1ed770ff215d4fe3e63298d90e15fbeac439c57dbc4ca1a86531f22d75450
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 094b97516916971ec5380d3f3568a291dd0de43133f05739b7ef315f592edbc6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2148,7 +2148,7 @@ answer=не́кто
 feedback=The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("называются предикативными").
 objectiveId=obj-u24-stand-ins
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения"). | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("называются предикативными").
 testedFeature=PRONOUN_NEKTO
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2171,8 +2171,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 37654d7c8abeb7957aec4032a7300bf89623bf8196475db25cf0010006157766
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5399d026e2d357d5462a2bcf7b6b4e46e5542ce9101528ee6de88f0ae777a472
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2183,7 +2183,7 @@ answer=не
 feedback=The frozen source pairs the shown form "ничто́" with the admitted gloss "не" ("отрицательной частицы не").
 objectiveId=obj-u24-concord
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
 testedFeature=CONCORD_NICHTO
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2206,8 +2206,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: de4835839ab57693f8ba14182046fd84132f8b9429fccc783ccddf4737619c87
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 572c2990b391d00d2f727e297c7a4f1e50bef9ddb64d24d3903d73e0d96d07e3
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2218,7 +2218,7 @@ answer=не
 feedback=The frozen source pairs the shown form "никто́" with the admitted gloss "не" ("отрицательной частицы не").
 objectiveId=obj-u24-concord
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом").
 testedFeature=CONCORD_AGAIN
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2241,8 +2241,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6dbc89057af1c60b00955e00341e4fcf06e08b48722a23b90eaa39e45cb49b90
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb95c5ae1e9a61c51663f03730182a88aa5537b694f9f9aa279c421f6997e19b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2253,7 +2253,7 @@ answer=There is no need to persuade me
 feedback=The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
 objectiveId=obj-u24-word-order-contrast
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
 testedFeature=WORD_ORDER_ANYWAY
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2276,8 +2276,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c596b700458ee43501a8395633b40eedea3fff5d630aee2553d2021b6202f9e5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f59d1d189c03c765b6a4786bb912a202f6585adaa46f46c78d40ab63e871bc96
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2288,7 +2288,7 @@ answer=One should not persuade me
 feedback=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
 objectiveId=obj-u24-word-order-contrast
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
 testedFeature=WORD_ORDER_NEVER_AGAIN
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2311,8 +2311,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: be9380a68becfa8c77635534226af21904f917e04c5b37797464ef126087afb4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d329e4ba4900ae992efd4170622e8e59a7ba430ee8a0356d9ab2093200a0d92
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2323,7 +2323,7 @@ answer=It is not to me that it is cold.
 feedback=The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
 objectiveId=obj-u24-placement
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.". That placement negates the following word.
 testedFeature=NEGATION_SCOPE_CONTRAST
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -2346,8 +2346,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 589debadfea2df80c0a29512526cafdddb1b2fd9a57fd16d807f47260a358337
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c393ff94fa042f33a88ce464350120e6b923bcb45e8275b9d6253fc7bdba015
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2358,7 +2358,7 @@ answer=It is not to me that it is cold.
 feedback=The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
 objectiveId=obj-u24-placement
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "I am not cold.". That parenthetical belongs to the other placement.
 testedFeature=NEGATION_SCOPE_NOT_COLD
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -2399,8 +2399,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: acbf3c14f36fc4e359190dfe3646f6749802090fb58193103df20be3ffd9d285
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bcc90b63890b47cdeb3d6c09f086badc5828451f1280dff7e5b76e7700938f22
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -2436,8 +2436,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d7bcc480c4b498c60a392ef5e5f1a507474d5ad0e6ef4a497bfe8a73484bbd95
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9bdb84f0d0996ef3ec6fa458ceb8f45ce1326daea66b7e22a69b8a5bd816bb54
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -2473,8 +2473,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 95bcab1c9bb0fae9e191786a2e1cbe2887b97a75ca1e35b5bec33f6cee1e7ad0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fdfb6431c131bb21331350881c180627172ee912ad05be0ed3712880bcf56611
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -2510,8 +2510,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5510d7024663d5143b24115429556607ee9595f147495be1026b958365e14e67
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9aea08170b2d61f29b63b707e9ae5253205da950d582b576e49f3ab357d06ee
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -2547,8 +2547,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b6b5469a5822d8f6c52983ec5db1ebefe9e3a40e8362430cab9cafe9b994936e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72817fcb1292a33a10eeada1ef0259382ae329252da93888bac27ea65a21480a
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -2584,8 +2584,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e31aaf07f45ff4600d1fe4196fdd9a05ed62d3cd88713d8ba85c1cd9e07b3115
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 133fbc7a6865a93737937824f6ce2cff2876fbcf844b7413a5c4f012d2e250fd
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -2621,8 +2621,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 373fc91637fd570b9e788c9b383fae7faca9efc47ddf86e221570adb81cc055e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f92d180b7b861e5d4da8a48f8051e929ce5269ceed5ac44206128797110c2ad3
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2650,8 +2650,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3bc2ac2e9cad7d4a1acfa100bf8a13abd36f71fee9163cea7b5b49eef1d7efbf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11d3a3c815e89370ef9f0079bb5e40c1834f7b9f293edf3c2c38ca7870e12109
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2679,8 +2679,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b31b090930a77a9655254cc25b80ee650bbdbb0faf2b7daf717cc8fb9be0c67
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bfaf9cc3604842e6e8776d8df57495cdb9d0c1da86460321689b2d89141ee2a
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2708,8 +2708,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: db371e69070b280c828ca61fd66b736f6ea08ac03580f1a864038ece939d1b57
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0e0b6f9baa58c0dc67a2d21b71cba76dec3624cf25e7ebba736d631e84f02ea
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2737,8 +2737,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a05274f0504548de8a562edb91e4dfc822cc672576746c9c08d470fa93b71af
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b903486759b74ca3f8d8d1ecc5df30496977d4bb722753a569a5c1ff0c2d9958
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -2769,8 +2769,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 720de757203cf22b3fe901540a2755bcd8706434136c222f8ca4fdf6e3aa81ce
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2110999488b2300f9d6e38550ec2b367ee3ec14ed33b6f44d8a435114ab21fc3
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -2801,8 +2801,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a85f00111c42bb001c841ba54044aaa61e197b2d67c247ea2cd0226f91f04afa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 47623f2e486f03a586eb5054a3b4211412627fba88dd6d8927dbdc5eaeb644a2
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -2833,8 +2833,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc665a2ba6baddb1fba9aed327ee97f64fcebadd640848faefbce2594b5db6d5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8961349ac637469512f0c06703f28b98f577df28005b95ce5a47ad8a2c58e9b1
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -2865,8 +2865,8 @@ reviewedDigest=
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c571f1222603040e1f05f2c56cf17ce549e8fd5f8b7db70f31a4dcb03b51d3a1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a35779f1d97a4c690d483177c4f51fd095bb22bf4f277d6dca8aaaf46a07d79
 
 recordType=meaning
 sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
@@ -2905,8 +2905,8 @@ reviewedDigest=
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 16012ff8f429ad74cac555dacb86fdac0f35f90593718adc3243e8e5001a092e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5640f5a172b38ca8ba71a6114a64424ecf0ae90c8ae8fd145a6e261bc909b45d
 
 recordType=example
 sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
@@ -2945,8 +2945,8 @@ reviewedDigest=
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 815dafe694c9656525c892b813459410a93a2680bf78bef3d06f17a6ef6cc9f7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e60023f4809f73fae759d2b89a4b61d79573d30942afc110467232819ca3e923
 
 recordType=meaning
 sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
@@ -2985,8 +2985,8 @@ reviewedDigest=
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8edf2ea398b5f448e65ccb74127db2aca478f6e0a7b2d0a86c5eebd5f90b1de6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd13bad93fe8215f9579e09e4accf1d6bec2b1bbcc7708293bf524b4cd85c3ae
 
 recordType=example
 sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
@@ -3025,8 +3025,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 559cc571b3920d7a79df5a056bdc2a78667d4b5dc9897d3faec59272b468d2ab
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 731e1b907a9ed916bacab16778768ea9b883ab0a6f9b21b70bea292e8069c702
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -3102,8 +3102,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a4f75e27f25cd38b20170e97d9fae68f243759880d3f86b5cc4f92f6b1e95a81
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 59a1a3362cf88846cd0f7bd4215f9f74f13104f191fdb9ec209b1c4d3875ea97
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -3179,8 +3179,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ad4b50a39fc21f337a598193707ca0201bd58c1cb254258d87ee7a08e2a0eab3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9bd4eeb69b0e2f0ff0e1cf4f3dcb46d1bded5cc495a0c7d7b67daad20b1de5db
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -3256,8 +3256,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fea269d05c79d396d6779f058b6b5b2d73488d0ef6cb5d07d25ed29424372a64
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 893f08cce8fb2e6422f8e64d24e48a3633bc5c859b56c3d5dbda90d2245005bd
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -3333,8 +3333,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab462e822c226200c3d2444d6f328e1e1d4f8beb35afa7078b85821ebacbb94d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b09b87e5d601edf5b823e51474c09857c6e0e92262b8b46193d788ff468207bd
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -3410,8 +3410,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e381716dabb0dadb072f727bd470e8e097908f998f0b43cf7bfd29437d49547c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f8c7d40ace14829d7a0dae22310ffcc4e0d0d23d4e559fc2300a7cfa65e798cd
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -3487,8 +3487,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dcf35525f742e24b278068eaed66b988d86c612edf894a34d5b4d2ac0ad3c086
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 98851de227678122dec485780b74b346eb5df2a562f3ceefc5de5900e66a4d39
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -3524,8 +3524,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a287fd41c2a2e1e4d5e2767ec8a7ce781398bf1c8b045b6121673bdb768f57c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ade44f5169effec385acae2786d4f8df46f10bb6dccac49abd07214b8fc290b
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -3561,8 +3561,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c5c4b4f336fd92dce7b7ef1c7cb07ecebe077122aabf3c67a95aad095b24efa3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 138167b72f7181b3f864c378589f81fc82a84e699ee5e5e10629fc9cd19e5bd7
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -3598,8 +3598,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 51464b1b7d782a32bf9bca872188eb052e5cad3eae9862949e254eec7cfd6b42
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc8d28583c445edc5ffee4679f7a7d73ae793f11f4faad900e131a189d47ba95
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -3635,8 +3635,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cbfde46210611daafba1948b794510b6db2638a45d3d80045b917563e3dd4bf5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33ba569a6d2d23781cbc69ee65f9a764798ed6b0f8fc77686621e863ec2f2316
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -3672,8 +3672,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 16333f52ba9f7ab39182ad0dfe550efba1deef50bf11f0fa4e50d25eeb4689c6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5c48bea38f2d5bac1606348d9ec164e277d2292b827531e95fea32a0b29c445
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -3709,8 +3709,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9a14a9f6e043cdae5c57ae22ba2cc896ce5eabb34a03228a610697501a1552ad
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 32a6505d7ed214a2132b250b6eda4948106feadd41b37d33f7e4f96e0ae3f255
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -3746,8 +3746,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 301ae2561c1e7c7bcdf5352af6f778f883ca18ba208b36b2713667ce8a15701e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 09adc00213a5c3d7ebdf9fabe5f749b37151103a54ab614b8f3e4d3a0acf2f45
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -3783,8 +3783,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9dae7d99372d42d3f5e9eeafed3a00ed50ca312721c115ee430e8805cfb63000
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d6373009d7159ed998214a9181026c70314ccccff881e9cc0b0cad11a3c0f44a
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -3820,8 +3820,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b7b7be2cba65a73a7fc7c86d9073666501f014e0dc38226bdf817215eba7aa4f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0fd4f7210f7fa2d25eb508c4f2cf30027579c2666f8a8d4cb157a4982b3f886f
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -3857,8 +3857,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3367ac9e947bc95e56acb4630e895bce3a26e6a2c9505a2d6b7bb2619942a8bc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 861bbb7035c53fb78c7d4185ee9450d57ad1cdb5aedeaa0deae61d34231a8a66
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -3894,8 +3894,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b8e94fb5e2c2fa676f0c44556c052941ea2c607c7b1d33b187ccba4ec0421800
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a9e61855775c599f606e07b4dff6a9d924d90d8f409f5b47f9ef20b1425e9d9
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -3931,8 +3931,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d04212f32da7b0b652c5d6d5283108ff8980b1f90d898b5399aa0c71a5007589
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b394ec0d25f8615a7859cd77929e9015f65119a3de78fab21b92a544ba1336f2
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -3968,8 +3968,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: de82900528083885211221a6c3ed379891fa21115d4b0ecb22ac8a8a44deb90d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c304c2a32d336f78475d2295584fd7d6272315306d5bf0b281fc9323211cb159
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -4005,8 +4005,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c5885191d0be97f35fa8b5aa6e7fef6669530d6f56c66c70ecc8e06657b0a648
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d420946d0d1f35eddebeeb71ece8ec7d0fce12f755edd9eb89667cafa776a588
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -4037,8 +4037,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb2b65830b546839367430abc8e61616b6391cd3c34f93db1168149d2f1aeb8c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 414a6da8c8af6320653b3707980a34d374a3f5464756686e93470672d5112256
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -4069,8 +4069,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff6a7d29521f29c3dea7ca9fa03fce20343da231145cab17c354513eba082a17
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 288dafb49f5b857942c2359a57e053366f2694bf7e3b51575465c87969cab721
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -4101,8 +4101,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 717b657da259bb0827bf03de6065531d1eeca846935304854a5a71c857ed027a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9f3e56cb3e72bbd909ac4779505e34ba32671e9718d4268539534f30f0752f97
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -4133,8 +4133,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2bb0bb9613deaa414cc40953fb7769e920a5db6ffac9e0972973a609267de701
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4917a7d368eb871ee9f8bbf574b40ccb53fdf964a62819334c0b5af641d2e659
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Cases?oldid=4195114
@@ -4162,8 +4162,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3cfac1ca041da7cf9035b675e9d97a8b0fb21de0d67936cde58257ff7b77a4ec
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 43ad1e4ddf350e4229695f2ecbdfce259ea92a59b2f09f8c00f7a84e0e726e2a
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Cases?oldid=4195114
@@ -4191,8 +4191,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6d9e4886c5a00b4e1d4475774d52ab042d954fb91976ac7f3491864cac74a40e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9a0e35486be7c9921c2c8683a866c10c7479d89fbcfc83e7060825b34fc5db5
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -4228,8 +4228,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1bd7801c4deeef3530711d981cf37959f6453509f0b8dbc61d3025283768b09f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7becce36f91886b446f53522a3dc6f450cfad23ec818d8043627865d41b8c41
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -4257,8 +4257,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 95445f14c1f0dd197031b93577ddc11685721f32029bafbbbf60300459246e90
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 865a7365cc40faf504da272ddd87c33e17c5c32de35a8af2687a9ea16436ab54
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -4286,8 +4286,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f48a41d39a62621c80ff556e060330e49a336e3652d797f368bd79d65352629
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ffff657dff51f6cc7a7f6283e0405d5f7c495c03abd0733b51c1900905c2e6b
 
 recordType=instruction
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -4318,8 +4318,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b32ee21a211b045724c3506f319d5da9ff243557e9f5ca51ce4d85bd041b050b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1558726523d32e2b9039363bdfee131743575a32dff47823cca55874b5de556a
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -4350,8 +4350,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6bb7e77da9ca043534666e82e808ea5bfd5d480429c50d710df70c673ab60cc2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2fba9fc5918337d7a63f74b9865baec8467977b183a54f9bd55989a1017381f
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -4382,8 +4382,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3fb668dd617546b150169edb8826ba01f1d37d35359b2fd4bc134e7c136edba5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d30960af24fdbcac2dc339cddd8f6f1f7abda2c3d65c4625dab164f3e2bd022
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -4414,8 +4414,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82642a5ef5217e073014c7694e2a1aa9108ce65c0c04c25a45d8137da11cbdb1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: df060fc6256581e503748a354c1f3e062d0185e6ee33cfa3848f7633fe09f76e
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -4446,8 +4446,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0e4cff4c8dedf1c233e0c686d62fa9186c01d9d80c17c258ca92f669244bc1df
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 34bc986c19074f621d54e22728c44dd5d567ae1456ffa8b70310792bbf36e13a
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -4478,8 +4478,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f8a7dc976682dde9dbdaa23cb79737c6bec0274f6de212f79e6d8b3010ced6e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0a93c686551eea53701420d62819dc87b3c3a293730e876a4dc7e56a8ddce796
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -4510,8 +4510,8 @@ reviewedDigest=
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc9ca0a9739e2b3e7aafbbcddb576aa002e240f8056d5694298fcb3be16ae5fe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f5229d473ecb3fd320056e1233f7d0fbe4c09706f268b9f6f3fdc313548cb9eb
 
 recordType=instruction
 sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
@@ -4550,8 +4550,8 @@ reviewedDigest=
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 473b7a1027a54aed1cf7b07062d8b2b9d930cae2340c80a68a17b1a5652c5f88
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: de8bf6fc6eb4f91dbfdd7993bed60de4f96d54537f198ed0b5d06097daa21deb
 
 recordType=example
 sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
@@ -4590,8 +4590,8 @@ reviewedDigest=
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 94e498231ec7a631afb98d990c219676b8cd8d4ef91dbe50f2d098ad3aaca34f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 51a56a59666071d2ada515b8b251199e62004d10dcf38c19a236e219bb876e14
 
 recordType=label
 sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
@@ -4630,8 +4630,8 @@ reviewedDigest=
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a53d5b24b1b835a2bbfe76dd21e39fc3677819e6681b8db6c123b19fdc8c9d85
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d8796018954643611d3bec99033576e554a0607aa365e519b3d709ba57c37507
 
 recordType=label
 sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
@@ -4670,8 +4670,8 @@ reviewedDigest=
 - Source: src-readyrussian-langgen3
 - Rights: rights-readyrussian-langgen3
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03bc0850c0a3184cbe3379aa15949fb3b0dddd902cd600bdaa80f3a92c101fb8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a74194e75ddd129fc8557bcdceec770f0dc0e38910635c16035e5e2c93625f9
 
 recordType=label
 sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
@@ -4710,8 +4710,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c6d9ad6ddb7d57bb898739cb2860285d1ca18d0a9facc1c38442cf6958d6fd49
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2edf651f3c86f2db55999e4264a483ec721c10ae867cfac0f4557b0a065ea637
 
 recordType=instruction
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -4787,8 +4787,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 54fe10697c49014dfae3657a54d4b4fdad3e8f5b4e0881f17c6344870335213e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8607deb154591ad0b5b88110808710ce3623e69d55d232cf06ba2ad4dd18ebb
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -4864,8 +4864,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 18cfd92384f280aec0e810f86925dc71c5e2bae4a73877e38c80e751591e998b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31495eec351892ea60a01c54e2cb7554ad12a3db47ebbdc7869ab9f868b3fb4f
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -4941,8 +4941,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e273aa5f51c26d9a3bebd969149ed347b75eddfa2b2108bbdaf6973d5de9a83
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f7f40060daed53b84e7b2d51a36f60e2e376de43b249182a4952e7e9d3d2d46e
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -5018,8 +5018,8 @@ reviewedDigest=
 - Source: src-ruwiki-otritsatelnye-141256493
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed63d45a485835a187ef567e72ff8479e94a9eb3a0425fbffbaa62d282cb1f49
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a16462595ee4a3c1cba943beced9508fea7e69e533c7c4668b55a10aa0e01cd
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
@@ -5095,8 +5095,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 982d097f13d181b3cd163562bba691f1f09f34eab705272057907a37935cf97a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c11c11421a51c03f61eaa79d64e309e61e25ece66b48c6ae73d88c44eeeee1a
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -5132,8 +5132,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d98c2b3975f0aada96fe15479228abcba614c226d304320bbf2cfdeebe2cd5e2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c50890034ac3100f1d102d5afe852e175e19315376cc5db91f5bf18fc72a9e84
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -5169,8 +5169,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 23221cbacfda96fba3a6794c97faf1b77d846d6f32d3c0c2eb9c3a257e773ee6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec8e7c12da1f90d573a1b14f39f2a8510139e2a670807af1f513962384971731
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -5206,8 +5206,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a920480461312dd62013d36ca4a331f308f68a05d79d0554dde982c7bf54ca3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f1855c1b0fd5737cc9dec6a4a28f9a7b2618a7a8ace2a2fc4333125f68c8d06
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -5243,8 +5243,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2376e7e9072aad767a7fba212a9abea16fad0f4489f9cc02860ff5584ed89ee
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2f572c2f89bff3e3776a2d2c662367d164453d11a836fdbcafc791317d0833dc
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -5275,8 +5275,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 118a524edf9928613a652df225f15741ad4086b3d6444ba3e4f1c73e4f2f00fa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bcbebf21f49d53ecc1829d7c002434067000dff60863f9dcbfce7193eb62ae39
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -5307,8 +5307,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d55cf4338fe2a8356c06a079bae45dd25a3e8cdbc9d87a5b0207a009a7ca3e8f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bde2ade2907f4397ca6cfe9f99c37bdfed7afd8b4d0ce5a5bdf3000106ea8062
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -5339,8 +5339,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f5e88460793ce7718c5d2b5d833a713d4eede45b45a127df4caa5c9328656ca
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 158baedf3d49c7da32a260ed6848da1bddf25f5abf7780d62203e08327b4b59e
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -5371,8 +5371,8 @@ reviewedDigest=
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cfd5ab2f23213a06fba6ccbb8417f2082297c67f7b7a73e68f97609fc92be27b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b0c93727b171550a8d2ffd8d15fce9f5e3ce95875255d0d885e69e7b4502a4b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
@@ -5384,8 +5384,8 @@ text=Admitted lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fe8b72dd54f96431c35d93075b6cc7fd094d0306b549d4857d5e61cdf4c0979a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6ccb5d443b612c649f37a3557ea15f3309d10f10fa9ac7415411e84c762059e5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen example He's not a student is omitted in the present form, so the particle stands on its own.
@@ -5397,8 +5397,8 @@ text=The frozen example He's not a student is omitted in the present form, so th
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7cefcbc33f5d74f91ef483d9fe3683185cbddc2da970eb6d7c4326cca1da2de0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e2cff41911dbd82daeca23d87f29053680e868a4a34f0056c4d873a92b22d90d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen example Are you speaking? is the question before the reply.
@@ -5410,8 +5410,8 @@ text=The frozen example Are you speaking? is the question before the reply.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5bc6a0dc32914b0f5a1e387c59c73313defaf640865f4d2152661db5456b9909
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 244b1dd2c1a6baf92b70f13f8b37c52edbd18dffab77526711de57db35f91f40
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This example omits the present form instead of adding the particle before the speaking reply.
@@ -5423,8 +5423,8 @@ text=This example omits the present form instead of adding the particle before t
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d8e6c5a55a46f02cac31fada35366c9fcabebd47ff0e825bccac3d4eee3e7f79
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b864ac9137aea781124bb9954765fa598da2982e130a8acdaf548360fec5ceb9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This example is the question, not the reply with the particle added.
@@ -5436,8 +5436,8 @@ text=This example is the question, not the reply with the particle added.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c62b4e4603999496ed599216358aca786bbdea6ac2b784d7361f53df712b1031
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fbe2305b99689002e864e86ebe936324359c4331d1e2a554ed117472a560dd5d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen example No, I'm not speaking adds the particle before the speaking reply.
@@ -5449,8 +5449,8 @@ text=The frozen example No, I'm not speaking adds the particle before the speaki
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a938a9b3dcbd0c82ffa4b0a3564cc10178b8512743ce5d60bd0bffe57df65d66
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6baf9039c9e718f986054848890412ca0589556179f0135c1528cd3432c328a4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen examples move from the speaking reply to the line with the particle before that word. Which admitted line is that result?
@@ -5462,8 +5462,8 @@ text=The frozen examples move from the speaking reply to the line with the parti
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5b1f6c550b07e7d51064ca969915d49c41465c21e59448cb895efca795341b8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 960cb254773c11f937976d2687208aa48572b7ed4e180707af53d53c5a7ce37e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
@@ -5475,8 +5475,8 @@ text=Admitted instruction
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 814b47e4b7fffac4dd87490116795f9ac2dc29e653e027003d9b560967e38bf9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 092a69c65c5fa3b2f7f4b6c13a98d436b759f01b31fc145363980302d85d6af8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen example No, I'm not speaking adds the particle before the speaking word.
@@ -5488,8 +5488,8 @@ text=The frozen example No, I'm not speaking adds the particle before the speaki
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0b824a5ea08c7cfa0f0ebb1adde2d8da2605723ffc790468dbf772e9ca0e667
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39ffd93ad482213e3cbd5fb2d8641497dd8d64a41c3a2c781ef3007fba48d527
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen example Yes, I'm speaking is the agreeing reply, without the particle.
@@ -5501,8 +5501,8 @@ text=The frozen example Yes, I'm speaking is the agreeing reply, without the par
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6019f13ce1dedfe0507a3476f23e719d57f0e3fbd79bd9892b636177ce5d72b3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f8ece53e714cb14aed81eaffe725eab231360bdbabefa1b083be3a6360fc70ad
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This example adds the particle before the speaking word.
@@ -5514,8 +5514,8 @@ text=This example adds the particle before the speaking word.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c46f8287eb0633fa398888d770c58c5b5014c675c1d5ae7f78fe145e3634d7c6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8399f992a1e5f1b94b08d20526b4348df0d34489722411a7cf6b55a37f04bc5d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This example is the agreeing reply, without the particle.
@@ -5527,8 +5527,8 @@ text=This example is the agreeing reply, without the particle.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a35d01a87f89b206c37b648589be2a354c6b0648b545ccb9d0adcdaed9dffc5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0dd0bba6b1096df57759189a9ec79e6bf759c7b7d1b5299951e82c562da9a9fe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen example He's not a student is the one omitted in the present form, with the particle on its own.
@@ -5540,8 +5540,8 @@ text=The frozen example He's not a student is the one omitted in the present for
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7cf0a4a97f0838aa6881f3dadad44b57251979b60b5430f9b567a40512006dce
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0ba01863845b01d4aeb879254481c4689ef6fab050e8240f16d2728f30561b3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note says one example is omitted in the present form and uses the particle on its own. Which admitted line is that example?
@@ -5553,8 +5553,8 @@ text=The frozen note says one example is omitted in the present form and uses th
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9e3f3ceededaa37238418ab75058a0fdbe50f370668fc37346fdeb7d70b73ac3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9bce7e6ac4a0792708bf481e6496a4b8321276be8507f5c8f16731641583ed85
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen example He's not a student uses the particle on its own because the present form is omitted.
@@ -5566,8 +5566,8 @@ text=The frozen example He's not a student uses the particle on its own because 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2304b744588b6cc99b25abfcd8571bed5d5814cdcb196bed0772e698d2a1579e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 896867fb2e33149bb6b1db07f24ec01d1d92af0e6915980e38a9c60f373a30ad
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.
@@ -5579,8 +5579,8 @@ text=The frozen example No, I'm not speaking places the particle before the spea
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b4a118b322347248b659ec65a454a08bd5e5d89588fdec8eb2263559dc537a97
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e782efecef85e2a214ef548e23d38fb2462267b295cb10f2ca711a84cc8f844e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This short line uses the particle on its own with the student word.
@@ -5592,8 +5592,8 @@ text=This short line uses the particle on its own with the student word.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65e792c55533739509f7e66a321b21e8ee94c2b1e372ad0b25a239ac64d30752
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8bc007de5c041cddd49771cc69edaeb01a1dc15abc7ec9c560f847f2e3c5f3c9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This short line places the particle before the speaking word.
@@ -5605,8 +5605,8 @@ text=This short line places the particle before the speaking word.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5942e860814eada8a6cf1d35f377e9dd094b99958447191d6575c868556d5fcd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 29668f0c5632bb5e9094051f7c6150b2050ce83c83cbfe9d97ffe8f2cefdd906
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen example Boris isn't coming places the particle before the coming word.
@@ -5618,8 +5618,8 @@ text=The frozen example Boris isn't coming places the particle before the coming
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82146a833a6cd8753ab81e92edffd38f97e629abaf39ba59509171ed58940ba9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8f6ccd6cc3a558e8fbc6547534774c63bd1ba72644211b8a8e0b73c7efb33a2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen example Boris isn't coming places the particle before the coming word. Which admitted line is that example?
@@ -5631,8 +5631,8 @@ text=The frozen example Boris isn't coming places the particle before the coming
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 50b849c6f9c5a769a9eb7bcc1ef21d9520e5a84cba0cea5e422d12132147b430
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81f461203bafe8e9d36c83c312bf3ee224e3b62f2444e36689d7d5d786e78ac2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note adds this particle before a word. It is not the replacement for the exists word.
@@ -5644,8 +5644,8 @@ text=The frozen note adds this particle before a word. It is not the replacement
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 88d426c3c2a83754cd6e10659d40cce205b9cb0d65b10761b7ab775e4a623a26
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 093ef6792a6d14080cb6b0d5bb2702fe79d050a5a626a05212f1aa4fd479299c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.
@@ -5657,8 +5657,8 @@ text=The frozen example uses this as the agreeing reply Yes, I'm speaking, not a
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a5b92094c80d7d2a5591d8886c915c031cfd9b66c50d5177b7e1c806b3c9e5c5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae673322024497d70ae0d12b4a69c4b7888c0bb749259212962088cc955ee8fd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This particle is placed before a word, not used as the replacement.
@@ -5670,8 +5670,8 @@ text=This particle is placed before a word, not used as the replacement.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 00575ea35f2db4cbd6a942f25e2de15f66e3a632409f02e23f0fc1821aad83f2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e0be5f7ccdef65f3e7d84b6cc9260e8f1c194f057f7b7805289a7bc77ce9b07
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This token is the agreeing reply, not the replacement.
@@ -5683,8 +5683,8 @@ text=This token is the agreeing reply, not the replacement.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 39b6e945c37bef373d3502856d0bf28197a7f01a11d67e2b86aa666d5e776900
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fcdfaf8dd6d931d6e50cdc97a8ac460ebe26b2bfaa53e9a6ab9bb45dcb715c3a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.
@@ -5696,8 +5696,8 @@ text=The frozen note says this form has a different meaning from the reply that 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 641654cc01b2d550ad7162df8cd32748858f3036df586c050c14b48f8d3f4c49
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad7cdd41df7112f4855d72578fca2f36fa231bb4ae28385e437723e4f95bf906
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note replaces the exists word when negating the have-phrase. Which admitted form is the replacement?
@@ -5709,8 +5709,8 @@ text=The frozen note replaces the exists word when negating the have-phrase. Whi
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e783b6f7ccb79c74166985855d4527e9405a6ed6e36373b613f74926941dcb76
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b55b0dd52a83bc54b541d0e6fd607ef8f16a056bce1e1c5d2f81055809e2121d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note adds this particle before a word. It is not the form that means exists.
@@ -5722,8 +5722,8 @@ text=The frozen note adds this particle before a word. It is not the form that m
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 05a6ef0a86f991bbbf0e1b2e2185c2f03a8eda749d5691585ac9793091100e02
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2c6da5ce551af80e974791c3cdf2700a91f798c4b1e337497f094c870193153
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen example Yes, I'm speaking uses this as the agreeing reply.
@@ -5735,8 +5735,8 @@ text=The frozen example Yes, I'm speaking uses this as the agreeing reply.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 26a1bc98f193d8db4292cd43149f26dba69d13980e4e5f051f417886470ba435
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc74214c12f13f648e691e9044f08335f96962cab71cedfec0976c8fe6a8fef9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This particle is not the form that means exists.
@@ -5748,8 +5748,8 @@ text=This particle is not the form that means exists.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3aaff3f54e0c2313511db409a487372837b4b0b635a7d3217fb97023e1d086c2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 55007da1809ca9470b9bd1a4c3871538028673086618377bd4de772e0b233871
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This token is the agreeing reply, not the exists word.
@@ -5761,8 +5761,8 @@ text=This token is the agreeing reply, not the exists word.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0313e0610528779ad499f7b5c5818f4c22639a5caa7a950e0e18e6fdf30dce71
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81393806b5eada81d2f2894763b095bed0af3250ad7ccb313f6cc711a6c1efa7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.
@@ -5774,8 +5774,8 @@ text=The frozen note uses this form to mean 'exists' in the have-phrase, before 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 837b55a84061215cdc4c24f40e53e865f7e73640f75a5241631672a69c4418d4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff9931f0589762826049f52cc2a516e3dc3531cbb622b650a95db40e4cdcfbd2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen have-phrase uses one form before it is replaced. Which admitted form is the one that means exists?
@@ -5787,8 +5787,8 @@ text=The frozen have-phrase uses one form before it is replaced. Which admitted 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ef38a1b67b35b59b7b6d5b6301014faf21c6591f6f3f11ed88ba1078367c35b6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42e5157919275233ac8d72eb54e01712771c57ba0c9b1b50d29113032e442366
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note uses this form to mean 'exists' before replacing it.
@@ -5800,8 +5800,8 @@ text=The frozen note uses this form to mean 'exists' before replacing it.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc7b3dad54a39b24c3a73cf0e165c21904de0fd41d9522218279078560f45f9a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40db83a08ccf288c4ca829d2b7d0df1f07e10bfdd064e761a2c794037e73ee69
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This form means exists, so it is the form being replaced.
@@ -5813,8 +5813,8 @@ text=This form means exists, so it is the form being replaced.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c38df6c2150fbdb5f82348fbe89482a3899383e6e62f89eba8078ad060141814
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 973660ca0e6cf98dce49ec3c55696e21201582803e150ece1c684405295f5b7a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note says this replacement has a different meaning from the reply that means no.
@@ -5826,8 +5826,8 @@ text=The frozen note says this replacement has a different meaning from the repl
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca89e5a74dc2b949fb1848093f360949fdcd35c3c7cb3487f2367f6525358b3a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8fbe3fed45e4ceb15b6f86b09836147fc2990fcd32a284bab76ed239e16acc7d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note keeps the particle apart from the have-phrase replacement. Which admitted form replaces the exists word?
@@ -5839,8 +5839,8 @@ text=The frozen note keeps the particle apart from the have-phrase replacement. 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5abd1332eec000361907233ae939d340a0fbd690c0463cb4fb86ee19228bfea
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7e15f0dac0375a229a6d26705231a5cd20584678860324ff06d26bb1f630ee8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen source pairs the shown form
@@ -5852,8 +5852,8 @@ text=The frozen source pairs the shown form
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 097ef1403e4eb0af23c23bd0f1c4accb0c569e5c7ba22a8b9a9066a20da6a955
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d97a3a31e0e221433fd3ee237cafe82c218ecfd9bef19385d9fc9aa2c8cd785e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=with the admitted gloss
@@ -5865,8 +5865,8 @@ text=with the admitted gloss
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e6bc353ab850c7fc5232da7b1c4ec33cbc58b373181353e0527dd39ee5fe66cf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33470fa7bbc40ecbb0de6299c7eb01670d1416926a715061d40485147d54394e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which English meaning matches the shown negated sentence?
@@ -5878,8 +5878,8 @@ text=Which English meaning matches the shown negated sentence?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a37437387a650239df3f90dc182cb7451808097fe90330ff8ce5ba8982403bb2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f891f6ab27a3cc106c349fb832917daba26afb23aa67639378b72105c4e1b6b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which negative-pronoun form built from the shown word is not called predicative?
@@ -5891,8 +5891,8 @@ text=Which negative-pronoun form built from the shown word is not called predica
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3bc56f5cd986e42bcc5641a1578a1e9fdbbd0b5feee1b18c615f193509e6716b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 368844043f7f66e6b9f407120ce0d3d1c4f569d14ab7d77f0eac1a1acecf9cfc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which predicative negative-pronoun form is built from the shown word?
@@ -5904,8 +5904,8 @@ text=Which predicative negative-pronoun form is built from the shown word?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c084bf7131d9e9fccf5f84332d64186103adcbc24c3ff1bd92bc3a5a67990ece
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b946438f178aeb4dcf3d016b75ccef5c0a721e8327dfb920d6abc9657bed2508
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which particle does the stated concord rule require in the predicate?
@@ -5917,8 +5917,8 @@ text=Which particle does the stated concord rule require in the predicate?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 19dc53172b940ec19bb7c8e711f402a96f132ae66057b178f80bcb96aeed6f0b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe4086b686b52ee02b188656a21e3f30ce8908c3cc6aad064750946ba44e397d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which predicate particle does negative concord require?
@@ -5930,8 +5930,8 @@ text=Which predicate particle does negative concord require?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f9f1b1d9f78ef40462ec239d150566809a3205eef0524535d1b517950d6f30b9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 254eedf37fc735086cb6d0f3fecda34271e7b2e199710fddde5f7bc549c68288
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which English meaning matches the shown sentence?
@@ -5943,8 +5943,8 @@ text=Which English meaning matches the shown sentence?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70d889d0926b61f855502c97005849352884cdf8145564061c7667f3256a87d0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 837b1513a55363af182a35ea727d2af695ff8f8cf44a7c84d696d1e93e5306b7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Moving the modifier in front of a different word produces that meaning.
@@ -5956,8 +5956,8 @@ text=Moving the modifier in front of a different word produces that meaning.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 528cea47ac810972007464133c3c2494630c71c4279c36d1820ca1ce21b69130
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c16d65459f93d7c39f6c31b8ec4f7726c0fc03b68801cc6c964c74de48dcb2ef
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=That placement negates the following word.
@@ -5969,8 +5969,8 @@ text=That placement negates the following word.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1d399ca4f4ea3e4c79bf1433f6dbd798158187c7414575e4d9b98091cbab3f8c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f1481975c5fe3676e2102c6de5e7072bb791ce33d7bcc589a184b5f4fc151ae
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=That parenthetical belongs to the other placement.
@@ -5982,8 +5982,8 @@ text=That parenthetical belongs to the other placement.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 478944113d1a269223e48195e32f82d2cb0b26d09ea824bc5ee65fbe8eb71108
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa8fac73fd808bfdcf1d4426b5e4a80290fb434024ec50c0701177b9efa038c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English meaning matches the shown sentence?
@@ -5995,8 +5995,8 @@ text=Which admitted English meaning matches the shown sentence?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cde1053508b5e48479a874121872b435b1a0a3f2f860df27d4a021a21c3b5ac2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5fa882a484e9d4fea69a53aa6c5aff19deb74ed5702bf73d4fa3f1fd2803689
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted negation lines
@@ -6008,8 +6008,8 @@ text=Admitted negation lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2584517d9df5bf36b9419574ebdd18a0d047d98224de87d993e7e86ef9056c16
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4dc5be3b401a7ede76c772b7ad8cb924ef97ba5c19ae2e0b42f64a1f68bb8694
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, a bounded word-order contrast, and the admitted ReadyRussian placement contrast. Qualified review is pending.
@@ -6021,8 +6021,8 @@ text=Proposed Unit 24 uses the frozen genitive and accusative compare, the froze
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5620072d6d548eb5a099578a9c3343847e2471a3cefe0ab2a75b43e2a4c04616
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50392dad317b863035b8ad1596dd9e25ef2ca566cfe8b7cd61a8b8986ee0e39a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 24 in the copy you own. The app records do not replace that lesson.
@@ -6034,8 +6034,8 @@ text=Open Lesson 24 in the copy you own. The app records do not replace that les
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e7419bcfae1280595f4a9fb2bab5b617d0bf30c7b942a5e760fa42641f7c24d9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 672ed2620df516a87ba3ad0b48bd8803f95e670c1ccd52222dc48fab552ea895
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
@@ -6047,8 +6047,8 @@ text=Guided practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 83f795e5930c87647cba583b3244d8cb18e0cdf2e0e8a4bf5b0506013dc39444
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17f1a45c46cd6e151e7bbef5133c0ef9592621ec427c53eac55ba0d46e1de191
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
@@ -6060,8 +6060,8 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c742f42a7a031778c5c87507967e0ed6b4f6ba13d340105dc784b32b409c874
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d6a583a3d74f8bc27bfeb310890bd2efdb47a977d570d7f72ccbc1724ab983a0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
@@ -6073,8 +6073,8 @@ text=Remediation
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c1062fede277ecdd185b8137c971ee5c8f0bf398a1bdb03a6fb0c2ab5a41a00
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 589f412aefb5e0d6f51ad3497fe4ae43fe2abf4ab809fd0e9ddadefa43c67c7a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
@@ -6086,8 +6086,8 @@ text=Independent checks
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 68c28ccc94c3f2e7c477ff5bc83b8971adc7a100e6673319e28517821e26fa41
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0d6628cb6efabd4b705fad8106d6e837044c72184201644e737df8c469dbf0c7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
@@ -6099,8 +6099,8 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1dae8591414954434790a2cc2740d140692d0860adc131ff66cc76b7aebb13e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 27c3158ff8f524599dd756b586266da0c491affd5197be1b490c6fc90ea967de
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 24 in your copy
@@ -6112,8 +6112,8 @@ text=Work Lesson 24 in your copy
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 99a822c718b79af8176cadba42d39e47bd578d8ecd8a9af8c00c60d1f25b58db
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6389c4aa583fdf2dfe011ee877a944574b65ac69b5b56ad65094b74a5f50544
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
@@ -6125,8 +6125,8 @@ text=Do Lesson 24 in the copy you own. Use that book's explanations and practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4149e66f42b1e3d3388baf03e97eaf5021259ed31bd75476538b3b604dd3a66
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7fd6fd6d836c2f6174944d77e675e51d9907736522b27726e676521f29103f5c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 24 in your copy and complete its lesson work.
@@ -6138,8 +6138,8 @@ text=Open Lesson 24 in your copy and complete its lesson work.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 39f3671cfa9b3590cfed271264b6a2713fecc0d7cc8bc6e000cd03bbdfb8b254
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6de30c3925ad03fe1853920d16071fdf4572ef7e5ba5ca835e2351a8d130d7df
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 24 book work
@@ -6151,8 +6151,8 @@ text=Record Lesson 24 book work
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 024afd6e1cc0e901739fc49b413ec7c753a88816bce378f5db349d0717a73a14
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6344e27e719e828be9c97e0debe4274e052d1bcbcf962342cb8a9a7f5c028401
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
@@ -6164,8 +6164,8 @@ text=When you have done Lesson 24 in your copy, self-attest here. Attestation re
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b84260a1729793d2dfb2c9032b440efcf47798c64d2fa74e5c44199fb3ffa373
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41fda22e3971b45f24c0b4d543430423b56ef10747afaf41e2a49fdb70b72db1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 24 work in your copy.

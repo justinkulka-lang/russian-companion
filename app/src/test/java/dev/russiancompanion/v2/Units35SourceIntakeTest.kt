@@ -114,7 +114,7 @@ class Units35SourceIntakeTest {
             val record = pack.provenanceRecords.first { it.itemId == id }
             assertEquals("sense selection", record.transformation)
             assertEquals(sense, record.shippedText)
-            assertEquals("PENDING_QUALIFIED_REVIEW", record.reviewStatus)
+            assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", record.reviewStatus)
             assertTrue(record.originalSourceText.contains(","))
             assertTrue(record.shippedText != record.originalSourceText)
         }
@@ -296,7 +296,7 @@ class Units35SourceIntakeTest {
         listOf(3, 4, 5).forEach { number ->
             assertEquals("DEVELOPMENT", pack.unit(number)!!.installState)
             assertEquals("PENDING_CURRICULUM_REVIEWER", pack.unit(number)!!.mappingStatus)
-            assertEquals("PENDING_QUALIFIED_REVIEW", pack.unitReviews.first { it.unitNumber == number }.status)
+            assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", pack.unitReviews.first { it.unitNumber == number }.status)
         }
     }
 
