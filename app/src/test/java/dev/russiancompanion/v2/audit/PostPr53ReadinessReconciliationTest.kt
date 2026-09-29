@@ -173,12 +173,9 @@ class PostPr53ReadinessReconciliationTest {
         }
 
         val unresolved = live.units.filter { it.unresolvedRequiredSourceCapabilities != "NONE" }
-        assertEquals(listOf(7, 23, 25, 26, 27, 29, 30), unresolved.map { it.unitNumber })
+        assertEquals(listOf(26, 27, 29, 30), unresolved.map { it.unitNumber })
         assertEquals(
             listOf(
-                "adverb-paradigm",
-                "completion-over-period",
-                "productive-diminutive",
                 "postal-address",
                 "participle-stress, participle-comprehension",
                 "bookish-register, bookish-reading",
@@ -186,12 +183,12 @@ class PostPr53ReadinessReconciliationTest {
             ),
             unresolved.map { it.unresolvedRequiredSourceCapabilities },
         )
-        assertEquals(23, live.units.count { it.readiness == "CONTENT_COMPLETE_REVIEW_PENDING" })
-        assertEquals(7, live.units.count { it.readiness == "NOT_PREPARED" })
+        assertEquals(26, live.units.count { it.readiness == "CONTENT_COMPLETE_REVIEW_PENDING" })
+        assertEquals(4, live.units.count { it.readiness == "NOT_PREPARED" })
         assertEquals(listOf(1, 2), live.units.filter { it.assetBlocker != "NONE" }.map { it.unitNumber })
         assertEquals(listOf(27, 29, 30), live.units.filter { it.authorityVarianceBlocker != "NOT_APPLICABLE" }.map { it.unitNumber })
         assertEquals(
-            listOf(3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 28),
+            listOf(3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 28),
             live.units.filter {
                 it.readiness == "CONTENT_COMPLETE_REVIEW_PENDING" &&
                     it.unresolvedRequiredSourceCapabilities == "NONE" &&
@@ -220,12 +217,22 @@ class PostPr53ReadinessReconciliationTest {
             val shipped = pack.sourceCapabilities.any {
                 it.unitNumber == unitNumber && it.objectiveId == objectiveId && it.supportedClaim == name
             }
-            when (disposition) {
-                "RESOLVED" -> {
+            val phase2Rebound = name == "adverb-paradigm" || name == "completion-over-period" || name == "productive-diminutive"
+            when {
+                phase2Rebound -> {
+                    assertEquals("UNRESOLVED", disposition)
+                    assertFalse(liveClaims.contains(name))
+                    if (name == "completion-over-period") {
+                        assertTrue(shipped)
+                    } else {
+                        assertFalse(shipped)
+                    }
+                }
+                disposition == "RESOLVED" -> {
                     assertFalse(liveClaims.contains(name))
                     assertTrue(shipped)
                 }
-                "UNRESOLVED" -> {
+                disposition == "UNRESOLVED" -> {
                     assertTrue(liveClaims.contains(name))
                     assertFalse(shipped)
                 }

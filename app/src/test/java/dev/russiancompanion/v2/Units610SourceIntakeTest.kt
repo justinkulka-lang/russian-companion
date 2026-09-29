@@ -35,7 +35,7 @@ class Units610SourceIntakeTest {
         listOf(6, 7, 8, 9, 10).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals(if (number == 7) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", pack.unitReviews.single { it.unitNumber == number }.status)
             assertTrue(pack.unitReviews.single { it.unitNumber == number }.reviewer.isNullOrBlank())

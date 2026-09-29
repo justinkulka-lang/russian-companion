@@ -127,7 +127,7 @@ class CurriculumReadinessReconciliationTest {
             }
         }
         val unit7 = model.units.first { it.unitNumber == 7 }
-        assertEquals("NOT_PREPARED", unit7.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit7.readiness)
         assertFalse(unit7.advancementCanPresentlySucceed)
         assertFalse(unit7.finalDisposition.contains("INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"))
         assertTrue((16..30).all { number -> model.units.first { it.unitNumber == number }.assetBlocker == "NONE" })
@@ -136,12 +136,12 @@ class CurriculumReadinessReconciliationTest {
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
         }
-        listOf(7, 23, 26, 27, 29).forEach { number ->
+        listOf(26, 27, 29).forEach { number ->
             assertTrue(
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
         }
-        listOf(17, 24, 25, 28).forEach { number ->
+        listOf(7, 17, 23, 24, 25, 28).forEach { number ->
             assertFalse(
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )

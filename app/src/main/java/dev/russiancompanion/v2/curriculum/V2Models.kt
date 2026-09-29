@@ -124,12 +124,20 @@ internal data class V2QuotedSourceEvidence(
 )
 
 @Serializable
+internal data class V2SynthesisApplication(
+    val cue: String = "",
+    val answer: String = "",
+    val distractors: List<String> = emptyList(),
+)
+
+@Serializable
 internal data class V2OriginalSynthesisEvidence(
     val bibliography: String = "",
     val sourceDateOrVersion: String = "",
     val authorshipDeclaration: String = "",
     val objectiveOrClaimBinding: String = "",
     val finalAudit: V2FinalAuditIdentity = V2FinalAuditIdentity(),
+    val applications: List<V2SynthesisApplication> = emptyList(),
 )
 
 @Serializable
@@ -252,6 +260,7 @@ internal data class V2ProvenanceRecord(
     val reviewDate: String = "",
     val reviewedDigest: String = "",
     val audioAssetId: String? = null,
+    val synthesis: V2OriginalSynthesisEvidence? = null,
 )
 
 @Serializable

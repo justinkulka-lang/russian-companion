@@ -27,7 +27,8 @@ class Aud44CorrectionTest {
         val pairs = pack.items.filter { it.objectiveId == "obj-u7-adverb" }
         assertEquals(listOf("quickly", "well", "wonderfully"), pairs.map { it.answer })
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "adverb-paradigm" })
-        assertTrue(unresolved(pack, 7).contains("adverb-paradigm"))
+        assertFalse(unresolved(pack, 7).contains("adverb-paradigm"))
+        assertFalse(unresolved(pack, 7).contains("bounded-manner-adverb-formation"))
         assertFalse(unresolved(pack, 7).contains("adverb-form-gloss"))
         val gloss = pack.sourceCapabilities.first { it.supportedClaim == "adverb-form-gloss" }
         val relabeled = pack.copy(
@@ -37,10 +38,10 @@ class Aud44CorrectionTest {
         )
         val errors = V2Validator.validate(relabeled).errors
         assertTrue(errors.joinToString("\n"), errors.any { it.contains(gloss.id) && it.contains("does not clear adverb-paradigm") })
-        assertTrue(unresolved(relabeled, 7).contains("adverb-paradigm"))
+        assertTrue(unresolved(relabeled, 7).contains("adverb-form-gloss"))
+        assertFalse(unresolved(relabeled, 7).contains("adverb-paradigm"))
         val decision = advancementDecision(pack, pack.unit(7)!!, learner(pack, 7))
-        assertFalse(decision.allowed)
-        assertTrue(decision.remaining.any { it.contains("not prepared") || it.contains("adverb paradigm") })
+        assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
     }
 
     @Test
@@ -61,7 +62,7 @@ class Aud44CorrectionTest {
                 it.objectiveId == "obj-u7-adverb" && it.originalSourceText.contains("most adverbs are formed")
             },
         )
-        assertTrue(lesson.contains("An adjective-to-adverb paradigm has no admitted frozen span."))
+        assertTrue(lesson.contains("the correspondence is not a universal generator"))
     }
 
     @Test

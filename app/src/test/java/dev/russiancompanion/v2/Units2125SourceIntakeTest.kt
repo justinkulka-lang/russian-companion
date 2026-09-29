@@ -42,7 +42,7 @@ class Units2125SourceIntakeTest {
         4 to "5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c",
         5 to "9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d",
         6 to "fa6501022bd7ff4a2eca1e47c0ad488d96254cab0eafbecc61a8420835a3ab9c",
-        7 to "9db2b449a150d96b668230738731655cf01a163a552fbacd4152579be638989f",
+        7 to "b009259b35355e557764561ece0023d6eea57a2b1dd652bcbdbdbff39b9ad8a5",
         8 to "e1dd456abf8a7b961f2f8471f35d4178961a53147c354f3e410e88d75f025c78",
         9 to "d0f135c408fc429392cf695a8122134013fca69637a4f9c1587db3fec6b3c65f",
         10 to "6845b398da6ad901b06443dd0f56ee6ace4ba4e2da6af9e36d33934dc286c526",
@@ -86,9 +86,7 @@ class Units2125SourceIntakeTest {
             "diminutive suffix register"
         )
 
-    private val gapObjectives = mapOf(
-        23 to listOf("obj-u23-completion"),
-    )
+    private val gapObjectives = emptyMap<Int, List<String>>()
 
     @Test
     fun structuralMappingsAreDigestBoundAndStayUnsigned() {
@@ -99,7 +97,7 @@ class Units2125SourceIntakeTest {
             val facts = governedMappingFacts(number)
             val digest = mappingPackageDigest(facts)
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals(if (number == 23 || number == 25) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.mappingNote.contains(range))
@@ -324,7 +322,7 @@ class Units2125SourceIntakeTest {
         }
         assertTrue(reason(pack, 21).isBlank())
         assertTrue(reason(pack, 22).isBlank())
-        assertTrue(reason(pack, 23).contains("Completion over a period"))
+        assertTrue(reason(pack, 23).isBlank())
         assertTrue(reason(pack, 24).isBlank())
         val placement = pack.unit(24)!!.objectives.first { it.id == "obj-u24-placement" }
         assertEquals("RECOGNITION", placement.kind)
@@ -334,7 +332,7 @@ class Units2125SourceIntakeTest {
         assertTrue(contrast.checkItemIds.size >= 2)
         assertTrue(reason(pack, 25).isBlank())
         assertTrue(pack.unit(25)!!.objectives.none { it.id == "obj-u25-productive-formation" })
-        listOf(21, 22, 24).forEach { number ->
+        listOf(21, 22, 23, 24, 25).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,
@@ -348,35 +346,6 @@ class Units2125SourceIntakeTest {
             )
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
         }
-        val unit25 = pack.unit(25)!!
-        val blocked25 = advancementDecision(
-            pack,
-            unit25,
-            learner(
-                25,
-                book = true,
-                correct = unit25.objectives.flatMap { it.checkItemIds }.toSet() +
-                    unit25.sessions.flatMap { it.steps }.flatMap { it.itemIds }.toSet(),
-                steps = unit25.sessions.flatMap { it.steps }.map { it.id }.toSet(),
-            ),
-        )
-        assertFalse(blocked25.allowed)
-        assertTrue(blocked25.remaining.joinToString("\n"), blocked25.remaining.any { it.contains("not prepared") })
-        assertTrue(blocked25.remaining.any { it.contains("productive-diminutive") })
-        val unit23 = pack.unit(23)!!
-        val blocked = advancementDecision(
-            pack,
-            unit23,
-            learner(
-                23,
-                book = true,
-                correct = unit23.objectives.flatMap { it.checkItemIds }.toSet() +
-                    unit23.sessions.flatMap { it.steps }.flatMap { it.itemIds }.toSet(),
-                steps = unit23.sessions.flatMap { it.steps }.map { it.id }.toSet(),
-            ),
-        )
-        assertFalse(blocked.allowed)
-        assertTrue(blocked.remaining.joinToString("\n"), blocked.remaining.any { it.contains("not prepared") })
     }
 
     @Test
@@ -386,8 +355,8 @@ class Units2125SourceIntakeTest {
         assertGap(withoutCapabilities(pack, 22), 22, "without admitted declined-numeral, both, one-and-a-half, and collective source capabilities", "4371358", keywordBlob)
         assertGap(withoutCapabilities(pack, 24), 24, "without admitted alternation, negative-pronoun, and scope source capabilities", "4233876", keywordBlob)
         assertGap(withoutCapabilities(pack, 24), 24, "without admitted alternation, negative-pronoun, and scope source capabilities", "4195114", keywordBlob)
-        assertGap(withoutCapabilities(pack, 25), 25, "without admitted productive-diminutive and register source capabilities", "4660786", keywordBlob)
-        assertGap(withoutCapabilities(pack, 25), 25, "without admitted productive-diminutive and register source capabilities", "3353859", keywordBlob)
+        assertGap(withoutCapabilities(pack, 25), 25, "without admitted documented-name-form and register source capabilities", "4660786", keywordBlob)
+        assertGap(withoutCapabilities(pack, 25), 25, "without admitted documented-name-form and register source capabilities", "3353859", keywordBlob)
         val dictionary = sample(pack, 21, "50e210c4803237779cb562bc1abcea529066031c", "src-openrussian-50e210c4", keywordBlob)
         val fromRows = V2Validator.validate(claimComplete(withoutCapabilities(pack, 21).copy(provenanceRecords = pack.provenanceRecords + dictionary), 21)).errors
         assertTrue(fromRows.joinToString("\n"), fromRows.any { it.contains("without admitted reflexive-object and purpose source capabilities") })
@@ -398,11 +367,11 @@ class Units2125SourceIntakeTest {
         val pack = pack()
         val unit = pack.unit(23)!!
         assertEquals("DEVELOPMENT", unit.installState)
-        assertEquals("NOT_PREPARED", unit.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
         assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
         assertTrue(unit.mappingNote.contains("completion over a period"))
-        assertTrue(unit.topicSummary.contains("is not prepared"))
-        assertTrue(unit.topicSummary.contains("Completion over a period has no admitted frozen span"))
+        assertTrue(unit.topicSummary.contains("duration-versus-completion contrast"))
+        assertFalse(unit.topicSummary.contains("Completion over a period has no admitted frozen span"))
         assertTrue(unit.topicSummary.contains("Book self-attestation does not replace the app checks"))
         assertTrue(unit.topicSummary.contains("not installed"))
         assertTrue(unit.sessions.flatMap { it.steps }.any { it.kind == "TEACH" })
@@ -414,24 +383,23 @@ class Units2125SourceIntakeTest {
             assertEquals("RECOGNITION", objective.kind)
             assertTrue(objective.checkItemIds.size >= 2)
         }
-        assertTrue(reason(pack, 23).contains("no admitted frozen span"))
+        assertTrue(reason(pack, 23).isBlank())
         val completion = unit.objectives.single { it.id == "obj-u23-completion" }
-        assertEquals("GUIDANCE", completion.kind)
-        assertTrue(completion.checkItemIds.isEmpty())
-        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 23).any { it.claim == "completion-over-period" })
-        val blocked = advancementDecision(
+        assertEquals("RECOGNITION", completion.kind)
+        assertTrue(completion.checkItemIds.size >= 2)
+        assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 23).any { it.claim == "completion-over-period" })
+        val advanced = advancementDecision(
             pack,
             unit,
             learner(
                 23,
                 book = true,
-                correct = unit.objectives.flatMap { it.checkItemIds }.toSet(),
+                correct = unit.objectives.flatMap { it.checkItemIds }.toSet() +
+                    unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }.toSet(),
                 steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet(),
             ),
         )
-        assertFalse(blocked.allowed)
-        assertTrue(blocked.remaining.any { it.contains("not prepared") })
-        assertTrue(blocked.remaining.any { it.contains("completion-over-period") })
+        assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
         val elapsed = pack.sourceCapabilities.single { it.supportedClaim == "elapsed-time-duration" }
         assertEquals("obj-u23-duration", elapsed.objectiveId)
         assertEquals(23, elapsed.unitNumber)
@@ -521,18 +489,22 @@ class Units2125SourceIntakeTest {
             ).errors.joinToString("\n")
             assertTrue(errors, errors.contains("revision does not match the frozen record") || errors.contains("span is not in the frozen record"))
             assertTrue(errors, errors.contains("no independent completion-over-period admission"))
+            val withoutCompletion = pack.sourceCapabilities.filter { it.id != "cap-u23-completion-over-period" }
             assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(
-                pack.copy(provenanceRecords = pack.provenanceRecords + moved, sourceCapabilities = pack.sourceCapabilities + broken),
+                pack.copy(provenanceRecords = pack.provenanceRecords + moved, sourceCapabilities = withoutCompletion + broken),
                 23,
             ).any { it.claim == "completion-over-period" })
         }
         val bookText = unit.sessions.flatMap { it.steps }.first { it.kind == "BOOK" }.body
         val bookRecord = sample(pack, 23, elapsed.sourceRevision, elapsed.sourceId, bookText).copy(objectiveId = "obj-u23-completion")
+        val withoutCompletion = pack.copy(
+            sourceCapabilities = pack.sourceCapabilities.filter { it.id != "cap-u23-completion-over-period" },
+        )
         val bookErrors = V2Validator.validate(
             claimComplete(
-                pack.copy(
-                    provenanceRecords = pack.provenanceRecords + bookRecord,
-                    sourceCapabilities = pack.sourceCapabilities + capability(bookRecord, "cap-book-completion", 23, "obj-u23-completion", "completion-over-period"),
+                withoutCompletion.copy(
+                    provenanceRecords = withoutCompletion.provenanceRecords + bookRecord,
+                    sourceCapabilities = withoutCompletion.sourceCapabilities + capability(bookRecord, "cap-book-completion", 23, "obj-u23-completion", "completion-over-period"),
                 ),
                 23,
             ),
@@ -547,7 +519,7 @@ class Units2125SourceIntakeTest {
         val pack = pack()
         listOf(21, 22, 23, 24, 25).forEach { number ->
             val unrelated = sample(pack, number, "9000001", "src-wikibooks-russian-cc-by-sa", keywordBlob)
-            val base = if (number in listOf(21, 22, 24, 25)) withoutCapabilities(pack, number) else pack
+            val base = if (number in listOf(21, 22, 23, 24, 25)) withoutCapabilities(pack, number) else pack
             val claimed = claimComplete(base.copy(provenanceRecords = base.provenanceRecords + unrelated), number)
             val errors = V2Validator.validate(claimed).errors
             assertTrue(errors.joinToString("\n"), errors.any { it.contains("source capability") || it.contains("source capabilities") })

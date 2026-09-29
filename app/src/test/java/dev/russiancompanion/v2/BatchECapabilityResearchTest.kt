@@ -71,9 +71,7 @@ class BatchECapabilityResearchTest {
             val errors = errors(pack, capability)
             assertTrue(errors, errors.contains("no independent $claim admission"))
             assertTrue(errors, errors.contains("revision does not match the frozen record"))
-            val stillOpen = claim == "adverb-paradigm" || claim == "completion-over-period" || claim == "productive-diminutive"
-            assertEquals(
-                stillOpen,
+            assertFalse(
                 V2Validator.unresolvedRequiredSourceCapabilities(
                     pack.copy(sourceCapabilities = pack.sourceCapabilities + capability),
                     unitNumber,
@@ -131,10 +129,10 @@ class BatchECapabilityResearchTest {
         val relabeledGloss = gloss.copy(id = "cap-e-relabel-adverb", supportedClaim = "adverb-paradigm")
         val glossErrors = planted(pack, relabeledGloss)
         assertTrue(glossErrors, glossErrors.contains("does not clear adverb-paradigm"))
-        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(
+        assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(
             pack.copy(sourceCapabilities = pack.sourceCapabilities + relabeledGloss),
             7,
-        ).any { it.claim == "adverb-paradigm" })
+        ).any { it.claim == "adverb-paradigm" || it.claim == "bounded-manner-adverb-formation" })
 
         val quarter = pack.sourceCapabilities.single { it.supportedClaim == "productive-quarter-hour-time" }
         val relabeledQuarter = quarter.copy(
@@ -168,9 +166,7 @@ class BatchECapabilityResearchTest {
             admissions = pack.admissions.copy(penguinProseAssets = 9, generatedRussianWords = 4),
         )
         claims.forEach { (unitNumber, _, claim) ->
-            val stillOpen = claim == "adverb-paradigm" || claim == "completion-over-period" || claim == "productive-diminutive"
-            assertEquals(
-                stillOpen,
+            assertFalse(
                 V2Validator.unresolvedRequiredSourceCapabilities(stamped, unitNumber).any { it.claim == claim },
             )
         }
@@ -180,20 +176,20 @@ class BatchECapabilityResearchTest {
     fun missingChainAndReadinessFlipKeepAdvancementBlocked() {
         val pack = loadCurriculumPack(root())
         val gaps = mapOf(
-            7 to "without an admitted introductory adverb paradigm source capability",
+            7 to "without an admitted bounded manner-adverb formation source capability",
             17 to "Unit 17 is missing productive clock-time and calendar-date source capabilities",
             23 to "completion-over-period",
             24 to "scope source capabilities",
-            25 to "without admitted productive-diminutive and register source capabilities",
+            25 to "without admitted documented-name-form and register source capabilities",
         )
         val blockers = mapOf(
-            7 to "introductory adverb paradigm",
+            7 to "bounded manner-adverb formation",
             17 to "productive clock-time",
             23 to "completion-over-period",
             24 to "negation-scope",
-            25 to "productive-diminutive",
+            25 to "documented-name-form",
         )
-        val closed = setOf(17, 24)
+        val closed = setOf(7, 17, 23, 24, 25)
         gaps.forEach { (unitNumber, gap) ->
             val unit = pack.unit(unitNumber)!!
             assertEquals("DEVELOPMENT", unit.installState)
@@ -320,8 +316,8 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75", model.packContentReviewDigest)
-        assertEquals("a982d0f164e5dbd9192d2faf2ddd2858fcf84aa31985a7b87aaf8dc48fbc7cf7", model.repositorySourceDigest)
+        assertEquals("76f61c9948f7a7366410ff39f81f8295ceba3f03e28aea999891e5e873ad4f9d", model.packContentReviewDigest)
+        assertEquals("e3d53fd5df8b948f4c2bad92706a5c3c8724e56b3d9e56f5ed5d80a7cae6f271", model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
         assertEquals("NOT_APPROVED", candidate?.publicRelease)
@@ -338,11 +334,11 @@ class BatchECapabilityResearchTest {
             assertEquals("PROPOSED_NOT_ACTIVATED", model.units.single { it.unitNumber == number }.authorityVarianceBlocker)
         }
         val content = mapOf(
-            7 to "9db2b449a150d96b668230738731655cf01a163a552fbacd4152579be638989f",
+            7 to "b009259b35355e557764561ece0023d6eea57a2b1dd652bcbdbdbff39b9ad8a5",
             17 to "a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c",
-            23 to "ea02b0454ea4c2b37095bc296f55c8eca78c42e671b4ac668a958bf2e9ab078f",
+            23 to "d906ec0c2a354cdf89cda6b831877f1a542eadd1d96e1c4008c00084ad5ef5a6",
             24 to "497c9978cd3a89159732f7c4b53a09d0923d98bbaa01f61722a769d1a808f74c",
-            25 to "c3f4c00de92e5d3d9b0c30ca0c9663fc723dfdc06c1e4b30baa2e9a8cd9b771e",
+            25 to "c9638c54ba90780a19b0681c11e0e8af5f3f71ad6e33df29f4c50c7375110739",
             26 to "bdaa9683a34b35717a7f4ab3f5d00f7e8a221d96eb6f718acbf2a0f4c6b36bc8",
             27 to "e6805db24810cc3cc64061f70cd32a8b15b885611f7a0c29150009f461e795fc",
             28 to "afa29cbd6d710bcb853d74189d012584660996b25270af78c3d23efe35cf1cc5",
@@ -362,11 +358,11 @@ class BatchECapabilityResearchTest {
             30 to "e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367",
         )
         val reviewPackages = mapOf(
-            7 to "2d4089058297e45e77ded2d1a80c879d570c0384697f78a4db2a337411a81627",
+            7 to "e00a37b2aecc4f2ae8df3f6dda7202461b844dc0b0b60c804bda06c5a9468d20",
             17 to "cca9ccda9aaddd585a9979a06f5b48acf45b4c5ed42fdea04f923786843f33e1",
-            23 to "8330b71c6f0228e19fcdc3af1c817c05b6d030bd140ba46b18ed9b8e7fc8af73",
+            23 to "246261c3e8099f21ea4a20a5ff445c015e797ec8af7e77c4e08a593315f54264",
             24 to "0752226067fd6b1f2e84fc3eec8a9913c74649c5cfbc100a2ec3b07b25a9abbc",
-            25 to "a571464349edcd7c0e917436efb306dc2dcbdde8c0e354a614a4c508f3c54dec",
+            25 to "a1addb2984b12b209e0c46b1907cefd874c1da6aa99c580c5e589b14eebdf796",
             26 to "d99147f1bea12fbfb65c63aaecb8d38d2daf3334910b9e8e0446dde17e457bc6",
             27 to "7003b4f3ba9ac586b50e9aa58567f38fe48618cae93011507b94bf04630a186e",
             28 to "583b7e92bc1ac96942135e9043e712b62bd8779d47413f5d381f49d4493ad86a",
