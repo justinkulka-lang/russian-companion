@@ -194,7 +194,7 @@ class Units2630SourceIntakeTest {
                 assertTrue(host.shareAlikeTreatment.contains("Application code"))
                 assertTrue(host.sourceUrl.contains("oldid="))
             }
-            assertEquals("PENDING_QUALIFIED_REVIEW", host.reviewStatus)
+            assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", host.reviewStatus)
             assertTrue(host.reviewerIdentity.isBlank())
             assertNull(host.audioAssetId)
         }
@@ -497,7 +497,7 @@ class Units2630SourceIntakeTest {
         assertTrue(resolution.contains("ACTIVATE_WITH_CORRECTIONS"))
         assertFalse(resolution.contains("Status: ACTIVATED"))
         assertEquals(
-            "bb4932783224e85d60b130118191185c2e26d224254a0a54a2c52cfc92b4aaaf",
+            "2736372535c82dc5a2c5ac42ab42fad0756169095f799da758c36c88f9b2af4c",
             sha256(File(root, "docs/governance/MASTER_AUTHORITY_v2.0.md").readBytes()),
         )
         val assessment = assessRepositoryRelease(root)

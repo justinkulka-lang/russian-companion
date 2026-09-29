@@ -14,6 +14,9 @@ import dev.russiancompanion.domain.pathway.ArcPlanCoverage
 import dev.russiancompanion.domain.pathway.PathwaySegment
 import dev.russiancompanion.domain.pathway.PlanActivityKind
 import dev.russiancompanion.domain.pathway.beginnerArcReleaseReady
+import dev.russiancompanion.v2.curriculum.V2CurriculumPack
+import dev.russiancompanion.v2.curriculum.V2PackLoader
+import dev.russiancompanion.v2.curriculum.V2Validator
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationException
 import kotlinx.serialization.json.Json
@@ -624,25 +627,7 @@ private fun v2CurriculumBlockers(repositoryRoot: File): List<ReleaseBlocker> {
     val packFile = File(repositoryRoot, "app/src/main/assets/content/v2-curriculum.json")
     if (!packFile.isFile || packFile.length() == 0L) return V2_RELEASE_BLOCKERS
     return try {
-        val pack = json.decodeFromString(V2PackDocument.serializer(), packFile.readText())
-        val blockers = mutableListOf<ReleaseBlocker>()
-        val installed = pack.units.filter { it.installState == "INSTALLED" }.map { it.number }.toSet()
-        if ((1..30).any { it !in installed }) blockers += ReleaseBlocker.V2_UNITS_NOT_INSTALLED
-        val approvedUnits = pack.unitReviews.filter { review ->
-            review.status == "APPROVED" && !review.reviewedContentDigest.isNullOrBlank()
-        }.map { it.unitNumber }.toSet()
-        if ((1..30).any { it !in approvedUnits }) blockers += ReleaseBlocker.LINGUISTIC_REVIEW_ABSENT
-        if (pack.units.any { it.mappingStatus != "APPROVED" }) {
-            blockers += ReleaseBlocker.PENGUIN_MAPPING_UNAPPROVED
-        }
-        val hasMappedAudio = pack.letters.any { letter ->
-            val audioId = letter.audioAssetId
-            !audioId.isNullOrBlank() && pack.audioAssets.any { asset ->
-                asset.id == audioId && asset.letterId == letter.id && asset.sourceId.isNotBlank() && asset.rightsId.isNotBlank()
-            }
-        }
-        if (!hasMappedAudio) blockers += ReleaseBlocker.V2_MAPPED_AUDIO_ABSENT
-        blockers
+        curriculumBlockers(V2PackLoader.parse(packFile.readText()), repositoryRoot)
     } catch (_: SerializationException) {
         V2_RELEASE_BLOCKERS
     } catch (_: IllegalArgumentException) {
@@ -650,51 +635,20 @@ private fun v2CurriculumBlockers(repositoryRoot: File): List<ReleaseBlocker> {
     }
 }
 
-private val json = Json {
-    ignoreUnknownKeys = true
-    explicitNulls = true
+internal fun curriculumBlockers(pack: V2CurriculumPack, repositoryRoot: File): List<ReleaseBlocker> {
+    val blockers = mutableListOf<ReleaseBlocker>()
+    val installed = pack.units.filter { it.installState == "INSTALLED" }.map { it.number }.toSet()
+    if ((1..30).any { it !in installed }) blockers += ReleaseBlocker.V2_UNITS_NOT_INSTALLED
+    if (!V2Validator.linguisticReleaseAccepted(pack, repositoryRoot)) blockers += ReleaseBlocker.LINGUISTIC_REVIEW_ABSENT
+    if (pack.units.any { it.mappingStatus != "APPROVED" }) {
+        blockers += ReleaseBlocker.PENGUIN_MAPPING_UNAPPROVED
+    }
+    val hasMappedAudio = pack.letters.any { letter ->
+        val audioId = letter.audioAssetId
+        !audioId.isNullOrBlank() && pack.audioAssets.any { asset ->
+            asset.id == audioId && asset.letterId == letter.id && asset.sourceId.isNotBlank() && asset.rightsId.isNotBlank()
+        }
+    }
+    if (!hasMappedAudio) blockers += ReleaseBlocker.V2_MAPPED_AUDIO_ABSENT
+    return blockers
 }
-
-@Serializable
-private data class V2PackDocument(
-    val linguisticReview: V2PackReview,
-    val unitReviews: List<V2PackUnitReview> = emptyList(),
-    val letters: List<V2PackLetter> = emptyList(),
-    val audioAssets: List<V2PackAudioAsset> = emptyList(),
-    val units: List<V2PackUnit> = emptyList(),
-)
-
-@Serializable
-private data class V2PackUnitReview(
-    val unitNumber: Int = 0,
-    val status: String = "",
-    val reviewedContentDigest: String? = null,
-)
-
-@Serializable
-private data class V2PackAudioAsset(
-    val id: String,
-    val letterId: String,
-    val sourceId: String = "",
-    val rightsId: String = "",
-)
-
-@Serializable
-private data class V2PackReview(val status: String)
-
-@Serializable
-private data class V2PackLetter(val id: String = "", val audioAssetId: String? = null)
-
-@Serializable
-private data class V2PackUnit(
-    val number: Int,
-    val installState: String,
-    val mappingStatus: String,
-    val sessions: List<V2PackSession> = emptyList(),
-)
-
-@Serializable
-private data class V2PackSession(val steps: List<V2PackStep> = emptyList())
-
-@Serializable
-private data class V2PackStep(val kind: String = "", val unavailableReason: String? = null)

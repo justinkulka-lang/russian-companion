@@ -15,8 +15,8 @@ Unit 29 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Unit content-review SHA-256: 2172a1e97507bdfd0f4f7164ae3c2c6fb6784dc9b68490a4a3638acfa0fa210e
 - Mapping-package SHA-256: 54c2f00221054ced81fe17bea8b0f156073b830e54e70c47cf769e93bd56eb36
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: ab48f6f0b2a5941292a2ed7b947fa07c4c0bd39e312f3af44fce68bef4fe5bab
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: 86e9ba8a37f170dd314ec3f6bc37c8721286f3fede39073dabbb47008b6b4744
+- Repository source SHA-256: a982d0f164e5dbd9192d2faf2ddd2858fcf84aa31985a7b87aaf8dc48fbc7cf7
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2b32bd046f391f047350827faa54da5fbf4e4fda87521b56ddc83d771e7f43fa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e9c52abdc3bffaf559cc6069a979f6b8e92c22fee82ac8d2d98bec87306641dd
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -981,15 +981,15 @@ remediationStepId=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a40c2e838835d36db0d798e8f8a75ed6dd33dc3762a61928289ef7894f1d84e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 66a9ad58388a6be5ebfa630aaf587e28acecde30a00b1bbe8baade843300bc25
 
 kind=LEXICAL
 letterId=
 display=чита́вшая
 note=in the past
 objectiveId=obj-u29-active
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u29-active-1`
 
@@ -998,15 +998,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8983c10b57f32cc418dd1380c35ad889b99796fcdd2ab7d9a7c44901e3e30042
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b36c602772493fbe74db97dcf0d5ae756854ec57f44986f0062385ae7613a0c
 
 kind=LEXICAL
 letterId=
 display=чита́ющая
 note=in the present
 objectiveId=obj-u29-active
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u29-active-2`
 
@@ -1015,15 +1015,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b9a1af74d93a441f67aaefe4deef1ddc11f795ddbf8950fc408e62fc21e48eda
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a10cef0f3ab3be927b77678a3afcc48cd302c442ab6dbf74eea78b8fdac31d21
 
 kind=LEXICAL
 letterId=
 display=живу́щие
 note=living
 objectiveId=obj-u29-active
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u29-short-adjective-0`
 
@@ -1032,15 +1032,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 90bdb8fee6ab941a464a3d515069587871f44349f28d6299ccde369502174193
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 842662bca0b49ed775add138fe8a58584b9c5c0ba07e4fb32afbe24347ae25fc
 
 kind=LEXICAL
 letterId=
 display=но́вый
 note=new
 objectiveId=obj-u29-short-adjective
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u29-short-adjective-1`
 
@@ -1049,15 +1049,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ded23e0c080bce418e4e7094f2ab00f7444343d79030f915912fc22a5d86bf7a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5da847d609aa2593f216a2c25f0e83c63c85de6522f221e200443188f3596e7f
 
 kind=LEXICAL
 letterId=
 display=нов
 note=new
 objectiveId=obj-u29-short-adjective
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u29-short-adjective-2`
 
@@ -1066,15 +1066,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d657c4861c6370581de7472c0fba3cd4c535370054283a7ef747e03c264a8ab
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e72c638f04d4045369065c63d965c447a912d02e82dde8af097da5be779b4c3c
 
 kind=LEXICAL
 letterId=
 display=беж
 note=beige
 objectiveId=obj-u29-short-adjective
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u29-bookish-note-0`
 
@@ -1083,15 +1083,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e9540f5e681025f8b2864d0d63f2e4d0e8a72f910f8d3e0609dccb2ae39834ae
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 19dfe2aaac4f08ab2e25099538fcc52b61af93c7a81b76e01e58fe86809d2c8a
 
 kind=LEXICAL
 letterId=
 display=Пообедав, я пошёл гулять
 note=bookish speech
 objectiveId=obj-u29-bookish-note
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u29-bookish-note-1`
 
@@ -1100,15 +1100,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 66a24d260c880466bed6009e769baa53d99ae52ace9d61d1176d9664017eaf14
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8f8276e8b314323973d03703ea5f3b8fdf43a243b9882bb472604bf2dda7fcb2
 
 kind=LEXICAL
 letterId=
 display=Я пообедал и пошёл гулять
 note=colloquial language
 objectiveId=obj-u29-bookish-note
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u29-punctuation-0`
 
@@ -1117,15 +1117,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9bb4b7b81b68caaa07e0e5586406b71c932891b50a9d54fceac4b8262168ecb2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ef94239acfdaa05767628ca95063f0041466493c728fbfe98bb2bdff4f3f982
 
 kind=LEXICAL
 letterId=
 display=Программа, написанная в спешке, выполнила недопустимую операцию.
 note=выделяется запятыми с двух сторон
 objectiveId=obj-u29-punctuation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u29-punctuation-1`
 
@@ -1134,15 +1134,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6186e3919f9f7d259cdd0a6f7d1e437f3bbcd19c85f0b2467b154eeb5a76287e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 393f3aa2b7a8237aec3f8c14fc3a0cc80c6a060db1678b79205d68b54fb56732
 
 kind=LEXICAL
 letterId=
 display=Написанная в спешке программа выполнила недопустимую операцию.
 note=запятые не ставятся
 objectiveId=obj-u29-punctuation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u29-punctuation-2`
 
@@ -1151,15 +1151,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 834bb5eca0b2cdf7b9aca0c93693d8e505e80ab111ba28d5a13a8ef78286e1ed
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17a0a544825fbb71b221d76e86c00839b398b1f24f7be9719e12cf5879cb4683
 
 kind=LEXICAL
 letterId=
 display=личным местоимением
 note=кроме тех случаев
 objectiveId=obj-u29-punctuation
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u29-g-active-0`
 
@@ -1168,8 +1168,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c42c40b135667d4050c1ad733c6df0fc51db9737fed098baca16b53c157ada2b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6628c75b0a259c46cd1490847c6ba2c2c1cb6b31f25d346b51997c54761c739b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1180,7 +1180,7 @@ answer=in the past
 feedback=The frozen line says the form indicates actions that happened in the past. This label is written on the shown line. in the past.
 objectiveId=obj-u29-active
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line writes this label on the other line for in the present. | The frozen line writes this label as a different phrase on the past line for that read.
 testedFeature=ACTIVE_TIME
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1203,8 +1203,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8b3c3d6492f979a86d5bb3b0e2024f8c4cbd836a9945bdbc7920b2a039642cb3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 106cc05e82078b3eba45ade749652fb5a8348a9116b60f4ff537751c7ad35e85
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1215,7 +1215,7 @@ answer=new
 feedback=The frozen line says the short form appears in the stated role. This label is written beside the shown form. new.
 objectiveId=obj-u29-short-adjective
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line writes this label beside a different form for beige. | The frozen line writes this label beside a different form for khaki-colored.
 testedFeature=SHORT_FORM
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1238,8 +1238,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 21211acc1bccb4d35ba5683bdc5569857599c2a9da978f6e1f488c9961d23560
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cd827c911a4e58ad1f205fc03b6ad1b2a778185aad88f8242bc2db689165a70
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1250,7 +1250,7 @@ answer=bookish speech
 feedback=The frozen line says adverbial participles are considered a feature of bookish speech. This label is the one given to that construction. bookish speech.
 objectiveId=obj-u29-bookish-note
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line gives this label to the replacement line for colloquial language. | The frozen line writes this as the gloss, not as the speech label for Having eaten, I went for a walk.
 testedFeature=BOOKISH_SPEECH
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1273,8 +1273,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e942e4f46a0d1777964e59a1f3f9d469ac69041d2fc253765a8adbb6ba7b5769
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f2281db88d1deb786371cb942daaa683b0acd639432658a783abc21deea62ec
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1285,7 +1285,7 @@ answer=выделяется запятыми с двух сторон
 feedback=The source says a phrase after the determined word выделяется запятыми с двух сторон and gives Программа, написанная в спешке, выполнила недопустимую операцию. The keyed phrase is выделяется запятыми с двух сторон. выделяется запятыми с двух сторон.
 objectiveId=obj-u29-punctuation
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The source assigns запятые не ставятся when the phrase stands before the determined word. | The source reserves кроме тех случаев for личным местоимением and for a phrase that обозначает причину.
 testedFeature=PARTICIPLE_PUNCTUATION
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1308,8 +1308,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 32cc342af21dc08082b7dd5d15d73cb581fea3b454c0f5a79135c66bb4c7aec6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6141ede7f9e9a06b39c1a28f2dd2296debaacb0883d25ce59b5fa9e4a63b83e7
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1320,7 +1320,7 @@ answer=in the present
 feedback=The frozen line says the other form is happening now, in the present. This label is written on the shown line. in the present.
 objectiveId=obj-u29-active
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line writes this label on the other line for in the past. | The frozen line writes this word inside the gloss, not as the time label for reading.
 testedFeature=ACTIVE_TIME
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1343,8 +1343,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4aa392e3735f5784e8e87142af329185595bb7cbc905c3725c55716747c7bb87
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 06c3961530618ef836668c11a507c0b30623d6458a29edd3ecd90e2dda4837b8
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1355,7 +1355,7 @@ answer=in the present
 feedback=The frozen line says the form indicates actions that happened in the past. This label is the other time label. in the present.
 objectiveId=obj-u29-active
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line writes this label on the shown line for in the past. | The frozen line writes this phrase on the shown line, and it is not the other time label for that read.
 testedFeature=ACTIVE_TIME
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1378,8 +1378,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5780439f40e01e0acdc9007bb00d595d8e1950d978497a42024a2828afe017b3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a600f0e8d684fdfdd7b991d12ac75a65cc9b4bf007e35ef2ab56f64f9b6bf03e
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1390,7 +1390,7 @@ answer=new
 feedback=The frozen line says the short form appears in the stated role. This label is written beside the shown form. new.
 objectiveId=obj-u29-short-adjective
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line writes this label beside an invariant form for beige. | The frozen line writes this label beside an invariant form for khaki-colored.
 testedFeature=SHORT_FORM
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1413,8 +1413,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ad842189d9ab0b0e851a56ee35b5d940e5497a5fafcdbc5c7cf7e3d88fa559f9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eaac83f41bb75b568419974149eef63c6f3856387f4a189e5251448fccc2589f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1425,7 +1425,7 @@ answer=beige
 feedback=The frozen line says the short form appears in the stated role. This label is written beside the shown invariant form. beige.
 objectiveId=obj-u29-short-adjective
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line writes this label beside the other forms for new. | The frozen line writes this label beside the other invariant form for khaki-colored.
 testedFeature=SHORT_FORM
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1448,8 +1448,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d273eb76a82b57ce5f0dc0bd3b1a705421ba95b2b190f6b71e1ee1c970221326
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ce031b9401b12354d354ebc0303a66beeb0583547877d8801abe91e3abc99006
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1460,7 +1460,7 @@ answer=colloquial language
 feedback=The frozen line says adverbial participles are considered a feature of bookish speech. This label names the replacement in colloquial language. colloquial language.
 objectiveId=obj-u29-bookish-note
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line gives this label to the other construction for bookish speech. | The frozen line writes this gloss beside the other line for Having eaten, I went for a walk.
 testedFeature=BOOKISH_SPEECH
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1483,8 +1483,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 357270c16dda8019e670dbac157b59f0ff290c93527539a7fa3e5186a0b0b5c8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c44bc36b6bb2a50c2e786d76aeff3bca0d851e12888c878502858427896f73b3
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1495,7 +1495,7 @@ answer=Having eaten, I went for a walk
 feedback=The frozen line says adverbial participles are considered a feature of bookish speech. This gloss is written beside the shown line. Having eaten, I went for a walk.
 objectiveId=obj-u29-bookish-note
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen line uses this phrase for the kind of speech, not as the gloss for bookish speech. | The frozen line uses this phrase for the replacement for colloquial language.
 testedFeature=BOOKISH_SPEECH
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -1518,8 +1518,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9cb922441dc33e8b708ae82f3718567f912baa93704387f14b77218feb75d74
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d5968ba71b0fc823a5191e187e6402d3420bfcbf28dc31229b8ba56f1b3e04c4
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1530,7 +1530,7 @@ answer=запятые не ставятся
 feedback=The source says a phrase before the determined word has запятые не ставятся and gives Написанная в спешке программа выполнила недопустимую операцию. The keyed phrase is запятые не ставятся. запятые не ставятся.
 objectiveId=obj-u29-punctuation
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The source assigns выделяется запятыми с двух сторон to Программа, написанная в спешке, выполнила недопустимую операцию. | The source assigns запятая ставится только перед причастным оборотом when the sentence ends after the phrase.
 testedFeature=PARTICIPLE_PUNCTUATION
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1553,8 +1553,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc1c3f37f2e975b5fade1e177671f0c8f8722a02dfc34c4e822599d632433c80
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 500af917c907b41325a13eb93f97e7e42d45a792e321fa0bc5b988ba167fc616
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1565,7 +1565,7 @@ answer=кроме тех случаев
 feedback=The source says the determined word can be личным местоимением. The keyed phrase is кроме тех случаев. кроме тех случаев.
 objectiveId=obj-u29-punctuation
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The source states запятые не ставятся as the default before the determined word. | The source assigns выделяется запятыми с двух сторон to a phrase after the determined word.
 testedFeature=PARTICIPLE_PUNCTUATION
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1606,8 +1606,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1068b9010d58cbb7253f2a871db533cec60b1e14b504b8f3b4b03017ed26788e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21d1a5405e8597b52f216f6d9759cf4e3138f756f65a16388aff301d3897f4bd
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1639,8 +1639,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 655bd42ee95f5a0e737fe381e68ce8ab517f8d1bec297a983ecb02a11f30376c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dfbd84fbf429d7b7d9c38d3ce2aafc91c877c4084eddaa9ff1b232637eea2c69
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1672,8 +1672,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f75f57eb488217e28045304139ca07ff0e06fa8b140a5f7c7d565f2637eb90a7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8075e8805be6e54f8dd40aba2bd220234ce7f5ab884e2586ce7a7a08fb62589b
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1705,8 +1705,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89e1e5379d32f8b39e051187521f7da5b4f5a057f68c50791fd3c18e140f880c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 01fe9a76925dff078f1b2a80a22b4f51966b6da8973d10312d1cc5bc3d5b2520
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1738,8 +1738,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6d7b9dc12287606e42ed3b39cc3bd65996f6eebd6a2749b91a469205fd022779
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb706f34c7bfa9e364eaf7a00962eef8a81ab090040a61f3a938c4deb1aa3185
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1767,8 +1767,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: be40b0cec0d469969bee42c6a746d067ebd8f4491d9de482be6a6b55222b6b81
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0726c54b1e133c3a4b87f67020f62dbb271fd05a090107eeb8f054b916ef4361
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1796,8 +1796,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6817b92e6e5a0dae21245f9f54d90fc4740fcca0ddc858c3639318f785bdaca9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eefafeb1acc80ad2ccd528425bf4214cb4c54ddf399dd60a985483d27eae6131
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1825,8 +1825,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8804a376f8c037e5b1a0e19186878764272eb9789c1933b4bfdd573023e1c5b8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5100e8f3a957fc3e9a38c1dc17dded1b8c87387ca3b0d422c5f472af9289fdf5
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1854,8 +1854,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45945dda5d76957ed2677de8aa4ad669c067a4914af3f4b94b4a6ef09ffc469b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 120e625bfb405a3c36ae503d7a59ea1f8e537e6142c1ba644e9df71ee777ede0
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1883,8 +1883,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f667cc0c008a41261d2c0d50665bcd0537c4dc25d3a20fdae584a34cdb2118ae
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21e4892890d3e638f3432ae48d2a06e7d629de7c8646b2693b507cf062ab31ac
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1912,8 +1912,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e47820daede03565b2b791746f4b5da20e0a47b7b23115c75223fe4272cbac2f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 03d66a40ae3ac7254987cbeb5765e0fde2dfdd3bbca4abc8cb0218e09251a9ef
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1941,8 +1941,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 903e7f23f70b613050d134bc7109f557b12308e77770c154fec6855c672b5bef
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f8382eeee0465f62f8ba009b313801d2ce48d040a03d318410d198def53e53c2
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1970,8 +1970,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e1e67cb16b6f4831d6ab3fd8c4fdcd8cc68a297a3966060f89d5d4e5acafa0e0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ba0fc5019cab3f6d5d97a1fba0104a2ebdf352fa385a217bf45c560ec5d1c5d
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2003,8 +2003,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c311d4c36402863e227c2c158728c39fe72333e80b5e5547854b57e1309f99c1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40418e075203f04a99c77966e32cd504a9d000bf5ac0e2f07f0ec7447fa6672d
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2036,8 +2036,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4c1f4175ee623c3585a893c76d6a904456484f7f1080fba01e3cff0acbfe25b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1d2152fe8be752f015f610998a671fab7c7871686a193d363cb275edb14a445
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2069,8 +2069,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9bb40921eae785ae53391d8c275d769feacefc4fe3c5236066986445fd4c09b0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c35a492ad9d2cb0ce442735ffbb0d3b63fef07d6be69399ecb1aa44a18db0e5
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2102,8 +2102,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53470b13f29369abf8e18bc8bd8ca9c5f7a127da4094a73a66fc5506a8637978
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31fe3b1ae2ec98b1c8ca472cee31d28ad7b09888f0c61c36c047b52090d760b6
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2135,8 +2135,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f73410d5919fee1becfeb95fc34e02e678d376875f93ec2d05cadbefcc4e24d0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f3e694d3aa5c01040f0e99501f667dd4f1580a1c51b90e0f105bc0945369f51
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2168,8 +2168,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0113757c74649f3aeed39de09b4c594658207e3de34fc23cb74f8ceb87517ee7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 044d5f7ea63cd223a578fb0eddd07bb73afd3d7feecb3b6f6ed3d404db69edfb
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2201,8 +2201,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0b4d842edc4dfd80289e56cea07273b50625d69eae9544b0155a451ed39f45e4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 392cac9e46c0f75be79b356889bc373f2c7bfb5fe1bb03ced0180b5c7e4660af
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2234,8 +2234,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7fe45e0cd8402d28e707147c01fc82735e23ddac9daaf7353fbe7e3f1a4a06c7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41dae269620b43abcf6f0a86f95ef53235001ff3be0bf64a525e13b10e07f144
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2267,8 +2267,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4eb8aee17127ee58a6a44f4a315ad1fdb8bc6831ebfd284fbd89c9744c6ad9f5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 18d501505cf235ac3245498728bc17a5f19712e663659f16f15c17618da8b85d
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2296,8 +2296,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4fc73a25f6e4f5b9c0a42649219440e7b45590b3fe19c860c2f39671f033a3a8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d634fd435c2c8555aaa5d4ed4802a988c5519bf3031ebb6b38c493c2e399e7b3
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2325,8 +2325,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d71947b7428b122359e96fd14dde6801c7f817d55cb49745c27583f57212d8e8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8f066fa9a10127af9604dcc6ff97ca11b749163628c2ca2f0b67192c65ff82c3
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2354,8 +2354,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 18ebae084c382f1aee22937d9b415fe8219e36cfb4f0031d05c601b09d9aefcf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e77e228b3a86c16230bff71e4e795f3f33bfa9fa1f59be761fd47f77804c1476
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2383,8 +2383,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2b2d0ecf4f23a8161cf4271e29a6f79f1c3996e0b83ac9ef981bd95686a2e6f8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea38112320797ad90ab0f7c3c5c27c8dd96f00aa95c527618b06e5a4826508b2
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2412,8 +2412,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9aad60bec900c283828b5488bb9b88e9594e3c7f976a4a2695b2f74ad637753d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 888926332d79fb7663543fdd8520d9ce1d4654343fcecbe88c3b62ee29058e4b
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2441,8 +2441,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1ede29f73b5e1a7323e0888d54042a06fada46699b081a9bf02fe26d78ef8e31
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 37e997289d95128413d43541da3926687c4664cc1f80e420932a6b38622ebab8
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2474,8 +2474,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0708979f1dc7988559a007929ffb0ae5c5ac79e83cc0703b1f18571e2cb80ddc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b165c033103f889f0af13e80e789721a3279210e4e9316c872f236551f7bf25
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2507,8 +2507,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f6ab1796e2b45f57719e9187b56578b352ebba3c8b6fbaa5251c5d4ae4263ea1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ade7f4523c6b662580d59fc1a8122769ae445766ed3d62dc0104e200e08fe442
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2540,8 +2540,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 38ef2e1a75edfbfa197f67f5f626de512c6db493ff0b7edc96e29c3e49933b85
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77dfa86fc3194fdb9c56c9ac9ae296af15c62248eae36193a7b81f44176a07fa
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2569,8 +2569,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 35aee95cff19ba4db6c721166229d5eedf7fbf981bc1099520b6315009d07a1d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b18919852daff38ef00ba8154bbf8283beb2d1f501bf2315fefc3c52a3f9e422
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2598,8 +2598,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1746270b6f5b33cc20f41a1be5327e7906732f00c00b259e1637eb43f810e63a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b35108d3329d1a5e25380d7ac371c0728e87babc2a13bf6e7d241513b451cd19
 
 recordType=instruction
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2631,8 +2631,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e80a9ded90024b3e4203a8b73ed50f773bb2fb79f4c440c0bcc5767377973df
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 331dfe89e2e101187aef33186e241c72d907f3a6372761f4f329fb3688fe2877
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2664,8 +2664,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fddb459e2eec0bbc9bed0b8bf3c575206b0eef10ebc48a1cfc096fe10fa97813
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da330089ea1a30e9981f78f3ffc390ad81f083bd45df38c7d80d9ab41e844f27
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2697,8 +2697,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bff267c5ecc8d1053994b25d6abf95bec680b7268d3ef866a9f841bd4ef3f1d8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f98eb5c895d309e218c14ed7b4165a0ae7e847eab512f8968117c676ebdfae17
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2730,8 +2730,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ddfa90cf15576533dee54a2f8298597298f7a0a4d08b08e9eb9b670f99e42f66
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fedf3429851563e6ef0ac9e2ff3545fd35fe371e1f5c068fcbdfab0cc1ef5ff2
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2763,8 +2763,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: adf92bacaca6322721fedb115cdab6f8a50a33e409ab4d818bb3b0a1d453e8de
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4add43c2f2ac42126f852cc629c6aa2ac6bc3c2d728eed1f4cf7b904fd269a7
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2796,8 +2796,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 94007e321889e4b57fe411393fec16e260cdecf52608db9d072bc54025906b3c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 57ad4cf880d32a8a39d2356c6e8f84f7948de69353a871e4a3594cd3cd3b43e2
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2829,8 +2829,8 @@ reviewedDigest=
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 00f0f4fe0764ed6a854b1f8b156fe1e220b8d9646021ba1aed3554649d1facc1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0de19c22fc44a43116562c6fa7da2db30c3dfc55603c8510c62215671e1cf05a
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
@@ -2862,8 +2862,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55bed033788c782c17e56af1b18998e59040cf7cf611b44ad5a3c073b8a836bd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c19b56b8e6aea65bbab3cf73431476d9b238c476f1036a149ec41eaffd0f0d77
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2891,8 +2891,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a743cf7f92e0a4793a5a48582d2c2e7db7db01f3e237fcd586df3e15b14904a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb575d7d1213384d573a68050bd948fea8a6e1049c1194e0e1a31d7e29435a31
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2920,8 +2920,8 @@ reviewedDigest=
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 681087bccb3cd33520dcbc0c7723efa1210230a9c9a0b209ba9722dd49a92229
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f576668627255d83d081cdbb215c187588204b75623758529bf5d5cfe5e71c33
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
@@ -2933,8 +2933,8 @@ text=Admitted lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc436f25b52139a67039f7152f61abfee2d306c7dbc2c687c7dd8840b369bc7b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7aeeba9d2657ac9f0063227a5ff41cb6ba00ab32183141da282f44de4ca7e393
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label on the other line for in the present.
@@ -2946,8 +2946,8 @@ text=The frozen line writes this label on the other line for in the present.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 93291cfa5bcdc7af977b40c5a83695e884e94d9a3533463303d1b43b87e4851c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ea4a6e1b6de9c6512114e8900088800e64e8551023ca55514455bd8b831b22c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label as a different phrase on the past line for that read.
@@ -2959,8 +2959,8 @@ text=The frozen line writes this label as a different phrase on the past line fo
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 895b33fc7a5f5011abfd055333dff1889b3c84753d07fc70c94751a75985ff65
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d55c5a1fd780a3a33ebb3eead3c1e3ecf61e49cbc8e0da21d7ee64de6def9bf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with the other form (in the present).
@@ -2972,8 +2972,8 @@ text=This label is paired with the other form (in the present).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0b1e2cbe02a50bb5a1020a62f4258a21037eda486940b9e8dabe64328a6b1435
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2ca42b2a0de635d4fa9debc3347e37b3c49c95dd3cc788e35953140f09d551e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This phrase is not the time label asked for here (that read).
@@ -2985,8 +2985,8 @@ text=This phrase is not the time label asked for here (that read).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f19ae1f46190faa2e7a78abf7ff08a71e74d389f201858b29ab622cd3ac3f853
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2119c9fd74245c1caeddd82fdb4b373389e2b2d71366ed716f05c4b11d22996c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line says the form indicates actions that happened in the past. This label is written on the shown line.
@@ -2998,8 +2998,8 @@ text=The frozen line says the form indicates actions that happened in the past. 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4019e241c212c83d0d21afce6221c7614cf67bb806b1dc0e41d8f7fcb2d04136
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 82ce362d8f3c2a5ca9b5225890485cdb337c543627181f899d21418b0128c521
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is written on the line with the shown form?
@@ -3011,8 +3011,8 @@ text=Which admitted English label is written on the line with the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7484b5e29da33f49294ae9e8327b591376053aaec931e10027085ba59d791a1d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6a111f6262819443be0ccd672d4056df90195088804c9a6d37b20094aa27d0aa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
@@ -3024,8 +3024,8 @@ text=Admitted instruction
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4bf0202761efe2fba15194c41acba39cec2e9ed4bdede92ef0e7b9d872fdcd5c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e889892c9e17ac30b5a0bf4243aa725b6b37e9b080b4bc13dfb7d42b09844c13
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label on the other line for in the past.
@@ -3037,8 +3037,8 @@ text=The frozen line writes this label on the other line for in the past.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: de57644c4994e78e173aadd76b42df61758e192a216158996ee41bb9884b70ba
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97110b777ce13651983d2eb49d2d148a38875b6ded1b3e766691e103325de148
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this word inside the gloss, not as the time label for reading.
@@ -3050,8 +3050,8 @@ text=The frozen line writes this word inside the gloss, not as the time label fo
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 57ce312659e2ac8a39693f8dd6fa29874bbedd1683270df101b009b303d492c0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9684370edb86e6a765c25cf6d13af50fd201da95cb417ea41c9c8979f9786582
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with the other form (in the past).
@@ -3063,8 +3063,8 @@ text=This label is paired with the other form (in the past).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a6fae41a59794a895c6a1c26ed45a07e8a51c9a5b605dc71760732b09c7489b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f53e79c51fe1bff5a5d0f008221a44423d01b513273f5da79568f79df90a3f0b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This word is not the time label (reading).
@@ -3076,8 +3076,8 @@ text=This word is not the time label (reading).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 992b1fa111d9dfa21c6186da0558e21512601e0e06714a74d03041ef66665e4c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6721ae1dc9091226ec09f2411022d6a8d40b4936797574033bcf0200d3a0995
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line says the other form is happening now, in the present. This label is written on the shown line.
@@ -3089,8 +3089,8 @@ text=The frozen line says the other form is happening now, in the present. This 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5428200b3c72e562ff2623690f4871e335fb6d5ffcbd330b89d7860aeb7aceb1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a6b4b6ceca4a2bdd03e01bd1c03c44e525ae787fae92275f65e425654cb02a2b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is written on the line with this shown form?
@@ -3102,8 +3102,8 @@ text=Which admitted English label is written on the line with this shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e59cf0fe2249d9e4de2bb3827bc3c865581eea17b27757818d89ce382e99c66f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: afcca06cf053dec3709f49719acfed9a48b0a51c6d57086395760803655f6992
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label on the shown line for in the past.
@@ -3115,8 +3115,8 @@ text=The frozen line writes this label on the shown line for in the past.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a150e4fe2dda1b858e02b0d91e06c81e45a64da243ed7c8983686e16b53d7c2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ecdfbbda39f283c8cf33898272492a608c31fc75adc1b91b5cf487ab177a1e61
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this phrase on the shown line, and it is not the other time label for that read.
@@ -3128,8 +3128,8 @@ text=The frozen line writes this phrase on the shown line, and it is not the oth
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0f30f1a95bbc5adcd9afb73f16d6c3790e23182ae3ccca167bcc3ddd47c973a6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8876f07979591b501572e0181f3a24b16d7dc188087d061eda37c6803ecdc8b0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is the one on the shown line (in the past).
@@ -3141,8 +3141,8 @@ text=This label is the one on the shown line (in the past).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8086e629ac93c604ffdc2a3e8208a89f66781e13b287f0acd911f5d8470e3ed7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b9025c9a6189368b79040d5c6a50f8df26cb4ad02a30b38c6f8fe1d44684e3e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This phrase stays on the shown line (that read).
@@ -3154,8 +3154,8 @@ text=This phrase stays on the shown line (that read).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b80e0f81cca36d0055920884ed0caf34289021be24f6c206bf18df76b1be63b7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 09345f20f51834decc0e8a0f661049916e9b4666b5069a1f5dc1ef82a63fd633
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line says the form indicates actions that happened in the past. This label is the other time label.
@@ -3167,8 +3167,8 @@ text=The frozen line says the form indicates actions that happened in the past. 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f8b955c30171e7c1bd8575871439d79fdac468d8db9335b5ecf461ebade8a9b5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 410df67f10744ea88a247f207e27796a9261ca4abcdd4c38afa38b37f12e7920
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English gloss names the other time, not the one on the shown line?
@@ -3180,8 +3180,8 @@ text=Which admitted English gloss names the other time, not the one on the shown
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: abe3ec9048576f86358c3def822e81faacc17a4bf616c0f36a3449cf2a113cea
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 63ba2e3bfdf55f5c770e81b03f8255926c64dc23c788f3efa4cfe438000a9a47
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside a different form for beige.
@@ -3193,8 +3193,8 @@ text=The frozen line writes this label beside a different form for beige.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a618013961ac7161bd72df542a193d5c6511b75b3dd2ed33d5104fb6e800dedb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 773b90770b848164a9e3b0e9814e26854a64752d594ce9119ae0a68a1e24d987
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside a different form for khaki-colored.
@@ -3206,8 +3206,8 @@ text=The frozen line writes this label beside a different form for khaki-colored
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b1740b032e129a4310aae7d95dfe009a6764d6d9c0e5539d4593152ce5bf0c71
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a69935e3ae1f1c5f7c0f33819e7eb7400c2eb02f2be2e12618f74a0eb874f115
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with an invariant form (beige).
@@ -3219,8 +3219,8 @@ text=This label is paired with an invariant form (beige).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5c7c495ea91fe18b3a9f27e1e6e38ea386adbd1528dc701700c3be150098c458
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6535940c51bc8bbb5f1bdfc03ba5eb335e6222f688fd53d245144047512a78ef
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with the other invariant form (khaki-colored).
@@ -3232,8 +3232,8 @@ text=This label is paired with the other invariant form (khaki-colored).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 960a482e2b1fa515d52f1c25a14b12a7daa18b5dbc044960080d333cf29e2566
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f826b001d4eaf8572c1adb91770ba8e952e31ed2981b8c0babc98935eab1f6cc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line says the short form appears in the stated role. This label is written beside the shown form.
@@ -3245,8 +3245,8 @@ text=The frozen line says the short form appears in the stated role. This label 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5f0675c9f8b2142fba02759c21c886762a9b94d985dccf2ac799a0396dba9fbf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9276f16fd2dbff130c9500b73fef50ec258f08213858a0cb5f06dd38f8e6cc0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is written beside the shown form?
@@ -3258,8 +3258,8 @@ text=Which admitted English label is written beside the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8b7599a0ea08b287ad988ed176f1f42425cd1320cf5af04371e1551daceb7b8d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d77bbf9e51dad689c5b9cc501c3814a350b20165d17680d6b50e3d5bd4d02ad1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside an invariant form for beige.
@@ -3271,8 +3271,8 @@ text=The frozen line writes this label beside an invariant form for beige.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6725565057b662cf6ed5803a7192c071b7d4c317b69f8e90eb3c03f8c953b54f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0daa6cd6af3ff21b7aa5f13c09369db96c9dd28dba0ef67f657b54b3a16cf216
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside an invariant form for khaki-colored.
@@ -3284,8 +3284,8 @@ text=The frozen line writes this label beside an invariant form for khaki-colore
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 98c0f5afc9a9d76b0d038e13b39dfa438b96938a9d74c70b3eedfc2550ff9501
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4766d53ff04b26f3cb5baf31fbfcd4c9ed5405e91f2685733c2a09e8aa8a517
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is not the gloss of the shown form (beige).
@@ -3297,8 +3297,8 @@ text=This label is not the gloss of the shown form (beige).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67ffe80eac07c7aa49b247e19c590de1a697ec50ecaa4b05230d4018c159f134
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f5342b74ab8081ef84ac7cb3215966322da71b65b1958a45edb35555fb32f97c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with a different form (khaki-colored).
@@ -3310,8 +3310,8 @@ text=This label is paired with a different form (khaki-colored).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f21d7c254132c67f6820065674fb7fb24b0de7d42fa7ca2777bbea2c7c0240a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8967ec352d1867236e2b13bde7eabe0fdde8ab6ae78afda4d3beb0aa451ceafc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is written beside this shown form?
@@ -3323,8 +3323,8 @@ text=Which admitted English label is written beside this shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c0ea823fd525e049271f17725c1fff9fb9de2bd29d872161de2381793cedc5a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1aa0e7a428f44cdb9b82e0e1d86d9741316a3bec9ce260824f6dfce6efa57ada
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside the other forms for new.
@@ -3336,8 +3336,8 @@ text=The frozen line writes this label beside the other forms for new.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 486be728e00ff9a0b17b74bd71b90cfd5ee13c258b27d8d0d0164766e5d0731b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 46fccb5a49469a9f51d7cc0dd80fd4abce02ac4ec1fcdb7d08928f878d94ee39
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this label beside the other invariant form for khaki-colored.
@@ -3349,8 +3349,8 @@ text=The frozen line writes this label beside the other invariant form for khaki
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 274e9eecc622ecdc2b7dca92eee412658e8cd6fecb9e36d53d5ecfe87a1f312c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd80c7abb7001f628f0d88544b800f9c8336c5d4b93077bfe9a92f5abfbf9ba9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with a different form (new).
@@ -3362,8 +3362,8 @@ text=This label is paired with a different form (new).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5b3d08d5c3d31c10ef27a75475f140923e1a0d569e5255be1efcef807e62776
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f17bc7e08579de198be82e2ff1eea01e946a2c0621fbb74aace26ec7454e0576
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line says the short form appears in the stated role. This label is written beside the shown invariant form.
@@ -3375,8 +3375,8 @@ text=The frozen line says the short form appears in the stated role. This label 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 86e7b381ebe120243b11956ad877f15dcbe8a14953750998f2ab0d5b6e775df4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8e247b2026785620602141ed82ff5a19dfddf39bee5471fe54c48b72c6441b42
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is written beside the invariant form?
@@ -3388,8 +3388,8 @@ text=Which admitted English label is written beside the invariant form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f1af1863f6ddca8fe37086846adf4a5358bc28ed1be5d5a3257a2024b3aae12b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a315ce787b01d7f42969b97ab11ab5cb754353714c9077e4406d2ae62723d31
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line gives this label to the replacement line for colloquial language.
@@ -3401,8 +3401,8 @@ text=The frozen line gives this label to the replacement line for colloquial lan
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a22c6efb83f5d17d4ea9f4b9a2c11f462a2140325623270dd49b5a81e5272ffa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5aac25b756c48a040d294f58503c7994d3e20b029f40c0a44805c8a708d064f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this as the gloss, not as the speech label for Having eaten, I went for a walk.
@@ -3414,8 +3414,8 @@ text=The frozen line writes this as the gloss, not as the speech label for Havin
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8d086e201452bbc4f9afa1314f6b3eb58ce240a417df0aa68c6fa927f441e6cc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a4f35ddf627ee913f7c21ef3df06dfb11f57aa1f7ecede8cb74ec8ef345789e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with the other line (colloquial language).
@@ -3427,8 +3427,8 @@ text=This label is paired with the other line (colloquial language).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5ce07edd41bb8555c96122340f1f2955720e7a98beeafb61717bbf58d4034d1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5846d7443171d44d5b7a5ad2d48cb0e23d7cd55025a4dd1afeb75443c2ed20b7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This gloss is not the speech label (Having eaten, I went for a walk).
@@ -3440,8 +3440,8 @@ text=This gloss is not the speech label (Having eaten, I went for a walk).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa5c510b3e557c3601c5ff0ca25ddaf1a743c57c50a92d56e6efb211c1aca1cc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 98c7fa73b5e0de2b05f7bfeb49d9b4821e0cb68c484b5808e8e8ca739f80373d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line says adverbial participles are considered a feature of bookish speech. This label is the one given to that construction.
@@ -3453,8 +3453,8 @@ text=The frozen line says adverbial participles are considered a feature of book
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 792d3a31b48b081887649bbe8afc719db886b3cb9c110b9ea6c35c37793ecb5d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7cf8178409f0859cec70c7f4c435f2948af3ad9fd0c28fea71a622b5283bab4d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label names the kind of speech the source gives the shown line?
@@ -3466,8 +3466,8 @@ text=Which admitted English label names the kind of speech the source gives the 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee1a800e207a3df56bccfc5bf4ab3f27d32dbc97737887abc1aec50142eb47d4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 317049c491f623c22e7704934efd9c2c6003cdbe388c372c8eb55554837dfab0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line gives this label to the other construction for bookish speech.
@@ -3479,8 +3479,8 @@ text=The frozen line gives this label to the other construction for bookish spee
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a83bcb359cf962f1cfd1f39264f703636e1314c1c547a82d5a9c232c0ea57fbb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5a9992d3e0216a87252c29fb8269b222bbe5d745313817bab558b32abd6f07b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line writes this gloss beside the other line for Having eaten, I went for a walk.
@@ -3492,8 +3492,8 @@ text=The frozen line writes this gloss beside the other line for Having eaten, I
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d8f682620f8502646a6ecff08a5f82eb31b8891dc44a848225b9010d9053a29e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 63767c0c832eabc95efe6566fe6cd5689138211969f925ae73923f6b3788438c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This label is paired with the other line (bookish speech).
@@ -3505,8 +3505,8 @@ text=This label is paired with the other line (bookish speech).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 703ba64b188ae435dabebe48232d6710325b14fa08462241fa68a78a76394d1f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7bb50d3218f66c167fd517ebf9271165a5ac6e1493f9b9cf4fc7c4881111663
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This gloss is paired with the other line (Having eaten, I went for a walk).
@@ -3518,8 +3518,8 @@ text=This gloss is paired with the other line (Having eaten, I went for a walk).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d31ea2e18a38ee1475c68fe0cc9576dcece3a302d87537504f82ad0a6cf1271d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b622fbde43dfce2780763a04955dfd9766cd6cceb0f8a756baad9e06db29325
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line says adverbial participles are considered a feature of bookish speech. This label names the replacement in colloquial language.
@@ -3531,8 +3531,8 @@ text=The frozen line says adverbial participles are considered a feature of book
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2026b863d138e5ea4e883cc24ba387b6688bae904544f2c69d9358a950d92a8e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81ce60c5a692dbf72aec91217b629618574bb15938faa830c2a562430009c385
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label names the replacement named for the shown line?
@@ -3544,8 +3544,8 @@ text=Which admitted English label names the replacement named for the shown line
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e4019329b25be1ec2099f2d25a30553dc2a6aba9894b2910e209b42e6554dfe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 353aef6d014bd7958bf20a365c5531cab36b97287958ac8cd0298e196cc704b4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line uses this phrase for the kind of speech, not as the gloss for bookish speech.
@@ -3557,8 +3557,8 @@ text=The frozen line uses this phrase for the kind of speech, not as the gloss f
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b58bfa63e06e6838d2b322e8c9eb8db35bacd78d2f4431774760c27004316bd0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2d849b014b4db2fd67a6e941bc2015d3d5122b48c242a2762bd730769334dce5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line uses this phrase for the replacement for colloquial language.
@@ -3570,8 +3570,8 @@ text=The frozen line uses this phrase for the replacement for colloquial languag
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 88145fe8f2641f10fd7e21f4632b2c0be9ff2f53ed22a455afdad4428be9db3e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b79fff182c26ea3ed6ce86506bccce6cbd7e40fcdfdae14a44e800a77316c96
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This phrase is the speech label (bookish speech).
@@ -3583,8 +3583,8 @@ text=This phrase is the speech label (bookish speech).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c736c92c1dbf9f75bc6ad31dc03d7b2f7894596128aae8e4cdd49b43bea8dd4f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 543504ff67f385eea599a3ad480e30e41570a897df71094c21e0d527d57ea7d9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This phrase is the other label (colloquial language).
@@ -3596,8 +3596,8 @@ text=This phrase is the other label (colloquial language).
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5acbeb8129ad9519a2b01d8ff160b86e49edf559d31be0812cec8c5f9ce5aa15
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be59d6903d69c6dec9fadc62da4981e66bd7962f62a3fff601e66f0a9ffaa024
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen line says adverbial participles are considered a feature of bookish speech. This gloss is written beside the shown line.
@@ -3609,8 +3609,8 @@ text=The frozen line says adverbial participles are considered a feature of book
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 805fb7b972951714c1b9a625fc0c347b5f1fe7b38200198a2706312b8e8982f6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42e89ca1f240a378bd5ea4369e133fd45b9821888e024e32b3b0ac8c9ed0cf9d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English gloss is written beside the shown line?
@@ -3622,8 +3622,8 @@ text=Which admitted English gloss is written beside the shown line?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65ef518f0ddfe2f2b8bc7070ca7a2bc424af4d7b98b28e9894a15f295235775f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5864789122ba92b42b24926c3dfcc607d59e073f54880e718b605bfbffb12691
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source assigns запятые не ставятся when the phrase stands before the determined word.
@@ -3635,8 +3635,8 @@ text=The source assigns запятые не ставятся when the phrase sta
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6d052b4108c342959f91ad42b932f1c48d147c1f910b4475b8e0d9157d526119
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f95cd353534b700f5c7dd0fe19c4bb0f3857e851661c0f0be8cd58d421ce4a61
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source reserves кроме тех случаев for личным местоимением and for a phrase that обозначает причину.
@@ -3648,8 +3648,8 @@ text=The source reserves кроме тех случаев for личным ме�
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45e5bc9f0be39c0a7172dd0e9f66caea00d5992a6ea0821d0c038f0865efe489
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4b58c8412c9a0552fd8dc41920438ac5c92cb851de92c1a50abbcaed9674fc0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=запятые не ставятся does not classify the shown form.
@@ -3661,8 +3661,8 @@ text=запятые не ставятся does not classify the shown form.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6448dc8b6bad0de194f2f854463b2dac6f0d73b30ca073ce2c07ae7fbf76084e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6dfc730584b509534288cb91710768f94ea1c7ebc200d227868ac82d56c8de84
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=кроме тех случаев does not classify the shown form.
@@ -3674,8 +3674,8 @@ text=кроме тех случаев does not classify the shown form.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 392d886ee4fb610ab1dd3922acfd13ab19913f7d9290886c03dc94b8a7f085ab
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be1270a00dca708f18c6eb7e398e4eed151f598886044bd7910ff77992505aeb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source says a phrase after the determined word выделяется запятыми с двух сторон and gives Программа, написанная в спешке, выполнила недопустимую операцию. The keyed phrase is выделяется запятыми с двух сторон.
@@ -3687,8 +3687,8 @@ text=The source says a phrase after the determined word выделяется з�
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: da64dfe4f0a289b943278765d36534f0558b199640023cfd0f1749048de2de57
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1daf509206e7ccbe5c76fa16df9ebb97528b60a1121b64252412bb0a51bb39b1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted phrase classifies the shown form?
@@ -3700,8 +3700,8 @@ text=Which admitted phrase classifies the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 37852cb5b270d74fde28855d67471126e201ab490654c31fd4f7b1119266f563
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 18ef91c283d8e4ef45d06a3f2631409cda42904da71e23665d0c9d3b1f568dd4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source assigns выделяется запятыми с двух сторон to Программа, написанная в спешке, выполнила недопустимую операцию.
@@ -3713,8 +3713,8 @@ text=The source assigns выделяется запятыми с двух сто
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 809f1ab2b9e91643df14a777d9e24838596583b42396967a9d1d58abad39dc86
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 05fdc44e9513341357e74a027c6a5a54956dc9ae61673bf968c48a02881a03b4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source assigns запятая ставится только перед причастным оборотом when the sentence ends after the phrase.
@@ -3726,8 +3726,8 @@ text=The source assigns запятая ставится только перед 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 68a45765e1c9a7379c4c8f023970897668a7893298901855b4bee1f088458856
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e2bfef40d753ddc0d5833c41e5e1d1ef805fb740da0bfea92d6ccccbfa06927a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=выделяется запятыми с двух сторон does not classify the shown form.
@@ -3739,8 +3739,8 @@ text=выделяется запятыми с двух сторон does not cla
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ffff209bfba6a5a422c60915b9b32b409ff28623c10de68f92fef615c1acae8d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c09d371e23b20c9c19058a167dfbebf520cafbcd210ab2cc1f3e31eb7b19266c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=запятая ставится только перед причастным оборотом does not classify the shown form.
@@ -3752,8 +3752,8 @@ text=запятая ставится только перед причастны�
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d641ebfc46d7eff1f2234476c45539f1eff7701390bbb0d17282e04f6f6905ff
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81028e684fe46ea01a8a93fdccd6e5c0fce6dd90be57c4432ff38c4c783671a0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source says a phrase before the determined word has запятые не ставятся and gives Написанная в спешке программа выполнила недопустимую операцию. The keyed phrase is запятые не ставятся.
@@ -3765,8 +3765,8 @@ text=The source says a phrase before the determined word has запятые не
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc4f3ae845a040260d8813cb69703725aa86e110a5f6705fdcb8a8b4a1889169
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4758ed9996212de6814fbedc2b555f13c699d7dbdf8c25755fbfbf6335ad4360
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source states запятые не ставятся as the default before the determined word.
@@ -3778,8 +3778,8 @@ text=The source states запятые не ставятся as the default befor
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7c3a2adabc421e25fa18c5bb881c683ad115a2bd79dbf646fc0795b9b95d3567
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0334b83c8862ceee3e07a08a7c334404af30f7f15a2ab3146e65db1c3954c4fe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source assigns выделяется запятыми с двух сторон to a phrase after the determined word.
@@ -3791,8 +3791,8 @@ text=The source assigns выделяется запятыми с двух сто
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 583a254138ca4d22685921ed4fad35de9db46ddd0229761211a3b1e5ad1cf26c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9107cfc0719377b33acd6c577154a920712a1ec035b0c8ce7b4fdb9226ba1a4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source says the determined word can be личным местоимением. The keyed phrase is кроме тех случаев.
@@ -3804,8 +3804,8 @@ text=The source says the determined word can be личным местоимен�
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96021c4fa2e1b0176170b9feedf9797fb2ebf5afc7fa7ed6cd7f649142bf4f2a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc67fd87b0298a9bca3e83a29a6728d96f60bdc42e55cd3172849da20170f8a7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted active and short-form lines
@@ -3817,8 +3817,8 @@ text=Admitted active and short-form lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 11f1de03615c97df841ad8cb71c5113b34c64b9f5d7b959129a4eae24c899e90
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d8c63187a516c13a81e727687a71478ece6ea7d9a72d0d67c7902fe5af284e1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 29 uses admitted active lines, the frozen participial-phrase punctuation rule, the short-form contrast, and the bookish-speech note for adverbial forms. This note is not a claim about every bookish text. Qualified review is pending.
@@ -3830,8 +3830,8 @@ text=Proposed Unit 29 uses admitted active lines, the frozen participial-phrase 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 32bf11fca4c4d666b18c2e87b5dca5bf672800dab4749b70cd45c836704b8f32
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f640459313c0270ffdf5d170eab4d2988e031297ed2f7fec03f058fb95f547f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 29 in the copy you own. The app records do not replace that lesson.
@@ -3843,8 +3843,8 @@ text=Open Lesson 29 in the copy you own. The app records do not replace that les
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 19b05c08dd9eb78d8611ef5f439e6a4977ac2cf50f3a73f48e61978a06324357
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c3d8ac7bc944356782606611d857199ab566a092385887fa516e4554ff0dc81
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Read the admitted examples on this card.
@@ -3856,8 +3856,8 @@ text=Read the admitted examples on this card.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0ab10dde8fbf82b6290bd33a14cc7cd2ce093fdc353e7d24fe6aa1f27264c0cf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e55a6b4a0036ed82b6bd125ca89d5b094881d7e46870fc41ed842a19ea0efb7b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
@@ -3869,8 +3869,8 @@ text=Guided practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 056a51dcff869e0e2f1cfc4ff14f97ab78f1f8afb67eaf6180a6b1d22906bfff
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2bab4b33e105b08d20a3f06cfcea8cb7d005fa9b8ef36ddba9609ea3846be4c7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
@@ -3882,8 +3882,8 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 448cecd899d8b535e470b4e4e8e568dd6b99901d1658b718c9063c8ea12f2381
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: edd167fba37dbcb1e9c2b866314a06f4b26d3dd6c45946481363ea83ebe03a4e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
@@ -3895,8 +3895,8 @@ text=Remediation
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fd3679fcd4c26c7e885cf76be3546d5773a53d711b1f2c8382cf70a4a7f8d252
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 79f34c4b93b51161c93c6971ece86e212c8ef806689f2f0869111d31d8fd666e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
@@ -3908,8 +3908,8 @@ text=Independent checks
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e32bce834a956c402319dfacf216adcdfdd39b018cddbd30c6d4d82d20795b87
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9670c866b4c8307c7f5d372303c4243a012b3ac1ab4d92f19f6bacec086bb615
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
@@ -3921,8 +3921,8 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a8835a63cfcdc9fe84ad5afbb2f0b2b614186acf73eced99b2be11f95b8d983d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7fb46643eda6ac27075751f6a800f9cd94cfaa0e222d5317a5aa637e25f96e7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 29 in your copy
@@ -3934,8 +3934,8 @@ text=Work Lesson 29 in your copy
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f85c6b11d34436ac6d800a309461367ed780e98178456fec9434a4f344d43352
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2652337f74022bff7be0e88778422f48136353a12140ab1b777ecbc9a2187e0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 29 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
@@ -3947,8 +3947,8 @@ text=Do Lesson 29 in the copy you own. Use that book's explanations and practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 92b3f7c8fb251a42a29836c52431810fc48bf307874b6a4f334f1713efec7a12
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 63f0877c7f8b5d8e465c913b7da69a4d6687263d8f387dd5be1eda46b0336768
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 29 in your copy and complete its lesson work.
@@ -3960,8 +3960,8 @@ text=Open Lesson 29 in your copy and complete its lesson work.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a8c03448165fcde1179c1b92886e493177ba109b59d7422b6eade6b0296724d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 98d5d4782839b72fde2a2f8bfa25c11ca06ecd5be01185222e9c93df30281072
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 29 book work
@@ -3973,8 +3973,8 @@ text=Record Lesson 29 book work
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6943d82375f860b9ccdcf8dd023544e50d3949734568141eda9a5b2bc7b4c10f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e129c2ca281449d938055f74b82c374702e48ab76f97daee4a69422e933e6b3a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 29 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
@@ -3986,8 +3986,8 @@ text=When you have done Lesson 29 in your copy, self-attest here. Attestation re
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 12b6436e08e56c6eeaf0a6cc5369caf66380841541bae8721f35e8aa38091024
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 185471c9b5932f3731f3e2e6e6e0713da64b682b7ae95a558042b82aced5e5fe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 29 work in your copy.
@@ -3999,8 +3999,8 @@ text=Self-attest only after the Lesson 29 work in your copy.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 897fbd666140143dade1f4ecdd98b6d8e4c7ffff4d7300bcd819b4594c0e16b0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 546053a78d64ec0f0b571525fd633c0845fd4449534abb062df8860c282fa066
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=A general bookish-register claim stays in the copy you own
@@ -4012,8 +4012,8 @@ text=A general bookish-register claim stays in the copy you own
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d207b3ad5a6e772b8b80db0e6aa90272663ee0a13ccd93b090c1a295d399808c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5ba8a76ee33959518fdbea7ad8b87ecebf79badc6e166943baa94f9c95a02a5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=A general bookish-register claim stays in the copy you own. The adverbial note is only about adverbial forms.
@@ -4025,8 +4025,8 @@ text=A general bookish-register claim stays in the copy you own. The adverbial n
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca5129d60484ddb0dd25ba76f0983118276e856d18bf01ba8c55d45b539b0b10
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 300a14df3193eddd3775f546c62ad9173c9e9d7c884c741e821c1e10a41f91d0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The bookish reading stays in the copy you own
@@ -4038,8 +4038,8 @@ text=The bookish reading stays in the copy you own
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a27c28d2b0eceaaa27a003c2598038490f3b19463063d168b240671e903482ff
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: adbded4f55972cf601c100c359e41f9eb3d7f2807ea58efd908bdd0c14aa6e5b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The bookish reading stays in the copy you own. The admitted note is not that reading.
@@ -4051,8 +4051,8 @@ text=The bookish reading stays in the copy you own. The admitted note is not tha
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: SOURCE_CAPABILITY
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac9d2a40b0f68d7de0c719218d1ac5380349b761b8ae549bf3e4266a2a7c3a4c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 47ecb34eb3a2c54caac50261ac9803cc9d1e5ca492dba11f5252bbf42588e289
 
 sourceId=src-wikipedia-russian-grammar-1369617627
 sourceRevision=1369617627
@@ -4072,8 +4072,8 @@ Compare:
 - Source: src-ruwiki-prichastie-153078996
 - Rights: rights-ruwiki-prichastie-153078996
 - Classification: SOURCE_CAPABILITY
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 41f662d2f9fda1f2b5a7aa6733a19ecedaa95dc18c8c12f32e39d42939e7bfcb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48044be38ec229ea1c1031089d1394385f5f99ba4de68bd904477c9a90830857
 
 sourceId=src-ruwiki-prichastie-153078996
 sourceRevision=153078996
@@ -4093,8 +4093,8 @@ exactSpan=В русском языке причастный оборот час�
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: SOURCE_CAPABILITY
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1d1e00b266101834562ff5e7e264070ba91007e26b7d3f887cef7c605a311817
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: df6ca95b93db118e63700200605a48fa70a402437f0c316ba66dbc1803492c53
 
 sourceId=src-wikipedia-russian-grammar-1369617627
 sourceRevision=1369617627

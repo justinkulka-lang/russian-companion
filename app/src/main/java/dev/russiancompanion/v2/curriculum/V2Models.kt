@@ -2,13 +2,6 @@ package dev.russiancompanion.v2.curriculum
 
 import kotlinx.serialization.Serializable
 
-internal val CLOSED_REVIEW_STATES = setOf(
-    "PENDING_QUALIFIED_REVIEW",
-    "APPROVED",
-    "REJECTED",
-    "NOT_REQUIRED",
-)
-
 internal val CLOSED_INSTALL_STATES = setOf(
     "DEVELOPMENT",
     "INSTALLED",
@@ -109,6 +102,44 @@ internal data class V2CurriculumPack(
 )
 
 @Serializable
+internal data class V2FinalAuditIdentity(
+    val artifactIdentity: String = "",
+    val artifactDigest: String = "",
+    val auditedContentDigest: String = "",
+    val disposition: String = "",
+    val modelVersion: String = "",
+    val date: String = "",
+)
+
+@Serializable
+internal data class V2QuotedSourceEvidence(
+    val sourceIdentity: String = "",
+    val retainedByteStatus: String = "",
+    val retainedByteIdentity: String = "",
+    val exactSpanOrAssetHash: String = "",
+    val licenseOrRights: String = "",
+    val transformation: String = "",
+    val attribution: String = "",
+    val claimBinding: String = "",
+)
+
+@Serializable
+internal data class V2OriginalSynthesisEvidence(
+    val bibliography: String = "",
+    val sourceDateOrVersion: String = "",
+    val authorshipDeclaration: String = "",
+    val objectiveOrClaimBinding: String = "",
+    val finalAudit: V2FinalAuditIdentity = V2FinalAuditIdentity(),
+)
+
+@Serializable
+internal data class V2PersistedEvidence(
+    val evidenceClass: String = "",
+    val quotedSource: V2QuotedSourceEvidence? = null,
+    val originalSynthesis: V2OriginalSynthesisEvidence? = null,
+)
+
+@Serializable
 internal data class V2ReviewRecord(
     val id: String,
     val status: String,
@@ -118,6 +149,9 @@ internal data class V2ReviewRecord(
     val reviewedContentDigest: String? = null,
     val curriculumMappingId: String? = null,
     val notes: String? = null,
+    val reviewChainStages: List<String> = emptyList(),
+    val evidence: V2PersistedEvidence? = null,
+    val finalAudit: V2FinalAuditIdentity? = null,
 )
 
 @Serializable
@@ -131,6 +165,9 @@ internal data class V2UnitReviewRecord(
     val reviewedContentDigest: String? = null,
     val curriculumMappingId: String? = null,
     val notes: String? = null,
+    val reviewChainStages: List<String> = emptyList(),
+    val evidence: V2PersistedEvidence? = null,
+    val finalAudit: V2FinalAuditIdentity? = null,
 )
 
 @Serializable
@@ -157,7 +194,7 @@ internal data class V2AudioAsset(
     val rightsId: String,
     val unitNumber: Int,
     val letterId: String,
-    val intakeReviewStatus: String = "PENDING_QUALIFIED_REVIEW",
+    val intakeReviewStatus: String = IMPLEMENTED_PENDING_FINAL_AUDIT,
 )
 
 @Serializable
@@ -167,7 +204,7 @@ internal data class V2HandwritingAsset(
     val rightsId: String,
     val unitNumber: Int,
     val letterId: String,
-    val intakeReviewStatus: String = "PENDING_QUALIFIED_REVIEW",
+    val intakeReviewStatus: String = IMPLEMENTED_PENDING_FINAL_AUDIT,
 )
 
 @Serializable
@@ -209,7 +246,7 @@ internal data class V2ProvenanceRecord(
     val shareAlikeTreatment: String,
     val sourceHash: String,
     val contentHash: String,
-    val reviewStatus: String = "PENDING_QUALIFIED_REVIEW",
+    val reviewStatus: String = IMPLEMENTED_PENDING_FINAL_AUDIT,
     val reviewerIdentity: String = "",
     val reviewerQualification: String = "",
     val reviewDate: String = "",

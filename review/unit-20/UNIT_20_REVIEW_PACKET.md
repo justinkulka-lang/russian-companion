@@ -15,8 +15,8 @@ Unit 20 remains in development. Its readiness is content-complete and review-pen
 - Unit content-review SHA-256: 01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c
 - Mapping-package SHA-256: 145bb8c75afc12e093bcc205093f95ffe81636a0c5cd1aee64d0aa8766f6e69f
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: 87939a7a27d6b9a5b92b50e9d84ceecfb915a2ee6ca5968f93691a7c152a655a
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: b8f13cb04c9230708e9c7e5c954f35fc5a8113313078915524a5b28801ac6405
+- Repository source SHA-256: a982d0f164e5dbd9192d2faf2ddd2858fcf84aa31985a7b87aaf8dc48fbc7cf7
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc2abb72c17673f54910396d410e868e78db8699a02504c6fe0174d69eec4ad9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 563f88333641b544f462b2fbf2aefa6e14e6ac41f6676c2e5e931dc3034ab879
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -437,15 +437,15 @@ remediationStepId=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec6ace1946cb2c1c0fb3f9aa3383d3d5d135f90b75ebb4f4b13d67707f8dcba9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d92e635ff7e11a476577dc4e16b6d332c9279f2b573fc190f87d739fe267c831
 
 kind=LEXICAL
 letterId=
 display=идти́
 note=to go, walk
 objectiveId=obj-u20-motion
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u20-motion-1`
 
@@ -454,15 +454,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b624d5e8709e6fd6abdfaff318523a67a659f0ac086baf9e86478fbe00bf754
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 172fdc9a42b80f7a0f0cd1d056c4ac056fac32b4a7cd75bc3352720a678954ed
 
 kind=LEXICAL
 letterId=
 display=е́хать
 note=to go by vehicle, ride
 objectiveId=obj-u20-motion
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u20-motion-2`
 
@@ -471,15 +471,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89cc5b3c9051d19576fc20b2442ba2ab0526773708fa59d7c67a9672348945bd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6fa76fc457a723a4530470299a9b040c515e6d66d51b6f61f358e2bdd869be65
 
 kind=LEXICAL
 letterId=
 display=нести́
 note=to carry
 objectiveId=obj-u20-motion
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u20-motion-3`
 
@@ -488,15 +488,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d423243121acc06856133bb8bac4c481444fc973366c1704d040b746a81bbd4f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8de27bd15d9087aae37a6ac338de36477b62436d91c6026f0721f60c140cf7bf
 
 kind=LEXICAL
 letterId=
 display=вести́
 note=to lead
 objectiveId=obj-u20-motion
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u20-motion-4`
 
@@ -505,15 +505,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 01cb7cb89407cdcf183f766dc202b23820d3decf4b1a1b119b02c754300d91cb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8344b08910b1e317f86536a864651ddf7e1923ab8dbea82c9cc616ff67168625
 
 kind=LEXICAL
 letterId=
 display=Он пошёл к другу.
 note=beginning of a movement
 objectiveId=obj-u20-motion
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u20-motion-5`
 
@@ -522,15 +522,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 203837e2c082c86c7beb3eea8c73f4c7e2b9563aa53793a6552f4e70b388a227
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44d388747b8b5543c7a45818923607c9a4adb8c5920f83afcd7e14c06ff36110
 
 kind=LEXICAL
 letterId=
 display=Он шёл к другу.
 note=He went to a friend's place
 objectiveId=obj-u20-motion
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u20-motion-6`
 
@@ -539,15 +539,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 589b625124723a9ca6bf42954e815036b88cf3eaed001d7c6bbccb35c7cebb1f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 62ec696461cb7a3ed41e4202d1e6a66f0e1057e17b02b5db5720d59bfc0d9289
 
 kind=LEXICAL
 letterId=
 display=Они у́летят из Владивостока через месяц.
 note=They will leave Vladivostok in a month.
 objectiveId=obj-u20-motion
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u20-motion-7`
 
@@ -556,15 +556,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c10d3e4237eba08f89c690ae28a3a9486b31e5d94ba55507ef9c54fc115d62f9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84f83376c00b2ccdd144c8272bdcc90202cb1297b97ec9aa8d0b87b1aeb69e58
 
 kind=LEXICAL
 letterId=
 display=Мяч залетел на крышу дома.
 note=The ball flew onto the roof of the house.
 objectiveId=obj-u20-motion
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u20-g-motion-0`
 
@@ -573,8 +573,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 91ba8095a9b732594e6dcc5aaaba0403560d329df5c8945835abb3c6da900086
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3fcd2484544f7e2285b28197541b719a909d4d3c500a0f1caafea48bd0f47117
 
 kind=CONTRAST_SELECTION
 language=en
@@ -585,7 +585,7 @@ answer=unidirectional
 feedback=The frozen source pairs the shown form "идти́" with the admitted gloss "unidirectional".
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The table header "multidirectional" names the other motion column.
 testedFeature=MOTION_DIRECTION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -608,8 +608,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0ae4ebe6f9e0e48ca8f73d98c0ed2c58a74ef7dd7522eff8a2f724a9cc95feaf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e4e87a215c55e95d61f7426f4f27c73803869676da724aed9213204329d134b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -620,7 +620,7 @@ answer=to go, walk
 feedback=| to go, walk || идти́
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | | to go by vehicle, ride || е́хать | | to carry || нести́
 testedFeature=MOTION_FOOT
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -643,8 +643,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8b4968e7d29ce99e14cd3a63c2b0d312a22f0b4fe36bce36bfbd2e7a4c33adc2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 20ad4fb31ed0a71aa730555d406f359fb6e38a797e1b6fc5f3af4197dccb6335
 
 kind=CONTRAST_SELECTION
 language=en
@@ -655,7 +655,7 @@ answer=to carry
 feedback=| to carry || нести́
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | | to lead || вести́ | | to convey, transport || везти́
 testedFeature=MOTION_CARRY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -678,8 +678,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8dede84350300d3180096deb0a9f3dc85ee96abcef6c809691655a177132300b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f882174cee6b65a92fde12a37d32e52cd6f3c3ade44e35161c089a4c2b20cc3
 
 kind=CONTRAST_SELECTION
 language=en
@@ -690,7 +690,7 @@ answer=beginning of a movement
 feedback=The frozen source pairs the shown form "Он пошёл к другу." with the admitted gloss "beginning of a movement".
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The source quotes "setting out" as an English restatement. | He went to a friend's place
 testedFeature=MOTION_PO
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -713,8 +713,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 496516bac61e189ebce6d3df9ab14001bd3652ad95b0a681c968d2fcbb3023ae
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3775dca34e40dbab258b823a9e0ae184b600db4def3aece672278727d5a91f2a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -725,7 +725,7 @@ answer=The boy stepped back from the stranger who had offered him candy.
 feedback=The frozen source pairs the shown form "Мальчик отошёл от незнакомца" with the admitted gloss "The boy stepped back from the stranger who had offered him candy.".
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | They will leave Vladivostok in a month. | The ball flew onto the roof of the house.
 testedFeature=MOTION_PREFIX
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -766,8 +766,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c71c22ec2276b49560a970d837bdae84f750490d48cfa9b143e8f7ca103a3490
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 91bc50de2aee87069318bb9a04622b95874e88cb11166cc4f713dec0d897ac9a
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -825,8 +825,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e3befe9e4bb3b8de7d2a7ac3758fd170acc2dd8757f647f4ee97348c08e26b52
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ab8df5c4e7205a26dd3dc43a791b6b4120670514fac5b9226b568b45e5acb987
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -884,8 +884,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d354fa9968a10c3d7894a6fc7e6415dc388524fe3ca69f355843803a8a90d601
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5fe042ae3b1a37d42f4ed6e21c016c86ea796b84f3fcc592e8fed8974c509f4
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -943,8 +943,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 896999500388b1595102f6e37a99a199a4b9a50915549e36211fcded7b80d4fa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8e607bd9c358c62a9514f0aa645b078f19d9a38731057183df2c28221db6a417
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1002,8 +1002,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0b24b5de77534aa6c71d05606550bfd9eb6f763cdf5ec51934e03c3a5bba9818
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70b714fde5a41a4be666c313819ddf0dccbce32003a98e2a01dc23a3e8bc08dc
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1061,8 +1061,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0167b03e0c95ae7976bcb403261c49e7e2cbfa9876162695c97e087617d3bfb6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec8edc2d3a06575a7da70471341c8c30ecadef2f37ff0084b240b3e23f771970
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1120,8 +1120,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d2d699af9eae3156016040d1676ef4510c00fa65f98d73b8ecb302e8e248ba6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c8938df5f597e98b7c2adfff42e0bc0ccaa893b38400ef4f55b430c1780d99c
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1179,8 +1179,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc769c0362d1cfdea4da6166128f59302544eaa35d23fd1dd363183bd976e7cc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d91b1de23b6b56b14697ca8682e17412341392cf77f876240c82f757fbbd5ccf
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1238,8 +1238,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 068ee6fe140ecb4eef45891005927fda9c662928d67d93704ee70dfcc53e97a8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0e31f0d3abbb9557d9b5bb47a767d7e75db4dde3edca344053226f8f36411613
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1272,8 +1272,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d39aed7f957e183f1aa468b4a0ee63ae80f9b04213fdd0e10f3361c7cdb0ff2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 15e3ac1de205869f9246d9fa02b04ede38a06c3c7d210fa6bcde9d3abd37cb6a
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1306,8 +1306,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d7ce694ce8e7de855859d3c2662742a45b31fac7296be4f93eae4c296f614ab1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13d6a1ec3ad3a2fb4a66b2b8f9475cea5df9534e7ba1cb4a22ffbf2f9f5b5396
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1340,8 +1340,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aad577a35ddba31c01fc723eea0bd6e2561bf9beb1da778e2026678ee9430cb9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4c2fb72bbca151c8971dda6caaaaa885a3b90b5c85d2c9460e8add4eb5187605
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1374,8 +1374,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d5d26a9d430dbbb72491f7a16f56612e282cd92776469846a9c80b4b393a2d8b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7793b207ff9be1e12dd00b527693725b174846572b2ac87ed44722458e580bb4
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1435,8 +1435,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 365d17d2c3b5c725eb1b69ba29475fe97ab14c2d23be7c133353fa6544957c6b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cdbfbe717fa31f0b9e415a463532b273fb870ef3df58c098f4d5a884ff7d9225
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1496,8 +1496,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e96b56b786d2719ef622dbae7ae9ba9eee9fcce45fd161d294bc3fe1d67b66ae
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 954fde7ac0089f0684ee761865d2d58673bf72aec37a4c1468efff8a86b3df7a
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1557,8 +1557,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46480366d1fec39dfe6b3674eed04a7b7da1357e33f813800f6701a9556f78fb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 394e928d035277ffbd2b861d177eae9d7624df78adf86d63ab50d04e84b73ded
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1618,8 +1618,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a640540b38cb2d5e1c28d2c5068957bc5a133256f5553c9fb96930c93cef91f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4af30a1230cdaa68bb32150504865f2ee6ceb5b4d584402c79570be766319561
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1677,8 +1677,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e809164affdc27c66244b60de831958a62c7d47e056d633735e72a0e4c024983
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b5853a9e150f4c78553c06bbb96841b67f97d569688209e3a3b5901f520bbd1
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1736,8 +1736,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e9c18c82abcb6e955076c4e6991d211692dad76f4ab4f4b1b99b93c94e53d55f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 158a7db99a48994bec892470f077eab57d0911edaa880cc2ba19f2b59ba9c1bc
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1795,8 +1795,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b8aaaec0750c35c66b9ec59b3cf34c08718a1376bbfd9631a5f3337b2e94af06
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c35624c5a074bd68e9f64bcfc6f9d71362941690c757f9936ff89df89cdeba5c
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1854,8 +1854,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 01c4a11eb197ebb850849d27b3c4248bebed62b16f8fb6960666337336c3d3d1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83c8d6688adaa77d289c13b09d62e7b12b4212fe3cf863a5113448b357f5f83a
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1913,8 +1913,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 88961f40250d3b2fc355ec7b48db2f9835e669a7e40cb1adcc840a04326b879b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1fb5d71f26239991f6e4fcb1b7efacd81b1cbf411c9872f4ce70e82b3fc4aea
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1972,8 +1972,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a6407b017fb85230327703ce167d6dbcf5b78b04ac650978910adab3383315e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a95d4150798a591693d86b2b5146449bcaff8e8035e3abc80d15d12b9593e38b
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2006,8 +2006,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3754aedbc29e0bab21456b63f988d39134853267c6b0bb6b06b78e7be39484e5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77ae0b3728c47134d6c9900755c21f5461f2b09e2e8e0a05482d8f14e99b94cb
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2040,8 +2040,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 041a69c2e8e37667fe5e92b334395206a1d1332bcba29f02893c01e9c46643cd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b59ff3ccd3a75d4446184a2df0f07f4fbfaca697fa3759b7aba016926627e7b
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2101,8 +2101,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 327e19ee78e356aaf072d9d49d8a491692484a2425e62ba436add13fa87e6db1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b06b2b39c06088449d60ffdff89cb3df5d1025c8918c1c70797b5e94861f61e
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2162,8 +2162,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 149542309b738252d4236c81dcb7cefa365333dea80e853516f452f54178e76f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8fcd3b07e0d40e930ec37cf4ed36daf1e39863afe6ea21eb0b63a07de9284a93
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2223,8 +2223,8 @@ reviewedDigest=
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5795f7c3d5563e0b4d599746344cb634dec12bc1ea6c1b89603e88b9895a9722
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 224e9890eb56376d87792d8b63c54d38ad5f4434556e65fcd4304db3b958eaaa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen source pairs the shown form
@@ -2236,8 +2236,8 @@ text=The frozen source pairs the shown form
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 27f8dc93320d766c78d0a44d427e6fe75367b74b1a61856feed87ef19d5f6d46
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c52b186f0dcc4134e59ee3abe1a71a8ca1ac8d798530f06d17966d681a6f5ab4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=with the admitted gloss
@@ -2249,8 +2249,8 @@ text=with the admitted gloss
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d4a51b8271ea0a583916431f7f9d8b33f9201d51e3d3a747c7c2eeba4b72385b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f50daab53c04e95033df74c4d98c5d7c9d004fd8adf10ae783ca6fb624bdc9e6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
@@ -2262,8 +2262,8 @@ text=Admitted lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e291c805fda0e5bebcc6f97b40e9e40be925bc91b1126bad3ae2d6b2d40d0384
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e42a9047b49cd055ae469ae334c35de1b290a74896c2bdea9a1fb28a6628bb7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English gloss is written beside the shown form?
@@ -2275,8 +2275,8 @@ text=Which admitted English gloss is written beside the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 83a1b242600368499eee2d08e7c798914b1aae1612e35d954030ac48fd671fcf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e9c18ac40af7701c759f715b5801ee7ac320dd118a7b4b8ecf9851a4e7f4dfbb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
@@ -2288,8 +2288,8 @@ text=Admitted instruction
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c3d17f43b564baaf6cf22603a38c1c1b40ac3e3412e2072d1f82242896e44fcc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9be842fcb597f59db3a1a0fd3429fc5dfdcf7cfb850b5552aae22ad90003fb76
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted motion lines
@@ -2301,8 +2301,8 @@ text=Admitted motion lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a12b17127662efbf876e7d26b470f50529a0560c0d1dbcc938ba07adce4c564b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a89918a7c3116f330bdaff6860cf181e64389c9a484be7e833b093a98a7feaa6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
@@ -2314,8 +2314,8 @@ text=Proposed Unit 20 uses admitted motion lines for direction, foot and transpo
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82b74d1e7e31cb2cacd8ca79fd2f03ca9adf68db5650660e94dd4bccb16d9be4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5104a41e2d6cdf7e4e07cd8d49ac99c58f18ac91d2faf7bcd9ab14a862e5c332
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 20 in the copy you own. The app records do not replace that lesson.
@@ -2327,8 +2327,8 @@ text=Open Lesson 20 in the copy you own. The app records do not replace that les
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8f383c03860bf7b8b472c479a1a13ba076fcb7de479ebce8cbb4ec10bd1c6b76
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f64b93178355b13300353c117fed70fa2e2ed94796b15239f110cb58ea5eb6b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
@@ -2340,8 +2340,8 @@ text=Guided practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5ffb57843e84dcaee6a8235903c59134c759dfbe056e200513847ff8e842026f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b3ef5641a30c8905600f4d9266c36aab873085fedc0da9c86d4a1de1bd51418f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
@@ -2353,8 +2353,8 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53089167cc313526ab5025e082e6612090672e93ce322bc636edab4bd7e5a221
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 91ef1212a35acd0ff0c3c5f00c70c7c8532466b596316705fca81c13c398a97a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
@@ -2366,8 +2366,8 @@ text=Remediation
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 95b470d7bcdee0854905f947b5e00366730ae2a871c2c5a78844ef5d099169e2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 092dfe8c96e98db96b63a3efe11c16922d59b16c9bcf47fe25862a061c046f19
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
@@ -2379,8 +2379,8 @@ text=Independent checks
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d0b6c06d9fbe7dda0f7445777e23275737332cf8b00de2b4c1644a951a3092cb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e55964984b969edae061ced9d088cad969b20787ec25fb0f981326ee9d31076
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
@@ -2392,8 +2392,8 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3406c88e455946b58631a8d4d36cc286bab067dabb2ec65e6b4eceaf45d2eea5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1dcc162a1959cdba5ffdf9cb5f7bed576c88069bb0dbbccafe52775705b55e74
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 20 in your copy
@@ -2405,8 +2405,8 @@ text=Work Lesson 20 in your copy
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 701e057cafbccbdb22b111d74ea48d2ec9776f3a144f13cf7e8777f1680bc9dc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 94dc7089ce2deaaedaea58c2a4ec006b40931c96438ed52b6f3fd97e124df79b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 20 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
@@ -2418,8 +2418,8 @@ text=Do Lesson 20 in the copy you own. Use that book's explanations and practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9424ba8ba75c4b4223b16ddd13eeb3a7bb68733770fe9873c6c278c4e8bc5e37
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a72cfb8f15c147ace0b31f6e4f70c0ef813224eae6e0f40d4077583d3f7bd9e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 20 in your copy and complete its lesson work.
@@ -2431,8 +2431,8 @@ text=Open Lesson 20 in your copy and complete its lesson work.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9277a9ef31f0a5f25a5156091bc193eaee255f26a956dcb1a9e7a3b4f02ae6cb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7110273a96e8cf8485091ebcac0b3cf05c223136940f33699162cb39e3bcfe08
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 20 book work
@@ -2444,8 +2444,8 @@ text=Record Lesson 20 book work
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45a4c737634bc2599efba83f58cb5659284f00f2df18217c9c9b5d11c60a4144
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af2fa0a3fdd8a9a062f8767e77bbd728604172f2b2d63cfa4fa90bffda900f7e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 20 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
@@ -2457,8 +2457,8 @@ text=When you have done Lesson 20 in your copy, self-attest here. Attestation re
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9f6d181d3f6930618eed14f59dbdfe2b39a5c10cbc56d8f104ce68af44286d32
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a6f13e22620d171acf2d3ff77e2d12a63a8885b58a72bd14887ea4041d4e70e7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 20 work in your copy.
@@ -2470,8 +2470,8 @@ text=Self-attest only after the Lesson 20 work in your copy.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 570ca16e67633370e35436b852dbe0a611a0f4bc5621bb4ae5446643ad58d7ec
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c5ccae9c9fd9fe57bf4f768aa62929eda1b51a613e6db71347ca5cbb016b857
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The table header
@@ -2483,8 +2483,8 @@ text=The table header
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70656b13aab0771a3066f3718bf7ba343b2d3d135ef5b3496a5475aaac4b82b5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 210e3fca3fa954a2d979323b043dac776271f822911e0cebd8e0a01ab4442dcc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=names the other motion column.
@@ -2496,8 +2496,8 @@ text=names the other motion column.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b1cb56f835599fc5a27b4a138af6f9dbb14ce1150decfaa23137fc5183daa3ec
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 717a70912b922115fcf832d839bd9e6545ca31a5bd71ba2757782f21a6036c9d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The source quotes
@@ -2509,8 +2509,8 @@ text=The source quotes
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 76ab5b29c6ea18371b29d9c568f06c2d86d8b50d41453cb0b6ec14da8887c6c2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f31459b99453bd5ecc1f36ce0ce0fa6abbeb309a2eefaee271427bcb382f43fd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=as an English restatement.

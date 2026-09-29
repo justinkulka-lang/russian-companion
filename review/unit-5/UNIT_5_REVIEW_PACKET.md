@@ -15,8 +15,8 @@ Unit 5 remains in development. Its readiness is content-complete and review-pend
 - Unit content-review SHA-256: 9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d
 - Mapping-package SHA-256: a1affd13da11e1173c23a2cab33b22f7ad6ea99aa54c99d54fc945fd6d7d0806
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: 4f749c803872aa56fd72c304a6900d40cc6039f23cb46f83d6f270139a43fdd2
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: ca953b6932eec2232054c79a4c02b812a48039f9cdec55a2cf8fb4376080c31e
+- Repository source SHA-256: a982d0f164e5dbd9192d2faf2ddd2858fcf84aa31985a7b87aaf8dc48fbc7cf7
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d540b5cb282e86909a05ab20d900014d8852e241c7f181cfc423a79d1740cbc9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cff4be19da662136f17ed36d7a74813201f7897fcaa750300adb1b95b0f0d9c
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -879,15 +879,15 @@ remediationStepId=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ffa08348392b83520a43a3e744bc6fb15f4f298bb373478e28f5b95d67d19117
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 645ee202474077e330240e10604374d4bcc87aa89de4bbd47f3d93b271bae533
 
 kind=LEXICAL
 letterId=
 display=Кто
 note=Who
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-q-chto`
 
@@ -896,15 +896,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8ecd5da148ec03b1aa3b66c39557158a3ba7c83656f50bb108370fec5dd85397
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa15ac249644eb5a35d88fde59b73b3e51d66f5dce4259f4c806aefcfdc1f13c
 
 kind=LEXICAL
 letterId=
 display=Что
 note=What
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-q-kogda`
 
@@ -913,15 +913,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72692040f2ba8e1f2449f10ef71f16785fdd387ea05597ee7e4cdefa46ea70ed
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0100dde692873b125b4e483044759617278402852e68c5dbf3c0079957f8ab4
 
 kind=LEXICAL
 letterId=
 display=Когда
 note=When
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-q-pochemu`
 
@@ -930,15 +930,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 60a317ee292c3e74785c09b6b53f3fda10726914851112f5cf603da89c8c9d44
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3943e90767a67263830f3620ed9597575602591ed0d108cc6e194e2d6cdc405f
 
 kind=LEXICAL
 letterId=
 display=Почему
 note=Why
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-q-kak`
 
@@ -947,15 +947,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b008dfbe142d08887005a16028955e8f9a243407841519fcd10aa43c2a19c913
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3789fd6efb6c457aa6fe057140f87d7e4a0c2175eae4c89961b1e022a76c6790
 
 kind=LEXICAL
 letterId=
 display=Как
 note=How
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-q-gde`
 
@@ -964,15 +964,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f4b6f5aa28c2e1fe449ec0093906c0af6311b5e0a7c2d271f21bbb6952a3d94e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 89b41375cd78b065f847c92c977c29d25e75c6655201f8f303b4ecbb118da388
 
 kind=LEXICAL
 letterId=
 display=Где
 note=Where (location)
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-q-kuda`
 
@@ -981,15 +981,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9dc89d27f66795491f39617f88e1531bebff8b6c941576a82c729834f2178e00
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4adda9d3e7d2e003263659fa96216530d6fd37caa6901c84115f8bd4767dede
 
 kind=LEXICAL
 letterId=
 display=Куда
 note=Whither, where to
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-q-otkuda`
 
@@ -998,15 +998,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d10381d4f77249def940a6dfda2bc60d47e1803507e170e1d3e49a02a5593253
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8376b0cb08599d0a0bbc5b673174ec5d509699f8e67a139e123a0ea918b78aec
 
 kind=LEXICAL
 letterId=
 display=Откуда
 note=Whence, where from
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-q-skolko`
 
@@ -1015,15 +1015,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d480edae2b44dbe476cf2b5323c5ac29a709a53624e0edccdf9364c15ee6f3e6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c7729ce7dd234e1781d24d1a6cb680aab3c3b6360b29afa5205e92d0a27dcd6
 
 kind=LEXICAL
 letterId=
 display=Сколько
 note=How much, how many
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-q-kakoy`
 
@@ -1032,15 +1032,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 975cfe490f5290a049be8e97b9f78ce697c6084ff442ced6d6f08b7da52fa964
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b569814d87cdba5899c1deaa2c94e8489e96cf967e08a0e5204147ad68e40e5c
 
 kind=LEXICAL
 letterId=
 display=Какой
 note=What kind
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-pattern-pattern-chto-eto`
 
@@ -1049,15 +1049,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dae12630751adacf49c2e7b3f823ee1178750956618d87746ecf6577786ec570
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8cf254165a3ea805894ab0a71e2db8cc2d1154b5fd88d184d0b3b965eae36854
 
 kind=LEXICAL
 letterId=
 display=Что это?
 note=What is this?
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-pattern-pattern-kto-eto`
 
@@ -1066,15 +1066,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f172e112ab51d028d119b52a86c7acaad0dfcecfdad4710a1ac5f81f87360709
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3de2b3abfae4046ac9e71098d6794b8ebd62f8ac9a2fc0a9da81c38390404b0a
 
 kind=LEXICAL
 letterId=
 display=Кто это?
 note=Who is this?
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-pattern-pattern-kak-dela`
 
@@ -1083,15 +1083,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 32ca8e9a8cffa63b8ba010151e1c398c6524b2fcb1ca298e864e0f629cab1dce
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 04c83aa6e479964a938daafae1ab971ef4b701ebf3f666bda8c2a059adf33f17
 
 kind=LEXICAL
 letterId=
 display=Как дела?
 note=How do you do?/How're things?
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-pattern-pattern-gde-zhivete`
 
@@ -1100,15 +1100,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04c8c9e9c781011700e3027ac45cf023af41a2ecfaf628af109cb2c937571b9b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 92b0c82965d87bc675551559406032ab32eb78252c67efcb2bce3ecf7837e713
 
 kind=LEXICAL
 letterId=
 display=Где вы живёте?
 note=Where do you live?
 objectiveId=obj-u5-questions
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-prep-o-knige`
 
@@ -1117,15 +1117,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 910c0bbdbe2c40d72f3b3a2daa9911718385c6d745b7c1f8847739f20b77699f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b015a7369e800a5c7a7f914ef29eef11adab1632668d4d9169fdc64d7858248b
 
 kind=LEXICAL
 letterId=
 display=О книге
 note=About the book
 objectiveId=obj-u5-prepositional
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-prep-o-pisme`
 
@@ -1134,15 +1134,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8f735e4293751e1f4d2dfa4117afc7baf1e5a080ef07c5e871f62630226a3907
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b031a6efde570b1b7ab9a90d9ad5ad1b45739c79fd8f6ae617ec0c63a6034a34
 
 kind=LEXICAL
 letterId=
 display=О письме
 note=About the letter
 objectiveId=obj-u5-prepositional
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-prep-o-sade`
 
@@ -1151,15 +1151,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 751fe03887bd0aad6209c7f5e99034d0268338569b9d05011b964f9df85d7f94
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42c1ffb7eb2513075e009613cce2815eb1beb60063cfd4ca76c054d03c294c16
 
 kind=LEXICAL
 letterId=
 display=О саде
 note=About the garden
 objectiveId=obj-u5-prepositional
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-prep-v-moskve`
 
@@ -1168,15 +1168,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e8a59f9b877013eb60eb43e94b67150b66ca899b36039ede79b9ae43b32adec5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6fc6fc1c05d447ee0b909f887d57130f05f24cc1d3b014f71a71be1627e0beeb
 
 kind=LEXICAL
 letterId=
 display=я в Москве
 note=I'm in Moscow
 objectiveId=obj-u5-prepositional
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-prep-na-kryshe`
 
@@ -1185,15 +1185,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e2d52028f391ad3f3fea0999f5fc74383a63b65f630df333867a1878e1102b60
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e45d600be9dc35394dbd49e8877b9af98678fdce100ffd41e73dc8aa53e3ef7
 
 kind=LEXICAL
 letterId=
 display=Он на крыше
 note=He's on the roof
 objectiveId=obj-u5-prepositional
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-prep-v-teatre`
 
@@ -1202,15 +1202,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 237669aaa95fa398331e6651b98df4c4bb6faacd16d8e16da3a0f065280bdffa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b9cbb1fe5b2cb63229db7d203446a5613178b4dfb5c31abef7f022736de337a
 
 kind=LEXICAL
 letterId=
 display=Он в театре
 note=He is at the theatre
 objectiveId=obj-u5-prepositional
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-prep-na-stole`
 
@@ -1219,15 +1219,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8f2422bec4ed5c8c237d6fb51c2ecb20d47f9f90a78c77c6cea5dc80545c5d8e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 24f1c626f17d53330621cb16759f691a3f565d49a03768a030351ea088a5e363
 
 kind=LEXICAL
 letterId=
 display=Ваза стоит на столе.
 note=The vase stands on the table
 objectiveId=obj-u5-prepositional
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-prep-na-stene`
 
@@ -1236,15 +1236,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b7439995f3309cc490f8c011d9417bd417edc2727ba8caa970e1c1870d6fd7ff
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2206db3980012912bdd45c51f5624ef8ac5c3eac6da503d11cee5268ee725432
 
 kind=LEXICAL
 letterId=
 display=Картина висит на стене.
 note=The painting hangs on the wall
 objectiveId=obj-u5-prepositional
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-indecl-радио`
 
@@ -1253,15 +1253,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 78fa7f20c83c7d2b30622dbe1c03a69e1eb2b66d1843c5d9c769230e864d34c2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 007b005cb9056f558cd43266f96801f0297dd51cbf9633a72beddc81e3cdbeb5
 
 kind=LEXICAL
 letterId=
 display=ра́дио
 note=radio
 objectiveId=obj-u5-indeclinable
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-indecl-такси`
 
@@ -1270,15 +1270,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 002483f5815bacc81b21f8994fa0931fa66b1a1efcdcf826e0bfa1639c4dddff
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d2487d11140715724cbccd070ecfc12d0d3f2a2543b16a126f091f99ba491f6
 
 kind=LEXICAL
 letterId=
 display=такси́
 note=taxi
 objectiveId=obj-u5-indeclinable
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-indecl-метро`
 
@@ -1287,15 +1287,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 521a30ceece99b378a6d39711d5ef8cb927b85455cf5e71b7570f841a36fa6bd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca35855cc04c8423926fe54d223073a40ce8cdd8be41ec4958de1f2a46963424
 
 kind=LEXICAL
 letterId=
 display=метро́
 note=metro
 objectiveId=obj-u5-indeclinable
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-indecl-кино`
 
@@ -1304,15 +1304,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 94befebee3a19773a7a3400a59e72a76fcb87aa05ecb48f458993d541b607454
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5c3192b09cd07bced54b29c96c935272fc84ad03cb73d28baca875c871023345
 
 kind=LEXICAL
 letterId=
 display=кино́
 note=cinema
 objectiveId=obj-u5-indeclinable
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-indecl-пальто`
 
@@ -1321,15 +1321,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1211f2719828fb7d94b7cf62ede9f8cf1ad53caec2f471112430b93d9e3a787e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11f21cec530e2e607b61754ff8b1acdf6f8222e49d3eebe8c8a49f0d40762345
 
 kind=LEXICAL
 letterId=
 display=пальто́
 note=coat
 objectiveId=obj-u5-indeclinable
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-indecl-кофе`
 
@@ -1338,15 +1338,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7844bc979e037cfd761f21d46a38212a06ea52353a0c290dcf3062e6ec7fb6a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 885dc8b7e5ede12feb59b7cc191cc8571b0bf772ed7428b0dd914731686f78c6
 
 kind=LEXICAL
 letterId=
 display=ко́фе
 note=coffee
 objectiveId=obj-u5-indeclinable
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-indecl-кафе`
 
@@ -1355,15 +1355,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 18d3dc880e3a55981c1cf7dd907f4b752e9dbf3158c6076edc72cce2df6423a1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f8dbbaa8293d7d5f3d946f50509fa9c5f6cba762ba0434fab78f7c4dd9fa0a8d
 
 kind=LEXICAL
 letterId=
 display=кафе́
 note=café
 objectiveId=obj-u5-indeclinable
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u5-indecl-меню`
 
@@ -1372,15 +1372,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7171ecb8fe9ad72c47543c918c837184069b1f102e1378536822574051d0b277
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 576bb9daf203c9392316f23c7e9cbd1eaff8d7f78681509141c4e07ffb6ae852
 
 kind=LEXICAL
 letterId=
 display=меню́
 note=menu
 objectiveId=obj-u5-indeclinable
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u5-i-q-kto`
 
@@ -1389,8 +1389,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 779141365ac79a3dc7bdc6eee9b5a8170882a521fe99f879ceb6fa667ef43686
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eec75fe8bde49d6873af45374a5b9f8c6febb2984814e9509fb9397dc94fd8e8
 
 kind=SOURCE_QUESTION
 language=en
@@ -1401,7 +1401,7 @@ answer=Кто
 feedback=The frozen table records Кто for Who.
 objectiveId=obj-u5-questions
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u5-i-q-chto`
 
@@ -1410,8 +1410,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e1d42579e18632ec9db62b763fc8e9e5a08ed8ba11ba8c4115054ea4bd2125dc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d62a2dadc0e4fb68ed39b2e83074d154a33ad9a9c0587b960301b1459cb339b
 
 kind=SOURCE_QUESTION
 language=en
@@ -1422,7 +1422,7 @@ answer=Что
 feedback=The frozen table records Что for What.
 objectiveId=obj-u5-questions
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u5-i-pattern-pattern-chto-eto`
 
@@ -1431,8 +1431,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2395be01776de2c66d7e820ff9b683f952ff3c096764f848edb869132c40c91f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad6feb4c14049f60dc1c39067d40f17f4e89d211c74c9926113bc78c79b5834f
 
 kind=SOURCE_QUESTION
 language=en
@@ -1443,7 +1443,7 @@ answer=What is this?
 feedback=The frozen page records this meaning: What is this?. Written punctuation is not listening practice.
 objectiveId=obj-u5-questions
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u5-i-prep-o-knige`
 
@@ -1452,8 +1452,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 308419ab53759c323feb5e14489c4c56677c4e89d0cef4b0ecc37376bc6bdd89
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67be9d85663489497db9641a6505b09c55567a7ee8c4dde0e623c4e36a91f644
 
 kind=SOURCE_CASE
 language=en
@@ -1464,7 +1464,7 @@ answer=About the book
 feedback=The frozen page records this example as: About the book.
 objectiveId=obj-u5-prepositional
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u5-i-prep-o-pisme`
 
@@ -1473,8 +1473,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 88449be1b99692ed0ac48a35f45e091992d15aa0ddee4f63b664980c8a71dce2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0735698070d063381d773a31477b8a930d0c4840d181025029d9ac4f8e22a4ac
 
 kind=SOURCE_CASE
 language=en
@@ -1485,7 +1485,7 @@ answer=About the letter
 feedback=The frozen page records this example as: About the letter.
 objectiveId=obj-u5-prepositional
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u5-i-prep-field-книга`
 
@@ -1494,8 +1494,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f2bdbaea2880e43a116ce6f152fb297cc38d9d5e194c11a636b91edbad010da0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5826c8776bb95b20243ecc25a1d4797778d6d684e3c6e8c0d92a145c37f1b71
 
 kind=SOURCE_FORM
 language=en
@@ -1506,7 +1506,7 @@ answer=кни́ге
 feedback=The frozen row lists that field as кни́ге.
 objectiveId=obj-u5-prepositional
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u5-i-prep-field-письмо`
 
@@ -1515,8 +1515,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 188e63e72df6fd1908b5d948a911f5b3393cc9a62c0973b156689797f970c29f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 28ab0be3816df2fd0d319e6470dff89c0e24dc1a1a7018d7c55e67f0e18c36a0
 
 kind=SOURCE_FORM
 language=en
@@ -1527,7 +1527,7 @@ answer=письме́
 feedback=The frozen row lists that field as письме́.
 objectiveId=obj-u5-prepositional
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u5-i-indecl-радио`
 
@@ -1536,8 +1536,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ef0508b7ab6e2728a06c40c728fb80e38370341edf428735100beb2e82a5244f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 55b4d3fc164e850e4a1e6e785f2a6ec54a5b931ffa27f16e655b2b0b154e7dfb
 
 kind=SOURCE_INDECLINABLE
 language=en
@@ -1548,7 +1548,7 @@ answer=1
 feedback=The frozen row sets the flag to 1.
 objectiveId=obj-u5-indeclinable
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-q-kogda`
 
@@ -1557,8 +1557,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b69b03b4ef6467a40c5f1384119f4cec8b2e2c028306d95b05a6482cc7769eab
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f149a839b0965e8a23abcf7bb3b13bcd7e05749608080c4b4c5611d9b378973f
 
 kind=SOURCE_QUESTION
 language=en
@@ -1569,7 +1569,7 @@ answer=Когда
 feedback=The frozen table records Когда for When.
 objectiveId=obj-u5-questions
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-q-pochemu`
 
@@ -1578,8 +1578,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 23e5255957964a4167f04edd5afc8945b9d64e16a106758285cdf59af12b34c7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cf32b313e1764b236ae9b4cf04d6a4b007d68e99f0dda0a2f4491c16245593a1
 
 kind=SOURCE_QUESTION
 language=en
@@ -1590,7 +1590,7 @@ answer=Почему
 feedback=The frozen table records Почему for Why.
 objectiveId=obj-u5-questions
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-q-kak`
 
@@ -1599,8 +1599,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 15548abb04517d25dc5e7ed14f84b08ceeebd1e4824aa24e601bb0be1a503bef
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b2bf04884b2173a4f6df008cc38991b77495f2621f7853b3cfb6c8a5d5f4175
 
 kind=SOURCE_QUESTION
 language=en
@@ -1611,7 +1611,7 @@ answer=Как
 feedback=The frozen table records Как for How.
 objectiveId=obj-u5-questions
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-q-gde`
 
@@ -1620,8 +1620,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f7b7af8e184b12ab4fa644170eab6b1f87dfd9121b6034dc6684a863d9d39fe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7eebb23d0598a23267a48ba3bd717852b13ebea3d76a17a8d513def55efca8f0
 
 kind=SOURCE_QUESTION
 language=en
@@ -1632,7 +1632,7 @@ answer=Где
 feedback=The frozen table records Где for Where (location).
 objectiveId=obj-u5-questions
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-pattern-pattern-kto-eto`
 
@@ -1641,8 +1641,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 41c5c790befd37b23d6507a0c34266cd39118fc6142b2cf0deda8e07012fee3e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e83549c5ee19ec1b10730e43f978a14ac59f7233a296552356de5dd607430c81
 
 kind=SOURCE_QUESTION
 language=en
@@ -1653,7 +1653,7 @@ answer=Who is this?
 feedback=The frozen page records this meaning: Who is this?. Written punctuation is not listening practice.
 objectiveId=obj-u5-questions
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-pattern-pattern-kak-dela`
 
@@ -1662,8 +1662,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b9c486001111072f90736ae6ce6803cb8719726bfb277d21c25dca061a1fd392
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cec51610fb82514d477bf586a30b6edd99609008ddef0c54c9d069ccbfb92452
 
 kind=SOURCE_QUESTION
 language=en
@@ -1674,7 +1674,7 @@ answer=How do you do?/How're things?
 feedback=The frozen page records this meaning: How do you do?/How're things?. Written punctuation is not listening practice.
 objectiveId=obj-u5-questions
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-pattern-pattern-gde-zhivete`
 
@@ -1683,8 +1683,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8de3d7b4760fa9684b4bf36470c052b7e504b88326717eced404d4e61d0bff4f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f57e6c8733c60a4b32871465282b0f6d966ea1d41cfc44e673f01068b2aa8148
 
 kind=SOURCE_QUESTION
 language=en
@@ -1695,7 +1695,7 @@ answer=Where do you live?
 feedback=The frozen page records this meaning: Where do you live?. Written punctuation is not listening practice.
 objectiveId=obj-u5-questions
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-prep-o-sade`
 
@@ -1704,8 +1704,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2761eb33644bd6633662ce2fb22b206c247c6b1a6439e1e0f2c2d7bb8a49abce
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97cff2a253d79504c23369c7dbf3dca8bb7d42e26001aea132d916cccfe8addb
 
 kind=SOURCE_CASE
 language=en
@@ -1716,7 +1716,7 @@ answer=About the garden
 feedback=The frozen page records this example as: About the garden.
 objectiveId=obj-u5-prepositional
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-prep-v-moskve`
 
@@ -1725,8 +1725,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: be751b43c576722dd30f10b57574b6981922fed6424306c720a88214e5cf6e4e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67521029e3ec46c8733c9a79f8ffd76d0b8c383f5982991b8f6f8ff556a0981f
 
 kind=SOURCE_CASE
 language=en
@@ -1737,7 +1737,7 @@ answer=I'm in Moscow
 feedback=The frozen page records this example as: I'm in Moscow.
 objectiveId=obj-u5-prepositional
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-indecl-такси`
 
@@ -1746,8 +1746,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f592e98dfe3df8f1e37087439e0b8e5d592dfe0ac476420a8f0be7444bb7f497
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8e59d2fe49a44bdd60c65a53b7fdc6f1115953e98cb37a8f567579b39167270d
 
 kind=SOURCE_INDECLINABLE
 language=en
@@ -1758,7 +1758,7 @@ answer=1
 feedback=The frozen row sets the flag to 1.
 objectiveId=obj-u5-indeclinable
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-indecl-метро`
 
@@ -1767,8 +1767,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8722b0edc85f0cd064661c51cd012bd50fde2601847979ae255b0c4aa580417d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a6e54ecdf644e8d7ae8f2ed91e7eada856d2a080ec278383d178e74688307b1
 
 kind=SOURCE_INDECLINABLE
 language=en
@@ -1779,7 +1779,7 @@ answer=1
 feedback=The frozen row sets the flag to 1.
 objectiveId=obj-u5-indeclinable
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-indecl-кино`
 
@@ -1788,8 +1788,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 462209215ae18ae7f2f88a13c4f2cfbd1c54eaea532a898acb36b0107cad3a4c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f40952e331ca9c707658950b20b99e52e6c95d6af1c24d6c6aa573787177f559
 
 kind=SOURCE_INDECLINABLE
 language=en
@@ -1800,7 +1800,7 @@ answer=1
 feedback=The frozen row sets the flag to 1.
 objectiveId=obj-u5-indeclinable
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-decl-книга`
 
@@ -1809,8 +1809,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 291e7297db80e9067929554f655a37ed8087a6dd9fd7d86f3eea529651fa68c9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6afb00565a7e3188a57799b3420d5fdd993fea509cecc987296f0b00badb726f
 
 kind=SOURCE_INDECLINABLE
 language=en
@@ -1821,7 +1821,7 @@ answer=0
 feedback=The frozen row sets the flag to 0.
 objectiveId=obj-u5-indeclinable
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u5-i-decl-окно`
 
@@ -1830,8 +1830,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2daa3b9599686e001478486bdae337f7e3f251be03da2fb4d21b75db957bac5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b7f9d9248a4727fe3d41a7df8427e3c990f9a741f00ea64039162e28ccb3347e
 
 kind=SOURCE_INDECLINABLE
 language=en
@@ -1842,7 +1842,7 @@ answer=0
 feedback=The frozen row sets the flag to 0.
 objectiveId=obj-u5-indeclinable
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### REFERENCE `ref-u35-attribution`
 
@@ -1887,8 +1887,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d0a0699a2f1541a07b193bcf1f5bdd26aa78bd13c3d4f3b3b04953854a009677
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1246f14a45bd072a0bcd75b44d676778e14cec73c094cf522fe27787409acd9a
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -1916,8 +1916,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 813b31ccfd98b9c027286ffce2384a9b7b4ad49673d217ef9db62dc54166721b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a7debf0d68d32b23e522ec38b18c66c392c49843cf4fce28e830424369535c2
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -1945,8 +1945,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: caef57da2e77c7f20a2a204c605000602f943a3f5edccbf0ae72074141c13e02
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 02ef0e0c8ea242813f7b4f9fb459e15e2349ef80d62611f5441ef24e0d1a594d
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -1974,8 +1974,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c889591e46b07759701563f1bdc4c231fb7dceae20efdb2780b32b215fe27a7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d1809b76d596733b640311f5a7cafd614f2be66b01a042dec78470f591a46f7
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2003,8 +2003,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3846ee84f88eaab156d983ecdd0ac46c4605aeb10fc75ec11b0094d16488af45
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2312d31ee034ed7aebe12c9d20210561c937505246a72e02fe93d47a6682ff3
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2032,8 +2032,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a5a58642718f269c6f7204d7a21429eac8a5f1271f4575ee800497f4a40aa80
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 96188964b5055aee2d8d2df8a55f4d11dece02d506211d83ef18d6bb977890c8
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2061,8 +2061,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa40234abaa2078f54164a1cb55b5fbf4508d9c085b1aa4586b260fb6845a670
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8cd2091562076528467ccdd0833fc8e8d236067e56952fd16761bf071404b7c5
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2090,8 +2090,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d982c8ac8a58f77dffcf20e7ed8a2efedfa8769bbd38b9313b859d9be2bd37bd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 004dcd2d5c5b4b68862ea8a7fa3cfe8d8aa02006f0c6c5bd955e70bf3426d29a
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2119,8 +2119,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fd4b0422159345d48f2372a3551c86b721d2e1ac333cc088c9ba62bdf7e5b7bf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8826372581857e23f99ba39de82bd7af3c675902737822328b8cc1c38db031ed
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2148,8 +2148,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 61f8d543fcdf89e9ef30b5cc3c7f62f6fe5e2a3ea0492b484ce996791c0f00a3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4c79a2d12aa636191fd4d890574ea1bd9f1356c54de099ee98acbcc8d896e095
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2177,8 +2177,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 94ba09d1cef284de9021194548d75d850028f3c587018823f9b98971b5688363
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a52fff8893891b2c095ca3555e9196427fcd5f599490353e7b6d32a24a4f74f8
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2206,8 +2206,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d3a33129ab8d752a72eb277d8debdc725f81c4b599db28bdb67ca902c12a737
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a0faefb315b7d27b10cc9bcac2b25b650f4f0778c4a2849f4428306a6dad0653
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2235,8 +2235,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a2e4027f20a8fb8d615cb31ed82dd269004d675c227d848827ba8177a535ce4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f1d24f83accd6f8a806e6abbf1cc0f5f94a18cc899236b227dc004f2e1498d2
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2264,8 +2264,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 30f92d2ab0cad09bb17e6e0c57fa077463ea3922712607c333ce8727c5914d9c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3fd17e7bafb8a505f26e9acaa20517e24c1a207e2490fbe2a3dee36da55c94f3
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2293,8 +2293,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dfe1e15e6ce3fbcf6b57b85504a2cab10648b6f00265ddfc38db08d8c8a67f1c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b31bb5912e9f1c87e7f6c90b1d6b43334fcbced7bf790b9c03a30c7ad6b15e6
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2322,8 +2322,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cd88bd05c2f0544b831e4d2c6f8085fac6e1d87d4365979c8c02b36365b39040
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44d1f8a02a4d1b0253fcd8b49b2e64d70805ec1db665ea6d06a2d1daff5078f6
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2351,8 +2351,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3ba01aa5c274da227bd638edc2ec815552fc3ff0a0174f414ec14371cca7ac0d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50eac777822bc5bdf630eeee7e675b4ca040b5bd3df9b9ea4845340d05236dcb
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2380,8 +2380,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b95b350941dd849d936918d207309a516270689d7e9075efac298ae3b0ebb30e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbb7bcd512ef90345f44c343bc87ee7cc37c7f006e68c43b1ddac442ba830a92
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2409,8 +2409,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8592f096bc993b7f74acb2ad8bab91da6586bf719465e750b39438acff166a92
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a6302b8412e6b638ea02cd45407b27896e0777d987df130d9f83662ec911b173
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2438,8 +2438,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f80908ce4fe58c1935dae5ed0c3c4c429e92f30c2a65b48cc81f2fed50736be3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9be6538e41f2bf7d0318dd16541abbd0b56bedf727fba97217336653769dd248
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2467,8 +2467,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 09f1e998ac45195d51bf5c641b8474eeda8d13ab96ee61d69ec38b7887fbb9e0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1666a015ba4b43976c5b5c1126fbf74713f2cfd8a40d2fe61c2d15a296411e78
 
 recordType=explanation
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
@@ -2496,8 +2496,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 682d858a2ca7b50211ad4894ac1ec3a4d325cd9242e66c0de28cc61d533462de
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7839f6bd02bae2f6f08b672f06b8dd3c30cf0844eee16ab5893cb2e36e355b2b
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
@@ -2525,8 +2525,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 85f837d442c766b5492150c372d554ac1a7b38048ade34e8b7fce634f53a03aa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 29b110e13657867ed49db2a9ee96b71a7e35a7ce36a77e31b4c73907e1332690
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2554,8 +2554,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6299d6f1e87706a2bf1d4ff7a811255075ef70755af61fdcb9a3e3016853134c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11aae2c34a025e9570c0d65b3c7d1ece96a0c789d912215e12bc37bdf115df9b
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2583,8 +2583,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 888adfbbf8acd9e34d6ce9099991158dc96b441711ead8ab5dfd782cb3530e90
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbade79ccb7b5def67810fde9f6c82dab3c7b37ddf141e4915021026d53002fe
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2612,8 +2612,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5ff59e60ddb2a534d160f719c8d6d81fa303ececfd1549cc1117863bd083a9c2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69e7fdfbf266417014ecccb9677f17d6162b08751eb8960131f5d317106118d9
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2641,8 +2641,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 68c8c01d67a4cefb71c089416e73e24b6548c438d983ea22866cc1656c4da058
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ab2fb871ad1b767efd19b6fda9a3d734f49041b2bea3a93a0546b1169e9a7afa
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2670,8 +2670,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cddc55d4f4420f843454ffd0a22d39f80abb2d2273bdbd3ce68b93fdeb34d36b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f288d991f956f4ac9769346ecf6cb76cef9c5bb4b6d5b2f0f9bd02085d64930f
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2699,8 +2699,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9de88344507ac03db14af7f7a86ead346e5644dd596eeb82dfefc3471d8298bd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a4dd60da4e194651df36e3540ed1470f8179e8d557772391bab75a542966c17
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2728,8 +2728,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bcb629fa58b27af3247c8634bdd545f311ad6b9494045ce634cac60491905081
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f13b4a3528ca05ae979b4bd0b0c181e33a43cc80127f2f95156a92c4685ea912
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2757,8 +2757,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6abcc9a1adf12a2f33fbf8c2d56f5412a9116d5746cac64eebc48dcb83676b5c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d2b98471a06bd71032b0d6ffe0d892ad46e4b8e55ec847e1e7136288889233d
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2786,8 +2786,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c34547b95d1cd1ac8d2c40d1249ecc0da5bd23d98ea356912f2fd5a4f873f219
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 43f1449482e5ad82e1d02e4592f5914b437d3890feda0101929fb5b8a55eab42
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2815,8 +2815,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f2905227d5b94e8255709ac9349547d452cc5314908245ab13b611865d8705f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5dc199d8c658c9896760bc950c1fe0520ab98d28ba2667d985804a7f315e9204
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2844,8 +2844,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cca54a45f716c9078d2df4f796c9774f0ea58781a4f590237954be44d94567e8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13ee312c30b7a8429937ff525c4ccda751ca9dc1f4afeb1523afa6e5e5bfec3d
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2873,8 +2873,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea14cee7a67994f2dcb1ec7b6716412691eeb6c3892b95805a46ed65a9c3b871
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 011214de96de978cb5ff04f126f2d004ee4388426582ed1283b3c354fe75078a
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -2902,8 +2902,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ef902dc552a783bad85160615abb16ce95e158f5ba18524bd95343e4d74febf5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65a6250d22563d21e3cfcb2cb7f7a33c57914cc160c8074a656831ecddd0e4a6
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -2931,8 +2931,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b8618c1d020b3724a7d4e8b48e59d672eafccaf08a4a938c9fc396d814d72c6a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 92f89a513eba1fbfdaecd9981011e4513f67f738ddfdb28caa57fc7bfd88a9a5
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -2960,8 +2960,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b4ba457e0d06200237cf13f3ff50ddb22b49cdf167d951b2bcce9bfdfb722de9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b907167e2cef5d32351e4ec922301823122b044da6fb083999773c27d2b16ba3
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -2989,8 +2989,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46aad6400a2960c0a52d4756bed6e4167da28277c1e01821fc366849955d4252
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a0d3d511bd2ef36c3b6afd89cd7d2bc0fb2e52cb4c04f6818deba09dad23b40b
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -3018,8 +3018,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5013ce9b538dfee64efbfb406a61c40ad287014960241adc27c354c7254d806f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c06eaf0c93a8df646ec3b34b9b26e725423bb59e3475fda559cb34b7ba4a8679
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -3047,8 +3047,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 095f05868b37fe4d1053736779545b601cac14eee26fa0d4cc3da2cf8cbe4355
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5ca926ed37b7ea666234205659116643d80b29562fe7d6542acdeb27f77b01b3
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -3076,8 +3076,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 05fcea727b10eac9c095ac464d154bfa02272b0176e2edb2ad54d34b8231ad28
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8278823a32cfb7d87739cef92b1411d526ef92efff5c34d2555745d8de03f006
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -3105,8 +3105,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a597852e533dd581b9501c75d87ac2700a824e6cfc375e20a8a254ee5cc2e262
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3120da29b8945593c64afe5bd126c313c0835746a5dbc9c3754451e6742c7b13
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -3134,8 +3134,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89d37783f465d2c341e009b4f39a6fc1512ed40cb51ef1e4df471c20caf3eca8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0d826e4605acd6a2bde52493c32018bb8e49f9ef2f1e25e3e38ebafb613ac596
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -3163,8 +3163,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d7b24afa824af7b555a15a10d15306497b158738e21bfafa83c5b03a31e63370
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb5ca09273082dcd0a8f191ea1560a41869271a93cef84ab967ab2cc9265e743
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -3192,8 +3192,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b5f13c934214392226623b93b0bc5b68f05f56bcd82e59543cdf6cd936e21e3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac8c3c2997c7470aef34586b9944eb667e6a6649845ada1dab237cfaf3dc00b6
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -3221,8 +3221,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f12736bc007a07ac1472132a546c8aa011aa3228ec5d3ed70768fc6388f3cb4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9841e29fd63ffe8fad69b1ae20cb8c599fe5c59cf23cbcbd1ecced7234702762
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -3250,8 +3250,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d64d6d6e1a7e802bb283b9733fd6dd34caf639b3fccdeb5062e5fb9ec4d00168
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 32b0c874c413305f9e2f53da512d324b0577e3ce942f65726553f298f7cdeccf
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -3279,8 +3279,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e730ff8c02ed42fe3d8cc1b2138d077f35dcba373b58572587e833d13ec452c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 25d45f3e85c8109bf6c0dfebe6f6fef99f2be765911ad7d13532f3c554d7ea71
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3308,8 +3308,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 56ae9d634303410f27e2ea9ec05f64a67be5b4c985603cb3f24f2325747d928f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4db0b31b234a02298cbee80993aa29aea718ab6f5d239934a728755cf58c63b7
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3337,8 +3337,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ede02b152526cf5a07cfc8c7cbdbc4957a0864a6c773022609fed4fa84784130
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73295d2c130590fc85250629f832b807b7d24359a93b5ba59db0e03c16175898
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3366,8 +3366,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 50c8efbcc52c435808015d867bab7388df38f295ec8edb2c9359d98ff1d4c21d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83c6f6735da84e14e8f3857d738495a4f9f0be91eafecb30136bedbf7c2a0189
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3395,8 +3395,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b9073a4cf2e589a40df7d4fb59190cece4f2a00f60a2b77cdf66fa8d226c6171
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13902b213a4d42fc8fca8b91d8ccd07a5e88c78b17c1b245cb5269cec71abaa4
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -3424,8 +3424,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2ec14135e714195b468d28e9ea2e1d87a20b8d4405f138bea9d5baf7344db7f5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6eabf5cf6592183ca0cd8bc7dc10ddb1b0def165003af51500c5b825b205fe8
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -3453,8 +3453,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ab4d1677230d0db449bede3f822973f8dbc7a19153d2faedbb914614758e21a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ebd11e4bfb671eb5a9a128d18d68a2d112ff3b9edabe5328ab33b4038e3dcbb
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -3482,8 +3482,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fdd2800b667dcf5e2203f74a8a9a1dd834f3509dc3140b5be07e3dbf2bc61893
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 661d9c5443b71aab41a82702960bc83c3d0b379dc3d6634f15cc20f1c102f084
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Prepositional_case?oldid=4567336
@@ -3511,8 +3511,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70dccbd4fe1faf89e9f14e887b4e46ef70229b93c4fd067e6c801a1999b5ccd3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d99b2e780f6caa9ab4d6289c416faaf2d80af1e137e6fa2fcbd98dc8bb404f58
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Prepositional_case?oldid=4567336
@@ -3540,8 +3540,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5826ad0d67ac53016fa8307d1618344249b32a9e2b6018da33a7037191de7e3b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 091f579dd8d74fb5d9d0dc953c50f0b03d60a319f8ea8dd0ad010536953830af
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Prepositions?oldid=4446858
@@ -3569,8 +3569,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6fbf5670cc2d86425190f25f3556e1340723ac858f7f33ab7c455b66c9c61a1f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1220f4269dfed9b7e153680696edf27981af7a659abaa224b133f9985ad90e02
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Prepositions?oldid=4446858
@@ -3598,8 +3598,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 44476984e93193cf64781797a0abdd052e44fc1a952a9f929a271c72bc85779c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 485a635fb5ec875af5f9fd576c7683d10b8f1174f9496eb07db508f0afdca301
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Prepositions?oldid=4446858
@@ -3627,8 +3627,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46c15c10cd52e1897ac7373ecc573cddfdfefda40b924b4002a463e115c298d6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ccd8b613f2a941d8a29714a53e8111aa764f034bde1b35e348d90208cb1a1f8
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Prepositions?oldid=4446858
@@ -3656,8 +3656,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d24b751a4b399aced8247cdd4f3bb9b4103495a37b5e47fd81f54f652d45b02f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc25546af483d4995d5dbcf9da5f2b70202c8ba27a5dd4652676f571c62c2c83
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Prepositional_case?oldid=4567336
@@ -3685,8 +3685,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b13415c3864369aa58c64ce439b9039ef9eb709d0301bc94a0072e2994143a1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5e72aee127109e81518804dfa28d2489bbe6607597a348cfcfdc11ae2a61113
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Prepositional_case?oldid=4567336
@@ -3714,8 +3714,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a00118c68a5c26c9bc5e88570cc2ae8d7e24486c26b55cff04916354bf2388c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec06a8baa79f7380ce26f4f0b67f70f41fca2d6c0f2c489830361d9910e41e31
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Prepositional_case?oldid=4567336
@@ -3743,8 +3743,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 379c176f87e4891a59cac416e3738b5b4ba67cd1a4502534c051b239a024f91e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a788e5719deaea9f57a0057e073b7293d580b86c7e90a7ea57d0162282f7bef
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Prepositional_case?oldid=4567336
@@ -3772,8 +3772,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3ade39d2a7872c1bc9fadf65e60b965be69c721013a07f4179d733e1d6fe7f31
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 75af98c1eca9e4d0f89b4ec4621a65eaf70d977855c6278a86972bde5e0a3f14
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Prepositional_case?oldid=4567336
@@ -3801,8 +3801,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 611a510bf6da1393a3a339f758faf26f69fe7ccfc699e357aa0fc516a4c7e567
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bf804fba8059ef0f6b440d7b1709346c7740cfb62ad42762a898db8d642fb113
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Prepositional_case?oldid=4567336
@@ -3830,8 +3830,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e64156bb55daea6cf13226405be4b8de1e5dccbc95b57b2d67964cc1a228ed05
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9dd17de5d5f8a7edf147f2c6e0f0ebe061c5d7d9185141683c8ffe0ef37fda8
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Prepositional_case?oldid=4567336
@@ -3859,8 +3859,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e8dac3e1e0c55e293c852fd85cef1574d9839ada871dfa6d33202d855f96cf4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b60053ed737f6b363230f5a0878e6131adf5f4705040f50a5a1c6077b3c8b9d5
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Prepositional_case?oldid=4567336
@@ -3888,8 +3888,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa69f98f5b1817954d85be8bf33e8a8a960ef7c9e14c96a3df3c4a0cbb915f3e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9bb5b547f1893caa8321917602e7b525affae6eb984090fb2fad4657b03edf4f
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Prepositional_case?oldid=4567336
@@ -3917,8 +3917,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 01d3f1f615f11b0ad6505e028f0ea903db19752627780fabecb9325aa49545ce
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f0f8cf16bcfaa5d9acf6389172d4a772e9c0ad5b970a718767e359974f4354cd
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Prepositional_case?oldid=4567336
@@ -3946,8 +3946,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3892085686983754a03d4023eab318e26a3daad591405f23410ab6cce3a1b998
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7498e9ec18688c7f3076eefeffa358cb5865d2df3f2fa46866844c5c5726cd65
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -3975,8 +3975,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 190695aca31abeddcd6c840ab47d99fc6c9a232a185921b9bd3cea8934e728b0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 414bf310177207dd365bfe50c81fb1abc68e526664a1eae0649d792e74e5943c
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -4004,8 +4004,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9a2586ae2026250979f94319f6dd05e3fb927bae7d03193d454ac082c35a7977
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a057372c552cddef1a9a6cd84630cf69b81cbb8d93525a362d0d2c5e10f1eebb
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -4033,8 +4033,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b1e403df35269583306d5cd68475bd2e0708dd739a365a6ecab35ec7f426399
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eed424eea90ccad8dbe80447d3a0c424bd916ff9b164dd29413eb152ed6cbdf5
 
 recordType=lexical record
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4062,8 +4062,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a96b7e4c127bbc53c8eeca14c51de217eec6b192a918980ab72f7479a951a7e9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e091efa2665bcf345fc7c4e439088dc8a4b14c5771f6cb051431ebecaa5eca2c
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4091,8 +4091,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb2da84269b4b558c3032613a26e495e224bd359878e04505d82a1ab99cf0660
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c37bb8aa83f4b0f546c6a643eac6b4e6eb1e642418adf59f21771ce3db4c576
 
 recordType=lexical record
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4120,8 +4120,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e27c99e180fb60d4edb9da82af7f8447806a9cb75afd824092e7a72d047ff011
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41726507ab85cb810eb5e5d972c6fb326a3cef6413922078a53bcb2ac7aedc43
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4149,8 +4149,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e7bb63de7103373ba1c465d9a6d5633687acbfd7f4acc3d367d1913580683c09
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc8901bd3cac0fd33e3f763f006a3c43701c85a4dfcd668fea8184bf7adf7f23
 
 recordType=lexical record
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4178,8 +4178,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f9312996d079bc452cb214bc4a689aea52db3fd149fc5e0b9f3d5e42154266b4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0cee7d9aa78cded81cd67efe92bad249948ec9bac613ebb91da6c040bcbbb7d
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4207,8 +4207,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 205a11f34db350c306341d63f82fbaf153a29d0b74f7cba87041dbeb14515814
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2edee5bf63b43c3a7dcbeee357461310aa2f2eb16ffca5ec8920155dbaabfae
 
 recordType=lexical record
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4236,8 +4236,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a639a5e3da8f95368528ccedac1ef804290c2e2cd74b1ecb2492f2117ac6144f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e97c068add4261bd7183b505e9246638979365849de130ea0ae923b0aec12115
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4265,8 +4265,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4e9162e92051b67ee8454229c4dbe1a329bc87249771154c19624a905c9f5e7e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc01cb5a10d4587a4dd6c380cb234165a62f2a68ae0f6a0d6427ac982376937f
 
 recordType=lexical record
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4294,8 +4294,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 44a067fd4f74bf579c776ad8c032fe9f1ece305d61064b6b9ac68970deffa433
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0056a16c724a957f234b821c9ca29175a82ef8642824574ada31d0024a65149c
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4323,8 +4323,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee9c7a23d71e6a4f5e3360a237508d5f8481ff83dc2c211617a187b308d769d9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 51c8b8ab9dae36d7ecd7573176ece5517847b7849b18b0929c3c67342c163285
 
 recordType=lexical record
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4352,8 +4352,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b1451f0e562b2afe0f79a624ab09ad6858bdc4e052d293eb8098bb681434b32c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0767ef78a1160c352a119426787e3959e9d0e89def0badf5f768981e6733de83
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4381,8 +4381,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 97e9ec331f92b13b7bbe6412241d9f4d6ceda02cc7cba6026fa52509db429520
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b820e01971e1250921c76d57a4e09df964d7069d5ebe3b6d5a117c57c1d8cd1
 
 recordType=lexical record
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4410,8 +4410,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46807ab18baf6c8d716da1aa0d235bd000c158716b21215b4316ac8df59f0aa5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cdfa87aa113d173d1d1dfe7c4d4f1125b1b4a148fb8773c9b73fdf5b3054ca12
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4439,8 +4439,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c63dd96b69fcbc2406d3fbe00343dea09c7ed123f9ca55ecc4f1c6f5263de191
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2503d2b4c0e2e138370a7b11cb21b0146c105fdf7603ca02f9595b69d2dd2061
 
 recordType=lexical record
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4468,8 +4468,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af21943b1a0bf015e23d4c254140a2eda9f74a8d37f7ec4933088d9c3f8c1aa1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45d5932a9decec8d8544b16feede2386eff1ae9b3a94ecb182353384f01e103a
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4497,8 +4497,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce02b95ef67497622c7bda6e1b3a9103233aeb9d483cade10a4616f3b74bf4bc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aed21595ced9c2f85a80626c2811b8e19ede92967420393f8d0864ed14d34f88
 
 recordType=lexical record
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4526,8 +4526,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 087f21ed01cbc3237a3e58b2d218d0963ea86ebec3ba3c4e82b3073f4c1ff7d9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 47c08e3e6688bc82e071c43dad0158ddd76daa479a96b5b99918aeb4cb7ada97
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4555,8 +4555,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 49033e735be4dff586c9eb559774bd054995a8b5291edb486f372ec3809d3f58
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40a64e8920dbade21b784169f72db9c461289cc064d6ea77ac210b3ea87ca9cb
 
 recordType=lexical record
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4584,8 +4584,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 887d5dd5489788327041270c17d3136de21252fdb9b13ab1e1063b348d32d5cd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a8bcec7e92ebaa5b3e563c50addbaea94ceb4a1d5997832334b049c20d52bbcf
 
 recordType=reference
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4613,8 +4613,8 @@ reviewedDigest=
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd1cdb078ee8cc7a17e1e6c06150feb27b2f3a436a1a5fb7ff60846d96482ee7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 99f212f4b39bdbde9cafea6ecba5e3300e18290fd6b8f2c29f25035502536a3a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted question word is recorded for this English purpose: 
@@ -4626,8 +4626,8 @@ text=Which admitted question word is recorded for this English purpose:
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9fe6f4180a550d1acebc911fef96f5c9dd24935ba3d7f2f599ca729375f1d34e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db0bad42add6ae3ed1c6c85f8b5919942ed07e86c00fdcb82abda909ff95e0f9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen table records 
@@ -4639,8 +4639,8 @@ text=The frozen table records
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0511f461189efeaad18b402bb1a2fac5ef10d586c19a29974fbcb77d595ce759
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9a3c4589458e271fdde762cf007601ba27773b6962a5d781ba407d50751ef5a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text= for 
@@ -4652,8 +4652,8 @@ text= for
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf1993a802412d5627c91ed76166c058ff2ce02d7408f382c828191fa090ab7e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4fa99fd3a68d02f11ca398c9131541e9c433a1b06733bfce7508889a186b51f5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=.
@@ -4665,8 +4665,8 @@ text=.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 271964bfca592dcabbd03a40596c56f8c62639bf74d40052ac565a9581b8c0ba
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ecefe901e5d115082c19ae34f9888e353a1a6831acc297a96a2d6168b43ccaf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted meaning is recorded for the shown written question?
@@ -4678,8 +4678,8 @@ text=Which admitted meaning is recorded for the shown written question?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0fa6a6107f3fbfb40ebfe3e210b5dcea192a9e2cb12c25718552532c84814dc0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1b14bed3ab13868b17b82b33f6159e88b2683e88f3e06fa591748c3e8aa3253
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen page records this meaning: 
@@ -4691,8 +4691,8 @@ text=The frozen page records this meaning:
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 845ffe6425155fe41911b49f9f2428e446c6f6f332aa4b2119bad50abecab600
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6942abf003ac95fbbac3ab428a7405bfdadc3c766f6bbbd739f0a040e4920f8e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=. Written punctuation is not listening practice.
@@ -4704,8 +4704,8 @@ text=. Written punctuation is not listening practice.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 38f384464bfbfe24cd9dde2ba1e9b5bf135817eb0a5900b14d55c4a68e5ac7e5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ab685ce8652096024d421e16bdb1bceb8e3506f60e9ee3281470cd8ca8e7f5a1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted description is recorded for the shown example?
@@ -4717,8 +4717,8 @@ text=Which admitted description is recorded for the shown example?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e223649a2fb558b6995701ed14f0b35a6937a9dc71a6a202d2cca87feb59968c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c4dd213052c5a646c59eb206628c5abb49db17ac426e1b03f556c511bdce7ae
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen page records this example as: 
@@ -4730,8 +4730,8 @@ text=The frozen page records this example as:
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 90cd0002e9a8ca6383b64711e43139d32ff9e4758a9c27c3813e56e96f714d87
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a8d073287a7fabb7a1c5c411949f5a1bcd9f69634fc8333c3bf5120b11e2da5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which string is the admitted second field, not the first field?
@@ -4743,8 +4743,8 @@ text=Which string is the admitted second field, not the first field?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 026fbe7c40cc772adc00892a2adcc7d9c7be941535f0416d1991c30e917bbc49
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 56bfc42716db4911087babc357b73f7e3bca15321c1385fca621b79c6a7a4534
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen row lists that field as 
@@ -4756,8 +4756,8 @@ text=The frozen row lists that field as
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17e44f646627aa82634992327ea3fe71b39d8c963bd256bc23635ac91d772b21
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 51d6af60cd6ff0a61eedda2082d5983654a345c93131c5d7f1c38d18763ad14d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which flag does the admitted row record?
@@ -4769,8 +4769,8 @@ text=Which flag does the admitted row record?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc3111776fc351a77da8235c07052ddd54803f4fa4c5f97a7ad2fb3cf1be2225
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 211582dc29c101a57977a6d15118965e4308e9e852478f045ecbc1e7d1bba561
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen row sets the flag to 
@@ -4782,8 +4782,8 @@ text=The frozen row sets the flag to
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f708b200253f2b724b3b3990983efe21df2fb29fd69558be71822fb2b6215f4a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b2c863df507cc38e42cb9f53f7b1f68a46b7183db9fd57bc03a0aae0285f4cf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These words are copied from the frozen table. 
@@ -4795,8 +4795,8 @@ text=These words are copied from the frozen table.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53135c3d9e9e09709d93616b92171388a59a3af0d393d6bae3e075f3230f9ca6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad9697e8e2f0765b2a1f2157dc4b0740bb3d0b77a5d1675db62c33fe4461c4e2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Four question words
@@ -4808,8 +4808,8 @@ text=Four question words
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 98cbd6dbc3a31b5767d1de923ee7df7bb3f64621a83bf6b6006a9bf895b77ee3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c4aa61ab3d335a6de1029c67ce073671aadad50313e5ec60c77515986d8e6c0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Three more question words
@@ -4821,8 +4821,8 @@ text=Three more question words
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a8b1503127bba7659c30d275e4f24fa0c2f371fa7ef29ee7090a616ebb78bd2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 98fa24f1973eb7d6aac3228b5f68a960e5925dd6e41d5380d8445d6cc07e4b26
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Three further question words
@@ -4834,8 +4834,8 @@ text=Three further question words
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 36e68f422a237dbd877f463cc8bf6d61da6989a3674233289aedf8efce82fb8e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ae55220884e1d760e3d3755e58f0cb65d9fee25242bacfe267694082562a3ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These written questions are exact frozen excerpts. 
@@ -4847,8 +4847,8 @@ text=These written questions are exact frozen excerpts.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 02a2f808b523ca81fdcbdb1bc3e978384b042d7e90dcd0e3f553516459471d4a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 24dff9eeed2de476393bd6761c76ba0565d1c91a6293d7aa9ad03bd9dfc0bd83
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Two written questions
@@ -4860,8 +4860,8 @@ text=Two written questions
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a802c6a345fa3037fac242f00a54c295edb48b011dda07552c9d186e46a08197
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48044a047a21c191163421a820be29368f0c6484d23aa3e4843eea3409e935d9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Two more written questions
@@ -4873,8 +4873,8 @@ text=Two more written questions
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17fb7e466ac876f4cb2d77f0e521e0a7e888546b9fa3cdd91168173634fa7277
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b93cc4f45e6c89e25d3cb4dc8d6e4dcd8eb30782c1899639116b367b146fa509
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These examples are exact frozen excerpts. 
@@ -4886,8 +4886,8 @@ text=These examples are exact frozen excerpts.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6cdba4090adceaf2ede7cf7ec87e24622221bd1ce70dae5f5b338143a06a3e25
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73378f36b7c461d5f1c981aa5cfe5d75661d6cbf73bcb1fb3a23b0edbaa19d85
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Two about-examples
@@ -4899,8 +4899,8 @@ text=Two about-examples
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 529ac4a78db2e253d23c86ce81f88620e32d818ad74ddfb0a4188b159f602ad9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7661e872b2e6ce696db27ae538d4ab3e187ea945f096ed2d63de229f686cc212
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Two more about-examples and a place example
@@ -4912,8 +4912,8 @@ text=Two more about-examples and a place example
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b0fab8781585c10f0099a096443c4929ac3b940ba49bab1c378c3e50f37257c2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1278eaf6dfd66a996e3a33a62fb461c1d454dd8dfd81d6f9d9b39300c0be7f24
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Two place examples
@@ -4925,8 +4925,8 @@ text=Two place examples
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3aa141849c34733f2589b06b20c0aeab0aaa98b3b0dabcd7cf702aa4b4ddb017
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4efcc447259b330af0ab0c6ae5030a051ee75de3237b847166419758a8d2f155
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Two more place examples
@@ -4938,8 +4938,8 @@ text=Two more place examples
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0b3bfc52590d7c12b2e4295cc44747350918f7d3d45c5f9ee96db2979400640
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae02e81ebd16fa214909ab0c9c6d4ff39b4f814abe46a45a51cf3ec8cad2c5e1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Three admitted function words
@@ -4951,8 +4951,8 @@ text=Three admitted function words
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65d558d6bda5c63bca8af12238301c6092c5ae6ae5ac39d64bb56a622c507efc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd9029f250cd636b67521780debbdd0429e48f8a59a6764d912471877ab3ca8d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Use these rows only as quoted. Do not build a new phrase from them. 
@@ -4964,8 +4964,8 @@ text=Use these rows only as quoted. Do not build a new phrase from them.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 41abbc69722fdc524fcf73f8e869e540321980a695fa818bc26127cafb3ad477
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cc378d8d4904be32e414eeedbab5b4d2cb836df90403c55202e4bfadbd7a720
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Two admitted field pairs
@@ -4977,8 +4977,8 @@ text=Two admitted field pairs
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b24a718a5f31ccd286b2d104e5b60403107a00bff14e82757a11e352dbf59353
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 996d7088a6992af322664276b5b3d6319a587ca69bd2070e78f48a3b36b5ac5d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Each pair is the first field, then the second field, from the same admitted row. 
@@ -4990,8 +4990,8 @@ text=Each pair is the first field, then the second field, from the same admitted
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 98816dcd57894afa8eb880ddf387fdfe3a4dde1541463b1dde279ab690735245
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6e95c694b8bc35f2f422e050c81c9cc19c98aaaab8a7514c84b25d12ec47b9df
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=What the frozen page says about words that do not change
@@ -5003,8 +5003,8 @@ text=What the frozen page says about words that do not change
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c17ab861bfb7755ad3933909872924076a10314df91019e3590ab2bcd4155668
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72567be9092136746e6e37cd78795589fdd18a10852a3072338692a6ae0e0c93
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen page says 
@@ -5016,8 +5016,8 @@ text=The frozen page says
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 98d71009d55a1702ec330234a1168fc9b40c1050e9036e3f0638ba139e493d91
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cfee8bd045c62d1f3de441942c70966288cd994f62971832fcd61847694fe3ea
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=. 
@@ -5029,8 +5029,8 @@ text=.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 06fa49ccbabeaacc974a7d88ccd9df53c0e706e5d84d3dcfc7cc8f4136a29c57
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44be6955fa414a96931d34f01e2d24671b924c49214dacd12e2a083e945ace55
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The admitted rows below have the flag set. That flag is the record used here. 
@@ -5042,8 +5042,8 @@ text=The admitted rows below have the flag set. That flag is the record used her
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e1883ca355b4ea1b1df6305bdf1d92956944cb21239c8fe06ca933187deb769c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9bcda69fff971431c132173125ce2eb4ff1cf790df36790f80e4e9e3dd509e73
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Four admitted rows with the flag set
@@ -5055,8 +5055,8 @@ text=Four admitted rows with the flag set
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca3181fb5ab8716faf24ed909aa472736db0d351b037affc97d495d4c917d87d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39d79e99436ee5ed860f8877e0f0cfb530498dcbf06d98ac298ceb6d67c183cf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The admitted rows below have the flag set. 
@@ -5068,8 +5068,8 @@ text=The admitted rows below have the flag set.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0c310c850c28af0d7d84651ec2e6a530866ee66d39b8f9c18d7bdfc28d6bef09
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42c7700b28413d78aba9e24cff458ea3cc553ede64c7a3cd496a3679bfc1daa3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Two more admitted rows with the flag set
@@ -5081,8 +5081,8 @@ text=Two more admitted rows with the flag set
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 10ba89f75fc278bff70fad0d9e590d732c158c66026b681ecc2e99382bed55ca
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ab7a5ab41f86287727a63ce4c3aa2095d3fd0c9c02496e8b42ed6522753dfbf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Questions, place examples, and words that do not change form
@@ -5094,8 +5094,8 @@ text=Questions, place examples, and words that do not change form
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f610419fb5daac4b5a4e52f1f0bc8088218a62653ec4410db4d7af57ec5d76e2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b9436816917dca9bd8a7736ef42b6fc1b24874c2884d260f03df47e746a64f38
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 5 uses frozen grammar excerpts and dictionary rows for questions, place examples, and words that do not change form. It does not teach question intonation and it does not supply audio. The owned book remains separate work. Qualified review is pending.
@@ -5107,8 +5107,8 @@ text=Proposed Unit 5 uses frozen grammar excerpts and dictionary rows for questi
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 32e24925a49ce0d787bb33c3582ce902148d7447137f62e1adbf0ea050c8f992
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b889f192fde0b1bf4c3932c57af7dacae44337b4d846a0fa57430d9eee83229
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 5 in the copy you own. The app records do not replace that lesson.
@@ -5120,8 +5120,8 @@ text=Open Lesson 5 in the copy you own. The app records do not replace that less
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b61379a78b99967f4b2dbe8c9f6029569c0a3c1a4eead1e3c4f5fc3b1d4b8d8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc8ba62a11cc1a78f815b774ba64bf693832c6eaf821450f9fbfad8b5321139e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
@@ -5133,8 +5133,8 @@ text=Guided practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba788c2306d8bba9d9124b6ea62618898f1d2f90afa00c61b028191d75c5d592
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b00c2cde18fc497b5437596866a4fe6a8c1f9e00f8df3a2ee178507e82b3d34d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
@@ -5146,8 +5146,8 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0fc6f39e006d3efb1b4ddf63d59e2baee68584583763c02e13125938bd4cbacc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d69254fa282d07a1b46222457e046d714a7b1bebc7225f76e9dc5dfb012b8354
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
@@ -5159,8 +5159,8 @@ text=Remediation
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb366d7cbddd8df5eb759c78f1cbb056591e4954ebc00ba9da7f0bae98f97aa2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a4a51f77ae8e5ad59e30b158e0b389c6bc46cff3dbd7a53519f9e87ba0a0f09
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.
@@ -5172,8 +5172,8 @@ text=Return to the explanation. Compare the shown form with the admitted record.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a40fe261642c7c522d0c994aa51f5a09434901798f82c0999f13b627867c936
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 154103349d7eb08be68baa4549b1a81298338758485d601ac217eaaf61199b76
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
@@ -5185,8 +5185,8 @@ text=Independent checks
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 06a46d0d470f16c05aa6c785b29ca24324344d221d4609a5790c68371769d81e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b06084f096d9464ab289c501bf6f7c7647cd031c99e675ff6df6f1e506529aa1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
@@ -5198,8 +5198,8 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7b00cc14e2318429676b8ef3e477f071d7cf0ff088878499f1c65d0f09843a90
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13b7f0b4a6cb25434c8f6d57e00c4d4c3307754c73fb73df3a222529c4e4e8f0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 5 in your copy
@@ -5211,8 +5211,8 @@ text=Work Lesson 5 in your copy
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e7a80096e78fcd8239d9cba97469d92e141e93aec7a227f739c029d51276bb4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae53da132264dd964681113c257e780bef8f659c53676730ebe456d219ca2ec7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 5 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
@@ -5224,8 +5224,8 @@ text=Do Lesson 5 in the copy you own. Use that book's explanations and practice.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 749f94a0c75fdf7ef48b2ec6b9f2c2f70992e7dbea4687cc274fa9c10dca409a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b979f04b45c2a951edbe9257560b75b935aee2f4adaffafe4dc06e0882d681cf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 5 in your copy and complete its lesson work.
@@ -5237,8 +5237,8 @@ text=Open Lesson 5 in your copy and complete its lesson work.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9b4e69f0a0944f5acf75e4c8f6c310ff4fca8f96761b2eb2229bcb8ebbfad314
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 687d99abeaf9e23de2b40c8f2756c6c44acc870ccf07ec3d54760aa87aeb417f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 5 book work
@@ -5250,8 +5250,8 @@ text=Record Lesson 5 book work
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b1fc0683e87a1b292db89745f90e0626920f6158f5e1a727916000c839b4bafa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4825968ecd6a3673bed4e2eaa17fff607f158fa2a3be88b6f045bfb4415d469a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 5 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
@@ -5263,8 +5263,8 @@ text=When you have done Lesson 5 in your copy, self-attest here. Attestation rec
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 947f196915ada967246bdb3cbf7c360bf1796a08d9295bc4d1ebba2422687ef9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a26087f237772bd5718e02a307e0d5d792a6b935672933b7b818fd63975abdd6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 5 work in your copy.

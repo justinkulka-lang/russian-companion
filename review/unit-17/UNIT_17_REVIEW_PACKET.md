@@ -15,8 +15,8 @@ Unit 17 remains in development. Its readiness is content-complete and review-pen
 - Unit content-review SHA-256: a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c
 - Mapping-package SHA-256: f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: 81b6d1a8c1cd4e55721fcda66068464c06dc46ef5477efa678b2e4147ae369d3
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: cca9ccda9aaddd585a9979a06f5b48acf45b4c5ed42fdea04f923786843f33e1
+- Repository source SHA-256: a982d0f164e5dbd9192d2faf2ddd2858fcf84aa31985a7b87aaf8dc48fbc7cf7
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f0f2b3f08bfffa56ca863cc753bdd6122cea6e898073dc738cca5e4d9c38fd12
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 56bdc36f487b7a817eea8e84c96a217d1131358cf32d6452c9b7b35ef34e6ae4
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -2201,15 +2201,15 @@ remediationStepId=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fdcdc280ab2f2f64f3e084bb8ebdf3e4b4b3e1f0b9d3e5a669766e28bba7b497
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1969be62f803ff9ed13dba4ffeefdc25037d7ddb281aceb5c5ef822a509585be
 
 kind=LEXICAL
 letterId=
 display=пе́рвый
 note=Ordinal numbers
 objectiveId=obj-u17-ordinals
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-ordinals-1`
 
@@ -2218,15 +2218,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fab6bcdac94f5ec4811a8f6426da4221ffceb813aa9f827fb6bfe4c2c163d8c3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 515cb708ce677e9f26fbdae7a44501920378db51a8845e7cd4c63c3dd3b71bea
 
 kind=LEXICAL
 letterId=
 display=второ́й
 note=Ordinal numbers
 objectiveId=obj-u17-ordinals
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-ordinals-2`
 
@@ -2235,15 +2235,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b58cd163bf55a015091b9968c498fa3e048d04ff7a22fe3d79f047bb9c9de42
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 419da953628494cfd2a57803ce9fd5a581d16688ac1ce27a7356d742829bbd1e
 
 kind=LEXICAL
 letterId=
 display=тре́тий
 note=Ordinal numbers
 objectiveId=obj-u17-ordinals
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-ordinals-3`
 
@@ -2252,15 +2252,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3fd0f374d04cead0c0326861e793af276a1346df16fbf194b5482b816634a9f7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b890898afbbf230f08ccec1e6b7565e6e1e9dab3b283485314747a6173fcf23d
 
 kind=LEXICAL
 letterId=
 display=восемнадцатую девушку
 note=She just photographed the eighteenth girl
 objectiveId=obj-u17-ordinals
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-hours-0`
 
@@ -2269,15 +2269,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d8fe766f42a103f94faf3cd4c756ef6c79572c3d227283ac9432a7d326c2796c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc30a67cf274063371e5ec5154e1666d9d8054de5c7c7c57acbff9af6b4e1010
 
 kind=LEXICAL
 letterId=
 display=один час
 note=один час
 objectiveId=obj-u17-hours
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-hours-1`
 
@@ -2286,15 +2286,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9aa004574cde432015880adaecc4c91486c3e9f70315a5f84d8a00e54862a720
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 008de3aae6f2df240e44829ec91ac59881efa5f2cce0edafc45fd167ee65b302
 
 kind=LEXICAL
 letterId=
 display=два часа
 note=два часа
 objectiveId=obj-u17-hours
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-hours-2`
 
@@ -2303,15 +2303,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9815aae780e74102057998177e8bdc7e6c36e4c481e74ed16b60fc11c926b38f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6efad88e50b4998dc44505e36eecb35888bbd54e9b087116ae295ce981f5a0da
 
 kind=LEXICAL
 letterId=
 display=пять часов
 note=пять часов
 objectiveId=obj-u17-hours
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-years-0`
 
@@ -2320,15 +2320,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 349708f198962b52cde8f142b48cbb03c08ad9a465ce57660e43d1defcb4b142
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2cbb658c2952845bd7fe44c9b38e198289c167695d31cd9f8a91f7a1a62ecc67
 
 kind=LEXICAL
 letterId=
 display=один год
 note=один год
 objectiveId=obj-u17-years
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-years-1`
 
@@ -2337,15 +2337,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9b8f4f3d96111c7b78a75df4d60190daea5ad30bcf30fb8c9f8057bac100bc79
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 068c5d2cf13b1daf760996be9ac2af4336975cfeed0af5046f19ae326432b471
 
 kind=LEXICAL
 letterId=
 display=два года
 note=два года
 objectiveId=obj-u17-years
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-years-2`
 
@@ -2354,15 +2354,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2dbcaa087146b852f26498a78ec1f53d8aa53e4e7d54f0d0b299bb480c06681
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1c7d9117b2677ce662d21849d277350156ff0ea0b167c6dafde18d269a4e26ca
 
 kind=LEXICAL
 letterId=
 display=пять лет
 note=пять лет
 objectiveId=obj-u17-years
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-years-3`
 
@@ -2371,15 +2371,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 44257c967a955e88d157c84efab9fcc916f295fa0ea92b3d69ed1394b6a2a774
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2ecb51e8e1ecc5051f68c3a6af14bac38763957e7b0183502ac98fe4c7447ff
 
 kind=LEXICAL
 letterId=
 display=сорок один год
 note=forty-one years
 objectiveId=obj-u17-years
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-minutes-0`
 
@@ -2388,15 +2388,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dfdda5c894caa9994f716b9eb84dd1c130f379c79413d382041d743cf7ba1007
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5d4d4683ad76ad0bc5068272c1fd44585a1668d82aca06fcd0a60241c5cdf39
 
 kind=LEXICAL
 letterId=
 display=одна минута
 note=одна минута
 objectiveId=obj-u17-minutes
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-minutes-1`
 
@@ -2405,15 +2405,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 520f988e48f2c46b32098164c6f9bf9897b8f4473806ec6b08408306fb0f8801
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ac9a8df1189d831957830544a4e823574a797d9117f886bee6b4fb81fcaaaa9
 
 kind=LEXICAL
 letterId=
 display=две минуты
 note=две минуты
 objectiveId=obj-u17-minutes
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-minutes-2`
 
@@ -2422,15 +2422,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b8f4c4f234038bedcc1255b2353e6ad873c136607180a2a6d02e5ec681d2b735
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6034a852bde2015ec600d47b137aa15cacd89f519fc5cca75f35d90551594247
 
 kind=LEXICAL
 letterId=
 display=пять минут
 note=пять минут
 objectiveId=obj-u17-minutes
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-age-0`
 
@@ -2439,15 +2439,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b43ebe7e65ee92f7e5efd978157a7da114d12b92341be82c1777286a4988043d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cf97c2ad519b5eee41069fa4f8f126f928510bbeaa01a1a00fc5e4e0d1e974e7
 
 kind=LEXICAL
 letterId=
 display=мне двадцать лет
 note=I am 20 (years old)
 objectiveId=obj-u17-age
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-age-1`
 
@@ -2456,15 +2456,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc66947a3d5a35242d0e4f182b2d783839b7a9bb93419b2443b7b832b8e9b048
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cc7d52f58eb52d5bc3b5fcda0d743b60a4d83bd24735cc8274b616fb03c9f9c3
 
 kind=LEXICAL
 letterId=
 display=двадцать лет
 note=20 years
 objectiveId=obj-u17-age
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-weekdays-0`
 
@@ -2473,15 +2473,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a63e42b6dae82002c9d52232706020e5d5d4fcc05aebd68f9b3db1cd8ff279a6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 914819319c9d5eec37ed7df058f460659b71c00f3be82752f8d290df3918922d
 
 kind=LEXICAL
 letterId=
 display=понедельник
 note=Monday
 objectiveId=obj-u17-weekdays
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-weekdays-1`
 
@@ -2490,15 +2490,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8bcbb835f0dd6a20be7e3c22e28bca913e2e2b5dd767fd30a1c54c737a38d47e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5fd11f4fa17cb25b0c756f56cf2d5094cd83c6068cd3a9104fa7341b7f513929
 
 kind=LEXICAL
 letterId=
 display=вторник
 note=Tuesday
 objectiveId=obj-u17-weekdays
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-weekdays-2`
 
@@ -2507,15 +2507,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 48e4db8810a3dd6657b87baf857e2a729d63916c1e6490872499e8394da01557
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44d7d082285b108ba04df9717dcbf2e8269c6ac6f19448423233e3e9968a46f7
 
 kind=LEXICAL
 letterId=
 display=среда
 note=Wednesday
 objectiveId=obj-u17-weekdays
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-weekdays-3`
 
@@ -2524,15 +2524,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fee36f2ee3e8bfd8484c91f50d8966a725b8d4d62c11cb04342991e659ca574b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7991e5085aa05a8574fcffa20ca9e0eb36ada4f390a39559e15c1727f028e626
 
 kind=LEXICAL
 letterId=
 display=четверг
 note=Thursday
 objectiveId=obj-u17-weekdays
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-months-0`
 
@@ -2541,15 +2541,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d1a429d007a415bac57f3fd267277c284fbc84d3a8ccb1ed406e197585080943
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 06f904d9bfea9d91821185aabfcceff0cc9462723c6a4018f60b3ab9459f3fde
 
 kind=LEXICAL
 letterId=
 display=Январь
 note=January
 objectiveId=obj-u17-months
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-months-1`
 
@@ -2558,15 +2558,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9bec7e026dfb9dabf6a8bac4b6f48c8813c42bfa79b610522aeba434ebbaf35f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 301450e24bef8673a3613b348639902780324dd6a18c441aaa782dc0d8f701e0
 
 kind=LEXICAL
 letterId=
 display=Февраль
 note=February
 objectiveId=obj-u17-months
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-months-2`
 
@@ -2575,15 +2575,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 319b934d143631f7687ba90c56e6b1633ad52dc10544ef3174c324ebfe499ace
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a96e981b4c6acc23b4466dd617751c043958ccd82985865b27f98a7da12caf03
 
 kind=LEXICAL
 letterId=
 display=Март
 note=March
 objectiveId=obj-u17-months
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-months-3`
 
@@ -2592,15 +2592,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 34920124911cd4046308fe7f28d1e06d8be399a672cf4aedf9a1f30e566555e1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec5172ecf8407609cc8dbd8bc8395c74e7b11e7f50fc927ba5f3fb9571e1fe5a
 
 kind=LEXICAL
 letterId=
 display=Апрель
 note=April
 objectiveId=obj-u17-months
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-clock-0`
 
@@ -2609,15 +2609,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd9310ac176a2827e6bd8a7e3c5c902178699ded6f4ed5c095db5603fff1213b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc1909c285ddc3f71e7445cfcd59f5e4c3c055c5e76d294cfb60b30513773654
 
 kind=LEXICAL
 letterId=
 display=Который час?
 note=What time is it?
 objectiveId=obj-u17-clock
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-clock-1`
 
@@ -2626,15 +2626,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 574bcb7012b831a548f25f82b478e57f1ce1077073e68e3f648b1e3381ed9ab1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b8c858b7cbf5cef43dab347cb1c3bcffc7ed16e5104f182a8ca87b683a6fe1a
 
 kind=LEXICAL
 letterId=
 display=час
 note=time
 objectiveId=obj-u17-clock
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-clock-answers-0`
 
@@ -2643,15 +2643,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 994325ba919334f723b56a2f3624af1b359f7345ec438d9c3464822503a32e9e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6beff3e478133d654ba455e4284251235c49e918bb71dc35d6c4ef53016925b2
 
 kind=LEXICAL
 letterId=
 display=четверть восьмого
 note=7:15
 objectiveId=obj-u17-clock-answers
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-clock-answers-1`
 
@@ -2660,15 +2660,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f94b4574f98f3a88367e600f2ebc4f933427e91c4406a110c27f1897f8fdfa57
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9408256ce70c22beff5edec7251b4de4c7a2593ca92834ba1ffb6381f753fcd5
 
 kind=LEXICAL
 letterId=
 display=полвосьмого
 note=7:30
 objectiveId=obj-u17-clock-answers
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-clock-answers-2`
 
@@ -2677,15 +2677,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 01579f09a1035f3ff9164ee437a5b5d17d8b47ee7a5212a3e35033ae45a6080c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 74aa8d22f725731ab26fd78184174195b7a61d1cbc67fb4bdd5a930a19f7e684
 
 kind=LEXICAL
 letterId=
 display=без четверти восемь
 note=7:45
 objectiveId=obj-u17-clock-answers
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-quarter-hour-0`
 
@@ -2694,15 +2694,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d944a1b3465f84cf3e528bcde6a97928d5ced51ead9cc971455686afc9d75f62
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c3ae5eb7531c4bc465ce0f7412fef5969dddf5a3d7d2944d038b7597f7cd8dce
 
 kind=LEXICAL
 letterId=
 display=Концерт начинается в шесть часов.
 note=18.00
 objectiveId=obj-u17-quarter-hour
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-quarter-hour-1`
 
@@ -2711,15 +2711,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8ba6e76fb8bbf83dd2f7c0edee67c125cd7b7413e9741c7211ba37c1ad7172b6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 85eff1bc5f5171d48d23e3056c03922de1199ca1dfd9f7fac0b3c33e44616548
 
 kind=LEXICAL
 letterId=
 display=Я приду в четверть восьмого.
 note=7.15 – quarter of the eighth hour
 objectiveId=obj-u17-quarter-hour
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-quarter-hour-2`
 
@@ -2728,15 +2728,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9ce2a6c19af5acccc9542cec3c1c38c43b9d8b9179e5fd39cff6d25d267b5f4f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7928d7abbb911148d26ad56c0e87eea0bbe459d2ab0ee341ba813130ea63dee
 
 kind=LEXICAL
 letterId=
 display=Наш рейс уезжает в половине пятого.
 note=4.30 – half of the fifth hour
 objectiveId=obj-u17-quarter-hour
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-quarter-hour-3`
 
@@ -2745,15 +2745,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d1838f7f2fad4b0f81e6b0c57400a0635bb152d40815e20353d77a29848e890
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 85d1ff989de2d929703c32c083f1103aea16bded9738b812a9c9817979d4cda3
 
 kind=LEXICAL
 letterId=
 display=Передача начинается без четверти три.
 note=2.45 – 3 without a quarter
 objectiveId=obj-u17-quarter-hour
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-quarter-hour-4`
 
@@ -2762,15 +2762,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e1fb232977b58e92f85c881ad811bc8ee6afb40a5081facf412ba19caa72965
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 16fb631e4851722faa181e755a89698ca74729eb5592e0799f89534befa14b9e
 
 kind=LEXICAL
 letterId=
 display=Она была дома в час.
 note=13.00
 objectiveId=obj-u17-quarter-hour
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-quarter-hour-5`
 
@@ -2779,15 +2779,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f879bca2c4c5eff2e4c8c1e6b6934e78d316c2b74364a37824da568c332a35f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc4b3fde330880a52f81caf9d9c3c3532c6ce3ec5ac6ed248181b56c1e401ed3
 
 kind=LEXICAL
 letterId=
 display=Он нам позвонил в пятнадцать минут десятого.
 note=9.15 – 15 minutes of the tenth hour
 objectiveId=obj-u17-quarter-hour
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-quarter-hour-6`
 
@@ -2796,15 +2796,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 33745b306ff6077c4cb1ddf0f269cc93b50e976ddf427af8dcb2135e29a82335
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a187f1fa0ff4f1f93c969b04f415391ce97f44ab7db5167b219d275ec268bae
 
 kind=LEXICAL
 letterId=
 display=Мы будем свободны в полвторого.
 note=1.30 – half of the second hour
 objectiveId=obj-u17-quarter-hour
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-quarter-hour-7`
 
@@ -2813,15 +2813,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2f274279df18989f89aca2c320813495ed4646f67074063e5288ebcb219759c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c1711a2b5091c82cc3936f290935fe0ca8e475b8b2a40bdfc4f378e63617e1e3
 
 kind=LEXICAL
 letterId=
 display=Она обычно приходит на работу без пятнадцати девять.
 note=8.45 – 9 without 15 minutes
 objectiveId=obj-u17-quarter-hour
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-clock-productive-0`
 
@@ -2830,15 +2830,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c6b217e008f99f730af5f2bb71819a43c78fe8ad8fb34b6618975b560fe97d06
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4529f00ca44678517a3b7c913ea264ce3bfb3cb0aa290ee268c8daf9610d575e
 
 kind=LEXICAL
 letterId=
 display=в пятнадцать минут второго
 note=at the fifteenth minute of the second [hour]
 objectiveId=obj-u17-clock-productive
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-clock-productive-1`
 
@@ -2847,15 +2847,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f47c4779a5675b9c54c735c8d1cbb2634726f23b8492405708ae8f3b1dac54d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 937feb5752b95d224a38f3e26ac2c63fe1660b562e85df4352287cc23f785254
 
 kind=LEXICAL
 letterId=
 display=без двадцати пяти два
 note=lacking twenty five minutes to the two
 objectiveId=obj-u17-clock-productive
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-clock-productive-2`
 
@@ -2864,15 +2864,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 10877fcbd96227cc22bf96e0daaab54d229094b6bb450567899909a0bbd5b5bc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8726daa8c2eda48aa0c6077ebc632e4406d70305e7e21cf2e0aace72954061a0
 
 kind=LEXICAL
 letterId=
 display=в двенадцать часов десять минут
 note=at twelve hours ten minutes
 objectiveId=obj-u17-clock-productive
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-calendar-date-0`
 
@@ -2881,15 +2881,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d37f0b5db5323da420940acd2585fa08723535153d3eae8dcb4185ee367634bb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 03b57c0f9669feb690dff3a77ae105267ec3a92c2e568b601a2de54b0ff2a5af
 
 kind=LEXICAL
 letterId=
 display=Двадцать восьмое августа
 note=the month in genitive case
 objectiveId=obj-u17-calendar-date
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u17-calendar-date-1`
 
@@ -2898,15 +2898,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6b300a8ee5786f9bdb8c54641f1fda3570b95af4611e9b01340765ca14d287ae
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0377628ebd10f3641e6134ecd8f204554c77d235a7ab080e92526564c6a70a03
 
 kind=LEXICAL
 letterId=
 display=28 августа 2017 г.
 note=day month year
 objectiveId=obj-u17-calendar-date
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u17-g-ordinals-0`
 
@@ -2915,8 +2915,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c859cc6e57c8b2c5760f7d5bd972e5f02bfbf6a47c5d6f80a2b46d54c4581b02
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ce4830121723ac3bbb49108aa765909b9b8a042ec99a3d04a595205ea2443c1
 
 kind=FORM_SELECTION
 language=en
@@ -2927,7 +2927,7 @@ answer=пе́рвый
 feedback=Does this answer show the first ordinal? пе́рвый.
 objectiveId=obj-u17-ordinals
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the first ordinal? | Does this row fail the first ordinal?
 testedFeature=FIRST_ORDINAL
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -2950,8 +2950,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3946d45e3870adafb846fadbb270df33bbd33903ea5f0d1830cfa2fa21a82b23
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 62922956f9a2d120bcee29750f9131e65594ad0c6919ac54f435326c34182e2b
 
 kind=FORM_SELECTION
 language=en
@@ -2962,7 +2962,7 @@ answer=один час
 feedback=Does this answer show the one-hour row? один час.
 objectiveId=obj-u17-hours
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the one-hour row?
 testedFeature=ONE_HOUR_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -2985,8 +2985,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f79c076ee4b8dfa13679441295115011841162cc4ffd0f8507d0844f7a150a1e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d59bfab88d6a987019e00e743e9aa93c68b6251aa450db590be965f3ba5ce06
 
 kind=FORM_SELECTION
 language=en
@@ -2997,7 +2997,7 @@ answer=один год
 feedback=Does this answer show the one-year row? один год.
 objectiveId=obj-u17-years
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the one-year row?
 testedFeature=ONE_YEAR_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -3020,8 +3020,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62c3fef8ada34cefc708cfaf7ba80f8ff4d006b422de6af341c9f4ca7e8ab008
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 271bdb52ba6ac8b45b3af384eed52ade18a9aa350a047e75208fc87164b7c739
 
 kind=FORM_SELECTION
 language=en
@@ -3032,7 +3032,7 @@ answer=одна минута
 feedback=Does this answer show the one-minute row? одна минута.
 objectiveId=obj-u17-minutes
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the one-minute row?
 testedFeature=ONE_MINUTE_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -3055,8 +3055,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 27c57550c5b28a8f5276a0d0ebfcd46d5b49237cf6171f338303704c400e79a5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e7269fcd5e69d28021769b24ca8af7116e1d4bed222f1d7b43de61c1312759a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3067,7 +3067,7 @@ answer=I am 20 (years old)
 feedback=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "to_me (is) 20 years".
 testedFeature=AGE_STATEMENT
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3090,8 +3090,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 01c42aaf1999bde913d649db172917006a0f71beceb96f32d8e71a288cad1172
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be892a890a82c95d6a42422ace9c9478975e1d5c156f054f49511eb1054bb86a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3102,7 +3102,7 @@ answer=Monday
 feedback=понедельник || noun || Monday
 objectiveId=obj-u17-weekdays
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | вторник || noun || Tuesday | среда || noun || Wednesday
 testedFeature=WEEKDAY_MONDAY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3125,8 +3125,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64165e5d4b3947f08ceab9f1ee1d7fadfef22f8325baab6778f972091932a19d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7004eedf2c06546b6b89f4d5314aa39a0b29de39b062bf232872b842479204a5
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3137,7 +3137,7 @@ answer=January
 feedback=Январь || January
 objectiveId=obj-u17-months
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Февраль || February | Март || March
 testedFeature=MONTH_JANUARY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3160,8 +3160,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1f64d34faa0d327178ed5ed2b2ab2ede008fc95d5d2fb1c527cf0423ba89be3e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ba863649740b9f7ad1402903ecdb4feacd89b2f93028022ac6cc6e121c996773
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3172,7 +3172,7 @@ answer=What time is it?
 feedback=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
 testedFeature=CLOCK_QUESTION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3195,8 +3195,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1f0ca199c80dc062f3bfc03c44f4f556bead5b423ec4f2ae3fbd1183393a2577
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 910318daea071082ffc2cffbf9d76635ffc7c497a23a6084eb42e5e1071b9117
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3207,7 +3207,7 @@ answer=7:15
 feedback=The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour").
 objectiveId=obj-u17-clock-answers
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight"). | The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
 testedFeature=CLOCK_QUARTER
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -3230,8 +3230,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 536f6c0eaecbab5a5bdc4ee16f6be33c574ff31ccd355392f6dcb6ec0d710413
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a33425d67d8fa8976b1b876f028d32b2b7dfdee6a13a50ff715e732b11d2edd3
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3242,7 +3242,7 @@ answer=18.00
 feedback=The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00".
 objectiveId=obj-u17-quarter-hour
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour". | The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
 testedFeature=QUARTER_00
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -3265,8 +3265,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63ace26886a809544714121bb275cdab083259649ac868d5808bc7e834a8ecbc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 477b92737f9936f112fb96abf105cd0b88ec1a6f778521ed67dd816efd84ccae
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3277,7 +3277,7 @@ answer=в пятнадцать минут второго
 feedback=The frozen source pairs the shown form "в пятнадцать минут второго" with the admitted gloss "at the fifteenth minute of the second [hour]". The shown rule is "In Russian we can state the number of minutes into the hour which is in progress." That states the minutes into the hour in progress.
 objectiveId=obj-u17-clock-productive
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "в час пятнадцать минут" with the admitted gloss "at [one] hour fifteen minutes". That reads the numbers off the dial.
 testedFeature=CLOCK_MINUTES_INTO_HOUR
 evidenceMode=STATED_APPLICATION
@@ -3300,8 +3300,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c7dd14f5e2a9bef974d1e112b3d29dc2bf669886decbc7d53175e284a41b69ef
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 74282fafc9c6fade1b99b1fa7f63e806cc9cda4a3e262eb156d1fb9a8dbfaed9
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3312,7 +3312,7 @@ answer=the month in genitive case
 feedback=The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first").
 objectiveId=obj-u17-calendar-date
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
 testedFeature=DATE_SPOKEN
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -3335,8 +3335,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1307c38c4e36236c083e73b38b91ca0b2043948db6bb23ce24d8ebd320fbad6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5bb3142fb384171bd1cb108d232fa86089bd5b666d4c2d4bf855b5c2ad534c98
 
 kind=FORM_SELECTION
 language=en
@@ -3347,7 +3347,7 @@ answer=второ́й
 feedback=Does this answer show the second ordinal? второ́й.
 objectiveId=obj-u17-ordinals
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the second ordinal? | Does this row fail the second ordinal?
 testedFeature=SECOND_ORDINAL
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -3370,8 +3370,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d4652066a94cd47c3505b07695a508e0a4a5f63d87a20a22b0a708e74304195
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b2c9a364463cc6461349d23a79d6b662d8d4a714ba98a5a88535ebe576cdbd6
 
 kind=FORM_SELECTION
 language=en
@@ -3382,7 +3382,7 @@ answer=тре́тий
 feedback=Does this answer show the third ordinal? тре́тий.
 objectiveId=obj-u17-ordinals
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the third ordinal? | Does this row fail the third ordinal?
 testedFeature=THIRD_ORDINAL
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -3405,8 +3405,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0876513d40cf986eaaab256f2b4e3023fa2aa527a4b3829a310ac2f535218a83
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2bc4c67b5154eb156abfdfa2074f39674d14877d42998869528a8b2045dfa7af
 
 kind=FORM_SELECTION
 language=en
@@ -3417,7 +3417,7 @@ answer=два часа
 feedback=Does this answer show the two-hour row? два часа.
 objectiveId=obj-u17-hours
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the two-hour row?
 testedFeature=TWO_HOUR_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -3440,8 +3440,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9be4dca002c09391e769c5aea8e4cce7d0b0dbb31826f2ffd23a1bb794379ea6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 757b9a1ca80bda17b5fb26ba43f854cc416b0bc538b0b00e329073b9bd837eed
 
 kind=FORM_SELECTION
 language=en
@@ -3452,7 +3452,7 @@ answer=пять часов
 feedback=Does this answer show the five-hour row? пять часов.
 objectiveId=obj-u17-hours
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the five-hour row?
 testedFeature=FIVE_HOUR_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -3475,8 +3475,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 76ab76ec08720f2b527cb065c06a30fc5ac8bbb07e9c8d4fb718c4cfc48f5bf7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2435b5912ca146e7d4ff4792040ee77f4efe7a09ddd6e73ac047ce074a6b8359
 
 kind=FORM_SELECTION
 language=en
@@ -3487,7 +3487,7 @@ answer=два года
 feedback=Does this answer show the two-year row? два года.
 objectiveId=obj-u17-years
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the two-year row?
 testedFeature=TWO_YEAR_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -3510,8 +3510,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cdc9c61c9656b29b5654ba6ce8d475a6120eefccda109af7ee58ff630b0104e2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b97bffcca5c078a32fc4a588a3df587f4c966e960f5f6a6bd615f16bb582b511
 
 kind=FORM_SELECTION
 language=en
@@ -3522,7 +3522,7 @@ answer=пять лет
 feedback=Does this answer show the five-year row? пять лет.
 objectiveId=obj-u17-years
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the five-year row?
 testedFeature=FIVE_YEAR_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -3545,8 +3545,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dbfb7d7ad3fa93982a353216f544a7d03e1c14c54e67240222167c1ecc1a2f77
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 590db7d7fedb0a22b941b9d711d7f2b3759e651ecc64aadb466a37ea9a3b80ec
 
 kind=FORM_SELECTION
 language=en
@@ -3557,7 +3557,7 @@ answer=две минуты
 feedback=Does this answer show the two-minute row? две минуты.
 objectiveId=obj-u17-minutes
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the two-minute row?
 testedFeature=TWO_MINUTE_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -3580,8 +3580,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0ed3afb22a70fe50bf1382446a51f3e9380023708f9c0a1d84a48c4056457ec5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5cb656df43a216e61ae65165183eb428fa7beaa64476029fea15a66c6eee4cf
 
 kind=FORM_SELECTION
 language=en
@@ -3592,7 +3592,7 @@ answer=пять минут
 feedback=Does this answer show the five-minute row? пять минут.
 objectiveId=obj-u17-minutes
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Does this row fail the five-minute row?
 testedFeature=FIVE_MINUTE_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -3615,8 +3615,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e103095b18949bcec0a3ffcdcf43d3bb789eda166dc1b45e85fadf3e61090fb4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 05d70f8bfb1c9a12e78aa3da3d08974a0957e9e91036b2d771571b6a494e8315
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3627,7 +3627,7 @@ answer=I am 20 (years old)
 feedback=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The heading "age statements" labels the section. It is not the gloss of the shown form.
 testedFeature=AGE_HEADING
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3650,8 +3650,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a45c5319147f0365fee934f2619fce56574f77d25635df92ed825d9d179604d9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2926b304188b366be94a776efeba179e38b9b973b0ad8dd4151869264d7f4c2f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3662,7 +3662,7 @@ answer=20 years
 feedback=The frozen source pairs the shown form "двадцать лет" with the admitted gloss "20 years".
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The heading "age statements" labels the section. It is not the gloss of the shown form.
 testedFeature=AGE_YEARS
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3685,8 +3685,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 096314db630bd3a52f564b94b30e1d91992b4bcea7201c2bc1867554f2cc1a80
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bfca5cc89c457b95b2b116f4cf847800a234c986ee26d83510d3ac58a8c5562c
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3697,7 +3697,7 @@ answer=Thursday
 feedback=четверг || noun || Thursday
 objectiveId=obj-u17-weekdays
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | пятница || noun || Friday | суббота || noun || Saturday
 testedFeature=WEEKDAY_THURSDAY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3720,8 +3720,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6a50312ff9358f0c9255a349cdee372daad3624cdbe0663e5b230d3718f8dd3d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8fec033b4fa1c3b8d03999b43e7d033ebb6dd1197f14d2d6e6a3eed347ea03db
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3732,7 +3732,7 @@ answer=Sunday
 feedback=воскресенье || noun || Sunday
 objectiveId=obj-u17-weekdays
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | понедельник || noun || Monday | суббота || noun || Saturday
 testedFeature=WEEKDAY_SUNDAY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3755,8 +3755,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 57d8e0a545fcb584cf6a41874ad4983aa123d4debbf53f309b9ca0c3ac97a1ac
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 55cd00493b30c9ed6bbb73a6cc39e50c4439bbbb92fa920be79f635325ce8d57
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3767,7 +3767,7 @@ answer=June
 feedback=Июнь || June
 objectiveId=obj-u17-months
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Июль || July | Август || August
 testedFeature=MONTH_JUNE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3790,8 +3790,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0201f2ecba6780aad561a66a896ab2273a1e0af3fdccac7c23962030d574aa15
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 003c81e359a5335e7578f569de738482fdd25e7fad78f469acb0ad476e969a6b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3802,7 +3802,7 @@ answer=December
 feedback=Декабрь || December
 objectiveId=obj-u17-months
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Январь || January | Апрель || April
 testedFeature=MONTH_DECEMBER
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3825,8 +3825,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a3d4be42344bc54bbd63fb3f61a283046f07d8e4ae6e808d74572d4b35034732
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8b7b10fa6232d836b8a2dd158335bc1145a3e54185f2457c59abace5b883b6e
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3837,7 +3837,7 @@ answer=What time is it?
 feedback=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
 testedFeature=CLOCK_QUESTION_AGAIN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3860,8 +3860,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f78aae4a07edb7cd18d5b3c9d94fbf6ab7d74d87e75a1b198eb467abbc884d88
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1c5f5649ae036b23589fa3e5de82940305210b28ffb4f7e2ac725864fb048e27
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3872,7 +3872,7 @@ answer=What time is it?
 feedback=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
 testedFeature=CLOCK_QUESTION_CHECK
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3895,8 +3895,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4d74b0a6f411b5a576b67932aad1ab6b04d1bdba4d4b22c192b86ce113852ef5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8583ca3f9d1b25c58ff5d1b4b2b7da8f880e4e667a1e024e77c5754ff5d103c7
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3907,7 +3907,7 @@ answer=7:30
 feedback=The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight").
 objectiveId=obj-u17-clock-answers
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour"). | The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
 testedFeature=CLOCK_HALF
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -3930,8 +3930,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55c0203fffba88554e42d24a28bd4fd79981eb19e5d97d2ecede56014cf47edf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81e0d5b6482e43d87a206796f6a72e49d564953e8d9da483a193c44c0980c0e9
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3942,7 +3942,7 @@ answer=7:45
 feedback=The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
 objectiveId=obj-u17-clock-answers
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour"). | The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight").
 testedFeature=CLOCK_WITHOUT
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -3965,8 +3965,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17c79c7f6893dbb5cb6c7efbaae554e5f74c4520e50ae33a48a730482604b663
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2366081bec028bc40edad04b42fd481964febcc8010daee7ee329b36df30fb2
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3977,7 +3977,7 @@ answer=7.15 – quarter of the eighth hour
 feedback=The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
 objectiveId=obj-u17-quarter-hour
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
 testedFeature=QUARTER_15
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -4000,8 +4000,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1986f1850ef97270aba6939008b4e117c8fc3edfb83be41057fe0c127d8cdf70
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f5e02d9eaeddee6f5f7812acfa573fd1c39e77819c4a0e010eb754cb0dda23ee
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4012,7 +4012,7 @@ answer=4.30 – half of the fifth hour
 feedback=The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
 objectiveId=obj-u17-quarter-hour
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
 testedFeature=QUARTER_30
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -4035,8 +4035,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 71ee395f1c2f56f521ac822f690408de37e350051d8584982527c810ab6639d4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97b6bb9dbaf4b93b32f17d3f1caadda07b6dab9c4eb06ec7ad7e7943c868549f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4047,7 +4047,7 @@ answer=2.45 – 3 without a quarter
 feedback=The frozen source pairs the shown form "Передача начинается без четверти три." with the admitted gloss "2.45 – 3 without a quarter".
 objectiveId=obj-u17-quarter-hour
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
 testedFeature=QUARTER_45
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -4070,8 +4070,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7212c71dfdeaade41cf54056b03f31e030e68f09f5d7fb8f0a5b0c99630024b0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44456e1f6d31ddd33a2f209909884592d7138dd93279794c4fd434aa739906df
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4082,7 +4082,7 @@ answer=без двадцати пяти два
 feedback=The frozen source pairs the shown form "без двадцати пяти два" with the admitted gloss "lacking twenty five minutes to the two". The shown rule is "This is used after the half hour." That says how many minutes remain after the half hour.
 objectiveId=obj-u17-clock-productive
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "в час тридцать пять минут" with the admitted gloss "at [one] hour thirty five minutes". That reads the numbers off the dial.
 testedFeature=CLOCK_MINUTES_REMAINING
 evidenceMode=STATED_APPLICATION
@@ -4105,8 +4105,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d1946106262084d2b7dc013389913f22064a21d0021ef0a19067ed153c989569
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5440ebd6b6e4dbcc15107e8eb35f9dfce8ee6d161bd806b72be905c7d7ec2011
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4117,7 +4117,7 @@ answer=в двенадцать часов десять минут
 feedback=The frozen source pairs the shown form "в двенадцать часов десять минут" with the admitted gloss "at twelve hours ten minutes". The shown rule is "This option is always available." That reads the numbers off the dial.
 objectiveId=obj-u17-clock-productive
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "в десять минут первого" with the admitted gloss "at ten minutes of the first". That states the minutes into the hour in progress.
 testedFeature=CLOCK_DIRECT_READING
 evidenceMode=STATED_APPLICATION
@@ -4140,8 +4140,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4991c0e4993843dd2b3b6fae3a96e0b4d2d3c69059a66cf0fde8a68c2b63e135
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40f2a70cdbb7b5d050cede70421a113e0bd218e74c9b1c339aa80d2ef6f75a9a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4152,7 +4152,7 @@ answer=day month year
 feedback=The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written").
 objectiveId=obj-u17-calendar-date
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
 testedFeature=DATE_ORDER
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -4175,8 +4175,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2b56779aa61fda12d9d499aab078e602e844b18257aaffe8e53dfd3de54c137a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41f6670b4afca36f4edcf3694d8c8270d737b40ea4a0842d17b14a6810d6caf5
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4187,7 +4187,7 @@ answer=of the year
 feedback=The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "of the year" ("is short for").
 objectiveId=obj-u17-calendar-date
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
 testedFeature=DATE_YEAR
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -4246,8 +4246,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8d7491ca4d3dcecdd2dbb3f68fc448b57a4105ddadf838fd5dbbc17c4a6b2a8c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec5b813e9fe614270b73469313f789f3bdc46a06738ac0cb7348fa3a953d55fa
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -4275,8 +4275,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0f7f199aff950fe43dac64d9e5ea5745eed39a73b488bcfff38c20db79409cd1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d52f5df12a6ee5d719f7df8f8a51a54af0b53af95aa992eb918e9a9b8effc988
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -4304,8 +4304,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc2b8af412227d0eb6f39f15520db562cdd7bf5515830c3025df0900e49a334e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc4fc02446811fc370a23c4a7f0fba1657958a1c38eeeba11bec7c38e17a77ab
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -4333,8 +4333,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c2a92ac8215cbf4c9d4ad2e7f30c738f53665d54c84dc7bf791331e56ce2854e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5c27b2a46ea902bfeca79d3a8de5aa8d02621da46dc3224bdf1f53ec2f59863
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -4362,8 +4362,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fef3136845cda5eb900d1d4023b8720a9d3fd6ec496fcd59b04feb0716f60386
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0140205ed0ed6aa8239e69d6f8633efb30e6d0e17a35eb6573724725f5aaaaab
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -4393,8 +4393,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 86d1480464d56ef507617d29eee040e41f92f9246687f1d724ba52bd0958b034
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6025f3f61e759bb3f3ca623199fb13e2ce0e7d55866ad3b1a5fcfa3449b15772
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -4424,8 +4424,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d27f03e8b95c1d08fb3562a496bb525844012c199d304e7af9daf8d003661b5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb1bae059ea9db776cbb202f841b2c31c9baccedc2199fa2b82a66f4a42b9f87
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -4455,8 +4455,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc4aa1689ccd4371c0b7164dcb991822df53701d5bb17f867dab25b975140f19
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c27230847338a62347ef515f04070d1b9ddf2dbe7989706a44d660b6f7dba7f4
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -4486,8 +4486,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7acd0fb023685d26c0af9ba8119013d8627e728e9898593539967e6ace791f31
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c882704afbc057c99a9feb52dec395becae548aa7c36a09420dd5688787b7326
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -4517,8 +4517,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 97b94ca38c6744532f406d1a21f2823adcaf5456f217be2dcdf46973aceb598c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c48e2ccf78b62bc12a0a782565370a9cebc9c156af420eec0c27b5bcedff6e0f
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -4548,8 +4548,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 06a0ced94b952b2c8e0fb54da3a9317e88dec05616312e40bf1ebd043a57ec6f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 23621f82e6571f9f7c4fe2a8f407ecd57998bcf74bc3dea1c5d5f51d0acd82d6
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4579,8 +4579,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82ab64f5c14e5b2bb03fdaa970564b094bed14e4a2b01d512a71ad122e69aaad
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb97111f87b6ebf9ca29bbe0e38fdb66e1c76ba9a5813b4ea0575295e9e238fe
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4610,8 +4610,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 99f6fb970b8b1f6c723a0133f26fdb5f5a5ccd6f6f7ce3183e69ca2067c0c4f5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 841b91229f680cc8eae49ac35dc508cf9d8f9fc5cb604db72f2f10cca88ae6bc
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4641,8 +4641,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53b151b10c38e84ca6345edd8fd9539ec47cc2803115a516c1021bd5426aa0d8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b16fab6492186269f06fb575d82ec8ab541dd6da8548a9812628f399b1bec81
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -4672,8 +4672,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f0d7f5d8faa8bcb83afa537cdf08844bdcc549666752635d05e362ac4fbd6f0e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d6a5e07e8e8f24c92e4d7af17a6fe31dd58be749f432a935c42edcdb5e0b250
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
@@ -4701,8 +4701,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: be6ddd829fff853af1afc2096f99431b87c8945b3e56edb7a6eaaa4dd4cf5941
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f2d29f5f11972135c855df1a3a173eeb1c391a6bddaa65ebde2c5999403fab4
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
@@ -4730,8 +4730,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f1c7bcab4663a60f97a1d89967a7361af6e3c8b16a3d3fb735983890a07cf7c4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f15e321b524ac7372709aea59b75a4f021ef68acc6416dc78805b0bf78025b8e
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
@@ -4759,8 +4759,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b7189faa4ec8653ae73be080d1ed943d8d3c6f32ba5d0936115659f19d6e9193
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 55b2773e8a309a5dfeeb20179b3c304d78b98a5f339d34a894f6bed0c82a0fbf
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
@@ -4788,8 +4788,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d4e859505c7e86bfb1a8248fb26ac1feb5ab6f8c1877620ed444bf83f691dddd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0633e3d7ce9f9d62555a1cfbdbb7a3869c17311a2ea702f3682592071ba20897
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
@@ -4817,8 +4817,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d434a3c24dd91093016fec6e6b5694053bcac18e487f1a245a0a0a6ead5ef2a5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f5fc091ddf3e823a5745ddac77ad86c6a5fdbad40c86ac88cfd185bc2ce7f90
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
@@ -4846,8 +4846,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b24dbb50e7fe0abd2f0094719de19690b425ebd135ad59a74a40b619fb8e3254
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 075cee4c66304984c98ffc422eeb31cd69981d4074437b7c4d1216df18211896
 
 recordType=meaning
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -4897,8 +4897,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a77fdf82a761f409427eb5dbd1211586109f6771c7bc943b10ff29eddae39ee8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f78fa6e17ab8a84cee794461efcb3468b63c6c7f3f4c59300c247e790f8f5e5f
 
 recordType=example
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -4948,8 +4948,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd252cfe62405df484fe9874e14371ab94a0740ed61ac280c07d69b2dea38cf5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d9c5fe4e96c96e7d68a713c7234dc7722b6a0bd57d3e9e606aba696add15a8d
 
 recordType=meaning
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -4999,8 +4999,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55b490a614fb2a8c52fb75de494335154c13548f94e93e158a23e418e5f35182
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b443ee20944552290c0913073c43adc7569370f3466c6244651e2c046b4a599f
 
 recordType=example
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -5050,8 +5050,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca17e42b0ea4df96060e95eba0ff18eded8357f70b7bba21f69d0fde5886c811
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1e8713d7159102efd4cf9c5a17dbeb1864a0ff81868d39df677abbc0febfe34d
 
 recordType=meaning
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -5101,8 +5101,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a2937662f0f9dd39d3d01c69ae9b3366c9965578012fb251630752eca6a2975
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd46a955edd9ac7c70bba4dbcbfb605d8c5d68be266fb7b0b03d918dc3ebb2b6
 
 recordType=example
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -5152,8 +5152,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 93f9113db3cb70e3f01474b21c048a39ba3da8ff0edb7e7cd673bc10d6355234
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 124c517a943f921129df231d223ea50d3a390ca74e23ae232b040b07e1fe5890
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5192,8 +5192,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 92e53152878d58b49dc41435b6763110da21858e2aef9f9f2c7809204efcfe07
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ab07563bfb39024f2bd546bf17be871266041949f1792839a46879abb958f970
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5232,8 +5232,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70fb335af2e81bb7478ec4aed96a6b131d7c1b9ec7a643a298f6b358d1375b05
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 16ad6772848892085c48a52a9cc1de36519e53f9c27e972bc08f8091eb8bfddd
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5272,8 +5272,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 933c28efdcf3ef823f1f7bfa0a50da901a7790fe91239d063746f077e400a800
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ff035a21682787e6e69edb89982a91a6a84e07594a7c454fad83679ff18ff51
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5312,8 +5312,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3ad1975ac7cccf30cb24ef61f3dd059015158cad8fa807a2174701241d640211
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1afe145e0ab5838301fc4889880b608a813d1a6b13eeafffa584bef5e1e52950
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5352,8 +5352,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 24eed5c70ed60eee883c953c0f46eaaac44f2582932b5545cee0d9a50c7ae9a5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d22cc5c1b4a1f6e208a9534e4714353bee279ea3d305ba90ffccb3254d852f4
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5392,8 +5392,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8acaa3cad0e7456516e9c3341c0ff2a105c5c4385fca0d7b981cc1f7f66180f0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e18340ca2c46458c5ce06f36dfc4c77f6d050f449bfe36909f9aca7f5dd482dd
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5431,8 +5431,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f4576d90eded669c2c48efb7a1dc6ee7729b4e8f0f181037a64c48d9121437f9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 59924a1e7078246e77242d4c282ac285e2f329d2be1a20e312b0839b28ed1c7c
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5470,8 +5470,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2af5fa93b66b63bdb6e99bd5682de9713cf2a9f78b46d8cb0d8e62f9f228bde8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ede7f43849ea984d5301aa936e0b545ae2a0b2ae7b7a21a138d22436d5018c3
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5509,8 +5509,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b685cb9dfbd5504151a84b2a67ebc9b0fb925957e62d9afe7b12f3f6ad0ab931
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee87b3bd7076f8f181eb40ff34889215843d8a64cac8a8382522b539985b95c1
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5548,8 +5548,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fa6e4d0b06f1db2853a669ebfa47388053246b2c2771e998379795a933517ced
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 53d85842f2a0ab0e3df382c4ea33e838dfb6d1e8b67980d83813e15c456869a8
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5587,8 +5587,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a7d81db1191eb6ba401fda703f25b46a705af201ad2e49eec3aa1d97897cf4a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 29584c316263f37d5a298c1f56548a416b1c3fcb495850883924eecf0b02c7f1
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5626,8 +5626,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 40ce2241777561cd4ddc8aaf6084475dadd4589aa70f9381cdb3cb9457e34f36
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1df6b38a139b12c6bb619d965cd092b7283a1dde1f099731891f9e0a938240df
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -5719,8 +5719,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c7be145280400d063bd0ab7c7902523da69dc82e27c3a81721a190843e1206a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 179a033e987de8e1697e9e761ed49991ace4468f79eed5f0ba656689d08a4737
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -5812,8 +5812,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 34cd79fd3f18771fad3248b115b488629ddb14e69c51cfc5b505ee6e93798c49
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee6b60c54fafba0c31efdfefa7886ee182498643c482127a674ac57ea7a26bc1
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -5905,8 +5905,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3f64d0380579790525a652b5de959794b2d538d9caed7e6d0ac890c9276a5fa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ce650d05e19423b2227771bb6064101fd609627b8112098ae4cd65c567e1accc
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -5998,8 +5998,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9729a926dede46ce386916e8ec87e54bb6a3da24e033dcd31e33d5b4b43d7bfd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ced27be65c26d22b6263d15d546c040163f02d09966e8d197dd00e763c3fb514
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -6091,8 +6091,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 519d5c4397ffa3870ea54aeebd93b85dfdb97ddc654469f9cdd7ce86070a5d00
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13e7d109a23a8ae9cd18d0d9cd817e9d6863afbb9d5a542206d173e1cc6905d6
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -6184,8 +6184,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 194439003554d16281060c6c29901d186d65bcac67cd540ed57f5bbd18466004
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 033a242cdfbbf8fd8d2a551fa9467935fa341eb3f4b6b62ca0dac4b1c27725ca
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -6277,8 +6277,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70db31efa353e7fc3f1dc82c65ed6589f30502ff37ff9ec85a18a74f912c003d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3300a790398cc3a692c7b0742afb21300851ec1f95f7f8899db96fad3124e530
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -6370,8 +6370,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5e55996734fb9199efc9a461f7a43af2b89d7c0cfe3fe1983d45c7e8ec523d0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bfdcdc0a7cdfbb4e2e5944e6a02824b3652d3eeb6305aaee128b232e842d415e
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6408,8 +6408,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b70b28849db2fbac539474c6e5462abb7d369884530061bf244322a3b4341cb8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1759a0e06719d5823d48bf879b8786ef995a50bca091952fecc0d89da10fbc94
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6446,8 +6446,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b3146998ac9e73a1478ad150543e8f0b89b08a70cb2ae82cd3b9f7aaa758139
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbe0ed73d0b840b1fe7d45df71277e56e6a9e216c152fbfd00e8b79c956d7ec9
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6484,8 +6484,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9b81393e51c948b733d061a03f4055736d50a01c6df12bfd806b42bb57bee27f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 751ed101a79df645a19db4c8f3faceec9eaaf7f05e8324b910c4e3f290e35da1
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6522,8 +6522,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e90ec12fc63e72d7ea0d0e755a11abf1dfc17c0661e0e751ad3b64775c9b76bc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd65e627419d245c35780e69c087b2471a7337987c6feb8ebea77207af6cbe74
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6560,8 +6560,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d8413652dcd3d030a1802d071982f768c37925c88218dfc006c8e223791ed2e4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5504b5060391962ba59a690e2aed38156a28664b158d9e548b3f6692c9f4f4cf
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6598,8 +6598,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c88f77891d128763f406c58a17c442d4a919294615b4e34f0fdf4563640f3a21
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f58dd26e5571fca8ddd912934ef067127639f4a72ec000b424504af89093cf24
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6636,8 +6636,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b7ca194c8fd4045032942e0d300356b14bdca32e617b149910a7558a7fdf921
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b85db3be903181c068108c2e9694889233fc58505e52781193870aa25e3a649e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6674,8 +6674,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6655bdf0e6c3cabd44d2c08b3eb1acb9f678395c98408a6bfd07eaea97c92e04
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d645f6626e3eecdd91268decd8ad3d8b60f4d5a24451518db7eb1c05d3f3d9e
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -6748,8 +6748,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a6e8880d5c8227164d25116b5830a255c4f45b52657f500e8117d5392177467
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0819d404556318970c400f34036f4eeaa66ca8fbc09b92432a3dbfc16ac3a1b5
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -6822,8 +6822,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 926ee426d928990671e9d8e0aa87cbd142dde100992d1dca3083170daf969441
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0fba245b90445034f5395f0df6bda97b313e2177280adb69b3ad2dac256a9c7d
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -6896,8 +6896,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 31be7b2efe0f8a44359cdbe4d8d979b6b1d6dd581d30b258731d0d2d8e3829b5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f0b9a1001f2ad3c5e5c7d3cc6e49e1a3b6b236171eb8b4f047b11e497472907c
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -6970,8 +6970,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a41dca8b7ef214fdbb284c1d71873d1fa8a26e41d7e31cb4fff4ef30430aee5e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1a14c18f815f3651f248357392179e4a117e65c86ebff79217fb8985a6b51c3d
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -7044,8 +7044,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e3f977769fe29c9ba8044f0827e3c2c18893214334fdf335e253601cc66a60a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b779e971cfb9b323a857790b660f2d15692679cc3635cd7f8640dd22006ac04f
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -7118,8 +7118,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 58f58f5407d16bcb91ddec8427df1bdc2ffdc3ee62e42b3c2927456fd1ad57b2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 039cbc15818469286c61d850efe7f3abcc9b1ab50105675b9a002aa421d361f9
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -7192,8 +7192,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c2e46f242410e7dbc96c01b78501d4eb2e70f92f8d89ad8d06b1b48cc6e9df8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 75e5405595969048b7c87d86297a59f5ddd406009e84616934493e39040c9645
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -7266,8 +7266,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f0cafd13a9962d63258dd43eb124926ee1b133863961bb3ee7b593d6094f82ea
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0514a10b27507d20d67930a58c93666289b579ac837f30af07ffeb7cf049264c
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -7340,8 +7340,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae08160b8fcbb3b27714e560f02b28b2ddc3fe9b138037d84e4b13f14db3f4dc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a75df70e303ec07276e4a7e7388560d2e9994ae0d8cd5693040b0a0fd89213e2
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -7414,8 +7414,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e10967e0c8c2039a44d96fb95fef1f728bc387e40fca7399249d49b00dce69f3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1bd0485bb0ccedf431d9b9b6dfef97b4be1480b7de8662b93eff11d601e3659
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -7488,8 +7488,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 151f286e81e843560e031313adc6effa3c1615cb983ba8e1e77a1043ceb08995
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4313ae99219a7be6ef0279b40cf81d3c0a0c7404c4615ba6da70f2040fca05d5
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -7562,8 +7562,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 262cf2b1d3fdbb88e4e8301eed7fb9441af5f1d628c14abd07124c45f97ace19
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 91fcef6ff64522e73eb55d3ee2c832bd9a8df4d279b2acb126e8a745704b525a
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -7636,8 +7636,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2bbfec9e959deaa619fb6ed81b658475ef83d571307eda7cf3e2960fa1e99a70
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2ae994a663ac3ec2ba526682fb744da436c4eef19c3105b36b03a771dbdcd18
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -7710,8 +7710,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 59aa441425de7846dbd833257c3bbc85753d5f1a69d113170ba6022100d02c23
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e324e30880ebf0bf3e06db45a47fb1aaf4a38c856378628e951b8242c0912e43
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -7784,8 +7784,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a7e3234c056066aabe08ee6f95caa7b94c9ab200c59e9dc1f783dc13ee83bd4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 211d3a160dabc7732d702aa2997c55a8f22b76078b7a7a0eac0dcf01c4916b02
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -7858,8 +7858,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65d15cded4662d191de651e5f05937c1383b4ca6eed2141e920343cf3ec7beee
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bea8140961ef55df61a746fa2ecf32f5488be4b6c4b6c23b4909119dcfd5ea45
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -7943,8 +7943,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ddc77703777bd463415815b13ddf213ceeac00befc0f5ea3ca10b623034a4e7a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1fb97a9585f82b6b14336206eac66266e91ed99357691f7f221e2532fe940bd5
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -8028,8 +8028,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9147c32b167c657e17b6877d4801e0f530d9316ae88db66aadceab347253f7bb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bd79db814a78d6224fa808d062b7d5d872f5977f91e415fafd0f331d2b7bd1e
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -8113,8 +8113,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c5bfd72e9ed8c8d37e12efa636cca31a6e3493a836c9e530a9792ef82f513b0c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 422598d05ccc36611e87e916d56fc3ee112e81c66bc0a5d9d6ad61872a41af7e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -8198,8 +8198,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b488fa6944172deb129f6a3800bde43f9b99972c76856af33139693b6242546c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa1fffd5c15c4b9b198766fd5b8c0ed6aad02b5478b4788b3db92eaf12b3ca1f
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -8283,8 +8283,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e66265274e0876c76148495b5b36400f397b75be2dce75eb1262e0b46adbaebd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6eb9d1db1f5cc63c89ad8bc4374662005ef73170ef73010b5b10ce8cc563d745
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -8368,8 +8368,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c5437e57b536b837054c64201a5c1ea61ba8933d5092b184f01f3b61f08cc935
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 94f4ef772798d3f429c5750c3d2213fb685c49fbcb2d0de0e2360a5dd4a48368
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -8453,8 +8453,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b05a2c5744972501e87f69e0b122542fa676261bef24eecaa8961876b3a33394
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5c2646eb3962416d0f7d84a4dfe0e39051a5637c72614528f5c769c588fff52d
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -8538,8 +8538,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f359327a80ccdb42f0adcc77a8697c07d1aef2c4a0913d45e509466368e9efcf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1bf5488472557c55ac68ea9edc1ea50cc237a16b3017160fab061c6e96a91ff
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8575,8 +8575,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e6e30fd163783324a7922a485ec2730817f7a3bcdb896f7b6f9101c257d0589c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 04385427a345a27dda8469f7d82d1b3f7c412bb9520130b0ce1c6f518044d204
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8612,8 +8612,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 22ae9986e47e51ab7f3892eb386ba8a2fb23f07b2d6dcdb001e34b58ad6070b5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f7273506e45e70366dfd26d0025f01c360de9fabd6fd41b3dc31e96c54125d8
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8649,8 +8649,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96d405f0c684420f90241dd341071832e741cbf84408ea12b10e8aa382238214
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 18c9738b6d63da5f7c4f81f50bb30bb29c7a0c00911da7525de8cbb8ecd1d79a
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8686,8 +8686,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c2371885bbbeb194f8a8c0d2482a815289449f2ce19ab56a0627d83a697ca119
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c3787d372a89d3454fc2a0760dee8d2a7cc74c42c0167f7b1a6aeb030cb5db81
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8723,8 +8723,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc6d615586aff97e83b0eb2b32d90b4d5497bbbff796d94be31ec2c4267f86de
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbf878c41714b4321b54ef24ec2c2e9081d598e6b5c4df8ff35e27cbe0deb3b9
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8760,8 +8760,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 478192a8cfda16114270ed42902f2dc2e315da7888181c1fb59c9c54c3c4155e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 258126a680157fd3a3eb5affa2a70ac3be35b7fa0e6c472be394eb9e26d2729a
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8789,8 +8789,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1612d4ca9f7e57fbcc243f8c06e4d68c1cf2b260753e24929288a63ad1ef27ec
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 94c7f42c8e65b6b814754032fa223a6a02b6ee3810ba3c372d771d963b857c29
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8818,8 +8818,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bfb9641b8f2ae8eaea11db5b5d09b3c0c45cbdc44699b5026941254e8bd12b3a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97a5f67b9082a5e07568d7f5c44b3be72aecc33a3bff0bd7669e455b13c1d01a
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -8847,8 +8847,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e57b68fa372857f928a26c4831b29683c024a44dde4789ffd1368b77c62a0534
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e95d4755a50aaf778775d5f94bc8260f7cf81f33bd6bfe96fb909017b9fe212c
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -8876,8 +8876,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c56f5ac734ef15c0c364de8b632849364d8e52823c3aec3512206473f111682
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 99bfccdf1b6d39c81a8066ae514c32cba780af3e35adb3f67a04cee85fb1a1a5
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -8905,8 +8905,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 44cad7b42893cf7df6bfdd06cd3564496266eafa5b3fe1c7e9a7ee122ef9a558
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3737d63654eea05d26c9f8b6b5e792f87a7911111004760c08046ea2074e6a93
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -8938,8 +8938,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9fcc039961add9512d9b27710542c76e2c0515aa14b1c64399abbebb828234bc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3912ae6eef2c8ecda897da8d6d8ac3f8f3d50aac6aa4775bbdf217febf01b0de
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -8969,8 +8969,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4bd108d16280fee5191cb0a674c8fd47e05998c80a9bf44572c32e01a311b9bd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 883d3e3b8af4ed1181a8bfc8568ae0462ea9007079f133df80ecffad3b18c6c6
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -9000,8 +9000,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a30d5a6162f9577e26a30b0cff24379397ee5dcf3f3a3ee76142412c3bcc4d6a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8f929debfa8fd53475929aaae6fa947cd271536c35d917f2690a018105986f7d
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -9031,8 +9031,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 80958a9b796b9c48cd0778145fabf8cb4408df5e5543a024ab3876414ff9d8c2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6becd2c91a00d3342fb266405fc997ffaa7a904e2c9c8e33e834e7a6d3bac9c
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -9062,8 +9062,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 33336ebabf81f800645bcb2a2e85b32f5cbbaebe0ae1cc31b7a9159d5243545f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b47417481d09a5168490577c0525702cb08daaf1d78d6368b2c4935e676e9351
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -9093,8 +9093,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c4f0568058f54f329c6cda8ec10b1b087ca182186d05014bddad96caa4400373
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 37d33c00916f2c19d88b8f7569d6d688dd227f8b94cfb89a546128564df34e11
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -9124,8 +9124,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9f4eca125f72f4820f1f0b0736f8bf488c5cab237a890fde75aff5778d9af1e8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc2b4d9f1225e09d13ec6faaa69a930eba1985fcc4d96e42972bbb61531016f0
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -9155,8 +9155,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55a81db6f3d45700e23dd285a5a7c666eafcdbfd0ff932bbe4d14fba1fb060db
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 80f54b6cba749bc8fcd820e0696d5affafb18b4741723588120f0764c28e3e19
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -9186,8 +9186,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fab05e31491f56ca6d4e36db4fe05d842245230825f9414a921358c8fdab719c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 008597d50106fb7148d478c1b8db1cb9203d5a8d9805f65647775c1447193e87
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -9217,8 +9217,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e367108a4c12cfcdff1cf73ac6b0b75ce0045532786cd8c0b276b4cc5724b10c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d49e45e53a5c8461f9689118593ee10812e4a80b2ef0c7b82af0a56b4e5e64ee
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -9248,8 +9248,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-notation-russia-1357134172
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c56146ac98b396ff32d18159c7582e3a482791a75e4d8bb5422f3477063cd842
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3bb2f6c44b3bcb6d5938ae4a1107790df9b01e2d5b35c96f02e5b4a55b0c481e
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
@@ -9279,8 +9279,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1205c9a59938bfbebb20e09fc436a883025767937e5a76b1ba76d112bc4f0fbc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e4169e53d5f6108ce7733914d731243c4c1250f0a411327f980e9a9157bcd485
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
@@ -9308,8 +9308,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb06f4dea2ba1869ba89a8c0b7d60f631c9593e204f2aee9724f53d32d561ef3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 07a4566631f674ad50356bfad4c82d4ba2a257f77c59a82bd4c4cd6ce665de8a
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
@@ -9337,8 +9337,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 49c23d8d6cdc7829520a7ed858040b02a4e85270ec7b73c61f0b74211add8d5c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f218080b1457979ceb5422ad7b22aec44ab10db68a57ff87ac027ff1c4cc9d81
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
@@ -9366,8 +9366,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e7a0f12e26e97f1d4fa8d524662dc956349aa56566343a84b85f65db57eaba23
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3e0b169cc3c3550442e9c705520a8a58174c75f6ffd12340516a81fdd6f2ecf2
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
@@ -9395,8 +9395,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba104ff7badc8d6514b7239a00db73b122f2c8c20f65dae87febfcb9a9951d33
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f0b09de1fd9c9f125a837d4fae4559c776a354afa6e0a9e606eb54d88a52d1f2
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
@@ -9424,8 +9424,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 946bce225c109573a04b57c39608419a20ee93f91943ff660b9483656c903fd8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db8d5b20658e2916585b054eaf0ec9f1bc1140b37b277f7ca861c23d8ae7a9e9
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
@@ -9453,8 +9453,8 @@ reviewedDigest=
 - Source: src-wikipedia-date-time-country-1366690592
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aaa401291044b7d1fce12842a027c38fb3cf3314a380840875c9bf334fd54a0c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 208aa4a33016ad6c75c068b4b5d694d49e2ca61cd32e0cbfea44f32f625a107c
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
@@ -9482,8 +9482,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 98b828cdd5c84e4801fc7509954196511cdfa6ea464a3894998ef47a66681d46
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1c2b582db1ca7b6cd417938489ce179e1ee8a59dae59ce5022e9bf3875e1fe4
 
 recordType=instruction
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -9533,8 +9533,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 069f9e6f76ee2fdf80d6e3a1789272fbf0c2aeff7eaa12db58fd734550746e62
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b121e255f869f29c6f2883fc95ae37fd6b586531d9cdb3c8335782f3705e521
 
 recordType=label
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -9584,8 +9584,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 315b85273d9027d0510c8054747f73da5f873390219aa4cfe9ef655134dfcb2b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f3146b4c1571a0a13db6dfb47582d37a16cbdad73aec33318055cc7d974f691
 
 recordType=label
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -9635,8 +9635,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03136dcee208c7f867e456826c2159833329b02d47c6678c48e03af7a31c4df8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef0b49aa47219b57cdabcb5878facaf52de9d9ac536b4311c2e8f5ee5e8b4760
 
 recordType=label
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -9686,8 +9686,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2496cab88bb3ae1b64750862fe01106a0b3e61638535f114642ab71609862184
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d84a57bca6c3fe1e8a25a6c22ac6a7711648555be2f6bbf260c50d291e4f08e4
 
 recordType=example
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -9737,8 +9737,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 978e7b3b9dcb4b709a297a3849a74aad1324505d8b26d5202c9bdd13b03798b7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3786ca171aa72198c1e45c8202bd2619b62c12022aa8ee9ade48591c6fa7275c
 
 recordType=label
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -9788,8 +9788,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 23b9fc87963be870c4569520e027189400a1fca8abcbafb485e912ae9b11a95a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 493d4c16b4cd15b947f9c97cb184e049aeb14fd68bffbfb2faaca2fe421bec13
 
 recordType=example
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -9839,8 +9839,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 26d2d648ae7df9bc685e26e162a34d3c2d3c74fae05d1a38384779ae86fdf7b2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3405dfd8216b8b3cb319c61180d0768ec19c5cec677578a9a0bb05c8d2d164f2
 
 recordType=label
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -9890,8 +9890,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bbaa953ce6f4c68c8b537decc5ba6c0a341458ae8a6ece2053e8a88a988eb4ff
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1946a9a8cda7505fdeb2f19cbb02b0d8a8eb34c3e05d5b3b96395bc3da71459d
 
 recordType=example
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -9941,8 +9941,8 @@ reviewedDigest=
 - Source: src-readyrussian-grammar20
 - Rights: rights-readyrussian-grammar20
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba6228600e8e98f2a0f3942dab2acd0de3a8aa8fce01b7af85d84c2673934669
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5c76a70e13e3fe3a1205468faff74215d8cd665e0b8156dcb49071ed37def6ef
 
 recordType=label
 sourceUrl=https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html
@@ -9992,8 +9992,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c9be3f98c6d7b837cfb7f5f8117a7efa09a158401ac439073cc285bbd5c6453
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 37685f2b79fa5d9581b8ffe0cda108bdefdb40fd9eed17cfff7feaf63081f4ff
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -10023,8 +10023,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d7d4ee377675a1bf10eb22a5ebb0c81cde9289ea435a388418152f91ccaac21f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 444aafe22cf064b858056494694a31b169467221df2354b03fa722b55d336629
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -10054,8 +10054,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 14a8c452a236c0e5c37e22007654f7209b1550c3da12d22a6d2df6b6a23e2782
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa582077a1836ff6de7ec807a7ad532ee424a6ed473bf22d42ccd4262eacb04d
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
@@ -10085,8 +10085,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72b8770487b7c6032ad3e39d117797930f8f8c2c90728a760d402b037b4cefb0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e0fbeecd935e428326fd884b08ba99f0e0d4490b202807adfbf6613377c96828
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10125,8 +10125,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6e8fd320b3eb70e160304a48afe1a85dde4d60bf4654d44540835041840ce378
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb73a279e26854189cb6458380019701e7583649ab795d5b566e4d0de358c55c
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10165,8 +10165,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e9476078bf63aa5e6514c9c30c31b17ebe40aa2b6bb5448cfa0ba190eaffd4f3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: afa9fbb74528e4bec878904f1bec44d791abc3a33836d30b5a66cd896fc01180
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10204,8 +10204,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5db5d501deed769cd7f572dd5103ac664cc84110c0b576350480cc3cdc899f7c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3252844b172fdd1395008cc6be7e3472b953c0f16d9911f6b5568ab51548d88
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10243,8 +10243,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3716c7ed69fb208c10f9552573f070a55c5154572183205aa4ca1379af7dd6c4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 76f3f4e8b977de6e2f1511204858ece3eb2f9e86bde2438071b735c08fc6fd96
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -10336,8 +10336,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3bdfe5e98006f2c38022cafb22fa0ed4cd4c05ad8a0fbb62e7ca248047878f81
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 75cf08bceb215db5f37d9e08f783ac0916ad0b4ea15556315d3a725aff914ad0
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -10429,8 +10429,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc3ca8b5440e85d6906f621c21ba5b6037ff45ea2903759fb9d975232e460a38
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5419200be9b73e9454b91844db0c2b9197f7006f4daa93d93b2c9c8d8241dbfc
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -10522,8 +10522,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9edf5fe416fbc75142f5dda2d3329e8ef0f1f95e90f55076cf4b624c1530bb7d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be715ab295e672eb1c0ed60c582e91e02fc5df5210ec1a25c5669353ccbd7d0e
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -10615,8 +10615,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2fc528d7eadba490f65ca8f8f120945427c3ae51ca2c8d6af50e5c13abe629ff
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8f853bace97b1c016566ec5d09bd1f7c2bc72b3d991d46bc7e8763329a531f1f
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -10708,8 +10708,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 30767bfb25f7ab19bdf7be1e319392de55b1fca1c1e3b65595190049ce5f5c79
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38144ad6efe09e5d19eb7d0acae4287d678f6b11b1f3ce8eef914f0408aaf3a7
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -10801,8 +10801,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fa103a9c6de32dc36969e1e4a2a4e63ac7255446158335e159543843698e909a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b3767a670eeb06adc817a29f96fed5c4c49b092436b1278275e3fedb914b82b9
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -10894,8 +10894,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 98ddc0deb41256808f752b8f8c33a2fed405df0f24f9f9b1ab3b45b0d1116e89
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d085144c8bcbeea47e7363f953720fd2011c56742afe7a77c230861f7ae69daf
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -10987,8 +10987,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed4f83e47f40ce0fa8eb9b06a277f72c82660a95bb7091d18b8702a1f97323b4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 71377b69fd9c988416d504dcf4bec864669bdd6ea27c0d3a0f4382bc83ab2601
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
@@ -11080,8 +11080,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03f37e2f7944b02b3c891ddbe163762041ec1a06e6ad8bfa5436a6d286c1d406
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41009df4cfcf1dbd09eb72c3caf2b535a9e8fb936ad3b5ed34dc8d40233c77ff
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11118,8 +11118,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3a81925aa92f9f70e670f3fcee6314416eef0b613bcf7ce0fe928a4a0004bf5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f03276908554962eca7a803a4acd64971dce98eeb5e055fcac1ed759aeb1c1bb
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11156,8 +11156,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-traditions-grammar
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9d4b5cbe5a084197863bad09378fdbc1793da71ab6e083220e31d9cc2e472d80
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2de77d2c352f53da56058a7da58dad7ff70a281d10322b7448430291eb971be
 
 recordType=instruction
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
@@ -11230,8 +11230,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed2595095cbaa1f3a6735c02b768ec35d9f164e223d23157a3fad3e6daedab7f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1307ec9524f648668c5316e10bad3cf7cc90814d2e918d392cb0ebfcbf294a4
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -11315,8 +11315,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9bed089aa1e3fec64f4ebe2a5e7a89678e7cca712239f1f087f1961ff6cd0677
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bfd77cba0505c4285236cf1fc39c9515a8dca441e4758056d1c705c026a443b
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -11400,8 +11400,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 682f1c86c4e35efe14e393ea7d8e837cd071c79dd23a4a5ab603ffcde5d6ca6a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 909a1cc30daee2bf7c9a6cbd0c1ec2b452528564f22873bedfb83dced64c5f92
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -11485,8 +11485,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6837cc5d61a3a694d2087c0b4875c20368c3f273fc44e2e35486965501f36934
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8323f6c20d3e392abef16c28d9fcf0fba2c86481d75a4807fc4c1cfc45003fe
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -11570,8 +11570,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 384ac0ba6e50c14d2fa605be4a048d6dd069877fd50a4db08b703e0c4a2fb4bb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3697babc816d477ebf9234a377a5aebe039586fcaa4fb50be8b1f3783aaa369c
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -11655,8 +11655,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 48a614daaf85738c79bc477b31e03994b0e329ccecb907ee9bc3148996ed7959
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4af955bf9311d35c60e06b5be89d7ef51495ef23769a2f10387394bd3712e86f
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -11740,8 +11740,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb85719e46e59c31364ea080a7d87839163fcad80576bccecb6a9c83f9a5ce77
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ea6602d157b738eba93d3f68d7a351d84d2dfbc2c2a4f9bac65b098e73807dc
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -11825,8 +11825,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 16e076c1d6f763952a9c94e7279e952db9c49585446395a4d8fdef0f8c2224d8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbdc0f5e597555791281c0c8e77567e49a8fa0b894314d1e56a8efae0a33d4e0
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -11910,8 +11910,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7912adbca716e336bf8926e6cd66a83e4913c2b2d54e35b01dbad101dea88dd9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cf7b3fd457e8589c920fac0775e73c867232fdd1649ba7a9b0e198c426bdc7ff
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -11995,8 +11995,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b8430b8e527e44863b35012b6b0c762b7f8cc8f0af78571a9aaf0125f4623d6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b81ca741c283718aba9d2e70601aa100f5bae12ed61af90d289afe840482d096
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -12080,8 +12080,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b1e8a373c924e1cddf285c704081e12fd38b357bdfb33ca8ebb8e6dfa738ae90
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39696f60472eb845c1f26d3fdd49747e0151ac3e5264d0a8afd678f43d9c0508
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -12165,8 +12165,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c79217be90dbb7ffcf7b0da7105f2a50354db1a8aadfed9ff6596defb55d068f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8e99e56458a0848db5216a4446673a258066cbf6280123499a94a45863f14700
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -12250,8 +12250,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ebb97522a4f341c195c921bdbd9f1d685aca1d0ad65f131c5f652378f4d3b10a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3ace53214d4c41d8aa7ff1d7797047f23b60ca0c5f807102cae81b0a75cdf63
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -12335,8 +12335,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0c5c23fc7e1afa6dc9b9066a1ca69585bc0e9f40d56d0005ce9d4a6074f3e20d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b601a779409b9f9e1b87df851af3dde54543a17bcd98e72a3599554bcf1bda9
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -12420,8 +12420,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c315c9feeaa7954ddd5a613fd718f056226c2640df31850d5073e5f4be7f8e6a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5546c02a7257d876fac1cc7b13e609e7698687203b8689e0e399a2b5256878d3
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -12505,8 +12505,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 223e9c590162bd9152ba19fd073614d266340a7aa176bfa36f6903b9e7c5d57c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13f7a6095774e4db158a7073025b5269771a00eaf68c40ad1fe2802bd64c005b
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -12590,8 +12590,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d7fd27c1d64335165beedcee7615713ee042805fe095f574b389af4e32683115
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad354dbff370fa5468161fdc19d69059da694246e1e9749d437a6ac2b5d58250
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -12675,8 +12675,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dba6adc336cf39092770637dced2ddf7b808227bc1df9a7eaf722b7ceb6df0dc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f11857bb71ee707e46de9cbe29bc0e9bd15d3417fd958e185dc2c3b529b189b
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -12760,8 +12760,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a3661a042997e214226c96be70aa36c525ca4a228ab12a5a7f7115cc0790ada8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fba6d6a57535189299a120a29bd57653e47c2314ef89ba25b3c5d71c71598d67
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -12845,8 +12845,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1bcde0388980ac629710bf56fdae361b5ef712aa3d3ffe94cf4081a4d7bc7c4d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b92de0a7e0ee8ec5507e01502f1f0ddad2dfe66813053ba3a54c5bb77e69bb58
 
 recordType=label
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -12930,8 +12930,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8976d7f7ca9a3189a1d50d08021aea9e2f18a09ec01cd2f96527ff3ec45081d2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9086c0c9ea9a20a323b923fdee633d15a9d2e31f4212aafa896b31c970a89ece
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
@@ -13015,8 +13015,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d988df2ae4789067f662b33f4aaab8136de9671f5a8b6d8c206ba9721a8e11f8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 203ed3f6c8984613ca413ae2631abe2f0e20547639bd8f5b3534e46c84cb33e4
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -13052,8 +13052,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a4c89cf8ee66d5b3d78d7a57338398475aa8114799a40eb8c981a5650296801e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26c003f9c6a7fe453e5983dccf797cdf1b50175ea66238d3a0f348f8632bdca1
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -13089,8 +13089,8 @@ reviewedDigest=
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3f92ad75dc5c8584c942611725b3af99f4fc37da40dce822706517712152a588
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0fd78979070a2e443a9af7e27b82a61826b858d726b473b223932826540d6ae5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 17 book work
@@ -13102,8 +13102,8 @@ text=Record Lesson 17 book work
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af9170d9ac7de3280272cb7d78cb6ff1dcb094be3bbf4d54dcd3f0be273c3d89
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8e9f0be1dbe31896fc0ea4b94b9e7129de659ea8aff4074e37ba80b06e34efad
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
@@ -13115,8 +13115,8 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a7dd2c20517f280284a03f3edbb4a0065a7a678455baf40af153e82da142906
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b9f9f33a1b3573e4493288ea517c3c25ae0027c82ca5126522978622454cac6f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the one-year row?
@@ -13128,8 +13128,8 @@ text=Does this answer show the one-year row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b6e2de8223f1521028c58a6e5ec8cf6854064cef53795882d77fbc3a9e3edc58
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b1c79f653f202cf72fda567007de1e74439e51b93d84a9fc0fe63932412804d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The heading
@@ -13141,8 +13141,8 @@ text=The heading
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7f9ffbf4a590d83a2a7dd40fb36042aaaabffc9062d5a4bf798b7374b71e46fc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d426cc11243a15874ec3a9dfc24154cd92051eb875255e89f5c2e0c9d5306b4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=That states the minutes into the hour in progress.
@@ -13154,8 +13154,8 @@ text=That states the minutes into the hour in progress.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c4e52224d9d346f296dcb5483cdeaf25d86a86f877ccdba0f91d8bd8e4d4cd8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c55b23ade17a1306b013fec939e3835d7e1799c5281feffde285c046714d74ce
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 17 in your copy and complete its lesson work.
@@ -13167,8 +13167,8 @@ text=Open Lesson 17 in your copy and complete its lesson work.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 07a2a10109ca2d5002233d1bc6ab0b55ee2f280fe19c411ac4596699aac46c49
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ecfd15d5ea6759db03ddeb99f58265e3074fc3cd6f9a083050fcff52b5a3fba7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the two-minute row?
@@ -13180,8 +13180,8 @@ text=Does this row fail the two-minute row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c217747b1e7d333ef9c931999b1ee4cd8807e3c5a574e6098107d10f2604c2c4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61b9bec605e0a080149edb235ddd3434632298532461481276c76ad97905fc7d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The shown rule is
@@ -13193,8 +13193,8 @@ text=The shown rule is
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0684146aa9a923e73bef7441717a33fc935bc1e73b50ef70ed780f033bd8df4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1075a04ee18d9e101d4259f0bd26d902741934cd4a53a0b763d3273b354f4fd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
@@ -13206,8 +13206,8 @@ text=Do Lesson 17 in the copy you own. Use that book's explanations and practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 11d15086911012e36dc0f05aa6f972e52d393831520e3ee8b6032efa04a01ee7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7ae98e2111dc40cb317c6c44ac6110c2df68b216b42ab58a7012d6b27151111
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
@@ -13219,8 +13219,8 @@ text=Independent checks
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 292a3c19d7b14d956581be0f7a24c599bc6dbfa348137342e2b55cc1b769de29
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 583e99e5dfa60b973604596569423fd5335c4c595ce73b3c7f91796d4528ea0b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
@@ -13232,8 +13232,8 @@ text=Remediation
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 27c899f7bcd5c28ba48c202e701c9b238318adc6c08cc464eb3975f6f8b86512
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7722f9d42af4386fc68a459282035a34243e162335a83ead9284f0519b315b73
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the one-year row?
@@ -13245,8 +13245,8 @@ text=Does this row fail the one-year row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3866544fa161b56d86320ef97dd6480a7908f7aa9db404f4c4d0171298dd2b58
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6de1ffc82378fff30ca39fe823f433c4deaa71508de864c8a4880649308554c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen source pairs the shown form
@@ -13258,8 +13258,8 @@ text=The frozen source pairs the shown form
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b89df5bc1a2d6f5c421188884cdc06bcc6b1fdd64c3aa4a984206cfa6a0e8014
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9de2529f44a39e887da03a8cbc42ea87ab5f88f1e2243beba41a5876706868cd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the first ordinal?
@@ -13271,8 +13271,8 @@ text=Which admitted line is the first ordinal?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1626363a99d5795b71dda01deeae20b31f57c95026ae20cbc60b6946c97de375
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5277bf6ecc72b7dd218bcaf0291ac5c3affd905f4ffc3eaf7981a742a64a5694
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the two-minute row?
@@ -13284,8 +13284,8 @@ text=Does this answer show the two-minute row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5dcb0aa5a8a1c6c5f4cffafc6cea2d61a795615330ae3460ec5ef5398faf62bf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 03c9e9c0269f3269b6ccb9f5b1ecae195216f1f623828ee2cb2299af433fd944
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the five-minute row?
@@ -13297,8 +13297,8 @@ text=Does this row fail the five-minute row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3996f18b9e7a84243b91d6082706abcb7f80af5778a5dabbda99f21fefb8dacb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1e00e1d0c759c20752f38e0dbf5fbc5a2b1048f4b61b56891800a76d891a2a00
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the second ordinal?
@@ -13310,8 +13310,8 @@ text=Does this answer show the second ordinal?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53a419f99fb12991849d67ce2be95559e6dcd2973b423e46c20efac750502f8f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e9182e4f8664466172048864831f3f37ed8f59d3c6838510f2b83dba94dac883
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the third ordinal?
@@ -13323,8 +13323,8 @@ text=Does this row fail the third ordinal?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89fa2515964c97b54c184dceb3f957ef74487c4e009c01937e877b9cd7c368c1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4bca022bf76808934584fa6444557e3363982c88ef49f7e0ddc75a4c8276d042
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the two-hour row?
@@ -13336,8 +13336,8 @@ text=Does this answer show the two-hour row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 525647b3ae995919bed53ae6c5330d47b3b847e6fd4667e26d663733665bab17
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee304900baa6932efda94134f39b05800ac4b09eb20aa0646618e2386fe75218
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
@@ -13349,8 +13349,8 @@ text=Guided practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1848ddcc82c9a57e003c7f1cc3ef1b83d7474cd731a0ea20c26b8846b0b7f22
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 575bb37919f419308bc41b01f0a468224631550c31706b96ab3b1dacd6380533
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 17 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
@@ -13362,8 +13362,8 @@ text=When you have done Lesson 17 in your copy, self-attest here. Attestation re
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 470e995b797827edd390cfc1464b5ada86bc9655eb694e97c4d4bc2789995ce3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9e8f8d82e7022ce32155cc1159f6fd974564470d25a19ce2f42094bd9fcd4a9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the first ordinal?
@@ -13375,8 +13375,8 @@ text=Does this row fail the first ordinal?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 048b1069ba347ed698efd107ed86ddce2776ff5b3eea183c68df3084942cb13d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 741877f603812e21f37e2f7fda59c6e810911a997c3a0192f7b1fb06ee38caa2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the second ordinal?
@@ -13388,8 +13388,8 @@ text=Does this row fail the second ordinal?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c335dbc7e954740b3c3efdd516cea07320b1c1cec39dd6e4e7dc2a289a20df7f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 551d53890bc9bd571a2a1dc6e2fc6f797dc4935da7ad1ead2142c7c570d70a31
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted expression states the minutes into the hour in progress?
@@ -13401,8 +13401,8 @@ text=Which admitted expression states the minutes into the hour in progress?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03d5f60e20c0723683eeb0edea7b013a42f9a21eae609522e14094ac26ba9c9f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ae5b735763bccb0da2bec0d0f76c95d1731741221dbd9a9a75ab8f583e0c66d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the third ordinal?
@@ -13414,8 +13414,8 @@ text=Which admitted line is the third ordinal?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cdbd6119ceda55d7878fd3ce02b7db517ace62ccf1b7aa9d0141b83168796a16
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a6e8c3af599276d35f4918eb7122e5c966de584f2195df05232ca3ebf02022f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the two-year row?
@@ -13427,8 +13427,8 @@ text=Which admitted line is the two-year row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c08744a98a6c0da1d06b3426c8d321a0173ef108bab86c654fba5c41c3703ef
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 09b9d3cccbee083a5621cfe44f7bf39b47f11f912174b5ddd517ec7bab296921
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the one-year row?
@@ -13440,8 +13440,8 @@ text=Which admitted line is the one-year row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f67dc78255a436bf05dee0af658f428f169efc5d07a218964f01c3469aec01c2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6426939e240172674ef6322d4345bafbe78cf1a6a2107b14142e126fab88dc3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the one-hour row?
@@ -13453,8 +13453,8 @@ text=Does this row fail the one-hour row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1d95730cbc517d8d652c37a8a043c3315f64412584991b70d167e7dd5dd499b1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d66004b813ba0de7be05ad57da93b86002ba0b200d5c8d333352f12f2906038b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=with the admitted gloss
@@ -13466,8 +13466,8 @@ text=with the admitted gloss
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd4d02c05ef0d3bc6a0411624544c7d69f8cc7a170a18e1d2b7f0751cf991232
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 627c6e3bc68364d824fb97c9b9419d4a1ec254812fd5c15505609495d2e6f2bb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
@@ -13479,8 +13479,8 @@ text=Admitted lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3471fd179342fcf1b60a1309e05f197b8cc293381d309046c91be8e31b216c0f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cba588e4a3be7c15fc4b6865f943c2202fdbb6ee68228bdfb68fcc7323ab7099
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the two-year row?
@@ -13492,8 +13492,8 @@ text=Does this answer show the two-year row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 677a81b11a18378fe552ecc9d0e30c6e90c6fbbbc3c5d4aeec474bf91ffe672c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d366198e2e592c6ecf181b11258cfb6ef1966ebd71addace666503a778263956
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 17 work in your copy.
@@ -13505,8 +13505,8 @@ text=Self-attest only after the Lesson 17 work in your copy.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 07471c745e6ca618d0a5c48ffccda1f6a2b38639a68c264057cf0543723004b1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f42d1c9017f9ed7c527ec9a85356106e3ff752c25c14dba82d07fda67522e6db
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the five-hour row?
@@ -13518,8 +13518,8 @@ text=Which admitted line is the five-hour row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9bc55caa97ed5bfcaf50c9d3c545bd0130d17bea7949b478af9df4dc52073023
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c167b9481b3669f366c34c55603f9f9ba1597cc25c25d704e891fc874c2da5f5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English gloss is written beside the shown form?
@@ -13531,8 +13531,8 @@ text=Which admitted English gloss is written beside the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c1980c237f330d9c78cefbcb7aa9ac4835736b2dc8a0d6f04854e6cc4a7f662
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2014a5dc5ea5e62d5b8695ffb843bef3785c8b3c7fc6f7a785bd15683c19dcd3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the two-hour row?
@@ -13544,8 +13544,8 @@ text=Does this row fail the two-hour row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb6c31ecc5e85bb2802afd8a86fca157899c7cc8ce899fa83ffb4b95a532aebb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 34686c803b3b36c7e932eedca92f1e9840e762066e2b3f23552e31ec0b58b671
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the one-hour row?
@@ -13557,8 +13557,8 @@ text=Does this answer show the one-hour row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 13a9b85e2c7e9aa4be0dcf31312e3af6c985aff4f717232b510df416e0fb8ee6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e850b6f03755f672e7213d08747c4b978f7372b99c927f7faf7ca0b2fe08bda8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=That says how many minutes remain after the half hour.
@@ -13570,8 +13570,8 @@ text=That says how many minutes remain after the half hour.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 350147b2d245996af5ca8f23d145d6b251ba3d23e54dae4e1fa8a50257e5ca02
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db2c3926b4534debc48f073c0f89d3e593a78141477b84748c8f03f24e48c0d2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the five-year row?
@@ -13583,8 +13583,8 @@ text=Does this answer show the five-year row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: be4969c9703f84aff6eb2dfc67e5a5d5000938c08cf105e0ab783f0a747ba315
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac6605d748d08f73f636c86ca4cab077a005f6c7257ab571fb06948ba0474e1e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the one-minute row?
@@ -13596,8 +13596,8 @@ text=Which admitted line is the one-minute row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f45cc0af26bd68d2d624dc9b67a37de63ea19daddae723d7b54929afdd737cc2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f0a6b7eee608ad2bb8fb47ba0213de65e2d4a8d1002f18bbec78f3105cf2107
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the five-minute row?
@@ -13609,8 +13609,8 @@ text=Which admitted line is the five-minute row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce8c6bc687a5948f4cd0e0f00bad36f02d47ec096fcab2b9877e0aef0279bcb2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 25488f8af7f5858d4c75caedca38612d9b53ccf43333d36040598124dca0fc87
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the one-minute row?
@@ -13622,8 +13622,8 @@ text=Does this answer show the one-minute row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a883ba4884a2b5634bb31a5554d2d71e0d0539177ed02fd4fab81eebd7534553
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8eb8842e2105b824cf00ad4a4c1d014d7ef1f1766571c4c8ca024334c18add29
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the five-year row?
@@ -13635,8 +13635,8 @@ text=Which admitted line is the five-year row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 191b80a7b7bfdd8fc09cc3e849c67ae2b5a40e9d39e1ade0634c464356d22715
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39f249c5be4a2e258261366a42f63dcf7ad531749502cd70eb34ac2c94f062b9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 17 in your copy
@@ -13648,8 +13648,8 @@ text=Work Lesson 17 in your copy
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0b8aeb2ec45222267831cd6da46c732fdbfbceeea66507aef6b971546344bf2b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e7279fe9d19b339a35da0b325b952b6b3b65c496122a96344ece27bc5fff437
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the first ordinal?
@@ -13661,8 +13661,8 @@ text=Does this answer show the first ordinal?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3f282fe4412f96ff8d24ecb7ec52a3156c13fc7654dc8bdd45221a1f4ac4dd47
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fed445543c288ca174cbac04a16ff03b566c8fe2da4a0eaa8f29b6bef428b623
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, calendar-date, quarter-hour, and the admitted ReadyRussian clock system. Qualified review is pending.
@@ -13674,8 +13674,8 @@ text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month,
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 447cad1ccac6e67d61963f13a01ee65416cff911086aa033bae9a66811073fc4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4d197e9020f6a01038b21f65925ab958956313e8278d3f0579b6e2097f450bc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
@@ -13687,8 +13687,8 @@ text=Admitted instruction
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2345fcfd063f70b3fca340611f3e001fe8462197e55e1918690e62f2186c822b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 167937bfc61cfc3d82e79b20195d03a7999029d5672c717e06dc3968ce4ff0b4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the five-hour row?
@@ -13700,8 +13700,8 @@ text=Does this answer show the five-hour row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bfe4c65cd81ff8a65fe93c7168879b298303d25e6f80b7bb96a1343db2c27035
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 47d6136370ce7af09b4e80482e95d6a84c943587f18c1513f828029d6536c357
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the two-minute row?
@@ -13713,8 +13713,8 @@ text=Which admitted line is the two-minute row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 26191e59c44de6a1c66c4393767e4f28b15406084310f1be8fcc02930ffa9a9b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 30bb6eee24b415539cdbe0b4a648f3c27f7a16fc42026d1bb96627b59269982d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the five-year row?
@@ -13726,8 +13726,8 @@ text=Does this row fail the five-year row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 124d1e8a8790766f3939fc00bebc27b68a312110da99f9258204262cfae0510a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 609429e72d3a54d9cfe2b1a7a3bc54086cac0a08cc285d5eddba3cf30f229843
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted number and quantity rows
@@ -13739,8 +13739,8 @@ text=Admitted number and quantity rows
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 95c2c0673597cf6e66792b8c03798a5d3257e426a5ba830a7f002e53de6eca26
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9815b1ab425e8ca8d737be4b28a4f8f873a658da3a65e776bc71243f0ac6852f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 17 in the copy you own. The app records do not replace that lesson.
@@ -13752,8 +13752,8 @@ text=Open Lesson 17 in the copy you own. The app records do not replace that les
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 28d0b515da624ac3692261f2052fd95583e0b89cd4c7c12351c73c891327402e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 634b2a25b0a80154c23b067646536e9aeacb6c5272c5c2141aad27246bfdc2e6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the second ordinal?
@@ -13765,8 +13765,8 @@ text=Which admitted line is the second ordinal?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab0b16cac21e00609ca0515caaa7dbb07352332c811c65c8d6a66f9e4abbc871
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 879c60deb8390b9ba756bcfa2bafb140c0294fb4562921be0bd95ff42af89219
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
@@ -13778,8 +13778,8 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f3b0b8b78ca17a08128d0eeb7de503beceddbc410c47d6eaf535e417b3f20d21
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c819bd8bd6955bbc6aaf9ad8779cbd76445a7db9f31e757ca8e0705043a5358
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the five-minute row?
@@ -13791,8 +13791,8 @@ text=Does this answer show the five-minute row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2cf68fa6960c5d29054e2808b14deb00dbfa32d7c0ad921058accec13cc022c9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff5274cc7a3f5c953f70921729fff99679c8030c2eaa4cfbaa277c058a6e5ed8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the two-hour row?
@@ -13804,8 +13804,8 @@ text=Which admitted line is the two-hour row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c14d4979b7254e9fbbbddf3148f1ab88f0ce09a1e7862244d4ba8bd316ba4ea8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d48423754c89a5ff63959aff72daa4f73d0234dca9196a9c51b893e5edfa0ff9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the two-year row?
@@ -13817,8 +13817,8 @@ text=Does this row fail the two-year row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 57b0452646cd9c9d1e7dcef77fee3f7342c8445afacb70d8c9a4ffcda1cd16f3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8b8b7caa4a215600d1405046f90fd6b98697cc45e4f49dfaf8f39b73f97c021
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=That reads the numbers off the dial.
@@ -13830,8 +13830,8 @@ text=That reads the numbers off the dial.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 979daa850e75612b162f90a2b5b7fd861fd09a253ff65fd4634f76b8475a097b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dcdfa9679f7d1b4f297ff81a797336776d03e391b2c9991cda2d9ad8d2065c80
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=labels the section. It is not the gloss of the shown form.
@@ -13843,8 +13843,8 @@ text=labels the section. It is not the gloss of the shown form.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e6b23439d8c62c37292ac1aafdbda54d72c1893560d9e0780bdf8fc33e91c515
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4354d83830ec3d99cfc21f3f23a29da5aa3d23197755a4e15b788da353f75d7e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted expression reads the numbers off the dial?
@@ -13856,8 +13856,8 @@ text=Which admitted expression reads the numbers off the dial?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1dbbeec1232ef0595f42dcbd29a1b61f16ebb3b0679caf4fd17fa0722800b820
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 511995f1c6743a5df792af80acbf704a5cb97060e5dbf2fa2e189b3d1bed2e1b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the five-hour row?
@@ -13869,8 +13869,8 @@ text=Does this row fail the five-hour row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0f9ec078473d361ae041fcab04dc4690c4a7167aeb9cbd8d515ffe00c88b23f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 16e366ff6c5722185a38360057c7541dc73f98c0034cc1819446deed6d0c9cb3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the third ordinal?
@@ -13882,8 +13882,8 @@ text=Does this answer show the third ordinal?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a08c3f8a822834c062fe86ec28207b0751dea934690e61acd0f41a41aacddf9d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 871780f2d3c922b8c39bb88d4124a2090877b423fa20310c6509f2b626b838e3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted expression states the minutes that remain after the half hour?
@@ -13895,8 +13895,8 @@ text=Which admitted expression states the minutes that remain after the half hou
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 703e4971534c4fc094005192eb3c3298c2d8206e9590aa7ea78c65c83a8d03f1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 801043e2c65c713c801af1bff495d330f92bd279d829b5bba860b01c39ce155a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the one-minute row?
@@ -13908,8 +13908,8 @@ text=Does this row fail the one-minute row?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f918c0efa6c07673b8d983aad822f22b2edaf5bfeff8d9f9bcdfc56765b6a18a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f08661a289d94071bf7f839ab8374e5c67697aa7aeb741dd44ae248632a7c635
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the one-hour row?

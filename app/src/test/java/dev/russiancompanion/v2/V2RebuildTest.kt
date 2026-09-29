@@ -102,7 +102,7 @@ class V2RebuildTest {
             assertTrue(decision.remaining.any { it.contains("distinct in-app checks") })
         }
         assertEquals((1..30).toList(), pack.unitReviews.map { it.unitNumber })
-        assertTrue(pack.unitReviews.all { it.status == "PENDING_QUALIFIED_REVIEW" && it.reviewer.isNullOrBlank() })
+        assertTrue(pack.unitReviews.all { it.status == "IMPLEMENTED_PENDING_FINAL_AUDIT" && it.reviewer.isNullOrBlank() })
         assertTrue(pack.unit(2)!!.sessions.flatMap { it.steps }.none { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() })
         assertEquals("BOOK", pack.unit(2)!!.sessions.flatMap { it.steps }.first { it.id == "u2-st-hw" }.kind)
         assertEquals("BOOK", pack.unit(2)!!.sessions.flatMap { it.steps }.first { it.id == "u2-st-pron" }.kind)
@@ -138,9 +138,9 @@ class V2RebuildTest {
         assertEquals(0, pack.admissions.generatedRussianWords)
         assertEquals(0, pack.admissions.penguinProseAssets)
         assertEquals(0, pack.admissions.catalogAudioBoundToUnits)
-        assertEquals("PENDING_QUALIFIED_REVIEW", pack.linguisticReview.status)
+        assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", pack.linguisticReview.status)
         assertEquals((1..30).toList(), pack.unitReviews.map { it.unitNumber })
-        assertTrue(pack.unitReviews.all { it.status == "PENDING_QUALIFIED_REVIEW" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
+        assertTrue(pack.unitReviews.all { it.status == "IMPLEMENTED_PENDING_FINAL_AUDIT" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
         assertTrue(pack.items.none { it.isGovernance() })
         assertTrue(pack.items.all { !it.promptLetter.isNullOrBlank() })
         assertTrue(pack.references.all { it.classification.isNotBlank() })
@@ -213,8 +213,8 @@ class V2RebuildTest {
         assertTrue(bothResult.errors.joinToString("\n"), bothResult.ok)
 
         val unitThreeApproved = approveUnitReview(bothContentComplete, 3)
-        assertEquals("PENDING_QUALIFIED_REVIEW", unitThreeApproved.unitReviews.first { it.unitNumber == 4 }.status)
-        assertEquals("PENDING_QUALIFIED_REVIEW", unitThreeApproved.unitReviews.first { it.unitNumber == 5 }.status)
+        assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", unitThreeApproved.unitReviews.first { it.unitNumber == 4 }.status)
+        assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", unitThreeApproved.unitReviews.first { it.unitNumber == 5 }.status)
         assertEquals("APPROVED", unitThreeApproved.unitReviews.first { it.unitNumber == 1 }.status)
         assertEquals(
             V2Validator.unitContentReviewDigest(bothContentComplete, 1),
@@ -248,9 +248,9 @@ class V2RebuildTest {
     fun installedUnitRejectsPendingAndRejectedInstructionalRecords() {
         val installed = installedUnitOne(pack())
         val pending = V2Validator.validate(installed)
-        assertTrue(pending.errors.any { it.contains("Check u1-i-а-identity review status PENDING_QUALIFIED_REVIEW") })
-        assertTrue(pending.errors.any { it.contains("Letter ") && it.contains("PENDING_QUALIFIED_REVIEW") })
-        assertTrue(pending.errors.any { it.contains("Example ") && it.contains("PENDING_QUALIFIED_REVIEW") })
+        assertTrue(pending.errors.any { it.contains("Check u1-i-а-identity review status IMPLEMENTED_PENDING_FINAL_AUDIT") })
+        assertTrue(pending.errors.any { it.contains("Letter ") && it.contains("IMPLEMENTED_PENDING_FINAL_AUDIT") })
+        assertTrue(pending.errors.any { it.contains("Example ") && it.contains("IMPLEMENTED_PENDING_FINAL_AUDIT") })
 
         val approved = rebindReview(approveInstruction(installed))
         val approvedResult = V2Validator.validate(approved)
@@ -397,7 +397,7 @@ class V2RebuildTest {
             assertFalse(result.ok)
             assertTrue(
                 result.errors.joinToString(),
-                result.errors.any { it.contains("Installed unit $number") && it.contains("APPROVED qualified-review record") },
+                result.errors.any { it.contains("Installed unit $number") && it.contains("review chain is not OWNER_ACCEPTED") },
             )
             assertTrue(
                 result.errors.joinToString(),
@@ -521,7 +521,7 @@ class V2RebuildTest {
         assertEquals("v2-curriculum-foundation", pack.packId)
         assertEquals(3, pack.packVersion)
         assertEquals("rev-pending-v2-curriculum", pack.linguisticReview.id)
-        assertEquals("PENDING_QUALIFIED_REVIEW", pack.linguisticReview.status)
+        assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", pack.linguisticReview.status)
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
         assertTrue(seed.contains("\"packId\": \"v2-curriculum-foundation\""))
         assertTrue(seed.contains("\"packVersion\": 3"))
@@ -542,7 +542,7 @@ class V2RebuildTest {
             val packet = File(repo(), "review/unit-$number/UNIT_${number}_REVIEW_PACKET.md").readText()
             assertTrue(packet.contains("content-complete and review-pending"))
             assertFalse(packet.contains("Content-complete development"))
-            assertTrue(packet.contains("PENDING_QUALIFIED_REVIEW"))
+            assertTrue(packet.contains("IMPLEMENTED_PENDING_FINAL_AUDIT"))
         }
         listOf(6, 8, 9, 10).forEach { number ->
             val unit = pack.unit(number)!!
@@ -626,7 +626,7 @@ class V2RebuildTest {
         )
         val reviewedResult = V2Validator.validate(reviewed)
         assertTrue(reviewedResult.errors.joinToString("\n"), reviewedResult.ok)
-        assertEquals("PENDING_QUALIFIED_REVIEW", pack.unitReviews.first { it.unitNumber == 3 }.status)
+        assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", pack.unitReviews.first { it.unitNumber == 3 }.status)
         assertTrue(pack.unitReviews.first { it.unitNumber == 3 }.reviewer.isNullOrBlank())
         assertFalse(pack.publicReleaseEligible)
         assertEquals("DEVELOPMENT", reviewed.unit(3)!!.installState)
@@ -907,10 +907,10 @@ class V2RebuildTest {
         )
         val unitTwoResult = V2Validator.validate(unitTwoInstalled)
         assertFalse(unitTwoResult.ok)
-        assertTrue(unitTwoResult.errors.any { it.contains("unit 2") && it.contains("APPROVED qualified-review record") })
+        assertTrue(unitTwoResult.errors.any { it.contains("unit 2") && it.contains("review chain is not OWNER_ACCEPTED") })
         assertTrue(unitTwoResult.errors.any { it.contains("unit 2") && it.contains("mapping record does not resolve") })
         assertTrue(unitTwoResult.errors.any { it.contains("handwriting asset record") })
-        assertTrue(unitTwoResult.errors.none { it.contains("Installed unit 1 requires an APPROVED") })
+        assertTrue(unitTwoResult.errors.none { it.contains("Installed unit 1 review chain is not OWNER_ACCEPTED") })
     }
 
     @Test

@@ -15,8 +15,8 @@ Unit 22 remains in development. Its readiness is content-complete and review-pen
 - Unit content-review SHA-256: d408624ff0aa05793384f6a2b4d9e2a27b008225f31498795e5ccf9b3225e169
 - Mapping-package SHA-256: 997ae9e19ac8c160b37e5eee4e8c358254993aa481ffb14459e1d27c8a378284
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: 85486eda5898a3a72ae4707bb5b404c15f5d8a68e905c3d07f030037ed48f2e4
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: 70d39268f718335a306ce00b9df59aa9299c893d3ec5abca7d0f2a6a8b0306c7
+- Repository source SHA-256: a982d0f164e5dbd9192d2faf2ddd2858fcf84aa31985a7b87aaf8dc48fbc7cf7
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cea1ee86ec903a01896b4e98c6c358b38bbc1b3e5df7ba08f4816457a1277aac
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 212cdf7caa45b52bfe13b649042c7cd9cc8e4728435aba40ba144abadf25de2c
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -1245,15 +1245,15 @@ remediationStepId=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d16a485c377cf28b21a41841042109330fbfbaac572888ebdcbf7ce17e3e3387
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6009f414a0d15e94d77e6c885f75e901ffe472d2048ff2f7bf02ef40c75c63cd
 
 kind=LEXICAL
 letterId=
 display=один мальчик
 note=one boy
 objectiveId=obj-u22-noun-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-noun-forms-1`
 
@@ -1262,15 +1262,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f4e07ddd3682d28f54080af90c3de2c560f365140c06cf1ab7d26df2a7faa186
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5bbf5c04d72f99871536f19bc5624d4dbdf021c509958e03d47b7b9bd560e269
 
 kind=LEXICAL
 letterId=
 display=одна девушка
 note=one girl
 objectiveId=obj-u22-noun-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-noun-forms-2`
 
@@ -1279,15 +1279,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0dd7b358eb2b3555196cf95916dd999ba9f7e52f3e8d2f953a5e152c20ae59cc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea5bd957569b6eb2cf6e6c0fdc89a6d5ec5d690df456e13d551ec251890884a4
 
 kind=LEXICAL
 letterId=
 display=две девушки
 note=two girls
 objectiveId=obj-u22-noun-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-noun-forms-3`
 
@@ -1296,15 +1296,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 087f2c79092f493f81908c7c42d9e5e90f9d3d74d84decb8c1cc02b31a48e7bc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c1e4d8b76e82d42277af100308b2fbf104a5de60fb76c8a82a58e5119230c5e
 
 kind=LEXICAL
 letterId=
 display=три кошки
 note=three cats
 objectiveId=obj-u22-noun-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-noun-forms-4`
 
@@ -1313,15 +1313,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cd3faf38e3ffd687cde81d9dd957a2bb95042db95998d453ff81a807c6f324f9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b43cc3ae12a75e2378ba77d975de9eaf34fb98b22181081975af73a8598f454
 
 kind=LEXICAL
 letterId=
 display=пять девушек
 note=five girls
 objectiveId=obj-u22-noun-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-noun-forms-5`
 
@@ -1330,15 +1330,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c994a5baf7d7facd1fe6636aeb9545ff53427d658e1e80c4eb4bb4ca0aa85cd2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17ce6bb1d524cb4957f1e1df7bbab4ad1f0bdc18f1f97930da09c3105f5e4fbc
 
 kind=LEXICAL
 letterId=
 display=десять копеек
 note=ten kopeks
 objectiveId=obj-u22-noun-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-compounds-0`
 
@@ -1347,15 +1347,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 59e667d409ee30d103856f7e4b515a539eb9cce41ffde16ba1587d8622c00b8f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b8690131e780d405f0803752857009843f13c760953e42e5836fb150f9963a1
 
 kind=LEXICAL
 letterId=
 display=тридцать три рюмки
 note=thirty-three shot glasses
 objectiveId=obj-u22-compounds
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-compounds-1`
 
@@ -1364,15 +1364,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 023449584d13bc039976f321c08054f45dfc51d3fe60f1bee0154a6bb21a5787
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 35a9e4d9f01fa946e1420ce81cdedcf319af5e414a37dc98bc8efef42794403f
 
 kind=LEXICAL
 letterId=
 display=сорок один год
 note=forty-one years
 objectiveId=obj-u22-compounds
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-compounds-2`
 
@@ -1381,15 +1381,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 07256c92aae86fb7bf8b50d123c1bfd304b8cffbcb3eb424b972bd74438d5ba6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b56594f502a71373ed1dc81143314e7a7906391b9c072a7aa961380601986fe7
 
 kind=LEXICAL
 letterId=
 display=шестьдесят девять слов
 note=sixty-nine words
 objectiveId=obj-u22-compounds
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-declension-0`
 
@@ -1398,15 +1398,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53d5565da49d297630f61ed63908878dd03b00528c3e5c35731c95160e903cf2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 890d006e876e78069c0606412c01f7478e661b1da6eb2760b6e2b3b79f28f311
 
 kind=LEXICAL
 letterId=
 display=двум
 note=Дательный
 objectiveId=obj-u22-declension
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-declension-1`
 
@@ -1415,15 +1415,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f31c40ceea10af0deff46efee27108bb72dfee50890aa7981e279db05775b3d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 99cae57a4cf2b343aa939346c1ba40b7608317bbb8f9d8de1f82639160bba9f3
 
 kind=LEXICAL
 letterId=
 display=двумя
 note=Творительный
 objectiveId=obj-u22-declension
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-declension-2`
 
@@ -1432,15 +1432,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 71c21d4a8cc54d9e64a2903ee168a7600139b65403aa7cdab8077811d86ef0d2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1c74737c48f1d45d4ee4b2ede9f7d4d170d7d948377728811b0ff71fb1b0535
 
 kind=LEXICAL
 letterId=
 display=(о) двух / (об) обоих / (о) полутора
 note=Предложный
 objectiveId=obj-u22-declension
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-both-forms-0`
 
@@ -1449,15 +1449,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a44afadfb07d9e5c1b836f4484dd6679beaa27bf10e7f536fad02505d0a9f7a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 393ebe79590c083f8648a6e772695be7c267da994372f8d4c665ebd57baaac24
 
 kind=LEXICAL
 letterId=
 display=обеим
 note=Дательный
 objectiveId=obj-u22-both-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-both-forms-1`
 
@@ -1466,15 +1466,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d6982cd6bb4d98fba0ad4d3a35bf00fb8326e3b8921896421a204e3c52adfdaf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f7c694ab332883793557a9f9d794f2d64ad2d8891c663a27dd25bc6010850594
 
 kind=LEXICAL
 letterId=
 display=обоим
 note=Дательный
 objectiveId=obj-u22-both-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-both-forms-2`
 
@@ -1483,15 +1483,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b6d5517ca952136a495a34457a09e683de99e982e34fc583d456cbff0ca90cf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c79d59b2288d3f2dbaa012b3b2656078f28eb47b2983752fa38dd4bb444866f1
 
 kind=LEXICAL
 letterId=
 display=обеими
 note=Творительный
 objectiveId=obj-u22-both-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-both-forms-3`
 
@@ -1500,15 +1500,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b67125ff2e63673cf41d1e79738a08f656a327bf8ec06b0557ed528199f910cc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f8d0df3ae44a4a49520dc8a052e0140419d9e993ca0fd62ac74e693061b520ca
 
 kind=LEXICAL
 letterId=
 display=обоими
 note=Творительный
 objectiveId=obj-u22-both-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-half-forms-0`
 
@@ -1517,15 +1517,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b4ee9b5a3d328ccf99f5a75d787ae992f5f7745e47dec4c74555ec3992e925ed
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38fecbe91527b0ff1d0870fa2c083f8464724f820075c2be680547231b5d8e36
 
 kind=LEXICAL
 letterId=
 display=полтора́ рубля́
 note=1.5 roubles
 objectiveId=obj-u22-half-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-half-forms-1`
 
@@ -1534,15 +1534,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0027486712aac18bccd794a02bfc20c77c88ddc48e9bcd86c565050a5a95dd2e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 492373145f1e3e6c53e5cacc086a81b45150087188fb961ffc33c38b92f0d62c
 
 kind=LEXICAL
 letterId=
 display=полторы́ мину́ты
 note=1.5 minutes
 objectiveId=obj-u22-half-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-half-forms-2`
 
@@ -1551,15 +1551,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: db3b94bd9b6730ec5c60d5bb72ce0752dc3f417a7090ea6dac2c60951412126a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64064f8c3f83ae7478a2b30cbd29cd6dbbfe118ded6aeecc3444e3fd0e4b1be5
 
 kind=LEXICAL
 letterId=
 display=из полу́тора рубле́й
 note=from 1.5 roubles
 objectiveId=obj-u22-half-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-half-forms-3`
 
@@ -1568,15 +1568,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6986b02976d7075bb61f78d69b95dba478ba0b3f8508b694bff5833322dfa630
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8baea72e00945ac4033ee5c77027331a9b442db581dd0d4501ac2109dbba4f2
 
 kind=LEXICAL
 letterId=
 display=к полу́тора рубля́м
 note=to 1.5 roubles
 objectiveId=obj-u22-half-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-collective-0`
 
@@ -1585,15 +1585,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e344aec7a0a505cadd27a83845c82e5845af7f44cf3b13833aa31949494468b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d4357ed8ef75465aaa4c27c1a01fdfffb8a194aa69be60e21e89ac55c5bbfb8
 
 kind=LEXICAL
 letterId=
 display=два
 note=дво́е
 objectiveId=obj-u22-collective
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-collective-1`
 
@@ -1602,15 +1602,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 24be255749578d47eacb93d87a105f039e390b4e93a0e7ea5f4bdd3e33f76005
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d43834d482816c022b602ea9c61f40b8bd1429f1f4f128f385ffa400ca3c8d6
 
 kind=LEXICAL
 letterId=
 display=три
 note=тро́е
 objectiveId=obj-u22-collective
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u22-collective-2`
 
@@ -1619,15 +1619,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5357a0519b3401e88736e8f3cf3f2f198c01e1ce6cf09a2882a87660187f5c32
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ecfaa9dd7f5bd69f2f581c83bf3cfc29b2499dd2734384b67d07e17e6ac2025b
 
 kind=LEXICAL
 letterId=
 display=четы́ре
 note=че́тверо
 objectiveId=obj-u22-collective
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u22-g-noun-forms-0`
 
@@ -1636,8 +1636,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd8a73134c474095b3252563e0146e81df1399327813f0511734087d0c10dd36
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd635136f269571d4146143e6dae65d0724804541c8107c48ae7ad61314d140e
 
 kind=FORM_SELECTION
 language=en
@@ -1648,7 +1648,7 @@ answer=один мальчик
 feedback=The frozen note says a form of one should be used in the proper form. This line is the other example with one. один мальчик.
 objectiveId=obj-u22-noun-forms
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen examples place two girls with two, not with one. | The frozen examples place five girls with five, not with one.
 testedFeature=ONE_ITEM_FORM
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1671,8 +1671,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 60ad6ab8c99819b828a61309b74ec935c63ba4846b8c1245548ed7c8061d935b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38c2241c5123b9384c23a873c9f1c9bd477d9df0179157ee3d181a5c45bad4da
 
 kind=FORM_SELECTION
 language=en
@@ -1683,7 +1683,7 @@ answer=сорок один год
 feedback=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in one. сорок один год.
 objectiveId=obj-u22-compounds
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Thirty-three shot glasses ends in three, so it is not the example that ends in one. | Sixty-nine words ends in nine, so it is not the example that ends in one.
 testedFeature=LAST_DIGIT_ONE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1706,8 +1706,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d8a6943d2e7919771d35f074c3c28449a0a378bfe668fb9b5064e2365e78603f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44820b70a7fc0eb937312fea88cb3cfdeaadd50e12fdb721ebdc78b8de6ad701
 
 kind=CASE_RECOGNITION
 language=en
@@ -1718,7 +1718,7 @@ answer=Дательный
 feedback=The frozen source pairs the shown form "двум" with the admitted gloss "Дательный" ("| Дательный ").
 objectiveId=obj-u22-declension
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "двумя" with the admitted gloss "Творительный" ("| Творительный"). | The frozen source pairs the shown form "(о) двух / (об) обоих / (о) полутора" with the admitted gloss "Предложный" ("| Предложный").
 testedFeature=NUMERAL_DATIVE
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1741,8 +1741,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 30b1be3639ad4005c20db200b47836db8b92e167341f119db92b4a6afcc5715a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 232400fa18fcd2a883394f073cfb628a2e794faa247a2e9df50d9cef65a934b2
 
 kind=CASE_RECOGNITION
 language=en
@@ -1753,7 +1753,7 @@ answer=Дательный
 feedback=The frozen source pairs the shown form "обеим" with the admitted gloss "Дательный" ("| Дательный ").
 objectiveId=obj-u22-both-forms
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "обеими" with the admitted gloss "Творительный" ("| Творительный"). | The frozen source pairs the shown form "(о) двух / (об) обоих / (о) полутора" with the admitted gloss "Предложный" ("| Предложный").
 testedFeature=BOTH_OBEIM
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1776,8 +1776,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 328469d6e10006d2f495e19e4a38b2c6ed4a23f6f7d07609d371baf8629fbf39
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d5c46618806a42a07fc2e123cb1438ec02631a675f7bfada25264101ff4265e2
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1788,7 +1788,7 @@ answer=1.5 roubles
 feedback=The frozen source pairs the shown form "полтора́ рубля́" with the admitted gloss "1.5 roubles" ("In the nominative and accusative").
 objectiveId=obj-u22-half-forms
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "полторы́ мину́ты" with the admitted gloss "1.5 minutes" ("1.5 minutes"). | The frozen source pairs the shown form "полтора́ часа́" with the admitted gloss "one and a half hours / an hour and a half" ("one and a half hours / an hour and a half").
 testedFeature=HALF_ROUBLES
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1811,8 +1811,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 24438b00f955b718b73cef0d25a1f89b3a8507bff78c48fe234464f94ee8201d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eae1537db5dc27a56b8ea5d1c24cfbbbc037fda6c800d73e3209c8756b607f3a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1823,7 +1823,7 @@ answer=дво́е
 feedback=The frozen source pairs the shown form "два" with the admitted gloss "дво́е" ("collective numbers").
 objectiveId=obj-u22-collective
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "два" with the admitted gloss "второ́й" ("ordinal numbers"). | The frozen source pairs the shown form "три" with the admitted gloss "тро́е" ("collective numbers").
 testedFeature=COLLECTIVE_TWO
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1846,8 +1846,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc0bf2ce926f6b54109c6b4b5b2dd956404dc46119867b0cb896b1c38a600361
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca5a442697c8284b5b92d15f0f1e18368999f307265fbe872ecf1e4cbe5140f3
 
 kind=FORM_SELECTION
 language=en
@@ -1858,7 +1858,7 @@ answer=три кошки
 feedback=The frozen note says two, three, and four require the following item to be presented together. This line is the three example. три кошки.
 objectiveId=obj-u22-noun-forms
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen examples place one boy with a form of one, not with two, three, or four. | The frozen examples place five girls with the five group, not with two, three, or four.
 testedFeature=TWO_ITEM_FORM
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1881,8 +1881,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0f4b5d167d087ef2acf0d29fa5e35a76e009cc7aa5c9392dacdb7e2bb1f7bc8c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3f302f6fe21bf1737bffe2764db4b00b229796fc11f24f6f006338e42644054
 
 kind=FORM_SELECTION
 language=en
@@ -1893,7 +1893,7 @@ answer=десять копеек
 feedback=The frozen note says these numerals require their attached items in the later group. This line is another example from that group. десять копеек.
 objectiveId=obj-u22-noun-forms
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen examples place one boy with a form of one, not with the five group. | The frozen examples place two girls with two, not with the five group.
 testedFeature=FIVE_ITEM_FORM
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1916,8 +1916,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 05e122676f846de1026eb32a75db93d6cfce828c9327493f160f3ca142773611
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 030094b52bd3aa78c250ae5c71fccdfdba14e193b53201be853c06433b0080c7
 
 kind=FORM_SELECTION
 language=en
@@ -1928,7 +1928,7 @@ answer=шестьдесят девять слов
 feedback=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in nine. шестьдесят девять слов.
 objectiveId=obj-u22-compounds
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Forty-one years ends in one, so it is not the example that ends in nine. | Thirty-three shot glasses ends in three, so it is not the example that ends in nine.
 testedFeature=LAST_DIGIT_NINE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1951,8 +1951,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b446fba4665ba4b0f614d61aaab23ef5a2956b3376aaccd06a167b30cf7fc57a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 396ce948c1b255a3873d43451c0bbd482b246048fc72d5dfbb4284dc704e9f4e
 
 kind=FORM_SELECTION
 language=en
@@ -1963,7 +1963,7 @@ answer=тридцать три рюмки
 feedback=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in three. тридцать три рюмки.
 objectiveId=obj-u22-compounds
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | Sixty-nine words ends in nine, so it is not the example that ends in three. | Forty-one years ends in one, so it is not the example that ends in three.
 testedFeature=LAST_DIGIT_THREE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -1986,8 +1986,8 @@ responseKind=RUSSIAN_PHRASE
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 48925bbfd4666049951f9a39c64b2925af9adbfe852bbb6ab9918d5d8353498d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad769ea0d65a35550988b7277522c908ec52cc79ef2b0bfeabede2d208a10f79
 
 kind=CASE_RECOGNITION
 language=en
@@ -1998,7 +1998,7 @@ answer=Творительный
 feedback=The frozen source pairs the shown form "двумя" with the admitted gloss "Творительный" ("| Творительный").
 objectiveId=obj-u22-declension
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "двум" with the admitted gloss "Дательный" ("| Дательный "). | The frozen source pairs the shown form "(о) двух / (об) обоих / (о) полутора" with the admitted gloss "Предложный" ("| Предложный").
 testedFeature=NUMERAL_INSTRUMENTAL
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2021,8 +2021,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1ff6388c86a9386ae21c6ead75f3b97f89d66bfb512c2a368add1d962116bcd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5bf2fb6c30567bd7d1597df473108cd545d6f9da72c105d7a42b05dffa614f1b
 
 kind=CASE_RECOGNITION
 language=en
@@ -2033,7 +2033,7 @@ answer=Предложный
 feedback=The frozen source pairs the shown form "(о) двух / (об) обоих / (о) полутора" with the admitted gloss "Предложный" ("| Предложный").
 objectiveId=obj-u22-declension
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "двум" with the admitted gloss "Дательный" ("| Дательный "). | The frozen source pairs the shown form "двумя" with the admitted gloss "Творительный" ("| Творительный").
 testedFeature=NUMERAL_PREPOSITIONAL
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2056,8 +2056,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e860a07d8ce606ead29066353c5baa9914c00b30f7eec68f9e6d4348774d593d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1019b2809696267fcb6986f176572cc656a3b6d12c7624828830e0aaa3cbe2e
 
 kind=CASE_RECOGNITION
 language=en
@@ -2068,7 +2068,7 @@ answer=Дательный
 feedback=The frozen source pairs the shown form "обоим" with the admitted gloss "Дательный" ("| Дательный ").
 objectiveId=obj-u22-both-forms
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "обоими" with the admitted gloss "Творительный" ("| Творительный"). | The frozen source pairs the shown form "(о) двух / (об) обоих / (о) полутора" with the admitted gloss "Предложный" ("| Предложный").
 testedFeature=BOTH_OBOIM
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2091,8 +2091,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 91339c4b69e7c4260c51e4f4c7c3f974105b71ddb5e3c294ed65169f343df78a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 85a0a6360e4b358a07e152d3c3a02cd0579774eb89beed72ae9483666e7fa086
 
 kind=CASE_RECOGNITION
 language=en
@@ -2103,7 +2103,7 @@ answer=Творительный
 feedback=The frozen source pairs the shown form "обеими" with the admitted gloss "Творительный" ("| Творительный").
 objectiveId=obj-u22-both-forms
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "обеим" with the admitted gloss "Дательный" ("| Дательный "). | The frozen source pairs the shown form "(о) двух / (об) обоих / (о) полутора" with the admitted gloss "Предложный" ("| Предложный").
 testedFeature=BOTH_OBEIMI
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2126,8 +2126,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f82734e53810a4bc1c805e7e48890fcf762a1ed13a7cadf998c18cbf5d31ce8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 20cac00c7d4440c1ca20f489c0040317dbc306598850aa12c4be15bfdedbf451
 
 kind=CASE_RECOGNITION
 language=en
@@ -2138,7 +2138,7 @@ answer=Творительный
 feedback=The frozen source pairs the shown form "обоими" with the admitted gloss "Творительный" ("| Творительный").
 objectiveId=obj-u22-both-forms
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "обоим" with the admitted gloss "Дательный" ("| Дательный "). | The frozen source pairs the shown form "(о) двух / (об) обоих / (о) полутора" with the admitted gloss "Предложный" ("| Предложный").
 testedFeature=BOTH_OBOIMI
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2161,8 +2161,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a97b72236feeb9d5f465be112b314255e1af925d696044f37547f71ae9ec9351
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ce8a9323f02498451fc36fd8cfedea29747836ef2a832cc8dae0140c8cd76000
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2173,7 +2173,7 @@ answer=1.5 minutes
 feedback=The frozen source pairs the shown form "полторы́ мину́ты" with the admitted gloss "1.5 minutes" ("In the nominative and accusative").
 objectiveId=obj-u22-half-forms
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "полтора́ рубля́" with the admitted gloss "1.5 roubles" ("1.5 roubles"). | The frozen source pairs the shown form "полтора́ часа́" with the admitted gloss "one and a half hours / an hour and a half" ("one and a half hours / an hour and a half").
 testedFeature=HALF_MINUTES
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2196,8 +2196,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3c219b173a857eecab6bd3e0eaeb91086096451f3437addeec9c2a79f46b4c87
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2fe09f07eef641cc7f28b2d7a7c69bbc9212d9b7b681abfe711af5376141fa44
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2208,7 +2208,7 @@ answer=from 1.5 roubles
 feedback=The frozen source pairs the shown form "из полу́тора рубле́й" with the admitted gloss "from 1.5 roubles" ("from 1.5 roubles").
 objectiveId=obj-u22-half-forms
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "к полу́тора рубля́м" with the admitted gloss "to 1.5 roubles" ("to 1.5 roubles"). | The frozen source pairs the shown form "с полу́тора рубля́ми" with the admitted gloss "with 1.5 roubles" ("with 1.5 roubles").
 testedFeature=HALF_FROM
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2231,8 +2231,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d1deb3188067da84610f90ed0b9a759194b389e2b20e4f59869dce0b1bcbf66
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e069b932c49e81956ff9c892ce52f76acbebdad71f65fd92d6bb193004c545d0
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2243,7 +2243,7 @@ answer=to 1.5 roubles
 feedback=The frozen source pairs the shown form "к полу́тора рубля́м" with the admitted gloss "to 1.5 roubles" ("to 1.5 roubles").
 objectiveId=obj-u22-half-forms
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "из полу́тора рубле́й" with the admitted gloss "from 1.5 roubles" ("from 1.5 roubles"). | The frozen source pairs the shown form "с полу́тора рубля́ми" with the admitted gloss "with 1.5 roubles" ("with 1.5 roubles").
 testedFeature=HALF_TO
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2266,8 +2266,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4e963dfe6841b4048a2946b7f06082c1f6065aac911b8a1ee986fcb7e42e9946
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ece1d3a4dd72e35a58bb4a4a25baca55dd72aeb396c7e7b624f7153304b683b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2278,7 +2278,7 @@ answer=тро́е
 feedback=The frozen source pairs the shown form "три" with the admitted gloss "тро́е" ("collective numbers").
 objectiveId=obj-u22-collective
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "три" with the admitted gloss "тре́тий" ("ordinal numbers"). | The frozen source pairs the shown form "четы́ре" with the admitted gloss "че́тверо" ("collective numbers").
 testedFeature=COLLECTIVE_THREE
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2301,8 +2301,8 @@ responseKind=RUSSIAN_TOKEN
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: efa2466b52185f2da015b3964691c2a587d7f65bb0414c92088e4167cac8d0d0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68368f9eae29c9a70be02e62010c3c94dcd65ff77322eceac511cf7d688f422b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2313,7 +2313,7 @@ answer=че́тверо
 feedback=The frozen source pairs the shown form "четы́ре" with the admitted gloss "че́тверо" ("collective numbers").
 objectiveId=obj-u22-collective
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "четы́ре" with the admitted gloss "четвёртый" ("ordinal numbers"). | The frozen source pairs the shown form "два" with the admitted gloss "дво́е" ("collective numbers").
 testedFeature=COLLECTIVE_FOUR
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -2354,8 +2354,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a3b4abad128c0d2641e65b21ebb63f91a41ab138e2af0c5303b07d249947612d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac1d1ca74739618544aa18aca2eb1352d7c89337b8b29c0882d1a113b10b02ce
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2417,8 +2417,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c2d1071cb95a6f66ac0426d748a3a2d5b3b7c768ea478ea204bb82b8c415e767
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 82725dc129f79be1ee0bd3de1a6dc64c09985d1257c7a1d6dbffd5332a6ffd5b
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2480,8 +2480,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b41b6fa2674a1f5661de1b914e775aff18956bb7b1d221e50ac62816a61e8ee5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78ee714399eb44c4523719c97ed7388300c9fb93ddcd2c4a4efd55c4154d91c1
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2543,8 +2543,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee9f5cf15bffafd2bc0455bb83d0464ac932bf7eba2a0e0457ba3ca85e71a1d9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0972d504fb487646433a0b285904eca18db3b2a4eecc746b3c09888a7a61355f
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2606,8 +2606,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a550b509d5872367dfdbdae4e8c08e6c8079ec32f9f9e574089a143430696eb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 916245996bdb75ee82c81934b03d575947209bc737b142dfb45eef51c5735327
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2669,8 +2669,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a76dc160b264f5855cd46b95722d6e8de38c3a9bdde229f3ebd04c0fc72355fd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a0eabe0a1170a82a9c51fe314fc64d4bd09663c0f69978b0d4d2609c4b52cb0b
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2732,8 +2732,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70558620eec89b3dc2382b6845ec805ae2fff4d1ca5c6801a89ddeb9141ecbfd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad045a39e904dc656ac817d8142adb036a32f399a99089a7aae616d9d1046e63
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2795,8 +2795,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0b6b9fc40bfb063827d2d489b5eb7918f9313b09bbb128fd9f141129d4628c6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 570e2fbbbf37988eb603a020dc99582e9a9dfa9e5fab65427f01da765f19e98d
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -2858,8 +2858,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: da104e271ba3191dbb11dba63af59efa5b6e62d6bc1740e8f10abb00f92f2d5d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d0c1714a27d8da10d07a62aaabb357ffec80257d8323f39e1d35d47dd2446a8
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2927,8 +2927,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9247393ec178189a42f5b9cc68aa312d744e6edf0c17bbb983fdcbb865cf0af
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da4e6dd54ef9de6fd6dc5ad78a275970366c277c0e78b231ae299bf986583f92
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2996,8 +2996,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 775c65a400eeec5ca17630649ae36eb28d81fc2e0dd96b8456eff3d21d57429b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f48ec8c7709e0e29a7a4e9482d02eee10c3694d142ef916dbd32e9682ce5b4b
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -3065,8 +3065,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 806442b434350db24ce94e6b4a1f46a7921635d1fe9333f65dd2618766109180
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ac25d654d17aa1be71ef0d8411543728f027f07619d01bb4c531ef77f0d3890
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -3134,8 +3134,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce4d202a28019b667e9ee17f5ce5c59ca9c21fb1a0c790c623218dc0d7a5a36d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61e90370779b0dba361daf0920a2f4c012145f2e85cde46d0e4b3fd29a5def2f
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -3203,8 +3203,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e91e4c0bda7fc7a7bc1f016dcb6a6f28a50e7b2787eccac9c43c0450a5424269
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 800c5826313ae5af5486468dd3b569046e0a93c0ddb2d38e452b5456a6ab629c
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -3272,8 +3272,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce6439c9c1ec77c071a5451c176227bbc827654eb01905e61ef048882403792d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 09274e43d68fd7882acf767cce065f745ac76db9d640a463a2dead49af625118
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -3301,8 +3301,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b5582024adcac5114c0f8c4cd1fca646cecdc6322048c3e0540f16f09443996
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bf2eb0612db75d145ebe06858d32ad4f0745099ab9d1858b5bea2495e176e2cb
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -3330,8 +3330,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03a13bfb06e962329f727e52486a61a5054f9ab33d9610a6cf8021d257499f8a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bbe8b99c58db6a484f0f31f731f6ca63d36c65b795a000658d59bd253aa6a827
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -3359,8 +3359,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bac788c0de5caf89c33ea86660b6b4181aac07d5be60db6fb8ee0e12ec55a11a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: beffb3753f79a32b86f3a469cdfbd84228d74e6348a45823a74d2b2578059ff0
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -3388,8 +3388,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a8d304b546b34194145aec8fcc2c796e7d7ece28578bf1bb351d9cbdca196619
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 46e4c9b7aedf6401a62477c430b82187a02c0953a015a2dee2e8b53fa531abbf
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -3417,8 +3417,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 80222d053ebbe060c1111a19d003237a4b2b373234503b51d05c18c5ee06b132
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5075cf26f07c2b2b2bd610e80e2e5bc65c71b3c761ec6b8c784174ec54e09c24
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -3446,8 +3446,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 20a457f6191f1dffecd205396ebc5ddade569f0f41429895110428cedf4c23f1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e4e88855ede1ab98d098d84dfd4209fc191baa4e1ebf47e76cf4a7606a5b3a5d
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3509,8 +3509,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dac2b29133c0060e55b973d5b7ff0e4d23aabb826b921050040a852704e6c8ec
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 52501cbfb72619de005733a2a416a03b761286d00be6b1abd79d7d54776768ac
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3572,8 +3572,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3376483096207f18b58fae3d2f7a3acb93e01c68c221b489472ebd6f31eaf970
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d84dbec9ed85585bc20785e5d9cc43eeb3f200fc0e07d6f338332ab32a3eee0b
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3635,8 +3635,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e5f9d0f2fe16fa8d44bd7c83574843702c9656a3f5df821600981ffbb3f8b7d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bcd47a6ea2624dea77afe6d28eb7c7328338f21f2bf495f810017862e2f04163
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3698,8 +3698,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a64fe6e84f023eb7800470e7525927920183a63b16bdaa4432d0bfd080e9bd2b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cfb77d95a658b7648078a1a3d1af6a5484d41011643a3f8e3e711c6954478511
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3761,8 +3761,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 30f46a79b767c496ee6eef203098e9646df8d6199e8a7ab00e60c0328e890bb1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c1c01a77db7cb9854d4173255839360421c6d745505d539a6fb6ab3bd46b418
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3824,8 +3824,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d1936adeec8b7ec34cf8870ab62004c04466756d313a74695b50e453e635bb0d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 572cd6f0bd744e5bd92a65869f3813a6c0542dad20f8fcb67f93e0f83ba04b7f
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3887,8 +3887,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca1d64255aa9abb03167f485a99da1ac9e6e64bf182aff7c429e3e23416f7086
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48061d1a80844e836bbbb36f5cb4a340d62f8001cecb3c17ca51cef977bfb589
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -3950,8 +3950,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9226b81a74a39a9fe0a10e6e5ee54e2ca15279af3d5b625fde9f863926e6366e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ce7506284e55dd77763a048753c4823df1cbdbc89f2856ce0863c32d4b7d92a2
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -4013,8 +4013,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: df5fdb2e8d3d7d13c0d9e492a9dfa0e610c4e743f13d027e224d3631c639a945
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f607c6bc184c8557e0970013b720637f3d28770cdfe246e8ca2399333046ac96
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -4076,8 +4076,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 20d6d961a6fbf7dd85a88b54841c7ad14a3a551c65886e70989e87601b2be7a2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c2ec914414f7f904e54db77199e5b997353c3427f2ae2240afbd974031feb2a7
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -4139,8 +4139,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab692776b18978a11be25743f7701729474138e5cdfe8c610557281744eb3b2b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3bead4f892889edd923cc443950d87a370a505a64bbae13131107291aa2eef5f
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -4202,8 +4202,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45aed8abc84b0c4b23a6853d070768d15151dda47c33cc5bb02ef2eb4b110f8f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65695bddc5fa7f120a2d67651a40a0415b51c6dfef9c3fdffaadd206c8ffa150
 
 recordType=meaning
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -4245,8 +4245,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 26beec446c94b15f6744297e368a26d45428e041694bf4c7e490b42ee30728cb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac2449ddd1c92dccb65ea8ebc53ee7e104d9893b3ad8c2a44af4bd79f50ba6e5
 
 recordType=example
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -4288,8 +4288,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 544dab528e48f293c6dd2697b13551d154fba86ef73e3bccd53503195904bed6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb77f57cd5300b43d49a87944ddd2ae5d1d188b721af9808706959eab4a94ccf
 
 recordType=meaning
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -4331,8 +4331,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 38b93fa09f5bfb19e07d173a05433d4a052927ee5b6746ab8068b75705a80e00
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 903219d47e0591dd08ff44ac40690820158f8065d48d0a5b5e02b1af07325654
 
 recordType=example
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -4374,8 +4374,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 905669cfe7afd4bdbde2628e40653e9753d55a3cb82f934bc878f7bc09950e86
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 27a06b1e1c44f1e0fcd8d27b531253aaf9490a0aa6f695eb8480ada215987c4c
 
 recordType=meaning
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -4417,8 +4417,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ead5c7667e570d3533e0cc141ebb876f4d23937cdb3fc087b6f43f8dcb20ef9f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 198df75e1a77f64e7f164abecad515090a3adacd6a6056025a0783260875a5f4
 
 recordType=example
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -4460,8 +4460,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e6dcacb2a64fd947f95aa1f25c8fb87b9543a82afb76d3d1da8fee6271fdfedb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3689aac427191989993c43c47a5f1a92e4ccb95d828613542bf9f962390d3e14
 
 recordType=meaning
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -4503,8 +4503,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8b026e996ddd119fc05c49f10c4eae6cb0b1a70483caeb8baa99ca3cb0aac954
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a062202f30865c165d1da43c07a63cf245dc0237a0d034af9e336d8edcc3ed5
 
 recordType=example
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -4546,8 +4546,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a15da8c99cf058c20ddc7a7c0bbfe397dfbdfdf550472771ca19662ae99419a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ba40f2bab33fcdf9a034a68c12bb4a2ab34f854e717e605566fdb5536a543c0
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -4579,8 +4579,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e3b592cc92227dd06e429d4c8fa11e9e159b28fae94d4ee39ee54d24b95f01e2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68e06775ff9c590872f774927ce37b84ac56acfccf91bb1180854f8ff4a45425
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -4612,8 +4612,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9aefcf5346beca14cb4c5ca5a17734a454f3e4cf8e388b9086c4107b1e0bc0ed
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd2fcbf8c1c9cc75d2f1ac599006ddc6439ca1a16a08eef934f0a62b58eae20f
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -4645,8 +4645,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65db0b0f7a7d6e0719a3a349a2c7c1167a305ad3a273e6bd8a214181228d96bf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 486226932f1e7c7d0903560dd329112a928947515c800f6bf09d77c606d7e3fb
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -4678,8 +4678,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9a885238f2f80731e5e32632dac4c1a0945fbfa594522dc129e53bfd9d6a02a0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: feb6ab591996c9770448576da6b298192058ca3f27d81aa93db3027af10ad237
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -4711,8 +4711,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0ff92dabb9afe2c9a02b3dee0b1aec14a522d23f87602ffceae92a7cca62512
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6d5f4c6e6bc68d4578a1dcbc23ff2a6ce5a3f6a696c0f36cac5b559ff5ea62f
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -4744,8 +4744,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c114fe120aa10b5f3db853f0da13657ddc431ac2ffae935a8e57d535320134ed
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c5bb7535da571926c7cb81eaeaaae786c9f78c053966a9bb1085c5b14f36a6e
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -4777,8 +4777,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a20fedfe5430a1519d49b06278753f58851bf762dbbc20aefa0c26877b3aea87
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b6b40db9545d1dec26ae09e0680e35516231e4c5cd8c974b7ad50e68bf16b4e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -4810,8 +4810,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e8bb7cf1b6f21714c65186bd35b372342787a42c81fcd68696618d5aa97cc1f9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21df2b1329ecef7fe0fb0a3cc916484b0a1b693b1523db96ce032ea272145615
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -4843,8 +4843,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c912236f192af1a9bed3bf663c968de7c8d698eda06b47cdfc3c80596c7be35
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 86179f73b0b77c83f4e339cc88e42248261479ab15782b2f3c502fe7a691f857
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -4876,8 +4876,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1df7b448eccfe9222e71c5b86269b5b01fd759f9488c01a38672c6673f279ba1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 934e22e19afcc73b4cb4267b97f9101849db3a44b692968dc79473c30ef4e357
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -4909,8 +4909,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8d16ba5eb758cf950fe3ce51e0a1c66cf9769ab108747e0c068eab4eb69d8022
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ab5cd8e8a7d40955e70a4b6f1a9044b75f50e9c03ecf8593d8faa410a2c846cb
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -4942,8 +4942,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89f3a43af41a402652ee5c05ece13a8c18d5738134c876137fe1ac4ed91f1fe2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9c7302b24950a2dfec7cc1e6797d57ea6fa56e169b2170ec26d7a9b8bc9fe40a
 
 recordType=instruction
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5005,8 +5005,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b415ef295101afbfa60f48aeb3fa90022691c0cd02de383ae452c809ec889f1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b07aaa29114e47ac2a09c68f78bbef3910fdc3d74dbfa0cb868e1a9ba889e49e
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5068,8 +5068,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 728e4714d89024e24a4b4b12cf60507d9d11a7129ca087519764c4c351587377
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ada372a5f7383ba1fcf69711ce234cc637643469a20e0edf3ea51fd6ed3ac469
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5131,8 +5131,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 242148203fbf4faccf70d28eefcbc10c5c972de16753893d735cb79a42211029
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8113c8e2305715e61fa574ff34998940c387567247ecce39f2b5f6f538af12fb
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5194,8 +5194,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3681f4a586462bdfeb27a7566a06b9dbb2c23e66bdfb4bef8f3882842899fef
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 53fe74e72e899be15d196aa44c5c1743b57ebde41af93e48a9e36403ca888425
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5257,8 +5257,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: adfceaf91354761ba9f9e0f0462dd8ab18fe789d94f4540815a5f0eaa9c71585
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2a2f53c2cf5ced8a40aa1823eec04d82ef693af89cd94c3a0eba3c9ab24e9ec
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5320,8 +5320,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b8eda8b66ca510f1f1c3847c6791623f61631d4d002e007b31eadc8e4fc897a6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d227214c9f309ad70f6d454558e75bb268055f8f6c41bb5b3599f1b00b160579
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5383,8 +5383,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac0add4fc8a3bf131fe8f0e9b71eabc3399a13310cb28849ccb98c37f4805f24
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ae7ab0881623d876d78e979cb592a198aad09c628712fd42e7b2c2978fa50ee
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5446,8 +5446,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e34c05bd2ba5b0b81033d3981b3f128b2d604e69ee7972616237d2279282c922
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 984e869f4d8bdc250cb1991d787bb6b1f899459a3027bf1d195a4b7867a8631b
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5509,8 +5509,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fe7a8e15ce9b2b5ba8cb17f1a92b61d0942199975d6ee257c0ee5e6b93a02b24
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d9e3e1f4d80a44b7fde09f7b4b90f9df280ab3528a85923afe6a84d110c35af
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5572,8 +5572,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1fb0a9c2f902c503d6c78e454c26524d11b5a87b06089dde000e2116670fe7b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b2e5f42b008ba61b3958269097844c514d23d28114d207ea0020977a9d1547b
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5635,8 +5635,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b3b9ffcef97350b7d953ef8d0b6ee258ccc6fbeed8134762176378df72e4e51
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f01a659397fc646c0d56d7c04d8983e19ef60e168d2fac747ac4b4e1a3995ebc
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5698,8 +5698,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: da3406c7326203b450b673e47464508155afc51ce3588f3f4c14154f0e3efb41
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f3f7146593253b676fd6894b85da145f101402b7b192fcda27b3d52a5a027f64
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5761,8 +5761,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89bc9449c4f442ff05307753f88429e601c43b3c746bde612d40db77bbdbc8b4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a89a73c0954b8cee6705884613a3625b9a0e0e0b7ae3a7f84e529b9631bd7843
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5824,8 +5824,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 77feff867e5e3ee8bc2c9a32e2fd142eacf7e88aaa330b7893cf3aea38300e86
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e752e4adcff064feea7f0dbd4ca4e4c21abc42181f4e7c61599828b34841483a
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5887,8 +5887,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c204627fb86f94295e6c18f3f605bc4e2ff37e3f590018b2c16916ce20f20010
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e0b367a56e15d75d9bf24a2643e694b57c4338b008ae3e8c0a16606218aace90
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -5950,8 +5950,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9d29706a7e010cc34aff2da2d1979dafc99d0b6a55b67815d5b62acd7b1b1e68
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3a6e32d6ff5e3ec574217bd78b01f025f8d901cf0219d56eec31d843f67f1d82
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -6013,8 +6013,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7312dc32007eab997c75cec5561e6771ef4273ff4ab0bede9bd7ac19736a9142
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5acc8561bf7e81275d503e3da218e3a69f23ddb695d63cd6b0265c79d429af0
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -6076,8 +6076,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 94c779180d98148d54469613b4fbcd41db78fb644f474f0bb886cc42005e132b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0dfed3ab7f96e210561066d642607408eef839a4a73e8eaff326572dae5a2446
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -6145,8 +6145,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 623b93dfac1e5307ddf82fb219441a591d7642c4ca6857a51c08e53f0574b16d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5d1cea6a3e83dab78c576415e53a744c8a1ca1e7180d55bd7d956581fe68736
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -6214,8 +6214,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 065fc336832d9269f563e62311f8fe4b79f8c6ddef0a3e25e5b18fc9e6c2498f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 98092cfb7e9bda996d92f46c1fc3adcde78ca8f1b042ed451a93ddb7a0b47b8f
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -6283,8 +6283,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 42e7baa055fb7603082153066d39a2041e603c429da61037dfde61b0b749107d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f752df625e7a16b30d9738ec23cacffbc46e9a72905060950245a5e3ca608310
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -6352,8 +6352,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 462baf22f1d832858ed7c2452e2947d5d7762a772efd6f3795b3ed29dbf77741
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af7c8d349eed8e4f94ca0e57d24394573d680c513c2d29214759e4cb4f30569f
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -6421,8 +6421,8 @@ reviewedDigest=
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 896d5a6eeea09aec133779a96b4777f1fc4d490be33d4d5b6a5b7aea056f2368
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68dfd47276daac3a6d093125a59fd198a6f0f376feec6dea15b2fd4dc563a697
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -6490,8 +6490,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a992ffc5aac548e2da57d909330b9e602608d849dbecc91f190fb0e3f998099b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d4bc599d916cdce423ec95a7be89aa70a9161160a12413b6665596522833710
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6519,8 +6519,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b8d190f949acca355699b2011707e313206963b984e418ef32a20c215c67528
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 084103a9c66e473af9865bdac89f1113579361cd96c228c91337e5baa5ac39c8
 
 recordType=instruction
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -6582,8 +6582,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e14ff216434edede7a34bcf98433194231149eb049fe239cb1f0b5826c3291a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd109822892225b30d3d81f652b68a6ca5e48729e9ae14c9e94c1d7da665d68e
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -6645,8 +6645,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 518de81040cb5230009ba06b57b46369800678ccb34c54b8add008027a059ac5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b616093515ba9d21ca491c9341343b9f426ed7d095c94d6acdc5767bf6fc9d52
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -6708,8 +6708,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46e125a0c513b6631b85e672d613a0b623325b861163d677e8e5dfc5b432f2cd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7baa842161c15fbf17c12f0f2fbf8651ff44509af471fb6bd6149eec1b961ab
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -6771,8 +6771,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3edab102bd5eaba10ff105a4ce433108de9281bd6318d60ddb81e8bd99875124
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4f7dff984ba0209e1aad3e8311afd4e85931d127c8e5f4f1c61112f4f56682d
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -6834,8 +6834,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 400530f308ef32c13b6221d66034dd4c34193c308ed5386922c89f5dacecb6c9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 942f7902271a31e3f0ed0eecfe195702b487a0d3106d43f6137ff9609265c0b7
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -6897,8 +6897,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c826d889176b0a32b018d62f897af9e660300318624d657779f164bf155a4277
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1a3f649c59f57fc040eda36d2b49f10dc91e205d3707b184c8f3803c2cabe35c
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -6960,8 +6960,8 @@ reviewedDigest=
 - Source: src-ruwiki-morfologiya-148939075
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 31965cf7c700659bddc0811af9585eaf081e046dff611724d6dddb84b704c750
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a32a8f9446926b8cff9519f15778960fbea943120cd78a5bcb076102594bcb69
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075
@@ -7023,8 +7023,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ad1f4ef8138fe75c607368e6e97b79d3117b32652e9b23ddf422397e1063b7f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0f1b2caafd25bfc3f787c455a57c4f5a31a76f7dd00607867355a9289df00fea
 
 recordType=instruction
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -7066,8 +7066,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0973cdab0c3523614876208bb6a6ff82e603086526ba2549279734256b82cf9a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7916d20d5fbad8209bff0cc06d3a067198da77b1ffc627d684e1638509d7ce77
 
 recordType=label
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -7109,8 +7109,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 60c3d911a71afe9c0716ed91c086a0badc0baf93eedb722b3ccff9c64419c6a0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0aae12b8bc97833b65602c0f72530787c4b8aca24f303c6798014f2c525ade31
 
 recordType=label
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -7152,8 +7152,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6a04d4e7ef543055b5105212c2d4d2c7b531021dfee4609cff5dca991d747608
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3e07d5bbfe2f658830453f400db05f14766f505a6119f6f1baeb812265bd9bec
 
 recordType=label
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -7195,8 +7195,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9d787579f9816cd00c580547aa8064c0d4dc946d7545afb3f12446d55b6abe2f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7533b3f7745e5a26184ef45c6b5418581facf7c3aab0df85d7772aa8dc4a3433
 
 recordType=label
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -7238,8 +7238,8 @@ reviewedDigest=
 - Source: src-enwiktionary-poltora-89737719
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b8f79ab6b156587c8e1ab071816a5e924d8792f04dba0d81e4ef2a3396a6b5ad
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b245174b845624ee572ff30841f8f8590e5a148b2215aa9aefa6129184a149e
 
 recordType=label
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -7281,8 +7281,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 74295b0da92c456d5df619b29d0b77b27f328ccc2692d58b065f9780389dd591
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 20567b83a9cb4e41c88608b5565ccbc02a0e7d6a2a3aedf4b5786d1cac5edb0f
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7314,8 +7314,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 49abae82642db9d7e346b0a5b34745f1d56ffa7a1013db0b92c6cd623be4bc69
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd96e3078054a0fefb863e97da3b0a7d215989ba7f7a8a96f50263ab61dd0a26
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7347,8 +7347,8 @@ reviewedDigest=
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e77fc99fffef0165cf8e8194a3e42a744729d71c30817f7e684aea2136428ff6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e7fd37fab5cb6ef6e675873d9cc18ce3357f3697f449727eae8cf673d275a25
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
@@ -7360,8 +7360,8 @@ text=Admitted lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d57ce5561117515b69b870bf2f0784f8b4d41c93bd0ec76cf0bcb3ee7d4aafc8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bb4b354d0685cc78109cac39b11284e52186a505e054604cf305fbf5b1313e4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen examples place two girls with two, not with one.
@@ -7373,8 +7373,8 @@ text=The frozen examples place two girls with two, not with one.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 281f750a67b1ad6d90d25d89c57731120bb7e495692d611beda4a5b572c52e59
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b24634c295ffd1a12f7910e368fd2b1f866588a80b23c34848b72730b5ce6f13
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen examples place five girls with five, not with one.
@@ -7386,8 +7386,8 @@ text=The frozen examples place five girls with five, not with one.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 032ae7b576ae3a804167f400f3894606cd123483dd9cc65168cf6384f32cf56f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 56a887c8667f35c955df8bcbdc2ca7485b504b210da2474141648f2703e401d0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Two girls follows two, not a form of one.
@@ -7399,8 +7399,8 @@ text=Two girls follows two, not a form of one.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7dab6cd1aaaadcc303415cfab7671d85d9c8f2d5c287a9afdd3a6e42828517c3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eca242aa5eb65aa1316ddc042d7aafe25daf85b95de76e390da4aeeb5cf23684
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Five girls follows five, not a form of one.
@@ -7412,8 +7412,8 @@ text=Five girls follows five, not a form of one.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 081e0484cffb03527acb1b416c0383b4bfb88f31613b25ab9365a34abf83c48f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6480f552ec0315809770c062bc321db880b56bee6fb2580517371317abb9ecf2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note says a form of one should be used in the proper form. This line is the other example with one.
@@ -7425,8 +7425,8 @@ text=The frozen note says a form of one should be used in the proper form. This 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8ff814fa1a2b323d2639264ce8e9d908c46476a7a3cdf0213352362bd654aa96
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9212c0316ea700325d150919fae1c196b9bf13ea5f31fb765410b1db995a5450
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note says a form of one should be used in the proper form. Which admitted example is the other one with one?
@@ -7438,8 +7438,8 @@ text=The frozen note says a form of one should be used in the proper form. Which
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9418e45f04678bdb52cbf1d6290124d3f1fac45a9ef49258114c10942066d776
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da771186175008d15db6402a85444203b167946aad30216924834c19d593ede4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
@@ -7451,8 +7451,8 @@ text=Admitted instruction
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d6958e8c61149a845982e7f926f188b86e93a3b4b6bfd7cd3bc995f7809be830
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 042045ab5fc53a9ba4c722acf291bf6ab5ea5cc615a210ac7892cad224932ca3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen examples place one boy with a form of one, not with two, three, or four.
@@ -7464,8 +7464,8 @@ text=The frozen examples place one boy with a form of one, not with two, three, 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e0328e987bc320a698cdd9d5257a14900f3f1662064623f5a677d171d8cf164
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a02a13473932e288bbaaed84aaae8c9cba32c85507f4988c647139f25497f91
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen examples place five girls with the five group, not with two, three, or four.
@@ -7477,8 +7477,8 @@ text=The frozen examples place five girls with the five group, not with two, thr
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1f1fe12c5cee5f201efee783628fcbfea170848636e79871180fdc7b402e7f1c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 19d8127d618b6e7fe56b5bbf1abd39a05ca14ee1949d365fb81eac9a2c2d6d69
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=One boy follows a form of one, not two, three, or four.
@@ -7490,8 +7490,8 @@ text=One boy follows a form of one, not two, three, or four.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b4c4842561b069ec713e6dd94a3107282ddf43cf3d8792ab382fae3abaf5f07
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58d5213c9a9b03cbbf0f544a2fe405373b9bccc18799c71f6be69a46208f74dd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Five girls follows the five group, not two, three, or four.
@@ -7503,8 +7503,8 @@ text=Five girls follows the five group, not two, three, or four.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 506309e00c519dcf7d353faff8cf8621d050abca32797ce10c5d19b0415832a9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 642f3efcb8ddd30348759089d82dabfbd7cbe1265191aa8085a9dc45a20d30ad
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note says two, three, and four require the following item to be presented together. This line is the three example.
@@ -7516,8 +7516,8 @@ text=The frozen note says two, three, and four require the following item to be 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 077ea64e4329b8c4dead5425be34b2003c4625ab5c78b1b6a839b6a00126c3c9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f918e161a9df25c494cfff667bfeb47718d4f5dca2cb4050eca51e2a0316416c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note groups two, three, and four together. Which admitted line is another example from that group?
@@ -7529,8 +7529,8 @@ text=The frozen note groups two, three, and four together. Which admitted line i
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 934c690544912aab593177df9ce4223bf36453b9f448a351adc24133b778c469
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cfa74de16a2193ac9e2c16ef08e3b7b0a1e7eb0d3c4cf28732a4c6342879afc4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen examples place one boy with a form of one, not with the five group.
@@ -7542,8 +7542,8 @@ text=The frozen examples place one boy with a form of one, not with the five gro
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 57250c4af2bab64517951957792f86e89df0f25308aa14add77722079fdda060
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9f49514a16ce1686429cadbaea154e0c61bf900f24f899be0f848334908cb8c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen examples place two girls with two, not with the five group.
@@ -7555,8 +7555,8 @@ text=The frozen examples place two girls with two, not with the five group.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 94edbbd7ade8da1157c2ea3144cf730b1ea942c04a6cca8d0844543bce7b3c9c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec8784d4c534e09a97fc370916d40b014caf3d28541ee53d131496d24244cf20
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=One boy follows a form of one, not the five group.
@@ -7568,8 +7568,8 @@ text=One boy follows a form of one, not the five group.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 35bcc3f4bf2d322dca8aaaed602c86e697f34678ac47cbc7920e2404ae696a7f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cad71ae6d6cee0eb6838aab8e9117823b70d370c9063800fb3848e14ebab446e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Two girls follows two, not the five group.
@@ -7581,8 +7581,8 @@ text=Two girls follows two, not the five group.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1fd4a8959b8568797906fe67af2dbe4794172507c00fac200227297c95f6bcfb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ca66d98ca9c644773df26a5e87c4f6a3a37f92cd48633769a87a29e3ce778cb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note says these numerals require their attached items in the later group. This line is another example from that group.
@@ -7594,8 +7594,8 @@ text=The frozen note says these numerals require their attached items in the lat
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 222297f242dea291a3bca298a05a257cd55a9ff78062ccdb80a7df1911fcf946
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2decef11082b391746920bc0efd457679225bbd457d110eb3098a21cad079439
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note groups five through twenty together. Which admitted line is another example from that group?
@@ -7607,8 +7607,8 @@ text=The frozen note groups five through twenty together. Which admitted line is
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5f85660b4cbd0e77432a55430b2af033e32c5e9b90e8b2d752114034392ec7ff
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e00520106ff6d916f21f831dfdcc706a522ee39c730dedb6e328e3cc37b21cda
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Thirty-three shot glasses ends in three, so it is not the example that ends in one.
@@ -7620,8 +7620,8 @@ text=Thirty-three shot glasses ends in three, so it is not the example that ends
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e6250639e90cb3b40839af76d8b3fa6bd7234e5edcc3bbf44263d7ba10ef2a2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 489bac1cc9d78ae2ad300000d80baa042f73c434f22b81843290a6d983aae94d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Sixty-nine words ends in nine, so it is not the example that ends in one.
@@ -7633,8 +7633,8 @@ text=Sixty-nine words ends in nine, so it is not the example that ends in one.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c227b727856754c415d338d2124aa71b4bb71d7bca5b4ac06e3191f75774939
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c3d242a5d08ed008a8057e7f06c4e97e32839e20993024ebf3837ac53f818ab
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This example ends in three, not in one.
@@ -7646,8 +7646,8 @@ text=This example ends in three, not in one.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 970a9b4fab31f9aa4b45fc86aa5f28dc38028698a5687a70e9d22373112f9598
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38917a0f4fa9d4ecf2508c0b68cc5bbf3fe6b0d39fbc9901f45f9ae8853e57d2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This example ends in nine, not in one.
@@ -7659,8 +7659,8 @@ text=This example ends in nine, not in one.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb6d51d49133f8a002e7ab718b1009f71f68f21395b520da4f742683dc921be7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0f6fcbb704d1e8bfbcbca1c8d29fe943de561f42a567eb294cb1e44a7a7f5a38
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in one.
@@ -7672,8 +7672,8 @@ text=The frozen note says numerals larger than twenty follow the above rules usi
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: efd2640d95db02fd97342dcac5f9d9a3b79421bab41a6e38f787ae236017db17
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7854f9be9fbee2599c242df6327e41a9c1af663c9b67998440442296d5f22be2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in one?
@@ -7685,8 +7685,8 @@ text=The frozen note says numerals larger than twenty follow the above rules usi
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64beb3de7146de93b27e732e33c86fab6adaa166cc1108cb6a2b2350916a4834
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ffe8868df53a853c6ad35a008bd11b652c1c3a6deadc04d94a92631fe46a11ad
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Forty-one years ends in one, so it is not the example that ends in nine.
@@ -7698,8 +7698,8 @@ text=Forty-one years ends in one, so it is not the example that ends in nine.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1af843aec522906fdcada359e8951fec01d802f07e1ca1c6c17dd18be70c3e53
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a27f35ae8573f5fa360407d0bea31fd020dbefa87a2fb6f605f9646114cea1e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Thirty-three shot glasses ends in three, so it is not the example that ends in nine.
@@ -7711,8 +7711,8 @@ text=Thirty-three shot glasses ends in three, so it is not the example that ends
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 914f7f406ff5c28b48e9ffdb1bdee04dd2c66237cd0a761d1e6405f8c7363f7a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5450fe82e7a2eeb50bc50c0459752bae2a200524c06362a25dc124295d8f1714
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This example ends in one, not in nine.
@@ -7724,8 +7724,8 @@ text=This example ends in one, not in nine.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aabf943b3d2000a1d13e33a62c058cf8e9a2b55c92b6c25be9e94cbf3a4d871c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7863e0daaf2e5657c5ddb9d8b2603a8ac0c2717810792f4deea3fb62e04b4e3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This example ends in three, not in nine.
@@ -7737,8 +7737,8 @@ text=This example ends in three, not in nine.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a04c0edffe2cbce33a7af754fd779434caef108a8df74e5feffd5a6e622cf21
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64a852b33aec948020e348a61c3f09ad6b4809eb9564fb5badefe55cbf2c6f39
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in nine.
@@ -7750,8 +7750,8 @@ text=The frozen note says numerals larger than twenty follow the above rules usi
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 51190cd79997f767d4106181af657b3356fc5bea6f60486187c64709e2a53fdf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cf1732aafdbc8ea26cec0d9ef0148abaff357a743bd1607e88675bee10039e7d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in nine?
@@ -7763,8 +7763,8 @@ text=The frozen note says numerals larger than twenty follow the above rules usi
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: de0631cdf2ae67473eca2bc211d2783c2b37f7ab0b7ccde37bccc35c4ebd451c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f78c2176e7737a7b79666b3c506ba1b9b028e0b1a4a70b4b61583cfb78347a78
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Sixty-nine words ends in nine, so it is not the example that ends in three.
@@ -7776,8 +7776,8 @@ text=Sixty-nine words ends in nine, so it is not the example that ends in three.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a628a2c7af0e8d049411f8c772764e5eae22da3ace5fd6851e5a645ce08cba48
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 766a82976264bcf19ffd08c443d1a86e7845163163e2f7693da00da85ec2a557
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Forty-one years ends in one, so it is not the example that ends in three.
@@ -7789,8 +7789,8 @@ text=Forty-one years ends in one, so it is not the example that ends in three.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c694ab9aa0684239371f9ab4bb3c433d613e2793be4b29074a640a6b52395e20
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9dd56c923338dee941189f1e813c2a1e9f9dad33642bbc920edb6709ff13513d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This example ends in nine, not in three.
@@ -7802,8 +7802,8 @@ text=This example ends in nine, not in three.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a586ba41cbccb7abc69833729b6ab7c6c3d52b79ca4de6e38b35d746e9f4af77
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 451b13283cc7b4e7c87b6340cf3f58f3955d7a90f46cf2fea0a92aeb88cc0ad5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This example ends in one, not in three.
@@ -7815,8 +7815,8 @@ text=This example ends in one, not in three.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6b6d1d5a3ff45c24a357de87671e198abcbae2e34d819f5a05d43594c7323f8d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13cd62f1275ff54380acb61b136ac87df72a8eae4e8b7613cf0c08668af87d70
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in three.
@@ -7828,8 +7828,8 @@ text=The frozen note says numerals larger than twenty follow the above rules usi
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 59ef20cc85fbe033be61551e63c85c5f74ff4b3a2000d08d21c07d861d913993
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 715bc676ea372204d74be3da613f0318fece885a2914febb71cfe79781f462b2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in three?
@@ -7841,8 +7841,8 @@ text=The frozen note says numerals larger than twenty follow the above rules usi
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc2ee0f959bf4c70d5200d66e4ec229f0961406e2133fe731d87867044722c6a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: edfee81b05c737a81d7248b7b009b3a085c58cfaa634c290900ebb4c8c1e92d8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen source pairs the shown form
@@ -7854,8 +7854,8 @@ text=The frozen source pairs the shown form
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c7a4f469bbe5e4c2a792c324eaf48a6131694930e36c4442a57fca0c18c0471c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2a718df58f28255195d019480af945426f319a441498dc61ffa012d10bbdfa6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=with the admitted gloss
@@ -7867,8 +7867,8 @@ text=with the admitted gloss
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ad0a95a455ac0d5f240a4a17c7909b6c750d2b64bbc10fe09b393cc42144438f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c178d591952c3875b5b95e9166ba78ad26ff5a7e56d4a39e54f5a1b16551a6bc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted case name is written on the frozen line with the shown form?
@@ -7880,8 +7880,8 @@ text=Which admitted case name is written on the frozen line with the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0fb4ef95fe6ec3be1f8a9aef139482c55763c4ee3e5092c5290545f24b86bbe9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 743fac64c543fdf3adfee772238c5f66d36068bbbbe970becfb920188fb19ab9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which case is the shown form?
@@ -7893,8 +7893,8 @@ text=Which case is the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62a37774aa28a386e94dd185a70891ca6ebf206d2fc06aea1d80db6547d44266
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa059093f77db48e0c74dcef6722f3246d16b0c1819abce096ea88ff5920467c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English gloss is written for the shown form?
@@ -7906,8 +7906,8 @@ text=Which admitted English gloss is written for the shown form?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1d4d445f06de9fa3cca179f4adc04957ca6f2fa5dda8a5a9d17654402833ce18
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a69b2f4212b24f71bd6a4ac64f0a8a16ef6a9ccf8ddabf07a11916f1773ef304
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the English meaning of the shown phrase.
@@ -7919,8 +7919,8 @@ text=Choose the English meaning of the shown phrase.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 849aba7fe9c6f0207fe64f7e5d69eaed05cc9c81c194b8266b52d81092bb9ac1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd8bb89b230d69fd3d8b226566bb29b659227b8bfee086055edf7039024fae68
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted form is written in the collective numbers column for the shown cardinal?
@@ -7932,8 +7932,8 @@ text=Which admitted form is written in the collective numbers column for the sho
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3ddbef3b7b6e947933493004057dd7131ac01cbdf3af4b06c041f3d6f57ff5d8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 57ca7897be5e38e970c5b318fa402c8f2b61d43fa87beb1b23dd366b41cc255f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the collective number for the shown cardinal.
@@ -7945,8 +7945,8 @@ text=Choose the collective number for the shown cardinal.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8d9d7ea6be5dc71f865e94817759a44755856889db99e10b6272bc7d580a48d4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd0e652918c620c8a9222d50dfb0d48b1419fee37c523b4396ce9bf6294fd4b9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted numeral forms
@@ -7958,8 +7958,8 @@ text=Admitted numeral forms
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc99f38e8d5b4c11ddc50ea18347fc3646fd2022485555000641961c8035748b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4571ece289d1a30ae736793afc71ca4ae014643283e6ed98a4e6e01e92abfa82
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 22 uses frozen item-form lines, the frozen numeral table, the frozen half-form usage note, and the frozen collective column. A numbered list is not taught as an ordinal distinction. Qualified review is pending.
@@ -7971,8 +7971,8 @@ text=Proposed Unit 22 uses frozen item-form lines, the frozen numeral table, the
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c90e07a91b25d2ddf6fd76f0927a9919df0b5ba3e034632e610609bd0f756926
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eac5e55fab2c1bbe7e56532d2901496016a45d92f7c835bb73295310c6b07658
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 22 in the copy you own. The app records do not replace that lesson.
@@ -7984,8 +7984,8 @@ text=Open Lesson 22 in the copy you own. The app records do not replace that les
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 837c7ea16a2682a75972bb9150eb2d9688ac41a78c1e19e3172d01d1fd0e772a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 032d6c15b278ffc0d92aa3eb1d8d8421fb71124596093351d66c64abe57c32e5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
@@ -7997,8 +7997,8 @@ text=Guided practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cdb93f34b4b100d7bd4c94bf01f1253da40979f94d13bd794927b8914e448da4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 746118ebae86699d47e1cb5b95011acd132e9b79e5b6fbee3c0ab75e335a0e85
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
@@ -8010,8 +8010,8 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 47ececa9537f78d489456f8c5fad0ab8c8039783a7322a315dd1f65c0a2f357c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6a516d68a6e2f786b7455a35fe2e004fdf9203673135980492bbec4c9ecac5d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
@@ -8023,8 +8023,8 @@ text=Remediation
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1893a14b947d93ef502753df5ce493bf274ddefe82e291a236c245b0af4e2a60
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b208a46196cccf1b2d6d8449dfed1ccfb3746797fcfff6c97888ea90bc7c3221
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
@@ -8036,8 +8036,8 @@ text=Independent checks
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 708cb4980aadb456e488da02ee949ad3d8153756cc8be4a634bea37950bce6ca
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5ee67df95997e0453bbb52c4f46f657739423f2f7d1ad434084560568904145b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
@@ -8049,8 +8049,8 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0640fdd10be271e1a94e638d706b8a08292185b57e25fc67ec16052ac86d747
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d79250739762a3e0b567cb660e363e8809780e87d3d4f3db87fbee2b67d9c7e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 22 in your copy
@@ -8062,8 +8062,8 @@ text=Work Lesson 22 in your copy
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a9b80c1b79ea2430c894273a5ddac43e034b66149aacbdd2007c778376f59475
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1996c0f32ba093fc44ab7cca78991ae4bdaf6ec90434ea37c08082b5cd3b82cd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 22 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
@@ -8075,8 +8075,8 @@ text=Do Lesson 22 in the copy you own. Use that book's explanations and practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c3e4c603789807a5ed2e28995817d6f9aeed895d9c7fbb6b67cad9119ceea38f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 86c36b6a95e6ebe76d7ac6e9b87e19e310578473a3b1c8e4db2471ef69e792f4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 22 in your copy and complete its lesson work.
@@ -8088,8 +8088,8 @@ text=Open Lesson 22 in your copy and complete its lesson work.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d8ff0de6d631942ab595bc4d10fd9e83ed7b67ade88d0fcab225a83e732b4647
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd531e46a2c0548fc6ac9e0a084dd8e75e61d01346a85c30c25c14dfd4f92608
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 22 book work
@@ -8101,8 +8101,8 @@ text=Record Lesson 22 book work
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: db9ee107a0f36783c27ce9e8b3d414cb9cbece0b92a93281151ab37f580d8618
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f3b55fd8fd86c3e3b980ea21b23b15c699c91ac9e3de21f02d2b21518eb66d7c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 22 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
@@ -8114,8 +8114,8 @@ text=When you have done Lesson 22 in your copy, self-attest here. Attestation re
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d2e3412414d4ae757e2ee2c74cff4570c4007318bf6817a6dddff36450000b59
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6738fa13104f4a083d786a8e700afd6ac75445c3efb2a43c2b4a347985be9019
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 22 work in your copy.

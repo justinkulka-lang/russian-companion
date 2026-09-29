@@ -15,8 +15,8 @@ Unit 23 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Unit content-review SHA-256: ea02b0454ea4c2b37095bc296f55c8eca78c42e671b4ac668a958bf2e9ab078f
 - Mapping-package SHA-256: d770e8ae0d705b5570604cc71b16049fdd260e35761e7a50159dcf5a8e1fa591
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: 26f8a6cfdcf23f1d93802eb00e7b2ad6e04e392869f3b5d3b457de386a0e8f3c
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: 8330b71c6f0228e19fcdc3af1c817c05b6d030bd140ba46b18ed9b8e7fc8af73
+- Repository source SHA-256: a982d0f164e5dbd9192d2faf2ddd2858fcf84aa31985a7b87aaf8dc48fbc7cf7
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a600cfd3eb5f07e8a82865743f8c27e2265b4de27bb60e27629f9fb8872207cd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65ee1fc45174c7af587823fa6922083904f2774f694d41dc37e842a7dfe17925
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -1047,15 +1047,15 @@ remediationStepId=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4d047c0ee47864d418170591a861cc201257b2de221299e1e18a9520d701500a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dfcd3731255bf10bd934e342c50e9df810dd36cce4cd88fffde82c468329b846
 
 kind=LEXICAL
 letterId=
 display=В шестидесятых годах
 note=in the 1960s
 objectiveId=obj-u23-ranges
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u23-ranges-1`
 
@@ -1064,15 +1064,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 886df62a01ef1c0ed89feb87130e5c159ba1be920503782f68e67102d1a76eb0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 59d8a6ef2436d8db2c2defffa33fd0ecfc727432175e59a7a52883c3c5279043
 
 kind=LEXICAL
 letterId=
 display=В девяностых годах
 note=in the 1990s
 objectiveId=obj-u23-ranges
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u23-beginning-0`
 
@@ -1081,15 +1081,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f02f1d53fea9ef2c9aa8a7ababc091bcebcaab6e85c79e6d087e66dd8f6ac56d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b0cb65e24b730980bb9e4d58ce772ebb3310300468d834d78a1bff501098065b
 
 kind=LEXICAL
 letterId=
 display=В конце года
 note=at the end of the year
 objectiveId=obj-u23-beginning
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u23-beginning-1`
 
@@ -1098,15 +1098,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f0cf3e3e2c7df5c4fa4d69f15fed2982b450ce8df2e76b5163789603f0203024
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0348d6ba0ceef1e40ab546d6fb6566072ac1694cfe41aee6e1373b04e455a849
 
 kind=LEXICAL
 letterId=
 display=В начале века
 note=at the beginning of the century
 objectiveId=obj-u23-beginning
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u23-beginning-2`
 
@@ -1115,15 +1115,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7148806bd3f584ebe73f8657fd8d4006a848e1e39875c00d52bea046d22a3695
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 379785f774df43383514cbfdd0905d42dc1e07dd5b8246073cce27dd7169d066
 
 kind=LEXICAL
 letterId=
 display=В середине недели
 note=in the middle of the week
 objectiveId=obj-u23-beginning
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u23-during-event-0`
 
@@ -1132,15 +1132,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9545de647ea7a08e070fdbb75a584e9d88bb7eb92b5b7dbc48c4ba9d75a5747d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f7334110d7532cef62eb0cfccc883951f54190a05d7b56fa871ea9eda967aa6
 
 kind=LEXICAL
 letterId=
 display=Она родилась во время войны.
 note=She was born during the war.
 objectiveId=obj-u23-during-event
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u23-during-event-1`
 
@@ -1149,15 +1149,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03ac83ff1557a9e50d7fa322847281636d72ca4b24674817ce77026f68c251d3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8507cfd06a684467c388a681b8f62c24f86ebaaf407cf23693acbb9d2c4fa1f7
 
 kind=LEXICAL
 letterId=
 display=Во время поездки я познакомился с новыми друзьями.
 note=During the trip I met new friends.
 objectiveId=obj-u23-during-event
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u23-duration-0`
 
@@ -1166,15 +1166,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4edf111cdb0a8e337c0932aab4caf8ba3d83d1fac0f288e266b1076c15424ed6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c253a82b2fdbb5d89acd484607b020fca243f96b6b51be5be5d546a5a3b2884
 
 kind=LEXICAL
 letterId=
 display=В течение урока ученики работали над проектом.
 note=Throughout the lesson, the students worked on the project.
 objectiveId=obj-u23-duration
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u23-duration-1`
 
@@ -1183,15 +1183,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7cd53c904f72a747bf5a81e654aa26bd6680b2edc154757946fd391ee676ff86
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb562af4e4ed9bc80815dd913f9d4ebd54847246bca154b525d56c254cb66aa8
 
 kind=LEXICAL
 letterId=
 display=В течение дня погода менялась несколько раз.
 note=During the course of the day, the weather changed several times.
 objectiveId=obj-u23-duration
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u23-elapsed-0`
 
@@ -1200,15 +1200,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 54dfb00fc9da361e1f7214aa634a8e8bf258c2ea7f036aac2d3a0ac000744259
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8e210519f32838d34bee9669228a7d9fbde94270a65323010364adf2caefe713
 
 kind=LEXICAL
 letterId=
 display=Перед ужином мы ходили в парк.
 note=before
 objectiveId=obj-u23-elapsed
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u23-elapsed-1`
 
@@ -1217,15 +1217,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e0240d7db75ed975d1289ef588e6871c269989be10e8dcf432df5859ca5ac90
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 380f20ea9344dd74bf3edc3e785758f29d0ecd9009f23d1e96819f8118efd512
 
 kind=LEXICAL
 letterId=
 display=После работы я смотрела фильм.
 note=after
 objectiveId=obj-u23-elapsed
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u23-elapsed-2`
 
@@ -1234,15 +1234,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6519cc8ae133207aafe465fed1ea49b28f43069cc2fa0012bc2316424dd6da67
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4bfd7b3a0a58fdc2f62b2dee21ed4e37ee39fb7c10862b57cb61668f1b082bb1
 
 kind=LEXICAL
 letterId=
 display=Мы едем в Латвию через год.
 note=in (a period of time)
 objectiveId=obj-u23-elapsed
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u23-elapsed-3`
 
@@ -1251,15 +1251,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5ed81fc60b2c71a1e8318195622098e5ccda89af0c0615b95f6a47e68c3cc740
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b83639b160609e2c622cc4f3684efbe6325393f9aa6efee36d69aa2d5e8da158
 
 kind=LEXICAL
 letterId=
 display=Мы ездили в Казахстан год назад.
 note=ago
 objectiveId=obj-u23-elapsed
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u23-g-ranges-0`
 
@@ -1268,8 +1268,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4ea1e77b4531d5c86f3766c722dadb7d0373fc0b61d710ddcedda6d7be488f13
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d72704ba1ba8cbe21227625656a448c148fb87d5eac3306f7e2c63d5ea2c839f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1280,7 +1280,7 @@ answer=in the 1960s
 feedback=The frozen source pairs the shown form "В шестидесятых годах" with the admitted gloss "in the 1960s" ("in the 1960s").
 objectiveId=obj-u23-ranges
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "В девяностых годах" with the admitted gloss "in the 1990s" ("in the 1990s").
 testedFeature=DECADE_RANGE
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1303,8 +1303,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: db9e781d91664870a5fcea9d250696bcc10e203fb2351462488525773ea73a05
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 874d38a300d202c02c408dfedda9a7cde79f8b94a2d8cee128fe7a04da57121c
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1315,7 +1315,7 @@ answer=at the end of the year
 feedback=The frozen source pairs the shown form "В конце года" with the admitted gloss "at the end of the year" ("at the end of the year").
 objectiveId=obj-u23-beginning
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "В начале века" with the admitted gloss "at the beginning of the century" ("at the beginning of the century").
 testedFeature=BEGINNING_MIDDLE
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1338,8 +1338,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9491d98ffaaf388adbae03d31b55589e3fc0266aafa56e7075a43d903ef9ed7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2d123340e87c13f7f7b41f372d6214402a33ea85074e6d76babfc87db841a82
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1350,7 +1350,7 @@ answer=She was born during the war.
 feedback=The frozen source pairs the shown form "Она родилась во время войны." with the admitted gloss "She was born during the war." ("during another event").
 objectiveId=obj-u23-during-event
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Во время поездки я познакомился с новыми друзьями." with the admitted gloss "During the trip I met new friends." ("During the trip I met new friends.").
 testedFeature=DURING_EVENT
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1373,8 +1373,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba8c824505293fdf831c576e21b2bdc8bcfa68d33079269c8d179bd1b4acc2bc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 385c773de5aaae5ad14e0298d54b2da242abdc5f0810d43a49c85b513915ab42
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1385,7 +1385,7 @@ answer=Throughout the lesson, the students worked on the project.
 feedback=The frozen source pairs the shown form "В течение урока ученики работали над проектом." with the admitted gloss "Throughout the lesson, the students worked on the project." ("It emphasizes the duration over which something occurs.").
 objectiveId=obj-u23-duration
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "В течение дня погода менялась несколько раз." with the admitted gloss "During the course of the day, the weather changed several times." ("During the course of the day, the weather changed several times.").
 testedFeature=ELAPSED_DURATION
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1408,8 +1408,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a149efccbc5a8bb2a6932801afcd6e1b6defe24cda4194588de6f07a187156cc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3da241fda6204d2f9bea972533c4871d805e2c00e5bdefa9ba49522eee808786
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1420,7 +1420,7 @@ answer=before
 feedback=The frozen source pairs the shown form "Перед ужином мы ходили в парк." with the admitted gloss "before" ("relate events in time").
 objectiveId=obj-u23-elapsed
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "После работы я смотрела фильм." with the admitted gloss "after" ("after").
 testedFeature=ELAPSED_RELATION
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1443,8 +1443,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 813562b1f2c4511cb2b0b7c3d1bf3d6f3b764abc75ffe58ce08d58b975d06cc0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c93fd05ec1713be176de054a2629f78ae218fa7453e2303b57bec3031c148512
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1455,7 +1455,7 @@ answer=in the 1990s
 feedback=The frozen source pairs the shown form "В девяностых годах" with the admitted gloss "in the 1990s" ("in the 1990s").
 objectiveId=obj-u23-ranges
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "В шестидесятых годах" with the admitted gloss "in the 1960s" ("in the 1960s").
 testedFeature=DECADE_RANGE
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1478,8 +1478,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8108bfda0f6c1b478a9b9440145e72805288933103123f8f50ae63529f1750db
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6dd8d835b35bbb4e9428315f5aa843fb6b205ddeeb034c0fa1d474c4098bd37c
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1490,7 +1490,7 @@ answer=in the 1960s
 feedback=The frozen source pairs the shown form "В шестидесятых годах" with the admitted gloss "in the 1960s" ("in the 1960s").
 objectiveId=obj-u23-ranges
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "В девяностых годах" with the admitted gloss "in the 1990s" ("in the 1990s").
 testedFeature=DECADE_RANGE
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1513,8 +1513,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c02410e05129799bebd109cd7a2b8e035628a31cfa13e25e0dcf3645d4c1561
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8f6f9539d96286d5a5e533d812ce4ea3ea055ff1cfbdea78c181d92b85d77cfb
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1525,7 +1525,7 @@ answer=at the beginning of the century
 feedback=The frozen source pairs the shown form "В начале века" with the admitted gloss "at the beginning of the century" ("at the beginning of the century").
 objectiveId=obj-u23-beginning
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "В середине недели" with the admitted gloss "in the middle of the week" ("in the middle of the week").
 testedFeature=BEGINNING_MIDDLE
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1548,8 +1548,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e663b29684d8469866652502d176aa591f6345de338d7f7d1e5844b7cd5dbad7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 775beaf30eb58b3463448e605bdccb76a10ea37cd2da96d8f219c6fe9195c5ec
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1560,7 +1560,7 @@ answer=in the middle of the week
 feedback=The frozen source pairs the shown form "В середине недели" with the admitted gloss "in the middle of the week" ("in the middle of the week").
 objectiveId=obj-u23-beginning
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "В конце года" with the admitted gloss "at the end of the year" ("at the end of the year").
 testedFeature=BEGINNING_MIDDLE
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1583,8 +1583,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c5d1616c38f73a921c2d0ee8548f90532f8bf10154924f8ab6df32e1b4428cc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5eccf52fc049aea438fc71110a88c286bf4776c9fe50eed57f125973fc129df7
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1595,7 +1595,7 @@ answer=During the trip I met new friends.
 feedback=The frozen source pairs the shown form "Во время поездки я познакомился с новыми друзьями." with the admitted gloss "During the trip I met new friends." ("during another event").
 objectiveId=obj-u23-during-event
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Она родилась во время войны." with the admitted gloss "She was born during the war." ("She was born during the war.").
 testedFeature=DURING_EVENT
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1618,8 +1618,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d4ad0210dd8ac5b57972781e989bb37c7aacce235cfa4952cdf06e966a3ac86
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e516c13e75a8868d6ccfceb92e5a4df1cb1241c485ee59395f6bb38f08d8f9aa
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1630,7 +1630,7 @@ answer=She was born during the war.
 feedback=The frozen source pairs the shown form "Она родилась во время войны." with the admitted gloss "She was born during the war." ("during another event").
 objectiveId=obj-u23-during-event
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Во время поездки я познакомился с новыми друзьями." with the admitted gloss "During the trip I met new friends." ("During the trip I met new friends.").
 testedFeature=DURING_EVENT
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1653,8 +1653,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf09bea6ce37fb88f9bf9ee7bf7e44865b28a10289a76a4109322994920e98b7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c2c61c269503ec1b82009fbcf8aad04ac1fc33160233daa0eb99bebf0b7bd6f6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1665,7 +1665,7 @@ answer=During the course of the day, the weather changed several times.
 feedback=The frozen source pairs the shown form "В течение дня погода менялась несколько раз." with the admitted gloss "During the course of the day, the weather changed several times." ("It emphasizes the duration over which something occurs.").
 objectiveId=obj-u23-duration
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "В течение урока ученики работали над проектом." with the admitted gloss "Throughout the lesson, the students worked on the project." ("Throughout the lesson, the students worked on the project.").
 testedFeature=ELAPSED_DURATION
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1688,8 +1688,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc1e164e7e0f4e5b3f0add3ab87f004110c350c74da73e4576df7d296651c7a5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 627206215603d88547da544bdff1e45025291ba75c53c2813a448fc150029f5d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1700,7 +1700,7 @@ answer=Throughout the lesson, the students worked on the project.
 feedback=The frozen source pairs the shown form "В течение урока ученики работали над проектом." with the admitted gloss "Throughout the lesson, the students worked on the project." ("It emphasizes the duration over which something occurs.").
 objectiveId=obj-u23-duration
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "В течение дня погода менялась несколько раз." with the admitted gloss "During the course of the day, the weather changed several times." ("During the course of the day, the weather changed several times.").
 testedFeature=ELAPSED_DURATION
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1723,8 +1723,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f92cf9c4e532636c7714ac1647f8ba75acc5a5b09c08937ec02f6fcdfa67bae7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe7bf6cbbd0e4d95c0e3a6688027ed2ec94b270eee2d778ef5060ad237833745
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1735,7 +1735,7 @@ answer=in (a period of time)
 feedback=The frozen source pairs the shown form "Мы едем в Латвию через год." with the admitted gloss "in (a period of time)" ("relate events in time").
 objectiveId=obj-u23-elapsed
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Мы ездили в Казахстан год назад." with the admitted gloss "ago" ("ago").
 testedFeature=ELAPSED_RELATION
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1758,8 +1758,8 @@ responseKind=ENGLISH_CLASSIFICATION
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 39090bf7ffc0614a0dce89ce4ff6daff6a99c6aead777841c66733a4ea272337
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45cfcbc8d767009ffc815990e7c39ef55b283a2aa8440cbb66636846eaa8df14
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1770,7 +1770,7 @@ answer=ago
 feedback=The frozen source pairs the shown form "Мы ездили в Казахстан год назад." with the admitted gloss "ago" ("relate events in time").
 objectiveId=obj-u23-elapsed
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | The frozen source pairs the shown form "Мы едем в Латвию через год." with the admitted gloss "in (a period of time)" ("in (a period of time)").
 testedFeature=ELAPSED_RELATION
 evidenceMode=EXPLICIT_SOURCE_PAIR
@@ -1811,8 +1811,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dcd53e032028ed70e09cf74c726c4ab8ce12d7b53b636aa829a0c5874b9669db
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33fbdfb5d435de871c6c44a0cf38a2286b55046146bc539489a3d28dfaa53650
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -1845,8 +1845,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3edd1fcff806da1bd48ae9b00683716e50a9af436fef905a5fa4fa208469ff67
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 09c1c46d4e3cc8ed320945a764b8c005c9c1e39213e1ffc0d0d2ce166eed3905
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -1879,8 +1879,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9fd6cc12699e176a27259e605ff7bf54ccd895131dfc5aa991024fb04cc46fb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e0fb17a13b08af97587c37e5053af013a20112220f0d5220c168ba903f0a26a3
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -1913,8 +1913,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 773f599d4deed5f6c27cfc86faf430e367200d746f1cc917c1f294855007d6ad
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6522c686182251d03a7d900bb5a80238639a1793c402c9f6207a399af70721a
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -1947,8 +1947,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b529e2b70ef84c25485dea99a99b22a353bbe18ade1835a6ef8da0d61d0eafe9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 12b7b7fd105a3b5d8728a09777f6516e7a83d791412f9df24ae6740743f43d75
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -1981,8 +1981,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 38772c731f02ebaea7105adb1a5cfc9ac438d0c11bb7d7c4378eb6183fbe8a2a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9c5e237610034cca95531ddd7dde9e67a7dbc3e4a43736e0aa3b8e754836a786
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2015,8 +2015,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b0a0893fdb6075c648cebedc2d3d12c58cf43011b35ea84eb6b3f475bc766da
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cfbeba541e7f8bfcc254fa352284e86e1807b59b366ef51ef3ae8d913652bcd7
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2050,8 +2050,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a6257a30a7de87bf69da94224f32709e8d40f0335f61cc8cfbea7414a43a49d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3547e0542befe242971ca7f83e53cf51a39b04aebfc133af3325eb35b97b7d6d
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2085,8 +2085,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 50b379667d85c62c27407104cee8f98ded534b7f18505f7c2a1b5e802717c164
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68ffa2149de5dc032d3111d6642b547ca607f649763d059f7b07dfbae52ac8cd
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2120,8 +2120,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 43cf7bc4ca0e02636039d3bb1c18b01fa446b0c8f603c9d7503e98943cc7e265
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db20420f26bcd6b49f1840c9b7f555bd8288316b839ecbc90a7af299eeb77301
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2155,8 +2155,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 899d1bc9c220b78cab31b394e5d4991515408cb55db3c1de31e5d1758bf138bb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea1a36aaaf7dbcf360b9b7cebc144b8e8ab1d4109c3f88e6c16ffeebb004baf6
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2189,8 +2189,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e7c4ee6878fde66e6a5be273963957cc8057b1fffa17ade973ef9f1e4d0fbfbf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb44a0a308db3aa01da4c47dec20bd3dac3506be659f305f938dbd62edeb8c88
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2223,8 +2223,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fee0cdc4158ea8f0eeb6ae33e677205441e63e184e053cada2c137563eb63981
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd3ecd703cc1855cca594c1fa00e4f735ff2797f5bfc02b287e8fb14418bd6c2
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2257,8 +2257,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d0b23c8fded946fc670eafd164d5ef271665d14e6dde2b2a51dd9ac77696eb7a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26c592e61842ce9fa4874b26170e017550ab823188c1de51bba5a99989d3f329
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2291,8 +2291,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 40dbeecc97d65d13e01eddac42739eb4b8bd7e3b278e5c198166b079e69eb5a8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbefa7787ceefc6a9ebbd6d91ef54f583a228edcd8b064f4f67f9e5d7cb7d843
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2354,8 +2354,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82a089636175810f19d8ec4cfce116d993731f90a7e58246cdb8fa9230a67df4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b7d9ff8bbb551e686d7149c024136455cb532d00bf185dded377acfcd234bcb
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2417,8 +2417,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab099382286970bbc709eb2ed0cd751a54606461bd9f38e6409156552cdc1cd0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6e4ac31cdeafb1388437ac13f184664410f08ffa8131dec14fa74d34566ac1dd
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2480,8 +2480,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e13dbd1806db8b83aaf5b03d1ca2dc97a4bad56bf9bc22065f79ae11d8ceed8c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 135188fba7283cb81e7958b5668d175849d9ba984ca4062a962a177b041e144c
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2543,8 +2543,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5d045cfd3aadb6d75e722b330d5e66801816bc983b2202ab504cbcfe66af11d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd8873dcd24caa79fa80c9ea1c1b478d8f524556de5a7ea0c938f1a5fb8ede85
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2606,8 +2606,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0ec3e83ca01ad94a333d685434fe45e0ec4c5638b10ef4c896e5bea9b06ae502
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d5d18e84118ec135f4939d33fda0272916177b525a4fc7b82199f826952213b
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2669,8 +2669,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64c0f63c0d70b80e8d40983c46cbddf6cb22e3f32d85060fedaa87e62e291b62
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d449f140fdee92ccd6f8ae8f1b92864cdc7e193b7168c049a51ad3525d7e671d
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2732,8 +2732,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9c57d38ee24a4833c755ed623bfd0f6122723decff4c12c4d1f45d74fe9dab66
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca3e7790f65e2341f4e474f4f441b899f4342e06097bc90fabadebf28af7dfbc
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2795,8 +2795,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8c6ad182e71a2f9adc44fcc4780426291701a0de2924381834f0619389364939
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbbf9529ce790cd159a19bea5b3ed14a531bbc3f3211030b0690c26b0ba97c56
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2828,8 +2828,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3260e631a3c4275ae0cce356da7a06571f15b9737758845ed4befc13db9f68a8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5815b92a336fde24023cac09791c80917dff67a62720a04469644c273f870fd
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2861,8 +2861,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a730214d516760b5b3e0e719ed0a8e33a435312bc31a2dc1e429dae7c70d24a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 921b5108644c20e27b011e460f78a3921fdb64b4a75532efb5987e0f4b364598
 
 recordType=meaning
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2894,8 +2894,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 572d5e98928cb77e6092f6ebb8d902a7fb4312a9f50597c1657a5dd04cfb9238
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b59c4d48b78eb4d5cfaef53b7009e1ed2940efad5ea810557aec49db53efa7d
 
 recordType=example
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2927,8 +2927,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9d164cbaec752650ce435d7ccdc4e920d51cc265f9504d6c7f1107d6b79bc526
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a5a81f5f5c7784e7678d6198e4884d761455e70b477e3f89a7caf5928a17431
 
 recordType=instruction
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2961,8 +2961,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f259d957b88a253ea1e6edb604b979daa2dbff91d6a6d1db2f9af61c06bdce6a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d98af53f33cbbb64c6e30a94a90777884019e570dff3cc78a015cfe492d5deea
 
 recordType=label
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -2995,8 +2995,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f88ba530159cd04a4a0bd04f9cd9513af2f1344591c983b7b7689f7ab4208a26
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e897fd7d86b0e6b760c18cfb5e937f8a4eef23805795694758dcfd9133e66d91
 
 recordType=instruction
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -3030,8 +3030,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 13320113f1c99144f73547364755025b112d836aaa292b33a76d4eb2909cef46
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 80ad4a2bcb51f6c7adf9490da3ec62f0d8ed90503d37b6b8f02c36aae815af50
 
 recordType=label
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -3065,8 +3065,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2e78b6014d1d21fae75575e9a1230e6b0d22971c30bedc5ce39b89af65318124
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e8d2757eccd6060302a89681bc2af0173333408b82a728e1408934af4dc4c8e6
 
 recordType=instruction
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -3099,8 +3099,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72cd6f8e55338e7cce0f770709e1a4ba487515f58f530d482cacc586157084c0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: daa73eb8ee9c93c5c21e47da6426f9cb172aa21f342477d47835da2b4dd3aa8f
 
 recordType=label
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -3133,8 +3133,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ffd7bc811dfa6047542766c651b619c2db9ec99c970d195566714f09bf82ab6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6411ca3ccbb991dccf41f737cfd2cec007cf82e96b7c900e76800a0b7bf5939a
 
 recordType=instruction
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -3196,8 +3196,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 39c4cf3255a0fc60ca58ef6762797a0ddd752a27dc2a419f63282190f5b88245
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 454718eccc80fe831749694bc37928aeafd6ec7c7715bc7266b64db2ef619291
 
 recordType=label
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -3259,8 +3259,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f6969c051edba4a0bb4a237777e90aa737d98ae0917741ad2c01e5feb922f641
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77b632f9fc02c96b5a4d4180e100c13535bb91b08532554149f5832b39479fc5
 
 recordType=instruction
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -3292,8 +3292,8 @@ reviewedDigest=
 - Source: src-pressbooks-diverse-russian-usa-grammar
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 140ee5a0f49ac58c01789ee899e45202fde0459a4ede26d2036ccf90487b95f4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dac99aed6b7cb73bc798ff0387af0c5b2ade3cc7bfd1fb3e4531fd00b2064fb9
 
 recordType=label
 sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/
@@ -3325,8 +3325,8 @@ reviewedDigest=
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a3c99778f14f573178911c224c2418fd7659cc2feed583b642efce4d42593f6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c2ce1daa1e2aebc73806c38ab7ff38f2db100dcf104c456d28aa940254c625e7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The frozen source pairs the shown form
@@ -3338,8 +3338,8 @@ text=The frozen source pairs the shown form
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a83304274c7ed035a48a206eadbc240f4ee7ae070f4a86b55398674ead82fb11
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b556ac9185a0c4386ad671eb7bd0b6b77acca842b5d926c9cef26dcdd2b4b29b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=with the admitted gloss
@@ -3351,8 +3351,8 @@ text=with the admitted gloss
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8787076fe75038f205c1097993b89121646852f153aa2132cfef67539e486096
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9efcd9dcabce5565d783a5aa1db3cb74f15a44998919c456fe675b10ef7c317
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
@@ -3364,8 +3364,8 @@ text=Admitted lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04f762e4dbcae4cacf5b7fadbf66c9098b4352776b5fad299295a5da2bf44966
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cc6483501f1a2b60a6fac62b7678390101a5287979477a1ffdefa027b2523f03
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which English meaning matches the shown time expression?
@@ -3377,8 +3377,8 @@ text=Which English meaning matches the shown time expression?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82c7cb1922806ccd3807e78f2821d7415addf1c5d68ed84f1cf3bbd6c89ef178
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a25153165e842426dc5a4c85081ac9ec076527ce7721a8aea6e0f791fc97f84
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
@@ -3390,8 +3390,8 @@ text=Admitted instruction
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dee7122b17bb574e9cb01255cb534f2792597662008e9147bd2c848b6cc364d2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 250ca6cf813fa978061d2e38e2b953660cf25baf548d140510f3a2ab5d5d17a7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which English decade meaning matches the shown range?
@@ -3403,8 +3403,8 @@ text=Which English decade meaning matches the shown range?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 19544467e8ad97a72c191d7c0b9c014816d8f5fc55d92f783fed353128664568
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 611c116ea51b5741812158ffa23f20a88b974d2ac307a3a02ac5df6d7d2f5c41
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which English meaning matches this during-an-event expression?
@@ -3416,8 +3416,8 @@ text=Which English meaning matches this during-an-event expression?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c00f4c63c4b56b0451e57d57ed8cd5a27d06db636478967e055299c3870781ab
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e01329d7e8928e790478fcf772617a3bc59412552cc23185b30ef671541317e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which English meaning matches this duration expression?
@@ -3429,8 +3429,8 @@ text=Which English meaning matches this duration expression?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 74308b68f26feb3ab809a4461756c4502bde358f48ca4af59f9e7819227aaf36
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d10f3eb7ff39b5d73b663ebb3476a9f5d962a55a9f571d827848ab6b21dd488
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted time expressions
@@ -3442,8 +3442,8 @@ text=Admitted time expressions
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1f68984b2e6b1bcc5e1b336da52c05b4653d683522f5f2e6a5ca68a62b9537af
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9d3a07a922866dd507a66810757ebd99a911991a4cd8708f0552a648f8bdbef7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. Completion over a period stays in the copy you own. Qualified review is pending.
@@ -3455,8 +3455,8 @@ text=Proposed Unit 23 uses frozen time-expression spans for decade ranges, begin
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c5eef5d764062b6c657a31b7c6809d0c8eeb8d0c3991e9cbbdec36caeee6bb7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 781b217bc6bf85e196c5df0fc00e7cd5fb82eabbe4a2ff9b61dc621659361113
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 23 in the copy you own. The app records do not replace that lesson.
@@ -3468,8 +3468,8 @@ text=Open Lesson 23 in the copy you own. The app records do not replace that les
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 76ba56ad99e05246ce56f4c9816224974069e79ea7581e5d1f61eec94317d84b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b48531988643348135c0a0a231c0edb2f716a2bbf60e7fd90b8dd91ddc59c4d8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
@@ -3481,8 +3481,8 @@ text=Guided practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 833ae97c1978c76d5ae266ffdec9ff135699482a0933515987bbf579eb98d6aa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 242cdbef9422396c6ec6f74b0304ca6832feac8e0826d96c4c48aa2b3050fb9e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
@@ -3494,8 +3494,8 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 946bc34b9c542d26d1047a38df4573ca0f91034c5f931a78cf398bfd9590a44e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1851265ae388f6a4e938c5f7e294eb1ccf4f9ecc243c0cd8053799f05d423ccf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
@@ -3507,8 +3507,8 @@ text=Remediation
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0726e76ae03dc9a53a7dfaff86561bb9cbf98548de0b55af38d924a9310336c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c1a8e26118f0c7957a1819d88ebd22d6638e1bd6d3107b017adb6c4740c4667
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
@@ -3520,8 +3520,8 @@ text=Independent checks
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c085ad087c1bdef667968f95ee21431f34cba12c381fead2ae340d0cc2e72b8f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6924eabb64e4dc6b1179019701d420266a100047d4d3f27da49376460591c6d7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
@@ -3533,8 +3533,8 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 32e0c6a1c077ea49aeedf90a02ba91a829e6ba551c53351c9cd4711c954e3df1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 51599be673bf4f6158a4c4e1b777c1ed37361f0c574303f001fec713a7468888
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 23 in your copy
@@ -3546,8 +3546,8 @@ text=Work Lesson 23 in your copy
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 22b38cc869110073e6eb3c328e998d5b0d21ae0bf8a0e34d1cb44271a910c386
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d7f4cfcba4b9eec82dd96e233fa0669f5de5db8970ee0a37d11751dd5eecd8c0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 23 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
@@ -3559,8 +3559,8 @@ text=Do Lesson 23 in the copy you own. Use that book's explanations and practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c1ae8733d1fb4893245d220ac55d5d0235c9d256a04b1ed8d8a00ce4a627e86d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4db82eca5e34e6fcaa4fa4ebc0f625649c393f729f5ee7240d80fa30c308e652
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 23 in your copy and complete its lesson work.
@@ -3572,8 +3572,8 @@ text=Open Lesson 23 in your copy and complete its lesson work.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3057113a99a703727020e2dd7da03a4ab99fa1a819b9453d8873cfd54d7eb553
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 479901bb727c5d83f9a2c8630fedd31b35eaed10c33012111a6bf261fa53870b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 23 book work
@@ -3585,8 +3585,8 @@ text=Record Lesson 23 book work
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c11adb0eb923a1f127ad330f26a44cb6bbeda74c317e9fe947a1d6f4170d7691
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3650a14359e13bc6b3f22dc437cf183af04ff35abc8e12950deadd4fe328c77b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 23 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
@@ -3598,8 +3598,8 @@ text=When you have done Lesson 23 in your copy, self-attest here. Attestation re
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b046fe2037a34730befa9f2a76125871d599168235d716160f05700a24fcda4c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7132b7db7ac74ed310bd49a680f22392a32d54b33edf192cc2cc0d47032c2f72
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 23 work in your copy.
@@ -3611,8 +3611,8 @@ text=Self-attest only after the Lesson 23 work in your copy.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8981fc15cfe0326c95103b17bd2614e526138c77c87c769667cc83d7b9f554c2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ab553bbd5292339e4eac4c34362911dd69de2855143683eb39e9abebed2b30e9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Completion over a period stays in the copy you own
@@ -3624,8 +3624,8 @@ text=Completion over a period stays in the copy you own
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 940c505140b41ad78d76e4b3b2f18f4b20cfb1d42f081cdbb366445088f9f5cc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7fa0d3e7edd7ec956ca9476756eeb7dcedd963e4aa9b876e57cf9834430d1d41
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Completion over a period stays in the copy you own. A duration span does not state that distinction.

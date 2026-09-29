@@ -1,9 +1,10 @@
 package dev.russiancompanion.v2.curriculum
 
+import java.io.File
 import java.security.MessageDigest
 
 internal object V2Validator {
-    fun validate(pack: V2CurriculumPack): V2Validation {
+    fun validate(pack: V2CurriculumPack, repositoryRoot: File? = null): V2Validation {
         val errors = mutableListOf<String>()
         if (pack.schemaVersion != 1) errors += "Unsupported curriculum schema ${pack.schemaVersion}"
         if (pack.units.size != 30) errors += "The map must contain exactly 30 Penguin-aligned units"
@@ -35,8 +36,8 @@ internal object V2Validator {
         validateAuthoredEnglish(pack, errors)
         validateLearnerFacingMarkup(pack, errors)
         validateGovernedReadyRussianText(pack, errors)
-        validateReview(pack, errors)
-        validateUnitReviews(pack, errors)
+        validateReview(pack, repositoryRoot, errors)
+        validateUnitReviews(pack, repositoryRoot, errors)
         validateSourcesAndRights(pack, errors)
         pack.units.forEach { unit ->
             if (unit.penguinLesson != unit.number) {
@@ -47,7 +48,7 @@ internal object V2Validator {
                 return@forEach
             }
             when (unit.installState) {
-                "INSTALLED" -> validateInstalled(pack, unit, errors)
+                "INSTALLED" -> validateInstalled(pack, unit, repositoryRoot, errors)
                 "DEVELOPMENT" -> validateDevelopment(pack, unit, errors)
                 "NOT_YET_INSTALLED" -> validateUninstalled(unit, errors)
             }
@@ -91,6 +92,43 @@ internal object V2Validator {
         sha256(canonicalUnitInstructionalDocument(pack, unitNumber))
 
     internal fun instructionalContentDigest(pack: V2CurriculumPack): String = contentReviewDigest(pack)
+
+    /**
+     * Release acceptance for the pack-wide linguistic review and every unit.
+     * This is the same decision [validate] records when a chain claims
+     * OWNER_ACCEPTED. A reduced review DTO cannot call it.
+     */
+    internal fun linguisticReleaseAccepted(pack: V2CurriculumPack, repositoryRoot: File? = null): Boolean {
+        val packReview = pack.linguisticReview
+        if (!reviewReleaseAccepted(
+                packReview.status,
+                packReview.reviewChainStages,
+                packReview.reviewedContentDigest,
+                contentReviewDigest(pack),
+                packReview.evidence,
+                packReview.finalAudit,
+                repositoryRoot,
+            )
+        ) {
+            return false
+        }
+        val packArtifact = packReview.finalAudit?.artifactIdentity
+        val byUnit = pack.unitReviews.groupBy { it.unitNumber }
+        return (1..30).all { number ->
+            val review = byUnit[number]?.singleOrNull() ?: return@all false
+            reviewReleaseAccepted(
+                review.status,
+                review.reviewChainStages,
+                review.reviewedContentDigest,
+                unitContentReviewDigest(pack, number),
+                review.evidence,
+                review.finalAudit,
+                repositoryRoot,
+                number,
+                packArtifact,
+            )
+        }
+    }
 
     private fun sha256(text: String): String {
         val digest = MessageDigest.getInstance("SHA-256").digest(text.toByteArray(Charsets.UTF_8))
@@ -519,30 +557,44 @@ internal object V2Validator {
         }
     }
 
-    private fun validateReview(pack: V2CurriculumPack, errors: MutableList<String>) {
+    private fun validateReview(pack: V2CurriculumPack, repositoryRoot: File?, errors: MutableList<String>) {
         val review = pack.linguisticReview
         if (review.status !in CLOSED_REVIEW_STATES) {
             errors += "Unrecognized linguistic review status ${review.status}"
             return
         }
-        if (review.status != "APPROVED") return
-        val missing = mutableListOf<String>()
-        if (review.reviewer.isNullOrBlank()) missing += "reviewer identity"
-        if (review.reviewerQualification.isNullOrBlank()) missing += "qualification attestation"
-        if (review.packVersion != pack.packVersion) missing += "matching pack version"
-        if (review.reviewedContentDigest.isNullOrBlank()) missing += "reviewed content digest"
-        if (review.curriculumMappingId.isNullOrBlank()) missing += "curriculum mapping"
-        if (missing.isNotEmpty()) {
-            errors += "APPROVED review is missing ${missing.joinToString(", ")}"
-            return
+        if (review.status == "APPROVED") {
+            val missing = mutableListOf<String>()
+            if (review.reviewer.isNullOrBlank()) missing += "reviewer identity"
+            if (review.reviewerQualification.isNullOrBlank()) missing += "qualification attestation"
+            if (review.packVersion != pack.packVersion) missing += "matching pack version"
+            if (review.reviewedContentDigest.isNullOrBlank()) missing += "reviewed content digest"
+            if (review.curriculumMappingId.isNullOrBlank()) missing += "curriculum mapping"
+            if (missing.isNotEmpty()) {
+                errors += "APPROVED review is missing ${missing.joinToString(", ")}"
+                return
+            }
+            val expected = contentReviewDigest(pack)
+            if (review.reviewedContentDigest != expected) {
+                errors += "APPROVED review digest does not match the shipped content-review digest"
+            }
         }
-        val expected = contentReviewDigest(pack)
-        if (review.reviewedContentDigest != expected) {
-            errors += "APPROVED review digest does not match the shipped content-review digest"
-        }
+        validateClaimedChain(
+            "Pack review",
+            review.status,
+            review.reviewChainStages,
+            review.reviewedContentDigest,
+            contentReviewDigest(pack),
+            review.evidence,
+            review.finalAudit,
+            repositoryRoot,
+            null,
+            null,
+            errors,
+        )
     }
 
-    private fun validateUnitReviews(pack: V2CurriculumPack, errors: MutableList<String>) {
+    private fun validateUnitReviews(pack: V2CurriculumPack, repositoryRoot: File?, errors: MutableList<String>) {
         val seen = mutableSetOf<Int>()
         pack.unitReviews.forEach { review ->
             if (review.unitNumber !in 1..30) {
@@ -555,21 +607,65 @@ internal object V2Validator {
                 errors += "Unrecognized unit review status ${review.status} for unit ${review.unitNumber}"
                 return@forEach
             }
-            if (review.status != "APPROVED") return@forEach
-            val missing = mutableListOf<String>()
-            if (review.reviewer.isNullOrBlank()) missing += "reviewer identity"
-            if (review.reviewerQualification.isNullOrBlank()) missing += "qualification attestation"
-            if (review.packVersion != pack.packVersion) missing += "matching pack version"
-            if (review.reviewedContentDigest.isNullOrBlank()) missing += "reviewed content digest"
-            if (review.curriculumMappingId.isNullOrBlank()) missing += "curriculum mapping"
-            if (missing.isNotEmpty()) {
-                errors += "Unit ${review.unitNumber} APPROVED review is missing ${missing.joinToString(", ")}"
-                return@forEach
+            if (review.status == "APPROVED") {
+                val missing = mutableListOf<String>()
+                if (review.reviewer.isNullOrBlank()) missing += "reviewer identity"
+                if (review.reviewerQualification.isNullOrBlank()) missing += "qualification attestation"
+                if (review.packVersion != pack.packVersion) missing += "matching pack version"
+                if (review.reviewedContentDigest.isNullOrBlank()) missing += "reviewed content digest"
+                if (review.curriculumMappingId.isNullOrBlank()) missing += "curriculum mapping"
+                if (missing.isNotEmpty()) {
+                    errors += "Unit ${review.unitNumber} APPROVED review is missing ${missing.joinToString(", ")}"
+                    return@forEach
+                }
+                if (review.reviewedContentDigest != unitContentReviewDigest(pack, review.unitNumber)) {
+                    errors += "Unit ${review.unitNumber} APPROVED review digest does not match the unit content-review digest"
+                }
             }
-            if (review.reviewedContentDigest != unitContentReviewDigest(pack, review.unitNumber)) {
-                errors += "Unit ${review.unitNumber} APPROVED review digest does not match the unit content-review digest"
-            }
+            validateClaimedChain(
+                "Unit ${review.unitNumber} review",
+                review.status,
+                review.reviewChainStages,
+                review.reviewedContentDigest,
+                unitContentReviewDigest(pack, review.unitNumber),
+                review.evidence,
+                review.finalAudit,
+                repositoryRoot,
+                review.unitNumber,
+                pack.linguisticReview.finalAudit?.artifactIdentity,
+                errors,
+            )
         }
+    }
+
+    private fun validateClaimedChain(
+        label: String,
+        status: String,
+        stages: List<String>,
+        reviewedContentDigest: String?,
+        currentContentDigest: String,
+        evidence: V2PersistedEvidence?,
+        finalAudit: V2FinalAuditIdentity?,
+        repositoryRoot: File?,
+        auditUnitNumber: Int?,
+        packArtifactIdentity: String?,
+        errors: MutableList<String>,
+    ) {
+        if (status !in REVIEW_CHAIN) return
+        val defects = reviewChainDefects(
+            reviewAcceptanceAttempt(
+                status,
+                stages,
+                reviewedContentDigest,
+                currentContentDigest,
+                evidence,
+                finalAudit,
+                repositoryRoot,
+                auditUnitNumber,
+                packArtifactIdentity,
+            ),
+        )
+        defects.forEach { errors += "$label $it" }
     }
 
     private fun unitReview(pack: V2CurriculumPack, unitNumber: Int): V2UnitReviewRecord? {
@@ -593,12 +689,26 @@ internal object V2Validator {
         }
     }
 
-    private fun validateInstalled(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
+    private fun validateInstalled(pack: V2CurriculumPack, unit: V2Unit, repositoryRoot: File?, errors: MutableList<String>) {
         if (unit.number !in 1..2) {
             errors += "Only Units 1-2 may be installed in this pack"
         }
-        if (unitReview(pack, unit.number)?.status != "APPROVED") {
-            errors += "Installed unit ${unit.number} requires an APPROVED qualified-review record"
+        val installedReview = unitReview(pack, unit.number)
+        val legacyApproved = installedReview?.status == "APPROVED"
+        val chainAccepted = installedReview != null &&
+            reviewReleaseAccepted(
+                installedReview.status,
+                installedReview.reviewChainStages,
+                installedReview.reviewedContentDigest,
+                unitContentReviewDigest(pack, unit.number),
+                installedReview.evidence,
+                installedReview.finalAudit,
+                repositoryRoot,
+                unit.number,
+                pack.linguisticReview.finalAudit?.artifactIdentity,
+            )
+        if (!legacyApproved && !chainAccepted) {
+            errors += "Installed unit ${unit.number} review chain is not OWNER_ACCEPTED"
         }
         if (unit.mappingStatus != "APPROVED") {
             errors += "Installed unit ${unit.number} mapping must be APPROVED"
@@ -1905,7 +2015,13 @@ internal object V2Validator {
                     errors += "$label is linguistically relevant and cannot be NOT_REQUIRED"
                 }
             }
-            "PENDING_QUALIFIED_REVIEW", "REJECTED" -> {
+            IMPLEMENTED_PENDING_FINAL_AUDIT,
+            RESEARCH_VERIFIED,
+            FINAL_CURRICULUM_AUDIT_PASSED,
+            INDEPENDENT_AUDIT_VERIFIED,
+            OWNER_ACCEPTED,
+            "REJECTED",
+            -> {
                 errors += "$label review status $status is not approved for an installed unit"
             }
             else -> errors += "$label has unrecognized review status $status"

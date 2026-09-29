@@ -402,7 +402,7 @@ class Units1115InstructionalValidityTest {
                     assertTrue("${item.id} is not feature-valid", V2Validator.featureValid(pack, item))
                     assertFalse("${item.id} uses a source co-location prompt", colocated.containsMatchIn(item.prompt))
                     assertEquals(1, item.options.count { it == item.answer })
-                    assertEquals("PENDING_QUALIFIED_REVIEW", item.reviewStatus)
+                    assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", item.reviewStatus)
                     val answerCyrillic = item.answer.any { it.code in 0x0400..0x04FF }
                     assertTrue(
                         "${item.id} mixes response types",

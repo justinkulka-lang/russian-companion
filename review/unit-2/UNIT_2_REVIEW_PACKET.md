@@ -15,8 +15,8 @@ Unit 2 remains in development. Its readiness is content-complete and review-pend
 - Unit content-review SHA-256: d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b
 - Mapping-package SHA-256: 9f1b5a6f3efe2a92180b73da24d8291c4f6d6d79f193d034baab9414637f2ae3
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: bb4ed50ed544251586d42c7cd6dfe12d04dde8bd2cab301ff0a28033ab76dacb
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: b782ca32259cab8acfca2fd98ab7c503a09f86959debf2983ec384dc1ed3c00a
+- Repository source SHA-256: a982d0f164e5dbd9192d2faf2ddd2858fcf84aa31985a7b87aaf8dc48fbc7cf7
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 483160b2c02b74ce86c002de4e7c324bc5042a36d6b7e768a23c14bb572a80fe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 878e83ce6de60b5e2c3be801012eec843431b96296c899eccc111a719fa81676
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -534,15 +534,15 @@ remediationStepId=u2-st-review
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b88846e84765beac6a09389132af7d40b41402911535b3608e8127e4571cdf5b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 164f0102c86cb102e8b5b6fb4175132755f2e1110483b1fc64ce743ed5741c30
 
 kind=PRINT_PAIR
 letterId=letter-0411
 display=Б / б
 note=Б and б are the same letter in two print cases.
 objectiveId=obj-u2-review
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-letter-0412`
 
@@ -551,15 +551,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a01960d0bbf654ec874afda8f593372b4b7e868888ca978be326e1917e6ff5f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d235e3fbf055d86684491228ae7f19f2c2b9dfeb5ec67b7b8ea60f310ab11c9
 
 kind=CONFUSABLE_PAIR
 letterId=letter-0412
 display=В / в
 note=Printed pair В в. Treat the Cyrillic identity, not a Latin look-alike.
 objectiveId=obj-u1-confusable
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-letter-0423`
 
@@ -568,15 +568,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2a09b91f6aa89106ccf45337b58a38f17f0972c574ceae9d2a8b61343742da0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8060cd5f4510b5461f793870d2a68a78c0bd9bb7645652aaa6e4235cc12301bd
 
 kind=CONFUSABLE_PAIR
 letterId=letter-0423
 display=У / у
 note=Printed pair У у. Treat the Cyrillic identity, not a Latin look-alike.
 objectiveId=obj-u1-confusable
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-letter-0425`
 
@@ -585,15 +585,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 21b88f9af7925467de55deb54ba3a3b42d41434db712cfce944cbf886e401b67
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 089077bb1d39a90d5d57869e26adf78422996132dcaeeabdf6cde127306c5e72
 
 kind=CONFUSABLE_PAIR
 letterId=letter-0425
 display=Х / х
 note=Printed pair Х х. Treat the Cyrillic identity, not a Latin look-alike.
 objectiveId=obj-u1-confusable
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_AND_INDEPENDENT_CHECK `u2-i-print-б`
 
@@ -602,8 +602,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 772cc9de94262de34a89264a20e6a7e79119739deb25c5ffe63f3873f6af4bbb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 000fe3bdfaf1e3375514d6e1088c019dc1385e3dabace00d18c4c3d162bdd107
 
 kind=PRINT_PAIR
 language=en
@@ -614,7 +614,7 @@ answer=Б / б
 feedback=Б / б is one letter. В is a different letter.
 objectiveId=obj-u2-review
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u2-i-в-not-b`
 
@@ -623,8 +623,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f6b6149afd4e78c8cd7d583327d8d7921b099dacb6dd69fe18d4db8db772aa32
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb17d81342f0191fad32bde447c5ddc26c3e343607bae53fd4c1c4b107859413
 
 kind=CONFUSABLE
 language=en
@@ -635,7 +635,7 @@ answer=Cyrillic В
 feedback=В is not Latin B and it is not Cyrillic Б.
 objectiveId=obj-u2-review
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u2-i-у-not-y`
 
@@ -644,8 +644,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f39238ef5cf94836453db6ab35258ca3b781600686e89083e9e5a8b32271cb3d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd27a652a7c60302217dfadc5a7c128f83b61fb5e7fe12c0e45b841ae1fe3a3b
 
 kind=CONFUSABLE
 language=en
@@ -656,7 +656,7 @@ answer=Cyrillic У
 feedback=У is a Cyrillic vowel letter, not Latin Y.
 objectiveId=obj-u2-review
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u2-i-х-not-x`
 
@@ -665,8 +665,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c813796da3819c79f70c49500bab2e097fbacd0aaf216caced53431adc93a6a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 611ad62524dc5b722ab5b92f29f0d3cca9333b5f4b4d59a3b6064d524598bdd6
 
 kind=CONFUSABLE
 language=en
@@ -677,7 +677,7 @@ answer=Cyrillic Х
 feedback=Х is a Cyrillic letter, not Latin X.
 objectiveId=obj-u2-review
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### INDEPENDENT_CHECK `u2-i-я-identity`
 
@@ -686,8 +686,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fdc65f37cdfe506f79534dd025930c299b34d535c305dfc5e2fce88713cf4f3a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb94ce8360718ee0470122f1a64d5c9d62ae3baaa60f71ef8e0f5944567f6272
 
 kind=LETTER_IDENTITY
 language=en
@@ -698,7 +698,7 @@ answer=Cyrillic Я
 feedback=Я is an iotated vowel letter. It is not Р or А.
 objectiveId=obj-u2-review
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### REFERENCE `ref-limits`
 
@@ -725,8 +725,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: LINGUISTIC_INSTRUCTION
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fd3cafc5faba6d6d2ce79e973e8fd57f6d41eced09ad4ac520eeb7421eec33d9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 92b4816279b8312cf8258136eaa5ee847054f030209cb59728774c4c7d50a7f6
 
 title=Cyrillic print forms
 summary=33 printed uppercase/lowercase pairs.
@@ -734,7 +734,7 @@ detail=Use the letter board grouped by the Unit 1 sequence. English sound notes 
 classification=LINGUISTIC_INSTRUCTION
 introducedInUnit=1
 searchTerms=cyrillic print forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### REFERENCE `ref-confusable`
 
@@ -743,8 +743,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: LINGUISTIC_INSTRUCTION
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b460f9f6d0980b14e443d912d0951c32ebefd3402cf17f21f929fa6c1cc29428
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 074a197cd1da4bbd087881103227a1968f7f836e8b4b647611bd6514b41cf0be
 
 title=Confusable Latin look-alikes
 summary=В Н Р С У Х can be misread by Latin-alphabet readers.
@@ -752,7 +752,7 @@ detail=Name the Cyrillic identity. Confirm sounds in your book.
 classification=LINGUISTIC_INSTRUCTION
 introducedInUnit=1
 searchTerms=confusable latin look-alikes
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### REFERENCE `ref-pronunciation`
 
@@ -761,8 +761,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: LINGUISTIC_INSTRUCTION
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5bd3b61048ff1231d5d46dd41fde6a33b3aa622431c0b79892fbc7ddc8d86243
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bdd8e4bfbb90a13550ba5288e8c392bfb6c369b308ee788e4ee5684c58bbbfe9
 
 title=Pronunciation guidance
 summary=Model audio is used only when a file is licensed and mapped to the current objective.
@@ -770,7 +770,7 @@ detail=User recordings play at original speed. No ASR or score.
 classification=LINGUISTIC_INSTRUCTION
 introducedInUnit=2
 searchTerms=pronunciation guidance
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### REFERENCE `ref-decoding`
 
@@ -779,8 +779,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: LINGUISTIC_INSTRUCTION
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f11ac471c8c19744ba7bd656de27a4a2a9ca37b608012a43d4afb0908923f3e1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 123de65a267f8f5b4257bf3d26e35971a950ce1c2d0c76f9360683c79c6728e1
 
 title=Staged decoding limits
 summary=This pack decodes letters and print pairs only.
@@ -788,7 +788,7 @@ detail=Word, phrase, and sign reading wait for reviewed examples.
 classification=LINGUISTIC_INSTRUCTION
 introducedInUnit=1
 searchTerms=staged decoding limits
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### LETTER `letter-0411`
 
@@ -797,8 +797,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 42500c378a80f136d2d4a12afe6e598980e587c247164d2e1708499e050ba902
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a8b44829b083405089bfd905a3fd1829fda225c27035ba6d18a7c9254b7a6b3
 
 uppercase=Б
 lowercase=б
@@ -807,7 +807,7 @@ englishNote=A voiced bilabial stop. Pending review.
 latinLookalike=
 audioAssetId=
 exampleWordId=
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### LETTER `letter-0412`
 
@@ -816,8 +816,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a785afc821df95e646371b433645bd611a51875c08f525f651a75b80ee0ba6de
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6aff973de3666d5298ce7a72e5a5c847483575824f47194d5e9b73b1fd01ac62
 
 uppercase=В
 lowercase=в
@@ -826,7 +826,7 @@ englishNote=Looks like Latin B. It is not the /b/ letter. Pending review.
 latinLookalike=B
 audioAssetId=
 exampleWordId=
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### LETTER `letter-0423`
 
@@ -835,8 +835,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 101b2146cf8c3d5f18759494a3878cfce171da0e429b80de9c48593ffb576c8e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d354a96402772a54d1dbc3366bec9b3a000f255d2d57a976d7eeb2a4f993044
 
 uppercase=У
 lowercase=у
@@ -845,7 +845,7 @@ englishNote=Looks like Latin Y. It is a close back vowel. Pending review.
 latinLookalike=Y
 audioAssetId=
 exampleWordId=
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### LETTER `letter-0425`
 
@@ -854,8 +854,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bdb465d0d4694be3fe49ff6cc667b752fbdfe7bc73b67fb629e0a781bee9616b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d95d1821cc9bfe5862408dbc83ddc8ee154e498e42e9be5f8798d05187103d5d
 
 uppercase=Х
 lowercase=х
@@ -864,7 +864,7 @@ englishNote=Looks like Latin X. It is a voiceless velar fricative. Pending revie
 latinLookalike=X
 audioAssetId=
 exampleWordId=
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### SOURCE `src-unicode-cyrillic`
 

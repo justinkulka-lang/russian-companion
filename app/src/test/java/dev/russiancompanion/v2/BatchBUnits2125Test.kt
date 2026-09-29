@@ -94,7 +94,7 @@ class BatchBUnits2125Test {
         assertEquals("NOT_PREPARED", pack.unit(23)!!.readiness)
         assertEquals("DEVELOPMENT", pack.unit(23)!!.installState)
         assertTrue(pack.unitReviews.filter { it.unitNumber in 21..25 }.all {
-            it.status == "PENDING_QUALIFIED_REVIEW" && it.reviewer.isNullOrBlank()
+            it.status == "IMPLEMENTED_PENDING_FINAL_AUDIT" && it.reviewer.isNullOrBlank()
         })
     }
 

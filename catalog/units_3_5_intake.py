@@ -29,7 +29,7 @@ SHARE_ALIKE = (
     "Application code, user data, and user recordings are outside that statement. "
     "No audio is relicensed because this unit ships no audio."
 )
-PENDING = "PENDING_QUALIFIED_REVIEW"
+PENDING = "IMPLEMENTED_PENDING_FINAL_AUDIT"
 SCAFFOLD = "INDEPENDENTLY_AUTHORED_SCAFFOLD"
 CYRILLIC = re.compile(r"[\u0400-\u04FF]")
 REGION = re.compile(r"[\u0400-\u04FF\u0301](?:[\u0400-\u04FF\u0301]|[ \t]+(?=[\u0400-\u04FF]))*[?!.,]*")

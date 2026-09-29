@@ -15,8 +15,8 @@ Unit 9 remains in development. Its readiness is content-complete and review-pend
 - Unit content-review SHA-256: d0f135c408fc429392cf695a8122134013fca69637a4f9c1587db3fec6b3c65f
 - Mapping-package SHA-256: 8980bf7cd5ccd264aeb6eaf7b5e05311d2c6cf7813d1898bc5ad8eefb63cae5a
 - Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: 24f9876b662341a92da437988a0264782e9f31fcb7b630c424e5fc79cf2bd768
-- Repository source SHA-256: bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339
+- Review-package SHA-256: d8f84bb90938bc79bf54c6a5dfe0a5f4876b7c9ccc4afd784ee7c2513d1533a2
+- Repository source SHA-256: a982d0f164e5dbd9192d2faf2ddd2858fcf84aa31985a7b87aaf8dc48fbc7cf7
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -56,10 +56,10 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Source: none
 - Rights: none
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67b4cf0a4e799108ac5705775e84920dd1f18d2c1ba2a8f319b6635a6e0e6491
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5981e23bad984379ce569a3a8816121b1dc654ce434795003c36be1687c2dcf3
 
-status=PENDING_QUALIFIED_REVIEW
+status=IMPLEMENTED_PENDING_FINAL_AUDIT
 reviewer=
 reviewerQualification=
 packVersion=
@@ -2127,15 +2127,15 @@ remediationStepId=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3f66d91a1c37deba619833ae68a077aa6aae3d92845f38f7f233f8044eec71f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cddb5f50756bff389d91003589e4c1df05213a20bffe9ad23e62096a8dd2aeda
 
 kind=LEXICAL
 letterId=
 display=ноль
 note=0
 objectiveId=obj-u9-cardinal
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-cardinal-1`
 
@@ -2144,15 +2144,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a3fdfeace898d751b5214d163bc53052381b6bec95e5c164881eda4c288337b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6bac9c394e8ec089b9f36d6d415f01cbfaa96a7dddf978b810fbe911953e72df
 
 kind=LEXICAL
 letterId=
 display=оди́н
 note=1
 objectiveId=obj-u9-cardinal
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-cardinal-2`
 
@@ -2161,15 +2161,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a430044a0b4248e144164eb01a753241262634ed703579e7e229085fc079eba1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 05f2ab817e0eae88ba775d9c414e48eb02df6f232f87e9a6f2d977da9f0ffb04
 
 kind=LEXICAL
 letterId=
 display=два
 note=2
 objectiveId=obj-u9-cardinal
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-cardinal-3`
 
@@ -2178,15 +2178,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca21f153ac13054e55eee8a560ebece52145010d9f7afd445bac1d349c565924
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ba990003355fcf79a86051aa2abebceb6c4480277132ae399103e62a236aba8b
 
 kind=LEXICAL
 letterId=
 display=три
 note=3
 objectiveId=obj-u9-cardinal
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-cardinal-4`
 
@@ -2195,15 +2195,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 830de702ca86edc71191287f8f85b63771fe0dc194dfeb47d50019e65667cef5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 90180ca6e46e0c4d643b0505cd77c6024c72b95e0ed2aefc3452e25ba52f3722
 
 kind=LEXICAL
 letterId=
 display=четы́ре
 note=4
 objectiveId=obj-u9-cardinal
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-cardinal-5`
 
@@ -2212,15 +2212,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c8c9c27454c08fc1001e43813968e8fcb7b64534f2ab0d76190975d35eacfb4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f13a2503867bb94050cfc40434733487bff334eab3f3dff3d5cc8a7b38ef3b50
 
 kind=LEXICAL
 letterId=
 display=пять
 note=5
 objectiveId=obj-u9-cardinal
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-cardinal-6`
 
@@ -2229,15 +2229,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f032eaeec1b4fe91e7e8451b7dec6d4052768f61ef72651ebb0c364197ac7c25
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6a758072ec93b6acf7ba219ad22e2a63b8448ac1dd956a142633b2a3d6489d9
 
 kind=LEXICAL
 letterId=
 display=шесть
 note=6
 objectiveId=obj-u9-cardinal
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-cardinal-7`
 
@@ -2246,15 +2246,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b6534d6f1f9c2556195a0f0e6a4cb1cfdcb58e42a4e5caa7323a003d8b358bf0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc65fdfea0c521a8bce075f57de32ee20f4cc86cfa86ea0062bc5dd697048b6c
 
 kind=LEXICAL
 letterId=
 display=семь
 note=7
 objectiveId=obj-u9-cardinal
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-cardinal-8`
 
@@ -2263,15 +2263,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62683f4ed3c8e1f21de944b0b6578a8b1800e9d63cb1e9106f7191b02df45e80
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7a799dd6b64853c87eaf969de8718618c6893bf6531c1bf83e998708055033e
 
 kind=LEXICAL
 letterId=
 display=во́семь
 note=8
 objectiveId=obj-u9-cardinal
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-cardinal-9`
 
@@ -2280,15 +2280,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb842eacfd83d88116e70b0643a2936c83bec149ac48d538a460415e94238161
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 46409ce96c69de36c8f60d311a2c64e774107c10d8984b21f857a57795ace460
 
 kind=LEXICAL
 letterId=
 display=де́вять
 note=9
 objectiveId=obj-u9-cardinal
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-cardinal-10`
 
@@ -2297,15 +2297,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64f001dee33598d90b137011c29f4d7da199696dac3ffd9850537f976d0f707c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bec220d1e393dc5f9a08364011238e919302ab4346121e513e86410c59a10720
 
 kind=LEXICAL
 letterId=
 display=де́сять
 note=10
 objectiveId=obj-u9-cardinal
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-teens-0`
 
@@ -2314,15 +2314,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fad92bb5e9d5c4fc317932e02c51070380df88ac046d535c7774a51f9de03cd6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9447763ec4eaba70aff0bca391b68d54a2f71fe1dd394d0d29a8bdaaf2f2efc0
 
 kind=LEXICAL
 letterId=
 display=оди́ннадцать
 note=11
 objectiveId=obj-u9-teens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-teens-1`
 
@@ -2331,15 +2331,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8303e6d00b6dc66190308356e287724b42747006b4737f530f4c55a2d202edbd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a519a69f2d353efdab6b7f7faf08ad8414a4cbdaa08a116dc1b5fd889293b5b3
 
 kind=LEXICAL
 letterId=
 display=двена́дцать
 note=12
 objectiveId=obj-u9-teens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-teens-2`
 
@@ -2348,15 +2348,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96455d610bfe0899bbc600f75c9861276c17717b84093273b9122497a27b33b1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c80f4c1a907d2913c1b2e3973104359cb46e74c2a74cf3f05effb3b866f2f00
 
 kind=LEXICAL
 letterId=
 display=трина́дцать
 note=13
 objectiveId=obj-u9-teens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-teens-3`
 
@@ -2365,15 +2365,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82bebf630a3fb6a3ce1a83b77fc187877305334981aa91ae2b32b2c5c58b8954
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78d488a3248e5ec94581381b565c1e135a9f653fdec25b80f378dd3c2754def0
 
 kind=LEXICAL
 letterId=
 display=четы́рнадцать
 note=14
 objectiveId=obj-u9-teens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-teens-4`
 
@@ -2382,15 +2382,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f1ea580adb73ef817752664a56b300e6d67b9124f18c9e80e4af746d103134b6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f1b0ff04bf53da677e2c446e72c859894664313e203fb0bebf1f53e7c3e52251
 
 kind=LEXICAL
 letterId=
 display=пятна́дцать
 note=15
 objectiveId=obj-u9-teens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-teens-5`
 
@@ -2399,15 +2399,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 59c4e326d00401e158dd102ac09e610ec7409d677a6e2b4d8852b565e502d019
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cc8588269fd41457914535779b10ce65f795d79e0fd563a775e8b92fc38e8e91
 
 kind=LEXICAL
 letterId=
 display=шестна́дцать
 note=16
 objectiveId=obj-u9-teens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-teens-6`
 
@@ -2416,15 +2416,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d1d19fc3c60e78b332c6d3a951db1ad4852dded9f341c8ebb02bf5e6661d8881
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 306a9cbb682fecc110c76e09736d3195b2d10215b98776bb27378cddcc9fec10
 
 kind=LEXICAL
 letterId=
 display=семна́дцать
 note=17
 objectiveId=obj-u9-teens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-teens-7`
 
@@ -2433,15 +2433,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d12a475108b6c0fdc7a55c86892914e93e762ce541a39d5fbe6f9347db8e019b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6129a734eb772c8b1b8206c9314f3352a948ba1c6022b55297e95804ac36931f
 
 kind=LEXICAL
 letterId=
 display=восемна́дцать
 note=18
 objectiveId=obj-u9-teens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-teens-8`
 
@@ -2450,15 +2450,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c9e215bf2846ea5f1aeb4cd19d2b4c526599d82bca881a14db5ff58c4bf22e29
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c229aa7675234df890dbb4bc3734146e9c367c6cd77d5239bcdd0da9b0d415c0
 
 kind=LEXICAL
 letterId=
 display=девятна́дцать
 note=19
 objectiveId=obj-u9-teens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-teens-9`
 
@@ -2467,15 +2467,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0fd7a81629be60397e61257dfa2c80bcc7f3da4e1aae41dfb2ba675b351b65d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 56e8619fb56c86427de3e768457e82d36b543f517b7da9d96a704ba9ce0bb96a
 
 kind=LEXICAL
 letterId=
 display=два́дцать
 note=20
 objectiveId=obj-u9-teens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-tens-0`
 
@@ -2484,15 +2484,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cd4bcd34b7e661e6b6723e1e108c380601965bd28bb8128eede8863f2163d2bc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ebfed7516f94b7c5b2ab1e2c303c61016e245cf37cac7719091d672a3e9f7a8f
 
 kind=LEXICAL
 letterId=
 display=три́дцать
 note=30
 objectiveId=obj-u9-tens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-tens-1`
 
@@ -2501,15 +2501,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d642f1da47788052288e15731cce335d8f460ad3476b05a422faae63e6d575c8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67d8b429fa5353eb1cb32b7f1c3f76dd52a48fab8c93a0e73f346347bd49ee40
 
 kind=LEXICAL
 letterId=
 display=со́рок
 note=40
 objectiveId=obj-u9-tens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-tens-2`
 
@@ -2518,15 +2518,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b30567bb942200773a81755b2529e403abadaa0bd281da61ca343ef2758aa8d8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b43c74bcc579910a26581a53ab4e53f2ef88f16c7a3bea4ce6d56344535c0de0
 
 kind=LEXICAL
 letterId=
 display=пятьдеся́т
 note=50
 objectiveId=obj-u9-tens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-tens-3`
 
@@ -2535,15 +2535,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5af59ce0086472050752d45ec5b28b7dab2f347a22a2b19ed9121df70d31001
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4112e0a825af48223819ad06f4ae6561c48a780d2feda6020ed387b0179379a
 
 kind=LEXICAL
 letterId=
 display=шестьдеся́т
 note=60
 objectiveId=obj-u9-tens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-tens-4`
 
@@ -2552,15 +2552,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab848e26273423b971bdb0338567864f64fa4a06ab1462196e14af7f523725d4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b96a7d7f6b17a175d7ec38c479f828c8ca5dcacb721c6cf077e9f7c7223b5641
 
 kind=LEXICAL
 letterId=
 display=се́мьдесят
 note=70
 objectiveId=obj-u9-tens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-tens-5`
 
@@ -2569,15 +2569,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab6fe4f11d5af665dc1330f4bf6cb29a65f8e2b29db5ac2da9666a19fbd0fef7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da69d4ced3460c1185c9f2b161c1b6faf16f88cc667d553439a3014e4ace6377
 
 kind=LEXICAL
 letterId=
 display=во́семьдесят
 note=80
 objectiveId=obj-u9-tens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-tens-6`
 
@@ -2586,15 +2586,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3339b8bf9b3040a4db274bc6772f8d23859e65c38083a3d0e7f23a4b0968835c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a269031c53225d98405000e094e8c56c14bececbc897023e9287ad71c0469c70
 
 kind=LEXICAL
 letterId=
 display=девяно́сто
 note=90
 objectiveId=obj-u9-tens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-tens-7`
 
@@ -2603,15 +2603,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b9e0e7a1d7026e569bbe6b4e33f557bb6fab59cbef3232b6b4356ba23519a46d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b9ffb92cc5d4fc4ae72aaa271bad5c207266913a1fd48258861886699c0048cc
 
 kind=LEXICAL
 letterId=
 display=два́дцать
 note=20
 objectiveId=obj-u9-tens
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-hundreds-0`
 
@@ -2620,15 +2620,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6a50cb52a2ba964d4349ab4bacbebca33e3529f3277cb9c237aa51e0528fbc95
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 28a9f929e1efa0749d50da679b6a3cb55d928ebac8e447289d9958abe6af2cdb
 
 kind=LEXICAL
 letterId=
 display=сто
 note=100
 objectiveId=obj-u9-hundreds
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-hundreds-1`
 
@@ -2637,15 +2637,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 32bed05eb74955705ecad0e0015f9f352965acc872c71a6e396e54ecc65977ba
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 02582e2e5062980f51846beae388f6e3e6f95b5aedc60f1a442bd108766ddc55
 
 kind=LEXICAL
 letterId=
 display=две́сти
 note=200
 objectiveId=obj-u9-hundreds
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-hundreds-2`
 
@@ -2654,15 +2654,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 697217cbbcfaef4406b94b82acbf9031e51a3d96df825979a308fef95b3b9542
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 246642c11e25cca6704ae26d7f0fd4c1acc00905d5f1bddf0bfe4a9013515009
 
 kind=LEXICAL
 letterId=
 display=три́ста
 note=300
 objectiveId=obj-u9-hundreds
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-hundreds-3`
 
@@ -2671,15 +2671,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 947103094ad27e4197e5842b84d8ecd4d68146602128f2626b08f0db6afafbf4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: add8711cb338b087c2983eee51a7b5f8e2bdd061f82fdc30f6e42012d3800cfe
 
 kind=LEXICAL
 letterId=
 display=четы́реста
 note=400
 objectiveId=obj-u9-hundreds
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-hundreds-4`
 
@@ -2688,15 +2688,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e8e3eb8f16832365ecfcc5d6f884e896104e3ee3f73c5fa60a5b453d7bff101
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc57486ead0d54b02f64eee98d436acb2d12ed51f08e14fd6345727ad2b32cd7
 
 kind=LEXICAL
 letterId=
 display=пятьсо́т
 note=500
 objectiveId=obj-u9-hundreds
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-hundreds-5`
 
@@ -2705,15 +2705,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17f4beb4f5d7fceac17d764618492abfe2fbc155cda1ecadbec14a56e044e134
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 644e7575fa26e8e780bd374a4c35a95087d41fc1707ec8edf12c762f16c1502d
 
 kind=LEXICAL
 letterId=
 display=шестьсо́т
 note=600
 objectiveId=obj-u9-hundreds
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-hundreds-6`
 
@@ -2722,15 +2722,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82d9d9f563465ae05ef23b202c857e7b00bfc883d8d0bf12ab65cc5d9a3f97fe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ceac97de1e6a304ae9d6dbb376dbcab03f437ffddc1a66d7af6f6e948968c899
 
 kind=LEXICAL
 letterId=
 display=семьсо́т
 note=700
 objectiveId=obj-u9-hundreds
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-hundreds-7`
 
@@ -2739,15 +2739,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: abb058c3fda13627fa92099d157fe9214a53d865bc0c3f0721a9b938325fd9ff
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73dfa4fb1f4bfa4d952867d4d4639230e4724c7c45c1cc15bbac9e045f611bec
 
 kind=LEXICAL
 letterId=
 display=восемьсо́т
 note=800
 objectiveId=obj-u9-hundreds
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-hundreds-8`
 
@@ -2756,15 +2756,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a5c22e0723c5209f34071b49fadf4d65bfba27e4f70dc8e957ea859d9aedd61
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 400eac7bbdce3f4089d9eaab06eaed64af5bdc9090613af607091debbb41d2dd
 
 kind=LEXICAL
 letterId=
 display=девятьсо́т
 note=900
 objectiveId=obj-u9-hundreds
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-thousands-0`
 
@@ -2773,15 +2773,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b102f47c3064436ceff3150895008d9773a4003cca6d1983418efcce7f560a8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac7178a6d986ef7e6baa508a9c1222043cd1e96a5c829c942f572e5e56acd418
 
 kind=LEXICAL
 letterId=
 display=ты́сяча
 note=1,000
 objectiveId=obj-u9-thousands
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-thousands-1`
 
@@ -2790,15 +2790,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: de62e68349ca38a7582c6ea42104717655ce844a65626fe37f9353711ae89d30
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68144360956140bc49ed4b26b26ac21f915ff2cd582cd0ad64d3cdaa32bf788d
 
 kind=LEXICAL
 letterId=
 display=два́дцать оди́н
 note=21
 objectiveId=obj-u9-thousands
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-thousands-2`
 
@@ -2807,15 +2807,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f0650b2091fabe24d592ecf51649385a477d0001219dfa5d96f9c9e36d28668e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0d1d37f018dffdffd123848e12b147470799011e1a890b2b7510de00831bd092
 
 kind=LEXICAL
 letterId=
 display=сто оди́н
 note=101
 objectiveId=obj-u9-thousands
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-thousands-3`
 
@@ -2824,15 +2824,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 800d8d476dc58bee5ea72452cb9fd8bf94d097d34574227ebefe3b7454aa15b6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b5e6a3e92f9eefab6e701ee99bd9c23e128eeb6905a5ff783c7104b5623653f
 
 kind=LEXICAL
 letterId=
 display=две́сти пятна́дцать
 note=215
 objectiveId=obj-u9-thousands
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-thousands-4`
 
@@ -2841,15 +2841,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5f99b767305901a5a6a1957d8fc3d71a5c9af423adfaca3a0a73261ef15adcda
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2ebf78716ab9e42f0730e16a62d9e10efb5322f52b9e616acc52b6a90da6ce0
 
 kind=LEXICAL
 letterId=
 display=три́ста три́дцать три
 note=333
 objectiveId=obj-u9-thousands
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-thousands-5`
 
@@ -2858,15 +2858,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a52e7a164fc729c2d0338d1b7ce9af746f3c0ef2f06a31ac1a7124b7d626adf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54ced59a8476af0d01c08e19ae045ef9f92c924b0e68d246ca6c50a8182ed7f5
 
 kind=LEXICAL
 letterId=
 display=ты́сяча девятьсо́т во́семьдесят четы́ре
 note=1,984
 objectiveId=obj-u9-thousands
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-thousands-6`
 
@@ -2875,15 +2875,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 85e754c16b6fbca560de7a4a970b6d8dcc5e6d6a69a5ff922d6dedf8cc30fc77
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 640b30bbafd4446b2a0ea884aed722534c880437acc486f3337fad199ac77e05
 
 kind=LEXICAL
 letterId=
 display=две/три/четы́ре ты́сячи
 note=2,000/3,000/4,000
 objectiveId=obj-u9-thousands
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-thousands-7`
 
@@ -2892,15 +2892,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6a75bad006e40ae8fa09141e8ce4e8321fe8cfba6a3096d4da22a7695d28073d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d455b788a7da93366926cba0e1ea6113e70c7be1bd8254f63fd9511b10e61163
 
 kind=LEXICAL
 letterId=
 display=пять ~ де́вять ты́сяч
 note=5,000 ~ 9,000
 objectiveId=obj-u9-thousands
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-odindva-0`
 
@@ -2909,15 +2909,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e8f700c4e15baff163aa85728ce40a9fe44fd9a22b65291b29077e1343e1abe2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec25dec58bc7fad823e9ec45e3078cc2700ac8a4eb4d2824ed1c0608947633c6
 
 kind=LEXICAL
 letterId=
 display=один мальчик
 note=one boy
 objectiveId=obj-u9-odindva
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-odindva-1`
 
@@ -2926,15 +2926,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0e5b57f9e530d4a43f2a32a15b40e47f9c9a6a7b60e8c42f19bb151b747d63a5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 206094888ba7896b7f78cf9a804c0090b67ce6af09e831157ae2e6e423775ef7
 
 kind=LEXICAL
 letterId=
 display=одна девушка
 note=one girl
 objectiveId=obj-u9-odindva
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-odindva-2`
 
@@ -2943,15 +2943,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7987257f9cb6bdd0c4524082aa1d989c600b028209666bf6018cb0a96589441
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dec7f4b99df8700afb0b7658364aadadfee289823bf5d9fd86f3e6be12ec6062
 
 kind=LEXICAL
 letterId=
 display=одно животное
 note=one animal
 objectiveId=obj-u9-odindva
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-odindva-3`
 
@@ -2960,15 +2960,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e12016a7fd63f59cbabef70a50b58a56f77e21e82ae41b91ee7d55b2aa0db1f9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 49d4ce04b199416479a0fa1a50fd49538bb9efc6b24b2defa6b67defae89b0da
 
 kind=LEXICAL
 letterId=
 display=одни джинсы
 note=one [pair of] jeans
 objectiveId=obj-u9-odindva
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-odindva-4`
 
@@ -2977,15 +2977,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3243ba6d717e5023a2717b40afdddc3788284f5121c331eea0ee8f35575bf092
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8e26bb830a8975cc0cc29626ecab615619f34088c5c122f856efc88a198337b
 
 kind=LEXICAL
 letterId=
 display=одна́
 note=1
 objectiveId=obj-u9-odindva
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-odindva-5`
 
@@ -2994,15 +2994,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa9a30f5bccc8bb69a84dd56e9e2135dca8e84c730722cd47df1f7685342dde1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbd6d29a1a64bd95f177032d6d1754611396dc23acfea08c47392b3c7a137510
 
 kind=LEXICAL
 letterId=
 display=одно́
 note=1
 objectiveId=obj-u9-odindva
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-odindva-6`
 
@@ -3011,15 +3011,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5ef06a5dac646fa5e888f685c87e8da4306d6e36f5ed142ceecc6ef550e448c2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed80300b4a9b8765c1b62f915062e7914ea0475fd80139b14bcd75b928ac47c1
 
 kind=LEXICAL
 letterId=
 display=одни́
 note=1
 objectiveId=obj-u9-odindva
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-odindva-7`
 
@@ -3028,15 +3028,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b922d4c4d89b98c7aec7c4339522feeabcd7f529832725c59291548caf8a5149
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83ecd212693ba4e91b276fb80814eaf06f03c65f11d96b3a3d46cc426e61a9f4
 
 kind=LEXICAL
 letterId=
 display=две
 note=2
 objectiveId=obj-u9-odindva
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-or-u9-odindva-8`
 
@@ -3045,15 +3045,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6865f9ea0c6855dd04859638210aa1bbe9366d1c57284dc522ded82c39c15a1a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6d26747152346688ccd55f9c320d2eb8237b0972d1f85ed967fab4149a68e1c
 
 kind=LEXICAL
 letterId=
 display=оди́н
 note=one
 objectiveId=obj-u9-odindva
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-or-u9-odindva-9`
 
@@ -3062,15 +3062,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0b13633050ad9795f6e0b6cc9a8661acfc72726aec29e6fe3afdc657c6a569d0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5087039b2e4ee5cd7cf06e89e30d9a652ffa18619f405e7074e4b4abecb490a
 
 kind=LEXICAL
 letterId=
 display=два
 note=two
 objectiveId=obj-u9-odindva
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-0`
 
@@ -3079,15 +3079,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8c621eeade80aad37012ecb212bdd3bcf164f18345b17ed1f50a5f238519ee48
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58e7e1447e6003fc63d142d75ef307aacd1766b1688c4160b17d1b2e9dffd636
 
 kind=LEXICAL
 letterId=
 display=один час
 note=один час
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-1`
 
@@ -3096,15 +3096,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7e208a91674830ff2b4919ed912a1a0ddacf196aab4d978286ce3cd54f36c4d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 76f06bdd225c04c4215b794163d80989295c475ebe8db417619507ddbf223cd2
 
 kind=LEXICAL
 letterId=
 display=два часа
 note=два часа
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-2`
 
@@ -3113,15 +3113,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ad10769d8c047e39e93b6c21bb6ca6d06ba9c873330cd6ef9460b12966215a9f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f3c494c7250fa0553f0536d0f5ec18c4b954745c89a96212e31c14043543a97
 
 kind=LEXICAL
 letterId=
 display=пять часов
 note=пять часов
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-3`
 
@@ -3130,15 +3130,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed2deab4003f53cf98a61101870b0b8bf19dd93467d9d42b90e960b88d653814
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: de3591a40477dc548065638001568f63d9cef4541971911bf979177352432e80
 
 kind=LEXICAL
 letterId=
 display=двадцать один час
 note=двадцать один час
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-4`
 
@@ -3147,15 +3147,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7790514d0f0560a4177f49b7bb8144863f2329b1e92ccf18aaf6afbbf953b932
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e8c4b76cbf43e7e78dcf6aa4606e446ff07f26c4aee86853a434d5a017ef25c0
 
 kind=LEXICAL
 letterId=
 display=двадцать два часа
 note=двадцать два часа
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-5`
 
@@ -3164,15 +3164,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ad8ecd8d72a3e51f34df54f293ef3dc91ab10e8d9bb7b5afa20d94b21a74cea0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97050a02d535a0b02bb6b69a1345585c97f92bd4bab6f302a821b696dfc88afc
 
 kind=LEXICAL
 letterId=
 display=две девушки
 note=two girls
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-6`
 
@@ -3181,15 +3181,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 776b1fdf0313292d2d2d75629a54489590bb58ec55349b95ad40abb8c698e05e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 035a5c115677b087d6c2c29e3f0e5b78b26cfc9b3f6262e140a39f4423180c28
 
 kind=LEXICAL
 letterId=
 display=пять девушек
 note=five girls
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-7`
 
@@ -3198,15 +3198,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d5b0185ceae1022c4bb6b27cff27ca55ecd85bfca1c67ef2168662be77158839
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 146371f806ee689c3189d09ccfc8e57a73eef192a0b88a2937a4eac4d4d2a82f
 
 kind=LEXICAL
 letterId=
 display=шестнадцать рублей
 note=sixteen rubles
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-8`
 
@@ -3215,15 +3215,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 91a2d133f63031fb3605b868347e1f54a38313e109261989694953cb07371689
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1bb5a9225a0af3c57f02bdc3c816ed0abbcece5f40b508fc3567e8096a308b74
 
 kind=LEXICAL
 letterId=
 display=десять копеек
 note=ten kopeks
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-9`
 
@@ -3232,15 +3232,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 88a0a601d2d197ed8a1b27861d357b8276854aa20acfc0f25fcbca058c2f204c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fbcf15d641f75b30186135065c0bac7b135c8ae14e35c46bf0ca9ffa05875110
 
 kind=LEXICAL
 letterId=
 display=сорок один год
 note=forty-one years
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-10`
 
@@ -3249,15 +3249,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 458c4c58b70e7cbcf119d2b5650ae3ddec4e0a30c331474341d9e7057c56ff86
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc6002e75977a1ae54a570cbe5ab75258d021df2cb6de7c4bd9e8020625434fc
 
 kind=LEXICAL
 letterId=
 display=пять лет
 note=пять лет
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-11`
 
@@ -3266,15 +3266,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dae1c5fd90924a93b24234caef6c55ab11e189b61e2b679d5ac3c1660997a9c5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 672bd850664ac0ca1973a31f7553515cb9d4bd8a0898e39d55beb9f443a62c0d
 
 kind=LEXICAL
 letterId=
 display=двести три собаки
 note=two hundred and three dogs
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-12`
 
@@ -3283,15 +3283,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 50516eddb93fa30eef5b428d361083078d69764ae6e70fbf7e764702885a816f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a80108cb4c560980f53377ef6e61b606b0e9061ea8ce46963d111b7287b5ba3a
 
 kind=LEXICAL
 letterId=
 display=двести тринадцать собак
 note=two hundred and thirteen dogs
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-13`
 
@@ -3300,15 +3300,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e50d45ef44a61a7beadd91d7abd26b9bc460afb5d0bc1c4eae4f3daa4f9cd49c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad8f0191c24f7f3784473633ef99040080c578b2b7099c2a1fa5078c7636ba0c
 
 kind=LEXICAL
 letterId=
 display=Два́дцать две копе́йки
 note=22 kopecks
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-quantity-14`
 
@@ -3317,15 +3317,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d67973369a75e57d3c2b67a2ffcfde7923ba269b683a9277645fc475751b6320
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bbfbea3d3fb01f22ea3dcad45034fe83939096ed8d13fb4241311d6d72c3d1bd
 
 kind=LEXICAL
 letterId=
 display=Два́дцать пять копе́ек
 note=25 kopecks
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-or-u9-quantity-15`
 
@@ -3334,15 +3334,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f707297a009d852f539ea9afdbb90f6e82ab03d598057a8dee0165d65865b5cf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b12c10bdc59d4345e983635ac1ebfb55bf4b5925bdf1e0589e7e642ef5b90dd
 
 kind=LEXICAL
 letterId=
 display=стола́
 note=table
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-or-u9-quantity-16`
 
@@ -3351,15 +3351,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f08f2fdabe067e9bee31f2cab1b01def3a5e53b2bcfa195f66b95ad0b3c0e9db
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee141203b13a67dbfb98e8d105a0bc73a45472abd2355284378449e95b078bde
 
 kind=LEXICAL
 letterId=
 display=столо́в
 note=table
 objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-pattern-0`
 
@@ -3368,15 +3368,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89aba9aabd34624b96a645f3a2e398a895b265fb0444ea7f2881fe11380dd69a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38829ddb674f9eef908b9afc2d44a2a7090d03a1a49ae23f3d542b3ed58dc57b
 
 kind=LEXICAL
 letterId=
 display=один час
 note=один час
 objectiveId=obj-u9-pattern
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-pattern-1`
 
@@ -3385,15 +3385,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c6e340b4c36cf94100d7289667c30bbb4eb1f38dfeb292fe83408f6f17b7067
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 75fa35b3828a291afdb07c46311aeef5253ed3451d8505a14ab62de75bcc683b
 
 kind=LEXICAL
 letterId=
 display=три кошки
 note=three cats
 objectiveId=obj-u9-pattern
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-pattern-2`
 
@@ -3402,15 +3402,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a48b140d4c3196f83602308bcc94ef8c7927cf862f521339b282ef28af0cd6cf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64af6d1062282bfd6fe626b4193dbd9b2a3824038eb97f0ece6e63afc3ab6918
 
 kind=LEXICAL
 letterId=
 display=пять девушек
 note=five girls
 objectiveId=obj-u9-pattern
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-pattern-3`
 
@@ -3419,15 +3419,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8c7b1e99ebaca25aadd82c84e82bb1a3c5859745966179825312889253b9ec1e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4703c462187318e85b1ce932e1a0ea706ab769f87ed0e129ffa8a3c3a524e07
 
 kind=LEXICAL
 letterId=
 display=шестнадцать рублей
 note=sixteen rubles
 objectiveId=obj-u9-pattern
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-pattern-4`
 
@@ -3436,15 +3436,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c8707b4a90957f064a06691111b22c28342b1eceed207b5cdda4e7b5d06f2a2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dba1d0cfda9f79a5b1ae4d671654f295fa30d387789cfb6a7e9ac0e494d6d67d
 
 kind=LEXICAL
 letterId=
 display=Я видел двух друзей
 note=I saw two friends
 objectiveId=obj-u9-pattern
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-pattern-5`
 
@@ -3453,15 +3453,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf77cffe377ccdecbc8da6a1ae4f8f028f222fdd5e3e898ba72b4bd76d3fe447
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 12ef7979baa9c2fe929eb3904dded5f995386ca4306405871863d56c278862e6
 
 kind=LEXICAL
 letterId=
 display=Есть оди́н кот
 note=There is one cat
 objectiveId=obj-u9-pattern
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-u9-pattern-6`
 
@@ -3470,15 +3470,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6bae6990cda8828642f5502f24c1d7ff156dce436b6d80e6c559b88d845c9f24
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac8e4bfafef9ce67b31dd38f4498114086bc093a1ccfbcb186a1ed55d6653f47
 
 kind=LEXICAL
 letterId=
 display=Пять рубле́й
 note=Five roubles
 objectiveId=obj-u9-pattern
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u9-g-cardinal-0`
 
@@ -3487,8 +3487,8 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e88a2f35b4f1b56391279c36181573bc1d939a79eb13ed06a7dcd53922120aa8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65851a6aad772d16a11a764ab3d3a200e8710ea6b4244f1e77204086a8be3d18
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3499,7 +3499,7 @@ answer=ноль
 feedback=Does the admitted record show the governed contrast? ноль.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is a different number in the same table.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -3521,8 +3521,8 @@ relationParticipantIds=prov-ex-u9-cardinal-0-en | prov-ex-u9-cardinal-0-ru | pro
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f47b83e69214a10122fa984a35398fb7b1110a39e42c11592d0e17a4e02dd7d7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd2c0d61de9fde567c19ef9d64cde2e2c31a4350c1440116662f97f056946a9c
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3533,7 +3533,7 @@ answer=оди́ннадцать
 feedback=Does the admitted record show the governed contrast? оди́ннадцать.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is a different teen.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -3555,8 +3555,8 @@ relationParticipantIds=prov-ex-u9-teens-0-en | prov-ex-u9-teens-0-ru | prov-ex-u
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9a07dd90b63a9355ce984c25a061029d232c56c5ab865b82a9db1456ccec43a8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a026221066370d4a19a3126134ec512826412e3fccbb5efc240cf4b968a04995
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3567,7 +3567,7 @@ answer=три́дцать
 feedback=Does the admitted record show the governed contrast? три́дцать.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is a different ten.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -3589,8 +3589,8 @@ relationParticipantIds=prov-ex-u9-tens-0-en | prov-ex-u9-tens-0-ru | prov-ex-u9-
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 47486572e15a5ddbcf70073ef6bca386f185b03adec080d421069d6ff0c7da96
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 30095b761e19767b3d32cac4816bff4374edc93c4822c5b9d27a560bf7fe466b
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3601,7 +3601,7 @@ answer=сто
 feedback=Does the admitted record show the governed contrast? сто.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is a different hundred.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -3623,8 +3623,8 @@ relationParticipantIds=prov-ex-u9-hundreds-0-en | prov-ex-u9-hundreds-0-ru | pro
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 86ece6ec6a3cdd7db3c0ce4f9b0ff3c6b05ad1d7f750d1b77c5036bfa11dac51
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a409a26b8115fbe105e98cad0c31c21bf5f4bc0f84762ec834f13f1ab9821f4a
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3635,7 +3635,7 @@ answer=два́дцать оди́н
 feedback=Does the admitted record show the governed contrast? два́дцать оди́н.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is only the ten, not the composed number.
 testedFeature=COMPOUND_21
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -3657,8 +3657,8 @@ relationParticipantIds=prov-ex-u9-thousands-1-en | prov-ex-u9-thousands-1-ru | p
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 770d5538fbe526a0a35848f590a4a79665a539ec74d7014f20838aa7a10a6f88
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7af8b7d8811182987d1104e634ecf8553a249327deec63e5c9d3fed11757385
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3669,7 +3669,7 @@ answer=один
 feedback=Does the admitted record show the governed contrast? один.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This form is another admitted form in the same frozen line.
 testedFeature=ODIN_MASCULINE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -3691,8 +3691,8 @@ relationParticipantIds=prov-u9-odindva-x-0 | prov-u9-odindva-x-4 | prov-u9-odind
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fe301e94cda6e0cc4b166fa0a7302342a8e4f94ac824cf4a76ccecdb7d131f7f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e5c867c62f4dfe4d03b6c516b6d8919d008eec022679206e3dc28a1fa2eac2a
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3703,7 +3703,7 @@ answer=1 -> nominative
 feedback=Does the admitted record show the governed contrast? 1 -> nominative.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
 testedFeature=FINAL_DIGIT_ONE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3725,8 +3725,8 @@ relationParticipantIds=prov-u9-quantity-x-3 | prov-u9-quantity-x-0 | prov-u9-qua
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 58dccec6949d6800c2155c21d82c116642d38b019848363993ae28b9a5442445
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b36837129a3fdc490add584fe87866cd054076d620e7011bac1f31ee395faea
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -3737,7 +3737,7 @@ answer=1 -> nominative
 feedback=Does the admitted record show the governed contrast? 1 -> nominative.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the two-to-four line. | This admitted rule is the five-and-more line.
 testedFeature=GOVERNED_FORM
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -3759,8 +3759,8 @@ relationParticipantIds=prov-u9-pattern-x-5 | prov-u9-pattern-x-0 | prov-u9-patte
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 989ec2c103d1d7aebe4faee6e88845a0594b4f84fd36d9f607b17255c4a09f7f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a56540b78cf6f26833c3271ea662190252d240488d01bee8e57bb8fe58d2caa1
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3771,7 +3771,7 @@ answer=оди́н
 feedback=Does the admitted record show the governed contrast? оди́н.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is a different number in the same table.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -3793,8 +3793,8 @@ relationParticipantIds=prov-ex-u9-cardinal-1-en | prov-ex-u9-cardinal-1-ru | pro
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f09f892ba84acc666cb2d10ccd4216f3acd156f676000b9e07518977a6bf9ee9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d10d2755808b87944dde772b68e8a24e2ec87aa5b37725d93be9a648fa754062
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3805,7 +3805,7 @@ answer=пять
 feedback=Does the admitted record show the governed contrast? пять.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is a different number in the same table.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -3827,8 +3827,8 @@ relationParticipantIds=prov-ex-u9-cardinal-5-en | prov-ex-u9-cardinal-5-ru | pro
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 22e110519577db93fa3babcccfa429c8ffac8a6b46a065c874c0b3aaa66be6aa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2f18266ad03aa0962589e1191926cb2a016ee86cf581b5016b6ceb1f2c79354
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3839,7 +3839,7 @@ answer=де́сять
 feedback=Does the admitted record show the governed contrast? де́сять.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is a different number in the same table.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -3861,8 +3861,8 @@ relationParticipantIds=prov-ex-u9-cardinal-10-en | prov-ex-u9-cardinal-10-ru | p
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8319b773bc18b763b21f12d3dcf18cd71b9fc89e8f61a240897c2121fc5e721a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 62500b8e6bbe140ff4c80f7f278b80ae09e7e302a15d8cdb8826664b65710c5e
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3873,7 +3873,7 @@ answer=четы́ре
 feedback=Does the admitted record show the governed contrast? четы́ре.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is a different number in the same table.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -3895,8 +3895,8 @@ relationParticipantIds=prov-ex-u9-cardinal-4-en | prov-ex-u9-cardinal-4-ru | pro
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3d22e6d136f92f69fed89ca26f33fc9c2584d80c1e4696a3f5c8645b750707d5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 588e84100ce44b339005ea35c0c029aaf3ae8465e8c91908e2c9ea1a2c2f63ac
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3907,7 +3907,7 @@ answer=четы́рнадцать
 feedback=Does the admitted record show the governed contrast? четы́рнадцать.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is a different teen.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -3929,8 +3929,8 @@ relationParticipantIds=prov-ex-u9-teens-3-en | prov-ex-u9-teens-3-ru | prov-ex-u
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0c5b875ca0fa5cfa6664c411a3c1155336efbef284eba8b834374a42cfa2679f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 590ff30878ce68512982e1aded967c3c756b9551d08a44692dbca942ee4b37ec
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3941,7 +3941,7 @@ answer=девятна́дцать
 feedback=Does the admitted record show the governed contrast? девятна́дцать.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is the following ten, not the teen.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -3963,8 +3963,8 @@ relationParticipantIds=prov-ex-u9-teens-8-en | prov-ex-u9-teens-8-ru | prov-ex-u
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d5463e8b05f3ca67ac763f3b5947f3ce7353e30ae5610bc5e33a0ee3e90b68b2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 022c0e8573120bd662f108425b604ed75b5c0c99016a44eb9d0b1a15eeca5ca4
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3975,7 +3975,7 @@ answer=двена́дцать
 feedback=Does the admitted record show the governed contrast? двена́дцать.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is the ten, not the teen.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -3997,8 +3997,8 @@ relationParticipantIds=prov-ex-u9-teens-1-en | prov-ex-u9-teens-1-ru | prov-ex-u
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dfe7b833f9030b286f72ade3c177bd9f6603675849d335733fb7be6e62539106
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c453f656d842fb5bbd83cb6f25971fa7228e20d2cd02c1845566a50119910d6e
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4009,7 +4009,7 @@ answer=пятьдеся́т
 feedback=Does the admitted record show the governed contrast? пятьдеся́т.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is a different ten.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -4031,8 +4031,8 @@ relationParticipantIds=prov-ex-u9-tens-2-en | prov-ex-u9-tens-2-ru | prov-ex-u9-
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed565f78e02a3cc638678e389ae086c97db9c8790a3857497aeefc5e8852601c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b5dacf11333d1cb0be213931edde9922ef4f20a39304d68ac10dacfef327dea
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4043,7 +4043,7 @@ answer=девяно́сто
 feedback=Does the admitted record show the governed contrast? девяно́сто.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is a different ten.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -4065,8 +4065,8 @@ relationParticipantIds=prov-ex-u9-tens-6-en | prov-ex-u9-tens-6-ru | prov-ex-u9-
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: febfb47ca01311631ccdcfd4e92429c499a2097acceb5fe273e1c010890a0c7b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ab35851d83d1f68fc022fa221ab6c54f066739d1d14eb32adb75cf7325fc5e9
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4077,7 +4077,7 @@ answer=два́дцать
 feedback=Does the admitted record show the governed contrast? два́дцать.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is the teen, not the ten.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -4099,8 +4099,8 @@ relationParticipantIds=prov-ex-u9-tens-7-en | prov-ex-u9-tens-7-ru | prov-u9-ten
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eac492f7d3045ffe6b8a528d25f1b9bdf25a21fca6f25b74057159f792c99a3d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f64e7f9ad1f54d196d98a5f151037caf6686b73a85d85dbee32fbd235c249000
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4111,7 +4111,7 @@ answer=три́ста
 feedback=Does the admitted record show the governed contrast? три́ста.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is the ten, not the hundred.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -4133,8 +4133,8 @@ relationParticipantIds=prov-ex-u9-hundreds-2-en | prov-ex-u9-hundreds-2-ru | pro
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae8cb497e49c80990a2cbb9c28448981ef14811006a20de65ac40e825a0207d4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ec2e333caa03fce42970cadc50ea8642d93d27919bba083d56b3b8fc8870a98
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4145,7 +4145,7 @@ answer=пятьсо́т
 feedback=Does the admitted record show the governed contrast? пятьсо́т.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is the one-digit number, not the hundred.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -4167,8 +4167,8 @@ relationParticipantIds=prov-ex-u9-hundreds-4-en | prov-ex-u9-hundreds-4-ru | pro
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 736409b8bd782b199a84ee8e186f21bdde0cd3eb9c69499f9b975824fddcb059
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c62e7a79248342d48b1c68529fb8f1096854adfbedb025a90a57cbfe286e02db
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4179,7 +4179,7 @@ answer=девятьсо́т
 feedback=Does the admitted record show the governed contrast? девятьсо́т.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is the ten, not the hundred.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -4201,8 +4201,8 @@ relationParticipantIds=prov-ex-u9-hundreds-8-en | prov-ex-u9-hundreds-8-ru | pro
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1319f7133f95988582819d4d22c5526298b480d42c551998ea97a2cd24ffd6b5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 160883d26ee9741aeeda81b3799b6ae8fa0f682072e17f85ca29b8596ac89ffc
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4213,7 +4213,7 @@ answer=сто оди́н
 feedback=Does the admitted record show the governed contrast? сто оди́н.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is only the hundred, not the composed number.
 testedFeature=HUNDREDS_COMPOSITION
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -4235,8 +4235,8 @@ relationParticipantIds=prov-ex-u9-thousands-2-en | prov-ex-u9-thousands-2-ru | p
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63916f782b72021c155fa8b78b401cadd691abdd15192921a79ed864eb1a815a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: adf87d6d315271b9be83a77fc42cc00e0a8f71731a79bb1bc457d6dd5822e4e5
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4247,7 +4247,7 @@ answer=две́сти пятна́дцать
 feedback=Does the admitted record show the governed contrast? две́сти пятна́дцать.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is only the hundred, not the composed number.
 testedFeature=HUNDREDS_COMPOSITION
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -4269,8 +4269,8 @@ relationParticipantIds=prov-ex-u9-thousands-3-en | prov-ex-u9-thousands-3-ru | p
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f62a43a45d9bf042d0094bf23a5849ae5899b51e2b9e3d5d88d73c3bf28198e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea9a6a3471baea3cdd7ffba5445bc6afc0579f4b30b2a2a7568bfc2cddfaf482
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4281,7 +4281,7 @@ answer=ты́сяча девятьсо́т во́семьдесят четы́р
 feedback=Does the admitted record show the governed contrast? ты́сяча девятьсо́т во́семьдесят четы́ре.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is only the thousand, not the composed number.
 testedFeature=THOUSANDS_COMPOSITION
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -4303,8 +4303,8 @@ relationParticipantIds=prov-ex-u9-thousands-5-en | prov-ex-u9-thousands-5-ru | p
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 820a9f2fff6a236ee411b51165709825031287216f691860d9a1dce6f8d992cc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0430fefbfee01733dc0c605b9237007eb92bbfde2dee2f3dceb1698066dc2f49
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4315,7 +4315,7 @@ answer=две/три/четы́ре ты́сячи
 feedback=Does the admitted record show the governed contrast? две/три/четы́ре ты́сячи.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted form is the other thousands band.
 testedFeature=THOUSANDS_COMPOSITION
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
@@ -4337,8 +4337,8 @@ relationParticipantIds=prov-ex-u9-thousands-6-en | prov-ex-u9-thousands-6-ru | p
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2108a37768f151566f7b389e2a56fadde5a3915cde6c21af4f622c273adb2429
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b5b69ad55c3fbbe7d637b283eca1f3485e1da4f526832d3c09f93f8c7cdb0f1
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4349,7 +4349,7 @@ answer=одна
 feedback=Does the admitted record show the governed contrast? одна.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This form is another admitted form in the same frozen line.
 testedFeature=ODIN_FEMININE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -4371,8 +4371,8 @@ relationParticipantIds=prov-u9-odindva-x-1 | prov-u9-odindva-x-5 | prov-u9-odind
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b99c671df7549abf83014dc9c1162980e3bcbaf5955f51cabca3879975f71a59
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e310f613fc4818b787f22c144de45f24b325729217a15bb4139924b14506ca75
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4383,7 +4383,7 @@ answer=одно
 feedback=Does the admitted record show the governed contrast? одно.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This form is another admitted form in the same frozen line.
 testedFeature=ODIN_NEUTER
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -4405,8 +4405,8 @@ relationParticipantIds=prov-u9-odindva-x-2 | prov-u9-odindva-x-6 | prov-u9-odind
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e6a5c7e901eabeaa9ba2f175e4722c5a86b2b096789bb678f74a0695d702b9c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb1a4eb67c20c49bf75a1e1b61fe9cad484c39d059e85ae0d82441a8044a710d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4417,7 +4417,7 @@ answer=одни
 feedback=Does the admitted record show the governed contrast? одни.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This form is another admitted form in the same frozen line.
 testedFeature=ODIN_PLURAL
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -4439,8 +4439,8 @@ relationParticipantIds=prov-u9-odindva-x-3 | prov-u9-odindva-x-7 | prov-u9-odind
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 02863031a4cb211b78caa2ced918e002246ba9b2850e19ef2f0eb40b7ece3c93
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 23763f5b436c31710b3d6fb7effb03ecb239bec1d747d145976551a3cb446cc0
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4451,7 +4451,7 @@ answer=один
 feedback=Does the admitted record show the governed contrast? один.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This form is another admitted form in the same frozen line.
 testedFeature=ODIN_MASCULINE
 evidenceMode=SOURCE_SUPPLIED_PAIR
@@ -4473,8 +4473,8 @@ relationParticipantIds=prov-u9-odindva-x-0 | prov-u9-odindva-x-4 | prov-u9-odind
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c085abede84e28f0be6ab062c75eeb06a2563328828382e1860151e6d9b7ced0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a6cb1a2aede6487625ae7fcbfb0a5857e36eda4695ff287631a03d1dccafd2ef
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4485,7 +4485,7 @@ answer=две
 feedback=Does the admitted record show the governed contrast? две.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This form is the other admitted form of two.
 testedFeature=DVA_DVE
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
@@ -4507,8 +4507,8 @@ relationParticipantIds=prov-u9-odindva-x-10 | prov-ex-u9-odindva-7-ru | prov-u9-
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8b1df2565bbd936ecbd6f2935bcede766e2e43150ae5e3f3ff964695705c0fbe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 52c0118862ca50761ab18ddc6218b7dd3118eea21db1bb0ee61f403641daa688
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4519,7 +4519,7 @@ answer=2, 3, 4 -> genitive singular
 feedback=Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the one-item line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
 testedFeature=COMPOUND_22
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -4541,8 +4541,8 @@ relationParticipantIds=prov-u9-quantity-x-7 | prov-u9-quantity-x-1 | prov-u9-qua
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e3abecdb938d034e2c39d2e5cf903cd164d6094d6a5f8725f723fb04529b89e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 18329b2790fb9e12d7ae799ee61c4e7c216bd9f1cd2f0f069d5169bb38873aa2
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4553,7 +4553,7 @@ answer=5 and more -> genitive plural
 feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line.
 testedFeature=FINAL_DIGIT_FIVE_PLUS
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -4575,8 +4575,8 @@ relationParticipantIds=prov-u9-quantity-x-5 | prov-u9-quantity-x-2 | prov-u9-qua
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3f2b295cde81fc534c91fa6f684f66f070e815b7db888583b0b76bf103a792b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bf45686398c7b524671271abacd2c144fd844f363e38dfedb7b97e1b19b2dc08
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4587,7 +4587,7 @@ answer=1 -> nominative
 feedback=Does the admitted record show the governed contrast? 1 -> nominative.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
 testedFeature=COMPOUND_21
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -4609,8 +4609,8 @@ relationParticipantIds=prov-u9-quantity-x-6 | prov-u9-quantity-x-0 | prov-u9-qua
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2ea52b01fbac2d4ed7030bc421c041c762442e8a0b650328b0a85fe909f7bc15
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4fd5dd6a059b96c64786409c585b1e95175b21500fc1dac8ac8dcdb01bdc52b
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4621,7 +4621,7 @@ answer=5 and more -> genitive plural
 feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
 testedFeature=TEEN_VALUE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -4643,8 +4643,8 @@ relationParticipantIds=prov-u9-quantity-x-8 | prov-u9-quantity-x-2 | prov-u9-qua
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4e7a3e5ae6233604d8dd900fcad819ad681e484747a052ae990e6dea25322663
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4c24d2bf9324eddb043648f1281dddf97d91457b5dbe74cc28a4f0f49a13c99a
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4655,7 +4655,7 @@ answer=1 -> nominative
 feedback=Does the admitted record show the governed contrast? 1 -> nominative.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the five-and-more line, not the rule for the shown line.
 testedFeature=FINAL_DIGIT_ONE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -4677,8 +4677,8 @@ relationParticipantIds=prov-u9-quantity-x-9 | prov-u9-quantity-x-0 | prov-u9-qua
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81c49b781417ca42d5a6d8066c04a75e1ccb42de3dc1000c265e6e382276106c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd27f9d286ed2e2abfde0652f3d6e93bba0d5f0603721720709c14650485241d
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4689,7 +4689,7 @@ answer=5 and more -> genitive plural
 feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
 testedFeature=TEENS_OVERRIDE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -4711,8 +4711,8 @@ relationParticipantIds=prov-u9-quantity-x-10 | prov-u9-quantity-x-2 | prov-u9-qu
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a45e92a9bb6636571a4936e4d8b302a2d5f984f547ae402c98821bbfc4a9106
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc01a2d3ec2800ef94bc4f2eae8ad35058d3ae9033f8d95fb898d2e32734ef6f
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4723,7 +4723,7 @@ answer=5 and more -> genitive plural
 feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the one-item line, not the rule for the shown line.
 testedFeature=FINAL_ZERO_OR_TEN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -4745,8 +4745,8 @@ relationParticipantIds=prov-u9-quantity-x-11 | prov-u9-quantity-x-2 | prov-u9-qu
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d341650e081d5d0f9545382d9af5e8ed2573f98101549453dcd097ade34ec1be
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5faf8a9aa87c3f6f449a2c6eee4e13db17c65aae5feb25904790a3f393cf3cf8
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4757,7 +4757,7 @@ answer=2, 3, 4 -> genitive singular
 feedback=Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the five-and-more line, not the rule for the shown line.
 testedFeature=FINAL_DIGIT_TWO
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -4779,8 +4779,8 @@ relationParticipantIds=prov-u9-quantity-x-4 | prov-u9-quantity-x-1 | prov-u9-qua
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0b12dd54cf3f28c34d4984def7c344c0d1aeda5aaa27a7799144ddace8c5e473
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca351b479f67a6c56465c0f21ffddfa6c76001891996a4a95d56fc3650caa42d
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4791,7 +4791,7 @@ answer=2, 3, 4 -> genitive singular
 feedback=Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the five-and-more line, not the rule for the shown line.
 testedFeature=HUNDREDS_COMPOSITION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -4813,8 +4813,8 @@ relationParticipantIds=prov-u9-quantity-x-12 | prov-u9-quantity-x-1 | prov-u9-qu
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0f37a943dca636fb39bf962c18a35db56441fb0346b83acdcd497b1a8d813b3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8da2d35f3f50881cb77f866586b6b12855aaec2b062f2c63eb0efdfa26205c5e
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -4825,7 +4825,7 @@ answer=2, 3, 4 -> genitive singular
 feedback=Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the one-item line. | This admitted rule is the five-and-more line.
 testedFeature=GOVERNED_FORM
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -4847,8 +4847,8 @@ relationParticipantIds=prov-u9-pattern-x-6 | prov-u9-pattern-x-1 | prov-u9-patte
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 10233dc8481908730e4acd324009c22678a951d27de6059c372a1b7584301731
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cf77341930f1ff9c162c17d25a98c50192c832123aa9e55efbba648dcaeedcf0
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -4859,7 +4859,7 @@ answer=5 and more -> genitive plural
 feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the two-to-four line.
 testedFeature=GOVERNED_FORM
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -4881,8 +4881,8 @@ relationParticipantIds=prov-u9-pattern-x-7 | prov-u9-pattern-x-2 | prov-u9-patte
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c83477f3fb670538caa301bc72afcd0568c6a92a33334e890105ac34a5100662
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9555fead4b169d80c5190bd53243011271ac3a1cabc4447223a6693674e18682
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -4893,7 +4893,7 @@ answer=5 and more -> genitive plural
 feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line. | This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line.
 testedFeature=TEENS_OVERRIDE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -4915,8 +4915,8 @@ relationParticipantIds=prov-u9-pattern-x-8 | prov-u9-pattern-x-2 | prov-u9-patte
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 08f5bcc83bbc6ce7803cc073f7760af7f92923ac801f5bb2ac1f601b83687457
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc3e4f8980fa163081d7afdea4908773efeb35d305af6e9641d02a7a1580906e
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -4927,7 +4927,7 @@ answer=When the items at hand belong not in the nominative or inanimate accusati
 feedback=Does the admitted record show the governed contrast? When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | This admitted sentence is the other scope in the frozen paragraph.
 testedFeature=GOVERNED_FORM
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -4967,8 +4967,8 @@ reviewStatus=NOT_REQUIRED
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 23063c96423ee6cfe4fa9f5a9ac4280bacf2d5bddc80dfa8eba6e5e61c4a193c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9da189a9ab9389c81650c1b5c3437567c2661bc47c409ddb940f3d558d69d5d
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -4996,8 +4996,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3f8e5d18e669672a4ec8f1fd7b0bed3eb8638e57e3e46ffd1bcd2f5e0800663
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dcd4ea650a382126145a384edc5143a2a67ddc0d5c1daa251338528f02650725
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -5025,8 +5025,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6e5b0354a6429f56f5b8a74349e9b0e7a8c07d0648df949d218e018dc2e617cb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a45ed317ef6b3e84b90da7f9589fd53cf37affde36b25fabaa3ac83c6f856431
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -5054,8 +5054,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 16c9c849506e0a6d4ace7bc59b7fb30a320097c5f9febea32a8e0dabb1a8034a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e44889432345377e369fd64dea62189970b283ebf21bc42188ec906c3fe48a14
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -5083,8 +5083,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e05f3464a5f25db7680dc43d272bab33682493155693eebdfc4aaba92806a9e4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e3ef15b5fc86bdc4299a11986e9c19ce2d05de9a0d8c86ab1cab6e63e6b0d57e
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -5112,8 +5112,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3ab1435616d5ff94a24042d533dd2dba6d0c88622c511f5857acd2e79f505fa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 843fdcdef183c5b30e01556721dd1d4f0db67138a27536e7486a6465d1d44bbd
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -5141,8 +5141,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 93edf622d706f14a564a9e60f154d295aeeb370b7f8ca7abdfd027f6800130b7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 158e2fda160311d2da722ef566cc848f3c5c9ff9c345c3b72b460ff69b5abcdf
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -5170,8 +5170,8 @@ reviewedDigest=
 - Source: src-openrussian-50e210c4
 - Rights: rights-openrussian-50e210c4
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c6c52edc11533fc38775d736de96d4f672eef8b82e1bece61d730f399932010f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33200a5c96d4bcced2dc925cadbf3d860bec7541c40b3dc2f3df7f86f14054fe
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -5199,8 +5199,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b0936fa6b87bb7cf4527d33a9bc73ac6cde6a31732a5e811345c103199d76631
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 007378b3bb31457615efa8861e0687f8bb7793d69afa90f06d4f6231b0445d3a
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5228,8 +5228,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c26049f304ea930c9740293340ac1c0cf3de668a625d2d7cd74b140aa10bcb54
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbe77edaa96a3a59484b7fa34791794bdf680a2a12ab0370660efa9d43b5dc52
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5257,8 +5257,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a50230e5c1c1a3f2f3e4152494e2d1aa1378d9a324c79734cc8b530763b891a0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61277a3ad281bb27849145c54c54a07a9f7642b6a9b641cea2b2f638831c3fd3
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5286,8 +5286,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1404c8d875ffff807fa126b2b98948b881eb667567dc5b8a0d6a097c7e8ddf51
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3358c307d507485382c816e001dc6f56b6bddb4d45cf66c1f27f7a9b457c298e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5315,8 +5315,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e278864f0169621a2a63c041294ad92c9d9b8b6a96ae58879c2f46bac0db57c2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4dae4b70db59f15784ef22a2df30e829caf90b12fab109226d3753c7bff9cfb7
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5344,8 +5344,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5fd8ea39c2bea914b04771eed9b0913eba295ea0a4e71ee24d09065f3aca2fe4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 208ee3b4776526abd7164f109adcc018b922152c204089f23f6fe25d645dfba1
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5373,8 +5373,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb866be96c10b971efc54b2a2989a79f166420e09a33b79a8b93382cc26b7a7f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 984cd3edf809690d853e10875609dd22883ba02ffd9d7adf1b2816001f399cd6
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5402,8 +5402,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72edb814a64d81d289bedcad148688312c2ae5a4b2646229591f4ec7962833c5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e0c33474773dc15e59a15adcde4bb33b25c1ff73faaef286a59a90597235acc0
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5431,8 +5431,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d8ef7728b5c7253c0836d6b802fc1137c20e4a715a6f23a5c6015be00c2202c7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d7f809279c3e3c2c6075ac6da81cc0b40e5dae5141c9231d9786b61de6fb81b
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5460,8 +5460,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: add9b6063be4acaf176b1efb951e938aef2e21c3926bef72192c27583a33bd95
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: edb84e99a0c98bc03c837840dbb57e62e81a8184310c6b92fa0cf4ad2f798301
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5489,8 +5489,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6975e60707df2e74f31da78e97cb79104032c6324da2a8782930085bb99bef55
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: efb2bd7cab7db8fcf09a8ff365e84cfa0bd3225b601c621e0c3de3f4f8c4fed2
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5518,8 +5518,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c40f9c03a78f7df6a96f871fa4fe1dbe9d8c98e7ed57e6902cef7f84e3295fa0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f5e85ed0d1c34c9a76159f4d8c4f67a44058bd402ca283ddc49bc8db4066fb3a
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5547,8 +5547,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 54f2ac6a9a995c2df33bd6ce84cb4ef2d0516dcd5287af237f592bd43a5adc11
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a51247196cea8db3c24220648c95df7915ec1c5135dacf0a194f29504134c8f4
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5576,8 +5576,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1be8d33ace229e12b21385cce7f9d9e8aa81e14f781af5a0b42878ed3c6aea9a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d8b2ab70c328957e985bf8d0f2dbeab156dfa7e7d1d8a46e7f57be30535ccc6
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5605,8 +5605,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3a3e18b7c76365c25cdffcc334016406465680650c91de8c0b203295dcec7f3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d804ef33ff2ca527c9aab820143f656e9d3f48e9dc44831d186c198b4055bb9
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5634,8 +5634,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f5e3a6581929b331cf4074289a9f0a9eb334889d63fe5784b4d9d2cc5524c0d5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 80170baa12b365d155cc175cd8b4acf6de12f47c68d4b68b30ac812a6975f209
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5663,8 +5663,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f68be1a794becc11c7209c8d82a2518df7cddc2b0ecece442602722185c431ac
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a81e87ae5631e080918d9e3be10f070e3f35a7766635addcf4bacabeb1daf92
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5692,8 +5692,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5c63d651d63622f2fa7371ed52e63a0caaab5e660b43f8b239e53efb8df810a6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 309b50d396e2cc488b700d5f6a98635a7b614a23a52a3f3158e57833f1314d0f
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5721,8 +5721,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee17fe97b2f4285c4a129ba6bc7c80dd7fc30aeec07139c4142bc60027af3084
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 59819a3edce0e546bc1082b3473dcac2ec3000fe2f6a6de8011b0340453fbb84
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5750,8 +5750,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5bc3fc089bfcdad740e37a4a5268de22c2d06cf14f4efbbed1d16b018f8f1481
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b27a8648d17ea1ac4237941ce7c1b98805b6c88826aaf465f649e4c3837a9287
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5779,8 +5779,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17b0cd6db08bfadba464e43870d8f2a2b0553452bd410d46bc053ba50123d419
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b6936ea13e6bfca26963f1248282fa5ce050d9e150091c1368aa1a8ad9341a1
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5808,8 +5808,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45d04780059973c3112510f571d9c733b0afc0fbf7b10a0c18133497131f0c2a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: acf666bc746df69c670f117ca34821e9fddffa9a50bb808bdebdf0b21358d6ef
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5837,8 +5837,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9361720b110c4cc2cf9d35e8005314754db95db37aef6714d8bd3a5d700eae43
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d68f31b89db66cd96b96eefe0ef5978accef350ef0069bacea0a24757492800e
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5866,8 +5866,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0df7fd6e9e110cb9e1700c9de5fbb1a39b8335fafb0698e98c592b075429a3f0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9c7fb585eafdabae9f1f9f5903812458c372a55c29242d58516164b303e6ec2b
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5895,8 +5895,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9c2a25b5eb485e469f9d6e5f0ce6cb3b13a8e43eb5457e1526a5d788cef166dc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dfafe7081efa95044558c12bae56a81c856a5c34be8f60ddfaa3bf4e5aa1f498
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5924,8 +5924,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea823b26b2cfc321890132d3cdebf0d3704f9f700bb64ebf3ea93ec0834f4447
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea7146948132527e45aa0c393e5b338113982e4a9dc180de5952a2d80ebf7a06
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5953,8 +5953,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: df564fb93485e98bbe9703d8929b2f9754cfef714a384b67f1e6eb40c676a0d9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21d290d04b7c9ec5afe0d4247b8753815daa8e141359afeca72ea2427b5b677d
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -5982,8 +5982,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6cdc7b12e260e2d89ba0cd705db8b05c87d7801b21f7aabab6198aad576aa8a2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b70f4e1dd9423b8e51fe6c3a5042b59a783fbaaafa64684ace1b34b93ac5cb0f
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6011,8 +6011,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 044e11053e8a1e1ace1d0a7c1680a5185f81790955d3cd1b52175c0335155c84
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd7c4eceff3b74bbb8e667e3ab626add51930bf05c40c062bc3a4c6f071fddc4
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6040,8 +6040,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9df473850b65502d4a2386bab6ca935c87264eaab2a2c8a3f164c0a94a2e4e1b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6b6e10eee54ac43bb0b8b410a1fdc6cbf4af73f82850067938e7b6aa3fd3e7b
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6069,8 +6069,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55421894c489ca0b03538bb78133ef87756ac5177c09cc9efc11541bba3b23ac
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 754eb783c3ac7dc5c2daf9d648319f01fff2dbccb6cc2f5bbea3a8d8d826014f
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6098,8 +6098,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f53b31b385e08e5afefe8a6e352f2655dda1cbae828682292484b44008e95263
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 596f0f644a29bf52b17a1ff0d9a4aa3954d82c8445c3971c8e52e8431a18a6cb
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6127,8 +6127,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9e009eaf3da4527bcc61c396eb3bef80bbf81c584487a618195a43f800105b89
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9e30cfa97e04152579d505a407e3cf053044c77fab14ecb1b09de3d17bf99db
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6156,8 +6156,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c94f61df12f0ea2c0decf9249ebf222c9e5246d991e09178585c81ce680be9f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7dbf5eb5c27a8c7c94b5858b037a803ff6fd50989d6ce2e8a71fbaf0f043b1ba
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6185,8 +6185,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 126966c8ee633683928961280997a48e687c51bc91ac0f7242a9ba4e63d9d6a8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1ec314de927b833150c4227dadad80059ceb1733d422c25712e7caccdae1c07
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6214,8 +6214,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 470b494132b4097fba2275278b64957c79c00156fd0898b4d6e7a20a9f8cedd2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 94c221064f953a9517413eb734e9e429d159f82f0ac73c82d2d20e7214777b07
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6243,8 +6243,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96ba4f38732e82c77d0d143bf7f09ca7cbc041f8b871bff5fa33d29390689920
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 691dd4ca4252a8add81a929ceb8c07a7e6334bbb8276800744e0b0244515e128
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6272,8 +6272,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1ec4d5f5ce77e2efe49739c1f2c751720215748fd460888726cb3552fe343a35
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a57fe80abaa0acf54504b6bbb5a6b9d9dfc6ab5d4fe3673e6f3375592b151a35
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6301,8 +6301,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c3f5cf971d6aec67b97fc5699d6a5169613f1bf4443c9f729d579dc7dddb5e49
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e85b0ab803f5d91d34a059882c886cc5b7a4b3307e4dd02dea07c5d822e767cd
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6330,8 +6330,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f0a6d78f94d4d38de64243901a3d297183931744e9510da79dafcf37d5f7898
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 49a86743ada358b569bea32ce7460700b48b0f6f3ca93ee4b553a07f1c8d8871
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6359,8 +6359,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4797702d253a4f716fed6a7063c271bf4bdc83da1af8b6907c7f94ac788cc594
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 694cddf756fbc437802f8c4f866762b53988e8feb05ce24f3b85018971a2fa58
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6388,8 +6388,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a2273836043c50f2db2833c7e44721191a744935537f4c9a10317967673cbaa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1a092d878adf081addbd6cebd5b6d3e3271f94ef31fc578c9387a039c2bb3e67
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6417,8 +6417,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 683c15898bbacf9db90da0fc5529df36b093c4ef8958dd8bff17a1379e63f858
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9202e33d60085d3541e8d7e34267b9a43aeb376faf629a06241202b4c50caffe
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6446,8 +6446,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2210cb9fc3194e67feb89ef38839b710da61c3028a88292fc0c262d13be7795d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7f35d57bf9f8495a94c87ea61881014afa29203544db48a2494acb171a2a446
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6475,8 +6475,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8529e5aae73c0615b0ddc7908fadbf43b024e0d1609e7f5916bfb60954a4d081
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14cbb21e5d7e3b7dd43faf03e5f69b023f436a9dea7ea1c66888f0df6d5c5611
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6504,8 +6504,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9231d9061d127ba7b5cd0cf007e37b69bb4b6a1b8e7fc2e95f8eab2cd0adac6b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ae60c5941e80295c9514b19277ed421410cdb9228fd39876f3b7d860057b4a8
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6533,8 +6533,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c666e2a0bded4974e3e72f61d59b003ec1a90c0d14926d5c47f2ce4d063c3758
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd8b4b3f4884cca7bc2fc406cab1f7ee6abe8bb882b17d0625f8b9f56484a80f
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6562,8 +6562,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 360b1a6a6316f6726083ed65ec118a6242c903ed88ffbed75910863042d941e7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 993f0a3ca50b3f854f5d1e30c7d8e399a3690d950bb72e91f3212997fde1eba1
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6591,8 +6591,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1847b7b06c2d52c3dd41bcb32b0fe295afdc734c2aa49441f410dafd47a13643
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 05be9aab89db12450c8da432699d628a2a0744427d5ce7639fd5c4a6456088a6
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6620,8 +6620,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b50edcb0ec53d736e25917fdd8c389e36b30a1e0c21dd59ed3f4318ccea64340
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ea558fb390b6130887457630cc09c197a928591993434953a26023befaffa98
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6649,8 +6649,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1db6702839a02ada2c9ca85c83354e16794f57c2eed4fdb4952d6127766aa5af
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a0e7eddd28daf59be3ed7a5ba19d58046c789327bac58d92dedd8f0e8220f1f2
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6678,8 +6678,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d779234065b4cd8a3f424bcd59241a901b9a957b961568323c4504cf49586615
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd13492d88c644fd06c3a5a932cef830413987cecf960b6ca087cb3e9ecfde7b
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6707,8 +6707,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8c1de9e95b3a38ed7101ed79d1ee3639c87e6ddac44c89c893d3b198bf022c45
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5f22a5a3b83f537174d61e4b18b1143ce798167079397eb08a948c39f2de089
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6736,8 +6736,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3631ef40474f6f7327132b6715976b7be492c7baa66d3b151264ca92383abfaf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6445022fbc6a92a0877938702c7d8ff2fc8f80473dc2868483c550c335ad0b38
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6765,8 +6765,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 356d32a653fdb6c3762703feeea1ed666f68db0ab64ddfe1fdd23eb50276b2df
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5cce476324197b664f08d5e640b9ba5811b2cd6c27c83fcc167bdd21116d5b30
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6794,8 +6794,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f49eda4c936f0e1d11940b039358c4afb2c44e4965c6b947cfd20ba114471a59
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 773925bf5dc15ec82680ef90c1a609f4d210f3b1828906fac2ed2b433c92c956
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6823,8 +6823,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba8595ee9be7b996dbbb44bc5cf29ada4952e873a048d73a1dce8138530b73c6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7aa1c530d3d784aad6db14a50f5da16866a963fa6ea3c2139667954b997a4e8b
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6852,8 +6852,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6fb4a4e023b3784a12990b79d8c042cd33f27195529132e853ede98924ac4126
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b1cd2427ed6df30e66edaff831dfa33f67214918c121908e245cbaf56b436b0
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6881,8 +6881,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b73cfec0d9374d216f339b98fcedecdcf70fb37170d738fbda11ba2a652c8b98
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5b251f3845aeae3f9e9a60267e9a105ef2894159d0730a6151796d5537123c2
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6910,8 +6910,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8efb8bc6fdf286dcd4f78cdc2fd76dd760b13fcc3fd068cfb3475069572e42f9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6dc96ef2793a5293d34a26be9afbd4d35ff4cd1109466340067f5677ad40b261
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6939,8 +6939,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee581de565a5ed27957d5109c4485444b2b49d339db6e9e1fbd32c3bc0c96cb8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 19433809450136bdf29bdf3d0c5446ca2f934ee0dbf0d8a038b2c98aee92d603
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6968,8 +6968,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f7d87f32980db1c3fd2e17b7407f7e0894e310093f31f32f9b4b2069c8891cf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd8385a1ef83f5ae2ec783eea2a73f0eda2ea6d86e85abdd46bf28e29cddc44c
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6997,8 +6997,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96c612633d6572257c1cd815a3eeb54ecf8c4037f2c4efd9fed0ca564e31f972
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c5246a76b0f0d4092ab802113d4446b824e0ed8a9520037a4f75b4335807aaf
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7026,8 +7026,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 916d44cbe8058eeb31f6850955280f75ed28d3e4a790be6c59249f210033764d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3dbb0a9b68901904fbb787bebd6aacc61f935ee15995b0ca542693fceac4f223
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7055,8 +7055,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f6d79972a547b36b7476bd9b7e0dbde8fde1a5c52c7d831404fa6e39c2a91d05
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 550d8e3ff0b4232056a6a54cf83528f8b06bd90d87d3ce322a93300b19e90d9a
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7084,8 +7084,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b862ebdf25dfc208a53b48669b60c0c248f1d750083f3049948733a6f70031e3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1079bab79f8f9e67224aaa5af305c3f3fa617f2b918890ce433455ac9fd6dd01
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7113,8 +7113,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e29bbe173531bf0cf3e058197019d8c833dab3ec6529972aaabeb83d455ce169
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1c36b3c42b018025406c178fdfdf76e4f0d5cd361c132db6a6635d7de5902411
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -7142,8 +7142,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7cdf6d288c25511eaf70bd764fd9730a524bc5b5c2ce9b09fc1b8c84b4c7eff1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c48dec432b030297303e44e55567c929f4ac91f72d7c4dce473971241e7c898e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -7171,8 +7171,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: da8460ab2e4d7ab2c0945ef4daf2434976d0a62fdd9045b639bf355710ece4f5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 60ef89502108c7e02333979bc73ae60672e62ebe592b21215ba99209e507ca12
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -7200,8 +7200,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e28e6972a4bc75a49824cf693b4b1f99dfea74df8612d552c5878cac3e2ca49d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 625ede8b685c4b11129e21df41d016a3264381252ca6b80c75a38cd9066772e4
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -7229,8 +7229,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f53c127dddee199f6c0a1daf3bb770358e4446bdcabc68e8cd58511f903911aa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 18e4ca10fac15781045c602664041e555d70cdce86f93ba19922e5851efe7e7f
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7258,8 +7258,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 91ae124231d56e3731bf867db61314b764f02f85d058b4e7d2ef1614aaed0e00
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b4c398272873641bc9ce216a29e35d075d52fbd3313bb2877d7dc34c7227dc5
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7287,8 +7287,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 73a95031c664f5650faefdb2bf91214cd3b6ff706c72edeca6498fecad3c8464
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ef32dcae9081624df3965b97489f6dfc11dd7975bf1e18650067b92f7a276ab
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7316,8 +7316,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 862be28bc5d489dbe3efd15861632427f0a1d059629d96f2a65844971e1d87fe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fdf0bdbb1bc6fb9819f3da86e927623dbe5b1da6a3bb4da170c8cc1d19a4aafa
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7345,8 +7345,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a9b84cb983598fade0b1b1abbcdfc44aaea4b1df783d0679b404facd4da88997
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c62af06be78b9906d7c6312146f3933ce5d2d320b4fedb5f713705f736aa9d11
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7374,8 +7374,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 529fee4b1616067e9b0b4003db978449d2dc55d17e9d9c6e077bd99a7ee08559
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f5a024b4023848036719dee9ce8f61d20dc87cb66986777e4db0978303388cc2
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7403,8 +7403,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 98abc59c9dc430f2cdd5d935a839e17d19e70da9aac5b3ba8859352ec1e68822
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8fe8fc03c02fb1133b628d9bc40b1624b73b8f51359e11d1eb45932ab154e28e
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7432,8 +7432,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 90bc0df334b3b340ad67b1cc3d192501d2344782c196adf258e86b4598400cf1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68e831466da89a32550253e3070e4698b0c3d7d9c65395e00b86d96e26f65743
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7461,8 +7461,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67e67812a00c9b4614f59131e76032640898f715a9a82023d00aa0a6b7550b57
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d8be94dcc31946fc1c72fa62edce4f87c635da27b9660082b4bafa215d842b5
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7490,8 +7490,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 30143421a6a6c0b91905c32f37bb7dc83e080aa916ec1a1b89946ad829ca0369
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe2fb1647384233f0f036edad66240895f18ee48e18aa08db298aa890697749d
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7519,8 +7519,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c8d2380ff2322317429e60701645fba789965a2d54af20c3006a59b89255f65b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39aa928eeca73aee4ee39492481e14fd29868cfa1f8e2bf0789e5051f254766c
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -7548,8 +7548,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee1b2c1b75e81e29acc27e136fe38e07aa2ace3f3453f8d69aa940e65fa2320d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7cfecb3cc95f639a14e76091094b8137e88411550d238e3d41be7396ba4b303
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -7577,8 +7577,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9a0db591e474afb2c097ba129556049af28743bf3862b00584c21e601a92a545
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5cdf8d33d1268ef51de2260a3df902bdbd55ceee222b439a718936464d2bf302
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -7606,8 +7606,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c3d24bd218f18debe473d85ff8dba19b34f6a5b86f7b5421d3c9fc7f634ce62c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6ab63ba6203525d3207777dff0ccfe978123201219d777700e4ba2d232cb9a9
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -7635,8 +7635,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: afe1b60efb804f6bee988fe30863321e2c14f3eb64275bcfab0f1663dc9239e4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa92eace5aa34fe4219dbf66281d0adab79581de43f1757a6ab667a0c9338fd8
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7664,8 +7664,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: efa80da96e4f3a621e4d4460d7873e2653797aa34110e0115beae8315dd13ce7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bb796233b41e9fb5f532f6a264899e6125794e0d4ff3b75deddb04fb1fc4c3b
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7693,8 +7693,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e1c503f070ab9120572cce82046302522bf5980b5ac431370e93cde717ed8c63
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 37dd636308d08af665cc22954c78d6bf97bd7760e32793a096d2eda8b3fe4f90
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7722,8 +7722,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca1f8af1ddabb71e2c9e83370cae5b65f2b909c269779b4515435a8c4d3bd0cf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d08ab5fe9790b23da8a5f2070386c7c0c2ebe0343016beb4eac63752f481b8fa
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7751,8 +7751,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a41fc38f26049656970ff02eab9c0fedce31a249275b867047564049f97f5551
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 864b1fddb1867db9586a9e4588c05cc1d3d546daab94412dae6011787c790d5b
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7780,8 +7780,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3c135d26c672aa1d812c627eaadef8424c079f62be847eeed488328569fb97d5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a951d91114200ae152ddbe2fdc3add02b54ea8a15dd15279c58c5a9048a23bef
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7809,8 +7809,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: da7ce2f6bda85da03cdd238eaead10a77e1535bfe7537bb2c8a6596c8a3f41e6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ed9f10437663b77afa4259d01b984fb0f1fa6a52d3a484a97449bdbcbb7bf2d
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7838,8 +7838,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6e064f8f8cfb3fcde27e80d70c1d31376297145e0019cdfaafab4dbf041013fa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f3f4d90718be0c946b08de281cf90ca77e7c7e0592d111b112f635d82ad6ac8
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7867,8 +7867,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b56f251ddf6c51df6717b96509fd8bc75e351a9c9832c0a33617f03ec2b776a7
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c163a9defed11b61f770c31d5c13bbde0b4f7eff8c26da24dfb0f394db1579c5
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7896,8 +7896,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cf1cdd95d7bf272758541644d170487c6ae2b1f98283f78d29cae658369e92d3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 684d9d11a00c551fca229902c5cb9bca58ec4ed53c77858ba1379138d528a83a
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7925,8 +7925,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f292b35e8c871a9de98ba6be5d66cb26a51b4668f2f111b8d6df9255eb626b08
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 949471f82ba75a45e65b748c13830c0c232a096589041af5aee5e218b3bd098f
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7954,8 +7954,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 12b9f299eb4065b56a21cd6cf53339425a08eee43e8959f88d1b52738ce4315b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72cca03fd30eef677bf85f53b553654e2cbdc58a2254437942ff7ea3d0d5ede3
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7983,8 +7983,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 25678932f39f835f1d6ed2bb17de52b1c05a554c9430bd9689ab5dfc27a43b9b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50df686638d8550e2c5d3ddd8313ea41021d26347fe833b67322f0121195b9fd
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8012,8 +8012,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4dceb7d03b4f08ed7e6808212255ccfaf1cb6d681e2fcb728276edd164045359
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 74f0cb35a7e90217ca2624b54348711baf2f59d15b852f2f918e155e0f16f7e6
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8041,8 +8041,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f98e2312dfe3d21d0aaf55a25479820f956006a42071dfd837f88f15dd30ebf2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e831ef8863ddbd08044569db0b99f68c55ed06635a7ddb3d203d1f4af6192a91
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8070,8 +8070,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c885b3bc51d5f9ca076accef77598aa438267756c371e0812367809cd304b61a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e35b8d6a6d60e587c8f1481427a9a2fb5c132583ad8e88ef5e7acb36d2d305c8
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8099,8 +8099,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed0baac34984d60e48fd7ff43e36177babfb1ba2e53b9e7d5ff4bbe4858b75c2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe50eff8874acab9df521db090823a72de2bf38333d715d0b4d9522c9fdb3a47
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8128,8 +8128,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5b75c634663dd89cd56f2c345138e46d52ae773c86efff73a1597912ea9d422
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f28fcbb2f2fc6fe5b328f2af349a4359c9ccfab2614ab370639bc0c82830d86a
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8157,8 +8157,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d236500910f8de63a04a05e6c3a79440ee1b66e7767bbb3cdd01ae38270a8a71
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 86ee6d9d23bbf481a3eb4b4ebb0dfb37111acbc855d1418d7900667892256bb0
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8186,8 +8186,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1dbb397f1f9e7604602e80819f428d8a71ecc0aa4d4b6c04497c8a0089bf9fd9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb4a47d2247555ab2364daf9dd5d0b07a0e3d43889b95700a852928dc560bbc1
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8215,8 +8215,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d941be7321957526af8fe4e9605fdee257d83cd02e893231ddc77e2dd12490c2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7113cb4aa924b809c4ee5ed32040dfc3e952d92bc5eb17e0da7e803bf36ac41c
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8244,8 +8244,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a234506dc970d84f2e754ee8873257d15af23ed10350a65ff1860eb215f4008a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ac8b60e9733a1608db6fa30e43cd4bab5782734e21a7aff3928643f55dc4b19
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8273,8 +8273,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a627b31553059cf0f1ec51ca1626f5485458af4dada0dd974865f549c6884eae
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17085d9727344e9132916d8ffc07f58bea1bf616512e131176df5249a14be005
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8302,8 +8302,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 366dcfda07d7115d733ab7170d673a74578ec01596eb9216b50ffa312277a524
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 988977f1e38945d0c0d9f1b4734687276bf91f6466c3ba7e050b5cce29d4a45c
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8331,8 +8331,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d1e5ebf91e21cf13516da8d537293b01e58ab4899b5d0526c62a3be288bafc1b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 521a5f6d38e919369dbbc1f101c8a43e2108aa035ed714e0bbadae75e73b1139
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8360,8 +8360,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9176e3c5b80d4d6085817b7bde75c0376c96055097acea3282b7d352b0d3bcd8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e77fae3afa104ed76a01b44fabd33e39e9b1bcec9ce0464d6cba65b4e683ddb
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8389,8 +8389,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 57e48f1ff1ea84ace203aaedee759cd40e9aea3c31181e8e1a9a85c35eb8d3fd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6887244b72c25ec082da88310c7f6c2bc2c5af8bc129fc2b84f1e95d6411ae5c
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8418,8 +8418,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a193b846d6042050be5958084bd96fb9c4a08634354022dfbc982b2442961379
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb259f1927c1465389f446fbf53206e55cc928abb1fc4982c690f369078c663c
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8447,8 +8447,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a11c4b2236d2f372f6f5e692cbf4bffd936a3f8e0f6ebda7e91f383cbc7a5f1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c22bf99f5ae7edf49999fc3a0141309c71c31e06586a209058d85b43baff394f
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8476,8 +8476,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9e05fd95962cf85e13589be4ce34c6fefa40514ee8e50ee11080caac482cf37
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36fe4a43673ecf75de29feb7421cac8e99e20bc934d96f6651b19480857b9c37
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8505,8 +8505,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8f6dd3b4855df6149379815ed8b450a1347fc0bdbb96b4924d5bdb2bfe278758
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 362f6e1e1362e2959a07e11b2250098cf8fa373287e600fd9436ec4cc6083a9b
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8534,8 +8534,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8116aa49bbdb365887e18ae9632590d89fd76a91c74da9f87a2d84d0bf5872d3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9632a0320384274da759ae64f325f734315582646dc4701acdbf85767a1282cb
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8563,8 +8563,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5445ee864731ca6c3ae1d065af55511aea9fa4fd82ae2d640bbc298a84f925e4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67e2bbbfc9c57073994447aa560722c8feeed5a3efe3df2e66ff0bd9cc707310
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8592,8 +8592,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa9746c649a6c25a27e3d4964322a0958c134d524fd24edce243b0e090ed3c01
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b6cc55a4a9683e6e4cf1d7ca877838f41e16846b3c251ea4bd7dd634edc135b3
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8621,8 +8621,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f9f0df1a1b3684286df34a724e3bd1db1281d44fefd00ceccde1146b7ff033d5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8f407008b7feb9952d9f7f6a29af30dec7130ff286f3f3395c3790b308efe40a
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8650,8 +8650,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3ebd07d09827ffdf4d3ebad6f4f724859038643dfa761b3e4e391686f6e4c86
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b782b7183e85ada3b05761a9778a5186d7f3cb49d5ebedd7bb755a0e10aaf97
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8679,8 +8679,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e893c373f0bdc6650ab47e7da9c8bd424f536c1eee253d25cea6e121611a32b9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5197b6cff00f578bf86b9bfaa96539dd62417e067f5263fd541364ecf4f75128
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8708,8 +8708,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb2ef78ab400a8bbb780d28b34438bd6f2adcc8ac08bc7dc54fd958bd9cd024d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58fe6d86c32f4c26bb8742e7dbc0f13b1a117e347673c845f67dfe6f5c70278e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8737,8 +8737,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9c2cc6eb02cf3719723bd824d7d052f04c224ad5d21d5a878016333dcc2c0460
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54a19a9264490d70fa808cf93b6d6c183cd2bf60b285cabbacefd30dc53b0946
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8766,8 +8766,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b58604c5eb9a73c5a7671a7c2cef894bbf548982eb3ff87143ed677e657b55ba
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77b508e9e0b785d574c5a14756c097338c13a52b44cf06cdf1303b53da00a894
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8795,8 +8795,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e2e6ebc1b50ff7df04fcb919ea398c79113a452888bec108e8ca96bbcf8141f3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9060fbd892ede28bdd710de293a45ca164c3c639293a23d734762c0402e4423d
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8824,8 +8824,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6bc4b170971b7a3f407c199b57659af49b77d73daa7bd1530bda21d8775759a3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 345c56efaf0ef935588ef213bee6a05325e491e37bb581446bedeaf3c1bcb0bd
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8853,8 +8853,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e9db85b2bc4feb9afad45e4502423702e08cef063ddc03f038bcf29eecfca652
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f6e23c783c16998851a9c7342178bb9dddd1497eb787f70de557121f9aa145c
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8882,8 +8882,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 970438fd5a203cfb48a3b80c5c302ced4f76e9a8fe1b6774f0036e4082b0add8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 146377ccef429ab824ea5c6677eed1259cdc8e195e4e0efcf4eaf9f30723baaf
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8911,8 +8911,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a7209d5ab5444ac743e46856d5768defec9ad4dbb057a711256081198a5dd9d5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78723fa5f100b739ab67bc780d6afa887bda3be808affaa21a4de296b1fb9be8
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8940,8 +8940,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce9ecbecbcd0bb61a437c955efc465cd00e65e88f8bfc174f24c2475aafb2a07
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8362c3629bbb5b212544ce6628f31826953b6a0867fe5bb2c5fc09d7de2394de
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8969,8 +8969,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 68e538b149d03ef83501a67bf16eaf8b9e0b96abd4ffcc4834fe301214ab7416
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 98aa4a86124f0eecc64880a5746fb59ff030e82c1396ecc9a79eb1ee4d651d9d
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -8998,8 +8998,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab41d5966fa76ee290b87d7229255ebcba98614ea8c3a7bb3d20ebf24ad0eb1f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed5e58971d292c43155341daf25e1ce19123692bdea03d8dd50e85c422be88f5
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9027,8 +9027,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c2019a076581e62e3aba91a6cd44ea5e5491c69dbf2256329f21cd1e9a378ea0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f4029c3738f9e4cdf5d93e416c8a6d27586c19c6bdc0f599171bbe4f4fb127c
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9056,8 +9056,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bca8c6a96c769a9051ff9613578a6416b80896b31b6bee91c2bf2ad8e8e89eed
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1bd0ee9d34f88f98d7896b3315352dfba766af3f0fad69fc328d7ae5df06dd3f
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9085,8 +9085,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 06ac30fdbb51dca4809031ef8f9b32a8133ee0fa5e1875004d9c500bc4c4e26b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5dc2e9ad3a6218d387752c569184e92bb5569783f0ba1a2c460fd0a110d3f9f3
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9114,8 +9114,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: edadce1b3d278955a152202fb1c4d2ca21644d36d99754fe17eb05eed0e33b2f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77eba336aba823c6db4f7bbed533ee89dc79a4b050a0a3fe79fc9add57190ae4
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9143,8 +9143,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 33b97c0cefd7cd9d37bf8a2d3f22f3f1ff558fce1bc0a15a3dbdb3809d596b5d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41a3d5d471c04f23cd60decaf8517961778dec619eed0eb3bfe938c7b0eaa8d2
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9172,8 +9172,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3090b596a2ad555da82885bca7d74853acaefc752bc9b0f3421539187d97e9c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 15358c9b3832a9d02519ff2145a976fae99054764b8a72bf503e35e20c91d965
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9201,8 +9201,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0b4025424b27ae984a53f2512d6e9a2b73b37c74e5ff0bbbf9c49baac3518447
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 431ed06132cb28364dce007988859eefed88cd5aeff6e91c3fd94c36ec38fe5d
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9230,8 +9230,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c9987ce4988ce1000078ae6759624a4c5087f3bc7cba888f05afd2721e7474cc
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31e331a3ebc3c4605d31c446edd264a5877b6664bcacb74104d2950e9cddbeae
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9259,8 +9259,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a8f25f48f3c74eaecd23407f36c89e45428b2a441df90ca2f8e96a3f9607bd9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f924fefdd00bda30550c339f87bb8423e681608f203af334e68c85cfac13007
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9288,8 +9288,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 39eb3e0170ed4de12da1f1841d8e72f8d7ebd761cb9bf8e9477ada0ead358537
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3beac9387b1e79e07c54f649ab339abfb992e5f89bd74339e4e3b31469eb4822
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9317,8 +9317,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67d668dee9ea8239b9d0e250111c795303e2df736d7fda0b3f5dbf7d3bb48d6f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d67a3ddc465d2e4631ce0100524b329284ba3e4ea864db249ea5720f161391e4
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9346,8 +9346,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb8c0e79abb1be2db834a24f059c07404c250888ae9694960c902c203aadf0a3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 393899aed56965a968543248762855435d3883ab0d7e1d2e61a36127a078e5e7
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9375,8 +9375,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4d6dab08a812f291e9c760eef95485c355d2b3558727328c804afea4d1fcc8e5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00ed18d378ffc2b96f489a1583451f8bf919f249511eefb7f89ec309d420c9ed
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9404,8 +9404,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 00f6de2ce5e64e76d2e7f93d01cd71111bdc9664ca41745cb3ae731a43fb1287
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2cecc9a614e5c4e54ef3c144305613c27d23e16266497eed88f8a5efb14d3e8b
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9433,8 +9433,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d5de994cfa1a111e6574337b1116fbfc699f94495a69c90541eb38e12b5c36f1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7dbad8cabdb7680c2936708d44a86a738dad31d79cf8fc442d6e7a480cf9855f
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9462,8 +9462,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 023b25821dda7075e233030cfeab4ca288932db84a564fc7c40ea6735a0283a3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ada50a1d2cb2ff92f65fe0f50086e2c1bff8882ff3d7e1facaa67b3f87b84c96
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9491,8 +9491,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bdd49148aa8f9e135200757f76e64aa84bb98f0912318b0b0c7ba28b83ee32a0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d99ec026b0f2339de1e1348c57c2eab9d1278e257bde648e8d61cbde3b4cda34
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9520,8 +9520,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 619b976e6930ec7a68d52fc7a1c33c5587b4ca6cfdc33e2ee83b8a9d7627419c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 907c337f3e0172904ad4f7b990459ed585b912dc0314b4949312a0cbc3822b10
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9549,8 +9549,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a36e01aee2f6a87b5b46f871649022077b90746035eded534144ff24843bccb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 428113c216f3fa0c1c7c183ad0ec77c3f064b7e87f15d24a78c20733720e750e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9578,8 +9578,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e34d923244c350be38368103c0974cfce2da39b52651e4fbf363574426eeafb4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4df112a9a64dbbdf44544e516f337feb9f57e7a63345dd37aab363f9ed29178c
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9607,8 +9607,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d886a3a9e5da5c8ac3029db1088246d2aeeb775daa8bba229218e213213612dd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c2bc80d32fa18db1dec7431b47c63f713b28f91a1d0d5dadd9bfdfcb6d0fb8ff
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9636,8 +9636,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7c4034053bf7938ab7f0df6369946b8aa3e4763c62f6f31cdb7ab2560e95924d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cf7719c1baf1cdb06963b913641dd2e6f6b0a1bd368e4c75a3bc715d879ea31a
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9665,8 +9665,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17b2de3a7557866df04937c0d5a90540ab97c255916cf0aaf3c725877daaf560
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b0d9c26ae718423192886377e128ac3a72339d987ecfe6f4df46b97daf6cb79f
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9694,8 +9694,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b62d025559f65bdab34057f3f0af9cc83b57cb70a968a50fe164762894d6f257
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f7c4bbf02b5692c8f0df585e48a57e0d09f8140a4185ad709149a99e0eb12526
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9723,8 +9723,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 34a742303df7c3472a8d031b0be2dc009aecf1847fdb96ec896e88fb252920df
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb815c93962c59e3952ab3e56b21ae59caf0eeaca1bc7d277e63e4b21232b7d3
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9752,8 +9752,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e7958d0a96e722f9be336bd8cc1c0c941af6b86a13585dc1280cb253bd2b37e1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2f9cad50dabf3ea610aa6c7e82e93b3d66d41d141623ee3f1e301cb7b5ca1b0f
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9781,8 +9781,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e3627f101e27a9f859f9746fede19073ccc1cc2fffd734e76f5b7e6b4d56df3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65870185c2c02eafbce484e70c84ff2662d9204362a0f06279a607bd1f214970
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9810,8 +9810,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a7ba908e7fc5a351b9975d0ce7331f6d8f8e6ad2f4441d8386cf603afbe98683
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3e595d1331c4450bc77a0f09d976f8a56e6a8f62c32b494ae19923a0ce437964
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9839,8 +9839,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f59e25130628ef1b7cfd074ff5a13e37935f305dcc15fe4ee46c40e2242156ba
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ccef3802250229ca2fdc4f1d9e929370fa3d89f33a45b8cb7bc0cff30bc4365
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9868,8 +9868,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa9571515571940598440b7b75f898732461935a6e8f9f91a3f9f9af759f9d77
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8519e3034a12fb6634eaaa392e4b971c4942b4410daa373a1f62070a19fbc269
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9897,8 +9897,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6d76b33125420b31f43665dc91828e8da92e57d9e6e27f5a9e964961f3a6fae1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78bd8fde88beab051a94eb4ec96af00433473e793d62482047dce665010ef33c
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9926,8 +9926,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 124c4ac87bb2977c2dd2ef4f1a385e4ee8b2c5f01634397413e06eded635e4f5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bdd236e2f83ce734ee7371b9ecc84925591dc92d4b15721656fc3b4ab80b7b1b
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9955,8 +9955,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 31c83469da1eb81714079f5153f45ada225af2eea7db94e04e0f2a8ff2e23bce
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1e23e377bcc54b29c04174405380b25f26ce25b8f9fa226fd61da998e86ad409
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -9984,8 +9984,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a55d546512bac22d0d70ea1b69a93b936aba362f9fad184db3130804d3477597
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff8dfc48d50f9fe6479657bb14a216fd6986dc3cca5ec7bae34901ca9cf58f9c
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10013,8 +10013,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ec4da2496c5fed378dbe9f50f95e185c46baca21383e2e915bbf817615c2b21
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11b8978b3ef60c6503c4784487d1516f50c88546ff4b0ae3ce855821265b16c7
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10042,8 +10042,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 752425869a08d221613ec297e2dda510faae0ffb283a48ba86d9b22f231b1223
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2386ca69b333160f73df5eafa64483016b0f7da0d4e76d042907dde32408d502
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10071,8 +10071,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7b40df24d3cd777536c31d37b280136f432a2224680a376b921f14e72b6c6fa2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6bef7bbc33d36d7195e658fd7f933a0a94b726f98ca88badcbef3eb50c2b56bc
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10100,8 +10100,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cd8573a30c5b33637259885c4f313b8e7d2ddb8ac9d185e79b598c274fe2f5c0
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 85c1b8657a54ee4bcd4fbe0d93614931fc4193d21c7eac295b3d02796b9137c6
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10129,8 +10129,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce057635a0a97141303dee333cb6a9ab96eebcd3ad42f2b51e1bd173ce34f05c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c7ea6823d27046252744815157d22c1ce55685bf71d7ed5034a1302f7c86f24
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10158,8 +10158,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9262a00840ccf1e8cb8741c0cebb17bb8bccf8b74111de9e46792f2512d1c08f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0cfd9d46e1a6ac19a47d700e62b3d442aabf3e1ca5dfe45627062b1fe6afc0d6
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10187,8 +10187,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9fe25585e7c820967b79e7fa77bfdc7c92cc00e7e4ee43649d7db8df7dc8c2d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d653272f7aa22038609418c07284555c2b5a7d2c1cb1f1aa020c149e801ba147
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10216,8 +10216,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c01e33ce8deb75f03db3f942ecc378d9698f0186fc636d893b090bcdc3550eed
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e97e95d70ba5bd4a8ac34be8f5edf8386abfad467aa187eae2cf4baa126c0a08
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10245,8 +10245,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 24729e8184cd21e9e60b38bc3de819f4ce39b44d0b188ef9371da3488f7e3de2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5db1244de5086891157fba472368407fda63735df0960d17336cfdc35abbbeb1
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10274,8 +10274,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 640727e313ed46f614c0d3278f7f3b4ddf60e5b2db787fa6cba2c8310916cc7d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a9ae6d9aee8efad50d08e5b3440ef88753ad7b1a1be71bd808e388a51ee60d9
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10303,8 +10303,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c7c5ec1496b389ecb4cab728d45b2b87849a56ead357931835bc6803b1800a2d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ddb69cf8f3463aa3eb2bfef5b05cc8c3e4e4f74aa4b0531b2414d090f8fc5b84
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10332,8 +10332,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 163b51088c42e2be1e683868b8117863d7716e416f49e500b4c98cf3728a55ce
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00c672b2080fa97129bc9dfa8ddbb9320b5387ebcf2c6a8bc66dd360d3fa181d
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10361,8 +10361,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6326aefeb5984c896d8b72325cff4b43e200b279b9f0c2b76ff698fc19d4ed84
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9e886a501e2cd77a4bfd94c5d303aadc9ec4d867721996a042d7ed3e5018e60
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10390,8 +10390,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 357d3048492f0beb7f9f775bcb680741baa7ed80c41c92cc129597ede260654a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48ef88b08bb40f3a51b13f0a3915a99ab80718777694583048e54f0a23d325c4
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10419,8 +10419,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 51b566da53fea35a3be35e8bf3cad57639c2e61a9b91d465f4e6acf8eb59671c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 946fe51842dad56254313dd947b70ba0255f71f55be2fe3f081b4fa330b1c355
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10448,8 +10448,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 47d18a5bc5273f1216378f39d27ad1dd8a07d9a017ae91562165ae3c2b78d978
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f08349a2b10bdc5b0a6112b4556f9fcf17aa36ac6319c2f2a941b2feb0c10ac0
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10477,8 +10477,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2b15675076ab79ac4305ff9f881dec166381bfbe6d70fa64141b59de8ae54258
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 46a3daadabc3e9f336ca0f85072c15985e58f0e0138590ddc0a2a2ba84818a56
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -10506,8 +10506,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ffce73d856a66449f25cb3b42ec03cd6f891e5826b934cdbea54ee049b7c942d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c1bfec4e38ca30cbb11dc205ca7824ece4d463eb04a2ca11c536d31685518ea
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -10535,8 +10535,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8727437c989936bb75facd3d04e07f1e384ec727543fb6daeb09741683cd499c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cfbe519a91a2287783b998c31b052a1aef1904f8afdd3b2fc8988c9bc242f3d7
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10591,8 +10591,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3c71e402202a3a07beaceb157929e24d409a87ac8275bcb81ab812ab61c929d2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd58b95474fe41b30a5f618e914afe0ac9657619b1315fdf1b0d94511aac8c2d
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10647,8 +10647,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae65f56ea9d2ee103e93a99400a1feae2a29f96ce0dcc6832cad388c4f3da5aa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b613603e69eabe44fb7a03023beddb03892ede28d46d750e3068afd6c790e48d
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -10676,8 +10676,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 759ab9974f4f0299296ca202ad729b68c0854858282cc0f54ba18aae05d0cf46
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a1a5c05c5d653e3cc609c5afa66d2e44df01bac74f81ad8b52a98395b1e8975
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10705,8 +10705,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 578e13ffba203c22ef61fb0e15c7363242c6d9bee10fab3fb14210b3cec7e7e2
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36a224ce252080914d9ac09323fb62662ba3e9cf9b5fd5df43635a529dbc7318
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10761,8 +10761,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5291defcca80651e86d037e77243e5877d1295db4142f12a72139285f18e37f1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3eee968d9a69575bb858557a094f12e52e93254998e83d6123cc812065fbef9f
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10817,8 +10817,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d5614def4fcfb874f9ab9804b752e3e5991f2181c81e736f2428a70fff99a03a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 372ea225efb9c944285524f448cf29b48717060d742cf282c148b309a924e71d
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10873,8 +10873,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cf5b048f33861f050af4256585c7f2de14e0c2db360bd227e3323e12a77a5ed1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2bf9d7562e8c2bccb3270d22d7a5c93f7b1beccea7c1bac50430985b1b0968ab
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10929,8 +10929,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fd6ed2cc8396cf621a510dc14a570658eec06754bd7af58e8248089dd3998206
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1e6a76c29965ff588017ca77add42462ebe9d7dbbd63b80b5676ddd063da0a52
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10985,8 +10985,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 103de6ba2e4f1fd7e38a73f547ec6e1744d25c03d24a967e53830308d25d1472
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fcb48d59866072dd9a4bdde45d8bbc3ed12645c65be8126aaa96cb11267100f2
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11041,8 +11041,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1bad902e6e66fda88213e7ea9cfdc7dafccb36b67d89c556e7fd43e8d9d177aa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff9bacb91c4404e21e3b8a8b7df54be5736546e2679fedfa3696f48cf1bac7f7
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11097,8 +11097,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 185b85050833a53555144c9f2e03be788ac17be20791a7d613709c11103320d9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 700b50e94d83376db53c7a39bfe7efccc4783b8a913fd641ca0fd0517efc1523
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11153,8 +11153,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5a92aa958ec9aaed09287d5d4f119164ed79074eab23fcb07c273941060ba70
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a45efc67672f2a660779e67918cfa2309ed7d564c3d3db833655cbb8ac2c39a8
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11182,8 +11182,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5273708aeaa5796ade383995e768a4d728e8c04eef960e9d862b411b9ba6f11a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: df7b00246c0d48a1124c01b07a29c37619aab2d6d11b5dd9405e772a4bba5c5b
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11238,8 +11238,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f732aa93eba713a39d9c557aa581b5aa772e02626290a358b8fba8549ddd4116
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd93cc4d49c5b43f8534c727fac5e4609ed383ed5bf0ccbd5651e102810c4a41
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11294,8 +11294,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96326f8f2001b5be966f240a54922603a8e5ec10dc35f6f21e278e3a35a0c17f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6bd7da37733f905dcef8ec7dbefdfbd907b28659c9be4e0cfbb76916eb2fcfeb
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11350,8 +11350,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fa3fbda93eb5a8d624000e00a09d792c6a4a37863d8a6d26161c8a2566e28c0b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 007274d9bc1aa6fa72938e2b17f4b80bb0caf804d63a5f651760fbb1629157c8
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11406,8 +11406,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0bc2aa733c9c749f5088de71d8ef0df9656404904705b1848f6ab201d9651495
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 228e1ce011dfcd5d3466a4d431e79c808574906ff22123797c026e8d9588ed95
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11462,8 +11462,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17a454a11cb86b6b65beb5ce41c34f06a3946764b90e7f89af9d3a5f8092e63c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1320268cab86e68b71aaed6ad6082065e649d72462f76ff7f60c2d5cb9997f9f
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -11491,8 +11491,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5d9ced54f5d1b10fda64d9df4ffa8445c6e0e35bc578ef530e13a2fd54d1542d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: adf18339594e270981caba23db0750d425a823368888b12004147f9ea0d6d589
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11520,8 +11520,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67af28d3341285674eef52afbbe4cbe1ae3118f2ff62649b0be2973e5bdc552e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6684a60284ab74bcbada8316beeb110c24e9c0afda5ead44bce37601c61b530b
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11576,8 +11576,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cf014aec67174a95b6205ea37bcd0b4dbda55ab0a7bfcd5b8e6d4b239ade9b42
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8fdd343c5793d8653f89d1af3f33cf0baee4b685ba616d6abce278e4b1b2ced6
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11632,8 +11632,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 055e0488ad5ccc6c87ae169a6bd1f1da0a1e8bdda45fb73a89a0ed1b7127c670
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b9cbb93db3eef78326e50305c71529a9bc114adc487a42e20586813a4fe22e73
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11688,8 +11688,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aad2afab854977a7766142a299091bca42afb94a8765e909ab224fd469c6b78c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7255f4045ae62d0a1089c88c8434f98b7ec0988dcfac810d209446c586740830
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11744,8 +11744,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 58a27f925164bc72745b305f5aa8ee0fcb74168262c580c4b60d540d6e1d5840
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d72ba919de6abdb8cf90e66837b8addd14e311d9b3b4d146ce5fb7223b14cf35
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11800,8 +11800,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d02420293b2b0f638a65589d72db0371aff8b18861627e56c3f6c16b27b9026d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68ca7061ecec27bcec501a4fe6f5f3bbfdd6bf81856857e3e3122b589ac93ae2
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11856,8 +11856,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fa369e511ec04ce1ba82294869691d03b61dde4ec443f60b2496d34b9a34b87f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 824cb7f4e633cd487edad7016ee5b5359cfee8540b1efc9bd31737452176a282
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11912,8 +11912,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 36bcdeccfe01fe9e5d986d42ec795cae172de0c4001bff959191ff1c1d0347f3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1fcecb8c4b6b4d9f8410917284b0c5d461a469c79124b35c3aec7918c5864657
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11968,8 +11968,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3e87f82a32ed90035f4ba49ff1650c20349f8d5560d6020e78e14f545accdd4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f8da8ff53ceb22bf29d0000c4f03e541e75a44199a79ae8c9c964c590b576cfb
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -11997,8 +11997,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82f2764b59fb03fcddce56d85f1dd5dd9d580e176684d1ec8bc9ea3b5f2d565b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4e707d9eeaf3d8c3663e006ce137d06330469f330c64ef4e190d89e23748127
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -12026,8 +12026,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ccb784e25c39c83ea5347cddaa49e9c9d505408e01d279f55106ce8a2e86eb01
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ca1e3ed6bde2f4dcdd97669b6dec5b9a960b666580c64d8a1056e71a0df5511
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -12055,8 +12055,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 505f3286c214242c3e67ee5eb20c978f9d33b1f16cff042e712ad004669db36d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e4cfc913506f2d76cad2f5e77581a69f48ca1ddbe3af5e46c6d6eb44946223ca
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -12084,8 +12084,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e436d2bba4df4de8407165df8d5b66c3dae1f58e290e3ec5ff64da0fffc10cb
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e164b54ea348d0ced2d6676910b15585e4f1ee784033266e38c977022b1ee43c
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -12113,8 +12113,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8abcce217f014fc4d1016ae4d96df2d4eb50e9ab69a6a63c463ff9e6eec8d072
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8fb83c228f853436449997be02ccae82d5e35f88dbb70b22d284bdf04c80afd1
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -12142,8 +12142,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 559535091e807337bafcdbdebd0fb040b803448a59185ef58a7ca4b3532c1f0c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb66375ace7884a745679cae606be3b52f3bad782dee5024df37b2dd8462b25e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -12171,8 +12171,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17aa5381e088c862d349130d14908b7d2796dfdc8a824ed6fe34fbb78302217f
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3513d7f9bae19fe39849c083760c612dd2f203781e27264c784cc1f681ee8bdb
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -12200,8 +12200,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af5b4654acdfd5bf8e1271087b3cc022743a6f863e0b031428791d7a4d86ee70
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 383ce80046e4b3efd95f7f68e50980d8b7f47c7c28e3b99620013e967b6ee250
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -12229,8 +12229,8 @@ reviewedDigest=
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 866ca2bfaa30adf5378dcef69585a42b74d0d9e04af3e777a45d36bc5f6a1230
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 57b368ea879d015683b91be942e82060ee4ff7f88d4c9711c7a365a909cf2ab6
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -12258,8 +12258,8 @@ reviewedDigest=
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 744aaebd583dad381d506bf4208c66d9aad1fd5b98486107d60d83291046f7b8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 600c8066fac05b83b30b166558e00839bf9eae15457de04251ae2b22c3be8d27
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
@@ -12271,8 +12271,8 @@ text=Admitted lines
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: be132d610d0ed90e6f4fb0a67a798ef88f7796c10c3470d366981e8a4d2e6ae9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c1480425334d08dfb98456f8710ac3d36883a9e39bcf47ffc159f2f9076d6234
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted form is a different number in the same table.
@@ -12284,8 +12284,8 @@ text=This admitted form is a different number in the same table.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a9f6c78de2c10b790bfe5dcb56a0fedbdb31d26d2b16237b8cb197256e15498
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a6507a9a022f370f27f3533cd49bd3ae119edb992bed33e1d15b0b7d50e50546
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does the admitted record show the governed contrast?
@@ -12297,8 +12297,8 @@ text=Does the admitted record show the governed contrast?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ed4bd34bd0f09ab44cb08db2be874acf60c2bc6fa36432cddff098c3651c27d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14eee7b752fcde27fad4607b0dbc538301c2aea9e73198f2413862eec5589efb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted form matches the shown number?
@@ -12310,8 +12310,8 @@ text=Which admitted form matches the shown number?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5a00d643441d9e493bf5c21d412761ef22448c7be0e4823f3e7ad2c9f64ac07
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6307858b036dfb935b816d3e5334835aab64bed2f80d2fba14995b22b3be1c09
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
@@ -12323,8 +12323,8 @@ text=Admitted instruction
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: febdd5a39b0f2d8e26cc230416b9ee0f69693776969e2d1d033b688fa61db7d6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 19b266411656255771b544e486fa8f237815a0a68f2d880e2624c8eadabfca1d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted form is a different teen.
@@ -12336,8 +12336,8 @@ text=This admitted form is a different teen.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f92f5b3b855928eb93910e651d0448d87c1d771d80513345c61c87cedfd52cf3
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a613e922dea4fcc4e96fa2fe5688da03fa87703158a8fc115f8f48eb187e10a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted form is the following ten, not the teen.
@@ -12349,8 +12349,8 @@ text=This admitted form is the following ten, not the teen.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4e76717143c7878cd8b816d2885b969cbdac267139a4de3d99da61fe91d64342
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3be6be4e6646013140d5038680ab73469aa51b8a687de370be8cfb2b0c56d91
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted form is the ten, not the teen.
@@ -12362,8 +12362,8 @@ text=This admitted form is the ten, not the teen.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 844e59a8f20630e74d927e178c089d2d65e599166fe9e9fca56e1db547bd982d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 163d53ce935b7a52991ed314cbb5a6077281c622d2e41d83d2a1d8b603473545
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted form is a different ten.
@@ -12375,8 +12375,8 @@ text=This admitted form is a different ten.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 77ce6f03f56cdeed4f3f5fd0316f4ddf745007d8d63c8997c0b89c12bd0d4ee8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 76f9d040ebe2ea06f78125a24ea31216237c1dde6f0216a9dcfe077c0de4a10a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted form is the teen, not the ten.
@@ -12388,8 +12388,8 @@ text=This admitted form is the teen, not the ten.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1f7c223c8ddc98d95778a012a8d15355e57f134f8b1f5f3c490e8415c336d6ab
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 834ff274c9011275723b2b2265f29ac1884000170ac6ccead2035b4d618a55db
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted form is a different hundred.
@@ -12401,8 +12401,8 @@ text=This admitted form is a different hundred.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 41c63a0af512a847f74b0202250485fe0a0967f1853e8215388e1a165588862e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cfd32ebfd5ea3f6fa521cdecc72e2a5a363dae65007965ce03b5048cf0f8a2b5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted form is the ten, not the hundred.
@@ -12414,8 +12414,8 @@ text=This admitted form is the ten, not the hundred.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ec880c0ea751ab8b8a4fb8caad3a7e7d950d63022ba4c1991625370d5c50cb4
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 142b3ffbe839025b6f7bd81e44749bc9bba8ade2a3ff3e7cb42f2ff051690054
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted form is the one-digit number, not the hundred.
@@ -12427,8 +12427,8 @@ text=This admitted form is the one-digit number, not the hundred.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 43eee71ca174d43be95a133b1d10d552dbb7b92a4239435b2af8ec245ad3f3ad
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 446b522130101c9f3f7107f621c10671b96a200eb39f3f828719c83cecbb6b9c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted form is only the ten, not the composed number.
@@ -12440,8 +12440,8 @@ text=This admitted form is only the ten, not the composed number.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b46aa41f61b317b62569afd323f47bfce554b99b7ed70eaf08c9d7bb3588b708
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 20e5ed05391487f207943c772f5a75a4cdf9ec8c0b1286b7fbbdb383e04d83df
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted form is only the hundred, not the composed number.
@@ -12453,8 +12453,8 @@ text=This admitted form is only the hundred, not the composed number.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e898b8f3720b1c6468535591b03f522776a01d52577a0b53979916165681aeee
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: abb3ca35e76204fad0ab4f1fcbbc1f12186b3b732c130b5760dd7a6fed47ef18
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted form is only the thousand, not the composed number.
@@ -12466,8 +12466,8 @@ text=This admitted form is only the thousand, not the composed number.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c8bb044c16fbbad242d3f3479657371e819d5d01d95471a56f9365baa0635b5d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13bd938451e1033e69b7caf54471173ff048483083ee1d295ac4177ec6187ae9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted form is the other thousands band.
@@ -12479,8 +12479,8 @@ text=This admitted form is the other thousands band.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c4f3b5d6f1235e13df9ffee9cf6c00670f1f75c6fe58aebe1562ce3fb353aefa
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd573e69115babc1ea038a968fb199ccd98b4ef23a6de0f26f18fb562a470e4d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This form is another admitted form in the same frozen line.
@@ -12492,8 +12492,8 @@ text=This form is another admitted form in the same frozen line.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e87bf84a82c83e69920443806fe505d895bd1a77e342779ad2337b4927abeb5e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 671a48f937bf625dadf7d75070ee401232045f87bc486e7bc923857b05e5100e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted form agrees with the shown word?
@@ -12505,8 +12505,8 @@ text=Which admitted form agrees with the shown word?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ac354f80e243afb391a597d21cfd121948c6c8d723d0d57db128e835ed5a0ff
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff51ee2842b9711c1ba1413f02276c15d21d1e035840ad18c16466d694638546
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This form is the other admitted form of two.
@@ -12518,8 +12518,8 @@ text=This form is the other admitted form of two.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3169177e265c00417ae32e197b528919b5418131db7dda53d95ed34dbed6dc23
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f40fcb7dcdaadd539a8c5df15f4dc0d2f59a89cb751143c6f9e5e816fdabfa4a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted rule is the two-to-four line, not the rule for the shown line.
@@ -12531,8 +12531,8 @@ text=This admitted rule is the two-to-four line, not the rule for the shown line
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2455e3e595e00ed40f39332d7146bda9f3e7b4728d66778543624648899b27f9
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44041c0bde17e897493ecea76eb43c3b20ec9746553cd0b4a8147e81ee6370d2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted rule is the five-and-more line, not the rule for the shown line.
@@ -12544,8 +12544,8 @@ text=This admitted rule is the five-and-more line, not the rule for the shown li
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 599fc641942602507a5ca14eeb1ed11ae913baef8b03164fa81455119c35e8a1
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4c93a4417685171665f2077e1b45a851f89b491ab33c856ea746dd50cb94870b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted rule classifies the shown line?
@@ -12557,8 +12557,8 @@ text=Which admitted rule classifies the shown line?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a13631884f7030c025e31ce863dcfb58814e6da9f8cdb85a548c03eef43b1229
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f47e20653320d2272811bc1b62a524d58b2c76987d75e29229ca5c86ebc73e3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted rule is the one-item line, not the rule for the shown line.
@@ -12570,8 +12570,8 @@ text=This admitted rule is the one-item line, not the rule for the shown line.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 40a01bfdba2bbaf97bd9f093882f5dab72895d0a03c78918e0b096c045e36f6d
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fecf57cf082dd7d23583a6bd50ae101a95973562dec36cb5bf14513fe5dbbd13
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
@@ -12583,8 +12583,8 @@ text=This admitted rule is the two-to-four line, and the teen pattern overrides 
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a7558a196dd962af4fc8996e93aa9a3d47348840faca0026283dba9b7dc109c
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3090fc32990a6b059cd48ad345887bd66c23888ced132bc7a99db9ee9086dee4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted rule is the two-to-four line.
@@ -12596,8 +12596,8 @@ text=This admitted rule is the two-to-four line.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d1b4dd3d1f4a8f963fe6a8d00e1d5c9eeaf16a1809d74359314ad16633b38d98
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0fdb505ce126c2149b874b902410d32fa2bba2e8b767070f9d1644bcffc19922
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted rule is the five-and-more line.
@@ -12609,8 +12609,8 @@ text=This admitted rule is the five-and-more line.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c74d678c45415dd8f415f8bf5b9b7b806696fce74dbace3bcadd9b6f960cd296
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 57145f2e8be082084961c9ed7f732aca3e1d942e8a34a320924e72ce370e097a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted rule applies to the shown line?
@@ -12622,8 +12622,8 @@ text=Which admitted rule applies to the shown line?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c53b8c77887c92e2dcb54850d202b3c2008f8b979f59a42c5143e4a19aa246c8
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb8c9a9063c4e92130b8f41a875d71a16bf5e6f838a72ce7dd002573cf8a18d4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted rule is the one-item line.
@@ -12635,8 +12635,8 @@ text=This admitted rule is the one-item line.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 75938d24f708e08e5a58ac0d37494665095c53f1e0abb41690302fd014ade26b
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc805358e31f25c1ef794d5d4119f5aa01798bd95f22ccbb5f6dc7da026160e9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line.
@@ -12648,8 +12648,8 @@ text=This admitted rule is the one-item line, and the teen pattern overrides tha
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3933efa71a8f87e8c3559a28d2479c35b977ce32198d58a8593a0e13927f2d7a
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 74bcbe26658b8f98bd95c7b5da8a936799eea940be3a8b3e925dfa346272d32a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=This admitted sentence is the other scope in the frozen paragraph.
@@ -12661,8 +12661,8 @@ text=This admitted sentence is the other scope in the frozen paragraph.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 75f99685294337160461390cbda3fddf3c1fa26091396a906315566be76094d6
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44d3164d955675c78b59978fedc0bdfd980f7499bcfcd643b6dd4c458e2b5992
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted scope sentence covers the shown line?
@@ -12674,8 +12674,8 @@ text=Which admitted scope sentence covers the shown line?
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 320705b7d72cd2e49f370b2f85a80362a8f78a2ac2c374336474af0f268cb8bf
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 365e0f50749b798c8c5f62f8f47eee85565bf689b60a7b30b8fddabd4d5433c7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted number and quantity rows
@@ -12687,8 +12687,8 @@ text=Admitted number and quantity rows
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0c5a5428b00143fbad80ce47e5359285f4ad7a5aa3d11f2067628d470035680
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7cfd5a1a30c44e9e0e91406e26355861efc94c185967621d4b3c97902a0c929c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 9 uses frozen number and quantity rows. Qualified review is pending.
@@ -12700,8 +12700,8 @@ text=Proposed Unit 9 uses frozen number and quantity rows. Qualified review is p
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7f127e1fda604d54c7d1911b6d147c757a8dddbb83acce71f7c4d5e1e38d7a0e
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4d716e1e5339de3f512de0e42d4a1ecf0c963c8e6d8eaf0a5f83ee8f3733050
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 9 in the copy you own. The app records do not replace that lesson.
@@ -12713,8 +12713,8 @@ text=Open Lesson 9 in the copy you own. The app records do not replace that less
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e60593dad66c1565f80071cb45763f9ef75fe496646852b046c8999c4b44783
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ecf42e59b4c6b49a0c2f671b9667a4b44cf204f9ce3922a0bf361a5839fd5a9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
@@ -12726,8 +12726,8 @@ text=Guided practice
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8af508b548be08191c68669f9a6da1fbdad4a15751971fbac93622731ef6fc15
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b52c6ccef3a6d47dbf16b2551d9632f6b4b298df46b4f004129f07b00fda628
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
@@ -12739,8 +12739,8 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 34f0320c17413e90ab501f34093bdc61a4eb61af3d3cbe8ecf215038352ac9a5
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67524034ae13a5caeb69c68c4b1583ac5a120ab33f4af01cb3c66c5e6a14dbb9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
@@ -12752,8 +12752,8 @@ text=Remediation
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 006a4697fc9155263f7354031e51da6355ffdad0435db7f56bad99700d55ad58
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 95c33d8d1a0e6a1685c0c869deff91acd59802f4bb1ff4b1065d82c4e3f7c53b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
@@ -12765,8 +12765,8 @@ text=Independent checks
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 92a549f3c4cd78b53836720f05d60b6e1ef6a367749880e8c11fe1ea74bb98ea
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6fa969c206b2fd68b62b88e9f2028cf7dacf1d0e578aa547b0d059763ed7c18
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
@@ -12778,8 +12778,8 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 362f70a9c905bb4a191a3327ffa75c19b8f1079a591effe879e6fd7e41e2cd51
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58ebcd501639105f11b4aeb24f4b8240b3d393c2929b41847432c4238c10d9eb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 9 in your copy
@@ -12791,8 +12791,8 @@ text=Work Lesson 9 in your copy
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 15e68961b44190cde4c83ef9f7c202b4d61d5665b4656bcd92f73e597a315b79
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3a46be6cd35d7d855db660eeb0e4981749a1c47403cbf0f4dc03e98dc903e93c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 9 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
@@ -12804,8 +12804,8 @@ text=Do Lesson 9 in the copy you own. Use that book's explanations and practice.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: da438a58137a73f26d342eb3012b07d2fa90d550c1ce4dc7f7d378580723bebe
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f59d21f518514fc6d54c88e3405c74aa6beca46d038c98b998ef5f826a191c2f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These frozen quantity examples are not a statement of a present-day amount. Listening stays with the book. No audio is mapped here.
@@ -12817,8 +12817,8 @@ text=These frozen quantity examples are not a statement of a present-day amount.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e23982416950d4f6fb5dcc3968b69dd92e9ba77d4eeb2ddfbb90fbc521cb2972
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d18c7a084386faf1e62ab6e4c4f06f2235897b981fcd160b988730d71bd0216f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 9 in your copy and complete its lesson work.
@@ -12830,8 +12830,8 @@ text=Open Lesson 9 in your copy and complete its lesson work.
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0b6b6da600756aa0b1ecc8a0376204a1f6a1cff3692115a5ea458b29e29cfd28
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 93fc832f5c7f00fe880603dc8376808c66292aa3ffd43fd3440096db4db27b38
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 9 book work
@@ -12843,8 +12843,8 @@ text=Record Lesson 9 book work
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17a3e6dafcdbb55b05fcf6192d483596ee826ffb9a46ce5e6ec1f3b5839d64fd
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: adca7aed4acd528ed93a5c1c5395645ab17c8ae52b997331748bb7c25d9fefce
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 9 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
@@ -12856,8 +12856,8 @@ text=When you have done Lesson 9 in your copy, self-attest here. Attestation rec
 - Source: src-app-english-v2
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e42420a0ec60c2b5ffcd1881812ba9735ae6ecc3241d3ff155cfacedf3797980
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e51586bbee963fbc9003aa7ff3f6897b030d24d632be654b6b8073269b144760
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 9 work in your copy.

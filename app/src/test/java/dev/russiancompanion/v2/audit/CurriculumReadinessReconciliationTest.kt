@@ -100,7 +100,7 @@ class CurriculumReadinessReconciliationTest {
                 assertEquals("NONE", row.reviewPackageDigest)
                 assertTrue(row.linguisticReviewBlocker.contains("MISSING_REVIEW_PACKET"))
             }
-            assertEquals("PENDING_QUALIFIED_REVIEW", row.unitReviewStatus)
+            assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", row.unitReviewStatus)
             assertEquals("ABSENT", row.reviewerIdentity)
             assertEquals("ABSENT", row.reviewerQualification)
             assertEquals("ABSENT", row.signedReviewedDigest)
@@ -258,7 +258,7 @@ class CurriculumReadinessReconciliationTest {
         val installed = unit.copy(installState = "INSTALLED", readiness = "INSTALLABLE", mappingStatus = "APPROVED")
         val claimed = reconcileCurriculumReadiness(root(), pack.withUnit(installed)).units.first()
         assertTrue(claimed.finalDisposition.startsWith("INVALID_INSTALL_OR_READINESS_CLAIM"))
-        assertEquals("PENDING_QUALIFIED_REVIEW", claimed.unitReviewStatus)
+        assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", claimed.unitReviewStatus)
         assertEquals("ABSENT", claimed.signedReviewedDigest)
         assertNotEquals("APPROVED", claimed.unitReviewStatus)
     }

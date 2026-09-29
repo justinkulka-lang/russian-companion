@@ -115,7 +115,7 @@ class Units2125SourceIntakeTest {
             assertFalse(facts.observedEditionNotes.orEmpty().contains("2bcc0c45"))
             assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
             val review = pack.unitReviews.first { it.unitNumber == number }
-            assertEquals("PENDING_QUALIFIED_REVIEW", review.status)
+            assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", review.status)
             assertTrue(review.reviewer.isNullOrBlank())
             assertEquals(digest, buildUnitReviewPackage(pack, number).mappingPackageDigest)
             assertNotEquals(digest, mappingPackageDigest(facts.copy(printedPageStart = facts.printedPageStart!! + 1)))
@@ -275,7 +275,7 @@ class Units2125SourceIntakeTest {
             assertEquals("CC BY-SA 4.0", record.licenseId)
             assertEquals("https://creativecommons.org/licenses/by-sa/4.0/", record.licenseUrl)
             assertTrue(record.attribution.isNotBlank())
-            assertEquals("PENDING_QUALIFIED_REVIEW", record.reviewStatus)
+            assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", record.reviewStatus)
             assertTrue(record.reviewerIdentity.isBlank())
             assertTrue(record.reviewerQualification.isBlank())
             assertTrue(record.reviewDate.isBlank())
@@ -442,7 +442,7 @@ class Units2125SourceIntakeTest {
             it.originalSourceText in BatchBSources.BOUNDED_TIME_SPANS
         })
         val review = pack.unitReviews.single { it.unitNumber == 23 }
-        assertEquals("PENDING_QUALIFIED_REVIEW", review.status)
+        assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", review.status)
         assertTrue(review.reviewer.isNullOrBlank())
         val stripped = withoutCapabilities(pack, 23)
         val numbersHour = sample(pack, 23, "4371358", "src-wikibooks-russian-cc-by-sa", "one hour one year one minute elapsed during ago")
