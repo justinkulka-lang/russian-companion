@@ -270,7 +270,7 @@ class CurriculumReadinessReconciliationTest {
         val seventeenDecision = advancementDecision(pack, seventeen, idealizedLearner(pack, seventeen))
         assertTrue(seventeenDecision.remaining.joinToString("\n"), seventeenDecision.allowed)
         assertTrue(liveModel().units.first { it.unitNumber == 17 }.advancementCanPresentlySucceed)
-        listOf(7, 30).forEach { number ->
+        listOf(26, 30).forEach { number ->
             val unit = pack.unit(number)
             val decision = advancementDecision(pack, unit, idealizedLearner(pack, unit))
             assertFalse(decision.allowed)
@@ -278,6 +278,10 @@ class CurriculumReadinessReconciliationTest {
             val row = liveModel().units.first { it.unitNumber == number }
             assertFalse(row.advancementCanPresentlySucceed)
         }
+        val unitSeven = pack.unit(7)
+        val unitSevenDecision = advancementDecision(pack, unitSeven, idealizedLearner(pack, unitSeven))
+        assertTrue(unitSevenDecision.remaining.joinToString("\n"), unitSevenDecision.allowed)
+        assertTrue(liveModel().units.first { it.unitNumber == 7 }.advancementCanPresentlySucceed)
         val early = pack.unit(1).copy(readiness = "NOT_PREPARED")
         val earlyDecision = advancementDecision(pack, early, idealizedLearner(pack, early))
         assertFalse(earlyDecision.allowed)
