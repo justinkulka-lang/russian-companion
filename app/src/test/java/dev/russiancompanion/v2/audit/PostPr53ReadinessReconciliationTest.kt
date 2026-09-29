@@ -16,6 +16,7 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
+import java.security.MessageDigest
 
 /**
  * Locks the post-PR-53 diagnosis to the packaged curriculum.
@@ -49,22 +50,24 @@ class PostPr53ReadinessReconciliationTest {
             assertTrue(secondParent != git(root, "rev-parse", "HEAD^"))
         }
         val entries = postReportNameStatus(root, recorded, branchHead)
+        val untracked = untrackedGovernedPaths(root)
+        val diffSha = normalizedPostReportDiffSha256(root, recorded, branchHead)
+        assertEquals(POST_REPORT_DIFF_SHA256, diffSha)
+        assertEquals(REPORT_JSON_BLOB, git(root, "rev-parse", "$branchHead:$REPORT_JSON"))
+        assertEquals(REPORT_MD_BLOB, git(root, "rev-parse", "$branchHead:$REPORT_MD"))
+        assertEquals(REPORT_JSON_BLOB, git(root, "hash-object", REPORT_JSON))
+        assertEquals(REPORT_MD_BLOB, git(root, "hash-object", REPORT_MD))
         assertTrue(
-            "post-report entries=$entries",
-            postReportStatusesAllowed(entries, POST_REPORT_ALLOWLIST),
+            "entries=$entries untracked=$untracked diff=$diffSha",
+            postReportLockHolds(recorded, entries, untracked, diffSha),
         )
         val recordedReport = Json.parseToJsonElement(
-            git(root, "show", "$recorded:audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.json"),
+            git(root, "show", "$recorded:$REPORT_JSON"),
         ).jsonObject
         assertEquals("dc98eeba48ffbbeb17ce835f3700bde158d4a4d3", recordedReport.getValue("headCommit").jsonPrimitive.content)
         assertFalse(recordedReport.containsKey("reportContentCommit"))
-        assertFalse(recordedReport.getValue("localGates").jsonObject.containsKey("checkoutCorrectionRerun"))
         assertEquals(curriculumPayload(recordedReport), curriculumPayload(report))
-        assertEquals(
-            "testDebugUnitTest 434 tests, 0 failures, 1 skipped; assembleDebug, lintDebug, verifyReleaseGateAttachment BUILD SUCCESSFUL; assembleRelease FAILED at checkReleaseGate; no release APK",
-            report.getValue("localGates").jsonObject.getValue("checkoutCorrectionRerun").jsonPrimitive.content,
-        )
-        val recordedMarkdown = git(root, "show", "$recorded:audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.md")
+        val recordedMarkdown = git(root, "show", "$recorded:$REPORT_MD")
         val body = "## 2. Units"
         val lock = "## 12. Regression lock"
         assertEquals(
@@ -255,36 +258,102 @@ class PostPr53ReadinessReconciliationTest {
     @Test
     fun unexpectedFileBetweenRecordedContentCommitAndBranchHeadFailsTheLock() {
         val allowed = POST_REPORT_ALLOWLIST.map { "M" to it }
-        assertTrue(postReportStatusesAllowed(allowed, POST_REPORT_ALLOWLIST))
+        assertTrue(postReportLockHolds(REPORT_CONTENT_COMMIT, allowed, emptyList(), POST_REPORT_DIFF_SHA256))
         assertFalse(
-            postReportStatusesAllowed(
+            postReportLockHolds(
+                REPORT_CONTENT_COMMIT,
                 allowed + ("M" to "app/src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt"),
-                POST_REPORT_ALLOWLIST,
+                emptyList(),
+                POST_REPORT_DIFF_SHA256,
             ),
         )
         assertFalse(
-            postReportStatusesAllowed(
+            postReportLockHolds(
+                REPORT_CONTENT_COMMIT,
                 allowed + ("A" to "app/src/main/assets/content/v2-curriculum.json"),
-                POST_REPORT_ALLOWLIST,
+                emptyList(),
+                POST_REPORT_DIFF_SHA256,
             ),
         )
         assertFalse(
-            postReportStatusesAllowed(
+            postReportLockHolds(
+                REPORT_CONTENT_COMMIT,
                 allowed + ("M" to "catalog/build_v2_curriculum.py"),
-                POST_REPORT_ALLOWLIST,
+                emptyList(),
+                POST_REPORT_DIFF_SHA256,
             ),
         )
         assertFalse(
-            postReportStatusesAllowed(
+            postReportLockHolds(
+                REPORT_CONTENT_COMMIT,
                 allowed + ("M" to "audit/post-pr53-readiness/UNEXPECTED.md"),
-                POST_REPORT_ALLOWLIST,
+                emptyList(),
+                POST_REPORT_DIFF_SHA256,
             ),
         )
-        assertFalse(postReportStatusesAllowed(emptyList(), POST_REPORT_ALLOWLIST))
         assertFalse(
-            postReportStatusesAllowed(
-                listOf("D" to POST_REPORT_ALLOWLIST.first()),
-                POST_REPORT_ALLOWLIST,
+            postReportLockHolds(
+                REPORT_CONTENT_COMMIT,
+                allowed + ("M" to "review/unit-1/UNIT_1_REVIEW_MANIFEST.json"),
+                emptyList(),
+                POST_REPORT_DIFF_SHA256,
+            ),
+        )
+        assertFalse(
+            postReportLockHolds(
+                REPORT_CONTENT_COMMIT,
+                allowed + ("M" to "release/acceptance/candidate.json"),
+                emptyList(),
+                POST_REPORT_DIFF_SHA256,
+            ),
+        )
+        assertFalse(
+            postReportLockHolds(
+                REPORT_CONTENT_COMMIT,
+                allowed + ("M" to "docs/governance/MASTER_AUTHORITY_v2.0.md"),
+                emptyList(),
+                POST_REPORT_DIFF_SHA256,
+            ),
+        )
+        assertFalse(
+            postReportLockHolds(
+                REPORT_CONTENT_COMMIT,
+                allowed,
+                listOf("catalog/unexpected.py"),
+                POST_REPORT_DIFF_SHA256,
+            ),
+        )
+        assertFalse(
+            postReportLockHolds(
+                REPORT_CONTENT_COMMIT,
+                allowed + ("D" to REPORT_JSON),
+                emptyList(),
+                POST_REPORT_DIFF_SHA256,
+            ),
+        )
+        assertFalse(
+            postReportLockHolds(
+                REPORT_CONTENT_COMMIT,
+                allowed + ("R100" to "app/src/main/java/dev/russiancompanion/v2/curriculum/Renamed.kt"),
+                emptyList(),
+                POST_REPORT_DIFF_SHA256,
+            ),
+        )
+        assertFalse(postReportLockHolds(REPORT_CONTENT_COMMIT, emptyList(), emptyList(), POST_REPORT_DIFF_SHA256))
+        assertFalse(
+            postReportLockHolds(
+                "dc98eeba48ffbbeb17ce835f3700bde158d4a4d3",
+                allowed,
+                emptyList(),
+                POST_REPORT_DIFF_SHA256,
+            ),
+        )
+        assertFalse(
+            postReportLockHolds(
+                REPORT_CONTENT_COMMIT,
+                allowed,
+                emptyList(),
+                "0000000000000000000000000000000000000000000000000000000000000000",
             ),
         )
     }
@@ -320,8 +389,21 @@ class PostPr53ReadinessReconciliationTest {
             assertEquals(recorded, git(directory, "rev-parse", "HEAD^2^"))
             val againstBranchHead = postReportNameStatus(directory, recorded, branchHead)
             assertEquals(listOf("A" to "app/src/main/Evil.kt"), againstBranchHead)
-            assertFalse(postReportStatusesAllowed(againstBranchHead, POST_REPORT_ALLOWLIST))
-            assertTrue(postReportNameStatus(directory, recorded, git(directory, "rev-parse", "HEAD^2^")).isEmpty())
+            assertFalse(postReportLockHolds(recorded, againstBranchHead, emptyList(), POST_REPORT_DIFF_SHA256))
+            val parentOnly = postReportNameStatus(directory, recorded, git(directory, "rev-parse", "HEAD^2^"))
+            assertTrue(parentOnly.isEmpty())
+            assertFalse(postReportLockHolds(recorded, parentOnly, emptyList(), POST_REPORT_DIFF_SHA256))
+            File(directory, "catalog").mkdirs()
+            File(directory, "catalog/unexpected.py").writeText("x\n")
+            assertEquals(listOf("catalog/unexpected.py"), untrackedGovernedPaths(directory))
+            assertFalse(
+                postReportLockHolds(
+                    REPORT_CONTENT_COMMIT,
+                    POST_REPORT_ALLOWLIST.map { "M" to it },
+                    untrackedGovernedPaths(directory),
+                    POST_REPORT_DIFF_SHA256,
+                ),
+            )
         } finally {
             directory.deleteRecursively()
         }
@@ -348,12 +430,45 @@ class PostPr53ReadinessReconciliationTest {
         }.sortedBy { it.second }
     }
 
-    private fun postReportStatusesAllowed(
+    private fun postReportLockHolds(
+        recordedCommit: String,
         entries: List<Pair<String, String>>,
-        allowlist: List<String>,
+        untrackedGovernedPaths: List<String>,
+        normalizedDiffSha256: String,
     ): Boolean {
+        if (recordedCommit != REPORT_CONTENT_COMMIT) return false
+        if (untrackedGovernedPaths.isNotEmpty()) return false
+        if (normalizedDiffSha256 != POST_REPORT_DIFF_SHA256) return false
         if (entries.any { it.first != "M" }) return false
-        return entries.map { it.second } == allowlist.sorted()
+        return entries.map { it.second } == POST_REPORT_ALLOWLIST
+    }
+
+    private fun untrackedGovernedPaths(root: File): List<String> {
+        val text = git(root, "ls-files", "--others", "--exclude-standard")
+        if (text.isEmpty()) return emptyList()
+        return text.lines().filter { it.isNotBlank() }.filter { path ->
+            GOVERNED_PREFIXES.any { prefix -> path == prefix.removeSuffix("/") || path.startsWith(prefix) }
+        }.sorted()
+    }
+
+    private fun normalizedPostReportDiffSha256(root: File, from: String, to: String): String {
+        val diff = git(root, "diff", "--find-renames", "--no-color", "--no-ext-diff", from, to)
+        return sha256Hex(normalizePostReportDiff(diff))
+    }
+
+    private fun normalizePostReportDiff(diff: String): String {
+        return diff.lineSequence().joinToString("\n") { line ->
+            when {
+                line.startsWith("index ") -> "index 0000000..0000000"
+                line.contains("post-report-diff-lock") -> line.replace(Regex("[0-9a-f]{64}"), "0".repeat(64))
+                else -> line
+            }
+        }
+    }
+
+    private fun sha256Hex(text: String): String {
+        val digest = MessageDigest.getInstance("SHA-256").digest(text.toByteArray(Charsets.UTF_8))
+        return digest.joinToString("") { "%02x".format(it) }
     }
 
     private fun curriculumPayload(report: JsonObject): JsonObject {
@@ -398,6 +513,19 @@ class PostPr53ReadinessReconciliationTest {
     private companion object {
         const val BASE_COMMIT = "6457e690776ff12349d55f0d1ffe03a95626ea23"
         const val REPORT_CONTENT_COMMIT = "ad813aa42e5172f3c993f5581b22782a0e0327c5"
+        const val POST_REPORT_DIFF_SHA256 = "c107867ab23394bffdb999935561640e5aab6868bdd3ca35e4027f19167dd205" // post-report-diff-lock
+        const val REPORT_JSON = "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.json"
+        const val REPORT_MD = "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.md"
+        const val REPORT_JSON_BLOB = "accd5b79b313ecabd3927ce1bebc224948173da6"
+        const val REPORT_MD_BLOB = "696a31b77f52c877bf387ef03d109af46aa5c306"
+        val GOVERNED_PREFIXES = listOf(
+            "app/src/main/",
+            "catalog/",
+            "review/",
+            "release/",
+            "docs/governance/",
+            "audit/",
+        )
         val POST_REPORT_ALLOWLIST = listOf(
             "app/src/test/java/dev/russiancompanion/v2/audit/PostPr53ReadinessReconciliationTest.kt",
             "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.json",
