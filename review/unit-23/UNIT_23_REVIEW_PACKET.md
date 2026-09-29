@@ -11,12 +11,12 @@ Unit 23 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 15c044ed36cb2d2b698f59e2b220174587ddc107
-- Unit content-review SHA-256: d906ec0c2a354cdf89cda6b831877f1a542eadd1d96e1c4008c00084ad5ef5a6
+- Curriculum source commit: ae777d85fe3616fc8e065890201d40c241d113bc
+- Unit content-review SHA-256: c46606f18f1b6c044a48934370c8ff82e32a4fe900164a779d846d7937855151
 - Mapping-package SHA-256: d770e8ae0d705b5570604cc71b16049fdd260e35761e7a50159dcf5a8e1fa591
-- Pack content-review SHA-256: 76f61c9948f7a7366410ff39f81f8295ceba3f03e28aea999891e5e873ad4f9d
-- Review-package SHA-256: f95b52303bc156d2ba67709accebf4c0738ef43a7241cbb14a1cc802ec9605e1
-- Repository source SHA-256: e3d53fd5df8b948f4c2bad92706a5c3c8724e56b3d9e56f5ed5d80a7cae6f271
+- Pack content-review SHA-256: de742e385a363884adc4014f8f10460e5941d0b8c8cd8269bc468f3344aabad7
+- Review-package SHA-256: fe4754ee6b3c39ce96ba641cc06fefcb0bbb88f388a269d9fc28c31dea7dd7af
+- Repository source SHA-256: 998db1e37a25da50c353cd467e0d10d6f915789373fd414d85cdded7c5115549
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1566,11 +1566,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b83e34d15ee77610c192550326983218e4609a30ea5a764dade26f8ea4a2ed45
+- Content hash: 00f9d574368531bb784789d155c8440ffc13476ae782dccc45f0eda2871845dc
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English label matches the shown writing sentence?
+prompt=Which English description matches the shown writing sentence?
 promptLetter=Борис писал письмо час.
 options=time spent writing without asserting completion | the article was finished within two hours
 answer=time spent writing without asserting completion
@@ -1951,11 +1951,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6737a63922db19e545efcf6f5dc931ec11be95e71a63ee7b7b6c589d1ef5c890
+- Content hash: 4278a043febba5e5f4dcc1c0e4237eae07a1f8593a60782c485fb5b3d5fb6433
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English label matches the shown reading sentence?
+prompt=Which English description matches the shown reading sentence?
 promptLetter=Анна читала статью два часа.
 options=time spent reading without asserting completion | the article was finished within two hours
 answer=time spent reading without asserting completion
@@ -1986,11 +1986,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ea20ada7619844e93841700605ca476f6616f8c7c92cd89090385fd028e3d6dc
+- Content hash: c4c1dbce7293a1e1ad5d418327a7d98e618a4b1a063039d43abeb9acea7cef99
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English label matches the shown completed sentence?
+prompt=Which English description matches the shown completed sentence?
 promptLetter=Анна прочитала статью за два часа.
 options=the article was finished within two hours | time spent reading without asserting completion
 answer=the article was finished within two hours
@@ -3223,7 +3223,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: dcc829aeb6e17d2560ec46657407ee970b5c59625431e49ee67649d234d5bc53
+- Content hash: f8c47310e25eb24c79c62395a2b5905fe1230df55dd39d673f2552abfcc82e35
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3240,16 +3240,16 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
 shippedText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
 contentHash=1e63537d03cc0947c43aed879a4ffe5b056a575254b5776126a020942b9c534b
 audioAssetId=
 reviewerIdentity=
@@ -3265,7 +3265,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 58e06b66f24252d61f6294553affa49945c4a260aaf6b130001ffc5e58249e67
+- Content hash: b1944ed7bddfa98de98001783dd7c9b09fee0ffa42f120c1eb2a76a3ebcd7b4d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3282,16 +3282,16 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
 shippedText=A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
 contentHash=90f297d876fb75ed314aa131061e7d89872aef8194aa1e33232e63df3d9c23da
 audioAssetId=
 reviewerIdentity=
@@ -3307,7 +3307,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 680e747c4d1d1ce329173d2f1be40e14c6512b6b90e00242e194796b3654ce2c
+- Content hash: 91f551a2bb76ac9be922b3c450c69f527b58b5dfd07316ae8e159c60c235da5d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3324,16 +3324,16 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
 shippedText=time spent writing without asserting completion
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
 contentHash=9cca7f85fe9f4e53a62baa78e5b6fa6accc24f54b59bbafda64da81f9ffe55d3
 audioAssetId=
 reviewerIdentity=
@@ -3349,7 +3349,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 820156042be4d02c2fe7d87a96e20c3e258388035f32c1ba9469e285bc3b98e3
+- Content hash: 2067d91f842c3427600b5fa9c78f11fcd345db1fcb8b37bf398b293db6a33f18
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3366,17 +3366,17 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
-shippedText=Which English label matches the shown writing sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
+shippedText=Which English description matches the shown writing sentence?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
-contentHash=0e0ce7955426fb9e574f0b9f6fc253fca4a72cfc6e5c2cd9a389ef4b5f7f5725
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
+contentHash=52a3b45f39c1fba4b46bfc0fab51a52508072e6326d9cc68b05a58bb9f4b40d5
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3391,7 +3391,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 93d5c324b291d9f4f7d4acf46ccad975e20920b6b06e121a91210c3802da5c7d
+- Content hash: 5fcb77c0f29531241a12133fa8e27f4c4b5c0b4d8e2c54b2e33db5b71d473150
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3408,17 +3408,17 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
-shippedText=Which English label matches the shown reading sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
+shippedText=Which English description matches the shown reading sentence?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
-contentHash=fd3880ed51dbd46c31a9e3490946c310c7ec40c50b8bce3b215526e22234a5e3
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
+contentHash=ee6c3ab9c7c5416341fea3f3ba59d46ff42c7e3f4721954202a42b7294be81af
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3433,7 +3433,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: bf30aae1ebd1c27f3aba7d54d400a6114efb9c5183c41dc64f8c6fc5cf087d61
+- Content hash: 2f5f1dc7c1636c1c422fe7ff22c58e74bd124d5eb4a6c194a86aa959152db7b3
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3450,17 +3450,17 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
-shippedText=Which English label matches the shown completed sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
+shippedText=Which English description matches the shown completed sentence?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
-contentHash=ab77737d3b534c5eac97693b33a04e60e6ad8bdc885c491cb48101f4e6920a2e
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
+contentHash=872151e54ab94a34d3da472d4cff6e62a4793f86e9a72593ffbaf183e7938d85
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3475,7 +3475,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8ccd642b0380a1e38ba6ed8dabc733228927007f54f4daddd0b1c1ff558f8eff
+- Content hash: ec8ece2e816c9ff5fb28f1477cffb55017ad0454b50ab258fa9d024489d55b5a
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3492,16 +3492,16 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
 shippedText=The reading sentence states time spent reading and does not assert completion.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
 contentHash=1e5af1c88c9451196fd8167a14a961a748cc1e38ef85fa5ebc6bf42a4553de2d
 audioAssetId=
 reviewerIdentity=
@@ -3517,7 +3517,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: fcf4e82bebe0a319db050e750111c1a8a0c3d775b674e5018b66de92db4ccb3e
+- Content hash: 48d3c36ad2603f33db17e1d659ecc2116ca69f6ff006c9446c758e660c74092e
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3534,16 +3534,16 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
 shippedText=The finished-article sentence states that the article was completed within the stated period.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
 contentHash=a75919cf2e1c7fe5ee8a1afb83cda5aa917a2abb089f63ad44639a4dfe92cc7e
 audioAssetId=
 reviewerIdentity=
@@ -3559,7 +3559,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 0c697546a6f17a89c8563c014e95c16fe0d377ad845d149adcee8e131ec5cfa0
+- Content hash: a63a086009d76968deb4093b9b45cbc3456513b38f3d5a702dbed19b431831dc
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3576,16 +3576,16 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
 shippedText=The writing sentence states time spent writing and does not assert completion.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
 contentHash=b54db4f0f86e8696b5e1a700e600801c42a73800150d72b31bb1d4ec3912049f
 audioAssetId=
 reviewerIdentity=
@@ -3601,7 +3601,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 36b06befcee7c68fd405c3a860aaf9f1a886ce2bc37884dfb5704801f2e0c6e2
+- Content hash: c10db676ef4d5ecd032b342442b2f2fc0c1c018b1b5a5381c771cda8d51035f0
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3618,16 +3618,16 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
 shippedText=Анна читала статью два часа.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
 contentHash=c0291f42c8579211da23e17671e74382f1b3e281c9111582a62677e295c3a4ef
 audioAssetId=
 reviewerIdentity=
@@ -3643,7 +3643,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9f60588d0cd91d00401f9facc5e7db8bf6da8c23b7bb2d053e4fc084b5fb9aa4
+- Content hash: 11dbc27375cbbfe66bce120962174fdd7063aa802e7ff04f5e866740e5a02ea9
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3660,16 +3660,16 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
 shippedText=Анна прочитала статью за два часа.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
 contentHash=64a3766ba4ebeefe8df8601d6611d14d20a118eb9656bb4e1db2a5cde88594e6
 audioAssetId=
 reviewerIdentity=
@@ -3685,7 +3685,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f1ad25687d4983067ddaf018bc23eb9ef6394d1e9d62635ead8e991821d89534
+- Content hash: 38c135509519a62d25252b8713fd821be5b9e21baa385009042bd9ef79bc5d72
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3702,16 +3702,16 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
 shippedText=Борис писал письмо час.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
 contentHash=077942a1a975187b2cf6523a16f773a8b2eed4f0593fb6969df5e5859d411a70
 audioAssetId=
 reviewerIdentity=
@@ -3727,7 +3727,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 22a25ecce00c90cea3b50251be4a8594043f6aef8850e3db4ad821df2e26f004
+- Content hash: 8f23f556016678747c7b4b2ec6d9e62aaf1d297527bfe44d146573640942664e
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3744,16 +3744,16 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
 shippedText=time spent reading without asserting completion
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
 contentHash=a38e2a76d9fcdae2ab893aa266d815daff494377efc69f9863983b9dad553049
 audioAssetId=
 reviewerIdentity=
@@ -3769,7 +3769,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 779c50633d5ac9bbd377a7a96c6a8edc202585c2580ee9027330f65eaafcbaf1
+- Content hash: 77d86e7a9f4f3bee218a27398e132df834e77a42a6ad70c760744422a6ba92fb
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -3786,16 +3786,16 @@ The writing sentence states time spent writing and does not assert completion.
 time spent reading without asserting completion
 the article was finished within two hours
 time spent writing without asserting completion
-Which English label matches the shown writing sentence?
-Which English label matches the shown reading sentence?
-Which English label matches the shown completed sentence?
+Which English description matches the shown writing sentence?
+Which English description matches the shown reading sentence?
+Which English description matches the shown completed sentence?
 shippedText=the article was finished within two hours
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=e8d0887f6c8a9fe6f9a34216f705654cbc18422e8e6a0f9e78b8222fa0847e99
+sourceHash=80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22
 contentHash=9645be4c3a52abf425c568ec89151efb525bc214fd42695779da030ef8e639ed
 audioAssetId=
 reviewerIdentity=

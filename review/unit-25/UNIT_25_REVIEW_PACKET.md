@@ -11,12 +11,12 @@ Unit 25 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 15c044ed36cb2d2b698f59e2b220174587ddc107
-- Unit content-review SHA-256: c9638c54ba90780a19b0681c11e0e8af5f3f71ad6e33df29f4c50c7375110739
+- Curriculum source commit: ae777d85fe3616fc8e065890201d40c241d113bc
+- Unit content-review SHA-256: 8b8f3891d85b9cb74a77d643d40801b7b3ceea7b67810dad42c33686ccdf991a
 - Mapping-package SHA-256: 93039c677b2f820c58bf274ebe94000f3a66541e821250bd478f9ed4c12b8431
-- Pack content-review SHA-256: 76f61c9948f7a7366410ff39f81f8295ceba3f03e28aea999891e5e873ad4f9d
-- Review-package SHA-256: 74b4de706d5042d05b78e6707fa461225aae4d3a434a699adebe86d8d7e4ba3a
-- Repository source SHA-256: e3d53fd5df8b948f4c2bad92706a5c3c8724e56b3d9e56f5ed5d80a7cae6f271
+- Pack content-review SHA-256: de742e385a363884adc4014f8f10460e5941d0b8c8cd8269bc468f3344aabad7
+- Review-package SHA-256: 6db23b186324774e37cdd3b50f14fa7a9b94db55cca4525c8a6d774b3920e281
+- Repository source SHA-256: 998db1e37a25da50c353cd467e0d10d6f915789373fd414d85cdded7c5115549
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1991,11 +1991,11 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: dca2533cce1f022b46c6f7be33df08c804a748920c82f406911cceb34ef5c5cc
+- Content hash: 614a8bbedc5041bc6dd7966ef6e5b6f47ff7ccba45ef8f6aefba5e528ce0687a
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English label matches the shown diminutive name?
+prompt=Which English description matches the shown diminutive name?
 promptLetter=Марюня
 options=documented diminutive coloring | documented affectionate coloring
 answer=documented diminutive coloring
@@ -2481,11 +2481,11 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 28f0fc46ce82727011821d9dc82cd8f53ea5ac58efc73d3248bad83ae2bb999d
+- Content hash: d9c90c23c874ea65fbd723d294388b539a85510054aa3ea6022cbbba5500352e
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English label matches the shown affectionate name?
+prompt=Which English description matches the shown affectionate name?
 promptLetter=Машенька
 options=documented affectionate coloring | documented familiar short-form coloring
 answer=documented affectionate coloring
@@ -2516,11 +2516,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6c2a68ee6591d05961cd78e331e78b786f4b37a431a597cbb7a9e44c94694257
+- Content hash: cbf296e2974dabf2661219bb2c58efc6f549f04b25971536e81e352beac829d8
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English label matches the shown familiar name?
+prompt=Which English description matches the shown familiar name?
 promptLetter=Сашка
 options=documented familiar short-form coloring | documented diminutive coloring
 answer=documented familiar short-form coloring
@@ -2551,11 +2551,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3ae92af51d9db4ac471a6ea90594f8e4800082abb59d061d5815ff357ae5bbf0
+- Content hash: bb092e116c2876f1e3049aba1c0c18ca051b16e977bd50bdc581aad5946def90
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English label matches an unstudied personal name?
+prompt=Which English description matches an unstudied personal name?
 promptLetter=an unstudied personal name
 options=unsupported until a names dictionary documents that form | the suffix mechanically generates an acceptable name
 answer=unsupported until a names dictionary documents that form
@@ -5310,7 +5310,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b40e8e328970a863237e1d3d95930c38dc0efb4d2cea8fd126ab5e11d7d36efd
+- Content hash: 53caea93b590750b1666c1a04892a6c6f9a95a5962e8705c5bc17f95b9716179
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5332,10 +5332,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
 transformation=original research synthesis
@@ -5343,7 +5343,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=d422ce71f4955a4df4f73108015f9f44a651bab58bcc6615ed448762aaaba024
 audioAssetId=
 reviewerIdentity=
@@ -5359,7 +5359,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3656b0a9aac685d3a24fb3c64b059d6780cd1a0317958c92127f1ca0949d8b12
+- Content hash: 8aaffeb2c3fe09f82a229d215969234929804316c1c51799aa55b571c233e807
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5381,10 +5381,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=One personal name may have several documented forms.
 transformation=original research synthesis
@@ -5392,7 +5392,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=cb73bb68eff885515e50d00e12afac676e118a547b4ec8242e2b53f58f9db26f
 audioAssetId=
 reviewerIdentity=
@@ -5408,7 +5408,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a165b93f84575d0d48580bdae742b2ab46e18473b1f19d5d90c65efb6ba65d2b
+- Content hash: 4299da023afa14db6ba68ce04dcbe34fd5c4b4813524aab56b963a2973fb203f
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5430,10 +5430,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=Марюня
 transformation=original research synthesis
@@ -5441,7 +5441,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=4e4a45295cd16814eadc8812b8cb9badf0124df16ba4297b77d4e55115827e69
 audioAssetId=
 reviewerIdentity=
@@ -5457,7 +5457,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: eeb71c27e1c7c997b21cba00cc3d0aa1b41bbfcd3068388a93dc1756291c5d7c
+- Content hash: 2e9644d2a74436460494d53fd848702879ed2bb6a73f178533bb414a98ff3aea
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5479,10 +5479,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=documented affectionate coloring
 transformation=original research synthesis
@@ -5490,7 +5490,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=2521b70aa4898016ab9225985a41770d15bf0da7336028921c59c7d23e0b2742
 audioAssetId=
 reviewerIdentity=
@@ -5506,7 +5506,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4276786e6ad4f4015a5f0b00366fa6d572ccca57c1d8bdd7eb6ed73f458e59f8
+- Content hash: e30e6307e6990713b82c561855d5dde9405af141a5969e22307ede3d2bda5907
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5528,10 +5528,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=documented familiar short-form coloring
 transformation=original research synthesis
@@ -5539,7 +5539,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=57ce7d22a75cb0b426295cab45676795c3a0a537ad3a6ff4544b3a05a2e0c550
 audioAssetId=
 reviewerIdentity=
@@ -5555,7 +5555,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 05c3fa9079ae7e8978a61f4aba10b4851bbbeb4fb59a7d4413bc2ee5fe932a12
+- Content hash: 736feba0c43042b5593d6e172e22f512f4248162aa2fce8915ae27b0375647cb
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5577,10 +5577,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=documented diminutive coloring
 transformation=original research synthesis
@@ -5588,7 +5588,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=5454817b32fec448fa809ebec5d5b89cd7d84f6ff556d364cee755c5a4985df4
 audioAssetId=
 reviewerIdentity=
@@ -5604,7 +5604,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 70ad0552f1368195f43e8c18beb24a88aa4ad83dd273e95e88573b9d61ebcb56
+- Content hash: 85d85a270e691e230c3334fd8a6f08c0fa50cbe20a10d0422070b80775e179d6
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5626,10 +5626,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=unsupported until a names dictionary documents that form
 transformation=original research synthesis
@@ -5637,7 +5637,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=480a63b6cfa20b5a3e38af9176c670d03f28781e0a51924b6ed7ccd7b5203fa0
 audioAssetId=
 reviewerIdentity=
@@ -5653,7 +5653,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d9d48d5a0bab14a47f506d05052ec02e9c628c78994cb23faf450715279b830e
+- Content hash: f89a35a33fe970fb043720924647e8a19628f69821909ebfb0513a937fff90a6
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5675,10 +5675,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=the suffix mechanically generates an acceptable name
 transformation=original research synthesis
@@ -5686,7 +5686,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=2534b334120c2b44a2b4aa4ae0acaa9ef720da7d6848e7cffc0e25a1d6eb5404
 audioAssetId=
 reviewerIdentity=
@@ -5702,7 +5702,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5c87dfe7fa582b451e0c0890d3bde9d0276caf3f1a94e004828c4285f63010fc
+- Content hash: f7ab4a01cd37b40044fc903a6748af0da75516e923548d0ce5874918e622862d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5724,19 +5724,19 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
-shippedText=Which English label matches the shown diminutive name?
+shippedText=Which English description matches the shown diminutive name?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
-contentHash=65f2e7bb346bba9101251ced79515ce02b696c2eb9a75df4036ff785a11af264
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
+contentHash=dd3f910d19310c4fcde2ea67911450ed83b7340aeecf60d4af2c24b0c5b5260f
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5751,7 +5751,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: cfa785fc7bef348ee79b68396de48c5e764e7a5f1c2a8902bf09ae8faa24ad49
+- Content hash: b29d842dfa23ad2df5cc7b51d5a59517465fe776c6507df8d1b5348e762cfb14
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5773,19 +5773,19 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
-shippedText=Which English label matches the shown affectionate name?
+shippedText=Which English description matches the shown affectionate name?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
-contentHash=c897af18e42d6a0a9d0dee71b1fbd4108e9d5fede87fbec6cff7f75c45a9dd1b
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
+contentHash=65cbd2f705912ea1a253d51c77399816911c96d8eddb5d5d53f61bf8e2ddbbbb
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5800,7 +5800,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 66759e95a00ab0017e4a3590c101609f76fc0cb9cec66fdae0ba91c5c78f59ef
+- Content hash: 5eebd375b4f0fa869d7aa488aefa765f9dec4685b63730364f3772749718b061
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5822,19 +5822,19 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
-shippedText=Which English label matches the shown familiar name?
+shippedText=Which English description matches the shown familiar name?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
-contentHash=bdf3a8fa1d21e39c73809f3366e9be4ae12cc340621dbebe79665418e00f1c3c
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
+contentHash=be828ca571a863a3aae64aeb78e4f6ac34a7f56d6d5d04e68e613928f4f7fa3a
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5849,7 +5849,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: fe80b36a48a85654c34d69c2a8574650b81eeffe4cef9b61d620e2a1df5f8828
+- Content hash: 322c48cf2738c38701e1d315188af86d7803abf3b5e4f44bb63596bf2cb48a16
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5871,19 +5871,19 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
-shippedText=Which English label matches an unstudied personal name?
+shippedText=Which English description matches an unstudied personal name?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
-contentHash=55de5448e9247738bc5dd91a637fd01e85f76ee2c5ac8a5d9e3aa902b99627b4
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
+contentHash=347620f30d71cb7c2fb0ef924ca5b70b5205c35b6de1e06ccb33424b0ee7aacf
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5898,7 +5898,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: aebcbeb45233dee76ce6388b3735e9a05d2cb8ab271d7f0349a81480a9debd27
+- Content hash: a0ef22b18bdfc67dbd5ebd11bf3966b8299a16e175270997547276f6f5acdd84
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5920,10 +5920,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
 transformation=original research synthesis
@@ -5931,7 +5931,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=c5cece21defc519edcb178053146c7e57404ba64a6763d2abdaf990290266ab6
 audioAssetId=
 reviewerIdentity=
@@ -5947,7 +5947,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a70ca4859607911d58ce43321815a347c3cb9ae070022591f2850aa49880c1f2
+- Content hash: 8ac808f692ae4a9e4658be611ce6d1fad1b43d00e24e6716750094f3fad6dbfc
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -5969,10 +5969,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=an unstudied personal name
 transformation=original research synthesis
@@ -5980,7 +5980,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=6e347fb154e2bdc37e3a8d23a648286d3b97cc76b3f157a7ea46921619a7a307
 audioAssetId=
 reviewerIdentity=
@@ -5996,7 +5996,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f1d7291972d12378a5f2cf9b142369a3b858b224e84dc3f5352b06bb5e96409f
+- Content hash: 8a05aa9d7ffb48a73470f11e1281f68b4be0090d7bdf018cb8071e56a2cf3f65
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -6018,10 +6018,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=An unfamiliar form must be verified in a names dictionary.
 transformation=original research synthesis
@@ -6029,7 +6029,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=1a1addb597374fed3e123265321e6201905f47fdb4b8f0c9b8358239c4dfa127
 audioAssetId=
 reviewerIdentity=
@@ -6045,7 +6045,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c63d11d17a9804a9fb70d32ff7418c97bfd01ab50aed6d8a83d82fba030ace61
+- Content hash: c7663e364386a2d6a276d2369283d8292735d77d6f600a8f91c596d5f3975ca1
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -6067,10 +6067,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=This documented affectionate coloring is conventional and is not a generator.
 transformation=original research synthesis
@@ -6078,7 +6078,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=c8e1067db77d880de67bdeff0a647763fce77c76119a0a50fdd11df19b684ec3
 audioAssetId=
 reviewerIdentity=
@@ -6094,7 +6094,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3e19d45b7d206a8d6dbc1af5ec521fb8b869b86e6bc4ca0a113079159872cd99
+- Content hash: e03df7308505c8c2d07fa30a0ddcbddb68982890efb4b7f44937bb15c988e3fd
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -6116,10 +6116,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=This documented familiar short-form coloring is conventional and is not a generator.
 transformation=original research synthesis
@@ -6127,7 +6127,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=f03806d3df9201e3e8858520951a4ba322c7aee3333c2ce6a27a9f14f6527b95
 audioAssetId=
 reviewerIdentity=
@@ -6143,7 +6143,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 138b5d2c01fd15874a777cb05765e280d7a885092e35ae91f26c7ed4b78de25c
+- Content hash: 20b4d98110539123ede5226d7f4403a7e9815e62be9bb1869581e69e89cef38d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -6165,10 +6165,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=This documented diminutive coloring is conventional and is not a generator.
 transformation=original research synthesis
@@ -6176,7 +6176,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=163bfa13e3736fac3ecb459a68174f77e4bdd6abb1cc166c0d4323a0373119af
 audioAssetId=
 reviewerIdentity=
@@ -6192,7 +6192,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9e85d50bd2bd9eaa34ab4e544720ee20aff7e27210d752e1f8e6420975c752a9
+- Content hash: 30b9402604adc0dd2ca7d957e85324aca452428dac0253d62505b966839e5619
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -6214,10 +6214,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=An unstudied name has no documented derivative in this unit.
 transformation=original research synthesis
@@ -6225,7 +6225,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=6787964734afccd932da30438561ec879bfcc44f386e100f279802916d7c8d9b
 audioAssetId=
 reviewerIdentity=
@@ -6241,7 +6241,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 71b7bb0b3f8a093fc1067e201d5ab544856632794ad464dcbcd5a83bdebc08b4
+- Content hash: d811dfbed8cc749f9d6c3144a4e3d6e71875041c887c14d021cb94b232de7e2f
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -6263,10 +6263,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=Машенька
 transformation=original research synthesis
@@ -6274,7 +6274,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=65060267386b8efcfecc82efb6044357d337457acaf2c06a8a68c0631db42d6b
 audioAssetId=
 reviewerIdentity=
@@ -6290,7 +6290,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1ce2cc077ac9a99e764d5aced561cc9b178d5f45216565751ded9e235198b2ea
+- Content hash: 86173560fae73b2afc1734424c2b00886994f4f9a0d25805bf8b3ea1b113435d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -6312,10 +6312,10 @@ documented familiar short-form coloring
 documented diminutive coloring
 unsupported until a names dictionary documents that form
 the suffix mechanically generates an acceptable name
-Which English label matches the shown diminutive name?
-Which English label matches the shown affectionate name?
-Which English label matches the shown familiar name?
-Which English label matches an unstudied personal name?
+Which English description matches the shown diminutive name?
+Which English description matches the shown affectionate name?
+Which English description matches the shown familiar name?
+Which English description matches an unstudied personal name?
 an unstudied personal name
 shippedText=Сашка
 transformation=original research synthesis
@@ -6323,7 +6323,7 @@ licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=b1fcd8cc924b79626bbda105f91b2bbe4327d75448da71ed99c9798e7e266af0
+sourceHash=0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9
 contentHash=09ebad1273e0075f96936963ac412598522de640917bd2d4593e1b8231eb7976
 audioAssetId=
 reviewerIdentity=

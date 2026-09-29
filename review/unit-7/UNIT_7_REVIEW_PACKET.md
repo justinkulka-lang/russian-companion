@@ -11,12 +11,12 @@ Unit 7 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 15c044ed36cb2d2b698f59e2b220174587ddc107
-- Unit content-review SHA-256: b009259b35355e557764561ece0023d6eea57a2b1dd652bcbdbdbff39b9ad8a5
+- Curriculum source commit: ae777d85fe3616fc8e065890201d40c241d113bc
+- Unit content-review SHA-256: ec283b3bc0e58306d84e536947ab747d5ea264cea729bf4838124404ca958359
 - Mapping-package SHA-256: 20298ccd10fadcd359b2fa73bebf0e7309772c6c78ffbc71730225664717b28c
-- Pack content-review SHA-256: 76f61c9948f7a7366410ff39f81f8295ceba3f03e28aea999891e5e873ad4f9d
-- Review-package SHA-256: 03a5e7e85c290e1a961a051c1033ec7e5a49144b5dd058e903eb25f3e523acb7
-- Repository source SHA-256: e3d53fd5df8b948f4c2bad92706a5c3c8724e56b3d9e56f5ed5d80a7cae6f271
+- Pack content-review SHA-256: de742e385a363884adc4014f8f10460e5941d0b8c8cd8269bc468f3344aabad7
+- Review-package SHA-256: c4452950695d06ffaa2702f0edaf7d0e378418e2719c11d326e27dc58f2fd580
+- Repository source SHA-256: 998db1e37a25da50c353cd467e0d10d6f915789373fd414d85cdded7c5115549
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -3642,11 +3642,11 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d63e0421ddf112e46ad13d88088e722ddc6b912aab42786dbf654539e518b13d
+- Content hash: e674de462d8f0cc18c1fe5347c95999aa8ee2ea957f5614a73c676278347ace0
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English label matches the shown creative adjective?
+prompt=Which English description matches the shown creative adjective?
 promptLetter=творческий
 options=admitted creative manner-adverb relationship | admitted fast manner-adverb relationship | an unsupported invented adverb form
 answer=admitted creative manner-adverb relationship
@@ -4669,11 +4669,11 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1ce1a7f2f692e751474d8b1a516e0bc7d9025112fede10398048dd08018f968e
+- Content hash: d6c7ee2945d28a3b65a6c28606b3733b4daa5091f61b1d1ba1366e3612309f96
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English label matches the shown fast adjective?
+prompt=Which English description matches the shown fast adjective?
 promptLetter=быстрый
 options=admitted fast manner-adverb relationship | admitted creative manner-adverb relationship | an unsupported invented adverb form
 answer=admitted fast manner-adverb relationship
@@ -4704,11 +4704,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 31900c6c47bd7d31fcc1e5c6fa6966a986a03a2dd95d7c6b4cc1db373ae54829
+- Content hash: 64acc30f18b27b7a38bcccff9ce63be642cb3a7b790974b0b8760439668737a4
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English label matches the shown speaking sentence?
+prompt=Which English description matches the shown speaking sentence?
 promptLetter=Она говорит быстро.
 options=manner adverb modifying the action | predicative expression rather than a manner adverb
 answer=manner adverb modifying the action
@@ -4739,11 +4739,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 0bcf02f0982489dbf9b959d569b56b07ec4a332946eb1f1e339e052822695d1d
+- Content hash: 9565f6cb37ace73fa1939335e4e9f409d6588cf0220026104427b71e3fc8bec4
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English label matches the shown short-form sentence?
+prompt=Which English description matches the shown short-form sentence?
 promptLetter=Ей трудно.
 options=predicative expression rather than a manner adverb | manner adverb modifying the action
 answer=predicative expression rather than a manner adverb
@@ -4774,11 +4774,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f82cca42e0d5d2037660d8e2baa8cc490c70e4b95e4523f799512e6fbebb91ad
+- Content hash: 64005b5a52fbb51941bacc781127736b407eee1f9d154ffa03e385b306238332
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English label rejects an unsupported conversion of the shown adjective?
+prompt=Which English description rejects an unsupported conversion of the shown adjective?
 promptLetter=синий
 options=no documented manner adverb is recorded for this adjective | an unsupported invented adverb form
 answer=no documented manner adverb is recorded for this adjective
@@ -9166,7 +9166,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a033bd56a71a3b2c7218002abf28fa9b7be7b504c940fe93c94ac32c8637c958
+- Content hash: 72379a6f307552c6d0c9d328f9a74a8260c10d290d765e58d75f1396b68b74cf
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9194,18 +9194,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=3761c8daaa53319c28970e079601fb3fedb67e35370403a7a4c9db51daca803d
 audioAssetId=
 reviewerIdentity=
@@ -9221,7 +9221,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 842f9883f052d8398aba072e1d1152f2fc3f8ed9fa418b04e04a7d607e39a0cc
+- Content hash: bc516b0806993e02c9db8c78fa5ba9b0ca1a57ed7dd8b9c44871933c591d99b6
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9249,18 +9249,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=Russian adverbs do not change for gender, number, or case.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=29c2059362a0f75bbd5f8b699aef1c14db8966fd6ca2ff0c1db28f664fc470bc
 audioAssetId=
 reviewerIdentity=
@@ -9276,7 +9276,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c3395fd492f17b35baa83ed6b6b441810a068c5edb5b0c0c286815ed6d9ea053
+- Content hash: 9d9c7f5fb1da7861ef2a6270bead8c2a59b4829c0c9ed140a18cdd08676fa44d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9304,18 +9304,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=быстро
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=dcd85bada23a9985ee329ea7689e26b9a3fec1b3aa65511338f52ac8fb079aa0
 audioAssetId=
 reviewerIdentity=
@@ -9331,7 +9331,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 473bc245fb8500ba544c10999b414fc2f1f1d34df84d7e72ba217757321b1a92
+- Content hash: e5e883e0e7bbdb6b2764647aefad67b69973cee8207faea84ce53ed9115fd6a5
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9359,18 +9359,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=творческий
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=041cb2cd5bcaa07d787db6e9d6d9517edb7f9932b9b29cfe056f3f052c5724b7
 audioAssetId=
 reviewerIdentity=
@@ -9386,7 +9386,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2823dc4d6670377e1416d6420300caaac1806a2a6209412d8ba38351bca8991f
+- Content hash: ad470303d11923ee1c9b071a62ae39138cfaf13744b0f5229f4e1840eeff9993
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9414,18 +9414,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=творчески
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=5d9e385a71524d33fc9cecedf212ef5e3644ba0319dc3d43bdc4cf9a7eddd9db
 audioAssetId=
 reviewerIdentity=
@@ -9441,7 +9441,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 95e6296f12418a2c85c24a65d9aa54e44b84c0cba2eea1acdbef976e48327c84
+- Content hash: 84ee661a78de059efe530c71cf671606813b8d67a353393e94951f09e3977d82
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9469,18 +9469,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=Она говорит быстро.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=5aa0912f9dc4bb4d52853487ccfde02c49e1e08a387178b8f0d3bf72cc8107a1
 audioAssetId=
 reviewerIdentity=
@@ -9496,7 +9496,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 49292bffe0322e12f5b77ab10d37b474f9dfc2df854723c6352cfd059db9de12
+- Content hash: 9e710239a7a41fe925173c3128ba93d2dd419ef1add96bcb185197a65047ac08
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9524,18 +9524,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=Ей трудно.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=7caec650577cff1435f86fa1becbe7ece7c0ff6b1824486b75a9b5809dd1a2a6
 audioAssetId=
 reviewerIdentity=
@@ -9551,7 +9551,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4d1c49532c06b975e84a092365c08f07eb0023143a2e04caecd77acebc2d7edf
+- Content hash: dcc48316b32f2718640d7e78a3f1c9f45c94cc6599963461911880b5406d282b
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9579,18 +9579,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=синий
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=c65b1a8fccbf3115732e93bc6aa7ee896d431417c4f15282fa659e68025e469c
 audioAssetId=
 reviewerIdentity=
@@ -9606,7 +9606,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 298f7a162ddc14c5f9931050591c449190fa5fe5a4a80c6bde2e14545ab2eace
+- Content hash: b6d83ebb853cc65e851e8d0fbb54a463df4c2a83011616942a910f157b9ca937
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9634,18 +9634,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=admitted fast manner-adverb relationship
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=e4c75b5d232352ebd25e976988f316a011cda4fdb0cc0176f75e2b7b7be99861
 audioAssetId=
 reviewerIdentity=
@@ -9661,7 +9661,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 50bb47acf719b8e12e002ef0bffd91efb68c85dd7b9a6ae8149e371f309724f6
+- Content hash: 5fbce66560e4d8bfbeac7363367a272a62776be0ccf7b977c37060030f22b8a6
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9689,18 +9689,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=admitted creative manner-adverb relationship
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=4331ac69d4119b6a9e93d6550fb519928c14e8ccf55d8637056fa27af2c97491
 audioAssetId=
 reviewerIdentity=
@@ -9716,7 +9716,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9e8999c0a31a28a71144c97548e22e7a4ec65c277fa54ef2449f16389647c48d
+- Content hash: eb7df7a3175c36834982fd084df5dd932031982fcb83422ba37459cccb7f99d3
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9744,18 +9744,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=manner adverb modifying the action
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=102f6ed89a439a5de02c1755b1e658f968f9ff610bd09d10a8b1ad0781bf3b40
 audioAssetId=
 reviewerIdentity=
@@ -9771,7 +9771,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: aa88445064002eb76536797b340186d792b700c16dffbc3930f0025268e65c76
+- Content hash: 51da3efc1c65beb66cdac06610fe23fd1620a7b9a1b7789476edededd88a6900
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9799,18 +9799,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=predicative expression rather than a manner adverb
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=42fd6a56c2539d5f4c2e8660ef5d8c186dc50d0e8d0040c5d0aa914ca349a184
 audioAssetId=
 reviewerIdentity=
@@ -9826,7 +9826,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6c6ac90f43b2cc1daad42e9459d6248516983b7f228ba8962d2e654200ce051d
+- Content hash: c89192f11cac8de1c8be1b4e76304e853c4457ae273c1084c7b7153e112f4431
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9854,18 +9854,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=a9b3314f78c0b8281e3824eb0b76b59c84227211212734e89fd91689cbc106ed
 audioAssetId=
 reviewerIdentity=
@@ -9881,7 +9881,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 56c499628f20a00266ffc26244b6041061738fd367c306f044565d56e4b9c6f1
+- Content hash: c1e6add7e2b29a988b3e806fedbf5db89b86367f9df3445c66e0bbe321d0209e
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9909,18 +9909,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=no documented manner adverb is recorded for this adjective
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=b7f82e6012f5e4202a033ffee34723b048cab1ded7297e2069ea863b5088afeb
 audioAssetId=
 reviewerIdentity=
@@ -9936,7 +9936,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f8c68ee4ada421719c0df8a267efdacf32e67c8a6e3f0c468978f26467bbbd34
+- Content hash: f6ab014ba25906106d8829a0b6d0fe441668fde9651f268f4b3634a627f2af76
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -9964,18 +9964,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=an unsupported invented adverb form
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=856daac6a80f1ffae636376e5d459e3c6a396b02f9f56a9d6c52fa284782e63a
 audioAssetId=
 reviewerIdentity=
@@ -9991,7 +9991,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 079e0f10252cf97cfe82a7293dc644def568517b056c8c5f61c7d717d4fdab10
+- Content hash: 94b52f94a5b50594cd9d0fdd9b4c9fe3a542c38dd68a596fcd91154eac8f37a5
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -10019,19 +10019,19 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
-shippedText=Which English label matches the shown fast adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Which English description matches the shown fast adjective?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
-contentHash=b214384f3b6fa442f1b9a08dfa77ddf01328000767b0a600da0d0b9ed9f11e09
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=31b67e0303ef23420411e2b370870e9ed07a4e38068bb8c55ba45f66f9d0049d
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -10046,7 +10046,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 635d3d7fbc2b5f2c330290cd04618ddb083e994865c0721005feade59382e80f
+- Content hash: 4af1e6ddb2a636c811a8ac7c79dceeb3d9d002c9ca3d2515b9f2e9456275a6a4
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -10074,19 +10074,19 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
-shippedText=Which English label matches the shown creative adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Which English description matches the shown creative adjective?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
-contentHash=ed484d210218e1d8337f13d85775c1bc933fbcc8c4509f8aff9fb4a43b226b3d
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=54f4991b88eaecfe1ca31eb35f1a6f6e04b3280770e4cf989401baaabb676782
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -10101,7 +10101,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 990bdb3d1a6bb3bb6ff5cb05fc59d51b0180c1ad64b17e0b6460b05ab9d90f98
+- Content hash: 386e3bd8dd80b74c83943b0cecd600595077f97c7bfa3b608cb644ffb2e9bc5b
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -10129,19 +10129,19 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
-shippedText=Which English label matches the shown speaking sentence?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Which English description matches the shown speaking sentence?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
-contentHash=a493a2092145ddc8eb2c41fc804a1fef014ffedb3b57385cc80940f0fc6d4967
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=85a29803f6ed8204dcde5eecdfc20755fae0fe04ff2454d81c73fd4d26cc83dc
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -10156,7 +10156,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 31d36206c486c99ee553fd036dd15e2fcf318e482d66447c099e33121cc8af42
+- Content hash: 3a064a1f27312364bf12b81777a845a4c1d3db6c03447cf8c78f69e7831c1ed3
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -10184,19 +10184,19 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
-shippedText=Which English label matches the shown short-form sentence?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Which English description matches the shown short-form sentence?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
-contentHash=7b3a07fa777d9cfd69fb62a2172bbd91dacf3b8ee3872ebc4f40fceac78b28a3
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=d2ce7c731e903d0f6f20a57957b11a035239637680dadbb3182730b3d4d8a4c8
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -10211,7 +10211,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 83e59ef6688a20384d0196c6af751fd801d4a9337d8eadc28acfbb5e18231fa2
+- Content hash: 600e382f1a8cbd8e7ddd4bc9bb44a4d6882ed038a7ec85f2b10ace16e8969c61
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -10239,19 +10239,19 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
-shippedText=Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Which English description rejects an unsupported conversion of the shown adjective?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
-contentHash=313745efc56da4448fb8f7598b1eb9a1f0734c41e141d31d38ca71911469541c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=e50147fe8568521d0e25f3b570ebf4abeed3e9629318546fe5ab03b45139f1ac
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -10266,7 +10266,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 492ef64eb9a5fde4ff8d7c4dbd90344517564f42699209f4e82af47ecc0f53f6
+- Content hash: 02c9484cfa9349c12587b990b939c592490fa38381281aa0fb9e986e5722c5b1
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -10294,18 +10294,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=97e122baf9ff8121889950115f53f6399e8223a1e0cae1812aa57e80becfb1be
 audioAssetId=
 reviewerIdentity=
@@ -10321,7 +10321,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1e51732d67953b7ad9f1368a1e86a78e9b83ba98ece8824573990ffc48a18b35
+- Content hash: 40dec3e1ece924beeacd216b0ef0f18865a9b325c044a7404cfa8785f63bc96c
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -10349,18 +10349,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=The documented creative pair is a separate admitted manner-adverb relationship.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=32ad1170992613dfd204ed77b2df4a32da33591652e6cbba7eb6d06536dda5c2
 audioAssetId=
 reviewerIdentity=
@@ -10376,7 +10376,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b696516788dd4b13327f313283fe098e60e6849b99c01db75d8ca6a8dc9671e0
+- Content hash: efba4f02a9aa920571e21d9fee063ed17a33765436b8243ec22a7a4023d02b16
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -10404,18 +10404,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=In the speaking sentence, the adverb modifies the action.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=196d8aeb666178636b1fcf6f5faa0ef67717ad5eb4006aade0ed3c340e2698ce
 audioAssetId=
 reviewerIdentity=
@@ -10431,7 +10431,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f77841ae395824856aedbdd6f85dd3332fa05302bd30b4c7e68063967b36c6da
+- Content hash: edf9c101c193fb0a111d5e53e5b7ecf133bd465748108fe22a4a21cc49186841
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -10459,18 +10459,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=In the short-form sentence, the expression is predicative rather than a manner adverb.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=3befc10e6f78009b27446072a7b954cea6a509e5378b1d3acad4180230d5e141
 audioAssetId=
 reviewerIdentity=
@@ -10486,7 +10486,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d171c22765be8506e21ead15c4b4d9ccbaa198b035e4784a34eee06133c89f1d
+- Content hash: 77cfd0f8a47a137bf7fd3be0f781cc28482712a7fe01f2663e9d6c505b072d3d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -10514,18 +10514,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=This adjective has no documented manner adverb in this unit.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=28345eac54d32dcd90e575e791e3ccc95e0653e7926051f86b5f302d2dd0fec1
 audioAssetId=
 reviewerIdentity=
@@ -10541,7 +10541,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 847426d69038a6ffb43681bc44950dd2961bee18aabf591c840f3a177dc6f471
+- Content hash: e3530f2f5c9a3bc5c575c2648c9e98d2a094ee786286af8c368471914e613755
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -10569,18 +10569,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=Adding an adverb ending to an unstudied adjective invents an unsupported form.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=1e5b48ac36fd943066ad43a1bd7b178ff6f18f4e56578573f6b3ba0debf86958
 audioAssetId=
 reviewerIdentity=
@@ -10596,7 +10596,7 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2764843f9a472e6f09c98b6ed276f3bf6cc20893bcde485132ba22ed2c305d96
+- Content hash: 20e5477b28c6c4c8982cf9aef7bfb35274a4487444226b666bf75fe799cdde1d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
@@ -10624,18 +10624,18 @@ manner adverb modifying the action
 predicative expression rather than a manner adverb
 no documented manner adverb is recorded for this adjective
 an unsupported invented adverb form
-Which English label matches the shown fast adjective?
-Which English label matches the shown creative adjective?
-Which English label matches the shown speaking sentence?
-Which English label matches the shown short-form sentence?
-Which English label rejects an unsupported conversion of the shown adjective?
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
 shippedText=быстрый
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=c4620b1e9d8fe14fadaadd56675612a2c5d614a1eeeb8a1576061a63b3dd535c
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
 contentHash=0e277d3603c4dea6439a188a73a837282b535e69249497191dd6114c2cceeedd
 audioAssetId=
 reviewerIdentity=
