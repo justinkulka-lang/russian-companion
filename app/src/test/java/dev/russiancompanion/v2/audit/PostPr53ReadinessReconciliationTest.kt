@@ -323,6 +323,14 @@ class PostPr53ReadinessReconciliationTest {
                 POST_REPORT_DIFF_SHA256,
             ),
         )
+        assertFalse(isGovernedUntracked("catalog/__pycache__/batch_b_units_21_25.cpython-312.pyc"))
+        assertTrue(isGovernedUntracked("catalog/unexpected.py"))
+        assertTrue(isGovernedUntracked("review/unit-1/EXTRA.json"))
+        assertTrue(isGovernedUntracked("release/acceptance/candidate.json"))
+        assertTrue(isGovernedUntracked("docs/governance/EXTRA.md"))
+        assertTrue(isGovernedUntracked("audit/post-pr53-readiness/EXTRA.md"))
+        assertTrue(isGovernedUntracked("app/src/main/java/dev/russiancompanion/Extra.kt"))
+        assertFalse(isGovernedUntracked("app/src/test/java/dev/russiancompanion/ExtraTest.kt"))
         assertFalse(
             postReportLockHolds(
                 REPORT_CONTENT_COMMIT,
@@ -446,9 +454,12 @@ class PostPr53ReadinessReconciliationTest {
     private fun untrackedGovernedPaths(root: File): List<String> {
         val text = git(root, "ls-files", "--others", "--exclude-standard")
         if (text.isEmpty()) return emptyList()
-        return text.lines().filter { it.isNotBlank() }.filter { path ->
-            GOVERNED_PREFIXES.any { prefix -> path == prefix.removeSuffix("/") || path.startsWith(prefix) }
-        }.sorted()
+        return text.lines().filter { it.isNotBlank() }.filter { isGovernedUntracked(it) }.sorted()
+    }
+
+    private fun isGovernedUntracked(path: String): Boolean {
+        if ("__pycache__/" in path || path.endsWith(".pyc")) return false
+        return GOVERNED_PREFIXES.any { prefix -> path == prefix.removeSuffix("/") || path.startsWith(prefix) }
     }
 
     private fun normalizedPostReportDiffSha256(root: File, from: String, to: String): String {
@@ -513,7 +524,7 @@ class PostPr53ReadinessReconciliationTest {
     private companion object {
         const val BASE_COMMIT = "6457e690776ff12349d55f0d1ffe03a95626ea23"
         const val REPORT_CONTENT_COMMIT = "ad813aa42e5172f3c993f5581b22782a0e0327c5"
-        const val POST_REPORT_DIFF_SHA256 = "c107867ab23394bffdb999935561640e5aab6868bdd3ca35e4027f19167dd205" // post-report-diff-lock
+        const val POST_REPORT_DIFF_SHA256 = "5fabfb0d55d4290dab0c173cd65e7623f5a8329b7ed0bbf73677073d38dd055b" // post-report-diff-lock
         const val REPORT_JSON = "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.json"
         const val REPORT_MD = "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.md"
         const val REPORT_JSON_BLOB = "accd5b79b313ecabd3927ce1bebc224948173da6"
