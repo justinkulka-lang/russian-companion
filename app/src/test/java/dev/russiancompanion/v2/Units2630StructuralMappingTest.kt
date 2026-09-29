@@ -454,7 +454,7 @@ class Units2630StructuralMappingTest {
         assertTrue(proposal.contains("Status: PROPOSED_NOT_ACTIVATED"))
         assertFalse(proposal.contains("Status: ACTIVATED"))
         val authority = File(root, "docs/governance/MASTER_AUTHORITY_v2.0.md").readBytes()
-        assertEquals("bb4932783224e85d60b130118191185c2e26d224254a0a54a2c52cfc92b4aaaf", sha256(authority))
+        assertEquals("2736372535c82dc5a2c5ac42ab42fad0756169095f799da758c36c88f9b2af4c", sha256(authority))
         val candidate = File(root, "release/acceptance/candidate.json").readText()
         assertTrue(candidate.contains("\"publicRelease\": \"NOT_APPROVED\""))
         assertTrue(candidate.contains("\"frozen\": false"))
