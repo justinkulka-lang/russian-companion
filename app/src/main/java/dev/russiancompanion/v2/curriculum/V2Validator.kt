@@ -92,6 +92,38 @@ internal object V2Validator {
 
     internal fun instructionalContentDigest(pack: V2CurriculumPack): String = contentReviewDigest(pack)
 
+    /**
+     * Release acceptance for the pack-wide linguistic review and every unit.
+     * This is the same decision [validate] records when a chain claims
+     * OWNER_ACCEPTED. A reduced review DTO cannot call it.
+     */
+    internal fun linguisticReleaseAccepted(pack: V2CurriculumPack): Boolean {
+        val packReview = pack.linguisticReview
+        if (!reviewReleaseAccepted(
+                packReview.status,
+                packReview.reviewChainStages,
+                packReview.reviewedContentDigest,
+                contentReviewDigest(pack),
+                packReview.evidence,
+                packReview.finalAudit,
+            )
+        ) {
+            return false
+        }
+        val byUnit = pack.unitReviews.groupBy { it.unitNumber }
+        return (1..30).all { number ->
+            val review = byUnit[number]?.singleOrNull() ?: return@all false
+            reviewReleaseAccepted(
+                review.status,
+                review.reviewChainStages,
+                review.reviewedContentDigest,
+                unitContentReviewDigest(pack, number),
+                review.evidence,
+                review.finalAudit,
+            )
+        }
+    }
+
     private fun sha256(text: String): String {
         val digest = MessageDigest.getInstance("SHA-256").digest(text.toByteArray(Charsets.UTF_8))
         return digest.joinToString("") { byte -> "%02x".format(byte) }
@@ -547,7 +579,8 @@ internal object V2Validator {
             review.reviewChainStages,
             review.reviewedContentDigest,
             contentReviewDigest(pack),
-            review.evidenceClass,
+            review.evidence,
+            review.finalAudit,
             errors,
         )
     }
@@ -586,7 +619,8 @@ internal object V2Validator {
                 review.reviewChainStages,
                 review.reviewedContentDigest,
                 unitContentReviewDigest(pack, review.unitNumber),
-                review.evidenceClass,
+                review.evidence,
+                review.finalAudit,
                 errors,
             )
         }
@@ -598,23 +632,22 @@ internal object V2Validator {
         stages: List<String>,
         reviewedContentDigest: String?,
         currentContentDigest: String,
-        evidenceClass: String?,
+        evidence: V2PersistedEvidence?,
+        finalAudit: V2FinalAuditIdentity?,
         errors: MutableList<String>,
     ) {
-        if (status !in DOWNSTREAM_AUDIT_STAGES && status != OWNER_ACCEPTED) return
+        if (status !in REVIEW_CHAIN) return
         val defects = reviewChainDefects(
-            ApprovalAttempt(
-                stage = status,
-                priorStages = stages,
-                reviewedContentDigest = reviewedContentDigest,
-                currentContentDigest = currentContentDigest,
+            reviewAcceptanceAttempt(
+                status,
+                stages,
+                reviewedContentDigest,
+                currentContentDigest,
+                evidence,
+                finalAudit,
             ),
-            enforceEvidence = false,
         )
         defects.forEach { errors += "$label $it" }
-        if (status == OWNER_ACCEPTED && evidenceClass !in EVIDENCE_CLASSES) {
-            errors += "$label evidence class is not recorded"
-        }
     }
 
     private fun unitReview(pack: V2CurriculumPack, unitNumber: Int): V2UnitReviewRecord? {
@@ -645,12 +678,14 @@ internal object V2Validator {
         val installedReview = unitReview(pack, unit.number)
         val legacyApproved = installedReview?.status == "APPROVED"
         val chainAccepted = installedReview != null &&
-            releaseLinguisticReviewSatisfied(
+            reviewReleaseAccepted(
                 installedReview.status,
-                installedReview.reviewedContentDigest,
                 installedReview.reviewChainStages,
-            ) &&
-            installedReview.reviewedContentDigest == unitContentReviewDigest(pack, unit.number)
+                installedReview.reviewedContentDigest,
+                unitContentReviewDigest(pack, unit.number),
+                installedReview.evidence,
+                installedReview.finalAudit,
+            )
         if (!legacyApproved && !chainAccepted) {
             errors += "Installed unit ${unit.number} review chain is not OWNER_ACCEPTED"
         }

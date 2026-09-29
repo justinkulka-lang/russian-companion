@@ -15,11 +15,15 @@ Shipped Russian instructional approval is the following chain, in order. No stag
 
 1. `RESEARCH_VERIFIED` — Codex records the research basis, scope, risks, and source inventory.
 2. `IMPLEMENTED_PENDING_FINAL_AUDIT` — Cursor has implemented the bounded specification. This state is not approval.
-3. `FINAL_CURRICULUM_AUDIT_PASSED` — Claude performs the final comprehensive Units 1–30 curriculum audit against a frozen audit bundle. Record model and version, date, input artifact digests, findings, and disposition.
+3. `FINAL_CURRICULUM_AUDIT_PASSED` — Claude performs the final comprehensive Units 1–30 curriculum audit against a frozen audit bundle. A completed reference is a structured identity, not free text. It binds the retained audit artifact, the artifact SHA-256, the audited curriculum or content SHA-256, disposition exactly `FINAL_CURRICULUM_AUDIT_PASSED`, the model and version, and an ISO-8601 date. Placeholder text such as `not yet passed` is not that identity.
 4. `INDEPENDENT_AUDIT_VERIFIED` — Codex verifies the audit findings, the exact corrections, the tests, and the merged tree.
 5. `OWNER_ACCEPTED` — the Product Owner accepts the owned-edition mapping, the device experience, any activated variance, and the release decision.
 
-A governed curriculum byte change invalidates `FINAL_CURRICULUM_AUDIT_PASSED`, `INDEPENDENT_AUDIT_VERIFIED`, and `OWNER_ACCEPTED`, and the digests those stages bind. A display-only aggregate line does not rewrite an unrelated unit-content digest.
+The recorded stage sequence must equal the exact required prefix, in this order: `RESEARCH_VERIFIED`, `IMPLEMENTED_PENDING_FINAL_AUDIT`, `FINAL_CURRICULUM_AUDIT_PASSED`, `INDEPENDENT_AUDIT_VERIFIED`, then `OWNER_ACCEPTED`. Reordered stages, duplicate stages, skipped stages, unknown or extra stages, `OWNER_ACCEPTED` inside prior stages, and a status that does not match that prefix are rejected. `RESEARCH_VERIFIED` and `IMPLEMENTED_PENDING_FINAL_AUDIT` may still be recorded with an empty stage list. That empty list is not approval. A downstream stage with an empty list is incomplete.
+
+A governed curriculum byte change invalidates `FINAL_CURRICULUM_AUDIT_PASSED`, `INDEPENDENT_AUDIT_VERIFIED`, and `OWNER_ACCEPTED`, and the digests those stages bind. The reviewed content digest and the audited content digest must equal the current computed digest. A display-only aggregate line does not rewrite an unrelated unit-content digest.
+
+Pack-wide linguistic review and every unit review both have to reach `OWNER_ACCEPTED` on that current digest. The final audit is comprehensive across Units 1–30, so a completed unit chain does not stand in for the pack review.
 
 Existing `PENDING_QUALIFIED_REVIEW` records migrate to `IMPLEMENTED_PENDING_FINAL_AUDIT`. The migration does not record a reviewer, a qualification, a signature, or any later stage.
 
@@ -27,12 +31,12 @@ A legacy `APPROVED` token, by itself, is not `OWNER_ACCEPTED` and does not satis
 
 ## 2. Evidence classes
 
-| Evidence class | Use | Required evidence |
+| Evidence class | Use | Required structured fields |
 | --- | --- | --- |
-| `QUOTED_OR_ADAPTED_SOURCE` | Learner-facing wording, examples, audio, or imagery reused from another work | immutable source identity, retained bytes, exact span or asset hash, license or rights route, transformation, attribution, claim binding |
-| `ORIGINAL_RESEARCH_SYNTHESIS` | Independently authored explanations, examples, distractors, feedback, remediation, and checks | claim-level bibliography, source date or version, authorship declaration, governed objective or claim binding, final curriculum audit |
+| `QUOTED_OR_ADAPTED_SOURCE` | Learner-facing wording, examples, audio, or imagery reused from another work | `sourceIdentity`; `retainedByteStatus` exactly `RETAINED`; `retainedByteIdentity` SHA-256; `exactSpanOrAssetHash`; `licenseOrRights`; `transformation`; `attribution`; `claimBinding` |
+| `ORIGINAL_RESEARCH_SYNTHESIS` | Independently authored explanations, examples, distractors, feedback, remediation, and checks | `bibliography`; `sourceDateOrVersion`; `authorshipDeclaration`; `objectiveOrClaimBinding`; `finalAudit` with `artifactIdentity`, `artifactDigest` SHA-256, `auditedContentDigest` equal to the governed content digest, `disposition` exactly `FINAL_CURRICULUM_AUDIT_PASSED`, `modelVersion`, and ISO-8601 `date` |
 
-Exact frozen spans or asset hashes are mandatory for quoted or adapted material. They are not mandatory for original synthesis. A record with no evidence class satisfies neither class and is not approved.
+These are separate persisted fields. An evidence-class label is not the record. A missing field, a placeholder, or two classes populated together is not approval. Exact frozen spans or asset hashes are mandatory for quoted or adapted material. They are not mandatory for original synthesis. Original synthesis still requires the structured final-audit identity above. Quoted or adapted acceptance also requires that same review-level audit identity once the chain reaches `FINAL_CURRICULUM_AUDIT_PASSED`. A record with no evidence class satisfies neither class and is not approved.
 
 Penguin expression stays private. Ownership of a lawful copy permits consultation and structural mapping. It does not authorize packaging Penguin prose, exercises, tables, translations, or answer keys.
 
