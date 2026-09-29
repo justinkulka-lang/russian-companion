@@ -10,10 +10,10 @@ The unresolved set below is `V2Validator.unresolvedRequiredSourceCapabilities` o
 | --- | --- |
 | Branch | `cursor/post-pr53-readiness-reconciliation-964f` |
 | Base commit | `6457e690776ff12349d55f0d1ffe03a95626ea23` |
-| Head commit | `6457e690776ff12349d55f0d1ffe03a95626ea23` |
-| Draft PR | `PENDING_UNTIL_PULL_REQUEST` |
+| Head commit | `dc98eeba48ffbbeb17ce835f3700bde158d4a4d3` |
+| Draft PR | `https://github.com/justinkulka-lang/russian-companion/pull/54` |
 
-The base commit is the merge commit of PR #53 on canonical `main`. The head commit recorded here is that same commit until this branch adds the reconciliation commit. The regression test requires the recorded head to be `HEAD` or `HEAD`'s first parent, and requires the base commit to remain an ancestor.
+The base commit is the merge commit of PR #53 on canonical `main`. The recorded head commit is the reconciliation content commit. The regression test requires that recorded head to be `HEAD` or `HEAD`'s first parent. The branch tip that records the pull request URL and the local gate results is the child of that content commit.
 
 Public release remains `NOT_APPROVED`. The candidate remains unfrozen. `sourceCommit` remains null. Artifact status remains `NOT_RECORDED`. AT-031 remains `UNEXECUTED`.
 
@@ -227,11 +227,19 @@ No mapping worksheet was deleted, and no approved mapping was removed. There has
 
 ## 10. Local gates
 
-Recorded after the local run on this branch.
+Run on content commit `dc98eeba48ffbbeb17ce835f3700bde158d4a4d3`.
+
+| Task | Result |
+| --- | --- |
+| testDebugUnitTest | BUILD SUCCESSFUL. 434 tests, 0 failures, 1 skipped. |
+| assembleDebug | BUILD SUCCESSFUL |
+| lintDebug | BUILD SUCCESSFUL |
+| verifyReleaseGateAttachment | BUILD SUCCESSFUL |
+| assembleRelease | FAILED at `:app:checkReleaseGate` with "Public release is not approved." Gradle exit 1. |
 
 ## 11. Release closure
 
-`assembleRelease` must fail closed. No release APK is a deliverable of this phase.
+`assembleRelease` fails closed. The only APK present after that run is `app/build/outputs/apk/debug/app-debug.apk`. No release APK is produced.
 
 ## 12. Regression lock
 
