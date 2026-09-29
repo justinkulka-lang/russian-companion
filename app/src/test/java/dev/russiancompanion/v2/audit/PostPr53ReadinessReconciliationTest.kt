@@ -35,7 +35,19 @@ class PostPr53ReadinessReconciliationTest {
         val recordedHead = report.getValue("headCommit").jsonPrimitive.content
         val head = git(root, "rev-parse", "HEAD")
         val parent = git(root, "rev-parse", "HEAD^")
-        assertTrue(recordedHead == head || recordedHead == parent)
+        val pullRequestHead = gitOrNull(root, "rev-parse", "--verify", "HEAD^2")
+        if (pullRequestHead != null) {
+            val pullRequestParent = git(root, "rev-parse", "HEAD^2^")
+            assertTrue(
+                "pull-request checkout recorded=$recordedHead prHead=$pullRequestHead prParent=$pullRequestParent",
+                recordedHead == pullRequestHead || recordedHead == pullRequestParent,
+            )
+        } else {
+            assertTrue(
+                "recorded=$recordedHead head=$head parent=$parent",
+                recordedHead == head || recordedHead == parent,
+            )
+        }
         assertEquals(0, gitExit(root, "merge-base", "--is-ancestor", BASE_COMMIT, "HEAD"))
         assertTrue(markdown.contains(report.getValue("draftPullRequestUrl").jsonPrimitive.content))
 
@@ -222,12 +234,17 @@ class PostPr53ReadinessReconciliationTest {
     private fun root(): File = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
 
     private fun git(root: File, vararg args: String): String {
+        val text = gitOrNull(root, *args)
+        assertTrue(args.joinToString(" "), text != null)
+        return text!!
+    }
+
+    private fun gitOrNull(root: File, vararg args: String): String? {
         val process = ProcessBuilder(listOf("git", "-C", root.absolutePath) + args)
             .redirectErrorStream(true)
             .start()
         val text = process.inputStream.bufferedReader().readText().trim()
-        assertEquals(text, 0, process.waitFor())
-        return text
+        return if (process.waitFor() == 0) text else null
     }
 
     private fun gitExit(root: File, vararg args: String): Int {

@@ -10,10 +10,10 @@ The unresolved set below is `V2Validator.unresolvedRequiredSourceCapabilities` o
 | --- | --- |
 | Branch | `cursor/post-pr53-readiness-reconciliation-964f` |
 | Base commit | `6457e690776ff12349d55f0d1ffe03a95626ea23` |
-| Head commit | `dc98eeba48ffbbeb17ce835f3700bde158d4a4d3` |
+| Head commit | `ad813aa42e5172f3c993f5581b22782a0e0327c5` |
 | Draft PR | `https://github.com/justinkulka-lang/russian-companion/pull/54` |
 
-The base commit is the merge commit of PR #53 on canonical `main`. The recorded head commit is the reconciliation content commit. The regression test requires that recorded head to be `HEAD` or `HEAD`'s first parent. The branch tip that records the pull request URL and the local gate results is the child of that content commit.
+The base commit is the merge commit of PR #53 on canonical `main`. The recorded head commit is the commit that records the pull request URL and the local gate results. The regression test requires that recorded head to be `HEAD` or `HEAD`'s first parent. A pull-request checkout is a merge commit, so the same check uses that merge's second parent and its parent. The branch tip that corrects the pull-request checkout is the child of the recorded head.
 
 Public release remains `NOT_APPROVED`. The candidate remains unfrozen. `sourceCommit` remains null. Artifact status remains `NOT_RECORDED`. AT-031 remains `UNEXECUTED`.
 

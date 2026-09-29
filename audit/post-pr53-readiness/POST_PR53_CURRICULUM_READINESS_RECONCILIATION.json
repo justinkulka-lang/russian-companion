@@ -3,7 +3,7 @@
   "kind": "post-pr53-curriculum-readiness-reconciliation",
   "branch": "cursor/post-pr53-readiness-reconciliation-964f",
   "baseCommit": "6457e690776ff12349d55f0d1ffe03a95626ea23",
-  "headCommit": "dc98eeba48ffbbeb17ce835f3700bde158d4a4d3",
+  "headCommit": "ad813aa42e5172f3c993f5581b22782a0e0327c5",
   "draftPullRequestUrl": "https://github.com/justinkulka-lang/russian-companion/pull/54",
   "phase": "DIAGNOSIS_AND_PLANNING_ONLY",
   "publicRelease": "NOT_APPROVED",
@@ -832,6 +832,7 @@
     "releaseApkProduced": false,
     "apkPresent": [
       "app/build/outputs/apk/debug/app-debug.apk"
-    ]
+    ],
+    "checkoutCorrectionRerun": "testDebugUnitTest 434 tests, 0 failures, 1 skipped; assembleDebug, lintDebug, verifyReleaseGateAttachment BUILD SUCCESSFUL; assembleRelease FAILED at checkReleaseGate; no release APK"
   }
 }
