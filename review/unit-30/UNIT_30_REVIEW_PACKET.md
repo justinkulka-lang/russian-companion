@@ -11,12 +11,12 @@ Unit 30 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 3
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
-- Unit content-review SHA-256: 60c27cc8efdb7e4ba36ca665be5f45b5106302ddc736e0db0465a733f653d33e
+- Curriculum source commit: 8e667dbcd95e3a286c484ab1d6657686b18e5e0a
+- Unit content-review SHA-256: 844fd7ea651d1642cdb88a964efe8600029086b3c9476fb3e835a11d73dd8c3d
 - Mapping-package SHA-256: e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367
-- Pack content-review SHA-256: cf68212c7a25d687bd280f78fca64f80f94fdabf33adf0f69cc588b18c94f40b
-- Review-package SHA-256: 0c36f3d2130a93b5302f07d7228694d29dc424635dc6ae7258bf0b4ec9222f03
-- Repository source SHA-256: bdd02b25fda8fa2f29a81445288687f3166c35fa9c26904aa730dda7cf21fbf9
+- Pack content-review SHA-256: 9b925aa087dec48d4f9eab124bfbfd576c3be27a1f0fe6ba8e5b71ec22d1502e
+- Review-package SHA-256: b1d4b6c30ca7d197a1c8b8fdf2340d8679e36c42870a2c3eec598e0bb50b6eb9
+- Repository source SHA-256: 7b96ecdbff72b26d2785a8d2f888c3c3a424a1f4a0624c3c57723f7aefa3b79c
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 30.
 
 ### UNIT `unit-30`
 
-- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-capstone, obj-u30-book
-- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-capstone, u30-s-book
+- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-capstone, obj-u30-book, obj-u30-dictionary
+- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-capstone, u30-s-book, u30-s-dictionary
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c7caf0a4114a06d901a414eb2cc1e9e291c7130a0f5799fbe49738f1cb6fc5ff
+- Content hash: d19f23bc5a95f6d2f3ef7e70b63f7f7030cf570d9e19ca2de59a4ab2f716cca9
 
 number=30
 title=Abbreviations, names of Russian letters, and particles
@@ -237,6 +237,25 @@ examples=
 practice=
 checks=
 remediation=
+
+### OBJECTIVE `obj-u30-dictionary`
+
+- Objectives: obj-u30-dictionary
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 95ceebb6dd7e356977bb2204ca3a49519a46e607131668520d4d04703171c72c
+
+title=Use the admitted dictionary entry
+kind=RECOGNITION
+unitNumber=30
+instruction=u30-dictionary-teach-1,u30-dictionary-teach-2
+examples=ex-u30-dictionary-1,ex-u30-dictionary-2
+practice=u30-dictionary-guided
+checks=u30-i-dictionary-1,u30-i-dictionary-2,u30-i-dictionary-3,u30-i-dictionary-4
+remediation=u30-dictionary-remediate
 
 ### SESSION `u30-s-orient`
 
@@ -1172,6 +1191,131 @@ bookDirection=Self-attest only after the Lesson 30 work in your copy.
 companionDirection=
 remediationStepId=
 
+### SESSION `u30-s-dictionary`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3bae0d08b95232bd8da8e6c3b5a125f9a041e6f7d9979da12c4c2a636e9714ff
+
+title=Use the admitted entry to decide what the shown word contributes in context.
+estimatedMinutes=10
+objectives=obj-u30-dictionary
+steps=u30-dictionary-teach-1,u30-dictionary-guided,u30-dictionary-teach-2,u30-dictionary-remediate,u30-dictionary-check
+
+### STEP `u30-dictionary-teach-1`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 89002e04266425dccbdd710fa5b16b2db2948e6e6a27c05aab33d992ca956e8a
+
+kind=TEACH
+title=Admitted instruction
+body=Use the admitted entry to decide what the shown word contributes in context.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u30-dictionary-1,ex-u30-dictionary-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-dictionary-guided`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 561b20ec1cd408e6dc4797fd447b636b2b0f8bf0e0ac76dd964ddeb69b83efbc
+
+kind=GUIDED
+title=Guided practice
+body=A short label, a row of forms, or a story from another objective does not supply that sense.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u30-g-dictionary-1
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u30-dictionary-remediate
+
+### STEP `u30-dictionary-teach-2`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 55d8bc64a03f401b4e8f584dbc26c7d59b3cc2eef74bd315a5173c70a2f27ee6
+
+kind=TEACH
+title=Admitted instruction
+body=A short label, a row of forms, or a story from another objective does not supply that sense.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-dictionary-remediate`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f614cb3473e7476fd44fbf77c44459d01626f9c58de61f8851a3b8cc3353668f
+
+kind=REMEDIATE
+title=Remediation
+body=Return to the table sense and the standing sense in the admitted entry.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-dictionary-check`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 21220b7881fee74c65d4ed4d514fac8c5c0be99f7220656ed1dcaa69ac75158b
+
+kind=CHECK
+title=Independent checks
+body=Use the admitted entry to decide what the shown word contributes in context.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u30-i-dictionary-1,u30-i-dictionary-2,u30-i-dictionary-3,u30-i-dictionary-4
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u30-dictionary-remediate
+
 ### EXAMPLE `ex-u30-letter-names-0`
 
 - Objectives: obj-u30-letter-names
@@ -1495,6 +1639,40 @@ note=все расхохота́лись
 objectiveId=obj-u30-capstone
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u30-dictionary-1`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7fe04b7d45f9b8f1888d02e8662b4626ed7d8d891f82c0505d88bb15d1c5cf51
+
+kind=LEXICAL
+letterId=
+display=стол
+note=a noun for a table
+objectiveId=obj-u30-dictionary
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u30-dictionary-2`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3fcc6c6e140fde870ebc59b1a1ccd5a3d558b1c1250b5cbe6fd2145d1a04a9b7
+
+kind=LEXICAL
+letterId=
+display=стоять
+note=a verb for standing
+objectiveId=obj-u30-dictionary
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### GUIDED_PRACTICE `u30-g-letter-names-0`
 
 - Objectives: obj-u30-letter-names
@@ -1704,6 +1882,41 @@ contrastMembers=нёс де́вочку | несла́ большу́ю ку́к
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u30-capstone-x-1 | prov-ex-u30-capstone-0-ru | prov-ex-u30-capstone-1-ru
 responseKind=RUSSIAN_PHRASE
+
+### GUIDED_PRACTICE `u30-g-dictionary-1`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64a78e5fc21dac5e8d9599e102e621e17b677dc96e0c1d777c323d9973081517
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English sense does the admitted entry support for the case form on the table?
+promptLetter=на столе
+options=the table sense fits the furniture sentence | a verb for standing | an abbreviation label alone does not give the sense
+answer=the table sense fits the furniture sentence
+feedback=Admitted reading: the table sense fits the furniture sentence
+objectiveId=obj-u30-dictionary
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: a verb for standing | Rejected reading: an abbreviation label alone does not give the sense
+testedFeature=DICTIONARY_LOOKUP_TABLE_CASE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-g-dictionary-1
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-obj-u30-dictionary-9
+distractorSourceIds= | prov-obj-u30-dictionary-6 | prov-obj-u30-dictionary-11
+distractorDifference= | Rejected reading: a verb for standing | Rejected reading: an abbreviation label alone does not give the sense
+whyAnswerDemonstratesObjective=Admitted reading: the table sense fits the furniture sentence
+contrastMembers=the table sense fits the furniture sentence | a verb for standing | an abbreviation label alone does not give the sense
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u30-dictionary-8 | prov-obj-u30-dictionary-9 | prov-obj-u30-dictionary-6 | prov-obj-u30-dictionary-11
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u30-i-letter-names-1`
 
@@ -2125,15 +2338,155 @@ relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u30-capstone-1-ru | prov-ex-u30-capstone-0-ru | prov-ex-u30-capstone-1-en
 responseKind=RUSSIAN_PHRASE
 
+### INDEPENDENT_CHECK `u30-i-dictionary-1`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cfa79a1cb70e912847fd165b233cada3a81e3c0f45a220de3f1fb1f27ec5b3b4
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English sense does the admitted entry support for the furniture word?
+promptLetter=стол
+options=a noun for a table | a verb for standing | an abbreviation label alone does not give the sense
+answer=a noun for a table
+feedback=Admitted reading: a noun for a table
+objectiveId=obj-u30-dictionary
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: a verb for standing | Rejected reading: an abbreviation label alone does not give the sense
+testedFeature=DICTIONARY_LOOKUP_TABLE_NOUN
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-i-dictionary-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u30-dictionary-4
+distractorSourceIds= | prov-obj-u30-dictionary-6 | prov-obj-u30-dictionary-11
+distractorDifference= | Rejected reading: a verb for standing | Rejected reading: an abbreviation label alone does not give the sense
+whyAnswerDemonstratesObjective=Admitted reading: a noun for a table
+contrastMembers=a noun for a table | a verb for standing | an abbreviation label alone does not give the sense
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u30-dictionary-3 | prov-obj-u30-dictionary-4 | prov-obj-u30-dictionary-6 | prov-obj-u30-dictionary-11
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u30-i-dictionary-2`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b3ae1024d04fab732ce4cd8607a20a50aca3ac4ceb1dafa8865e429c9a5b5468
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English sense does the admitted entry support for the standing word?
+promptLetter=стоять
+options=a verb for standing | a noun for a table | the book is on a table
+answer=a verb for standing
+feedback=Admitted reading: a verb for standing
+objectiveId=obj-u30-dictionary
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: a noun for a table | Rejected reading: the book is on a table
+testedFeature=DICTIONARY_LOOKUP_STAND_VERB
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-i-dictionary-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u30-dictionary-6
+distractorSourceIds= | prov-obj-u30-dictionary-4 | prov-obj-u30-dictionary-18
+distractorDifference= | Rejected reading: a noun for a table | Rejected reading: the book is on a table
+whyAnswerDemonstratesObjective=Admitted reading: a verb for standing
+contrastMembers=a verb for standing | a noun for a table | the book is on a table
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u30-dictionary-5 | prov-obj-u30-dictionary-6 | prov-obj-u30-dictionary-4 | prov-obj-u30-dictionary-18
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u30-i-dictionary-3`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d30d7abd979741862a93cdd22b3bbf68e21aaee4dac479bfce9eec0aba143a5b
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English sense does the admitted entry support in the furniture sentence?
+promptLetter=Книга лежит на столе.
+options=the book is on a table | the book is performing a standing action | a noun for a table
+answer=the book is on a table
+feedback=Admitted reading: the book is on a table
+objectiveId=obj-u30-dictionary
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the book is performing a standing action | Rejected reading: a noun for a table
+testedFeature=DICTIONARY_LOOKUP_FURNITURE_SENTENCE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-i-dictionary-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u30-dictionary-18
+distractorSourceIds= | prov-obj-u30-dictionary-24 | prov-obj-u30-dictionary-4
+distractorDifference= | Rejected reading: the book is performing a standing action | Rejected reading: a noun for a table
+whyAnswerDemonstratesObjective=Admitted reading: the book is on a table
+contrastMembers=the book is on a table | the book is performing a standing action | a noun for a table
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u30-dictionary-22 | prov-obj-u30-dictionary-18 | prov-obj-u30-dictionary-24 | prov-obj-u30-dictionary-4
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u30-i-dictionary-4`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 43bdf3c56bc0bafd053ed423679693162f436b3ce967e37995e733e24c1e71f6
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English sense does the admitted entry support when only the short label is shown?
+promptLetter=сущ.
+options=an abbreviation label alone does not give the sense | a noun for a table | a verb for standing
+answer=an abbreviation label alone does not give the sense
+feedback=Admitted reading: an abbreviation label alone does not give the sense
+objectiveId=obj-u30-dictionary
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: a noun for a table | Rejected reading: a verb for standing
+testedFeature=DICTIONARY_LOOKUP_ABBREVIATION_INSUFFICIENT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-i-dictionary-4
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u30-dictionary-11
+distractorSourceIds= | prov-obj-u30-dictionary-4 | prov-obj-u30-dictionary-6
+distractorDifference= | Rejected reading: a noun for a table | Rejected reading: a verb for standing
+whyAnswerDemonstratesObjective=Admitted reading: an abbreviation label alone does not give the sense
+contrastMembers=an abbreviation label alone does not give the sense | a noun for a table | a verb for standing
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u30-dictionary-27 | prov-obj-u30-dictionary-11 | prov-obj-u30-dictionary-4 | prov-obj-u30-dictionary-6
+responseKind=ENGLISH_CLASSIFICATION
+
 ### REFERENCE `ref-u2630-attribution`
 
 - Objectives: none
-- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-capstone, u30-s-book
+- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-capstone, u30-s-book, u30-s-dictionary
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 403d8f11b741dcf9fcde07e00363f6ab6361efdcaa8dd124a98c401df9aac067
+- Content hash: 7017a5bfcd97b1e46fc4353f1a0458d886cd9bd3e4c5f8ba6b6fb7c1965a50c1
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
@@ -3545,6 +3898,1835 @@ attribution=Участники русской Википедии, CC BY-SA 4.0, 
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd
 contentHash=904257c6db602b31224634cf365cc326ca419e042130ddd66fcb0aea5cc77e2e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-0`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e12515d0b44f0daae9ff034ba9268f005d331d6a3abc03e67fa18978ed2ddb3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Use the admitted entry to decide what the shown word contributes in context.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=e529f4f6cd9ec23ac0c226c4bbc6910aea66acf9b2d2fa1dde9b6021551cd109
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-1`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 903d394d404327d2549f31a23959c2ffb6f1ec7e3955c814b986275297a7317e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=A short label, a row of forms, or a story from another objective does not supply that sense.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=4fe11848a132f109f610ef2c064bd7c4eb804552ffd3502a9a5bab98a04391a6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-10`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 134d9c4bf367eb771bcfe222f052274ea3c4dd78ecef903a4037c721ab89c106
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Admitted reading: the table sense fits the furniture sentence
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=b2f108017d9dc201851bcb2f66c9c6d55613832a5b59be5901b3f225e58a53ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-11`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b7ba284a6c8282ba459196321a2466bec870c8587f130d665f83148ec92c94a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=an abbreviation label alone does not give the sense
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=b97ae96fbe89a43fe078ff4eafc03fc7f2866fbb870f498322b7937127d62f4b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-12`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2f9e1656d87b79300e1d79587220f3e55fdd109d954c44e771b99e02821d0649
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Rejected reading: a verb for standing
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=6e4df96552a88176210094bb8d9efd2dc13842682999fa3bcd866fdbaaa6871e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-13`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e0c324b253647df6e107c46b9febc008d8d358d49a6e0e6f3a91ac3b8110963f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Rejected reading: an abbreviation label alone does not give the sense
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=61ef620b7df3e319a0b1c6555aa6a0f18cd36c7f76f756b29bd1f536293ec404
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-14`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c351d252d953dd00d8a4371173e9360a4aedc8271fd592b7b3e72de7b2936db
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Which English sense does the admitted entry support for the furniture word?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=b36712f005a33036e9913bb1abc748e6cb83855f97f65b150e8616b426901dd1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-15`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 774fad4840b28aa222674fcf80cb3393542f3b4ad946ddd31bebec497c54f7ed
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Admitted reading: a noun for a table
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=6e6e684e60e0328befd3978b786b2834caaf35c55919cd46b3a3e8b89b64c814
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-16`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44883d9d547484d3e84e2c9ff3bea39ec348a9b21bbd2573039b56364bad845c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Which English sense does the admitted entry support for the standing word?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=2cfb67417bedafcbc70ad2e58f7bc133cc1ee61cc976e0a7091bd745e62e14dd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-17`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73be6c82db523a4e297fa0c1e5e4441d11ab5d672c3bde44753d4f164d5d56a3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Admitted reading: a verb for standing
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=82faf4a6e703e606725050ab8600a4fb0feae1ed8dd347b3a8cd4cc10b1abb8e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-18`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d5a1f26d2543c89a0dcae1e1167c464be7e70c6223dd4fb1dacbbb3a5a98c033
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=the book is on a table
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=491308bbc4dffb7a82753e61676632f8ffb777bfda1934ec02eeebe795f4cf1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-19`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 82fefc25cdd68472bac759ecb6c76a511b7aa2a2d3d57bf4311f31d4e479c7bb
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Rejected reading: a noun for a table
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=b46c83bb82f787d2ed9a13766f39fa3d44b8ed81e010661556f3f94b0e202551
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-2`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 319798b455a62cb73b2573e0486c81974aa454b571a72521070bf4a1733faf84
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Return to the table sense and the standing sense in the admitted entry.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=129ac2b00417045dda259f4e0bf75d312ff1331d3149f59f1bf810431d7bd894
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-20`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a4a7ebeca2c8d4fa09109e647c4c035af3de90ae24b25a8215506f3779e689a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Rejected reading: the book is on a table
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=716e61725c4becf0ac95e3c35e2476052b817da45f03973b3c7541e9f7b03d95
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-21`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 99562a18c40c42f57df6f0323e30e58d1ea72982d818f1f45de29ef22f34c4fb
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Which English sense does the admitted entry support in the furniture sentence?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=fdd8f2f0754229f7f00f9ed2aba6ec2633b38f133b0ba1b4a15a3e85329a964a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-22`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67386bc81e9834766826c17f5b80a3cbe4d7397457c7b38c00af1dd267acc812
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Книга лежит на столе.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=9f13baa7f1905a0a54dce5fde3e85905a86033a88009ac2533eb154468cdc628
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-23`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 80d24f167cee5cdad2c534ca0f5f46e66a9d54ca481f82d94256275374be0108
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Admitted reading: the book is on a table
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=50741347eb333b3fa0082f486f968bd357cf264b9428ca332601843864d68cf1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-24`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee266df15953fbde4df88ae1acdb77ed7a02c4c9f0e7b09e3797c5b73ec476bf
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=the book is performing a standing action
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=303f5d5a2adca3e6d4d6167bb9c87c77d3b259f58348eae4577c7f8baca3e22d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-25`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 105fc740c174bb4570540210daddd7ee17a79fedf030407215eb2e181d9d031c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Rejected reading: the book is performing a standing action
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=a471408756204599d351fd33f6a8545f992ff6eb6a08fd3855ba60444f4662c7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-26`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 29a5b12602b05daddf1c23579c0cb690407936cd42920c5066a7af6a6b4c3eb9
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Which English sense does the admitted entry support when only the short label is shown?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=e10640911c796be63d1ca1a9d1698636bc619b40abacb94bf5019f9ad33e097f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-27`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bef28c74284ca2a5e63239ef59cfaeb627d8d14b97ff85f61bac8c7c3fdee1af
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=сущ.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=b3670c8a0f666eeed99155ffac7c8be61aa6e2b8fd3d63597b2859c4d3336d03
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-28`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b77d9df280baabfc05b965c8f218783f17fc00dedbdc194c8b75cecb85beb7f7
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Admitted reading: an abbreviation label alone does not give the sense
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=5b33d89c4353f328e8ab8b72c263825d1b325d131b10d1feea19dc956b6a4ba5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-29`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ab5e10e445d9bc6426c6a07078385807a92f07f3ba8b7be129503cfe814257ae
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Книга лежит на столе
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=d837fc45ed82c32c989e66b41e6a1831c8a6749d6c7f7d5ab275c733f7f51232
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-3`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0517af04b0714d36565c6dc172d8cb44f984015114d1a92e05ef93e96553b78f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=стол
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=129dde4ecad0c02e88fb74a179b08337e5ac02fcfb4146ed681c12f8baa6d532
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-30`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b43e873a8c458787e5d1209222a1ff17220ea7e8373f3faf5f144c4a1fa30047
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=сущ
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=9f1883734dce60bfae881e8e2224aa4ce1fd826b290cdee8f057b65370e14e4c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-4`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bdd11630129df92e32e7feb3d582c6c93bc711c2ece4f5ec0bb1cd0780b6e290
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=a noun for a table
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=4de6906a762a6b99754890f62251123f051a546746ab73eeddc05eace08dbc15
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-5`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad9768c7c91228b24107f4706366134f842370255a01db41247dd3c00592c52c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=стоять
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=3c65c3306332ebd1a15af1f177f46e3542563b715c1fd96bfcefc4a6c760f304
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-6`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64aaa32a508927204592b10a24c3628e41498977b083d13270d0a742a5d6ea75
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=a verb for standing
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=a8e7af448b3c3395fbfae26728a91e97247aa8d8ac68ccc88092b67b7833db01
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-7`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 89c208ff91acfc01579fb805bb9a37c1dc99e592442761a2de722a4eefd9df54
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=Which English sense does the admitted entry support for the case form on the table?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=b5740ba09650cb8fee2f93ba522d9fa13c87668bd808c2320ff3a999db163f07
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-8`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f58623dd213b69d13b642717ea63b44e874ec4e115dd332b156ec296b8f44cc3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=на столе
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=c74ccb2acb4179b1548e202810f6b08d47480a9561d388233b5cf14bd29926c7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-9`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3933e473f762dea00eafd2095a3cbefcaceb40040c3059476b814348c528de19
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+shippedText=the table sense fits the furniture sentence
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+contentHash=957d6f2ccfdfa39d4be71650df6f48c5e98b2e1322bba179c09dd79b42b6d1db
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5505,6 +7687,53 @@ sourceHash=01771aba0e8353e8fa771ecba0d074223056fa7710bfd15b8805ccad357079d8
 supportedClaim=capstone-reading
 exactSpan=Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала же́нщина. Она́ пла́кала и говори́ла, что в до́ме оста́лась двухле́тняя де́вочка. Пожа́рные посла́ли Бо́ба. Боб побежа́л по ле́стнице и скры́лся в ды́ме. Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку. Мать бро́силась к до́чери и пла́кала от ра́дости, что дочь была́ жива́. Пожа́рные ласка́ли соба́ку и осма́тривали её - не обгоре́ла ли она́; но Боб рвался опять в дом. Пожа́рные поду́мали, что в до́ме есть ещё что-нибу́дь живо́е, и пусти́ли его́. Соба́ка побежа́ла в дом и ско́ро вы́бежала с чем-то в зуба́х. Когда́ наро́д рассмотре́л то, что она́ несла́, то все расхохота́лись: она́ несла́ большу́ю ку́клу.
 
+### SOURCE_CAPABILITY `cap-obj-u30-dictionary`
+
+- Objectives: obj-u30-dictionary
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: SOURCE_CAPABILITY
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3873c6d4cf25757a582ef2e9719d5cbcde1bc17b6d7643430358f3b78ba8516d
+
+sourceId=src-original-research-synthesis
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+sourceHash=72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889
+supportedClaim=dictionary-use
+exactSpan=Use the admitted entry to decide what the shown word contributes in context.
+A short label, a row of forms, or a story from another objective does not supply that sense.
+Return to the table sense and the standing sense in the admitted entry.
+стол
+a noun for a table
+стоять
+a verb for standing
+Which English sense does the admitted entry support for the case form on the table?
+на столе
+the table sense fits the furniture sentence
+Admitted reading: the table sense fits the furniture sentence
+an abbreviation label alone does not give the sense
+Rejected reading: a verb for standing
+Rejected reading: an abbreviation label alone does not give the sense
+Which English sense does the admitted entry support for the furniture word?
+Admitted reading: a noun for a table
+Which English sense does the admitted entry support for the standing word?
+Admitted reading: a verb for standing
+the book is on a table
+Rejected reading: a noun for a table
+Rejected reading: the book is on a table
+Which English sense does the admitted entry support in the furniture sentence?
+Книга лежит на столе.
+Admitted reading: the book is on a table
+the book is performing a standing action
+Rejected reading: the book is performing a standing action
+Which English sense does the admitted entry support when only the short label is shown?
+сущ.
+Admitted reading: an abbreviation label alone does not give the sense
+Книга лежит на столе
+сущ
+
 ### SOURCE_CAPABILITY `cap-obj-u30-letter-names`
 
 - Objectives: obj-u30-letter-names
@@ -5631,6 +7860,21 @@ CC BY-SA 4.0
 ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Reading 5 — Пожарные собаки HTML sha256 6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 92eaa6f12bb405d916c9b9fc01fbc988620c90737878f13e1e61845a549d0bb5
+
+Independently authored research synthesis
+Original app text
+Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+Original research synthesis. Not a quotation of a third-party page.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -5716,6 +7960,20 @@ src-readyrussian-reading5
 CC BY-SA 4.0
 permitsAppUse=true
 
+### RIGHTS `rights-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 65ca0e4f268b6158cbfafc95d43b79c9894d018f538d27b8cf21e7000b24fbed
+
+src-original-research-synthesis
+Original app text
+permitsAppUse=true
+
 ### RIGHTS `rights-app-english-v2`
 
 - Objectives: none
@@ -5799,6 +8057,16 @@ permitsAppUse=true
 - `obj-u30-capstone` REMEDIATION `u30-st-rem-capstone`
 - `obj-u30-book` INSTRUCTION `u30-st-book-work`
 - `obj-u30-book` INSTRUCTION `u30-st-book`
+- `obj-u30-dictionary` INSTRUCTION `u30-dictionary-teach-1`
+- `obj-u30-dictionary` INSTRUCTION `u30-dictionary-teach-2`
+- `obj-u30-dictionary` EXAMPLE `ex-u30-dictionary-1`
+- `obj-u30-dictionary` EXAMPLE `ex-u30-dictionary-2`
+- `obj-u30-dictionary` PRACTICE `u30-dictionary-guided`
+- `obj-u30-dictionary` CHECK `u30-i-dictionary-1`
+- `obj-u30-dictionary` CHECK `u30-i-dictionary-2`
+- `obj-u30-dictionary` CHECK `u30-i-dictionary-3`
+- `obj-u30-dictionary` CHECK `u30-i-dictionary-4`
+- `obj-u30-dictionary` REMEDIATION `u30-dictionary-remediate`
 - `u30-s-orient` OBJECTIVE `obj-u30-letter-names`
 - `u30-s-orient` OBJECTIVE `obj-u30-abbrev-examples`
 - `u30-s-orient` OBJECTIVE `obj-u30-address-marks`
@@ -5892,6 +8160,21 @@ permitsAppUse=true
 - `u30-st-check-capstone` ITEM `u30-i-capstone-2`
 - `u30-s-book` OBJECTIVE `obj-u30-book`
 - `u30-st-book-work` REFERENCE `ref-u2630-attribution`
+- `u30-s-dictionary` OBJECTIVE `obj-u30-dictionary`
+- `u30-dictionary-teach-1` EXAMPLE `ex-u30-dictionary-1`
+- `u30-dictionary-teach-1` EXAMPLE `ex-u30-dictionary-2`
+- `u30-dictionary-teach-1` REFERENCE `ref-u2630-attribution`
+- `u30-dictionary-guided` REMEDIATION `u30-dictionary-remediate`
+- `u30-dictionary-guided` ITEM `u30-g-dictionary-1`
+- `u30-dictionary-guided` REFERENCE `ref-u2630-attribution`
+- `u30-dictionary-teach-2` REFERENCE `ref-u2630-attribution`
+- `u30-dictionary-remediate` REFERENCE `ref-u2630-attribution`
+- `u30-dictionary-check` REMEDIATION `u30-dictionary-remediate`
+- `u30-dictionary-check` ITEM `u30-i-dictionary-1`
+- `u30-dictionary-check` ITEM `u30-i-dictionary-2`
+- `u30-dictionary-check` ITEM `u30-i-dictionary-3`
+- `u30-dictionary-check` ITEM `u30-i-dictionary-4`
+- `u30-dictionary-check` REFERENCE `ref-u2630-attribution`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-en`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-ru`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-1-en`
@@ -5936,6 +8219,37 @@ permitsAppUse=true
 - `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-2-ru`
 - `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-3-en`
 - `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-3-ru`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-0`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-1`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-10`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-11`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-12`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-13`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-14`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-15`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-16`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-17`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-18`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-19`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-2`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-20`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-21`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-22`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-23`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-24`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-25`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-26`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-27`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-28`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-29`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-3`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-30`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-4`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-5`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-6`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-7`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-8`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-9`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-u30-abbrev-examples-rem`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-u30-abbrev-examples-x-0`
 - `obj-u30-abbreviation` PROVENANCE `prov-u30-abbreviation-rem`
@@ -5955,6 +8269,7 @@ permitsAppUse=true
 - `obj-u30-particle` PROVENANCE `prov-u30-particle-rem`
 - `obj-u30-abbreviation` SOURCE_CAPABILITY `cap-obj-u30-abbreviation`
 - `obj-u30-capstone` SOURCE_CAPABILITY `cap-obj-u30-capstone`
+- `obj-u30-dictionary` SOURCE_CAPABILITY `cap-obj-u30-dictionary`
 - `obj-u30-letter-names` SOURCE_CAPABILITY `cap-obj-u30-letter-names`
 - `obj-u30-particle` SOURCE_CAPABILITY `cap-obj-u30-particle`
 
@@ -5970,6 +8285,7 @@ permitsAppUse=true
 - `cap-obj-u30-abbreviation` supports `abbreviation` for `obj-u30-abbreviation`
 - `cap-obj-u30-particle` supports `particle` for `obj-u30-particle`
 - `cap-obj-u30-capstone` supports `capstone-reading` for `obj-u30-capstone`
+- `cap-obj-u30-dictionary` supports `dictionary-use` for `obj-u30-dictionary`
 
 No guidance objective is recorded.
 

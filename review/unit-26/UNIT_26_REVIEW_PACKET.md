@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 26 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 26 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 26 remains in development. Its readiness is content-complete and review-pending. The Lesson 26 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
-- Unit content-review SHA-256: bdaa9683a34b35717a7f4ab3f5d00f7e8a221d96eb6f718acbf2a0f4c6b36bc8
+- Curriculum source commit: 8e667dbcd95e3a286c484ab1d6657686b18e5e0a
+- Unit content-review SHA-256: 275ad92bbb4b93fae68cb27cbe07bc56031cd69b5b46cf1d6dee63cfc7faf7ec
 - Mapping-package SHA-256: c3b63d48cd809527d6450916cfead9c419eb5a607a329c7def2d8b42df6bf725
-- Pack content-review SHA-256: cf68212c7a25d687bd280f78fca64f80f94fdabf33adf0f69cc588b18c94f40b
-- Review-package SHA-256: d99147f1bea12fbfb65c63aaecb8d38d2daf3334910b9e8e0446dde17e457bc6
-- Repository source SHA-256: bdd02b25fda8fa2f29a81445288687f3166c35fa9c26904aa730dda7cf21fbf9
+- Pack content-review SHA-256: 9b925aa087dec48d4f9eab124bfbfd576c3be27a1f0fe6ba8e5b71ec22d1502e
+- Review-package SHA-256: f8f38d2c90a7ee91a4cc44a1c5288411a22e21a52e141793127161b8593cc227
+- Repository source SHA-256: 7b96ecdbff72b26d2785a8d2f888c3c3a424a1f4a0624c3c57723f7aefa3b79c
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -36,7 +36,7 @@ number=26
 title=Indefinite pronouns, word order, and letter writing
 topicSummary=Proposed Unit 26 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 26. Observed structural scope: Stock expressions; indefinite pronouns and adverbs; word order; postal addresses; letter writing; vocabulary and correspondence work. Admitted frozen spans are pending qualified review and do not approve alignment. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=26
@@ -75,13 +75,13 @@ notes=No qualified reviewer has signed Unit 26.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 74264c4792115e41dbb5b7a86ebcffdcf582c5a3b9c67c35dd52fd935a23fe73
+- Content hash: f1d6ff78fcfe7551578f23ff1a41f5fbc6a3c2ba0a0bc2d65d2da4fe4455460a
 
 number=26
 title=Indefinite pronouns, word order, and letter writing
 topicSummary=Proposed Unit 26 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 26. Observed structural scope: Stock expressions; indefinite pronouns and adverbs; word order; postal addresses; letter writing; vocabulary and correspondence work. Admitted frozen spans are pending qualified review and do not approve alignment. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=26
@@ -246,16 +246,16 @@ remediation=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: df62089c1dc344610da7f92ddbe813cb78e6ac2f034b12f7ad3add2b7536693c
+- Content hash: 2d929a9f3ec8959e743d4c16cf43a041d17ba438212408a0684b07fcccccd7f1
 
-title=Complete postal practice stays in the copy you own
-kind=GUIDANCE
+title=Identify the home-delivery address components
+kind=RECOGNITION
 unitNumber=26
-instruction=u26-st-gap-postal-address
-examples=
-practice=
-checks=
-remediation=
+instruction=u26-postal-teach-1,u26-postal-teach-2
+examples=ex-u26-postal-1,ex-u26-postal-2
+practice=u26-postal-guided
+checks=u26-i-postal-1,u26-i-postal-2,u26-i-postal-3,u26-i-postal-4,u26-i-postal-5
+remediation=u26-postal-remediate
 
 ### SESSION `u26-s-orient`
 
@@ -1231,14 +1231,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 993c21f0a3f97f194eb00ef5a350958ff22143f1520498c88cb53f3ec136bbaa
+- Content hash: 4732e578d63354ec7e8b78c014401ae95ca72ec887066e6454634ec91ed30331
 
-title=Complete postal practice stays in the copy you own
-estimatedMinutes=4
+title=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+estimatedMinutes=10
 objectives=obj-u26-postal-address
-steps=u26-st-gap-postal-address
+steps=u26-postal-teach-1,u26-postal-guided,u26-postal-teach-2,u26-postal-remediate,u26-postal-check
 
-### STEP `u26-st-gap-postal-address`
+### STEP `u26-postal-teach-1`
 
 - Objectives: obj-u26-postal-address
 - Sessions: u26-s-gap-postal-address
@@ -1246,19 +1246,107 @@ steps=u26-st-gap-postal-address
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e2312a7c20c9a65b064343d3f116a99e5acc38f26dedb8e37f11aee045af2315
+- Content hash: ec3a0c0d3f1df88b57694fc334673710a6556b87e1a08eeb067ffa7e07f496a2
 
-kind=UNAVAILABLE
-title=Complete postal practice stays in the copy you own
-body=Complete postal practice stays in the copy you own. The frozen address marks are not that practice.
+kind=TEACH
+title=Admitted instruction
+body=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u26-postal-1,ex-u26-postal-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-postal-guided`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8b249ddc6fafdac711e75ae946678a852c6853f3cf56884c493841d53bcf1af2
+
+kind=GUIDED
+title=Guided practice
+body=A greeting is outside the address, and a letter convention does not identify these components.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u26-g-postal-1
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u26-postal-remediate
+
+### STEP `u26-postal-teach-2`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5a272af7f8015b2f3d2630e93897e076bd2c881796727c79e64150c0cea0b6cc
+
+kind=TEACH
+title=Admitted instruction
+body=Memorizing one sample line is not the same as identifying a component.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=
-unavailableReason=Complete modern postal practice has no admitted frozen span.
+unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u26-postal-remediate`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 04deb5e98c1f30ddef00c4784a0b0fe58024223bd185c3af88ecf951b941a807
+
+kind=REMEDIATE
+title=Remediation
+body=Return to the component roles: recipient, premises, city, and the six-digit postcode.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-postal-check`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 81ec34c65fee4f671dc96ec2aad0b90bcf3ee653e9228813d8f4bdd2d3f47bc8
+
+kind=CHECK
+title=Independent checks
+body=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u26-i-postal-1,u26-i-postal-2,u26-i-postal-3,u26-i-postal-4,u26-i-postal-5
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u26-postal-remediate
 
 ### EXAMPLE `ex-u26-word-order-0`
 
@@ -1566,6 +1654,40 @@ note=Respectfully
 objectiveId=obj-u26-correspondence
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u26-postal-1`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f9278e55874b48aca1613ee5e1483918c25105538d5d18d8a7dd431adf2e7f5e
+
+kind=LEXICAL
+letterId=
+display=Анна Петрова
+note=the addressee names the recipient
+objectiveId=obj-u26-postal-address
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u26-postal-2`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f149930b5eb94bfa38ef0a3b35d9e6aece26c7e7e934765ee6226ea3f0cdf7d
+
+kind=LEXICAL
+letterId=
+display=г. Казань
+note=the locality names the city
+objectiveId=obj-u26-postal-address
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### GUIDED_PRACTICE `u26-g-word-order-0`
 
 - Objectives: obj-u26-word-order
@@ -1774,6 +1896,41 @@ whyAnswerDemonstratesObjective=The source pairs к настоящему пись
 contrastMembers=enclosed please find | Respectfully
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u26-correspondence-0-ru | prov-ex-u26-correspondence-0-en | prov-ex-u26-correspondence-1-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u26-g-postal-1`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7c414ef70e9e0ab1fac83a985d9760b224a05d1eda4885c79bc1630bafa14b5
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies the city in this home-delivery address?
+promptLetter=г. Казань
+options=the locality names the city | the street line names the premises | the postcode names the delivery office
+answer=the locality names the city
+feedback=Admitted reading: the locality names the city
+objectiveId=obj-u26-postal-address
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the street line names the premises | Rejected reading: the postcode names the delivery office
+testedFeature=LOCALITY_ROLE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-g-postal-1
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-obj-u26-postal-address-7
+distractorSourceIds= | prov-obj-u26-postal-address-10 | prov-obj-u26-postal-address-11
+distractorDifference= | Rejected reading: the street line names the premises | Rejected reading: the postcode names the delivery office
+whyAnswerDemonstratesObjective=Admitted reading: the locality names the city
+contrastMembers=the locality names the city | the street line names the premises | the postcode names the delivery office
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u26-postal-address-6 | prov-obj-u26-postal-address-7 | prov-obj-u26-postal-address-10 | prov-obj-u26-postal-address-11
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u26-i-word-order-1`
@@ -2195,6 +2352,181 @@ contrastMembers=к настоящему письму прилагается | С
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u26-correspondence-0-en | prov-ex-u26-correspondence-0-ru | prov-ex-u26-correspondence-1-ru
 responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u26-i-postal-1`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3496820afd5cfe7a5f8bad63efa737e114567ad8329f7c661f55a2c829b4e338
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies the person who receives this home-delivery address?
+promptLetter=Анна Петрова
+options=the addressee names the recipient | the street line names the premises | the postcode names the delivery office
+answer=the addressee names the recipient
+feedback=Admitted reading: the addressee names the recipient
+objectiveId=obj-u26-postal-address
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the street line names the premises | Rejected reading: the postcode names the delivery office
+testedFeature=ADDRESSEE_ROLE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-i-postal-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u26-postal-address-5
+distractorSourceIds= | prov-obj-u26-postal-address-10 | prov-obj-u26-postal-address-11
+distractorDifference= | Rejected reading: the street line names the premises | Rejected reading: the postcode names the delivery office
+whyAnswerDemonstratesObjective=Admitted reading: the addressee names the recipient
+contrastMembers=the addressee names the recipient | the street line names the premises | the postcode names the delivery office
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u26-postal-address-4 | prov-obj-u26-postal-address-5 | prov-obj-u26-postal-address-10 | prov-obj-u26-postal-address-11
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u26-i-postal-2`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 23726c09d20288b8a2cea9442d166b34a466a54d43992b91cc49bca65fa33ff9
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies the premises in this home-delivery address?
+promptLetter=ул. Садовая, д. 12, кв. 4
+options=the street line names the premises | the addressee names the recipient | the locality names the city
+answer=the street line names the premises
+feedback=Admitted reading: the street line names the premises
+objectiveId=obj-u26-postal-address
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the addressee names the recipient | Rejected reading: the locality names the city
+testedFeature=STREET_AND_PREMISES
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-i-postal-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u26-postal-address-10
+distractorSourceIds= | prov-obj-u26-postal-address-5 | prov-obj-u26-postal-address-7
+distractorDifference= | Rejected reading: the addressee names the recipient | Rejected reading: the locality names the city
+whyAnswerDemonstratesObjective=Admitted reading: the street line names the premises
+contrastMembers=the street line names the premises | the addressee names the recipient | the locality names the city
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u26-postal-address-17 | prov-obj-u26-postal-address-10 | prov-obj-u26-postal-address-5 | prov-obj-u26-postal-address-7
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u26-i-postal-3`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 334ed22cf0fab58443cdfda3f233a16829be0c27182edddd8485db1d75082719
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies the numeric delivery code in this home-delivery address?
+promptLetter=420000
+options=the postcode names the delivery office | the locality names the city | the addressee names the recipient
+answer=the postcode names the delivery office
+feedback=Admitted reading: the postcode names the delivery office
+objectiveId=obj-u26-postal-address
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the locality names the city | Rejected reading: the addressee names the recipient
+testedFeature=SIX_DIGIT_POSTCODE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-i-postal-3
+cueLanguage=number
+independent=true
+answerSourceIds=prov-obj-u26-postal-address-11
+distractorSourceIds= | prov-obj-u26-postal-address-7 | prov-obj-u26-postal-address-5
+distractorDifference= | Rejected reading: the locality names the city | Rejected reading: the addressee names the recipient
+whyAnswerDemonstratesObjective=Admitted reading: the postcode names the delivery office
+contrastMembers=the postcode names the delivery office | the locality names the city | the addressee names the recipient
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u26-postal-address-22 | prov-obj-u26-postal-address-11 | prov-obj-u26-postal-address-7 | prov-obj-u26-postal-address-5
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u26-i-postal-4`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a52663decb93e66c8f40000920bfefa35f3648713fe93ae60c25a842c2787973
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies a greeting that is not part of this home-delivery address?
+promptLetter=Здравствуйте
+options=a greeting is outside the address | the addressee names the recipient | the postcode names the delivery office
+answer=a greeting is outside the address
+feedback=Admitted reading: a greeting is outside the address
+objectiveId=obj-u26-postal-address
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the addressee names the recipient | Rejected reading: the postcode names the delivery office
+testedFeature=REJECTED_GREETING
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-i-postal-4
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u26-postal-address-26
+distractorSourceIds= | prov-obj-u26-postal-address-5 | prov-obj-u26-postal-address-11
+distractorDifference= | Rejected reading: the addressee names the recipient | Rejected reading: the postcode names the delivery office
+whyAnswerDemonstratesObjective=Admitted reading: a greeting is outside the address
+contrastMembers=a greeting is outside the address | the addressee names the recipient | the postcode names the delivery office
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u26-postal-address-25 | prov-obj-u26-postal-address-26 | prov-obj-u26-postal-address-5 | prov-obj-u26-postal-address-11
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u26-i-postal-5`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c4093442e93a62d32643b10cdfbda2b322881c6b2fcd19938213bbe77db46435
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies the component order in this home-delivery address?
+promptLetter=home-delivery order
+options=recipient then premises then city then postcode | postcode then recipient then premises then city | premises then recipient then postcode then city
+answer=recipient then premises then city then postcode
+feedback=Admitted reading: recipient then premises then city then postcode
+objectiveId=obj-u26-postal-address
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: postcode then recipient then premises then city | Rejected reading: premises then recipient then postcode then city
+testedFeature=GOVERNED_HOME_DELIVERY_ORDER
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-i-postal-5
+cueLanguage=rule
+independent=true
+answerSourceIds=prov-obj-u26-postal-address-30
+distractorSourceIds= | prov-obj-u26-postal-address-32 | prov-obj-u26-postal-address-33
+distractorDifference= | Rejected reading: postcode then recipient then premises then city | Rejected reading: premises then recipient then postcode then city
+whyAnswerDemonstratesObjective=Admitted reading: recipient then premises then city then postcode
+contrastMembers=recipient then premises then city then postcode | postcode then recipient then premises then city | premises then recipient then postcode then city
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u26-postal-address-29 | prov-obj-u26-postal-address-30 | prov-obj-u26-postal-address-32 | prov-obj-u26-postal-address-33
+responseKind=ENGLISH_CLASSIFICATION
 
 ### REFERENCE `ref-u2630-attribution`
 
@@ -3994,6 +4326,3531 @@ attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=e6c24b646cc9f16a293ab1fcab7d128117764b04a001be8cb8ed689eb5f56c4a
 contentHash=4ecacd0435d4b69f551ae3a4fc7d6a292b0eaeaaabca048fe52b7eee8985f927
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-0`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f5167bf0fdc287e72ae37d8bcf8866fc2872e5045d22bc807440c6289efee3e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=1b0106b0c9c15f750e687a1b4aeeccf723dae7b1237977c9fd5e58f48e8c90cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-1`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a30bee4a92639c293cbd48d58f30596b1271f85554646d9cad7c5fd48d22bf94
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=A greeting is outside the address, and a letter convention does not identify these components.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=1bfc09f594e1ba90037985ab14734aa20606ec73b44a7b37022be397090d9ecb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-10`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 12f20aa29b48513ca3f4149df8194ca97cc7b6d7fea1830b21792bd6188e9522
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=the street line names the premises
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=2c856cbae2ea6f7cb9ec6ffab3eabcc0476ed87c3e387b6cd952ab187aa29287
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-11`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61038e6fac0bc3579a51608dbc7d13bbf3b6c14da3666fecff6b996954cd9230
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=the postcode names the delivery office
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=5ab6cefaab8cb062c400b3530891e79317b2a812a8dfeb26ec03f96bf625e2cc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-12`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae60c71835b7edd42d049999a611ae6238ebc48782a81b4ef4acfd3300fea95a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Rejected reading: the street line names the premises
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=adc15190a98552742bc44af55c183cf8efa813ec0ffe11f0a5de736ad444070e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-13`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b0970c1eac859c2c4b6c1e12dd3ed07c848fd40e49be3ac6026676f4a2e4c4d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Rejected reading: the postcode names the delivery office
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=45313bafa49968c987ee7f94501a29fb65e8840eebe5fd5f936fcbf7ee4cd868
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-14`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 812b92476b0b96d68b1e6a3483a144029d10632c72c07b0438e78731681b0749
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Which English description identifies the person who receives this home-delivery address?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=030b243be95687b532d0c3e4b1330805e22bbf772edc2b25faccd23096215476
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-15`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b6d143f507c46b1ee10b4ccd121fe06caa96398047dd5a686a6f7c8f0e53d20
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Admitted reading: the addressee names the recipient
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=11ecbd5c8e29fbf161b3336682affbceb907ff8841fd6c89200967b21d4a883a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-16`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2df10b8ff5cdb14852e4632c234e5362b6955dbcd12cebaaf496d8012b6a5ae6
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Which English description identifies the premises in this home-delivery address?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=4e325c922882598d867d35e36989f98da5db13e906eb1b442af9e46a83d5689e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-17`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 886fdb96c96ab163190ac048cdb72ae90bcb2ae3f747c9697b1e4dc869d9baf4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=ул. Садовая, д. 12, кв. 4
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=8e3516e182db2576ce6c23be6da5a81f20bd47921be133c0d6808e944000f34e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-18`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9f876f79b798ff9a5ff863fe14845d8aad6fd9aa605b8683aa88f2874b74d6d6
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Admitted reading: the street line names the premises
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=fbb902e165abaf1c964979c53c51f440d104daa4819c4bc54d0da589b0c612f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-19`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d350564a1a0efd38a265c7816f45642f9a078b06917072d5ca5bb8e77c9b1b6f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Rejected reading: the addressee names the recipient
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=862bdd6e07b48c40cc99452d1a5c7ba263e7533a5adf40a79c87f1db0e399d5b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-2`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 79a3925d7c7fe377f5de5009551cc847e8dd593c83df7a4fb8dbd22a920d1027
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Memorizing one sample line is not the same as identifying a component.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=cd5d2fa0188ab8cf7077ba4439bb45933015a1ec044bb278874b241b848953c5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-20`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5923b29edff202f761d8dcaf88265a28e3967a12e0319536333a2ffbf5fc80cf
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Rejected reading: the locality names the city
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=006f9cb1599d482466ef2956b5c01d5758c1c386c4335e4af791989f396c4dd4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-21`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1a253f4aecd4708c9e731449506ec875b2221bb01ff705b6a02a9befec2b03f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Which English description identifies the numeric delivery code in this home-delivery address?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=e32c54dc4eb332cef2a0b6d83ee2ef279020cff9c5015e135e00ff65aa970a36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-22`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae7663c5bbf82e58e204ebc77e65c2cf265f7343ae44c3acb6b9fa941e505d39
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=420000
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=c74cc85badcf13b0d9704ec9f8645aee901600d4167e32d00527481fcb8aa25f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-23`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f8c2d59eb413dbc7f3d0efc0fc9b0d9922df07fa09af665434df19392db4c4a3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Admitted reading: the postcode names the delivery office
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=905c68e8d1025cb2146cd93a0493cb4c0413de90f1ed10a94382c156cd11b803
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-24`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3710dd7f34563bee199d1c290db9f275fbe28a25e4ca02354b169e494b38ed3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Which English description identifies a greeting that is not part of this home-delivery address?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=d2f51df41ffcfcac51fafd387ce15b5cee1a14b52f000c9f8722a522257c8764
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-25`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae96df1ab3b22d21ca1c0037d463be227cdba686019a8813f5227056abac8d42
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Здравствуйте
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=41793c3111357a551b810e7de701f05148c89bc934135b08e04baf3a9279c81f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-26`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 30f21590a29d52ef8176619779ab2d1991235cebac66b19cf6dc0a2bcb443611
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=a greeting is outside the address
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=c46c17b48600cdbcfc70188000e9e7da3b570ac6c660ac92f1e3eacdece4a8d5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-27`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ac8829c54041fc618cdfd4722eb98ec46e7bb1003bc99c0ee80ac654d509916
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Admitted reading: a greeting is outside the address
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=f41f72269e3996886cbf9af13aba2828cfa67a9dceb23fec0d433c9bb1fae086
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-28`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3972d19e0b07fbcd995ef45b0a2e72bebcfe089399c9e53a82a22aa1a862456e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Which English description identifies the component order in this home-delivery address?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=2b65bb0bcab275d8f3150fcaa55236393bf4fdf0f383cb07c0afa773345d9a77
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-29`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c13ad934dc8e68fb9a833bdfba09990ad01a34a3aba30669f3121916beca63d4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=home-delivery order
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=792b0f533a07cee6c74d5bd6b9b918177fff5925b9793b04a18450ffde85c7bd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-3`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 010ba0255d438fcc4e280333fb66ce56805fd086f671877aa72265a0bdd9b449
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Return to the component roles: recipient, premises, city, and the six-digit postcode.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=c63a9d9269cdb458911bcc0a94307a30a61c3e0107dc4195e27107556e327c8d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-30`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6bfd6698d69d8c2ce0d471fd983fb209a8a20e2d2e8fbdbf9f4758ed3aecfed
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=recipient then premises then city then postcode
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=f6857e5d5ec336da5caae1d7a73176ab38d6b1adfe390e85dbe30a133f3b6a78
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-31`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9155b42ddeee35c139edc1a0673c214c0c186cdf0185e230947c4c56f69d2a70
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Admitted reading: recipient then premises then city then postcode
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=47c922fc350bdddcafec065f54f9309e1365f237d316c1fbb310365d1dc9ca4f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-32`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca77b7b0daaa48c26e1cf9ff1cde9f5ff2209e120c485b1645897104a22cbed6
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=postcode then recipient then premises then city
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=aac2e9f663f576dc62dbe2fe81aa64158b983bf8d58f227e28d194b5adb25aa1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-33`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f84f9c02b4fa6440325396fb3e8a7684b7bfc3fa44ff57e8208b64afc850acdb
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=premises then recipient then postcode then city
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=c61eecab864187db7246e817b3329ac6e9fa2c22b1588459bcd6b010375bca6a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-34`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 82a14791bd716079fc80c5792af38e5759dd4d2e1867f982d648b113590ccce7
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Rejected reading: postcode then recipient then premises then city
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=da6952555c19e80147f765e69907ba5042f47bc7813f2f81c6a3373e0fc7b01e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-35`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e12b1db44e45cd87f8fbcf1c4d5147a361d3e4077a2708454749ce771a76ca61
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Rejected reading: premises then recipient then postcode then city
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=5481c1eda5e1769d434f8c90e4729ba4deb66e1ee4c341533b1ccd9ec7cecba4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-36`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8dc90ffa6d328e0efa124307e3c25bf16905b68880e65b052fb676c3d06ad320
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=г.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=4c739afeeefc7cb4ea9af5b046f08480625b2f4363d14c041f1311a1bfb78c40
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-37`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be3b91bf4ab8064a5a1418f2d9895fb77a9e4dbb2cd9b29a3f0e95705e4abab1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=г
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-38`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f4bd18f0d67f5c9c322b258bea89790663783f6f06617f03e23c5d1b8c7bfbe
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Казань
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=bb421b85957b37faba1125c1463d989bf5a115681a77c706342bc42f2dfcee56
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-39`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c2b4a393aa12a038909340b6a995dd42782aee5cca16cebfb7396b2b17714c8
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=ул.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=f0a2345e484bd6cf8909f0523185694a02c98c10b48a258db3af06a482c1a21b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-4`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 60a068aefbb5f94e1eba47f32d2976c758ba5714e80967bc3db550daef8e0908
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Анна Петрова
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=ed8495eda427eb0ea1ac2a03e49923f4ced0c2e6c3a5b1b53c038e69f8170293
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-40`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa38c372f9b7061e8aec8bc020e707594de83a68701c2f6e9adbd507384bb617
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=ул
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=02d72a21de51120fc739ab62c5fdbe2b023a9bf6d3f4daaa281c3ac2ba29e925
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-41`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c16f65bd7c06f1d182f41ba3bd38dfc22b9e1c38c2c23b6b9e624361ee4e56d1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Садовая,
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=58e8bb064e8abe1b6c0e0c6e16576e123c2ec1694b69cf1664821fa221253340
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-42`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9d3d480f2074357bd28652237241badb78e7b5020ade112d08b461ece9fc1915
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Садовая
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=367ae611e501ef78acd1c75859305f0c26fde1e804c6b3d6ccebfe933d810049
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-43`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9acf41ac46c470a501b103b0388d8a0acea6bafd21e4c9168af21c96f26887a7
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=д.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=9bf3f274b37a666757a5df6bf03a9b40d7816a78a9fb5f796cbb5cc85bffac7e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-44`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a6fd673b5359a26c382690e8cc3b56ac754b13f835410550b07bf50d78a547ef
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=д
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=1cc10a3947f7c2457d9aeb9d468b418157d72f1e3d84f82e08e81718305ff909
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-45`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 943b554bd0a7686ca37d68d682b63e957020b3d8003d71c82cf54ff6c7f337ca
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=кв.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=be616a7ef2917a1fd9e311ccc49f9be19911890adb2b04a157d7a8155c8ac69c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-46`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6a1ca1279885b8826c85ae41f595e560da17132c48862d900863da1b3034c9f3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=кв
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=6733c9d27347a658d9aba74010e700604493cd4cf9c075a2108a08b2846baf59
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-5`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3767307166bc983b2a5eb8f4060bea097e274c0feafdf00f9131fc3056a66bc5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=the addressee names the recipient
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=29791d7e11534afa07991811a1ea269a9996cbeb8e3a4481069591e5d5b38961
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-6`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 74178e87bdfc7d8fdd9ac8d8bf3f86a4a11a48758fc06d58686bd0145b51e5a5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=г. Казань
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=89252b21b79bf798ebd331c2fc54901785bfac96388db5ec678a787852bcfd99
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-7`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aad9d830be81c0fc82465cf6180cf83618f69499db2b675f68e32de38a00fa1c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=the locality names the city
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=1a876b4dc5ec0ae114f4a546b76eeac49f92938f6cfc13232d5a302bfa030552
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-8`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45a45ef2b2cef724ea729753612006521a542932cd6ce5bdb95cdbb7b27ecfe8
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Which English description identifies the city in this home-delivery address?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=94c8860d776180377beea186d064a25dd443a494582f81526b16cd276bd9055a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-9`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6bf78cdf08ff6d6981b1de6e11c84d9f3567d8f3ba7f92fba889eb85f718aab6
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+shippedText=Admitted reading: the locality names the city
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+contentHash=ca4d83957137a938965e10b5bb90b4475b31ccb2f1d94d35d41c41df9cfe164f
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6157,6 +10014,69 @@ exactSpan=They have the same basic elements:</p>
 <p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
 <p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
 
+### SOURCE_CAPABILITY `cap-obj-u26-postal-address`
+
+- Objectives: obj-u26-postal-address
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: SOURCE_CAPABILITY
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a296d1ee1c9e49b798af17e25e71d948a74fefdb3fbee39964b579765ba8a01d
+
+sourceId=src-original-research-synthesis
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+supportedClaim=postal-address
+exactSpan=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+A greeting is outside the address, and a letter convention does not identify these components.
+Memorizing one sample line is not the same as identifying a component.
+Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Анна Петрова
+the addressee names the recipient
+г. Казань
+the locality names the city
+Which English description identifies the city in this home-delivery address?
+Admitted reading: the locality names the city
+the street line names the premises
+the postcode names the delivery office
+Rejected reading: the street line names the premises
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description identifies the component order in this home-delivery address?
+home-delivery order
+recipient then premises then city then postcode
+Admitted reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+premises then recipient then postcode then city
+Rejected reading: postcode then recipient then premises then city
+Rejected reading: premises then recipient then postcode then city
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+
 ### SOURCE_CAPABILITY `cap-obj-u26-word-order`
 
 - Objectives: obj-u26-word-order
@@ -6243,6 +10163,21 @@ CC BY-SA 4.0
 ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Phrasebook 12 — Letter Writing HTML sha256 aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218 retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 92eaa6f12bb405d916c9b9fc01fbc988620c90737878f13e1e61845a549d0bb5
+
+Independently authored research synthesis
+Original app text
+Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+Original research synthesis. Not a quotation of a third-party page.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -6312,6 +10247,20 @@ permitsAppUse=true
 
 src-readyrussian-letter
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 65ca0e4f268b6158cbfafc95d43b79c9894d018f538d27b8cf21e7000b24fbed
+
+src-original-research-synthesis
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -6397,7 +10346,17 @@ permitsAppUse=true
 - `obj-u26-correspondence` REMEDIATION `u26-st-rem-correspondence`
 - `obj-u26-book` INSTRUCTION `u26-st-book-work`
 - `obj-u26-book` INSTRUCTION `u26-st-book`
-- `obj-u26-postal-address` INSTRUCTION `u26-st-gap-postal-address`
+- `obj-u26-postal-address` INSTRUCTION `u26-postal-teach-1`
+- `obj-u26-postal-address` INSTRUCTION `u26-postal-teach-2`
+- `obj-u26-postal-address` EXAMPLE `ex-u26-postal-1`
+- `obj-u26-postal-address` EXAMPLE `ex-u26-postal-2`
+- `obj-u26-postal-address` PRACTICE `u26-postal-guided`
+- `obj-u26-postal-address` CHECK `u26-i-postal-1`
+- `obj-u26-postal-address` CHECK `u26-i-postal-2`
+- `obj-u26-postal-address` CHECK `u26-i-postal-3`
+- `obj-u26-postal-address` CHECK `u26-i-postal-4`
+- `obj-u26-postal-address` CHECK `u26-i-postal-5`
+- `obj-u26-postal-address` REMEDIATION `u26-postal-remediate`
 - `u26-s-orient` OBJECTIVE `obj-u26-word-order`
 - `u26-s-orient` OBJECTIVE `obj-u26-vy-capital`
 - `u26-s-orient` OBJECTIVE `obj-u26-address-notation`
@@ -6492,7 +10451,21 @@ permitsAppUse=true
 - `u26-s-book` OBJECTIVE `obj-u26-book`
 - `u26-st-book-work` REFERENCE `ref-u2630-attribution`
 - `u26-s-gap-postal-address` OBJECTIVE `obj-u26-postal-address`
-- `u26-st-gap-postal-address` REFERENCE `ref-u2630-attribution`
+- `u26-postal-teach-1` EXAMPLE `ex-u26-postal-1`
+- `u26-postal-teach-1` EXAMPLE `ex-u26-postal-2`
+- `u26-postal-teach-1` REFERENCE `ref-u2630-attribution`
+- `u26-postal-guided` REMEDIATION `u26-postal-remediate`
+- `u26-postal-guided` ITEM `u26-g-postal-1`
+- `u26-postal-guided` REFERENCE `ref-u2630-attribution`
+- `u26-postal-teach-2` REFERENCE `ref-u2630-attribution`
+- `u26-postal-remediate` REFERENCE `ref-u2630-attribution`
+- `u26-postal-check` REMEDIATION `u26-postal-remediate`
+- `u26-postal-check` ITEM `u26-i-postal-1`
+- `u26-postal-check` ITEM `u26-i-postal-2`
+- `u26-postal-check` ITEM `u26-i-postal-3`
+- `u26-postal-check` ITEM `u26-i-postal-4`
+- `u26-postal-check` ITEM `u26-i-postal-5`
+- `u26-postal-check` REFERENCE `ref-u2630-attribution`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-en`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-ru`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-ru-r0`
@@ -6541,6 +10514,53 @@ permitsAppUse=true
 - `obj-u26-word-order` PROVENANCE `prov-ex-u26-word-order-3-ru`
 - `obj-u26-word-order` PROVENANCE `prov-ex-u26-word-order-4-en`
 - `obj-u26-word-order` PROVENANCE `prov-ex-u26-word-order-4-ru`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-0`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-1`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-10`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-11`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-12`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-13`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-14`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-15`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-16`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-17`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-18`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-19`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-2`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-20`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-21`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-22`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-23`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-24`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-25`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-26`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-27`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-28`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-29`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-3`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-30`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-31`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-32`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-33`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-34`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-35`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-36`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-37`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-38`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-39`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-4`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-40`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-41`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-42`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-43`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-44`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-45`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-46`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-5`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-6`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-7`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-8`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-9`
 - `obj-u26-address-notation` PROVENANCE `prov-u26-address-notation-rem`
 - `obj-u26-address-notation` PROVENANCE `prov-u26-address-notation-x-0`
 - `obj-u26-address-notation` PROVENANCE `prov-u26-address-notation-x-1`
@@ -6566,6 +10586,7 @@ permitsAppUse=true
 - `obj-u26-correspondence` SOURCE_CAPABILITY `cap-obj-u26-correspondence`
 - `obj-u26-indefinite` SOURCE_CAPABILITY `cap-obj-u26-indefinite`
 - `obj-u26-letter-writing` SOURCE_CAPABILITY `cap-obj-u26-letter-writing`
+- `obj-u26-postal-address` SOURCE_CAPABILITY `cap-obj-u26-postal-address`
 - `obj-u26-word-order` SOURCE_CAPABILITY `cap-obj-u26-word-order`
 
 ## Book-directed experiences
@@ -6580,17 +10601,16 @@ permitsAppUse=true
 - `cap-obj-u26-indefinite` supports `indefinite-pronoun` for `obj-u26-indefinite`
 - `cap-obj-u26-letter-writing` supports `letter-writing` for `obj-u26-letter-writing`
 - `cap-obj-u26-correspondence` supports `correspondence-work` for `obj-u26-correspondence`
+- `cap-obj-u26-postal-address` supports `postal-address` for `obj-u26-postal-address`
 
-Guidance objectives stay unsupported until an admitted frozen capability exists:
+No guidance objective is recorded.
 
-- `obj-u26-postal-address` Complete postal practice stays in the copy you own
 
 ## Book-directed register
 
 - `u26-st-orient` Open Lesson 26 in the copy you own. The app records do not replace that lesson.
 - `u26-st-book-work` Open Lesson 26 in your copy and complete its lesson work.
 - `u26-st-book` Self-attest only after the Lesson 26 work in your copy.
-- `u26-st-gap-postal-address` Complete modern postal practice has no admitted frozen span.
 
 ## Optional non-gating register
 
@@ -6599,7 +10619,8 @@ None.
 
 ## Unavailable experiences
 
-- `u26-st-gap-postal-address`
+None.
+
 
 ## Unresolved relationships
 

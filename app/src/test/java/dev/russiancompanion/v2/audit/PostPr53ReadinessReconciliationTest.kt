@@ -138,12 +138,8 @@ class PostPr53ReadinessReconciliationTest {
             assertEquals(unit.installState, row.getValue("installState").jsonPrimitive.content)
             assertEquals("DEVELOPMENT", unit.installState)
             val historical = PHASE2_HISTORICAL_ROWS[unit.unitNumber]
-            if (historical == null) {
-                assertEquals(unit.readiness, row.getValue("readiness").jsonPrimitive.content)
-                assertEquals(if (unit.advancementCanPresentlySucceed) "YES" else "NO", row.getValue("advancementCanPresentlySucceed").jsonPrimitive.content)
-                assertEquals(unit.unresolvedRequiredSourceCapabilities, row.getValue("unresolvedRequiredSourceCapabilities").jsonPrimitive.content)
-                assertEquals(unit.contentBlocker, row.getValue("contentBlocker").jsonPrimitive.content)
-            } else {
+            val phase3 = PHASE3_HISTORICAL_ROWS[unit.unitNumber]
+            if (historical != null) {
                 assertEquals("NOT_PREPARED", row.getValue("readiness").jsonPrimitive.content)
                 assertEquals("NO", row.getValue("advancementCanPresentlySucceed").jsonPrimitive.content)
                 assertEquals(historical.first, row.getValue("unresolvedRequiredSourceCapabilities").jsonPrimitive.content)
@@ -152,6 +148,20 @@ class PostPr53ReadinessReconciliationTest {
                 assertTrue(unit.advancementCanPresentlySucceed)
                 assertEquals("NONE", unit.unresolvedRequiredSourceCapabilities)
                 assertEquals("NONE", unit.contentBlocker)
+            } else if (phase3 != null) {
+                assertEquals("NOT_PREPARED", row.getValue("readiness").jsonPrimitive.content)
+                assertEquals("NO", row.getValue("advancementCanPresentlySucceed").jsonPrimitive.content)
+                assertEquals(phase3.first, row.getValue("unresolvedRequiredSourceCapabilities").jsonPrimitive.content)
+                assertEquals(phase3.second, row.getValue("contentBlocker").jsonPrimitive.content)
+                assertEquals(phase3.third, unit.readiness)
+                assertEquals(phase3.third != "NOT_PREPARED", unit.advancementCanPresentlySucceed)
+                assertEquals("NONE", unit.unresolvedRequiredSourceCapabilities)
+                assertEquals(if (phase3.third == "NOT_PREPARED") "RECORDED_NOT_PREPARED" else "NONE", unit.contentBlocker)
+            } else {
+                assertEquals(unit.readiness, row.getValue("readiness").jsonPrimitive.content)
+                assertEquals(if (unit.advancementCanPresentlySucceed) "YES" else "NO", row.getValue("advancementCanPresentlySucceed").jsonPrimitive.content)
+                assertEquals(unit.unresolvedRequiredSourceCapabilities, row.getValue("unresolvedRequiredSourceCapabilities").jsonPrimitive.content)
+                assertEquals(unit.contentBlocker, row.getValue("contentBlocker").jsonPrimitive.content)
             }
             assertEquals("PENDING_QUALIFIED_REVIEW", row.getValue("linguisticReviewStatus").jsonPrimitive.content)
             assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", unit.unitReviewStatus)
@@ -225,6 +235,14 @@ class PostPr53ReadinessReconciliationTest {
                 it.unitNumber == unitNumber && it.objectiveId == objectiveId && it.supportedClaim == name
             }
             val phase2Rebound = name == "adverb-paradigm" || name == "completion-over-period" || name == "productive-diminutive"
+            val phase3Implemented = name in setOf(
+                "postal-address",
+                "participle-stress",
+                "participle-comprehension",
+                "bookish-register",
+                "bookish-reading",
+                "dictionary-use",
+            )
             when {
                 phase2Rebound -> {
                     assertEquals("UNRESOLVED", disposition)
@@ -234,6 +252,11 @@ class PostPr53ReadinessReconciliationTest {
                     } else {
                         assertFalse(shipped)
                     }
+                }
+                phase3Implemented -> {
+                    assertEquals("UNRESOLVED", disposition)
+                    assertFalse(liveClaims.contains(name))
+                    assertTrue(shipped)
                 }
                 disposition == "RESOLVED" -> {
                     assertFalse(liveClaims.contains(name))
@@ -577,6 +600,28 @@ class PostPr53ReadinessReconciliationTest {
                 "productive-diminutive" to
                     "RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY"
                 ),
+        )
+        val PHASE3_HISTORICAL_ROWS = mapOf(
+            26 to Triple(
+                "postal-address",
+                "RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM",
+                "CONTENT_COMPLETE_REVIEW_PENDING",
+            ),
+            27 to Triple(
+                "participle-stress, participle-comprehension",
+                "RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM",
+                "NOT_PREPARED",
+            ),
+            29 to Triple(
+                "bookish-register, bookish-reading",
+                "RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM",
+                "NOT_PREPARED",
+            ),
+            30 to Triple(
+                "dictionary-use",
+                "RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY",
+                "NOT_PREPARED",
+            ),
         )
         val STALE_RESOLVED_CLAIMS = listOf(
             "productive-clock-time",

@@ -11,12 +11,12 @@ Unit 29 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
-- Unit content-review SHA-256: 2172a1e97507bdfd0f4f7164ae3c2c6fb6784dc9b68490a4a3638acfa0fa210e
+- Curriculum source commit: 8e667dbcd95e3a286c484ab1d6657686b18e5e0a
+- Unit content-review SHA-256: bb8645fa3be7f3ac9b7cc7a7d61d551843975f8deccb419a3ad529416c3fb0e3
 - Mapping-package SHA-256: 54c2f00221054ced81fe17bea8b0f156073b830e54e70c47cf769e93bd56eb36
-- Pack content-review SHA-256: cf68212c7a25d687bd280f78fca64f80f94fdabf33adf0f69cc588b18c94f40b
-- Review-package SHA-256: 86e9ba8a37f170dd314ec3f6bc37c8721286f3fede39073dabbb47008b6b4744
-- Repository source SHA-256: bdd02b25fda8fa2f29a81445288687f3166c35fa9c26904aa730dda7cf21fbf9
+- Pack content-review SHA-256: 9b925aa087dec48d4f9eab124bfbfd576c3be27a1f0fe6ba8e5b71ec22d1502e
+- Review-package SHA-256: bf9eebbde0510d38a81a810e2d0152bdaf64540a4d94c9be5f412cbeb8132c67
+- Repository source SHA-256: 7b96ecdbff72b26d2785a8d2f888c3c3a424a1f4a0624c3c57723f7aefa3b79c
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -208,16 +208,16 @@ remediation=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5db9a9fa9b96793b1d480f8856fb23299820da3fde8728a9fc452991de18863c
+- Content hash: a18024ab4c31097427e2d64be9d2b5dece35857f4cfe80fbbf1d0f61de2b5c37
 
-title=A general bookish-register claim stays in the copy you own
-kind=GUIDANCE
+title=Choose the bookish option in this pair
+kind=RECOGNITION
 unitNumber=29
-instruction=u29-st-gap-register
-examples=
-practice=
-checks=
-remediation=
+instruction=u29-register-teach-1,u29-register-teach-2
+examples=ex-u29-register-1,ex-u29-register-2
+practice=u29-register-guided
+checks=u29-i-register-1,u29-i-register-2,u29-i-register-3,u29-i-register-4,u29-i-register-5
+remediation=u29-register-remediate
 
 ### OBJECTIVE `obj-u29-reading`
 
@@ -227,16 +227,16 @@ remediation=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 223307eaa17d71426dbbb3a347c34ba89c414a4737eaaaee681a24eeb85f57dc
+- Content hash: 15ef977cdbf82392a67a23c479a8442c2e95f4817cd60a0fe5747fb557ce2d0a
 
-title=The bookish reading stays in the copy you own
-kind=GUIDANCE
+title=Read the governed bookish passage
+kind=RECOGNITION
 unitNumber=29
-instruction=u29-st-gap-reading
-examples=
-practice=
-checks=
-remediation=
+instruction=u29-reading-teach-1,u29-reading-teach-2
+examples=ex-u29-reading-1,ex-u29-reading-2
+practice=u29-reading-guided
+checks=u29-i-reading-1,u29-i-reading-2,u29-i-reading-3
+remediation=u29-reading-remediate
 
 ### SESSION `u29-s-orient`
 
@@ -908,14 +908,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5365622a0981f3c012c15a265e8af5de8a39c86d63e64138400f3932b48c2b4a
+- Content hash: 91028cc58f1fa0178e8686911b39d7c237043382e31501836735bd55b5cd31f9
 
-title=A general bookish-register claim stays in the copy you own
-estimatedMinutes=4
+title=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+estimatedMinutes=10
 objectives=obj-u29-register
-steps=u29-st-gap-register
+steps=u29-register-teach-1,u29-register-guided,u29-register-teach-2,u29-register-remediate,u29-register-check
 
-### STEP `u29-st-gap-register`
+### STEP `u29-register-teach-1`
 
 - Objectives: obj-u29-register
 - Sessions: u29-s-gap-register
@@ -923,19 +923,107 @@ steps=u29-st-gap-register
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a234638d260f883f7d4c563a61ec32388b0fdcede1e21014fd382005beb1a10f
+- Content hash: ea8091a54a76135d0b502fd215fa32e9bd7104d46134c0368c2d794d39cfcaff
 
-kind=UNAVAILABLE
-title=A general bookish-register claim stays in the copy you own
-body=A general bookish-register claim stays in the copy you own. The adverbial note is only about adverbial forms.
+kind=TEACH
+title=Admitted instruction
+body=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u29-register-1,ex-u29-register-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-register-guided`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c1138404fa424ddc066d78f34e1a8c2f9b0717b5a9e5772cf17aeac05666d764
+
+kind=GUIDED
+title=Guided practice
+body=A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u29-g-register-1
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u29-register-remediate
+
+### STEP `u29-register-teach-2`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 05636965c4746afcbea8c17499413a8253f35828a0424312439ba6d5bc77243a
+
+kind=TEACH
+title=Admitted instruction
+body=This pair is not a universal stylistic rule.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=
-unavailableReason=A claim about all bookish text has no admitted frozen span.
+unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u29-register-remediate`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 81e2205867d4eabcbd5bf5d5a9a0ea023f8901dcdead9dcf1ee23ba855ca0ce3
+
+kind=REMEDIATE
+title=Remediation
+body=Return to the adverbial opening versus the finite coordination in this pair.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-register-check`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b9daf4371e2fa0bbcda0a9bf5a082adc1cffccab92f0c94c5b57dc41ba62ba3a
+
+kind=CHECK
+title=Independent checks
+body=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u29-i-register-1,u29-i-register-2,u29-i-register-3,u29-i-register-4,u29-i-register-5
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u29-register-remediate
 
 ### SESSION `u29-s-gap-reading`
 
@@ -945,14 +1033,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 94dd85bad8a0a1d26aa580b3fe951b06daee1d8e2c67df2a068b11e4c53e64ae
+- Content hash: 4b5da016518ee2139dba026491872b95ea4c73d4ea3dcd9108debc70137a5b5b
 
-title=The bookish reading stays in the copy you own
-estimatedMinutes=4
+title=Read the passage for the actions, not for whether the style is bookish.
+estimatedMinutes=10
 objectives=obj-u29-reading
-steps=u29-st-gap-reading
+steps=u29-reading-teach-1,u29-reading-guided,u29-reading-teach-2,u29-reading-remediate,u29-reading-check
 
-### STEP `u29-st-gap-reading`
+### STEP `u29-reading-teach-1`
 
 - Objectives: obj-u29-reading
 - Sessions: u29-s-gap-reading
@@ -960,19 +1048,107 @@ steps=u29-st-gap-reading
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e6afc2d1429eaf325fd1e880c5af6f2268e740c102cdbc7f865cf58d3173b34a
+- Content hash: 0273e4eebad858349db4ec2b0b4a13494ac221d4a2645de9953ccfd001f45f67
 
-kind=UNAVAILABLE
-title=The bookish reading stays in the copy you own
-body=The bookish reading stays in the copy you own. The admitted note is not that reading.
+kind=TEACH
+title=Admitted instruction
+body=Read the passage for the actions, not for whether the style is bookish.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u29-reading-1,ex-u29-reading-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-reading-guided`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2ec17133f7dccf45dc90f45e811b8afd4818da61fa8eb6fbb7ea57da66c1b8fa
+
+kind=GUIDED
+title=Guided practice
+body=Register classification is a different objective and does not answer these readings.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u29-g-reading-1
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u29-reading-remediate
+
+### STEP `u29-reading-teach-2`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e1a3e3c574885c21078d95de88dfe03f8b2c984fe463af31b8442faa6fe9ce0
+
+kind=TEACH
+title=Admitted instruction
+body=Register classification is a different objective and does not answer these readings.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=
-unavailableReason=The bookish reading has no admitted frozen span.
+unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u29-reading-remediate`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: eb693a27f2ce33d8df183d939639ec89780b16aa2119fd98b2ff76ada513d23c
+
+kind=REMEDIATE
+title=Remediation
+body=Return to what Anna finished, where she went, and what she sent.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-reading-check`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 20893dd1720a5021ce6e0776382a3d15a6d29f9a9e6cd4e1800cb859084b0eb2
+
+kind=CHECK
+title=Independent checks
+body=Read the passage for the actions, not for whether the style is bookish.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u29-i-reading-1,u29-i-reading-2,u29-i-reading-3
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u29-reading-remediate
 
 ### EXAMPLE `ex-u29-active-0`
 
@@ -1161,6 +1337,74 @@ note=кроме тех случаев
 objectiveId=obj-u29-punctuation
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u29-register-1`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2efb3ad7eaf31763e93816f4c3cd882c4713ab018ad6bc4163031689013b85c2
+
+kind=LEXICAL
+letterId=
+display=Закончив письмо, Анна пошла на почту.
+note=the adverbial opening is the bookish option in this pair
+objectiveId=obj-u29-register
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-register-2`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a89b079a985f618152ae2f9f8a60c1e34ed8746ed2937308582288a80a793ad2
+
+kind=LEXICAL
+letterId=
+display=Анна закончила письмо и пошла на почту.
+note=the finite coordination is the ordinary option in this pair
+objectiveId=obj-u29-register
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-reading-1`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6a3de3594b179ddbcdb4986bb887bf99f88e5765d4e23ba3ca526bcad3a8688
+
+kind=LEXICAL
+letterId=
+display=Закончив письмо, Анна пошла на почту и отправила его.
+note=she went to the post office after finishing
+objectiveId=obj-u29-reading
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-reading-2`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84caf94e37cb9613b6e496cfb9e361bdd77a7bfb5a293333d2faa7ef9e11cbd7
+
+kind=LEXICAL
+letterId=
+display=отправила его
+note=she sent the letter from the post office
+objectiveId=obj-u29-reading
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### GUIDED_PRACTICE `u29-g-active-0`
 
 - Objectives: obj-u29-active
@@ -1300,6 +1544,76 @@ contrastMembers=выделяется запятыми с двух сторон |
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u29-punctuation-0-ru | prov-ex-u29-punctuation-0-en | prov-ex-u29-punctuation-1-en | prov-ex-u29-punctuation-2-en
 responseKind=RUSSIAN_PHRASE
+
+### GUIDED_PRACTICE `u29-g-register-1`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b58158c6512a16803d576fd60a23601eec620d8f858cfbee522724f4d313349e
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies the opening word of the bookish sentence in this pair?
+promptLetter=Закончив
+options=the adverbial word opens the bookish sentence | the finite coordination is the ordinary option in this pair | a passive participle is outside this bookish pair
+answer=the adverbial word opens the bookish sentence
+feedback=Admitted reading: the adverbial word opens the bookish sentence
+objectiveId=obj-u29-register
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the finite coordination is the ordinary option in this pair | Rejected reading: a passive participle is outside this bookish pair
+testedFeature=ADVERBIAL_FORM_IN_PAIR
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-g-register-1
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-obj-u29-register-10
+distractorSourceIds= | prov-obj-u29-register-7 | prov-obj-u29-register-12
+distractorDifference= | Rejected reading: the finite coordination is the ordinary option in this pair | Rejected reading: a passive participle is outside this bookish pair
+whyAnswerDemonstratesObjective=Admitted reading: the adverbial word opens the bookish sentence
+contrastMembers=the adverbial word opens the bookish sentence | the finite coordination is the ordinary option in this pair | a passive participle is outside this bookish pair
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u29-register-9 | prov-obj-u29-register-10 | prov-obj-u29-register-7 | prov-obj-u29-register-12
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u29-g-reading-1`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8f8da3f3002258b289df248ff62201a5296b2267640b8a983fa6c6d9cd72fab6
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English reading matches the person who acts in this passage?
+promptLetter=Анна
+options=Anna is the person who did the actions | the letter went to the post office alone | the post office wrote the letter
+answer=Anna is the person who did the actions
+feedback=Admitted reading: Anna is the person who did the actions
+objectiveId=obj-u29-reading
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the letter went to the post office alone | Rejected reading: the post office wrote the letter
+testedFeature=AGENT_ANNA
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-g-reading-1
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-obj-u29-reading-9
+distractorSourceIds= | prov-obj-u29-reading-11 | prov-obj-u29-reading-12
+distractorDifference= | Rejected reading: the letter went to the post office alone | Rejected reading: the post office wrote the letter
+whyAnswerDemonstratesObjective=Admitted reading: Anna is the person who did the actions
+contrastMembers=Anna is the person who did the actions | the letter went to the post office alone | the post office wrote the letter
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u29-reading-8 | prov-obj-u29-reading-9 | prov-obj-u29-reading-11 | prov-obj-u29-reading-12
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u29-i-active-1`
 
@@ -1580,6 +1894,286 @@ contrastMembers=кроме тех случаев | запятые не став�
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u29-punctuation-2-ru | prov-ex-u29-punctuation-2-en | prov-ex-u29-punctuation-1-en | prov-ex-u29-punctuation-0-en
 responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u29-i-register-1`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 968194e2b861cfe9a07366334f8d5026c5e280bd9af740b51dffaa334b357958
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies the bookish option in this admitted pair?
+promptLetter=Закончив письмо, Анна пошла на почту.
+options=the adverbial opening is the bookish option in this pair | the finite coordination is the ordinary option in this pair | appearance in writing is outside this bookish pair
+answer=the adverbial opening is the bookish option in this pair
+feedback=Admitted reading: the adverbial opening is the bookish option in this pair
+objectiveId=obj-u29-register
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the finite coordination is the ordinary option in this pair | Rejected reading: appearance in writing is outside this bookish pair
+testedFeature=ADVERBIAL_BOOKISH_OPTION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-register-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u29-register-5
+distractorSourceIds= | prov-obj-u29-register-7 | prov-obj-u29-register-17
+distractorDifference= | Rejected reading: the finite coordination is the ordinary option in this pair | Rejected reading: appearance in writing is outside this bookish pair
+whyAnswerDemonstratesObjective=Admitted reading: the adverbial opening is the bookish option in this pair
+contrastMembers=the adverbial opening is the bookish option in this pair | the finite coordination is the ordinary option in this pair | appearance in writing is outside this bookish pair
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u29-register-4 | prov-obj-u29-register-5 | prov-obj-u29-register-7 | prov-obj-u29-register-17
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u29-i-register-2`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0afd3464c1a5af573738c3a38759feb346fc2eec8e38a5a231b12f5a38f5b25
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies the ordinary option in this admitted pair?
+promptLetter=Анна закончила письмо и пошла на почту.
+options=the finite coordination is the ordinary option in this pair | the adverbial opening is the bookish option in this pair | appearance in writing is outside this bookish pair
+answer=the finite coordination is the ordinary option in this pair
+feedback=Admitted reading: the finite coordination is the ordinary option in this pair
+objectiveId=obj-u29-register
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the adverbial opening is the bookish option in this pair | Rejected reading: appearance in writing is outside this bookish pair
+testedFeature=COORDINATED_ORDINARY_OPTION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-register-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u29-register-7
+distractorSourceIds= | prov-obj-u29-register-5 | prov-obj-u29-register-17
+distractorDifference= | Rejected reading: the adverbial opening is the bookish option in this pair | Rejected reading: appearance in writing is outside this bookish pair
+whyAnswerDemonstratesObjective=Admitted reading: the finite coordination is the ordinary option in this pair
+contrastMembers=the finite coordination is the ordinary option in this pair | the adverbial opening is the bookish option in this pair | appearance in writing is outside this bookish pair
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u29-register-6 | prov-obj-u29-register-7 | prov-obj-u29-register-5 | prov-obj-u29-register-17
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u29-i-register-3`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d8d7825c5f892b5d6635672155267aca71de76f59a640509fdece298677df1f
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies a passive participle that is outside this admitted pair?
+promptLetter=Написанное письмо лежит на столе.
+options=a passive participle is outside this bookish pair | the adverbial opening is the bookish option in this pair | the finite coordination is the ordinary option in this pair
+answer=a passive participle is outside this bookish pair
+feedback=Admitted reading: a passive participle is outside this bookish pair
+objectiveId=obj-u29-register
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the adverbial opening is the bookish option in this pair | Rejected reading: the finite coordination is the ordinary option in this pair
+testedFeature=REJECTED_PASSIVE_PARTICIPLE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-register-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u29-register-12
+distractorSourceIds= | prov-obj-u29-register-5 | prov-obj-u29-register-7
+distractorDifference= | Rejected reading: the adverbial opening is the bookish option in this pair | Rejected reading: the finite coordination is the ordinary option in this pair
+whyAnswerDemonstratesObjective=Admitted reading: a passive participle is outside this bookish pair
+contrastMembers=a passive participle is outside this bookish pair | the adverbial opening is the bookish option in this pair | the finite coordination is the ordinary option in this pair
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u29-register-23 | prov-obj-u29-register-12 | prov-obj-u29-register-5 | prov-obj-u29-register-7
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u29-i-register-4`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2538a27ff6742897a0a0a08c8346585de92caa72d2fb741966f37f0f5d1dc771
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies text that is merely on paper?
+promptLetter=a sentence that is only on paper
+options=appearance in writing is outside this bookish pair | the adverbial opening is the bookish option in this pair | a passive participle is outside this bookish pair
+answer=appearance in writing is outside this bookish pair
+feedback=Admitted reading: appearance in writing is outside this bookish pair
+objectiveId=obj-u29-register
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the adverbial opening is the bookish option in this pair | Rejected reading: a passive participle is outside this bookish pair
+testedFeature=REJECTED_WRITTEN_TEXT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-register-4
+cueLanguage=rule
+independent=true
+answerSourceIds=prov-obj-u29-register-17
+distractorSourceIds= | prov-obj-u29-register-5 | prov-obj-u29-register-12
+distractorDifference= | Rejected reading: the adverbial opening is the bookish option in this pair | Rejected reading: a passive participle is outside this bookish pair
+whyAnswerDemonstratesObjective=Admitted reading: appearance in writing is outside this bookish pair
+contrastMembers=appearance in writing is outside this bookish pair | the adverbial opening is the bookish option in this pair | a passive participle is outside this bookish pair
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u29-register-26 | prov-obj-u29-register-17 | prov-obj-u29-register-5 | prov-obj-u29-register-12
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u29-i-register-5`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c2db9c52d5fa89d90dbaffacbfcc13fb69c84b80f2253531a14f2b74b177c6a7
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description states the limit of this admitted pair?
+promptLetter=an adverbial in a different sentence
+options=this pair does not license every adverbial as bookish | every adverbial participle is bookish in every sentence | appearance in writing is outside this bookish pair
+answer=this pair does not license every adverbial as bookish
+feedback=Admitted reading: this pair does not license every adverbial as bookish
+objectiveId=obj-u29-register
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: every adverbial participle is bookish in every sentence | Rejected reading: appearance in writing is outside this bookish pair
+testedFeature=REJECTED_UNIVERSAL_RULE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-register-5
+cueLanguage=rule
+independent=true
+answerSourceIds=prov-obj-u29-register-30
+distractorSourceIds= | prov-obj-u29-register-32 | prov-obj-u29-register-17
+distractorDifference= | Rejected reading: every adverbial participle is bookish in every sentence | Rejected reading: appearance in writing is outside this bookish pair
+whyAnswerDemonstratesObjective=Admitted reading: this pair does not license every adverbial as bookish
+contrastMembers=this pair does not license every adverbial as bookish | every adverbial participle is bookish in every sentence | appearance in writing is outside this bookish pair
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u29-register-29 | prov-obj-u29-register-30 | prov-obj-u29-register-32 | prov-obj-u29-register-17
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u29-i-reading-1`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e88301e69c90dbe7598d1c2f5e01626d2e9f226e1c79945681d5a64e21281b6b
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English reading matches what happened before Anna left?
+promptLetter=Закончив письмо
+options=she finished the letter before leaving | she sent the letter before writing it | she left before the letter existed
+answer=she finished the letter before leaving
+feedback=Admitted reading: she finished the letter before leaving
+objectiveId=obj-u29-reading
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: she sent the letter before writing it | Rejected reading: she left before the letter existed
+testedFeature=FINISHED_BEFORE_LEAVING
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-reading-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u29-reading-17
+distractorSourceIds= | prov-obj-u29-reading-19 | prov-obj-u29-reading-20
+distractorDifference= | Rejected reading: she sent the letter before writing it | Rejected reading: she left before the letter existed
+whyAnswerDemonstratesObjective=Admitted reading: she finished the letter before leaving
+contrastMembers=she finished the letter before leaving | she sent the letter before writing it | she left before the letter existed
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u29-reading-16 | prov-obj-u29-reading-17 | prov-obj-u29-reading-19 | prov-obj-u29-reading-20
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u29-i-reading-2`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2117e5bc31c06a9463e98c746cfee428382018842a67c3dde065c665cad8c83
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English reading matches where Anna went after finishing?
+promptLetter=пошла на почту
+options=she went to the post office after finishing | she stayed at the table after finishing | she finished the letter at the market
+answer=she went to the post office after finishing
+feedback=Admitted reading: she went to the post office after finishing
+objectiveId=obj-u29-reading
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: she stayed at the table after finishing | Rejected reading: she finished the letter at the market
+testedFeature=WENT_TO_POST_OFFICE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-reading-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u29-reading-4
+distractorSourceIds= | prov-obj-u29-reading-26 | prov-obj-u29-reading-27
+distractorDifference= | Rejected reading: she stayed at the table after finishing | Rejected reading: she finished the letter at the market
+whyAnswerDemonstratesObjective=Admitted reading: she went to the post office after finishing
+contrastMembers=she went to the post office after finishing | she stayed at the table after finishing | she finished the letter at the market
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u29-reading-24 | prov-obj-u29-reading-4 | prov-obj-u29-reading-26 | prov-obj-u29-reading-27
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u29-i-reading-3`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b7c159a07e52b69ef487ba7165aa03237ddeca6962076bbda39ff47dae608d55
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English reading matches what Anna did with the letter at the end?
+promptLetter=отправила его
+options=she sent the letter from the post office | she left the letter at home | she received a letter at home
+answer=she sent the letter from the post office
+feedback=Admitted reading: she sent the letter from the post office
+objectiveId=obj-u29-reading
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: she left the letter at home | Rejected reading: she received a letter at home
+testedFeature=SENT_THE_LETTER
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-reading-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u29-reading-6
+distractorSourceIds= | prov-obj-u29-reading-32 | prov-obj-u29-reading-33
+distractorDifference= | Rejected reading: she left the letter at home | Rejected reading: she received a letter at home
+whyAnswerDemonstratesObjective=Admitted reading: she sent the letter from the post office
+contrastMembers=she sent the letter from the post office | she left the letter at home | she received a letter at home
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u29-reading-5 | prov-obj-u29-reading-6 | prov-obj-u29-reading-32 | prov-obj-u29-reading-33
+responseKind=ENGLISH_CLASSIFICATION
 
 ### REFERENCE `ref-u2630-attribution`
 
@@ -2428,6 +3022,5339 @@ attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
 contentHash=7e7bdbcd586e76916429c3e938a66eb72771755d3b5961b9c8ed5e9db3f3ffb4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-0`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b20d4d59645989eb7dc7788562a8332acdab60bce55722c081038bcc03a78546
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Read the passage for the actions, not for whether the style is bookish.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=71cbf65b4c9ce9757ec4fc68e19e6693d2dbbc2fd9af1c6697e2c09405377f8b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-1`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 801e54dcb4e3eac5dfd3c763b727eba17847dc0d79cc87dc4d718701692b74db
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Register classification is a different objective and does not answer these readings.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=65b0dedd786f96c326507d5ea2fb2a3cee43a779648e6d3a9b363c82b5fcef15
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-10`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67c59638585d26fd1c11e7dce86ef9c6cf9abed48286263ccf265facb6984c31
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Admitted reading: Anna is the person who did the actions
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=391a464fc6ba67a57101ab6c4d3080272525bb9a159577f1ce0da11606a1fce2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-11`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 801f42dd0d6e7252990c81a2167f715c0d9351d05891a978d4dd27e8402bd984
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=the letter went to the post office alone
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=00b5533f5685dc3d61023ec9644caeefa2df327805035635217efa368015ba75
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-12`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5cbbd68c165643c8485a9a2546cd03705310b0e6bd78f28d57246387560b773c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=the post office wrote the letter
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=c5fb1da855aeeff732e7e8426209c8a4413f9a242efadeb3c66ea1b2a9df246c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-13`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 30a84af0090843dcb90e8dd4ab6c82031a320f242658768120e2ddca1dac33da
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Rejected reading: the letter went to the post office alone
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=aad7dde658d10f1da4573160f11479493711cf303c4aba6b51c178118b855f8e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-14`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0434e29069f7211c654c53a65564add35d2f058b42c0f7801ee09908374e605
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Rejected reading: the post office wrote the letter
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=75cb6de3e24a984bc97422c14b4a29dc0c0313906a3f804346673051d257f894
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-15`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 597fb04b2086bb9db218f67871e1846969c10a845a1bf888142af965a7ba6b11
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Which English reading matches what happened before Anna left?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=21e4d5a993acb977de04d42e47175cade3cdc39050f3cc7911f0fad24d0e5d10
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-16`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67b9a4364de64ab5a316e8a6c8b5a3d9ce66b4bd4f4fdedf8336d9ea00ff1b05
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Закончив письмо
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=ab90f486f976e22b9a24963dee4055c97557767e708b2003701838f6999e0c62
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-17`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7b5f814d648b534a76a50a83b4365f721c5e9455cfd31732dccff062efcd07d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=she finished the letter before leaving
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=c194dd0b73bd88b6e6a5da1ec8fbbf9c29c7146b8b0d969a19e0ec9105b04dc9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-18`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50c4dec520c83e09efc1eea117faec9f99e595c57813041b59f5085472c7abf4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Admitted reading: she finished the letter before leaving
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=c781b96434eb32c9613d06eaddbe31d5e0acb4d61a73accf31deb23ee287b108
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-19`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 409ade3631f3f1c414f5485ef769e9bb183523ecfb7b7d0259ab3f4de08de7fc
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=she sent the letter before writing it
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=8d62782474a53a8354df813a8db03309cc0006a101fc5d26f21ddfc74631d39c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-2`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c1c566a19d69a0b43230c1b3546f0ca783ae25c99285594508e03775f5a2307
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Return to what Anna finished, where she went, and what she sent.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=83ddebe12473256202aa7d69706b664ddf923e8f9cbb3dbc238ef76b104b3746
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-20`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b910927b7e99c231d7e1a002ecf2204ce5147b3dc04b8896d533b4523f7e8a11
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=she left before the letter existed
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=e3d04ef50199e36974be52117ee0189e994d4348ea073a6acfb5da8468c6436f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-21`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a6f96815544f2fd1355035d6fc20b54fd321005f8c49ad7897b6396b6d79405f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Rejected reading: she sent the letter before writing it
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=31e33b329776af479e96a649b2828a6735e01615b422e377140a16b0169b5c88
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-22`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b93e9799629d82c2a8e30186f511c8baeccca2de6c07d8fa122003ed60d327e9
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Rejected reading: she left before the letter existed
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=df239c33815599861a3e5bd27f80b2cb0fc682b81fb366ac44fafa861911d0ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-23`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3e6454f2788b8ac967c7c29e6f28514075ab5667624a1fdc285029ee9e8ab512
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Which English reading matches where Anna went after finishing?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=af2227a5a3a95785a8937ded9350b0c017d03b6efac4caed92e548810bf6f6b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-24`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a2ccad5ba08b38f09f0390e249eb75e7e601154455636564b5bbc02e3aca1f4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=пошла на почту
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=d324f10038cc73eecfd2500c505e1be46441421249a1fd4c8a09178b215d0ef3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-25`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b744687f620880ba0941b2d3462ed05147a98805367c02018e5080a42f6116f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Admitted reading: she went to the post office after finishing
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=2a91dba06d6e945da31c8a7f3329884c0c9ad73b23b5945fb34db9c6b87b2023
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-26`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1041ac3936371e2579521e36fe347fb8833b6c35ba25e94866024768a5b33963
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=she stayed at the table after finishing
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=504ee3ccdc9df4bed09f826e1b6d3534e9c1801156b45c794b33291041c30469
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-27`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0438b6d10ea8a2d9afcc903884ad0869899a83cab639a89740eb63f5bc10c997
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=she finished the letter at the market
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=578a37f6763d9a9eb22f69b9d12bc20cee98b2f24ef36a67ef06b08464a88ecc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-28`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 19ebf4d48fe14e77163854f687311cbe8b7679eb6ebb4fd4153e6f4c07dac105
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Rejected reading: she stayed at the table after finishing
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=00ecfc699807c66274873aedcb8785e293b847fcb328a92318b85de53f5e9e54
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-29`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 792f3607eadd80b7ada9ba633f2cd32f3057f9eb33a5b99101940cad0770d10b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Rejected reading: she finished the letter at the market
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=1039284dc9125df371a5f710fd89969b36a2952449d7d9e0d2a1f5136f77002b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-3`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b56b52c092ca7ab928d86042e77a29579dff5bfe0d6f5d0f0df9452c016a6929
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Закончив письмо, Анна пошла на почту и отправила его.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=d933024f40983ff1ee94de40c7dcd9735bde3951b4e2210aeea71cd867988dd1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-30`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3310ea20e0482018bb86e92b9af140b765c1f4e59f5e79608f459969d2579515
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Which English reading matches what Anna did with the letter at the end?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=5d6fdc73e19654f8b4ca21450414e03c11e75bd948ab58dfece0b4f464961fbb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-31`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b9965396ea28e8cbd038914ad8fda385b5c1ecb5be29b83de73c8c3848e1e87
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Admitted reading: she sent the letter from the post office
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=7da93065b3f4380762d368c0250088770ed24a1c3663f5e66370f287d927bdae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-32`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a740cea1f430fbcfc31d115551a436b7e0992cd8631611989492de7737f86004
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=she left the letter at home
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=bda137576be46bc8a5b0ceabe567e646e0e04683dbed9c55bcc23047d8dbfe7a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-33`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa1016cc126eee942c5bdccb82880f6d4310d0d12e2418b3f7d5950d13e44bf9
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=she received a letter at home
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=167429da42bfd924c362108301dfe2d463309eef569ed7bb90b7f1f09bcb3216
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-34`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: adaf73c296f419c3bb5068e7150eafa4556339095a63b7d6adb43af062d5fcba
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Rejected reading: she left the letter at home
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=f7642a002954749f2b667a0a06ab6b41bd11a3837cf664ced9c7c9c1697ddf73
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-35`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dacea5b912727f7b57391f91baf2c867bbe3134e5feec7d4da41d67bd5743517
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Rejected reading: she received a letter at home
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=6919d17206c6bcd58757d6db7b1b2eb5065352fb8e4749732b30d2b8721cd0fa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-36`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2422f7c1e8e866eed73427322de579f0669264c45087774250e08b7ccb28bef
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Закончив письмо,
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=de845bbbd9328d563a9567f95fdee46438fba3f2b0593c7dc93c54e06992c3b8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-37`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 014d25ed901e6563712258e396ee395f7fbb5f22e6d5cb5aa4e8cb9ceed088a9
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Анна пошла на почту и отправила его.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=c5ee0cb7c032a49ef21b958d77e3924116a9eac2590022953aba3560176ba14d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-38`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f2521654a26892dd014c7d2d69ab46f6a6ff2902b837c7c3bd0b4302946c18c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Анна пошла на почту и отправила его
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=7fa549b2f81b44b4bc395b75b15775b4c581241c76272472954140b60385c962
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-4`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b93dfcd90f44d0d9763b2d2013864c5424d8f01f39c00cb19fffb6403bc65d11
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=she went to the post office after finishing
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=460e86363148cd70f517e5322c1109fe45401c0250d2030de8e4f9d1f5bf243b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-5`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c68a155fb215d929698655f46d59750e618ee8a437e426ce230587c9eb2e7e62
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=отправила его
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=755345b8a9ad01f55c74cc2d07682ccfacf2b453227da72903e9b6eea061a479
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-6`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b142a92ac3ac2aa4f0d44a6d30f72f3b4d36217b2fa8a8f78aa3f597b7326e70
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=she sent the letter from the post office
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=1297c747db01de09e500bfc33ba9a2872601e2883de084fc0090c239065b49e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-7`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb7fc1930d09d7ce3d5d2cc1f68dd3d213b84318571988e638a5dba34b140db1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Which English reading matches the person who acts in this passage?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=6010db94324329f46530ed168d788a92ab20b46d4081631e17204cca1f8c83b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-8`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ab9fd6a2e8aab4c254ed9eb79eec0de4e09a9bc6400e051f5c606466ebfcdb60
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Анна
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=25f4b213274e11e1c2dde0e3c6f8c9fd264c86baf5eead720be98d91e728a330
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-reading-9`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f21b92bfe1e86bd4339eb0431c34f1411e9c53c3dc0594e2a23797c8c30f410
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+originalSourceText=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+shippedText=Anna is the person who did the actions
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+contentHash=a7b2427245dc372f9b2af56003031318baeb1c1d9ce2ebb259e3bbc611100e68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-0`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0d0db6ef91c89410715389d22f67485b427ad2c345e87a2cb0ca701758d22c81
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=0f456c3d91d495b4dd17aa18f4cf510966cba696d12f21940bfbd69b7a491e3f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-1`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 030658d3f48c75643ed35f45eca1c8147cf8bb3342a24995eca7a60bf155fe2f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=0bc429cdd3ae7b7e0a0c18e4a6ccafad3eb9b6162e2eb3e514ff50b03e43fa17
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-10`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b1c79dfbc96d20598e23f158cfa54eb73beee031c4c4e502105c1e970742b9f0
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=the adverbial word opens the bookish sentence
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=3b2c6bbc69ffaae0484b086d04e308e6a7bc14f44c423a20943f8186a272b8c0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-11`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a8576966714a899d92ba9f587f1d0e63827db6a97eb541d57f02ba5288ce0776
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Admitted reading: the adverbial word opens the bookish sentence
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=84abeacb72ab527fc3a3db1f1fdb7be605015449968ed354ac7ffaed5acdce22
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-12`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a45d956aa0d01bc98b6946119abd397f57d3a30fbed9bc6a7c0c0e4736c76fe
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=a passive participle is outside this bookish pair
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=5ca7f7c1c1f6aa8b3171e12caa37354ab3270d777244b89f9e88e109b0044ad1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-13`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e965d0b0d1a485010e165fe8c3bf7c04095876b29b86914ee1f1be3b1651199f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Rejected reading: the finite coordination is the ordinary option in this pair
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=ebe48b55d1f0edaf4a25bc4ae25345acd40bc9ecda987bb15ad4ea307085b6b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-14`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 252ca071fd59c2368f35c1b2ba9b5ac190ac9840106dd961a58302942a02bfe0
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Rejected reading: a passive participle is outside this bookish pair
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=d309043e18bf1ef4586f62982a300aa2c3ce3ffca0a87174275ebeaa1ffd1816
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-15`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2865730edbbe69b24cf98c92843ccefda2d0b9370a1ff0ef1da868a0e7059321
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Which English description identifies the bookish option in this admitted pair?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=57e88a174e2884b83427d50bc7ed873cbad29c0347d4d5eaee9458afc5a0f23f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-16`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db917b43b64fc90b17edcebd6a00652332c19f4bec34fff164692dc3cfa9a38e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Admitted reading: the adverbial opening is the bookish option in this pair
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=2b72657afa5262f62e9927169dd8d14fcf7125abd93ff97958cb44cce34d3323
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-17`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c14539adf27e005f4cf07785ccfa2d545dd038a83139458e486067031db8668
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=appearance in writing is outside this bookish pair
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=f48fdd06951162dfe110c3e28623a3cf1e013d0e90d4fbf2c22a7d1b68ca2591
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-18`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a23be23623dde0cc5fe106831b21499a0a619010faaf21cfc018d926d8916e7
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Rejected reading: appearance in writing is outside this bookish pair
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=9b4e4394ac57ae3bf817cbab89a570b5ea2ccf3d1ba3e22ab15526cb53144ca3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-19`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1dc5ac963621325f3e09005456281298f6345a608fd49ab5dcc3dd5c5111adc0
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Which English description identifies the ordinary option in this admitted pair?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=fd656fc2faef62b3a3770737c16be9582dfc9b0d9dae71918a0ba643e5cc3472
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-2`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0a83751c5324bda1fb445637e0ff7c1cdf9bf04f9fe881c241b4b7d0ad4d28e0
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=This pair is not a universal stylistic rule.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=e2a52d389cca130b607fe77261ad89e455cacf66548059e580c4c96433e40c4c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-20`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 93a542f6ebf9573835045e0176c757321b84f35c0ee3fdb16c642c8f274e4996
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Admitted reading: the finite coordination is the ordinary option in this pair
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=e62debd75661bc5c5937c8ea37aed65474a8e013cf03000a14204a796a4fcd27
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-21`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a17abb1c8e04d54b78a478cefe77e6e6e2844fa49a5cf48b7269c3d9b6146fee
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Rejected reading: the adverbial opening is the bookish option in this pair
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=84a3a2654ce0ca78ffd30f502d415d001f109f99dbf67aa5e3ec57ca9a456945
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-22`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9abf1588982b6cd4f44aa84d6e100cf20afa65d20c1bf4b3c5ff2686e47e3d1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Which English description identifies a passive participle that is outside this admitted pair?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=1b202b9e7e75f39cffba48e3f20d32eb24f5f47afc042a252276494bf4bdf781
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-23`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd0f5abcce70c0ad19b441fe8fb372340b58ece6d7a079a7c74bc599d6b5e8be
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Написанное письмо лежит на столе.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=0ee9ff2c9df08c07c6a465e165414973a7f3179bc67c271d3db46511507512f7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-24`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b0c88ed04a41db4953e3a4f89411902b478a376f707383281549bcd3424f7373
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Admitted reading: a passive participle is outside this bookish pair
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=dc825cbaa4c7f8d1854c86cb5cb62e2deb7ba741c347b70256766ceac733d753
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-25`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e6ef86e62fcb925948e4285805933c876253035a8d5dd04cf38e6dcfc53c57f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Which English description identifies text that is merely on paper?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=4b1d05e31bc9d7be0c986c013ce57d509d40c6741ab0a6628ee899af30f0d8e2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-26`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e3c36194f08935d9c0999060a01db677d6de162b6b95cffd8b0f18775859b6f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=a sentence that is only on paper
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=80e97d32e4e3d719fd4a54aa99b84fb7bd39c3961d09dfe2c2119292118b566d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-27`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a837fadb9388df3d7e202026c691106ffe6e148ebf69e3dcbf5e8651a1d75443
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Admitted reading: appearance in writing is outside this bookish pair
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=39710dd0409e4f27accb2f395b107fde672d80d80ee70aea74729240a0265d6e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-28`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4058332743ca3d5d5336d4c4045b3aab4681fa232adf82ee059a9fad2eb1baa
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Which English description states the limit of this admitted pair?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=c2af74aa12693879a89590ceb97e43fc267681f88847aa4897c762171509361e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-29`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4acdab36fc346b977800234df715e2dabf33f04a6d1d8e87614f874b5d985b56
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=an adverbial in a different sentence
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=f3c09898a4a95aa5fbfc8265573267c8740147ee5c457c7d7306d25e684b3c3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-3`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 859f0e75022534e334033a89e194be8421047b7c7d6fc8056568932fd67b782c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Return to the adverbial opening versus the finite coordination in this pair.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=c51a1b22d95bb68ef79b1c41176bdae7c8e6cbf2ffb96797b4f2471438275999
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-30`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c4538d28eed14521b69cdea26c972a606c89eaaba7287b684c59c523d593998c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=this pair does not license every adverbial as bookish
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=7a6b7b6f49cde32218e32a92eb3ea8e28f2adf70cfc165fcb0d719ab6ef03ba4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-31`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4c75dfb65d10bc927465eb6ff98e15a7f2bc4bf6ec7a52c3d2771d4952dfe108
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Admitted reading: this pair does not license every adverbial as bookish
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=b171595b5d0ed162c3776c984aefb6d7bb666062f43d9cfce753c887ab46f528
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-32`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e2209760e49c5d4565a94e3a71439ceea0c982e041f8d506fece95ad970e0740
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=every adverbial participle is bookish in every sentence
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=b044f872dc48f38fada0d380d29c3da2e712e0e694c7157ccc1a00324f169057
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-33`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b757f70b3127f49fe26ce840720b450654c01f352ea536b40e10ccde81f36d5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Rejected reading: every adverbial participle is bookish in every sentence
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=9b1ca1bd458be975dcd43ef4f6123be253f179a6f40e8499acc08d7a506e4ee7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-34`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad1fed83cd0454d524b122705fa77981810fc3cfc7878afa0941fd5b7b178e4a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Закончив письмо,
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=de845bbbd9328d563a9567f95fdee46438fba3f2b0593c7dc93c54e06992c3b8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-35`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14320c25d7d8cd5014974370c9be75cf9a597119820bfacec474fa5946872a02
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Закончив письмо
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=ab90f486f976e22b9a24963dee4055c97557767e708b2003701838f6999e0c62
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-36`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd9913ec84dfa97023c80ec8efd9ffec7d6662b79c8abc03aa818fa3514a749b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Анна пошла на почту.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=876e43943c47455a5c62f26b1d314412f0dbc1bff99c0b81e978ce91e0591938
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-37`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0da2834b2565f145db0ff3891f0127aa55fa64a707f36f50515b798f924f86d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Анна пошла на почту
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=ddb086c843b555ed5f854c39b682da6899e1160352f3569b07bf63288b0ad7ad
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-38`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5125cedf0073ff8b966b634c17e9694d57dffa77f822e41bcd66f2894e4e08fc
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Анна закончила письмо и пошла на почту
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=b872af3be068c510ea92f7453b54b6f47b791fa0b6122dbb77b873382da25058
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-39`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ed9c52c9f090c8ed8b6cac8e5769fe0e25a7ca0d040cfdcd3393bdb2f0f4ea8
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Написанное письмо лежит на столе
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=013a05c296310a2ff444a72e10a2035cbe105e0c467101b6b748cb1f1999f23e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-4`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e404079502ef33be92d928a9835d5b4115efa822e028c415b7a0de33703e942b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Закончив письмо, Анна пошла на почту.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=d93cc51550233cd17f8172b3d151268894177640602b741fb1a9b1569b8068c9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-5`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7fa963744d368ea5727fcc7f82febe32e63b86625c456bf26c43e017839b97b1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=the adverbial opening is the bookish option in this pair
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=990dcd676f3685d7f6c2b5a5bb8a1b4b8ddb9a067c1165aec3883efd4f6f947c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-6`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81df9a7a01065435bb1cfb369624267eec0347f98f39ff02c4f96a317f48d859
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Анна закончила письмо и пошла на почту.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=3a3685f52d5f1f1ce884fa5b44218abcf91c56eae1f1277e8fca3a11341c5485
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-7`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7222d55c072d5d41a5f7868952798c97358e33054d3eca0198214eb132092d80
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=the finite coordination is the ordinary option in this pair
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=bc029ef312395cab03650946aba30edb74802c9220a4cfe0f78d491ac6ce2f6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-8`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f0fa13bcec5d03ac4f38bfb52c2488cdd9b2cb9012e89dac1a2941d80a11c46d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Which English description identifies the opening word of the bookish sentence in this pair?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=2239503d13db9e60ce65c0208d6efe4999c8ada83dab18dea82a1a3d9a0ae988
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u29-register-9`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78fccd927f67b2fb9dbd53d76a54502d57d1127fb7f354fd9673ab9803c50f84
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+originalSourceText=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+shippedText=Закончив
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+contentHash=927eb1d8a68b8468190f8dba8d68b437a783cb87dccb48aee0d915f12cb7d582
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4086,6 +10013,117 @@ exactSpan=В русском языке причастный оборот час�
 * ''Программа, написанная в спешке, выполнила недопустимую операцию.''
 * ''Написанная в спешке программа выполнила недопустимую операцию.
 
+### SOURCE_CAPABILITY `cap-obj-u29-reading`
+
+- Objectives: obj-u29-reading
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: SOURCE_CAPABILITY
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9754ea1d87490ba47bc297e296f51efd736530fbdffd380aad6b492711b360a4
+
+sourceId=src-original-research-synthesis
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-reading
+sourceHash=3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3
+supportedClaim=bookish-reading
+exactSpan=Read the passage for the actions, not for whether the style is bookish.
+Register classification is a different objective and does not answer these readings.
+Return to what Anna finished, where she went, and what she sent.
+Закончив письмо, Анна пошла на почту и отправила его.
+she went to the post office after finishing
+отправила его
+she sent the letter from the post office
+Which English reading matches the person who acts in this passage?
+Анна
+Anna is the person who did the actions
+Admitted reading: Anna is the person who did the actions
+the letter went to the post office alone
+the post office wrote the letter
+Rejected reading: the letter went to the post office alone
+Rejected reading: the post office wrote the letter
+Which English reading matches what happened before Anna left?
+Закончив письмо
+she finished the letter before leaving
+Admitted reading: she finished the letter before leaving
+she sent the letter before writing it
+she left before the letter existed
+Rejected reading: she sent the letter before writing it
+Rejected reading: she left before the letter existed
+Which English reading matches where Anna went after finishing?
+пошла на почту
+Admitted reading: she went to the post office after finishing
+she stayed at the table after finishing
+she finished the letter at the market
+Rejected reading: she stayed at the table after finishing
+Rejected reading: she finished the letter at the market
+Which English reading matches what Anna did with the letter at the end?
+Admitted reading: she sent the letter from the post office
+she left the letter at home
+she received a letter at home
+Rejected reading: she left the letter at home
+Rejected reading: she received a letter at home
+Закончив письмо,
+Анна пошла на почту и отправила его.
+Анна пошла на почту и отправила его
+
+### SOURCE_CAPABILITY `cap-obj-u29-register`
+
+- Objectives: obj-u29-register
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: SOURCE_CAPABILITY
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: edd74dad0ebcf0f3100a0a34a3273c5916ed1e25ecb6eaed6e36f2784d843727
+
+sourceId=src-original-research-synthesis
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:bookish-register
+sourceHash=c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6
+supportedClaim=bookish-register
+exactSpan=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+This pair is not a universal stylistic rule.
+Return to the adverbial opening versus the finite coordination in this pair.
+Закончив письмо, Анна пошла на почту.
+the adverbial opening is the bookish option in this pair
+Анна закончила письмо и пошла на почту.
+the finite coordination is the ordinary option in this pair
+Which English description identifies the opening word of the bookish sentence in this pair?
+Закончив
+the adverbial word opens the bookish sentence
+Admitted reading: the adverbial word opens the bookish sentence
+a passive participle is outside this bookish pair
+Rejected reading: the finite coordination is the ordinary option in this pair
+Rejected reading: a passive participle is outside this bookish pair
+Which English description identifies the bookish option in this admitted pair?
+Admitted reading: the adverbial opening is the bookish option in this pair
+appearance in writing is outside this bookish pair
+Rejected reading: appearance in writing is outside this bookish pair
+Which English description identifies the ordinary option in this admitted pair?
+Admitted reading: the finite coordination is the ordinary option in this pair
+Rejected reading: the adverbial opening is the bookish option in this pair
+Which English description identifies a passive participle that is outside this admitted pair?
+Написанное письмо лежит на столе.
+Admitted reading: a passive participle is outside this bookish pair
+Which English description identifies text that is merely on paper?
+a sentence that is only on paper
+Admitted reading: appearance in writing is outside this bookish pair
+Which English description states the limit of this admitted pair?
+an adverbial in a different sentence
+this pair does not license every adverbial as bookish
+Admitted reading: this pair does not license every adverbial as bookish
+every adverbial participle is bookish in every sentence
+Rejected reading: every adverbial participle is bookish in every sentence
+Закончив письмо,
+Закончив письмо
+Анна пошла на почту.
+Анна пошла на почту
+Анна закончила письмо и пошла на почту
+Написанное письмо лежит на столе
+
 ### SOURCE_CAPABILITY `cap-obj-u29-short-adjective`
 
 - Objectives: obj-u29-short-adjective
@@ -4133,6 +10171,21 @@ CC BY-SA 4.0
 Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 92eaa6f12bb405d916c9b9fc01fbc988620c90737878f13e1e61845a549d0bb5
+
+Independently authored research synthesis
+Original app text
+Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+Original research synthesis. Not a quotation of a third-party page.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -4174,6 +10227,20 @@ permitsAppUse=true
 
 src-ruwiki-prichastie-153078996
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 65ca0e4f268b6158cbfafc95d43b79c9894d018f538d27b8cf21e7000b24fbed
+
+src-original-research-synthesis
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -4236,8 +10303,26 @@ permitsAppUse=true
 - `obj-u29-punctuation` REMEDIATION `u29-st-rem-punctuation`
 - `obj-u29-book` INSTRUCTION `u29-st-book-work`
 - `obj-u29-book` INSTRUCTION `u29-st-book`
-- `obj-u29-register` INSTRUCTION `u29-st-gap-register`
-- `obj-u29-reading` INSTRUCTION `u29-st-gap-reading`
+- `obj-u29-register` INSTRUCTION `u29-register-teach-1`
+- `obj-u29-register` INSTRUCTION `u29-register-teach-2`
+- `obj-u29-register` EXAMPLE `ex-u29-register-1`
+- `obj-u29-register` EXAMPLE `ex-u29-register-2`
+- `obj-u29-register` PRACTICE `u29-register-guided`
+- `obj-u29-register` CHECK `u29-i-register-1`
+- `obj-u29-register` CHECK `u29-i-register-2`
+- `obj-u29-register` CHECK `u29-i-register-3`
+- `obj-u29-register` CHECK `u29-i-register-4`
+- `obj-u29-register` CHECK `u29-i-register-5`
+- `obj-u29-register` REMEDIATION `u29-register-remediate`
+- `obj-u29-reading` INSTRUCTION `u29-reading-teach-1`
+- `obj-u29-reading` INSTRUCTION `u29-reading-teach-2`
+- `obj-u29-reading` EXAMPLE `ex-u29-reading-1`
+- `obj-u29-reading` EXAMPLE `ex-u29-reading-2`
+- `obj-u29-reading` PRACTICE `u29-reading-guided`
+- `obj-u29-reading` CHECK `u29-i-reading-1`
+- `obj-u29-reading` CHECK `u29-i-reading-2`
+- `obj-u29-reading` CHECK `u29-i-reading-3`
+- `obj-u29-reading` REMEDIATION `u29-reading-remediate`
 - `u29-s-orient` OBJECTIVE `obj-u29-active`
 - `u29-s-orient` OBJECTIVE `obj-u29-short-adjective`
 - `u29-s-orient` OBJECTIVE `obj-u29-bookish-note`
@@ -4301,9 +10386,35 @@ permitsAppUse=true
 - `u29-s-book` OBJECTIVE `obj-u29-book`
 - `u29-st-book-work` REFERENCE `ref-u2630-attribution`
 - `u29-s-gap-register` OBJECTIVE `obj-u29-register`
-- `u29-st-gap-register` REFERENCE `ref-u2630-attribution`
+- `u29-register-teach-1` EXAMPLE `ex-u29-register-1`
+- `u29-register-teach-1` EXAMPLE `ex-u29-register-2`
+- `u29-register-teach-1` REFERENCE `ref-u2630-attribution`
+- `u29-register-guided` REMEDIATION `u29-register-remediate`
+- `u29-register-guided` ITEM `u29-g-register-1`
+- `u29-register-guided` REFERENCE `ref-u2630-attribution`
+- `u29-register-teach-2` REFERENCE `ref-u2630-attribution`
+- `u29-register-remediate` REFERENCE `ref-u2630-attribution`
+- `u29-register-check` REMEDIATION `u29-register-remediate`
+- `u29-register-check` ITEM `u29-i-register-1`
+- `u29-register-check` ITEM `u29-i-register-2`
+- `u29-register-check` ITEM `u29-i-register-3`
+- `u29-register-check` ITEM `u29-i-register-4`
+- `u29-register-check` ITEM `u29-i-register-5`
+- `u29-register-check` REFERENCE `ref-u2630-attribution`
 - `u29-s-gap-reading` OBJECTIVE `obj-u29-reading`
-- `u29-st-gap-reading` REFERENCE `ref-u2630-attribution`
+- `u29-reading-teach-1` EXAMPLE `ex-u29-reading-1`
+- `u29-reading-teach-1` EXAMPLE `ex-u29-reading-2`
+- `u29-reading-teach-1` REFERENCE `ref-u2630-attribution`
+- `u29-reading-guided` REMEDIATION `u29-reading-remediate`
+- `u29-reading-guided` ITEM `u29-g-reading-1`
+- `u29-reading-guided` REFERENCE `ref-u2630-attribution`
+- `u29-reading-teach-2` REFERENCE `ref-u2630-attribution`
+- `u29-reading-remediate` REFERENCE `ref-u2630-attribution`
+- `u29-reading-check` REMEDIATION `u29-reading-remediate`
+- `u29-reading-check` ITEM `u29-i-reading-1`
+- `u29-reading-check` ITEM `u29-i-reading-2`
+- `u29-reading-check` ITEM `u29-i-reading-3`
+- `u29-reading-check` REFERENCE `ref-u2630-attribution`
 - `obj-u29-active` PROVENANCE `prov-ex-u29-active-0-en`
 - `obj-u29-active` PROVENANCE `prov-ex-u29-active-0-ru`
 - `obj-u29-active` PROVENANCE `prov-ex-u29-active-1-en`
@@ -4331,6 +10442,85 @@ permitsAppUse=true
 - `obj-u29-short-adjective` PROVENANCE `prov-ex-u29-short-adjective-1-ru`
 - `obj-u29-short-adjective` PROVENANCE `prov-ex-u29-short-adjective-2-en`
 - `obj-u29-short-adjective` PROVENANCE `prov-ex-u29-short-adjective-2-ru`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-0`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-1`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-10`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-11`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-12`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-13`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-14`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-15`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-16`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-17`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-18`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-19`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-2`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-20`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-21`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-22`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-23`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-24`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-25`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-26`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-27`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-28`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-29`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-3`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-30`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-31`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-32`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-33`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-34`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-35`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-36`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-37`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-38`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-4`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-5`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-6`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-7`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-8`
+- `obj-u29-reading` PROVENANCE `prov-obj-u29-reading-9`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-0`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-1`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-10`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-11`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-12`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-13`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-14`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-15`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-16`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-17`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-18`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-19`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-2`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-20`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-21`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-22`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-23`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-24`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-25`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-26`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-27`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-28`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-29`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-3`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-30`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-31`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-32`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-33`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-34`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-35`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-36`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-37`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-38`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-39`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-4`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-5`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-6`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-7`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-8`
+- `obj-u29-register` PROVENANCE `prov-obj-u29-register-9`
 - `obj-u29-active` PROVENANCE `prov-u29-active-rem`
 - `obj-u29-active` PROVENANCE `prov-u29-active-x-0`
 - `obj-u29-active` PROVENANCE `prov-u29-active-x-1`
@@ -4348,6 +10538,8 @@ permitsAppUse=true
 - `obj-u29-short-adjective` PROVENANCE `prov-u29-short-adjective-x-0`
 - `obj-u29-active` SOURCE_CAPABILITY `cap-obj-u29-active`
 - `obj-u29-punctuation` SOURCE_CAPABILITY `cap-obj-u29-punctuation`
+- `obj-u29-reading` SOURCE_CAPABILITY `cap-obj-u29-reading`
+- `obj-u29-register` SOURCE_CAPABILITY `cap-obj-u29-register`
 - `obj-u29-short-adjective` SOURCE_CAPABILITY `cap-obj-u29-short-adjective`
 
 ## Book-directed experiences
@@ -4361,19 +10553,17 @@ permitsAppUse=true
 - `cap-obj-u29-active` supports `active-participle` for `obj-u29-active`
 - `cap-obj-u29-short-adjective` supports `short-form-adjective` for `obj-u29-short-adjective`
 - `cap-obj-u29-punctuation` supports `participle-punctuation` for `obj-u29-punctuation`
+- `cap-obj-u29-register` supports `bookish-register` for `obj-u29-register`
+- `cap-obj-u29-reading` supports `bookish-reading` for `obj-u29-reading`
 
-Guidance objectives stay unsupported until an admitted frozen capability exists:
+No guidance objective is recorded.
 
-- `obj-u29-register` A general bookish-register claim stays in the copy you own
-- `obj-u29-reading` The bookish reading stays in the copy you own
 
 ## Book-directed register
 
 - `u29-st-orient` Open Lesson 29 in the copy you own. The app records do not replace that lesson.
 - `u29-st-book-work` Open Lesson 29 in your copy and complete its lesson work.
 - `u29-st-book` Self-attest only after the Lesson 29 work in your copy.
-- `u29-st-gap-register` A claim about all bookish text has no admitted frozen span.
-- `u29-st-gap-reading` The bookish reading has no admitted frozen span.
 
 ## Optional non-gating register
 
@@ -4382,8 +10572,8 @@ None.
 
 ## Unavailable experiences
 
-- `u29-st-gap-register`
-- `u29-st-gap-reading`
+None.
+
 
 ## Unresolved relationships
 
