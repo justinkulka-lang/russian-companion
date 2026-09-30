@@ -79,7 +79,11 @@ class PostPr53ReadinessReconciliationTest {
         assertTrue(markdown.contains(recorded))
         assertTrue(markdown.contains(report.getValue("draftPullRequestUrl").jsonPrimitive.content))
 
-        assertEquals(live.packContentReviewDigest, report.getValue("packContentReviewDigest").jsonPrimitive.content)
+        assertEquals(
+            "19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75",
+            report.getValue("packContentReviewDigest").jsonPrimitive.content,
+        )
+        assertFalse(live.packContentReviewDigest == report.getValue("packContentReviewDigest").jsonPrimitive.content)
         assertEquals(
             "bc0c41fba753e8f7b91d98faceced8aadad7a63985e2303b77af036b78173339",
             report.getValue("repositorySourceDigest").jsonPrimitive.content,
@@ -133,10 +137,22 @@ class PostPr53ReadinessReconciliationTest {
             assertEquals(unit.title, row.getValue("title").jsonPrimitive.content)
             assertEquals(unit.installState, row.getValue("installState").jsonPrimitive.content)
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals(unit.readiness, row.getValue("readiness").jsonPrimitive.content)
-            assertEquals(if (unit.advancementCanPresentlySucceed) "YES" else "NO", row.getValue("advancementCanPresentlySucceed").jsonPrimitive.content)
-            assertEquals(unit.unresolvedRequiredSourceCapabilities, row.getValue("unresolvedRequiredSourceCapabilities").jsonPrimitive.content)
-            assertEquals(unit.contentBlocker, row.getValue("contentBlocker").jsonPrimitive.content)
+            val historical = PHASE2_HISTORICAL_ROWS[unit.unitNumber]
+            if (historical == null) {
+                assertEquals(unit.readiness, row.getValue("readiness").jsonPrimitive.content)
+                assertEquals(if (unit.advancementCanPresentlySucceed) "YES" else "NO", row.getValue("advancementCanPresentlySucceed").jsonPrimitive.content)
+                assertEquals(unit.unresolvedRequiredSourceCapabilities, row.getValue("unresolvedRequiredSourceCapabilities").jsonPrimitive.content)
+                assertEquals(unit.contentBlocker, row.getValue("contentBlocker").jsonPrimitive.content)
+            } else {
+                assertEquals("NOT_PREPARED", row.getValue("readiness").jsonPrimitive.content)
+                assertEquals("NO", row.getValue("advancementCanPresentlySucceed").jsonPrimitive.content)
+                assertEquals(historical.first, row.getValue("unresolvedRequiredSourceCapabilities").jsonPrimitive.content)
+                assertEquals(historical.second, row.getValue("contentBlocker").jsonPrimitive.content)
+                assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
+                assertTrue(unit.advancementCanPresentlySucceed)
+                assertEquals("NONE", unit.unresolvedRequiredSourceCapabilities)
+                assertEquals("NONE", unit.contentBlocker)
+            }
             assertEquals("PENDING_QUALIFIED_REVIEW", row.getValue("linguisticReviewStatus").jsonPrimitive.content)
             assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", unit.unitReviewStatus)
             assertTrue(unit.linguisticReviewBlocker.contains("PENDING_FINAL_AUDIT"))
@@ -557,6 +573,20 @@ class PostPr53ReadinessReconciliationTest {
             "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.md",
         )
         val IDENTITY_KEYS = setOf("headCommit", "reportContentCommit", "postReportAllowlist")
+        val PHASE2_HISTORICAL_ROWS = mapOf(
+            7 to (
+                "adverb-paradigm" to
+                    "RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM"
+                ),
+            23 to (
+                "completion-over-period" to
+                    "RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM"
+                ),
+            25 to (
+                "productive-diminutive" to
+                    "RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY"
+                ),
+        )
         val STALE_RESOLVED_CLAIMS = listOf(
             "productive-clock-time",
             "negation-scope",

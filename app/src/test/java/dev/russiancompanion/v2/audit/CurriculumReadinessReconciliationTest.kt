@@ -313,8 +313,8 @@ class CurriculumReadinessReconciliationTest {
         val inconsistent = reconcileCurriculumReadiness(
             root(),
             pack,
-            runtimeAdvancementAllowed = { _, unit -> unit.number == 7 },
-        ).units.first { it.unitNumber == 7 }
+            runtimeAdvancementAllowed = { _, unit -> unit.number == 26 },
+        ).units.first { it.unitNumber == 26 }
         assertFalse(inconsistent.advancementCanPresentlySucceed)
         assertTrue(inconsistent.finalDisposition.startsWith("INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"))
         val closed = reportAdvancement("NOT_PREPARED", runtimeAllowed = false)
