@@ -379,15 +379,16 @@ class BatchECapabilityResearchTest {
         assertTrue(candidateText.contains("0bd4dbf5a24738b9ff9bb7e782a1370021ea59b065c9e764c556f16c1e0784b4"))
         assertTrue(candidateText.contains("7a24899055474d1d7913213b0af1dedade528d4015cd1faef35c0f71d4e8c37e"))
         assertEquals(
-            "postal-address",
+            "NONE",
             model.units.single { it.unitNumber == 26 }.unresolvedRequiredSourceCapabilities,
         )
         assertEquals(
-            "bookish-register, bookish-reading",
+            "NONE",
             model.units.single { it.unitNumber == 29 }.unresolvedRequiredSourceCapabilities,
         )
-        assertEquals("NOT_PREPARED", model.units.single { it.unitNumber == 26 }.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", model.units.single { it.unitNumber == 26 }.readiness)
         assertEquals("NOT_PREPARED", model.units.single { it.unitNumber == 29 }.readiness)
+        assertEquals("PROPOSED_NOT_ACTIVATED", model.units.single { it.unitNumber == 29 }.authorityVarianceBlocker)
     }
 
     private fun probe(unitNumber: Int, objectiveId: String, claim: String, span: String) = V2SourceCapability(

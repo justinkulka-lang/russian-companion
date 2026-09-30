@@ -31,10 +31,10 @@ class Phase2BoundedClaimsTest {
         )
         assertEquals(emptySet<String>(), unresolved(pack, 23))
         assertEquals(emptySet<String>(), unresolved(pack, 25))
-        assertEquals(setOf("postal-address"), unresolved(pack, 26))
-        assertEquals(setOf("participle-stress", "participle-comprehension"), unresolved(pack, 27))
-        assertEquals(setOf("bookish-register", "bookish-reading"), unresolved(pack, 29))
-        assertEquals(setOf("dictionary-use"), unresolved(pack, 30))
+        assertEquals(emptySet<String>(), unresolved(pack, 26))
+        assertEquals(emptySet<String>(), unresolved(pack, 27))
+        assertEquals(emptySet<String>(), unresolved(pack, 29))
+        assertEquals(emptySet<String>(), unresolved(pack, 30))
         listOf(7, 23, 25).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)

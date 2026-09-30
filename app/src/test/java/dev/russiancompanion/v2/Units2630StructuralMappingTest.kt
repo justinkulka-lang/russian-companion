@@ -52,13 +52,6 @@ class Units2630StructuralMappingTest {
         30 to "Unit 30 is not content-complete without admitted dictionary-use, abbreviation, letter-name-review, particle, and capstone-reading source capabilities",
     )
 
-    private val liveGap = mapOf(
-        26 to "Unit 26 is not content-complete without admitted postal-address source capabilities",
-        27 to "Unit 27 is not content-complete without admitted participle-stress and participle-comprehension source capabilities",
-        29 to "Unit 29 is not content-complete without admitted bookish-register and bookish-reading source capabilities",
-        30 to "Unit 30 is not content-complete without admitted dictionary-use source capabilities",
-    )
-
     private val keywordBlob = (
         "\u0441\u0435\u0431\u044f \u0447\u0442\u043e\u0431\u044b indefinite pronoun word order postal address letter writing " +
             "passive participle stress verbal adverb active participle punctuation short adjective bookish " +
@@ -75,7 +68,7 @@ class Units2630StructuralMappingTest {
             val review = pack.unitReviews.single { it.unitNumber == number }
             assertEquals("DEVELOPMENT", unit.installState)
             assertEquals(
-                if (number == 28) "CONTENT_COMPLETE_REVIEW_PENDING" else "NOT_PREPARED",
+                if (number == 26 || number == 28) "CONTENT_COMPLETE_REVIEW_PENDING" else "NOT_PREPARED",
                 unit.readiness,
             )
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
@@ -109,19 +102,15 @@ class Units2630StructuralMappingTest {
             assertNull(facts.isbn)
             assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
             val decision = advancementDecision(pack, unit, learner(number, book = true))
-            if (number == 28) {
+            if (number == 26 || number == 28) {
                 assertFalse(decision.allowed)
                 assertFalse(decision.remaining.any { it == "This unit is not prepared" })
-                assertFalse(decision.remaining.any { it.contains("not content-complete") || it.contains("verbal-adverb-reading") })
+                assertFalse(decision.remaining.any { it.contains("not content-complete") || it.contains("source capabilit") })
                 assertTrue(decision.remaining.any { it.contains("instruction") || it.contains("Demonstrate") })
             } else {
                 assertFalse(decision.allowed)
                 assertTrue(decision.remaining.any { it == "This unit is not prepared" })
-                if (number in liveGap) {
-                    assertTrue(decision.remaining.any { it == liveGap.getValue(number) })
-                } else {
-                    assertFalse(decision.remaining.any { it.contains("not content-complete") })
-                }
+                assertFalse(decision.remaining.any { it.contains("not content-complete") })
             }
             if (number in setOf(27, 29, 30)) {
                 assertTrue(decision.remaining.any { it == "Unit $number is blocked by an unresolved authority variance" })
@@ -227,7 +216,8 @@ class Units2630StructuralMappingTest {
         }
         val unit26 = V2Validator.validate(claimComplete(pack, 26)).errors
         assertFalse(unit26.joinToString("\n"), unit26.any { it.contains("unresolved authority variance") })
-        assertTrue(unit26.any { it == liveGap.getValue(26) })
+        assertFalse(unit26.any { it.contains("postal-address") })
+        assertTrue(unit26.joinToString("\n"), unit26.isEmpty())
         val unit28 = V2Validator.validate(claimComplete(pack, 28)).errors
         assertFalse(unit28.joinToString("\n"), unit28.any { it.contains("unresolved authority variance") })
         assertFalse(unit28.any { it.contains("verbal-adverb-reading") })
@@ -240,10 +230,11 @@ class Units2630StructuralMappingTest {
         pages.keys.forEach { number ->
             val claimed = claimComplete(pack, number)
             val errors = V2Validator.validate(claimed).errors
-            if (number in liveGap) {
-                assertTrue(errors.joinToString("\n"), errors.any { it == liveGap.getValue(number) })
+            if (number == 26 || number == 28) {
+                assertFalse(errors.joinToString("\n"), errors.any { it.contains("verbal-adverb-reading") || it.contains("postal-address") || it.contains("not content-complete") })
             } else {
-                assertFalse(errors.joinToString("\n"), errors.any { it.contains("verbal-adverb-reading") || it.contains("not content-complete") })
+                assertFalse(errors.joinToString("\n"), errors.any { it.contains("not content-complete") })
+                assertTrue(errors.any { it == "Unit $number is blocked by an unresolved authority variance" })
             }
             val bookDirected = bookShell(claimed, number)
             val bookErrors = V2Validator.validate(bookDirected).errors
@@ -297,11 +288,12 @@ class Units2630StructuralMappingTest {
             val rangedDecision = advancementDecision(ranged, ranged.unit(number)!!, learner(number, book = true))
             val rangedErrors = V2Validator.validate(ranged).errors
             assertTrue(rangedErrors.joinToString("\n"), rangedErrors.any { it.contains("structural page range is not linguistic evidence") })
-            if (number == 28) {
+            if (number == 26 || number == 28) {
                 assertTrue(rangedDecision.remaining.joinToString("\n"), rangedDecision.allowed)
             } else {
                 assertFalse(rangedDecision.allowed)
-                assertTrue(rangedDecision.remaining.joinToString("\n"), rangedDecision.remaining.any { it == liveGap.getValue(number) })
+                assertFalse(rangedDecision.remaining.any { it.contains("not content-complete") })
+                assertTrue(rangedDecision.remaining.any { it == "Unit $number is blocked by an unresolved authority variance" })
             }
 
             if (number in setOf(27, 29, 30)) {
@@ -325,16 +317,12 @@ class Units2630StructuralMappingTest {
             val blocked = advancementDecision(unprepared, unprepared.unit(number)!!, learner(number, book = true))
             assertFalse(blocked.allowed)
             assertTrue(blocked.remaining.any { it == "This unit is not prepared" })
-            if (number in liveGap) {
-                assertTrue(blocked.remaining.any { it == liveGap.getValue(number) })
-            } else {
-                assertFalse(blocked.remaining.any { it.contains("not content-complete") })
-            }
+            assertFalse(blocked.remaining.any { it.contains("not content-complete") })
             listOf("CONTENT_COMPLETE_REVIEW_PENDING", "INSTALLABLE").forEach { readiness ->
                 val prepared = permissiveAdvancement(pack, number, readiness)
                 val decision = advancementDecision(prepared, prepared.unit(number)!!, learner(number, book = false))
                 assertFalse(decision.remaining.any { it == "This unit is not prepared" })
-                if (number == 28) {
+                if (number == 26 || number == 28) {
                     assertTrue("$number $readiness ${decision.remaining}", decision.allowed)
                 } else {
                     assertEquals(
@@ -342,9 +330,7 @@ class Units2630StructuralMappingTest {
                         decision.remaining,
                     )
                     assertFalse("$number $readiness ${decision.remaining}", decision.allowed)
-                    if (number in liveGap) {
-                        assertTrue(decision.remaining.any { it == liveGap.getValue(number) })
-                    }
+                    assertFalse(decision.remaining.any { it.contains("not content-complete") })
                 }
                 if (number in setOf(27, 29, 30)) {
                     assertTrue(decision.remaining.any { it == "Unit $number is blocked by an unresolved authority variance" })
@@ -361,12 +347,12 @@ class Units2630StructuralMappingTest {
         val pageRange = capabilityOn(pack, 26, "320-331", "cap-pages", "obj-u26-indefinite", "indefinite-pronoun", "4220315", oldidUrl())
         val pageErrors = V2Validator.validate(claimComplete(pageRange, 26)).errors
         assertTrue(pageErrors.joinToString("\n"), pageErrors.any { it.contains("structural page range is not linguistic evidence") })
-        assertTrue(pageErrors.any { it == liveGap.getValue(26) })
+        assertFalse(pageErrors.any { it.contains("postal-address") })
 
         val keywords = capabilityOn(pack, 26, keywordBlob, "cap-keywords", "obj-u26-word-order", "word-order", "4220315", oldidUrl())
         val keywordErrors = V2Validator.validate(claimComplete(keywords, 26)).errors
         assertTrue(keywordErrors.joinToString("\n"), keywordErrors.any { it.contains("is not an admitted frozen source") })
-        assertTrue(keywordErrors.any { it == liveGap.getValue(26) })
+        assertFalse(keywordErrors.any { it.contains("postal-address") })
         assertFalse(keywordErrors.any { it.contains("keyword match admits") })
 
         val mutable = capabilityOn(
@@ -381,7 +367,8 @@ class Units2630StructuralMappingTest {
         )
         val mutableErrors = V2Validator.validate(claimComplete(mutable, 29)).errors
         assertTrue(mutableErrors.joinToString("\n"), mutableErrors.any { it.contains("mutable webpage cannot clear a source blocker") })
-        assertTrue(mutableErrors.any { it == liveGap.getValue(29) })
+        assertFalse(mutableErrors.any { it.contains("bookish-register") || it.contains("bookish-reading") })
+        assertTrue(mutableErrors.any { it == "Unit 29 is blocked by an unresolved authority variance" })
 
         val forgedHost = capabilityOn(pack, 28, "verbal adverb formation", "cap-forged", "obj-u28-imperfective-adverb", "imperfective-verbal-adverb", "4220315", oldidUrl())
         val forged = forgedHost.copy(

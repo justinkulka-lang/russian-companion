@@ -136,8 +136,8 @@ class CurriculumReadinessReconciliationTest {
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
         }
-        listOf(26, 27, 29).forEach { number ->
-            assertTrue(
+        listOf(26, 27, 29, 30).forEach { number ->
+            assertFalse(
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
         }
@@ -173,14 +173,17 @@ class CurriculumReadinessReconciliationTest {
     @Test
     fun keywordTextBookAttestationAndCountersDoNotClearRealBlockers() {
         val pack = pack()
-        val keyword = pack.provenanceRecords.first { it.unitNumber == 26 }.copy(
+        val withoutPostal = pack.copy(
+            sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "postal-address" },
+        )
+        val keyword = withoutPostal.provenanceRecords.first { it.unitNumber == 26 }.copy(
             itemId = "probe-keyword-postal",
             objectiveId = "obj-u26-postal-address",
             originalSourceText = "This keyword mentions postal-address without a capability record.",
             shippedText = "postal-address",
             sourceHash = "not-the-frozen-hash",
         )
-        val keywordPack = pack.copy(provenanceRecords = pack.provenanceRecords + keyword)
+        val keywordPack = withoutPostal.copy(provenanceRecords = withoutPostal.provenanceRecords + keyword)
         val keywordRow = reconcileCurriculumReadiness(root(), keywordPack).units.first { it.unitNumber == 26 }
         assertTrue(keywordRow.unresolvedRequiredSourceCapabilities.contains("postal-address"))
         assertFalse(keywordRow.unresolvedRequiredSourceCapabilities.contains("indefinite-pronoun"))
@@ -195,13 +198,13 @@ class CurriculumReadinessReconciliationTest {
             objectiveId = "obj-u26-postal-address",
             supportedClaim = "postal-address",
         )
-        val capabilityPack = pack.copy(sourceCapabilities = pack.sourceCapabilities + blankCapability)
+        val capabilityPack = withoutPostal.copy(sourceCapabilities = withoutPostal.sourceCapabilities + blankCapability)
         val capabilityRow = reconcileCurriculumReadiness(root(), capabilityPack).units.first { it.unitNumber == 26 }
-        val liveUnit26 = liveModel().units.first { it.unitNumber == 26 }
+        val strippedUnit26 = reconcileCurriculumReadiness(root(), withoutPostal).units.first { it.unitNumber == 26 }
         assertTrue(capabilityRow.unresolvedRequiredSourceCapabilities.contains("postal-address"))
         assertFalse(capabilityRow.unresolvedRequiredSourceCapabilities.contains("indefinite-pronoun"))
         assertFalse(capabilityRow.unresolvedRequiredSourceCapabilities.contains("word-order"))
-        assertEquals(liveUnit26.resolvedSourceCapabilityCount, capabilityRow.resolvedSourceCapabilityCount)
+        assertEquals(strippedUnit26.resolvedSourceCapabilityCount, capabilityRow.resolvedSourceCapabilityCount)
 
         val unit = pack.unit(3)!!
         val bookOnly = unit.copy(
@@ -270,7 +273,11 @@ class CurriculumReadinessReconciliationTest {
         val seventeenDecision = advancementDecision(pack, seventeen, idealizedLearner(pack, seventeen))
         assertTrue(seventeenDecision.remaining.joinToString("\n"), seventeenDecision.allowed)
         assertTrue(liveModel().units.first { it.unitNumber == 17 }.advancementCanPresentlySucceed)
-        listOf(26, 30).forEach { number ->
+        val unit26 = pack.unit(26)
+        val unit26Decision = advancementDecision(pack, unit26, idealizedLearner(pack, unit26))
+        assertTrue(unit26Decision.remaining.joinToString("\n"), unit26Decision.allowed)
+        assertTrue(liveModel().units.first { it.unitNumber == 26 }.advancementCanPresentlySucceed)
+        listOf(27, 30).forEach { number ->
             val unit = pack.unit(number)
             val decision = advancementDecision(pack, unit, idealizedLearner(pack, unit))
             assertFalse(decision.allowed)
@@ -297,8 +304,8 @@ class CurriculumReadinessReconciliationTest {
         assertFalse(lateDecision.allowed)
         assertFalse(lateDecision.remaining.any { it == "This unit is not prepared" })
         assertTrue(lateDecision.remaining.any { it == "Unit 27 is blocked by an unresolved authority variance" })
-        assertTrue(lateDecision.remaining.any { it.contains("participle-comprehension") })
-        assertTrue(lateDecision.remaining.any { it.contains("participle-stress") })
+        assertFalse(lateDecision.remaining.any { it.contains("participle-comprehension") })
+        assertFalse(lateDecision.remaining.any { it.contains("participle-stress") })
 
         val missingChecks = pack.unit(1)
         val starved = idealizedLearner(pack, missingChecks).copy(correctItemIds = emptySet())
@@ -313,8 +320,8 @@ class CurriculumReadinessReconciliationTest {
         val inconsistent = reconcileCurriculumReadiness(
             root(),
             pack,
-            runtimeAdvancementAllowed = { _, unit -> unit.number == 26 },
-        ).units.first { it.unitNumber == 26 }
+            runtimeAdvancementAllowed = { _, unit -> unit.number == 27 },
+        ).units.first { it.unitNumber == 27 }
         assertFalse(inconsistent.advancementCanPresentlySucceed)
         assertTrue(inconsistent.finalDisposition.startsWith("INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"))
         val closed = reportAdvancement("NOT_PREPARED", runtimeAllowed = false)

@@ -57,17 +57,18 @@ class Aud53CorrectionTest {
         assertFalse(unresolved(pack, 26).contains("letter-writing"))
         assertFalse(unresolved(pack, 25).contains("productive-diminutive"))
         assertFalse(unresolved(pack, 25).contains("documented-name-form"))
-        assertTrue(unresolved(pack, 26).contains("postal-address"))
-        assertTrue(unresolved(pack, 27).contains("participle-stress"))
-        assertTrue(unresolved(pack, 27).contains("participle-comprehension"))
-        assertTrue(unresolved(pack, 30).contains("dictionary-use"))
+        assertFalse(unresolved(pack, 26).contains("postal-address"))
+        assertFalse(unresolved(pack, 27).contains("participle-stress"))
+        assertFalse(unresolved(pack, 27).contains("participle-comprehension"))
+        assertFalse(unresolved(pack, 30).contains("dictionary-use"))
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(25)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(26)!!.readiness)
         assertEquals("NOT_PREPARED", pack.unit(27)!!.readiness)
         assertEquals("NOT_PREPARED", pack.unit(30)!!.readiness)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "productive-diminutive" })
-        assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "participle-stress" })
-        assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "dictionary-use" })
+        assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "participle-stress" })
+        assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "dictionary-use" })
     }
 
     @Test
@@ -240,7 +241,7 @@ class Aud53CorrectionTest {
         val moved = reference.copy(itemId = "prov-aud53-stress", objectiveId = "obj-u27-stress")
         val planted = pack.copy(
             provenanceRecords = pack.provenanceRecords + moved,
-            sourceCapabilities = pack.sourceCapabilities + V2SourceCapability(
+            sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "participle-stress" } + V2SourceCapability(
                 id = "cap-aud53-stress",
                 sourceId = moved.sourceId,
                 sourceRevision = moved.sourceRevision,
@@ -277,7 +278,7 @@ class Aud53CorrectionTest {
         )
         val planted = pack.copy(
             provenanceRecords = pack.provenanceRecords + record,
-            sourceCapabilities = pack.sourceCapabilities + V2SourceCapability(
+            sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "dictionary-use" } + V2SourceCapability(
                 id = "cap-aud53-dictionary",
                 sourceId = record.sourceId,
                 sourceRevision = record.sourceRevision,
@@ -345,8 +346,8 @@ class Aud53CorrectionTest {
         )
         assertFalse(unresolved(stamped, 25).contains("productive-diminutive"))
         assertFalse(unresolved(stamped, 25).contains("documented-name-form"))
-        assertTrue(unresolved(stamped, 27).contains("participle-stress"))
-        assertTrue(unresolved(stamped, 30).contains("dictionary-use"))
+        assertFalse(unresolved(stamped, 27).contains("participle-stress"))
+        assertFalse(unresolved(stamped, 30).contains("dictionary-use"))
         assertEquals("DEVELOPMENT", stamped.unit(25)!!.installState)
         val decision = advancementDecision(stamped, stamped.unit(25)!!, learner(stamped, 25))
         assertTrue(decision.remaining.joinToString("\n"), decision.allowed)

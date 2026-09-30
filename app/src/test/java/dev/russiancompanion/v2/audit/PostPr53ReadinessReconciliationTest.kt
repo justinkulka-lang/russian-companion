@@ -189,22 +189,13 @@ class PostPr53ReadinessReconciliationTest {
         }
 
         val unresolved = live.units.filter { it.unresolvedRequiredSourceCapabilities != "NONE" }
-        assertEquals(listOf(26, 27, 29, 30), unresolved.map { it.unitNumber })
-        assertEquals(
-            listOf(
-                "postal-address",
-                "participle-stress, participle-comprehension",
-                "bookish-register, bookish-reading",
-                "dictionary-use",
-            ),
-            unresolved.map { it.unresolvedRequiredSourceCapabilities },
-        )
-        assertEquals(26, live.units.count { it.readiness == "CONTENT_COMPLETE_REVIEW_PENDING" })
-        assertEquals(4, live.units.count { it.readiness == "NOT_PREPARED" })
+        assertEquals(emptyList<Int>(), unresolved.map { it.unitNumber })
+        assertEquals(27, live.units.count { it.readiness == "CONTENT_COMPLETE_REVIEW_PENDING" })
+        assertEquals(3, live.units.count { it.readiness == "NOT_PREPARED" })
         assertEquals(listOf(1, 2), live.units.filter { it.assetBlocker != "NONE" }.map { it.unitNumber })
         assertEquals(listOf(27, 29, 30), live.units.filter { it.authorityVarianceBlocker != "NOT_APPLICABLE" }.map { it.unitNumber })
         assertEquals(
-            listOf(3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 28),
+            listOf(3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28),
             live.units.filter {
                 it.readiness == "CONTENT_COMPLETE_REVIEW_PENDING" &&
                     it.unresolvedRequiredSourceCapabilities == "NONE" &&
