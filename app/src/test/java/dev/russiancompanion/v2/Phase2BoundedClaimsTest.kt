@@ -236,6 +236,81 @@ class Phase2BoundedClaimsTest {
         assertTrue(unresolved(silent, 25).contains("documented-name-form"))
     }
 
+    @Test
+    fun sashkaStaysDismissiveAndNameReadingsCannotBeSwapped() {
+        val pack = pack()
+        val unit = pack.unit(25)!!
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
+        assertEquals("DEVELOPMENT", unit.installState)
+        assertTrue(V2Validator.contentCompletenessErrors(pack, unit).joinToString("\n"), V2Validator.contentCompletenessErrors(pack, unit).isEmpty())
+        assertFalse(unresolved(pack, 25).contains("documented-name-form"))
+        assertTrue(advancementDecision(pack, unit, learner(unit)).allowed)
+        assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "productive-diminutive" })
+        assertTrue(pack.unit(25)!!.objectives.none { it.id == "obj-u25-productive-formation" })
+        val governed = pack.provenanceRecords.single { it.itemId == "prov-ex-u25-nickname-rule-2-en" }
+        assertEquals("\u043e\u0442\u0442\u0435\u043d\u043e\u043a \u043f\u0440\u0435\u043d\u0435\u0431\u0440\u0435\u0436\u0435\u043d\u0438\u044f", governed.shippedText)
+        val sashka = pack.items.single { it.id == "u25-i-name-form-2" }
+        val mashenka = pack.items.single { it.id == "u25-i-name-form-1" }
+        val maryunya = pack.items.single { it.id == "u25-g-name-form-1" }
+        val rejected = pack.items.single { it.id == "u25-i-name-form-3" }
+        assertEquals("\u0421\u0430\u0448\u043a\u0430", sashka.promptLetter)
+        assertTrue(sashka.answer.contains("dismissive"))
+        assertFalse(sashka.answer == "documented familiar short-form coloring")
+        assertTrue(sashka.feedback.contains(sashka.answer))
+        assertTrue(mashenka.answer.contains("short form"))
+        assertTrue(maryunya.answer.contains("full name"))
+        assertTrue(rejected.answer.contains("names dictionary"))
+        assertEquals(setOf(sashka.answer, mashenka.answer, maryunya.answer).size, 3)
+        val application = pack.provenanceRecords.first { it.sourceRecordId == "phase2:documented-name-form" }
+            .synthesis!!.applications.single { it.cue == "\u0421\u0430\u0448\u043a\u0430" }
+        assertEquals(sashka.answer, application.answer)
+        assertEquals("documented dismissive coloring", pack.examples.single { it.id == "ex-u25-name-form-1" }.note)
+
+        val familiar = replaceNameAnswer(pack, "u25-i-name-form-2", "documented familiar short-form coloring")
+        val familiarErrors = errors(familiar)
+        assertTrue(familiarErrors, familiarErrors.contains("familiar short-form coloring does not preserve the dismissive reading"))
+        assertTrue(familiarErrors, familiarErrors.contains("conflicting governed descriptions"))
+        assertTrue(unresolved(familiar, 25).contains("documented-name-form"))
+        assertFalse(advancementDecision(familiar, familiar.unit(25)!!, learner(familiar.unit(25)!!)).allowed)
+
+        val silentFeedback = replaceNameAnswer(pack, "u25-i-name-form-2", sashka.answer, feedback = "This reading is conventional.")
+        assertTrue(errors(silentFeedback), errors(silentFeedback).contains("feedback does not agree with the keyed answer"))
+
+        val swapped = replaceNameAnswer(pack, "u25-i-name-form-2", mashenka.answer)
+        val swappedErrors = errors(swapped)
+        assertTrue(swappedErrors, swappedErrors.contains("swaps the"))
+        assertTrue(unresolved(swapped, 25).contains("documented-name-form"))
+        val swappedWithMaryunya = replaceNameAnswer(pack, "u25-i-name-form-2", maryunya.answer)
+        assertTrue(errors(swappedWithMaryunya), errors(swappedWithMaryunya).contains("swaps the"))
+
+        val generated = replaceNameAnswer(
+            pack,
+            "u25-i-name-form-3",
+            "the suffix mechanically generates an acceptable name",
+        )
+        val generatedErrors = errors(generated)
+        assertTrue(generatedErrors, generatedErrors.contains("arbitrary name-form generation is not rejected"))
+        assertTrue(unresolved(generated, 25).contains("documented-name-form"))
+    }
+
+    private fun replaceNameAnswer(
+        pack: V2CurriculumPack,
+        itemId: String,
+        answer: String,
+        feedback: String? = null,
+    ): V2CurriculumPack {
+        return pack.copy(items = pack.items.map { item ->
+            if (item.id != itemId) {
+                item
+            } else {
+                item.copy(
+                    answer = answer,
+                    feedback = feedback ?: item.feedback,
+                )
+            }
+        })
+    }
+
     private fun retarget(pack: V2CurriculumPack, span: String, objectiveId: String): V2CurriculumPack =
         pack.copy(provenanceRecords = pack.provenanceRecords.map { record ->
             if (record.originalSourceText == span) record.copy(objectiveId = objectiveId) else record

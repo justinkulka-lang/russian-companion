@@ -1429,6 +1429,9 @@ internal object V2Validator {
                 errors += "Source capability $id distractor does not explain aspect and construction"
             }
         }
+        if (claim == "documented-name-form") {
+            errors += documentedNameFormCoherenceErrors(pack, id, synthesis, checks + practiceItems)
+        }
         if (independent.any { item ->
                 SOURCE_LAYOUT_RECALL.containsMatchIn(item.prompt) ||
                     SOURCE_SET_RECALL.containsMatchIn(item.prompt) ||
@@ -1436,6 +1439,75 @@ internal object V2Validator {
             }
         ) {
             errors += "Source capability $id label or source-layout recall does not clear $claim"
+        }
+        return errors
+    }
+
+    /**
+     * The admitted nickname record keeps one form dismissive.
+     * Full-name, short-form, and dismissive readings cannot be swapped.
+     */
+    private fun documentedNameFormCoherenceErrors(
+        pack: V2CurriculumPack,
+        id: String,
+        synthesis: V2OriginalSynthesisEvidence?,
+        assessed: List<V2CheckItem>,
+    ): List<String> {
+        val errors = mutableListOf<String>()
+        val governedDismissive = pack.provenanceRecords.any {
+            it.itemId == "prov-ex-u25-nickname-rule-2-en" &&
+                it.unitNumber == 25 &&
+                it.sourceId != Phase2Sources.SOURCE_ID &&
+                it.shippedText.isNotBlank()
+        }
+        val applications = synthesis?.applications.orEmpty()
+        fun application(cue: String) = applications.firstOrNull { it.cue == cue }
+        fun item(cue: String) = assessed.firstOrNull { it.promptLetter == cue }
+        val required = mapOf(
+            "\u041c\u0430\u0440\u044e\u043d\u044f" to "full name",
+            "\u041c\u0430\u0448\u0435\u043d\u044c\u043a\u0430" to "short form",
+            "\u0421\u0430\u0448\u043a\u0430" to "dismissive",
+        )
+        if (governedDismissive) {
+            required.forEach { (cue, anchor) ->
+                val reading = item(cue)
+                val stated = application(cue)
+                val answer = reading?.answer.orEmpty()
+                if (stated == null || reading == null || !answer.contains(anchor) || stated.answer != answer) {
+                    errors += "Source capability $id conflicting governed descriptions for $cue"
+                }
+                if (answer == "documented familiar short-form coloring" || stated?.answer == "documented familiar short-form coloring") {
+                    errors += "Source capability $id familiar short-form coloring does not preserve the dismissive reading of \u0421\u0430\u0448\u043a\u0430"
+                }
+                if (reading != null && !reading.feedback.contains(answer)) {
+                    errors += "Source capability $id feedback does not agree with the keyed answer"
+                }
+                if (reading != null && stated != null) {
+                    reading.options.forEachIndexed { index, option ->
+                        if (option == answer) return@forEachIndexed
+                        val rationale = reading.distractorRationales.getOrElse(index) { "" }
+                        if (!rationale.contains(option) || stated.distractors.none { it == option }) {
+                            errors += "Source capability $id distractor rationale does not agree with the competing application"
+                        }
+                    }
+                }
+            }
+            val sashka = item("\u0421\u0430\u0448\u043a\u0430")?.answer
+            val others = listOfNotNull(item("\u041c\u0430\u0440\u044e\u043d\u044f")?.answer, item("\u041c\u0430\u0448\u0435\u043d\u044c\u043a\u0430")?.answer)
+            if (sashka != null && sashka in others) {
+                errors += "Source capability $id swaps the \u0421\u0430\u0448\u043a\u0430 interpretation"
+            }
+        }
+        val rejected = item("an unstudied personal name")
+        val rejectedApplication = application("an unstudied personal name")
+        if (
+            rejected == null ||
+            rejectedApplication == null ||
+            rejected.answer != rejectedApplication.answer ||
+            !rejected.answer.contains("names dictionary") ||
+            rejectedApplication.distractors.none { it.contains("mechanically") }
+        ) {
+            errors += "Source capability $id arbitrary name-form generation is not rejected"
         }
         return errors
     }

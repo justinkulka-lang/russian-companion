@@ -48,14 +48,14 @@ internal object Phase2Sources {
     )
     val NAME_FORM = Admission(
         recordId = "phase2:documented-name-form",
-        sourceHash = "0bd6814d914fc80c3e61edd47f52f75a9607dc1f371795afc71e80ca11a87ce9",
+        sourceHash = "3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb",
         unitNumber = 25,
         objectiveId = "obj-u25-documented-name-form",
         claim = "documented-name-form",
         binding = "obj-u25-documented-name-form:documented-name-form",
         independentFeatures = setOf(
-            "DOCUMENTED_AFFECTIONATE_FORM",
-            "DOCUMENTED_FAMILIAR_FORM",
+            "DOCUMENTED_SHORT_FORM_DERIVATIVE",
+            "DOCUMENTED_DISMISSIVE_COLORING",
             "REJECTED_ARBITRARY_NAME",
         ),
     )
