@@ -800,7 +800,7 @@ internal object V2Validator {
             return missingCapabilityError(
                 pack,
                 unit,
-                "Unit 7 is not content-complete without an admitted introductory adverb paradigm source capability",
+                "Unit 7 is not content-complete without an admitted bounded manner-adverb formation source capability",
             )
         }
         if (unit.number !in 16..30) return emptyList()
@@ -847,7 +847,7 @@ internal object V2Validator {
             25 -> missingCapabilityError(
                 pack,
                 unit,
-                "Unit 25 is not content-complete without admitted productive-diminutive and register source capabilities",
+                "Unit 25 is not content-complete without admitted documented-name-form and register source capabilities",
             )
             in 26..30 -> lateUnitSourceGap(pack, unit)
             else -> emptyList()
@@ -858,10 +858,12 @@ internal object V2Validator {
 
     private val BATCH_D_SOURCE_CLAIMS = setOf(
         "adverb-paradigm",
+        "bounded-manner-adverb-formation",
         "productive-clock-time",
         "completion-over-period",
         "negation-scope",
         "productive-diminutive",
+        "documented-name-form",
     )
 
     private val BATCH_A_OBJECTIVES = setOf(
@@ -913,7 +915,7 @@ internal object V2Validator {
     private val REQUIRED_SOURCE_CAPABILITIES = mapOf(
         7 to listOf(
             RequiredSourceCapability("obj-u7-adverb", "adverb-form-gloss"),
-            RequiredSourceCapability("obj-u7-adverb", "adverb-paradigm"),
+            RequiredSourceCapability("obj-u7-adverb-paradigm", "bounded-manner-adverb-formation"),
             RequiredSourceCapability("obj-u7-adverb-invariance", "adverb-invariance"),
             RequiredSourceCapability("obj-u7-adverb-pairs", "adverb-bounded-pairs"),
         ),
@@ -967,7 +969,7 @@ internal object V2Validator {
         ),
         25 to listOf(
             RequiredSourceCapability("obj-u25-nickname-rule", "diminutive-form-classification"),
-            RequiredSourceCapability("obj-u25-productive-formation", "productive-diminutive"),
+            RequiredSourceCapability("obj-u25-documented-name-form", "documented-name-form"),
             RequiredSourceCapability("obj-u25-address", "register"),
         ),
         26 to listOf(
@@ -1015,10 +1017,11 @@ internal object V2Validator {
     internal fun unresolvedPartialUnitAdvancementBlockers(pack: V2CurriculumPack, unit: V2Unit): List<String> {
         val unresolved = unresolvedRequiredSourceCapabilities(pack, unit.number).map { it.claim }.toSet()
         return when (unit.number) {
-            7 -> if ("adverb-paradigm" in unresolved) {
-                listOf("Unit 7 is missing an introductory adverb paradigm source capability")
-            } else {
-                emptyList()
+            7 -> when {
+                unresolved.isEmpty() -> emptyList()
+                "bounded-manner-adverb-formation" in unresolved ->
+                    listOf("Unit 7 is missing a bounded manner-adverb formation source capability")
+                else -> listOf("Unit 7 is missing a required source capability")
             }
             17 -> unit17SourceBlockers(unresolved)
             19 -> if ("probability-dolzhen" in unresolved) {
@@ -1036,8 +1039,8 @@ internal object V2Validator {
             } else {
                 emptyList()
             }
-            25 -> if ("productive-diminutive" in unresolved) {
-                listOf("Unit 25 is missing a productive-diminutive source capability")
+            25 -> if ("documented-name-form" in unresolved) {
+                listOf("Unit 25 is missing a documented-name-form source capability")
             } else {
                 emptyList()
             }
@@ -1154,9 +1157,13 @@ internal object V2Validator {
                 capability.objectiveId == "obj-u25-nickname-rule"
         val productiveClockRelabel =
             capability.supportedClaim == "productive-clock-time" && binding == null
+        val retiredBroadClaim =
+            capability.supportedClaim == "adverb-paradigm" ||
+                capability.supportedClaim == "productive-diminutive"
         if ((binding == null || capability.supportedClaim.isBlank() || capability.objectiveId.isBlank()) &&
             !productiveClassificationRelabel &&
-            !productiveClockRelabel
+            !productiveClockRelabel &&
+            !retiredBroadClaim
         ) {
             errors += "Source capability ${capability.id} is attached to the wrong unit or objective"
             return errors
@@ -1180,6 +1187,10 @@ internal object V2Validator {
         }
         if (capability.supportedClaim == "adverb-paradigm" && !BatchARemainingSources.admits(capability, BatchARemainingSources.ADMITTED_ADVERB_PARADIGM, "adverb-paradigm")) {
             errors += "Source capability ${capability.id} has no independent adverb-paradigm admission"
+        }
+        val phase2 = Phase2Sources.admission(capability.supportedClaim)
+        if (phase2 != null && !Phase2Sources.matches(capability)) {
+            errors += "Source capability ${capability.id} has no independent ${capability.supportedClaim} admission"
         }
         if (capability.supportedClaim == "adverb-invariance" && !BatchARemainingSources.admits(capability, BatchARemainingSources.ADMITTED_ADVERB_INVARIANCE, "adverb-invariance")) {
             errors += "Source capability ${capability.id} has no independent adverb-invariance admission"
@@ -1265,6 +1276,9 @@ internal object V2Validator {
         if (!capabilityHasCheckChain(pack, capability, spanHost)) {
             errors += "Source capability ${capability.id} has no reviewable instruction and check chain"
         }
+        if (phase2 != null && Phase2Sources.matches(capability)) {
+            errors += phase2ChainDefects(pack, capability, spanHost, phase2)
+        }
         if (capability.supportedClaim == "productive-diminutive" &&
             !hasProductiveDiminutiveApplication(pack, capability, spanHost)
         ) {
@@ -1312,6 +1326,188 @@ internal object V2Validator {
             if (forms.any { form -> form !in joined }) {
                 errors += "Source capability ${capability.id} a marked example does not clear participle-stress"
             }
+        }
+        return errors
+    }
+
+    /**
+     * The admitted synthesis clears only its own stated applications.
+     * A missing chain, a cloned check, or a distractor that names only one side
+     * of the completion contrast leaves the claim unresolved.
+     */
+    private fun phase2ChainDefects(
+        pack: V2CurriculumPack,
+        capability: V2SourceCapability,
+        spanHost: V2ProvenanceRecord,
+        admission: Phase2Sources.Admission,
+    ): List<String> {
+        val errors = mutableListOf<String>()
+        val id = capability.id
+        val claim = admission.claim
+        val synthesis = spanHost.synthesis
+        if (synthesis == null || synthesis.objectiveOrClaimBinding != admission.binding) {
+            errors += "Source capability $id synthesis binding does not match"
+        }
+        if (synthesis == null || synthesis.bibliography.isBlank() || synthesis.authorshipDeclaration.isBlank()) {
+            errors += "Source capability $id original synthesis evidence is incomplete"
+        }
+        if (synthesis == null || synthesis.sourceDateOrVersion != Phase2Sources.DATE) {
+            errors += "Source capability $id original synthesis date does not match"
+        }
+        val audit = synthesis?.finalAudit
+        if (audit != null && (audit.artifactIdentity.isNotBlank() || audit.disposition.isNotBlank())) {
+            errors += "Source capability $id records a final audit before the final audit"
+        }
+        if (synthesis == null || synthesis.applications.isEmpty()) {
+            errors += "Source capability $id has no stated applications"
+        } else {
+            synthesis.applications.forEach { application ->
+                val outside = application.cue !in spanHost.originalSourceText ||
+                    application.answer !in spanHost.originalSourceText ||
+                    application.distractors.any { it !in spanHost.originalSourceText }
+                if (outside) {
+                    errors += "Source capability $id stated application is outside the frozen span"
+                }
+            }
+        }
+        val unit = pack.units.firstOrNull { it.number == capability.unitNumber }
+        val objective = unit?.objectives?.firstOrNull { it.id == capability.objectiveId }
+        val instruction = objective?.instructionStepIds.orEmpty().mapNotNull { pack.step(it)?.second }
+        if (instruction.isEmpty() || instruction.any { it.body.isBlank() }) {
+            errors += "Source capability $id missing instruction"
+        }
+        val practiceItems = objective?.practiceStepIds.orEmpty().flatMap { stepId ->
+            pack.step(stepId)?.second?.itemIds.orEmpty()
+        }.mapNotNull { pack.item(it) }
+        if (objective == null || objective.practiceStepIds.isEmpty() || practiceItems.isEmpty()) {
+            errors += "Source capability $id missing guided practice"
+        }
+        val checks = objective?.checkItemIds.orEmpty().mapNotNull { pack.item(it) }
+        val independent = checks.filter { it.assessment?.independent == true }
+        if (independent.isEmpty()) {
+            errors += "Source capability $id missing independent check"
+        }
+        val features = independent.mapNotNull { it.assessment?.testedFeature }.toSet()
+        if (!features.containsAll(admission.independentFeatures)) {
+            errors += "Source capability $id has no independent application check"
+        }
+        if (independent.any { it.assessment?.relationKind != "STATED_APPLICATION" }) {
+            errors += "Source capability $id independent check is not a stated application"
+        }
+        if (checks.any { it.feedback.isBlank() } || practiceItems.any { it.feedback.isBlank() }) {
+            errors += "Source capability $id missing feedback"
+        }
+        val remediation = objective?.remediationStepIds.orEmpty().mapNotNull { pack.step(it)?.second }
+        val shipped = pack.provenanceRecords
+            .filter { it.objectiveId == capability.objectiveId }
+            .map { it.shippedText }
+        if (remediation.isEmpty() || remediation.any { step ->
+                shipped.none { span -> span.length >= 8 && span in step.body }
+            }
+        ) {
+            errors += "Source capability $id missing remediation"
+        }
+        val assessed = (checks + practiceItems).distinctBy { it.id }
+        fun duplicate(values: List<String>): Boolean = values.size != values.toSet().size
+        val relationships = assessed.map { it.promptLetter.orEmpty() to it.answer }
+        if (
+            duplicate(assessed.map { it.prompt }) ||
+            duplicate(assessed.map { it.promptLetter.orEmpty() }) ||
+            duplicate(assessed.map { it.answer }) ||
+            relationships.size != relationships.toSet().size
+        ) {
+            errors += "Source capability $id duplicate assessment checks do not clear $claim"
+        }
+        if (claim == "completion-over-period") {
+            val unexplained = independent.any { item ->
+                item.distractorRationales.filter { it.isNotBlank() }.any { rationale ->
+                    !rationale.contains("accusative") ||
+                        (!rationale.contains("imperfective") && !rationale.contains("perfective"))
+                }
+            }
+            if (unexplained) {
+                errors += "Source capability $id distractor does not explain aspect and construction"
+            }
+        }
+        if (claim == "documented-name-form") {
+            errors += documentedNameFormCoherenceErrors(pack, id, synthesis, checks + practiceItems)
+        }
+        if (independent.any { item ->
+                SOURCE_LAYOUT_RECALL.containsMatchIn(item.prompt) ||
+                    SOURCE_SET_RECALL.containsMatchIn(item.prompt) ||
+                    LINE_LABEL_PROMPT.containsMatchIn(item.prompt)
+            }
+        ) {
+            errors += "Source capability $id label or source-layout recall does not clear $claim"
+        }
+        return errors
+    }
+
+    /**
+     * The admitted nickname record keeps one form dismissive.
+     * Full-name, short-form, and dismissive readings cannot be swapped.
+     */
+    private fun documentedNameFormCoherenceErrors(
+        pack: V2CurriculumPack,
+        id: String,
+        synthesis: V2OriginalSynthesisEvidence?,
+        assessed: List<V2CheckItem>,
+    ): List<String> {
+        val errors = mutableListOf<String>()
+        val governedDismissive = pack.provenanceRecords.any {
+            it.itemId == "prov-ex-u25-nickname-rule-2-en" &&
+                it.unitNumber == 25 &&
+                it.sourceId != Phase2Sources.SOURCE_ID &&
+                it.shippedText.isNotBlank()
+        }
+        val applications = synthesis?.applications.orEmpty()
+        fun application(cue: String) = applications.firstOrNull { it.cue == cue }
+        fun item(cue: String) = assessed.firstOrNull { it.promptLetter == cue }
+        val required = mapOf(
+            "\u041c\u0430\u0440\u044e\u043d\u044f" to "full name",
+            "\u041c\u0430\u0448\u0435\u043d\u044c\u043a\u0430" to "short form",
+            "\u0421\u0430\u0448\u043a\u0430" to "dismissive",
+        )
+        if (governedDismissive) {
+            required.forEach { (cue, anchor) ->
+                val reading = item(cue)
+                val stated = application(cue)
+                val answer = reading?.answer.orEmpty()
+                if (stated == null || reading == null || !answer.contains(anchor) || stated.answer != answer) {
+                    errors += "Source capability $id conflicting governed descriptions for $cue"
+                }
+                if (answer == "documented familiar short-form coloring" || stated?.answer == "documented familiar short-form coloring") {
+                    errors += "Source capability $id familiar short-form coloring does not preserve the dismissive reading of \u0421\u0430\u0448\u043a\u0430"
+                }
+                if (reading != null && !reading.feedback.contains(answer)) {
+                    errors += "Source capability $id feedback does not agree with the keyed answer"
+                }
+                if (reading != null && stated != null) {
+                    reading.options.forEachIndexed { index, option ->
+                        if (option == answer) return@forEachIndexed
+                        val rationale = reading.distractorRationales.getOrElse(index) { "" }
+                        if (!rationale.contains(option) || stated.distractors.none { it == option }) {
+                            errors += "Source capability $id distractor rationale does not agree with the competing application"
+                        }
+                    }
+                }
+            }
+            val sashka = item("\u0421\u0430\u0448\u043a\u0430")?.answer
+            val others = listOfNotNull(item("\u041c\u0430\u0440\u044e\u043d\u044f")?.answer, item("\u041c\u0430\u0448\u0435\u043d\u044c\u043a\u0430")?.answer)
+            if (sashka != null && sashka in others) {
+                errors += "Source capability $id swaps the \u0421\u0430\u0448\u043a\u0430 interpretation"
+            }
+        }
+        val rejected = item("an unstudied personal name")
+        val rejectedApplication = application("an unstudied personal name")
+        if (
+            rejected == null ||
+            rejectedApplication == null ||
+            rejected.answer != rejectedApplication.answer ||
+            !rejected.answer.contains("names dictionary") ||
+            rejectedApplication.distractors.none { it.contains("mechanically") }
+        ) {
+            errors += "Source capability $id arbitrary name-form generation is not rejected"
         }
         return errors
     }
@@ -2392,6 +2588,9 @@ internal object V2Validator {
             "diminutive-form-classification" -> BatchBSources.ADMITTED_DIMINUTIVE_FORM_CLASSIFICATION
             else -> return emptyList()
         }
+        if (claim == "completion-over-period" && Phase2Sources.matches(capability)) {
+            return emptyList()
+        }
         val admittedRecord = when (claim) {
             "negation-scope" -> BatchBSources.clearsNegationScope(capability, admitted)
             "productive-diminutive" -> BatchBSources.clearsProductiveDiminutive(capability, admitted)
@@ -2441,6 +2640,7 @@ internal object V2Validator {
             errors += "Source capability ${capability.id} ago, during, or range evidence does not clear completion-over-period"
         }
         if (capability.supportedClaim == "completion-over-period" &&
+            !Phase2Sources.matches(capability) &&
             !BatchBSources.admits(capability, BatchBSources.ADMITTED_COMPLETION_OVER_PERIOD, "completion-over-period") &&
             (span.contains("completion") || span.contains("co-occur"))
         ) {
@@ -2507,6 +2707,31 @@ internal object V2Validator {
             span.contains("adverb paradigm")
         ) {
             errors += "Source capability ${capability.id} keyword or co-occurrence evidence does not clear adverb-paradigm"
+        }
+        if (capability.supportedClaim == "adverb-paradigm" &&
+            (capability.sourceId == Phase2Sources.SOURCE_ID || capability.sourceHash == Phase2Sources.MANNER.sourceHash)
+        ) {
+            errors += "Source capability ${capability.id} bounded manner-adverb evidence does not clear adverb-paradigm"
+        }
+        val phase2Claim = Phase2Sources.admission(capability.supportedClaim)
+        if (phase2Claim != null && !Phase2Sources.matches(capability) &&
+            (span.contains(capability.supportedClaim) || span.contains("co-occurrence") || span.contains("co-occur"))
+        ) {
+            errors += "Source capability ${capability.id} keyword or co-occurrence evidence does not clear ${capability.supportedClaim}"
+        }
+        if (capability.supportedClaim == "bounded-manner-adverb-formation" &&
+            (span == BatchARemainingSources.INVARIANCE_SPAN || span == BatchARemainingSources.SUFFIXAL_SPAN || span == ExplicitSourcePairs.adverbSpan)
+        ) {
+            errors += "Source capability ${capability.id} bounded adverb evidence does not clear bounded-manner-adverb-formation"
+        }
+        if (capability.supportedClaim == "documented-name-form" &&
+            !Phase2Sources.matches(capability) &&
+            BatchBSources.boundedDiminutiveRecognition(span)
+        ) {
+            errors += "Source capability ${capability.id} bounded diminutive recognition does not clear documented-name-form"
+        }
+        if (capability.supportedClaim == "productive-diminutive" && capability.sourceHash == Phase2Sources.NAME_FORM.sourceHash) {
+            errors += "Source capability ${capability.id} documented name-form evidence does not clear productive-diminutive"
         }
         if (capability.supportedClaim == "productive-clock-time" &&
             !admittedProductiveClockTime(capability) &&
@@ -2618,6 +2843,37 @@ internal object V2Validator {
     }
 
     /**
+     * Original synthesis states each cue, answer, and distractor set.
+     * Co-occurrence on the same span is not that application.
+     * Null means the cue is not original synthesis. Empty means the proposed
+     * relationship is forbidden for that synthesis.
+     */
+    private fun originalSynthesisRelation(
+        cue: V2ProvenanceRecord,
+        answer: V2ProvenanceRecord,
+        distractors: List<V2ProvenanceRecord>,
+    ): String? {
+        if (cue.transformation != Phase2Sources.TRANSFORMATION) return null
+        if (cue.sourceId != Phase2Sources.SOURCE_ID) return ""
+        val applications = cue.synthesis?.applications.orEmpty()
+        if (applications.isEmpty()) return ""
+        val spec = applications.firstOrNull { it.cue == cue.shippedText } ?: return ""
+        val group = listOf(cue, answer) + distractors
+        val distractorTexts = distractors.map { it.shippedText }.toSet()
+        if (
+            answer.shippedText == spec.answer &&
+            distractorTexts == spec.distractors.toSet() &&
+            spec.distractors.isNotEmpty() &&
+            spec.answer !in distractorTexts &&
+            group.all { sameFrozenSpan(cue, it) } &&
+            group.all { displayedInFrozen(it) }
+        ) {
+            return "STATED_APPLICATION"
+        }
+        return ""
+    }
+
+    /**
      * A stated application names one frozen construction and the competing
      * construction the same page pairs with a different meaning. Any other
      * combination on that span is not co-occurrence.
@@ -2681,6 +2937,9 @@ internal object V2Validator {
         answer: V2ProvenanceRecord,
         distractors: List<V2ProvenanceRecord>,
     ): String? {
+        val synthesis = originalSynthesisRelation(cue, answer, distractors)
+        if (synthesis == "") return null
+        if (synthesis != null) return synthesis
         val governed = governedRelation(cue, answer, distractors)
         if (governed == "") return null
         if (governed != null) return governed
@@ -4044,6 +4303,9 @@ internal object V2Validator {
             if (record.contentHash != sha256(record.shippedText) || record.sourceHash != sha256(record.originalSourceText)) {
                 errors += "Provenance ${record.itemId} source hash does not match the frozen record"
             }
+            if (record.sourceId == Phase2Sources.SOURCE_ID || record.transformation == Phase2Sources.TRANSFORMATION) {
+                errors += originalSynthesisProvenanceErrors(record)
+            }
             if (record.transformation == "sense selection" && !isDelimitedSense(record.originalSourceText, record.shippedText)) {
                 errors += "Provenance ${record.itemId} sense selection is not a delimited source sense"
             }
@@ -4243,12 +4505,80 @@ internal object V2Validator {
     }
 
     /**
+     * Original synthesis is admitted only for the Phase 2 source identity.
+     * A quoted page cannot borrow the transformation, and the synthesis cannot
+     * record a final audit that has not happened.
+     */
+    private fun originalSynthesisProvenanceErrors(record: V2ProvenanceRecord): List<String> {
+        val errors = mutableListOf<String>()
+        val synthesis = record.synthesis
+        val admission = Phase2Sources.ADMISSIONS.firstOrNull {
+            it.objectiveId == record.objectiveId && it.unitNumber == record.unitNumber
+        }
+        if (record.sourceId != Phase2Sources.SOURCE_ID ||
+            record.transformation != Phase2Sources.TRANSFORMATION ||
+            record.sourceRevision != Phase2Sources.REVISION ||
+            record.licenseId != "Original app text" ||
+            admission == null ||
+            record.sourceRecordId != admission.recordId ||
+            record.sourceHash != admission.sourceHash
+        ) {
+            errors += "Provenance ${record.itemId} original synthesis identity does not match"
+        }
+        if (synthesis == null) {
+            errors += "Provenance ${record.itemId} original synthesis evidence is missing"
+            return errors
+        }
+        if (synthesis.bibliography.isBlank() ||
+            synthesis.authorshipDeclaration.isBlank() ||
+            synthesis.objectiveOrClaimBinding.isBlank()
+        ) {
+            errors += "Provenance ${record.itemId} original synthesis evidence is incomplete"
+        }
+        if (synthesis.sourceDateOrVersion != Phase2Sources.DATE) {
+            errors += "Provenance ${record.itemId} original synthesis date does not match"
+        }
+        if (admission != null && synthesis.objectiveOrClaimBinding != admission.binding) {
+            errors += "Provenance ${record.itemId} synthesis binding does not match"
+        }
+        val audit = synthesis.finalAudit
+        if (audit.artifactIdentity.isNotBlank() ||
+            audit.artifactDigest.isNotBlank() ||
+            audit.auditedContentDigest.isNotBlank() ||
+            audit.disposition.isNotBlank() ||
+            audit.modelVersion.isNotBlank() ||
+            audit.date.isNotBlank()
+        ) {
+            errors += "Provenance ${record.itemId} records a final audit before the final audit"
+        }
+        if (synthesis.applications.isEmpty()) {
+            errors += "Provenance ${record.itemId} original synthesis has no stated applications"
+        }
+        synthesis.applications.forEach { application ->
+            val outside = application.cue.isBlank() ||
+                application.answer.isBlank() ||
+                application.distractors.isEmpty() ||
+                application.cue !in record.originalSourceText ||
+                application.answer !in record.originalSourceText ||
+                application.distractors.any { it !in record.originalSourceText }
+            if (outside) {
+                errors += "Provenance ${record.itemId} stated application is outside the frozen span"
+            }
+        }
+        if (record.shippedText !in record.originalSourceText) {
+            errors += "Provenance ${record.itemId} shipped text is outside the frozen span"
+        }
+        return errors
+    }
+
+    /**
      * Public-domain admission is limited to the frozen Chernyshevsky span.
      * A CC BY-SA label does not substitute for that work-level basis, and this
      * exception does not admit any other non-share-alike source.
      */
     private fun retainedWorkLicense(license: String, sourceId: String): Boolean {
         if (isShareAlikeLicense(license)) return sourceId != RemainingSources.VECHERA_SOURCE
+        if (license == "Original app text" && sourceId == Phase2Sources.SOURCE_ID) return true
         return license == "Public domain" && sourceId == RemainingSources.VECHERA_SOURCE
     }
 

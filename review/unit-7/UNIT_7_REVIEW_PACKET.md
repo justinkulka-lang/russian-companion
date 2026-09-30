@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 7 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 7 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 7 remains in development. Its readiness is content-complete and review-pending. The Lesson 7 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 1e469c124966401a54f9a3da0d52606c1afd6ea2
-- Unit content-review SHA-256: 9db2b449a150d96b668230738731655cf01a163a552fbacd4152579be638989f
+- Curriculum source commit: ae777d85fe3616fc8e065890201d40c241d113bc
+- Unit content-review SHA-256: ec283b3bc0e58306d84e536947ab747d5ea264cea729bf4838124404ca958359
 - Mapping-package SHA-256: 20298ccd10fadcd359b2fa73bebf0e7309772c6c78ffbc71730225664717b28c
-- Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: 2d4089058297e45e77ded2d1a80c879d570c0384697f78a4db2a337411a81627
-- Repository source SHA-256: a982d0f164e5dbd9192d2faf2ddd2858fcf84aa31985a7b87aaf8dc48fbc7cf7
+- Pack content-review SHA-256: cf68212c7a25d687bd280f78fca64f80f94fdabf33adf0f69cc588b18c94f40b
+- Review-package SHA-256: c4452950695d06ffaa2702f0edaf7d0e378418e2719c11d326e27dc58f2fd580
+- Repository source SHA-256: bdd02b25fda8fa2f29a81445288687f3166c35fa9c26904aa730dda7cf21fbf9
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,9 +34,9 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=7
 title=Adjectives, agreement, demonstratives, adjective case forms, and adverbs
-topicSummary=Proposed Unit 7 is in development and is not prepared. Admitted agreement rows, three adverb form/gloss pairs, the admitted invariance line, and the two admitted suffixal pairs await qualified review. An adjective-to-adverb paradigm has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 7 is in development. Admitted agreement rows, three adverb form/gloss pairs, the admitted invariance line, the two admitted suffixal pairs, and a bounded manner-adverb lesson await qualified review. The bounded lesson is not a universal adjective-to-adverb paradigm. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.
 penguinLessonField=7
@@ -75,13 +75,13 @@ notes=No qualified reviewer has signed Unit 7.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4e58a5365435558b48e1975ead64b10930dd17228f3e3dd8725c01b764c98434
+- Content hash: 8b375cce556794abd2bcebbabcb033a27c4270fa557c41d2d14dbf1103e75271
 
 number=7
 title=Adjectives, agreement, demonstratives, adjective case forms, and adverbs
-topicSummary=Proposed Unit 7 is in development and is not prepared. Admitted agreement rows, three adverb form/gloss pairs, the admitted invariance line, and the two admitted suffixal pairs await qualified review. An adjective-to-adverb paradigm has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 7 is in development. Admitted agreement rows, three adverb form/gloss pairs, the admitted invariance line, the two admitted suffixal pairs, and a bounded manner-adverb lesson await qualified review. The bounded lesson is not a universal adjective-to-adverb paradigm. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.
 penguinLessonField=7
@@ -322,16 +322,16 @@ remediation=u7-st-rem-adverb-pairs
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9a4dbc1605935d4262ebfaf5479f990bfaf403037e2b9e245e623362c60a8681
+- Content hash: 171e86388ead85901e34878c3c91d9097c2bbb173ba93d7812973c345c89514b
 
-title=Adjective-to-adverb paradigm stays in the copy you own
-kind=GUIDANCE
+title=Bounded manner-adverb formation
+kind=RECOGNITION
 unitNumber=7
-instruction=u7-st-gap-adverb-paradigm
-examples=
-practice=
-checks=
-remediation=
+instruction=u7-st-teach-manner-1,u7-st-teach-manner-2,u7-st-teach-manner-3
+examples=ex-u7-manner-0,ex-u7-manner-1
+practice=u7-st-guided-manner-1
+checks=u7-i-manner-1,u7-i-manner-2,u7-i-manner-3,u7-i-manner-4
+remediation=u7-st-rem-manner
 
 ### SESSION `u7-s-orient`
 
@@ -2149,14 +2149,14 @@ remediationStepId=u7-st-rem-adverb-pairs
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2cf782efb3d6b17dd2ec39f80c7093a3c60daa66c16f71053578589b3f8b21dc
+- Content hash: 9a28e353e35bca36b47b717073e1165efa3135171c06ec73a3132575837c60d0
 
-title=Adjective-to-adverb paradigm stays in the copy you own
-estimatedMinutes=4
+title=Bounded manner-adverb formation
+estimatedMinutes=12
 objectives=obj-u7-adverb-paradigm
-steps=u7-st-gap-adverb-paradigm
+steps=u7-st-teach-manner-1,u7-st-guided-manner-1,u7-st-teach-manner-2,u7-st-teach-manner-3,u7-st-rem-manner,u7-st-check-manner
 
-### STEP `u7-st-gap-adverb-paradigm`
+### STEP `u7-st-teach-manner-1`
 
 - Objectives: obj-u7-adverb-paradigm
 - Sessions: u7-s-gap-adverb-paradigm
@@ -2164,19 +2164,129 @@ steps=u7-st-gap-adverb-paradigm
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4804eaf5b4c8a886215329b664e8150d33b3530dfcd140018b08bd4e656bacaf
+- Content hash: 3bde250ea2cadd8062307d5e0d4a150337a6a2651a6713b6b3b26a139a83dc07
 
-kind=UNAVAILABLE
-title=Adjective-to-adverb paradigm stays in the copy you own
-body=The three shown forms are gloss recognition only. An adjective-to-adverb paradigm has no admitted frozen span.
+kind=TEACH
+title=Admitted instruction
+body=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=
-unavailableReason=An adjective-to-adverb paradigm has no admitted frozen span.
+examples=ex-u7-manner-0,ex-u7-manner-1
+unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u7-st-guided-manner-1`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5bf330c9798c1934ca46a2c42a056a44ade98a2442c800e21899e40acd3dd4a6
+
+kind=GUIDED
+title=Guided practice
+body=The documented creative pair is a separate admitted manner-adverb relationship.
+dominantAction=Continue
+references=
+items=u7-g-manner-1
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u7-st-rem-manner
+
+### STEP `u7-st-teach-manner-2`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: cb323ddeafd5efc81b6f6cd40ccbe2e724fe6d10568735c436cc8667ef563843
+
+kind=TEACH
+title=Admitted instruction
+body=Russian adverbs do not change for gender, number, or case.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-teach-manner-3`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 28f340514a6d72439335a0a05c8fb0df102bd5f2c9ac68421091ae40f138b667
+
+kind=TEACH
+title=Admitted instruction
+body=Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-rem-manner`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fb2fa6718716fef38e3a08c8c850ac01e82155910461989c34393cd7333623c6
+
+kind=REMEDIATE
+title=Remediation
+body=Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+dominantAction=Continue
+references=
+items=
+examples=ex-u7-manner-0,ex-u7-manner-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-check-manner`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f341c489009fe13561c26851e62a02c610308a6a3b29f9cf27ad7e4e62797a5f
+
+kind=CHECK
+title=Independent checks
+body=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+dominantAction=Continue
+references=
+items=u7-i-manner-1,u7-i-manner-2,u7-i-manner-3,u7-i-manner-4
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u7-st-rem-manner
 
 ### EXAMPLE `ex-or-u7-default-0`
 
@@ -3147,6 +3257,40 @@ note=творчески
 objectiveId=obj-u7-adverb-pairs
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u7-manner-0`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8fc591b011a6c4346db9765c2fca365eaa587835d2d81d4b4cb1e8bbab7bd518
+
+kind=LEXICAL
+letterId=
+display=быстрый
+note=admitted fast manner-adverb relationship
+objectiveId=obj-u7-adverb-paradigm
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u7-manner-1`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 867b7dfbdaaec5efdfd8a9d5e7f024b3051126f02a532b754152e41d7e471842
+
+kind=LEXICAL
+letterId=
+display=Она говорит быстро.
+note=manner adverb modifying the action
+objectiveId=obj-u7-adverb-paradigm
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### GUIDED_PRACTICE `u7-g-default-0`
 
 - Objectives: obj-u7-default
@@ -3489,6 +3633,41 @@ contrastMembers=быстро | творчески
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u7-adverb-pairs-0-ru | prov-ex-u7-adverb-pairs-0-en | prov-ex-u7-adverb-pairs-1-en
 responseKind=RUSSIAN_TOKEN
+
+### GUIDED_PRACTICE `u7-g-manner-1`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e674de462d8f0cc18c1fe5347c95999aa8ee2ea957f5614a73c676278347ace0
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description matches the shown creative adjective?
+promptLetter=творческий
+options=admitted creative manner-adverb relationship | admitted fast manner-adverb relationship | an unsupported invented adverb form
+answer=admitted creative manner-adverb relationship
+feedback=The documented creative pair is a separate admitted manner-adverb relationship.
+objectiveId=obj-u7-adverb-paradigm
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective. | Adding an adverb ending to an unstudied adjective invents an unsupported form.
+testedFeature=DOCUMENTED_MANNER_PAIR
+evidenceMode=STATED_APPLICATION
+contrastSetId=u7-g-manner-1
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-u7-manner-17
+distractorSourceIds= | prov-u7-manner-16 | prov-u7-manner-21
+distractorDifference= | The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective. | Adding an adverb ending to an unstudied adjective invents an unsupported form.
+whyAnswerDemonstratesObjective=The documented creative pair is a separate admitted manner-adverb relationship.
+contrastMembers=admitted creative manner-adverb relationship | admitted fast manner-adverb relationship | an unsupported invented adverb form
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u7-manner-11 | prov-u7-manner-17 | prov-u7-manner-16 | prov-u7-manner-21
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u7-i-default-1`
 
@@ -4481,6 +4660,146 @@ contrastMembers=быстро | творческий
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u7-adverb-pairs-0-ru | prov-ex-u7-adverb-pairs-0-en | prov-ex-u7-adverb-pairs-1-ru
 responseKind=RUSSIAN_TOKEN
+
+### INDEPENDENT_CHECK `u7-i-manner-1`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d6c7ee2945d28a3b65a6c28606b3733b4daa5091f61b1d1ba1366e3612309f96
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description matches the shown fast adjective?
+promptLetter=быстрый
+options=admitted fast manner-adverb relationship | admitted creative manner-adverb relationship | an unsupported invented adverb form
+answer=admitted fast manner-adverb relationship
+feedback=The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+objectiveId=obj-u7-adverb-paradigm
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | The documented creative pair is a separate admitted manner-adverb relationship. | Adding an adverb ending to an unstudied adjective invents an unsupported form.
+testedFeature=DOCUMENTED_MANNER_PAIR
+evidenceMode=STATED_APPLICATION
+contrastSetId=u7-i-manner-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u7-manner-16
+distractorSourceIds= | prov-u7-manner-17 | prov-u7-manner-21
+distractorDifference= | The documented creative pair is a separate admitted manner-adverb relationship. | Adding an adverb ending to an unstudied adjective invents an unsupported form.
+whyAnswerDemonstratesObjective=The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+contrastMembers=admitted fast manner-adverb relationship | admitted creative manner-adverb relationship | an unsupported invented adverb form
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u7-manner-9 | prov-u7-manner-16 | prov-u7-manner-17 | prov-u7-manner-21
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u7-i-manner-2`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64acc30f18b27b7a38bcccff9ce63be642cb3a7b790974b0b8760439668737a4
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description matches the shown speaking sentence?
+promptLetter=Она говорит быстро.
+options=manner adverb modifying the action | predicative expression rather than a manner adverb
+answer=manner adverb modifying the action
+feedback=In the speaking sentence, the adverb modifies the action.
+objectiveId=obj-u7-adverb-paradigm
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | In the short-form sentence, the expression is predicative rather than a manner adverb.
+testedFeature=ADVERBIAL_FUNCTION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u7-i-manner-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u7-manner-18
+distractorSourceIds= | prov-u7-manner-19
+distractorDifference= | In the short-form sentence, the expression is predicative rather than a manner adverb.
+whyAnswerDemonstratesObjective=In the speaking sentence, the adverb modifies the action.
+contrastMembers=manner adverb modifying the action | predicative expression rather than a manner adverb
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u7-manner-13 | prov-u7-manner-18 | prov-u7-manner-19
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u7-i-manner-3`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9565f6cb37ace73fa1939335e4e9f409d6588cf0220026104427b71e3fc8bec4
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description matches the shown short-form sentence?
+promptLetter=Ей трудно.
+options=predicative expression rather than a manner adverb | manner adverb modifying the action
+answer=predicative expression rather than a manner adverb
+feedback=In the short-form sentence, the expression is predicative rather than a manner adverb.
+objectiveId=obj-u7-adverb-paradigm
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | In the speaking sentence, the adverb modifies the action.
+testedFeature=PREDICATIVE_CONTRAST
+evidenceMode=STATED_APPLICATION
+contrastSetId=u7-i-manner-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u7-manner-19
+distractorSourceIds= | prov-u7-manner-18
+distractorDifference= | In the speaking sentence, the adverb modifies the action.
+whyAnswerDemonstratesObjective=In the short-form sentence, the expression is predicative rather than a manner adverb.
+contrastMembers=predicative expression rather than a manner adverb | manner adverb modifying the action
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u7-manner-14 | prov-u7-manner-19 | prov-u7-manner-18
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u7-i-manner-4`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64005b5a52fbb51941bacc781127736b407eee1f9d154ffa03e385b306238332
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description rejects an unsupported conversion of the shown adjective?
+promptLetter=синий
+options=no documented manner adverb is recorded for this adjective | an unsupported invented adverb form
+answer=no documented manner adverb is recorded for this adjective
+feedback=This adjective has no documented manner adverb in this unit.
+objectiveId=obj-u7-adverb-paradigm
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Adding an adverb ending to an unstudied adjective invents an unsupported form.
+testedFeature=REJECTED_ARBITRARY_ADVERB
+evidenceMode=STATED_APPLICATION
+contrastSetId=u7-i-manner-4
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u7-manner-20
+distractorSourceIds= | prov-u7-manner-21
+distractorDifference= | Adding an adverb ending to an unstudied adjective invents an unsupported form.
+whyAnswerDemonstratesObjective=This adjective has no documented manner adverb in this unit.
+contrastMembers=no documented manner adverb is recorded for this adjective | an unsupported invented adverb form
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u7-manner-15 | prov-u7-manner-20 | prov-u7-manner-21
+responseKind=ENGLISH_CLASSIFICATION
 
 ### REFERENCE `ref-u610-attribution`
 
@@ -8839,6 +9158,1491 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u7-manner-0`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72379a6f307552c6d0c9d328f9a74a8260c10d290d765e58d75f1396b68b74cf
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=3761c8daaa53319c28970e079601fb3fedb67e35370403a7a4c9db51daca803d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-1`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc516b0806993e02c9db8c78fa5ba9b0ca1a57ed7dd8b9c44871933c591d99b6
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Russian adverbs do not change for gender, number, or case.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=29c2059362a0f75bbd5f8b699aef1c14db8966fd6ca2ff0c1db28f664fc470bc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-10`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9d9c7f5fb1da7861ef2a6270bead8c2a59b4829c0c9ed140a18cdd08676fa44d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=быстро
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=dcd85bada23a9985ee329ea7689e26b9a3fec1b3aa65511338f52ac8fb079aa0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-11`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5e883e0e7bbdb6b2764647aefad67b69973cee8207faea84ce53ed9115fd6a5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=творческий
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=041cb2cd5bcaa07d787db6e9d6d9517edb7f9932b9b29cfe056f3f052c5724b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-12`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad470303d11923ee1c9b071a62ae39138cfaf13744b0f5229f4e1840eeff9993
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=творчески
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=5d9e385a71524d33fc9cecedf212ef5e3644ba0319dc3d43bdc4cf9a7eddd9db
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-13`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84ee661a78de059efe530c71cf671606813b8d67a353393e94951f09e3977d82
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Она говорит быстро.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=5aa0912f9dc4bb4d52853487ccfde02c49e1e08a387178b8f0d3bf72cc8107a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-14`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e710239a7a41fe925173c3128ba93d2dd419ef1add96bcb185197a65047ac08
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Ей трудно.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=7caec650577cff1435f86fa1becbe7ece7c0ff6b1824486b75a9b5809dd1a2a6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-15`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dcc48316b32f2718640d7e78a3f1c9f45c94cc6599963461911880b5406d282b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=синий
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=c65b1a8fccbf3115732e93bc6aa7ee896d431417c4f15282fa659e68025e469c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-16`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b6d83ebb853cc65e851e8d0fbb54a463df4c2a83011616942a910f157b9ca937
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=admitted fast manner-adverb relationship
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=e4c75b5d232352ebd25e976988f316a011cda4fdb0cc0176f75e2b7b7be99861
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-17`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5fbce66560e4d8bfbeac7363367a272a62776be0ccf7b977c37060030f22b8a6
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=admitted creative manner-adverb relationship
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=4331ac69d4119b6a9e93d6550fb519928c14e8ccf55d8637056fa27af2c97491
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-18`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb7df7a3175c36834982fd084df5dd932031982fcb83422ba37459cccb7f99d3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=manner adverb modifying the action
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=102f6ed89a439a5de02c1755b1e658f968f9ff610bd09d10a8b1ad0781bf3b40
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-19`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 51da3efc1c65beb66cdac06610fe23fd1620a7b9a1b7789476edededd88a6900
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=predicative expression rather than a manner adverb
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=42fd6a56c2539d5f4c2e8660ef5d8c186dc50d0e8d0040c5d0aa914ca349a184
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-2`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c89192f11cac8de1c8be1b4e76304e853c4457ae273c1084c7b7153e112f4431
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=a9b3314f78c0b8281e3824eb0b76b59c84227211212734e89fd91689cbc106ed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-20`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c1e6add7e2b29a988b3e806fedbf5db89b86367f9df3445c66e0bbe321d0209e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=no documented manner adverb is recorded for this adjective
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=b7f82e6012f5e4202a033ffee34723b048cab1ded7297e2069ea863b5088afeb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-21`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6ab014ba25906106d8829a0b6d0fe441668fde9651f268f4b3634a627f2af76
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=an unsupported invented adverb form
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=856daac6a80f1ffae636376e5d459e3c6a396b02f9f56a9d6c52fa284782e63a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-22`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 94b52f94a5b50594cd9d0fdd9b4c9fe3a542c38dd68a596fcd91154eac8f37a5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Which English description matches the shown fast adjective?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=31b67e0303ef23420411e2b370870e9ed07a4e38068bb8c55ba45f66f9d0049d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-23`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4af1e6ddb2a636c811a8ac7c79dceeb3d9d002c9ca3d2515b9f2e9456275a6a4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Which English description matches the shown creative adjective?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=54f4991b88eaecfe1ca31eb35f1a6f6e04b3280770e4cf989401baaabb676782
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-24`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 386e3bd8dd80b74c83943b0cecd600595077f97c7bfa3b608cb644ffb2e9bc5b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Which English description matches the shown speaking sentence?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=85a29803f6ed8204dcde5eecdfc20755fae0fe04ff2454d81c73fd4d26cc83dc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-25`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3a064a1f27312364bf12b81777a845a4c1d3db6c03447cf8c78f69e7831c1ed3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Which English description matches the shown short-form sentence?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=d2ce7c731e903d0f6f20a57957b11a035239637680dadbb3182730b3d4d8a4c8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-26`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 600e382f1a8cbd8e7ddd4bc9bb44a4d6882ed038a7ec85f2b10ace16e8969c61
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Which English description rejects an unsupported conversion of the shown adjective?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=e50147fe8568521d0e25f3b570ebf4abeed3e9629318546fe5ab03b45139f1ac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-3`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 02c9484cfa9349c12587b990b939c592490fa38381281aa0fb9e986e5722c5b1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=97e122baf9ff8121889950115f53f6399e8223a1e0cae1812aa57e80becfb1be
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-4`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40dec3e1ece924beeacd216b0ef0f18865a9b325c044a7404cfa8785f63bc96c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=The documented creative pair is a separate admitted manner-adverb relationship.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=32ad1170992613dfd204ed77b2df4a32da33591652e6cbba7eb6d06536dda5c2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-5`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: efba4f02a9aa920571e21d9fee063ed17a33765436b8243ec22a7a4023d02b16
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=In the speaking sentence, the adverb modifies the action.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=196d8aeb666178636b1fcf6f5faa0ef67717ad5eb4006aade0ed3c340e2698ce
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-6`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: edf9c101c193fb0a111d5e53e5b7ecf133bd465748108fe22a4a21cc49186841
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=In the short-form sentence, the expression is predicative rather than a manner adverb.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=3befc10e6f78009b27446072a7b954cea6a509e5378b1d3acad4180230d5e141
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-7`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77cfd0f8a47a137bf7fd3be0f781cc28482712a7fe01f2663e9d6c505b072d3d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=This adjective has no documented manner adverb in this unit.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=28345eac54d32dcd90e575e791e3ccc95e0653e7926051f86b5f302d2dd0fec1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-8`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e3530f2f5c9a3bc5c575c2648c9e98d2a094ee786286af8c368471914e613755
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=Adding an adverb ending to an unstudied adjective invents an unsupported form.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=1e5b48ac36fd943066ad43a1bd7b178ff6f18f4e56578573f6b3ba0debf86958
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-manner-9`
+
+- Objectives: obj-u7-adverb-paradigm
+- Sessions: u7-s-gap-adverb-paradigm
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 20e5477b28c6c4c8982cf9aef7bfb35274a4487444226b666bf75fe799cdde1d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:bounded-manner-adverb-formation
+originalSourceText=Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.
+Russian adverbs do not change for gender, number, or case.
+Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.
+The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.
+The documented creative pair is a separate admitted manner-adverb relationship.
+In the speaking sentence, the adverb modifies the action.
+In the short-form sentence, the expression is predicative rather than a manner adverb.
+This adjective has no documented manner adverb in this unit.
+Adding an adverb ending to an unstudied adjective invents an unsupported form.
+быстрый
+быстро
+творческий
+творчески
+Она говорит быстро.
+Ей трудно.
+синий
+admitted fast manner-adverb relationship
+admitted creative manner-adverb relationship
+manner adverb modifying the action
+predicative expression rather than a manner adverb
+no documented manner adverb is recorded for this adjective
+an unsupported invented adverb form
+Which English description matches the shown fast adjective?
+Which English description matches the shown creative adjective?
+Which English description matches the shown speaking sentence?
+Which English description matches the shown short-form sentence?
+Which English description rejects an unsupported conversion of the shown adjective?
+shippedText=быстрый
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594
+contentHash=0e277d3603c4dea6439a188a73a837282b535e69249497191dd6114c2cceeedd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u7-objectadj-rem`
 
 - Objectives: obj-u7-objectadj
@@ -9914,6 +11718,21 @@ CC BY-SA 4.0
 Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 92eaa6f12bb405d916c9b9fc01fbc988620c90737878f13e1e61845a549d0bb5
+
+Independently authored research synthesis
+Original app text
+Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+Original research synthesis. Not a quotation of a third-party page.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -9983,6 +11802,20 @@ permitsAppUse=true
 
 src-ruwiki-narechie-152437423
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 65ca0e4f268b6158cbfafc95d43b79c9894d018f538d27b8cf21e7000b24fbed
+
+src-original-research-synthesis
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -10160,7 +11993,17 @@ permitsAppUse=true
 - `obj-u7-adverb-pairs` CHECK `u7-i-adverb-pairs-1`
 - `obj-u7-adverb-pairs` CHECK `u7-i-adverb-pairs-2`
 - `obj-u7-adverb-pairs` REMEDIATION `u7-st-rem-adverb-pairs`
-- `obj-u7-adverb-paradigm` INSTRUCTION `u7-st-gap-adverb-paradigm`
+- `obj-u7-adverb-paradigm` INSTRUCTION `u7-st-teach-manner-1`
+- `obj-u7-adverb-paradigm` INSTRUCTION `u7-st-teach-manner-2`
+- `obj-u7-adverb-paradigm` INSTRUCTION `u7-st-teach-manner-3`
+- `obj-u7-adverb-paradigm` EXAMPLE `ex-u7-manner-0`
+- `obj-u7-adverb-paradigm` EXAMPLE `ex-u7-manner-1`
+- `obj-u7-adverb-paradigm` PRACTICE `u7-st-guided-manner-1`
+- `obj-u7-adverb-paradigm` CHECK `u7-i-manner-1`
+- `obj-u7-adverb-paradigm` CHECK `u7-i-manner-2`
+- `obj-u7-adverb-paradigm` CHECK `u7-i-manner-3`
+- `obj-u7-adverb-paradigm` CHECK `u7-i-manner-4`
+- `obj-u7-adverb-paradigm` REMEDIATION `u7-st-rem-manner`
 - `u7-s-orient` OBJECTIVE `obj-u7-default`
 - `u7-s-orient` OBJECTIVE `obj-u7-endings`
 - `u7-s-orient` OBJECTIVE `obj-u7-spelling`
@@ -10361,7 +12204,18 @@ permitsAppUse=true
 - `u7-st-check-adverb-pairs` ITEM `u7-i-adverb-pairs-1`
 - `u7-st-check-adverb-pairs` ITEM `u7-i-adverb-pairs-2`
 - `u7-s-gap-adverb-paradigm` OBJECTIVE `obj-u7-adverb-paradigm`
-- `u7-st-gap-adverb-paradigm` REFERENCE `ref-u610-attribution`
+- `u7-st-teach-manner-1` EXAMPLE `ex-u7-manner-0`
+- `u7-st-teach-manner-1` EXAMPLE `ex-u7-manner-1`
+- `u7-st-teach-manner-1` REFERENCE `ref-u610-attribution`
+- `u7-st-guided-manner-1` REMEDIATION `u7-st-rem-manner`
+- `u7-st-guided-manner-1` ITEM `u7-g-manner-1`
+- `u7-st-rem-manner` EXAMPLE `ex-u7-manner-0`
+- `u7-st-rem-manner` EXAMPLE `ex-u7-manner-1`
+- `u7-st-check-manner` REMEDIATION `u7-st-rem-manner`
+- `u7-st-check-manner` ITEM `u7-i-manner-1`
+- `u7-st-check-manner` ITEM `u7-i-manner-2`
+- `u7-st-check-manner` ITEM `u7-i-manner-3`
+- `u7-st-check-manner` ITEM `u7-i-manner-4`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-0`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-0-gloss`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-1`
@@ -10511,6 +12365,33 @@ permitsAppUse=true
 - `obj-u7-endings` PROVENANCE `prov-u7-endings-x-2`
 - `obj-u7-endings` PROVENANCE `prov-u7-endings-x-3`
 - `obj-u7-endings` PROVENANCE `prov-u7-endings-x-4`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-0`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-1`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-10`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-11`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-12`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-13`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-14`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-15`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-16`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-17`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-18`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-19`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-2`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-20`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-21`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-22`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-23`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-24`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-25`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-26`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-3`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-4`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-5`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-6`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-7`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-8`
+- `obj-u7-adverb-paradigm` PROVENANCE `prov-u7-manner-9`
 - `obj-u7-objectadj` PROVENANCE `prov-u7-objectadj-rem`
 - `obj-u7-objectadj` PROVENANCE `prov-u7-objectadj-rem-r0`
 - `obj-u7-place` PROVENANCE `prov-u7-place-rem`
@@ -10529,7 +12410,8 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-- `u7-st-gap-adverb-paradigm`
+None.
+
 
 ## Unresolved relationships
 

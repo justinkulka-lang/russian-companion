@@ -24,11 +24,12 @@ class BatchARemainingSourceIntakeTest {
     fun admittedSpansStayBoundAndBroaderClaimsStayUnresolved() {
         val pack = pack()
         assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
-        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(7)!!.readiness)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(19)!!.readiness)
         assertEquals("DEVELOPMENT", pack.unit(19)!!.installState)
-        assertTrue(unresolved(pack, 7).contains("adverb-paradigm"))
+        assertFalse(unresolved(pack, 7).contains("adverb-paradigm"))
+        assertFalse(unresolved(pack, 7).contains("bounded-manner-adverb-formation"))
         assertFalse(unresolved(pack, 7).contains("adverb-invariance"))
         assertFalse(unresolved(pack, 7).contains("adverb-bounded-pairs"))
         assertFalse(unresolved(pack, 17).contains("productive-clock-time"))
@@ -184,7 +185,8 @@ class BatchARemainingSourceIntakeTest {
         val paradigmErrors = V2Validator.validate(paradigmPack).errors.joinToString("\n")
         assertTrue(paradigmErrors, paradigmErrors.contains("bounded adverb pairs do not clear adverb-paradigm"))
         assertTrue(paradigmErrors, paradigmErrors.contains("no independent adverb-paradigm admission"))
-        assertTrue(unresolved(paradigmPack, 7).contains("adverb-paradigm"))
+        assertFalse(unresolved(paradigmPack, 7).contains("adverb-paradigm"))
+        assertFalse(unresolved(paradigmPack, 7).contains("bounded-manner-adverb-formation"))
 
         val age = capability(pack, "age")
         val ageAsClock = pack.copy(
@@ -222,11 +224,12 @@ class BatchARemainingSourceIntakeTest {
             val competing = record(pack, "obj-u7-adverb-invariance", distractor)
             assertEquals("EXPLICIT_SOURCE_PAIR", V2Validator.classifyRelation(cue, answer, listOf(competing)))
         }
-        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(7)!!.readiness)
         assertEquals("DEVELOPMENT", pack.unit(7)!!.installState)
         assertFalse(unresolved(pack, 7).contains("adverb-invariance"))
         assertFalse(unresolved(pack, 7).contains("adverb-bounded-pairs"))
-        assertTrue(unresolved(pack, 7).contains("adverb-paradigm"))
+        assertFalse(unresolved(pack, 7).contains("adverb-paradigm"))
+        assertFalse(unresolved(pack, 7).contains("bounded-manner-adverb-formation"))
     }
 
     @Test
@@ -308,8 +311,9 @@ class BatchARemainingSourceIntakeTest {
         val errors = V2Validator.validate(paradigmPack).errors.joinToString("\n")
         assertTrue(errors, errors.contains("bounded invariance evidence does not clear adverb-paradigm"))
         assertTrue(errors, errors.contains("no independent adverb-paradigm admission"))
-        assertTrue(unresolved(paradigmPack, 7).contains("adverb-paradigm"))
-        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
+        assertFalse(unresolved(paradigmPack, 7).contains("adverb-paradigm"))
+        assertFalse(unresolved(paradigmPack, 7).contains("bounded-manner-adverb-formation"))
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(7)!!.readiness)
         assertEquals("DEVELOPMENT", pack.unit(7)!!.installState)
     }
 

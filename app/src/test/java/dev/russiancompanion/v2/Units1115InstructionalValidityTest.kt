@@ -66,7 +66,7 @@ class Units1115InstructionalValidityTest {
                 }
             }
         }
-        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(7)!!.readiness)
         assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.sessions.isNotEmpty() })
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
     }
@@ -301,21 +301,22 @@ class Units1115InstructionalValidityTest {
         val unprepared = pack.units.filter { unit ->
             unit.readiness == "NOT_PREPARED" || unit.installState == "NOT_YET_INSTALLED"
         }.map { it.number }.toSet()
-        assertTrue(unprepared.contains(7))
+        assertFalse(unprepared.contains(7))
         assertFalse(unprepared.contains(17))
         assertFalse(unprepared.contains(19))
         assertFalse(unprepared.contains(21))
         assertFalse(unprepared.contains(22))
-        assertTrue(unprepared.contains(23))
+        assertFalse(unprepared.contains(23))
         assertFalse(unprepared.contains(24))
-        assertTrue(unprepared.contains(25))
+        assertFalse(unprepared.contains(25))
         assertTrue(unprepared.contains(26))
         assertFalse(unprepared.contains(28))
         assertTrue(unprepared.contains(30))
-        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
-        val falseClaim = "Units 19 through 23 contain proposed lesson bodies that still need qualified review."
-        assertTrue(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(23))
-        assertFalse(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(19))
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(7)!!.readiness)
+        val falseClaim = "Units 26 through 30 contain proposed lesson bodies that still need qualified review."
+        assertTrue(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(26))
+        assertTrue(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(30))
+        assertFalse(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(28))
         val reference = pack.references.first { it.id == "ref-book-topics" }
         assertEquals(
             "Some units contain proposed lesson bodies that still require qualified review.",

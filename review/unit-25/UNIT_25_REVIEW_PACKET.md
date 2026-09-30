@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 25 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 25 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 25 remains in development. Its readiness is content-complete and review-pending. The Lesson 25 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
-- Unit content-review SHA-256: c3f4c00de92e5d3d9b0c30ca0c9663fc723dfdc06c1e4b30baa2e9a8cd9b771e
+- Curriculum source commit: f87523c4e80919c48ad39b80ea840e8ff164505f
+- Unit content-review SHA-256: 4f7acdd8f55829490434d73308921fb4d63da86f6792ec65623720c2dfc89957
 - Mapping-package SHA-256: 93039c677b2f820c58bf274ebe94000f3a66541e821250bd478f9ed4c12b8431
-- Pack content-review SHA-256: 19e8a808a7c8b3b2e4d526dfd6c6caa4e623ecf61fb68f204b6999e81a67ac75
-- Review-package SHA-256: a571464349edcd7c0e917436efb306dc2dcbdde8c0e354a614a4c508f3c54dec
-- Repository source SHA-256: a982d0f164e5dbd9192d2faf2ddd2858fcf84aa31985a7b87aaf8dc48fbc7cf7
+- Pack content-review SHA-256: cf68212c7a25d687bd280f78fca64f80f94fdabf33adf0f69cc588b18c94f40b
+- Review-package SHA-256: 9749ae35ee3e5119f06b5577ebd8d25bd4348ced9bbc38caebb21d5cdea807fe
+- Repository source SHA-256: bdd02b25fda8fa2f29a81445288687f3166c35fa9c26904aa730dda7cf21fbf9
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,9 +34,9 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=25
 title=Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions
-topicSummary=Proposed Unit 25 is in development and is not prepared. Admitted name lines, a bounded classification of the frozen diminutive-formation span, courtesy lines, and the address-register sentences await qualified review. Listed name pairs do not establish a productive diminutive. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 25 is in development. Admitted name lines, a bounded classification of the frozen diminutive-formation span, courtesy lines, the address-register sentences, and documented personal-name interpretation await qualified review. Listed name pairs do not establish a productive diminutive. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 25, printed pages 307-321. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=25
@@ -69,19 +69,19 @@ notes=No qualified reviewer has signed Unit 25.
 
 ### UNIT `unit-25`
 
-- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-nickname-rule, obj-u25-address, obj-u25-book
-- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-nickname-rule, u25-s-address, u25-s-book
+- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-nickname-rule, obj-u25-address, obj-u25-documented-name-form, obj-u25-book
+- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-nickname-rule, u25-s-address, u25-s-documented-name-form, u25-s-book
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 837606a03ef11e23e678192080a974d8cedd89d7bd9f236998fa7234f25f8910
+- Content hash: 61c4558d76832431ae2d3d88764e88162ec60375e7d502823648e537d8a3796e
 
 number=25
 title=Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions
-topicSummary=Proposed Unit 25 is in development and is not prepared. Admitted name lines, a bounded classification of the frozen diminutive-formation span, courtesy lines, and the address-register sentences await qualified review. Listed name pairs do not establish a productive diminutive. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 25 is in development. Admitted name lines, a bounded classification of the frozen diminutive-formation span, courtesy lines, the address-register sentences, and documented personal-name interpretation await qualified review. Listed name pairs do not establish a productive diminutive. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 25, printed pages 307-321. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=25
@@ -218,6 +218,25 @@ examples=ex-u25-address-0,ex-u25-address-1,ex-u25-address-2,ex-u25-address-3
 practice=u25-st-guided-address-1
 checks=u25-i-address-1,u25-i-address-2,u25-i-address-3
 remediation=u25-st-rem-address
+
+### OBJECTIVE `obj-u25-documented-name-form`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d6f07298274b0c19d108ca93dd67fe1bd5f0f6bce03bfeb5193c326792e83206
+
+title=Documented personal-name forms
+kind=RECOGNITION
+unitNumber=25
+instruction=u25-st-teach-name-form-1,u25-st-teach-name-form-2,u25-st-teach-name-form-3
+examples=ex-u25-name-form-0,ex-u25-name-form-1
+practice=u25-st-guided-name-form-1
+checks=u25-i-name-form-1,u25-i-name-form-2,u25-i-name-form-3
+remediation=u25-st-rem-name-form
 
 ### OBJECTIVE `obj-u25-book`
 
@@ -1157,6 +1176,153 @@ bookDirection=
 companionDirection=
 remediationStepId=u25-st-rem-address
 
+### SESSION `u25-s-documented-name-form`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3b48b585039abf6aba16017b1e712eacaab41749658079b0948675897f3b6cfd
+
+title=Documented personal-name forms
+estimatedMinutes=12
+objectives=obj-u25-documented-name-form
+steps=u25-st-teach-name-form-1,u25-st-guided-name-form-1,u25-st-teach-name-form-2,u25-st-teach-name-form-3,u25-st-rem-name-form,u25-st-check-name-form
+
+### STEP `u25-st-teach-name-form-1`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f6fb2e926ca8a8c33a169d4b75b31886dd67bfb82ccb86f5c4d7ef043184421e
+
+kind=TEACH
+title=Admitted instruction
+body=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=ex-u25-name-form-0,ex-u25-name-form-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u25-st-guided-name-form-1`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6966f59fd088322625518a1aa95b5a1d65800292a0984bbdf7367a457b3134f7
+
+kind=GUIDED
+title=Guided practice
+body=Марюня is a documented derivative of the full name in this admitted material.
+dominantAction=Continue
+references=
+items=u25-g-name-form-1
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u25-st-rem-name-form
+
+### STEP `u25-st-teach-name-form-2`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d0ff5fac574524fceb0f35c0b488c9a569afd490221faf328c5e80dd3b237d28
+
+kind=TEACH
+title=Admitted instruction
+body=One personal name may have several documented forms.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u25-st-teach-name-form-3`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 7c262ccd53c5afaf80803a78af92186559959156929dea9f1bf411c038a3b192
+
+kind=TEACH
+title=Admitted instruction
+body=A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u25-st-rem-name-form`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2a76b45afb9902e184a5d73b7cdfd8fba2e68a696478d5a05db347ace8fe40dd
+
+kind=REMEDIATE
+title=Remediation
+body=A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+dominantAction=Continue
+references=
+items=
+examples=ex-u25-name-form-0,ex-u25-name-form-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u25-st-check-name-form`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 83693d87b4c51e5f5b2b5cd59776c25b3a2d2518ab5297fbe59e393934ce79ba
+
+kind=CHECK
+title=Independent checks
+body=An unfamiliar form must be verified in a names dictionary.
+dominantAction=Continue
+references=
+items=u25-i-name-form-1,u25-i-name-form-2,u25-i-name-form-3
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u25-st-rem-name-form
+
 ### SESSION `u25-s-book`
 
 - Objectives: obj-u25-book
@@ -1573,6 +1739,40 @@ note=отстранённо-официального регистра
 objectiveId=obj-u25-address
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u25-name-form-0`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5123a9cf4030aacb7b7dab1f87f028b0a45f89d95c059deb972b24a7773a066
+
+kind=LEXICAL
+letterId=
+display=Машенька
+note=documented derivative of the short form
+objectiveId=obj-u25-documented-name-form
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u25-name-form-1`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6fee6d9e1beb2ee36ad64a51d2d71010b31bcd40bde519b25aceb2e4a93e2248
+
+kind=LEXICAL
+letterId=
+display=Сашка
+note=documented dismissive coloring
+objectiveId=obj-u25-documented-name-form
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### GUIDED_PRACTICE `u25-g-name-structure-0`
 
 - Objectives: obj-u25-name-structure
@@ -1782,6 +1982,41 @@ contrastMembers=полные имена | краткие имена | умень
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u25-address-0-ru | prov-ex-u25-address-0-en | prov-ex-u25-address-1-en | prov-ex-u25-address-2-en
 responseKind=RUSSIAN_PHRASE
+
+### GUIDED_PRACTICE `u25-g-name-form-1`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a56a793c6506aacca72cc95f2cd4a4c289e789785697aa66122aece64165b7c7
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description matches the shown name derived in the admitted full-form pattern?
+promptLetter=Марюня
+options=documented derivative of the full name | documented derivative of the short form | documented dismissive coloring
+answer=documented derivative of the full name
+feedback=Марюня is a documented derivative of the full name in this admitted material.
+objectiveId=obj-u25-documented-name-form
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Машенька is a documented derivative of the short form in this admitted material. | Сашка carries documented dismissive coloring in this admitted material.
+testedFeature=DOCUMENTED_FULL_FORM_DERIVATIVE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u25-g-name-form-1
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-u25-name-form-11
+distractorSourceIds= | prov-u25-name-form-12 | prov-u25-name-form-13
+distractorDifference= | Машенька is a documented derivative of the short form in this admitted material. | Сашка carries documented dismissive coloring in this admitted material.
+whyAnswerDemonstratesObjective=Марюня is a documented derivative of the full name in this admitted material.
+contrastMembers=documented derivative of the full name | documented derivative of the short form | documented dismissive coloring
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u25-name-form-10 | prov-u25-name-form-11 | prov-u25-name-form-12 | prov-u25-name-form-13
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u25-i-name-structure-1`
 
@@ -2238,15 +2473,120 @@ relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u25-address-3-ru | prov-ex-u25-address-3-en | prov-u25-address-x-4 | prov-u25-address-x-5
 responseKind=RUSSIAN_PHRASE
 
+### INDEPENDENT_CHECK `u25-i-name-form-1`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b9b1f689ac36fd8f8cfca6baf5f3a159d6758a1bfab90b79927658bb3a2cbe31
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description matches the shown name derived in the admitted short-form pattern?
+promptLetter=Машенька
+options=documented derivative of the short form | documented derivative of the full name | documented dismissive coloring
+answer=documented derivative of the short form
+feedback=Машенька is a documented derivative of the short form in this admitted material.
+objectiveId=obj-u25-documented-name-form
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Марюня is a documented derivative of the full name in this admitted material. | Сашка carries documented dismissive coloring in this admitted material.
+testedFeature=DOCUMENTED_SHORT_FORM_DERIVATIVE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u25-i-name-form-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u25-name-form-12
+distractorSourceIds= | prov-u25-name-form-11 | prov-u25-name-form-13
+distractorDifference= | Марюня is a documented derivative of the full name in this admitted material. | Сашка carries documented dismissive coloring in this admitted material.
+whyAnswerDemonstratesObjective=Машенька is a documented derivative of the short form in this admitted material.
+contrastMembers=documented derivative of the short form | documented derivative of the full name | documented dismissive coloring
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u25-name-form-8 | prov-u25-name-form-12 | prov-u25-name-form-11 | prov-u25-name-form-13
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u25-i-name-form-2`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9191dfbdf42e0cbd8043b388abf5ed167774b4df7287ee2f27a4fee996740e11
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description matches the shown name that this admitted material treats as disparaging?
+promptLetter=Сашка
+options=documented dismissive coloring | documented derivative of the full name | documented derivative of the short form
+answer=documented dismissive coloring
+feedback=Сашка carries documented dismissive coloring in this admitted material.
+objectiveId=obj-u25-documented-name-form
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Марюня is a documented derivative of the full name in this admitted material. | Машенька is a documented derivative of the short form in this admitted material.
+testedFeature=DOCUMENTED_DISMISSIVE_COLORING
+evidenceMode=STATED_APPLICATION
+contrastSetId=u25-i-name-form-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u25-name-form-13
+distractorSourceIds= | prov-u25-name-form-11 | prov-u25-name-form-12
+distractorDifference= | Марюня is a documented derivative of the full name in this admitted material. | Машенька is a documented derivative of the short form in this admitted material.
+whyAnswerDemonstratesObjective=Сашка carries documented dismissive coloring in this admitted material.
+contrastMembers=documented dismissive coloring | documented derivative of the full name | documented derivative of the short form
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u25-name-form-9 | prov-u25-name-form-13 | prov-u25-name-form-11 | prov-u25-name-form-12
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u25-i-name-form-3`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb092e116c2876f1e3049aba1c0c18ca051b16e977bd50bdc581aad5946def90
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description matches an unstudied personal name?
+promptLetter=an unstudied personal name
+options=unsupported until a names dictionary documents that form | the suffix mechanically generates an acceptable name
+answer=unsupported until a names dictionary documents that form
+feedback=An unfamiliar form must be verified in a names dictionary.
+objectiveId=obj-u25-documented-name-form
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+testedFeature=REJECTED_ARBITRARY_NAME
+evidenceMode=STATED_APPLICATION
+contrastSetId=u25-i-name-form-3
+cueLanguage=rule
+independent=true
+answerSourceIds=prov-u25-name-form-14
+distractorSourceIds= | prov-u25-name-form-15
+distractorDifference= | A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+whyAnswerDemonstratesObjective=An unfamiliar form must be verified in a names dictionary.
+contrastMembers=unsupported until a names dictionary documents that form | the suffix mechanically generates an acceptable name
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-u25-name-form-20 | prov-u25-name-form-14 | prov-u25-name-form-15
+responseKind=ENGLISH_CLASSIFICATION
+
 ### REFERENCE `ref-u2125-attribution`
 
 - Objectives: none
-- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-nickname-rule, u25-s-address, u25-s-book
+- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-nickname-rule, u25-s-address, u25-s-documented-name-form, u25-s-book
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: a278a4dea894f5af23c706402eff6339b5c761949454c0e82237db14c5ca72ec
+- Content hash: 0b9381abb6d77deb2e0db7d81849c95ce37c8568f552d8ee52e89f15eadaf46b
 
 title=Units 21–25 source notice
 summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.
@@ -4962,6 +5302,1035 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u25-name-form-0`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec5bb3920535d2f7e12e767f6fe67bf5610f033fb00dcc43ff1bf9ce33f5e3b3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=d422ce71f4955a4df4f73108015f9f44a651bab58bcc6615ed448762aaaba024
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-1`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d78dca07be6bee0797fbecce23c934e6f62c32393836e991f87bfa6acd3d1991
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=One personal name may have several documented forms.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=cb73bb68eff885515e50d00e12afac676e118a547b4ec8242e2b53f58f9db26f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-10`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68fc3b9c760b1cb65c768cfaa447115f3b93c4b001130433e63f962b70bfb4c9
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=Марюня
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=4e4a45295cd16814eadc8812b8cb9badf0124df16ba4297b77d4e55115827e69
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-11`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e47fdadc6ca10b2b3d17fda39da92d58d5f925622fea96ae74d8dea852bf85f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=documented derivative of the full name
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=a8f7ad7b09c1ee24968a8187d8e44325c6acaa55f6b2679323b64bd5573fc9d1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-12`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ba34fdf4e9f6703f2998a253875abf20e8b0e94030ab8234472df339f61ed7a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=documented derivative of the short form
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=2d75b7f46ca791623c2ac1f7bf756cd6f801f1fc51a28d916f9b581ea6be811b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-13`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6845ddd589e8e2e60bd782ac9d4ee8632c29414751cfc70e5de3f54555c3d23c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=documented dismissive coloring
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=1a3f1272b08a7642b39369003c3302be04e25c8d2d876e1ba5ccd12555fae387
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-14`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f57fb40df652e3a717dfa31d9064ff84ccbd65005c5044eb98f82ad12cb54d2d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=unsupported until a names dictionary documents that form
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=480a63b6cfa20b5a3e38af9176c670d03f28781e0a51924b6ed7ccd7b5203fa0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-15`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2c98a137f6c833cb03d5e0c231fe20bb7307d67879d464ebf4eec58f41e2ecb
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=the suffix mechanically generates an acceptable name
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=2534b334120c2b44a2b4aa4ae0acaa9ef720da7d6848e7cffc0e25a1d6eb5404
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-16`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b33d71e3bb420e40028be2f3161ee3b3a66b35133f14b6f2cd5a34eb59fea9b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=Which English description matches the shown name derived in the admitted full-form pattern?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=5a01ea53c52dda9680b1c9e7aec618f45c2ca1b7290ebc7bf66f4b066cd76bdc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-17`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 862f957914733aa1ac6d44674514a5770a59840f50835ef20857486a7d8e0759
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=Which English description matches the shown name derived in the admitted short-form pattern?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=45791c6def7f2a9a82501d56f3304a1da034b48d68a1952ad7a1a1d033480c58
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-18`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6974ad3b235273140a8ca8b6fc8980bd7a26d1df821106abd06584ded6e1c99
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=Which English description matches the shown name that this admitted material treats as disparaging?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=61b7ccc79ae20045f3d84949dbd58e357781b351c7b5b8eb96fe5e53eae31cbb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-19`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4bd26a2c164ec2313fa20474cc520f0287079c1248b9da09b48d851bc2616cf
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=Which English description matches an unstudied personal name?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=347620f30d71cb7c2fb0ef924ca5b70b5205c35b6de1e06ccb33424b0ee7aacf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-2`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b368672fd0095425a5b4063855eadfae2ec7d1d086c51885662b32ea2376f3fa
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=c5cece21defc519edcb178053146c7e57404ba64a6763d2abdaf990290266ab6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-20`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f800bad10e5e375c6bcdd750265aa613ed618a5352eb0fe30e3e5597fd766764
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=an unstudied personal name
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=6e347fb154e2bdc37e3a8d23a648286d3b97cc76b3f157a7ea46921619a7a307
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-3`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 25a573b6c6084b4f8300b0c5dd2a873506ebeac2ded8f22efa27c88338bb3662
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=An unfamiliar form must be verified in a names dictionary.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=1a1addb597374fed3e123265321e6201905f47fdb4b8f0c9b8358239c4dfa127
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-4`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45dbfbb1d182201b7e7de596364e9bccfe7de32254c5d3fd5e886434be1a7ba9
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=Марюня is a documented derivative of the full name in this admitted material.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=323e97abe357c40b3987ec8663213c79c1e5fd21efb2d81b9c6e0feca2507d78
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-5`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72033ebfda445043b9c74e27a323c26805fda025e8895f48139a5de298f8949e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=Машенька is a documented derivative of the short form in this admitted material.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=f101c5675c6545cd6f155c260ad2930097644090a459853a0fe69899654dc5a2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-6`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 53ecabc75bb6c1b1eb9142e07d9a1412b8944b596c1f41b27d8e2bdde1e4c998
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=Сашка carries documented dismissive coloring in this admitted material.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=8ca282c320da2206be4d8b0569bd5cf647c32c4ac9709a058fa0728c6bdd3f9d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-7`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ab86a4ae349c0031493d73ddfb35efd1439f43f2107eee3dee696ee8cd4cb636
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=An unstudied name has no documented derivative in this unit.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=6787964734afccd932da30438561ec879bfcc44f386e100f279802916d7c8d9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-8`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 10bc9c9f7fd6f194826d4bb44e187265ef6b1fd1ae87178ad4777b77fa6af592
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=Машенька
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=65060267386b8efcfecc82efb6044357d337457acaf2c06a8a68c0631db42d6b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-name-form-9`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 026d2aaa2bfc1b4cf8738e8ac5686d6a89108d920a1c77ee7d50ba3361279e4f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase2-2026-09-29
+sourceRevision=phase2-2026-09-29
+sourceRecordId=phase2:documented-name-form
+originalSourceText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+One personal name may have several documented forms.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+An unfamiliar form must be verified in a names dictionary.
+Марюня is a documented derivative of the full name in this admitted material.
+Машенька is a documented derivative of the short form in this admitted material.
+Сашка carries documented dismissive coloring in this admitted material.
+An unstudied name has no documented derivative in this unit.
+Машенька
+Сашка
+Марюня
+documented derivative of the full name
+documented derivative of the short form
+documented dismissive coloring
+unsupported until a names dictionary documents that form
+the suffix mechanically generates an acceptable name
+Which English description matches the shown name derived in the admitted full-form pattern?
+Which English description matches the shown name derived in the admitted short-form pattern?
+Which English description matches the shown name that this admitted material treats as disparaging?
+Which English description matches an unstudied personal name?
+an unstudied personal name
+shippedText=Сашка
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb
+contentHash=09ebad1273e0075f96936963ac412598522de640917bd2d4593e1b8231eb7976
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u25-name-question-rem`
 
 - Objectives: obj-u25-name-question
@@ -6893,6 +8262,21 @@ CC BY-SA 4.0
 Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 92eaa6f12bb405d916c9b9fc01fbc988620c90737878f13e1e61845a549d0bb5
+
+Independently authored research synthesis
+Original app text
+Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+Original research synthesis. Not a quotation of a third-party page.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -6948,6 +8332,20 @@ permitsAppUse=true
 
 src-ruwiki-obraschenie-153012874
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 65ca0e4f268b6158cbfafc95d43b79c9894d018f538d27b8cf21e7000b24fbed
+
+src-original-research-synthesis
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -7036,6 +8434,16 @@ permitsAppUse=true
 - `obj-u25-address` CHECK `u25-i-address-2`
 - `obj-u25-address` CHECK `u25-i-address-3`
 - `obj-u25-address` REMEDIATION `u25-st-rem-address`
+- `obj-u25-documented-name-form` INSTRUCTION `u25-st-teach-name-form-1`
+- `obj-u25-documented-name-form` INSTRUCTION `u25-st-teach-name-form-2`
+- `obj-u25-documented-name-form` INSTRUCTION `u25-st-teach-name-form-3`
+- `obj-u25-documented-name-form` EXAMPLE `ex-u25-name-form-0`
+- `obj-u25-documented-name-form` EXAMPLE `ex-u25-name-form-1`
+- `obj-u25-documented-name-form` PRACTICE `u25-st-guided-name-form-1`
+- `obj-u25-documented-name-form` CHECK `u25-i-name-form-1`
+- `obj-u25-documented-name-form` CHECK `u25-i-name-form-2`
+- `obj-u25-documented-name-form` CHECK `u25-i-name-form-3`
+- `obj-u25-documented-name-form` REMEDIATION `u25-st-rem-name-form`
 - `obj-u25-book` INSTRUCTION `u25-st-book-work`
 - `obj-u25-book` INSTRUCTION `u25-st-book`
 - `u25-s-orient` OBJECTIVE `obj-u25-name-structure`
@@ -7134,6 +8542,18 @@ permitsAppUse=true
 - `u25-st-check-address` ITEM `u25-i-address-1`
 - `u25-st-check-address` ITEM `u25-i-address-2`
 - `u25-st-check-address` ITEM `u25-i-address-3`
+- `u25-s-documented-name-form` OBJECTIVE `obj-u25-documented-name-form`
+- `u25-st-teach-name-form-1` EXAMPLE `ex-u25-name-form-0`
+- `u25-st-teach-name-form-1` EXAMPLE `ex-u25-name-form-1`
+- `u25-st-teach-name-form-1` REFERENCE `ref-u2125-attribution`
+- `u25-st-guided-name-form-1` REMEDIATION `u25-st-rem-name-form`
+- `u25-st-guided-name-form-1` ITEM `u25-g-name-form-1`
+- `u25-st-rem-name-form` EXAMPLE `ex-u25-name-form-0`
+- `u25-st-rem-name-form` EXAMPLE `ex-u25-name-form-1`
+- `u25-st-check-name-form` REMEDIATION `u25-st-rem-name-form`
+- `u25-st-check-name-form` ITEM `u25-i-name-form-1`
+- `u25-st-check-name-form` ITEM `u25-i-name-form-2`
+- `u25-st-check-name-form` ITEM `u25-i-name-form-3`
 - `u25-s-book` OBJECTIVE `obj-u25-book`
 - `u25-st-book-work` REFERENCE `ref-u2125-attribution`
 - `obj-u25-address` PROVENANCE `prov-ex-u25-address-0-en`
@@ -7204,6 +8624,27 @@ permitsAppUse=true
 - `obj-u25-diminutives` PROVENANCE `prov-u25-diminutives-x-0`
 - `obj-u25-diminutives` PROVENANCE `prov-u25-diminutives-x-1`
 - `obj-u25-diminutives` PROVENANCE `prov-u25-diminutives-x-2`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-0`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-1`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-10`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-11`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-12`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-13`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-14`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-15`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-16`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-17`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-18`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-19`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-2`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-20`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-3`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-4`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-5`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-6`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-7`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-8`
+- `obj-u25-documented-name-form` PROVENANCE `prov-u25-name-form-9`
 - `obj-u25-name-question` PROVENANCE `prov-u25-name-question-rem`
 - `obj-u25-name-question` PROVENANCE `prov-u25-name-question-rem-r0`
 - `obj-u25-name-structure` PROVENANCE `prov-u25-name-structure-rem`

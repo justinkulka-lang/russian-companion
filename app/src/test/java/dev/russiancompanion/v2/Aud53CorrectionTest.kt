@@ -55,12 +55,13 @@ class Aud53CorrectionTest {
         assertFalse(unresolved(pack, 17).contains("productive-clock-time"))
         assertFalse(unresolved(pack, 24).contains("negation-scope"))
         assertFalse(unresolved(pack, 26).contains("letter-writing"))
-        assertTrue(unresolved(pack, 25).contains("productive-diminutive"))
+        assertFalse(unresolved(pack, 25).contains("productive-diminutive"))
+        assertFalse(unresolved(pack, 25).contains("documented-name-form"))
         assertTrue(unresolved(pack, 26).contains("postal-address"))
         assertTrue(unresolved(pack, 27).contains("participle-stress"))
         assertTrue(unresolved(pack, 27).contains("participle-comprehension"))
         assertTrue(unresolved(pack, 30).contains("dictionary-use"))
-        assertEquals("NOT_PREPARED", pack.unit(25)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(25)!!.readiness)
         assertEquals("NOT_PREPARED", pack.unit(27)!!.readiness)
         assertEquals("NOT_PREPARED", pack.unit(30)!!.readiness)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
@@ -225,7 +226,8 @@ class Aud53CorrectionTest {
         assertTrue(diminutiveErrors.joinToString("\n"), diminutiveErrors.any {
             it.contains("exact-pair memorization does not clear productive-diminutive")
         })
-        assertTrue(unresolved(planted, 25).contains("productive-diminutive"))
+        assertFalse(unresolved(planted, 25).contains("productive-diminutive"))
+        assertFalse(unresolved(planted, 25).contains("documented-name-form"))
     }
 
     @Test
@@ -341,13 +343,13 @@ class Aud53CorrectionTest {
             provenanceRecords = pack.provenanceRecords.map { it.copy(reviewStatus = "APPROVED") },
             admissions = pack.admissions.copy(penguinProseAssets = 9, generatedRussianWords = 4),
         )
-        assertTrue(unresolved(stamped, 25).contains("productive-diminutive"))
+        assertFalse(unresolved(stamped, 25).contains("productive-diminutive"))
+        assertFalse(unresolved(stamped, 25).contains("documented-name-form"))
         assertTrue(unresolved(stamped, 27).contains("participle-stress"))
         assertTrue(unresolved(stamped, 30).contains("dictionary-use"))
         assertEquals("DEVELOPMENT", stamped.unit(25)!!.installState)
         val decision = advancementDecision(stamped, stamped.unit(25)!!, learner(stamped, 25))
-        assertFalse(decision.allowed)
-        assertTrue(decision.remaining.any { it.contains("productive-diminutive") })
+        assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
 
         val keyword = pack.copy(
             sourceCapabilities = pack.sourceCapabilities + clock.copy(
@@ -359,7 +361,8 @@ class Aud53CorrectionTest {
                 sourceHash = "1".repeat(64),
             ),
         )
-        assertTrue(unresolved(keyword, 25).contains("productive-diminutive"))
+        assertFalse(unresolved(keyword, 25).contains("productive-diminutive"))
+        assertFalse(unresolved(keyword, 25).contains("documented-name-form"))
     }
 
     @Test
