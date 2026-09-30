@@ -34,7 +34,7 @@ internal const val UNITS_11_15_CURRICULUM_COMMIT = "b22fa0cca895a677386a77d03a63
 
 internal const val UNITS_16_20_CURRICULUM_COMMIT = "100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee"
 
-internal const val UNITS_21_25_CURRICULUM_COMMIT = "ae777d85fe3616fc8e065890201d40c241d113bc"
+internal const val UNITS_21_25_CURRICULUM_COMMIT = "f87523c4e80919c48ad39b80ea840e8ff164505f"
 
 internal const val UNITS_26_30_CURRICULUM_COMMIT = "100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee"
 

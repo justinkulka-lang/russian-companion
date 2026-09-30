@@ -316,8 +316,8 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("de742e385a363884adc4014f8f10460e5941d0b8c8cd8269bc468f3344aabad7", model.packContentReviewDigest)
-        assertEquals("998db1e37a25da50c353cd467e0d10d6f915789373fd414d85cdded7c5115549", model.repositorySourceDigest)
+        assertEquals("cf68212c7a25d687bd280f78fca64f80f94fdabf33adf0f69cc588b18c94f40b", model.packContentReviewDigest)
+        assertEquals("bdd02b25fda8fa2f29a81445288687f3166c35fa9c26904aa730dda7cf21fbf9", model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
         assertEquals("NOT_APPROVED", candidate?.publicRelease)
@@ -338,7 +338,7 @@ class BatchECapabilityResearchTest {
             17 to "a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c",
             23 to "c46606f18f1b6c044a48934370c8ff82e32a4fe900164a779d846d7937855151",
             24 to "497c9978cd3a89159732f7c4b53a09d0923d98bbaa01f61722a769d1a808f74c",
-            25 to "8b8f3891d85b9cb74a77d643d40801b7b3ceea7b67810dad42c33686ccdf991a",
+            25 to "4f7acdd8f55829490434d73308921fb4d63da86f6792ec65623720c2dfc89957",
             26 to "bdaa9683a34b35717a7f4ab3f5d00f7e8a221d96eb6f718acbf2a0f4c6b36bc8",
             27 to "e6805db24810cc3cc64061f70cd32a8b15b885611f7a0c29150009f461e795fc",
             28 to "afa29cbd6d710bcb853d74189d012584660996b25270af78c3d23efe35cf1cc5",
@@ -360,9 +360,9 @@ class BatchECapabilityResearchTest {
         val reviewPackages = mapOf(
             7 to "c4452950695d06ffaa2702f0edaf7d0e378418e2719c11d326e27dc58f2fd580",
             17 to "cca9ccda9aaddd585a9979a06f5b48acf45b4c5ed42fdea04f923786843f33e1",
-            23 to "fe4754ee6b3c39ce96ba641cc06fefcb0bbb88f388a269d9fc28c31dea7dd7af",
-            24 to "417303ddbac6bbc33c232d4b733320d4326107fc8e4217173d20d1423b9f8ae7",
-            25 to "6db23b186324774e37cdd3b50f14fa7a9b94db55cca4525c8a6d774b3920e281",
+            23 to "515d2cee4e4f94608f65abfced30231b63a6fb8e81d8041626477a6adcaefc4f",
+            24 to "4929cddc00703ecea1926cc8dac0567672acf1625e8c3e89c05f470a182ea985",
+            25 to "9749ae35ee3e5119f06b5577ebd8d25bd4348ced9bbc38caebb21d5cdea807fe",
             26 to "d99147f1bea12fbfb65c63aaecb8d38d2daf3334910b9e8e0446dde17e457bc6",
             27 to "7003b4f3ba9ac586b50e9aa58567f38fe48618cae93011507b94bf04630a186e",
             28 to "583b7e92bc1ac96942135e9043e712b62bd8779d47413f5d381f49d4493ad86a",
