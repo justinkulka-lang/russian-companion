@@ -11,12 +11,12 @@ Unit 27 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
-- Unit content-review SHA-256: e6805db24810cc3cc64061f70cd32a8b15b885611f7a0c29150009f461e795fc
+- Curriculum source commit: 345448c16f326114ccb2f6738c75fb4206798cae
+- Unit content-review SHA-256: b43404505a7bc8bc72a34d2af039d5695d1e919cdc309643ecc7c835cfd99db0
 - Mapping-package SHA-256: f5da4227d7bdfa500293d76f3b48ab8ac7646ac0dd6c90b4e8ac4f10cc69a385
-- Pack content-review SHA-256: cf68212c7a25d687bd280f78fca64f80f94fdabf33adf0f69cc588b18c94f40b
-- Review-package SHA-256: 7003b4f3ba9ac586b50e9aa58567f38fe48618cae93011507b94bf04630a186e
-- Repository source SHA-256: bdd02b25fda8fa2f29a81445288687f3166c35fa9c26904aa730dda7cf21fbf9
+- Pack content-review SHA-256: dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f
+- Review-package SHA-256: 0c0eb62fdb9de00a01a9d7619073b019663a973bc07bc154f4eccc82e6123027
+- Repository source SHA-256: 099dda9028db84c4f526380425e79abc144d27084057d9b319df2d0a9eae1aac
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 27.
 
 ### UNIT `unit-27`
 
-- Objectives: obj-u27-passive, obj-u27-present-passive, obj-u27-book, obj-u27-comprehension, obj-u27-stress-reference
-- Sessions: u27-s-orient, u27-s-passive, u27-s-present-passive, u27-s-book, u27-s-gap-comprehension, u27-s-stress-reference
+- Objectives: obj-u27-passive, obj-u27-present-passive, obj-u27-book, obj-u27-comprehension, obj-u27-stress-reference, obj-u27-stress
+- Sessions: u27-s-orient, u27-s-passive, u27-s-present-passive, u27-s-book, u27-s-gap-comprehension, u27-s-stress-reference, u27-s-stress
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8c7eb53123f0cf893ca13e76385f090a793efdd9c87df5a6330ecf2adef289b7
+- Content hash: 2ffdb34c63a70c835d7c0bfeede4839d1dafb44b2936bbe1500b6eead24b7662
 
 number=27
 title=Participles: types and stress
@@ -170,16 +170,16 @@ remediation=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c5bccaabf50ccaa87d1cfe7319485d55845afe98174ffe7ded50cef546978015
+- Content hash: ab63ff025a27021ace54047155f2ffda9d551415f36f86df432647f7e7b680b9
 
-title=Comprehension passages stay in the copy you own
-kind=GUIDANCE
+title=Read the participial construction
+kind=RECOGNITION
 unitNumber=27
-instruction=u27-st-gap-comprehension
-examples=
-practice=
-checks=
-remediation=
+instruction=u27-comp-teach-1,u27-comp-teach-2
+examples=ex-u27-comp-1,ex-u27-comp-2
+practice=u27-comp-guided
+checks=u27-i-comp-1,u27-i-comp-2,u27-i-comp-3
+remediation=u27-comp-remediate
 
 ### OBJECTIVE `obj-u27-stress-reference`
 
@@ -199,6 +199,25 @@ examples=ex-u27-stress-ref-0,ex-u27-stress-ref-1,ex-u27-stress-ref-2,ex-u27-stre
 practice=
 checks=
 remediation=
+
+### OBJECTIVE `obj-u27-stress`
+
+- Objectives: obj-u27-stress
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 870e7c9b4c7c66f3ab7a6bd19c5edb39eb1d140c3c67621a1905199e36b91a16
+
+title=Choose the admitted stress placement
+kind=RECOGNITION
+unitNumber=27
+instruction=u27-stress-teach-1,u27-stress-teach-2
+examples=ex-u27-stress-1,ex-u27-stress-2
+practice=u27-stress-guided
+checks=u27-i-stress-1,u27-i-stress-2,u27-i-stress-3,u27-i-stress-4
+remediation=u27-stress-remediate
 
 ### SESSION `u27-s-orient`
 
@@ -598,14 +617,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a17da6722149c7a7c389f4235556bb23ca1f9c6bf7ad43c4baf64949da621c30
+- Content hash: 2962183279a252912446c132d5a0d5b1e88cf8cde7bbece52567c3fe1206f580
 
-title=Comprehension passages stay in the copy you own
-estimatedMinutes=4
+title=Read the participial phrase for who did the action and what the result is.
+estimatedMinutes=10
 objectives=obj-u27-comprehension
-steps=u27-st-gap-comprehension
+steps=u27-comp-teach-1,u27-comp-guided,u27-comp-teach-2,u27-comp-remediate,u27-comp-check
 
-### STEP `u27-st-gap-comprehension`
+### STEP `u27-comp-teach-1`
 
 - Objectives: obj-u27-comprehension
 - Sessions: u27-s-gap-comprehension
@@ -613,19 +632,107 @@ steps=u27-st-gap-comprehension
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 175e808db5346d1b68c345dabba5c94682c30765657c4b6d5cbd20fede360bb2
+- Content hash: 92bb2b1ab9d1a873b99ec69fb9e56fe83f6e5617a8eaf74c32bbf8afff01f615
 
-kind=UNAVAILABLE
-title=Comprehension passages stay in the copy you own
-body=Comprehension passages stay in the copy you own. The admitted lines do not supply them.
+kind=TEACH
+title=Admitted instruction
+body=Read the participial phrase for who did the action and what the result is.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u27-comp-1,ex-u27-comp-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u27-comp-guided`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 990ccc46f35eeab9bd1156f2903ab1f7eb5b291d9fe810afeaaaab9c84800dff
+
+kind=GUIDED
+title=Guided practice
+body=Stress placement is a different objective and does not answer these readings.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u27-g-comp-1
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u27-comp-remediate
+
+### STEP `u27-comp-teach-2`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e5039c8974d8c90557bd52188f07ec3635cee5761abcd0693fc8d8b2914fca2d
+
+kind=TEACH
+title=Admitted instruction
+body=Stress placement is a different objective and does not answer these readings.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=
-unavailableReason=Comprehension passages have no admitted frozen span.
+unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u27-comp-remediate`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ed7999935025757db1f542194608dc608db112889044c924d54c3d8bda9e1a26
+
+kind=REMEDIATE
+title=Remediation
+body=Return to who wrote the letter and what Anna did after reading it.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u27-comp-check`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e0aac0b840dc2322ccdb40afc4f15938a8c649df51f9fb56aaea1177c640a0bd
+
+kind=CHECK
+title=Independent checks
+body=Read the participial phrase for who did the action and what the result is.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u27-i-comp-1,u27-i-comp-2,u27-i-comp-3
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u27-comp-remediate
 
 ### SESSION `u27-s-stress-reference`
 
@@ -663,6 +770,131 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### SESSION `u27-s-stress`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0fc5e84c8a1bf036ef6d1bf7c21b1da9b7501424cb87416bf81191bcf4b75d6d
+
+title=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+estimatedMinutes=10
+objectives=obj-u27-stress
+steps=u27-stress-teach-1,u27-stress-guided,u27-stress-teach-2,u27-stress-remediate,u27-stress-check
+
+### STEP `u27-stress-teach-1`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3ae4e3d03953c8b5280cf730662e8849157734f3913892e8b69ed44e84bc8e1a
+
+kind=TEACH
+title=Admitted instruction
+body=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u27-stress-1,ex-u27-stress-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u27-stress-guided`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 048e8bb98968872bf2a869a0194919d0c919a1fb43f5e3ceab9eea7d93453a33
+
+kind=GUIDED
+title=Guided practice
+body=Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u27-g-stress-1
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u27-stress-remediate
+
+### STEP `u27-stress-teach-2`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ff3fd017fa15184395a742b0d7f3102df4d6e3ba7907c8bb7dea129ffe6fc149
+
+kind=TEACH
+title=Admitted instruction
+body=These four placements do not generate stress for an unlisted participle.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u27-stress-remediate`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b1559bd7065751bbebac20da921485c9a578c8f50c8c588f2b87c80f7c32263f
+
+kind=REMEDIATE
+title=Remediation
+body=Compare the admitted accent with the rejected accent on the same letters.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u27-stress-check`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 17538950a1c8b7003f4a804024f94df84c43910c89b4249dd466bcc706eabe78
+
+kind=CHECK
+title=Independent checks
+body=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u27-i-stress-1,u27-i-stress-2,u27-i-stress-3,u27-i-stress-4
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u27-stress-remediate
 
 ### EXAMPLE `ex-u27-passive-0`
 
@@ -783,6 +1015,40 @@ note=we leave
 objectiveId=obj-u27-present-passive
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u27-comp-1`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5078f7424c27f07da4208f4fb83afb9baa13a3b65e26de5e49ae7453e5dfc199
+
+kind=LEXICAL
+letterId=
+display=Письмо, написанное Анной, лежит на столе.
+note=the letter Anna wrote is on the table
+objectiveId=obj-u27-comprehension
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u27-comp-2`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1afd954e243b7d89f56edffbd12b1eb965730ffe894317fd1bc33f15f2f10784
+
+kind=LEXICAL
+letterId=
+display=Анна убрала прочитанное письмо.
+note=Anna put away the letter she had read
+objectiveId=obj-u27-comprehension
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### EXAMPLE `ex-u27-stress-ref-0`
 
 - Objectives: obj-u27-stress-reference
@@ -849,6 +1115,40 @@ letterId=
 display=прочи́танный
 note=past passive participle
 objectiveId=obj-u27-stress-reference
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u27-stress-1`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e0f074e9ee0928b25d960304310978f8655fc5a6a6485441e66eb4e50c52cc7a
+
+kind=LEXICAL
+letterId=
+display=оставля́емый
+note=admitted stress placement
+objectiveId=obj-u27-stress
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u27-stress-2`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 05ee999a9488b2faf2e073713d2f4a7e63d571d661d9261918e9fea777cfe401
+
+kind=LEXICAL
+letterId=
+display=напи́санный
+note=admitted stress placement
+objectiveId=obj-u27-stress
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u27-g-passive-0`
@@ -920,6 +1220,76 @@ contrastMembers=being discussed | we leave | to discuss
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u27-present-passive-0-ru | prov-ex-u27-present-passive-0-en | prov-ex-u27-present-passive-1-en | prov-u27-present-passive-x-0
 responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u27-g-comp-1`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 739b927b253503e83edc1d51ed124782846d5026034cf3160632c48e7ade0c33
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English reading matches the letter that is on the table?
+promptLetter=Письмо, написанное Анной, лежит на столе.
+options=the letter Anna wrote is on the table | Anna put the letter away | the table wrote the letter
+answer=the letter Anna wrote is on the table
+feedback=Admitted reading: the letter Anna wrote is on the table
+objectiveId=obj-u27-comprehension
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: Anna put the letter away | Rejected reading: the table wrote the letter
+testedFeature=WRITTEN_LETTER_ON_TABLE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u27-g-comp-1
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-obj-u27-comprehension-4
+distractorSourceIds= | prov-obj-u27-comprehension-9 | prov-obj-u27-comprehension-10
+distractorDifference= | Rejected reading: Anna put the letter away | Rejected reading: the table wrote the letter
+whyAnswerDemonstratesObjective=Admitted reading: the letter Anna wrote is on the table
+contrastMembers=the letter Anna wrote is on the table | Anna put the letter away | the table wrote the letter
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u27-comprehension-3 | prov-obj-u27-comprehension-4 | prov-obj-u27-comprehension-9 | prov-obj-u27-comprehension-10
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u27-g-stress-1`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 86378b2e5c1f06be0627d002cbd7fb14876576d9b749c57857c9109fd45fe35f
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which stress placement is admitted for the leave-behind present passive?
+promptLetter=the present passive of оставлять
+options=оставля́емый | оставляемы́й
+answer=оставля́емый
+feedback=Admitted reading: оставля́емый
+objectiveId=obj-u27-stress
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: оставляемы́й
+testedFeature=STRESS_OSTAVLYAEMY
+evidenceMode=STATED_APPLICATION
+contrastSetId=u27-g-stress-1
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-obj-u27-stress-4
+distractorSourceIds= | prov-obj-u27-stress-10
+distractorDifference= | Rejected reading: оставляемы́й
+whyAnswerDemonstratesObjective=Admitted reading: оставля́емый
+contrastMembers=оставля́емый | оставляемы́й
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u27-stress-8 | prov-obj-u27-stress-4 | prov-obj-u27-stress-10
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u27-i-passive-1`
 
@@ -1061,15 +1431,260 @@ relationKind=EXPLICIT_PARENTHETICAL_GLOSS
 relationParticipantIds=prov-u27-present-passive-x-1 | prov-u27-present-passive-x-2 | prov-ex-u27-present-passive-1-en | prov-ex-u27-present-passive-0-en
 responseKind=ENGLISH_CLASSIFICATION
 
+### INDEPENDENT_CHECK `u27-i-comp-1`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4dd9e567f5c29c2c3fc586acc4d6cc0bc6b54d95aa790c6beb3c2ca7a798b9c3
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English reading matches the person who produced the letter?
+promptLetter=написанное Анной
+options=Anna is the writer of the letter | Anna is the reader of the letter | the letter wrote Anna
+answer=Anna is the writer of the letter
+feedback=Admitted reading: Anna is the writer of the letter
+objectiveId=obj-u27-comprehension
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: Anna is the reader of the letter | Rejected reading: the letter wrote Anna
+testedFeature=WRITER_OF_THE_LETTER
+evidenceMode=STATED_APPLICATION
+contrastSetId=u27-i-comp-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u27-comprehension-15
+distractorSourceIds= | prov-obj-u27-comprehension-17 | prov-obj-u27-comprehension-18
+distractorDifference= | Rejected reading: Anna is the reader of the letter | Rejected reading: the letter wrote Anna
+whyAnswerDemonstratesObjective=Admitted reading: Anna is the writer of the letter
+contrastMembers=Anna is the writer of the letter | Anna is the reader of the letter | the letter wrote Anna
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u27-comprehension-14 | prov-obj-u27-comprehension-15 | prov-obj-u27-comprehension-17 | prov-obj-u27-comprehension-18
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u27-i-comp-2`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ba63286c3687d1c6f40ca5e62ecc801543640a2568d6b3f6b24f36065b37413
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English reading matches what Anna did with the letter afterward?
+promptLetter=Анна убрала прочитанное письмо.
+options=Anna put away the letter she had read | Anna wrote the letter on the table | the letter put Anna away
+answer=Anna put away the letter she had read
+feedback=Admitted reading: Anna put away the letter she had read
+objectiveId=obj-u27-comprehension
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: Anna wrote the letter on the table | Rejected reading: the letter put Anna away
+testedFeature=PUT_AWAY_AFTER_READING
+evidenceMode=STATED_APPLICATION
+contrastSetId=u27-i-comp-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u27-comprehension-6
+distractorSourceIds= | prov-obj-u27-comprehension-23 | prov-obj-u27-comprehension-24
+distractorDifference= | Rejected reading: Anna wrote the letter on the table | Rejected reading: the letter put Anna away
+whyAnswerDemonstratesObjective=Admitted reading: Anna put away the letter she had read
+contrastMembers=Anna put away the letter she had read | Anna wrote the letter on the table | the letter put Anna away
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u27-comprehension-5 | prov-obj-u27-comprehension-6 | prov-obj-u27-comprehension-23 | prov-obj-u27-comprehension-24
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u27-i-comp-3`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2007b6cbf7fb1dc3da82c4b767670c08315e0f283cad4ccbcb7c4991f6150790
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English reading matches the state of the letter Anna put away?
+promptLetter=прочитанное письмо
+options=the letter had already been read | the letter had just been written | Anna is still reading aloud
+answer=the letter had already been read
+feedback=Admitted reading: the letter had already been read
+objectiveId=obj-u27-comprehension
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the letter had just been written | Rejected reading: Anna is still reading aloud
+testedFeature=ALREADY_READ
+evidenceMode=STATED_APPLICATION
+contrastSetId=u27-i-comp-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u27-comprehension-29
+distractorSourceIds= | prov-obj-u27-comprehension-31 | prov-obj-u27-comprehension-32
+distractorDifference= | Rejected reading: the letter had just been written | Rejected reading: Anna is still reading aloud
+whyAnswerDemonstratesObjective=Admitted reading: the letter had already been read
+contrastMembers=the letter had already been read | the letter had just been written | Anna is still reading aloud
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u27-comprehension-28 | prov-obj-u27-comprehension-29 | prov-obj-u27-comprehension-31 | prov-obj-u27-comprehension-32
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u27-i-stress-1`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9e20ff7717e26812af2a04fc6db71508a5223a264b1ef05a8894bd72f1452d7
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which stress placement is admitted for the discuss present passive?
+promptLetter=the present passive of обсуждать
+options=обсужда́емый | обсуждаемы́й
+answer=обсужда́емый
+feedback=Admitted reading: обсужда́емый
+objectiveId=obj-u27-stress
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: обсуждаемы́й
+testedFeature=STRESS_OBSUZHDAEMY
+evidenceMode=STATED_APPLICATION
+contrastSetId=u27-i-stress-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u27-stress-14
+distractorSourceIds= | prov-obj-u27-stress-16
+distractorDifference= | Rejected reading: обсуждаемы́й
+whyAnswerDemonstratesObjective=Admitted reading: обсужда́емый
+contrastMembers=обсужда́емый | обсуждаемы́й
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u27-stress-13 | prov-obj-u27-stress-14 | prov-obj-u27-stress-16
+responseKind=RUSSIAN_TOKEN
+
+### INDEPENDENT_CHECK `u27-i-stress-2`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d560cf32280cb64b882274f30ddae713331ad4d4b71b64397c1d47aa4831efa5
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which stress placement is admitted for the write past passive?
+promptLetter=the past passive of написать
+options=напи́санный | написа́нный
+answer=напи́санный
+feedback=Admitted reading: напи́санный
+objectiveId=obj-u27-stress
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: написа́нный
+testedFeature=STRESS_NAPISANNY
+evidenceMode=STATED_APPLICATION
+contrastSetId=u27-i-stress-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u27-stress-6
+distractorSourceIds= | prov-obj-u27-stress-21
+distractorDifference= | Rejected reading: написа́нный
+whyAnswerDemonstratesObjective=Admitted reading: напи́санный
+contrastMembers=напи́санный | написа́нный
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u27-stress-19 | prov-obj-u27-stress-6 | prov-obj-u27-stress-21
+responseKind=RUSSIAN_TOKEN
+
+### INDEPENDENT_CHECK `u27-i-stress-3`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a72293c0256d1571166e6a8f9d5795e6b904c83b980eba6f2ec7fedcb779e2e
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which stress placement is admitted for the read past passive?
+promptLetter=the past passive of прочитать
+options=прочи́танный | прочита́нный
+answer=прочи́танный
+feedback=Admitted reading: прочи́танный
+objectiveId=obj-u27-stress
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: прочита́нный
+testedFeature=STRESS_PROCHITANNY
+evidenceMode=STATED_APPLICATION
+contrastSetId=u27-i-stress-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u27-stress-25
+distractorSourceIds= | prov-obj-u27-stress-27
+distractorDifference= | Rejected reading: прочита́нный
+whyAnswerDemonstratesObjective=Admitted reading: прочи́танный
+contrastMembers=прочи́танный | прочита́нный
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u27-stress-24 | prov-obj-u27-stress-25 | prov-obj-u27-stress-27
+responseKind=RUSSIAN_TOKEN
+
+### INDEPENDENT_CHECK `u27-i-stress-4`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 93aa93f8748252bf07481400b2dca5d5b2f3e7f871c86758c1e247abfc9d3db0
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description states the limit of these four stress placements?
+promptLetter=an unlisted participle
+options=no stress rule is admitted beyond these four | these four placements generate every other participle
+answer=no stress rule is admitted beyond these four
+feedback=Admitted reading: no stress rule is admitted beyond these four
+objectiveId=obj-u27-stress
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: these four placements generate every other participle
+testedFeature=REJECTED_PRODUCTIVE_STRESS
+evidenceMode=STATED_APPLICATION
+contrastSetId=u27-i-stress-4
+cueLanguage=rule
+independent=true
+answerSourceIds=prov-obj-u27-stress-31
+distractorSourceIds= | prov-obj-u27-stress-33
+distractorDifference= | Rejected reading: these four placements generate every other participle
+whyAnswerDemonstratesObjective=Admitted reading: no stress rule is admitted beyond these four
+contrastMembers=no stress rule is admitted beyond these four | these four placements generate every other participle
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u27-stress-30 | prov-obj-u27-stress-31 | prov-obj-u27-stress-33
+responseKind=ENGLISH_CLASSIFICATION
+
 ### REFERENCE `ref-u2630-attribution`
 
 - Objectives: none
-- Sessions: u27-s-orient, u27-s-passive, u27-s-present-passive, u27-s-book, u27-s-gap-comprehension, u27-s-stress-reference
+- Sessions: u27-s-orient, u27-s-passive, u27-s-present-passive, u27-s-book, u27-s-gap-comprehension, u27-s-stress-reference, u27-s-stress
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: d016f8a4354919664b12ca0e03ca6086fa29d4a1ff5d892d20e76ee27f5e3fa9
+- Content hash: 30412541a749631d0b02abd2342755a79037fc82a442cb8ffbdb3f421d24731d
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
@@ -1985,6 +2600,5448 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-obj-u27-comprehension-0`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 95ed2f1693b478167bdf0920c304b6938d4fc38fc015fa44d692ec979a047e9d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Read the participial phrase for who did the action and what the result is.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=b01b39caa41ff76e2b1ce7517d7d6a234697ccf4a9caa4b1733c9c8a5c6890a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-1`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8048afe82c5ec569b3e7a170084e20fa6850530450f4e0670d319ab90fbf0506
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Stress placement is a different objective and does not answer these readings.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=b5067ccd1370d9d184c492a0348a68e968bf813e3daa3ce531d5af4c4ae753eb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-10`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c38ef72ce014d5975b513898efd306819b9caee52bdb2f2eb98625674007816f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=the table wrote the letter
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=ee01a8599e720d3e21cc8b27c1a72038c9e82ee75013f333cd8a83890c1a360d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-11`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b73860afc092ee899eac86ac71f6e77764c02c2a11aaec28db29696537f6bae
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Rejected reading: Anna put the letter away
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=4a7483c70ff839c543a430f23d6603d98290afece98d4e25ada5f75ed0a7dacb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-12`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a07ae13cd3e58228c937da7ad1a57cf305dd3439095c5f72aab1ad15da8c3f5d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Rejected reading: the table wrote the letter
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=2c9be170612400e00de78060d7fc10b7a5f84745cd9ea9087e0ae228542f2363
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-13`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0450b5a219242c2dabd218c6e4ee855565d3fb13fe9984ac9e8e585181f43cd4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Which English reading matches the person who produced the letter?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=ad80f0e8e596b0caeb6a90ffaf896755cefa31a522e3f54fd6b4adf116a9bef5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-14`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1eb6dffafc8d3dfe4d06026ecb083ac60cdaf0ec296f8772919fdb572f385dc5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=написанное Анной
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=aa6c7d97f54fc49299567faf25cbbb73c2c3fa40d8104c63893d8ec3bb4961db
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-15`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa2c97d920aa8d400539c04948aaf4cbebb044f9a2116bd646d6481f1d225e36
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Anna is the writer of the letter
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=6bdd2ba7b8b83d490e469fc404f721080608e47260e217c67cedc26adcb3c61b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-16`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b7b778258601c3da9b02d4655a642c4936c5e6f21371e7f1516919b013ab101
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Admitted reading: Anna is the writer of the letter
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=815f7835ec5f090e7dfbc8ec8fffcdb4486036b5c7f69e28c625a353dd1845a9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-17`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5374651480eab20649e1ecbc7279e7d762ee278e0d7f08388a0429ab137cc6e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Anna is the reader of the letter
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=044edefacface03b67ec611e3dfd1eb8527783834b88680a10ab4b32feaf8e44
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-18`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d17c715a4f60b5a49c6f7838c6ee8bff01f2b04f17717e0fd66f08777f6103b7
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=the letter wrote Anna
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=5a4e58aec4b066987472c791cd0298329185db15ce5fa8b309a1daeaaf308ffb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-19`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b6e558f6264ed18f0035122c9deed1adc184a4833bdda44214292f41dcbb8be
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Rejected reading: Anna is the reader of the letter
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=3192014fe017f68a5f7423126aad8aff08a3f3ef9430804542ef1cb4f5179c3a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-2`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d537b14c832020b2d07836d0122a86fa2d662d92b91de28bde49b313f9a99a2
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Return to who wrote the letter and what Anna did after reading it.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=114d2d25d139f91d6aa5be309b6f294581088a86898cccea762d2ac87735e464
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-20`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45131fb439c3584c6d964c30b30045073498db0823d1bc2976beb813ef02e515
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Rejected reading: the letter wrote Anna
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=85736a5ca2e807feff64749e8dcf639473b39f435c0a5268a8d85f5259917959
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-21`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 495bba392918ea30d0c594d3747f0bdaac6074ba8ab7d2e7475e30f91830e043
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Which English reading matches what Anna did with the letter afterward?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=1ffa8a3097954708ac53da3420758fd308cbf43821d88b8e4ef1ce6c4913f695
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-22`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73186b6a608781c2b02063a959cd7a00197bdbbb738d5e8997a97b8d55520543
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Admitted reading: Anna put away the letter she had read
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=4a106c074317a7eb29eb1c72b899c51f296f3b367bb76c7962d2b2b1b753d5bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-23`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 087a9fa4e674714fb674d8e6d47adde2cbb73bffc5ad1a4ba3acf5d27f399de5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Anna wrote the letter on the table
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=7271bf248bc314780b610017273780efba406458273176328ee596ef8e2e94c6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-24`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ebb608a93d3eb4adf90a7ec312f6f8ef08e5e48b8d32438d0f04cff5a8b4537
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=the letter put Anna away
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=4b1cb56c3976e0cedf26cc700f74778b5ddaf82aee137e4a38fa1edf4e74274f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-25`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 752d89eefd6ef8e50da9c66dccc88ceced57e34133a0cae0ff801117b9824ac2
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Rejected reading: Anna wrote the letter on the table
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=de02fa67b90ef67ec0df45bd7b12d7526356b1341fa91402990c6afde9324877
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-26`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d22d15182240f72ca70d5d815fdd28ef0ffee4e856bd349e2a57d1419498489
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Rejected reading: the letter put Anna away
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=f28884d10d461900948ed112aee5b2209f54a962ac96fe878c6b08ea31a14bae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-27`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c2efde7069b09e3378aa1bcd9d8fc422489204042a8a26f1be87e099f33ca9e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Which English reading matches the state of the letter Anna put away?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=5a74556865098992cbc18c0fffff647fb911c799669e3c3dac71981d7cb944e0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-28`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cca805339ec46c03826819afcc618425ac9454805a6a16c8baec2753f9a4b649
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=прочитанное письмо
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=96e15bf2c1bdceccd11444bfbf7dffcbef1b129b3bba70901950e0267ac21a26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-29`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac4280dba490758900ca24709dd98cd091435fce5410118df2e62338765a55e1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=the letter had already been read
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=22d53dfce3f9b18986d7e05343171aa06a0af06dabe689a23bbb957310d6a06d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-3`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7111c7fb61f23a798f53c04e1fd5c6a3cd9e7e788c27d99d583d8f5e30e3c205
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Письмо, написанное Анной, лежит на столе.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=8e7f6e498e17b1e8b5d09a319e2330de197d08775436c7c03e0dfbf4e9788c1a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-30`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 148d64492102fc41494eb94f3f7d828a15bf42098205d704fff9992c9f56ce8d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Admitted reading: the letter had already been read
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=e7b9627f823bb12ef443bfb4034b4043eb10d95d7315f4d8273067272002c5ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-31`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b70e99e8a7e8f26000e79de926cf3797e6f449dbc8378f6b8b76d725e125344f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=the letter had just been written
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=8311c8a65d4be2240bdaca3d3077c63cc8e26e7a03b68a5193a126fe2e8d7353
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-32`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2e713ee68b6c6486ee2cdd806e5fd5edac65de1571de3911a4722099faf75d5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Anna is still reading aloud
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=d0666d9c4034ea8c12e7330fd1c267df50de19862eede4d1bc57e816929630d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-33`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d30af7053cb30d2bb855a62e288eb0c15cb316a476e7fbea9f301aa765f33ba4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Rejected reading: the letter had just been written
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=fe21e666a2c572f193f2b7ebbf6f525d4a25f2f8f8ebc144f3950a1a83d5b1bb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-34`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ffff8d400602e13ace092b593359cdde8852c483f538f03a1e944e3f646768cf
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Rejected reading: Anna is still reading aloud
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=eb3b9accd6e20ef86b37df35d225662a7a157fec43e69d73eb6e9a18ce3ce6e3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-35`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e90829bf18b43aff8dd5308a296dbb34457f6f0941ff94c258b708050f993171
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Письмо,
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=33628fceeac6f2aeaf1509f822d677bbb02d2bf56df72f6aa61788357497e51a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-36`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e9f50597fbcea4689870bd169b221063cee35b443ee064bb65aa1c71c8cd1bf9
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Письмо
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=8b51c6b02530d6fe5713a0bc0e533f9d833fe89d0721fdd34f7ad3d85ddc7d4d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-37`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb1857b1c9e00764dbdf8f06b4d053bb9b9db542393148ebcc03e23b72af0413
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=написанное Анной,
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=b9f9fcdd810b08b18714aad738a533f7e06c2e64c08aedcae30aaaa23b5451a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-38`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0220df4400c2c870fa595ca780d96f382ea14a176641bebf2df5e0c5851c5a0
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=лежит на столе.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=df642d071ac8615de76c28200ad1eab79a7db22c97a417539d6bfc635966bbeb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-39`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cdfbde3c3f254a127cacb5cbd8eae6c6bba97696c7eaf2016ca93a5241d8e752
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=лежит на столе
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=5e2dfcef8432d35343bfbd3f53cbb1032a97c0c1ea8cdf1844ebcf32c0262e15
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-4`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 08836f4dc380c7fbc22d2575c937642f59ba953016a804a95763e386dff6d8ce
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=the letter Anna wrote is on the table
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=d8f1d40a01c01c954f5502c2c438deff549a53cf9150ea8f8d6ed61a00c75535
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-40`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d870cff37d8f762921823a85449fcd67067f4d06a37c37c893a1b3f5595bdaf
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Анна убрала прочитанное письмо
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=2a64697a7e812131b2e1e60372c1904f63e7a5cdb9086914b726f5d17f50c873
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-5`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48207d2ab7579cf715ac7cb864dccc551b6bf263b22613a3784da6071b159dec
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Анна убрала прочитанное письмо.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=ff8f86153960e1a7dab221da85cb0f3d3d0632a2cf41f200fc1784b9046b37b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-6`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae47f25c683f696188dbe4f8dacf80a31557ca3f832e41703766bd52d9649d63
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Anna put away the letter she had read
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=27a050162e708525c19e73b467d9eea55282bd883dba95ca0cc217a8f2445c7c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-7`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f3eef60066a4680407196739e7eaaacb8f3bf8f21990e9fd419f68b8c4abdad
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Which English reading matches the letter that is on the table?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=32ac8c8396b594e077124e36ec932c9f4e37c48a341d95ec090d95fecd0dba51
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-8`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b38f868df5280e74faa2d635881acf8f246c865d482ff53b803faf8c0f508c5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Admitted reading: the letter Anna wrote is on the table
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=4b51dc1fa33ac0d9c1833892056a82992ea667ec93a49357fc03f7925f3248f7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-comprehension-9`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1558a45a374ab9eda7ac2749ed3d8ed490420f397bb0a705712b72d1dab27e56
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+originalSourceText=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+shippedText=Anna put the letter away
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+contentHash=58be127744185f9269f0ad6baa10013b785a834e44146d2273fa2263725d41dc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-0`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc0c0d3c6ba15fdd9b7515ad21492750a9d9b9ebc731b80e5d78620364883c11
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=df25d3a7a9044e7deae287f016acaed02e0d807bce76f9a4ce68038e35268a19
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-1`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e83da1cd413a70d70c1c5da63348916b1e40bfa9273469b1802ecbb00b9bac2a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=6fc67f3f923cb341e738ba5dd02ec8b973891cec85f0fb8c9ce124d07e13f161
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-10`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42afd78e72f6dd82921f0bcbb5994699891a4caed542bc1fd2c23def9c34fb18
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=оставляемы́й
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=f1aadb94969614f7d9244ed3d0dcb81df4a8fbcdac4d8ba102336f6dde9e29e1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-11`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68a2a8f7007f422d27af50e0230920c952c1d52cff6d0d87f07c6e9f748b2929
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Rejected reading: оставляемы́й
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=2c060f93e843bcb5137902166426b11a00a2fc4fa90e746c8635cf0e2df0677b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-12`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 55cdf6735251575cc823dfca216f2f7c4a63400e01fd3d38b7630f7c83cb5b03
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Which stress placement is admitted for the discuss present passive?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=c72073ab02ae63de1cb32faaf75cd12ce625935081070556a5a3ad7770743687
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-13`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50e81fba576646694cc3195bfdcfa315635d09052ef5db38ca36b682dc08acb8
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=the present passive of обсуждать
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=95329e87fc1ca2637f9a4c447724b8f0c776637f84566671c08bf301dfaaf59f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-14`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 398e4bd4656d725a34ee803d70eccd21ece1ed18090639d1571c4653f2b00102
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=обсужда́емый
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=7286184dd42d938241428f156de82595ed8855b02b524f3b73ceefa18c8664d2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-15`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9946093e0e3493056f89126965bacfff3650944a64b8ecc49165fab761124034
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Admitted reading: обсужда́емый
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=1c9d1dfc0455a21eaab1569dc31ffdf9afe2edc00d4cb3e644a29b8cb44175f0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-16`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7defc5e45a9200e5b9c7ccec05ac8b2903a480ddb89fb04398ff3952d934096c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=обсуждаемы́й
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=fd7651048acb2aa7f8392dc2d616a8ce3669f78e176b8805b9f864d861ad3912
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-17`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc4493251049fd38fc02a4692936bdd10bab08a81017190ba64e48f68cb2db67
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Rejected reading: обсуждаемы́й
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=d844f0b82f225fe9747213268742327162dd861917cf28d81de39e942d062d51
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-18`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d1d705dcd3837d0da566c8eeb19b7132463e9dcb9169eab39f0f08403c27f09
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Which stress placement is admitted for the write past passive?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=a678dbe0abb58e3d8de4ae87b3b2b5b67f264a39096096b8e84eb61d63173754
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-19`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3948d4c5cf191b84b158c9fa7b4ea1f5c99915d9222a40d3d3304096561865c9
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=the past passive of написать
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=fbb44d26327b73150aefc829c3ed2e8f870f5f96cd22338e84f2882caef7b570
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-2`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b97afcbdc1c33bf39f1eb8c9bcc60968f033ee7e1e1f3fa7dbbc15138acc169b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=These four placements do not generate stress for an unlisted participle.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=cbaafd2df886179ba8bbd30c77c46f95c613e7ba39ebffd4c166083cbc7dc6c4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-20`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca3e2700ce2423fb9c0bd8d72f526f1c464f71de12f785bc0c32b26991f40366
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Admitted reading: напи́санный
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=5ebf15353fd7997c5f7495befd4a9780e552dd415996619870a024018405fe03
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-21`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4888a49b9b3b64206801dd4e672887a84cb32760fdf78ee56b57a0e168af5397
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=написа́нный
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=ec069fe69cb76c20b0c62ef0da6a7193066cd2095e8c698cef2998202f3941af
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-22`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 96e30c44c26855b9907dbd57556d8904d7f151d15d3b20e4fdc27dfae6e06e63
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Rejected reading: написа́нный
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=ca3df31c6fe410222a5da636fc618ef00c8f63b99f3ab80e67771e91d04d7b5a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-23`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db94df1cf7c5d6b35189aeb5563690fd01bf70708aaed2a7d181050128791594
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Which stress placement is admitted for the read past passive?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=45831f9f917722d8affecc8304337905d9eb62c0b05ea6555c6508e440dc02c6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-24`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5270254a92d4577446bfe0b73cba5af508bc3fdd97611cafd7172466490bc939
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=the past passive of прочитать
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=85eb5a230806f0ce5b1433ac5e38e9411bf6f4001b109e7ca690e1088a972352
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-25`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9d287efcbbc60e5e1e13fc6570feb2f904ba15cc9cd1d8215dbee40995ce3135
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=прочи́танный
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=fa8af5079671527f241f6ed5e15c596ee11ad2cfcbc6373e3e3d3df1b7b9bdd8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-26`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cdfba788c7169884da9346fa33706f78c68c00e8f1960c08978e6f6f7b94a671
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Admitted reading: прочи́танный
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=8cc1a5bf6b66b0f5a520fad8ebb3a3315f202e49e9528e3435f10a6a4f0211af
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-27`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 547dd4cc44897de7be8fcd0347035f48b012486c9bb6ca5d9455226e81c58c5b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=прочита́нный
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=6ea48e2c6c35c99d0176e8f46320b8c6ee2dea1bb6d324c411bea2adbf84e667
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-28`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4c6d70975c4f9f15709d2217213579a074f4366f7b8e3c13599ee04430f2f1a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Rejected reading: прочита́нный
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=fde75680c029b320a3ea187f6465bf2e5705ef3d6844cdb45a96c1134111c5fd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-29`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3e99587dfc5a7f93446506b7a169e3a2ed5f92c42f95235122919d6df4fc4e40
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Which English description states the limit of these four stress placements?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=b49fafc5a1adc1b3f7973f974625e70b369ceb366f7a06690b53674624943e15
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-3`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bcbbf90a51ab2f3b513743761226c74f9085bfc26921323aa8288452b367bc33
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Compare the admitted accent with the rejected accent on the same letters.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=77e1692ce42a3d5f93513122852093e004b1336f5c76417357b826a5cb359da5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-30`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 977be35b92c89257e381264f41e1071d8e9dcdb4ee86ba3325c331b57b17d33f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=an unlisted participle
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=10f23638f708f3e5f7953b81d4bc45a442818f1dca6b591b7db017bcbf784b09
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-31`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8180e92a86666e574ab268518fcbe3def238bf95b92044c209a69b44b0c6d58d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=no stress rule is admitted beyond these four
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=75ea8af2d86bfe1c866dfc6d4e0869a5fb0acde34adb88d5b71f81b1d3b72e65
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-32`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e39a369b61e267ee8eee8de0866b6234f570d35df6619e3b121aeec1837e0ce5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Admitted reading: no stress rule is admitted beyond these four
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=9bc21b724c4ac14d24b4f145a7a6e2f839f8b49efedc15a5b56edb5b6ca49afd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-33`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 105b1fde3dffd9d56d9662d8e9dce72b0351916d074f43b5a682f6203840311a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=these four placements generate every other participle
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=a89e264456ed087fcaea9c448608fc8bd6db98c494869c90e5fe27a1ae2ad074
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-34`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 86444e20b9b1118601caf89ea10196624cf43394e729bb455ccc794efcdf21b8
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Rejected reading: these four placements generate every other participle
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=7f085ffb41d881c5e9350d8747ab117d6d78a3e46c721b66becda3b162309a12
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-35`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 224acefa61006d089942c2e56646a3fde32564e00339dba82b85fe9d65e1326d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=оставлять
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=be346ab6ec5ce427362920c39cc57d8258a7ea4c22fb7a36e8bf7023b6d72d4c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-36`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1346d67ea89d3fc76f381c01fd6e020284c0c524adb1eea8e58b9dc36128bbce
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=обсуждать
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=cfb0df3d5aefe98fab8f2359d2716c02e6351161b57dc418a6365dbfa10ffd92
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-37`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd85854bd1a2e1b0bd1979c1745b3364fd411749e2390e415e43e385f578b337
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=написать
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=af8dc7198e87e1fd21187ecbfdc67d7b3aba122e02c4f85ebc810ce243b5f06a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-38`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69cb226d5fcb14520259646311eaa3539538f3f534120e9030e315889f1f606e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=прочитать
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=bbf63ed13d66b8cfe44a6f623de94deb350bbb807abafd0406840050dd17c01c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-4`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 558e9f57df89dd99212862428bbac21df603c8086b24a6539ec1b8804a1539f3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=оставля́емый
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=ffeb9e1b3af15a4256b166b14a67e123b5fbd3653a67d641935877bed8d5d45a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-5`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1adbd10ae1ffd1185ab351fe6bafaaca9fb6e3bdd3d0bee5c192f2e2789c34b9
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=admitted stress placement
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=52850e17a4861c29e06fc87b1c740007f17cc21ec7eddeafea7d1b11eeada3f2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-6`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bca44e0d965816841dd158a7804b61ce798c91528233caa3ad0e211c4e4792a4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=напи́санный
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=5fd33438bde38c7620ba2eb7af1c95c33a537236ef8571d62d8d732f63fa0d04
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-7`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: edb4827d178d18527f16154ec2aac50993f4c846a2693f3750e049f8819b62f3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Which stress placement is admitted for the leave-behind present passive?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=4f0602b3b6a6b2a3d9e99503cb45bbeb39caad7b173a26024c3aa5c17f33e505
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-8`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b3bf14972ef88caefd2b8afcc9f2ce089d620c04980d25c88404b91126aebe51
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=the present passive of оставлять
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=d76df25e7b4262f7c54716cc0e39c2c1e3b62fd7f09803a6a1374ff3f023b187
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u27-stress-9`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a57eb18e17c3f9f8f0eb27f013723234f7914bf480501e05ccf841b26a5b54e2
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+originalSourceText=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+shippedText=Admitted reading: оставля́емый
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+contentHash=910ed1c5453c1f903e61e6d278a08ee00b36c703b51b635c6110750ee02d6043
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u27-passive-rem`
 
 - Objectives: obj-u27-passive
@@ -2821,6 +8878,63 @@ text=Stressed participle headwords stay reference
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Four admitted stressed headwords stay on this card. Choosing a headword instead of its infinitive does not test stress.
 
+### SOURCE_CAPABILITY `cap-obj-u27-comprehension`
+
+- Objectives: obj-u27-comprehension
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: SOURCE_CAPABILITY
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f85b38f7dfc4def146e5120bec85a1699e8caba8c3ecd7172122173b04dcedac
+
+sourceId=src-original-research-synthesis
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-comprehension
+sourceHash=3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc
+supportedClaim=participle-comprehension
+exactSpan=Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Return to who wrote the letter and what Anna did after reading it.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter she had read
+Which English reading matches the letter that is on the table?
+Admitted reading: the letter Anna wrote is on the table
+Anna put the letter away
+the table wrote the letter
+Rejected reading: Anna put the letter away
+Rejected reading: the table wrote the letter
+Which English reading matches the person who produced the letter?
+написанное Анной
+Anna is the writer of the letter
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which English reading matches what Anna did with the letter afterward?
+Admitted reading: Anna put away the letter she had read
+Anna wrote the letter on the table
+the letter put Anna away
+Rejected reading: Anna wrote the letter on the table
+Rejected reading: the letter put Anna away
+Which English reading matches the state of the letter Anna put away?
+прочитанное письмо
+the letter had already been read
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Письмо,
+Письмо
+написанное Анной,
+лежит на столе.
+лежит на столе
+Анна убрала прочитанное письмо
+
 ### SOURCE_CAPABILITY `cap-obj-u27-passive`
 
 - Objectives: obj-u27-passive
@@ -2851,6 +8965,61 @@ Passive past participles are formed by means of the suffixes ''''-нн-'''' or '
 {| class="wikitable"
 | уби́ть ''(to kill)'' – уби́'''т'''ый (killed) / уби́'''т''' (short form)
 
+### SOURCE_CAPABILITY `cap-obj-u27-stress`
+
+- Objectives: obj-u27-stress
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: SOURCE_CAPABILITY
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 246cc3465ac0eea300e31773d0be8bb35ecc33adf1cdff798337387c10787cc5
+
+sourceId=src-original-research-synthesis
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:participle-stress
+sourceHash=e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7
+supportedClaim=participle-stress
+exactSpan=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+These four placements do not generate stress for an unlisted participle.
+Compare the admitted accent with the rejected accent on the same letters.
+оставля́емый
+admitted stress placement
+напи́санный
+Which stress placement is admitted for the leave-behind present passive?
+the present passive of оставлять
+Admitted reading: оставля́емый
+оставляемы́й
+Rejected reading: оставляемы́й
+Which stress placement is admitted for the discuss present passive?
+the present passive of обсуждать
+обсужда́емый
+Admitted reading: обсужда́емый
+обсуждаемы́й
+Rejected reading: обсуждаемы́й
+Which stress placement is admitted for the write past passive?
+the past passive of написать
+Admitted reading: напи́санный
+написа́нный
+Rejected reading: написа́нный
+Which stress placement is admitted for the read past passive?
+the past passive of прочитать
+прочи́танный
+Admitted reading: прочи́танный
+прочита́нный
+Rejected reading: прочита́нный
+Which English description states the limit of these four stress placements?
+an unlisted participle
+no stress rule is admitted beyond these four
+Admitted reading: no stress rule is admitted beyond these four
+these four placements generate every other participle
+Rejected reading: these four placements generate every other participle
+оставлять
+обсуждать
+написать
+прочитать
+
 ### SOURCE `src-wikipedia-russian-grammar-1369617627`
 
 - Objectives: none
@@ -2865,6 +9034,21 @@ Russian grammar
 CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 92eaa6f12bb405d916c9b9fc01fbc988620c90737878f13e1e61845a549d0bb5
+
+Independently authored research synthesis
+Original app text
+Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+Original research synthesis. Not a quotation of a third-party page.
 
 ### SOURCE `src-enwiktionary-ostavlyaemyj-74231596`
 
@@ -2953,6 +9137,20 @@ Original
 
 src-wikipedia-russian-grammar-1369617627
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 65ca0e4f268b6158cbfafc95d43b79c9894d018f538d27b8cf21e7000b24fbed
+
+src-original-research-synthesis
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-enwiktionary-ostavlyaemyj-74231596`
@@ -3052,12 +9250,30 @@ permitsAppUse=true
 - `obj-u27-present-passive` REMEDIATION `u27-st-rem-present-passive`
 - `obj-u27-book` INSTRUCTION `u27-st-book-work`
 - `obj-u27-book` INSTRUCTION `u27-st-book`
-- `obj-u27-comprehension` INSTRUCTION `u27-st-gap-comprehension`
+- `obj-u27-comprehension` INSTRUCTION `u27-comp-teach-1`
+- `obj-u27-comprehension` INSTRUCTION `u27-comp-teach-2`
+- `obj-u27-comprehension` EXAMPLE `ex-u27-comp-1`
+- `obj-u27-comprehension` EXAMPLE `ex-u27-comp-2`
+- `obj-u27-comprehension` PRACTICE `u27-comp-guided`
+- `obj-u27-comprehension` CHECK `u27-i-comp-1`
+- `obj-u27-comprehension` CHECK `u27-i-comp-2`
+- `obj-u27-comprehension` CHECK `u27-i-comp-3`
+- `obj-u27-comprehension` REMEDIATION `u27-comp-remediate`
 - `obj-u27-stress-reference` INSTRUCTION `u27-st-stress-reference`
 - `obj-u27-stress-reference` EXAMPLE `ex-u27-stress-ref-0`
 - `obj-u27-stress-reference` EXAMPLE `ex-u27-stress-ref-1`
 - `obj-u27-stress-reference` EXAMPLE `ex-u27-stress-ref-2`
 - `obj-u27-stress-reference` EXAMPLE `ex-u27-stress-ref-3`
+- `obj-u27-stress` INSTRUCTION `u27-stress-teach-1`
+- `obj-u27-stress` INSTRUCTION `u27-stress-teach-2`
+- `obj-u27-stress` EXAMPLE `ex-u27-stress-1`
+- `obj-u27-stress` EXAMPLE `ex-u27-stress-2`
+- `obj-u27-stress` PRACTICE `u27-stress-guided`
+- `obj-u27-stress` CHECK `u27-i-stress-1`
+- `obj-u27-stress` CHECK `u27-i-stress-2`
+- `obj-u27-stress` CHECK `u27-i-stress-3`
+- `obj-u27-stress` CHECK `u27-i-stress-4`
+- `obj-u27-stress` REMEDIATION `u27-stress-remediate`
 - `u27-s-orient` OBJECTIVE `obj-u27-passive`
 - `u27-s-orient` OBJECTIVE `obj-u27-present-passive`
 - `u27-s-orient` OBJECTIVE `obj-u27-book`
@@ -3094,13 +9310,40 @@ permitsAppUse=true
 - `u27-s-book` OBJECTIVE `obj-u27-book`
 - `u27-st-book-work` REFERENCE `ref-u2630-attribution`
 - `u27-s-gap-comprehension` OBJECTIVE `obj-u27-comprehension`
-- `u27-st-gap-comprehension` REFERENCE `ref-u2630-attribution`
+- `u27-comp-teach-1` EXAMPLE `ex-u27-comp-1`
+- `u27-comp-teach-1` EXAMPLE `ex-u27-comp-2`
+- `u27-comp-teach-1` REFERENCE `ref-u2630-attribution`
+- `u27-comp-guided` REMEDIATION `u27-comp-remediate`
+- `u27-comp-guided` ITEM `u27-g-comp-1`
+- `u27-comp-guided` REFERENCE `ref-u2630-attribution`
+- `u27-comp-teach-2` REFERENCE `ref-u2630-attribution`
+- `u27-comp-remediate` REFERENCE `ref-u2630-attribution`
+- `u27-comp-check` REMEDIATION `u27-comp-remediate`
+- `u27-comp-check` ITEM `u27-i-comp-1`
+- `u27-comp-check` ITEM `u27-i-comp-2`
+- `u27-comp-check` ITEM `u27-i-comp-3`
+- `u27-comp-check` REFERENCE `ref-u2630-attribution`
 - `u27-s-stress-reference` OBJECTIVE `obj-u27-stress-reference`
 - `u27-st-stress-reference` EXAMPLE `ex-u27-stress-ref-0`
 - `u27-st-stress-reference` EXAMPLE `ex-u27-stress-ref-1`
 - `u27-st-stress-reference` EXAMPLE `ex-u27-stress-ref-2`
 - `u27-st-stress-reference` EXAMPLE `ex-u27-stress-ref-3`
 - `u27-st-stress-reference` REFERENCE `ref-u2630-attribution`
+- `u27-s-stress` OBJECTIVE `obj-u27-stress`
+- `u27-stress-teach-1` EXAMPLE `ex-u27-stress-1`
+- `u27-stress-teach-1` EXAMPLE `ex-u27-stress-2`
+- `u27-stress-teach-1` REFERENCE `ref-u2630-attribution`
+- `u27-stress-guided` REMEDIATION `u27-stress-remediate`
+- `u27-stress-guided` ITEM `u27-g-stress-1`
+- `u27-stress-guided` REFERENCE `ref-u2630-attribution`
+- `u27-stress-teach-2` REFERENCE `ref-u2630-attribution`
+- `u27-stress-remediate` REFERENCE `ref-u2630-attribution`
+- `u27-stress-check` REMEDIATION `u27-stress-remediate`
+- `u27-stress-check` ITEM `u27-i-stress-1`
+- `u27-stress-check` ITEM `u27-i-stress-2`
+- `u27-stress-check` ITEM `u27-i-stress-3`
+- `u27-stress-check` ITEM `u27-i-stress-4`
+- `u27-stress-check` REFERENCE `ref-u2630-attribution`
 - `obj-u27-passive` PROVENANCE `prov-ex-u27-passive-0-en`
 - `obj-u27-passive` PROVENANCE `prov-ex-u27-passive-0-ru`
 - `obj-u27-passive` PROVENANCE `prov-ex-u27-passive-1-en`
@@ -3123,12 +9366,94 @@ permitsAppUse=true
 - `obj-u27-stress-reference` PROVENANCE `prov-ex-u27-stress-ref-2-ru`
 - `obj-u27-stress-reference` PROVENANCE `prov-ex-u27-stress-ref-3-en`
 - `obj-u27-stress-reference` PROVENANCE `prov-ex-u27-stress-ref-3-ru`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-0`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-1`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-10`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-11`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-12`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-13`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-14`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-15`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-16`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-17`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-18`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-19`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-2`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-20`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-21`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-22`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-23`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-24`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-25`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-26`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-27`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-28`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-29`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-3`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-30`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-31`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-32`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-33`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-34`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-35`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-36`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-37`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-38`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-39`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-4`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-40`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-5`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-6`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-7`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-8`
+- `obj-u27-comprehension` PROVENANCE `prov-obj-u27-comprehension-9`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-0`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-1`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-10`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-11`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-12`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-13`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-14`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-15`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-16`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-17`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-18`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-19`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-2`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-20`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-21`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-22`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-23`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-24`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-25`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-26`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-27`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-28`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-29`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-3`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-30`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-31`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-32`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-33`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-34`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-35`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-36`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-37`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-38`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-4`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-5`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-6`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-7`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-8`
+- `obj-u27-stress` PROVENANCE `prov-obj-u27-stress-9`
 - `obj-u27-passive` PROVENANCE `prov-u27-passive-rem`
 - `obj-u27-present-passive` PROVENANCE `prov-u27-present-passive-rem`
 - `obj-u27-present-passive` PROVENANCE `prov-u27-present-passive-x-0`
 - `obj-u27-present-passive` PROVENANCE `prov-u27-present-passive-x-1`
 - `obj-u27-present-passive` PROVENANCE `prov-u27-present-passive-x-2`
+- `obj-u27-comprehension` SOURCE_CAPABILITY `cap-obj-u27-comprehension`
 - `obj-u27-passive` SOURCE_CAPABILITY `cap-obj-u27-passive`
+- `obj-u27-stress` SOURCE_CAPABILITY `cap-obj-u27-stress`
 
 ## Book-directed experiences
 
@@ -3139,10 +9464,11 @@ permitsAppUse=true
 ## Unsupported-capability register
 
 - `cap-obj-u27-passive` supports `passive-participle` for `obj-u27-passive`
+- `cap-obj-u27-stress` supports `participle-stress` for `obj-u27-stress`
+- `cap-obj-u27-comprehension` supports `participle-comprehension` for `obj-u27-comprehension`
 
 Guidance objectives stay unsupported until an admitted frozen capability exists:
 
-- `obj-u27-comprehension` Comprehension passages stay in the copy you own
 - `obj-u27-stress-reference` Stressed participle headwords stay reference
 
 ## Book-directed register
@@ -3150,7 +9476,6 @@ Guidance objectives stay unsupported until an admitted frozen capability exists:
 - `u27-st-orient` Open Lesson 27 in the copy you own. The app records do not replace that lesson.
 - `u27-st-book-work` Open Lesson 27 in your copy and complete its lesson work.
 - `u27-st-book` Self-attest only after the Lesson 27 work in your copy.
-- `u27-st-gap-comprehension` Comprehension passages have no admitted frozen span.
 
 ## Optional non-gating register
 
@@ -3159,7 +9484,8 @@ Guidance objectives stay unsupported until an admitted frozen capability exists:
 
 ## Unavailable experiences
 
-- `u27-st-gap-comprehension`
+None.
+
 
 ## Unresolved relationships
 

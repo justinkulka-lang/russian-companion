@@ -58,6 +58,12 @@ class Units35SourceIntakeTest {
             assertTrue(record.itemId, record.sourceId in admitted)
             if (record.sourceId.startsWith("src-readyrussian-")) {
                 assertTrue(record.itemId, record.sourceUrl.contains("readyrussian.org"))
+            } else if (record.sourceId == "src-original-research-synthesis") {
+                assertEquals(
+                    record.itemId,
+                    "urn:russian-companion:original-research-synthesis:${record.sourceRevision}",
+                    record.sourceUrl,
+                )
             } else if (record.unitNumber in 26..30) {
                 assertTrue(record.itemId, record.sourceUrl.contains("oldid=${record.sourceRevision}"))
             }

@@ -4,8 +4,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `cf68212c7a25d687bd280f78fca64f80f94fdabf33adf0f69cc588b18c94f40b`  
-**Repository source digest:** `bdd02b25fda8fa2f29a81445288687f3166c35fa9c26904aa730dda7cf21fbf9`  
+**Pack content-review digest:** `dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f`  
+**Repository source digest:** `099dda9028db84c4f526380425e79abc144d27084057d9b319df2d0a9eae1aac`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -16,9 +16,9 @@ PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` was merged into the Batch
 
 ## Executive result
 
-- Content blockers: **4 units** — Units 26, 27, 29, and 30.
+- Content blockers: **3 units** — Units 27, 29, and 30. Unit 26 is content-complete and review-pending. Its advancement can presently succeed. The inactive variances on Units 27, 29, and 30 remain separately blocking.
 - Batch E inspected only Units 7, 17, 23, 24, and 25. Batch E excluded only the six inspected Russian Wikipedia revisions. Those exclusions do not establish that the five capabilities are impossible to source from a different licensed project. Units 26–30 were not modified.
-- Units 7, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, and 28: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed for a learner who finishes the required checks. Linguistic review and owned-edition mapping remain pending and unsigned. Unit 7 binds `bounded-manner-adverb-formation` on `obj-u7-adverb-paradigm` as original research synthesis. The two admitted pairs, invariance, and suffix recognition do not clear a universal adverb paradigm. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21 and 22 are review-pending development curriculum and are not approved. Unit 23 keeps the admitted elapsed-time duration span and binds `completion-over-period` on `obj-u23-completion` as original research synthesis. Pressbooks duration stays `elapsed-time-duration` and does not clear completion over a period. Unit 24 admits `negation-scope` only from the ReadyRussian Language Generator 3 statement that the modifier negates the following word, together with that page's minimal placement contrast. The Wikipedia word-order pair does not clear the claim. Unit 25 binds `documented-name-form` on `obj-u25-documented-name-form` as original research synthesis. Familiar, short, affectionate, and diminutive forms stay conventional and socially marked. Classification of the retained name forms does not prove productive generation, and `productive-diminutive` is not a required claim. Unit 26 admits letter structure, the Russian/English organizational difference, the stranger-address limit, and exact neutral correspondence fragments, and stays `NOT_PREPARED` because `postal-address` is unresolved. Unit 27 keeps four stressed headwords as reference and does not admit `participle-stress`. It stays `NOT_PREPARED` because `participle-stress` and `participle-comprehension` are unresolved and the authority variance is unactivated. Unit 28 admits a short public-domain verbal-adverb reading. Unit 29 admits `participle-punctuation` and still lacks a general bookish-register claim and a bookish reading. Unit 30 does not admit `dictionary-use`. Field-label recall is not practical dictionary use. It admits the ReadyRussian Reading 5 story and stays `NOT_PREPARED` because `dictionary-use` is unresolved and the authority variance is unactivated.
+- Units 7, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, and 28: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed for a learner who finishes the required checks. Linguistic review and owned-edition mapping remain pending and unsigned. Unit 7 binds `bounded-manner-adverb-formation` on `obj-u7-adverb-paradigm` as original research synthesis. The two admitted pairs, invariance, and suffix recognition do not clear a universal adverb paradigm. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21 and 22 are review-pending development curriculum and are not approved. Unit 23 keeps the admitted elapsed-time duration span and binds `completion-over-period` on `obj-u23-completion` as original research synthesis. Pressbooks duration stays `elapsed-time-duration` and does not clear completion over a period. Unit 24 admits `negation-scope` only from the ReadyRussian Language Generator 3 statement that the modifier negates the following word, together with that page's minimal placement contrast. The Wikipedia word-order pair does not clear the claim. Unit 25 binds `documented-name-form` on `obj-u25-documented-name-form` as original research synthesis. Familiar, short, affectionate, and diminutive forms stay conventional and socially marked. Classification of the retained name forms does not prove productive generation, and `productive-diminutive` is not a required claim. Unit 26 admits letter structure, the Russian/English organizational difference, the stranger-address limit, and exact neutral correspondence fragments. Phase 3 binds `postal-address` on `obj-u26-postal-address` as original research synthesis for the home-delivery order used in this lesson: recipient, premises, city, then the six-digit postcode. Letter-writing and correspondence-work do not clear that claim. Unit 26 is `CONTENT_COMPLETE_REVIEW_PENDING`. Unit 27 keeps four stressed headwords as reference and binds `participle-stress` on `obj-u27-stress` to those four accent placements only. A different accent on the same letters is rejected, and the four placements do not generate stress for an unlisted participle. `participle-comprehension` is a separate original passage on `obj-u27-comprehension`. Stress recognition does not clear comprehension. Unit 27 stays `NOT_PREPARED` because the authority variance is unactivated. Unit 28 admits a short public-domain verbal-adverb reading. Unit 29 admits `participle-punctuation`. Phase 3 binds `bookish-register` on `obj-u29-register` to one original adverbial-versus-finite pair, and `bookish-reading` on `obj-u29-reading` to a separate passage. Register classification does not clear the reading, and the pair is not a universal stylistic rule. Unit 29 stays `NOT_PREPARED` because the authority variance is unactivated. Unit 30 binds `dictionary-use` on `obj-u30-dictionary` as interpretation of the admitted table-noun and standing-verb senses. A short label, a row of forms, or the ReadyRussian Reading 5 story does not clear that claim. `capstone-reading` stays the Reading 5 story. Unit 30 stays `NOT_PREPARED` because the authority variance is unactivated.
 - Qualified linguistic review: **all 30 units**.
 - Owned-edition mapping review: **all 30 units**.
 - Licensed-asset blockers: **Units 1–2**.
@@ -70,11 +70,11 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 23 | Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 24 | Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 25 | Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 26 | Indefinite pronouns, word order, and letter writing | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
-| 27 | Participles: types and stress | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | PROPOSED_NOT_ACTIVATED | YES | Close documented source-supported curriculum gaps, then regenerate review materials; separately activate or reject the proposed variance |
+| 26 | Indefinite pronouns, word order, and letter writing | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
+| 27 | Participles: types and stress | NOT_PREPARED | NO | RECORDED_NOT_PREPARED | NONE | PROPOSED_NOT_ACTIVATED | YES | Qualified linguistic review and owned-edition mapping; the authority variance stays PROPOSED_NOT_ACTIVATED |
 | 28 | Verbal adverbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 29 | Bookish style, active participles, punctuation, and short-form adjectives | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | PROPOSED_NOT_ACTIVATED | YES | Close documented source-supported curriculum gaps, then regenerate review materials; separately activate or reject the proposed variance |
-| 30 | Abbreviations, names of Russian letters, and particles | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY | NONE | PROPOSED_NOT_ACTIVATED | YES | Close documented source-supported curriculum gaps, then regenerate review materials; separately activate or reject the proposed variance |
+| 29 | Bookish style, active participles, punctuation, and short-form adjectives | NOT_PREPARED | NO | RECORDED_NOT_PREPARED | NONE | PROPOSED_NOT_ACTIVATED | YES | Qualified linguistic review and owned-edition mapping; the authority variance stays PROPOSED_NOT_ACTIVATED |
+| 30 | Abbreviations, names of Russian letters, and particles | NOT_PREPARED | NO | RECORDED_NOT_PREPARED | NONE | PROPOSED_NOT_ACTIVATED | YES | Qualified linguistic review and owned-edition mapping; the authority variance stays PROPOSED_NOT_ACTIVATED |
 
 ## Source-research queue
 
@@ -146,51 +146,27 @@ Batch E did not turn the listed personal-name forms into a productive rule. Russ
 
 ### Unit 26 — Indefinite pronouns, word order, and letter writing
 
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
+Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `YES`.
 
 `indefinite-pronoun` is admitted from Russian Wikipedia oldid 149963314 under the Russian Wikipedia copyrights page oldid 154562152. The frozen span states the three series meanings, one form from each series, and the overlap of the -то series with the -нибудь meaning. An inventory of forms does not clear the claim. The admitted span does not clear postal practice, letter writing, or correspondence work. `letter-writing` is admitted only from ReadyRussian Phrasebook 12, HTML sha256 `aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218`, under the ReadyRussian CC BY-SA 4.0 route. The checks apply the stated organizational difference, the stranger-address limit, and the element that follows the body. Greeting or gloss recognition alone does not clear the claim. `correspondence-work` stays at the exact neutral fragments that page supplies. The malformed gloss and the religious or context-specific closings are excluded. Those spans do not clear `postal-address`. The Wikibooks address sample remains bounded recognition only. Sender’s address and date as a letter-structure element does not clear `postal-address`.
 
 #### `postal-address` — `obj-u26-postal-address`
 
-- **Required claim/skill:** Complete modern Russian postal-address formatting beyond isolated address marks.
-- **Why the current record is insufficient:** Frozen address marks are not a complete modern postal-address procedure.
-- **Required source:** Current frozen, license-compatible authoritative postal guidance with ordered components and examples; retain jurisdiction/date context.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may explain fields only as the source states them.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+Phase 3 binds this claim as original research synthesis, source `src-original-research-synthesis`, revision `phase3-2026-09-30`, record `phase3:postal-address`, dated 2026-09-30. The governed home-delivery organization names the recipient, then the premises, then the locality, then the applicable district, oblast, krai, or republic, then the country, then the postcode. A federal city does not add a separate oblast line. An apartment or office number is included only when the premises has one. A post-office box is used only when that box is the delivery point, and it is not required on a street address. Recipient, premises, city, and postcode alone are not the complete order. A greeting is outside the address. Memorizing one sample line is not application. The bibliography records the Universal Postal Union addressing manual for the Russian Federation, English edition, and the Russian Post address-writing instructions, both consulted 2026-09-30. Review status stays `IMPLEMENTED_PENDING_FINAL_AUDIT`. The claim does not block content completeness. Qualified review and the owned-edition mapping remain unsigned.
 
 ### Unit 27 — Participles: types and stress
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-Four stressed headwords remain as reference on exact English Wiktionary revisions: оставля́емый oldid 74231596, обсужда́емый oldid 74233962, напи́санный oldid 74228228, and прочи́танный oldid 74232159, under the English Wiktionary copyrights route oldid 87545419. Choosing a headword instead of its infinitive can be answered from category alone. The retained wikitext does not supply a lawful wrong-stress distractor, so `participle-stress` stays unresolved. Those forms do not clear `participle-comprehension`. The authority variance stays unactivated.
+Four stressed headwords remain as reference on exact English Wiktionary revisions: оставля́емый oldid 74231596, обсужда́емый oldid 74233962, напи́санный oldid 74228228, and прочи́танный oldid 74232159, under the English Wiktionary copyrights route oldid 87545419. Choosing a headword instead of its infinitive does not clear `participle-stress`. The content claims are implemented and do not themselves block readiness. The authority variance stays `PROPOSED_NOT_ACTIVATED` and keeps the unit `NOT_PREPARED`.
 
 #### `participle-stress` — `obj-u27-stress`
 
-- **Required claim/skill:** Discrimination of the source-marked stress on the admitted participle forms.
-- **Why the current record is insufficient:** Headword-versus-infinitive selection does not require the stress distinction. The frozen entries do not provide a second stress placement that can be used as a lawful distractor.
-- **Required source:** Frozen licensed forms that mark the stress contrast and support checks a learner cannot answer from part of speech alone.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may name only the source-marked stress fact.
-- **Book-directed disposition:** The four headwords remain reference material.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** PROPOSED_NOT_ACTIVATED
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition. The variance stays inactive until separately activated.
+Phase 3 binds this claim as original research synthesis, revision `phase3-2026-09-30`, record `phase3:participle-stress`. Only the four retained accent placements are admitted. The independent checks choose the admitted accent against a different accent on the same letters for обсужда́емый, напи́санный, and прочи́танный. An unlisted participle has no admitted stress rule. Seeing an accent mark does not clear the claim. Review status stays `IMPLEMENTED_PENDING_FINAL_AUDIT`. The claim does not clear `participle-comprehension`.
 
 #### `participle-comprehension` — `obj-u27-comprehension`
 
-- **Required claim/skill:** A short licensed comprehension passage using only the admitted passive-participle scope, or an explicit decision that this remains book-directed.
-- **Why the current record is insufficient:** Existing form lines do not supply a passage.
-- **Required source:** A short frozen text licensed for redistribution, with provenance and reviewable questions whose answers are explicit in the text; no Penguin passage.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may author questions if answers are explicit and no new Russian is introduced.
-- **Book-directed disposition:** Book-directed is allowed if no appropriate redistributable passage is admitted.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** PROPOSED_NOT_ACTIVATED
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+Phase 3 binds this claim as original research synthesis, revision `phase3-2026-09-30`, record `phase3:participle-comprehension`. The passage is independently authored. The checks read who wrote the letter and what Anna did after reading it. Isolated form recognition and stress recognition do not clear the claim. Review status stays `IMPLEMENTED_PENDING_FINAL_AUDIT`.
 
 ### Unit 28 — Verbal adverbs
 
@@ -202,49 +178,25 @@ The frozen English Wikipedia “Russian grammar” oldid 1369617627 states that 
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-`participle-punctuation` is admitted from Russian Wikipedia oldid 153078996 under the Russian Wikipedia copyrights page oldid 154562152. The frozen span states that a participial phrase is often set off, the after-noun commas, the before-noun default, both source examples, the end-of-sentence comma, and the personal-pronoun and cause exceptions. It does not authorize universal comma insertion. The admitted span does not clear `bookish-register` or `bookish-reading`. The inactive authority variance stays unactivated.
+`participle-punctuation` is admitted from Russian Wikipedia oldid 153078996 under the Russian Wikipedia copyrights page oldid 154562152. The frozen span states that a participial phrase is often set off, the after-noun commas, the before-noun default, both source examples, the end-of-sentence comma, and the personal-pronoun and cause exceptions. It does not authorize universal comma insertion. The admitted span does not clear `bookish-register` or `bookish-reading`. The content claims are implemented. The inactive authority variance stays `PROPOSED_NOT_ACTIVATED` and keeps the unit `NOT_PREPARED`.
 
 #### `bookish-register` — `obj-u29-register`
 
-- **Required claim/skill:** A narrowly stated register claim for the target forms, not a claim about all bookish text.
-- **Why the current record is insufficient:** The admitted adverbial note applies only to adverbial forms and cannot support a general claim.
-- **Required source:** Frozen licensed linguistic guidance explicitly stating the limited register relationship and scope.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English must preserve the source's limitations.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** PROPOSED_NOT_ACTIVATED
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+Phase 3 binds this claim as original research synthesis, revision `phase3-2026-09-30`, record `phase3:bookish-register`. In the admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option. A passive participle, text that is merely on paper, or a different sentence does not extend the pair. The pair is not a universal stylistic rule. The English Wikipedia adverbial note, oldid 1369617627, is bibliography and is not the governed span. Review status stays `IMPLEMENTED_PENDING_FINAL_AUDIT`. The claim does not clear `bookish-reading`.
 
 #### `bookish-reading` — `obj-u29-reading`
 
-- **Required claim/skill:** A licensed reading appropriate to the admitted active-participle/short-adjective scope.
-- **Why the current record is insufficient:** The admitted note is not a reading.
-- **Required source:** A frozen redistributable passage with explicit provenance and text-bound checks; no Penguin reading.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English questions may be independently authored only from explicit passage facts.
-- **Book-directed disposition:** Book-directed is allowed if no lawful passage is admitted.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** PROPOSED_NOT_ACTIVATED
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+Phase 3 binds this claim as original research synthesis, revision `phase3-2026-09-30`, record `phase3:bookish-reading`. The passage is independently authored. The checks read what Anna finished, where she went, and what she sent. Register classification does not clear the reading. Review status stays `IMPLEMENTED_PENDING_FINAL_AUDIT`.
 
 ### Unit 30 — Abbreviations, names of Russian letters, and particles
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-Russian Wiktionary layout, abbreviation, and entry pages were inspected and excluded. Russian Wiktionary has no freezeable project copyright page with an immutable revision, and the English Wiktionary copyrights route cannot be reused for another project. English Wiktionary “Wiktionary:Russian entry guidelines” oldid 92541199 remains frozen under the English Wiktionary copyrights route oldid 87545419. Asking which field label contains a shown form is source layout. It does not establish practical `dictionary-use`, so that claim stays unresolved. `capstone-reading` is admitted only from the exact ReadyRussian Reading 5 story and its source-supplied vocabulary, HTML sha256 `6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d`, under the ReadyRussian CC BY-SA 4.0 route. Linked audio is not admitted. One reading does not demonstrate every earlier grammatical objective.
+Russian Wiktionary layout, abbreviation, and entry pages were inspected and excluded. Russian Wiktionary has no freezeable project copyright page with an immutable revision, and the English Wiktionary copyrights route cannot be reused for another project. English Wiktionary “Wiktionary:Russian entry guidelines” oldid 92541199 remains frozen under the English Wiktionary copyrights route oldid 87545419. Asking which field label contains a shown form is source layout and does not clear `dictionary-use`. `capstone-reading` is admitted only from the exact ReadyRussian Reading 5 story and its source-supplied vocabulary, HTML sha256 `6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d`, under the ReadyRussian CC BY-SA 4.0 route. Linked audio is not admitted. One reading does not demonstrate every earlier grammatical objective and does not clear `dictionary-use`. The content claim is implemented. The inactive authority variance stays `PROPOSED_NOT_ACTIVATED` and keeps the unit `NOT_PREPARED`.
 
 #### `dictionary-use` — `obj-u30-dictionary`
 
-- **Required claim/skill:** A practical lookup that uses a retained dictionary entry.
-- **Why the current record is insufficient:** The guidelines page names fields. Choosing the field label that holds a shown form is layout recall, which does not establish dictionary use.
-- **Required source:** A frozen licensed entry and instruction that support a lookup the learner cannot answer from the field label alone.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may name only source-stated fields and lookup steps.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** PROPOSED_NOT_ACTIVATED
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition. The variance stays inactive until separately activated.
+Phase 3 binds this claim as original research synthesis, revision `phase3-2026-09-30`, record `phase3:dictionary-use`. The learner reads a governed entry for стол and for стоять. Each entry shows the headword, the part of speech, governed forms, a sense, and an example. Independent checks resolve an inflected form or an example to the sense in that same entry. An isolated headword translation, a part-of-speech label, and a row of forms do not clear the claim. No Wiktionary oldid is invented for those two entries. Review status stays `IMPLEMENTED_PENDING_FINAL_AUDIT`. The claim does not clear `capstone-reading`.
 
 Russian Wikipedia “Морфология русского языка” oldid 148939075, under the separate Russian Wikipedia copyrights page oldid 154562152, is already frozen for Units 21–25. Two spans from that same revision are now admitted for Unit 30 only. Letter abbreviations and vowel-final sound abbreviations are grouped together, with СНГ, ЭВМ, ГАИ, and гороно, while a consonant-final sound abbreviation is shown both ways as в МИД and в МИДе. The command examples Пусть он читает and Да будет мир! are separated from the supposition forms читал бы and читали бы. Those spans clear `abbreviation` and `particle` as bounded recognition. They do not state a complete abbreviation system or a particle inventory. The СССР/США glosses and the address marks do not clear `abbreviation`. The class list that only names бы, пусть, and да does not clear `particle`. Unit 30 stays `NOT_PREPARED`. The inactive authority variance stays unactivated.
 
@@ -300,7 +252,7 @@ Every unit also needs owned-edition mapping review: owned-copy verification, ISB
 2. **Asset research:** licensed letter/pronunciation audio for Units 1–2 and verified handwriting assets for Unit 2.
 3. **Remaining Batch A research:** Unit 7 `bounded-manner-adverb-formation` is original research synthesis on `obj-u7-adverb-paradigm` and remains `IMPLEMENTED_PENDING_FINAL_AUDIT`. It does not admit a universal adverb paradigm. Unit 17 `productive-clock-time` is admitted from ReadyRussian Grammar 20 and remains review-pending. Unit 19 probability-dolzhen is admitted as review-pending development curriculum. Calendar-date stays admitted. Units 16, 18, and 20 research requests stay closed.
 4. **Curriculum research batch B:** Units 21 and 22 are review-pending. Unit 23 `completion-over-period` is original research synthesis on `obj-u23-completion` and remains `IMPLEMENTED_PENDING_FINAL_AUDIT`. Elapsed-time duration stays the Pressbooks span and does not clear that claim. Unit 24 `negation-scope` is admitted inside its frozen span and remains review-pending. Unit 25 `documented-name-form` is original research synthesis on `obj-u25-documented-name-form` and remains `IMPLEMENTED_PENDING_FINAL_AUDIT`. Classification does not prove productive generation.
-5. **Curriculum research batch C:** Unit 23 elapsed time stays admitted on the Pressbooks duration span and does not clear completion over a period. Unit 26 admits letter writing and correspondence work and stays `NOT_PREPARED` on `postal-address`. Unit 27 admits form-level stress and stays `NOT_PREPARED` on `participle-comprehension`. Unit 28 admits the short verbal-adverb reading. Unit 29 admits `participle-punctuation` and still lacks a general bookish-register claim and a bookish reading. Unit 30 admits dictionary-field recognition and the capstone story and stays `NOT_PREPARED` because the authority variance is unactivated.
+5. **Curriculum research batch C:** Unit 23 elapsed time stays admitted on the Pressbooks duration span and does not clear completion over a period. Unit 26 admits letter writing and correspondence work; `postal-address` is original research synthesis on `obj-u26-postal-address` and remains `IMPLEMENTED_PENDING_FINAL_AUDIT`, so Unit 26 is `CONTENT_COMPLETE_REVIEW_PENDING`. Unit 27 admits form-level stress; `participle-stress` and `participle-comprehension` are original research synthesis and remain `IMPLEMENTED_PENDING_FINAL_AUDIT`. Unit 28 admits the short verbal-adverb reading. Unit 29 admits `participle-punctuation`; `bookish-register` and `bookish-reading` are original research synthesis and remain `IMPLEMENTED_PENDING_FINAL_AUDIT`. Unit 30 admits dictionary-field recognition and the capstone story; `dictionary-use` is original research synthesis and remains `IMPLEMENTED_PENDING_FINAL_AUDIT`. Units 27, 29, and 30 stay `NOT_PREPARED` because their authority variances remain `PROPOSED_NOT_ACTIVATED`.
 6. **Curriculum research batch D:** The frozen word-order pair is bounded sentence recognition and does not clear `negation-scope`. Units 7, 23, and 25 are `CONTENT_COMPLETE_REVIEW_PENDING` on the Phase 2 bounded claims and stay `IMPLEMENTED_PENDING_FINAL_AUDIT`. Public release stays **NOT_APPROVED**.
 7. Keep Unit 23's unsigned packet bound to the instructional chain. Do not sign it in this dossier. Do not delete the completion-over-period mapping scope to clear readiness.
 8. Activate, reject, or revise the Units 27/29/30 variance through a separate owner/reviewer decision.

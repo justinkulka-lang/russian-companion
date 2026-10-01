@@ -316,8 +316,8 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("cf68212c7a25d687bd280f78fca64f80f94fdabf33adf0f69cc588b18c94f40b", model.packContentReviewDigest)
-        assertEquals("bdd02b25fda8fa2f29a81445288687f3166c35fa9c26904aa730dda7cf21fbf9", model.repositorySourceDigest)
+        assertEquals("dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f", model.packContentReviewDigest)
+        assertEquals("099dda9028db84c4f526380425e79abc144d27084057d9b319df2d0a9eae1aac", model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
         assertEquals("NOT_APPROVED", candidate?.publicRelease)
@@ -339,11 +339,11 @@ class BatchECapabilityResearchTest {
             23 to "c46606f18f1b6c044a48934370c8ff82e32a4fe900164a779d846d7937855151",
             24 to "497c9978cd3a89159732f7c4b53a09d0923d98bbaa01f61722a769d1a808f74c",
             25 to "4f7acdd8f55829490434d73308921fb4d63da86f6792ec65623720c2dfc89957",
-            26 to "bdaa9683a34b35717a7f4ab3f5d00f7e8a221d96eb6f718acbf2a0f4c6b36bc8",
-            27 to "e6805db24810cc3cc64061f70cd32a8b15b885611f7a0c29150009f461e795fc",
+            26 to "042693573ae94ddc31e1c68c625d854f8495934fbf1d39cd800684afcb078b06",
+            27 to "b43404505a7bc8bc72a34d2af039d5695d1e919cdc309643ecc7c835cfd99db0",
             28 to "afa29cbd6d710bcb853d74189d012584660996b25270af78c3d23efe35cf1cc5",
-            29 to "2172a1e97507bdfd0f4f7164ae3c2c6fb6784dc9b68490a4a3638acfa0fa210e",
-            30 to "60c27cc8efdb7e4ba36ca665be5f45b5106302ddc736e0db0465a733f653d33e",
+            29 to "bb8645fa3be7f3ac9b7cc7a7d61d551843975f8deccb419a3ad529416c3fb0e3",
+            30 to "ed3a589a8d91e48c49675840118ca2951ad752f9784b0c8eeb21a74f66285187",
         )
         val mapping = mapOf(
             7 to "20298ccd10fadcd359b2fa73bebf0e7309772c6c78ffbc71730225664717b28c",
@@ -363,11 +363,11 @@ class BatchECapabilityResearchTest {
             23 to "515d2cee4e4f94608f65abfced30231b63a6fb8e81d8041626477a6adcaefc4f",
             24 to "4929cddc00703ecea1926cc8dac0567672acf1625e8c3e89c05f470a182ea985",
             25 to "9749ae35ee3e5119f06b5577ebd8d25bd4348ced9bbc38caebb21d5cdea807fe",
-            26 to "d99147f1bea12fbfb65c63aaecb8d38d2daf3334910b9e8e0446dde17e457bc6",
-            27 to "7003b4f3ba9ac586b50e9aa58567f38fe48618cae93011507b94bf04630a186e",
-            28 to "583b7e92bc1ac96942135e9043e712b62bd8779d47413f5d381f49d4493ad86a",
-            29 to "86e9ba8a37f170dd314ec3f6bc37c8721286f3fede39073dabbb47008b6b4744",
-            30 to "0c36f3d2130a93b5302f07d7228694d29dc424635dc6ae7258bf0b4ec9222f03",
+            26 to "ad931323c760a74d2789d7b24f5a939b972d8458111f753ac9aad0503d773f7b",
+            27 to "0c0eb62fdb9de00a01a9d7619073b019663a973bc07bc154f4eccc82e6123027",
+            28 to "8406743a325899e4ea4cc704ca6118e5aa013714d770022020f6ccf5a9102bf8",
+            29 to "d20523bea22f67b888c1a58bae41d0f55bd106afb1f4f9ca9dd909dde647ca80",
+            30 to "aaf68e5dfe3a32021f3e0d8ab006fa68754bb8072c0d06fae9ec096be10914a1",
         )
         (content.keys).forEach { number ->
             val row = model.units.single { it.unitNumber == number }
@@ -379,15 +379,16 @@ class BatchECapabilityResearchTest {
         assertTrue(candidateText.contains("0bd4dbf5a24738b9ff9bb7e782a1370021ea59b065c9e764c556f16c1e0784b4"))
         assertTrue(candidateText.contains("7a24899055474d1d7913213b0af1dedade528d4015cd1faef35c0f71d4e8c37e"))
         assertEquals(
-            "postal-address",
+            "NONE",
             model.units.single { it.unitNumber == 26 }.unresolvedRequiredSourceCapabilities,
         )
         assertEquals(
-            "bookish-register, bookish-reading",
+            "NONE",
             model.units.single { it.unitNumber == 29 }.unresolvedRequiredSourceCapabilities,
         )
-        assertEquals("NOT_PREPARED", model.units.single { it.unitNumber == 26 }.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", model.units.single { it.unitNumber == 26 }.readiness)
         assertEquals("NOT_PREPARED", model.units.single { it.unitNumber == 29 }.readiness)
+        assertEquals("PROPOSED_NOT_ACTIVATED", model.units.single { it.unitNumber == 29 }.authorityVarianceBlocker)
     }
 
     private fun probe(unitNumber: Int, objectiveId: String, claim: String, span: String) = V2SourceCapability(

@@ -11,12 +11,12 @@ Unit 30 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 3
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
-- Unit content-review SHA-256: 60c27cc8efdb7e4ba36ca665be5f45b5106302ddc736e0db0465a733f653d33e
+- Curriculum source commit: 345448c16f326114ccb2f6738c75fb4206798cae
+- Unit content-review SHA-256: ed3a589a8d91e48c49675840118ca2951ad752f9784b0c8eeb21a74f66285187
 - Mapping-package SHA-256: e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367
-- Pack content-review SHA-256: cf68212c7a25d687bd280f78fca64f80f94fdabf33adf0f69cc588b18c94f40b
-- Review-package SHA-256: 0c36f3d2130a93b5302f07d7228694d29dc424635dc6ae7258bf0b4ec9222f03
-- Repository source SHA-256: bdd02b25fda8fa2f29a81445288687f3166c35fa9c26904aa730dda7cf21fbf9
+- Pack content-review SHA-256: dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f
+- Review-package SHA-256: aaf68e5dfe3a32021f3e0d8ab006fa68754bb8072c0d06fae9ec096be10914a1
+- Repository source SHA-256: 099dda9028db84c4f526380425e79abc144d27084057d9b319df2d0a9eae1aac
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 30.
 
 ### UNIT `unit-30`
 
-- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-capstone, obj-u30-book
-- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-capstone, u30-s-book
+- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-capstone, obj-u30-book, obj-u30-dictionary
+- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-capstone, u30-s-book, u30-s-dictionary
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c7caf0a4114a06d901a414eb2cc1e9e291c7130a0f5799fbe49738f1cb6fc5ff
+- Content hash: d19f23bc5a95f6d2f3ef7e70b63f7f7030cf570d9e19ca2de59a4ab2f716cca9
 
 number=30
 title=Abbreviations, names of Russian letters, and particles
@@ -237,6 +237,25 @@ examples=
 practice=
 checks=
 remediation=
+
+### OBJECTIVE `obj-u30-dictionary`
+
+- Objectives: obj-u30-dictionary
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fd68c3d7129efbcf562e5f62fedd0ef7aad9c83f7b1b0628e8fcd1bab05a6c51
+
+title=Use the governed dictionary entry
+kind=RECOGNITION
+unitNumber=30
+instruction=u30-dictionary-teach-1,u30-dictionary-teach-2
+examples=ex-u30-dictionary-1,ex-u30-dictionary-2
+practice=u30-dictionary-guided
+checks=u30-i-dictionary-1,u30-i-dictionary-2,u30-i-dictionary-3,u30-i-dictionary-4,u30-i-dictionary-5
+remediation=u30-dictionary-remediate
 
 ### SESSION `u30-s-orient`
 
@@ -1172,6 +1191,139 @@ bookDirection=Self-attest only after the Lesson 30 work in your copy.
 companionDirection=
 remediationStepId=
 
+### SESSION `u30-s-dictionary`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c58f0c6cac10436a1da0b533d98b4b6b64f1b92e24b4cb5951fb6a02a3ebc1c0
+
+title=Use the governed dictionary entry
+estimatedMinutes=10
+objectives=obj-u30-dictionary
+steps=u30-dictionary-teach-1,u30-dictionary-guided,u30-dictionary-teach-2,u30-dictionary-remediate,u30-dictionary-check
+
+### STEP `u30-dictionary-teach-1`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 830ae7071480fe3ace244ab610bbd970dc08c25c648787e8ec37c1c05800d659
+
+kind=TEACH
+title=Admitted instruction
+body=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u30-dictionary-1,ex-u30-dictionary-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-dictionary-guided`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6595ae6c2fe7be309b2f444945fc2ff0825cfbbb0f4ba2d93cf0a8f277a34573
+
+kind=GUIDED
+title=Guided practice
+body=Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u30-g-dictionary-1
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u30-dictionary-remediate
+
+### STEP `u30-dictionary-teach-2`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 11284693b4b09fafab3fc2b2596cffc749cee55221bc1fc615085dcf63cae96c
+
+kind=TEACH
+title=Admitted instruction
+body=Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-dictionary-remediate`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 92f92404d6495029ae6e67cf895e922e344c8301d7903b0c38b7c7711db48766
+
+kind=REMEDIATE
+title=Remediation
+body=Return to the sense that the same entry gives for the inflected form.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-dictionary-check`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 04cb1cd1e17c3e6c8e9013f0a5a03f6d9b7eccf38199d93c38cbe6374b170c6a
+
+kind=CHECK
+title=Independent checks
+body=The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=u30-i-dictionary-1,u30-i-dictionary-2,u30-i-dictionary-3,u30-i-dictionary-4,u30-i-dictionary-5
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u30-dictionary-remediate
+
 ### EXAMPLE `ex-u30-letter-names-0`
 
 - Objectives: obj-u30-letter-names
@@ -1495,6 +1647,48 @@ note=все расхохота́лись
 objectiveId=obj-u30-capstone
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u30-dictionary-1`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 619be54d16aeba227d17a4d1f1c923769b8cd4fc3fe01272c05540cccd09b144
+
+kind=LEXICAL
+letterId=
+display=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+note=a piece of furniture with a flat top
+objectiveId=obj-u30-dictionary
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u30-dictionary-2`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42d17ad2d5e66f7921c0af38768d092e128b41c98dbc8a199ef047e87b5f8e20
+
+kind=LEXICAL
+letterId=
+display=Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+note=remaining upright on a base
+objectiveId=obj-u30-dictionary
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### GUIDED_PRACTICE `u30-g-letter-names-0`
 
 - Objectives: obj-u30-letter-names
@@ -1704,6 +1898,41 @@ contrastMembers=нёс де́вочку | несла́ большу́ю ку́к
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u30-capstone-x-1 | prov-ex-u30-capstone-0-ru | prov-ex-u30-capstone-1-ru
 responseKind=RUSSIAN_PHRASE
+
+### GUIDED_PRACTICE `u30-g-dictionary-1`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa848cab1a4cf44f5778bd223e95edac6981d29f86a59754b4cfb49c267a278e
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English sense does the governed entry give for this inflected furniture form?
+promptLetter=столом
+options=this inflected form has the sense a piece of furniture with a flat top | this inflected form has the sense remaining upright on a base | a part-of-speech label does not state the furniture sense
+answer=this inflected form has the sense a piece of furniture with a flat top
+feedback=Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+objectiveId=obj-u30-dictionary
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: this inflected form has the sense remaining upright on a base | Rejected reading: a part-of-speech label does not state the furniture sense
+testedFeature=ENTRY_GUIDED_FORM_TO_SENSE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-g-dictionary-1
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-obj-u30-dictionary-7
+distractorSourceIds= | prov-obj-u30-dictionary-9 | prov-obj-u30-dictionary-11
+distractorDifference= | Rejected reading: this inflected form has the sense remaining upright on a base | Rejected reading: a part-of-speech label does not state the furniture sense
+whyAnswerDemonstratesObjective=Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+contrastMembers=this inflected form has the sense a piece of furniture with a flat top | this inflected form has the sense remaining upright on a base | a part-of-speech label does not state the furniture sense
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u30-dictionary-6 | prov-obj-u30-dictionary-7 | prov-obj-u30-dictionary-9 | prov-obj-u30-dictionary-11
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u30-i-letter-names-1`
 
@@ -2125,15 +2354,190 @@ relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u30-capstone-1-ru | prov-ex-u30-capstone-0-ru | prov-ex-u30-capstone-1-en
 responseKind=RUSSIAN_PHRASE
 
+### INDEPENDENT_CHECK `u30-i-dictionary-1`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 002011b1ce9fe01900274abf6befec2b8ee447ad76bda500c3015b81b140d23b
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English sense does the governed entry give for the inflected form in this phrase?
+promptLetter=на столе
+options=a piece of furniture with a flat top | remaining upright on a base | a part-of-speech label does not state the furniture sense
+answer=a piece of furniture with a flat top
+feedback=Admitted reading: a piece of furniture with a flat top
+objectiveId=obj-u30-dictionary
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: remaining upright on a base | Rejected reading: a part-of-speech label does not state the furniture sense
+testedFeature=ENTRY_FORM_TO_SENSE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-i-dictionary-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u30-dictionary-15
+distractorSourceIds= | prov-obj-u30-dictionary-17 | prov-obj-u30-dictionary-11
+distractorDifference= | Rejected reading: remaining upright on a base | Rejected reading: a part-of-speech label does not state the furniture sense
+whyAnswerDemonstratesObjective=Admitted reading: a piece of furniture with a flat top
+contrastMembers=a piece of furniture with a flat top | remaining upright on a base | a part-of-speech label does not state the furniture sense
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u30-dictionary-14 | prov-obj-u30-dictionary-15 | prov-obj-u30-dictionary-17 | prov-obj-u30-dictionary-11
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u30-i-dictionary-2`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a8e84c7f673a1445e8e52cdd07f3e1da9174f5bf0d0eaa10bee2b47ea3c8dc8f
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English sense does the governed entry give for this inflected standing form?
+promptLetter=стоит
+options=remaining upright on a base | a piece of furniture with a flat top | a part-of-speech label does not state the furniture sense
+answer=remaining upright on a base
+feedback=Admitted reading: remaining upright on a base
+objectiveId=obj-u30-dictionary
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: a piece of furniture with a flat top | Rejected reading: a part-of-speech label does not state the furniture sense
+testedFeature=ENTRY_VERB_FORM_TO_SENSE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-i-dictionary-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u30-dictionary-17
+distractorSourceIds= | prov-obj-u30-dictionary-15 | prov-obj-u30-dictionary-11
+distractorDifference= | Rejected reading: a piece of furniture with a flat top | Rejected reading: a part-of-speech label does not state the furniture sense
+whyAnswerDemonstratesObjective=Admitted reading: remaining upright on a base
+contrastMembers=remaining upright on a base | a piece of furniture with a flat top | a part-of-speech label does not state the furniture sense
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u30-dictionary-20 | prov-obj-u30-dictionary-17 | prov-obj-u30-dictionary-15 | prov-obj-u30-dictionary-11
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u30-i-dictionary-3`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 947fb3be2f76db3efeef50c3ed0dfe1983411bfcdc6962b9ea6b6f26268b8049
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English sense does the governed entry give for this example sentence?
+promptLetter=Книга лежит на столе.
+options=the example uses a piece of furniture with a flat top | the example uses remaining upright on a base | the example uses a part-of-speech label instead of a sense
+answer=the example uses a piece of furniture with a flat top
+feedback=Admitted reading: the example uses a piece of furniture with a flat top
+objectiveId=obj-u30-dictionary
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the example uses remaining upright on a base | Rejected reading: the example uses a part-of-speech label instead of a sense
+testedFeature=ENTRY_EXAMPLE_TO_SENSE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-i-dictionary-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u30-dictionary-25
+distractorSourceIds= | prov-obj-u30-dictionary-27 | prov-obj-u30-dictionary-29
+distractorDifference= | Rejected reading: the example uses remaining upright on a base | Rejected reading: the example uses a part-of-speech label instead of a sense
+whyAnswerDemonstratesObjective=Admitted reading: the example uses a piece of furniture with a flat top
+contrastMembers=the example uses a piece of furniture with a flat top | the example uses remaining upright on a base | the example uses a part-of-speech label instead of a sense
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u30-dictionary-24 | prov-obj-u30-dictionary-25 | prov-obj-u30-dictionary-27 | prov-obj-u30-dictionary-29
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u30-i-dictionary-4`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea7554206018f26ae632814d1278651ae66e6cd17a43dd6838a469d2a053cf89
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English reading follows when only a part-of-speech label is shown?
+promptLetter=сущ.
+options=a part-of-speech label does not state the furniture sense | a piece of furniture with a flat top | remaining upright on a base
+answer=a part-of-speech label does not state the furniture sense
+feedback=Admitted reading: a part-of-speech label does not state the furniture sense
+objectiveId=obj-u30-dictionary
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: a piece of furniture with a flat top | Rejected reading: remaining upright on a base
+testedFeature=POS_LABEL_INSUFFICIENT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-i-dictionary-4
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u30-dictionary-11
+distractorSourceIds= | prov-obj-u30-dictionary-15 | prov-obj-u30-dictionary-17
+distractorDifference= | Rejected reading: a piece of furniture with a flat top | Rejected reading: remaining upright on a base
+whyAnswerDemonstratesObjective=Admitted reading: a part-of-speech label does not state the furniture sense
+contrastMembers=a part-of-speech label does not state the furniture sense | a piece of furniture with a flat top | remaining upright on a base
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u30-dictionary-32 | prov-obj-u30-dictionary-11 | prov-obj-u30-dictionary-15 | prov-obj-u30-dictionary-17
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u30-i-dictionary-5`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff7db6ad0fb359d6301c1dde78f376e53fb77a6b6dc82e819414c539177f9c81
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English reading follows when only a row of forms is shown?
+promptLetter=стол, стола, столу, столом, столе
+options=a row of forms does not state the furniture sense | a piece of furniture with a flat top | remaining upright on a base
+answer=a row of forms does not state the furniture sense
+feedback=Admitted reading: a row of forms does not state the furniture sense
+objectiveId=obj-u30-dictionary
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: a piece of furniture with a flat top | Rejected reading: remaining upright on a base
+testedFeature=FORMS_ROW_INSUFFICIENT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-i-dictionary-5
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u30-dictionary-36
+distractorSourceIds= | prov-obj-u30-dictionary-15 | prov-obj-u30-dictionary-17
+distractorDifference= | Rejected reading: a piece of furniture with a flat top | Rejected reading: remaining upright on a base
+whyAnswerDemonstratesObjective=Admitted reading: a row of forms does not state the furniture sense
+contrastMembers=a row of forms does not state the furniture sense | a piece of furniture with a flat top | remaining upright on a base
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u30-dictionary-35 | prov-obj-u30-dictionary-36 | prov-obj-u30-dictionary-15 | prov-obj-u30-dictionary-17
+responseKind=ENGLISH_CLASSIFICATION
+
 ### REFERENCE `ref-u2630-attribution`
 
 - Objectives: none
-- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-capstone, u30-s-book
+- Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-capstone, u30-s-book, u30-s-dictionary
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 403d8f11b741dcf9fcde07e00363f6ab6361efdcaa8dd124a98c401df9aac067
+- Content hash: 7017a5bfcd97b1e46fc4353f1a0458d886cd9bd3e4c5f8ba6b6fb7c1965a50c1
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
@@ -3545,6 +3949,5166 @@ attribution=Участники русской Википедии, CC BY-SA 4.0, 
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd
 contentHash=904257c6db602b31224634cf365cc326ca419e042130ddd66fcb0aea5cc77e2e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-0`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4019e403633281e57e2675ef86b7b7a4891a237eaeb9d8fc2666c17f6d2e4793
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=1ea1830bd198790ceb740bf2cdceed3c356309cf254ad448d938b5bfc33dd534
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-1`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 095c5f78c29a427fe7d62194a7dcc9f0e00b4ef472218732271133a4c71d4824
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=9d357e5de001e2fa07df8421fa8378f453a65d0e8b73ef102f466a6f845b3639
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-10`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cf26977b629aaddb59c4276af1966edf5953017a5bce39895fabcb9c82110bcb
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Rejected reading: this inflected form has the sense remaining upright on a base
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=c237e1bc14ad7ee6c15189a20c5b910122be712a75a8b09ef38831396e9615fc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-11`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c314b02daf5e37caeea3705dca76d7d67e4d03e45e52cedd32d7d59972001760
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=a part-of-speech label does not state the furniture sense
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=f8d55cdcf72ee69131ab16fc6100df8ec9aaf803a855119c47e8fd819db6ca4f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-12`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c93d2651c15b5da32b6c4a175347ce4e840bb4a208ad51ba20c59d72c654d34
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Rejected reading: a part-of-speech label does not state the furniture sense
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=7c526db64a3b37f1e96211fe08dd351b86c571db91c038afcbdd055fb50f295f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-13`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 387b85e83808dab9ff51adcd6eb4fc62064d0f102cbf7a9d85c521e2fdfa6205
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Which English sense does the governed entry give for the inflected form in this phrase?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=8062fcb1912fa099e40e44b1b5a7c620c4e101e376ae2adb3bbdb65f91efc1cc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-14`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ecf7d7776daf9e78f74e6bff02fac960af59d81036789172f2b8bc09e54f948
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=на столе
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=c74ccb2acb4179b1548e202810f6b08d47480a9561d388233b5cf14bd29926c7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-15`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: abaadd6ee3e779f1302731fd1026f4664e1e8d4d1f033c1ac8c9c5cd09c6f3b9
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=a piece of furniture with a flat top
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=e748820b49683c49bffa724f460d06ef8d961d07e1331e1c68be6c1e434c720a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-16`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1b2394daa3c071a5b2070c81c9c68cd63ade701013e82cc29ec78c95c1fe98b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Admitted reading: a piece of furniture with a flat top
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=26168d62937453436d0493756ec7484ef6205e06eccf98365fb370745fcf8470
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-17`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54e2ba4c365f2296cc3174aa6599175ca11b696f09e31b46310022fb009361ef
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=remaining upright on a base
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=b76defc7efb9baedf14bcb74f76e8a0e5a0d8d5f9b34bac563cffabae2f29d24
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-18`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fed9844318183215824ad07551df7c0a0f1126ab689badc0e85ac089c6cee345
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Rejected reading: remaining upright on a base
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=e0bd17579ceb7dc0c3a648e6c19ef4b753a72664ebab276d3384950afa40e538
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-19`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa0527ca7d597df4dc0f386d0ee75f8ca74a95a47895ffc38425bfb1a5013f65
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Which English sense does the governed entry give for this inflected standing form?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=3cd2900eeb8ba50c523e36743faba9c9c88a2000d4e0a1088ab651bf0b7ceffe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-2`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f04465f09da831374071c7a436b32657792de725a12a254734f871339099abf6
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=f6be3981fa80b64d06a74badf5565b900a3113629968ad49a17b0f7a1ca10b51
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-20`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 27d1de75f2d326180541ecf20a6ef2fc7967e1384db3be8d64c7c874ed0cb997
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=стоит
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=39e127737ccee60d12e6e2c06f34004276d6f3cdf4717798744739cd26d9673f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-21`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5bae63346b74224c8d3e385de7d3adb5903ebc3c199484df2145f81e927085ce
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Admitted reading: remaining upright on a base
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=c2466a389fe0559f55a40586bc05cad4f4650dd6b484fc71b696e2504816cc00
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-22`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f941476694d49add02d480ca11907e90ce067c7e2a85a78b993c7ec406de4b12
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Rejected reading: a piece of furniture with a flat top
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=311f3e21c854a7350ac12ae20b46e59cefd5dfa67b39088944df47240663c615
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-23`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2cc1cf6d9b2701e2cef11a164d33ba4406e3ccc146631b7959672dae489c0396
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Which English sense does the governed entry give for this example sentence?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=3c83bf71d1cb5439af2f0b7a3ba60105bec9d27f9a086c46b37e27f1ef000162
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-24`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 463dbfd7ea8c9a1703ba0d33608ceeff9683e0360f91facfd5ee0d430a49fc3d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Книга лежит на столе.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=9f13baa7f1905a0a54dce5fde3e85905a86033a88009ac2533eb154468cdc628
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-25`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45566cd6e64f300fb8e131c47a3f6d6406401d5b3173915c650d02d4d812bf2e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=the example uses a piece of furniture with a flat top
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=1176bc5e6ed2b993b03f0d42eeea8cf737ce991957e7c8736cd21f9232a512c5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-26`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a1fc503d696941703bc6716fec8a67e2a8cde2c716b30cdb2a7cd5a6ef90fef
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Admitted reading: the example uses a piece of furniture with a flat top
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=2a65fcc62ff8f5de5622afd75c569d639297c82a8d3159f0b5c0cc6e3516ef7b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-27`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ffb526f5a5b13a9791a35120a6d41a356da2712f8eac1dc8d3fd818287f4bdbf
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=the example uses remaining upright on a base
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=89a001cefb26776095d0aadb750ae889338521c8f2bd1cc392765ce48da58b82
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-28`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bbb2c4500653273cd7c9c667b848f4b3de1f029a60b587d9e4d2e20367bba4e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Rejected reading: the example uses remaining upright on a base
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=fe627c7d13b248e3c72193f641145f77c5322402cb91b269735d5616cdbd6c6e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-29`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: df9f09645d0d61a7da8d8806bb5609c0ae4281ff3d25cd6dd6c19cb937213914
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=the example uses a part-of-speech label instead of a sense
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=5b6a2dd0728fc4572d3b8e367bc8e4192e8c79608d6134eed7f1fd79714d9223
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-3`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3efdb920ff06c5f4719e4f4e696129f176a054a7b46ec896139daaf2d6a90f32
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=a88d0bf0ac9f67a9ffa564a231ad0bebc152d69bd9baaf6798f7a3b09878a615
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-30`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb7e87c28611554a57bbafd23ed100ee45dd502de2a1823441b329ca7bf1af3e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Rejected reading: the example uses a part-of-speech label instead of a sense
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=917e924ddc8bb18a36fbf5555c50c0ec349bec61134b67467cb6bb093f134b5b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-31`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61727c09d24223c80508b6fe4df0889526a9ad882d94fd9634fea0d4b0a7b6e5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Which English reading follows when only a part-of-speech label is shown?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=c8126711303088d152d2e1b1cb5d87aa9561668189067aea377f18e4e7fb3aab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-32`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0e9d2c839956bf5bc3fc8b197477b0ba5a307b595ad81d4a7d0f1328dd3f537
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=сущ.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=b3670c8a0f666eeed99155ffac7c8be61aa6e2b8fd3d63597b2859c4d3336d03
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-33`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3e229286d20e0f17508a56991e7a9eefa2b9354e2e5f3806815ff76a874fba5d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Admitted reading: a part-of-speech label does not state the furniture sense
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=8e90dc8dd467d1f20ea53cd55dd2e663d528a43b4bb214707180db1285e13ff8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-34`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2563e25e5cea62ea38b43070e53dae8daab7db66c38efb66ffbac6bfd9df17f3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Which English reading follows when only a row of forms is shown?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=89cc92ca09eaa8d04323e9854d358f5ecc6c048f8616cafd92dc331021573254
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-35`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bdfcdd316ec1f3a37bb8ae54bfbe2acf3fb1c713e08b7a40da5c9625ee71451
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=стол, стола, столу, столом, столе
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=22c87e5d6994fff8a704f2bdbdcf2b149fec33b49cf76f256a125cd17c6b6bf8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-36`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6c5b256f3d15222d8a7e3da72e15388300bc4ba06b52f2425001a18bccd2957
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=a row of forms does not state the furniture sense
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=53f4d0f9f0a8af0fb98d6876b6997f559b741f0adb7b32c35538ba6d4b3047fb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-37`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 76ae184258ffc84190b5cab8a2b3d67dc88a8304cc24afffaaf150562d13d46a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Admitted reading: a row of forms does not state the furniture sense
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=c37f16b39bb3afdf87f7dcec50389188ab69cf9a668705f24f29a70314cb0a33
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-38`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c2ff6e738f103ed1f38d41376a44968d6b4ac89105fe1369c915aa743c73c0e8
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=стол
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=129dde4ecad0c02e88fb74a179b08337e5ac02fcfb4146ed681c12f8baa6d532
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-39`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 083b3ab1097f26e37048dcded826244daa464f52ec136e8ac764b6dd30cf30e4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=стол,
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=293c229a7412b3ee8f715c1c0d4239a7350ff98d823b48a4d9f0be8f5a11beec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-4`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78be14ca426bf2cdf915ed704d52c54cba6fd67eb9c5e33111525abd81ab79e0
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Return to the sense that the same entry gives for the inflected form.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=2f415273188f9ba24cd78403fbe55a360843d70b738388889a923cb7b8fdffcd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-40`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1ccacfc97a585ab43b21b8062142f971d997d8746f295f80d7e6276af90945c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=стола,
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=8d45717983361200ba0962f9235236decd81384c6ff14d9b64f1e3fd55260967
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-41`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 79b8e87a2f089cc56d86ee8f77461209b11673516c87a12a1700f980e3f60219
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=стола
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=36f109624dfd6a159cae1f90c3d33654883eef7167da45225adc21f5ec81b649
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-42`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a9d4a74463b6238e5cc89dd153ff215f4c741116984b3e128c82ff23d3f90f0
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=столу,
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=c166c4918190e22abf085b4f0483481da018eb498cda137d301b0b878149171c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-43`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc97b2685f01ccdb2c35b5c6723b90a631274e8d0f7d9037a97ebf5c068ee29b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=столу
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=2235c325b6ea8a98a47bc2cf70cb49e31f8d85b9a40cc3d4d0a1288bc35251c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-44`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17f2df275e5e34824fc5ab5a0ffd3275a9ab85178db1089aee83ae331889eee8
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=столом,
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=b4116ec7d8290cb5da10f119e78a1ed8efbe4dea32cba860fc7766f43f0489bd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-45`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e0592d373905ebfe1f0cd57bb0b2d97332881ac2efe26f0083ad838f8463feb6
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=столе
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=5b85bc31f282dd3a37534b8204d9714d56cfba60dbcc560460fdd68fca816ddb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-46`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b2eab42aa6cd4e8ed17cfb4cade280faf6ec824bd0c3fd91a35f4925817c6f8
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Книга лежит на столе
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=d837fc45ed82c32c989e66b41e6a1831c8a6749d6c7f7d5ab275c733f7f51232
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-47`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f402f956f39c1655cafd2f2bde4a736a1a2f02c634cad749c3b00ea40f6dd709
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=стоять
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=3c65c3306332ebd1a15af1f177f46e3542563b715c1fd96bfcefc4a6c760f304
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-48`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50fff0157697d20ffa0406049fff33e2f655d2f3fa61aa484859d85754fcb219
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=стоять,
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=360d45889a2f241705d24403f43df366173a62e24c9d5756dd7857199c1a3513
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-49`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73b7544d8408600658e9f924a3d0e1bcefe35c96ea242ef7f6ba53a457f3158e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=стою,
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=31d12a8d91c9f2dea971aaacf4ec0203938b3a382e86c85c8f714edd46dd400c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-5`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c50fb333077244487bd44683c1cab0ff5a0007a404cebf66fe77c96cd077958e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Which English sense does the governed entry give for this inflected furniture form?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=50712f0dbe0b4bad05d245ff7d81a915fab9cfaf77e5a6a8535a715c7cbdf8c0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-50`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 069c74e3d606c4cb7c2dfc65812e545b95fd24db4c33d28cf4d859a6720081c5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=стою
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=7d86f728aa6ee2cb9f5ec4ff77e00df8ffce72f3f4b11b1ffef284b316d3e80c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-51`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 215ffc312ca54e0f7646d11530c8bbd1426f366d8d62f8eda44562489fe013fc
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=стоит,
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=d207f8448e0a6315557a59ef7fd05af204aa97c31219cb6f1edb647c8b263cbb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-52`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b60d5568a227beeb881839203e7bc7563aff51e6deb25b7602b3de0ae743ced5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=стоял
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=7c78c6d733d0d708837a28e6e9279b2f502bf8c8a7edb024ee32c06e09ad6a89
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-53`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0625ad36b38024f3e9646c5a6fdc950759043b16bf44fbdebff743f6dcf758b0
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Ваза стоит на столе.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=6cd5433605e389a037f72ffbf870cfa7100324d8993a01ea96c4859bf4a6ca73
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-54`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d022da4dbea45d009bf1873f7677a09b4c854a5b2e485bfe999d1da346a3d4f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Ваза стоит на столе
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=0a30c2ebbc90fccd1bbc463efc0b6819767be565226d095461d0612e2f8eeab3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-55`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 764892c535ac7559fb7b93e658c7f949c0f6434e2fef9f471f40a49c363c3e46
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=сущ
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=9f1883734dce60bfae881e8e2224aa4ce1fd826b290cdee8f057b65370e14e4c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-6`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da2d48f27233800ef1387672ed4d4e930ad2404d68ea7c93e45998c1e7916b9b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=столом
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=287628788e3645ed245768d3ebc2272c709cca196c331d8de08d24c443b65bc8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-7`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8ded7c5d4d9d452ab92371259bdb9b56cea61b32984c3b39711c8c3bdbba186
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=this inflected form has the sense a piece of furniture with a flat top
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=b424cef28e453030e41640c0b328a32b0eab9879fbd782dae49bae4bc18229ec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-8`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3cdc30a9e67f12976d3e57eaa8ad00471a228055c5c75d72d0bda7d6f576a9eb
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=6a93f13879b42376cf1d011bebc54434fc631ad7e8a0beb1f14df502a2f0732e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u30-dictionary-9`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 913737d96ee7151f159a0e704005e554fbd65b5f293c74077ecfa1808070000f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+originalSourceText=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+shippedText=this inflected form has the sense remaining upright on a base
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+contentHash=ee411363c8a8bf7c1bba8415b91dc74e4d235199d8d28be210187d687fb0953c
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5505,6 +11069,86 @@ sourceHash=01771aba0e8353e8fa771ecba0d074223056fa7710bfd15b8805ccad357079d8
 supportedClaim=capstone-reading
 exactSpan=Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала же́нщина. Она́ пла́кала и говори́ла, что в до́ме оста́лась двухле́тняя де́вочка. Пожа́рные посла́ли Бо́ба. Боб побежа́л по ле́стнице и скры́лся в ды́ме. Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку. Мать бро́силась к до́чери и пла́кала от ра́дости, что дочь была́ жива́. Пожа́рные ласка́ли соба́ку и осма́тривали её - не обгоре́ла ли она́; но Боб рвался опять в дом. Пожа́рные поду́мали, что в до́ме есть ещё что-нибу́дь живо́е, и пусти́ли его́. Соба́ка побежа́ла в дом и ско́ро вы́бежала с чем-то в зуба́х. Когда́ наро́д рассмотре́л то, что она́ несла́, то все расхохота́лись: она́ несла́ большу́ю ку́клу.
 
+### SOURCE_CAPABILITY `cap-obj-u30-dictionary`
+
+- Objectives: obj-u30-dictionary
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: SOURCE_CAPABILITY
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4c52f3ed07ebfa96a9ac57857d8ac27bd2e3874c78ebf47fca74820a27155296
+
+sourceId=src-original-research-synthesis
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:dictionary-use
+sourceHash=3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71
+supportedClaim=dictionary-use
+exactSpan=Headword стол
+Part of speech noun
+Forms стол, стола, столу, столом, столе
+Sense a piece of furniture with a flat top
+Example Книга лежит на столе.
+Headword стоять
+Part of speech verb
+Forms стоять, стою, стоит, стоял
+Sense remaining upright on a base
+Example Ваза стоит на столе.
+The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+Return to the sense that the same entry gives for the inflected form.
+Which English sense does the governed entry give for this inflected furniture form?
+столом
+this inflected form has the sense a piece of furniture with a flat top
+Admitted reading: this inflected form has the sense a piece of furniture with a flat top
+this inflected form has the sense remaining upright on a base
+Rejected reading: this inflected form has the sense remaining upright on a base
+a part-of-speech label does not state the furniture sense
+Rejected reading: a part-of-speech label does not state the furniture sense
+Which English sense does the governed entry give for the inflected form in this phrase?
+на столе
+a piece of furniture with a flat top
+Admitted reading: a piece of furniture with a flat top
+remaining upright on a base
+Rejected reading: remaining upright on a base
+Which English sense does the governed entry give for this inflected standing form?
+стоит
+Admitted reading: remaining upright on a base
+Rejected reading: a piece of furniture with a flat top
+Which English sense does the governed entry give for this example sentence?
+Книга лежит на столе.
+the example uses a piece of furniture with a flat top
+Admitted reading: the example uses a piece of furniture with a flat top
+the example uses remaining upright on a base
+Rejected reading: the example uses remaining upright on a base
+the example uses a part-of-speech label instead of a sense
+Rejected reading: the example uses a part-of-speech label instead of a sense
+Which English reading follows when only a part-of-speech label is shown?
+сущ.
+Admitted reading: a part-of-speech label does not state the furniture sense
+Which English reading follows when only a row of forms is shown?
+стол, стола, столу, столом, столе
+a row of forms does not state the furniture sense
+Admitted reading: a row of forms does not state the furniture sense
+стол
+стол,
+стола,
+стола
+столу,
+столу
+столом,
+столе
+Книга лежит на столе
+стоять
+стоять,
+стою,
+стою
+стоит,
+стоял
+Ваза стоит на столе.
+Ваза стоит на столе
+сущ
+
 ### SOURCE_CAPABILITY `cap-obj-u30-letter-names`
 
 - Objectives: obj-u30-letter-names
@@ -5631,6 +11275,21 @@ CC BY-SA 4.0
 ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Reading 5 — Пожарные собаки HTML sha256 6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 92eaa6f12bb405d916c9b9fc01fbc988620c90737878f13e1e61845a549d0bb5
+
+Independently authored research synthesis
+Original app text
+Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+Original research synthesis. Not a quotation of a third-party page.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -5716,6 +11375,20 @@ src-readyrussian-reading5
 CC BY-SA 4.0
 permitsAppUse=true
 
+### RIGHTS `rights-original-research-synthesis`
+
+- Objectives: none
+- Sessions: none
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 65ca0e4f268b6158cbfafc95d43b79c9894d018f538d27b8cf21e7000b24fbed
+
+src-original-research-synthesis
+Original app text
+permitsAppUse=true
+
 ### RIGHTS `rights-app-english-v2`
 
 - Objectives: none
@@ -5799,6 +11472,17 @@ permitsAppUse=true
 - `obj-u30-capstone` REMEDIATION `u30-st-rem-capstone`
 - `obj-u30-book` INSTRUCTION `u30-st-book-work`
 - `obj-u30-book` INSTRUCTION `u30-st-book`
+- `obj-u30-dictionary` INSTRUCTION `u30-dictionary-teach-1`
+- `obj-u30-dictionary` INSTRUCTION `u30-dictionary-teach-2`
+- `obj-u30-dictionary` EXAMPLE `ex-u30-dictionary-1`
+- `obj-u30-dictionary` EXAMPLE `ex-u30-dictionary-2`
+- `obj-u30-dictionary` PRACTICE `u30-dictionary-guided`
+- `obj-u30-dictionary` CHECK `u30-i-dictionary-1`
+- `obj-u30-dictionary` CHECK `u30-i-dictionary-2`
+- `obj-u30-dictionary` CHECK `u30-i-dictionary-3`
+- `obj-u30-dictionary` CHECK `u30-i-dictionary-4`
+- `obj-u30-dictionary` CHECK `u30-i-dictionary-5`
+- `obj-u30-dictionary` REMEDIATION `u30-dictionary-remediate`
 - `u30-s-orient` OBJECTIVE `obj-u30-letter-names`
 - `u30-s-orient` OBJECTIVE `obj-u30-abbrev-examples`
 - `u30-s-orient` OBJECTIVE `obj-u30-address-marks`
@@ -5892,6 +11576,22 @@ permitsAppUse=true
 - `u30-st-check-capstone` ITEM `u30-i-capstone-2`
 - `u30-s-book` OBJECTIVE `obj-u30-book`
 - `u30-st-book-work` REFERENCE `ref-u2630-attribution`
+- `u30-s-dictionary` OBJECTIVE `obj-u30-dictionary`
+- `u30-dictionary-teach-1` EXAMPLE `ex-u30-dictionary-1`
+- `u30-dictionary-teach-1` EXAMPLE `ex-u30-dictionary-2`
+- `u30-dictionary-teach-1` REFERENCE `ref-u2630-attribution`
+- `u30-dictionary-guided` REMEDIATION `u30-dictionary-remediate`
+- `u30-dictionary-guided` ITEM `u30-g-dictionary-1`
+- `u30-dictionary-guided` REFERENCE `ref-u2630-attribution`
+- `u30-dictionary-teach-2` REFERENCE `ref-u2630-attribution`
+- `u30-dictionary-remediate` REFERENCE `ref-u2630-attribution`
+- `u30-dictionary-check` REMEDIATION `u30-dictionary-remediate`
+- `u30-dictionary-check` ITEM `u30-i-dictionary-1`
+- `u30-dictionary-check` ITEM `u30-i-dictionary-2`
+- `u30-dictionary-check` ITEM `u30-i-dictionary-3`
+- `u30-dictionary-check` ITEM `u30-i-dictionary-4`
+- `u30-dictionary-check` ITEM `u30-i-dictionary-5`
+- `u30-dictionary-check` REFERENCE `ref-u2630-attribution`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-en`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-ru`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-1-en`
@@ -5936,6 +11636,62 @@ permitsAppUse=true
 - `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-2-ru`
 - `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-3-en`
 - `obj-u30-particle` PROVENANCE `prov-ex-u30-particle-3-ru`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-0`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-1`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-10`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-11`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-12`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-13`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-14`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-15`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-16`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-17`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-18`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-19`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-2`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-20`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-21`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-22`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-23`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-24`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-25`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-26`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-27`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-28`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-29`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-3`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-30`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-31`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-32`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-33`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-34`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-35`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-36`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-37`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-38`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-39`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-4`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-40`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-41`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-42`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-43`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-44`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-45`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-46`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-47`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-48`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-49`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-5`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-50`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-51`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-52`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-53`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-54`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-55`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-6`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-7`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-8`
+- `obj-u30-dictionary` PROVENANCE `prov-obj-u30-dictionary-9`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-u30-abbrev-examples-rem`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-u30-abbrev-examples-x-0`
 - `obj-u30-abbreviation` PROVENANCE `prov-u30-abbreviation-rem`
@@ -5955,6 +11711,7 @@ permitsAppUse=true
 - `obj-u30-particle` PROVENANCE `prov-u30-particle-rem`
 - `obj-u30-abbreviation` SOURCE_CAPABILITY `cap-obj-u30-abbreviation`
 - `obj-u30-capstone` SOURCE_CAPABILITY `cap-obj-u30-capstone`
+- `obj-u30-dictionary` SOURCE_CAPABILITY `cap-obj-u30-dictionary`
 - `obj-u30-letter-names` SOURCE_CAPABILITY `cap-obj-u30-letter-names`
 - `obj-u30-particle` SOURCE_CAPABILITY `cap-obj-u30-particle`
 
@@ -5970,6 +11727,7 @@ permitsAppUse=true
 - `cap-obj-u30-abbreviation` supports `abbreviation` for `obj-u30-abbreviation`
 - `cap-obj-u30-particle` supports `particle` for `obj-u30-particle`
 - `cap-obj-u30-capstone` supports `capstone-reading` for `obj-u30-capstone`
+- `cap-obj-u30-dictionary` supports `dictionary-use` for `obj-u30-dictionary`
 
 No guidance objective is recorded.
 

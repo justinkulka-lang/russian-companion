@@ -1192,6 +1192,11 @@ internal object V2Validator {
         if (phase2 != null && !Phase2Sources.matches(capability)) {
             errors += "Source capability ${capability.id} has no independent ${capability.supportedClaim} admission"
         }
+        val phase3 = Phase3Sources.admission(capability.supportedClaim)
+        if (phase3 != null && !Phase3Sources.matches(capability)) {
+            errors += "Source capability ${capability.id} has no independent ${capability.supportedClaim} admission"
+        }
+        errors += phase3CrossClaimErrors(capability)
         if (capability.supportedClaim == "adverb-invariance" && !BatchARemainingSources.admits(capability, BatchARemainingSources.ADMITTED_ADVERB_INVARIANCE, "adverb-invariance")) {
             errors += "Source capability ${capability.id} has no independent adverb-invariance admission"
         }
@@ -1279,6 +1284,9 @@ internal object V2Validator {
         if (phase2 != null && Phase2Sources.matches(capability)) {
             errors += phase2ChainDefects(pack, capability, spanHost, phase2)
         }
+        if (phase3 != null && Phase3Sources.matches(capability)) {
+            errors += phase3ChainDefects(pack, capability, spanHost, phase3)
+        }
         if (capability.supportedClaim == "productive-diminutive" &&
             !hasProductiveDiminutiveApplication(pack, capability, spanHost)
         ) {
@@ -1312,6 +1320,11 @@ internal object V2Validator {
             !hasPracticalDictionaryUse(pack, capability, spanHost)
         ) {
             errors += "Source capability ${capability.id} field-label recall does not clear dictionary-use"
+        }
+        if (capability.supportedClaim == "postal-address" &&
+            !hasCompletePostalOrganization(pack, capability, spanHost)
+        ) {
+            errors += "Source capability ${capability.id} incomplete address order does not clear postal-address"
         }
         if (capability.supportedClaim == "participle-stress" && capability.exactSpan == RemainingSources.PARTICIPLE_HOST_SPAN) {
             val joined = pack.provenanceRecords
@@ -1431,6 +1444,148 @@ internal object V2Validator {
         }
         if (claim == "documented-name-form") {
             errors += documentedNameFormCoherenceErrors(pack, id, synthesis, checks + practiceItems)
+        }
+        if (independent.any { item ->
+                SOURCE_LAYOUT_RECALL.containsMatchIn(item.prompt) ||
+                    SOURCE_SET_RECALL.containsMatchIn(item.prompt) ||
+                    LINE_LABEL_PROMPT.containsMatchIn(item.prompt)
+            }
+        ) {
+            errors += "Source capability $id label or source-layout recall does not clear $claim"
+        }
+        return errors
+    }
+
+    /**
+     * A paired claim or a resolved neighbor cannot be relabeled onto one of the six claims.
+     * These checks run before span-host alignment so a mismatched objective still names the neighbor.
+     */
+    private fun phase3CrossClaimErrors(capability: V2SourceCapability): List<String> {
+        if (Phase3Sources.matches(capability)) return emptyList()
+        val id = capability.id
+        val span = capability.exactSpan
+        val errors = mutableListOf<String>()
+        if (capability.supportedClaim == "postal-address" && span == RemainingSources.LETTER_SPAN) {
+            errors += "Source capability $id letter-writing evidence does not clear postal-address"
+        }
+        if (capability.supportedClaim == "postal-address" && span == RemainingSources.CORRESPONDENCE_SPAN) {
+            errors += "Source capability $id correspondence-work evidence does not clear postal-address"
+        }
+        if (capability.supportedClaim == "dictionary-use" && span == RemainingSources.CAPSTONE_SPAN) {
+            errors += "Source capability $id capstone-reading evidence does not clear dictionary-use"
+        }
+        if (capability.supportedClaim == "participle-stress" && capability.sourceRecordId == Phase3Sources.COMPREHENSION.recordId) {
+            errors += "Source capability $id participle-comprehension evidence does not clear participle-stress"
+        }
+        if (capability.supportedClaim == "participle-comprehension" && capability.sourceRecordId == Phase3Sources.STRESS.recordId) {
+            errors += "Source capability $id participle-stress evidence does not clear participle-comprehension"
+        }
+        if (capability.supportedClaim == "bookish-register" && capability.sourceRecordId == Phase3Sources.READING.recordId) {
+            errors += "Source capability $id bookish-reading evidence does not clear bookish-register"
+        }
+        if (capability.supportedClaim == "bookish-reading" && capability.sourceRecordId == Phase3Sources.REGISTER.recordId) {
+            errors += "Source capability $id bookish-register evidence does not clear bookish-reading"
+        }
+        return errors
+    }
+
+    /**
+     * The Phase 3 synthesis clears only its own stated applications.
+     * A paired claim, a cloned check, or generic feedback leaves the claim unresolved.
+     */
+    private fun phase3ChainDefects(
+        pack: V2CurriculumPack,
+        capability: V2SourceCapability,
+        spanHost: V2ProvenanceRecord,
+        admission: Phase3Sources.Admission,
+    ): List<String> {
+        val errors = mutableListOf<String>()
+        val id = capability.id
+        val claim = admission.claim
+        val synthesis = spanHost.synthesis
+        if (synthesis == null || synthesis.objectiveOrClaimBinding != admission.binding) {
+            errors += "Source capability $id synthesis binding does not match"
+        }
+        if (synthesis == null || synthesis.bibliography.isBlank() || synthesis.authorshipDeclaration.isBlank()) {
+            errors += "Source capability $id original synthesis evidence is incomplete"
+        }
+        if (synthesis == null || synthesis.sourceDateOrVersion != Phase3Sources.DATE) {
+            errors += "Source capability $id original synthesis date does not match"
+        }
+        val audit = synthesis?.finalAudit
+        if (audit != null && (audit.artifactIdentity.isNotBlank() || audit.disposition.isNotBlank())) {
+            errors += "Source capability $id records a final audit before the final audit"
+        }
+        if (synthesis == null || synthesis.applications.isEmpty()) {
+            errors += "Source capability $id has no stated applications"
+        } else {
+            synthesis.applications.forEach { application ->
+                val outside = application.cue !in spanHost.originalSourceText ||
+                    application.answer !in spanHost.originalSourceText ||
+                    application.distractors.any { it !in spanHost.originalSourceText }
+                if (outside) {
+                    errors += "Source capability $id stated application is outside the frozen span"
+                }
+            }
+        }
+        val unit = pack.units.firstOrNull { it.number == capability.unitNumber }
+        val objective = unit?.objectives?.firstOrNull { it.id == capability.objectiveId }
+        val instruction = objective?.instructionStepIds.orEmpty().mapNotNull { pack.step(it)?.second }
+        if (instruction.isEmpty() || instruction.any { it.body.isBlank() }) {
+            errors += "Source capability $id missing instruction"
+        }
+        val practiceItems = objective?.practiceStepIds.orEmpty().flatMap { stepId ->
+            pack.step(stepId)?.second?.itemIds.orEmpty()
+        }.mapNotNull { pack.item(it) }
+        if (objective == null || objective.practiceStepIds.isEmpty() || practiceItems.isEmpty()) {
+            errors += "Source capability $id missing guided practice"
+        }
+        val checks = objective?.checkItemIds.orEmpty().mapNotNull { pack.item(it) }
+        val independent = checks.filter { it.assessment?.independent == true }
+        if (independent.isEmpty()) {
+            errors += "Source capability $id missing independent check"
+        }
+        val features = independent.mapNotNull { it.assessment?.testedFeature }.toSet()
+        if (!features.containsAll(admission.independentFeatures)) {
+            errors += "Source capability $id has no independent application check"
+        }
+        if (independent.any { it.assessment?.relationKind != "STATED_APPLICATION" }) {
+            errors += "Source capability $id independent check is not a stated application"
+        }
+        if (checks.any { it.feedback.isBlank() } || practiceItems.any { it.feedback.isBlank() }) {
+            errors += "Source capability $id missing feedback"
+        }
+        val assessed = (checks + practiceItems).distinctBy { it.id }
+        val generic = assessed.any { item ->
+            !item.feedback.contains(item.answer) ||
+                item.options.indices.any { index ->
+                    val option = item.options[index]
+                    val rationale = item.distractorRationales.getOrElse(index) { "" }
+                    option != item.answer && (rationale.isBlank() || !rationale.contains(option) || rationale == "The other option is different.")
+                }
+        }
+        if (generic) {
+            errors += "Source capability $id generic feedback does not clear $claim"
+        }
+        val remediation = objective?.remediationStepIds.orEmpty().mapNotNull { pack.step(it)?.second }
+        val shipped = pack.provenanceRecords
+            .filter { it.objectiveId == capability.objectiveId }
+            .map { it.shippedText }
+        if (remediation.isEmpty() || remediation.any { step ->
+                shipped.none { span -> span.length >= 8 && span in step.body }
+            }
+        ) {
+            errors += "Source capability $id missing remediation"
+        }
+        fun duplicate(values: List<String>): Boolean = values.size != values.toSet().size
+        val relationships = assessed.map { it.promptLetter.orEmpty() to it.answer }
+        if (
+            duplicate(assessed.map { it.prompt }) ||
+            duplicate(assessed.map { it.promptLetter.orEmpty() }) ||
+            duplicate(assessed.map { it.answer }) ||
+            relationships.size != relationships.toSet().size
+        ) {
+            errors += "Source capability $id duplicate assessment checks do not clear $claim"
         }
         if (independent.any { item ->
                 SOURCE_LAYOUT_RECALL.containsMatchIn(item.prompt) ||
@@ -1602,6 +1757,7 @@ internal object V2Validator {
      * or a bounded example does not become the missing rule or reading.
      */
     private fun lateClaimContentErrors(capability: V2SourceCapability): List<String> {
+        if (Phase3Sources.matches(capability)) return emptyList()
         val span = capability.exactSpan
         val id = capability.id
         return when (capability.supportedClaim) {
@@ -1807,6 +1963,7 @@ internal object V2Validator {
     }
 
     private fun admittedLateSource(capability: V2SourceCapability): Boolean {
+        if (Phase3Sources.matches(capability)) return true
         val key = listOf(
             capability.sourceId,
             capability.sourceRevision,
@@ -2088,22 +2245,154 @@ internal object V2Validator {
         "(?i)\\b(?:headwords?|declensions?|definitions?|pronunciations?|conjugations?|field|fields|section|sections)\\b",
     )
 
+    private data class GovernedDictionaryEntry(
+        val headword: String,
+        val partOfSpeech: String,
+        val forms: List<String>,
+        val sense: String,
+        val example: String,
+    )
+
     /**
-     * Practical dictionary use looks up a retained entry. Asking which field
-     * label holds a shown form is source layout.
+     * A governed entry is the labeled block the learner can see.
+     * A part-of-speech label or a row of forms does not become an entry.
+     */
+    private fun governedDictionaryEntries(span: String): List<GovernedDictionaryEntry> {
+        val entries = mutableListOf<GovernedDictionaryEntry>()
+        var headword = ""
+        var partOfSpeech = ""
+        var forms = emptyList<String>()
+        var sense = ""
+        var example = ""
+        fun flush() {
+            val distinctForm = forms.any { it.isNotBlank() && it != headword }
+            if (
+                headword.isNotBlank() &&
+                headword in forms &&
+                partOfSpeech.length >= 3 &&
+                sense.length >= 12 &&
+                distinctForm
+            ) {
+                entries += GovernedDictionaryEntry(headword, partOfSpeech, forms, sense, example)
+            }
+            headword = ""
+            partOfSpeech = ""
+            forms = emptyList()
+            sense = ""
+            example = ""
+        }
+        span.lineSequence().forEach { raw ->
+            val line = raw.trim()
+            when {
+                line.startsWith("Headword ") -> {
+                    if (headword.isNotBlank()) flush()
+                    headword = line.removePrefix("Headword ").trim()
+                }
+                line.startsWith("Part of speech ") -> partOfSpeech = line.removePrefix("Part of speech ").trim()
+                line.startsWith("Forms ") -> {
+                    forms = line.removePrefix("Forms ").split(",").map { it.trim() }.filter { it.isNotEmpty() }
+                }
+                line.startsWith("Sense ") -> sense = line.removePrefix("Sense ").trim()
+                line.startsWith("Example ") -> example = line.removePrefix("Example ").trim()
+            }
+        }
+        if (headword.isNotBlank()) flush()
+        return entries
+    }
+
+    /**
+     * Practical dictionary use reads a governed entry.
+     * The feature name is not evidence: an inflected form or example in the cue
+     * must be resolved by the sense of the one entry that governs that form.
      */
     private fun hasPracticalDictionaryUse(
         pack: V2CurriculumPack,
         capability: V2SourceCapability,
         spanHost: V2ProvenanceRecord,
     ): Boolean {
+        val entries = governedDictionaryEntries(capability.exactSpan)
+        if (entries.isEmpty()) return false
         return applicationChecks(pack, capability, spanHost).any { item ->
-            val feature = item.assessment?.testedFeature.orEmpty()
-            item.assessment?.relationKind == "STATED_APPLICATION" &&
-                feature.startsWith("DICTIONARY_LOOKUP") &&
-                !DICTIONARY_FIELD_LABEL.containsMatchIn(item.prompt) &&
-                !DICTIONARY_FIELD_LABEL.containsMatchIn(item.answer)
+            interpretsGovernedEntry(item, entries)
         }
+    }
+
+    private fun interpretsGovernedEntry(
+        item: V2CheckItem,
+        entries: List<GovernedDictionaryEntry>,
+    ): Boolean {
+        if (item.assessment?.relationKind != "STATED_APPLICATION") return false
+        val cue = item.promptLetter.orEmpty()
+        val answer = item.answer
+        if (cue.isBlank() || answer.length < 12) return false
+        if (DICTIONARY_FIELD_LABEL.containsMatchIn(item.prompt) || DICTIONARY_FIELD_LABEL.containsMatchIn(item.answer)) {
+            return false
+        }
+        if (entries.any { it.headword == cue || it.forms.joinToString(", ") == cue }) return false
+        val owners = entries.filter { entry ->
+            entry.sense !in cue &&
+                entry.forms.any { form -> form != entry.headword && form.length >= 2 && form in cue }
+        }
+        if (owners.size != 1) return false
+        val owner = owners.single()
+        if (owner.sense !in answer) return false
+        return entries.none { other -> other.sense != owner.sense && other.sense in answer }
+    }
+
+    /**
+     * Home delivery is the full governed organization.
+     * Recipient, premises, locality, and postcode without the applicable region
+     * and the country are not that organization. A post-office box and an
+     * apartment are conditional.
+     */
+    private fun hasCompletePostalOrganization(
+        pack: V2CurriculumPack,
+        capability: V2SourceCapability,
+        spanHost: V2ProvenanceRecord,
+    ): Boolean {
+        val span = capability.exactSpan
+        if (!span.contains("are not the complete order")) return false
+        val checks = applicationChecks(pack, capability, spanHost)
+        val complete = checks.filter { item ->
+            val assessment = item.assessment
+            assessment != null &&
+                assessment.testedFeature == "COMPLETE_GOVERNED_ADDRESS" &&
+                assessment.relationKind == "STATED_APPLICATION"
+        }
+        if (complete.size != 1) return false
+        val item = complete.single()
+        val cue = item.promptLetter.orEmpty()
+        val answer = item.answer
+        if (cue.length < 40 || !Regex("\\d{6}").containsMatchIn(cue)) return false
+        if (cue !in span || answer !in span) return false
+        if (answer == "recipient then premises then city then postcode") return false
+        if (!postalOrderComplete(answer)) return false
+        if (checks.none { it.answer.contains("post-office box") && it.answer.contains("not required") }) return false
+        if (checks.none {
+                it.answer.contains("federal city") &&
+                    it.answer.contains("oblast") &&
+                    it.answer.contains("does not add")
+            }
+        ) return false
+        if (checks.none { it.answer.contains("apartment") && it.answer.contains("omitted") }) return false
+        if (checks.any {
+                it.answer.contains("must include a post-office box") ||
+                    it.answer.contains("must invent an apartment") ||
+                    it.answer.contains("must add an oblast")
+            }
+        ) return false
+        return true
+    }
+
+    private fun postalOrderComplete(answer: String): Boolean {
+        val markers = listOf("recipient", "premises", "locality", "region", "country", "postcode")
+        var at = -1
+        markers.forEach { marker ->
+            val found = answer.indexOf(marker, at + 1)
+            if (found < 0) return false
+            at = found
+        }
+        return true
     }
 
     private fun validateSubstantiveContent(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
@@ -2715,6 +3004,12 @@ internal object V2Validator {
         }
         val phase2Claim = Phase2Sources.admission(capability.supportedClaim)
         if (phase2Claim != null && !Phase2Sources.matches(capability) &&
+            (span.contains(capability.supportedClaim) || span.contains("co-occurrence") || span.contains("co-occur"))
+        ) {
+            errors += "Source capability ${capability.id} keyword or co-occurrence evidence does not clear ${capability.supportedClaim}"
+        }
+        val phase3Claim = Phase3Sources.admission(capability.supportedClaim)
+        if (phase3Claim != null && !Phase3Sources.matches(capability) &&
             (span.contains(capability.supportedClaim) || span.contains("co-occurrence") || span.contains("co-occur"))
         ) {
             errors += "Source capability ${capability.id} keyword or co-occurrence evidence does not clear ${capability.supportedClaim}"
@@ -4512,16 +4807,24 @@ internal object V2Validator {
     private fun originalSynthesisProvenanceErrors(record: V2ProvenanceRecord): List<String> {
         val errors = mutableListOf<String>()
         val synthesis = record.synthesis
-        val admission = Phase2Sources.ADMISSIONS.firstOrNull {
+        val phase2 = Phase2Sources.ADMISSIONS.firstOrNull {
             it.objectiveId == record.objectiveId && it.unitNumber == record.unitNumber
         }
+        val phase3 = Phase3Sources.ADMISSIONS.firstOrNull {
+            it.objectiveId == record.objectiveId && it.unitNumber == record.unitNumber
+        }
+        val expectedRevision = if (phase3 != null) Phase3Sources.REVISION else Phase2Sources.REVISION
+        val expectedDate = if (phase3 != null) Phase3Sources.DATE else Phase2Sources.DATE
+        val expectedRecord = phase2?.recordId ?: phase3?.recordId
+        val expectedHash = phase2?.sourceHash ?: phase3?.sourceHash
+        val expectedBinding = phase2?.binding ?: phase3?.binding
         if (record.sourceId != Phase2Sources.SOURCE_ID ||
             record.transformation != Phase2Sources.TRANSFORMATION ||
-            record.sourceRevision != Phase2Sources.REVISION ||
+            record.sourceRevision != expectedRevision ||
             record.licenseId != "Original app text" ||
-            admission == null ||
-            record.sourceRecordId != admission.recordId ||
-            record.sourceHash != admission.sourceHash
+            expectedRecord == null ||
+            record.sourceRecordId != expectedRecord ||
+            record.sourceHash != expectedHash
         ) {
             errors += "Provenance ${record.itemId} original synthesis identity does not match"
         }
@@ -4535,10 +4838,10 @@ internal object V2Validator {
         ) {
             errors += "Provenance ${record.itemId} original synthesis evidence is incomplete"
         }
-        if (synthesis.sourceDateOrVersion != Phase2Sources.DATE) {
+        if (synthesis.sourceDateOrVersion != expectedDate) {
             errors += "Provenance ${record.itemId} original synthesis date does not match"
         }
-        if (admission != null && synthesis.objectiveOrClaimBinding != admission.binding) {
+        if (expectedBinding != null && synthesis.objectiveOrClaimBinding != expectedBinding) {
             errors += "Provenance ${record.itemId} synthesis binding does not match"
         }
         val audit = synthesis.finalAudit
