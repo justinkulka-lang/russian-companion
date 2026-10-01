@@ -22,7 +22,7 @@ internal object Phase3Sources {
 
     val POSTAL = Admission(
         recordId = "phase3:postal-address",
-        sourceHash = "d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e",
+        sourceHash = "546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97",
         unitNumber = 26,
         objectiveId = "obj-u26-postal-address",
         claim = "postal-address",
@@ -32,7 +32,13 @@ internal object Phase3Sources {
             "STREET_AND_PREMISES",
             "SIX_DIGIT_POSTCODE",
             "REJECTED_GREETING",
-            "GOVERNED_HOME_DELIVERY_ORDER",
+            "REGIONAL_UNIT_AS_APPLICABLE",
+            "FEDERAL_CITY_WITHOUT_OBLAST",
+            "COUNTRY_COMPONENT",
+            "POST_OFFICE_BOX_CONDITIONAL",
+            "APARTMENT_CONDITIONAL",
+            "COMPLETE_GOVERNED_ADDRESS",
+            "FOUR_COMPONENT_INCOMPLETE",
         ),
     )
     val STRESS = Admission(
@@ -92,16 +98,17 @@ internal object Phase3Sources {
     )
     val DICTIONARY = Admission(
         recordId = "phase3:dictionary-use",
-        sourceHash = "72003519ac79b4b7f88f0623a24ce8608de32c0c955eb7cc2b892a48bc5ad889",
+        sourceHash = "3ff0ca9b4aab3a3208b6fbd40edffd5e7308f3fbd6023ae482a421b45c29ea71",
         unitNumber = 30,
         objectiveId = "obj-u30-dictionary",
         claim = "dictionary-use",
         binding = "obj-u30-dictionary:dictionary-use",
         independentFeatures = setOf(
-            "DICTIONARY_LOOKUP_TABLE_NOUN",
-            "DICTIONARY_LOOKUP_STAND_VERB",
-            "DICTIONARY_LOOKUP_FURNITURE_SENTENCE",
-            "DICTIONARY_LOOKUP_ABBREVIATION_INSUFFICIENT",
+            "ENTRY_FORM_TO_SENSE",
+            "ENTRY_VERB_FORM_TO_SENSE",
+            "ENTRY_EXAMPLE_TO_SENSE",
+            "POS_LABEL_INSUFFICIENT",
+            "FORMS_ROW_INSUFFICIENT",
         ),
     )
     val ADMISSIONS = listOf(POSTAL, STRESS, COMPREHENSION, REGISTER, READING, DICTIONARY)
