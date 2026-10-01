@@ -92,7 +92,19 @@ class Units2630StructuralMappingTest {
             } else {
                 assertFalse(unit.mappingNote.contains("unresolved authority variance"))
             }
-            assertTrue(unit.mappingNote.contains(facts.topicDescription!!))
+            if (number == 27) {
+                assertTrue(
+                    unit.mappingNote.contains(
+                        "Passive participles: overview, past passive formation and use, optional present passive material, vocabulary and comprehension.",
+                    ),
+                )
+                assertFalse(unit.mappingNote.contains("Active participle formation is not in this lesson"))
+            } else if (number == 29) {
+                assertTrue(unit.mappingNote.contains("optional punctuation"))
+                assertFalse(unit.mappingNote.contains("shipped participial-phrase punctuation"))
+            } else {
+                assertTrue(unit.mappingNote.contains(facts.topicDescription!!))
+            }
             assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertFalse(unit.mappingNote.contains("ISBN"))
