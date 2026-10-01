@@ -4,8 +4,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `9b925aa087dec48d4f9eab124bfbfd576c3be27a1f0fe6ba8e5b71ec22d1502e`  
-**Repository source digest:** `7b96ecdbff72b26d2785a8d2f888c3c3a424a1f4a0624c3c57723f7aefa3b79c`  
+**Pack content-review digest:** `dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f`  
+**Repository source digest:** `099dda9028db84c4f526380425e79abc144d27084057d9b319df2d0a9eae1aac`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -152,7 +152,7 @@ Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `
 
 #### `postal-address` — `obj-u26-postal-address`
 
-Phase 3 binds this claim as original research synthesis, source `src-original-research-synthesis`, revision `phase3-2026-09-30`, record `phase3:postal-address`, dated 2026-09-30. The governed home-delivery order is recipient, then premises, then city, then the six-digit postcode. A greeting is outside the address. Memorizing one sample line is not application. The bibliography records the Universal Postal Union addressing manual for the Russian Federation, English edition, and the Russian Post address-writing instructions, both consulted 2026-09-30. The lesson states only the order used here. Review status stays `IMPLEMENTED_PENDING_FINAL_AUDIT`. The claim does not block content completeness. Qualified review and the owned-edition mapping remain unsigned.
+Phase 3 binds this claim as original research synthesis, source `src-original-research-synthesis`, revision `phase3-2026-09-30`, record `phase3:postal-address`, dated 2026-09-30. The governed home-delivery organization names the recipient, then the premises, then the locality, then the applicable district, oblast, krai, or republic, then the country, then the postcode. A federal city does not add a separate oblast line. An apartment or office number is included only when the premises has one. A post-office box is used only when that box is the delivery point, and it is not required on a street address. Recipient, premises, city, and postcode alone are not the complete order. A greeting is outside the address. Memorizing one sample line is not application. The bibliography records the Universal Postal Union addressing manual for the Russian Federation, English edition, and the Russian Post address-writing instructions, both consulted 2026-09-30. Review status stays `IMPLEMENTED_PENDING_FINAL_AUDIT`. The claim does not block content completeness. Qualified review and the owned-edition mapping remain unsigned.
 
 ### Unit 27 — Participles: types and stress
 
@@ -196,7 +196,7 @@ Russian Wiktionary layout, abbreviation, and entry pages were inspected and excl
 
 #### `dictionary-use` — `obj-u30-dictionary`
 
-Phase 3 binds this claim as original research synthesis, revision `phase3-2026-09-30`, record `phase3:dictionary-use`. The checks use the admitted senses: стол is a noun for a table, стоять is a verb for standing, and the furniture sentence uses the table sense. The abbreviation сущ. does not give the sense. No Wiktionary oldid is invented for those two entries. Review status stays `IMPLEMENTED_PENDING_FINAL_AUDIT`. The claim does not clear `capstone-reading`.
+Phase 3 binds this claim as original research synthesis, revision `phase3-2026-09-30`, record `phase3:dictionary-use`. The learner reads a governed entry for стол and for стоять. Each entry shows the headword, the part of speech, governed forms, a sense, and an example. Independent checks resolve an inflected form or an example to the sense in that same entry. An isolated headword translation, a part-of-speech label, and a row of forms do not clear the claim. No Wiktionary oldid is invented for those two entries. Review status stays `IMPLEMENTED_PENDING_FINAL_AUDIT`. The claim does not clear `capstone-reading`.
 
 Russian Wikipedia “Морфология русского языка” oldid 148939075, under the separate Russian Wikipedia copyrights page oldid 154562152, is already frozen for Units 21–25. Two spans from that same revision are now admitted for Unit 30 only. Letter abbreviations and vowel-final sound abbreviations are grouped together, with СНГ, ЭВМ, ГАИ, and гороно, while a consonant-final sound abbreviation is shown both ways as в МИД and в МИДе. The command examples Пусть он читает and Да будет мир! are separated from the supposition forms читал бы and читали бы. Those spans clear `abbreviation` and `particle` as bounded recognition. They do not state a complete abbreviation system or a particle inventory. The СССР/США glosses and the address marks do not clear `abbreviation`. The class list that only names бы, пусть, and да does not clear `particle`. Unit 30 stays `NOT_PREPARED`. The inactive authority variance stays unactivated.
 

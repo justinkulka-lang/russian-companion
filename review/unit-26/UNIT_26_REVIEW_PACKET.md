@@ -11,12 +11,12 @@ Unit 26 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 8e667dbcd95e3a286c484ab1d6657686b18e5e0a
-- Unit content-review SHA-256: 275ad92bbb4b93fae68cb27cbe07bc56031cd69b5b46cf1d6dee63cfc7faf7ec
+- Curriculum source commit: 345448c16f326114ccb2f6738c75fb4206798cae
+- Unit content-review SHA-256: 042693573ae94ddc31e1c68c625d854f8495934fbf1d39cd800684afcb078b06
 - Mapping-package SHA-256: c3b63d48cd809527d6450916cfead9c419eb5a607a329c7def2d8b42df6bf725
-- Pack content-review SHA-256: 9b925aa087dec48d4f9eab124bfbfd576c3be27a1f0fe6ba8e5b71ec22d1502e
-- Review-package SHA-256: f8f38d2c90a7ee91a4cc44a1c5288411a22e21a52e141793127161b8593cc227
-- Repository source SHA-256: 7b96ecdbff72b26d2785a8d2f888c3c3a424a1f4a0624c3c57723f7aefa3b79c
+- Pack content-review SHA-256: dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f
+- Review-package SHA-256: ad931323c760a74d2789d7b24f5a939b972d8458111f753ac9aad0503d773f7b
+- Repository source SHA-256: 099dda9028db84c4f526380425e79abc144d27084057d9b319df2d0a9eae1aac
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -246,15 +246,15 @@ remediation=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2d929a9f3ec8959e743d4c16cf43a041d17ba438212408a0684b07fcccccd7f1
+- Content hash: ecdc6f0d123b3aa0e4be5cff7289990e44ac01481344e9b24efe719105609d57
 
-title=Identify the home-delivery address components
+title=Organize a complete home-delivery address
 kind=RECOGNITION
 unitNumber=26
 instruction=u26-postal-teach-1,u26-postal-teach-2
 examples=ex-u26-postal-1,ex-u26-postal-2
 practice=u26-postal-guided
-checks=u26-i-postal-1,u26-i-postal-2,u26-i-postal-3,u26-i-postal-4,u26-i-postal-5
+checks=u26-i-postal-1,u26-i-postal-2,u26-i-postal-3,u26-i-postal-4,u26-i-postal-5,u26-i-postal-6,u26-i-postal-7,u26-i-postal-8,u26-i-postal-9,u26-i-postal-10,u26-i-postal-11
 remediation=u26-postal-remediate
 
 ### SESSION `u26-s-orient`
@@ -1231,9 +1231,9 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4732e578d63354ec7e8b78c014401ae95ca72ec887066e6454634ec91ed30331
+- Content hash: 00355c908337193d1e597795eb2686f95e67d55977a1f25ce9f8fb9ffb84c79f
 
-title=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+title=Organize a complete home-delivery address
 estimatedMinutes=10
 objectives=obj-u26-postal-address
 steps=u26-postal-teach-1,u26-postal-guided,u26-postal-teach-2,u26-postal-remediate,u26-postal-check
@@ -1246,11 +1246,11 @@ steps=u26-postal-teach-1,u26-postal-guided,u26-postal-teach-2,u26-postal-remedia
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ec3a0c0d3f1df88b57694fc334673710a6556b87e1a08eeb067ffa7e07f496a2
+- Content hash: c560bfe4318b0247681c17f596288b6f84cb14fa92439a02a738cdcc2f758c53
 
 kind=TEACH
 title=Admitted instruction
-body=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+body=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -1290,11 +1290,11 @@ remediationStepId=u26-postal-remediate
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5a272af7f8015b2f3d2630e93897e076bd2c881796727c79e64150c0cea0b6cc
+- Content hash: 730ecd20def008b3c2f80fe6c012dc9ffc21d4f0318963355d305c20af74a823
 
 kind=TEACH
 title=Admitted instruction
-body=Memorizing one sample line is not the same as identifying a component.
+body=Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -1312,11 +1312,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 04deb5e98c1f30ddef00c4784a0b0fe58024223bd185c3af88ecf951b941a807
+- Content hash: 432e450fdb5dd4f4bc393f582c08570cd60a55280c747d9d9fa8a1362bd56e22
 
 kind=REMEDIATE
 title=Remediation
-body=Return to the component roles: recipient, premises, city, and the six-digit postcode.
+body=Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -1334,14 +1334,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 81ec34c65fee4f671dc96ec2aad0b90bcf3ee653e9228813d8f4bdd2d3f47bc8
+- Content hash: 5ee2ebe49a31de87047ef8b9737c59421af2e655bebbf9e284bcda7d7c10ac88
 
 kind=CHECK
 title=Independent checks
-body=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+body=Memorizing one sample line is not the same as organizing the complete address.
 dominantAction=Continue
 references=ref-u2630-attribution
-items=u26-i-postal-1,u26-i-postal-2,u26-i-postal-3,u26-i-postal-4,u26-i-postal-5
+items=u26-i-postal-1,u26-i-postal-2,u26-i-postal-3,u26-i-postal-4,u26-i-postal-5,u26-i-postal-6,u26-i-postal-7,u26-i-postal-8,u26-i-postal-9,u26-i-postal-10,u26-i-postal-11
 examples=
 unavailableReason=
 bookDirection=
@@ -1662,12 +1662,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f9278e55874b48aca1613ee5e1483918c25105538d5d18d8a7dd431adf2e7f5e
+- Content hash: 99349e9e836f5f4d5f7a312b3204a9727b9bfd595b626aa72801cb8971639270
 
 kind=LEXICAL
 letterId=
-display=Анна Петрова
-note=the addressee names the recipient
+display=Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+note=recipient, then premises, then locality, then the applicable region, then the country, then the postcode
 objectiveId=obj-u26-postal-address
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1679,12 +1679,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3f149930b5eb94bfa38ef0a3b35d9e6aece26c7e7e934765ee6226ea3f0cdf7d
+- Content hash: dcff24d6b26451c37c852f457af9f67cdb655ebb989d78ce9dc4278136dc9770
 
 kind=LEXICAL
 letterId=
-display=г. Казань
-note=the locality names the city
+display=а/я 15
+note=a post-office box is not required on a street address
 objectiveId=obj-u26-postal-address
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1906,7 +1906,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e7c414ef70e9e0ab1fac83a985d9760b224a05d1eda4885c79bc1630bafa14b5
+- Content hash: 935f941de7d3522113f403e4de5a3c33eb01857e525ef46182a28aa51869223d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1925,12 +1925,12 @@ contrastSetId=u26-g-postal-1
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-obj-u26-postal-address-7
-distractorSourceIds= | prov-obj-u26-postal-address-10 | prov-obj-u26-postal-address-11
+distractorSourceIds= | prov-obj-u26-postal-address-9 | prov-obj-u26-postal-address-11
 distractorDifference= | Rejected reading: the street line names the premises | Rejected reading: the postcode names the delivery office
 whyAnswerDemonstratesObjective=Admitted reading: the locality names the city
 contrastMembers=the locality names the city | the street line names the premises | the postcode names the delivery office
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-obj-u26-postal-address-6 | prov-obj-u26-postal-address-7 | prov-obj-u26-postal-address-10 | prov-obj-u26-postal-address-11
+relationParticipantIds=prov-obj-u26-postal-address-6 | prov-obj-u26-postal-address-7 | prov-obj-u26-postal-address-9 | prov-obj-u26-postal-address-11
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u26-i-word-order-1`
@@ -2361,7 +2361,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3496820afd5cfe7a5f8bad63efa737e114567ad8329f7c661f55a2c829b4e338
+- Content hash: e2f9b2067550852b42228e82ce4914e911ecb020516c2cd7318648c4a620239a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2379,13 +2379,13 @@ evidenceMode=STATED_APPLICATION
 contrastSetId=u26-i-postal-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-obj-u26-postal-address-5
-distractorSourceIds= | prov-obj-u26-postal-address-10 | prov-obj-u26-postal-address-11
+answerSourceIds=prov-obj-u26-postal-address-15
+distractorSourceIds= | prov-obj-u26-postal-address-9 | prov-obj-u26-postal-address-11
 distractorDifference= | Rejected reading: the street line names the premises | Rejected reading: the postcode names the delivery office
 whyAnswerDemonstratesObjective=Admitted reading: the addressee names the recipient
 contrastMembers=the addressee names the recipient | the street line names the premises | the postcode names the delivery office
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-obj-u26-postal-address-4 | prov-obj-u26-postal-address-5 | prov-obj-u26-postal-address-10 | prov-obj-u26-postal-address-11
+relationParticipantIds=prov-obj-u26-postal-address-14 | prov-obj-u26-postal-address-15 | prov-obj-u26-postal-address-9 | prov-obj-u26-postal-address-11
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u26-i-postal-2`
@@ -2396,7 +2396,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 23726c09d20288b8a2cea9442d166b34a466a54d43992b91cc49bca65fa33ff9
+- Content hash: 355e87c5cfbd2e0cd73d58826ea675a294ac2e9f3f8f6400d91f0bc14349eae0
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2414,13 +2414,13 @@ evidenceMode=STATED_APPLICATION
 contrastSetId=u26-i-postal-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-obj-u26-postal-address-10
-distractorSourceIds= | prov-obj-u26-postal-address-5 | prov-obj-u26-postal-address-7
+answerSourceIds=prov-obj-u26-postal-address-9
+distractorSourceIds= | prov-obj-u26-postal-address-15 | prov-obj-u26-postal-address-7
 distractorDifference= | Rejected reading: the addressee names the recipient | Rejected reading: the locality names the city
 whyAnswerDemonstratesObjective=Admitted reading: the street line names the premises
 contrastMembers=the street line names the premises | the addressee names the recipient | the locality names the city
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-obj-u26-postal-address-17 | prov-obj-u26-postal-address-10 | prov-obj-u26-postal-address-5 | prov-obj-u26-postal-address-7
+relationParticipantIds=prov-obj-u26-postal-address-18 | prov-obj-u26-postal-address-9 | prov-obj-u26-postal-address-15 | prov-obj-u26-postal-address-7
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u26-i-postal-3`
@@ -2431,7 +2431,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 334ed22cf0fab58443cdfda3f233a16829be0c27182edddd8485db1d75082719
+- Content hash: 31304bd3d664fbb3e75708200402b1d4347ae7f00d529da75110e01b8bd5a4e5
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2450,12 +2450,12 @@ contrastSetId=u26-i-postal-3
 cueLanguage=number
 independent=true
 answerSourceIds=prov-obj-u26-postal-address-11
-distractorSourceIds= | prov-obj-u26-postal-address-7 | prov-obj-u26-postal-address-5
+distractorSourceIds= | prov-obj-u26-postal-address-7 | prov-obj-u26-postal-address-15
 distractorDifference= | Rejected reading: the locality names the city | Rejected reading: the addressee names the recipient
 whyAnswerDemonstratesObjective=Admitted reading: the postcode names the delivery office
 contrastMembers=the postcode names the delivery office | the locality names the city | the addressee names the recipient
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-obj-u26-postal-address-22 | prov-obj-u26-postal-address-11 | prov-obj-u26-postal-address-7 | prov-obj-u26-postal-address-5
+relationParticipantIds=prov-obj-u26-postal-address-23 | prov-obj-u26-postal-address-11 | prov-obj-u26-postal-address-7 | prov-obj-u26-postal-address-15
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u26-i-postal-4`
@@ -2466,7 +2466,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a52663decb93e66c8f40000920bfefa35f3648713fe93ae60c25a842c2787973
+- Content hash: c3972a1381f3cb43937681217d061431c9b378a40781be3d862d4b8bf5b6a867
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2484,13 +2484,13 @@ evidenceMode=STATED_APPLICATION
 contrastSetId=u26-i-postal-4
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-obj-u26-postal-address-26
-distractorSourceIds= | prov-obj-u26-postal-address-5 | prov-obj-u26-postal-address-11
+answerSourceIds=prov-obj-u26-postal-address-27
+distractorSourceIds= | prov-obj-u26-postal-address-15 | prov-obj-u26-postal-address-11
 distractorDifference= | Rejected reading: the addressee names the recipient | Rejected reading: the postcode names the delivery office
 whyAnswerDemonstratesObjective=Admitted reading: a greeting is outside the address
 contrastMembers=a greeting is outside the address | the addressee names the recipient | the postcode names the delivery office
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-obj-u26-postal-address-25 | prov-obj-u26-postal-address-26 | prov-obj-u26-postal-address-5 | prov-obj-u26-postal-address-11
+relationParticipantIds=prov-obj-u26-postal-address-26 | prov-obj-u26-postal-address-27 | prov-obj-u26-postal-address-15 | prov-obj-u26-postal-address-11
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u26-i-postal-5`
@@ -2501,31 +2501,241 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c4093442e93a62d32643b10cdfbda2b322881c6b2fcd19938213bbe77db46435
+- Content hash: cf7a9abcbe5146ced900d3072c54a46d21c4497f3efe55db101d492ba185b3a1
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English description identifies the component order in this home-delivery address?
-promptLetter=home-delivery order
-options=recipient then premises then city then postcode | postcode then recipient then premises then city | premises then recipient then postcode then city
-answer=recipient then premises then city then postcode
-feedback=Admitted reading: recipient then premises then city then postcode
+prompt=Which English description applies when only recipient, premises, city, and postcode are named?
+promptLetter=the short sample
+options=recipient, premises, city, and postcode alone are not the complete order | recipient then premises then city then postcode | postcode then recipient then premises then city
+answer=recipient, premises, city, and postcode alone are not the complete order
+feedback=Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 objectiveId=obj-u26-postal-address
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Rejected reading: postcode then recipient then premises then city | Rejected reading: premises then recipient then postcode then city
-testedFeature=GOVERNED_HOME_DELIVERY_ORDER
+distractorRationales= | Rejected reading: recipient then premises then city then postcode | Rejected reading: postcode then recipient then premises then city
+testedFeature=FOUR_COMPONENT_INCOMPLETE
 evidenceMode=STATED_APPLICATION
 contrastSetId=u26-i-postal-5
 cueLanguage=rule
 independent=true
-answerSourceIds=prov-obj-u26-postal-address-30
-distractorSourceIds= | prov-obj-u26-postal-address-32 | prov-obj-u26-postal-address-33
-distractorDifference= | Rejected reading: postcode then recipient then premises then city | Rejected reading: premises then recipient then postcode then city
-whyAnswerDemonstratesObjective=Admitted reading: recipient then premises then city then postcode
-contrastMembers=recipient then premises then city then postcode | postcode then recipient then premises then city | premises then recipient then postcode then city
+answerSourceIds=prov-obj-u26-postal-address-31
+distractorSourceIds= | prov-obj-u26-postal-address-33 | prov-obj-u26-postal-address-35
+distractorDifference= | Rejected reading: recipient then premises then city then postcode | Rejected reading: postcode then recipient then premises then city
+whyAnswerDemonstratesObjective=Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+contrastMembers=recipient, premises, city, and postcode alone are not the complete order | recipient then premises then city then postcode | postcode then recipient then premises then city
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-obj-u26-postal-address-29 | prov-obj-u26-postal-address-30 | prov-obj-u26-postal-address-32 | prov-obj-u26-postal-address-33
+relationParticipantIds=prov-obj-u26-postal-address-30 | prov-obj-u26-postal-address-31 | prov-obj-u26-postal-address-33 | prov-obj-u26-postal-address-35
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u26-i-postal-6`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58000013a7252c2de0f7a19bf3548dab9a0fbbaaece73c2923ee48d6cb350830
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies the regional unit that applies to this locality?
+promptLetter=Республика Татарстан
+options=the republic is the applicable regional unit for this locality | the republic is the six-digit postcode | the republic is a greeting outside the address
+answer=the republic is the applicable regional unit for this locality
+feedback=Admitted reading: the republic is the applicable regional unit for this locality
+objectiveId=obj-u26-postal-address
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the republic is the six-digit postcode | Rejected reading: the republic is a greeting outside the address
+testedFeature=REGIONAL_UNIT_AS_APPLICABLE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-i-postal-6
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u26-postal-address-39
+distractorSourceIds= | prov-obj-u26-postal-address-41 | prov-obj-u26-postal-address-43
+distractorDifference= | Rejected reading: the republic is the six-digit postcode | Rejected reading: the republic is a greeting outside the address
+whyAnswerDemonstratesObjective=Admitted reading: the republic is the applicable regional unit for this locality
+contrastMembers=the republic is the applicable regional unit for this locality | the republic is the six-digit postcode | the republic is a greeting outside the address
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u26-postal-address-38 | prov-obj-u26-postal-address-39 | prov-obj-u26-postal-address-41 | prov-obj-u26-postal-address-43
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u26-i-postal-7`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 76021b843958f2d30c9a73979bde283021d27962c9330824ed15d72fde8c7668
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies the regional line for this federal city?
+promptLetter=г. Москва
+options=a federal city does not add a separate oblast line | a federal city must add an oblast line | a federal city omits the postcode
+answer=a federal city does not add a separate oblast line
+feedback=Admitted reading: a federal city does not add a separate oblast line
+objectiveId=obj-u26-postal-address
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: a federal city must add an oblast line | Rejected reading: a federal city omits the postcode
+testedFeature=FEDERAL_CITY_WITHOUT_OBLAST
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-i-postal-7
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u26-postal-address-47
+distractorSourceIds= | prov-obj-u26-postal-address-49 | prov-obj-u26-postal-address-51
+distractorDifference= | Rejected reading: a federal city must add an oblast line | Rejected reading: a federal city omits the postcode
+whyAnswerDemonstratesObjective=Admitted reading: a federal city does not add a separate oblast line
+contrastMembers=a federal city does not add a separate oblast line | a federal city must add an oblast line | a federal city omits the postcode
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u26-postal-address-46 | prov-obj-u26-postal-address-47 | prov-obj-u26-postal-address-49 | prov-obj-u26-postal-address-51
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u26-i-postal-8`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33381451e445739cd6f9f3b38b03e982c10dc1f38d63522ec22cd554f008ea21
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies the destination state in this home-delivery address?
+promptLetter=Россия
+options=the country names the destination state | the country is a greeting outside the address | the postcode replaces the country
+answer=the country names the destination state
+feedback=Admitted reading: the country names the destination state
+objectiveId=obj-u26-postal-address
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: the country is a greeting outside the address | Rejected reading: the postcode replaces the country
+testedFeature=COUNTRY_COMPONENT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-i-postal-8
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u26-postal-address-55
+distractorSourceIds= | prov-obj-u26-postal-address-57 | prov-obj-u26-postal-address-59
+distractorDifference= | Rejected reading: the country is a greeting outside the address | Rejected reading: the postcode replaces the country
+whyAnswerDemonstratesObjective=Admitted reading: the country names the destination state
+contrastMembers=the country names the destination state | the country is a greeting outside the address | the postcode replaces the country
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u26-postal-address-54 | prov-obj-u26-postal-address-55 | prov-obj-u26-postal-address-57 | prov-obj-u26-postal-address-59
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u26-i-postal-9`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 32c30d8334fa597987fb1e75bf4d873bc959bdb31d6655fc1cf553f7d470d71f
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies when a post-office box belongs in this home-delivery address?
+promptLetter=а/я 15
+options=a post-office box is not required on a street address | every home-delivery address must include a post-office box | a post-office box is the six-digit postcode
+answer=a post-office box is not required on a street address
+feedback=Admitted reading: a post-office box is not required on a street address
+objectiveId=obj-u26-postal-address
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: every home-delivery address must include a post-office box | Rejected reading: a post-office box is the six-digit postcode
+testedFeature=POST_OFFICE_BOX_CONDITIONAL
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-i-postal-9
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u26-postal-address-63
+distractorSourceIds= | prov-obj-u26-postal-address-65 | prov-obj-u26-postal-address-67
+distractorDifference= | Rejected reading: every home-delivery address must include a post-office box | Rejected reading: a post-office box is the six-digit postcode
+whyAnswerDemonstratesObjective=Admitted reading: a post-office box is not required on a street address
+contrastMembers=a post-office box is not required on a street address | every home-delivery address must include a post-office box | a post-office box is the six-digit postcode
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u26-postal-address-62 | prov-obj-u26-postal-address-63 | prov-obj-u26-postal-address-65 | prov-obj-u26-postal-address-67
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u26-i-postal-10`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a66fd6d343dcbb570b33f07b2bedf6aa20144ccf41c8a7a30d84da71f9018122
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description identifies an apartment on premises that have none?
+promptLetter=premises without an apartment
+options=an apartment number is omitted when the premises has none | every address must invent an apartment number | omitting an apartment turns the premises into a greeting
+answer=an apartment number is omitted when the premises has none
+feedback=Admitted reading: an apartment number is omitted when the premises has none
+objectiveId=obj-u26-postal-address
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: every address must invent an apartment number | Rejected reading: omitting an apartment turns the premises into a greeting
+testedFeature=APARTMENT_CONDITIONAL
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-i-postal-10
+cueLanguage=rule
+independent=true
+answerSourceIds=prov-obj-u26-postal-address-71
+distractorSourceIds= | prov-obj-u26-postal-address-73 | prov-obj-u26-postal-address-75
+distractorDifference= | Rejected reading: every address must invent an apartment number | Rejected reading: omitting an apartment turns the premises into a greeting
+whyAnswerDemonstratesObjective=Admitted reading: an apartment number is omitted when the premises has none
+contrastMembers=an apartment number is omitted when the premises has none | every address must invent an apartment number | omitting an apartment turns the premises into a greeting
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u26-postal-address-70 | prov-obj-u26-postal-address-71 | prov-obj-u26-postal-address-73 | prov-obj-u26-postal-address-75
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u26-i-postal-11`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87abca98fa6e7fde2af864fe914f3b27e46c61a4a1c5019074ac5fe6dda76adf
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description organizes this complete home-delivery address?
+promptLetter=Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+options=recipient, then premises, then locality, then the applicable region, then the country, then the postcode | postcode, then country, then recipient, then premises, then locality, then region | recipient, premises, city, and postcode alone are not the complete order
+answer=recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+feedback=Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+objectiveId=obj-u26-postal-address
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Rejected reading: postcode, then country, then recipient, then premises, then locality, then region | Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+testedFeature=COMPLETE_GOVERNED_ADDRESS
+evidenceMode=STATED_APPLICATION
+contrastSetId=u26-i-postal-11
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-obj-u26-postal-address-79
+distractorSourceIds= | prov-obj-u26-postal-address-81 | prov-obj-u26-postal-address-31
+distractorDifference= | Rejected reading: postcode, then country, then recipient, then premises, then locality, then region | Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+whyAnswerDemonstratesObjective=Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+contrastMembers=recipient, then premises, then locality, then the applicable region, then the country, then the postcode | postcode, then country, then recipient, then premises, then locality, then region | recipient, premises, city, and postcode alone are not the complete order
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-obj-u26-postal-address-78 | prov-obj-u26-postal-address-79 | prov-obj-u26-postal-address-81 | prov-obj-u26-postal-address-31
 responseKind=ENGLISH_CLASSIFICATION
 
 ### REFERENCE `ref-u2630-attribution`
@@ -4340,27 +4550,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3f5167bf0fdc287e72ae37d8bcf8866fc2872e5045d22bc807440c6289efee3e
+- Content hash: 7b78c6fc0ccd96581ade8f47bb72e6269f462c2b34a90755e8b869c2894277c1
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -4374,14 +4585,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -4393,14 +4651,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+Москва
+а
+я
+shippedText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=1b0106b0c9c15f750e687a1b4aeeccf723dae7b1237977c9fd5e58f48e8c90cf
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=ec28d6629fe8e08b56aa7a3fce4a9fee4b15f603f3997c59af527ec12440b93a
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4415,27 +4676,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a30bee4a92639c293cbd48d58f30596b1271f85554646d9cad7c5fd48d22bf94
+- Content hash: 76d002d5c92431b5f0e9dbab24c4660172abd900b171a7d84fb1e739774f95ac
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -4449,14 +4711,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -4468,14 +4777,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=A greeting is outside the address, and a letter convention does not identify these components.
+Москва
+а
+я
+shippedText=Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=1bfc09f594e1ba90037985ab14734aa20606ec73b44a7b37022be397090d9ecb
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=48658753c21c24d64687181c93e14cd55962dd48081ee486fc9c6f4e3957c41c
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4490,27 +4802,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 12f20aa29b48513ca3f4149df8194ca97cc7b6d7fea1830b21792bd6188e9522
+- Content hash: 21c5a9b10be8cb96757bf3cce3a8014b6a96d7b5e695f23a463341410e662a84
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -4524,14 +4837,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -4543,14 +4903,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=the street line names the premises
+Москва
+а
+я
+shippedText=Rejected reading: the street line names the premises
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=2c856cbae2ea6f7cb9ec6ffab3eabcc0476ed87c3e387b6cd952ab187aa29287
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=adc15190a98552742bc44af55c183cf8efa813ec0ffe11f0a5de736ad444070e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4565,27 +4928,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 61038e6fac0bc3579a51608dbc7d13bbf3b6c14da3666fecff6b996954cd9230
+- Content hash: 9c83b75d4f2aa576307d019f71cd4d8191b58a29ab3502acc7b0912706fed3b3
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -4599,14 +4963,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -4618,13 +5029,16 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
+Москва
+а
+я
 shippedText=the postcode names the delivery office
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
 contentHash=5ab6cefaab8cb062c400b3530891e79317b2a812a8dfeb26ec03f96bf625e2cc
 audioAssetId=
 reviewerIdentity=
@@ -4640,27 +5054,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ae60c71835b7edd42d049999a611ae6238ebc48782a81b4ef4acfd3300fea95a
+- Content hash: c4c95a1af8dc2201dba41d12fece58af46c4443a301937493b6c666360c30630
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -4674,14 +5089,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -4693,14 +5155,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Rejected reading: the street line names the premises
+Москва
+а
+я
+shippedText=Rejected reading: the postcode names the delivery office
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=adc15190a98552742bc44af55c183cf8efa813ec0ffe11f0a5de736ad444070e
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=45313bafa49968c987ee7f94501a29fb65e8840eebe5fd5f936fcbf7ee4cd868
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4715,27 +5180,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6b0970c1eac859c2c4b6c1e12dd3ed07c848fd40e49be3ac6026676f4a2e4c4d
+- Content hash: b8ee3fb1a557594855549acc5a502722a5764b949cbc476865da6160a0ac9400
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -4749,14 +5215,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -4768,14 +5281,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Rejected reading: the postcode names the delivery office
+Москва
+а
+я
+shippedText=Which English description identifies the person who receives this home-delivery address?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=45313bafa49968c987ee7f94501a29fb65e8840eebe5fd5f936fcbf7ee4cd868
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=030b243be95687b532d0c3e4b1330805e22bbf772edc2b25faccd23096215476
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4790,27 +5306,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 812b92476b0b96d68b1e6a3483a144029d10632c72c07b0438e78731681b0749
+- Content hash: 88370696a86be07cf12cef9f6775c926a0d330f4bbe7399e14430edc78be9c39
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -4824,14 +5341,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -4843,14 +5407,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Which English description identifies the person who receives this home-delivery address?
+Москва
+а
+я
+shippedText=Анна Петрова
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=030b243be95687b532d0c3e4b1330805e22bbf772edc2b25faccd23096215476
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=ed8495eda427eb0ea1ac2a03e49923f4ced0c2e6c3a5b1b53c038e69f8170293
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4865,27 +5432,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3b6d143f507c46b1ee10b4ccd121fe06caa96398047dd5a686a6f7c8f0e53d20
+- Content hash: 1f5a17866320c3802e47b1cf86d7b28ab17358762fd202c5d1d36ddab354e374
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -4899,14 +5467,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -4918,14 +5533,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Admitted reading: the addressee names the recipient
+Москва
+а
+я
+shippedText=the addressee names the recipient
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=11ecbd5c8e29fbf161b3336682affbceb907ff8841fd6c89200967b21d4a883a
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=29791d7e11534afa07991811a1ea269a9996cbeb8e3a4481069591e5d5b38961
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4940,27 +5558,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2df10b8ff5cdb14852e4632c234e5362b6955dbcd12cebaaf496d8012b6a5ae6
+- Content hash: 0798755012863c749e7a9c79c8cba59a4a887c16116f641896576c3163b05ce5
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -4974,14 +5593,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -4993,14 +5659,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Which English description identifies the premises in this home-delivery address?
+Москва
+а
+я
+shippedText=Admitted reading: the addressee names the recipient
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=4e325c922882598d867d35e36989f98da5db13e906eb1b442af9e46a83d5689e
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=11ecbd5c8e29fbf161b3336682affbceb907ff8841fd6c89200967b21d4a883a
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5015,27 +5684,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 886fdb96c96ab163190ac048cdb72ae90bcb2ae3f747c9697b1e4dc869d9baf4
+- Content hash: e512cec9b19e398f14f6139030e6dd1fd94ae24bbba723e047ab2c0a8817bd4c
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -5049,14 +5719,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -5068,14 +5785,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=ул. Садовая, д. 12, кв. 4
+Москва
+а
+я
+shippedText=Which English description identifies the premises in this home-delivery address?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=8e3516e182db2576ce6c23be6da5a81f20bd47921be133c0d6808e944000f34e
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=4e325c922882598d867d35e36989f98da5db13e906eb1b442af9e46a83d5689e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5090,27 +5810,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9f876f79b798ff9a5ff863fe14845d8aad6fd9aa605b8683aa88f2874b74d6d6
+- Content hash: 48c29d8238c32f209392f603e9a25c425d2e7007d9a556e98abdc48f67798399
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -5124,14 +5845,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -5143,14 +5911,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Admitted reading: the street line names the premises
+Москва
+а
+я
+shippedText=ул. Садовая, д. 12, кв. 4
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=fbb902e165abaf1c964979c53c51f440d104daa4819c4bc54d0da589b0c612f5
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=8e3516e182db2576ce6c23be6da5a81f20bd47921be133c0d6808e944000f34e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5165,27 +5936,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d350564a1a0efd38a265c7816f45642f9a078b06917072d5ca5bb8e77c9b1b6f
+- Content hash: 94b2df54f57c0a79c9ce024128f80f5c5c3da099d65d9675b4c22523da30c078
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -5199,14 +5971,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -5218,14 +6037,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Rejected reading: the addressee names the recipient
+Москва
+а
+я
+shippedText=Admitted reading: the street line names the premises
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=862bdd6e07b48c40cc99452d1a5c7ba263e7533a5adf40a79c87f1db0e399d5b
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=fbb902e165abaf1c964979c53c51f440d104daa4819c4bc54d0da589b0c612f5
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5240,27 +6062,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 79a3925d7c7fe377f5de5009551cc847e8dd593c83df7a4fb8dbd22a920d1027
+- Content hash: c5c579a9ade9099741a72de64ca9a01e0e43b73dd140cccce17d9ffd8ae5deed
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -5274,14 +6097,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -5293,14 +6163,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Memorizing one sample line is not the same as identifying a component.
+Москва
+а
+я
+shippedText=A greeting is outside the address, and a letter convention does not identify these components.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=cd5d2fa0188ab8cf7077ba4439bb45933015a1ec044bb278874b241b848953c5
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=1bfc09f594e1ba90037985ab14734aa20606ec73b44a7b37022be397090d9ecb
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5315,27 +6188,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5923b29edff202f761d8dcaf88265a28e3967a12e0319536333a2ffbf5fc80cf
+- Content hash: 3a05f8cabfcba59c79d0454771564aa381e8ae57a3de8effe254c2472f3cf337
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -5349,14 +6223,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -5368,14 +6289,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Rejected reading: the locality names the city
+Москва
+а
+я
+shippedText=Rejected reading: the addressee names the recipient
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=006f9cb1599d482466ef2956b5c01d5758c1c386c4335e4af791989f396c4dd4
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=862bdd6e07b48c40cc99452d1a5c7ba263e7533a5adf40a79c87f1db0e399d5b
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5390,27 +6314,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d1a253f4aecd4708c9e731449506ec875b2221bb01ff705b6a02a9befec2b03f
+- Content hash: 6f53689ea0eb69da9c03b7f4733869eaa576dd0d47cbcaa5a4811379d4f1f9f3
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -5424,14 +6349,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -5443,14 +6415,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Which English description identifies the numeric delivery code in this home-delivery address?
+Москва
+а
+я
+shippedText=Rejected reading: the locality names the city
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=e32c54dc4eb332cef2a0b6d83ee2ef279020cff9c5015e135e00ff65aa970a36
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=006f9cb1599d482466ef2956b5c01d5758c1c386c4335e4af791989f396c4dd4
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5465,27 +6440,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ae7663c5bbf82e58e204ebc77e65c2cf265f7343ae44c3acb6b9fa941e505d39
+- Content hash: c4251ada84b7912b92c77bb0d90bcf0de61af40fcb8014f6df525f6fa3e7fe96
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -5499,14 +6475,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -5518,14 +6541,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=420000
+Москва
+а
+я
+shippedText=Which English description identifies the numeric delivery code in this home-delivery address?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=c74cc85badcf13b0d9704ec9f8645aee901600d4167e32d00527481fcb8aa25f
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=e32c54dc4eb332cef2a0b6d83ee2ef279020cff9c5015e135e00ff65aa970a36
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5540,27 +6566,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f8c2d59eb413dbc7f3d0efc0fc9b0d9922df07fa09af665434df19392db4c4a3
+- Content hash: a9cbf8869390bc95024b89d8a7e8086d1b3f88488a3434a1643c8109007d60c5
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -5574,14 +6601,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -5593,14 +6667,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Admitted reading: the postcode names the delivery office
+Москва
+а
+я
+shippedText=420000
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=905c68e8d1025cb2146cd93a0493cb4c0413de90f1ed10a94382c156cd11b803
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=c74cc85badcf13b0d9704ec9f8645aee901600d4167e32d00527481fcb8aa25f
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5615,27 +6692,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d3710dd7f34563bee199d1c290db9f275fbe28a25e4ca02354b169e494b38ed3
+- Content hash: 996c8d6cb1646bef654941c7c7bf3ece4c7307132a6f0c10c612d42d3ec7c856
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -5649,14 +6727,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -5668,14 +6793,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Which English description identifies a greeting that is not part of this home-delivery address?
+Москва
+а
+я
+shippedText=Admitted reading: the postcode names the delivery office
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=d2f51df41ffcfcac51fafd387ce15b5cee1a14b52f000c9f8722a522257c8764
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=905c68e8d1025cb2146cd93a0493cb4c0413de90f1ed10a94382c156cd11b803
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5690,27 +6818,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ae96df1ab3b22d21ca1c0037d463be227cdba686019a8813f5227056abac8d42
+- Content hash: 3909c3ae0e4c2ece71e5ca52aa1bb8f4c2d101bd3246ea2d0d93bc249c97b50b
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -5724,14 +6853,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -5743,14 +6919,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Здравствуйте
+Москва
+а
+я
+shippedText=Which English description identifies a greeting that is not part of this home-delivery address?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=41793c3111357a551b810e7de701f05148c89bc934135b08e04baf3a9279c81f
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=d2f51df41ffcfcac51fafd387ce15b5cee1a14b52f000c9f8722a522257c8764
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5765,27 +6944,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 30f21590a29d52ef8176619779ab2d1991235cebac66b19cf6dc0a2bcb443611
+- Content hash: 6d16f4bebaa47b0b25bbc925f37a6b8b38a4d6beefbc6be0601e7ac23b71c640
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -5799,14 +6979,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -5818,14 +7045,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=a greeting is outside the address
+Москва
+а
+я
+shippedText=Здравствуйте
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=c46c17b48600cdbcfc70188000e9e7da3b570ac6c660ac92f1e3eacdece4a8d5
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=41793c3111357a551b810e7de701f05148c89bc934135b08e04baf3a9279c81f
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5840,27 +7070,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2ac8829c54041fc618cdfd4722eb98ec46e7bb1003bc99c0ee80ac654d509916
+- Content hash: 3584a4ee809394f72c00b5fdb3f0293120291b757985f4f9fbdd1f69ba8a8389
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -5874,14 +7105,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -5893,14 +7171,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Admitted reading: a greeting is outside the address
+Москва
+а
+я
+shippedText=a greeting is outside the address
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=f41f72269e3996886cbf9af13aba2828cfa67a9dceb23fec0d433c9bb1fae086
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=c46c17b48600cdbcfc70188000e9e7da3b570ac6c660ac92f1e3eacdece4a8d5
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5915,27 +7196,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3972d19e0b07fbcd995ef45b0a2e72bebcfe089399c9e53a82a22aa1a862456e
+- Content hash: bd55ae40f90e92c556d499f34b358019994be118f9980fe5091e1d2f74cc814d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -5949,14 +7231,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -5968,14 +7297,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Which English description identifies the component order in this home-delivery address?
+Москва
+а
+я
+shippedText=Admitted reading: a greeting is outside the address
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=2b65bb0bcab275d8f3150fcaa55236393bf4fdf0f383cb07c0afa773345d9a77
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=f41f72269e3996886cbf9af13aba2828cfa67a9dceb23fec0d433c9bb1fae086
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5990,27 +7322,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c13ad934dc8e68fb9a833bdfba09990ad01a34a3aba30669f3121916beca63d4
+- Content hash: 29cd48a407ae1f6386e365991d2dd1a5890dec3999cf4b5b16323cd31a3666ae
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6024,14 +7357,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -6043,14 +7423,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=home-delivery order
+Москва
+а
+я
+shippedText=Which English description applies when only recipient, premises, city, and postcode are named?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=792b0f533a07cee6c74d5bd6b9b918177fff5925b9793b04a18450ffde85c7bd
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=0de716b390b7af828a88ddfa7e7652531e203d404567fb33345baf95622dcafe
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6065,27 +7448,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 010ba0255d438fcc4e280333fb66ce56805fd086f671877aa72265a0bdd9b449
+- Content hash: a3e7a0724be9f14f7a8a0d2e1f971995c58e1b8e1812733c9753f4a12dc32a2d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6099,14 +7483,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -6118,14 +7549,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Return to the component roles: recipient, premises, city, and the six-digit postcode.
+Москва
+а
+я
+shippedText=Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=c63a9d9269cdb458911bcc0a94307a30a61c3e0107dc4195e27107556e327c8d
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=1f7800430259e6a74380d17b928e8b79a863738f0ea4208c04e720b67db94a30
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6140,27 +7574,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f6bfd6698d69d8c2ce0d471fd983fb209a8a20e2d2e8fbdbf9f4758ed3aecfed
+- Content hash: 2c8cb9461d2770fa39eca21beda8f1252af1b2062df38dfecd5153c3f9a176ff
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6174,14 +7609,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -6193,14 +7675,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=recipient then premises then city then postcode
+Москва
+а
+я
+shippedText=the short sample
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=f6857e5d5ec336da5caae1d7a73176ab38d6b1adfe390e85dbe30a133f3b6a78
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=0b280747723cc303086a09e8cdb5b2390a5d955bc41b275e38b49fa1253210a9
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6215,27 +7700,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9155b42ddeee35c139edc1a0673c214c0c186cdf0185e230947c4c56f69d2a70
+- Content hash: c6c83f3583f3da4b702a6d18641f840a528b8b13bdae0d941262322963987fb1
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6249,14 +7735,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -6268,14 +7801,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Admitted reading: recipient then premises then city then postcode
+Москва
+а
+я
+shippedText=recipient, premises, city, and postcode alone are not the complete order
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=47c922fc350bdddcafec065f54f9309e1365f237d316c1fbb310365d1dc9ca4f
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=ae77a7bb45f2a8e46348ac3ef8e3068cf561e1c413fb9a311fea635f1b389253
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6290,27 +7826,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ca77b7b0daaa48c26e1cf9ff1cde9f5ff2209e120c485b1645897104a22cbed6
+- Content hash: d06b1902a2c1ff759a0d484f19fe048576343efee2bda5352bd13ca8f59e1c39
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6324,14 +7861,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -6343,14 +7927,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=postcode then recipient then premises then city
+Москва
+а
+я
+shippedText=Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=aac2e9f663f576dc62dbe2fe81aa64158b983bf8d58f227e28d194b5adb25aa1
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=7d4175c10a60d66cc0755af924694334aadc431dd8fa66612966459be12ec34e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6365,27 +7952,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f84f9c02b4fa6440325396fb3e8a7684b7bfc3fa44ff57e8208b64afc850acdb
+- Content hash: 3737b896c0f92c509d5424e1ddc363aff407ae20ceb3ae36fcdac09fd9513757
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6399,14 +7987,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -6418,14 +8053,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=premises then recipient then postcode then city
+Москва
+а
+я
+shippedText=recipient then premises then city then postcode
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=c61eecab864187db7246e817b3329ac6e9fa2c22b1588459bcd6b010375bca6a
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=f6857e5d5ec336da5caae1d7a73176ab38d6b1adfe390e85dbe30a133f3b6a78
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6440,27 +8078,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 82a14791bd716079fc80c5792af38e5759dd4d2e1867f982d648b113590ccce7
+- Content hash: d7e658423e378fb349ea0d1a828d4d40db8a12d19a78292ac2c55f75a4eb6ade
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6474,14 +8113,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -6493,14 +8179,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Rejected reading: postcode then recipient then premises then city
+Москва
+а
+я
+shippedText=Rejected reading: recipient then premises then city then postcode
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=da6952555c19e80147f765e69907ba5042f47bc7813f2f81c6a3373e0fc7b01e
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=d5f32c9e042c19ab5e215dad2d659d43eb1a08107bb415a43f608fa09400517a
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6515,27 +8204,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e12b1db44e45cd87f8fbcf1c4d5147a361d3e4077a2708454749ce771a76ca61
+- Content hash: 916df8f2d33542f60d7febbbc4e3cae5c4f7dac45ddc5bc48bd4783f5fd1b915
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6549,14 +8239,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -6568,14 +8305,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Rejected reading: premises then recipient then postcode then city
+Москва
+а
+я
+shippedText=postcode then recipient then premises then city
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=5481c1eda5e1769d434f8c90e4729ba4deb66e1ee4c341533b1ccd9ec7cecba4
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=aac2e9f663f576dc62dbe2fe81aa64158b983bf8d58f227e28d194b5adb25aa1
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6590,27 +8330,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8dc90ffa6d328e0efa124307e3c25bf16905b68880e65b052fb676c3d06ad320
+- Content hash: 08e0b87f71ed5cd29f30a81134f23ac11a12baf21170135a66683cb22e4711b2
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6624,14 +8365,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -6643,14 +8431,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=г.
+Москва
+а
+я
+shippedText=Rejected reading: postcode then recipient then premises then city
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=4c739afeeefc7cb4ea9af5b046f08480625b2f4363d14c041f1311a1bfb78c40
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=da6952555c19e80147f765e69907ba5042f47bc7813f2f81c6a3373e0fc7b01e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6665,27 +8456,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: be3b91bf4ab8064a5a1418f2d9895fb77a9e4dbb2cd9b29a3f0e95705e4abab1
+- Content hash: a9c1508a3d915586f841653ccc0b0c30873097e47e8c2a339951b5a8a0b38a02
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6699,14 +8491,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -6718,14 +8557,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=г
+Москва
+а
+я
+shippedText=Which English description identifies the regional unit that applies to this locality?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=e426a77a1fd6dd82a481d2274e9645924cd384447e42da364bbd41afc2aa430b
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6740,27 +8582,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5f4bd18f0d67f5c9c322b258bea89790663783f6f06617f03e23c5d1b8c7bfbe
+- Content hash: d049e8568457d1361ce1867e36846f3df185f6df38d4cea4c847b073f1a8bbfd
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6774,14 +8617,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -6793,14 +8683,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Казань
+Москва
+а
+я
+shippedText=Республика Татарстан
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=bb421b85957b37faba1125c1463d989bf5a115681a77c706342bc42f2dfcee56
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=9c17fe585fef435a74edbcd9698b9bdf7f57bf4c6320d79975e420a1e9a8610c
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6815,27 +8708,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8c2b4a393aa12a038909340b6a995dd42782aee5cca16cebfb7396b2b17714c8
+- Content hash: 5f1b4f3a7d0944a5c3747f88088c727362db6c33a5b0b990012e9bb869c1c9f6
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6849,14 +8743,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -6868,14 +8809,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=ул.
+Москва
+а
+я
+shippedText=the republic is the applicable regional unit for this locality
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=f0a2345e484bd6cf8909f0523185694a02c98c10b48a258db3af06a482c1a21b
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=8e8e08c87521f05db5ac103301325ba81df461db9039c9bdfe478ab3b0c13e80
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6890,27 +8834,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 60a068aefbb5f94e1eba47f32d2976c758ba5714e80967bc3db550daef8e0908
+- Content hash: 1a35fdc828157b885d2db039c2127c81219de8e8d8f5b0c8c8d265c205467369
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6924,14 +8869,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -6943,14 +8935,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Анна Петрова
+Москва
+а
+я
+shippedText=Memorizing one sample line is not the same as organizing the complete address.
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=ed8495eda427eb0ea1ac2a03e49923f4ced0c2e6c3a5b1b53c038e69f8170293
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=0de45689dc67d81a2f5877ff0e6f3ea9fe8a4a50c50f3c426b96b0a062a36129
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6965,27 +8960,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: aa38c372f9b7061e8aec8bc020e707594de83a68701c2f6e9adbd507384bb617
+- Content hash: 7d41c46481d3b99c4f2ecb68ac23b0d8cbe46e09d9909a1f9c78ec600f835180
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -6999,14 +8995,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -7018,14 +9061,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=ул
+Москва
+а
+я
+shippedText=Admitted reading: the republic is the applicable regional unit for this locality
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=02d72a21de51120fc739ab62c5fdbe2b023a9bf6d3f4daaa281c3ac2ba29e925
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=675b92aac8198d0db498cbbc803b9e3ebd42df0b7cfc0003ed62772a9b6f99ff
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7040,27 +9086,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c16f65bd7c06f1d182f41ba3bd38dfc22b9e1c38c2c23b6b9e624361ee4e56d1
+- Content hash: c6fd275cd9a9a1cf10505b8e30e8d7478a396dd7bfa4fdf025ea829c377750b0
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -7074,14 +9121,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -7093,14 +9187,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Садовая,
+Москва
+а
+я
+shippedText=the republic is the six-digit postcode
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=58e8bb064e8abe1b6c0e0c6e16576e123c2ec1694b69cf1664821fa221253340
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=2a1174c38c6af277e3104d9c685f0d37d18e8f9fdb902c941aea1b1b69844d2b
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7115,27 +9212,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9d3d480f2074357bd28652237241badb78e7b5020ade112d08b461ece9fc1915
+- Content hash: 385cdd750125c2fceddda1f39248826c1e463d4195eee39c0750047d3ce0af45
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -7149,14 +9247,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -7168,14 +9313,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Садовая
+Москва
+а
+я
+shippedText=Rejected reading: the republic is the six-digit postcode
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=367ae611e501ef78acd1c75859305f0c26fde1e804c6b3d6ccebfe933d810049
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=8a63964dc0a9763c2a99a6fcc75f4f374423a510c395125980728e7cd34065e7
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7190,27 +9338,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9acf41ac46c470a501b103b0388d8a0acea6bafd21e4c9168af21c96f26887a7
+- Content hash: 1759cd18edfdb651cf3bf82e0d68af73d23f32eb1435a841112b6a5eb1bf2ea4
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -7224,14 +9373,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -7243,14 +9439,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=д.
+Москва
+а
+я
+shippedText=the republic is a greeting outside the address
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=9bf3f274b37a666757a5df6bf03a9b40d7816a78a9fb5f796cbb5cc85bffac7e
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=3ed8104f9f4d179156ff08db4de657da920a8f57d20f7a7bea5d14e195a7b8ad
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7265,27 +9464,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a6fd673b5359a26c382690e8cc3b56ac754b13f835410550b07bf50d78a547ef
+- Content hash: da6942f965159d30edbecaef145820b20bac76bdbf56eff875616281924e4cb1
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -7299,14 +9499,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -7318,14 +9565,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=д
+Москва
+а
+я
+shippedText=Rejected reading: the republic is a greeting outside the address
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=1cc10a3947f7c2457d9aeb9d468b418157d72f1e3d84f82e08e81718305ff909
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=8a046bac771cf1999edf39304a9a9d942f7be2232385efd85c3363c569e5f3fb
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7340,27 +9590,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 943b554bd0a7686ca37d68d682b63e957020b3d8003d71c82cf54ff6c7f337ca
+- Content hash: b6e925c447b94624ec46a973bfa1cad0883f0c856dd5fa5b80a954744c2f3452
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -7374,14 +9625,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -7393,14 +9691,17 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=кв.
+Москва
+а
+я
+shippedText=Which English description identifies the regional line for this federal city?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=be616a7ef2917a1fd9e311ccc49f9be19911890adb2b04a157d7a8155c8ac69c
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=1349ac9212e325fcf6385164b68b11bf5c1a0c983392c722301bcc52e02d275e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7415,27 +9716,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6a1ca1279885b8826c85ae41f595e560da17132c48862d900863da1b3034c9f3
+- Content hash: 34d063e7c9bd7dc99c88dd90f2f35e31cb60503e73d83f8f441cbc409ca1e8fb
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -7449,14 +9751,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -7468,14 +9817,395 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=кв
+Москва
+а
+я
+shippedText=г. Москва
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=6733c9d27347a658d9aba74010e700604493cd4cf9c075a2108a08b2846baf59
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=8b3b81f5c3de2cf9af8e9be5fc1443a4757dd508e301bfe241764ac4ad396ea9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-47`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 695c412ff02d82c8c1ea88e0724a1145baa42bf4de8ec6d9c0033e096d0b8fb3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=a federal city does not add a separate oblast line
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=7bb49afc071f0254ada182a8380898a51ca3ceb99bb9d216620f8d81e46b976e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-48`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 372583a29fd3d75ea1228297f7874651323398df4fa7beaf810085710ef27232
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Admitted reading: a federal city does not add a separate oblast line
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=a115ebc4b9d96c8c65da90b4093ecced439083bd0cf36ef98db001bb5c27a2ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-49`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: beca8a39a15edff4aaf9feb4768d7b31167f9d63f1804d893b1db4e441ea7c8e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=a federal city must add an oblast line
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=e98b14be9f6352dfa8008a2d91f1bf82525687a5cf579d4dc44a84eb3c7b655f
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7490,27 +10220,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3767307166bc983b2a5eb8f4060bea097e274c0feafdf00f9131fc3056a66bc5
+- Content hash: 4c2a184a562bd47189151cc3c0ee56dfc5fff771df9104c4d69c6a1082f8adf7
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -7524,14 +10255,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -7543,14 +10321,1277 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=the addressee names the recipient
+Москва
+а
+я
+shippedText=Which English description identifies the city in this home-delivery address?
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=29791d7e11534afa07991811a1ea269a9996cbeb8e3a4481069591e5d5b38961
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=94c8860d776180377beea186d064a25dd443a494582f81526b16cd276bd9055a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-50`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9d672e07fa190bf5f062ea9cc1c7cbabccddace225e1575d8d9fddc76648b6bc
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Rejected reading: a federal city must add an oblast line
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=62c50aa8e5f152496b4aec0b885e8553257bd5945b3d4140863386727e94e891
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-51`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1574e00452c6c05da50d1663f8e5f412d22115df66c888067c42766717eb9417
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=a federal city omits the postcode
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=396f0cdee98b8114c69866d333e809de2ed7e525db78639e761b9d5a341e7200
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-52`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b450e09df58e58956c9068a82c1fb36e7e9dbb91bcf3dc1141d07cd74da22236
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Rejected reading: a federal city omits the postcode
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=d2f4b2a2d8c13c29fd70bb15aa4edf513600ac0c76b8dea670acd2083adb028f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-53`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d7934d1a1ea525caefb3bec65f50143357c8d6b12f5e391780251484e8b34d5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Which English description identifies the destination state in this home-delivery address?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=ebb0e598461ecf82922c4089a867e687bfa2fb7c25298b5b147a249a2005d849
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-54`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4574f27eee85092bfbc0f3e65e725a8f59f520870ab57f7e3f0fa784a2e5a4e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Россия
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=22fa0a6ef455a92984138c44146bfc60389cf1fac2d5e29e5ab781ab992293af
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-55`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: afd0d982141d77d023e961de3f3af621dc44f194cabdb49c89e10cfae69f8bab
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=the country names the destination state
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=b031011bc35cb3540ec55841fb7f74cbfdab40290cb10091d1efe4f68af7ae67
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-56`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 20c0d2a7768aac0735d1eb3087813b708112af0b0f6cdb01bdf47e9c21aea2a7
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Admitted reading: the country names the destination state
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=2d61e6dc48eb05c99a10c083d0ebdd272393fe877cb4d40b6c6da1d67214bde2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-57`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9dc41e2cfec75a8b1e2f55abbdddb79ff86002dabb796a58dc48e15998b88b3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=the country is a greeting outside the address
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=18a7f8ec830d578cfa03c46c842a41e2105bf5671eeb2e011879a12d3d8c7b0e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-58`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38cad37fb462a409d618e16eb6d2451e088a3f313483c4467a6a8e50b4057c77
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Rejected reading: the country is a greeting outside the address
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=f29526c4b9e3e658903a47dde60fbe46df674575070b0a65c92ff621ffd013ca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-59`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb0e5c8535bcb513c1488b423307e480ef332e56984cd05907187747ed5498dc
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=the postcode replaces the country
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=3a1b791afe52540b724dd84ffff04c76c080a728caca980e09e39b781f8d081d
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7565,27 +11606,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 74178e87bdfc7d8fdd9ac8d8bf3f86a4a11a48758fc06d58686bd0145b51e5a5
+- Content hash: 2157ccb7f1742d64415d19eee103660789a52fb899ffcea27e212f0613bec5ce
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -7599,14 +11641,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -7618,14 +11707,1277 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
+Москва
+а
+я
 shippedText=г. Казань
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
 contentHash=89252b21b79bf798ebd331c2fc54901785bfac96388db5ec678a787852bcfd99
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-60`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e000d2547e8e0b6ecc3ab125225a1fad592fd5df68c4a31923f4ebecb42d6115
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Rejected reading: the postcode replaces the country
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=d6c6db36c0027785a0fdb93adb8195d8d3540038252abf742fbcb2e5c50b30a7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-61`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec1cab6d5fed71bd11a1c727542211747ea90fc4853614741ac1ebd6ddad3030
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Which English description identifies when a post-office box belongs in this home-delivery address?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=e264fb1ee8ea3e09ff52926720b76b78992438300a83b1df14883be25ee72de1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-62`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2165b2dbed150a37c6c776d0a35ae9e9635021e74372dcea965c9a6f59d3dfc1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=а/я 15
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=d8f9d9e5e8230f12d4c0351841dd6cb23b9d965de9ee4aa1b798549a39b2f19f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-63`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a917198a0c9c2f581fbed157decb156e5b9f952a978ab7a40f3736c1ff70a542
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=a post-office box is not required on a street address
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=aad28d23aa3126ac7222336b05bdaaaf53642773d02ec0f17ad214adcb1844b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-64`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 264e3f22ce6baeb21a7b9af4411fce8f1db0bef6e3b3855e57d99e991278e872
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Admitted reading: a post-office box is not required on a street address
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=a9d951f19e7aac577f480cd2c1afd220a6bfd05de8aa98b4e2f3f21b56f4cd69
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-65`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a30adc5de0c52993cc702c3d53e92c14e5a032ad538375fdf03149832dbf52a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=every home-delivery address must include a post-office box
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=2bf3238ef5ee7a370ce3b8a7a3b7732cb3160c1a6f722a675d1ca83e9704f9e2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-66`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ba9b8ff8f19b77f797086ce00d6c31d03b3e70c316b6cc658ebc9e4767934fe
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Rejected reading: every home-delivery address must include a post-office box
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=967873e8cf805104fef14ffba8175634e0ae6e689764194e10d1948a53e3b340
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-67`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 30f2b9b2fa3fda6f436eaf8c528ec63ccc5e51424f63702fc18b91561bd39faf
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=a post-office box is the six-digit postcode
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=b445bab6ae0590b70fbd297b7c5cc5c51fa3478aadb2050f33b47db273c23d7b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-68`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbfb4ca4a0c5d3b8734fbc54a047dae44cb28f8c61831099bbed80260f9abf48
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Rejected reading: a post-office box is the six-digit postcode
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=8cf5408967a003bfd5614b374cb7ca75c3b6cd39758ae836b3b54b7dd2662d79
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-69`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b0d79ab018a3b84df194015c35f3012fdc1d02caf5cc78efad58d1efcb5d2bb
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Which English description identifies an apartment on premises that have none?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=ccbf6ea6149bcbc8541eeabd4aec89afc19752db37fbc878a43bd6c3395f0255
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7640,27 +12992,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: aad9d830be81c0fc82465cf6180cf83618f69499db2b675f68e32de38a00fa1c
+- Content hash: 38c9f023a3a84d961947e09f5544ad70d5a18386f4f0ef63b9fe12aa8c4e8206
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -7674,14 +13027,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -7693,14 +13093,1277 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
+Москва
+а
+я
 shippedText=the locality names the city
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
 contentHash=1a876b4dc5ec0ae114f4a546b76eeac49f92938f6cfc13232d5a302bfa030552
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-70`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6dbcbdfba36873ffa304fa1457b1dc7982284559dd51bad46db226a8f08de3d2
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=premises without an apartment
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=46f87aa4d58c7ee1b7b8740b00b9a8253618d94cab4028115f304202a4f558e6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-71`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 46cb60879b996591eb16bf7fc997d09bfb26720a7458db4eeb96cff9963de3f5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=an apartment number is omitted when the premises has none
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=18a830dac981bcfa5e6b19042a19cd7d6409d00e92794da0ad14a15e256cfb63
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-72`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9f97703adb65fb15b5902754f70177dfcfd85f73e7f4e78a9f2ee8872aa2bf6d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Admitted reading: an apartment number is omitted when the premises has none
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=435411eb102c15118a14805ddebb62f61f7b927b0257c215a3ecd85462aadcb9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-73`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f66c1776f864dcfcee2f93de3d7fa741d3e4b991434aac161117bef26cdd8719
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=every address must invent an apartment number
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=0f50453356678404a2bf0b7b14d42061be3d8a58fbe89b343576d3079f2721bb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-74`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd5c5b4d8ee432202bdefbf923290da67a1ca55e72ccbc9032217cef8d341802
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Rejected reading: every address must invent an apartment number
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=933b9c0d2dbec7f116fc7ec759f42de206aea6e3b63e6998f4762958665dd000
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-75`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c48a8f06578e1f50337ab6c982ecf5bf11fb0d64abe0f7f53c509945d7d70854
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=omitting an apartment turns the premises into a greeting
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=cee422c3642856396e094de14927908a5de94bc00f00945699953e112699671c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-76`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39182d2124ee39af59f5831374ef8d4f43dddc7f3ad26eb402bf61857aa6f3ab
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Rejected reading: omitting an apartment turns the premises into a greeting
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=af6c4f2af3c87784cd1ba55736fa0398723c979608d4f5bf01de5d8530f228cb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-77`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 136500013e03c99bfa29b099d0dad4b1f8f5e84f8a3c803ab8b463ab317a2f68
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Which English description organizes this complete home-delivery address?
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=58b6cae140ec1c3f0aed9b30d5b9e06c853a906e9db76e7bb1813e3bec4a7b73
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-78`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c5a0f055d6dab0aadc96e24e8e202a57c8615cd0dc404499f8c88de18c39f22
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=f202fd3cffd8bc3802afefa00532fbdf522cb136a4b226adff34901dd872ca70
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-79`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 52b539448623bcea2eeabfffd698dc4155fc4c0f93bfee37d39553d6d0f7c653
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=f5b57a427b919f7a762e4f8e4d08133aa14b456bc7198070797e347a73e7c931
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7715,27 +14378,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 45a45ef2b2cef724ea729753612006521a542932cd6ce5bdb95cdbb7b27ecfe8
+- Content hash: e2dc2280737de564159b6ed5ef38ce1a3be70c88f21a30d347fa76c3cf153d9c
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -7749,14 +14413,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -7768,14 +14479,1277 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Which English description identifies the city in this home-delivery address?
+Москва
+а
+я
+shippedText=Admitted reading: the locality names the city
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=94c8860d776180377beea186d064a25dd443a494582f81526b16cd276bd9055a
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=ca4d83957137a938965e10b5bb90b4475b31ccb2f1d94d35d41c41df9cfe164f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-80`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bec186d6246053afeae7933b39cab0d65cf14cf39d995f3b853bc567cf933837
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=e80d74f2a577907153d48b1ca7da6eaf6098b74084c874de7d6da0cddc2902a0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-81`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b731c72b0ba867d4424e8d545d05888bf3a698c6c1f5bd054944103b56327bf
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=postcode, then country, then recipient, then premises, then locality, then region
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=afbb774134fbe7c30d0f50c7acb805f72f528dc4e8cf6686a98ef757b67dffa1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-82`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2df66a026944a6a3600db231c0dabfdbca01143e6c35bed265244b55d9b55782
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=6f61c58f25c975aab31703c4e5e96620d8bcc4521f53118f2c8a4fd553479032
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-83`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e3365724fe0a0509faa9b77d6933f49fc730d81b9daf647e17d6b62f021dc26
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=66b0732b6c2548682ad88e0878f42cfe4f61c604d8ee5584166ff8f23b1cfe38
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-84`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fce4bf03cbe342a223fff31f5902064b74184ff9d8ae19c59926076b035eadfa
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=г.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=4c739afeeefc7cb4ea9af5b046f08480625b2f4363d14c041f1311a1bfb78c40
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-85`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2f6be55bd80aa2a456d152bb9477ad20e5b085badb0cb0f422638b9280b0c37
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=г
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-86`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac208587ca48205702def48fe60fb0ff8e30313a37709d50f244f2f4600335b3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Казань
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=bb421b85957b37faba1125c1463d989bf5a115681a77c706342bc42f2dfcee56
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-87`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d365967c4c14d15455f2e88d89469552821ec5c06e3c8e45a4ab6468fd4318b1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=ул.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=f0a2345e484bd6cf8909f0523185694a02c98c10b48a258db3af06a482c1a21b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-88`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67adaff8be7b4da70a63cdeb047e0c0fd9dc661e1a6b142d6f4496a8eca50d5a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=ул
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=02d72a21de51120fc739ab62c5fdbe2b023a9bf6d3f4daaa281c3ac2ba29e925
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-89`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e937192980fb9da1d90282dcf8c5ec688d713ef093d5faca7cea2b1f123550a0
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Садовая,
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=58e8bb064e8abe1b6c0e0c6e16576e123c2ec1694b69cf1664821fa221253340
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7790,27 +15764,28 @@ reviewedDigest=
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6bf78cdf08ff6d6981b1de6e11c84d9f3567d8f3ba7f92fba889eb85f718aab6
+- Content hash: 0a9a7c47a0be64731a13ff186f81f572b344d50b27f13616959efcc70c531454
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-originalSourceText=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -7824,14 +15799,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -7843,14 +15865,1025 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
-shippedText=Admitted reading: the locality names the city
+Москва
+а
+я
+shippedText=the street line names the premises
 transformation=original research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
-contentHash=ca4d83957137a938965e10b5bb90b4475b31ccb2f1d94d35d41c41df9cfe164f
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=2c856cbae2ea6f7cb9ec6ffab3eabcc0476ed87c3e387b6cd952ab187aa29287
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-90`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c465ae04415660af237926525c0285650621c4ee769d92de46936974ea4dea8
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Садовая
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=367ae611e501ef78acd1c75859305f0c26fde1e804c6b3d6ccebfe933d810049
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-91`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ced06c736730eb0372a3899f603fd76172a0d5bea1ab2b5ac37d6e8f86b343b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=д.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=9bf3f274b37a666757a5df6bf03a9b40d7816a78a9fb5f796cbb5cc85bffac7e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-92`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 477caec7c1954aec4433de05b96bf8d5edd91d7b617a48a15cbab824baf38cf1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=д
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=1cc10a3947f7c2457d9aeb9d468b418157d72f1e3d84f82e08e81718305ff909
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-93`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0392635caf2dbd2ee74e00883453ebc89e647f3fb782ef923fc754153a5490c9
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=кв.
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=be616a7ef2917a1fd9e311ccc49f9be19911890adb2b04a157d7a8155c8ac69c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-94`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f45e71f51ae0a491ac4a6a33b9de4e7d4bc573e81aadd0c6fc94acabe9368687
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=кв
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=6733c9d27347a658d9aba74010e700604493cd4cf9c075a2108a08b2846baf59
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-95`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b9286a735b9e62f347f9688806a37357654dd0c8a74e942f9b0ef62fe0c3ec6
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=Москва
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=eb63f79a229771cda0cdbb8e2f893003664faac42a98b0e2710e2d01e2dd6056
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-96`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ad407eb6402981461e885f6bcbca05b9b8236cdfdfd33e876c676a84b218f6e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=а
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-obj-u26-postal-address-97`
+
+- Objectives: obj-u26-postal-address
+- Sessions: u26-s-gap-postal-address
+- Source: src-original-research-synthesis
+- Rights: rights-original-research-synthesis
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 679223a98d50de21ada7846a4ec6f6af0976094c16c02e16e33e3e1856fde77e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:original-research-synthesis:phase3-2026-09-30
+sourceRevision=phase3-2026-09-30
+sourceRecordId=phase3:postal-address
+originalSourceText=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
+A greeting is outside the address, and a letter convention does not identify these components.
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
+г. Казань
+the locality names the city
+Admitted reading: the locality names the city
+the street line names the premises
+Rejected reading: the street line names the premises
+the postcode names the delivery office
+Rejected reading: the postcode names the delivery office
+Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
+Admitted reading: the addressee names the recipient
+Which English description identifies the premises in this home-delivery address?
+ул. Садовая, д. 12, кв. 4
+Admitted reading: the street line names the premises
+Rejected reading: the addressee names the recipient
+Rejected reading: the locality names the city
+Which English description identifies the numeric delivery code in this home-delivery address?
+420000
+Admitted reading: the postcode names the delivery office
+Which English description identifies a greeting that is not part of this home-delivery address?
+Здравствуйте
+a greeting is outside the address
+Admitted reading: a greeting is outside the address
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
+recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
+postcode then recipient then premises then city
+Rejected reading: postcode then recipient then premises then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
+г.
+г
+Казань
+ул.
+ул
+Садовая,
+Садовая
+д.
+д
+кв.
+кв
+Москва
+а
+я
+shippedText=я
+transformation=original research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
+contentHash=9b21f5cf014c9efb35110dcccf3a74eab7fb903d1ca2f4054b3dad9ffabb7727
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -10022,28 +19055,29 @@ exactSpan=They have the same basic elements:</p>
 - Rights: rights-original-research-synthesis
 - Classification: SOURCE_CAPABILITY
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a296d1ee1c9e49b798af17e25e71d948a74fefdb3fbee39964b579765ba8a01d
+- Content hash: 4b2dab2f22e1f0097b5cb073d6f72bf3e8b8559e444b00b64b2f0c77f88505a6
 
 sourceId=src-original-research-synthesis
 sourceRevision=phase3-2026-09-30
 sourceRecordId=phase3:postal-address
-sourceHash=d35b8f38bf921449f1d27600f52b795552e5af6375f319fb38d638bd29fa645e
+sourceHash=546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97
 supportedClaim=postal-address
-exactSpan=A home-delivery address in this lesson names the recipient, then the premises, then the city, then the six-digit postcode.
+exactSpan=A complete home-delivery address names the recipient, then the premises, then the locality, then the applicable region, then the country, then the postcode.
+Recipient, premises, city, and postcode alone are not the complete order. A district, oblast, krai, or republic is included when that unit applies to the locality. A federal city does not add a separate oblast line. The country names the destination state in this complete order. A post-office box replaces the street line only when that box is the delivery point, and it is not required on every street address. An apartment or office number is included only when the premises has one, and it is omitted when the premises has none.
 A greeting is outside the address, and a letter convention does not identify these components.
-Memorizing one sample line is not the same as identifying a component.
-Return to the component roles: recipient, premises, city, and the six-digit postcode.
-Анна Петрова
-the addressee names the recipient
+Return to the complete order: recipient, premises, locality, applicable region, country, and postcode.
+Memorizing one sample line is not the same as organizing the complete address.
+Which English description identifies the city in this home-delivery address?
 г. Казань
 the locality names the city
-Which English description identifies the city in this home-delivery address?
 Admitted reading: the locality names the city
 the street line names the premises
-the postcode names the delivery office
 Rejected reading: the street line names the premises
+the postcode names the delivery office
 Rejected reading: the postcode names the delivery office
 Which English description identifies the person who receives this home-delivery address?
+Анна Петрова
+the addressee names the recipient
 Admitted reading: the addressee names the recipient
 Which English description identifies the premises in this home-delivery address?
 ул. Садовая, д. 12, кв. 4
@@ -10057,14 +19091,61 @@ Which English description identifies a greeting that is not part of this home-de
 Здравствуйте
 a greeting is outside the address
 Admitted reading: a greeting is outside the address
-Which English description identifies the component order in this home-delivery address?
-home-delivery order
+Which English description applies when only recipient, premises, city, and postcode are named?
+the short sample
+recipient, premises, city, and postcode alone are not the complete order
+Admitted reading: recipient, premises, city, and postcode alone are not the complete order
 recipient then premises then city then postcode
-Admitted reading: recipient then premises then city then postcode
+Rejected reading: recipient then premises then city then postcode
 postcode then recipient then premises then city
-premises then recipient then postcode then city
 Rejected reading: postcode then recipient then premises then city
-Rejected reading: premises then recipient then postcode then city
+Which English description identifies the regional unit that applies to this locality?
+Республика Татарстан
+the republic is the applicable regional unit for this locality
+Admitted reading: the republic is the applicable regional unit for this locality
+the republic is the six-digit postcode
+Rejected reading: the republic is the six-digit postcode
+the republic is a greeting outside the address
+Rejected reading: the republic is a greeting outside the address
+Which English description identifies the regional line for this federal city?
+г. Москва
+a federal city does not add a separate oblast line
+Admitted reading: a federal city does not add a separate oblast line
+a federal city must add an oblast line
+Rejected reading: a federal city must add an oblast line
+a federal city omits the postcode
+Rejected reading: a federal city omits the postcode
+Which English description identifies the destination state in this home-delivery address?
+Россия
+the country names the destination state
+Admitted reading: the country names the destination state
+the country is a greeting outside the address
+Rejected reading: the country is a greeting outside the address
+the postcode replaces the country
+Rejected reading: the postcode replaces the country
+Which English description identifies when a post-office box belongs in this home-delivery address?
+а/я 15
+a post-office box is not required on a street address
+Admitted reading: a post-office box is not required on a street address
+every home-delivery address must include a post-office box
+Rejected reading: every home-delivery address must include a post-office box
+a post-office box is the six-digit postcode
+Rejected reading: a post-office box is the six-digit postcode
+Which English description identifies an apartment on premises that have none?
+premises without an apartment
+an apartment number is omitted when the premises has none
+Admitted reading: an apartment number is omitted when the premises has none
+every address must invent an apartment number
+Rejected reading: every address must invent an apartment number
+omitting an apartment turns the premises into a greeting
+Rejected reading: omitting an apartment turns the premises into a greeting
+Which English description organizes this complete home-delivery address?
+Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000
+recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+Admitted reading: recipient, then premises, then locality, then the applicable region, then the country, then the postcode
+postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: postcode, then country, then recipient, then premises, then locality, then region
+Rejected reading: recipient, premises, city, and postcode alone are not the complete order
 г.
 г
 Казань
@@ -10076,6 +19157,9 @@ Rejected reading: premises then recipient then postcode then city
 д
 кв.
 кв
+Москва
+а
+я
 
 ### SOURCE_CAPABILITY `cap-obj-u26-word-order`
 
@@ -10356,6 +19440,12 @@ permitsAppUse=true
 - `obj-u26-postal-address` CHECK `u26-i-postal-3`
 - `obj-u26-postal-address` CHECK `u26-i-postal-4`
 - `obj-u26-postal-address` CHECK `u26-i-postal-5`
+- `obj-u26-postal-address` CHECK `u26-i-postal-6`
+- `obj-u26-postal-address` CHECK `u26-i-postal-7`
+- `obj-u26-postal-address` CHECK `u26-i-postal-8`
+- `obj-u26-postal-address` CHECK `u26-i-postal-9`
+- `obj-u26-postal-address` CHECK `u26-i-postal-10`
+- `obj-u26-postal-address` CHECK `u26-i-postal-11`
 - `obj-u26-postal-address` REMEDIATION `u26-postal-remediate`
 - `u26-s-orient` OBJECTIVE `obj-u26-word-order`
 - `u26-s-orient` OBJECTIVE `obj-u26-vy-capital`
@@ -10465,6 +19555,12 @@ permitsAppUse=true
 - `u26-postal-check` ITEM `u26-i-postal-3`
 - `u26-postal-check` ITEM `u26-i-postal-4`
 - `u26-postal-check` ITEM `u26-i-postal-5`
+- `u26-postal-check` ITEM `u26-i-postal-6`
+- `u26-postal-check` ITEM `u26-i-postal-7`
+- `u26-postal-check` ITEM `u26-i-postal-8`
+- `u26-postal-check` ITEM `u26-i-postal-9`
+- `u26-postal-check` ITEM `u26-i-postal-10`
+- `u26-postal-check` ITEM `u26-i-postal-11`
 - `u26-postal-check` REFERENCE `ref-u2630-attribution`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-en`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-ru`
@@ -10556,11 +19652,62 @@ permitsAppUse=true
 - `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-44`
 - `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-45`
 - `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-46`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-47`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-48`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-49`
 - `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-5`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-50`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-51`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-52`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-53`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-54`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-55`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-56`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-57`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-58`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-59`
 - `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-6`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-60`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-61`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-62`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-63`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-64`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-65`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-66`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-67`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-68`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-69`
 - `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-7`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-70`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-71`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-72`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-73`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-74`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-75`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-76`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-77`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-78`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-79`
 - `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-8`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-80`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-81`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-82`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-83`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-84`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-85`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-86`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-87`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-88`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-89`
 - `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-9`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-90`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-91`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-92`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-93`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-94`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-95`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-96`
+- `obj-u26-postal-address` PROVENANCE `prov-obj-u26-postal-address-97`
 - `obj-u26-address-notation` PROVENANCE `prov-u26-address-notation-rem`
 - `obj-u26-address-notation` PROVENANCE `prov-u26-address-notation-x-0`
 - `obj-u26-address-notation` PROVENANCE `prov-u26-address-notation-x-1`
