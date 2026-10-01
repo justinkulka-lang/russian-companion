@@ -11,7 +11,7 @@ Units 27, 29, and 30 remain `PROPOSED_NOT_ACTIVATED`. Their packaged readiness r
 - **MA2-178** in `docs/governance/MASTER_AUTHORITY_v2.0.md`. A deliberate variance from the publisher public sequence stays release-blocking until the Product Owner accepts it under Amendment 1, after final curriculum audit and independent verification, with the exact sequence difference, bounded resolution, and versioned digest recorded. Units 27, 29, and 30 remain `PROPOSED_NOT_ACTIVATED` until that acceptance.
 - **Amendment 1, section 3.** Units 27, 29, and 30 stay `PROPOSED_NOT_ACTIVATED`. Activation still requires the exact observed sequence difference, the bounded implementation resolution, final curriculum-audit disposition, Product Owner acceptance, and a versioned digest and date.
 - **Proposal** `docs/governance/UNITS_26_30_AUTHORITY_VARIANCE_PROPOSAL.md`, status `PROPOSED_NOT_ACTIVATED`.
-- **Proposed resolution** `docs/governance/UNITS_26_30_AUTHORITY_VARIANCE_PROPOSED_RESOLUTION.md`, status `PROPOSED_NOT_ACTIVATED`, recommendation `ACTIVATE_WITH_CORRECTIONS`. Item 7 of that resolution is stale relative to the shipped curriculum and is not adopted by this packet.
+- **Proposed resolution** `docs/governance/UNITS_26_30_AUTHORITY_VARIANCE_PROPOSED_RESOLUTION.md`, status `PROPOSED_NOT_ACTIVATED`, recommendation `ACTIVATE_WITH_CORRECTIONS`. Item 7 now states the shipped participle-punctuation instruction. That correction is inactive. Production validation does not read the resolution as an activated decision.
 
 The publisher public sequence is the normative table in Master Authority, “Required first-introduction scope.” Those titles are topic-level identifiers. They do not authorize Penguin prose.
 
@@ -43,7 +43,7 @@ The public schedule’s required first-introduction line for unit 27 is “Parti
 
 Shipped Unit 27 teaches past passive forms, participle stress, and participle comprehension. Present passive is optional and `gating` is false on `obj-u27-present-passive`. The orientation step `u27-st-orient` says: “Present passive lines are optional and do not gate this unit. Comprehension passages stay in the copy you own. Active forms are not taught here.”
 
-The pedagogical reason for the narrower unit is the owned-edition observation that Lesson 27 is passive-participle material and that active participles first appear in Lesson 29. That observation is proposed, not an accepted mapping.
+The reference file’s Lesson 27 title is “Participles: types and stress,” the same broader public line. Its body teaches past passive formation and stress as the main lesson, marks present passive as an extra section, and does not teach active participle formation. Active participles open in Lesson 29. That comparison supports the passive-only recommendation. It is not an accepted mapping and not an activation. File continuity with the retained private-file hash is not established.
 
 ### Affected objectives and capabilities
 
@@ -57,8 +57,8 @@ The pedagogical reason for the narrower unit is the owned-edition observation th
 ### Current content digest and mapping-package digest
 
 - Unit content-review digest: `b43404505a7bc8bc72a34d2af039d5695d1e919cdc309643ecc7c835cfd99db0`.
-- Mapping-package digest: `f5da4227d7bdfa500293d76f3b48ab8ac7646ac0dd6c90b4e8ac4f10cc69a385`.
-- Review-package digest: `0c0eb62fdb9de00a01a9d7619073b019663a973bc07bc154f4eccc82e6123027`.
+- Mapping-package digest: `a15bf8dc76fa2ab5d7bc1448a9f2129da7ee281461338e280c503ee3a5150bdb`.
+- Review-package digest: `3a68a30ed98a92fccec81208ebc4cb3f8f15ecd478a06893693637fff62c0303`.
 - Mapping disposition remains `PENDING_CURRICULUM_REVIEWER`.
 - Unit review status remains `IMPLEMENTED_PENDING_FINAL_AUDIT`.
 
@@ -89,13 +89,13 @@ This recommendation is not an activation and does not revise the proposed-resolu
 
 ### Exact governing clause
 
-MA2-178 and Amendment 1 section 3. The proposal records that active participles first appear in Lesson 29, and that the owned edition marks punctuation as optional extra material. Those optional marks “are not activated as a change to the required blockers.” Proposed-resolution item 7 says: “Unit 29 punctuation remains optional and unavailable until sufficiently sourced and reviewed.”
+MA2-178 and Amendment 1 section 3. The proposal records that active participles first appear in Lesson 29. The reference file’s Lesson 29 title includes active participles and punctuation, and the punctuation section is marked extra. Corrected proposed-resolution item 7 says: Unit 29 punctuation is in scope and is not unavailable. The shipped instruction on `obj-u29-punctuation`, claim `participle-punctuation`, is: when a participial phrase stands before the word it modifies, commas are not used, except when that word is a personal pronoun or the participial phrase states a cause. A phrase after the modified word is set off by commas on both sides. The withdrawn sentence “Unit 29 punctuation remains optional and unavailable until sufficiently sourced and reviewed” is not the governing text. Item 7 does not activate the variance.
 
 ### Publisher-sequence issue
 
 The public schedule’s required first-introduction line for unit 29 is “Bookish style, active participles, punctuation, and short-form adjectives.” Active participles on unit 29 agree with that public line and with the owned-edition observation that active participles first appear in Lesson 29. That placement is not an unresolved sequence conflict.
 
-The remaining conflict is punctuation. The public schedule lists punctuation. The owned-edition proposal marks it optional. Proposed-resolution item 7 says it remains unavailable.
+The remaining decision is punctuation. The public schedule lists punctuation. The reference file includes it as an extra section. The shipped objective implements the admitted participial-phrase comma rule and is not unavailable. The corrected item 7 records that shipped instruction. It stays inactive.
 
 ### App sequence and pedagogical reason
 
@@ -115,22 +115,24 @@ The pedagogical reason to keep active participles in Unit 29 is agreement betwee
 ### Current content digest and mapping-package digest
 
 - Unit content-review digest: `bb8645fa3be7f3ac9b7cc7a7d61d551843975f8deccb419a3ad529416c3fb0e3`.
-- Mapping-package digest: `54c2f00221054ced81fe17bea8b0f156073b830e54e70c47cf769e93bd56eb36`.
-- Review-package digest: `d20523bea22f67b888c1a58bae41d0f55bd106afb1f4f9ca9dd909dde647ca80`.
+- Mapping-package digest: `a40de565a8d86d7288e31bfaeb75d9c41761b810f99ee56afa1add74df334f21`.
+- Review-package digest: `cd7eed324e12a8c25f4a38d69290c4aa7ec6d7e65919adac59576b348ee62619`.
 - Mapping disposition remains `PENDING_CURRICULUM_REVIEWER`.
 - Unit review status remains `IMPLEMENTED_PENDING_FINAL_AUDIT`.
 
 ### Risks and limitations
 
-Activating the proposed resolution as written would adopt item 7 and describe punctuation as unavailable. That description is false for the current pack. Treating punctuation as optional would require a curriculum change that this packet does not make. Bookish register and bookish reading are original research synthesis and are not Penguin prose. The owned-edition page range 355–367 is a proposed observation. The unit stays in the hardcoded unresolved-variance set until a later signed decision changes production validation.
+Item 7 now matches the shipped punctuation instruction. Activating the withdrawn “unavailable” sentence would be false for the current pack. Treating punctuation as optional would require a curriculum change that this packet does not make. Bookish register and bookish reading are original research synthesis and are not Penguin prose. The owned-edition page range 355–367 is a proposed observation. The unit stays in the hardcoded unresolved-variance set until a later signed decision changes production validation.
 
 ### Consequences
 
-If activated later: activation of the current item 7 text would record a resolution that contradicts `obj-u29-punctuation`. That choice is not recommended. A later activation that omitted item 7, or that replaced it with the implemented punctuation rule, would still require final curriculum audit, independent verification, and an explicit Product Owner instruction before Unit 29 could leave `NOT_PREPARED`. It would not install the unit, accept the mapping, or approve release.
+If activated later: activation of the corrected item 7 would accept the shipped participial-phrase comma rule as the variance text. It would still require final curriculum audit, independent verification, and an explicit Product Owner instruction before Unit 29 could leave `NOT_PREPARED`. It would not install the unit, accept the mapping, or approve release.
 
 If rejected: Unit 29 stays a release-blocking variance. Rejecting the whole unit-29 boundary would leave the implemented active-participle, punctuation, short-form, register, and reading claims in place while the validator continues to block preparation. Removing punctuation or moving active participles would be a curriculum change.
 
-If revised: the decision text must replace item 7 before any activation. The revised text must say that the implemented punctuation rule is in scope, or it must send punctuation back to optional by a separate curriculum change. This packet does not perform either edit. The unit stays `NOT_PREPARED`.
+Effects of the item 7 correction: the proposed text now matches the shipped participial-phrase comma rule. `V2Validator.UNRESOLVED_VARIANCE_UNITS` is unchanged. Unit 29 stays `PROPOSED_NOT_ACTIVATED` and `NOT_PREPARED`. The Unit 29 content-review digest is unchanged. A later activation of this corrected text would still require final curriculum audit, independent verification, and an explicit Product Owner instruction before Unit 29 could leave `NOT_PREPARED`. That later activation would not install the unit, accept the mapping, pass a final audit, or approve release. Activating the withdrawn “unavailable” sentence would contradict `obj-u29-punctuation`.
+
+If revised again: any further change to the decision text must be written before activation. Sending punctuation back to optional would be a curriculum change. This packet does not make that change. The unit stays `NOT_PREPARED`.
 
 ### Product Owner disposition
 
@@ -157,7 +159,7 @@ The public schedule’s required first-introduction line for unit 30 is “Abbre
 
 `obj-u30-letter-names` is titled “Review the admitted table name” and binds required claim `letter-name-review`. The orientation step `u30-st-orient` says: “Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review.” Dictionary use is original research synthesis on `obj-u30-dictionary`, required claim `dictionary-use`. It is not Penguin prose. The orientation also says dictionary-field layout is not practical dictionary use. Clearance requires a governed entry, not a field label.
 
-The pedagogical reason is the owned-edition split between Lesson 1 section 1.5 and a Lesson 30 review, plus a separately sourced dictionary objective that the public line does not name.
+The reference file supports that split. Lesson 1 section 1.5 is the names of the Russian letters. Lesson 30’s title includes names of Russian letters and points abbreviation reading back to section 1.5. Lesson 30 also has a dictionaries section. The public schedule line does not name dictionary use. The shipped dictionary objective remains original research synthesis on `obj-u30-dictionary`, not a copy of that book section. This comparison is not an activation. File continuity with the retained private-file hash is not established.
 
 Unit 1’s shipped objectives identify printed letters and send pronunciation to the book. `u1-st-pronunciation` says: “This unit does not play model audio. Use the pronunciation notes in your book for each new letter.” Unit 1 does not contain an objective titled as a spoken letter-name inventory. Activation would accept Unit 30 as review rather than first introduction. It would not, by itself, prove that Unit 1 contains the full Lesson 1.5 letter-name inventory.
 
@@ -173,8 +175,8 @@ Unit 1’s shipped objectives identify printed letters and send pronunciation to
 ### Current content digest and mapping-package digest
 
 - Unit content-review digest: `ed3a589a8d91e48c49675840118ca2951ad752f9784b0c8eeb21a74f66285187`.
-- Mapping-package digest: `e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367`.
-- Review-package digest: `aaf68e5dfe3a32021f3e0d8ab006fa68754bb8072c0d06fae9ec096be10914a1`.
+- Mapping-package digest: `5361634a4e364130af45cfe253e75c60882f293cd9079bd403373e12cfde6505`.
+- Review-package digest: `02a4ddb5c659428962eed21d738bfdccb58d70ad692746d65b5de4fc482cef18`.
 - Mapping disposition remains `PENDING_CURRICULUM_REVIEWER`.
 - Unit review status remains `IMPLEMENTED_PENDING_FINAL_AUDIT`.
 

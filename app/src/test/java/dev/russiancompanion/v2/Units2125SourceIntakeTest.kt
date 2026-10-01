@@ -28,6 +28,14 @@ import java.security.MessageDigest
 
 class Units2125SourceIntakeTest {
     private val pages = mapOf(
+        21 to "257-268",
+        22 to "269-282",
+        23 to "283-293",
+        24 to "294-304",
+        25 to "305-319",
+    )
+
+    private val packagedMappingNotePages = mapOf(
         21 to "259-270",
         22 to "271-284",
         23 to "285-295",
@@ -59,11 +67,11 @@ class Units2125SourceIntakeTest {
     )
 
     private val preservedMappingDigests = mapOf(
-        16 to "7b89d0ad3f4bdb94e023804b86d8eaf30bcd0d44cace703783682dc3d27b9afa",
-        17 to "f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e",
-        18 to "bbc970db2dfb4a17b8433024c289db9045424d73e3e64a61f699f992704ffbda",
-        19 to "907a9086e25bd1a87abef73f9271ccf32dbe4df12eedacba4eaf23603fe644b9",
-        20 to "145bb8c75afc12e093bcc205093f95ffe81636a0c5cd1aee64d0aa8766f6e69f",
+        16 to "fc4c594c788f3e78d7cb280e48ad37b8fc5d41e2e37b7608889b3de2a43efc17",
+        17 to "88fece04e7b8a1a707237548f2cc8f62f066bdf9392e8263c92c9d57518e24a2",
+        18 to "2a31c6c0065f91d0d93616f5696f050921b62e01f040e472eb75cd9b6bbd944f",
+        19 to "64395530bd58a50c415e90549eeb941d829f5f81cb259012a80a1d7d646d9746",
+        20 to "3b1d24b0a0a4448be815c4baf1c0b314761a29fdd65617ee3737e3c239830295",
     )
 
     private val excludedLearnerText = listOf(
@@ -100,7 +108,8 @@ class Units2125SourceIntakeTest {
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
-            assertTrue(unit.mappingNote.contains(range))
+            assertTrue(unit.mappingNote.contains(packagedMappingNotePages.getValue(number)))
+            assertFalse(unit.mappingNote.contains(range))
             assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertFalse(unit.mappingNote.contains("ISBN"))
@@ -110,7 +119,11 @@ class Units2125SourceIntakeTest {
             assertEquals("PENDING_CURRICULUM_REVIEWER", facts.mappingDisposition)
             assertEquals("UNRESOLVED", facts.isbnObservation)
             assertNull(facts.isbn)
-            assertFalse(facts.observedEditionNotes.orEmpty().contains("2bcc0c45"))
+            val notes = facts.observedEditionNotes.orEmpty()
+            val comparison = notes.substringAfter("Reference-file comparison")
+            assertTrue(comparison.contains("2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303"))
+            assertTrue(comparison.contains("does not match"))
+            assertFalse(notes.substringBefore("Reference-file comparison").contains("2bcc0c45"))
             assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
             val review = pack.unitReviews.first { it.unitNumber == number }
             assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", review.status)

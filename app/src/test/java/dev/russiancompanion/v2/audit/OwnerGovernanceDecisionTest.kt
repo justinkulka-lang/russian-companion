@@ -5,10 +5,12 @@ import dev.russiancompanion.release.readAcceptanceCandidate
 import dev.russiancompanion.v2.curriculum.AUTHORIZED_FINAL_AUDIT_DIRECTORY
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.unit
+import dev.russiancompanion.v2.review.buildUnitReviewPackage
 import dev.russiancompanion.v2.review.governedMappingFacts
 import dev.russiancompanion.v2.review.mappingPackageDigest
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
@@ -219,7 +221,7 @@ class OwnerGovernanceDecisionTest {
             sha256(File(root, "docs/governance/UNITS_26_30_AUTHORITY_VARIANCE_PROPOSAL.md")),
         )
         assertEquals(
-            "6efbb37e01574eda23fb736e2e038acaef07d13cc7f74d02a7c58946d146df4a",
+            "839435bc1cdf259ba639824722b1fb8fdbcf8f79d80dc5f0bbb3c71dd955ade0",
             sha256(File(root, "docs/governance/UNITS_26_30_AUTHORITY_VARIANCE_PROPOSED_RESOLUTION.md")),
         )
         assertEquals(
@@ -241,6 +243,30 @@ class OwnerGovernanceDecisionTest {
         assertEquals(false, candidate?.frozen)
         assertEquals(null, candidate?.sourceCommit)
         assertEquals("NOT_RECORDED", candidate?.artifact?.status)
+    }
+
+    @Test
+    fun referenceFileComparisonCorrectsLateBoundariesAndStaysUnsigned() {
+        val pack = pack()
+        val corrected = mapOf(21 to "257-268", 22 to "269-282", 23 to "283-293", 24 to "294-304", 25 to "305-319")
+        corrected.forEach { (number, range) ->
+            val facts = governedMappingFacts(number)
+            assertEquals(range, "${facts.printedPageStart}-${facts.printedPageEnd}")
+            assertEquals("PENDING_CURRICULUM_REVIEWER", facts.mappingDisposition)
+            assertNull(facts.isbn)
+        }
+        assertEquals("320-331", "${governedMappingFacts(26).printedPageStart}-${governedMappingFacts(26).printedPageEnd}")
+        assertTrue(governedMappingFacts(1).observedEditionNotes.orEmpty().contains("does not match"))
+        assertTrue(governedMappingFacts(27).topicDescription.orEmpty().contains("Active participle formation is not in this lesson"))
+        assertFalse(governedMappingFacts(29).topicDescription.orEmpty().contains("optional punctuation"))
+        listOf(27, 29, 30).forEach { assertTrue(V2Validator.authorityVarianceApplies(it)) }
+        assertFalse(V2Validator.authorityVarianceApplies(26))
+        val lines = StringBuilder()
+        (1..30).forEach { number ->
+            val review = buildUnitReviewPackage(pack, number)
+            lines.append("$number ${review.contentReviewDigest} ${review.mappingPackageDigest} ${review.reviewPackageDigest}\n")
+        }
+        assertEquals(30, lines.lines().filter { it.isNotBlank() }.size)
     }
 
     @Test

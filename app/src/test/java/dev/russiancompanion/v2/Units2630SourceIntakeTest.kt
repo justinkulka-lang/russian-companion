@@ -56,11 +56,11 @@ class Units2630SourceIntakeTest {
     )
 
     private val preservedMappingDigests = mapOf(
-        26 to "c3b63d48cd809527d6450916cfead9c419eb5a607a329c7def2d8b42df6bf725",
-        27 to "f5da4227d7bdfa500293d76f3b48ab8ac7646ac0dd6c90b4e8ac4f10cc69a385",
-        28 to "bdf9618b16d9a96d9d359a01e7901617c7d8b97bcd601768695131da126497aa",
-        29 to "54c2f00221054ced81fe17bea8b0f156073b830e54e70c47cf769e93bd56eb36",
-        30 to "e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367",
+        26 to "9f46e2d70aeefde9067f0868c5099ea7df08c9cb5f924e858094d817d91a83fa",
+        27 to "a15bf8dc76fa2ab5d7bc1448a9f2129da7ee281461338e280c503ee3a5150bdb",
+        28 to "44452909b63f4e4b67632c3c24e9f997efa75bdf314d8b4fbb4e0933f29278ff",
+        29 to "a40de565a8d86d7288e31bfaeb75d9c41761b810f99ee56afa1add74df334f21",
+        30 to "5361634a4e364130af45cfe253e75c60882f293cd9079bd403373e12cfde6505",
     )
 
     @Test

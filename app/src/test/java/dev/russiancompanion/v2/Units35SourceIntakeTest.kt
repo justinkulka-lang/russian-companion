@@ -92,19 +92,19 @@ class Units35SourceIntakeTest {
             assertTrue(pack.rights.any { it.sourceId == record.sourceId && it.permitsAppUse && it.license == expectedLicense })
         }
         assertEquals(
-            "3f4f2543804372be1d6ef62fb280d452bc017fbadc0dd6534e863c86be50050c",
+            "bc0662b88ba1b3eab9f8c0b9484f692e8e30be9b2d061a05dd9eca30c3ffea54",
             mappingPackageDigest(governedMappingFacts(1)),
         )
         assertEquals(
-            "090a3fec638b8a19d34e11d8be88a7796ce18a56a87b7b5b06d626ed777d6448",
+            "d0ad345ff7eb069a4ea0cbb94a923b4a766bc4666eab85781eb150172327da3e",
             mappingPackageDigest(governedMappingFacts(3)),
         )
         assertEquals(
-            "3760c217663b5b3f037dd9f8d85a5e1a51c320861191d59a01ae6c2c9b4ee4ef",
+            "b1b401f398b5b910cd300252e40fde1678886a42e7795b1da72efbae1c4aaacf",
             mappingPackageDigest(governedMappingFacts(4)),
         )
         assertEquals(
-            "a1affd13da11e1173c23a2cab33b22f7ad6ea99aa54c99d54fc945fd6d7d0806",
+            "1b78fc92b133fb43bc2143c4c27930ec9b900744bddb6e9fb44e6b504949ffac",
             mappingPackageDigest(governedMappingFacts(5)),
         )
         assertNotEquals(buildUnitReviewPackage(pack, 3).contentReviewDigest, buildUnitReviewPackage(pack, 4).contentReviewDigest)

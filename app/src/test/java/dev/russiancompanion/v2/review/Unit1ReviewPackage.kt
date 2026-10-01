@@ -169,38 +169,46 @@ private const val OBSERVED_EDITION_AUTHOR = "Nicholas J. Brown"
 
 private const val OBSERVED_PUBLISHER_IMPRINT = "Penguin Books"
 
+private const val REFERENCE_FILE_COMPARISON =
+    " Reference-file comparison, not an owner inspection and not ownership verification: three part files cover PDF indices 1-176, 177-352, and 353-528. Part SHA-256 values are de6715e5ff4c52394a5a68462fafbf1d9608906fe01704af73d44eceb4da1bcd, 7bab8f041ed0a2f6f8e4a27c336c39c395b97b6fcd9d542781f755cef42ee304, and 72384a3305f64115ecf9b6028944ac06b40ca33705ff2b113f9e3ecb7eb3a1da. Concatenation SHA-256 4b3374d001f007a6dd92dfdc8f1a386d5b2591a102a166cf5c003642fdc793bc does not match retained private-file SHA-256 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303. File continuity is not established. Printed lesson page N is PDF index N+12. PDF indices 2 and 4 are blank, so no copyright year was read. The back cover prints ISBN 0-14-012041-6. That reading stays unresolved. Mapping acceptance is not recorded."
+
 private const val OBSERVED_EDITION_NOTES =
-    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded."
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded." +
+        REFERENCE_FILE_COMPARISON
 
 private const val MAPPING_OBSERVATION_SOURCE =
     "Product Owner structural mapping input v1.0. Page numbers are printed book pages. The input is private and is not repository curriculum."
 
 private const val UNITS_11_15_EDITION_NOTES =
-    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Private-file SHA-256 is 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303."
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Private-file SHA-256 is 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303." +
+        REFERENCE_FILE_COMPARISON
 
 private const val UNITS_11_15_OBSERVATION_SOURCE =
     "Product Owner structural mapping input for Units 11-15, v1.0, visually inspected on 23 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
 
 private const val UNITS_16_20_EDITION_NOTES =
-    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Private-file SHA-256 is 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303."
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Private-file SHA-256 is 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303." +
+        REFERENCE_FILE_COMPARISON
 
 private const val UNITS_16_20_OBSERVATION_SOURCE =
     "Product Owner structural mapping input for Units 16-20, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
 
 private const val UNITS_21_25_EDITION_NOTES =
-    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification."
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification." +
+        REFERENCE_FILE_COMPARISON
 
 private const val UNITS_21_25_OBSERVATION_SOURCE =
     "Product Owner structural mapping input for Units 21-25, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
 
 private const val UNITS_26_30_EDITION_NOTES =
-    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification."
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification." +
+        REFERENCE_FILE_COMPARISON
 
 private const val UNITS_26_30_OBSERVATION_SOURCE =
     "Product Owner structural mapping input for Units 26-30, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum. Classification RESEARCH_GAPS_BLOCK_IMPLEMENTATION. This observation is not an approved alignment."
 
 private const val MAPPING_UNRESOLVED_QUESTIONS =
-    "Confirm the exact edition and ISBN from the purchase record. Confirm each printed page range against the owned copy. Record any variance. Confirm whether app objectives cover the required skill progression without later material. Confirm Unit 1 and Unit 2 linguistic accuracy. Review Units 3-5 only after lawful source-based content is prepared. The ownership statement is not reviewer verification. Final curriculum audit is not recorded here."
+    "Confirm the exact edition and ISBN from the purchase record. Confirm each printed page range against the owned copy. Record any variance. Confirm whether app objectives cover the required skill progression without later material. Confirm Unit 1 and Unit 2 linguistic accuracy. Review Units 3-5 only after lawful source-based content is prepared. The ownership statement is not reviewer verification. Final curriculum audit is not recorded here. A later reference-file comparison corrected proposed pages for Lessons 21-25 and did not establish file continuity with the retained private-file hash. That comparison is not an owner signature."
 
 private data class StructuralMappingObservation(
     val unitNumber: Int,
@@ -355,7 +363,7 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
     StructuralMappingObservation(
         21,
         "Lesson 21",
-        "259-270",
+        "257-268",
         "Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses",
         UNITS_21_25_EDITION_NOTES,
         UNITS_21_25_OBSERVATION_SOURCE,
@@ -363,7 +371,7 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
     StructuralMappingObservation(
         22,
         "Lesson 22",
-        "271-284",
+        "269-282",
         "Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions",
         UNITS_21_25_EDITION_NOTES,
         UNITS_21_25_OBSERVATION_SOURCE,
@@ -371,7 +379,7 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
     StructuralMappingObservation(
         23,
         "Lesson 23",
-        "285-295",
+        "283-293",
         "Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period",
         UNITS_21_25_EDITION_NOTES,
         UNITS_21_25_OBSERVATION_SOURCE,
@@ -379,7 +387,7 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
     StructuralMappingObservation(
         24,
         "Lesson 24",
-        "296-306",
+        "294-304",
         "Negation, case behavior under negation, negative pronouns or particles, and the position or scope of \u043d\u0435",
         UNITS_21_25_EDITION_NOTES,
         UNITS_21_25_OBSERVATION_SOURCE,
@@ -387,7 +395,7 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
     StructuralMappingObservation(
         25,
         "Lesson 25",
-        "307-321",
+        "305-319",
         "Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions",
         UNITS_21_25_EDITION_NOTES,
         UNITS_21_25_OBSERVATION_SOURCE,
@@ -404,7 +412,7 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
         27,
         "Lesson 27",
         "332-342",
-        "Passive participles: overview, past passive formation and use, optional present passive material, vocabulary and comprehension",
+        "Participles: types and stress. Past passive formation and stress are the main lesson. Present passive is marked extra. Active participle formation is not in this lesson.",
         UNITS_26_30_EDITION_NOTES,
         UNITS_26_30_OBSERVATION_SOURCE,
     ),
@@ -420,7 +428,7 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
         29,
         "Lesson 29",
         "355-367",
-        "Present and past active participles, participles as adjectives, optional punctuation, long and short adjectives, and bookish reading",
+        "Bookish style, present and past active participles, shipped participial-phrase punctuation, short-form adjectives, and bookish reading",
         UNITS_26_30_EDITION_NOTES,
         UNITS_26_30_OBSERVATION_SOURCE,
     ),
@@ -1304,7 +1312,7 @@ private fun renderMappingWorksheet(pack: V2CurriculumPack, unitNumber: Int): Str
         "# Warning: this worksheet must not contain copied Penguin prose or exercises.",
         "# Observed edition facts: edition_identification, author, publisher_edition, and observed_edition_notes.",
         "# Proposed structural mapping: corresponding_lesson, corresponding_pages, corresponding_topic, and alignment_disposition PENDING_CURRICULUM_REVIEWER.",
-        "# Unresolved facts: isbn, owned_copy_verified, variance_conflict, and unresolved_questions. ISBN was not visible and must stay blank. isbn_observation stays UNRESOLVED.",
+        "# Unresolved facts: isbn, owned_copy_verified, variance_conflict, and unresolved_questions. The isbn column stays blank. isbn_observation stays UNRESOLVED. A back-cover reading in the edition notes is not an accepted ISBN.",
         "# Final curriculum audit is not recorded. Reviewer identity, qualification, date, notes, and reviewed digest stay blank. This worksheet is not an approval. IMPLEMENTED_PENDING_FINAL_AUDIT is not OWNER_ACCEPTED.",
         "# mappingRecordId: ${facts.mappingRecordId.orEmpty()}",
         "# mappingPackageDigest: $digest",
