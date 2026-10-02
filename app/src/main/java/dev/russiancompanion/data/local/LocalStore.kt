@@ -26,12 +26,18 @@ import java.io.IOException
 import java.util.concurrent.Callable
 import java.util.concurrent.ExecutionException
 import java.util.concurrent.Executors
+import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.asCoroutineDispatcher
+import kotlinx.coroutines.withContext
 
 internal class LocalStore private constructor(
     private val database: AppDatabase,
     private val recordingRoot: File? = null,
 ) : AutoCloseable {
-    private val io = Executors.newSingleThreadExecutor()
+    private val io = Executors.newSingleThreadExecutor { runnable ->
+        Thread(runnable, "russian-companion-store").apply { isDaemon = true }
+    }
+    internal val ioDispatcher: CoroutineDispatcher = io.asCoroutineDispatcher()
     private val seeder = BundledContentSeeder(database)
     private var lastSeedOutcome: SeedOutcome? = null
 
@@ -624,27 +630,60 @@ internal class LocalStore private constructor(
         }
     }
 
-    fun v2Profile(): dev.russiancompanion.v2.data.V2ProfileEntity = call {
+    fun v2Profile(): dev.russiancompanion.v2.data.V2ProfileEntity = call { readV2Profile() }
+
+    internal suspend fun v2ProfileAsync(): dev.russiancompanion.v2.data.V2ProfileEntity =
+        withContext(ioDispatcher) { readV2Profile() }
+
+    fun v2SaveProfile(profile: dev.russiancompanion.v2.data.V2ProfileEntity) = call {
+        writeV2Profile(profile)
+    }
+
+    internal suspend fun v2SaveProfileAsync(profile: dev.russiancompanion.v2.data.V2ProfileEntity) =
+        withContext(ioDispatcher) { writeV2Profile(profile) }
+
+    fun v2LearnerView(): dev.russiancompanion.v2.curriculum.V2LearnerView = call { readV2Learner() }
+
+    internal suspend fun v2LearnerViewAsync(): dev.russiancompanion.v2.curriculum.V2LearnerView =
+        withContext(ioDispatcher) { readV2Learner() }
+
+    fun v2CompleteStep(stepId: String, recordedAtLocal: String) = call {
+        writeV2Step(stepId, recordedAtLocal)
+    }
+
+    internal suspend fun v2CompleteStepAsync(stepId: String, recordedAtLocal: String) =
+        withContext(ioDispatcher) { writeV2Step(stepId, recordedAtLocal) }
+
+    fun v2RecordAttempt(itemId: String, selected: String, correct: Boolean, recordedAtLocal: String) = call {
+        writeV2Attempt(itemId, selected, correct, recordedAtLocal)
+    }
+
+    internal suspend fun v2RecordAttemptAsync(
+        itemId: String,
+        selected: String,
+        correct: Boolean,
+        recordedAtLocal: String,
+    ) = withContext(ioDispatcher) { writeV2Attempt(itemId, selected, correct, recordedAtLocal) }
+
+    private fun readV2Profile(): dev.russiancompanion.v2.data.V2ProfileEntity {
         val dao = database.v2()
         dao.insertProfileIfAbsent(dev.russiancompanion.v2.data.V2ProfileEntity.fresh())
-        dao.profile(dev.russiancompanion.v2.data.V2ProfileEntity.LOCAL_ID)
+        return dao.profile(dev.russiancompanion.v2.data.V2ProfileEntity.LOCAL_ID)
             ?: dev.russiancompanion.v2.data.V2ProfileEntity.fresh()
     }
 
-    fun v2SaveProfile(profile: dev.russiancompanion.v2.data.V2ProfileEntity) = call {
+    private fun writeV2Profile(profile: dev.russiancompanion.v2.data.V2ProfileEntity) {
         database.v2().updateProfile(profile)
     }
 
-    fun v2LearnerView(): dev.russiancompanion.v2.curriculum.V2LearnerView = call {
-        val profile = run {
-            val dao = database.v2()
-            dao.insertProfileIfAbsent(dev.russiancompanion.v2.data.V2ProfileEntity.fresh())
-            dao.profile(dev.russiancompanion.v2.data.V2ProfileEntity.LOCAL_ID)
-                ?: dev.russiancompanion.v2.data.V2ProfileEntity.fresh()
-        }
+    private fun readV2Learner(): dev.russiancompanion.v2.curriculum.V2LearnerView {
+        val profile = readV2Profile()
         val dao = database.v2()
-        val correct = dao.attempts().filter { it.correct }.map { it.itemId }.toSet()
-        dev.russiancompanion.v2.curriculum.V2LearnerView(
+        val attempts = dao.attempts()
+        val correct = attempts.filter { it.correct }.map { it.itemId }.toSet()
+        val selections = linkedMapOf<String, String>()
+        attempts.forEach { attempt -> selections[attempt.itemId] = attempt.selected }
+        return dev.russiancompanion.v2.curriculum.V2LearnerView(
             onboardingCompleted = profile.onboardingCompleted,
             currentUnitNumber = profile.currentUnitNumber,
             startingPoint = dev.russiancompanion.v2.curriculum.V2StartingPoint.valueOf(profile.startingPoint),
@@ -660,16 +699,17 @@ internal class LocalStore private constructor(
             correctItemIds = correct,
             bookAttestedUnits = dao.bookAttestations().map { it.unitNumber }.toSet(),
             completedUnitNumbers = dao.unitCompletions().map { it.unitNumber }.toSet(),
+            attemptSelections = selections,
         )
     }
 
-    fun v2CompleteStep(stepId: String, recordedAtLocal: String) = call {
+    private fun writeV2Step(stepId: String, recordedAtLocal: String) {
         database.v2().upsertStep(
             dev.russiancompanion.v2.data.V2StepProgressEntity(stepId, recordedAtLocal),
         )
     }
 
-    fun v2RecordAttempt(itemId: String, selected: String, correct: Boolean, recordedAtLocal: String) = call {
+    private fun writeV2Attempt(itemId: String, selected: String, correct: Boolean, recordedAtLocal: String) {
         database.v2().insertAttempt(
             dev.russiancompanion.v2.data.V2AttemptEntity(
                 id = "$itemId:$recordedAtLocal:${selected.hashCode()}",
@@ -761,7 +801,12 @@ internal class LocalStore private constructor(
         }
     }
 
+    internal suspend fun <T> awaitStore(block: () -> T): T = withContext(ioDispatcher) { block() }
+
     private fun <T> call(block: () -> T): T {
+        if (Thread.currentThread().name.startsWith("russian-companion-store")) {
+            return block()
+        }
         try {
             return io.submit(Callable(block)).get()
         } catch (error: ExecutionException) {

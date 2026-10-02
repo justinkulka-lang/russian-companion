@@ -7,6 +7,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
 import dev.russiancompanion.domain.appearance.AppearancePreference
 import dev.russiancompanion.v2.curriculum.continueTarget
+import dev.russiancompanion.v2.curriculum.step
 
 @Composable
 internal fun V2NavHost(
@@ -14,12 +15,16 @@ internal fun V2NavHost(
     state: V2UiState,
     appearance: AppearancePreference,
     appearanceSaveFailed: Boolean,
+    selections: Map<String, String>,
+    lockedItemIds: Set<String>,
+    noteDrafts: Map<String, String>,
     onRetryOpen: () -> Unit,
     onAppearance: (AppearancePreference) -> Unit,
     onCompleteOnboarding: (V2OnboardingDraft) -> Unit,
-    onCompleteStep: (String) -> Unit,
-    onAttempt: (String, String, Boolean) -> Unit,
+    onCompleteStep: (String, () -> Unit) -> Unit,
+    onAttempt: (String, String, Boolean) -> Boolean,
     onBookmark: (String, String) -> Unit,
+    onNoteDraft: (String, String) -> Unit,
     onNote: (String, String) -> Unit,
     onTutor: (String, String) -> Unit,
     onAttestBook: (Int) -> Unit,
@@ -64,7 +69,9 @@ internal fun V2NavHost(
                     target = continueTarget(pack, learner),
                     onTab = ::goTab,
                     onContinue = { target ->
-                        if (target.sessionId != null) {
+                        if (target.opensUnitReview) {
+                            navController.navigate(V2UnitRoute(target.unitNumber))
+                        } else if (target.sessionId != null) {
                             onResumeAt(target.sessionId, target.stepIndex)
                             navController.navigate(V2SessionRoute(target.sessionId, target.stepIndex))
                         }
@@ -112,13 +119,27 @@ internal fun V2NavHost(
                 learner = learner,
                 sessionId = route.sessionId,
                 initialIndex = route.stepIndex,
+                remedial = route.remedial,
+                selections = selections,
+                lockedItemIds = lockedItemIds,
+                noteDrafts = noteDrafts,
                 onBack = { navController.popBackStack() },
                 onCompleteStep = onCompleteStep,
                 onAttempt = onAttempt,
                 onBookmark = onBookmark,
+                onNoteDraft = onNoteDraft,
                 onNote = onNote,
                 onTutor = onTutor,
                 onOpenReference = { id -> navController.navigate(V2ReferenceEntryRoute(id)) },
+                onRemediate = { stepId ->
+                    val located = pack.step(stepId) ?: return@V2SessionScreen
+                    val index = located.first.steps.indexOfFirst { it.id == stepId }
+                    if (index >= 0) {
+                        navController.navigate(V2SessionRoute(located.first.id, index, remedial = true))
+                    }
+                },
+                onReturnToCheck = { navController.popBackStack() },
+                onPosition = onResumeAt,
                 onFinished = { navController.popBackStack() },
             )
         }

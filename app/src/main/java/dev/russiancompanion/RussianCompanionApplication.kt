@@ -2,6 +2,7 @@ package dev.russiancompanion
 
 import android.app.Application
 import android.os.StatFs
+import java.util.concurrent.Executors
 import dev.russiancompanion.data.appearance.AppearanceStore
 import dev.russiancompanion.data.audio.AndroidPracticeAudio
 import dev.russiancompanion.data.export.openAppRecording
@@ -21,9 +22,29 @@ class RussianCompanionApplication : Application() {
     var localDataFailedToOpen: Boolean = false
         private set
 
+    private val openLock = Any()
+    private val startup = Executors.newSingleThreadExecutor { runnable ->
+        Thread(runnable, "russian-companion-startup").apply { isDaemon = true }
+    }
+    private var storeOpenAttempted = false
+
     override fun onCreate() {
         super.onCreate()
-        openStore()
+        startup.execute { awaitLocalStore() }
+    }
+
+    internal fun awaitLocalStore(force: Boolean = false): LocalStore? {
+        if (force) {
+            retryOpen()
+            return localStore
+        }
+        synchronized(openLock) {
+            if (localStore != null) return localStore
+            if (storeOpenAttempted && localDataFailedToOpen) return null
+            storeOpenAttempted = true
+            openStore()
+            return localStore
+        }
     }
 
     internal fun gateway(): NavigationGateway? {
@@ -47,17 +68,21 @@ class RussianCompanionApplication : Application() {
     }
 
     internal fun retryOpen(): NavigationGateway? {
-        val opened = try {
-            LocalStore.open(this)
-        } catch (_: Exception) {
-            localDataFailedToOpen = localStore == null
+        synchronized(openLock) {
+            val opened = try {
+                LocalStore.open(this)
+            } catch (_: Exception) {
+                localDataFailedToOpen = localStore == null
+                storeOpenAttempted = true
+                return gateway()
+            }
+            val previous = localStore
+            localStore = opened
+            if (previous != null && previous != opened) previous.close()
+            localDataFailedToOpen = false
+            storeOpenAttempted = true
             return gateway()
         }
-        val previous = localStore
-        localStore = opened
-        previous?.close()
-        localDataFailedToOpen = false
-        return gateway()
     }
 
     private fun openStore() {

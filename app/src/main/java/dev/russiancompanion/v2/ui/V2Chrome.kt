@@ -34,6 +34,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
@@ -48,6 +49,8 @@ import dev.russiancompanion.v2.curriculum.V2Letter
 
 /** Horizontal inset inside every scroll clip so the first glyph is not shaved off. */
 internal val V2ContentInset = 24.dp
+
+internal val LocalV2PersistenceStatus = staticCompositionLocalOf { "" }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -83,8 +86,17 @@ internal fun V2Scaffold(
                 .verticalScroll(rememberScrollState())
                 .padding(horizontal = V2ContentInset, vertical = 12.dp)
                 .semantics { testTag = "v2-content" },
-            content = content,
-        )
+        ) {
+            val persistenceStatus = LocalV2PersistenceStatus.current
+            if (persistenceStatus.isNotEmpty()) {
+                Text(
+                    persistenceStatus,
+                    modifier = Modifier.semantics { testTag = "v2-persistence-state" },
+                )
+                Spacer(Modifier.height(8.dp))
+            }
+            content()
+        }
     }
 }
 
@@ -201,11 +213,14 @@ internal fun V2PrimaryButton(text: String, onClick: () -> Unit, enabled: Boolean
 }
 
 @Composable
-internal fun V2SecondaryButton(text: String, onClick: () -> Unit, enabled: Boolean = true) {
+internal fun V2SecondaryButton(text: String, onClick: () -> Unit, enabled: Boolean = true, tag: String? = null) {
     OutlinedButton(
         onClick = onClick,
         enabled = enabled,
-        modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp),
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 48.dp)
+            .then(if (tag != null) Modifier.semantics { testTag = tag } else Modifier),
     ) { Text(text) }
 }
 
