@@ -331,7 +331,8 @@ class BatchECapabilityResearchTest {
         assertTrue(model.units.all { it.mappingStatus == "PENDING_CURRICULUM_REVIEWER" })
         assertTrue(model.units.all { it.reviewerIdentity == "ABSENT" && it.signedReviewedDigest == "ABSENT" })
         listOf(27, 29, 30).forEach { number ->
-            assertEquals("PROPOSED_NOT_ACTIVATED", model.units.single { it.unitNumber == number }.authorityVarianceBlocker)
+            assertEquals("ACTIVATED", model.units.single { it.unitNumber == number }.authorityVarianceBlocker)
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", model.units.single { it.unitNumber == number }.readiness)
         }
         val content = mapOf(
             7 to "ec283b3bc0e58306d84e536947ab747d5ea264cea729bf4838124404ca958359",
@@ -387,8 +388,8 @@ class BatchECapabilityResearchTest {
             model.units.single { it.unitNumber == 29 }.unresolvedRequiredSourceCapabilities,
         )
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", model.units.single { it.unitNumber == 26 }.readiness)
-        assertEquals("NOT_PREPARED", model.units.single { it.unitNumber == 29 }.readiness)
-        assertEquals("PROPOSED_NOT_ACTIVATED", model.units.single { it.unitNumber == 29 }.authorityVarianceBlocker)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", model.units.single { it.unitNumber == 29 }.readiness)
+        assertEquals("ACTIVATED", model.units.single { it.unitNumber == 29 }.authorityVarianceBlocker)
     }
 
     private fun probe(unitNumber: Int, objectiveId: String, claim: String, span: String) = V2SourceCapability(

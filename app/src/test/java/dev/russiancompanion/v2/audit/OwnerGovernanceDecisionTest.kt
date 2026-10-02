@@ -29,29 +29,31 @@ class OwnerGovernanceDecisionTest {
             V2Validator.contentReviewDigest(pack),
         )
         val readiness = pack.units.groupBy { it.readiness }.mapValues { it.value.size }
-        assertEquals(27, readiness["CONTENT_COMPLETE_REVIEW_PENDING"])
-        assertEquals(3, readiness["NOT_PREPARED"])
+        assertEquals(30, readiness["CONTENT_COMPLETE_REVIEW_PENDING"])
+        assertEquals(null, readiness["NOT_PREPARED"])
         listOf(27, 29, 30).forEach { number ->
             val unit = pack.unit(number)!!
-            assertEquals("NOT_PREPARED", unit.readiness)
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("DEVELOPMENT", unit.installState)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
-            assertTrue(V2Validator.authorityVarianceApplies(number))
+            assertFalse(V2Validator.authorityVarianceApplies(number))
+            assertTrue(V2Validator.activatedAuthorityVariance(number))
             assertEquals(emptyList<String>(), V2Validator.contentCompletenessErrors(pack, unit))
             val blockers = V2Validator.unresolvedLateUnitAdvancementBlockers(pack, unit)
-            assertTrue(blockers.joinToString(), blockers.any { it.contains("unresolved authority variance") })
+            assertFalse(blockers.joinToString(), blockers.any { it.contains("unresolved authority variance") })
             assertFalse(blockers.any { it.contains("source capabilit") })
             val promoted = pack.copy(
                 units = pack.units.map { current ->
-                    if (current.number == number) current.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING") else current
+                    if (current.number == number) current.copy(readiness = "INSTALLABLE") else current
                 },
             )
             val errors = V2Validator.validate(promoted).errors
-            assertTrue(
+            assertFalse(
                 errors.joinToString("\n"),
-                errors.any { it == "Unit $number is blocked by an unresolved authority variance" },
+                errors.any { it.contains("unresolved authority variance") },
             )
-            assertTrue(V2Validator.authorityVarianceApplies(number))
+            assertTrue(errors.any { it.contains("approved review and mapping") })
+            assertFalse(V2Validator.authorityVarianceApplies(number))
         }
     }
 
@@ -94,7 +96,8 @@ class OwnerGovernanceDecisionTest {
             )
             assertFalse(rejected.accepted)
             assertTrue(rejected.defects.contains("non-owner signal cannot activate a variance"))
-            assertTrue(V2Validator.authorityVarianceApplies(27))
+            assertTrue(V2Validator.activatedAuthorityVariance(27))
+            assertFalse(V2Validator.authorityVarianceApplies(27))
         }
         val mismatched = evaluateVarianceDecision(
             pack,
@@ -106,10 +109,12 @@ class OwnerGovernanceDecisionTest {
         val signed = evaluateVarianceDecision(pack, root, signedVariance(pack, root, 30, "ACTIVATE"))
         assertTrue(signed.defects.joinToString(), signed.accepted)
         assertTrue(signed.productionUnchanged)
-        assertTrue(V2Validator.authorityVarianceApplies(27))
-        assertTrue(V2Validator.authorityVarianceApplies(29))
-        assertTrue(V2Validator.authorityVarianceApplies(30))
-        assertEquals("NOT_PREPARED", pack.unit(30)!!.readiness)
+        assertTrue(V2Validator.activatedAuthorityVariance(27))
+        assertTrue(V2Validator.activatedAuthorityVariance(29))
+        assertTrue(V2Validator.activatedAuthorityVariance(30))
+        assertFalse(V2Validator.authorityVarianceApplies(30))
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(30)!!.readiness)
+        assertEquals("PENDING_CURRICULUM_REVIEWER", pack.unit(30)!!.mappingStatus)
         assertEquals(liveDigest, computeReleaseSourceDigest(root))
     }
 
@@ -259,8 +264,12 @@ class OwnerGovernanceDecisionTest {
         assertTrue(governedMappingFacts(1).observedEditionNotes.orEmpty().contains("does not match"))
         assertTrue(governedMappingFacts(27).topicDescription.orEmpty().contains("Active participle formation is not in this lesson"))
         assertFalse(governedMappingFacts(29).topicDescription.orEmpty().contains("optional punctuation"))
-        listOf(27, 29, 30).forEach { assertTrue(V2Validator.authorityVarianceApplies(it)) }
+        listOf(27, 29, 30).forEach {
+            assertTrue(V2Validator.activatedAuthorityVariance(it))
+            assertFalse(V2Validator.authorityVarianceApplies(it))
+        }
         assertFalse(V2Validator.authorityVarianceApplies(26))
+        assertFalse(V2Validator.activatedAuthorityVariance(26))
         val lines = StringBuilder()
         (1..30).forEach { number ->
             val review = buildUnitReviewPackage(pack, number)
@@ -273,17 +282,18 @@ class OwnerGovernanceDecisionTest {
     fun decisionPackageStatesRecommendationsAndLeavesOwnerFieldsBlank() {
         val root = root()
         val packet = File(root, "docs/governance/OWNER_VARIANCE_DECISION_PACKET.md").readText()
-        assertTrue(packet.contains("Status: DECISION_PACKAGE_NOT_ACTIVATED"))
+        assertTrue(packet.contains("Status: ACTIVATED_PEDAGOGICAL_BOUNDARY_NOT_QUALIFIED_REVIEW"))
         assertTrue(packet.contains("## Unit 27\n\nRecommendation: ACTIVATE\n"))
         assertTrue(packet.contains("## Unit 29\n\nRecommendation: REVISE\n"))
         assertTrue(packet.contains("## Unit 30\n\nRecommendation: ACTIVATE\n"))
-        assertEquals(3, Regex("(?m)^Product Owner disposition:$").findAll(packet).count())
-        assertEquals(3, Regex("(?m)^Product Owner name:$").findAll(packet).count())
-        assertEquals(3, Regex("(?m)^Product Owner date:$").findAll(packet).count())
+        assertEquals(3, Regex("(?m)^Product Owner disposition: ACTIVATE$").findAll(packet).count())
+        assertEquals(3, Regex("(?m)^Product Owner name: Justin Kulka$").findAll(packet).count())
+        assertEquals(3, Regex("(?m)^Product Owner date: 2026-10-02$").findAll(packet).count())
         assertEquals(3, Regex("(?m)^Product Owner signature:$").findAll(packet).count())
-        assertFalse(packet.contains("Product Owner disposition: ACTIVATE"))
+        assertFalse(packet.contains("MAPPING_APPROVED"))
         val dossier = File(root, "docs/governance/OWNER_MAPPING_DECISION_DOSSIER.md").readText()
-        assertTrue(dossier.contains("Status: MAPPING_DECISION_NOT_ACCEPTED"))
+        assertTrue(dossier.contains("Status: PAGE_BOUNDARIES_ACCEPTED_REVIEW_STILL_PENDING"))
+        assertTrue(dossier.contains("PENDING_CURRICULUM_REVIEWER"))
         assertTrue(dossier.contains(RETAINED_PRIVATE_FILE_SHA_UNITS_11_20))
         (1..30).forEach { number ->
             val facts = governedMappingFacts(number)

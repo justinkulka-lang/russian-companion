@@ -1,10 +1,10 @@
 # Product Owner variance decision packet
 
-Status: DECISION_PACKAGE_NOT_ACTIVATED
+Status: ACTIVATED_PEDAGOGICAL_BOUNDARY_NOT_QUALIFIED_REVIEW
 
-This packet prepares a Product Owner decision. It does not activate a variance. It does not amend `MASTER_AUTHORITY_v2.0.md` or Amendment 1. It does not rewrite `UNITS_26_30_AUTHORITY_VARIANCE_PROPOSAL.md` or `UNITS_26_30_AUTHORITY_VARIANCE_PROPOSED_RESOLUTION.md`. Production validation does not read this file as an activated decision.
+The Product Owner activated the Units 27, 29, and 30 pedagogical boundaries on 2026-10-02. The governing text is `OWNER_MAPPING_AND_VARIANCE_ACCEPTANCE.md`. This packet does not amend `MASTER_AUTHORITY_v2.0.md` or Amendment 1. It does not rewrite `UNITS_26_30_AUTHORITY_VARIANCE_PROPOSAL.md` or `UNITS_26_30_AUTHORITY_VARIANCE_PROPOSED_RESOLUTION.md`. Those historical files stay `PROPOSED_NOT_ACTIVATED`. Production validation does not read this file, or those historical files, as the activation mechanism. The validator records the activated boundary. That activation is not qualified curriculum review, installation, final audit, or public release.
 
-Units 27, 29, and 30 remain `PROPOSED_NOT_ACTIVATED`. Their packaged readiness remains `NOT_PREPARED`. Green CI, a counter, a review status, and a model name do not activate a variance.
+Units 27, 29, and 30 are `CONTENT_COMPLETE_REVIEW_PENDING`. Mapping disposition stays `PENDING_CURRICULUM_REVIEWER`. Reviewer fields stay blank. Green CI, a counter, a review status, and a model name do not approve a mapping or a review.
 
 ## Governing instruments
 
@@ -17,13 +17,9 @@ The publisher public sequence is the normative table in Master Authority, “Req
 
 ## Live curriculum state used by this packet
 
-Required source capabilities for the governed curriculum are resolved. `contentCompletenessErrors` is empty for Units 27, 29, and 30. That emptiness does not change readiness. The validator still applies the unresolved variance to those three units, so each stays `NOT_PREPARED` and cannot advance.
+Required source capabilities for the governed curriculum are resolved. `contentCompletenessErrors` is empty for Units 27, 29, and 30. The activated pedagogical boundary lets those units stay `CONTENT_COMPLETE_REVIEW_PENDING`. They are not installed, not mapping-approved, and not release-approved.
 
-Content-review digests and mapping-package digests below are the current packaged values. This file lives under `docs/governance`, so it changes the repository source digest. This packet does not embed that repository digest. The live repository source digest is recorded in `release/acceptance/candidate.json` and in `audit/owner-governance/FINAL_AUDIT_PREPARATION_MANIFEST.json`.
-
-Pack content-review digest: `dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f`.
-
-Curriculum source commit for Units 26–30: `345448c16f326114ccb2f6738c75fb4206798cae`.
+Live content-review, mapping-package, and review-package digests are in the regenerated readiness reconciliation and review packets. This file lives under `docs/governance`, so it changes the repository source digest. This packet does not embed that repository digest. The live repository source digest is recorded in `release/acceptance/candidate.json` and in `audit/owner-governance/FINAL_AUDIT_PREPARATION_MANIFEST.json`. The Units 26–30 curriculum source commit is the mapping-note commit recorded on the review packets.
 
 ## Unit 27
 
@@ -56,11 +52,7 @@ The reference file’s Lesson 27 title is “Participles: types and stress,” t
 
 ### Current content digest and mapping-package digest
 
-- Unit content-review digest: `b43404505a7bc8bc72a34d2af039d5695d1e919cdc309643ecc7c835cfd99db0`.
-- Mapping-package digest: `a15bf8dc76fa2ab5d7bc1448a9f2129da7ee281461338e280c503ee3a5150bdb`.
-- Review-package digest: `3a68a30ed98a92fccec81208ebc4cb3f8f15ecd478a06893693637fff62c0303`.
-- Mapping disposition remains `PENDING_CURRICULUM_REVIEWER`.
-- Unit review status remains `IMPLEMENTED_PENDING_FINAL_AUDIT`.
+Live digests are in the regenerated readiness reconciliation. Mapping disposition remains `PENDING_CURRICULUM_REVIEWER`. Unit review status remains `IMPLEMENTED_PENDING_FINAL_AUDIT`.
 
 ### Risks and limitations
 
@@ -76,9 +68,9 @@ If revised: the decision text must be rewritten before any activation. The unit 
 
 ### Product Owner disposition
 
-Product Owner disposition:
-Product Owner name:
-Product Owner date:
+Product Owner disposition: ACTIVATE
+Product Owner name: Justin Kulka
+Product Owner date: 2026-10-02
 Product Owner signature:
 
 ## Unit 29
@@ -114,11 +106,7 @@ The pedagogical reason to keep active participles in Unit 29 is agreement betwee
 
 ### Current content digest and mapping-package digest
 
-- Unit content-review digest: `bb8645fa3be7f3ac9b7cc7a7d61d551843975f8deccb419a3ad529416c3fb0e3`.
-- Mapping-package digest: `a40de565a8d86d7288e31bfaeb75d9c41761b810f99ee56afa1add74df334f21`.
-- Review-package digest: `cd7eed324e12a8c25f4a38d69290c4aa7ec6d7e65919adac59576b348ee62619`.
-- Mapping disposition remains `PENDING_CURRICULUM_REVIEWER`.
-- Unit review status remains `IMPLEMENTED_PENDING_FINAL_AUDIT`.
+Live digests are in the regenerated readiness reconciliation. Mapping disposition remains `PENDING_CURRICULUM_REVIEWER`. Unit review status remains `IMPLEMENTED_PENDING_FINAL_AUDIT`.
 
 ### Risks and limitations
 
@@ -136,9 +124,9 @@ If revised again: any further change to the decision text must be written before
 
 ### Product Owner disposition
 
-Product Owner disposition:
-Product Owner name:
-Product Owner date:
+Product Owner disposition: ACTIVATE
+Product Owner name: Justin Kulka
+Product Owner date: 2026-10-02
 Product Owner signature:
 
 ## Unit 30
@@ -174,11 +162,7 @@ Unit 1’s shipped objectives identify printed letters and send pronunciation to
 
 ### Current content digest and mapping-package digest
 
-- Unit content-review digest: `ed3a589a8d91e48c49675840118ca2951ad752f9784b0c8eeb21a74f66285187`.
-- Mapping-package digest: `5361634a4e364130af45cfe253e75c60882f293cd9079bd403373e12cfde6505`.
-- Review-package digest: `02a4ddb5c659428962eed21d738bfdccb58d70ad692746d65b5de4fc482cef18`.
-- Mapping disposition remains `PENDING_CURRICULUM_REVIEWER`.
-- Unit review status remains `IMPLEMENTED_PENDING_FINAL_AUDIT`.
+Live digests are in the regenerated readiness reconciliation. Mapping disposition remains `PENDING_CURRICULUM_REVIEWER`. Unit review status remains `IMPLEMENTED_PENDING_FINAL_AUDIT`.
 
 ### Risks and limitations
 
@@ -194,9 +178,9 @@ If revised: the decision text must be rewritten before any activation. A revisio
 
 ### Product Owner disposition
 
-Product Owner disposition:
-Product Owner name:
-Product Owner date:
+Product Owner disposition: ACTIVATE
+Product Owner name: Justin Kulka
+Product Owner date: 2026-10-02
 Product Owner signature:
 
 ## What this packet does not do

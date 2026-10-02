@@ -242,14 +242,8 @@ class Units2630SourceIntakeTest {
         listOf(26, 27, 28, 29, 30).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals(
-                if (number == 26 || number == 28) "CONTENT_COMPLETE_REVIEW_PENDING" else "NOT_PREPARED",
-                unit.readiness,
-            )
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
-            if (number != 26 && number != 28) {
-                assertNotEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
-            }
             assertNotEquals("INSTALLABLE", unit.installState)
             assertNotEquals("INSTALLED", unit.installState)
             assertTrue(unit.sessions.any { session -> session.steps.any { !it.unavailableReason.isNullOrBlank() || !it.bookDirection.isNullOrBlank() } })
@@ -726,9 +720,10 @@ class Units2630SourceIntakeTest {
         assertFalse(advanced.remaining.any { it.contains("verbal-adverb-reading") })
 
         listOf(27, 29, 30).forEach { number ->
-            assertEquals("NOT_PREPARED", pack.unit(number)!!.readiness)
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(number)!!.readiness)
+            assertTrue(V2Validator.activatedAuthorityVariance(number))
             val errors = V2Validator.validate(claimReady(pack, number)).errors
-            assertTrue(errors.joinToString("\n"), errors.any { it == "Unit $number is blocked by an unresolved authority variance" })
+            assertFalse(errors.joinToString("\n"), errors.any { it.contains("unresolved authority variance") })
         }
         pack.provenanceRecords.filter { it.unitNumber == 30 && it.sourceId.startsWith("src-ruwiki-") }.forEach { record ->
             assertTrue(record.attribution.contains("oldid 154562152"))
@@ -758,13 +753,13 @@ class Units2630SourceIntakeTest {
         val unit26Claims = V2Validator.unresolvedRequiredSourceCapabilities(pack, 26).map { it.claim }
         assertEquals(emptyList<String>(), unit26Claims)
         val unit27 = V2Validator.validate(claimReady(pack, 27)).errors
-        assertTrue(unit27.any { it == "Unit 27 is blocked by an unresolved authority variance" })
+        assertFalse(unit27.any { it.contains("unresolved authority variance") })
         assertFalse(unit27.any { it.contains("participle-comprehension") })
         assertFalse(unit27.any { it.contains("participle-stress") })
         val unit27WithoutVariance = V2Validator.unresolvedLateUnitAdvancementBlockers(pack, pack.unit(27)!!, emptySet())
         assertTrue(unit27WithoutVariance.joinToString("\n"), unit27WithoutVariance.isEmpty())
         val unit29 = V2Validator.validate(claimReady(pack, 29)).errors
-        assertTrue(unit29.any { it == "Unit 29 is blocked by an unresolved authority variance" })
+        assertFalse(unit29.any { it.contains("unresolved authority variance") })
         assertFalse(unit29.any { it.contains("bookish-reading") })
         assertFalse(unit29.any { it.contains("bookish-register") })
         val unit29WithoutVariance = V2Validator.unresolvedLateUnitAdvancementBlockers(pack, pack.unit(29)!!, emptySet())

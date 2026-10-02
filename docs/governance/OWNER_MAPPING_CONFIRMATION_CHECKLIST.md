@@ -1,17 +1,22 @@
 # Product Owner mapping confirmation checklist
 
-This checklist names the items the Product Owner must personally supply or confirm. Nothing in this file fills those items. Every mapping stays `PENDING_CURRICULUM_REVIEWER`.
+The written disposition of 2026-10-02 is applied in `OWNER_MAPPING_AND_VARIANCE_ACCEPTANCE.md`. Every mapping stays `PENDING_CURRICULUM_REVIEWER`. Product Owner acceptance is not qualified curriculum review.
 
-1. Accept or reject the back-cover reading ISBN `0-14-012041-6`. The copyright page in the reference file is blank. The isbn column stays blank and `isbn_observation` stays `UNRESOLVED` until a signed decision.
-2. Confirm that the copy in hand is the edition recorded as title `The New Penguin Russian Course: A Complete Course for Beginners`, author `Nicholas J. Brown`, imprint `Penguin Books`, introduction signed Nicholas J. Brown, London, 1996, PDF extent 528 indices. No copyright year was read.
-3. Decide file continuity. The three reference-file parts do not match private-file SHA-256 `2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303`. That comparison is not ownership verification. `owned_copy_verified` stays blank.
-4. Accept or reject each proposed printed page range in `OWNER_MAPPING_DECISION_DOSSIER.md`. The prior Unit 25 range `307-321` overlapped Unit 26 `320-331`. The reference file does not support that overlap. Corrected proposals are Unit 25 `305-319` and Unit 26 `320-331`.
-5. Confirm each proposed lesson label and each proposed topic string in that dossier against the same copy.
-6. Confirm `variance_conflict` for each of the 30 worksheets. The column is blank.
-7. Supply reviewer identity, review date, reviewed version digest, and reviewer qualification for each worksheet. Those columns are blank.
-8. Sign the three blank variance dispositions in `OWNER_VARIANCE_DECISION_PACKET.md` only in a later explicit instruction. This checklist does not activate Units 27, 29, or 30.
-9. Sign a mapping disposition only after the comparisons above. This checklist does not change any worksheet to an accepted mapping.
+1. Edition identity is accepted as The New Penguin Russian Course: A Complete Course for Beginners, Nicholas J. Brown, Penguin Books. Back-cover ISBN observation `0-14-012041-6` stays an observation. The copyright page was blank. The isbn column stays blank and `isbn_observation` stays `UNRESOLVED`. The barcode observation is recorded only in the acceptance file.
+2. The introduction signature SSEES, London, 1996 is accepted as the introduction year. It is not the copyright-page year.
+3. File continuity is not established by binary identity. The three part hashes, ordered ranges 1-176, 177-352, and 353-528, the 528-index extent, and the uninterrupted page sequence are reference-file evidence only. Retained private-file SHA-256 `2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303` does not match concatenation. That mismatch is not evidence of altered instructional content. `owned_copy_verified` stays blank.
+4. Printed page ranges in `OWNER_MAPPING_DECISION_DOSSIER.md` are accepted for private comparison, including Unit 21 `257-268`, Unit 22 `269-282`, Unit 23 `283-293`, Unit 24 `294-304`, Unit 25 `305-319`, and Unit 26 `320-331`. The obsolete range `307-321` is not a live boundary.
+5. The owned-copy confirmation authorizes private mapping comparison only. It does not authorize committing, packaging, reproducing, distributing, or adapting Penguin-protected content.
+6. `variance_conflict` stays blank on each worksheet.
+7. Reviewer identity, review date, reviewed version digest, and reviewer qualification stay blank.
+8. Units 27, 29, and 30 pedagogical boundaries are activated. That activation is not qualified review and does not approve release.
+9. No worksheet disposition changes to an accepted mapping.
 
-Product Owner name:
-Product Owner date:
+Product Owner name: Justin Kulka
+Product Owner date: 2026-10-02
 Product Owner signature:
+Reviewer identity:
+Reviewer qualification:
+Review date:
+Reviewed version digest:
+Reviewer signature:

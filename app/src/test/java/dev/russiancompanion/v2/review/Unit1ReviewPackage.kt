@@ -170,45 +170,45 @@ private const val OBSERVED_EDITION_AUTHOR = "Nicholas J. Brown"
 private const val OBSERVED_PUBLISHER_IMPRINT = "Penguin Books"
 
 private const val REFERENCE_FILE_COMPARISON =
-    " Reference-file comparison, not an owner inspection and not ownership verification: three part files cover PDF indices 1-176, 177-352, and 353-528. Part SHA-256 values are de6715e5ff4c52394a5a68462fafbf1d9608906fe01704af73d44eceb4da1bcd, 7bab8f041ed0a2f6f8e4a27c336c39c395b97b6fcd9d542781f755cef42ee304, and 72384a3305f64115ecf9b6028944ac06b40ca33705ff2b113f9e3ecb7eb3a1da. Concatenation SHA-256 4b3374d001f007a6dd92dfdc8f1a386d5b2591a102a166cf5c003642fdc793bc does not match retained private-file SHA-256 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303. File continuity is not established. Printed lesson page N is PDF index N+12. PDF indices 2 and 4 are blank, so no copyright year was read. The back cover prints ISBN 0-14-012041-6. That reading stays unresolved. Mapping acceptance is not recorded."
+    " Reference-file comparison retained as reference-file evidence only: three independently valid split PDFs cover ordered PDF indices 1-176, 177-352, and 353-528, total extent 528 PDF indices, in an observed uninterrupted page sequence. Part SHA-256 values are de6715e5ff4c52394a5a68462fafbf1d9608906fe01704af73d44eceb4da1bcd, 7bab8f041ed0a2f6f8e4a27c336c39c395b97b6fcd9d542781f755cef42ee304, and 72384a3305f64115ecf9b6028944ac06b40ca33705ff2b113f9e3ecb7eb3a1da. Concatenation SHA-256 4b3374d001f007a6dd92dfdc8f1a386d5b2591a102a166cf5c003642fdc793bc does not match retained private-file SHA-256 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303 because splitting rewrites PDF object structure. Binary-identity continuity is not established. That mismatch is not evidence of altered instructional content. Printed lesson page N is PDF index N+12. PDF indices 2 and 4 are blank, so no copyright year was read. The introduction is signed SSEES, London, 1996. That year is not a copyright-page year. The back cover prints ISBN 0-14-012041-6. The barcode was read. Formal ISBN verification stays unresolved. The barcode digits are recorded only in the Product Owner acceptance record and are not copied into this worksheet. The Product Owner confirmed the supplied reference file is a legally owned reference copy for private mapping comparison only. That confirmation does not authorize committing, packaging, reproducing, distributing, or adapting Penguin-protected content. Qualified curriculum review is not recorded."
 
 private const val OBSERVED_EDITION_NOTES =
-    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded." +
+    "Introduction signed Nicholas J. Brown, SSEES, London, 1996. That year is the introduction signature, not a copyright-page year. Scanned file extent was 528 pages. Formal ISBN verification remains unresolved. The Product Owner confirmed that the supplied reference file is a legally owned reference copy for private mapping comparison only. That confirmation is not reviewer verification." +
         REFERENCE_FILE_COMPARISON
 
 private const val MAPPING_OBSERVATION_SOURCE =
     "Product Owner structural mapping input v1.0. Page numbers are printed book pages. The input is private and is not repository curriculum."
 
 private const val UNITS_11_15_EDITION_NOTES =
-    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Private-file SHA-256 is 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303." +
+    "Introduction signed Nicholas J. Brown, SSEES, London, 1996. That year is the introduction signature, not a copyright-page year. Scanned file extent was 528 pages. Formal ISBN verification remains unresolved. The Product Owner confirmed that the supplied reference file is a legally owned reference copy for private mapping comparison only. That confirmation is not reviewer verification. Private-file SHA-256 is 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303." +
         REFERENCE_FILE_COMPARISON
 
 private const val UNITS_11_15_OBSERVATION_SOURCE =
     "Product Owner structural mapping input for Units 11-15, v1.0, visually inspected on 23 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
 
 private const val UNITS_16_20_EDITION_NOTES =
-    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Private-file SHA-256 is 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303." +
+    "Introduction signed Nicholas J. Brown, SSEES, London, 1996. That year is the introduction signature, not a copyright-page year. Scanned file extent was 528 pages. Formal ISBN verification remains unresolved. The Product Owner confirmed that the supplied reference file is a legally owned reference copy for private mapping comparison only. That confirmation is not reviewer verification. Private-file SHA-256 is 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303." +
         REFERENCE_FILE_COMPARISON
 
 private const val UNITS_16_20_OBSERVATION_SOURCE =
     "Product Owner structural mapping input for Units 16-20, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
 
 private const val UNITS_21_25_EDITION_NOTES =
-    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification." +
+    "Introduction signed Nicholas J. Brown, SSEES, London, 1996. That year is the introduction signature, not a copyright-page year. Scanned file extent was 528 pages. Formal ISBN verification remains unresolved. The Product Owner confirmed that the supplied reference file is a legally owned reference copy for private mapping comparison only. That confirmation is not reviewer verification." +
         REFERENCE_FILE_COMPARISON
 
 private const val UNITS_21_25_OBSERVATION_SOURCE =
     "Product Owner structural mapping input for Units 21-25, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
 
 private const val UNITS_26_30_EDITION_NOTES =
-    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification." +
+    "Introduction signed Nicholas J. Brown, SSEES, London, 1996. That year is the introduction signature, not a copyright-page year. Scanned file extent was 528 pages. Formal ISBN verification remains unresolved. The Product Owner confirmed that the supplied reference file is a legally owned reference copy for private mapping comparison only. That confirmation is not reviewer verification." +
         REFERENCE_FILE_COMPARISON
 
 private const val UNITS_26_30_OBSERVATION_SOURCE =
     "Product Owner structural mapping input for Units 26-30, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum. Classification RESEARCH_GAPS_BLOCK_IMPLEMENTATION. This observation is not an approved alignment."
 
 private const val MAPPING_UNRESOLVED_QUESTIONS =
-    "Confirm the exact edition and ISBN from the purchase record. Confirm each printed page range against the owned copy. Record any variance. Confirm whether app objectives cover the required skill progression without later material. Confirm Unit 1 and Unit 2 linguistic accuracy. Review Units 3-5 only after lawful source-based content is prepared. The ownership statement is not reviewer verification. Final curriculum audit is not recorded here. A later reference-file comparison corrected proposed pages for Lessons 21-25 and did not establish file continuity with the retained private-file hash. That comparison is not an owner signature."
+    "Formal ISBN verification and the copyright-page year remain unresolved. Confirm whether app objectives cover the required skill progression without later material. Confirm Unit 1 and Unit 2 linguistic accuracy. Review Units 3-5 only after lawful source-based content is prepared. The Product Owner accepted the observed edition identity and the printed page ranges, including corrected Lessons 21-25, for private mapping comparison only. Binary-identity continuity is not established, and the concatenation mismatch is not evidence of altered instructional content. That acceptance is not qualified curriculum review. Final curriculum audit is not recorded here. Mapping disposition stays PENDING_CURRICULUM_REVIEWER."
 
 private data class StructuralMappingObservation(
     val unitNumber: Int,

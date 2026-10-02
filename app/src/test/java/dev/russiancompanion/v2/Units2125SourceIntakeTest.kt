@@ -108,8 +108,8 @@ class Units2125SourceIntakeTest {
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
-            assertTrue(unit.mappingNote.contains(packagedMappingNotePages.getValue(number)))
-            assertFalse(unit.mappingNote.contains(range))
+            assertTrue(unit.mappingNote.contains(range))
+            assertFalse(unit.mappingNote.contains(packagedMappingNotePages.getValue(number)))
             assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertFalse(unit.mappingNote.contains("ISBN"))
@@ -123,6 +123,8 @@ class Units2125SourceIntakeTest {
             val comparison = notes.substringAfter("Reference-file comparison")
             assertTrue(comparison.contains("2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303"))
             assertTrue(comparison.contains("does not match"))
+            assertTrue(comparison.contains("Binary-identity continuity is not established"))
+            assertTrue(comparison.contains("not evidence of altered instructional content"))
             assertFalse(notes.substringBefore("Reference-file comparison").contains("2bcc0c45"))
             assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
             val review = pack.unitReviews.first { it.unitNumber == number }
@@ -167,7 +169,7 @@ class Units2125SourceIntakeTest {
         assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.sessions.isNotEmpty() })
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(26)!!.readiness)
-        assertEquals(setOf(27, 29, 30), pack.units.drop(25).filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
+        assertEquals(emptySet<Int>(), pack.units.filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
         assertTrue(File(repo(), "review/unit-23/UNIT_23_REVIEW_PACKET.md").isFile)
     }
 

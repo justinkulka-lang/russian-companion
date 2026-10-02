@@ -333,7 +333,9 @@ internal fun renderCurriculumReadinessMarkdown(model: CurriculumReadinessReconci
         append(".\n\n")
         append("Authority-variance proposal status: `${model.varianceProposalStatus}`. ")
         append("Proposed-resolution status: `${model.varianceResolutionStatus}`. ")
-        append("Neither file is activated authority.\n")
+        append("Neither historical file is activated authority. ")
+        append("Production validation records an activated pedagogical boundary for Units 27, 29, and 30. ")
+        append("That activation is not qualified review or release approval.\n")
     }
 }
 
@@ -510,7 +512,11 @@ private fun unitRow(
     } else {
         "NONE"
     }
-    val variance = if (V2Validator.authorityVarianceApplies(unit.number)) "PROPOSED_NOT_ACTIVATED" else "NOT_APPLICABLE"
+    val variance = when {
+        V2Validator.authorityVarianceApplies(unit.number) -> "PROPOSED_NOT_ACTIVATED"
+        V2Validator.activatedAuthorityVariance(unit.number) -> "ACTIVATED"
+        else -> "NOT_APPLICABLE"
+    }
     val chainComplete = contentErrors.isEmpty()
     val untaught = unit.objectives.any { it.kind == "RECOGNITION" && it.gating && it.instructionStepIds.isEmpty() }
     val unsupported = unit.objectives.any { it.kind != "RECOGNITION" && it.checkItemIds.isNotEmpty() }
@@ -848,7 +854,7 @@ private fun disposition(
         if (mapping != "NONE") "OWNED_EDITION_MAPPING" else null,
         if (asset != "NONE") "ASSET" else null,
         if (localExperience != "NONE") "LOCAL_EXPERIENCE" else null,
-        if (variance != "NOT_APPLICABLE") "AUTHORITY_VARIANCE" else null,
+        if (variance == "PROPOSED_NOT_ACTIVATED") "AUTHORITY_VARIANCE" else null,
     )
     val claim = when {
         advancementInconsistent -> "INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"
@@ -891,7 +897,7 @@ private fun nextWork(model: CurriculumReadinessReconciliation): List<ReadinessNe
     }
     val audioUnits = model.units.filter { V2Validator.installationRequiresPronunciationAudio(it.unitNumber) }
     val handwritingUnits = model.units.filter { V2Validator.installationRequiresHandwritingAsset(it.unitNumber) }
-    val varianceUnits = model.units.filter { it.authorityVarianceBlocker != "NOT_APPLICABLE" }
+    val varianceUnits = model.units.filter { it.authorityVarianceBlocker == "PROPOSED_NOT_ACTIVATED" }
     val reviewUnits = model.units.filter { it.unitReviewStatus != "APPROVED" || it.signedReviewedDigest != "PRESENT" }
     val mappingUnits = model.units.filter { it.mappingStatus != "APPROVED" }
     return listOf(
@@ -923,7 +929,7 @@ private fun nextWork(model: CurriculumReadinessReconciliation): List<ReadinessNe
             id = "unresolved-authority-variances",
             title = "Unresolved authority variances",
             units = varianceUnits.map { it.unitNumber },
-            requiredInput = "The exact observed sequence difference, the bounded implementation resolution, final curriculum-audit disposition, Product Owner acceptance, and a versioned digest and date. Current proposal status is ${model.varianceProposalStatus}. Current proposed-resolution status is ${model.varianceResolutionStatus}. Production validation applies this unactivated variance to Units 27, 29, and 30 only. This report does not activate either proposal. Green CI does not activate a variance.",
+            requiredInput = "Historical proposal status is ${model.varianceProposalStatus}. Historical proposed-resolution status is ${model.varianceResolutionStatus}. Those files are not the activation. Production validation records Units 27, 29, and 30 as ACTIVATED pedagogical boundaries. Activation is not qualified curriculum review, installation, final audit, candidate freeze, AT-031, or public release. No unresolved authority variance remains. Green CI does not approve a mapping or a review.",
         ),
         ReadinessNextWork(
             id = "qualified-linguistic-review",
@@ -974,7 +980,7 @@ private fun globalRows(model: CurriculumReadinessReconciliation): List<Pair<Stri
         "unitsByReviewState" to countLabel(units.groupingBy { it.unitReviewStatus }.eachCount()),
         "unitsWithCompleteInstructionalChains" to units.count { it.completeInstructionalChain }.toString(),
         "unitsWithUnresolvedSourceCapabilities" to units.count { it.unresolvedRequiredSourceCapabilities != "NONE" }.toString(),
-        "unitsWithApplicableUnresolvedAuthorityVariances" to units.count { it.authorityVarianceBlocker != "NOT_APPLICABLE" }.toString(),
+        "unitsWithApplicableUnresolvedAuthorityVariances" to units.count { it.authorityVarianceBlocker == "PROPOSED_NOT_ACTIVATED" }.toString(),
         "unitsLackingReviewPacket" to units.count { it.reviewPackageDigest == "NONE" }.toString(),
         "unitsLackingAdvancementRule" to units.count { it.advancementRuleState == "NONE" }.toString(),
         "unitsRequiringAudio" to units.count { V2Validator.installationRequiresPronunciationAudio(it.unitNumber) }.toString(),
@@ -1041,7 +1047,7 @@ private fun blockerTotals(model: CurriculumReadinessReconciliation): List<Pair<S
         "OWNED_EDITION_MAPPING" to units.count { it.mappingBlocker != "NONE" },
         "ASSET" to units.count { it.assetBlocker != "NONE" },
         "LOCAL_EXPERIENCE" to units.count { it.localExperienceBlocker != "NONE" },
-        "AUTHORITY_VARIANCE" to units.count { it.authorityVarianceBlocker != "NOT_APPLICABLE" },
+        "AUTHORITY_VARIANCE" to units.count { it.authorityVarianceBlocker == "PROPOSED_NOT_ACTIVATED" },
     )
 }
 

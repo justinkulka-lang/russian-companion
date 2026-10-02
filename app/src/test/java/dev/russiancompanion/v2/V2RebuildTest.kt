@@ -135,7 +135,7 @@ class V2RebuildTest {
         assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.mappingStatus == "PENDING_CURRICULUM_REVIEWER" })
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(26)!!.readiness)
-        assertEquals(setOf(27, 29, 30), pack.units.drop(25).filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
+        assertEquals(emptySet<Int>(), pack.units.filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
         assertEquals(0, pack.admissions.generatedRussianWords)
         assertEquals(0, pack.admissions.penguinProseAssets)
         assertEquals(0, pack.admissions.catalogAudioBoundToUnits)
@@ -569,7 +569,7 @@ class V2RebuildTest {
         assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" })
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(26)!!.readiness)
-        assertEquals(setOf(27, 29, 30), pack.units.drop(25).filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
+        assertEquals(emptySet<Int>(), pack.units.filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
 
         val unitOne = V2Validator.unitContentReviewDigest(pack, 1)
         val unitThree = V2Validator.unitContentReviewDigest(pack, 3)

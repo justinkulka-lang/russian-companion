@@ -1,8 +1,8 @@
 # Owned-edition mapping decision dossier
 
-Status: MAPPING_DECISION_NOT_ACCEPTED
+Status: PAGE_BOUNDARIES_ACCEPTED_REVIEW_STILL_PENDING
 
-This dossier audits the thirty retained mapping worksheets. It does not accept a mapping. Every worksheet disposition stays `PENDING_CURRICULUM_REVIEWER`. ISBN stays blank. `isbn_observation` stays `UNRESOLVED`. `owned_copy_verified` stays blank. Reviewer identity, review date, reviewed digest, and reviewer qualification stay blank.
+This dossier records the Product Owner acceptance of the printed-page boundaries for private comparison. Every worksheet disposition stays `PENDING_CURRICULUM_REVIEWER`. That acceptance is not qualified curriculum review. ISBN stays blank. `isbn_observation` stays `UNRESOLVED`. `owned_copy_verified` stays blank. Reviewer identity, review date, reviewed digest, and reviewer qualification stay blank.
 
 A recorded inspection note is not an accepted mapping. A publisher-public topic title is not a page mapping. A proposed lesson label, page range, or topic string is not an owned-edition fact until the Product Owner confirms it against the physical or lawful digital book.
 
@@ -90,28 +90,31 @@ Observation-source bands, retained verbatim in the worksheet `observation_source
 - Units 21–25: visually inspected on 24 September 2026. The private PDF is not repository curriculum.
 - Units 26–30: visually inspected on 24 September 2026. Classification `RESEARCH_GAPS_BLOCK_IMPLEMENTATION`. The observation is not an approved alignment.
 
-The prior proposal gave Unit 25 pages 307-321 and Unit 26 pages 320-331. That overlap is not a shared printed page in the reference file. Lesson 25 opens on printed page 305 and Lesson 26 opens on printed page 320. Corrected proposals are 305-319 and 320-331. No lesson boundary in this copy shares a printed page. Packaged curriculum `mappingNote` strings for Units 21-25 still name the prior ranges. Those notes were not edited.
+The prior proposal gave Unit 25 pages 307-321 and Unit 26 pages 320-331. That overlap is not a shared printed page and is not a live boundary. Lesson 25 is printed pages 305-319 and Lesson 26 remains 320-331. Packaged curriculum `mappingNote` strings for Units 21-25 use the accepted ranges. No lesson boundary in this copy shares a printed page.
 
 Lessons 26–30 are recorded in the variance proposal as having no following book revision block, with printed page 378 beginning the Grammatical Tables. That sentence is a proposal observation. It is not an accepted page boundary.
 
 ## Unresolved facts
 
-The following are absent from the retained evidence. No value is supplied here.
+The Product Owner accepted the observed edition identity and the printed page ranges for private comparison. The following stay unresolved:
 
-- An accepted ISBN. The back-cover reading is unresolved, and the isbn column stays blank.
-- `owned_copy_verified`, for every unit.
-- A Product Owner signature accepting each proposed page range, lesson label, and topic.
-- A Product Owner decision on file continuity. The reference-file comparison does not match the retained private-file hash.
-- A Product Owner confirmation that the corrected Unit 25 and Unit 26 ranges, rather than the prior overlap `307-321` / `320-331`, are the ranges to accept.
+- Formal ISBN verification and the copyright-page year. The back-cover observation is not an accepted ISBN, and the isbn column stays blank.
+- `owned_copy_verified`, for every unit. The owned-copy confirmation authorizes private comparison only.
+- Binary-identity continuity. The concatenation mismatch is not evidence of altered instructional content.
 - `variance_conflict`, for every unit.
 - Reviewer identity, review date, reviewed version digest, and reviewer qualification, for every unit.
 - Any mapping disposition other than `PENDING_CURRICULUM_REVIEWER`.
 
-Until those facts are supplied by the Product Owner from the book in hand, mapping acceptance fails closed.
+The obsolete range 307-321 is not a live Unit 25 boundary.
 
 ## Product Owner mapping disposition
 
-Product Owner disposition:
-Product Owner name:
-Product Owner date:
+Product Owner disposition: accepted for private comparison; mapping remains PENDING_CURRICULUM_REVIEWER
+Product Owner name: Justin Kulka
+Product Owner date: 2026-10-02
 Product Owner signature:
+Reviewer identity:
+Reviewer qualification:
+Review date:
+Reviewed version digest:
+Reviewer signature:

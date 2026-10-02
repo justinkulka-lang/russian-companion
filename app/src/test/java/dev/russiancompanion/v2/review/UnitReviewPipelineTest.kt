@@ -116,7 +116,7 @@ class UnitReviewPipelineTest {
         assertTrue(unit30.unresolved.joinToString("\n"), unit30.unresolved.isEmpty())
         assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", unit30.unitReviewStatus)
         assertTrue(unit30.unavailableIds.isEmpty())
-        assertEquals("NOT_PREPARED", pack.unit(30)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(30)!!.readiness)
         assertTrue(unit30.records.none { it.type == "UNIT_REVIEW" && it.reviewStatus == "APPROVED" })
         val outside = buildUnitReviewPackage(pack, 31)
         assertTrue(outside.unresolved.any { it.contains("outside Units 1-30") })
