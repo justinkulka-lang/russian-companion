@@ -319,9 +319,10 @@ class CurriculumReadinessReconciliationTest {
         assertFalse(starvedDecision.allowed)
         assertTrue(starvedDecision.remaining.any { it.contains("distinct in-app checks") || it.contains("Demonstrate") })
 
+        val notPreparedLate = pack.withUnit(pack.unit(27).copy(readiness = "NOT_PREPARED"))
         val inconsistent = reconcileCurriculumReadiness(
             root(),
-            pack,
+            notPreparedLate,
             runtimeAdvancementAllowed = { _, unit -> unit.number == 27 },
         ).units.first { it.unitNumber == 27 }
         assertFalse(inconsistent.advancementCanPresentlySucceed)

@@ -310,19 +310,22 @@ class Units1115InstructionalValidityTest {
         assertFalse(unprepared.contains(24))
         assertFalse(unprepared.contains(25))
         assertFalse(unprepared.contains(26))
-        assertTrue(unprepared.contains(27))
+        assertFalse(unprepared.contains(27))
         assertFalse(unprepared.contains(28))
-        assertTrue(unprepared.contains(29))
-        assertTrue(unprepared.contains(30))
+        assertFalse(unprepared.contains(29))
+        assertFalse(unprepared.contains(30))
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(7)!!.readiness)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(26)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(27)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(29)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(30)!!.readiness)
         val falseClaim = "Units 26 through 30 contain proposed lesson bodies that still need qualified review."
         val falselyClaimed = claimedPreparedUnits(falseClaim).intersect(unprepared)
         assertFalse(falselyClaimed.contains(26))
-        assertTrue(falselyClaimed.contains(27))
+        assertFalse(falselyClaimed.contains(27))
         assertFalse(falselyClaimed.contains(28))
-        assertTrue(falselyClaimed.contains(29))
-        assertTrue(falselyClaimed.contains(30))
+        assertFalse(falselyClaimed.contains(29))
+        assertFalse(falselyClaimed.contains(30))
         val reference = pack.references.first { it.id == "ref-book-topics" }
         assertEquals(
             "Some units contain proposed lesson bodies that still require qualified review.",
