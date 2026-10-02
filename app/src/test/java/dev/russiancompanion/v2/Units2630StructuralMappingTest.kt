@@ -67,10 +67,7 @@ class Units2630StructuralMappingTest {
             val facts = governedMappingFacts(number)
             val review = pack.unitReviews.single { it.unitNumber == number }
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals(
-                if (number == 26 || number == 28) "CONTENT_COMPLETE_REVIEW_PENDING" else "NOT_PREPARED",
-                unit.readiness,
-            )
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.objectives.isNotEmpty())
@@ -87,12 +84,13 @@ class Units2630StructuralMappingTest {
             assertFalse(unit.mappingNote.contains(range))
             assertFalse(unit.mappingNote.contains("printed pages"))
             assertTrue(unit.mappingNote.contains("Observed structural scope"))
-            if (number in setOf(27, 29, 30)) {
-                assertTrue(unit.mappingNote.contains("unresolved authority variance remains unactivated"))
-            } else {
-                assertFalse(unit.mappingNote.contains("unresolved authority variance"))
-            }
+            assertFalse(unit.mappingNote.contains("unresolved authority variance"))
             assertTrue(unit.mappingNote.contains(facts.topicDescription!!))
+            if (number in setOf(27, 29, 30)) {
+                assertTrue(unit.mappingNote.contains("That activation is not qualified curriculum review."))
+            } else {
+                assertFalse(unit.mappingNote.contains("activated"))
+            }
             assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertFalse(unit.mappingNote.contains("ISBN"))
@@ -102,27 +100,20 @@ class Units2630StructuralMappingTest {
             assertNull(facts.isbn)
             assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
             val decision = advancementDecision(pack, unit, learner(number, book = true))
-            if (number == 26 || number == 28) {
-                assertFalse(decision.allowed)
-                assertFalse(decision.remaining.any { it == "This unit is not prepared" })
-                assertFalse(decision.remaining.any { it.contains("not content-complete") || it.contains("source capabilit") })
-                assertTrue(decision.remaining.any { it.contains("instruction") || it.contains("Demonstrate") })
-            } else {
-                assertFalse(decision.allowed)
-                assertTrue(decision.remaining.any { it == "This unit is not prepared" })
-                assertFalse(decision.remaining.any { it.contains("not content-complete") })
-            }
-            if (number in setOf(27, 29, 30)) {
-                assertTrue(decision.remaining.any { it == "Unit $number is blocked by an unresolved authority variance" })
-            } else {
-                assertFalse(decision.remaining.any { it.contains("unresolved authority variance") })
-            }
+            assertFalse(decision.allowed)
+            assertFalse(decision.remaining.any { it == "This unit is not prepared" })
+            assertFalse(decision.remaining.any { it.contains("not content-complete") || it.contains("source capabilit") })
+            assertFalse(decision.remaining.any { it.contains("unresolved authority variance") })
+            assertTrue(decision.remaining.any { it.contains("instruction") || it.contains("Demonstrate") })
         }
         val unit30 = pack.unit(30)!!
         assertFalse(unit30.mappingNote.contains("Printed page 378"))
         assertFalse(unit30.mappingNote.contains("Letter names are only reviewed and applied here."))
         assertFalse(pack.unit(27)!!.mappingNote.contains("Active participles are not part of this lesson."))
-        assertTrue(pack.unit(27)!!.mappingNote.contains("optional present passive material"))
+        assertTrue(pack.unit(27)!!.mappingNote.contains("Active participle formation is not in this lesson"))
+        assertFalse(pack.unit(27)!!.mappingNote.contains("optional present passive material"))
+        assertTrue(pack.unit(29)!!.mappingNote.contains("shipped participial-phrase punctuation"))
+        assertFalse(pack.unit(29)!!.mappingNote.contains("optional punctuation"))
         assertTrue(pack.unit(30)!!.mappingNote.contains("dictionary use"))
     }
 
@@ -207,12 +198,16 @@ class Units2630StructuralMappingTest {
         assertFalse(V2Validator.validate(pack).errors.any { it.contains("unresolved authority variance") })
         listOf(27, 29, 30).forEach { number ->
             val message = "Unit $number is blocked by an unresolved authority variance"
+            assertTrue(V2Validator.activatedAuthorityVariance(number))
+            assertFalse(V2Validator.authorityVarianceApplies(number))
             val complete = V2Validator.validate(claimComplete(pack, number)).errors
-            assertTrue(complete.joinToString("\n"), complete.any { it == message })
+            assertFalse(complete.joinToString("\n"), complete.any { it == message })
             val installable = V2Validator.validate(claimInstallable(pack, number)).errors
-            assertTrue(installable.joinToString("\n"), installable.any { it == message })
+            assertFalse(installable.joinToString("\n"), installable.any { it == message })
+            assertTrue(installable.any { it.contains("approved review and mapping") })
             val installed = V2Validator.validate(claimInstalled(pack, number)).errors
-            assertTrue(installed.joinToString("\n"), installed.any { it == message })
+            assertFalse(installed.joinToString("\n"), installed.any { it == message })
+            assertTrue(installed.any { it.contains("mapping must be APPROVED") })
         }
         val unit26 = V2Validator.validate(claimComplete(pack, 26)).errors
         assertFalse(unit26.joinToString("\n"), unit26.any { it.contains("unresolved authority variance") })
@@ -230,12 +225,8 @@ class Units2630StructuralMappingTest {
         pages.keys.forEach { number ->
             val claimed = claimComplete(pack, number)
             val errors = V2Validator.validate(claimed).errors
-            if (number == 26 || number == 28) {
-                assertFalse(errors.joinToString("\n"), errors.any { it.contains("verbal-adverb-reading") || it.contains("postal-address") || it.contains("not content-complete") })
-            } else {
-                assertFalse(errors.joinToString("\n"), errors.any { it.contains("not content-complete") })
-                assertTrue(errors.any { it == "Unit $number is blocked by an unresolved authority variance" })
-            }
+            assertFalse(errors.joinToString("\n"), errors.any { it.contains("not content-complete") })
+            assertFalse(errors.any { it.contains("unresolved authority variance") })
             val bookDirected = bookShell(claimed, number)
             val bookErrors = V2Validator.validate(bookDirected).errors
             assertTrue(bookErrors.joinToString("\n"), bookErrors.any { it == gapMessage.getValue(number) })
@@ -288,24 +279,10 @@ class Units2630StructuralMappingTest {
             val rangedDecision = advancementDecision(ranged, ranged.unit(number)!!, learner(number, book = true))
             val rangedErrors = V2Validator.validate(ranged).errors
             assertTrue(rangedErrors.joinToString("\n"), rangedErrors.any { it.contains("structural page range is not linguistic evidence") })
-            if (number == 26 || number == 28) {
-                assertTrue(rangedDecision.remaining.joinToString("\n"), rangedDecision.allowed)
-            } else {
-                assertFalse(rangedDecision.allowed)
-                assertFalse(rangedDecision.remaining.any { it.contains("not content-complete") })
-                assertTrue(rangedDecision.remaining.any { it == "Unit $number is blocked by an unresolved authority variance" })
-            }
-
-            if (number in setOf(27, 29, 30)) {
-                val variance = "Unit $number is blocked by an unresolved authority variance"
-                assertTrue(emptyDecision.remaining.any { it == variance })
-                assertTrue(attestedDecision.remaining.any { it == variance })
-                assertTrue(rangedDecision.remaining.any { it == variance })
-            } else {
-                assertFalse(emptyDecision.remaining.any { it.contains("unresolved authority variance") })
-                assertFalse(attestedDecision.remaining.any { it.contains("unresolved authority variance") })
-                assertFalse(rangedDecision.remaining.any { it.contains("unresolved authority variance") })
-            }
+            assertTrue(rangedDecision.remaining.joinToString("\n"), rangedDecision.allowed)
+            assertFalse(emptyDecision.remaining.any { it.contains("unresolved authority variance") })
+            assertFalse(attestedDecision.remaining.any { it.contains("unresolved authority variance") })
+            assertFalse(rangedDecision.remaining.any { it.contains("unresolved authority variance") })
         }
     }
 
@@ -322,21 +299,8 @@ class Units2630StructuralMappingTest {
                 val prepared = permissiveAdvancement(pack, number, readiness)
                 val decision = advancementDecision(prepared, prepared.unit(number)!!, learner(number, book = false))
                 assertFalse(decision.remaining.any { it == "This unit is not prepared" })
-                if (number == 26 || number == 28) {
-                    assertTrue("$number $readiness ${decision.remaining}", decision.allowed)
-                } else {
-                    assertEquals(
-                        blocked.remaining.filter { it != "This unit is not prepared" },
-                        decision.remaining,
-                    )
-                    assertFalse("$number $readiness ${decision.remaining}", decision.allowed)
-                    assertFalse(decision.remaining.any { it.contains("not content-complete") })
-                }
-                if (number in setOf(27, 29, 30)) {
-                    assertTrue(decision.remaining.any { it == "Unit $number is blocked by an unresolved authority variance" })
-                } else {
-                    assertFalse(decision.remaining.any { it.contains("unresolved authority variance") })
-                }
+                assertTrue("$number $readiness ${decision.remaining}", decision.allowed)
+                assertFalse(decision.remaining.any { it.contains("unresolved authority variance") })
             }
         }
     }
@@ -368,7 +332,7 @@ class Units2630StructuralMappingTest {
         val mutableErrors = V2Validator.validate(claimComplete(mutable, 29)).errors
         assertTrue(mutableErrors.joinToString("\n"), mutableErrors.any { it.contains("mutable webpage cannot clear a source blocker") })
         assertFalse(mutableErrors.any { it.contains("bookish-register") || it.contains("bookish-reading") })
-        assertTrue(mutableErrors.any { it == "Unit 29 is blocked by an unresolved authority variance" })
+        assertFalse(mutableErrors.any { it.contains("unresolved authority variance") })
 
         val forgedHost = capabilityOn(pack, 28, "verbal adverb formation", "cap-forged", "obj-u28-imperfective-adverb", "imperfective-verbal-adverb", "4220315", oldidUrl())
         val forged = forgedHost.copy(

@@ -19,7 +19,7 @@ import java.security.MessageDigest
 
 /**
  * Phase 3 admits six bounded claims. A wrong identity, a paired claim,
- * or a readiness edit does not clear them, and inactive variances stay inactive.
+ * or a readiness edit does not clear them. Activated boundaries are not qualified review.
  */
 class Phase3BoundedClaimsTest {
     @Test
@@ -30,10 +30,9 @@ class Phase3BoundedClaimsTest {
         assertEquals(emptySet<String>(), unresolved(pack, 27))
         assertEquals(emptySet<String>(), unresolved(pack, 29))
         assertEquals(emptySet<String>(), unresolved(pack, 30))
-        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(26)!!.readiness)
-        assertEquals("NOT_PREPARED", pack.unit(27)!!.readiness)
-        assertEquals("NOT_PREPARED", pack.unit(29)!!.readiness)
-        assertEquals("NOT_PREPARED", pack.unit(30)!!.readiness)
+        listOf(26, 27, 29, 30).forEach { number ->
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(number)!!.readiness)
+        }
         listOf(26, 27, 29, 30).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)
@@ -45,11 +44,13 @@ class Phase3BoundedClaimsTest {
         listOf(27, 29, 30).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(pack, unit, learner(unit))
-            assertFalse(decision.allowed)
-            assertTrue(decision.remaining.joinToString("\n"), decision.remaining.any { it == "Unit $number is blocked by an unresolved authority variance" })
-            assertTrue(V2Validator.authorityVarianceApplies(number))
+            assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            assertFalse(decision.remaining.any { it.contains("unresolved authority variance") })
+            assertTrue(V2Validator.activatedAuthorityVariance(number))
+            assertFalse(V2Validator.authorityVarianceApplies(number))
         }
         assertFalse(V2Validator.authorityVarianceApplies(26))
+        assertFalse(V2Validator.activatedAuthorityVariance(26))
         Phase3Sources.ADMISSIONS.forEach { admission ->
             val records = pack.provenanceRecords.filter { it.sourceRecordId == admission.recordId }
             assertTrue(records.isNotEmpty())

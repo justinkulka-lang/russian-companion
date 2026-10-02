@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 27 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 27 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 27 remains in development. Its readiness is content-complete and review-pending. The Lesson 27 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 345448c16f326114ccb2f6738c75fb4206798cae
-- Unit content-review SHA-256: b43404505a7bc8bc72a34d2af039d5695d1e919cdc309643ecc7c835cfd99db0
-- Mapping-package SHA-256: f5da4227d7bdfa500293d76f3b48ab8ac7646ac0dd6c90b4e8ac4f10cc69a385
-- Pack content-review SHA-256: dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f
-- Review-package SHA-256: 0c0eb62fdb9de00a01a9d7619073b019663a973bc07bc154f4eccc82e6123027
-- Repository source SHA-256: 295fad27918fc1d8f6707604402cd64741c203a437574091e961e165a4fb9a09
+- Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
+- Unit content-review SHA-256: c90818265e294c6c609881e8ede8c3dbde54e1f668da1945cec6dc429b366047
+- Mapping-package SHA-256: 3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf652a3bc0
+- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
+- Review-package SHA-256: 09d6c635b03ff164d8e49a72fc558ad3fe3795fbf9c0b778dd4dbb42c4194487
+- Repository source SHA-256: 87f38405f7dc01d724090680310d6141e12221def37ed79273765228169a0a05
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -36,9 +36,9 @@ number=27
 title=Participles: types and stress
 topicSummary=Proposed Unit 27 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 27. Observed structural scope: Passive participles: overview, past passive formation and use, optional present passive material, vocabulary and comprehension. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 27. Observed structural scope: Participles: types and stress. Past passive formation and stress are the main lesson. Present passive is marked extra. Active participle formation is not in this lesson. Admitted frozen spans are pending qualified review and do not approve alignment. The Product Owner activated the passive-only boundary. Past passive participles are required. Present passive material is optional and non-gating. Active participle formation first appears in Unit 29. That activation is not qualified curriculum review. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=27
 prerequisites=26
 estimatedMinutes=50
@@ -75,15 +75,15 @@ notes=No qualified reviewer has signed Unit 27.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2ffdb34c63a70c835d7c0bfeede4839d1dafb44b2936bbe1500b6eead24b7662
+- Content hash: 6e73a60a8a905093bc8a065407fc32e5469b227a05227b194e927c92e229f85b
 
 number=27
 title=Participles: types and stress
 topicSummary=Proposed Unit 27 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 27. Observed structural scope: Passive participles: overview, past passive formation and use, optional present passive material, vocabulary and comprehension. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 27. Observed structural scope: Participles: types and stress. Past passive formation and stress are the main lesson. Present passive is marked extra. Active participle formation is not in this lesson. Admitted frozen spans are pending qualified review and do not approve alignment. The Product Owner activated the passive-only boundary. Past passive participles are required. Present passive material is optional and non-gating. Active participle formation first appears in Unit 29. That activation is not qualified curriculum review. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=27
 prerequisites=26
 estimatedMinutes=50

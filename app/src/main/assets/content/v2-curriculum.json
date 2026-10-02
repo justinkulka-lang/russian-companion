@@ -56368,7 +56368,7 @@
       "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
       "penguinLesson": 21,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-      "mappingNote": "Proposed Lesson 21, printed pages 259-270. Independently stated topic scope: Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+      "mappingNote": "Proposed Lesson 21, printed pages 257-268. Independently stated topic scope: Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
       "prerequisiteUnitNumbers": [
         20
       ],
@@ -56905,7 +56905,7 @@
       "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
       "penguinLesson": 22,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-      "mappingNote": "Proposed Lesson 22, printed pages 271-284. Independently stated topic scope: Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+      "mappingNote": "Proposed Lesson 22, printed pages 269-282. Independently stated topic scope: Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
       "prerequisiteUnitNumbers": [
         21
       ],
@@ -57891,7 +57891,7 @@
       "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
       "penguinLesson": 23,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-      "mappingNote": "Proposed Lesson 23, printed pages 285-295. Independently stated topic scope: Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+      "mappingNote": "Proposed Lesson 23, printed pages 283-293. Independently stated topic scope: Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
       "prerequisiteUnitNumbers": [
         22
       ],
@@ -58764,7 +58764,7 @@
       "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
       "penguinLesson": 24,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-      "mappingNote": "Proposed Lesson 24, printed pages 296-306. Independently stated topic scope: Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+      "mappingNote": "Proposed Lesson 24, printed pages 294-304. Independently stated topic scope: Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
       "prerequisiteUnitNumbers": [
         23
       ],
@@ -59801,7 +59801,7 @@
       "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
       "penguinLesson": 25,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-      "mappingNote": "Proposed Lesson 25, printed pages 307-321. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+      "mappingNote": "Proposed Lesson 25, printed pages 305-319. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
       "prerequisiteUnitNumbers": [
         24
       ],
@@ -61971,10 +61971,10 @@
       "shortLabel": "Participles",
       "topicSummary": "Proposed Unit 27 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.",
       "installState": "DEVELOPMENT",
-      "readiness": "NOT_PREPARED",
+      "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
       "penguinLesson": 27,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-      "mappingNote": "Proposed Lesson 27. Observed structural scope: Passive participles: overview, past passive formation and use, optional present passive material, vocabulary and comprehension. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+      "mappingNote": "Proposed Lesson 27. Observed structural scope: Participles: types and stress. Past passive formation and stress are the main lesson. Present passive is marked extra. Active participle formation is not in this lesson. Admitted frozen spans are pending qualified review and do not approve alignment. The Product Owner activated the passive-only boundary. Past passive participles are required. Present passive material is optional and non-gating. Active participle formation first appears in Unit 29. That activation is not qualified curriculum review. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
       "prerequisiteUnitNumbers": [
         26
       ],
@@ -63157,10 +63157,10 @@
       "shortLabel": "Bookish style",
       "topicSummary": "Proposed Unit 29 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.",
       "installState": "DEVELOPMENT",
-      "readiness": "NOT_PREPARED",
+      "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
       "penguinLesson": 29,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-      "mappingNote": "Proposed Lesson 29. Observed structural scope: Present and past active participles, participles as adjectives, optional punctuation, long and short adjectives, and bookish reading. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+      "mappingNote": "Proposed Lesson 29. Observed structural scope: Bookish style, present and past active participles, shipped participial-phrase punctuation, short-form adjectives, and bookish reading. Admitted frozen spans are pending qualified review and do not approve alignment. The Product Owner activated the corrected punctuation boundary. The withdrawn statement that punctuation is optional and unavailable does not govern. That activation is not qualified curriculum review. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
       "prerequisiteUnitNumbers": [
         28
       ],
@@ -64063,10 +64063,10 @@
       "shortLabel": "Particles",
       "topicSummary": "Proposed Unit 30 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.",
       "installState": "DEVELOPMENT",
-      "readiness": "NOT_PREPARED",
+      "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
       "penguinLesson": 30,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-      "mappingNote": "Proposed Lesson 30. Observed structural scope: Course orientation, dictionary use, abbreviations, review and application of letter names, particles, vocabulary and a final reading. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+      "mappingNote": "Proposed Lesson 30. Observed structural scope: Course orientation, dictionary use, abbreviations, review and application of letter names, particles, vocabulary and a final reading. Admitted frozen spans are pending qualified review and do not approve alignment. The Product Owner activated the letter-name-review and separately sourced dictionary-use boundary. Letter names are introduced in Lesson 1 and reviewed and applied in Unit 30. The dictionary objective remains independently sourced original synthesis. That activation is not qualified curriculum review. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
       "prerequisiteUnitNumbers": [
         29
       ],

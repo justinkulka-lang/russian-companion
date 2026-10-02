@@ -67,7 +67,7 @@ class Units1620SourceIntakeTest {
         assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.sessions.isNotEmpty() })
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(26)!!.readiness)
-        assertEquals(setOf(27, 29, 30), pack.units.drop(25).filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
+        assertEquals(emptySet<Int>(), pack.units.filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
         preservedContentDigests.forEach { (number, digest) ->
             assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
         }

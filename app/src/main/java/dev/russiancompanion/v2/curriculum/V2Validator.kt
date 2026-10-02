@@ -1006,13 +1006,10 @@ internal object V2Validator {
     )
 
     /**
-     * Runtime advancement for Units 26-30 stays closed while required source
-     * capabilities are unresolved. Units 27, 29, and 30 also stay closed while
-     * the authority variance is proposed and not activated.
-     */
-    /**
      * A readiness edit cannot advance a unit while one of its required source
-     * capabilities is still unresolved.
+     * capabilities is still unresolved. Units 27, 29, and 30 are not named here.
+     * Their pedagogical boundaries are activated separately and are not an
+     * unresolved source gap.
      */
     internal fun unresolvedPartialUnitAdvancementBlockers(pack: V2CurriculumPack, unit: V2Unit): List<String> {
         val unresolved = unresolvedRequiredSourceCapabilities(pack, unit.number).map { it.claim }.toSet()
@@ -1985,12 +1982,14 @@ internal object V2Validator {
         return mutableHost && !url.contains("oldid=")
     }
 
-    private val UNRESOLVED_VARIANCE_UNITS = setOf(27, 29, 30)
+    private val UNRESOLVED_VARIANCE_UNITS = emptySet<Int>()
+
+    private val ACTIVATED_AUTHORITY_VARIANCE_UNITS = setOf(27, 29, 30)
 
     /**
-     * The Units 26-30 authority variance is proposed and not activated.
-     * Affected units cannot become content-complete, installable, or installed
-     * until a Product Owner and qualified reviewer activate it.
+     * An unresolved authority variance blocks content-complete and install claims.
+     * Units 27, 29, and 30 are no longer in that set. Their pedagogical boundaries
+     * are activated. Activation is not qualified review, installation, or release approval.
      */
     private fun unresolvedVarianceErrors(unit: V2Unit): List<String> {
         if (unit.number !in UNRESOLVED_VARIANCE_UNITS) return emptyList()
@@ -5051,6 +5050,13 @@ internal object V2Validator {
     }
 
     internal fun authorityVarianceApplies(unitNumber: Int): Boolean = unitNumber in UNRESOLVED_VARIANCE_UNITS
+
+    /**
+     * Product Owner activation of the Units 27, 29, and 30 pedagogical boundaries.
+     * This is not a qualified-reviewer signature and does not approve a mapping.
+     */
+    internal fun activatedAuthorityVariance(unitNumber: Int): Boolean =
+        unitNumber in ACTIVATED_AUTHORITY_VARIANCE_UNITS
 
     /** This pack installs only Units 1–2, and those installed units must resolve pronunciation audio. */
     internal fun installationRequiresPronunciationAudio(unitNumber: Int): Boolean = unitNumber in 1..2

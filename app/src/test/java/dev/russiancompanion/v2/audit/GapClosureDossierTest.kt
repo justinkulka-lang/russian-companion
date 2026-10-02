@@ -62,8 +62,7 @@ class GapClosureDossierTest {
         }
 
         val contentUnits = model.units.filter { it.contentBlocker != "NONE" }.map { it.unitNumber }
-        assertTrue(contentUnits.containsAll(listOf(27, 29, 30)))
-        assertFalse(contentUnits.any { it in listOf(7, 17, 23, 24, 25, 26, 28) })
+        assertFalse(contentUnits.any { it in listOf(7, 17, 23, 24, 25, 26, 27, 28, 29, 30) })
         assertEquals(
             (1..30).toList(),
             model.units.filter { it.linguisticReviewBlocker != "NONE" }.map { it.unitNumber },
@@ -83,7 +82,7 @@ class GapClosureDossierTest {
             model.units.filter { it.authorityVarianceBlocker != "NOT_APPLICABLE" }.map { it.unitNumber },
         )
         assertTrue(model.units.filter { it.authorityVarianceBlocker != "NOT_APPLICABLE" }.all {
-            it.authorityVarianceBlocker == "PROPOSED_NOT_ACTIVATED"
+            it.authorityVarianceBlocker == "ACTIVATED"
         })
 
         val headings = researchHeadings(text)

@@ -1,8 +1,8 @@
 # Owned-edition mapping decision dossier
 
-Status: MAPPING_DECISION_NOT_ACCEPTED
+Status: PAGE_BOUNDARIES_ACCEPTED_REVIEW_STILL_PENDING
 
-This dossier audits the thirty retained mapping worksheets. It does not accept a mapping. Every worksheet disposition stays `PENDING_CURRICULUM_REVIEWER`. ISBN stays blank. `isbn_observation` stays `UNRESOLVED`. `owned_copy_verified` stays blank. Reviewer identity, review date, reviewed digest, and reviewer qualification stay blank.
+This dossier records the Product Owner acceptance of the printed-page boundaries for private comparison. Every worksheet disposition stays `PENDING_CURRICULUM_REVIEWER`. That acceptance is not qualified curriculum review. ISBN stays blank. `isbn_observation` stays `UNRESOLVED`. `owned_copy_verified` stays blank. Reviewer identity, review date, reviewed digest, and reviewer qualification stay blank.
 
 A recorded inspection note is not an accepted mapping. A publisher-public topic title is not a page mapping. A proposed lesson label, page range, or topic string is not an owned-edition fact until the Product Owner confirms it against the physical or lawful digital book.
 
@@ -35,11 +35,11 @@ Recorded on every unit worksheet, from `OBSERVED_EDITION_TITLE`, `OBSERVED_EDITI
 - Author: `Nicholas J. Brown`
 - Publisher imprint: `Penguin Books`
 
-Recorded inside the edition-note constants: introduction signed Nicholas J. Brown, London, 1996; scanned file extent 528 pages; ISBN was not visible and is not recorded.
+Recorded inside the edition-note constants: introduction signed Nicholas J. Brown, London, 1996; scanned file extent 528 pages; the earlier note that the ISBN was not visible. A later reference-file comparison is appended to every edition-note constant. It records a hash mismatch, a blank copyright page, and a back-cover ISBN reading. That comparison is not an owner inspection.
 
 The ownership sentence “The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification.” is present only in `UNITS_11_15_EDITION_NOTES`, `UNITS_16_20_EDITION_NOTES`, `UNITS_21_25_EDITION_NOTES`, and `UNITS_26_30_EDITION_NOTES`. Units 1–10 use `OBSERVED_EDITION_NOTES`, which does not contain that sentence.
 
-The private-file SHA-256 `2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303` is present only in `UNITS_11_15_EDITION_NOTES` and `UNITS_16_20_EDITION_NOTES`. Units 1–10 and 21–30 do not record that hash.
+The historical private-file SHA-256 `2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303` remains in the original sentences of `UNITS_11_15_EDITION_NOTES` and `UNITS_16_20_EDITION_NOTES` only. The reference-file comparison appended to every band names that hash in order to record the mismatch. The historical sentences for Units 1–10 and 21–30 still do not record it as the inspected file.
 
 ## Facts supported only by publisher-public material
 
@@ -71,15 +71,15 @@ Every lesson label, printed page range, and topic string below is a proposed str
 | 18 | `review/unit-18/UNIT_18_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 18 | 215-229 | Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun который |
 | 19 | `review/unit-19/UNIT_19_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 19 | 230-239 | Conditional constructions with бы; obligation or probability with forms of должен; productive meanings of selected verbal prefixes |
 | 20 | `review/unit-20/UNIT_20_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 20 | 240-256 | Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying/leading motion pairs; selected prefixed motion verbs; cumulative review through Lesson 20 |
-| 21 | `review/unit-21/UNIT_21_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 21 | 259-270 | Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses |
-| 22 | `review/unit-22/UNIT_22_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 22 | 271-284 | Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions |
-| 23 | `review/unit-23/UNIT_23_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 23 | 285-295 | Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period |
-| 24 | `review/unit-24/UNIT_24_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 24 | 296-306 | Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не |
-| 25 | `review/unit-25/UNIT_25_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 25 | 307-321 | Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions |
+| 21 | `review/unit-21/UNIT_21_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 21 | 257-268 | Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses |
+| 22 | `review/unit-22/UNIT_22_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 22 | 269-282 | Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions |
+| 23 | `review/unit-23/UNIT_23_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 23 | 283-293 | Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period |
+| 24 | `review/unit-24/UNIT_24_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 24 | 294-304 | Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не |
+| 25 | `review/unit-25/UNIT_25_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 25 | 305-319 | Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions |
 | 26 | `review/unit-26/UNIT_26_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 26 | 320-331 | Stock expressions; indefinite pronouns and adverbs; word order; postal addresses; letter writing; vocabulary and correspondence work |
-| 27 | `review/unit-27/UNIT_27_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 27 | 332-342 | Passive participles: overview, past passive formation and use, optional present passive material, vocabulary and comprehension |
+| 27 | `review/unit-27/UNIT_27_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 27 | 332-342 | Participles: types and stress. Past passive formation and stress are the main lesson. Present passive is marked extra. Active participle formation is not in this lesson. |
 | 28 | `review/unit-28/UNIT_28_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 28 | 343-354 | Imperfective and perfective verbal adverbs, formation and use, vocabulary and readings |
-| 29 | `review/unit-29/UNIT_29_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 29 | 355-367 | Present and past active participles, participles as adjectives, optional punctuation, long and short adjectives, and bookish reading |
+| 29 | `review/unit-29/UNIT_29_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 29 | 355-367 | Bookish style, present and past active participles, shipped participial-phrase punctuation, short-form adjectives, and bookish reading |
 | 30 | `review/unit-30/UNIT_30_OWNED_EDITION_MAPPING_WORKSHEET.tsv` | Lesson 30 | 368-377 | Course orientation, dictionary use, abbreviations, review and application of letter names, particles, vocabulary and a final reading |
 
 Observation-source bands, retained verbatim in the worksheet `observation_source` column:
@@ -90,28 +90,31 @@ Observation-source bands, retained verbatim in the worksheet `observation_source
 - Units 21–25: visually inspected on 24 September 2026. The private PDF is not repository curriculum.
 - Units 26–30: visually inspected on 24 September 2026. Classification `RESEARCH_GAPS_BLOCK_IMPLEMENTATION`. The observation is not an approved alignment.
 
-Unit 25’s proposed end page is 321. Unit 26’s proposed start page is 320. That overlap is unresolved. This dossier does not repair it.
+The prior proposal gave Unit 25 pages 307-321 and Unit 26 pages 320-331. That overlap is not a shared printed page and is not a live boundary. Lesson 25 is printed pages 305-319 and Lesson 26 remains 320-331. Packaged curriculum `mappingNote` strings for Units 21-25 use the accepted ranges. No lesson boundary in this copy shares a printed page.
 
 Lessons 26–30 are recorded in the variance proposal as having no following book revision block, with printed page 378 beginning the Grammatical Tables. That sentence is a proposal observation. It is not an accepted page boundary.
 
 ## Unresolved facts
 
-The following are absent from the retained evidence. No value is supplied here.
+The Product Owner accepted the observed edition identity and the printed page ranges for private comparison. The following stay unresolved:
 
-- ISBN, for every unit.
-- `owned_copy_verified`, for every unit.
-- A Product Owner confirmation that each proposed page range, lesson label, and topic matches the physical or lawful digital book.
-- A Product Owner confirmation that the Unit 25 / Unit 26 page overlap is either a true overlap in the owned copy or an observation error.
-- A Product Owner confirmation that units 1–10 and units 21–30 were inspected from the same file as the units 11–20 private-file SHA-256.
+- Formal ISBN verification and the copyright-page year. The back-cover observation is not an accepted ISBN, and the isbn column stays blank.
+- `owned_copy_verified`, for every unit. The owned-copy confirmation authorizes private comparison only.
+- Binary-identity continuity. The concatenation mismatch is not evidence of altered instructional content.
 - `variance_conflict`, for every unit.
 - Reviewer identity, review date, reviewed version digest, and reviewer qualification, for every unit.
 - Any mapping disposition other than `PENDING_CURRICULUM_REVIEWER`.
 
-Until those facts are supplied by the Product Owner from the book in hand, mapping acceptance fails closed.
+The obsolete range 307-321 is not a live Unit 25 boundary.
 
 ## Product Owner mapping disposition
 
-Product Owner disposition:
-Product Owner name:
-Product Owner date:
+Product Owner disposition: accepted for private comparison; mapping remains PENDING_CURRICULUM_REVIEWER
+Product Owner name: Justin Kulka
+Product Owner date: 2026-10-02
 Product Owner signature:
+Reviewer identity:
+Reviewer qualification:
+Review date:
+Reviewed version digest:
+Reviewer signature:

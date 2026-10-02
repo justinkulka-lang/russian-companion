@@ -117,10 +117,12 @@ class CurriculumReadinessReconciliationTest {
                 assertNotEquals("NONE", row.contentBlocker)
                 assertFalse(row.completeInstructionalChain)
             }
-            if (V2Validator.authorityVarianceApplies(row.unitNumber)) {
-                assertEquals("PROPOSED_NOT_ACTIVATED", row.authorityVarianceBlocker)
-            } else {
-                assertEquals("NOT_APPLICABLE", row.authorityVarianceBlocker)
+            when {
+                V2Validator.authorityVarianceApplies(row.unitNumber) ->
+                    assertEquals("PROPOSED_NOT_ACTIVATED", row.authorityVarianceBlocker)
+                V2Validator.activatedAuthorityVariance(row.unitNumber) ->
+                    assertEquals("ACTIVATED", row.authorityVarianceBlocker)
+                else -> assertEquals("NOT_APPLICABLE", row.authorityVarianceBlocker)
             }
             if (row.unresolvedRequiredSourceCapabilities != "NONE") {
                 assertTrue(row.contentBlocker.contains("UNRESOLVED_REQUIRED_SOURCE_CAPABILITY"))
@@ -280,10 +282,10 @@ class CurriculumReadinessReconciliationTest {
         listOf(27, 30).forEach { number ->
             val unit = pack.unit(number)
             val decision = advancementDecision(pack, unit, idealizedLearner(pack, unit))
-            assertFalse(decision.allowed)
-            assertTrue(decision.remaining.any { it == "This unit is not prepared" })
+            assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            assertFalse(decision.remaining.any { it.contains("unresolved authority variance") })
             val row = liveModel().units.first { it.unitNumber == number }
-            assertFalse(row.advancementCanPresentlySucceed)
+            assertTrue(row.advancementCanPresentlySucceed)
         }
         val unitSeven = pack.unit(7)
         val unitSevenDecision = advancementDecision(pack, unitSeven, idealizedLearner(pack, unitSeven))
@@ -301,9 +303,9 @@ class CurriculumReadinessReconciliationTest {
 
         val late = pack.unit(27).copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
         val lateDecision = advancementDecision(pack, late, idealizedLearner(pack, late))
-        assertFalse(lateDecision.allowed)
+        assertTrue(lateDecision.remaining.joinToString("\n"), lateDecision.allowed)
         assertFalse(lateDecision.remaining.any { it == "This unit is not prepared" })
-        assertTrue(lateDecision.remaining.any { it == "Unit 27 is blocked by an unresolved authority variance" })
+        assertFalse(lateDecision.remaining.any { it.contains("unresolved authority variance") })
         assertFalse(lateDecision.remaining.any { it.contains("participle-comprehension") })
         assertFalse(lateDecision.remaining.any { it.contains("participle-stress") })
 
@@ -317,9 +319,10 @@ class CurriculumReadinessReconciliationTest {
         assertFalse(starvedDecision.allowed)
         assertTrue(starvedDecision.remaining.any { it.contains("distinct in-app checks") || it.contains("Demonstrate") })
 
+        val notPreparedLate = pack.withUnit(pack.unit(27).copy(readiness = "NOT_PREPARED"))
         val inconsistent = reconcileCurriculumReadiness(
             root(),
-            pack,
+            notPreparedLate,
             runtimeAdvancementAllowed = { _, unit -> unit.number == 27 },
         ).units.first { it.unitNumber == 27 }
         assertFalse(inconsistent.advancementCanPresentlySucceed)

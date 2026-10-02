@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 29 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 29 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 29 remains in development. Its readiness is content-complete and review-pending. The Lesson 29 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 345448c16f326114ccb2f6738c75fb4206798cae
-- Unit content-review SHA-256: bb8645fa3be7f3ac9b7cc7a7d61d551843975f8deccb419a3ad529416c3fb0e3
-- Mapping-package SHA-256: 54c2f00221054ced81fe17bea8b0f156073b830e54e70c47cf769e93bd56eb36
-- Pack content-review SHA-256: dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f
-- Review-package SHA-256: d20523bea22f67b888c1a58bae41d0f55bd106afb1f4f9ca9dd909dde647ca80
-- Repository source SHA-256: 295fad27918fc1d8f6707604402cd64741c203a437574091e961e165a4fb9a09
+- Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
+- Unit content-review SHA-256: 65252e83ce8d526d768bda90ce2ec9b1d247e229f62dc4e977f65d231c0e68ef
+- Mapping-package SHA-256: a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071
+- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
+- Review-package SHA-256: 21b213be8dadf0002c37c6ee19029a745199cf038225aa8fb8c27c42ecf956ce
+- Repository source SHA-256: 87f38405f7dc01d724090680310d6141e12221def37ed79273765228169a0a05
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -36,9 +36,9 @@ number=29
 title=Bookish style, active participles, punctuation, and short-form adjectives
 topicSummary=Proposed Unit 29 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 29. Observed structural scope: Present and past active participles, participles as adjectives, optional punctuation, long and short adjectives, and bookish reading. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 29. Observed structural scope: Bookish style, present and past active participles, shipped participial-phrase punctuation, short-form adjectives, and bookish reading. Admitted frozen spans are pending qualified review and do not approve alignment. The Product Owner activated the corrected punctuation boundary. The withdrawn statement that punctuation is optional and unavailable does not govern. That activation is not qualified curriculum review. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=29
 prerequisites=28
 estimatedMinutes=74
@@ -75,15 +75,15 @@ notes=No qualified reviewer has signed Unit 29.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4cdd27a8f87c3eb57cb1c3f635e138bbdb91a3bccad722aa5f8a7878e3407879
+- Content hash: c51cf6c8bb718286b50653b0849b6b5e3a346c3aa32d561cc446e1b3384443b1
 
 number=29
 title=Bookish style, active participles, punctuation, and short-form adjectives
 topicSummary=Proposed Unit 29 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 29. Observed structural scope: Present and past active participles, participles as adjectives, optional punctuation, long and short adjectives, and bookish reading. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 29. Observed structural scope: Bookish style, present and past active participles, shipped participial-phrase punctuation, short-form adjectives, and bookish reading. Admitted frozen spans are pending qualified review and do not approve alignment. The Product Owner activated the corrected punctuation boundary. The withdrawn statement that punctuation is optional and unavailable does not govern. That activation is not qualified curriculum review. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=29
 prerequisites=28
 estimatedMinutes=74

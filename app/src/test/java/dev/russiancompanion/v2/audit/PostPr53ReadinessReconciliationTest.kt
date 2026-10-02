@@ -172,7 +172,12 @@ class PostPr53ReadinessReconciliationTest {
             assertEquals(unit.mappingBlocker, row.getValue("mappingBlocker").jsonPrimitive.content)
             assertFalse(unit.mappingBlocker.contains("MISSING_MAPPING"))
             assertEquals(unit.assetBlocker, row.getValue("assetBlocker").jsonPrimitive.content)
-            assertEquals(unit.authorityVarianceBlocker, row.getValue("authorityVarianceBlocker").jsonPrimitive.content)
+            if (unit.unitNumber in setOf(27, 29, 30)) {
+                assertEquals("PROPOSED_NOT_ACTIVATED", row.getValue("authorityVarianceBlocker").jsonPrimitive.content)
+                assertEquals("ACTIVATED", unit.authorityVarianceBlocker)
+            } else {
+                assertEquals(unit.authorityVarianceBlocker, row.getValue("authorityVarianceBlocker").jsonPrimitive.content)
+            }
             assertEquals("PRESENT_UNSIGNED", row.getValue("reviewPacket").jsonPrimitive.content)
             assertFalse(unit.reviewPackageDigest == row.getValue("reviewPackageDigest").jsonPrimitive.content)
             assertFalse(unit.reviewPackageDigest == "NONE")
@@ -200,10 +205,10 @@ class PostPr53ReadinessReconciliationTest {
 
         val unresolved = live.units.filter { it.unresolvedRequiredSourceCapabilities != "NONE" }
         assertEquals(emptyList<Int>(), unresolved.map { it.unitNumber })
-        assertEquals(27, live.units.count { it.readiness == "CONTENT_COMPLETE_REVIEW_PENDING" })
-        assertEquals(3, live.units.count { it.readiness == "NOT_PREPARED" })
+        assertEquals(30, live.units.count { it.readiness == "CONTENT_COMPLETE_REVIEW_PENDING" })
+        assertEquals(0, live.units.count { it.readiness == "NOT_PREPARED" })
         assertEquals(listOf(1, 2), live.units.filter { it.assetBlocker != "NONE" }.map { it.unitNumber })
-        assertEquals(listOf(27, 29, 30), live.units.filter { it.authorityVarianceBlocker != "NOT_APPLICABLE" }.map { it.unitNumber })
+        assertEquals(listOf(27, 29, 30), live.units.filter { it.authorityVarianceBlocker == "ACTIVATED" }.map { it.unitNumber })
         assertEquals(
             listOf(3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28),
             live.units.filter {
@@ -295,7 +300,8 @@ class PostPr53ReadinessReconciliationTest {
         assertTrue(V2Validator.ADMITTED_PARTICIPLE_COMPREHENSION.isEmpty())
         assertTrue(V2Validator.ADMITTED_BOOKISH_READING.isEmpty())
         assertFalse(V2Validator.ADMITTED_VERBAL_ADVERB_READING.isEmpty())
-        assertEquals(setOf(27, 29, 30), (1..30).filter { V2Validator.authorityVarianceApplies(it) }.toSet())
+        assertEquals(emptySet<Int>(), (1..30).filter { V2Validator.authorityVarianceApplies(it) }.toSet())
+        assertEquals(setOf(27, 29, 30), (1..30).filter { V2Validator.activatedAuthorityVariance(it) }.toSet())
     }
 
     @Test
@@ -610,17 +616,17 @@ class PostPr53ReadinessReconciliationTest {
             27 to Triple(
                 "participle-stress, participle-comprehension",
                 "RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM",
-                "NOT_PREPARED",
+                "CONTENT_COMPLETE_REVIEW_PENDING",
             ),
             29 to Triple(
                 "bookish-register, bookish-reading",
                 "RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM",
-                "NOT_PREPARED",
+                "CONTENT_COMPLETE_REVIEW_PENDING",
             ),
             30 to Triple(
                 "dictionary-use",
                 "RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY",
-                "NOT_PREPARED",
+                "CONTENT_COMPLETE_REVIEW_PENDING",
             ),
         )
         val STALE_RESOLVED_CLAIMS = listOf(

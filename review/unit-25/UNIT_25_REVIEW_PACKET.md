@@ -11,12 +11,12 @@ Unit 25 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: f87523c4e80919c48ad39b80ea840e8ff164505f
-- Unit content-review SHA-256: 4f7acdd8f55829490434d73308921fb4d63da86f6792ec65623720c2dfc89957
-- Mapping-package SHA-256: 93039c677b2f820c58bf274ebe94000f3a66541e821250bd478f9ed4c12b8431
-- Pack content-review SHA-256: dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f
-- Review-package SHA-256: 9749ae35ee3e5119f06b5577ebd8d25bd4348ced9bbc38caebb21d5cdea807fe
-- Repository source SHA-256: 295fad27918fc1d8f6707604402cd64741c203a437574091e961e165a4fb9a09
+- Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
+- Unit content-review SHA-256: 3c6c42830c7ae91ad1450a91535652175ffa9389e89a21cb26d51591852fbd52
+- Mapping-package SHA-256: 239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31
+- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
+- Review-package SHA-256: 22c5067564c95caa9f5321f9d3fcaaefba3275e09fe6063b7e1b007c5525e6b8
+- Repository source SHA-256: 87f38405f7dc01d724090680310d6141e12221def37ed79273765228169a0a05
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -38,7 +38,7 @@ topicSummary=Proposed Unit 25 is in development. Admitted name lines, a bounded 
 installState=DEVELOPMENT
 readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 25, printed pages 307-321. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 25, printed pages 305-319. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=25
 prerequisites=24
 estimatedMinutes=90
@@ -75,7 +75,7 @@ notes=No qualified reviewer has signed Unit 25.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 61c4558d76832431ae2d3d88764e88162ec60375e7d502823648e537d8a3796e
+- Content hash: d086f93167686340440c59b48f17339089cc1955a492ce1deaa10f27fa376ec7
 
 number=25
 title=Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions
@@ -83,7 +83,7 @@ topicSummary=Proposed Unit 25 is in development. Admitted name lines, a bounded 
 installState=DEVELOPMENT
 readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 25, printed pages 307-321. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 25, printed pages 305-319. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=25
 prerequisites=24
 estimatedMinutes=90

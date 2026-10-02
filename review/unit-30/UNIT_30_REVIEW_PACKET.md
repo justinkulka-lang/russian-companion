@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 30 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 30 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 30 remains in development. Its readiness is content-complete and review-pending. The Lesson 30 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 345448c16f326114ccb2f6738c75fb4206798cae
-- Unit content-review SHA-256: ed3a589a8d91e48c49675840118ca2951ad752f9784b0c8eeb21a74f66285187
-- Mapping-package SHA-256: e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367
-- Pack content-review SHA-256: dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f
-- Review-package SHA-256: aaf68e5dfe3a32021f3e0d8ab006fa68754bb8072c0d06fae9ec096be10914a1
-- Repository source SHA-256: 295fad27918fc1d8f6707604402cd64741c203a437574091e961e165a4fb9a09
+- Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
+- Unit content-review SHA-256: f1b2433f62fd490d7a891335eee139ab7684d90335fbf8ff0744cc7833f9df39
+- Mapping-package SHA-256: 97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2
+- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
+- Review-package SHA-256: 18bf856e7f2080299416cd5074a031de475f7f18f12eded099ae2b288dcdc488
+- Repository source SHA-256: 87f38405f7dc01d724090680310d6141e12221def37ed79273765228169a0a05
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -36,9 +36,9 @@ number=30
 title=Abbreviations, names of Russian letters, and particles
 topicSummary=Proposed Unit 30 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 30. Observed structural scope: Course orientation, dictionary use, abbreviations, review and application of letter names, particles, vocabulary and a final reading. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 30. Observed structural scope: Course orientation, dictionary use, abbreviations, review and application of letter names, particles, vocabulary and a final reading. Admitted frozen spans are pending qualified review and do not approve alignment. The Product Owner activated the letter-name-review and separately sourced dictionary-use boundary. Letter names are introduced in Lesson 1 and reviewed and applied in Unit 30. The dictionary objective remains independently sourced original synthesis. That activation is not qualified curriculum review. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=30
 prerequisites=29
 estimatedMinutes=90
@@ -75,15 +75,15 @@ notes=No qualified reviewer has signed Unit 30.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d19f23bc5a95f6d2f3ef7e70b63f7f7030cf570d9e19ca2de59a4ab2f716cca9
+- Content hash: 9e89320a527497338d87f557795e239a0b93521504d3575f4b8537f180a601d8
 
 number=30
 title=Abbreviations, names of Russian letters, and particles
 topicSummary=Proposed Unit 30 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 30. Observed structural scope: Course orientation, dictionary use, abbreviations, review and application of letter names, particles, vocabulary and a final reading. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 30. Observed structural scope: Course orientation, dictionary use, abbreviations, review and application of letter names, particles, vocabulary and a final reading. Admitted frozen spans are pending qualified review and do not approve alignment. The Product Owner activated the letter-name-review and separately sourced dictionary-use boundary. Letter names are introduced in Lesson 1 and reviewed and applied in Unit 30. The dictionary objective remains independently sourced original synthesis. That activation is not qualified curriculum review. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=30
 prerequisites=29
 estimatedMinutes=90

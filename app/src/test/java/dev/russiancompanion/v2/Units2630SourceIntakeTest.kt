@@ -48,19 +48,19 @@ class Units2630SourceIntakeTest {
         18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
         19 to "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3",
         20 to "01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c",
-        21 to "53a04dc4f69a5f19af1c9d4b09984e06a3d54ba586148ecef3531a0f6e850afa",
-        22 to "d408624ff0aa05793384f6a2b4d9e2a27b008225f31498795e5ccf9b3225e169",
-        23 to "c46606f18f1b6c044a48934370c8ff82e32a4fe900164a779d846d7937855151",
-        24 to "497c9978cd3a89159732f7c4b53a09d0923d98bbaa01f61722a769d1a808f74c",
-        25 to "4f7acdd8f55829490434d73308921fb4d63da86f6792ec65623720c2dfc89957",
+        21 to "be229fd6909ee2663ef49f2a88741a44b4d1ffddfc93cb916494e505ba853731",
+        22 to "5eedc53e9a70ce5450ad9ee6f4925047b94eab0517421114d742d605f730c3e7",
+        23 to "c36a981c973461d21ecd043d5206e79176991693633eec901ee912442cc4ef89",
+        24 to "d557dba12bf09b845df91a5f49bbc3a91a7008607a9183995c2ae36cbd088221",
+        25 to "3c6c42830c7ae91ad1450a91535652175ffa9389e89a21cb26d51591852fbd52",
     )
 
     private val preservedMappingDigests = mapOf(
-        26 to "c3b63d48cd809527d6450916cfead9c419eb5a607a329c7def2d8b42df6bf725",
-        27 to "f5da4227d7bdfa500293d76f3b48ab8ac7646ac0dd6c90b4e8ac4f10cc69a385",
-        28 to "bdf9618b16d9a96d9d359a01e7901617c7d8b97bcd601768695131da126497aa",
-        29 to "54c2f00221054ced81fe17bea8b0f156073b830e54e70c47cf769e93bd56eb36",
-        30 to "e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367",
+        26 to "c15db22cc82dcfa6c49d6d0e50beea0f90b16dfc4db90777623e99d540790489",
+        27 to "3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf652a3bc0",
+        28 to "0fb9199bfef05acc54935be340710bd53e19fcd6066349300e09c29fb4b035e8",
+        29 to "a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071",
+        30 to "97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2",
     )
 
     @Test
@@ -242,14 +242,8 @@ class Units2630SourceIntakeTest {
         listOf(26, 27, 28, 29, 30).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals(
-                if (number == 26 || number == 28) "CONTENT_COMPLETE_REVIEW_PENDING" else "NOT_PREPARED",
-                unit.readiness,
-            )
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
-            if (number != 26 && number != 28) {
-                assertNotEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
-            }
             assertNotEquals("INSTALLABLE", unit.installState)
             assertNotEquals("INSTALLED", unit.installState)
             assertTrue(unit.sessions.any { session -> session.steps.any { !it.unavailableReason.isNullOrBlank() || !it.bookDirection.isNullOrBlank() } })
@@ -726,9 +720,10 @@ class Units2630SourceIntakeTest {
         assertFalse(advanced.remaining.any { it.contains("verbal-adverb-reading") })
 
         listOf(27, 29, 30).forEach { number ->
-            assertEquals("NOT_PREPARED", pack.unit(number)!!.readiness)
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(number)!!.readiness)
+            assertTrue(V2Validator.activatedAuthorityVariance(number))
             val errors = V2Validator.validate(claimReady(pack, number)).errors
-            assertTrue(errors.joinToString("\n"), errors.any { it == "Unit $number is blocked by an unresolved authority variance" })
+            assertFalse(errors.joinToString("\n"), errors.any { it.contains("unresolved authority variance") })
         }
         pack.provenanceRecords.filter { it.unitNumber == 30 && it.sourceId.startsWith("src-ruwiki-") }.forEach { record ->
             assertTrue(record.attribution.contains("oldid 154562152"))
@@ -758,13 +753,13 @@ class Units2630SourceIntakeTest {
         val unit26Claims = V2Validator.unresolvedRequiredSourceCapabilities(pack, 26).map { it.claim }
         assertEquals(emptyList<String>(), unit26Claims)
         val unit27 = V2Validator.validate(claimReady(pack, 27)).errors
-        assertTrue(unit27.any { it == "Unit 27 is blocked by an unresolved authority variance" })
+        assertFalse(unit27.any { it.contains("unresolved authority variance") })
         assertFalse(unit27.any { it.contains("participle-comprehension") })
         assertFalse(unit27.any { it.contains("participle-stress") })
         val unit27WithoutVariance = V2Validator.unresolvedLateUnitAdvancementBlockers(pack, pack.unit(27)!!, emptySet())
         assertTrue(unit27WithoutVariance.joinToString("\n"), unit27WithoutVariance.isEmpty())
         val unit29 = V2Validator.validate(claimReady(pack, 29)).errors
-        assertTrue(unit29.any { it == "Unit 29 is blocked by an unresolved authority variance" })
+        assertFalse(unit29.any { it.contains("unresolved authority variance") })
         assertFalse(unit29.any { it.contains("bookish-reading") })
         assertFalse(unit29.any { it.contains("bookish-register") })
         val unit29WithoutVariance = V2Validator.unresolvedLateUnitAdvancementBlockers(pack, pack.unit(29)!!, emptySet())

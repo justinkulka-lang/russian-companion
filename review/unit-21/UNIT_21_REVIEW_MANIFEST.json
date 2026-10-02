@@ -4,19 +4,19 @@
   "applicationId": "dev.russiancompanion",
   "versionName": "2.0.0-dev",
   "versionCode": 5,
-  "curriculumSourceCommit": "f87523c4e80919c48ad39b80ea840e8ff164505f",
-  "contentReviewDigest": "53a04dc4f69a5f19af1c9d4b09984e06a3d54ba586148ecef3531a0f6e850afa",
-  "mappingPackageDigest": "b7e8887a95cac43580e879e588f7ecd3846a7b71fd1cd232d302df207d65defb",
-  "packContentReviewDigest": "dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f",
-  "reviewPackageDigest": "9b1390410b33fd6452e6c652d6de4c62b10ea4f288a5f54a0c50e52e3caebe20",
-  "repositorySourceDigest": "295fad27918fc1d8f6707604402cd64741c203a437574091e961e165a4fb9a09",
+  "curriculumSourceCommit": "f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7",
+  "contentReviewDigest": "be229fd6909ee2663ef49f2a88741a44b4d1ffddfc93cb916494e505ba853731",
+  "mappingPackageDigest": "a81fd110700d8cef3f88b5c34642feb7792e0bc851b2e13f08acba87969eab0e",
+  "packContentReviewDigest": "ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1",
+  "reviewPackageDigest": "d2163ede64ed5cb72517c0ec85781ee65a89db2eabf0ed53ad04f44dd777987c",
+  "repositorySourceDigest": "87f38405f7dc01d724090680310d6141e12221def37ed79273765228169a0a05",
   "unitReviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
   "unit": {
     "id": "unit-21",
     "installState": "DEVELOPMENT",
     "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
     "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-    "contentHash": "b267983ecf87127db807697d8f90410ef881bdca59e1901a6f52e1244a5fa9ff"
+    "contentHash": "3884b1206d978e01d5f4c709cc90b7779946109476e72b8bc268e4e2b390edf3"
   },
   "counts": {
     "ADVANCEMENT": 1,
@@ -36,7 +36,7 @@
   },
   "records": [
     {"id": "rev-pending-unit-21", "type": "UNIT_REVIEW", "objectiveIds": [], "sessionIds": [], "contentHash": "f638fa5ee67fb05d73c93826fefa789bb7e559bb79fdc5054df955a6e13fcb32", "sourceId": "", "rightsIds": [], "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"},
-    {"id": "unit-21", "type": "UNIT", "objectiveIds": ["obj-u21-svoy", "obj-u21-object-reference", "obj-u21-purpose", "obj-u21-book"], "sessionIds": ["u21-s-orient", "u21-s-svoy", "u21-s-object-reference", "u21-s-purpose", "u21-s-book"], "contentHash": "b267983ecf87127db807697d8f90410ef881bdca59e1901a6f52e1244a5fa9ff", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
+    {"id": "unit-21", "type": "UNIT", "objectiveIds": ["obj-u21-svoy", "obj-u21-object-reference", "obj-u21-purpose", "obj-u21-book"], "sessionIds": ["u21-s-orient", "u21-s-svoy", "u21-s-object-reference", "u21-s-purpose", "u21-s-book"], "contentHash": "3884b1206d978e01d5f4c709cc90b7779946109476e72b8bc268e4e2b390edf3", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
     {"id": "unit-21-advancement", "type": "ADVANCEMENT", "objectiveIds": [], "sessionIds": [], "contentHash": "8377e491e1d077c4846205c48bd5412e1fb131c3fea052eb7799e5070ab45646", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
     {"id": "obj-u21-svoy", "type": "OBJECTIVE", "objectiveIds": ["obj-u21-svoy"], "sessionIds": [], "contentHash": "7fee3e308ab295f0b6d48be95c3b08119bc4d7d8f100b06fe7e3c91da9059c7c", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
     {"id": "obj-u21-object-reference", "type": "OBJECTIVE", "objectiveIds": ["obj-u21-object-reference"], "sessionIds": [], "contentHash": "ba58d4ca284744d523877e544d7b061c9683cd19d0e5ec4e932324c76e3a84e7", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
