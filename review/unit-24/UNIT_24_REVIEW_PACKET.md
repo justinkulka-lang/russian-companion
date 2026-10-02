@@ -11,12 +11,12 @@ Unit 24 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: f87523c4e80919c48ad39b80ea840e8ff164505f
-- Unit content-review SHA-256: 497c9978cd3a89159732f7c4b53a09d0923d98bbaa01f61722a769d1a808f74c
-- Mapping-package SHA-256: b8db8481ea62d3f88768f74385ed7411fe70559bbcab4c37a8c1f14792d20f87
-- Pack content-review SHA-256: dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f
-- Review-package SHA-256: 8317cd5d2e8af21340436434e926083d0b9c0661d2ac4178e5e44a05032fb1cd
-- Repository source SHA-256: b2f3fa07b4a592c2865e12fe35fa881125aac237a344793aac86cd1c877933f2
+- Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
+- Unit content-review SHA-256: d557dba12bf09b845df91a5f49bbc3a91a7008607a9183995c2ae36cbd088221
+- Mapping-package SHA-256: dc6f9ac41a8520dc647df90313e05e547245bfa31fe3b2e883821f3591a24248
+- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
+- Review-package SHA-256: 5d8b9110cdb4283176c8763c365d821e6c50dbee96f1adb19f2b4859d550ece4
+- Repository source SHA-256: 87f38405f7dc01d724090680310d6141e12221def37ed79273765228169a0a05
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -38,7 +38,7 @@ topicSummary=Proposed Unit 24 is in development. Admitted negation lines, the bo
 installState=DEVELOPMENT
 readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 24, printed pages 296-306. Independently stated topic scope: Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 24, printed pages 294-304. Independently stated topic scope: Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=24
 prerequisites=23
 estimatedMinutes=102
@@ -75,7 +75,7 @@ notes=No qualified reviewer has signed Unit 24.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e443ecdd2bf7908ff21ec632f7fd5f963aec64009e2e956a58c86e89ff1d15ae
+- Content hash: f2817abf893917415989a5505cff5174ec0fc9581abe48158825eae06c2e1c65
 
 number=24
 title=Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не
@@ -83,7 +83,7 @@ topicSummary=Proposed Unit 24 is in development. Admitted negation lines, the bo
 installState=DEVELOPMENT
 readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 24, printed pages 296-306. Independently stated topic scope: Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 24, printed pages 294-304. Independently stated topic scope: Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=24
 prerequisites=23
 estimatedMinutes=102

@@ -11,12 +11,12 @@ Unit 21 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: f87523c4e80919c48ad39b80ea840e8ff164505f
-- Unit content-review SHA-256: 53a04dc4f69a5f19af1c9d4b09984e06a3d54ba586148ecef3531a0f6e850afa
-- Mapping-package SHA-256: 25b6e3547f1a743a92e3cebebaaa7fc3915e24bf35df6f53cc9a376b38fea0b6
-- Pack content-review SHA-256: dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f
-- Review-package SHA-256: 2f7ef22ca80f05c4fd52b2f2e8f267fe6276406aad4b72f8476fdccff8ec9cfe
-- Repository source SHA-256: b2f3fa07b4a592c2865e12fe35fa881125aac237a344793aac86cd1c877933f2
+- Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
+- Unit content-review SHA-256: be229fd6909ee2663ef49f2a88741a44b4d1ffddfc93cb916494e505ba853731
+- Mapping-package SHA-256: a81fd110700d8cef3f88b5c34642feb7792e0bc851b2e13f08acba87969eab0e
+- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
+- Review-package SHA-256: d2163ede64ed5cb72517c0ec85781ee65a89db2eabf0ed53ad04f44dd777987c
+- Repository source SHA-256: 87f38405f7dc01d724090680310d6141e12221def37ed79273765228169a0a05
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -38,7 +38,7 @@ topicSummary=Proposed Unit 21 is in development. Admitted object-possession line
 installState=DEVELOPMENT
 readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 21, printed pages 259-270. Independently stated topic scope: Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 21, printed pages 257-268. Independently stated topic scope: Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=21
 prerequisites=20
 estimatedMinutes=54
@@ -75,7 +75,7 @@ notes=No qualified reviewer has signed Unit 21.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b267983ecf87127db807697d8f90410ef881bdca59e1901a6f52e1244a5fa9ff
+- Content hash: 3884b1206d978e01d5f4c709cc90b7779946109476e72b8bc268e4e2b390edf3
 
 number=21
 title=Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses
@@ -83,7 +83,7 @@ topicSummary=Proposed Unit 21 is in development. Admitted object-possession line
 installState=DEVELOPMENT
 readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 21, printed pages 259-270. Independently stated topic scope: Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 21, printed pages 257-268. Independently stated topic scope: Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=21
 prerequisites=20
 estimatedMinutes=54

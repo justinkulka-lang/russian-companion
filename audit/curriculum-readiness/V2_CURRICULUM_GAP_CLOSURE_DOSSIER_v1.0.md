@@ -4,8 +4,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f`  
-**Repository source digest:** `b2f3fa07b4a592c2865e12fe35fa881125aac237a344793aac86cd1c877933f2`  
+**Pack content-review digest:** `ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1`  
+**Repository source digest:** `87f38405f7dc01d724090680310d6141e12221def37ed79273765228169a0a05`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose

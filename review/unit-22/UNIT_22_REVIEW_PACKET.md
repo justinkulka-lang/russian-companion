@@ -11,12 +11,12 @@ Unit 22 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: f87523c4e80919c48ad39b80ea840e8ff164505f
-- Unit content-review SHA-256: d408624ff0aa05793384f6a2b4d9e2a27b008225f31498795e5ccf9b3225e169
-- Mapping-package SHA-256: 124c97b28ff93bc8090ca2d30c10d17fed694e89b5a9f70392301d9e6e933c3b
-- Pack content-review SHA-256: dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f
-- Review-package SHA-256: 91b52a2e2846e3e9f5d6d6c931cd6d2b72888c7810c58e8284d9349f3cc040b8
-- Repository source SHA-256: b2f3fa07b4a592c2865e12fe35fa881125aac237a344793aac86cd1c877933f2
+- Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
+- Unit content-review SHA-256: 5eedc53e9a70ce5450ad9ee6f4925047b94eab0517421114d742d605f730c3e7
+- Mapping-package SHA-256: 135262f03abc4c4ef1dad6c992bbbf53993657e3ce3af4fe789fadcbebbff021
+- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
+- Review-package SHA-256: cd1ee74347d2315761749d9255bfb071108f7eaec1f67a516bc4df4be60d26c3
+- Repository source SHA-256: 87f38405f7dc01d724090680310d6141e12221def37ed79273765228169a0a05
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -38,7 +38,7 @@ topicSummary=Proposed Unit 22 is in development. Admitted numeral lines, the cas
 installState=DEVELOPMENT
 readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 22, printed pages 271-284. Independently stated topic scope: Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 22, printed pages 269-282. Independently stated topic scope: Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=22
 prerequisites=21
 estimatedMinutes=90
@@ -75,7 +75,7 @@ notes=No qualified reviewer has signed Unit 22.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 20f36efc0c2f326fe51596985f547497442dc2c74ce2866ccac398c328a59c8f
+- Content hash: 8ca92e83bd6c8775722832b329a99deb4345e81d549333a64a76723ed69cd975
 
 number=22
 title=Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions
@@ -83,7 +83,7 @@ topicSummary=Proposed Unit 22 is in development. Admitted numeral lines, the cas
 installState=DEVELOPMENT
 readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 22, printed pages 271-284. Independently stated topic scope: Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 22, printed pages 269-282. Independently stated topic scope: Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=22
 prerequisites=21
 estimatedMinutes=90

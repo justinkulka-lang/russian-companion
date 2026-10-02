@@ -11,12 +11,12 @@ Unit 23 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: f87523c4e80919c48ad39b80ea840e8ff164505f
-- Unit content-review SHA-256: c46606f18f1b6c044a48934370c8ff82e32a4fe900164a779d846d7937855151
-- Mapping-package SHA-256: 5c5561eacd86686a73ffd88d81fc083ae208ada14e3a7b9c3f43749bfdefe254
-- Pack content-review SHA-256: dc56345a9309e7dc8f5fe5e159f3ec935958d64b83443d4a9f17d6c653911a2f
-- Review-package SHA-256: b19da1257d74f83b59e36f98e5b618718ab13f9c325690af2024f8bce53e413b
-- Repository source SHA-256: b2f3fa07b4a592c2865e12fe35fa881125aac237a344793aac86cd1c877933f2
+- Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
+- Unit content-review SHA-256: c36a981c973461d21ecd043d5206e79176991693633eec901ee912442cc4ef89
+- Mapping-package SHA-256: 968d763b963eb028d821bb426f6c906c079a6266184e4f89d79d21fa34699e95
+- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
+- Review-package SHA-256: ff10e28120109ef0591251d33ef3749fe01a37fa8235dd0f1b1fd2ab97a9aded
+- Repository source SHA-256: 87f38405f7dc01d724090680310d6141e12221def37ed79273765228169a0a05
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -38,7 +38,7 @@ topicSummary=Proposed Unit 23 is in development. Admitted time-expression spans 
 installState=DEVELOPMENT
 readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 23, printed pages 285-295. Independently stated topic scope: Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 23, printed pages 283-293. Independently stated topic scope: Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=23
 prerequisites=22
 estimatedMinutes=82
@@ -75,7 +75,7 @@ notes=No qualified reviewer has signed Unit 23.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1e8e062c7375246e9014e32d79418c4e0f0076910dd0487c0fe5f231deca1437
+- Content hash: 4b8510e3f2b1877f78dceed4489692211f56d9f7160ecbbf1381b958f13d9fb5
 
 number=23
 title=Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period
@@ -83,7 +83,7 @@ topicSummary=Proposed Unit 23 is in development. Admitted time-expression spans 
 installState=DEVELOPMENT
 readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=Proposed Lesson 23, printed pages 285-295. Independently stated topic scope: Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
+mappingNote=Proposed Lesson 23, printed pages 283-293. Independently stated topic scope: Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=23
 prerequisites=22
 estimatedMinutes=82
