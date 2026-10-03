@@ -922,6 +922,7 @@ internal class LocalStore private constructor(
         }
         if (!root.exists() && !root.mkdirs()) return@call GovernedReplaceOutcome.UNCHANGED
         recoverInterruptedReplacementLocked()
+        if (replacementPending(root)) return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
         val workspace = replacementWorkspace(root)
         val snapshotDir = File(workspace, "snapshot")
         workspace.deleteRecursively()
@@ -939,13 +940,13 @@ internal class LocalStore private constructor(
             return@call GovernedReplaceOutcome.UNCHANGED
         }
         if (!publishStagedRecordings(root, staged)) {
-            restoreRecordingSnapshot(root, snapshotDir)
-            workspace.deleteRecursively()
-            return@call GovernedReplaceOutcome.UNCHANGED
+            return@call rollbackReplacementFiles(root, snapshotDir, workspace)
         }
-        writeReplacementJournal(root, previous, document, previousExports, snapshotDir)
+        if (!writeReplacementJournal(root, previous, document, previousExports, snapshotDir)) {
+            return@call rollbackReplacementFiles(root, snapshotDir, workspace)
+        }
         if (V2BackupFaults.crashAfterFileSwapBeforeCommit) {
-            return@call GovernedReplaceOutcome.UNCHANGED
+            return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
         }
         val committed = try {
             database.runInTransaction {
@@ -959,25 +960,19 @@ internal class LocalStore private constructor(
             false
         }
         if (!committed || V2BackupFaults.failAfterCommit) {
-            if (committed) {
-                try {
-                    database.runInTransaction {
-                        applyGovernedDocument(previous)
-                        previousExports.forEach { database.users().insertExport(it) }
-                    }
-                } catch (_: Exception) {
-                    restoreRecordingSnapshot(root, snapshotDir)
-                    deleteReplacementJournal(root)
-                    workspace.deleteRecursively()
-                    return@call GovernedReplaceOutcome.UNCHANGED
-                }
+            if (committed && !reapplyPreviousDocument(previous, previousExports)) {
+                return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
             }
-            restoreRecordingSnapshot(root, snapshotDir)
-            deleteReplacementJournal(root)
-            workspace.deleteRecursively()
-            return@call GovernedReplaceOutcome.UNCHANGED
+            return@call rollbackReplacementFiles(root, snapshotDir, workspace)
+        }
+        if (!markReplacementJournalCommitted(root)) {
+            if (!reapplyPreviousDocument(previous, previousExports)) {
+                return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
+            }
+            return@call rollbackReplacementFiles(root, snapshotDir, workspace)
         }
         deleteRetiredRecordings(root, staged.map { it.first }.toSet())
+        if (swapArtifactsRemain(root)) return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
         deleteReplacementJournal(root)
         workspace.deleteRecursively()
         GovernedReplaceOutcome.REPLACED
@@ -1245,6 +1240,7 @@ internal class LocalStore private constructor(
     }
 
     private fun restoreRecordingSnapshot(root: File, snapshotDir: File): Boolean {
+        if (V2BackupFaults.failSnapshotRestore) return false
         return try {
             val snap = snapshotDir.listFiles()?.filter { it.isFile }.orEmpty()
             val keep = snap.map { it.name }.toSet()
@@ -1285,7 +1281,8 @@ internal class LocalStore private constructor(
         next: GovernedLearnerDocument,
         exports: List<ExportRecordEntity>,
         snapshotDir: File,
-    ) {
+    ): Boolean {
+        if (V2BackupFaults.failJournalWrite) return false
         val journal = ReplacementJournal(
             phase = "FILES_SWAPPED",
             previousFingerprint = documentFingerprint(previous),
@@ -1307,61 +1304,150 @@ internal class LocalStore private constructor(
                 )
             },
         )
-        replacementJournalFile(root).writeText(
-            backupJson.encodeToString(ReplacementJournal.serializer(), journal),
-        )
+        return writeJournalAtomically(replacementJournalFile(root), journal)
+    }
+
+    private fun markReplacementJournalCommitted(root: File): Boolean {
+        val journalFile = replacementJournalFile(root)
+        if (!journalFile.isFile) return false
+        return try {
+            val journal = backupJson.decodeFromString(ReplacementJournal.serializer(), journalFile.readText())
+            writeJournalAtomically(journalFile, journal.copy(phase = "COMMITTED"))
+        } catch (_: Exception) {
+            false
+        }
+    }
+
+    private fun writeJournalAtomically(dest: File, journal: ReplacementJournal): Boolean {
+        val temp = File(dest.parentFile, "${dest.name}.partial")
+        return try {
+            temp.writeText(backupJson.encodeToString(ReplacementJournal.serializer(), journal))
+            if (temp.renameTo(dest)) return true
+            val previous = File(dest.parentFile, "${dest.name}.previous")
+            if (!dest.isFile || !dest.renameTo(previous)) {
+                temp.delete()
+                return false
+            }
+            if (!temp.renameTo(dest)) {
+                previous.renameTo(dest)
+                temp.delete()
+                return false
+            }
+            previous.delete()
+            true
+        } catch (_: IOException) {
+            temp.delete()
+            false
+        }
     }
 
     private fun deleteReplacementJournal(root: File) {
         replacementJournalFile(root).delete()
+        File(replacementJournalFile(root).parentFile, "${replacementJournalFile(root).name}.partial").delete()
+    }
+
+    private fun rollbackReplacementFiles(
+        root: File,
+        snapshotDir: File,
+        workspace: File,
+    ): GovernedReplaceOutcome {
+        if (!restoreRecordingSnapshot(root, snapshotDir)) return GovernedReplaceOutcome.RECOVERY_REQUIRED
+        deleteReplacementJournal(root)
+        workspace.deleteRecursively()
+        return GovernedReplaceOutcome.UNCHANGED
+    }
+
+    private fun reapplyPreviousDocument(
+        previous: GovernedLearnerDocument,
+        exports: List<ExportRecordEntity>,
+    ): Boolean {
+        return try {
+            database.runInTransaction {
+                applyGovernedDocument(previous)
+                exports.forEach { database.users().insertExport(it) }
+            }
+            true
+        } catch (_: Exception) {
+            false
+        }
+    }
+
+    private fun replacementPending(root: File): Boolean {
+        if (replacementJournalFile(root).isFile) return true
+        if (replacementWorkspace(root).exists()) return true
+        return swapArtifactsRemain(root)
+    }
+
+    private fun swapArtifactsRemain(root: File): Boolean {
+        return root.listFiles()?.any { file ->
+            file.isFile && (file.name.endsWith(".retired") || file.name.endsWith(".incoming"))
+        } == true
     }
 
     private fun recoverInterruptedReplacementLocked() {
         val root = recordingRoot ?: return
         val journalFile = replacementJournalFile(root)
+        val workspace = replacementWorkspace(root)
         if (!journalFile.isFile) {
-            undoOrphanedSwapArtifacts(root)
+            val snapshotDir = File(workspace, "snapshot")
+            if (snapshotDir.isDirectory) {
+                if (restoreSnapshot(root, snapshotDir)) workspace.deleteRecursively()
+            } else {
+                undoOrphanedSwapArtifacts(root)
+            }
             return
         }
         val journal = try {
             backupJson.decodeFromString(ReplacementJournal.serializer(), journalFile.readText())
         } catch (_: Exception) {
-            undoOrphanedSwapArtifacts(root)
-            journalFile.delete()
+            if (restoreSnapshot(root, File(workspace, "snapshot"))) {
+                journalFile.delete()
+                workspace.deleteRecursively()
+            }
             return
         }
-        val snapshotDir = File(journal.snapshotDir)
-        val current = documentFingerprint(readGovernedLearnerDocument())
-        if (current == journal.nextFingerprint) {
+        if (journal.phase == "COMMITTED") {
             deleteRetiredRecordings(root, readGovernedLearnerDocument().recordings.map { File(it.localFileReference).name }.toSet())
-        } else {
-            if (current != journal.previousFingerprint) {
+            if (swapArtifactsRemain(root)) return
+            journalFile.delete()
+            workspace.deleteRecursively()
+            return
+        }
+        val current = documentFingerprint(readGovernedLearnerDocument())
+        if (current != journal.previousFingerprint) {
+            try {
                 val previous = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), journal.previousDocument)
                 database.runInTransaction {
                     applyGovernedDocument(previous)
-                    journal.exports.forEach { record ->
-                        database.users().insertExport(
-                            ExportRecordEntity(
-                                id = record.id,
-                                exportedAtLocal = record.exportedAtLocal,
-                                destinationReference = record.destinationReference,
-                                logCount = record.logCount,
-                                evidenceCount = record.evidenceCount,
-                                progressCount = record.progressCount,
-                                recordingCount = record.recordingCount,
-                                status = ExportStatus.valueOf(record.status),
-                                documentReference = record.documentReference,
-                                recordingSetDigest = record.recordingSetDigest,
-                            ),
-                        )
-                    }
+                    journal.exports.forEach { database.users().insertExport(preservedExport(it)) }
                 }
+            } catch (_: Exception) {
+                return
             }
-            if (snapshotDir.isDirectory) restoreRecordingSnapshot(root, snapshotDir)
-            else undoOrphanedSwapArtifacts(root)
         }
+        if (!restoreSnapshot(root, File(journal.snapshotDir))) return
         journalFile.delete()
-        replacementWorkspace(root).deleteRecursively()
+        workspace.deleteRecursively()
+    }
+
+    private fun restoreSnapshot(root: File, snapshotDir: File): Boolean {
+        if (!snapshotDir.isDirectory) return false
+        return restoreRecordingSnapshot(root, snapshotDir)
+    }
+
+    private fun preservedExport(record: PreservedExportRecord): ExportRecordEntity {
+        return ExportRecordEntity(
+            id = record.id,
+            exportedAtLocal = record.exportedAtLocal,
+            destinationReference = record.destinationReference,
+            logCount = record.logCount,
+            evidenceCount = record.evidenceCount,
+            progressCount = record.progressCount,
+            recordingCount = record.recordingCount,
+            status = ExportStatus.valueOf(record.status),
+            documentReference = record.documentReference,
+            recordingSetDigest = record.recordingSetDigest,
+        )
     }
 
     private fun undoOrphanedSwapArtifacts(root: File) {
@@ -1530,6 +1616,7 @@ internal class LocalStore private constructor(
                 .build()
             val store = LocalStore(database, File(appContext.filesDir, "recordings-$name"))
             store.applySeed(null)
+            store.sweepOrphanRecordingFiles()
             return store
         }
 

@@ -56,9 +56,9 @@ internal fun restoreStoreBackup(
     store: LocalStore,
     validated: ValidatedBackup,
     recoveryDir: File,
-): Boolean {
+): GovernedReplaceOutcome {
     recoveryDir.mkdirs()
-    return store.replaceGovernedLearner(validated.document, validated.recordings) == GovernedReplaceOutcome.REPLACED
+    return store.replaceGovernedLearner(validated.document, validated.recordings)
 }
 
 private fun learnerRecords(document: GovernedLearnerDocument): Map<String, String> {

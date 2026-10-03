@@ -27,9 +27,11 @@ import dev.russiancompanion.v2.backup.BACKUP_FAILED
 import dev.russiancompanion.v2.backup.BACKUP_FORMAT_VERSION
 import dev.russiancompanion.v2.backup.BackupReadResult
 import dev.russiancompanion.v2.backup.BackupRejection
+import dev.russiancompanion.v2.backup.GovernedReplaceOutcome
 import dev.russiancompanion.v2.backup.RESTORE_CANCELLED
 import dev.russiancompanion.v2.backup.RESTORE_DONE
 import dev.russiancompanion.v2.backup.RESTORE_FAILED
+import dev.russiancompanion.v2.backup.RESTORE_RECOVERY_REQUIRED
 import dev.russiancompanion.v2.backup.V2BackupFaults
 import dev.russiancompanion.v2.backup.readGovernedBackup
 import dev.russiancompanion.v2.backup.restorePreview
@@ -99,7 +101,7 @@ class BackupLicenseTest {
         store.v2AddNote("u1-st-orient", "later note", "2026-10-03T11:00:00")
         val read = readGovernedBackup(file.inputStream(), APP, pack().packId, pack().packVersion, tempDir())
         val validated = (read as BackupReadResult.Valid).backup
-        assertTrue(restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(GovernedReplaceOutcome.REPLACED, restoreStoreBackup(store, validated, tempDir()))
         assertEquals(before, store.governedLearnerFingerprint())
         assertEquals(1, store.v2Attempts().size)
         assertEquals(1, store.v2Notes().size)
@@ -110,7 +112,7 @@ class BackupLicenseTest {
         assertTrue(1 in store.v2LearnerView().completedUnitNumbers)
         assertTrue(store.exports().isEmpty())
         val again = readGovernedBackup(file.inputStream(), APP, pack().packId, pack().packVersion, tempDir())
-        assertTrue(restoreStoreBackup(store, (again as BackupReadResult.Valid).backup, tempDir()))
+        assertEquals(GovernedReplaceOutcome.REPLACED, restoreStoreBackup(store, (again as BackupReadResult.Valid).backup, tempDir()))
         assertEquals(1, store.v2Attempts().size)
         assertEquals(1, store.v2Notes().size)
         val preview = restorePreview(store.governedLearnerDocument(), validated.document)
@@ -137,7 +139,7 @@ class BackupLicenseTest {
         assertEquals(before, store.governedLearnerFingerprint())
         store.v2AddNote("step", "changed", "2026-10-03T12:00:00")
         val validated = (readGovernedBackup(file.inputStream(), APP, pack().packId, pack().packVersion, tempDir()) as BackupReadResult.Valid).backup
-        assertTrue(restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(GovernedReplaceOutcome.REPLACED, restoreStoreBackup(store, validated, tempDir()))
         val restored = store.recordings().single()
         assertEquals(byteArrayOf(1, 2, 3, 4).toList(), store.recordingFile(restored.localFileReference)!!.readBytes().toList())
         assertTrue(store.v2Notes().isEmpty())
@@ -189,15 +191,15 @@ class BackupLicenseTest {
         val file = backupFile(other)
         val validated = (readGovernedBackup(file.inputStream(), APP, pack().packId, pack().packVersion, tempDir()) as BackupReadResult.Valid).backup
         V2BackupFaults.failBeforeMutation = true
-        assertFalse(restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(GovernedReplaceOutcome.UNCHANGED, restoreStoreBackup(store, validated, tempDir()))
         assertEquals("original", store.v2Notes().single().text)
         V2BackupFaults.reset()
         V2BackupFaults.failInsideReplacement = true
-        assertFalse(restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(GovernedReplaceOutcome.UNCHANGED, restoreStoreBackup(store, validated, tempDir()))
         assertEquals("original", store.v2Notes().single().text)
         V2BackupFaults.reset()
         V2BackupFaults.failAfterCommit = true
-        assertFalse(restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(GovernedReplaceOutcome.UNCHANGED, restoreStoreBackup(store, validated, tempDir()))
         assertEquals("original", store.v2Notes().single().text)
         assertTrue(store.exports().isEmpty())
     }
@@ -226,32 +228,116 @@ class BackupLicenseTest {
         store.v2AddNote("step", "changed", "2026-10-03T11:00:00")
         val before = store.governedLearnerFingerprint()
         V2BackupFaults.failDuringFilePublish = true
-        assertFalse(restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(GovernedReplaceOutcome.UNCHANGED, restoreStoreBackup(store, validated, tempDir()))
         assertEquals(before, store.governedLearnerFingerprint())
         assertEquals(listOf("export-1"), store.exports().map { it.id })
         assertBytes(store, original, byteArrayOf(7, 7, 7), byteArrayOf(8, 8, 8))
         assertNoSwapArtifacts(store)
         V2BackupFaults.reset()
         V2BackupFaults.failAfterCommit = true
-        assertFalse(restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(GovernedReplaceOutcome.UNCHANGED, restoreStoreBackup(store, validated, tempDir()))
         assertEquals(before, store.governedLearnerFingerprint())
         assertEquals(listOf("export-1"), store.exports().map { it.id })
         assertBytes(store, original, byteArrayOf(7, 7, 7), byteArrayOf(8, 8, 8))
         assertNoSwapArtifacts(store)
         V2BackupFaults.reset()
         V2BackupFaults.crashAfterFileSwapBeforeCommit = true
-        assertFalse(restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(GovernedReplaceOutcome.RECOVERY_REQUIRED, restoreStoreBackup(store, validated, tempDir()))
         store.sweepOrphanRecordingFiles()
         assertEquals(before, store.governedLearnerFingerprint())
         assertEquals(listOf("export-1"), store.exports().map { it.id })
         assertBytes(store, original, byteArrayOf(7, 7, 7), byteArrayOf(8, 8, 8))
         assertNoSwapArtifacts(store)
         V2BackupFaults.reset()
-        assertTrue(restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(GovernedReplaceOutcome.REPLACED, restoreStoreBackup(store, validated, tempDir()))
         assertEquals(setOf("original"), store.v2Notes().map { it.text }.toSet())
         assertTrue(store.exports().isEmpty())
         assertBytes(store, store.recordings(), byteArrayOf(1, 2, 3), byteArrayOf(4, 5, 6))
         assertNoSwapArtifacts(store)
+    }
+
+    @Test
+    fun failedJournalWriteRestoresTheOriginalRecordingSnapshot() {
+        val store = recordingStore()
+        val original = seedTwoRecordings(store, byteArrayOf(1, 2, 3), byteArrayOf(4, 5, 6))
+        store.v2AddNote("step", "original", "2026-10-03T10:00:00")
+        store.saveExport(exportRecord())
+        val backup = backupFile(store)
+        val validated = (readGovernedBackup(backup.inputStream(), APP, pack().packId, pack().packVersion, tempDir()) as BackupReadResult.Valid).backup
+        writeRecordingBytes(store, original, byteArrayOf(7, 7, 7), byteArrayOf(8, 8, 8))
+        store.v2AddNote("step", "changed", "2026-10-03T11:00:00")
+        val before = store.governedLearnerFingerprint()
+        V2BackupFaults.failJournalWrite = true
+        assertEquals(GovernedReplaceOutcome.UNCHANGED, restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(before, store.governedLearnerFingerprint())
+        assertEquals(listOf("export-1"), store.exports().map { it.id })
+        assertEquals(setOf("original", "changed"), store.v2Notes().map { it.text }.toSet())
+        assertBytes(store, original, byteArrayOf(7, 7, 7), byteArrayOf(8, 8, 8))
+        assertNoSwapArtifacts(store)
+    }
+
+    @Test
+    fun failedSnapshotRestoreKeepsRecoveryMaterialsUntilTheNextStoreOpen() {
+        val name = "backup-snapshot-${System.nanoTime()}"
+        val store = recordingStore(name)
+        val original = seedTwoRecordings(store, byteArrayOf(1, 2, 3), byteArrayOf(4, 5, 6))
+        store.v2AddNote("step", "original", "2026-10-03T10:00:00")
+        store.saveExport(exportRecord())
+        val backup = backupFile(store)
+        val validated = (readGovernedBackup(backup.inputStream(), APP, pack().packId, pack().packVersion, tempDir()) as BackupReadResult.Valid).backup
+        writeRecordingBytes(store, original, byteArrayOf(7, 7, 7), byteArrayOf(8, 8, 8))
+        store.v2AddNote("step", "changed", "2026-10-03T11:00:00")
+        val before = store.governedLearnerFingerprint()
+        V2BackupFaults.failAfterCommit = true
+        V2BackupFaults.failSnapshotRestore = true
+        assertEquals(GovernedReplaceOutcome.RECOVERY_REQUIRED, restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(before, store.governedLearnerFingerprint())
+        assertEquals(listOf("export-1"), store.exports().map { it.id })
+        assertTrue(journalFile(store).isFile)
+        assertTrue(snapshotDir(store).isDirectory)
+        assertTrue(snapshotDir(store).listFiles().orEmpty().isNotEmpty())
+        assertBytes(store, original, byteArrayOf(1, 2, 3), byteArrayOf(4, 5, 6))
+        assertFalse(RESTORE_RECOVERY_REQUIRED.contains("unchanged"))
+        V2BackupFaults.reset()
+        store.close()
+        stores.remove(store)
+        val reopened = LocalStore.openNamed(context, name).also { stores += it }
+        assertEquals(before, reopened.governedLearnerFingerprint())
+        assertEquals(listOf("export-1"), reopened.exports().map { it.id })
+        assertEquals(setOf("original", "changed"), reopened.v2Notes().map { it.text }.toSet())
+        assertBytes(reopened, reopened.recordings(), byteArrayOf(7, 7, 7), byteArrayOf(8, 8, 8))
+        assertNoSwapArtifacts(reopened)
+    }
+
+    @Test
+    fun failedJournalWriteKeepsTheSnapshotWhenImmediateRollbackCannotFinish() {
+        val name = "backup-journal-recover-${System.nanoTime()}"
+        val store = recordingStore(name)
+        val original = seedTwoRecordings(store, byteArrayOf(1, 2, 3), byteArrayOf(4, 5, 6))
+        store.v2AddNote("step", "original", "2026-10-03T10:00:00")
+        store.saveExport(exportRecord())
+        val backup = backupFile(store)
+        val validated = (readGovernedBackup(backup.inputStream(), APP, pack().packId, pack().packVersion, tempDir()) as BackupReadResult.Valid).backup
+        writeRecordingBytes(store, original, byteArrayOf(7, 7, 7), byteArrayOf(8, 8, 8))
+        store.v2AddNote("step", "changed", "2026-10-03T11:00:00")
+        val before = store.governedLearnerFingerprint()
+        V2BackupFaults.failJournalWrite = true
+        V2BackupFaults.failSnapshotRestore = true
+        assertEquals(GovernedReplaceOutcome.RECOVERY_REQUIRED, restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(before, store.governedLearnerFingerprint())
+        assertEquals(listOf("export-1"), store.exports().map { it.id })
+        assertFalse(journalFile(store).exists())
+        assertTrue(snapshotDir(store).isDirectory)
+        assertTrue(File(snapshotDir(store), File(original[0].localFileReference).name).isFile)
+        assertBytes(store, original, byteArrayOf(1, 2, 3), byteArrayOf(4, 5, 6))
+        V2BackupFaults.reset()
+        store.close()
+        stores.remove(store)
+        val reopened = LocalStore.openNamed(context, name).also { stores += it }
+        assertEquals(before, reopened.governedLearnerFingerprint())
+        assertEquals(listOf("export-1"), reopened.exports().map { it.id })
+        assertBytes(reopened, reopened.recordings(), byteArrayOf(7, 7, 7), byteArrayOf(8, 8, 8))
+        assertNoSwapArtifacts(reopened)
     }
 
     @Test
@@ -278,7 +364,7 @@ class BackupLicenseTest {
             writeGovernedBackup(it, APP, pack().packId, pack().packVersion, "DARK", forged, listOf(forged.recordings.single() to audio))
         }
         val validated = (readGovernedBackup(zip.inputStream(), APP, pack().packId, pack().packVersion, tempDir()) as BackupReadResult.Valid).backup
-        assertFalse(restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(GovernedReplaceOutcome.UNCHANGED, restoreStoreBackup(store, validated, tempDir()))
         assertEquals("stay", store.v2Notes().single().text)
         assertTrue(store.recordings().isEmpty())
     }
@@ -435,8 +521,32 @@ class BackupLicenseTest {
 
     private fun memoryStore(): LocalStore = LocalStore.openInMemory(context).also { stores += it }
 
-    private fun recordingStore(): LocalStore {
-        val store = LocalStore.openNamed(context, "backup-publish-${System.nanoTime()}").also { stores += it }
+    private fun exportRecord(): ExportRecordEntity {
+        return ExportRecordEntity(
+            id = "export-1",
+            exportedAtLocal = "2026-10-03T10:05:00",
+            destinationReference = "local-backup",
+            logCount = 0,
+            evidenceCount = 0,
+            progressCount = 0,
+            recordingCount = 2,
+            status = ExportStatus.FAILED,
+            documentReference = "backup-format-1",
+        )
+    }
+
+    private fun journalFile(store: LocalStore): File {
+        val root = checkNotNull(store.recordingDirectory())
+        return File(checkNotNull(root.parentFile), "backup-replace-${root.name}.json")
+    }
+
+    private fun snapshotDir(store: LocalStore): File {
+        val root = checkNotNull(store.recordingDirectory())
+        return File(checkNotNull(root.parentFile), "backup-replace-${root.name}-workspace/snapshot")
+    }
+
+    private fun recordingStore(name: String = "backup-publish-${System.nanoTime()}"): LocalStore {
+        val store = LocalStore.openNamed(context, name).also { stores += it }
         store.applySeed(
             SeedJson.encode(
                 minimalDocument().copy(

@@ -21,6 +21,8 @@ internal const val BACKUP_SAVED = "Backup saved. This device has a successful lo
 internal const val BACKUP_FAILED = "Backup failed. The records on this device are unchanged."
 internal const val BACKUP_CANCELLED = "Backup cancelled. The records on this device are unchanged."
 internal const val RESTORE_FAILED = "Restore failed. The records already on this device are unchanged."
+internal const val RESTORE_RECOVERY_REQUIRED =
+    "Restore failed. Local recovery is still required. Open the app again to finish restoring the learner records from before this attempt."
 internal const val RESTORE_DONE = "Restore finished. Learner records were replaced with the backup. They were not merged."
 internal const val RESTORE_CANCELLED = "Restore cancelled. The records on this device are unchanged."
 internal const val REPLACE_EXPLANATION =
@@ -213,6 +215,7 @@ internal sealed interface BackupReadResult {
 internal enum class GovernedReplaceOutcome {
     REPLACED,
     UNCHANGED,
+    RECOVERY_REQUIRED,
 }
 
 internal enum class BackupRejection {
@@ -234,6 +237,8 @@ internal object V2BackupFaults {
     @Volatile var failAfterCommit: Boolean = false
     @Volatile var failDuringFilePublish: Boolean = false
     @Volatile var crashAfterFileSwapBeforeCommit: Boolean = false
+    @Volatile var failJournalWrite: Boolean = false
+    @Volatile var failSnapshotRestore: Boolean = false
 
     fun reset() {
         failWrite = false
@@ -242,6 +247,8 @@ internal object V2BackupFaults {
         failAfterCommit = false
         failDuringFilePublish = false
         crashAfterFileSwapBeforeCommit = false
+        failJournalWrite = false
+        failSnapshotRestore = false
     }
 }
 

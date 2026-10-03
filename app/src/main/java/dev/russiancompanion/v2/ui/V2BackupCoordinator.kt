@@ -15,9 +15,11 @@ import dev.russiancompanion.domain.progress.ExportCounts
 import dev.russiancompanion.v2.backup.BACKUP_CANCELLED
 import dev.russiancompanion.v2.backup.BACKUP_FAILED
 import dev.russiancompanion.v2.backup.BACKUP_SAVED
+import dev.russiancompanion.v2.backup.GovernedReplaceOutcome
 import dev.russiancompanion.v2.backup.RESTORE_CANCELLED
 import dev.russiancompanion.v2.backup.RESTORE_DONE
 import dev.russiancompanion.v2.backup.RESTORE_FAILED
+import dev.russiancompanion.v2.backup.RESTORE_RECOVERY_REQUIRED
 import dev.russiancompanion.v2.backup.RestorePreview
 import dev.russiancompanion.v2.backup.ValidatedBackup
 import dev.russiancompanion.v2.backup.readGovernedBackup
@@ -182,21 +184,28 @@ internal class V2BackupCoordinator(
         phase = V2BackupPhase.RESTORING
         scope.launch {
             val started = !cancelRequested
-            val replaced = withContext(Dispatchers.IO) {
-                if (!started) return@withContext false
-                restoreStoreBackup(store, accepted, File(recoveryDir, "rollback"))
+            val outcome = if (started) {
+                withContext(Dispatchers.IO) {
+                    restoreStoreBackup(store, accepted, File(recoveryDir, "rollback"))
+                }
+            } else {
+                null
             }
             validated = null
             preview = null
             when {
-                !started -> {
+                !started || outcome == null -> {
                     message = RESTORE_CANCELLED
                     phase = V2BackupPhase.CANCELLED
                 }
-                replaced -> {
+                outcome == GovernedReplaceOutcome.REPLACED -> {
                     message = RESTORE_DONE
                     phase = V2BackupPhase.COMPLETED
                     onRestored()
+                }
+                outcome == GovernedReplaceOutcome.RECOVERY_REQUIRED -> {
+                    message = RESTORE_RECOVERY_REQUIRED
+                    phase = V2BackupPhase.FAILED
                 }
                 else -> {
                     message = RESTORE_FAILED
