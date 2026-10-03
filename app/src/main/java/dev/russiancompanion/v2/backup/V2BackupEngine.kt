@@ -57,23 +57,8 @@ internal fun restoreStoreBackup(
     validated: ValidatedBackup,
     recoveryDir: File,
 ): Boolean {
-    val previous = store.governedLearnerDocument()
     recoveryDir.mkdirs()
-    val previousFiles = previous.recordings.map { recording ->
-        val source = store.recordingFile(recording.localFileReference) ?: return false
-        val copy = File(recoveryDir, "previous-${recording.id}.bin")
-        source.inputStream().use { input -> copy.outputStream().use { input.copyTo(it) } }
-        StagedRecording(recording, copy)
-    }
-    val outcome = store.replaceGovernedLearner(validated.document, validated.recordings)
-    if (outcome == GovernedReplaceOutcome.REPLACED) return true
-    if (outcome == GovernedReplaceOutcome.UNCHANGED) return false
-    V2BackupFaults.failAfterCommit = false
-    V2BackupFaults.failInsideReplacement = false
-    V2BackupFaults.failBeforeMutation = false
-    V2BackupFaults.failWrite = false
-    val rolled = store.replaceGovernedLearner(previous, previousFiles)
-    return rolled == GovernedReplaceOutcome.REPLACED && false
+    return store.replaceGovernedLearner(validated.document, validated.recordings) == GovernedReplaceOutcome.REPLACED
 }
 
 private fun learnerRecords(document: GovernedLearnerDocument): Map<String, String> {

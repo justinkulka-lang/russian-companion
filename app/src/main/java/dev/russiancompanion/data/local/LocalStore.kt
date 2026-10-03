@@ -34,6 +34,8 @@ import dev.russiancompanion.v2.backup.BackupTutorRequirement
 import dev.russiancompanion.v2.backup.BackupUnitCompletion
 import dev.russiancompanion.v2.backup.GovernedLearnerDocument
 import dev.russiancompanion.v2.backup.GovernedReplaceOutcome
+import dev.russiancompanion.v2.backup.PreservedExportRecord
+import dev.russiancompanion.v2.backup.ReplacementJournal
 import dev.russiancompanion.v2.backup.StagedRecording
 import dev.russiancompanion.v2.backup.V2BackupFaults
 import dev.russiancompanion.v2.backup.backupJson
@@ -881,6 +883,7 @@ internal class LocalStore private constructor(
     }
 
     private fun sweepOrphanRecordingFilesLocked() {
+        recoverInterruptedReplacementLocked()
         val root = recordingRoot ?: return
         if (!root.isDirectory) return
         val referenced = database.users().recordings().map { File(it.localFileReference).name }.toSet()
@@ -912,19 +915,86 @@ internal class LocalStore private constructor(
     ): GovernedReplaceOutcome = call {
         if (!referencesResolve(document)) return@call GovernedReplaceOutcome.UNCHANGED
         if (V2BackupFaults.failBeforeMutation) return@call GovernedReplaceOutcome.UNCHANGED
-        try {
+        val root = recordingRoot
+        if (root == null) {
+            if (document.recordings.isNotEmpty() || recordings.isNotEmpty()) return@call GovernedReplaceOutcome.UNCHANGED
+            return@call replaceDocumentOnly(document)
+        }
+        if (!root.exists() && !root.mkdirs()) return@call GovernedReplaceOutcome.UNCHANGED
+        recoverInterruptedReplacementLocked()
+        val workspace = replacementWorkspace(root)
+        val snapshotDir = File(workspace, "snapshot")
+        workspace.deleteRecursively()
+        if (!snapshotDir.mkdirs()) return@call GovernedReplaceOutcome.UNCHANGED
+        val previous = readGovernedLearnerDocument()
+        val previousExports = database.users().exports()
+        if (!copyRecordingFiles(root, snapshotDir)) {
+            workspace.deleteRecursively()
+            return@call GovernedReplaceOutcome.UNCHANGED
+        }
+        val staged = try {
+            stageIncomingRecordings(document, recordings, File(workspace, "staged"))
+        } catch (_: IOException) {
+            workspace.deleteRecursively()
+            return@call GovernedReplaceOutcome.UNCHANGED
+        }
+        if (!publishStagedRecordings(root, staged)) {
+            restoreRecordingSnapshot(root, snapshotDir)
+            workspace.deleteRecursively()
+            return@call GovernedReplaceOutcome.UNCHANGED
+        }
+        writeReplacementJournal(root, previous, document, previousExports, snapshotDir)
+        if (V2BackupFaults.crashAfterFileSwapBeforeCommit) {
+            return@call GovernedReplaceOutcome.UNCHANGED
+        }
+        val committed = try {
             database.runInTransaction {
                 applyGovernedDocument(document)
                 if (V2BackupFaults.failInsideReplacement) {
                     throw IllegalStateException("replacement-interrupted")
                 }
             }
+            true
         } catch (_: Exception) {
+            false
+        }
+        if (!committed || V2BackupFaults.failAfterCommit) {
+            if (committed) {
+                try {
+                    database.runInTransaction {
+                        applyGovernedDocument(previous)
+                        previousExports.forEach { database.users().insertExport(it) }
+                    }
+                } catch (_: Exception) {
+                    restoreRecordingSnapshot(root, snapshotDir)
+                    deleteReplacementJournal(root)
+                    workspace.deleteRecursively()
+                    return@call GovernedReplaceOutcome.UNCHANGED
+                }
+            }
+            restoreRecordingSnapshot(root, snapshotDir)
+            deleteReplacementJournal(root)
+            workspace.deleteRecursively()
             return@call GovernedReplaceOutcome.UNCHANGED
         }
-        if (V2BackupFaults.failAfterCommit) return@call GovernedReplaceOutcome.COMMITTED_THEN_FAILED
-        if (!installRecordingFiles(recordings)) return@call GovernedReplaceOutcome.COMMITTED_THEN_FAILED
+        deleteRetiredRecordings(root, staged.map { it.first }.toSet())
+        deleteReplacementJournal(root)
+        workspace.deleteRecursively()
         GovernedReplaceOutcome.REPLACED
+    }
+
+    private fun replaceDocumentOnly(document: GovernedLearnerDocument): GovernedReplaceOutcome {
+        return try {
+            database.runInTransaction {
+                applyGovernedDocument(document)
+                if (V2BackupFaults.failInsideReplacement || V2BackupFaults.failAfterCommit) {
+                    throw IllegalStateException("replacement-interrupted")
+                }
+            }
+            GovernedReplaceOutcome.REPLACED
+        } catch (_: Exception) {
+            GovernedReplaceOutcome.UNCHANGED
+        }
     }
 
     private fun referencesResolve(document: GovernedLearnerDocument): Boolean {
@@ -1104,22 +1174,212 @@ internal class LocalStore private constructor(
         return enumValues<T>().any { it.name == value }
     }
 
-    private fun installRecordingFiles(recordings: List<StagedRecording>): Boolean {
-        val root = recordingRoot ?: return recordings.isEmpty()
-        if (!root.exists() && !root.mkdirs()) return false
-        val kept = recordings.map { File(it.recording.localFileReference).name }.toSet()
+    private fun replacementWorkspace(root: File): File {
+        return File(root.parentFile, "backup-replace-${root.name}-workspace")
+    }
+
+    private fun replacementJournalFile(root: File): File {
+        return File(root.parentFile, "backup-replace-${root.name}.json")
+    }
+
+    private fun stageIncomingRecordings(
+        document: GovernedLearnerDocument,
+        recordings: List<StagedRecording>,
+        stageDir: File,
+    ): List<Pair<String, File>> {
+        if (!stageDir.isDirectory && !stageDir.mkdirs()) throw IOException("stage-dir")
+        val byName = recordings.associateBy { File(it.recording.localFileReference).name }
+        if (byName.size != recordings.size) throw IOException("duplicate-recording")
+        val names = document.recordings.map { File(it.localFileReference).name }
+        if (names.size != names.toSet().size || names.toSet() != byName.keys) throw IOException("recording-set")
+        return names.map { name ->
+            val source = byName.getValue(name).file
+            if (!source.isFile || source.length() <= 0L) throw IOException("missing-bytes")
+            val dest = File(stageDir, name)
+            copyFile(source, dest)
+            if (dest.length() != source.length()) throw IOException("short-stage")
+            name to dest
+        }
+    }
+
+    private fun publishStagedRecordings(root: File, staged: List<Pair<String, File>>): Boolean {
+        var replaced = 0
         return try {
-            recordings.forEach { staged ->
-                val target = File(root, File(staged.recording.localFileReference).name)
-                staged.file.inputStream().use { input -> target.outputStream().use { input.copyTo(it) } }
+            staged.forEach { (name, source) ->
+                val incoming = File(root, "$name.incoming")
+                copyFile(source, incoming)
+                if (incoming.length() != source.length()) throw IOException("short-copy")
             }
-            root.listFiles()?.forEach { file ->
-                if (file.isFile && file.name !in kept) file.delete()
+            staged.forEach { (name, _) ->
+                val live = File(root, name)
+                val retired = File(root, "$name.retired")
+                if (retired.exists() && !retired.delete()) throw IOException("retire-clear")
+                if (live.exists() && !live.renameTo(retired)) throw IOException("retire-failed")
+                val incoming = File(root, "$name.incoming")
+                if (!incoming.renameTo(live)) throw IOException("promote-failed")
+                replaced += 1
+                if (V2BackupFaults.failDuringFilePublish && replaced == 1) {
+                    throw IOException("publish-interrupted")
+                }
             }
             true
         } catch (_: IOException) {
             false
         }
+    }
+
+    private fun copyRecordingFiles(root: File, snapshotDir: File): Boolean {
+        val files = root.listFiles()?.filter { file ->
+            file.isFile && !file.name.endsWith(".incoming") && !file.name.endsWith(".retired")
+        }.orEmpty()
+        return try {
+            files.forEach { file ->
+                val dest = File(snapshotDir, file.name)
+                copyFile(file, dest)
+                if (dest.length() != file.length()) throw IOException("short-snapshot")
+            }
+            true
+        } catch (_: IOException) {
+            false
+        }
+    }
+
+    private fun restoreRecordingSnapshot(root: File, snapshotDir: File): Boolean {
+        return try {
+            val snap = snapshotDir.listFiles()?.filter { it.isFile }.orEmpty()
+            val keep = snap.map { it.name }.toSet()
+            root.listFiles()?.forEach { file ->
+                if (file.isFile && (file.name.endsWith(".incoming") || file.name.endsWith(".retired"))) {
+                    file.delete()
+                }
+            }
+            snap.forEach { source ->
+                val incoming = File(root, "${source.name}.incoming")
+                copyFile(source, incoming)
+                if (incoming.length() != source.length()) throw IOException("short-restore")
+                val live = File(root, source.name)
+                if (live.exists() && !live.delete()) throw IOException("restore-replace")
+                if (!incoming.renameTo(live)) throw IOException("restore-rename")
+            }
+            root.listFiles()?.forEach { file ->
+                if (file.isFile && file.name !in keep) file.delete()
+            }
+            true
+        } catch (_: IOException) {
+            false
+        }
+    }
+
+    private fun deleteRetiredRecordings(root: File, keep: Set<String>) {
+        root.listFiles()?.forEach { file ->
+            if (!file.isFile) return@forEach
+            if (file.name.endsWith(".retired") || file.name.endsWith(".incoming") || file.name !in keep) {
+                file.delete()
+            }
+        }
+    }
+
+    private fun writeReplacementJournal(
+        root: File,
+        previous: GovernedLearnerDocument,
+        next: GovernedLearnerDocument,
+        exports: List<ExportRecordEntity>,
+        snapshotDir: File,
+    ) {
+        val journal = ReplacementJournal(
+            phase = "FILES_SWAPPED",
+            previousFingerprint = documentFingerprint(previous),
+            nextFingerprint = documentFingerprint(next),
+            snapshotDir = snapshotDir.absolutePath,
+            previousDocument = backupJson.encodeToString(GovernedLearnerDocument.serializer(), previous),
+            exports = exports.map { record ->
+                PreservedExportRecord(
+                    id = record.id,
+                    exportedAtLocal = record.exportedAtLocal,
+                    destinationReference = record.destinationReference,
+                    logCount = record.logCount,
+                    evidenceCount = record.evidenceCount,
+                    progressCount = record.progressCount,
+                    recordingCount = record.recordingCount,
+                    status = record.status.name,
+                    documentReference = record.documentReference,
+                    recordingSetDigest = record.recordingSetDigest,
+                )
+            },
+        )
+        replacementJournalFile(root).writeText(
+            backupJson.encodeToString(ReplacementJournal.serializer(), journal),
+        )
+    }
+
+    private fun deleteReplacementJournal(root: File) {
+        replacementJournalFile(root).delete()
+    }
+
+    private fun recoverInterruptedReplacementLocked() {
+        val root = recordingRoot ?: return
+        val journalFile = replacementJournalFile(root)
+        if (!journalFile.isFile) {
+            undoOrphanedSwapArtifacts(root)
+            return
+        }
+        val journal = try {
+            backupJson.decodeFromString(ReplacementJournal.serializer(), journalFile.readText())
+        } catch (_: Exception) {
+            undoOrphanedSwapArtifacts(root)
+            journalFile.delete()
+            return
+        }
+        val snapshotDir = File(journal.snapshotDir)
+        val current = documentFingerprint(readGovernedLearnerDocument())
+        if (current == journal.nextFingerprint) {
+            deleteRetiredRecordings(root, readGovernedLearnerDocument().recordings.map { File(it.localFileReference).name }.toSet())
+        } else {
+            if (current != journal.previousFingerprint) {
+                val previous = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), journal.previousDocument)
+                database.runInTransaction {
+                    applyGovernedDocument(previous)
+                    journal.exports.forEach { record ->
+                        database.users().insertExport(
+                            ExportRecordEntity(
+                                id = record.id,
+                                exportedAtLocal = record.exportedAtLocal,
+                                destinationReference = record.destinationReference,
+                                logCount = record.logCount,
+                                evidenceCount = record.evidenceCount,
+                                progressCount = record.progressCount,
+                                recordingCount = record.recordingCount,
+                                status = ExportStatus.valueOf(record.status),
+                                documentReference = record.documentReference,
+                                recordingSetDigest = record.recordingSetDigest,
+                            ),
+                        )
+                    }
+                }
+            }
+            if (snapshotDir.isDirectory) restoreRecordingSnapshot(root, snapshotDir)
+            else undoOrphanedSwapArtifacts(root)
+        }
+        journalFile.delete()
+        replacementWorkspace(root).deleteRecursively()
+    }
+
+    private fun undoOrphanedSwapArtifacts(root: File) {
+        root.listFiles()?.filter { it.isFile && it.name.endsWith(".retired") }?.forEach { retired ->
+            val live = File(root, retired.name.removeSuffix(".retired"))
+            if (live.exists()) live.delete()
+            retired.renameTo(live)
+        }
+        root.listFiles()?.filter { it.isFile && it.name.endsWith(".incoming") }?.forEach { it.delete() }
+    }
+
+    private fun documentFingerprint(document: GovernedLearnerDocument): String {
+        return backupJson.encodeToString(GovernedLearnerDocument.serializer(), document)
+    }
+
+    private fun copyFile(source: File, dest: File) {
+        dest.parentFile?.mkdirs()
+        source.inputStream().use { input -> dest.outputStream().use { output -> input.copyTo(output) } }
     }
 
     private fun readGovernedLearnerDocument(): GovernedLearnerDocument {

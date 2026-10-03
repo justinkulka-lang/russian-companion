@@ -213,7 +213,6 @@ internal sealed interface BackupReadResult {
 internal enum class GovernedReplaceOutcome {
     REPLACED,
     UNCHANGED,
-    COMMITTED_THEN_FAILED,
 }
 
 internal enum class BackupRejection {
@@ -233,14 +232,42 @@ internal object V2BackupFaults {
     @Volatile var failBeforeMutation: Boolean = false
     @Volatile var failInsideReplacement: Boolean = false
     @Volatile var failAfterCommit: Boolean = false
+    @Volatile var failDuringFilePublish: Boolean = false
+    @Volatile var crashAfterFileSwapBeforeCommit: Boolean = false
 
     fun reset() {
         failWrite = false
         failBeforeMutation = false
         failInsideReplacement = false
         failAfterCommit = false
+        failDuringFilePublish = false
+        crashAfterFileSwapBeforeCommit = false
     }
 }
+
+@Serializable
+internal data class PreservedExportRecord(
+    val id: String,
+    val exportedAtLocal: String,
+    val destinationReference: String? = null,
+    val logCount: Int,
+    val evidenceCount: Int,
+    val progressCount: Int,
+    val recordingCount: Int,
+    val status: String,
+    val documentReference: String? = null,
+    val recordingSetDigest: String? = null,
+)
+
+@Serializable
+internal data class ReplacementJournal(
+    val phase: String,
+    val previousFingerprint: String,
+    val nextFingerprint: String,
+    val snapshotDir: String,
+    val previousDocument: String,
+    val exports: List<PreservedExportRecord>,
+)
 
 internal fun writeGovernedBackup(
     output: OutputStream,

@@ -12,6 +12,7 @@ import androidx.compose.ui.test.performScrollToIndex
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.appearance.AppearanceStore
 import dev.russiancompanion.data.local.CompletionState
+import dev.russiancompanion.data.local.ExportRecordEntity
 import dev.russiancompanion.data.local.ExportStatus
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.data.local.audio
@@ -202,6 +203,58 @@ class BackupLicenseTest {
     }
 
     @Test
+    fun failedRecordingPublishRestoresDatabaseRowsAndRecordingBytes() {
+        val store = recordingStore()
+        val original = seedTwoRecordings(store, byteArrayOf(1, 2, 3), byteArrayOf(4, 5, 6))
+        store.v2AddNote("step", "original", "2026-10-03T10:00:00")
+        store.saveExport(
+            ExportRecordEntity(
+                id = "export-1",
+                exportedAtLocal = "2026-10-03T10:05:00",
+                destinationReference = "local-backup",
+                logCount = 0,
+                evidenceCount = 0,
+                progressCount = 0,
+                recordingCount = 2,
+                status = ExportStatus.FAILED,
+                documentReference = "backup-format-1",
+            ),
+        )
+        val backup = backupFile(store)
+        val validated = (readGovernedBackup(backup.inputStream(), APP, pack().packId, pack().packVersion, tempDir()) as BackupReadResult.Valid).backup
+        writeRecordingBytes(store, original, byteArrayOf(7, 7, 7), byteArrayOf(8, 8, 8))
+        store.v2AddNote("step", "changed", "2026-10-03T11:00:00")
+        val before = store.governedLearnerFingerprint()
+        V2BackupFaults.failDuringFilePublish = true
+        assertFalse(restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(before, store.governedLearnerFingerprint())
+        assertEquals(listOf("export-1"), store.exports().map { it.id })
+        assertBytes(store, original, byteArrayOf(7, 7, 7), byteArrayOf(8, 8, 8))
+        assertNoSwapArtifacts(store)
+        V2BackupFaults.reset()
+        V2BackupFaults.failAfterCommit = true
+        assertFalse(restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(before, store.governedLearnerFingerprint())
+        assertEquals(listOf("export-1"), store.exports().map { it.id })
+        assertBytes(store, original, byteArrayOf(7, 7, 7), byteArrayOf(8, 8, 8))
+        assertNoSwapArtifacts(store)
+        V2BackupFaults.reset()
+        V2BackupFaults.crashAfterFileSwapBeforeCommit = true
+        assertFalse(restoreStoreBackup(store, validated, tempDir()))
+        store.sweepOrphanRecordingFiles()
+        assertEquals(before, store.governedLearnerFingerprint())
+        assertEquals(listOf("export-1"), store.exports().map { it.id })
+        assertBytes(store, original, byteArrayOf(7, 7, 7), byteArrayOf(8, 8, 8))
+        assertNoSwapArtifacts(store)
+        V2BackupFaults.reset()
+        assertTrue(restoreStoreBackup(store, validated, tempDir()))
+        assertEquals(setOf("original"), store.v2Notes().map { it.text }.toSet())
+        assertTrue(store.exports().isEmpty())
+        assertBytes(store, store.recordings(), byteArrayOf(1, 2, 3), byteArrayOf(4, 5, 6))
+        assertNoSwapArtifacts(store)
+    }
+
+    @Test
     fun restoreRejectsARecordingForAnUnknownAudioModel() {
         val store = memoryStore()
         store.v2AddNote("step", "stay", "2026-10-03T10:00:00")
@@ -382,6 +435,65 @@ class BackupLicenseTest {
 
     private fun memoryStore(): LocalStore = LocalStore.openInMemory(context).also { stores += it }
 
+    private fun recordingStore(): LocalStore {
+        val store = LocalStore.openNamed(context, "backup-publish-${System.nanoTime()}").also { stores += it }
+        store.applySeed(
+            SeedJson.encode(
+                minimalDocument().copy(
+                    sourceTexts = listOf(text(matchVerified = true), text(matchVerified = true, id = "text-2")),
+                    assetRightsRecords = listOf(rights(), rights(id = "rights-2", assetIdentifier = "audio-2")),
+                    audioModels = listOf(audio(), audio(id = "audio-2", rightsRecordId = "rights-2", sourceTextId = "text-2")),
+                ),
+            ),
+        )
+        return store
+    }
+
+    private fun seedTwoRecordings(
+        store: LocalStore,
+        first: ByteArray,
+        second: ByteArray,
+    ): List<dev.russiancompanion.data.local.RecordingRecordEntity> {
+        val one = store.commitRecording("audio-1", "recordings/one.m4a", "2026-10-03T09:00:00", false, CompletionState.NOT_COMPLETED)
+        val two = store.commitRecording("audio-2", "recordings/two.m4a", "2026-10-03T09:01:00", false, CompletionState.NOT_COMPLETED)
+        val records = listOf(one, two).sortedBy { it.audioModelId }
+        writeRecordingBytes(store, records, first, second)
+        return records
+    }
+
+    private fun writeRecordingBytes(
+        store: LocalStore,
+        records: List<dev.russiancompanion.data.local.RecordingRecordEntity>,
+        first: ByteArray,
+        second: ByteArray,
+    ) {
+        val root = checkNotNull(store.recordingDirectory())
+        root.mkdirs()
+        val ordered = records.sortedBy { it.audioModelId }
+        File(root, File(ordered[0].localFileReference).name).writeBytes(first)
+        File(root, File(ordered[1].localFileReference).name).writeBytes(second)
+    }
+
+    private fun assertBytes(
+        store: LocalStore,
+        records: List<dev.russiancompanion.data.local.RecordingRecordEntity>,
+        first: ByteArray,
+        second: ByteArray,
+    ) {
+        val root = checkNotNull(store.recordingDirectory())
+        val ordered = records.sortedBy { it.audioModelId }
+        assertEquals(first.toList(), File(root, File(ordered[0].localFileReference).name).readBytes().toList())
+        assertEquals(second.toList(), File(root, File(ordered[1].localFileReference).name).readBytes().toList())
+    }
+
+    private fun assertNoSwapArtifacts(store: LocalStore) {
+        val root = checkNotNull(store.recordingDirectory())
+        assertTrue(root.listFiles().orEmpty().none { it.name.endsWith(".incoming") || it.name.endsWith(".retired") })
+        val parent = checkNotNull(root.parentFile)
+        assertFalse(File(parent, "backup-replace-${root.name}.json").exists())
+        assertFalse(File(parent, "backup-replace-${root.name}-workspace").exists())
+    }
+
     private fun seededStore(): LocalStore {
         val store = LocalStore.openNamed(context, "backup-recordings").also { stores += it }
         store.applySeed(
@@ -458,7 +570,7 @@ class BackupLicenseTest {
     private fun pack() = V2PackLoader.parse(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText())
 
     private fun repo(): File {
-        var dir = File(System.getProperty("user.dir"))
+        var dir = File(checkNotNull(System.getProperty("user.dir")))
         while (!File(dir, "settings.gradle.kts").isFile) dir = checkNotNull(dir.parentFile)
         return dir
     }
@@ -534,7 +646,7 @@ class BackupRecreationTest {
     }
 
     private fun repo(): File {
-        var dir = File(System.getProperty("user.dir"))
+        var dir = File(checkNotNull(System.getProperty("user.dir")))
         while (!File(dir, "settings.gradle.kts").isFile) dir = checkNotNull(dir.parentFile)
         return dir
     }
