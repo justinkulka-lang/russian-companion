@@ -16,6 +16,7 @@ internal data class V2LearnerView(
     val correctItemIds: Set<String>,
     val bookAttestedUnits: Set<Int>,
     val completedUnitNumbers: Set<Int>,
+    val attemptSelections: Map<String, String> = emptyMap(),
 )
 
 internal data class V2ContinueTarget(
@@ -25,6 +26,7 @@ internal data class V2ContinueTarget(
     val stepIndex: Int,
     val unitNumber: Int,
     val unavailable: Boolean = false,
+    val opensUnitReview: Boolean = false,
 )
 
 internal fun unitState(
@@ -133,10 +135,36 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
     return V2ContinueTarget(
         title = "Review advancement",
         reason = "Required Unit ${unit.number} steps are recorded. Check advancement before moving on.",
-        sessionId = sessions.last().id,
-        stepIndex = sessions.last().steps.lastIndex,
+        sessionId = null,
+        stepIndex = 0,
         unitNumber = unit.number,
+        opensUnitReview = true,
     )
+}
+
+/**
+ * Guided practice already listed on the objective that owns this remediation
+ * step. Check and teach steps listed as practice are not a second journey back
+ * to the failed check.
+ */
+internal fun reviewedGuidedPractice(pack: V2CurriculumPack, remediationStepId: String): List<String> {
+    val practiceIds = pack.units.flatMap { it.objectives }
+        .filter { remediationStepId in it.remediationStepIds }
+        .flatMap { it.practiceStepIds }
+        .distinct()
+    return practiceIds.filter { id ->
+        id != remediationStepId && pack.step(id)?.second?.kind == "GUIDED"
+    }
+}
+
+internal fun advancementRuleSummary(rule: V2AdvancementRule): String {
+    val parts = mutableListOf<String>()
+    if (rule.requireInstruction) parts += "Finish the required instruction steps"
+    if (rule.requireBookSelfAttestation) parts += "Self-attest the book work for this unit"
+    if (rule.requireAppChecks) parts += "Demonstrate at least ${rule.minimumDistinctChecks} distinct in-app checks"
+    if (rule.requireDueReview) parts += "Complete the scheduled review"
+    if (rule.tutorOptional) parts += "Tutor review is optional"
+    return if (parts.isEmpty()) "This unit has no advancement requirements." else parts.joinToString("; ")
 }
 
 internal fun objectiveState(

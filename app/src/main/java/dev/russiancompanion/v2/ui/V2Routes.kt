@@ -18,7 +18,11 @@ internal data object V2CourseRoute
 internal data class V2UnitRoute(val unitNumber: Int)
 
 @Serializable
-internal data class V2SessionRoute(val sessionId: String, val stepIndex: Int = 0)
+internal data class V2SessionRoute(
+    val sessionId: String,
+    val stepIndex: Int = 0,
+    val remedial: Boolean = false,
+)
 
 @Serializable
 internal data object V2PracticeRoute

@@ -13,10 +13,13 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
@@ -34,11 +37,15 @@ import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2UnitState
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.advancementRuleSummary
+import dev.russiancompanion.v2.curriculum.example
 import dev.russiancompanion.v2.curriculum.currentObjective
 import dev.russiancompanion.v2.curriculum.installLabel
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.objectiveState
 import dev.russiancompanion.v2.curriculum.readinessLabel
+import dev.russiancompanion.v2.curriculum.reviewedGuidedPractice
+import dev.russiancompanion.v2.curriculum.step
 import dev.russiancompanion.v2.curriculum.recordedSessionCount
 import dev.russiancompanion.v2.curriculum.reference
 import dev.russiancompanion.v2.curriculum.searchReferences
@@ -335,6 +342,12 @@ internal fun V2UnitScreen(
             )
         }
         V2SecondaryButton("I completed the book work for this unit", { onAttestBook(unit.number) })
+        unit.advancement?.let { rule ->
+            Text(
+                advancementRuleSummary(rule),
+                modifier = Modifier.semantics { testTag = "v2-advancement-rule" },
+            )
+        }
         val decision = advancementDecision(pack, unit, learner)
         V2Status(
             if (decision.allowed) {
@@ -353,20 +366,44 @@ internal fun V2SessionScreen(
     learner: V2LearnerView,
     sessionId: String,
     initialIndex: Int,
+    remedial: Boolean,
+    selections: Map<String, String>,
+    lockedItemIds: Set<String>,
+    pendingKeys: Set<String>,
+    noteDrafts: Map<String, String>,
     onBack: () -> Unit,
-    onCompleteStep: (String) -> Unit,
-    onAttempt: (String, String, Boolean) -> Unit,
+    onCompleteStep: (String, () -> Unit) -> Unit,
+    onAttempt: (String, String, Boolean) -> Boolean,
     onBookmark: (String, String) -> Unit,
+    onNoteDraft: (String, String) -> Unit,
     onNote: (String, String) -> Unit,
     onTutor: (String, String) -> Unit,
     onOpenReference: (String) -> Unit,
+    onRemediate: (String) -> Unit,
+    onReturnToCheck: () -> Unit,
+    onPosition: (String, Int) -> Unit,
     onFinished: () -> Unit,
 ) {
     val session = pack.session(sessionId) ?: return
-    var index by remember { mutableIntStateOf(initialIndex.coerceIn(0, session.steps.lastIndex)) }
-    val step = session.steps[index]
-    var selected by remember(step.id) { mutableStateOf<String?>(null) }
-    var note by remember(step.id) { mutableStateOf("") }
+    var index by rememberSaveable(sessionId) {
+        mutableIntStateOf(initialIndex.coerceIn(0, session.steps.lastIndex))
+    }
+    val routeStep = session.steps[index]
+    var shownStepId by rememberSaveable(routeStep.id) { mutableStateOf(routeStep.id) }
+    val step = if (remedial) pack.step(shownStepId)?.second ?: routeStep else routeStep
+    val guidedPractice = if (remedial) reviewedGuidedPractice(pack, routeStep.id) else emptyList()
+    val guidedIndex = guidedPractice.indexOf(step.id)
+    val navigationOpen = remember { mutableStateOf(true) }
+    val consumedSteps = remember { mutableSetOf<String>() }
+    DisposableEffect(Unit) {
+        navigationOpen.value = true
+        onDispose { navigationOpen.value = false }
+    }
+    if (!remedial) {
+        LaunchedEffect(session.id, index) {
+            onPosition(session.id, index)
+        }
+    }
     V2Scaffold(
         title = session.title,
         tab = null,
@@ -374,20 +411,58 @@ internal fun V2SessionScreen(
         onBack = onBack,
         footer = {
             androidx.compose.foundation.layout.Box(Modifier.padding(16.dp)) {
-                V2PrimaryButton(
-                    text = if (index == session.steps.lastIndex) "Finish session" else step.dominantAction,
-                    onClick = {
-                        onCompleteStep(step.id)
-                        if (index == session.steps.lastIndex) onFinished() else index += 1
-                    },
-                    tag = "v2-session-continue",
-                )
+                if (remedial && guidedIndex < 0 && guidedPractice.isNotEmpty()) {
+                    V2PrimaryButton(
+                        text = "Review the guided practice",
+                        onClick = { shownStepId = guidedPractice.first() },
+                        tag = "v2-review-practice",
+                    )
+                } else if (remedial && guidedIndex >= 0 && guidedIndex < guidedPractice.lastIndex) {
+                    V2PrimaryButton(
+                        text = "Next guided practice",
+                        onClick = { shownStepId = guidedPractice[guidedIndex + 1] },
+                        tag = "v2-next-practice",
+                    )
+                } else if (remedial) {
+                    V2PrimaryButton(
+                        text = "Return to the check",
+                        onClick = onReturnToCheck,
+                        tag = "v2-return-to-check",
+                    )
+                } else {
+                    V2PrimaryButton(
+                        text = if (index == session.steps.lastIndex) "Finish session" else step.dominantAction,
+                        onClick = {
+                            val stepId = step.id
+                            onCompleteStep(stepId) {
+                                if (!navigationOpen.value || !consumedSteps.add(stepId)) return@onCompleteStep
+                                if (index == session.steps.lastIndex) onFinished() else index += 1
+                            }
+                        },
+                        enabled = "step:${step.id}" !in pendingKeys,
+                        tag = "v2-session-continue",
+                    )
+                }
             }
         },
     ) {
         Text(step.title, style = MaterialTheme.typography.headlineSmall, modifier = Modifier.semantics { heading(); testTag = "v2-step-title" })
         V2Status("Step ${index + 1} of ${session.steps.size} · ${step.kind}")
         Text(step.body)
+        step.exampleIds.forEach { exampleId ->
+            val example = pack.example(exampleId) ?: return@forEach
+            Text(
+                example.display,
+                style = MaterialTheme.typography.titleLarge,
+                modifier = Modifier.semantics { testTag = "v2-example-$exampleId" },
+            )
+            if (example.note.isNotBlank()) {
+                Text(
+                    example.note,
+                    modifier = Modifier.semantics { testTag = "v2-example-note-$exampleId" },
+                )
+            }
+        }
         step.unavailableReason?.let { V2Status("Unavailable: $it") }
         step.bookDirection?.let { Text("Book work: $it") }
         step.companionDirection?.let { Text("Companion: $it") }
@@ -396,6 +471,8 @@ internal fun V2SessionScreen(
         }
         step.itemIds.forEach { itemId ->
             val item = pack.item(itemId) ?: return@forEach
+            val selected = selections[item.id]
+            val locked = item.id in lockedItemIds
             item.promptLetter?.let { glyph ->
                 Text(
                     glyph,
@@ -403,7 +480,7 @@ internal fun V2SessionScreen(
                     modifier = Modifier.semantics { testTag = "v2-prompt-letter" },
                 )
             }
-            Text(item.prompt, style = MaterialTheme.typography.titleMedium)
+            Text(item.prompt, style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-item-prompt-${item.id}" })
             item.options.forEach { option ->
                 androidx.compose.foundation.layout.Row(
                     modifier = Modifier
@@ -417,29 +494,53 @@ internal fun V2SessionScreen(
                 ) {
                     RadioButton(
                         selected = selected == option,
-                        onClick = {
-                            selected = option
-                            onAttempt(item.id, option, option == item.answer)
-                        },
+                        enabled = !locked,
+                        onClick = { onAttempt(item.id, option, option == item.answer) },
+                        modifier = Modifier.semantics { testTag = "v2-option-${item.id}-$option" },
                     )
                     Text(option)
                 }
             }
             if (selected != null) {
-                Text(if (selected == item.answer) "Recorded as correct. ${item.feedback}" else "Not the reviewed answer. ${item.feedback}")
-                step.remediationStepId?.let { V2Status("Remediation: return to the explanation for this check.") }
+                val correct = selected == item.answer
+                Text(
+                    if (correct) "Recorded as correct. ${item.feedback}" else "Not the reviewed answer. ${item.feedback}",
+                    modifier = Modifier.semantics { testTag = "v2-item-feedback-${item.id}" },
+                )
+                if (!correct) {
+                    step.remediationStepId?.let { target ->
+                        V2SecondaryButton(
+                            "Open the explanation",
+                            { onRemediate(target) },
+                            tag = "v2-remediation-${item.id}",
+                        )
+                    }
+                }
             }
         }
         Spacer(Modifier.height(12.dp))
         V2SecondaryButton("Bookmark this step", { onBookmark(step.id, "STEP") })
+        val note = noteDrafts[step.id].orEmpty()
         OutlinedTextField(
             value = note,
-            onValueChange = { note = it },
+            onValueChange = { onNoteDraft(step.id, it) },
             label = { Text("Local note — never scored") },
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier
+                .fillMaxWidth()
+                .semantics { testTag = "v2-note-draft" },
         )
-        V2SecondaryButton("Save note", { if (note.isNotBlank()) onNote(step.id, note) }, enabled = note.isNotBlank())
-        V2SecondaryButton("Mark a question for a tutor", { onTutor(step.id, note.ifBlank { "Please review this step." }) })
+        V2SecondaryButton(
+            "Save note",
+            { if (note.isNotBlank()) onNote(step.id, note) },
+            enabled = note.isNotBlank() && "note:${step.id}" !in pendingKeys,
+            tag = "v2-save-note",
+        )
+        V2SecondaryButton(
+            "Mark a question for a tutor",
+            { onTutor(step.id, note.ifBlank { "Please review this step." }) },
+            enabled = "tutor:${step.id}" !in pendingKeys,
+            tag = "v2-tutor",
+        )
     }
 }
 
