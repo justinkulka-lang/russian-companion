@@ -8,6 +8,9 @@ import androidx.room.Update
 
 @Dao
 internal interface V2Dao {
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun upsertProfile(profile: V2ProfileEntity)
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insertProfileIfAbsent(profile: V2ProfileEntity): Long
 
@@ -61,4 +64,28 @@ internal interface V2Dao {
 
     @Query("SELECT * FROM v2_unit_completions")
     fun unitCompletions(): List<V2UnitCompletionEntity>
+
+    @Query("DELETE FROM v2_profiles")
+    fun deleteProfiles()
+
+    @Query("DELETE FROM v2_step_progress")
+    fun deleteSteps()
+
+    @Query("DELETE FROM v2_attempts")
+    fun deleteAttempts()
+
+    @Query("DELETE FROM v2_bookmarks")
+    fun deleteBookmarks()
+
+    @Query("DELETE FROM v2_notes")
+    fun deleteNotes()
+
+    @Query("DELETE FROM v2_tutor_queue")
+    fun deleteTutorQueue()
+
+    @Query("DELETE FROM v2_book_attestations")
+    fun deleteBookAttestations()
+
+    @Query("DELETE FROM v2_unit_completions")
+    fun deleteUnitCompletions()
 }

@@ -32,6 +32,10 @@ internal fun V2NavHost(
     onAdvance: (Int) -> Unit,
     onResumeAt: (String, Int) -> Unit,
     onTransliteration: (Boolean) -> Unit,
+    backup: V2BackupCoordinator,
+    recordedAt: () -> String,
+    writesBusy: Boolean,
+    onRestored: () -> Unit,
 ) {
     val start = when {
         !state.localDataOpen || state.pack == null -> V2LocalDataRoute
@@ -196,6 +200,7 @@ internal fun V2NavHost(
                 learner = learner,
                 onTab = ::goTab,
                 onSettings = { navController.navigate(V2SettingsRoute) },
+                onBackup = { navController.navigate(V2BackupRoute) },
             )
         }
         composable<V2SettingsRoute> {
@@ -210,8 +215,18 @@ internal fun V2NavHost(
                 onAttributions = { navController.navigate(V2AttributionsRoute) },
             )
         }
+        composable<V2BackupRoute> {
+            V2BackupScreen(
+                coordinator = backup,
+                recordedAt = recordedAt,
+                writesBusy = writesBusy,
+                onBack = { navController.popBackStack() },
+                onRestored = onRestored,
+            )
+        }
         composable<V2AttributionsRoute> {
-            V2AttributionsScreen(onBack = { navController.popBackStack() })
+            val pack = state.pack
+            if (pack != null) V2AttributionsScreen(pack = pack, onBack = { navController.popBackStack() })
         }
     }
 }

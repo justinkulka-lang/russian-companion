@@ -222,6 +222,7 @@ class LinguisticReleaseGateTest {
 
     private fun stage(live: V2CurriculumPack, synthesis: Boolean = false): Fixture {
         val root = Files.createTempDirectory("retained-final-audit").toFile()
+        copyPackagedNotices(root)
         val packDigest = V2Validator.contentReviewDigest(live)
         val document = RetainedFinalAuditDocument(
             schemaVersion = RETAINED_FINAL_AUDIT_SCHEMA,
@@ -354,6 +355,20 @@ class LinguisticReleaseGateTest {
             finalAudit = audit,
         ),
     )
+
+    private fun copyPackagedNotices(destination: File) {
+        val live = root()
+        val licenses = File(live, "app/src/main/assets/licenses")
+        val licenseTarget = File(destination, "app/src/main/assets/licenses")
+        licenseTarget.mkdirs()
+        licenses.listFiles()?.filter { it.isFile }?.forEach { file ->
+            file.copyTo(File(licenseTarget, file.name), overwrite = true)
+        }
+        val catalog = File(live, "app/src/main/assets/content/catalog-notice.txt")
+        val catalogTarget = File(destination, "app/src/main/assets/content/catalog-notice.txt")
+        checkNotNull(catalogTarget.parentFile).mkdirs()
+        catalog.copyTo(catalogTarget, overwrite = true)
+    }
 
     private fun root(): File = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
 

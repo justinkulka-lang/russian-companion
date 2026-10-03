@@ -16,6 +16,35 @@ import dev.russiancompanion.domain.progress.captureProgressSnapshot
 import dev.russiancompanion.domain.progress.exportCompletionAccepted
 import dev.russiancompanion.domain.progress.reproduceProgress
 import dev.russiancompanion.domain.navigation.LicenseNoticeOption
+import dev.russiancompanion.v2.backup.BACKUP_SCHEMA_VERSION
+import dev.russiancompanion.v2.backup.BackupActivityLog
+import dev.russiancompanion.v2.backup.BackupAttempt
+import dev.russiancompanion.v2.backup.BackupBookAttestation
+import dev.russiancompanion.v2.backup.BackupBookmark
+import dev.russiancompanion.v2.backup.BackupDecision
+import dev.russiancompanion.v2.backup.BackupEvidence
+import dev.russiancompanion.v2.backup.BackupLearnerState
+import dev.russiancompanion.v2.backup.BackupNote
+import dev.russiancompanion.v2.backup.BackupPlanInstance
+import dev.russiancompanion.v2.backup.BackupProfile
+import dev.russiancompanion.v2.backup.BackupRecording
+import dev.russiancompanion.v2.backup.BackupStep
+import dev.russiancompanion.v2.backup.BackupTutorItem
+import dev.russiancompanion.v2.backup.BackupTutorRequirement
+import dev.russiancompanion.v2.backup.BackupUnitCompletion
+import dev.russiancompanion.v2.backup.GovernedLearnerDocument
+import dev.russiancompanion.v2.backup.GovernedReplaceOutcome
+import dev.russiancompanion.v2.backup.StagedRecording
+import dev.russiancompanion.v2.backup.V2BackupFaults
+import dev.russiancompanion.v2.backup.backupJson
+import dev.russiancompanion.v2.data.V2AttemptEntity
+import dev.russiancompanion.v2.data.V2BookAttestationEntity
+import dev.russiancompanion.v2.data.V2BookmarkEntity
+import dev.russiancompanion.v2.data.V2NoteEntity
+import dev.russiancompanion.v2.data.V2ProfileEntity
+import dev.russiancompanion.v2.data.V2StepProgressEntity
+import dev.russiancompanion.v2.data.V2TutorItemEntity
+import dev.russiancompanion.v2.data.V2UnitCompletionEntity
 import dev.russiancompanion.domain.practice.StoredRecordingRef
 import dev.russiancompanion.domain.practice.completedRecordingCountsTowardPlan
 import dev.russiancompanion.domain.practice.listenCompletionAccepted
@@ -860,6 +889,316 @@ internal class LocalStore private constructor(
                 file.delete()
             }
         }
+    }
+
+    internal fun governedLearnerDocument(): GovernedLearnerDocument = call { readGovernedLearnerDocument() }
+
+    internal fun governedLearnerFingerprint(): String = call {
+        backupJson.encodeToString(GovernedLearnerDocument.serializer(), readGovernedLearnerDocument())
+    }
+
+    internal fun recordingDirectory(): File? = recordingRoot
+
+    internal fun recordingFile(reference: String): File? {
+        val root = recordingRoot ?: return null
+        if (reference.isBlank() || reference.contains("..") || reference.startsWith("/")) return null
+        val target = File(root, File(reference).name)
+        return if (target.isFile && target.length() > 0L) target else null
+    }
+
+    internal fun replaceGovernedLearner(
+        document: GovernedLearnerDocument,
+        recordings: List<StagedRecording>,
+    ): GovernedReplaceOutcome = call {
+        if (!referencesResolve(document)) return@call GovernedReplaceOutcome.UNCHANGED
+        if (V2BackupFaults.failBeforeMutation) return@call GovernedReplaceOutcome.UNCHANGED
+        try {
+            database.runInTransaction {
+                applyGovernedDocument(document)
+                if (V2BackupFaults.failInsideReplacement) {
+                    throw IllegalStateException("replacement-interrupted")
+                }
+            }
+        } catch (_: Exception) {
+            return@call GovernedReplaceOutcome.UNCHANGED
+        }
+        if (V2BackupFaults.failAfterCommit) return@call GovernedReplaceOutcome.COMMITTED_THEN_FAILED
+        if (!installRecordingFiles(recordings)) return@call GovernedReplaceOutcome.COMMITTED_THEN_FAILED
+        GovernedReplaceOutcome.REPLACED
+    }
+
+    private fun referencesResolve(document: GovernedLearnerDocument): Boolean {
+        if (document.profile.id != V2ProfileEntity.LOCAL_ID) return false
+        val bundled = database.bundled()
+        val learnerSegment = document.learnerState?.activeSegmentId
+        if (learnerSegment != null && bundled.segment(learnerSegment) == null) return false
+        val planIds = document.planInstances.map { it.id }.toSet()
+        val activityIds = document.activityLogs.map { it.id }.toSet()
+        if (document.planInstances.any { bundled.segment(it.segmentId) == null || bundled.plan(it.planDefinitionId) == null }) {
+            return false
+        }
+        if (document.activityLogs.any { log ->
+                (log.segmentId != null && bundled.segment(log.segmentId) == null) ||
+                    (log.planInstanceId != null && log.planInstanceId !in planIds)
+            }
+        ) {
+            return false
+        }
+        if (document.evidence.any { bundled.gate(it.gateDefinitionId) == null || !known<EvidenceType>(it.evidenceType) || !known<SelfAttestationStatus>(it.selfAttestationStatus) }) {
+            return false
+        }
+        if (document.tutorRequirements.any { bundled.gate(it.gateDefinitionId) == null }) return false
+        if (document.decisions.any { bundled.gate(it.gateDefinitionId) == null || !known<GateDecisionStatus>(it.status) }) {
+            return false
+        }
+        if (document.activityLogs.any { !known<ActivityCategory>(it.category) }) return false
+        if (document.planInstances.any { !known<CompletionState>(it.completionState) }) return false
+        if (document.recordings.any { recording ->
+                bundled.audio(recording.audioModelId) == null ||
+                    !known<CompletionState>(recording.completionState) ||
+                    (recording.activityLogId != null && recording.activityLogId !in activityIds) ||
+                    recording.localFileReference.isBlank() ||
+                    recording.localFileReference.contains("..") ||
+                    recording.localFileReference.startsWith("/")
+            }
+        ) {
+            return false
+        }
+        return true
+    }
+
+    private fun applyGovernedDocument(document: GovernedLearnerDocument) {
+        val users = database.users()
+        val curriculum = database.v2()
+        users.deleteAllRecordings()
+        users.deleteAllDecisions()
+        users.deleteAllEvidence()
+        users.deleteAllTutorRequirements()
+        users.deleteAllActivityLogs()
+        users.deleteAllPlanInstances()
+        users.deleteLearnerState()
+        users.deleteAllExports()
+        curriculum.deleteAttempts()
+        curriculum.deleteSteps()
+        curriculum.deleteBookmarks()
+        curriculum.deleteNotes()
+        curriculum.deleteTutorQueue()
+        curriculum.deleteBookAttestations()
+        curriculum.deleteUnitCompletions()
+        curriculum.deleteProfiles()
+        document.learnerState?.let { state ->
+            users.insertLearnerIfAbsent(
+                LearnerStateEntity(
+                    id = state.id,
+                    activeSegmentId = state.activeSegmentId,
+                    onboardingCompleted = state.onboardingCompleted,
+                    planContext = state.planContext,
+                ),
+            )
+        }
+        document.planInstances.forEach { plan ->
+            users.upsertPlanInstance(
+                PlanInstanceEntity(
+                    id = plan.id,
+                    localDate = plan.localDate,
+                    segmentId = plan.segmentId,
+                    planDefinitionId = plan.planDefinitionId,
+                    completionState = CompletionState.valueOf(plan.completionState),
+                    completedAtLocal = plan.completedAtLocal,
+                ),
+            )
+        }
+        document.activityLogs.forEach { log ->
+            users.insertActivityLog(
+                ActivityLogEntity(
+                    id = log.id,
+                    category = ActivityCategory.valueOf(log.category),
+                    durationMinutes = log.durationMinutes,
+                    completed = log.completed,
+                    recordedAtLocal = log.recordedAtLocal,
+                    segmentId = log.segmentId,
+                    planInstanceId = log.planInstanceId,
+                    selfAttested = log.selfAttested,
+                ),
+            )
+        }
+        document.evidence.forEach { evidence ->
+            users.insertEvidence(
+                GateEvidenceEntity(
+                    id = evidence.id,
+                    gateDefinitionId = evidence.gateDefinitionId,
+                    evidenceType = EvidenceType.valueOf(evidence.evidenceType),
+                    enteredValue = evidence.enteredValue,
+                    selfAttestationStatus = SelfAttestationStatus.valueOf(evidence.selfAttestationStatus),
+                    recordedAtLocal = evidence.recordedAtLocal,
+                ),
+            )
+        }
+        document.tutorRequirements.forEach { requirement ->
+            users.upsertTutorRequirement(
+                GateTutorRequirementEntity(
+                    gateDefinitionId = requirement.gateDefinitionId,
+                    recordedAtLocal = requirement.recordedAtLocal,
+                ),
+            )
+        }
+        document.decisions.forEach { decision ->
+            users.insertDecision(
+                GateDecisionEntity(
+                    id = decision.id,
+                    gateDefinitionId = decision.gateDefinitionId,
+                    ruleVersion = decision.ruleVersion,
+                    ruleSnapshot = decision.ruleSnapshot,
+                    evidenceIds = decision.evidenceIds,
+                    conditionOutcomes = decision.conditionOutcomes,
+                    status = GateDecisionStatus.valueOf(decision.status),
+                    evaluatedAtLocal = decision.evaluatedAtLocal,
+                ),
+            )
+        }
+        document.recordings.forEach { recording ->
+            users.insertRecording(
+                RecordingRecordEntity(
+                    id = recording.id,
+                    audioModelId = recording.audioModelId,
+                    localFileReference = recording.localFileReference,
+                    createdAtLocal = recording.createdAtLocal,
+                    markedForTutorReview = recording.markedForTutorReview,
+                    completionState = CompletionState.valueOf(recording.completionState),
+                    activityLogId = recording.activityLogId,
+                ),
+            )
+        }
+        curriculum.upsertProfile(document.profile.toEntity())
+        document.steps.forEach { curriculum.upsertStep(V2StepProgressEntity(it.stepId, it.completedAtLocal)) }
+        document.attempts.forEach {
+            curriculum.insertAttempt(V2AttemptEntity(it.id, it.itemId, it.selected, it.correct, it.recordedAtLocal))
+        }
+        document.bookmarks.forEach { curriculum.upsertBookmark(V2BookmarkEntity(it.targetId, it.kind, it.createdAtLocal)) }
+        document.notes.forEach {
+            curriculum.insertNote(V2NoteEntity(it.id, it.targetId, it.text, it.createdAtLocal, it.userAuthoredRussian))
+        }
+        document.tutorQueue.forEach { curriculum.insertTutorItem(V2TutorItemEntity(it.id, it.targetId, it.note, it.createdAtLocal)) }
+        document.bookAttestations.forEach { curriculum.upsertBookAttestation(V2BookAttestationEntity(it.unitNumber, it.recordedAtLocal)) }
+        document.unitCompletions.forEach { curriculum.upsertUnitCompletion(V2UnitCompletionEntity(it.unitNumber, it.recordedAtLocal)) }
+    }
+
+    private fun BackupProfile.toEntity(): V2ProfileEntity {
+        return V2ProfileEntity(
+            id = id,
+            onboardingCompleted = onboardingCompleted,
+            currentUnitNumber = currentUnitNumber,
+            startingPoint = startingPoint,
+            hasPenguin = hasPenguin,
+            hasAnki = hasAnki,
+            hasBinder = hasBinder,
+            hasTutor = hasTutor,
+            dailyMinutes = dailyMinutes,
+            transliterationEnabled = transliterationEnabled,
+            currentSessionId = currentSessionId,
+            currentStepIndex = currentStepIndex,
+        )
+    }
+
+    private inline fun <reified T : Enum<T>> known(value: String): Boolean {
+        return enumValues<T>().any { it.name == value }
+    }
+
+    private fun installRecordingFiles(recordings: List<StagedRecording>): Boolean {
+        val root = recordingRoot ?: return recordings.isEmpty()
+        if (!root.exists() && !root.mkdirs()) return false
+        val kept = recordings.map { File(it.recording.localFileReference).name }.toSet()
+        return try {
+            recordings.forEach { staged ->
+                val target = File(root, File(staged.recording.localFileReference).name)
+                staged.file.inputStream().use { input -> target.outputStream().use { input.copyTo(it) } }
+            }
+            root.listFiles()?.forEach { file ->
+                if (file.isFile && file.name !in kept) file.delete()
+            }
+            true
+        } catch (_: IOException) {
+            false
+        }
+    }
+
+    private fun readGovernedLearnerDocument(): GovernedLearnerDocument {
+        val curriculum = database.v2()
+        val users = database.users()
+        val profile = readV2Profile()
+        return GovernedLearnerDocument(
+            schemaVersion = BACKUP_SCHEMA_VERSION,
+            profile = BackupProfile(
+                id = profile.id,
+                onboardingCompleted = profile.onboardingCompleted,
+                currentUnitNumber = profile.currentUnitNumber,
+                startingPoint = profile.startingPoint,
+                hasPenguin = profile.hasPenguin,
+                hasAnki = profile.hasAnki,
+                hasBinder = profile.hasBinder,
+                hasTutor = profile.hasTutor,
+                dailyMinutes = profile.dailyMinutes,
+                transliterationEnabled = profile.transliterationEnabled,
+                currentSessionId = profile.currentSessionId,
+                currentStepIndex = profile.currentStepIndex,
+            ),
+            steps = curriculum.steps().sortedBy { it.stepId }.map { BackupStep(it.stepId, it.completedAtLocal) },
+            attempts = curriculum.attempts().map { BackupAttempt(it.id, it.itemId, it.selected, it.correct, it.recordedAtLocal) },
+            bookmarks = curriculum.bookmarks().map { BackupBookmark(it.targetId, it.kind, it.createdAtLocal) },
+            notes = curriculum.notes().map { BackupNote(it.id, it.targetId, it.text, it.createdAtLocal, it.userAuthoredRussian) },
+            tutorQueue = curriculum.tutorQueue().map { BackupTutorItem(it.id, it.targetId, it.note, it.createdAtLocal) },
+            bookAttestations = curriculum.bookAttestations().sortedBy { it.unitNumber }.map {
+                BackupBookAttestation(it.unitNumber, it.recordedAtLocal)
+            },
+            unitCompletions = curriculum.unitCompletions().sortedBy { it.unitNumber }.map {
+                BackupUnitCompletion(it.unitNumber, it.recordedAtLocal)
+            },
+            learnerState = users.learner(LearnerStateEntity.LOCAL_ID)?.let {
+                BackupLearnerState(it.id, it.activeSegmentId, it.onboardingCompleted, it.planContext)
+            },
+            planInstances = users.planInstances().map {
+                BackupPlanInstance(it.id, it.localDate, it.segmentId, it.planDefinitionId, it.completionState.name, it.completedAtLocal)
+            },
+            activityLogs = users.activityLogs().map {
+                BackupActivityLog(
+                    it.id,
+                    it.category.name,
+                    it.durationMinutes,
+                    it.completed,
+                    it.recordedAtLocal,
+                    it.segmentId,
+                    it.planInstanceId,
+                    it.selfAttested,
+                )
+            },
+            evidence = users.allEvidence().map {
+                BackupEvidence(it.id, it.gateDefinitionId, it.evidenceType.name, it.enteredValue, it.selfAttestationStatus.name, it.recordedAtLocal)
+            },
+            tutorRequirements = users.allTutorRequirements().map { BackupTutorRequirement(it.gateDefinitionId, it.recordedAtLocal) },
+            decisions = users.decisions().map {
+                BackupDecision(
+                    it.id,
+                    it.gateDefinitionId,
+                    it.ruleVersion,
+                    it.ruleSnapshot,
+                    it.evidenceIds,
+                    it.conditionOutcomes,
+                    it.status.name,
+                    it.evaluatedAtLocal,
+                )
+            },
+            recordings = users.recordings().map {
+                BackupRecording(
+                    it.id,
+                    it.audioModelId,
+                    it.localFileReference,
+                    it.createdAtLocal,
+                    it.markedForTutorReview,
+                    it.completionState.name,
+                    it.activityLogId,
+                )
+            },
+        )
     }
 
     internal suspend fun <T> awaitStore(block: () -> T): T = withContext(ioDispatcher) { block() }

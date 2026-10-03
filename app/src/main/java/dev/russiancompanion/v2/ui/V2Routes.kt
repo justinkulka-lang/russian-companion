@@ -45,6 +45,9 @@ internal data object V2SettingsRoute
 @Serializable
 internal data object V2AttributionsRoute
 
+@Serializable
+internal data object V2BackupRoute
+
 internal enum class V2Tab {
     TODAY,
     COURSE,

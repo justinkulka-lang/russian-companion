@@ -39,6 +39,9 @@ internal object V2Validator {
         validateReview(pack, repositoryRoot, errors)
         validateUnitReviews(pack, repositoryRoot, errors)
         validateSourcesAndRights(pack, errors)
+        if (repositoryRoot != null) {
+            errors += dev.russiancompanion.v2.notices.packagedNoticeErrors(repositoryRoot, pack)
+        }
         pack.units.forEach { unit ->
             if (unit.penguinLesson != unit.number) {
                 errors += "Unit ${unit.number} penguinLesson must equal the unit number"
@@ -678,6 +681,12 @@ internal object V2Validator {
         if (sourceIds.size != pack.sources.size) errors += "Source ids must be unique"
         pack.sources.forEach { source ->
             if (source.license.isBlank()) errors += "Source ${source.id} has no license"
+            if (source.attribution.isBlank()) errors += "Source ${source.id} has no attribution"
+            if (dev.russiancompanion.v2.notices.penguinRedistributionClaim(source.title) ||
+                dev.russiancompanion.v2.notices.penguinRedistributionClaim(source.attribution)
+            ) {
+                errors += "Source ${source.id} presents Penguin material as redistributed content"
+            }
             if (pack.rights.none { it.sourceId == source.id }) {
                 errors += "Source ${source.id} has no rights record"
             }

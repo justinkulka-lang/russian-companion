@@ -22,6 +22,9 @@ internal abstract class UserDataDao {
     @Upsert
     abstract fun upsertPlanInstance(instance: PlanInstanceEntity)
 
+    @Query("SELECT * FROM plan_instances ORDER BY localDate, id")
+    abstract fun planInstances(): List<PlanInstanceEntity>
+
     @Query("SELECT * FROM plan_instances WHERE id = :id")
     abstract fun planInstance(id: String): PlanInstanceEntity?
 
@@ -92,6 +95,30 @@ internal abstract class UserDataDao {
 
     @Query("SELECT * FROM export_records ORDER BY exportedAtLocal, id")
     abstract fun exports(): List<ExportRecordEntity>
+
+    @Query("DELETE FROM recording_records")
+    abstract fun deleteAllRecordings()
+
+    @Query("DELETE FROM gate_decisions")
+    abstract fun deleteAllDecisions()
+
+    @Query("DELETE FROM gate_evidence")
+    abstract fun deleteAllEvidence()
+
+    @Query("DELETE FROM gate_tutor_requirements")
+    abstract fun deleteAllTutorRequirements()
+
+    @Query("DELETE FROM activity_logs")
+    abstract fun deleteAllActivityLogs()
+
+    @Query("DELETE FROM plan_instances")
+    abstract fun deleteAllPlanInstances()
+
+    @Query("DELETE FROM learner_state")
+    abstract fun deleteLearnerState()
+
+    @Query("DELETE FROM export_records")
+    abstract fun deleteAllExports()
 
     @Query("SELECT COUNT(*) FROM learner_state")
     abstract fun learnerCount(): Int

@@ -74,6 +74,10 @@ internal class V2WriteCoordinator(
      * database does not reload. A different [V2Persistence.bindingKey] drops
      * the closed store and reads again.
      */
+    fun reloadAfterRestore() {
+        startLoad()
+    }
+
     fun rebind(next: V2Persistence) {
         val previous = persistence.bindingKey
         persistence = next
