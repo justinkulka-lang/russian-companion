@@ -647,6 +647,7 @@ internal fun V2ProgressScreen(
     learner: V2LearnerView,
     onTab: (V2Tab) -> Unit,
     onSettings: () -> Unit,
+    onBackup: () -> Unit,
 ) {
     val unit = pack.unit(learner.currentUnitNumber)
     V2Scaffold(title = "Progress", tab = V2Tab.PROGRESS, onTab = onTab) {
@@ -661,7 +662,8 @@ internal fun V2ProgressScreen(
         unit?.objectives.orEmpty().forEach { objective ->
             V2Status("${objective.title}: ${objectiveState(objective, learner, pack).name.replace('_', ' ').lowercase()}")
         }
-        Text("Backup is a local export you start. The app does not claim data is protected unless that export succeeded. Restore preview is not finished in this slice.")
+        Text("A local backup is saved only after you start it and it finishes. The app does not claim these records are protected unless that backup succeeded.")
+        V2SecondaryButton("Back up or restore", onBackup, tag = "v2-open-backup")
         V2SecondaryButton("Settings, appearance, and attributions", onSettings)
     }
 }
@@ -706,11 +708,43 @@ internal fun V2SettingsScreen(
 }
 
 @Composable
-internal fun V2AttributionsScreen(onBack: () -> Unit) {
-    V2Scaffold(title = "Attributions", tab = null, onTab = {}, onBack = onBack) {
-        Text("Letter identities are public-domain writing-system facts.")
-        Text("English instruction in this pack is independently authored.")
-        Text("Packaged Shtooka and OpenRussian catalog files remain a rights archive. They are not assigned to Units 1–2.")
-        Text("Share-alike catalog notices stay in the packaged license texts. Public release is not approved.")
+internal fun V2AttributionsScreen(pack: V2CurriculumPack, onBack: () -> Unit) {
+    val context = androidx.compose.ui.platform.LocalContext.current
+    var catalog by androidx.compose.runtime.remember { androidx.compose.runtime.mutableStateOf<dev.russiancompanion.v2.notices.OfflineNoticeCatalog?>(null) }
+    androidx.compose.runtime.LaunchedEffect(pack.packId, pack.packVersion) {
+        catalog = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+            dev.russiancompanion.v2.notices.loadOfflineNotices(context, pack)
+        }
+    }
+    val notices = catalog
+    V2LazyScaffold(title = "Attributions", tab = null, onTab = {}, onBack = onBack) {
+        item {
+            Text(
+                "Licenses and attributions packaged with this app. These notices stay on the device.",
+                modifier = Modifier.semantics { testTag = "v2-attributions-heading" },
+            )
+        }
+        if (notices == null) {
+            item { V2Status("Preparing notices") }
+        } else {
+            item { Text(notices.penguinStatement) }
+            items(notices.sources, key = { "source:${it.id}" }) { source ->
+                Text(source.creatorOrProject, style = MaterialTheme.typography.titleMedium)
+                Text("Source: ${source.id}")
+                Text("License: ${source.license}")
+                Text(source.attribution)
+                Text("Modification: ${source.modification}")
+                Text("Share-alike: ${source.shareAlike}")
+                source.licenseUrls.forEach { url -> Text(url) }
+                V2Status(source.availability)
+                Spacer(Modifier.height(12.dp))
+            }
+            items(notices.licenses, key = { "license:${it.name}" }) { license ->
+                Text(license.title, style = MaterialTheme.typography.titleMedium)
+                V2Status(license.availability)
+                Text(license.body)
+                Spacer(Modifier.height(12.dp))
+            }
+        }
     }
 }

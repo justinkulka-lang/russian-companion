@@ -16,6 +16,37 @@ import dev.russiancompanion.domain.progress.captureProgressSnapshot
 import dev.russiancompanion.domain.progress.exportCompletionAccepted
 import dev.russiancompanion.domain.progress.reproduceProgress
 import dev.russiancompanion.domain.navigation.LicenseNoticeOption
+import dev.russiancompanion.v2.backup.BACKUP_SCHEMA_VERSION
+import dev.russiancompanion.v2.backup.BackupActivityLog
+import dev.russiancompanion.v2.backup.BackupAttempt
+import dev.russiancompanion.v2.backup.BackupBookAttestation
+import dev.russiancompanion.v2.backup.BackupBookmark
+import dev.russiancompanion.v2.backup.BackupDecision
+import dev.russiancompanion.v2.backup.BackupEvidence
+import dev.russiancompanion.v2.backup.BackupLearnerState
+import dev.russiancompanion.v2.backup.BackupNote
+import dev.russiancompanion.v2.backup.BackupPlanInstance
+import dev.russiancompanion.v2.backup.BackupProfile
+import dev.russiancompanion.v2.backup.BackupRecording
+import dev.russiancompanion.v2.backup.BackupStep
+import dev.russiancompanion.v2.backup.BackupTutorItem
+import dev.russiancompanion.v2.backup.BackupTutorRequirement
+import dev.russiancompanion.v2.backup.BackupUnitCompletion
+import dev.russiancompanion.v2.backup.GovernedLearnerDocument
+import dev.russiancompanion.v2.backup.GovernedReplaceOutcome
+import dev.russiancompanion.v2.backup.PreservedExportRecord
+import dev.russiancompanion.v2.backup.ReplacementJournal
+import dev.russiancompanion.v2.backup.StagedRecording
+import dev.russiancompanion.v2.backup.V2BackupFaults
+import dev.russiancompanion.v2.backup.backupJson
+import dev.russiancompanion.v2.data.V2AttemptEntity
+import dev.russiancompanion.v2.data.V2BookAttestationEntity
+import dev.russiancompanion.v2.data.V2BookmarkEntity
+import dev.russiancompanion.v2.data.V2NoteEntity
+import dev.russiancompanion.v2.data.V2ProfileEntity
+import dev.russiancompanion.v2.data.V2StepProgressEntity
+import dev.russiancompanion.v2.data.V2TutorItemEntity
+import dev.russiancompanion.v2.data.V2UnitCompletionEntity
 import dev.russiancompanion.domain.practice.StoredRecordingRef
 import dev.russiancompanion.domain.practice.completedRecordingCountsTowardPlan
 import dev.russiancompanion.domain.practice.listenCompletionAccepted
@@ -852,6 +883,7 @@ internal class LocalStore private constructor(
     }
 
     private fun sweepOrphanRecordingFilesLocked() {
+        recoverInterruptedReplacementLocked()
         val root = recordingRoot ?: return
         if (!root.isDirectory) return
         val referenced = database.users().recordings().map { File(it.localFileReference).name }.toSet()
@@ -860,6 +892,659 @@ internal class LocalStore private constructor(
                 file.delete()
             }
         }
+    }
+
+    internal fun governedLearnerDocument(): GovernedLearnerDocument = call { readGovernedLearnerDocument() }
+
+    internal fun governedLearnerFingerprint(): String = call {
+        backupJson.encodeToString(GovernedLearnerDocument.serializer(), readGovernedLearnerDocument())
+    }
+
+    internal fun recordingDirectory(): File? = recordingRoot
+
+    internal fun recordingFile(reference: String): File? {
+        val root = recordingRoot ?: return null
+        if (reference.isBlank() || reference.contains("..") || reference.startsWith("/")) return null
+        val target = File(root, File(reference).name)
+        return if (target.isFile && target.length() > 0L) target else null
+    }
+
+    internal fun replaceGovernedLearner(
+        document: GovernedLearnerDocument,
+        recordings: List<StagedRecording>,
+    ): GovernedReplaceOutcome = call {
+        if (!referencesResolve(document)) return@call GovernedReplaceOutcome.UNCHANGED
+        if (V2BackupFaults.failBeforeMutation) return@call GovernedReplaceOutcome.UNCHANGED
+        val root = recordingRoot
+        if (root == null) {
+            if (document.recordings.isNotEmpty() || recordings.isNotEmpty()) return@call GovernedReplaceOutcome.UNCHANGED
+            return@call replaceDocumentOnly(document)
+        }
+        if (!root.exists() && !root.mkdirs()) return@call GovernedReplaceOutcome.UNCHANGED
+        recoverInterruptedReplacementLocked()
+        if (replacementPending(root)) return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
+        val workspace = replacementWorkspace(root)
+        val snapshotDir = File(workspace, "snapshot")
+        workspace.deleteRecursively()
+        if (!snapshotDir.mkdirs()) return@call GovernedReplaceOutcome.UNCHANGED
+        val previous = readGovernedLearnerDocument()
+        val previousExports = database.users().exports()
+        if (!copyRecordingFiles(root, snapshotDir)) {
+            workspace.deleteRecursively()
+            return@call GovernedReplaceOutcome.UNCHANGED
+        }
+        val staged = try {
+            stageIncomingRecordings(document, recordings, File(workspace, "staged"))
+        } catch (_: IOException) {
+            workspace.deleteRecursively()
+            return@call GovernedReplaceOutcome.UNCHANGED
+        }
+        if (!publishStagedRecordings(root, staged)) {
+            return@call rollbackReplacementFiles(root, snapshotDir, workspace)
+        }
+        if (!writeReplacementJournal(root, previous, document, previousExports, snapshotDir)) {
+            return@call rollbackReplacementFiles(root, snapshotDir, workspace)
+        }
+        if (V2BackupFaults.crashAfterFileSwapBeforeCommit) {
+            return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
+        }
+        val committed = try {
+            database.runInTransaction {
+                applyGovernedDocument(document)
+                if (V2BackupFaults.failInsideReplacement) {
+                    throw IllegalStateException("replacement-interrupted")
+                }
+            }
+            true
+        } catch (_: Exception) {
+            false
+        }
+        if (!committed || V2BackupFaults.failAfterCommit) {
+            if (committed && !reapplyPreviousDocument(previous, previousExports)) {
+                return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
+            }
+            return@call rollbackReplacementFiles(root, snapshotDir, workspace)
+        }
+        if (!markReplacementJournalCommitted(root)) {
+            if (!reapplyPreviousDocument(previous, previousExports)) {
+                return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
+            }
+            return@call rollbackReplacementFiles(root, snapshotDir, workspace)
+        }
+        deleteRetiredRecordings(root, staged.map { it.first }.toSet())
+        if (swapArtifactsRemain(root)) return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
+        deleteReplacementJournal(root)
+        workspace.deleteRecursively()
+        GovernedReplaceOutcome.REPLACED
+    }
+
+    private fun replaceDocumentOnly(document: GovernedLearnerDocument): GovernedReplaceOutcome {
+        return try {
+            database.runInTransaction {
+                applyGovernedDocument(document)
+                if (V2BackupFaults.failInsideReplacement || V2BackupFaults.failAfterCommit) {
+                    throw IllegalStateException("replacement-interrupted")
+                }
+            }
+            GovernedReplaceOutcome.REPLACED
+        } catch (_: Exception) {
+            GovernedReplaceOutcome.UNCHANGED
+        }
+    }
+
+    private fun referencesResolve(document: GovernedLearnerDocument): Boolean {
+        if (document.profile.id != V2ProfileEntity.LOCAL_ID) return false
+        val bundled = database.bundled()
+        val learnerSegment = document.learnerState?.activeSegmentId
+        if (learnerSegment != null && bundled.segment(learnerSegment) == null) return false
+        val planIds = document.planInstances.map { it.id }.toSet()
+        val activityIds = document.activityLogs.map { it.id }.toSet()
+        if (document.planInstances.any { bundled.segment(it.segmentId) == null || bundled.plan(it.planDefinitionId) == null }) {
+            return false
+        }
+        if (document.activityLogs.any { log ->
+                (log.segmentId != null && bundled.segment(log.segmentId) == null) ||
+                    (log.planInstanceId != null && log.planInstanceId !in planIds)
+            }
+        ) {
+            return false
+        }
+        if (document.evidence.any { bundled.gate(it.gateDefinitionId) == null || !known<EvidenceType>(it.evidenceType) || !known<SelfAttestationStatus>(it.selfAttestationStatus) }) {
+            return false
+        }
+        if (document.tutorRequirements.any { bundled.gate(it.gateDefinitionId) == null }) return false
+        if (document.decisions.any { bundled.gate(it.gateDefinitionId) == null || !known<GateDecisionStatus>(it.status) }) {
+            return false
+        }
+        if (document.activityLogs.any { !known<ActivityCategory>(it.category) }) return false
+        if (document.planInstances.any { !known<CompletionState>(it.completionState) }) return false
+        if (document.recordings.any { recording ->
+                bundled.audio(recording.audioModelId) == null ||
+                    !known<CompletionState>(recording.completionState) ||
+                    (recording.activityLogId != null && recording.activityLogId !in activityIds) ||
+                    recording.localFileReference.isBlank() ||
+                    recording.localFileReference.contains("..") ||
+                    recording.localFileReference.startsWith("/")
+            }
+        ) {
+            return false
+        }
+        return true
+    }
+
+    private fun applyGovernedDocument(document: GovernedLearnerDocument) {
+        val users = database.users()
+        val curriculum = database.v2()
+        users.deleteAllRecordings()
+        users.deleteAllDecisions()
+        users.deleteAllEvidence()
+        users.deleteAllTutorRequirements()
+        users.deleteAllActivityLogs()
+        users.deleteAllPlanInstances()
+        users.deleteLearnerState()
+        users.deleteAllExports()
+        curriculum.deleteAttempts()
+        curriculum.deleteSteps()
+        curriculum.deleteBookmarks()
+        curriculum.deleteNotes()
+        curriculum.deleteTutorQueue()
+        curriculum.deleteBookAttestations()
+        curriculum.deleteUnitCompletions()
+        curriculum.deleteProfiles()
+        document.learnerState?.let { state ->
+            users.insertLearnerIfAbsent(
+                LearnerStateEntity(
+                    id = state.id,
+                    activeSegmentId = state.activeSegmentId,
+                    onboardingCompleted = state.onboardingCompleted,
+                    planContext = state.planContext,
+                ),
+            )
+        }
+        document.planInstances.forEach { plan ->
+            users.upsertPlanInstance(
+                PlanInstanceEntity(
+                    id = plan.id,
+                    localDate = plan.localDate,
+                    segmentId = plan.segmentId,
+                    planDefinitionId = plan.planDefinitionId,
+                    completionState = CompletionState.valueOf(plan.completionState),
+                    completedAtLocal = plan.completedAtLocal,
+                ),
+            )
+        }
+        document.activityLogs.forEach { log ->
+            users.insertActivityLog(
+                ActivityLogEntity(
+                    id = log.id,
+                    category = ActivityCategory.valueOf(log.category),
+                    durationMinutes = log.durationMinutes,
+                    completed = log.completed,
+                    recordedAtLocal = log.recordedAtLocal,
+                    segmentId = log.segmentId,
+                    planInstanceId = log.planInstanceId,
+                    selfAttested = log.selfAttested,
+                ),
+            )
+        }
+        document.evidence.forEach { evidence ->
+            users.insertEvidence(
+                GateEvidenceEntity(
+                    id = evidence.id,
+                    gateDefinitionId = evidence.gateDefinitionId,
+                    evidenceType = EvidenceType.valueOf(evidence.evidenceType),
+                    enteredValue = evidence.enteredValue,
+                    selfAttestationStatus = SelfAttestationStatus.valueOf(evidence.selfAttestationStatus),
+                    recordedAtLocal = evidence.recordedAtLocal,
+                ),
+            )
+        }
+        document.tutorRequirements.forEach { requirement ->
+            users.upsertTutorRequirement(
+                GateTutorRequirementEntity(
+                    gateDefinitionId = requirement.gateDefinitionId,
+                    recordedAtLocal = requirement.recordedAtLocal,
+                ),
+            )
+        }
+        document.decisions.forEach { decision ->
+            users.insertDecision(
+                GateDecisionEntity(
+                    id = decision.id,
+                    gateDefinitionId = decision.gateDefinitionId,
+                    ruleVersion = decision.ruleVersion,
+                    ruleSnapshot = decision.ruleSnapshot,
+                    evidenceIds = decision.evidenceIds,
+                    conditionOutcomes = decision.conditionOutcomes,
+                    status = GateDecisionStatus.valueOf(decision.status),
+                    evaluatedAtLocal = decision.evaluatedAtLocal,
+                ),
+            )
+        }
+        document.recordings.forEach { recording ->
+            users.insertRecording(
+                RecordingRecordEntity(
+                    id = recording.id,
+                    audioModelId = recording.audioModelId,
+                    localFileReference = recording.localFileReference,
+                    createdAtLocal = recording.createdAtLocal,
+                    markedForTutorReview = recording.markedForTutorReview,
+                    completionState = CompletionState.valueOf(recording.completionState),
+                    activityLogId = recording.activityLogId,
+                ),
+            )
+        }
+        curriculum.upsertProfile(document.profile.toEntity())
+        document.steps.forEach { curriculum.upsertStep(V2StepProgressEntity(it.stepId, it.completedAtLocal)) }
+        document.attempts.forEach {
+            curriculum.insertAttempt(V2AttemptEntity(it.id, it.itemId, it.selected, it.correct, it.recordedAtLocal))
+        }
+        document.bookmarks.forEach { curriculum.upsertBookmark(V2BookmarkEntity(it.targetId, it.kind, it.createdAtLocal)) }
+        document.notes.forEach {
+            curriculum.insertNote(V2NoteEntity(it.id, it.targetId, it.text, it.createdAtLocal, it.userAuthoredRussian))
+        }
+        document.tutorQueue.forEach { curriculum.insertTutorItem(V2TutorItemEntity(it.id, it.targetId, it.note, it.createdAtLocal)) }
+        document.bookAttestations.forEach { curriculum.upsertBookAttestation(V2BookAttestationEntity(it.unitNumber, it.recordedAtLocal)) }
+        document.unitCompletions.forEach { curriculum.upsertUnitCompletion(V2UnitCompletionEntity(it.unitNumber, it.recordedAtLocal)) }
+    }
+
+    private fun BackupProfile.toEntity(): V2ProfileEntity {
+        return V2ProfileEntity(
+            id = id,
+            onboardingCompleted = onboardingCompleted,
+            currentUnitNumber = currentUnitNumber,
+            startingPoint = startingPoint,
+            hasPenguin = hasPenguin,
+            hasAnki = hasAnki,
+            hasBinder = hasBinder,
+            hasTutor = hasTutor,
+            dailyMinutes = dailyMinutes,
+            transliterationEnabled = transliterationEnabled,
+            currentSessionId = currentSessionId,
+            currentStepIndex = currentStepIndex,
+        )
+    }
+
+    private inline fun <reified T : Enum<T>> known(value: String): Boolean {
+        return enumValues<T>().any { it.name == value }
+    }
+
+    private fun replacementWorkspace(root: File): File {
+        return File(root.parentFile, "backup-replace-${root.name}-workspace")
+    }
+
+    private fun replacementJournalFile(root: File): File {
+        return File(root.parentFile, "backup-replace-${root.name}.json")
+    }
+
+    private fun stageIncomingRecordings(
+        document: GovernedLearnerDocument,
+        recordings: List<StagedRecording>,
+        stageDir: File,
+    ): List<Pair<String, File>> {
+        if (!stageDir.isDirectory && !stageDir.mkdirs()) throw IOException("stage-dir")
+        val byName = recordings.associateBy { File(it.recording.localFileReference).name }
+        if (byName.size != recordings.size) throw IOException("duplicate-recording")
+        val names = document.recordings.map { File(it.localFileReference).name }
+        if (names.size != names.toSet().size || names.toSet() != byName.keys) throw IOException("recording-set")
+        return names.map { name ->
+            val source = byName.getValue(name).file
+            if (!source.isFile || source.length() <= 0L) throw IOException("missing-bytes")
+            val dest = File(stageDir, name)
+            copyFile(source, dest)
+            if (dest.length() != source.length()) throw IOException("short-stage")
+            name to dest
+        }
+    }
+
+    private fun publishStagedRecordings(root: File, staged: List<Pair<String, File>>): Boolean {
+        var replaced = 0
+        return try {
+            staged.forEach { (name, source) ->
+                val incoming = File(root, "$name.incoming")
+                copyFile(source, incoming)
+                if (incoming.length() != source.length()) throw IOException("short-copy")
+            }
+            staged.forEach { (name, _) ->
+                val live = File(root, name)
+                val retired = File(root, "$name.retired")
+                if (retired.exists() && !retired.delete()) throw IOException("retire-clear")
+                if (live.exists() && !live.renameTo(retired)) throw IOException("retire-failed")
+                val incoming = File(root, "$name.incoming")
+                if (!incoming.renameTo(live)) throw IOException("promote-failed")
+                replaced += 1
+                if (V2BackupFaults.failDuringFilePublish && replaced == 1) {
+                    throw IOException("publish-interrupted")
+                }
+            }
+            true
+        } catch (_: IOException) {
+            false
+        }
+    }
+
+    private fun copyRecordingFiles(root: File, snapshotDir: File): Boolean {
+        val files = root.listFiles()?.filter { file ->
+            file.isFile && !file.name.endsWith(".incoming") && !file.name.endsWith(".retired")
+        }.orEmpty()
+        return try {
+            files.forEach { file ->
+                val dest = File(snapshotDir, file.name)
+                copyFile(file, dest)
+                if (dest.length() != file.length()) throw IOException("short-snapshot")
+            }
+            true
+        } catch (_: IOException) {
+            false
+        }
+    }
+
+    private fun restoreRecordingSnapshot(root: File, snapshotDir: File): Boolean {
+        if (V2BackupFaults.failSnapshotRestore) return false
+        return try {
+            val snap = snapshotDir.listFiles()?.filter { it.isFile }.orEmpty()
+            val keep = snap.map { it.name }.toSet()
+            root.listFiles()?.forEach { file ->
+                if (file.isFile && (file.name.endsWith(".incoming") || file.name.endsWith(".retired"))) {
+                    file.delete()
+                }
+            }
+            snap.forEach { source ->
+                val incoming = File(root, "${source.name}.incoming")
+                copyFile(source, incoming)
+                if (incoming.length() != source.length()) throw IOException("short-restore")
+                val live = File(root, source.name)
+                if (live.exists() && !live.delete()) throw IOException("restore-replace")
+                if (!incoming.renameTo(live)) throw IOException("restore-rename")
+            }
+            root.listFiles()?.forEach { file ->
+                if (file.isFile && file.name !in keep) file.delete()
+            }
+            true
+        } catch (_: IOException) {
+            false
+        }
+    }
+
+    private fun deleteRetiredRecordings(root: File, keep: Set<String>) {
+        root.listFiles()?.forEach { file ->
+            if (!file.isFile) return@forEach
+            if (file.name.endsWith(".retired") || file.name.endsWith(".incoming") || file.name !in keep) {
+                file.delete()
+            }
+        }
+    }
+
+    private fun writeReplacementJournal(
+        root: File,
+        previous: GovernedLearnerDocument,
+        next: GovernedLearnerDocument,
+        exports: List<ExportRecordEntity>,
+        snapshotDir: File,
+    ): Boolean {
+        if (V2BackupFaults.failJournalWrite) return false
+        val journal = ReplacementJournal(
+            phase = "FILES_SWAPPED",
+            previousFingerprint = documentFingerprint(previous),
+            nextFingerprint = documentFingerprint(next),
+            snapshotDir = snapshotDir.absolutePath,
+            previousDocument = backupJson.encodeToString(GovernedLearnerDocument.serializer(), previous),
+            exports = exports.map { record ->
+                PreservedExportRecord(
+                    id = record.id,
+                    exportedAtLocal = record.exportedAtLocal,
+                    destinationReference = record.destinationReference,
+                    logCount = record.logCount,
+                    evidenceCount = record.evidenceCount,
+                    progressCount = record.progressCount,
+                    recordingCount = record.recordingCount,
+                    status = record.status.name,
+                    documentReference = record.documentReference,
+                    recordingSetDigest = record.recordingSetDigest,
+                )
+            },
+        )
+        return writeJournalAtomically(replacementJournalFile(root), journal)
+    }
+
+    private fun markReplacementJournalCommitted(root: File): Boolean {
+        val journalFile = replacementJournalFile(root)
+        if (!journalFile.isFile) return false
+        return try {
+            val journal = backupJson.decodeFromString(ReplacementJournal.serializer(), journalFile.readText())
+            writeJournalAtomically(journalFile, journal.copy(phase = "COMMITTED"))
+        } catch (_: Exception) {
+            false
+        }
+    }
+
+    private fun writeJournalAtomically(dest: File, journal: ReplacementJournal): Boolean {
+        val temp = File(dest.parentFile, "${dest.name}.partial")
+        return try {
+            temp.writeText(backupJson.encodeToString(ReplacementJournal.serializer(), journal))
+            if (temp.renameTo(dest)) return true
+            val previous = File(dest.parentFile, "${dest.name}.previous")
+            if (!dest.isFile || !dest.renameTo(previous)) {
+                temp.delete()
+                return false
+            }
+            if (!temp.renameTo(dest)) {
+                previous.renameTo(dest)
+                temp.delete()
+                return false
+            }
+            previous.delete()
+            true
+        } catch (_: IOException) {
+            temp.delete()
+            false
+        }
+    }
+
+    private fun deleteReplacementJournal(root: File) {
+        replacementJournalFile(root).delete()
+        File(replacementJournalFile(root).parentFile, "${replacementJournalFile(root).name}.partial").delete()
+    }
+
+    private fun rollbackReplacementFiles(
+        root: File,
+        snapshotDir: File,
+        workspace: File,
+    ): GovernedReplaceOutcome {
+        if (!restoreRecordingSnapshot(root, snapshotDir)) return GovernedReplaceOutcome.RECOVERY_REQUIRED
+        deleteReplacementJournal(root)
+        workspace.deleteRecursively()
+        return GovernedReplaceOutcome.UNCHANGED
+    }
+
+    private fun reapplyPreviousDocument(
+        previous: GovernedLearnerDocument,
+        exports: List<ExportRecordEntity>,
+    ): Boolean {
+        return try {
+            database.runInTransaction {
+                applyGovernedDocument(previous)
+                exports.forEach { database.users().insertExport(it) }
+            }
+            true
+        } catch (_: Exception) {
+            false
+        }
+    }
+
+    private fun replacementPending(root: File): Boolean {
+        if (replacementJournalFile(root).isFile) return true
+        if (replacementWorkspace(root).exists()) return true
+        return swapArtifactsRemain(root)
+    }
+
+    private fun swapArtifactsRemain(root: File): Boolean {
+        return root.listFiles()?.any { file ->
+            file.isFile && (file.name.endsWith(".retired") || file.name.endsWith(".incoming"))
+        } == true
+    }
+
+    private fun recoverInterruptedReplacementLocked() {
+        val root = recordingRoot ?: return
+        val journalFile = replacementJournalFile(root)
+        val workspace = replacementWorkspace(root)
+        if (!journalFile.isFile) {
+            val snapshotDir = File(workspace, "snapshot")
+            if (snapshotDir.isDirectory) {
+                if (restoreSnapshot(root, snapshotDir)) workspace.deleteRecursively()
+            } else {
+                undoOrphanedSwapArtifacts(root)
+            }
+            return
+        }
+        val journal = try {
+            backupJson.decodeFromString(ReplacementJournal.serializer(), journalFile.readText())
+        } catch (_: Exception) {
+            if (restoreSnapshot(root, File(workspace, "snapshot"))) {
+                journalFile.delete()
+                workspace.deleteRecursively()
+            }
+            return
+        }
+        if (journal.phase == "COMMITTED") {
+            deleteRetiredRecordings(root, readGovernedLearnerDocument().recordings.map { File(it.localFileReference).name }.toSet())
+            if (swapArtifactsRemain(root)) return
+            journalFile.delete()
+            workspace.deleteRecursively()
+            return
+        }
+        val current = documentFingerprint(readGovernedLearnerDocument())
+        if (current != journal.previousFingerprint) {
+            try {
+                val previous = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), journal.previousDocument)
+                database.runInTransaction {
+                    applyGovernedDocument(previous)
+                    journal.exports.forEach { database.users().insertExport(preservedExport(it)) }
+                }
+            } catch (_: Exception) {
+                return
+            }
+        }
+        if (!restoreSnapshot(root, File(journal.snapshotDir))) return
+        journalFile.delete()
+        workspace.deleteRecursively()
+    }
+
+    private fun restoreSnapshot(root: File, snapshotDir: File): Boolean {
+        if (!snapshotDir.isDirectory) return false
+        return restoreRecordingSnapshot(root, snapshotDir)
+    }
+
+    private fun preservedExport(record: PreservedExportRecord): ExportRecordEntity {
+        return ExportRecordEntity(
+            id = record.id,
+            exportedAtLocal = record.exportedAtLocal,
+            destinationReference = record.destinationReference,
+            logCount = record.logCount,
+            evidenceCount = record.evidenceCount,
+            progressCount = record.progressCount,
+            recordingCount = record.recordingCount,
+            status = ExportStatus.valueOf(record.status),
+            documentReference = record.documentReference,
+            recordingSetDigest = record.recordingSetDigest,
+        )
+    }
+
+    private fun undoOrphanedSwapArtifacts(root: File) {
+        root.listFiles()?.filter { it.isFile && it.name.endsWith(".retired") }?.forEach { retired ->
+            val live = File(root, retired.name.removeSuffix(".retired"))
+            if (live.exists()) live.delete()
+            retired.renameTo(live)
+        }
+        root.listFiles()?.filter { it.isFile && it.name.endsWith(".incoming") }?.forEach { it.delete() }
+    }
+
+    private fun documentFingerprint(document: GovernedLearnerDocument): String {
+        return backupJson.encodeToString(GovernedLearnerDocument.serializer(), document)
+    }
+
+    private fun copyFile(source: File, dest: File) {
+        dest.parentFile?.mkdirs()
+        source.inputStream().use { input -> dest.outputStream().use { output -> input.copyTo(output) } }
+    }
+
+    private fun readGovernedLearnerDocument(): GovernedLearnerDocument {
+        val curriculum = database.v2()
+        val users = database.users()
+        val profile = readV2Profile()
+        return GovernedLearnerDocument(
+            schemaVersion = BACKUP_SCHEMA_VERSION,
+            profile = BackupProfile(
+                id = profile.id,
+                onboardingCompleted = profile.onboardingCompleted,
+                currentUnitNumber = profile.currentUnitNumber,
+                startingPoint = profile.startingPoint,
+                hasPenguin = profile.hasPenguin,
+                hasAnki = profile.hasAnki,
+                hasBinder = profile.hasBinder,
+                hasTutor = profile.hasTutor,
+                dailyMinutes = profile.dailyMinutes,
+                transliterationEnabled = profile.transliterationEnabled,
+                currentSessionId = profile.currentSessionId,
+                currentStepIndex = profile.currentStepIndex,
+            ),
+            steps = curriculum.steps().sortedBy { it.stepId }.map { BackupStep(it.stepId, it.completedAtLocal) },
+            attempts = curriculum.attempts().map { BackupAttempt(it.id, it.itemId, it.selected, it.correct, it.recordedAtLocal) },
+            bookmarks = curriculum.bookmarks().map { BackupBookmark(it.targetId, it.kind, it.createdAtLocal) },
+            notes = curriculum.notes().map { BackupNote(it.id, it.targetId, it.text, it.createdAtLocal, it.userAuthoredRussian) },
+            tutorQueue = curriculum.tutorQueue().map { BackupTutorItem(it.id, it.targetId, it.note, it.createdAtLocal) },
+            bookAttestations = curriculum.bookAttestations().sortedBy { it.unitNumber }.map {
+                BackupBookAttestation(it.unitNumber, it.recordedAtLocal)
+            },
+            unitCompletions = curriculum.unitCompletions().sortedBy { it.unitNumber }.map {
+                BackupUnitCompletion(it.unitNumber, it.recordedAtLocal)
+            },
+            learnerState = users.learner(LearnerStateEntity.LOCAL_ID)?.let {
+                BackupLearnerState(it.id, it.activeSegmentId, it.onboardingCompleted, it.planContext)
+            },
+            planInstances = users.planInstances().map {
+                BackupPlanInstance(it.id, it.localDate, it.segmentId, it.planDefinitionId, it.completionState.name, it.completedAtLocal)
+            },
+            activityLogs = users.activityLogs().map {
+                BackupActivityLog(
+                    it.id,
+                    it.category.name,
+                    it.durationMinutes,
+                    it.completed,
+                    it.recordedAtLocal,
+                    it.segmentId,
+                    it.planInstanceId,
+                    it.selfAttested,
+                )
+            },
+            evidence = users.allEvidence().map {
+                BackupEvidence(it.id, it.gateDefinitionId, it.evidenceType.name, it.enteredValue, it.selfAttestationStatus.name, it.recordedAtLocal)
+            },
+            tutorRequirements = users.allTutorRequirements().map { BackupTutorRequirement(it.gateDefinitionId, it.recordedAtLocal) },
+            decisions = users.decisions().map {
+                BackupDecision(
+                    it.id,
+                    it.gateDefinitionId,
+                    it.ruleVersion,
+                    it.ruleSnapshot,
+                    it.evidenceIds,
+                    it.conditionOutcomes,
+                    it.status.name,
+                    it.evaluatedAtLocal,
+                )
+            },
+            recordings = users.recordings().map {
+                BackupRecording(
+                    it.id,
+                    it.audioModelId,
+                    it.localFileReference,
+                    it.createdAtLocal,
+                    it.markedForTutorReview,
+                    it.completionState.name,
+                    it.activityLogId,
+                )
+            },
+        )
     }
 
     internal suspend fun <T> awaitStore(block: () -> T): T = withContext(ioDispatcher) { block() }
@@ -931,6 +1616,7 @@ internal class LocalStore private constructor(
                 .build()
             val store = LocalStore(database, File(appContext.filesDir, "recordings-$name"))
             store.applySeed(null)
+            store.sweepOrphanRecordingFiles()
             return store
         }
 

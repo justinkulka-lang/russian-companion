@@ -174,6 +174,14 @@ internal fun V2App(
                     null -> V2PersistencePhase.READY
                 },
             )
+            val backup = V2BackupCoordinator.get(
+                activity = activity,
+                store = checkNotNull(store),
+                applicationId = dev.russiancompanion.BuildConfig.APPLICATION_ID,
+                packId = pack.packId,
+                packVersion = pack.packVersion,
+                appearanceStore = appearanceStore,
+            )
             CompositionLocalProvider(LocalV2PersistenceStatus provides banner) {
                 V2NavHost(
                     navController = rememberNavController(),
@@ -283,6 +291,10 @@ internal fun V2App(
                         }
                         Unit
                     },
+                    backup = backup,
+                    recordedAt = recordedAt,
+                    writesBusy = writes.pending.isNotEmpty(),
+                    onRestored = { writes.reloadAfterRestore() },
                 )
             }
         }
