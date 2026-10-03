@@ -67,6 +67,10 @@ class RuntimeCorrectionTest {
     @After
     fun close() {
         V2UiWork.blockForTests = null
+        LocalStore.learnerReadFailuresRemainingForTests.set(0)
+        LocalStore.holdNextLearnerRefreshForTests = null
+        LocalStore.learnerRefreshEnteredForTests = null
+        LocalStore.failHeldLearnerRefreshForTests = false
         stores.forEach { it.close() }
     }
 
@@ -436,7 +440,69 @@ class RuntimeCorrectionTest {
     }
 
     @Test
-    fun unsavedNoteDraftSurvivesActivityRecreation() {
+    fun olderSaveRefreshCannotHideANewerRejectedWrite() {
+        V2UiWork.blockForTests = false
+        val pack = pack()
+        val store = openedStore()
+        val gate = GatedPersistence(StoreV2Persistence(store))
+        val step = pack.step("u1-st-orient")!!.second
+        showStep(store, pack, step.id, persistence = gate)
+        awaitQuiet(gate)
+        compose.onNodeWithTag("v2-note-draft").performScrollTo().performTextInput("kept note")
+        gate.gateRefresh = true
+        compose.onNodeWithTag("v2-save-note").performScrollTo().performClick()
+        awaitEntered(gate.entered)
+        gate.failTutor = true
+        compose.onNodeWithTag("v2-tutor").performScrollTo().performClick()
+        awaitText("Not saved. The previous record is unchanged.")
+        gate.release.countDown()
+        awaitQuiet(gate)
+        compose.onNodeWithText("Not saved. The previous record is unchanged.").assertIsDisplayed()
+        assertEquals(0, compose.onAllNodesWithText("Saved").fetchSemanticsNodes().size)
+        assertEquals(1, store.v2Notes().size)
+        assertEquals(0, store.v2TutorQueue().size)
+        assertEquals(step.id, store.v2Notes().single().targetId)
+    }
+
+    @Test
+    fun olderSaveRefreshCannotClaimSuccessWhileALaterWriteIsPending() {
+        V2UiWork.blockForTests = false
+        val pack = pack()
+        val store = openedStore()
+        val gate = GatedPersistence(StoreV2Persistence(store))
+        val tutorEntered = CountDownLatch(1)
+        val tutorRelease = CountDownLatch(1)
+        gate.separateTutorGate = tutorEntered to tutorRelease
+        val step = pack.step("u1-st-orient")!!.second
+        showStep(store, pack, step.id, persistence = gate)
+        awaitQuiet(gate)
+        compose.onNodeWithTag("v2-note-draft").performScrollTo().performTextInput("kept note")
+        gate.gateRefresh = true
+        compose.onNodeWithTag("v2-save-note").performScrollTo().performClick()
+        awaitEntered(gate.entered)
+        gate.gateTutor = true
+        compose.onNodeWithTag("v2-tutor").performScrollTo().performClick()
+        awaitEntered(tutorEntered)
+        gate.release.countDown()
+        awaitQuiet(gate)
+        compose.onNodeWithText("Saving").assertIsDisplayed()
+        assertEquals(0, compose.onAllNodesWithText("Saved").fetchSemanticsNodes().size)
+        compose.onNodeWithTag("v2-tutor").performScrollTo().assertIsNotEnabled()
+        assertEquals(1, store.v2Notes().size)
+        assertEquals(0, store.v2TutorQueue().size)
+        tutorRelease.countDown()
+        awaitText("Saved")
+        assertEquals(1, store.v2TutorQueue().size)
+        assertEquals(1, store.v2Notes().size)
+        assertEquals(1, compose.onAllNodesWithText("Saved").fetchSemanticsNodes().size)
+    }
+
+    /**
+     * Compose saved-state restoration in the current test Activity.
+     * This does not recreate MainActivity.
+     */
+    @Test
+    fun unsavedNoteDraftSurvivesComposeSavedState() {
         V2UiWork.blockForTests = false
         val pack = pack()
         val store = openedStore()
@@ -470,8 +536,12 @@ class RuntimeCorrectionTest {
         assertEquals(index, store.v2Profile().currentStepIndex)
     }
 
+    /**
+     * Compose saved-state restoration in the current test Activity.
+     * This does not recreate MainActivity or its startup path.
+     */
     @Test
-    fun recreationDuringADelayedWriteKeepsOneOutcome() {
+    fun composeSavedStateDuringADelayedWriteKeepsOneOutcome() {
         V2UiWork.blockForTests = false
         val pack = pack()
         val store = openedStore()
@@ -780,8 +850,10 @@ private class GatedPersistence(
     var gateAttempts: Boolean = false
     var gateRefresh: Boolean = false
     var gateTutor: Boolean = false
+    var failTutor: Boolean = false
     var failRefresh: Boolean = false
     var armStaleRefresh: Boolean = false
+    var separateTutorGate: Pair<CountDownLatch, CountDownLatch>? = null
     val tutorCalls = AtomicInteger()
     val completeCalls = AtomicInteger()
     val refreshCalls = AtomicInteger()
@@ -825,9 +897,11 @@ private class GatedPersistence(
 
     override suspend fun addTutor(targetId: String, note: String, recordedAt: String) {
         tutorCalls.incrementAndGet()
+        if (failTutor) error("tutor rejected")
         if (gateTutor) {
-            entered.countDown()
-            withContext(Dispatchers.IO) { release.await(10, TimeUnit.SECONDS) }
+            val (tutorEntered, tutorRelease) = separateTutorGate ?: (entered to release)
+            tutorEntered.countDown()
+            withContext(Dispatchers.IO) { tutorRelease.await(10, TimeUnit.SECONDS) }
         }
         delegate.addTutor(targetId, note, recordedAt)
     }

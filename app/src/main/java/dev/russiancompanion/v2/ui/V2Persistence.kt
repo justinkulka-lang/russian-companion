@@ -5,6 +5,12 @@ import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.data.V2ProfileEntity
 
 internal interface V2Persistence {
+    /**
+     * Identity of the open database. A new wrapper around the same store keeps
+     * in-flight work. A reopened store is a different key.
+     */
+    val bindingKey: Any get() = this
+
     suspend fun learner(): V2LearnerView
     suspend fun profile(): V2ProfileEntity
     suspend fun saveProfile(profile: V2ProfileEntity)
@@ -19,6 +25,8 @@ internal interface V2Persistence {
 }
 
 internal class StoreV2Persistence(private val store: LocalStore) : V2Persistence {
+    override val bindingKey: Any = store
+
     override suspend fun learner(): V2LearnerView = store.v2LearnerViewAsync()
 
     override suspend fun profile(): V2ProfileEntity = store.v2ProfileAsync()

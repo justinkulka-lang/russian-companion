@@ -136,7 +136,7 @@ internal fun V2App(
     var appearance by remember(appearanceStore) { mutableStateOf(defaultAppearancePreference()) }
     var appearanceSaveFailed by remember { mutableStateOf(false) }
     val activity = androidx.compose.ui.platform.LocalContext.current.findActivity()
-    val writes = remember(persistence) {
+    val writes = remember(persistence?.bindingKey) {
         persistence?.let { V2WriteCoordinator.get(activity, it) }
     }
     var noteDrafts by rememberSaveable(stateSaver = NoteDraftSaver) { mutableStateOf<Map<String, String>>(emptyMap()) }

@@ -24,9 +24,13 @@ import dev.russiancompanion.domain.practice.recordingCommitAccepted
 import java.io.File
 import java.io.IOException
 import java.util.concurrent.Callable
+import java.util.concurrent.CountDownLatch
 import java.util.concurrent.ExecutionException
 import java.util.concurrent.Executors
+import java.util.concurrent.TimeUnit
+import java.util.concurrent.atomic.AtomicInteger
 import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.asCoroutineDispatcher
 import kotlinx.coroutines.withContext
 
@@ -644,15 +648,35 @@ internal class LocalStore private constructor(
 
     fun v2LearnerView(): dev.russiancompanion.v2.curriculum.V2LearnerView = call { readV2Learner() }
 
-    internal suspend fun v2LearnerViewAsync(): dev.russiancompanion.v2.curriculum.V2LearnerView =
-        withContext(ioDispatcher) { readV2Learner() }
+    internal suspend fun v2LearnerViewAsync(): dev.russiancompanion.v2.curriculum.V2LearnerView {
+        while (true) {
+            val remaining = learnerReadFailuresRemainingForTests.get()
+            if (remaining <= 0) break
+            if (learnerReadFailuresRemainingForTests.compareAndSet(remaining, remaining - 1)) {
+                error("learner read failed")
+            }
+        }
+        val gate = holdNextLearnerRefreshForTests
+        if (gate != null) {
+            holdNextLearnerRefreshForTests = null
+            learnerRefreshEnteredForTests?.countDown()
+            withContext(Dispatchers.IO) { gate.await(30, TimeUnit.SECONDS) }
+            if (failHeldLearnerRefreshForTests) {
+                failHeldLearnerRefreshForTests = false
+                error("learner read failed")
+            }
+        }
+        return withContext(ioDispatcher) { readV2Learner() }
+    }
 
     fun v2CompleteStep(stepId: String, recordedAtLocal: String) = call {
         writeV2Step(stepId, recordedAtLocal)
     }
 
-    internal suspend fun v2CompleteStepAsync(stepId: String, recordedAtLocal: String) =
+    internal suspend fun v2CompleteStepAsync(stepId: String, recordedAtLocal: String) {
+        asyncStepWritesForTests.incrementAndGet()
         withContext(ioDispatcher) { writeV2Step(stepId, recordedAtLocal) }
+    }
 
     fun v2RecordAttempt(itemId: String, selected: String, correct: Boolean, recordedAtLocal: String) = call {
         writeV2Attempt(itemId, selected, correct, recordedAtLocal)
@@ -852,6 +876,31 @@ internal class LocalStore private constructor(
     }
 
     companion object {
+        /**
+         * Test seam. The next this many asynchronous learner reads fail, including
+         * reads on a store opened later by retry. Synchronous test reads are unaffected.
+         */
+        val learnerReadFailuresRemainingForTests = AtomicInteger(0)
+
+        /**
+         * Test seam. The next asynchronous learner read waits on this latch after
+         * leaving the store thread, then continues. One shot.
+         */
+        @Volatile
+        var holdNextLearnerRefreshForTests: CountDownLatch? = null
+
+        @Volatile
+        var learnerRefreshEnteredForTests: CountDownLatch? = null
+
+        /**
+         * Test seam. After a held asynchronous learner read is released, that read
+         * fails once. Reads that did not take the hold are unaffected.
+         */
+        @Volatile
+        var failHeldLearnerRefreshForTests: Boolean = false
+
+        val asyncStepWritesForTests = AtomicInteger(0)
+
         const val DATABASE_NAME = "russian-companion.db"
         const val SEED_ASSET = "content/bundled-content.json"
         const val CATALOG_NOTICE_ASSET = "content/catalog-notice.txt"

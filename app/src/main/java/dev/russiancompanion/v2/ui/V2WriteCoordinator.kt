@@ -36,15 +36,23 @@ internal fun outcomeStatusText(status: V2OutcomeStatus?): String = when (status)
 /**
  * Survives Activity recreation so an in-flight write is not cancelled and
  * started again. Navigation callbacks stay with the screen that requested them.
+ * A reopened database replaces [persistence]; work from the previous store
+ * cannot publish into the recovered screen.
  */
 internal class V2WriteCoordinator(
-    private val persistence: V2Persistence,
+    persistence: V2Persistence,
 ) : ViewModel() {
+    @Volatile
+    private var persistence: V2Persistence = persistence
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
     private val gate = Mutex()
     private val positionTicket = AtomicInteger()
     private var nextGeneration = 0L
     private var appliedGeneration = 0L
+    private var outcomeGeneration = 0L
+
+    @Volatile
+    private var bindingEpoch = 0L
 
     var learner by mutableStateOf<V2LearnerView?>(null)
         private set
@@ -58,25 +66,18 @@ internal class V2WriteCoordinator(
         private set
 
     init {
-        if (V2UiWork.blocking()) {
-            val loaded = runCatching { runBlocking { persistence.learner() } }
-            if (loaded.isSuccess) {
-                learner = loaded.getOrThrow()
-                selections = learner?.attemptSelections.orEmpty()
-            } else {
-                loadFailed = true
-            }
-        } else {
-            scope.launch {
-                val loaded = runCatching { persistence.learner() }
-                if (loaded.isSuccess) {
-                    learner = loaded.getOrThrow()
-                    selections = learner?.attemptSelections.orEmpty()
-                } else {
-                    loadFailed = true
-                }
-            }
-        }
+        startLoad()
+    }
+
+    /**
+     * Keeps this activity-scoped coordinator. A new wrapper around the same
+     * database does not reload. A different [V2Persistence.bindingKey] drops
+     * the closed store and reads again.
+     */
+    fun rebind(next: V2Persistence) {
+        val previous = persistence.bindingKey
+        persistence = next
+        if (next.bindingKey != previous) startLoad()
     }
 
     fun nextPositionTicket(): Int = positionTicket.incrementAndGet()
@@ -101,29 +102,32 @@ internal class V2WriteCoordinator(
     ): Boolean {
         if (singleFlight && key in pending) return false
         val generation = ++nextGeneration
+        val epoch = bindingEpoch
         if (singleFlight) pending = pending + key
-        if (!quiet) banner = V2OutcomeStatus.SAVING
+        publish(generation, quiet, V2OutcomeStatus.SAVING)
         if (V2UiWork.blocking()) {
-            return finishBlocking(key, singleFlight, quiet, generation, onSuccess, onCommitted, block)
+            return finishBlocking(key, singleFlight, quiet, generation, epoch, onSuccess, onCommitted, block)
         }
         scope.launch {
             val write = gate.withLock { runCatching { block() } }
+            if (epoch != bindingEpoch) return@launch
             if (write.isFailure) {
                 if (singleFlight) pending = pending - key
-                if (!quiet) banner = V2OutcomeStatus.REJECTED
+                publish(generation, quiet, V2OutcomeStatus.REJECTED)
                 return@launch
             }
             onCommitted()
             val refreshed = runCatching { persistence.learner() }
+            if (epoch != bindingEpoch) return@launch
             if (refreshed.isSuccess) {
                 applyLearner(generation, refreshed.getOrThrow())
-                if (!quiet) banner = V2OutcomeStatus.SAVED
+                publish(generation, quiet, V2OutcomeStatus.SAVED)
                 onSuccess()
             } else {
                 // A failed reload still happened after this generation. An older
                 // read must not replace the selection this write already confirmed.
                 if (generation > appliedGeneration) appliedGeneration = generation
-                if (!quiet) banner = V2OutcomeStatus.REFRESH_FAILED
+                publish(generation, quiet, V2OutcomeStatus.REFRESH_FAILED)
             }
             if (singleFlight) pending = pending - key
         }
@@ -135,28 +139,76 @@ internal class V2WriteCoordinator(
         singleFlight: Boolean,
         quiet: Boolean,
         generation: Long,
+        epoch: Long,
         onSuccess: () -> Unit,
         onCommitted: () -> Unit,
         block: suspend () -> Unit,
     ): Boolean {
         val write = runCatching { runBlocking { block() } }
+        if (epoch != bindingEpoch) return false
         if (write.isFailure) {
             if (singleFlight) pending = pending - key
-            if (!quiet) banner = V2OutcomeStatus.REJECTED
+            publish(generation, quiet, V2OutcomeStatus.REJECTED)
             return false
         }
         onCommitted()
         val refreshed = runCatching { runBlocking { persistence.learner() } }
+        if (epoch != bindingEpoch) return true
         if (refreshed.isSuccess) {
             applyLearner(generation, refreshed.getOrThrow())
-            if (!quiet) banner = V2OutcomeStatus.SAVED
+            publish(generation, quiet, V2OutcomeStatus.SAVED)
             onSuccess()
         } else {
             if (generation > appliedGeneration) appliedGeneration = generation
-            if (!quiet) banner = V2OutcomeStatus.REFRESH_FAILED
+            publish(generation, quiet, V2OutcomeStatus.REFRESH_FAILED)
         }
         if (singleFlight) pending = pending - key
         return true
+    }
+
+    private fun startLoad() {
+        val epoch = ++bindingEpoch
+        pending = emptySet()
+        loadFailed = false
+        learner = null
+        if (V2UiWork.blocking()) {
+            val loaded = runCatching { runBlocking { persistence.learner() } }
+            if (epoch != bindingEpoch) return
+            applyLoad(epoch, loaded)
+        } else {
+            scope.launch {
+                val loaded = runCatching { persistence.learner() }
+                if (epoch != bindingEpoch) return@launch
+                applyLoad(epoch, loaded)
+            }
+        }
+    }
+
+    private fun applyLoad(epoch: Long, loaded: Result<V2LearnerView>) {
+        if (epoch != bindingEpoch) return
+        if (loaded.isSuccess) {
+            val view = loaded.getOrThrow()
+            learner = view
+            val inFlight = selections.filterKeys { itemId -> "attempt:$itemId" in pending }
+            selections = view.attemptSelections + inFlight
+            loadFailed = false
+            appliedGeneration = nextGeneration
+            banner = null
+            outcomeGeneration = nextGeneration
+        } else {
+            loadFailed = true
+            learner = null
+        }
+    }
+
+    /**
+     * Quiet work never takes the banner. An older completion cannot replace a
+     * newer pending or failure outcome. A newer action may supersede an older one.
+     */
+    private fun publish(generation: Long, quiet: Boolean, status: V2OutcomeStatus) {
+        if (quiet || generation < outcomeGeneration) return
+        outcomeGeneration = generation
+        banner = status
     }
 
     private fun applyLearner(generation: Long, loaded: V2LearnerView) {
@@ -173,7 +225,7 @@ internal class V2WriteCoordinator(
 
     companion object {
         fun get(activity: ComponentActivity, persistence: V2Persistence): V2WriteCoordinator {
-            return ViewModelProvider(
+            val coordinator = ViewModelProvider(
                 activity,
                 object : ViewModelProvider.Factory {
                     override fun <T : ViewModel> create(modelClass: Class<T>, extras: CreationExtras): T {
@@ -182,6 +234,8 @@ internal class V2WriteCoordinator(
                     }
                 },
             )[V2WriteCoordinator::class.java]
+            coordinator.rebind(persistence)
+            return coordinator
         }
     }
 }
