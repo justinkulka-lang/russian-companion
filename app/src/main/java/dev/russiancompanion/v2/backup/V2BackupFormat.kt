@@ -303,8 +303,9 @@ internal fun readGovernedBackup(
         return BackupReadResult.Rejected(BackupRejection.TRUNCATED)
     }
     if (zipFile.length() < 2L) return BackupReadResult.Rejected(BackupRejection.MALFORMED)
-    val zipHeader = zipFile.inputStream().use { it.readNBytes(2) }
-    val looksLikeZip = zipHeader.size == 2 && zipHeader[0] == 'P'.code.toByte() && zipHeader[1] == 'K'.code.toByte()
+    val zipHeader = ByteArray(2)
+    val headerBytes = zipFile.inputStream().use { it.read(zipHeader) }
+    val looksLikeZip = headerBytes == 2 && zipHeader[0] == 'P'.code.toByte() && zipHeader[1] == 'K'.code.toByte()
     val opened = try {
         ZipFile(zipFile)
     } catch (_: ZipException) {
