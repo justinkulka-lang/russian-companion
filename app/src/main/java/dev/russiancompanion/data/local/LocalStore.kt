@@ -769,6 +769,43 @@ internal class LocalStore private constructor(
         )
     }
 
+    /**
+     * Test seam. When set, the next advancement transaction inserts the unit
+     * completion and then throws before the profile write, so the transaction
+     * rolls both back.
+     */
+    @Volatile
+    internal var failAdvanceAfterCompletionForTests: Boolean = false
+
+    internal suspend fun v2AdvanceUnitAsync(
+        unitNumber: Int,
+        recordedAtLocal: String,
+        nextUnitNumber: Int,
+        nextSessionId: String?,
+    ) = withContext(ioDispatcher) {
+        database.runInTransaction {
+            database.v2().upsertUnitCompletion(
+                dev.russiancompanion.v2.data.V2UnitCompletionEntity(unitNumber, recordedAtLocal),
+            )
+            if (failAdvanceAfterCompletionForTests) {
+                failAdvanceAfterCompletionForTests = false
+                error("profile write failed")
+            }
+            val profile = readV2Profile()
+            writeV2Profile(
+                profile.copy(
+                    currentUnitNumber = nextUnitNumber,
+                    currentSessionId = nextSessionId,
+                    currentStepIndex = 0,
+                ),
+            )
+        }
+    }
+
+    fun v2Attempts(): List<dev.russiancompanion.v2.data.V2AttemptEntity> = call { database.v2().attempts() }
+
+    fun v2StepProgress(): List<dev.russiancompanion.v2.data.V2StepProgressEntity> = call { database.v2().steps() }
+
     fun v2Bookmarks(): List<dev.russiancompanion.v2.data.V2BookmarkEntity> = call { database.v2().bookmarks() }
 
     fun v2Notes(): List<dev.russiancompanion.v2.data.V2NoteEntity> = call { database.v2().notes() }

@@ -13,6 +13,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -43,6 +44,8 @@ import dev.russiancompanion.v2.curriculum.installLabel
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.objectiveState
 import dev.russiancompanion.v2.curriculum.readinessLabel
+import dev.russiancompanion.v2.curriculum.reviewedGuidedPractice
+import dev.russiancompanion.v2.curriculum.step
 import dev.russiancompanion.v2.curriculum.recordedSessionCount
 import dev.russiancompanion.v2.curriculum.reference
 import dev.russiancompanion.v2.curriculum.searchReferences
@@ -366,6 +369,7 @@ internal fun V2SessionScreen(
     remedial: Boolean,
     selections: Map<String, String>,
     lockedItemIds: Set<String>,
+    pendingKeys: Set<String>,
     noteDrafts: Map<String, String>,
     onBack: () -> Unit,
     onCompleteStep: (String, () -> Unit) -> Unit,
@@ -384,7 +388,17 @@ internal fun V2SessionScreen(
     var index by rememberSaveable(sessionId) {
         mutableIntStateOf(initialIndex.coerceIn(0, session.steps.lastIndex))
     }
-    val step = session.steps[index]
+    val routeStep = session.steps[index]
+    var shownStepId by rememberSaveable(routeStep.id) { mutableStateOf(routeStep.id) }
+    val step = if (remedial) pack.step(shownStepId)?.second ?: routeStep else routeStep
+    val guidedPractice = if (remedial) reviewedGuidedPractice(pack, routeStep.id) else emptyList()
+    val guidedIndex = guidedPractice.indexOf(step.id)
+    val navigationOpen = remember { mutableStateOf(true) }
+    val consumedSteps = remember { mutableSetOf<String>() }
+    DisposableEffect(Unit) {
+        navigationOpen.value = true
+        onDispose { navigationOpen.value = false }
+    }
     if (!remedial) {
         LaunchedEffect(session.id, index) {
             onPosition(session.id, index)
@@ -397,7 +411,19 @@ internal fun V2SessionScreen(
         onBack = onBack,
         footer = {
             androidx.compose.foundation.layout.Box(Modifier.padding(16.dp)) {
-                if (remedial) {
+                if (remedial && guidedIndex < 0 && guidedPractice.isNotEmpty()) {
+                    V2PrimaryButton(
+                        text = "Review the guided practice",
+                        onClick = { shownStepId = guidedPractice.first() },
+                        tag = "v2-review-practice",
+                    )
+                } else if (remedial && guidedIndex >= 0 && guidedIndex < guidedPractice.lastIndex) {
+                    V2PrimaryButton(
+                        text = "Next guided practice",
+                        onClick = { shownStepId = guidedPractice[guidedIndex + 1] },
+                        tag = "v2-next-practice",
+                    )
+                } else if (remedial) {
                     V2PrimaryButton(
                         text = "Return to the check",
                         onClick = onReturnToCheck,
@@ -407,10 +433,13 @@ internal fun V2SessionScreen(
                     V2PrimaryButton(
                         text = if (index == session.steps.lastIndex) "Finish session" else step.dominantAction,
                         onClick = {
-                            onCompleteStep(step.id) {
+                            val stepId = step.id
+                            onCompleteStep(stepId) {
+                                if (!navigationOpen.value || !consumedSteps.add(stepId)) return@onCompleteStep
                                 if (index == session.steps.lastIndex) onFinished() else index += 1
                             }
                         },
+                        enabled = "step:${step.id}" !in pendingKeys,
                         tag = "v2-session-continue",
                     )
                 }
@@ -500,8 +529,18 @@ internal fun V2SessionScreen(
                 .fillMaxWidth()
                 .semantics { testTag = "v2-note-draft" },
         )
-        V2SecondaryButton("Save note", { if (note.isNotBlank()) onNote(step.id, note) }, enabled = note.isNotBlank())
-        V2SecondaryButton("Mark a question for a tutor", { onTutor(step.id, note.ifBlank { "Please review this step." }) })
+        V2SecondaryButton(
+            "Save note",
+            { if (note.isNotBlank()) onNote(step.id, note) },
+            enabled = note.isNotBlank() && "note:${step.id}" !in pendingKeys,
+            tag = "v2-save-note",
+        )
+        V2SecondaryButton(
+            "Mark a question for a tutor",
+            { onTutor(step.id, note.ifBlank { "Please review this step." }) },
+            enabled = "tutor:${step.id}" !in pendingKeys,
+            tag = "v2-tutor",
+        )
     }
 }
 

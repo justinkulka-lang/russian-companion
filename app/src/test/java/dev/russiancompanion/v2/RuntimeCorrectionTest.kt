@@ -7,8 +7,10 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTag
 import androidx.compose.material3.Text
 import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.assertIsNotSelected
 import androidx.compose.ui.test.assertIsSelected
+import androidx.compose.ui.test.junit4.StateRestorationTester
 import androidx.compose.ui.test.junit4.v2.createComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithTag
@@ -20,9 +22,12 @@ import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.v2.curriculum.V2CheckItem
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
+import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2PackLoader
+import dev.russiancompanion.v2.curriculum.advancementDecision
 import dev.russiancompanion.v2.curriculum.continueTarget
 import dev.russiancompanion.v2.curriculum.example
+import dev.russiancompanion.v2.curriculum.reviewedGuidedPractice
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.session
 import dev.russiancompanion.v2.curriculum.step
@@ -49,6 +54,7 @@ import org.robolectric.annotation.Config
 import java.io.File
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
+import java.util.concurrent.atomic.AtomicInteger
 import java.util.concurrent.atomic.AtomicReference
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi")
@@ -169,6 +175,7 @@ class RuntimeCorrectionTest {
 
     @Test
     fun unitOneSequenceKeepsDraftsThroughRemediationResumeAndAdvancement() {
+        V2UiWork.blockForTests = false
         val pack = pack()
         val store = openedStore()
         val unit = pack.unit(1)!!
@@ -186,13 +193,17 @@ class RuntimeCorrectionTest {
             ),
         )
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
+        awaitTag("v2-continue")
         compose.onNodeWithTag("v2-continue").performClick()
+        awaitTag("v2-step-title")
         iotated.exampleIds.forEach { id ->
             compose.onNodeWithTag("v2-example-$id").performScrollTo().assertIsDisplayed()
         }
         compose.onNodeWithTag("v2-session-continue").performClick()
+        awaitText(check.title)
         val item = pack.item(check.itemIds.first())!!
         choose(item, wrong = true)
+        awaitTag("v2-remediation-${item.id}")
         compose.onNodeWithTag("v2-remediation-${item.id}").performScrollTo().performClick()
         compose.onNodeWithText(iotated.title).assertIsDisplayed()
         iotated.exampleIds.forEach { id ->
@@ -206,6 +217,7 @@ class RuntimeCorrectionTest {
         compose.onNodeWithText("letter draft").performScrollTo().assertIsDisplayed()
         compose.onNodeWithTag("v2-option-${item.id}-${wrongOption(item)}").performScrollTo().assertIsSelected()
         compose.onNodeWithTag("v2-session-continue").performClick()
+        awaitText("Review advancement")
         compose.onNodeWithText("Review advancement").assertIsDisplayed()
         compose.onNodeWithTag("v2-continue").performClick()
         compose.onNodeWithTag("v2-advancement-rule").performScrollTo().assertIsDisplayed()
@@ -228,17 +240,20 @@ class RuntimeCorrectionTest {
         choose(item, wrong = true)
         assertTrue(entered.await(5, TimeUnit.SECONDS))
         awaitText("Saving")
+        assertDoesNotExist("v2-item-feedback-${item.id}")
         compose.onNodeWithTag("v2-note-draft").performScrollTo().performTextInput("still typing")
         compose.onNodeWithText("still typing").assertIsDisplayed()
         assertDoesNotExist("v2-item-feedback-${step.itemIds[1]}")
         release.countDown()
         awaitText("Saved")
+        assertEquals(1, store.v2Attempts().count { it.itemId == item.id })
         assertEquals(1, store.v2LearnerView().attemptSelections.count { it.key == item.id })
         assertEquals(wrongOption(item), store.v2LearnerView().attemptSelections[item.id])
     }
 
     @Test
     fun failedWritePreservesPriorDataAndShowsOneFailure() {
+        V2UiWork.blockForTests = false
         val pack = pack()
         val store = openedStore()
         val step = pack.step("u1-st-confusable-rest")!!.second
@@ -261,6 +276,351 @@ class RuntimeCorrectionTest {
         assertEquals(kept.answer, saved.attemptSelections[kept.id])
         assertFalse(saved.attemptSelections.containsKey(failed.id))
         assertTrue(kept.id in saved.correctItemIds)
+    }
+
+    @Test
+    fun repeatedContinueCannotSkipAStep() {
+        V2UiWork.blockForTests = false
+        val pack = pack()
+        val store = openedStore()
+        val gate = GatedPersistence(StoreV2Persistence(store))
+        val session = pack.session("u1-s-orient")!!
+        val first = session.steps[0]
+        val second = session.steps[1]
+        showStep(store, pack, first.id, persistence = gate)
+        awaitQuiet(gate)
+        gate.gateRefresh = true
+        compose.onNodeWithTag("v2-session-continue").performClick()
+        awaitEntered(gate.entered)
+        assertEquals(1, gate.completeCalls.get())
+        runCatching { compose.onNodeWithTag("v2-session-continue").performClick() }
+        compose.onNodeWithTag("v2-session-continue").assertIsNotEnabled()
+        assertEquals(1, gate.completeCalls.get())
+        gate.release.countDown()
+        awaitText(second.title)
+        assertEquals(listOf(first.id), store.v2StepProgress().map { it.stepId })
+        assertFalse(second.id in store.v2LearnerView().completedStepIds)
+        compose.onNodeWithTag("v2-step-title").assertIsDisplayed()
+    }
+
+    @Test
+    fun lateContinueCallbackCannotNavigateTheNextScreen() {
+        V2UiWork.blockForTests = false
+        val pack = pack()
+        val store = openedStore()
+        val gate = GatedPersistence(StoreV2Persistence(store))
+        val first = pack.session("u1-s-orient")!!.steps[0]
+        showStep(store, pack, first.id, persistence = gate)
+        awaitQuiet(gate)
+        gate.gateRefresh = true
+        compose.onNodeWithTag("v2-session-continue").performClick()
+        awaitEntered(gate.entered)
+        compose.onNodeWithTag("v2-back").performClick()
+        awaitTag("v2-continue")
+        assertDoesNotExist("v2-step-title")
+        gate.release.countDown()
+        awaitQuiet(gate)
+        compose.onNodeWithTag("v2-continue").assertIsDisplayed()
+        assertDoesNotExist("v2-step-title")
+        assertEquals(listOf(first.id), store.v2StepProgress().map { it.stepId })
+    }
+
+    @Test
+    fun committedSaveReportsReloadFailureWithoutErasingTheWrite() {
+        V2UiWork.blockForTests = false
+        val pack = pack()
+        val store = openedStore()
+        val gate = GatedPersistence(StoreV2Persistence(store))
+        val step = pack.step("u1-st-confusable-rest")!!.second
+        val kept = pack.item(step.itemIds[0])!!
+        val added = pack.item(step.itemIds[1])!!
+        store.v2RecordAttempt(kept.id, kept.answer, true, "2026-10-02T12:00")
+        showStep(store, pack, step.id, persistence = gate)
+        awaitQuiet(gate)
+        gate.failRefresh = true
+        choose(added, wrong = true)
+        awaitText("Saved. The screen could not reload the new record.")
+        assertEquals(
+            0,
+            compose.onAllNodesWithText("Not saved. The previous record is unchanged.").fetchSemanticsNodes().size,
+        )
+        compose.onNodeWithTag("v2-item-feedback-${kept.id}").performScrollTo().assertIsDisplayed()
+        compose.onNodeWithTag("v2-item-feedback-${added.id}").performScrollTo().assertIsDisplayed()
+        assertEquals(setOf(kept.id, added.id), store.v2Attempts().map { it.itemId }.toSet())
+        gate.failRefresh = false
+        compose.onNodeWithTag("v2-back").performClick()
+        awaitTag("v2-continue")
+        compose.onNodeWithTag("v2-continue").performClick()
+        awaitTag("v2-step-title")
+        awaitQuiet(gate)
+        compose.onNodeWithText("Saved. The screen could not reload the new record.").assertIsDisplayed()
+        compose.onNodeWithTag("v2-option-${kept.id}-${kept.answer}").performScrollTo().assertIsSelected()
+        compose.onNodeWithTag("v2-option-${added.id}-${wrongOption(added)}").performScrollTo().assertIsSelected()
+    }
+
+    @Test
+    fun olderRefreshCannotReplaceANewerSelection() {
+        V2UiWork.blockForTests = false
+        val pack = pack()
+        val store = openedStore()
+        val gate = GatedPersistence(StoreV2Persistence(store))
+        val step = pack.step("u1-st-confusable-rest")!!.second
+        val first = pack.item(step.itemIds[0])!!
+        val second = pack.item(step.itemIds[1])!!
+        showStep(store, pack, step.id, persistence = gate)
+        awaitQuiet(gate)
+        gate.armStaleRefresh = true
+        choose(first, wrong = true)
+        awaitEntered(gate.entered)
+        choose(second, wrong = false)
+        awaitText("Saved")
+        gate.release.countDown()
+        awaitQuiet(gate)
+        compose.onNodeWithTag("v2-item-feedback-${first.id}").performScrollTo().assertIsDisplayed()
+        compose.onNodeWithTag("v2-item-feedback-${second.id}").performScrollTo().assertIsDisplayed()
+        compose.onNodeWithTag("v2-option-${second.id}-${second.answer}").assertIsSelected()
+        assertEquals(setOf(first.id, second.id), store.v2Attempts().map { it.itemId }.toSet())
+    }
+
+    @Test
+    fun failedRetryKeepsTheSavedAnswerOnScreen() {
+        V2UiWork.blockForTests = false
+        val pack = pack()
+        val store = openedStore()
+        val step = pack.step("u1-st-confusable-rest")!!.second
+        val item = pack.item(step.itemIds.first())!!
+        store.v2RecordAttempt(item.id, item.answer, true, "2026-10-02T12:00")
+        val persistence = object : V2Persistence by StoreV2Persistence(store) {
+            override suspend fun recordAttempt(itemId: String, selected: String, correct: Boolean, recordedAt: String) {
+                error("storage failed")
+            }
+        }
+        showStep(store, pack, step.id, persistence = persistence)
+        compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertIsDisplayed()
+        val before = store.v2Attempts().size
+        choose(item, wrong = true)
+        awaitText("Not saved. The previous record is unchanged.")
+        compose.onNodeWithTag("v2-option-${item.id}-${item.answer}").performScrollTo().assertIsSelected()
+        compose.onNodeWithTag("v2-option-${item.id}-${wrongOption(item)}").assertIsNotSelected()
+        compose.onNodeWithText("Recorded as correct. ${item.feedback}", substring = true).assertIsDisplayed()
+        assertEquals(before, store.v2Attempts().size)
+        assertEquals(item.answer, store.v2LearnerView().attemptSelections[item.id])
+    }
+
+    @Test
+    fun repeatedTutorTapsCreateOneQueueRow() {
+        V2UiWork.blockForTests = false
+        val pack = pack()
+        val store = openedStore()
+        val gate = GatedPersistence(StoreV2Persistence(store))
+        val ticks = AtomicInteger()
+        val step = pack.step("u1-st-orient")!!.second
+        showStep(store, pack, step.id, persistence = gate, recordedAt = { "tutor-${ticks.incrementAndGet()}" })
+        awaitQuiet(gate)
+        assertEquals(0, ticks.get())
+        gate.gateTutor = true
+        compose.onNodeWithTag("v2-tutor").performScrollTo().performClick()
+        awaitEntered(gate.entered)
+        runCatching { compose.onNodeWithTag("v2-tutor").performScrollTo().performClick() }
+        runCatching { compose.onNodeWithTag("v2-tutor").performClick() }
+        compose.onNodeWithTag("v2-tutor").performScrollTo().assertIsNotEnabled()
+        assertEquals(1, gate.tutorCalls.get())
+        assertEquals(1, ticks.get())
+        gate.release.countDown()
+        awaitText("Saved")
+        val rows = store.v2TutorQueue()
+        assertEquals(1, rows.size)
+        assertEquals(step.id, rows.single().targetId)
+        assertEquals("tutor-1", rows.single().createdAtLocal)
+        assertEquals(1, compose.onAllNodesWithText("Saved").fetchSemanticsNodes().size)
+    }
+
+    @Test
+    fun unsavedNoteDraftSurvivesActivityRecreation() {
+        V2UiWork.blockForTests = false
+        val pack = pack()
+        val store = openedStore()
+        val located = pack.step("u1-st-confusable-rest")!!
+        val step = located.second
+        val item = pack.item(step.itemIds.first())!!
+        val index = located.first.steps.indexOfFirst { it.id == step.id }
+        store.v2SaveProfile(
+            store.v2Profile().copy(
+                onboardingCompleted = true,
+                currentUnitNumber = 1,
+                currentSessionId = located.first.id,
+                currentStepIndex = index,
+            ),
+        )
+        val tester = StateRestorationTester(compose)
+        tester.setContent {
+            V2App(store = store, pack = pack, onRetryOpen = {}, persistence = StoreV2Persistence(store))
+        }
+        awaitTag("v2-continue")
+        compose.onNodeWithTag("v2-continue").performClick()
+        awaitText(step.title)
+        compose.onNodeWithTag("v2-note-draft").performScrollTo().performTextInput("letter draft")
+        choose(item, wrong = true)
+        awaitText("Saved")
+        tester.emulateSavedInstanceStateRestore()
+        awaitText(step.title)
+        compose.onNodeWithText("letter draft").performScrollTo().assertIsDisplayed()
+        compose.onNodeWithTag("v2-option-${item.id}-${wrongOption(item)}").performScrollTo().assertIsSelected()
+        assertEquals(located.first.id, store.v2Profile().currentSessionId)
+        assertEquals(index, store.v2Profile().currentStepIndex)
+    }
+
+    @Test
+    fun recreationDuringADelayedWriteKeepsOneOutcome() {
+        V2UiWork.blockForTests = false
+        val pack = pack()
+        val store = openedStore()
+        val gate = GatedPersistence(StoreV2Persistence(store))
+        val session = pack.session("u1-s-orient")!!
+        val first = session.steps[0]
+        val second = session.steps[1]
+        store.v2SaveProfile(
+            store.v2Profile().copy(
+                onboardingCompleted = true,
+                currentUnitNumber = 1,
+                currentSessionId = session.id,
+                currentStepIndex = 0,
+            ),
+        )
+        val tester = StateRestorationTester(compose)
+        tester.setContent {
+            V2App(store = store, pack = pack, onRetryOpen = {}, persistence = gate)
+        }
+        awaitTag("v2-continue")
+        compose.onNodeWithTag("v2-continue").performClick()
+        awaitText(first.title)
+        awaitQuiet(gate)
+        compose.onNodeWithTag("v2-note-draft").performScrollTo().performTextInput("pending draft")
+        gate.gateRefresh = true
+        compose.onNodeWithTag("v2-session-continue").performClick()
+        awaitEntered(gate.entered)
+        tester.emulateSavedInstanceStateRestore()
+        gate.release.countDown()
+        awaitText("Saved")
+        awaitQuiet(gate)
+        assertEquals(1, gate.completeCalls.get())
+        assertEquals(listOf(first.id), store.v2StepProgress().map { it.stepId })
+        assertFalse(second.id in store.v2LearnerView().completedStepIds)
+        if (compose.onAllNodesWithText(first.title).fetchSemanticsNodes().isEmpty()) {
+            compose.onNodeWithTag("v2-continue").performClick()
+            awaitText(first.title)
+        }
+        compose.onNodeWithText("pending draft").performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText(second.title).assertDoesNotExist()
+    }
+
+    @Test
+    fun remediationReachesGuidedPracticeThenReturnsToTheFailedCheck() {
+        V2UiWork.blockForTests = false
+        val pack = pack()
+        val store = openedStore()
+        val check = pack.step("u7-st-check-manner")!!.second
+        val target = pack.step(check.remediationStepId!!)!!.second
+        val guidedId = reviewedGuidedPractice(pack, target.id).single()
+        val guided = pack.step(guidedId)!!.second
+        assertEquals("u7-st-guided-manner-1", guidedId)
+        showStep(store, pack, check.id, unitNumber = 7)
+        val item = pack.item(check.itemIds.first())!!
+        val practice = pack.item(guided.itemIds.first())!!
+        choose(item, wrong = true)
+        awaitTag("v2-remediation-${item.id}")
+        compose.onNodeWithTag("v2-remediation-${item.id}").performScrollTo().performClick()
+        awaitText(target.title)
+        target.exampleIds.forEach { id ->
+            compose.onNodeWithTag("v2-example-$id").performScrollTo().assertIsDisplayed()
+        }
+        compose.onNodeWithTag("v2-review-practice").performClick()
+        awaitText(guided.title)
+        compose.onNodeWithTag("v2-item-prompt-${practice.id}").performScrollTo().assertIsDisplayed()
+        choose(practice, wrong = false)
+        awaitTag("v2-item-feedback-${practice.id}")
+        compose.onNodeWithTag("v2-return-to-check").performClick()
+        awaitText(check.title)
+        compose.onNodeWithTag("v2-option-${item.id}-${wrongOption(item)}").performScrollTo().assertIsSelected()
+        val completed = store.v2LearnerView().completedStepIds
+        assertFalse(guidedId in completed)
+        assertFalse(check.id in completed)
+        assertFalse(target.id in completed)
+        assertEquals(wrongOption(item), store.v2LearnerView().attemptSelections[item.id])
+        assertEquals(practice.answer, store.v2LearnerView().attemptSelections[practice.id])
+    }
+
+    @Test
+    fun objectivesWithoutGuidedPracticeStayVisibleAsGaps() {
+        val pack = pack()
+        val gaps = setOf(
+            "u1-st-confusable",
+            "u1-st-iotated",
+            "u1-st-signs",
+            "u1-st-print",
+            "u1-st-decoding",
+            "u4-st-rem-nominative",
+        )
+        assertEquals(listOf("u7-st-guided-manner-1"), reviewedGuidedPractice(pack, "u7-st-rem-manner"))
+        val targets = pack.units.flatMap { it.sessions }.flatMap { it.steps }.mapNotNull { it.remediationStepId }.toSet()
+        assertEquals(156, targets.size)
+        targets.forEach { target ->
+            val guided = reviewedGuidedPractice(pack, target)
+            if (target in gaps) {
+                assertTrue("$target still has no guided practice in the pack", guided.isEmpty())
+            } else {
+                assertTrue("$target is missing its linked guided practice", guided.isNotEmpty())
+            }
+        }
+    }
+
+    @Test
+    fun advancementRollsBackWhenTheFollowingProfileWriteFails() = kotlinx.coroutines.runBlocking {
+        val store = openedStore()
+        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 1))
+        store.failAdvanceAfterCompletionForTests = true
+        val failed = runCatching { store.v2AdvanceUnitAsync(1, "2026-10-02T12:00", 2, "u2-s-next") }
+        assertTrue(failed.isFailure)
+        assertFalse(store.failAdvanceAfterCompletionForTests)
+        assertFalse(1 in store.v2LearnerView().completedUnitNumbers)
+        assertEquals(1, store.v2Profile().currentUnitNumber)
+        assertEquals(0, store.v2Profile().currentStepIndex)
+        store.v2AdvanceUnitAsync(1, "2026-10-02T12:01", 2, "u2-s-next")
+        assertTrue(1 in store.v2LearnerView().completedUnitNumbers)
+        assertEquals(2, store.v2Profile().currentUnitNumber)
+        assertEquals("u2-s-next", store.v2Profile().currentSessionId)
+    }
+
+    @Test
+    fun failedAdvancementLeavesTheReviewInPlace() {
+        V2UiWork.blockForTests = false
+        val pack = pack()
+        val store = openedStore()
+        val unit = pack.unit(1)!!
+        unit.sessions.flatMap { it.steps }.forEach { store.v2CompleteStep(it.id, "2026-10-02T12:00") }
+        unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }.distinct().forEach { id ->
+            val item = pack.item(id)!!
+            store.v2RecordAttempt(id, item.answer, true, "2026-10-02T12:00")
+        }
+        store.v2AttestBook(1, "2026-10-02T12:00")
+        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 1))
+        val decision = advancementDecision(pack, unit, store.v2LearnerView())
+        assertTrue(decision.remaining.joinToString(" | "), decision.allowed)
+        store.failAdvanceAfterCompletionForTests = true
+        compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
+        awaitTag("v2-continue")
+        compose.onNodeWithText("Review advancement").assertIsDisplayed()
+        compose.onNodeWithTag("v2-continue").performClick()
+        awaitTag("v2-advance")
+        compose.onNodeWithTag("v2-advance").performScrollTo().performClick()
+        awaitText("Not saved. The previous record is unchanged.")
+        assertFalse(1 in store.v2LearnerView().completedUnitNumbers)
+        assertEquals(1, store.v2Profile().currentUnitNumber)
+        assertFalse(store.failAdvanceAfterCompletionForTests)
+        compose.onNodeWithTag("v2-advance").performScrollTo().performClick()
+        awaitText("Saved")
+        assertTrue(1 in store.v2LearnerView().completedUnitNumbers)
+        assertEquals(2, store.v2Profile().currentUnitNumber)
     }
 
     @Test
@@ -311,6 +671,7 @@ class RuntimeCorrectionTest {
         stepId: String,
         unitNumber: Int = 1,
         persistence: V2Persistence? = null,
+        recordedAt: () -> String = { java.time.LocalDateTime.now().toString() },
     ) {
         val located = pack.step(stepId)!!
         val index = located.first.steps.indexOfFirst { it.id == stepId }
@@ -328,6 +689,7 @@ class RuntimeCorrectionTest {
                 pack = pack,
                 onRetryOpen = {},
                 persistence = persistence ?: StoreV2Persistence(store),
+                recordedAt = recordedAt,
             )
         }
         awaitTag("v2-continue")
@@ -357,6 +719,36 @@ class RuntimeCorrectionTest {
         compose.onNodeWithText(text, substring = true).assertIsDisplayed()
     }
 
+    private fun awaitEntered(latch: CountDownLatch) {
+        val start = System.currentTimeMillis()
+        while (latch.count > 0 && System.currentTimeMillis() - start < 5_000) {
+            compose.waitForIdle()
+            if (latch.count == 0L) return
+            Thread.sleep(20)
+        }
+        assertEquals(0L, latch.count)
+    }
+
+    private fun awaitQuiet(gate: GatedPersistence) {
+        val start = System.currentTimeMillis()
+        var stable = 0
+        var last = -1
+        while (System.currentTimeMillis() - start < 5_000) {
+            compose.waitForIdle()
+            val calls = gate.refreshCalls.get()
+            val flight = gate.refreshInFlight.get()
+            if (flight == 0 && calls >= 2 && calls == last) {
+                stable += 1
+                if (stable >= 3) return
+            } else {
+                stable = 0
+            }
+            last = calls
+            Thread.sleep(20)
+        }
+        throw AssertionError("learner refresh did not settle; calls=${gate.refreshCalls.get()} inFlight=${gate.refreshInFlight.get()}")
+    }
+
     private fun awaitTag(tag: String) {
         val start = System.currentTimeMillis()
         while (System.currentTimeMillis() - start < 5_000) {
@@ -382,18 +774,61 @@ class RuntimeCorrectionTest {
 
 private class GatedPersistence(
     private val delegate: V2Persistence,
-    private val entered: CountDownLatch,
-    private val release: CountDownLatch,
+    val entered: CountDownLatch = CountDownLatch(1),
+    val release: CountDownLatch = CountDownLatch(1),
 ) : V2Persistence by delegate {
     var gateAttempts: Boolean = false
+    var gateRefresh: Boolean = false
+    var gateTutor: Boolean = false
+    var failRefresh: Boolean = false
+    var armStaleRefresh: Boolean = false
+    val tutorCalls = AtomicInteger()
+    val completeCalls = AtomicInteger()
+    val refreshCalls = AtomicInteger()
+    val refreshInFlight = AtomicInteger()
+
+    override suspend fun learner(): V2LearnerView {
+        refreshInFlight.incrementAndGet()
+        try {
+            if (armStaleRefresh) {
+                armStaleRefresh = false
+                val stale = delegate.learner()
+                entered.countDown()
+                withContext(Dispatchers.IO) { release.await(10, TimeUnit.SECONDS) }
+                refreshCalls.incrementAndGet()
+                return stale
+            }
+            if (failRefresh) error("refresh failed")
+            if (gateRefresh) {
+                entered.countDown()
+                withContext(Dispatchers.IO) { release.await(10, TimeUnit.SECONDS) }
+            }
+            refreshCalls.incrementAndGet()
+            return delegate.learner()
+        } finally {
+            refreshInFlight.decrementAndGet()
+        }
+    }
+
+    override suspend fun completeStep(stepId: String, recordedAt: String) {
+        completeCalls.incrementAndGet()
+        delegate.completeStep(stepId, recordedAt)
+    }
 
     override suspend fun recordAttempt(itemId: String, selected: String, correct: Boolean, recordedAt: String) {
         if (gateAttempts) {
             entered.countDown()
-            withContext(Dispatchers.IO) {
-                release.await(10, TimeUnit.SECONDS)
-            }
+            withContext(Dispatchers.IO) { release.await(10, TimeUnit.SECONDS) }
         }
         delegate.recordAttempt(itemId, selected, correct, recordedAt)
+    }
+
+    override suspend fun addTutor(targetId: String, note: String, recordedAt: String) {
+        tutorCalls.incrementAndGet()
+        if (gateTutor) {
+            entered.countDown()
+            withContext(Dispatchers.IO) { release.await(10, TimeUnit.SECONDS) }
+        }
+        delegate.addTutor(targetId, note, recordedAt)
     }
 }

@@ -1,5 +1,8 @@
 package dev.russiancompanion.v2.ui
 
+import android.content.Context
+import android.content.ContextWrapper
+import androidx.activity.ComponentActivity
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
@@ -7,7 +10,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.saveable.Saver
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LocalLifecycleOwner
@@ -19,15 +23,14 @@ import dev.russiancompanion.domain.appearance.defaultAppearancePreference
 import dev.russiancompanion.presentation.navigation.snapshotDispatcher
 import dev.russiancompanion.presentation.theme.CompanionTheme
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
-import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.unit
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.sync.Mutex
-import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
 import java.time.LocalDateTime
+import android.os.Bundle
 
 internal enum class V2PersistencePhase {
     LOADING,
@@ -39,7 +42,7 @@ internal enum class V2PersistencePhase {
 
 internal data class V2UiState(
     val pack: V2CurriculumPack?,
-    val learner: V2LearnerView?,
+    val learner: dev.russiancompanion.v2.curriculum.V2LearnerView?,
     val localDataOpen: Boolean,
     val packError: String? = null,
     val saveFailed: Boolean = false,
@@ -69,6 +72,20 @@ internal data class V2StartupResult(
     val message: String,
 )
 
+private val NoteDraftSaver = Saver<Map<String, String>, Bundle>(
+    save = { drafts ->
+        Bundle().apply {
+            putStringArray("keys", drafts.keys.toTypedArray())
+            putStringArray("values", drafts.values.toTypedArray())
+        }
+    },
+    restore = { bundle ->
+        val keys = bundle.getStringArray("keys") ?: return@Saver emptyMap()
+        val values = bundle.getStringArray("values") ?: return@Saver emptyMap()
+        keys.zip(values).toMap()
+    },
+)
+
 @Composable
 internal fun V2StartupHost(
     load: suspend () -> V2StartupResult,
@@ -80,7 +97,7 @@ internal fun V2StartupHost(
     var result by remember { mutableStateOf<V2StartupResult?>(null) }
     LaunchedEffect(attempt) {
         if (attempt > 0) onRetryOpen()
-        val loaded = runCatching { withContext(kotlinx.coroutines.Dispatchers.IO) { load() } }
+        val loaded = runCatching { withContext(Dispatchers.IO) { load() } }
         val value = loaded.getOrNull()
         result = value
         phase = if (loaded.isSuccess && value?.store != null && value.pack != null) {
@@ -103,7 +120,6 @@ internal fun V2StartupHost(
         }
         else -> content(result?.store, result?.pack!!)
     }
-    if (phase == V2PersistencePhase.FAILED && onRetryOpen != {}) Unit
 }
 
 @Composable
@@ -116,164 +132,72 @@ internal fun V2App(
     persistence: V2Persistence? = store?.let { StoreV2Persistence(it) },
 ) {
     val dispatcher = snapshotDispatcher()
-    val scope = rememberCoroutineScope()
+    val scope = androidx.compose.runtime.rememberCoroutineScope()
     var appearance by remember(appearanceStore) { mutableStateOf(defaultAppearancePreference()) }
     var appearanceSaveFailed by remember { mutableStateOf(false) }
-    val blocking = V2UiWork.blocking()
-    var state by remember(store, pack) {
-        mutableStateOf(
-            if (blocking && store != null && pack != null && persistence != null) {
-                val loaded = runCatching { runBlocking { persistence.learner() } }
-                V2UiState(
-                    pack = pack,
-                    learner = loaded.getOrNull(),
-                    localDataOpen = loaded.isSuccess,
-                    packError = if (loaded.isSuccess) null else "Saved progress could not be read.",
-                    phase = if (loaded.isSuccess) V2PersistencePhase.READY else V2PersistencePhase.FAILED,
-                    saveFailed = loaded.isFailure,
-                )
-            } else {
-                V2UiState(
-                    pack = pack,
-                    learner = null,
-                    localDataOpen = store != null && pack != null,
-                    packError = when {
-                        store == null -> "Local data could not be opened."
-                        pack == null -> "The curriculum pack is unavailable."
-                        else -> null
-                    },
-                    phase = if (store == null || pack == null) V2PersistencePhase.FAILED else V2PersistencePhase.LOADING,
-                )
-            },
-        )
+    val activity = androidx.compose.ui.platform.LocalContext.current.findActivity()
+    val writes = remember(persistence) {
+        persistence?.let { V2WriteCoordinator.get(activity, it) }
     }
-    var selections by remember { mutableStateOf<Map<String, String>>(emptyMap()) }
-    var noteDrafts by remember { mutableStateOf<Map<String, String>>(emptyMap()) }
-    val pending = remember { mutableSetOf<String>() }
-    val gate = remember { Mutex() }
+    var noteDrafts by rememberSaveable(stateSaver = NoteDraftSaver) { mutableStateOf<Map<String, String>>(emptyMap()) }
     val lifecycleOwner = LocalLifecycleOwner.current
     LaunchedEffect(appearanceStore, lifecycleOwner) {
         lifecycleOwner.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
             appearanceStore.preference.collect { appearance = it }
         }
     }
-    LaunchedEffect(persistence) {
-        if (persistence == null || blocking) {
-            if (blocking) selections = state.learner?.attemptSelections.orEmpty()
-            return@LaunchedEffect
-        }
-        val loaded = runCatching { persistence.learner() }
-        if (loaded.isSuccess) {
-            val learner = loaded.getOrThrow()
-            selections = learner.attemptSelections
-            state = state.copy(learner = learner, phase = V2PersistencePhase.READY, saveFailed = false, packError = null)
-        } else {
-            state = state.copy(
-                phase = V2PersistencePhase.FAILED,
-                saveFailed = true,
-                packError = "Saved progress could not be read.",
-            )
-        }
-    }
-    fun mergeSelections(learner: V2LearnerView) {
-        val inFlight = selections.filterKeys { itemId -> "attempt:$itemId" in pending }
-        selections = learner.attemptSelections + inFlight
-    }
-    fun submit(
-        key: String,
-        singleFlight: Boolean = true,
-        onSuccess: () -> Unit = {},
-        onFailure: () -> Unit = {},
-        block: suspend () -> Unit,
-    ): Boolean {
-        val active = persistence ?: return false
-        if (singleFlight && key in pending) return false
-        if (blocking) {
-            val result = runCatching { runBlocking { block() } }
-            if (result.isSuccess) {
-                val refreshed = runCatching { runBlocking { active.learner() } }
-                if (refreshed.isSuccess) {
-                    val learner = refreshed.getOrThrow()
-                    selections = learner.attemptSelections
-                    state = state.copy(learner = learner, phase = V2PersistencePhase.SAVED, saveFailed = false)
-                    onSuccess()
-                    return true
-                }
-            }
-            state = state.copy(phase = V2PersistencePhase.FAILED, saveFailed = true)
-            onFailure()
-            return false
-        }
-        if (singleFlight) pending += key
-        scope.launch {
-            state = state.copy(phase = V2PersistencePhase.SAVING, saveFailed = false)
-            val result = gate.withLock { runCatching { block() } }
-            if (singleFlight) pending.remove(key)
-            if (result.isSuccess) {
-                val refreshed = runCatching { active.learner() }
-                if (refreshed.isSuccess) {
-                    val learner = refreshed.getOrThrow()
-                    mergeSelections(learner)
-                    state = state.copy(learner = learner, phase = V2PersistencePhase.SAVED, saveFailed = false)
-                    onSuccess()
-                } else {
-                    state = state.copy(phase = V2PersistencePhase.FAILED, saveFailed = true)
-                    onFailure()
-                }
-            } else {
-                state = state.copy(phase = V2PersistencePhase.FAILED, saveFailed = true)
-                onFailure()
-            }
-        }
-        return true
+    val learner = writes?.learner
+    val ready = learner != null && pack != null
+    val banner = when {
+        !ready && writes?.loadFailed == true -> "Saved progress could not be read."
+        !ready && pack != null && store != null -> "Loading saved progress"
+        store == null -> "Local data could not be opened."
+        pack == null -> "The curriculum pack is unavailable."
+        else -> outcomeStatusText(writes?.banner)
     }
     CompanionTheme(appearance = appearance) {
-        val learner = state.learner
-        val readyPack = state.pack
-        if (learner == null || readyPack == null) {
-            val message = when (state.phase) {
-                V2PersistencePhase.LOADING -> persistenceStatusText(state.phase)
-                V2PersistencePhase.FAILED -> state.packError ?: "Local data could not be opened."
-                else -> state.packError ?: "Local data could not be opened."
-            }
-            CompositionLocalProvider(LocalV2PersistenceStatus provides message) {
-                V2LocalDataScreen(message = message, onRetry = onRetryOpen)
+        if (!ready) {
+            CompositionLocalProvider(LocalV2PersistenceStatus provides banner) {
+                V2LocalDataScreen(message = banner, onRetry = onRetryOpen)
             }
         } else {
-            CompositionLocalProvider(LocalV2PersistenceStatus provides persistenceStatusText(state.phase)) {
+            val api = checkNotNull(persistence)
+            val state = V2UiState(
+                pack = pack,
+                learner = learner,
+                localDataOpen = true,
+                saveFailed = writes.banner == V2OutcomeStatus.REJECTED,
+                phase = when (writes.banner) {
+                    V2OutcomeStatus.SAVING -> V2PersistencePhase.SAVING
+                    V2OutcomeStatus.SAVED -> V2PersistencePhase.SAVED
+                    V2OutcomeStatus.REJECTED, V2OutcomeStatus.REFRESH_FAILED -> V2PersistencePhase.FAILED
+                    null -> V2PersistencePhase.READY
+                },
+            )
+            CompositionLocalProvider(LocalV2PersistenceStatus provides banner) {
                 V2NavHost(
                     navController = rememberNavController(),
                     state = state,
                     appearance = appearance,
                     appearanceSaveFailed = appearanceSaveFailed,
-                    selections = selections,
-                    lockedItemIds = pending.filter { it.startsWith("attempt:") }.map { it.removePrefix("attempt:") }.toSet(),
+                    selections = writes.selections,
+                    lockedItemIds = writes.pending.filter { it.startsWith("attempt:") }.map { it.removePrefix("attempt:") }.toSet(),
+                    pendingKeys = writes.pending,
                     noteDrafts = noteDrafts,
                     onRetryOpen = onRetryOpen,
                     onAppearance = { next ->
-                        if (blocking) {
-                            val result = runCatching { runBlocking { appearanceStore.set(next) } }
-                            appearanceSaveFailed = result.isFailure
-                            state = state.copy(
-                                phase = if (result.isFailure) V2PersistencePhase.FAILED else V2PersistencePhase.SAVED,
-                                saveFailed = result.isFailure,
-                            )
+                        if (V2UiWork.blocking()) {
+                            appearanceSaveFailed = runCatching { runBlocking { appearanceStore.set(next) } }.isFailure
                             return@V2NavHost
                         }
                         scope.launch {
-                            state = state.copy(phase = V2PersistencePhase.SAVING, saveFailed = false)
-                            val result = withContext(dispatcher) { appearanceStore.set(next) }
-                            appearanceSaveFailed = result.isFailure
-                            state = state.copy(
-                                phase = if (result.isFailure) V2PersistencePhase.FAILED else V2PersistencePhase.SAVED,
-                                saveFailed = result.isFailure,
-                            )
+                            appearanceSaveFailed = withContext(dispatcher) { appearanceStore.set(next) }.isFailure
                         }
                     },
                     onCompleteOnboarding = { draft ->
-                        submit("onboarding") {
-                            val current = persistence?.profile() ?: return@submit
-                            persistence.saveProfile(
+                        writes.submit("onboarding") {
+                            val current = api.profile()
+                            api.saveProfile(
                                 current.copy(
                                     onboardingCompleted = true,
                                     currentUnitNumber = 1,
@@ -284,7 +208,7 @@ internal fun V2App(
                                     hasTutor = draft.hasTutor,
                                     dailyMinutes = draft.dailyMinutes,
                                     transliterationEnabled = draft.startingPoint == V2StartingPoint.NEW_TO_CYRILLIC,
-                                    currentSessionId = pack?.unit(1)?.sessions?.firstOrNull()?.id,
+                                    currentSessionId = pack.unit(1)?.sessions?.firstOrNull()?.id,
                                     currentStepIndex = 0,
                                 ),
                             )
@@ -292,75 +216,70 @@ internal fun V2App(
                         Unit
                     },
                     onCompleteStep = { stepId, afterSaved ->
-                        submit("step:$stepId", onSuccess = afterSaved) {
-                            persistence?.completeStep(stepId, recordedAt())
+                        writes.submit("step:$stepId", onSuccess = afterSaved) {
+                            api.completeStep(stepId, recordedAt())
                         }
                         Unit
                     },
                     onAttempt = { itemId, selected, correct ->
-                        val accepted = submit(
+                        writes.submit(
                             key = "attempt:$itemId",
-                            onFailure = { selections = selections - itemId },
+                            onCommitted = { writes.confirmSelection(itemId, selected) },
                         ) {
-                            persistence?.recordAttempt(itemId, selected, correct, recordedAt())
+                            api.recordAttempt(itemId, selected, correct, recordedAt())
                         }
-                        if (accepted) selections = selections + (itemId to selected)
-                        accepted
                     },
                     onBookmark = { targetId, kind ->
-                        submit("bookmark:$targetId") {
-                            persistence?.toggleBookmark(targetId, kind, recordedAt())
+                        writes.submit("bookmark:$targetId") {
+                            api.toggleBookmark(targetId, kind, recordedAt())
                         }
                         Unit
                     },
                     onNoteDraft = { stepId, text -> noteDrafts = noteDrafts + (stepId to text) },
                     onNote = { targetId, text ->
-                        submit("note:$targetId:${text.hashCode()}") {
-                            persistence?.addNote(targetId, text, recordedAt())
+                        writes.submit("note:$targetId") {
+                            api.addNote(targetId, text, recordedAt())
                         }
                         Unit
                     },
                     onTutor = { targetId, note ->
-                        submit("tutor:$targetId:${recordedAt()}") {
-                            persistence?.addTutor(targetId, note, recordedAt())
+                        writes.submit("tutor:$targetId") {
+                            api.addTutor(targetId, note, recordedAt())
                         }
                         Unit
                     },
                     onAttestBook = { unit ->
-                        submit("book:$unit") {
-                            persistence?.attestBook(unit, recordedAt())
+                        writes.submit("book:$unit") {
+                            api.attestBook(unit, recordedAt())
                         }
                         Unit
                     },
                     onAdvance = { unit ->
-                        submit("advance:$unit") {
-                            val active = persistence ?: return@submit
-                            active.completeUnit(unit, recordedAt())
-                            val profile = active.profile()
+                        writes.submit("advance:$unit") {
                             val nextUnit = (unit + 1).coerceAtMost(30)
-                            active.saveProfile(
-                                profile.copy(
-                                    currentUnitNumber = nextUnit,
-                                    currentSessionId = pack?.unit(nextUnit)?.sessions?.firstOrNull()?.id,
-                                    currentStepIndex = 0,
-                                ),
+                            api.advanceUnit(
+                                unit,
+                                recordedAt(),
+                                nextUnit,
+                                pack.unit(nextUnit)?.sessions?.firstOrNull()?.id,
                             )
                         }
                         Unit
                     },
                     onResumeAt = { sessionId, index ->
-                        submit("position:$sessionId:$index", singleFlight = false) {
-                            val active = persistence ?: return@submit
-                            val profile = active.profile()
-                            active.saveProfile(profile.copy(currentSessionId = sessionId, currentStepIndex = index))
+                        val ticket = writes.nextPositionTicket()
+                        writes.submit("position:$sessionId:$index", singleFlight = false, quiet = true) {
+                            if (!writes.positionStillCurrent(ticket)) return@submit
+                            val profile = api.profile()
+                            if (profile.currentSessionId == sessionId && profile.currentStepIndex == index) return@submit
+                            api.saveProfile(profile.copy(currentSessionId = sessionId, currentStepIndex = index))
                         }
                         Unit
                     },
                     onTransliteration = { enabled ->
-                        submit("transliteration") {
-                            val active = persistence ?: return@submit
-                            val profile = active.profile()
-                            active.saveProfile(profile.copy(transliterationEnabled = enabled))
+                        writes.submit("transliteration") {
+                            val profile = api.profile()
+                            api.saveProfile(profile.copy(transliterationEnabled = enabled))
                         }
                         Unit
                     },
@@ -368,4 +287,13 @@ internal fun V2App(
             }
         }
     }
+}
+
+private fun Context.findActivity(): ComponentActivity {
+    var current = this
+    while (current is ContextWrapper) {
+        if (current is ComponentActivity) return current
+        current = current.baseContext
+    }
+    error("V2App requires a ComponentActivity")
 }

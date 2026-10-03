@@ -142,6 +142,21 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
     )
 }
 
+/**
+ * Guided practice already listed on the objective that owns this remediation
+ * step. Check and teach steps listed as practice are not a second journey back
+ * to the failed check.
+ */
+internal fun reviewedGuidedPractice(pack: V2CurriculumPack, remediationStepId: String): List<String> {
+    val practiceIds = pack.units.flatMap { it.objectives }
+        .filter { remediationStepId in it.remediationStepIds }
+        .flatMap { it.practiceStepIds }
+        .distinct()
+    return practiceIds.filter { id ->
+        id != remediationStepId && pack.step(id)?.second?.kind == "GUIDED"
+    }
+}
+
 internal fun advancementRuleSummary(rule: V2AdvancementRule): String {
     val parts = mutableListOf<String>()
     if (rule.requireInstruction) parts += "Finish the required instruction steps"
