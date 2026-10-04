@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.CreationExtras
 import dev.russiancompanion.v2.curriculum.V2LearnerView
+import dev.russiancompanion.v2.curriculum.governedSelectionKey
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -88,8 +89,8 @@ internal class V2WriteCoordinator(
 
     fun positionStillCurrent(ticket: Int): Boolean = ticket == positionTicket.get()
 
-    fun confirmSelection(itemId: String, selected: String) {
-        selections = selections + (itemId to selected)
+    fun confirmSelection(stepId: String, itemId: String, selected: String) {
+        selections = selections + (governedSelectionKey(stepId, itemId) to selected)
     }
 
     /**
@@ -193,8 +194,8 @@ internal class V2WriteCoordinator(
         if (loaded.isSuccess) {
             val view = loaded.getOrThrow()
             learner = view
-            val inFlight = selections.filterKeys { itemId -> "attempt:$itemId" in pending }
-            selections = view.attemptSelections + inFlight
+            val inFlight = selections.filterKeys { selectionPending(it) }
+            selections = governedSelectionOverlay(view.attemptSelections) + inFlight
             loadFailed = false
             appliedGeneration = nextGeneration
             banner = null
@@ -218,9 +219,21 @@ internal class V2WriteCoordinator(
     private fun applyLearner(generation: Long, loaded: V2LearnerView) {
         if (generation < appliedGeneration) return
         appliedGeneration = generation
-        val inFlight = selections.filterKeys { itemId -> "attempt:$itemId" in pending }
+        val inFlight = selections.filterKeys { selectionPending(it) }
         learner = loaded
-        selections = loaded.attemptSelections + inFlight
+        selections = governedSelectionOverlay(loaded.attemptSelections) + inFlight
+    }
+
+    private fun selectionPending(selectionKey: String): Boolean {
+        val parts = selectionKey.split('\u001f', limit = 2)
+        if (parts.size != 2 || parts[0].isEmpty() || parts[1].isEmpty()) return false
+        val prefix = "attempt:${parts[0]}:${parts[1]}:"
+        return pending.any { it.startsWith(prefix) }
+    }
+
+    /** Item-only keys cannot prove that the current step was answered. */
+    private fun governedSelectionOverlay(stored: Map<String, String>): Map<String, String> {
+        return stored.filterKeys { it.contains('\u001f') }
     }
 
     override fun onCleared() {

@@ -27,11 +27,10 @@ import dev.russiancompanion.v2.curriculum.OPTIONAL_PRACTICE
 import dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
+import dev.russiancompanion.v2.curriculum.governedStepCompletionDigest
 import dev.russiancompanion.v2.curriculum.prepareGovernedAttempt
 import dev.russiancompanion.v2.curriculum.practiceStepId
 import dev.russiancompanion.v2.curriculum.resumePositionDigest
-import dev.russiancompanion.v2.curriculum.step
-import dev.russiancompanion.v2.curriculum.stepContentDigest
 import dev.russiancompanion.v2.curriculum.targetContentDigest
 import dev.russiancompanion.v2.curriculum.unit
 import kotlinx.coroutines.Dispatchers
@@ -237,9 +236,10 @@ internal fun V2App(
                         Unit
                     },
                     onCompleteStep = { stepId, afterSaved ->
-                        val digest = pack.step(stepId)?.second?.let { stepContentDigest(pack, it) }
-                        if (digest == null) return@V2NavHost
                         writes.submit("step:$stepId", onSuccess = afterSaved) {
+                            val current = store.v2LearnerView()
+                            val digest = governedStepCompletionDigest(pack, current, stepId)
+                                ?: error("unverified step")
                             api.completeStep(stepId, recordedAt(), digest)
                         }
                         Unit
@@ -250,7 +250,7 @@ internal fun V2App(
                             ?: return@V2NavHost false
                         writes.submit(
                             key = "attempt:$stepId:$itemId:$selected",
-                            onCommitted = { writes.confirmSelection(itemId, selected) },
+                            onCommitted = { writes.confirmSelection(stepId, itemId, selected) },
                         ) {
                             api.recordAttempt(write)
                         }

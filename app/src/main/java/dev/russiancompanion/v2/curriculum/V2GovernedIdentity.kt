@@ -190,6 +190,74 @@ internal fun prepareGovernedAttempt(
     )
 }
 
+internal fun governedSelectionKey(stepId: String, itemId: String): String = "$stepId\u001f$itemId"
+
+/**
+ * A session item counts as answered only when this attempt is a prescribed check
+ * for that exact step and every current governed identity matches the pack.
+ * An incorrect answer still counts. Legacy, optional, and digest-mismatched rows do not.
+ */
+internal fun attemptSuppliesStepSelection(
+    attempt: GovernedAttemptView,
+    pack: V2CurriculumPack,
+    stepId: String,
+): Boolean {
+    if (pack.schemaVersion != 1) return false
+    if (attempt.attemptRole != PRESCRIBED_CHECK) return false
+    if (attempt.identitySchema != GOVERNED_IDENTITY_SCHEMA) return false
+    if (attempt.stepId != stepId || stepId.isBlank()) return false
+    if (attempt.selected.isBlank()) return false
+    if (attempt.itemDigest == UNRECOVERABLE_GOVERNED_IDENTITY ||
+        attempt.ruleDigest == UNRECOVERABLE_GOVERNED_IDENTITY ||
+        attempt.unitContentDigest == UNRECOVERABLE_GOVERNED_IDENTITY
+    ) {
+        return false
+    }
+    if (attempt.ruleDigest != closedResponseRuleDigest()) return false
+    val item = pack.item(attempt.itemId) ?: return false
+    if (attempt.selected !in item.options) return false
+    if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
+    val unitNumber = itemUnitNumber(pack, item) ?: return false
+    if (attempt.unitNumber != unitNumber || pack.unit(unitNumber) == null) return false
+    if (attempt.unitContentDigest != V2Validator.unitContentReviewDigest(pack, unitNumber)) return false
+    val step = pack.step(stepId)?.second ?: return false
+    return attempt.itemId in step.itemIds
+}
+
+/** Last matching prescribed attempt wins. Keys are step plus item, never item alone. */
+internal fun governedSessionSelections(pack: V2CurriculumPack, learner: V2LearnerView): Map<String, String> {
+    val attempts = learner.governedAttempts ?: return emptyMap()
+    val selections = linkedMapOf<String, String>()
+    attempts.forEach { attempt ->
+        if (attemptSuppliesStepSelection(attempt, pack, attempt.stepId)) {
+            selections[governedSelectionKey(attempt.stepId, attempt.itemId)] = attempt.selected
+        }
+    }
+    return selections
+}
+
+internal fun stepReadyForGovernedCompletion(
+    pack: V2CurriculumPack,
+    learner: V2LearnerView,
+    stepId: String,
+): Boolean {
+    val step = pack.step(stepId)?.second ?: return false
+    if (step.itemIds.isEmpty()) return true
+    val selections = governedSessionSelections(pack, learner)
+    return step.itemIds.all { itemId -> governedSelectionKey(stepId, itemId) in selections }
+}
+
+/** Null refuses the schema-1 step write. Teach and orient steps with no items stay completable. */
+internal fun governedStepCompletionDigest(
+    pack: V2CurriculumPack,
+    learner: V2LearnerView,
+    stepId: String,
+): String? {
+    if (!stepReadyForGovernedCompletion(pack, learner, stepId)) return null
+    val step = pack.step(stepId)?.second ?: return null
+    return stepContentDigest(pack, step)
+}
+
 internal fun attemptGrantsPrescribedCredit(attempt: GovernedAttemptView, pack: V2CurriculumPack): Boolean {
     if (attempt.attemptRole != PRESCRIBED_CHECK) return false
     if (attempt.identitySchema != GOVERNED_IDENTITY_SCHEMA || !attempt.correct) return false

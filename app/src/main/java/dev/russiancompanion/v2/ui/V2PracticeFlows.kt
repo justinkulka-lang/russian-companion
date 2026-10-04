@@ -95,7 +95,9 @@ internal fun V2LabScreen(
         onBack = onBack,
         footer = {
             Box(Modifier.padding(16.dp)) {
-                if (item == null || recorded != null) {
+                val differentAnswer = chosen != null && chosen != recorded?.selected
+                val showSubmit = item != null && (recorded == null || differentAnswer)
+                if (!showSubmit) {
                     val atEnd = items.isEmpty() || index >= items.lastIndex
                     V2PrimaryButton(
                         text = if (items.isEmpty() || atEnd) "Done" else "Next item",
@@ -108,9 +110,10 @@ internal fun V2LabScreen(
                 } else {
                     V2PrimaryButton(
                         text = "Submit answer",
-                        enabled = chosen != null && !pending,
+                        enabled = differentAnswer && !pending,
                         onClick = {
                             val selection = chosen ?: return@V2PrimaryButton
+                            if (selection == recorded?.selected) return@V2PrimaryButton
                             onSubmit(item.id, selection)
                         },
                         tag = "v2-lab-submit",
@@ -143,13 +146,13 @@ internal fun V2LabScreen(
                     .heightIn(min = 48.dp)
                     .semantics {
                         role = Role.RadioButton
-                        this.selected = (recorded?.selected ?: chosen) == option
+                        this.selected = (chosen ?: recorded?.selected) == option
                     },
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 RadioButton(
-                    selected = (recorded?.selected ?: chosen) == option,
-                    enabled = recorded == null && !pending,
+                    selected = (chosen ?: recorded?.selected) == option,
+                    enabled = !pending,
                     onClick = { chosen = option },
                     modifier = Modifier.semantics { testTag = "v2-lab-option-$option" },
                 )

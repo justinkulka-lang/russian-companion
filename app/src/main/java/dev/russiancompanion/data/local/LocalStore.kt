@@ -748,12 +748,6 @@ internal class LocalStore private constructor(
         val dao = database.v2()
         val attempts = dao.attempts()
         val correct = attempts.filter { it.correct }.map { it.itemId }.toSet()
-        val selections = linkedMapOf<String, String>()
-        val prescribed = attempts.filter {
-            it.attemptRole == dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK ||
-                it.attemptRole == dev.russiancompanion.v2.curriculum.LEGACY_UNVERIFIED
-        }
-        prescribed.forEach { attempt -> selections[attempt.itemId] = attempt.selected }
         val steps = dao.steps()
         return dev.russiancompanion.v2.curriculum.V2LearnerView(
             onboardingCompleted = profile.onboardingCompleted,
@@ -771,7 +765,7 @@ internal class LocalStore private constructor(
             correctItemIds = correct,
             bookAttestedUnits = dao.bookAttestations().map { it.unitNumber }.toSet(),
             completedUnitNumbers = dao.unitCompletions().map { it.unitNumber }.toSet(),
-            attemptSelections = selections,
+            attemptSelections = emptyMap(),
             governedAttempts = attempts.map { it.toView() },
             governedStepDigests = steps.associate { it.stepId to it.contentDigest },
             resumeContentDigest = profile.resumeContentDigest,

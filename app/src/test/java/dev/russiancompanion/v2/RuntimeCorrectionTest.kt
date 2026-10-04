@@ -21,6 +21,8 @@ import androidx.compose.ui.test.performTextInput
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK
+import dev.russiancompanion.v2.curriculum.governedSelectionKey
+import dev.russiancompanion.v2.curriculum.governedSessionSelections
 import dev.russiancompanion.v2.curriculum.V2CheckItem
 import dev.russiancompanion.v2.curriculum.prepareGovernedAttempt
 import dev.russiancompanion.v2.curriculum.stepContentDigest
@@ -156,7 +158,10 @@ class RuntimeCorrectionTest {
         compose.onNodeWithText(step.title).assertIsDisplayed()
         compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertIsDisplayed()
         compose.onNodeWithTag("v2-option-${item.id}-${wrongOption(item)}").assertIsSelected()
-        assertEquals(wrongOption(item), store.v2LearnerView().attemptSelections[item.id])
+        assertEquals(
+            wrongOption(item),
+            governedSessionSelections(pack, store.v2LearnerView())[governedSelectionKey(step.id, item.id)],
+        )
         assertEquals(step.id, store.v2Profile().currentSessionId?.let { pack.session(it)!!.steps[store.v2Profile().currentStepIndex].id })
     }
 
@@ -260,8 +265,9 @@ class RuntimeCorrectionTest {
         release.countDown()
         awaitText("Saved")
         assertEquals(1, store.v2Attempts().count { it.itemId == item.id })
-        assertEquals(1, store.v2LearnerView().attemptSelections.count { it.key == item.id })
-        assertEquals(wrongOption(item), store.v2LearnerView().attemptSelections[item.id])
+        val selections = governedSessionSelections(pack, store.v2LearnerView())
+        assertEquals(1, selections.count { it.key == governedSelectionKey(step.id, item.id) })
+        assertEquals(wrongOption(item), selections[governedSelectionKey(step.id, item.id)])
     }
 
     @Test
@@ -272,7 +278,9 @@ class RuntimeCorrectionTest {
         val step = pack.step("u1-st-confusable-rest")!!.second
         val kept = pack.item(step.itemIds[0])!!
         val failed = pack.item(step.itemIds[1])!!
-        store.v2RecordAttempt(kept.id, kept.answer, true, "2026-10-02T12:00")
+        store.v2RecordGovernedAttempt(
+            prepareGovernedAttempt(pack, kept.id, kept.answer, PRESCRIBED_CHECK, step.id, "2026-10-02T12:00")!!,
+        )
         val persistence = object : V2Persistence by StoreV2Persistence(store) {
             override suspend fun recordAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
                 error("storage failed")
@@ -286,8 +294,9 @@ class RuntimeCorrectionTest {
         compose.onNodeWithTag("v2-item-feedback-${kept.id}").performScrollTo().assertIsDisplayed()
         assertDoesNotExist("v2-item-feedback-${failed.id}")
         val saved = store.v2LearnerView()
-        assertEquals(kept.answer, saved.attemptSelections[kept.id])
-        assertFalse(saved.attemptSelections.containsKey(failed.id))
+        val selections = governedSessionSelections(pack, saved)
+        assertEquals(kept.answer, selections[governedSelectionKey(step.id, kept.id)])
+        assertFalse(selections.containsKey(governedSelectionKey(step.id, failed.id)))
         assertTrue(kept.id in saved.correctItemIds)
     }
 
@@ -347,7 +356,9 @@ class RuntimeCorrectionTest {
         val step = pack.step("u1-st-confusable-rest")!!.second
         val kept = pack.item(step.itemIds[0])!!
         val added = pack.item(step.itemIds[1])!!
-        store.v2RecordAttempt(kept.id, kept.answer, true, "2026-10-02T12:00")
+        store.v2RecordGovernedAttempt(
+            prepareGovernedAttempt(pack, kept.id, kept.answer, PRESCRIBED_CHECK, step.id, "2026-10-02T12:00")!!,
+        )
         showStep(store, pack, step.id, persistence = gate)
         awaitQuiet(gate)
         gate.failRefresh = true
@@ -402,7 +413,9 @@ class RuntimeCorrectionTest {
         val store = openedStore()
         val step = pack.step("u1-st-confusable-rest")!!.second
         val item = pack.item(step.itemIds.first())!!
-        store.v2RecordAttempt(item.id, item.answer, true, "2026-10-02T12:00")
+        store.v2RecordGovernedAttempt(
+            prepareGovernedAttempt(pack, item.id, item.answer, PRESCRIBED_CHECK, step.id, "2026-10-02T12:00")!!,
+        )
         val persistence = object : V2Persistence by StoreV2Persistence(store) {
             override suspend fun recordAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
                 error("storage failed")
@@ -417,7 +430,10 @@ class RuntimeCorrectionTest {
         compose.onNodeWithTag("v2-option-${item.id}-${wrongOption(item)}").assertIsNotSelected()
         compose.onNodeWithText("Recorded as correct. ${item.feedback}", substring = true).assertIsDisplayed()
         assertEquals(before, store.v2Attempts().size)
-        assertEquals(item.answer, store.v2LearnerView().attemptSelections[item.id])
+        assertEquals(
+            item.answer,
+            governedSessionSelections(pack, store.v2LearnerView())[governedSelectionKey(step.id, item.id)],
+        )
     }
 
     @Test
@@ -625,8 +641,9 @@ class RuntimeCorrectionTest {
         assertFalse(guidedId in completed)
         assertFalse(check.id in completed)
         assertFalse(target.id in completed)
-        assertEquals(wrongOption(item), store.v2LearnerView().attemptSelections[item.id])
-        assertEquals(practice.answer, store.v2LearnerView().attemptSelections[practice.id])
+        val selections = governedSessionSelections(pack, store.v2LearnerView())
+        assertEquals(wrongOption(item), selections[governedSelectionKey(check.id, item.id)])
+        assertEquals(practice.answer, selections[governedSelectionKey(guided.id, practice.id)])
     }
 
     @Test
