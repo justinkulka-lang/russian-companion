@@ -23,7 +23,8 @@ internal fun V2NavHost(
     onAppearance: (AppearancePreference) -> Unit,
     onCompleteOnboarding: (V2OnboardingDraft) -> Unit,
     onCompleteStep: (String, () -> Unit) -> Unit,
-    onAttempt: (String, String, Boolean) -> Boolean,
+    onAttempt: (String, String, String) -> Boolean,
+    onPracticeAttempt: (String, String, String) -> Boolean,
     onBookmark: (String, String) -> Unit,
     onNoteDraft: (String, String) -> Unit,
     onNote: (String, String) -> Unit,
@@ -73,6 +74,7 @@ internal fun V2NavHost(
                     learner = learner,
                     target = continueTarget(pack, learner),
                     onTab = ::goTab,
+                    onSavedWork = { navController.navigate(V2SavedWorkRoute) },
                     onContinue = { target ->
                         if (target.opensUnitReview) {
                             navController.navigate(V2UnitRoute(target.unitNumber))
@@ -158,6 +160,37 @@ internal fun V2NavHost(
                 learner = learner,
                 onTab = ::goTab,
                 onAlphabet = { navController.navigate(V2AlphabetLabRoute) },
+                onLab = { labId -> navController.navigate(V2LabRoute(labId)) },
+                onSavedWork = { navController.navigate(V2SavedWorkRoute) },
+            )
+        }
+        composable<V2SavedWorkRoute> {
+            val pack = state.pack
+            val learner = state.learner
+            if (pack == null || learner == null) return@composable
+            V2SavedWorkScreen(
+                pack = pack,
+                learner = learner,
+                onBack = { navController.popBackStack() },
+                onResume = { sessionId, index ->
+                    onResumeAt(sessionId, index)
+                    navController.navigate(V2SessionRoute(sessionId, index))
+                },
+                onOpenReference = { id -> navController.navigate(V2ReferenceEntryRoute(id)) },
+            )
+        }
+        composable<V2LabRoute> { entry ->
+            val pack = state.pack
+            val learner = state.learner
+            if (pack == null || learner == null) return@composable
+            val labId = entry.toRoute<V2LabRoute>().labId
+            V2LabScreen(
+                pack = pack,
+                learner = learner,
+                labId = labId,
+                pendingKeys = pendingKeys,
+                onBack = { navController.popBackStack() },
+                onSubmit = { itemId, selected -> onPracticeAttempt(labId, itemId, selected) },
             )
         }
         composable<V2AlphabetLabRoute> {
@@ -168,6 +201,7 @@ internal fun V2NavHost(
                 pack = pack,
                 learner = learner,
                 onBack = { navController.popBackStack() },
+                onRecognition = { navController.navigate(V2LabRoute("alphabet")) },
             )
         }
         composable<V2ReferenceRoute> {

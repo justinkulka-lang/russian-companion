@@ -24,7 +24,13 @@ import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
 import dev.russiancompanion.v2.curriculum.distinctCorrectCheckCount
 import dev.russiancompanion.v2.curriculum.canOpenUnit
+import dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK
+import dev.russiancompanion.v2.curriculum.V2CheckItem
 import dev.russiancompanion.v2.curriculum.continueTarget
+import dev.russiancompanion.v2.curriculum.item
+import dev.russiancompanion.v2.curriculum.prepareGovernedAttempt
+import dev.russiancompanion.v2.curriculum.stepContentDigest
+import dev.russiancompanion.v2.curriculum.verifiedResume
 import dev.russiancompanion.v2.curriculum.todaysSession
 import dev.russiancompanion.v2.curriculum.unit
 import dev.russiancompanion.v2.curriculum.unitState
@@ -656,13 +662,15 @@ class V2RebuildTest {
                 onboardingCompleted = true,
                 currentSessionId = first.id,
                 currentStepIndex = 0,
-            ),
+            ).verifiedResume(pack),
         )
         val before = continueTarget(pack, store.v2LearnerView())
         assertEquals(first.id, before.sessionId)
         assertEquals(0, before.stepIndex)
         store.v2CompleteStep(first.steps.first().id, "2026-09-22T12:00")
-        store.v2SaveProfile(store.v2Profile().copy(currentSessionId = first.id, currentStepIndex = 1))
+        store.v2SaveProfile(
+            store.v2Profile().copy(currentSessionId = first.id, currentStepIndex = 1).verifiedResume(pack),
+        )
         val after = continueTarget(pack, store.v2LearnerView())
         assertEquals(first.id, after.sessionId)
         assertEquals(1, after.stepIndex)
@@ -700,21 +708,21 @@ class V2RebuildTest {
         val store = LocalStore.openInMemory(context()).also { stores += it }
         val unit = pack.unit(1)!!
         unit.sessions.flatMap { it.steps }.filter { it.kind == "ORIENT" || it.kind == "TEACH" }.forEach {
-            store.v2CompleteStep(it.id, "2026-09-22T12:00")
+            store.v2CompleteGovernedStep(it.id, stepContentDigest(pack, it), "2026-09-22T12:00")
         }
         val early = advancementDecision(pack, unit, store.v2LearnerView())
         assertFalse(early.allowed)
         store.v2AttestBook(1, "2026-09-22T12:01")
-        store.v2RecordAttempt("u1-i-а-identity", "Cyrillic А", true, "2026-09-22T12:02")
+        recordPrescribed(store, pack, pack.item("u1-i-а-identity")!!, "2026-09-22T12:02")
         val still = advancementDecision(pack, unit, store.v2LearnerView())
         assertFalse(still.allowed)
-        store.v2RecordAttempt("u1-i-р-not-p", "The Cyrillic letter Р", true, "2026-09-22T12:03")
+        recordPrescribed(store, pack, pack.item("u1-i-р-not-p")!!, "2026-09-22T12:03")
         val skipped = advancementDecision(pack, unit, store.v2LearnerView())
         assertFalse(skipped.remaining.joinToString(), skipped.allowed)
         assertTrue(skipped.remaining.any { it.startsWith("Demonstrate every check for ") })
         unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
             pack.items.filter { it.objectiveId == objective.id }.forEach { item ->
-                store.v2RecordAttempt(item.id, item.answer, true, "2026-09-22T12:04")
+                recordPrescribed(store, pack, item, "2026-09-22T12:04")
             }
         }
         val ready = advancementDecision(pack, unit, store.v2LearnerView())
@@ -1019,16 +1027,23 @@ class V2RebuildTest {
         assertTrue(File(repo(), "app/src/main/java/dev/russiancompanion/data/local/DatabaseMigrations.kt").readText().contains("MIGRATION_6_7"))
     }
 
+    private fun recordPrescribed(store: LocalStore, pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, item: V2CheckItem, at: String) {
+        val stepId = pack.units.flatMap { it.sessions }.flatMap { it.steps }.first { item.id in it.itemIds }.id
+        store.v2RecordGovernedAttempt(
+            checkNotNull(prepareGovernedAttempt(pack, item.id, item.answer, PRESCRIBED_CHECK, stepId, at)),
+        )
+    }
+
     private fun assertObjectiveSkipBlocks(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, store: LocalStore, unitNumber: Int, skippedObjectiveId: String) {
         val unit = pack.unit(unitNumber)!!
         val skipped = unit.objectives.first { it.id == skippedObjectiveId }
         val skippedItems = pack.items.filter { it.objectiveId == skipped.id }.map { it.id }.toSet()
         unit.sessions.flatMap { it.steps }.filter { it.kind == "ORIENT" || it.kind == "TEACH" }.forEach {
-            store.v2CompleteStep(it.id, "2026-09-23T12:00")
+            store.v2CompleteGovernedStep(it.id, stepContentDigest(pack, it), "2026-09-23T12:00")
         }
         store.v2AttestBook(unitNumber, "2026-09-23T12:01")
         pack.items.filter { it.objectiveId in unit.objectives.map { objective -> objective.id } && it.id !in skippedItems }.forEach { item ->
-            store.v2RecordAttempt(item.id, item.answer, true, "2026-09-23T12:02")
+            recordPrescribed(store, pack, item, "2026-09-23T12:02")
         }
         val learner = store.v2LearnerView()
         val correct = distinctCorrectCheckCount(
@@ -1041,7 +1056,7 @@ class V2RebuildTest {
         assertFalse(blocked.remaining.joinToString(), blocked.allowed)
         assertTrue(blocked.remaining.joinToString(), blocked.remaining.any { it.contains(skipped.title) })
         pack.items.filter { it.id in skippedItems }.forEach { item ->
-            store.v2RecordAttempt(item.id, item.answer, true, "2026-09-23T12:03")
+            recordPrescribed(store, pack, item, "2026-09-23T12:03")
         }
         val ready = advancementDecision(pack, unit, store.v2LearnerView())
         assertTrue(ready.remaining.joinToString(), ready.allowed)

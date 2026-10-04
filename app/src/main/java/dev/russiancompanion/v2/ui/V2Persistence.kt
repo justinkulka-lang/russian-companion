@@ -14,11 +14,11 @@ internal interface V2Persistence {
     suspend fun learner(): V2LearnerView
     suspend fun profile(): V2ProfileEntity
     suspend fun saveProfile(profile: V2ProfileEntity)
-    suspend fun completeStep(stepId: String, recordedAt: String)
-    suspend fun recordAttempt(itemId: String, selected: String, correct: Boolean, recordedAt: String)
-    suspend fun toggleBookmark(targetId: String, kind: String, recordedAt: String)
-    suspend fun addNote(targetId: String, text: String, recordedAt: String)
-    suspend fun addTutor(targetId: String, note: String, recordedAt: String)
+    suspend fun completeStep(stepId: String, recordedAt: String, contentDigest: String)
+    suspend fun recordAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite)
+    suspend fun toggleBookmark(targetId: String, kind: String, recordedAt: String, targetDigest: String)
+    suspend fun addNote(targetId: String, text: String, recordedAt: String, targetDigest: String)
+    suspend fun addTutor(targetId: String, note: String, recordedAt: String, targetDigest: String)
     suspend fun attestBook(unitNumber: Int, recordedAt: String)
     suspend fun completeUnit(unitNumber: Int, recordedAt: String)
     suspend fun advanceUnit(unitNumber: Int, recordedAt: String, nextUnitNumber: Int, nextSessionId: String?)
@@ -35,24 +35,48 @@ internal class StoreV2Persistence(private val store: LocalStore) : V2Persistence
         store.v2SaveProfileAsync(profile)
     }
 
-    override suspend fun completeStep(stepId: String, recordedAt: String) {
-        store.v2CompleteStepAsync(stepId, recordedAt)
+    override suspend fun completeStep(stepId: String, recordedAt: String, contentDigest: String) {
+        store.v2CompleteStepAsync(stepId, recordedAt, contentDigest)
     }
 
-    override suspend fun recordAttempt(itemId: String, selected: String, correct: Boolean, recordedAt: String) {
-        store.v2RecordAttemptAsync(itemId, selected, correct, recordedAt)
+    override suspend fun recordAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
+        store.v2RecordGovernedAttemptAsync(write)
     }
 
-    override suspend fun toggleBookmark(targetId: String, kind: String, recordedAt: String) {
-        store.awaitStore { store.v2ToggleBookmark(targetId, kind, recordedAt) }
+    override suspend fun toggleBookmark(targetId: String, kind: String, recordedAt: String, targetDigest: String) {
+        store.awaitStore {
+            store.v2ToggleBookmark(
+                targetId,
+                kind,
+                recordedAt,
+                targetDigest,
+                dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA,
+            )
+        }
     }
 
-    override suspend fun addNote(targetId: String, text: String, recordedAt: String) {
-        store.awaitStore { store.v2AddNote(targetId, text, recordedAt) }
+    override suspend fun addNote(targetId: String, text: String, recordedAt: String, targetDigest: String) {
+        store.awaitStore {
+            store.v2AddNote(
+                targetId,
+                text,
+                recordedAt,
+                targetDigest,
+                dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA,
+            )
+        }
     }
 
-    override suspend fun addTutor(targetId: String, note: String, recordedAt: String) {
-        store.awaitStore { store.v2AddTutorItem(targetId, note, recordedAt) }
+    override suspend fun addTutor(targetId: String, note: String, recordedAt: String, targetDigest: String) {
+        store.awaitStore {
+            store.v2AddTutorItem(
+                targetId,
+                note,
+                recordedAt,
+                targetDigest,
+                dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA,
+            )
+        }
     }
 
     override suspend fun attestBook(unitNumber: Int, recordedAt: String) {

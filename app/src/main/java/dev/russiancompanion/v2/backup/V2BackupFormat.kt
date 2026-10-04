@@ -11,6 +11,8 @@ import java.util.zip.ZipEntry
 import java.util.zip.ZipException
 import java.util.zip.ZipFile
 import java.util.zip.ZipOutputStream
+import dev.russiancompanion.v2.curriculum.LEGACY_UNVERIFIED
+import dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY
 
 internal const val BACKUP_FORMAT_VERSION = 1
 internal const val BACKUP_SCHEMA_VERSION = 1
@@ -93,10 +95,17 @@ internal data class BackupProfile(
     val transliterationEnabled: Boolean,
     val currentSessionId: String?,
     val currentStepIndex: Int,
+    val resumeContentDigest: String = "",
+    val resumeIdentitySchema: Int = 0,
 )
 
 @Serializable
-internal data class BackupStep(val stepId: String, val completedAtLocal: String)
+internal data class BackupStep(
+    val stepId: String,
+    val completedAtLocal: String,
+    val contentDigest: String = UNRECOVERABLE_GOVERNED_IDENTITY,
+    val identitySchema: Int = 0,
+)
 
 @Serializable
 internal data class BackupAttempt(
@@ -105,10 +114,24 @@ internal data class BackupAttempt(
     val selected: String,
     val correct: Boolean,
     val recordedAtLocal: String,
+    val itemDigest: String = UNRECOVERABLE_GOVERNED_IDENTITY,
+    val unitContentDigest: String = UNRECOVERABLE_GOVERNED_IDENTITY,
+    val ruleDigest: String = UNRECOVERABLE_GOVERNED_IDENTITY,
+    val identitySchema: Int = 0,
+    val attemptRole: String = LEGACY_UNVERIFIED,
+    val objectiveId: String = "",
+    val unitNumber: Int = 0,
+    val stepId: String = "",
 )
 
 @Serializable
-internal data class BackupBookmark(val targetId: String, val kind: String, val createdAtLocal: String)
+internal data class BackupBookmark(
+    val targetId: String,
+    val kind: String,
+    val createdAtLocal: String,
+    val targetDigest: String = UNRECOVERABLE_GOVERNED_IDENTITY,
+    val identitySchema: Int = 0,
+)
 
 @Serializable
 internal data class BackupNote(
@@ -117,6 +140,8 @@ internal data class BackupNote(
     val text: String,
     val createdAtLocal: String,
     val userAuthoredRussian: Boolean,
+    val targetDigest: String = UNRECOVERABLE_GOVERNED_IDENTITY,
+    val identitySchema: Int = 0,
 )
 
 @Serializable
@@ -125,6 +150,8 @@ internal data class BackupTutorItem(
     val targetId: String,
     val note: String,
     val createdAtLocal: String,
+    val targetDigest: String = UNRECOVERABLE_GOVERNED_IDENTITY,
+    val identitySchema: Int = 0,
 )
 
 @Serializable

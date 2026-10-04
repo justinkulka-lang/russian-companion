@@ -214,6 +214,34 @@ internal val MIGRATION_6_7 = object : Migration(6, 7) {
     }
 }
 
+/**
+ * Adds governed content and rule identity to learner attempts and saved work.
+ * Existing rows stay readable and are marked UNRECOVERABLE. That sentinel is
+ * not upgraded to a hash of whatever content is installed now.
+ */
+internal val MIGRATION_7_8 = object : Migration(7, 8) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL("ALTER TABLE `v2_profiles` ADD COLUMN `resumeContentDigest` TEXT NOT NULL DEFAULT ''")
+        db.execSQL("ALTER TABLE `v2_profiles` ADD COLUMN `resumeIdentitySchema` INTEGER NOT NULL DEFAULT 0")
+        db.execSQL("ALTER TABLE `v2_step_progress` ADD COLUMN `contentDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE'")
+        db.execSQL("ALTER TABLE `v2_step_progress` ADD COLUMN `identitySchema` INTEGER NOT NULL DEFAULT 0")
+        db.execSQL("ALTER TABLE `v2_attempts` ADD COLUMN `itemDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE'")
+        db.execSQL("ALTER TABLE `v2_attempts` ADD COLUMN `unitContentDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE'")
+        db.execSQL("ALTER TABLE `v2_attempts` ADD COLUMN `ruleDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE'")
+        db.execSQL("ALTER TABLE `v2_attempts` ADD COLUMN `identitySchema` INTEGER NOT NULL DEFAULT 0")
+        db.execSQL("ALTER TABLE `v2_attempts` ADD COLUMN `attemptRole` TEXT NOT NULL DEFAULT 'LEGACY_UNVERIFIED'")
+        db.execSQL("ALTER TABLE `v2_attempts` ADD COLUMN `objectiveId` TEXT NOT NULL DEFAULT ''")
+        db.execSQL("ALTER TABLE `v2_attempts` ADD COLUMN `unitNumber` INTEGER NOT NULL DEFAULT 0")
+        db.execSQL("ALTER TABLE `v2_attempts` ADD COLUMN `stepId` TEXT NOT NULL DEFAULT ''")
+        db.execSQL("ALTER TABLE `v2_bookmarks` ADD COLUMN `targetDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE'")
+        db.execSQL("ALTER TABLE `v2_bookmarks` ADD COLUMN `identitySchema` INTEGER NOT NULL DEFAULT 0")
+        db.execSQL("ALTER TABLE `v2_notes` ADD COLUMN `targetDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE'")
+        db.execSQL("ALTER TABLE `v2_notes` ADD COLUMN `identitySchema` INTEGER NOT NULL DEFAULT 0")
+        db.execSQL("ALTER TABLE `v2_tutor_queue` ADD COLUMN `targetDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE'")
+        db.execSQL("ALTER TABLE `v2_tutor_queue` ADD COLUMN `identitySchema` INTEGER NOT NULL DEFAULT 0")
+    }
+}
+
 private data class LegacyEvidenceRow(
     val id: String,
     val gateId: String,

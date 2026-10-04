@@ -20,7 +20,11 @@ import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextInput
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.LocalStore
+import dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK
 import dev.russiancompanion.v2.curriculum.V2CheckItem
+import dev.russiancompanion.v2.curriculum.prepareGovernedAttempt
+import dev.russiancompanion.v2.curriculum.stepContentDigest
+import dev.russiancompanion.v2.curriculum.verifiedResume
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2PackLoader
@@ -194,7 +198,7 @@ class RuntimeCorrectionTest {
                 currentUnitNumber = 1,
                 currentSessionId = "u1-s-iotated",
                 currentStepIndex = 0,
-            ),
+            ).verifiedResume(pack),
         )
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
         awaitTag("v2-continue")
@@ -220,6 +224,11 @@ class RuntimeCorrectionTest {
         compose.onNodeWithTag("v2-continue").performClick()
         compose.onNodeWithText("letter draft").performScrollTo().assertIsDisplayed()
         compose.onNodeWithTag("v2-option-${item.id}-${wrongOption(item)}").performScrollTo().assertIsSelected()
+        check.itemIds.drop(1).forEach { id ->
+            val other = pack.item(id)!!
+            choose(other, wrong = true)
+            awaitTag("v2-item-feedback-$id")
+        }
         compose.onNodeWithTag("v2-session-continue").performClick()
         awaitText("Review advancement")
         compose.onNodeWithText("Review advancement").assertIsDisplayed()
@@ -265,7 +274,7 @@ class RuntimeCorrectionTest {
         val failed = pack.item(step.itemIds[1])!!
         store.v2RecordAttempt(kept.id, kept.answer, true, "2026-10-02T12:00")
         val persistence = object : V2Persistence by StoreV2Persistence(store) {
-            override suspend fun recordAttempt(itemId: String, selected: String, correct: Boolean, recordedAt: String) {
+            override suspend fun recordAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
                 error("storage failed")
             }
         }
@@ -395,7 +404,7 @@ class RuntimeCorrectionTest {
         val item = pack.item(step.itemIds.first())!!
         store.v2RecordAttempt(item.id, item.answer, true, "2026-10-02T12:00")
         val persistence = object : V2Persistence by StoreV2Persistence(store) {
-            override suspend fun recordAttempt(itemId: String, selected: String, correct: Boolean, recordedAt: String) {
+            override suspend fun recordAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
                 error("storage failed")
             }
         }
@@ -516,7 +525,7 @@ class RuntimeCorrectionTest {
                 currentUnitNumber = 1,
                 currentSessionId = located.first.id,
                 currentStepIndex = index,
-            ),
+            ).verifiedResume(pack),
         )
         val tester = StateRestorationTester(compose)
         tester.setContent {
@@ -555,7 +564,7 @@ class RuntimeCorrectionTest {
                 currentUnitNumber = 1,
                 currentSessionId = session.id,
                 currentStepIndex = 0,
-            ),
+            ).verifiedResume(pack),
         )
         val tester = StateRestorationTester(compose)
         tester.setContent {
@@ -667,10 +676,15 @@ class RuntimeCorrectionTest {
         val pack = pack()
         val store = openedStore()
         val unit = pack.unit(1)!!
-        unit.sessions.flatMap { it.steps }.forEach { store.v2CompleteStep(it.id, "2026-10-02T12:00") }
+        unit.sessions.flatMap { it.steps }.forEach { step ->
+            store.v2CompleteGovernedStep(step.id, stepContentDigest(pack, step), "2026-10-02T12:00")
+        }
         unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }.distinct().forEach { id ->
             val item = pack.item(id)!!
-            store.v2RecordAttempt(id, item.answer, true, "2026-10-02T12:00")
+            val stepId = unit.sessions.flatMap { it.steps }.first { id in it.itemIds }.id
+            store.v2RecordGovernedAttempt(
+                prepareGovernedAttempt(pack, item.id, item.answer, PRESCRIBED_CHECK, stepId, "2026-10-02T12:00")!!,
+            )
         }
         store.v2AttestBook(1, "2026-10-02T12:00")
         store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 1))
@@ -751,7 +765,7 @@ class RuntimeCorrectionTest {
                 currentUnitNumber = unitNumber,
                 currentSessionId = located.first.id,
                 currentStepIndex = index,
-            ),
+            ).verifiedResume(pack),
         )
         compose.setContent {
             V2App(
@@ -882,20 +896,20 @@ private class GatedPersistence(
         }
     }
 
-    override suspend fun completeStep(stepId: String, recordedAt: String) {
+    override suspend fun completeStep(stepId: String, recordedAt: String, contentDigest: String) {
         completeCalls.incrementAndGet()
-        delegate.completeStep(stepId, recordedAt)
+        delegate.completeStep(stepId, recordedAt, contentDigest)
     }
 
-    override suspend fun recordAttempt(itemId: String, selected: String, correct: Boolean, recordedAt: String) {
+    override suspend fun recordAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
         if (gateAttempts) {
             entered.countDown()
             withContext(Dispatchers.IO) { release.await(10, TimeUnit.SECONDS) }
         }
-        delegate.recordAttempt(itemId, selected, correct, recordedAt)
+        delegate.recordAttempt(write)
     }
 
-    override suspend fun addTutor(targetId: String, note: String, recordedAt: String) {
+    override suspend fun addTutor(targetId: String, note: String, recordedAt: String, targetDigest: String) {
         tutorCalls.incrementAndGet()
         if (failTutor) error("tutor rejected")
         if (gateTutor) {
@@ -903,6 +917,6 @@ private class GatedPersistence(
             tutorEntered.countDown()
             withContext(Dispatchers.IO) { tutorRelease.await(10, TimeUnit.SECONDS) }
         }
-        delegate.addTutor(targetId, note, recordedAt)
+        delegate.addTutor(targetId, note, recordedAt, targetDigest)
     }
 }

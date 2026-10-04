@@ -43,6 +43,7 @@ import dev.russiancompanion.v2.curriculum.currentObjective
 import dev.russiancompanion.v2.curriculum.installLabel
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.objectiveState
+import dev.russiancompanion.v2.curriculum.practiceOffers
 import dev.russiancompanion.v2.curriculum.readinessLabel
 import dev.russiancompanion.v2.curriculum.reviewedGuidedPractice
 import dev.russiancompanion.v2.curriculum.step
@@ -190,6 +191,7 @@ internal fun V2TodayScreen(
     target: V2ContinueTarget,
     onTab: (V2Tab) -> Unit,
     onContinue: (V2ContinueTarget) -> Unit,
+    onSavedWork: () -> Unit,
 ) {
     val unit = pack.unit(learner.currentUnitNumber)
     val objective = unit?.let { currentObjective(pack, it, learner) }
@@ -229,6 +231,7 @@ internal fun V2TodayScreen(
             Text("Today’s session is complete for this unit.")
         }
         V2Status("$recorded of ${unit?.sessions?.size ?: 0} sessions recorded")
+        V2SecondaryButton("Saved work", onSavedWork, tag = "v2-open-saved-work")
         if (unit != null) {
             V2SecondaryButton(
                 if (showPlan) "Hide full unit plan" else "Show full unit plan",
@@ -373,7 +376,7 @@ internal fun V2SessionScreen(
     noteDrafts: Map<String, String>,
     onBack: () -> Unit,
     onCompleteStep: (String, () -> Unit) -> Unit,
-    onAttempt: (String, String, Boolean) -> Boolean,
+    onAttempt: (String, String, String) -> Boolean,
     onBookmark: (String, String) -> Unit,
     onNoteDraft: (String, String) -> Unit,
     onNote: (String, String) -> Unit,
@@ -430,16 +433,18 @@ internal fun V2SessionScreen(
                         tag = "v2-return-to-check",
                     )
                 } else {
+                    val unanswered = step.itemIds.any { it !in selections }
                     V2PrimaryButton(
                         text = if (index == session.steps.lastIndex) "Finish session" else step.dominantAction,
                         onClick = {
+                            if (step.itemIds.any { it !in selections }) return@V2PrimaryButton
                             val stepId = step.id
                             onCompleteStep(stepId) {
                                 if (!navigationOpen.value || !consumedSteps.add(stepId)) return@onCompleteStep
                                 if (index == session.steps.lastIndex) onFinished() else index += 1
                             }
                         },
-                        enabled = "step:${step.id}" !in pendingKeys,
+                        enabled = "step:${step.id}" !in pendingKeys && !unanswered,
                         tag = "v2-session-continue",
                     )
                 }
@@ -448,7 +453,10 @@ internal fun V2SessionScreen(
     ) {
         Text(step.title, style = MaterialTheme.typography.headlineSmall, modifier = Modifier.semantics { heading(); testTag = "v2-step-title" })
         V2Status("Step ${index + 1} of ${session.steps.size} · ${step.kind}")
-        Text(step.body)
+            Text(step.body)
+            if (step.itemIds.any { it !in selections }) {
+                V2Status("Answer each item before this step is recorded.")
+            }
         step.exampleIds.forEach { exampleId ->
             val example = pack.example(exampleId) ?: return@forEach
             Text(
@@ -495,7 +503,10 @@ internal fun V2SessionScreen(
                     RadioButton(
                         selected = selected == option,
                         enabled = !locked,
-                        onClick = { onAttempt(item.id, option, option == item.answer) },
+                        onClick = {
+                            if (selected == option) return@RadioButton
+                            onAttempt(item.id, option, step.id)
+                        },
                         modifier = Modifier.semantics { testTag = "v2-option-${item.id}-$option" },
                     )
                     Text(option)
@@ -550,20 +561,34 @@ internal fun V2PracticeScreen(
     learner: V2LearnerView,
     onTab: (V2Tab) -> Unit,
     onAlphabet: () -> Unit,
+    onLab: (String) -> Unit,
+    onSavedWork: () -> Unit,
 ) {
+    val offers = practiceOffers(pack, learner)
     V2Scaffold(title = "Practice", tab = V2Tab.PRACTICE, onTab = onTab) {
         Text(
             "Alphabet Lab is the visual practice surface for printed letters.",
             modifier = Modifier.semantics { testTag = "v2-practice-heading" },
         )
         V2Card("Alphabet Lab", "Letter board, print pairs, and confusable forms.", "Available", onAlphabet)
-        V2Status("Mapped audio and handwriting recognition are not installed in this development slice.")
-        V2SecondaryButton("Reopen current-unit checks", { onTab(V2Tab.COURSE) })
+        V2SecondaryButton("Saved work", onSavedWork, tag = "v2-open-saved-work")
+        offers.forEach { offer ->
+            if (offer.runnable) {
+                V2Card(offer.title, offer.detail, "Optional", { onLab(offer.id) })
+            } else {
+                V2Status("${offer.title}. ${offer.detail}")
+            }
+        }
     }
 }
 
 @Composable
-internal fun V2AlphabetLabScreen(pack: V2CurriculumPack, learner: V2LearnerView, onBack: () -> Unit) {
+internal fun V2AlphabetLabScreen(
+    pack: V2CurriculumPack,
+    learner: V2LearnerView,
+    onBack: () -> Unit,
+    onRecognition: () -> Unit = {},
+) {
     var selectedId by remember { mutableStateOf<String?>(null) }
     val selected = pack.letters.firstOrNull { it.id == selectedId }
     val confusable = pack.letters.filter { !it.latinLookalike.isNullOrBlank() }
@@ -589,6 +614,9 @@ internal fun V2AlphabetLabScreen(pack: V2CurriculumPack, learner: V2LearnerView,
         Spacer(Modifier.height(12.dp))
         Text("Print pairs", style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-section-print-pairs" })
         V2PrintPairGrid(pack.letters)
+        Spacer(Modifier.height(12.dp))
+        V2SecondaryButton("Letter recognition checks", onRecognition, tag = "v2-alphabet-recognition")
+        V2Status("Licensed letter audio is not installed. Listening and pronunciation are not scored here.")
     }
 }
 
@@ -616,7 +644,7 @@ internal fun V2ReferenceScreen(
             )
         }
         items(entries, key = { it.id }) { entry ->
-            V2Card(entry.title, entry.summary, "Unit ${entry.introducedInUnit}") { onOpen(entry.id) }
+            V2Card(entry.title, entry.summary, "Unit ${entry.introducedInUnit}", onClick = { onOpen(entry.id) })
         }
         if (entries.isEmpty()) {
             item { V2Status("No installed reference matches that search.") }

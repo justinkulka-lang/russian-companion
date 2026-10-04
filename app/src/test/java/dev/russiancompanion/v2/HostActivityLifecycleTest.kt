@@ -21,6 +21,7 @@ import dev.russiancompanion.v2.curriculum.V2PackLoader
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.session
 import dev.russiancompanion.v2.curriculum.step
+import dev.russiancompanion.v2.curriculum.verifiedResume
 import dev.russiancompanion.v2.ui.V2UiWork
 import org.junit.After
 import org.junit.Assert.assertEquals
@@ -79,7 +80,7 @@ class LearnerReloadRecoveryTest {
                 currentUnitNumber = 1,
                 currentSessionId = located.first.id,
                 currentStepIndex = index,
-            ),
+            ).verifiedResume(pack),
         )
         closed.v2RecordAttempt(kept.id, kept.answer, true, "2026-10-03T08:00")
         compose.onNodeWithTag("v2-retry").performClick()
@@ -155,7 +156,7 @@ class HostActivityRecreationTest {
                 currentUnitNumber = 1,
                 currentSessionId = located.first.id,
                 currentStepIndex = index,
-            ),
+            ).verifiedResume(pack),
         )
         original.v2RecordAttempt(kept.id, kept.answer, true, "2026-10-03T08:01")
         LocalStore.failHeldLearnerRefreshForTests = true
@@ -233,13 +234,14 @@ class HostActivityRecreationTest {
     private fun openSeededStep(stepId: String, index: Int, sessionId: String) {
         awaitLatch(compose, entered)
         val store = app().localStore!!
+        val pack = activityPack()
         store.v2SaveProfile(
             store.v2Profile().copy(
                 onboardingCompleted = true,
                 currentUnitNumber = 1,
                 currentSessionId = sessionId,
                 currentStepIndex = index,
-            ),
+            ).verifiedResume(pack),
         )
         release.countDown()
         awaitTag(compose, "v2-continue")

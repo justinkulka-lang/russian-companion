@@ -97,6 +97,12 @@ internal object V2Validator {
     internal fun instructionalContentDigest(pack: V2CurriculumPack): String = contentReviewDigest(pack)
 
     /**
+     * SHA-256 of the canonical check item. Attempt rows store this value at
+     * creation so a later edit of the item cannot be treated as the same key.
+     */
+    internal fun checkItemContentDigest(item: V2CheckItem): String = sha256(canonicalCheckItem(item))
+
+    /**
      * Release acceptance for the pack-wide linguistic review and every unit.
      * This is the same decision [validate] records when a chain claims
      * OWNER_ACCEPTED. A reduced review DTO cannot call it.

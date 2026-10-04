@@ -1,0 +1,1792 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 8,
+    "identityHash": "72a59d7af42d9410edabab3ff0945775",
+    "entities": [
+      {
+        "tableName": "course_segments",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `lessonReference` TEXT NOT NULL, `lessonNumber` INTEGER NOT NULL, `sortOrder` INTEGER NOT NULL, `eligibilityStatus` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lessonReference",
+            "columnName": "lessonReference",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lessonNumber",
+            "columnName": "lessonNumber",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sortOrder",
+            "columnName": "sortOrder",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eligibilityStatus",
+            "columnName": "eligibilityStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "plan_definitions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `segmentId` TEXT NOT NULL, `activityType` TEXT NOT NULL, `instruction` TEXT NOT NULL, `sortOrder` INTEGER NOT NULL, `required` INTEGER NOT NULL, `lessonNumber` INTEGER, `audioModelIds` TEXT NOT NULL, `eligibilityStatus` TEXT NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`segmentId`) REFERENCES `course_segments`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "segmentId",
+            "columnName": "segmentId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "activityType",
+            "columnName": "activityType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "instruction",
+            "columnName": "instruction",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sortOrder",
+            "columnName": "sortOrder",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "required",
+            "columnName": "required",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lessonNumber",
+            "columnName": "lessonNumber",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "audioModelIds",
+            "columnName": "audioModelIds",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eligibilityStatus",
+            "columnName": "eligibilityStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_plan_definitions_segmentId",
+            "unique": false,
+            "columnNames": [
+              "segmentId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_plan_definitions_segmentId` ON `${TABLE_NAME}` (`segmentId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "course_segments",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "segmentId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "gate_definitions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `segmentId` TEXT NOT NULL, `ruleVersion` TEXT NOT NULL, `displayedRuleText` TEXT NOT NULL, `eligibilityStatus` TEXT NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`segmentId`) REFERENCES `course_segments`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "segmentId",
+            "columnName": "segmentId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ruleVersion",
+            "columnName": "ruleVersion",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "displayedRuleText",
+            "columnName": "displayedRuleText",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eligibilityStatus",
+            "columnName": "eligibilityStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_gate_definitions_segmentId",
+            "unique": false,
+            "columnNames": [
+              "segmentId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_gate_definitions_segmentId` ON `${TABLE_NAME}` (`segmentId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "course_segments",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "segmentId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "gate_conditions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `gateDefinitionId` TEXT NOT NULL, `evidenceType` TEXT NOT NULL, `operator` TEXT NOT NULL, `operand` TEXT, `sortOrder` INTEGER NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`gateDefinitionId`) REFERENCES `gate_definitions`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gateDefinitionId",
+            "columnName": "gateDefinitionId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "evidenceType",
+            "columnName": "evidenceType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "operator",
+            "columnName": "operator",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "operand",
+            "columnName": "operand",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sortOrder",
+            "columnName": "sortOrder",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_gate_conditions_gateDefinitionId",
+            "unique": false,
+            "columnNames": [
+              "gateDefinitionId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_gate_conditions_gateDefinitionId` ON `${TABLE_NAME}` (`gateDefinitionId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "gate_definitions",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "gateDefinitionId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "source_records",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `provenance` TEXT NOT NULL, `redistributionBasis` TEXT NOT NULL, `licenseName` TEXT NOT NULL, `attribution` TEXT NOT NULL, `modificationStatus` TEXT NOT NULL, `shareAlikeTreatment` TEXT NOT NULL, `shareAlikeConfirmation` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "provenance",
+            "columnName": "provenance",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "redistributionBasis",
+            "columnName": "redistributionBasis",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "licenseName",
+            "columnName": "licenseName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "attribution",
+            "columnName": "attribution",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "modificationStatus",
+            "columnName": "modificationStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shareAlikeTreatment",
+            "columnName": "shareAlikeTreatment",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shareAlikeConfirmation",
+            "columnName": "shareAlikeConfirmation",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "source_texts",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `stressMarkedText` TEXT NOT NULL, `sourceRecordId` TEXT NOT NULL, `modificationStatus` TEXT NOT NULL, `matchVerified` INTEGER NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`sourceRecordId`) REFERENCES `source_records`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stressMarkedText",
+            "columnName": "stressMarkedText",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceRecordId",
+            "columnName": "sourceRecordId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "modificationStatus",
+            "columnName": "modificationStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "matchVerified",
+            "columnName": "matchVerified",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_source_texts_sourceRecordId",
+            "unique": false,
+            "columnNames": [
+              "sourceRecordId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_source_texts_sourceRecordId` ON `${TABLE_NAME}` (`sourceRecordId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "source_records",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "sourceRecordId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "asset_rights_records",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `sourceRecordId` TEXT NOT NULL, `assetIdentifier` TEXT NOT NULL, `licenseStatus` TEXT NOT NULL, `compatibilityDecision` TEXT NOT NULL, `attributionRequired` INTEGER NOT NULL, `inclusionResult` TEXT NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`sourceRecordId`) REFERENCES `source_records`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceRecordId",
+            "columnName": "sourceRecordId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "assetIdentifier",
+            "columnName": "assetIdentifier",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "licenseStatus",
+            "columnName": "licenseStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "compatibilityDecision",
+            "columnName": "compatibilityDecision",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "attributionRequired",
+            "columnName": "attributionRequired",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "inclusionResult",
+            "columnName": "inclusionResult",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_asset_rights_records_sourceRecordId",
+            "unique": false,
+            "columnNames": [
+              "sourceRecordId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_asset_rights_records_sourceRecordId` ON `${TABLE_NAME}` (`sourceRecordId`)"
+          },
+          {
+            "name": "index_asset_rights_records_assetIdentifier",
+            "unique": false,
+            "columnNames": [
+              "assetIdentifier"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_asset_rights_records_assetIdentifier` ON `${TABLE_NAME}` (`assetIdentifier`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "source_records",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "sourceRecordId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "audio_models",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `localAudioReference` TEXT NOT NULL, `sourceTextId` TEXT, `sourceRecordId` TEXT, `rightsRecordId` TEXT, `eligibilityStatus` TEXT NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`sourceTextId`) REFERENCES `source_texts`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT , FOREIGN KEY(`sourceRecordId`) REFERENCES `source_records`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT , FOREIGN KEY(`rightsRecordId`) REFERENCES `asset_rights_records`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "localAudioReference",
+            "columnName": "localAudioReference",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceTextId",
+            "columnName": "sourceTextId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sourceRecordId",
+            "columnName": "sourceRecordId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "rightsRecordId",
+            "columnName": "rightsRecordId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "eligibilityStatus",
+            "columnName": "eligibilityStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_audio_models_sourceTextId",
+            "unique": false,
+            "columnNames": [
+              "sourceTextId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_audio_models_sourceTextId` ON `${TABLE_NAME}` (`sourceTextId`)"
+          },
+          {
+            "name": "index_audio_models_sourceRecordId",
+            "unique": false,
+            "columnNames": [
+              "sourceRecordId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_audio_models_sourceRecordId` ON `${TABLE_NAME}` (`sourceRecordId`)"
+          },
+          {
+            "name": "index_audio_models_rightsRecordId",
+            "unique": false,
+            "columnNames": [
+              "rightsRecordId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_audio_models_rightsRecordId` ON `${TABLE_NAME}` (`rightsRecordId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "source_texts",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "sourceTextId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "source_records",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "sourceRecordId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "asset_rights_records",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "rightsRecordId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "optional_drill_definitions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `packageId` TEXT NOT NULL, `transformId` TEXT NOT NULL, `sourceFieldReferences` TEXT NOT NULL, `sourceRecordId` TEXT, `inheritedErrorDisclosure` TEXT NOT NULL, `eligibilityStatus` TEXT NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`sourceRecordId`) REFERENCES `source_records`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "packageId",
+            "columnName": "packageId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "transformId",
+            "columnName": "transformId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceFieldReferences",
+            "columnName": "sourceFieldReferences",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceRecordId",
+            "columnName": "sourceRecordId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "inheritedErrorDisclosure",
+            "columnName": "inheritedErrorDisclosure",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eligibilityStatus",
+            "columnName": "eligibilityStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_optional_drill_definitions_sourceRecordId",
+            "unique": false,
+            "columnNames": [
+              "sourceRecordId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_optional_drill_definitions_sourceRecordId` ON `${TABLE_NAME}` (`sourceRecordId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "source_records",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "sourceRecordId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "bundled_seed_state",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `contentVersion` INTEGER NOT NULL, `contentHash` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "contentVersion",
+            "columnName": "contentVersion",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "contentHash",
+            "columnName": "contentHash",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "learner_state",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `activeSegmentId` TEXT, `onboardingCompleted` INTEGER NOT NULL, `planContext` TEXT, PRIMARY KEY(`id`), FOREIGN KEY(`activeSegmentId`) REFERENCES `course_segments`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "activeSegmentId",
+            "columnName": "activeSegmentId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "onboardingCompleted",
+            "columnName": "onboardingCompleted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "planContext",
+            "columnName": "planContext",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_learner_state_activeSegmentId",
+            "unique": false,
+            "columnNames": [
+              "activeSegmentId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_learner_state_activeSegmentId` ON `${TABLE_NAME}` (`activeSegmentId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "course_segments",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "activeSegmentId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "plan_instances",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `localDate` TEXT NOT NULL, `segmentId` TEXT NOT NULL, `planDefinitionId` TEXT NOT NULL, `completionState` TEXT NOT NULL, `completedAtLocal` TEXT, PRIMARY KEY(`id`), FOREIGN KEY(`segmentId`) REFERENCES `course_segments`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT , FOREIGN KEY(`planDefinitionId`) REFERENCES `plan_definitions`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "localDate",
+            "columnName": "localDate",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "segmentId",
+            "columnName": "segmentId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "planDefinitionId",
+            "columnName": "planDefinitionId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "completionState",
+            "columnName": "completionState",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "completedAtLocal",
+            "columnName": "completedAtLocal",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_plan_instances_localDate_planDefinitionId",
+            "unique": true,
+            "columnNames": [
+              "localDate",
+              "planDefinitionId"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_plan_instances_localDate_planDefinitionId` ON `${TABLE_NAME}` (`localDate`, `planDefinitionId`)"
+          },
+          {
+            "name": "index_plan_instances_segmentId",
+            "unique": false,
+            "columnNames": [
+              "segmentId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_plan_instances_segmentId` ON `${TABLE_NAME}` (`segmentId`)"
+          },
+          {
+            "name": "index_plan_instances_planDefinitionId",
+            "unique": false,
+            "columnNames": [
+              "planDefinitionId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_plan_instances_planDefinitionId` ON `${TABLE_NAME}` (`planDefinitionId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "course_segments",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "segmentId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "plan_definitions",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "planDefinitionId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "activity_logs",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `category` TEXT NOT NULL, `durationMinutes` INTEGER NOT NULL, `completed` INTEGER NOT NULL, `recordedAtLocal` TEXT NOT NULL, `segmentId` TEXT, `planInstanceId` TEXT, `selfAttested` INTEGER NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`segmentId`) REFERENCES `course_segments`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT , FOREIGN KEY(`planInstanceId`) REFERENCES `plan_instances`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "durationMinutes",
+            "columnName": "durationMinutes",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "completed",
+            "columnName": "completed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordedAtLocal",
+            "columnName": "recordedAtLocal",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "segmentId",
+            "columnName": "segmentId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "planInstanceId",
+            "columnName": "planInstanceId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "selfAttested",
+            "columnName": "selfAttested",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_activity_logs_segmentId",
+            "unique": false,
+            "columnNames": [
+              "segmentId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_activity_logs_segmentId` ON `${TABLE_NAME}` (`segmentId`)"
+          },
+          {
+            "name": "index_activity_logs_planInstanceId",
+            "unique": false,
+            "columnNames": [
+              "planInstanceId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_activity_logs_planInstanceId` ON `${TABLE_NAME}` (`planInstanceId`)"
+          },
+          {
+            "name": "index_activity_logs_category",
+            "unique": false,
+            "columnNames": [
+              "category"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_activity_logs_category` ON `${TABLE_NAME}` (`category`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "course_segments",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "segmentId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "plan_instances",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "planInstanceId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "recording_records",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `audioModelId` TEXT NOT NULL, `localFileReference` TEXT NOT NULL, `createdAtLocal` TEXT NOT NULL, `markedForTutorReview` INTEGER NOT NULL, `completionState` TEXT NOT NULL, `activityLogId` TEXT, PRIMARY KEY(`id`), FOREIGN KEY(`audioModelId`) REFERENCES `audio_models`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT , FOREIGN KEY(`activityLogId`) REFERENCES `activity_logs`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "audioModelId",
+            "columnName": "audioModelId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "localFileReference",
+            "columnName": "localFileReference",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAtLocal",
+            "columnName": "createdAtLocal",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "markedForTutorReview",
+            "columnName": "markedForTutorReview",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "completionState",
+            "columnName": "completionState",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "activityLogId",
+            "columnName": "activityLogId",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_recording_records_audioModelId",
+            "unique": false,
+            "columnNames": [
+              "audioModelId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_recording_records_audioModelId` ON `${TABLE_NAME}` (`audioModelId`)"
+          },
+          {
+            "name": "index_recording_records_activityLogId",
+            "unique": false,
+            "columnNames": [
+              "activityLogId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_recording_records_activityLogId` ON `${TABLE_NAME}` (`activityLogId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "audio_models",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "audioModelId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "activity_logs",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "activityLogId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "gate_evidence",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `gateDefinitionId` TEXT NOT NULL, `evidenceType` TEXT NOT NULL, `enteredValue` TEXT NOT NULL, `selfAttestationStatus` TEXT NOT NULL, `recordedAtLocal` TEXT NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`gateDefinitionId`) REFERENCES `gate_definitions`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gateDefinitionId",
+            "columnName": "gateDefinitionId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "evidenceType",
+            "columnName": "evidenceType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "enteredValue",
+            "columnName": "enteredValue",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "selfAttestationStatus",
+            "columnName": "selfAttestationStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordedAtLocal",
+            "columnName": "recordedAtLocal",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_gate_evidence_gateDefinitionId",
+            "unique": false,
+            "columnNames": [
+              "gateDefinitionId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_gate_evidence_gateDefinitionId` ON `${TABLE_NAME}` (`gateDefinitionId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "gate_definitions",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "gateDefinitionId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "gate_tutor_requirements",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`gateDefinitionId` TEXT NOT NULL, `recordedAtLocal` TEXT NOT NULL, PRIMARY KEY(`gateDefinitionId`), FOREIGN KEY(`gateDefinitionId`) REFERENCES `gate_definitions`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "gateDefinitionId",
+            "columnName": "gateDefinitionId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordedAtLocal",
+            "columnName": "recordedAtLocal",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "gateDefinitionId"
+          ]
+        },
+        "foreignKeys": [
+          {
+            "table": "gate_definitions",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "gateDefinitionId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "gate_decisions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `gateDefinitionId` TEXT NOT NULL, `ruleVersion` TEXT NOT NULL, `ruleSnapshot` TEXT NOT NULL, `evidenceIds` TEXT NOT NULL, `conditionOutcomes` TEXT NOT NULL, `status` TEXT NOT NULL, `evaluatedAtLocal` TEXT NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`gateDefinitionId`) REFERENCES `gate_definitions`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gateDefinitionId",
+            "columnName": "gateDefinitionId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ruleVersion",
+            "columnName": "ruleVersion",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ruleSnapshot",
+            "columnName": "ruleSnapshot",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "evidenceIds",
+            "columnName": "evidenceIds",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "conditionOutcomes",
+            "columnName": "conditionOutcomes",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "evaluatedAtLocal",
+            "columnName": "evaluatedAtLocal",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_gate_decisions_gateDefinitionId",
+            "unique": false,
+            "columnNames": [
+              "gateDefinitionId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_gate_decisions_gateDefinitionId` ON `${TABLE_NAME}` (`gateDefinitionId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "gate_definitions",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "gateDefinitionId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "export_records",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `exportedAtLocal` TEXT NOT NULL, `destinationReference` TEXT, `logCount` INTEGER NOT NULL, `evidenceCount` INTEGER NOT NULL, `progressCount` INTEGER NOT NULL, `recordingCount` INTEGER NOT NULL, `status` TEXT NOT NULL, `documentReference` TEXT, `recordingSetDigest` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "exportedAtLocal",
+            "columnName": "exportedAtLocal",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destinationReference",
+            "columnName": "destinationReference",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "logCount",
+            "columnName": "logCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "evidenceCount",
+            "columnName": "evidenceCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "progressCount",
+            "columnName": "progressCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordingCount",
+            "columnName": "recordingCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "documentReference",
+            "columnName": "documentReference",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "recordingSetDigest",
+            "columnName": "recordingSetDigest",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "v2_profiles",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `onboardingCompleted` INTEGER NOT NULL, `currentUnitNumber` INTEGER NOT NULL, `startingPoint` TEXT NOT NULL, `hasPenguin` INTEGER NOT NULL, `hasAnki` INTEGER NOT NULL, `hasBinder` INTEGER NOT NULL, `hasTutor` INTEGER NOT NULL, `dailyMinutes` INTEGER NOT NULL, `transliterationEnabled` INTEGER NOT NULL, `currentSessionId` TEXT, `currentStepIndex` INTEGER NOT NULL, `resumeContentDigest` TEXT NOT NULL DEFAULT '', `resumeIdentitySchema` INTEGER NOT NULL DEFAULT 0, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "onboardingCompleted",
+            "columnName": "onboardingCompleted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currentUnitNumber",
+            "columnName": "currentUnitNumber",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "startingPoint",
+            "columnName": "startingPoint",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasPenguin",
+            "columnName": "hasPenguin",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasAnki",
+            "columnName": "hasAnki",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasBinder",
+            "columnName": "hasBinder",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasTutor",
+            "columnName": "hasTutor",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dailyMinutes",
+            "columnName": "dailyMinutes",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "transliterationEnabled",
+            "columnName": "transliterationEnabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currentSessionId",
+            "columnName": "currentSessionId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "currentStepIndex",
+            "columnName": "currentStepIndex",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "resumeContentDigest",
+            "columnName": "resumeContentDigest",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "resumeIdentitySchema",
+            "columnName": "resumeIdentitySchema",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "v2_step_progress",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`stepId` TEXT NOT NULL, `completedAtLocal` TEXT NOT NULL, `contentDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE', `identitySchema` INTEGER NOT NULL DEFAULT 0, PRIMARY KEY(`stepId`))",
+        "fields": [
+          {
+            "fieldPath": "stepId",
+            "columnName": "stepId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "completedAtLocal",
+            "columnName": "completedAtLocal",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "contentDigest",
+            "columnName": "contentDigest",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'UNRECOVERABLE'"
+          },
+          {
+            "fieldPath": "identitySchema",
+            "columnName": "identitySchema",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "stepId"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_v2_step_progress_stepId",
+            "unique": false,
+            "columnNames": [
+              "stepId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_v2_step_progress_stepId` ON `${TABLE_NAME}` (`stepId`)"
+          }
+        ]
+      },
+      {
+        "tableName": "v2_attempts",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `itemId` TEXT NOT NULL, `selected` TEXT NOT NULL, `correct` INTEGER NOT NULL, `recordedAtLocal` TEXT NOT NULL, `itemDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE', `unitContentDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE', `ruleDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE', `identitySchema` INTEGER NOT NULL DEFAULT 0, `attemptRole` TEXT NOT NULL DEFAULT 'LEGACY_UNVERIFIED', `objectiveId` TEXT NOT NULL DEFAULT '', `unitNumber` INTEGER NOT NULL DEFAULT 0, `stepId` TEXT NOT NULL DEFAULT '', PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "itemId",
+            "columnName": "itemId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "selected",
+            "columnName": "selected",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "correct",
+            "columnName": "correct",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordedAtLocal",
+            "columnName": "recordedAtLocal",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "itemDigest",
+            "columnName": "itemDigest",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'UNRECOVERABLE'"
+          },
+          {
+            "fieldPath": "unitContentDigest",
+            "columnName": "unitContentDigest",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'UNRECOVERABLE'"
+          },
+          {
+            "fieldPath": "ruleDigest",
+            "columnName": "ruleDigest",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'UNRECOVERABLE'"
+          },
+          {
+            "fieldPath": "identitySchema",
+            "columnName": "identitySchema",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "attemptRole",
+            "columnName": "attemptRole",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'LEGACY_UNVERIFIED'"
+          },
+          {
+            "fieldPath": "objectiveId",
+            "columnName": "objectiveId",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "unitNumber",
+            "columnName": "unitNumber",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "stepId",
+            "columnName": "stepId",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_v2_attempts_itemId",
+            "unique": false,
+            "columnNames": [
+              "itemId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_v2_attempts_itemId` ON `${TABLE_NAME}` (`itemId`)"
+          }
+        ]
+      },
+      {
+        "tableName": "v2_bookmarks",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`targetId` TEXT NOT NULL, `kind` TEXT NOT NULL, `createdAtLocal` TEXT NOT NULL, `targetDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE', `identitySchema` INTEGER NOT NULL DEFAULT 0, PRIMARY KEY(`targetId`))",
+        "fields": [
+          {
+            "fieldPath": "targetId",
+            "columnName": "targetId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kind",
+            "columnName": "kind",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAtLocal",
+            "columnName": "createdAtLocal",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "targetDigest",
+            "columnName": "targetDigest",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'UNRECOVERABLE'"
+          },
+          {
+            "fieldPath": "identitySchema",
+            "columnName": "identitySchema",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "targetId"
+          ]
+        }
+      },
+      {
+        "tableName": "v2_notes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `targetId` TEXT NOT NULL, `text` TEXT NOT NULL, `createdAtLocal` TEXT NOT NULL, `userAuthoredRussian` INTEGER NOT NULL, `targetDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE', `identitySchema` INTEGER NOT NULL DEFAULT 0, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "targetId",
+            "columnName": "targetId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "text",
+            "columnName": "text",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAtLocal",
+            "columnName": "createdAtLocal",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userAuthoredRussian",
+            "columnName": "userAuthoredRussian",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "targetDigest",
+            "columnName": "targetDigest",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'UNRECOVERABLE'"
+          },
+          {
+            "fieldPath": "identitySchema",
+            "columnName": "identitySchema",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "v2_tutor_queue",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `targetId` TEXT NOT NULL, `note` TEXT NOT NULL, `createdAtLocal` TEXT NOT NULL, `targetDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE', `identitySchema` INTEGER NOT NULL DEFAULT 0, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "targetId",
+            "columnName": "targetId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "note",
+            "columnName": "note",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAtLocal",
+            "columnName": "createdAtLocal",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "targetDigest",
+            "columnName": "targetDigest",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'UNRECOVERABLE'"
+          },
+          {
+            "fieldPath": "identitySchema",
+            "columnName": "identitySchema",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "v2_book_attestations",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`unitNumber` INTEGER NOT NULL, `recordedAtLocal` TEXT NOT NULL, PRIMARY KEY(`unitNumber`))",
+        "fields": [
+          {
+            "fieldPath": "unitNumber",
+            "columnName": "unitNumber",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordedAtLocal",
+            "columnName": "recordedAtLocal",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "unitNumber"
+          ]
+        }
+      },
+      {
+        "tableName": "v2_unit_completions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`unitNumber` INTEGER NOT NULL, `recordedAtLocal` TEXT NOT NULL, PRIMARY KEY(`unitNumber`))",
+        "fields": [
+          {
+            "fieldPath": "unitNumber",
+            "columnName": "unitNumber",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordedAtLocal",
+            "columnName": "recordedAtLocal",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "unitNumber"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '72a59d7af42d9410edabab3ff0945775')"
+    ]
+  }
+}

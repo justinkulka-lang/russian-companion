@@ -17,6 +17,13 @@ internal data class V2LearnerView(
     val bookAttestedUnits: Set<Int>,
     val completedUnitNumbers: Set<Int>,
     val attemptSelections: Map<String, String> = emptyMap(),
+    val governedAttempts: List<GovernedAttemptView>? = null,
+    val governedStepDigests: Map<String, String>? = null,
+    val resumeContentDigest: String = "",
+    val resumeIdentitySchema: Int = 0,
+    val bookmarks: List<GovernedBookmarkView> = emptyList(),
+    val notes: List<GovernedNoteView> = emptyList(),
+    val tutorItems: List<GovernedTutorView> = emptyList(),
 )
 
 internal data class V2ContinueTarget(
@@ -108,6 +115,21 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
         )
     }
     val sessions = unit.sessions
+    if (!learner.currentSessionId.isNullOrBlank() && !resumeIsCurrent(pack, learner)) {
+        val mismatch = learner.resumeIdentitySchema == GOVERNED_IDENTITY_SCHEMA
+        return V2ContinueTarget(
+            title = if (mismatch) "Saved lesson does not match" else "Saved lesson cannot be verified",
+            reason = if (mismatch) {
+                "This saved position was recorded for different lesson content. It will not be opened or scored."
+            } else {
+                "This saved position has no verified lesson identity. It will not be opened or scored."
+            },
+            sessionId = null,
+            stepIndex = 0,
+            unitNumber = unit.number,
+            unavailable = true,
+        )
+    }
     val resumeId = learner.currentSessionId
     val resumeSession = sessions.firstOrNull { it.id == resumeId } ?: sessions.first()
     val resumeIndex = learner.currentStepIndex.coerceIn(0, resumeSession.steps.lastIndex)
@@ -172,6 +194,7 @@ internal fun objectiveState(
     learner: V2LearnerView,
     pack: V2CurriculumPack,
 ): V2ObjectiveState {
+    val credit = creditItemIds(pack, learner)
     val relatedItems = pack.items.filter { it.objectiveId == objective.id }.map { it.id }
     val relatedSteps = pack.units.flatMap { it.sessions }.flatMap { it.steps }
         .filter { objective.id in (pack.session(it.id)?.objectiveIds ?: emptyList()) || it.itemIds.any { id -> id in relatedItems } }
@@ -180,7 +203,7 @@ internal fun objectiveState(
         ?.flatMap { it.steps }
         .orEmpty()
     val started = stepsForObjective.any { it.id in learner.completedStepIds } ||
-        relatedItems.any { it in learner.correctItemIds }
+        relatedItems.any { it in credit }
     if (!started) return V2ObjectiveState.NOT_STARTED
     if (objective.kind == "SELF_ATTESTATION") {
         return if (objective.unitNumber in learner.bookAttestedUnits) {
@@ -190,7 +213,7 @@ internal fun objectiveState(
         }
     }
     if (relatedItems.isNotEmpty()) {
-        val correct = relatedItems.count { it in learner.correctItemIds }
+        val correct = relatedItems.count { it in credit }
         return when {
             correct == 0 -> V2ObjectiveState.LEARNING
             correct < relatedItems.size -> V2ObjectiveState.REVIEW_REQUIRED
@@ -247,7 +270,7 @@ internal fun advancementDecision(
     remaining += V2Validator.unresolvedPartialUnitAdvancementBlockers(pack, unit)
     if (rule.requireInstruction) {
         val instructionSteps = unit.sessions.flatMap { it.steps }.filter { it.kind in setOf("ORIENT", "TEACH") }
-        if (instructionSteps.any { it.id !in learner.completedStepIds }) {
+        if (instructionSteps.any { !completedStepCounts(pack, learner, it.id) }) {
             remaining += "Finish the required instruction steps"
         }
     }
@@ -256,7 +279,7 @@ internal fun advancementDecision(
     }
     if (rule.requireAppChecks) {
         val checkIds = unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }.distinct()
-        val correct = distinctCorrectCheckCount(pack, checkIds, learner.correctItemIds)
+        val correct = distinctCorrectCheckCount(pack, checkIds, creditItemIds(pack, learner))
         if (correct < rule.minimumDistinctChecks) {
             remaining += "Demonstrate at least ${rule.minimumDistinctChecks} distinct in-app checks"
         }
@@ -271,7 +294,7 @@ internal fun advancementDecision(
             pack.items.any { it.id in step.itemIds && it.objectiveId == "obj-u2-review" } ||
                 step.id.contains("review")
         }
-        if (reviewSteps.any { it.id !in learner.completedStepIds }) {
+        if (reviewSteps.any { !completedStepCounts(pack, learner, it.id) }) {
             remaining += "Complete the scheduled Unit 1 review"
         }
     }

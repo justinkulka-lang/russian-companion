@@ -22,8 +22,17 @@ import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.domain.appearance.defaultAppearancePreference
 import dev.russiancompanion.presentation.navigation.snapshotDispatcher
 import dev.russiancompanion.presentation.theme.CompanionTheme
+import dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA
+import dev.russiancompanion.v2.curriculum.OPTIONAL_PRACTICE
+import dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
+import dev.russiancompanion.v2.curriculum.prepareGovernedAttempt
+import dev.russiancompanion.v2.curriculum.practiceStepId
+import dev.russiancompanion.v2.curriculum.resumePositionDigest
+import dev.russiancompanion.v2.curriculum.step
+import dev.russiancompanion.v2.curriculum.stepContentDigest
+import dev.russiancompanion.v2.curriculum.targetContentDigest
 import dev.russiancompanion.v2.curriculum.unit
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -205,6 +214,8 @@ internal fun V2App(
                     onCompleteOnboarding = { draft ->
                         writes.submit("onboarding") {
                             val current = api.profile()
+                            val sessionId = pack.unit(1)?.sessions?.firstOrNull()?.id
+                            val digest = sessionId?.let { resumePositionDigest(pack, it, 0) }.orEmpty()
                             api.saveProfile(
                                 current.copy(
                                     onboardingCompleted = true,
@@ -216,43 +227,67 @@ internal fun V2App(
                                     hasTutor = draft.hasTutor,
                                     dailyMinutes = draft.dailyMinutes,
                                     transliterationEnabled = draft.startingPoint == V2StartingPoint.NEW_TO_CYRILLIC,
-                                    currentSessionId = pack.unit(1)?.sessions?.firstOrNull()?.id,
+                                    currentSessionId = sessionId,
                                     currentStepIndex = 0,
+                                    resumeContentDigest = digest,
+                                    resumeIdentitySchema = if (digest.isEmpty()) 0 else GOVERNED_IDENTITY_SCHEMA,
                                 ),
                             )
                         }
                         Unit
                     },
                     onCompleteStep = { stepId, afterSaved ->
+                        val digest = pack.step(stepId)?.second?.let { stepContentDigest(pack, it) }
+                        if (digest == null) return@V2NavHost
                         writes.submit("step:$stepId", onSuccess = afterSaved) {
-                            api.completeStep(stepId, recordedAt())
+                            api.completeStep(stepId, recordedAt(), digest)
                         }
                         Unit
                     },
-                    onAttempt = { itemId, selected, correct ->
+                    onAttempt = { itemId, selected, stepId ->
+                        val at = recordedAt()
+                        val write = prepareGovernedAttempt(pack, itemId, selected, PRESCRIBED_CHECK, stepId, at)
+                            ?: return@V2NavHost false
                         writes.submit(
-                            key = "attempt:$itemId",
+                            key = "attempt:$stepId:$itemId:$selected",
                             onCommitted = { writes.confirmSelection(itemId, selected) },
                         ) {
-                            api.recordAttempt(itemId, selected, correct, recordedAt())
+                            api.recordAttempt(write)
+                        }
+                    },
+                    onPracticeAttempt = { labId, itemId, selected ->
+                        val at = recordedAt()
+                        val write = prepareGovernedAttempt(
+                            pack,
+                            itemId,
+                            selected,
+                            OPTIONAL_PRACTICE,
+                            practiceStepId(labId),
+                            at,
+                        ) ?: return@V2NavHost false
+                        writes.submit(key = "practice:$labId:$itemId:$selected") {
+                            api.recordAttempt(write)
                         }
                     },
                     onBookmark = { targetId, kind ->
+                        val digest = targetContentDigest(pack, targetId, kind) ?: return@V2NavHost
                         writes.submit("bookmark:$targetId") {
-                            api.toggleBookmark(targetId, kind, recordedAt())
+                            api.toggleBookmark(targetId, kind, recordedAt(), digest)
                         }
                         Unit
                     },
                     onNoteDraft = { stepId, text -> noteDrafts = noteDrafts + (stepId to text) },
                     onNote = { targetId, text ->
+                        val digest = targetContentDigest(pack, targetId, "STEP") ?: return@V2NavHost
                         writes.submit("note:$targetId") {
-                            api.addNote(targetId, text, recordedAt())
+                            api.addNote(targetId, text, recordedAt(), digest)
                         }
                         Unit
                     },
                     onTutor = { targetId, note ->
+                        val digest = targetContentDigest(pack, targetId, "STEP") ?: return@V2NavHost
                         writes.submit("tutor:$targetId") {
-                            api.addTutor(targetId, note, recordedAt())
+                            api.addTutor(targetId, note, recordedAt(), digest)
                         }
                         Unit
                     },
@@ -276,11 +311,25 @@ internal fun V2App(
                     },
                     onResumeAt = { sessionId, index ->
                         val ticket = writes.nextPositionTicket()
+                        val digest = resumePositionDigest(pack, sessionId, index) ?: return@V2NavHost
                         writes.submit("position:$sessionId:$index", singleFlight = false, quiet = true) {
                             if (!writes.positionStillCurrent(ticket)) return@submit
                             val profile = api.profile()
-                            if (profile.currentSessionId == sessionId && profile.currentStepIndex == index) return@submit
-                            api.saveProfile(profile.copy(currentSessionId = sessionId, currentStepIndex = index))
+                            if (profile.currentSessionId == sessionId &&
+                                profile.currentStepIndex == index &&
+                                profile.resumeContentDigest == digest &&
+                                profile.resumeIdentitySchema == GOVERNED_IDENTITY_SCHEMA
+                            ) {
+                                return@submit
+                            }
+                            api.saveProfile(
+                                profile.copy(
+                                    currentSessionId = sessionId,
+                                    currentStepIndex = index,
+                                    resumeContentDigest = digest,
+                                    resumeIdentitySchema = GOVERNED_IDENTITY_SCHEMA,
+                                ),
+                            )
                         }
                         Unit
                     },
