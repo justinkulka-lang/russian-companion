@@ -4,9 +4,11 @@ import android.content.Context
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsEnabled
 import androidx.compose.ui.test.assertIsNotEnabled
+import androidx.compose.ui.test.assertIsSelected
 import androidx.compose.ui.test.assertTextEquals
 import androidx.compose.ui.test.junit4.v2.createComposeRule
 import androidx.compose.ui.test.onAllNodesWithTag
+import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
@@ -173,6 +175,76 @@ class PracticeRetrievalDigestTest {
         )
         assertEquals(otherStepId, store.v2Attempts().single().stepId)
         assertUnverifiedCannotFinish(pack, store, step.id, item.id)
+    }
+
+    @Test
+    fun governedAnswerEnablesContinueAfterAFreshLoadAndSurvivesRefresh() {
+        val pack = pack()
+        val step = pack.step("u1-st-vowels-check")!!.second
+        val item = pack.item(step.itemIds.single())!!
+        val store = memory()
+        rememberStep(pack, store, step.id)
+        store.v2RecordGovernedAttempt(
+            prepareGovernedAttempt(pack, item.id, item.answer, PRESCRIBED_CHECK, step.id, "2026-10-04T06:00:00")!!,
+        )
+        compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
+        compose.onNodeWithTag("v2-continue").performClick()
+        compose.onNodeWithTag("v2-option-${item.id}-${item.answer}").performScrollTo().assertIsSelected()
+        compose.onNodeWithTag("v2-session-continue").assertIsEnabled()
+        assertEquals(0, compose.onAllNodesWithText("Answer each item before this step is recorded.").fetchSemanticsNodes().size)
+        compose.onNodeWithText("Bookmark this step").performScrollTo().performClick()
+        compose.onNodeWithTag("v2-persistence-state").performScrollTo().assertTextEquals("Saved")
+        compose.onNodeWithTag("v2-option-${item.id}-${item.answer}").performScrollTo().assertIsSelected()
+        compose.onNodeWithTag("v2-session-continue").assertIsEnabled()
+        assertTrue(stepReadyForGovernedCompletion(pack, store.v2LearnerView(), step.id))
+    }
+
+    @Test
+    fun twoGovernedAnswersOnOneStepBothRemainAfterTheSecondWrite() {
+        val pack = pack()
+        val step = pack.step("u1-st-confusable-rest")!!.second
+        val first = pack.item(step.itemIds[0])!!
+        val second = pack.item(step.itemIds[1])!!
+        val store = memory()
+        rememberStep(pack, store, step.id)
+        compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
+        compose.onNodeWithTag("v2-continue").performClick()
+        val firstOption = first.options.first { it != first.answer }
+        val secondOption = second.options.first { it != second.answer }
+        compose.onNodeWithTag("v2-option-${first.id}-$firstOption").performScrollTo().performClick()
+        compose.onNodeWithTag("v2-option-${second.id}-$secondOption").performScrollTo().performClick()
+        compose.onNodeWithTag("v2-option-${first.id}-$firstOption").performScrollTo().assertIsSelected()
+        compose.onNodeWithTag("v2-option-${second.id}-$secondOption").performScrollTo().assertIsSelected()
+        assertEquals(firstOption, governedSessionSelections(pack, store.v2LearnerView())[governedSelectionKey(step.id, first.id)])
+        assertEquals(secondOption, governedSessionSelections(pack, store.v2LearnerView())[governedSelectionKey(step.id, second.id)])
+        compose.onNodeWithTag("v2-session-continue").assertIsNotEnabled()
+    }
+
+    @Test
+    fun unverifiedAttemptsStayExcludedAfterReload() {
+        val pack = pack()
+        val step = pack.step("u1-st-vowels-check")!!.second
+        val item = pack.item(step.itemIds.single())!!
+        val store = memory()
+        rememberStep(pack, store, step.id)
+        store.v2RecordAttempt(item.id, item.answer, true, "2026-10-04T06:01:00")
+        val prepared = prepareGovernedAttempt(pack, item.id, item.answer, PRESCRIBED_CHECK, step.id, "2026-10-04T06:02:00")!!
+        store.v2RecordGovernedAttempt(prepared.copy(id = "reload-mismatch", itemDigest = "a".repeat(64)))
+        store.v2RecordGovernedAttempt(
+            prepareGovernedAttempt(pack, item.id, item.answer, OPTIONAL_PRACTICE, practiceStepId("alphabet"), "2026-10-04T06:03:00")!!,
+        )
+        store.v2RecordGovernedAttempt(
+            prepareGovernedAttempt(pack, item.id, item.answer, PRESCRIBED_CHECK, "u1-st-confusable-rest", "2026-10-04T06:04:00")!!,
+        )
+        compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
+        compose.onNodeWithTag("v2-continue").performClick()
+        compose.onNodeWithText("Answer each item before this step is recorded.").performScrollTo().assertIsDisplayed()
+        compose.onNodeWithTag("v2-session-continue").assertIsNotEnabled()
+        compose.onNodeWithText("Bookmark this step").performScrollTo().performClick()
+        compose.onNodeWithTag("v2-session-continue").assertIsNotEnabled()
+        assertFalse(governedSessionSelections(pack, store.v2LearnerView()).containsKey(governedSelectionKey(step.id, item.id)))
+        assertFalse(stepReadyForGovernedCompletion(pack, store.v2LearnerView(), step.id))
+        assertTrue(store.v2StepProgress().none { it.stepId == step.id })
     }
 
     @Test
@@ -463,9 +535,9 @@ class PracticeRetrievalDigestTest {
         compose.onNodeWithText("No saved work yet.").assertIsDisplayed()
     }
 
-    private fun rememberVowels(pack: V2CurriculumPack, store: LocalStore) {
-        val located = pack.step("u1-st-vowels-check")!!
-        val index = located.first.steps.indexOfFirst { it.id == located.second.id }
+    private fun rememberStep(pack: V2CurriculumPack, store: LocalStore, stepId: String) {
+        val located = pack.step(stepId)!!
+        val index = located.first.steps.indexOfFirst { it.id == stepId }
         store.v2SaveProfile(
             store.v2Profile().copy(
                 onboardingCompleted = true,
@@ -474,6 +546,10 @@ class PracticeRetrievalDigestTest {
                 currentStepIndex = index,
             ).verifiedResume(pack),
         )
+    }
+
+    private fun rememberVowels(pack: V2CurriculumPack, store: LocalStore) {
+        rememberStep(pack, store, "u1-st-vowels-check")
     }
 
     private fun assertUnverifiedCannotFinish(

@@ -7,8 +7,10 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.CreationExtras
+import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.governedSelectionKey
+import dev.russiancompanion.v2.curriculum.governedSessionSelections
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -55,6 +57,8 @@ internal class V2WriteCoordinator(
     @Volatile
     private var bindingEpoch = 0L
 
+    private var curriculumPack: V2CurriculumPack? = null
+
     var learner by mutableStateOf<V2LearnerView?>(null)
         private set
     var loadFailed by mutableStateOf(false)
@@ -83,6 +87,17 @@ internal class V2WriteCoordinator(
         val previous = persistence.bindingKey
         persistence = next
         if (next.bindingKey != previous) startLoad()
+    }
+
+    /**
+     * Stored answers are rebuilt from the pack whenever the learner is loaded.
+     * The same pack instance does not rebuild again, so a failed reload can
+     * keep a selection that was confirmed after its write.
+     */
+    fun bindCurriculum(pack: V2CurriculumPack) {
+        if (curriculumPack === pack) return
+        curriculumPack = pack
+        learner?.let { rebuildSelections(it) }
     }
 
     fun nextPositionTicket(): Int = positionTicket.incrementAndGet()
@@ -194,8 +209,7 @@ internal class V2WriteCoordinator(
         if (loaded.isSuccess) {
             val view = loaded.getOrThrow()
             learner = view
-            val inFlight = selections.filterKeys { selectionPending(it) }
-            selections = governedSelectionOverlay(view.attemptSelections) + inFlight
+            rebuildSelections(view)
             loadFailed = false
             appliedGeneration = nextGeneration
             banner = null
@@ -219,9 +233,8 @@ internal class V2WriteCoordinator(
     private fun applyLearner(generation: Long, loaded: V2LearnerView) {
         if (generation < appliedGeneration) return
         appliedGeneration = generation
-        val inFlight = selections.filterKeys { selectionPending(it) }
         learner = loaded
-        selections = governedSelectionOverlay(loaded.attemptSelections) + inFlight
+        rebuildSelections(loaded)
     }
 
     private fun selectionPending(selectionKey: String): Boolean {
@@ -231,9 +244,11 @@ internal class V2WriteCoordinator(
         return pending.any { it.startsWith(prefix) }
     }
 
-    /** Item-only keys cannot prove that the current step was answered. */
-    private fun governedSelectionOverlay(stored: Map<String, String>): Map<String, String> {
-        return stored.filterKeys { it.contains('\u001f') }
+    private fun rebuildSelections(view: V2LearnerView) {
+        val pack = curriculumPack
+        val stored = if (pack == null) emptyMap() else governedSessionSelections(pack, view)
+        val inFlight = selections.filterKeys { selectionPending(it) }
+        selections = stored + inFlight
     }
 
     override fun onCleared() {

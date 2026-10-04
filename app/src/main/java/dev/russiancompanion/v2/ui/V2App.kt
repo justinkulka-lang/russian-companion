@@ -190,6 +190,7 @@ internal fun V2App(
                 packVersion = pack.packVersion,
                 appearanceStore = appearanceStore,
             )
+            writes.bindCurriculum(pack)
             CompositionLocalProvider(LocalV2PersistenceStatus provides banner) {
                 V2NavHost(
                     navController = rememberNavController(),
