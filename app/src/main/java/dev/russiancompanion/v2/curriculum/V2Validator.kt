@@ -4221,7 +4221,9 @@ internal object V2Validator {
     }
 
     private fun validateReachableSessions(pack: V2CurriculumPack, errors: MutableList<String>) {
-        pack.units.filter { it.openable() }.forEach { unit ->
+        // Structural check for every development or installed unit. The release
+        // gate runs without Android BuildConfig, so the debug default is not used.
+        pack.units.filter { it.openable(developmentVisible = true) }.forEach { unit ->
             unit.sessions.forEach { session ->
                 if (session.steps.isEmpty()) {
                     errors += "Session ${session.id} is not reachable because it has no steps"

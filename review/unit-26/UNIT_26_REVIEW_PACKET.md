@@ -16,7 +16,7 @@ Unit 26 remains in development. Its readiness is content-complete and review-pen
 - Mapping-package SHA-256: c15db22cc82dcfa6c49d6d0e50beea0f90b16dfc4db90777623e99d540790489
 - Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
 - Review-package SHA-256: 07061f7a60a5c067b9b7b449ad87bfbb59f0034a312f4b6774f98b7beeda5a16
-- Repository source SHA-256: 002b9c30ebe27741155a9071f7cacd92d6ed962ea2af4d4dd9412e956d7b4c3a
+- Repository source SHA-256: 5c86599c70db3ef8ea627deef234b82d891792c7f1cd43d22d792401ab0fba67
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
