@@ -704,9 +704,13 @@ internal class LocalStore private constructor(
         writeV2Step(stepId, recordedAtLocal)
     }
 
-    internal suspend fun v2CompleteStepAsync(stepId: String, recordedAtLocal: String) {
+    internal suspend fun v2CompleteStepAsync(stepId: String, recordedAtLocal: String, contentDigest: String) {
         asyncStepWritesForTests.incrementAndGet()
-        withContext(ioDispatcher) { writeV2Step(stepId, recordedAtLocal) }
+        withContext(ioDispatcher) { writeV2Step(stepId, recordedAtLocal, contentDigest) }
+    }
+
+    fun v2CompleteGovernedStep(stepId: String, contentDigest: String, recordedAtLocal: String) = call {
+        writeV2Step(stepId, recordedAtLocal, contentDigest)
     }
 
     fun v2RecordAttempt(itemId: String, selected: String, correct: Boolean, recordedAtLocal: String) = call {
@@ -719,6 +723,14 @@ internal class LocalStore private constructor(
         correct: Boolean,
         recordedAtLocal: String,
     ) = withContext(ioDispatcher) { writeV2Attempt(itemId, selected, correct, recordedAtLocal) }
+
+    fun v2RecordGovernedAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) = call {
+        writeGovernedAttempt(write)
+    }
+
+    internal suspend fun v2RecordGovernedAttemptAsync(
+        write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite,
+    ) = withContext(ioDispatcher) { writeGovernedAttempt(write) }
 
     private fun readV2Profile(): dev.russiancompanion.v2.data.V2ProfileEntity {
         val dao = database.v2()
@@ -736,8 +748,7 @@ internal class LocalStore private constructor(
         val dao = database.v2()
         val attempts = dao.attempts()
         val correct = attempts.filter { it.correct }.map { it.itemId }.toSet()
-        val selections = linkedMapOf<String, String>()
-        attempts.forEach { attempt -> selections[attempt.itemId] = attempt.selected }
+        val steps = dao.steps()
         return dev.russiancompanion.v2.curriculum.V2LearnerView(
             onboardingCompleted = profile.onboardingCompleted,
             currentUnitNumber = profile.currentUnitNumber,
@@ -750,17 +761,74 @@ internal class LocalStore private constructor(
             transliterationEnabled = profile.transliterationEnabled,
             currentSessionId = profile.currentSessionId,
             currentStepIndex = profile.currentStepIndex,
-            completedStepIds = dao.steps().map { it.stepId }.toSet(),
+            completedStepIds = steps.map { it.stepId }.toSet(),
             correctItemIds = correct,
             bookAttestedUnits = dao.bookAttestations().map { it.unitNumber }.toSet(),
             completedUnitNumbers = dao.unitCompletions().map { it.unitNumber }.toSet(),
-            attemptSelections = selections,
+            attemptSelections = emptyMap(),
+            governedAttempts = attempts.map { it.toView() },
+            governedStepDigests = steps.associate { it.stepId to it.contentDigest },
+            resumeContentDigest = profile.resumeContentDigest,
+            resumeIdentitySchema = profile.resumeIdentitySchema,
+            bookmarks = dao.bookmarks().map { it.toView() },
+            notes = dao.notes().map { it.toView() },
+            tutorItems = dao.tutorQueue().map { it.toView() },
         )
     }
 
-    private fun writeV2Step(stepId: String, recordedAtLocal: String) {
+    private fun writeV2Step(stepId: String, recordedAtLocal: String, contentDigest: String? = null) {
+        val governed = !contentDigest.isNullOrBlank() &&
+            contentDigest != dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY
         database.v2().upsertStep(
-            dev.russiancompanion.v2.data.V2StepProgressEntity(stepId, recordedAtLocal),
+            dev.russiancompanion.v2.data.V2StepProgressEntity(
+                stepId = stepId,
+                completedAtLocal = recordedAtLocal,
+                contentDigest = if (governed) contentDigest else dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY,
+                identitySchema = if (governed) dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA else 0,
+            ),
+        )
+    }
+
+    private fun writeGovernedAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
+        if (write.identitySchema != dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA) error("unverified attempt")
+        if (write.attemptRole != dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK &&
+            write.attemptRole != dev.russiancompanion.v2.curriculum.OPTIONAL_PRACTICE
+        ) {
+            error("unverified attempt")
+        }
+        if (write.itemDigest == dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY ||
+            write.ruleDigest == dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY ||
+            write.unitContentDigest == dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY ||
+            write.ruleDigest != dev.russiancompanion.v2.curriculum.closedResponseRuleDigest()
+        ) {
+            error("unverified attempt")
+        }
+        val duplicate = database.v2().attempts().any { existing ->
+            existing.itemId == write.itemId &&
+                existing.attemptRole == write.attemptRole &&
+                existing.stepId == write.stepId &&
+                existing.selected == write.selected &&
+                existing.itemDigest == write.itemDigest &&
+                existing.ruleDigest == write.ruleDigest &&
+                existing.unitContentDigest == write.unitContentDigest
+        }
+        if (duplicate) return
+        database.v2().insertAttempt(
+            dev.russiancompanion.v2.data.V2AttemptEntity(
+                id = write.id,
+                itemId = write.itemId,
+                selected = write.selected,
+                correct = write.correct,
+                recordedAtLocal = write.recordedAtLocal,
+                itemDigest = write.itemDigest,
+                unitContentDigest = write.unitContentDigest,
+                ruleDigest = write.ruleDigest,
+                identitySchema = write.identitySchema,
+                attemptRole = write.attemptRole,
+                objectiveId = write.objectiveId,
+                unitNumber = write.unitNumber,
+                stepId = write.stepId,
+            ),
         )
     }
 
@@ -776,20 +844,41 @@ internal class LocalStore private constructor(
         )
     }
 
-    fun v2ToggleBookmark(targetId: String, kind: String, recordedAtLocal: String): Boolean = call {
+    fun v2ToggleBookmark(
+        targetId: String,
+        kind: String,
+        recordedAtLocal: String,
+        targetDigest: String = dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY,
+        identitySchema: Int = 0,
+    ): Boolean = call {
         val existing = database.v2().bookmarks().any { it.targetId == targetId }
         if (existing) {
             database.v2().deleteBookmark(targetId)
             false
+        } else if (!acceptedIdentity(identitySchema, targetDigest)) {
+            false
         } else {
             database.v2().upsertBookmark(
-                dev.russiancompanion.v2.data.V2BookmarkEntity(targetId, kind, recordedAtLocal),
+                dev.russiancompanion.v2.data.V2BookmarkEntity(
+                    targetId = targetId,
+                    kind = kind,
+                    createdAtLocal = recordedAtLocal,
+                    targetDigest = storedDigest(identitySchema, targetDigest),
+                    identitySchema = identitySchema,
+                ),
             )
             true
         }
     }
 
-    fun v2AddNote(targetId: String, text: String, recordedAtLocal: String) = call {
+    fun v2AddNote(
+        targetId: String,
+        text: String,
+        recordedAtLocal: String,
+        targetDigest: String = dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY,
+        identitySchema: Int = 0,
+    ) = call {
+        if (!acceptedIdentity(identitySchema, targetDigest)) return@call
         database.v2().insertNote(
             dev.russiancompanion.v2.data.V2NoteEntity(
                 id = "$targetId:$recordedAtLocal",
@@ -797,20 +886,88 @@ internal class LocalStore private constructor(
                 text = text,
                 createdAtLocal = recordedAtLocal,
                 userAuthoredRussian = false,
+                targetDigest = storedDigest(identitySchema, targetDigest),
+                identitySchema = identitySchema,
             ),
         )
     }
 
-    fun v2AddTutorItem(targetId: String, note: String, recordedAtLocal: String) = call {
+    fun v2AddTutorItem(
+        targetId: String,
+        note: String,
+        recordedAtLocal: String,
+        targetDigest: String = dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY,
+        identitySchema: Int = 0,
+    ) = call {
+        if (!acceptedIdentity(identitySchema, targetDigest)) return@call
         database.v2().insertTutorItem(
             dev.russiancompanion.v2.data.V2TutorItemEntity(
                 id = "$targetId:$recordedAtLocal",
                 targetId = targetId,
                 note = note,
                 createdAtLocal = recordedAtLocal,
+                targetDigest = storedDigest(identitySchema, targetDigest),
+                identitySchema = identitySchema,
             ),
         )
     }
+
+    private fun acceptedIdentity(schema: Int, digest: String): Boolean {
+        if (schema == 0) return true
+        return schema == dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA &&
+            digest.isNotBlank() &&
+            digest != dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY
+    }
+
+    private fun storedDigest(schema: Int, digest: String): String {
+        return if (schema == dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA) {
+            digest
+        } else {
+            dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY
+        }
+    }
+
+    private fun dev.russiancompanion.v2.data.V2AttemptEntity.toView() = dev.russiancompanion.v2.curriculum.GovernedAttemptView(
+        id = id,
+        itemId = itemId,
+        selected = selected,
+        correct = correct,
+        recordedAtLocal = recordedAtLocal,
+        itemDigest = itemDigest,
+        unitContentDigest = unitContentDigest,
+        ruleDigest = ruleDigest,
+        identitySchema = identitySchema,
+        attemptRole = attemptRole,
+        objectiveId = objectiveId,
+        unitNumber = unitNumber,
+        stepId = stepId,
+    )
+
+    private fun dev.russiancompanion.v2.data.V2BookmarkEntity.toView() = dev.russiancompanion.v2.curriculum.GovernedBookmarkView(
+        targetId = targetId,
+        kind = kind,
+        createdAtLocal = createdAtLocal,
+        targetDigest = targetDigest,
+        identitySchema = identitySchema,
+    )
+
+    private fun dev.russiancompanion.v2.data.V2NoteEntity.toView() = dev.russiancompanion.v2.curriculum.GovernedNoteView(
+        id = id,
+        targetId = targetId,
+        text = text,
+        createdAtLocal = createdAtLocal,
+        targetDigest = targetDigest,
+        identitySchema = identitySchema,
+    )
+
+    private fun dev.russiancompanion.v2.data.V2TutorItemEntity.toView() = dev.russiancompanion.v2.curriculum.GovernedTutorView(
+        id = id,
+        targetId = targetId,
+        note = note,
+        createdAtLocal = createdAtLocal,
+        targetDigest = targetDigest,
+        identitySchema = identitySchema,
+    )
 
     fun v2AttestBook(unitNumber: Int, recordedAtLocal: String) = call {
         database.v2().upsertBookAttestation(
@@ -1135,15 +1292,71 @@ internal class LocalStore private constructor(
             )
         }
         curriculum.upsertProfile(document.profile.toEntity())
-        document.steps.forEach { curriculum.upsertStep(V2StepProgressEntity(it.stepId, it.completedAtLocal)) }
+        document.steps.forEach {
+            curriculum.upsertStep(
+                V2StepProgressEntity(
+                    stepId = it.stepId,
+                    completedAtLocal = it.completedAtLocal,
+                    contentDigest = it.contentDigest,
+                    identitySchema = it.identitySchema,
+                ),
+            )
+        }
         document.attempts.forEach {
-            curriculum.insertAttempt(V2AttemptEntity(it.id, it.itemId, it.selected, it.correct, it.recordedAtLocal))
+            curriculum.insertAttempt(
+                V2AttemptEntity(
+                    id = it.id,
+                    itemId = it.itemId,
+                    selected = it.selected,
+                    correct = it.correct,
+                    recordedAtLocal = it.recordedAtLocal,
+                    itemDigest = it.itemDigest,
+                    unitContentDigest = it.unitContentDigest,
+                    ruleDigest = it.ruleDigest,
+                    identitySchema = it.identitySchema,
+                    attemptRole = it.attemptRole,
+                    objectiveId = it.objectiveId,
+                    unitNumber = it.unitNumber,
+                    stepId = it.stepId,
+                ),
+            )
         }
-        document.bookmarks.forEach { curriculum.upsertBookmark(V2BookmarkEntity(it.targetId, it.kind, it.createdAtLocal)) }
+        document.bookmarks.forEach {
+            curriculum.upsertBookmark(
+                V2BookmarkEntity(
+                    targetId = it.targetId,
+                    kind = it.kind,
+                    createdAtLocal = it.createdAtLocal,
+                    targetDigest = it.targetDigest,
+                    identitySchema = it.identitySchema,
+                ),
+            )
+        }
         document.notes.forEach {
-            curriculum.insertNote(V2NoteEntity(it.id, it.targetId, it.text, it.createdAtLocal, it.userAuthoredRussian))
+            curriculum.insertNote(
+                V2NoteEntity(
+                    id = it.id,
+                    targetId = it.targetId,
+                    text = it.text,
+                    createdAtLocal = it.createdAtLocal,
+                    userAuthoredRussian = it.userAuthoredRussian,
+                    targetDigest = it.targetDigest,
+                    identitySchema = it.identitySchema,
+                ),
+            )
         }
-        document.tutorQueue.forEach { curriculum.insertTutorItem(V2TutorItemEntity(it.id, it.targetId, it.note, it.createdAtLocal)) }
+        document.tutorQueue.forEach {
+            curriculum.insertTutorItem(
+                V2TutorItemEntity(
+                    id = it.id,
+                    targetId = it.targetId,
+                    note = it.note,
+                    createdAtLocal = it.createdAtLocal,
+                    targetDigest = it.targetDigest,
+                    identitySchema = it.identitySchema,
+                ),
+            )
+        }
         document.bookAttestations.forEach { curriculum.upsertBookAttestation(V2BookAttestationEntity(it.unitNumber, it.recordedAtLocal)) }
         document.unitCompletions.forEach { curriculum.upsertUnitCompletion(V2UnitCompletionEntity(it.unitNumber, it.recordedAtLocal)) }
     }
@@ -1162,6 +1375,8 @@ internal class LocalStore private constructor(
             transliterationEnabled = transliterationEnabled,
             currentSessionId = currentSessionId,
             currentStepIndex = currentStepIndex,
+            resumeContentDigest = resumeContentDigest,
+            resumeIdentitySchema = resumeIdentitySchema,
         )
     }
 
@@ -1487,12 +1702,46 @@ internal class LocalStore private constructor(
                 transliterationEnabled = profile.transliterationEnabled,
                 currentSessionId = profile.currentSessionId,
                 currentStepIndex = profile.currentStepIndex,
+                resumeContentDigest = profile.resumeContentDigest,
+                resumeIdentitySchema = profile.resumeIdentitySchema,
             ),
-            steps = curriculum.steps().sortedBy { it.stepId }.map { BackupStep(it.stepId, it.completedAtLocal) },
-            attempts = curriculum.attempts().map { BackupAttempt(it.id, it.itemId, it.selected, it.correct, it.recordedAtLocal) },
-            bookmarks = curriculum.bookmarks().map { BackupBookmark(it.targetId, it.kind, it.createdAtLocal) },
-            notes = curriculum.notes().map { BackupNote(it.id, it.targetId, it.text, it.createdAtLocal, it.userAuthoredRussian) },
-            tutorQueue = curriculum.tutorQueue().map { BackupTutorItem(it.id, it.targetId, it.note, it.createdAtLocal) },
+            steps = curriculum.steps().sortedBy { it.stepId }.map {
+                BackupStep(it.stepId, it.completedAtLocal, it.contentDigest, it.identitySchema)
+            },
+            attempts = curriculum.attempts().map {
+                BackupAttempt(
+                    id = it.id,
+                    itemId = it.itemId,
+                    selected = it.selected,
+                    correct = it.correct,
+                    recordedAtLocal = it.recordedAtLocal,
+                    itemDigest = it.itemDigest,
+                    unitContentDigest = it.unitContentDigest,
+                    ruleDigest = it.ruleDigest,
+                    identitySchema = it.identitySchema,
+                    attemptRole = it.attemptRole,
+                    objectiveId = it.objectiveId,
+                    unitNumber = it.unitNumber,
+                    stepId = it.stepId,
+                )
+            },
+            bookmarks = curriculum.bookmarks().map {
+                BackupBookmark(it.targetId, it.kind, it.createdAtLocal, it.targetDigest, it.identitySchema)
+            },
+            notes = curriculum.notes().map {
+                BackupNote(
+                    it.id,
+                    it.targetId,
+                    it.text,
+                    it.createdAtLocal,
+                    it.userAuthoredRussian,
+                    it.targetDigest,
+                    it.identitySchema,
+                )
+            },
+            tutorQueue = curriculum.tutorQueue().map {
+                BackupTutorItem(it.id, it.targetId, it.note, it.createdAtLocal, it.targetDigest, it.identitySchema)
+            },
             bookAttestations = curriculum.bookAttestations().sortedBy { it.unitNumber }.map {
                 BackupBookAttestation(it.unitNumber, it.recordedAtLocal)
             },
@@ -1594,7 +1843,7 @@ internal class LocalStore private constructor(
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, DATABASE_NAME)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8)
                 .build()
             val store = LocalStore(database, File(appContext.filesDir, "recordings"))
             store.applySeed(readSeed(appContext))
@@ -1612,7 +1861,7 @@ internal class LocalStore private constructor(
         fun openNamed(context: Context, name: String): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, name)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8)
                 .build()
             val store = LocalStore(database, File(appContext.filesDir, "recordings-$name"))
             store.applySeed(null)

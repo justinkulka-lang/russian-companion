@@ -7,7 +7,10 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.CreationExtras
+import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
+import dev.russiancompanion.v2.curriculum.governedSelectionKey
+import dev.russiancompanion.v2.curriculum.governedSessionSelections
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -54,6 +57,8 @@ internal class V2WriteCoordinator(
     @Volatile
     private var bindingEpoch = 0L
 
+    private var curriculumPack: V2CurriculumPack? = null
+
     var learner by mutableStateOf<V2LearnerView?>(null)
         private set
     var loadFailed by mutableStateOf(false)
@@ -84,12 +89,23 @@ internal class V2WriteCoordinator(
         if (next.bindingKey != previous) startLoad()
     }
 
+    /**
+     * Stored answers are rebuilt from the pack whenever the learner is loaded.
+     * The same pack instance does not rebuild again, so a failed reload can
+     * keep a selection that was confirmed after its write.
+     */
+    fun bindCurriculum(pack: V2CurriculumPack) {
+        if (curriculumPack === pack) return
+        curriculumPack = pack
+        learner?.let { rebuildSelections(it) }
+    }
+
     fun nextPositionTicket(): Int = positionTicket.incrementAndGet()
 
     fun positionStillCurrent(ticket: Int): Boolean = ticket == positionTicket.get()
 
-    fun confirmSelection(itemId: String, selected: String) {
-        selections = selections + (itemId to selected)
+    fun confirmSelection(stepId: String, itemId: String, selected: String) {
+        selections = selections + (governedSelectionKey(stepId, itemId) to selected)
     }
 
     /**
@@ -193,8 +209,7 @@ internal class V2WriteCoordinator(
         if (loaded.isSuccess) {
             val view = loaded.getOrThrow()
             learner = view
-            val inFlight = selections.filterKeys { itemId -> "attempt:$itemId" in pending }
-            selections = view.attemptSelections + inFlight
+            rebuildSelections(view)
             loadFailed = false
             appliedGeneration = nextGeneration
             banner = null
@@ -218,9 +233,22 @@ internal class V2WriteCoordinator(
     private fun applyLearner(generation: Long, loaded: V2LearnerView) {
         if (generation < appliedGeneration) return
         appliedGeneration = generation
-        val inFlight = selections.filterKeys { itemId -> "attempt:$itemId" in pending }
         learner = loaded
-        selections = loaded.attemptSelections + inFlight
+        rebuildSelections(loaded)
+    }
+
+    private fun selectionPending(selectionKey: String): Boolean {
+        val parts = selectionKey.split('\u001f', limit = 2)
+        if (parts.size != 2 || parts[0].isEmpty() || parts[1].isEmpty()) return false
+        val prefix = "attempt:${parts[0]}:${parts[1]}:"
+        return pending.any { it.startsWith(prefix) }
+    }
+
+    private fun rebuildSelections(view: V2LearnerView) {
+        val pack = curriculumPack
+        val stored = if (pack == null) emptyMap() else governedSessionSelections(pack, view)
+        val inFlight = selections.filterKeys { selectionPending(it) }
+        selections = stored + inFlight
     }
 
     override fun onCleared() {

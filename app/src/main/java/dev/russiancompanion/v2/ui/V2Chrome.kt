@@ -225,12 +225,21 @@ internal fun V2SecondaryButton(text: String, onClick: () -> Unit, enabled: Boole
 }
 
 @Composable
-internal fun V2Card(title: String, body: String, status: String? = null, onClick: (() -> Unit)? = null) {
+internal fun V2Card(
+    title: String,
+    body: String,
+    status: String? = null,
+    onClick: (() -> Unit)? = null,
+    tag: String? = null,
+) {
     Card(
         onClick = onClick ?: {},
         enabled = onClick != null,
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
-        modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp),
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 6.dp)
+            .then(if (tag != null) Modifier.semantics { testTag = tag } else Modifier),
     ) {
         Column(Modifier.padding(16.dp)) {
             Text(title, style = MaterialTheme.typography.titleMedium)

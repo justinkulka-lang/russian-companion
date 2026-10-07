@@ -18,9 +18,14 @@ import dev.russiancompanion.presentation.MainActivity
 import dev.russiancompanion.v2.curriculum.V2CheckItem
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2PackLoader
+import dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK
+import dev.russiancompanion.v2.curriculum.governedSelectionKey
+import dev.russiancompanion.v2.curriculum.governedSessionSelections
 import dev.russiancompanion.v2.curriculum.item
+import dev.russiancompanion.v2.curriculum.prepareGovernedAttempt
 import dev.russiancompanion.v2.curriculum.session
 import dev.russiancompanion.v2.curriculum.step
+import dev.russiancompanion.v2.curriculum.verifiedResume
 import dev.russiancompanion.v2.ui.V2UiWork
 import org.junit.After
 import org.junit.Assert.assertEquals
@@ -79,9 +84,11 @@ class LearnerReloadRecoveryTest {
                 currentUnitNumber = 1,
                 currentSessionId = located.first.id,
                 currentStepIndex = index,
-            ),
+            ).verifiedResume(pack),
         )
-        closed.v2RecordAttempt(kept.id, kept.answer, true, "2026-10-03T08:00")
+        closed.v2RecordGovernedAttempt(
+            prepareGovernedAttempt(pack, kept.id, kept.answer, PRESCRIBED_CHECK, located.second.id, "2026-10-03T08:00")!!,
+        )
         compose.onNodeWithTag("v2-retry").performClick()
         val failedRetry = awaitReplacedStore(compose, closed)
         awaitCounter(compose, 0)
@@ -91,15 +98,18 @@ class LearnerReloadRecoveryTest {
         awaitTag(compose, "v2-continue")
         val recovered = app().localStore!!
         assertFalse(recovered === failedRetry)
-        assertEquals(kept.answer, recovered.v2LearnerView().attemptSelections[kept.id])
+        assertEquals(
+            kept.answer,
+            governedSessionSelections(pack, recovered.v2LearnerView())[governedSelectionKey(located.second.id, kept.id)],
+        )
         compose.onNodeWithTag("v2-continue").performClick()
         awaitText(compose, located.second.title)
         choose(compose, added, wrong = true)
         awaitText(compose, "Saved")
         assertSame(recovered, app().localStore)
-        val saved = recovered.v2LearnerView()
-        assertEquals(kept.answer, saved.attemptSelections[kept.id])
-        assertEquals(wrongOption(added), saved.attemptSelections[added.id])
+        val saved = governedSessionSelections(pack, recovered.v2LearnerView())
+        assertEquals(kept.answer, saved[governedSelectionKey(located.second.id, kept.id)])
+        assertEquals(wrongOption(added), saved[governedSelectionKey(located.second.id, added.id)])
         assertEquals(1, recovered.v2Attempts().count { it.itemId == kept.id })
         assertEquals(1, recovered.v2Attempts().count { it.itemId == added.id })
         compose.onNodeWithTag("v2-option-${added.id}-${wrongOption(added)}").performScrollTo().assertIsSelected()
@@ -155,9 +165,11 @@ class HostActivityRecreationTest {
                 currentUnitNumber = 1,
                 currentSessionId = located.first.id,
                 currentStepIndex = index,
-            ),
+            ).verifiedResume(pack),
         )
-        original.v2RecordAttempt(kept.id, kept.answer, true, "2026-10-03T08:01")
+        original.v2RecordGovernedAttempt(
+            prepareGovernedAttempt(pack, kept.id, kept.answer, PRESCRIBED_CHECK, located.second.id, "2026-10-03T08:01")!!,
+        )
         LocalStore.failHeldLearnerRefreshForTests = true
         awaitTag(compose, "v2-retry")
         compose.onNodeWithTag("v2-retry").performClick()
@@ -168,13 +180,19 @@ class HostActivityRecreationTest {
         settle(compose)
         compose.onNodeWithTag("v2-continue").assertIsDisplayed()
         compose.onNodeWithText("Saved progress could not be read.").assertDoesNotExist()
-        assertEquals(kept.answer, recovered.v2LearnerView().attemptSelections[kept.id])
+        assertEquals(
+            kept.answer,
+            governedSessionSelections(pack, recovered.v2LearnerView())[governedSelectionKey(located.second.id, kept.id)],
+        )
         compose.onNodeWithTag("v2-continue").performClick()
         awaitText(compose, located.second.title)
         choose(compose, added, wrong = true)
         awaitText(compose, "Saved")
         assertSame(recovered, app().localStore)
-        assertEquals(wrongOption(added), recovered.v2LearnerView().attemptSelections[added.id])
+        assertEquals(
+            wrongOption(added),
+            governedSessionSelections(pack, recovered.v2LearnerView())[governedSelectionKey(located.second.id, added.id)],
+        )
         assertEquals(1, recovered.v2Attempts().count { it.itemId == added.id })
     }
 
@@ -233,13 +251,14 @@ class HostActivityRecreationTest {
     private fun openSeededStep(stepId: String, index: Int, sessionId: String) {
         awaitLatch(compose, entered)
         val store = app().localStore!!
+        val pack = activityPack()
         store.v2SaveProfile(
             store.v2Profile().copy(
                 onboardingCompleted = true,
                 currentUnitNumber = 1,
                 currentSessionId = sessionId,
                 currentStepIndex = index,
-            ),
+            ).verifiedResume(pack),
         )
         release.countDown()
         awaitTag(compose, "v2-continue")

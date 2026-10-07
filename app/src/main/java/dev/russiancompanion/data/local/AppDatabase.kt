@@ -33,7 +33,7 @@ import androidx.room.TypeConverters
         dev.russiancompanion.v2.data.V2BookAttestationEntity::class,
         dev.russiancompanion.v2.data.V2UnitCompletionEntity::class,
     ],
-    version = 7,
+    version = 8,
     exportSchema = true,
 )
 @TypeConverters(StoredValueConverters::class)

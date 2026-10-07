@@ -31,6 +31,12 @@ internal data object V2PracticeRoute
 internal data object V2AlphabetLabRoute
 
 @Serializable
+internal data class V2LabRoute(val labId: String)
+
+@Serializable
+internal data object V2SavedWorkRoute
+
+@Serializable
 internal data object V2ReferenceRoute
 
 @Serializable
