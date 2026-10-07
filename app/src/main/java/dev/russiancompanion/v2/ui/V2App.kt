@@ -198,7 +198,7 @@ internal fun V2App(
                     appearance = appearance,
                     appearanceSaveFailed = appearanceSaveFailed,
                     selections = writes.selections,
-                    lockedItemIds = writes.pending.filter { it.startsWith("attempt:") }.map { it.removePrefix("attempt:") }.toSet(),
+                    lockedItemIds = pendingAttemptItemIds(writes.pending),
                     pendingKeys = writes.pending,
                     noteDrafts = noteDrafts,
                     onRetryOpen = onRetryOpen,
@@ -238,14 +238,18 @@ internal fun V2App(
                     },
                     onCompleteStep = { stepId, afterSaved ->
                         writes.submit("step:$stepId", onSuccess = afterSaved) {
-                            val current = store.v2LearnerView()
-                            val digest = governedStepCompletionDigest(pack, current, stepId)
-                                ?: error("unverified step")
+                            val digest = withContext(Dispatchers.IO) {
+                                val current = store.v2LearnerViewForValidation()
+                                governedStepCompletionDigest(pack, current, stepId)
+                            } ?: error("unverified step")
                             api.completeStep(stepId, recordedAt(), digest)
                         }
                         Unit
                     },
                     onAttempt = { itemId, selected, stepId ->
+                        if (writes.pending.any { it.startsWith("attempt:$stepId:$itemId:") }) {
+                            return@V2NavHost false
+                        }
                         val at = recordedAt()
                         val write = prepareGovernedAttempt(pack, itemId, selected, PRESCRIBED_CHECK, stepId, at)
                             ?: return@V2NavHost false
@@ -257,6 +261,9 @@ internal fun V2App(
                         }
                     },
                     onPracticeAttempt = { labId, itemId, selected ->
+                        if (writes.pending.any { it.startsWith("practice:$labId:$itemId:") }) {
+                            return@V2NavHost false
+                        }
                         val at = recordedAt()
                         val write = prepareGovernedAttempt(
                             pack,
@@ -301,11 +308,16 @@ internal fun V2App(
                     onAdvance = { unit ->
                         writes.submit("advance:$unit") {
                             val nextUnit = (unit + 1).coerceAtMost(30)
+                            val nextSessionId = pack.unit(nextUnit)?.sessions?.firstOrNull()?.id
+                            val digest = nextSessionId?.let { resumePositionDigest(pack, it, 0) }
+                                ?: error("unverified position")
                             api.advanceUnit(
                                 unit,
                                 recordedAt(),
                                 nextUnit,
-                                pack.unit(nextUnit)?.sessions?.firstOrNull()?.id,
+                                nextSessionId,
+                                digest,
+                                GOVERNED_IDENTITY_SCHEMA,
                             )
                         }
                         Unit
@@ -349,6 +361,14 @@ internal fun V2App(
             }
         }
     }
+}
+
+internal fun pendingAttemptItemIds(pending: Set<String>): Set<String> {
+    return pending.mapNotNull { key ->
+        if (!key.startsWith("attempt:")) return@mapNotNull null
+        val parts = key.removePrefix("attempt:").split(":", limit = 3)
+        parts.getOrNull(1)?.takeIf { it.isNotEmpty() }
+    }.toSet()
 }
 
 private fun Context.findActivity(): ComponentActivity {

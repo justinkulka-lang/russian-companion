@@ -39,8 +39,8 @@ import dev.russiancompanion.v2.curriculum.V2UnitState
 import dev.russiancompanion.v2.curriculum.advancementDecision
 import dev.russiancompanion.v2.curriculum.advancementRuleSummary
 import dev.russiancompanion.v2.curriculum.example
+import dev.russiancompanion.v2.curriculum.completedStepCounts
 import dev.russiancompanion.v2.curriculum.governedSelectionKey
-import dev.russiancompanion.v2.curriculum.governedSessionSelections
 import dev.russiancompanion.v2.curriculum.currentObjective
 import dev.russiancompanion.v2.curriculum.installLabel
 import dev.russiancompanion.v2.curriculum.item
@@ -197,8 +197,8 @@ internal fun V2TodayScreen(
 ) {
     val unit = pack.unit(learner.currentUnitNumber)
     val objective = unit?.let { currentObjective(pack, it, learner) }
-    val today = unit?.let { todaysSession(it, learner) }
-    val recorded = unit?.let { recordedSessionCount(it, learner) } ?: 0
+    val today = unit?.let { todaysSession(pack, it, learner) }
+    val recorded = unit?.let { recordedSessionCount(pack, it, learner) } ?: 0
     var showPlan by remember { mutableStateOf(false) }
     V2Scaffold(
         title = "Today",
@@ -241,7 +241,7 @@ internal fun V2TodayScreen(
             )
             if (showPlan) {
                 unit.sessions.forEach { session ->
-                    val done = session.steps.all { it.id in learner.completedStepIds }
+                    val done = session.steps.all { completedStepCounts(pack, learner, it.id) }
                     V2Status("${session.title} — ${if (done) "Recorded" else "Not finished"} · ${session.estimatedMinutes} min")
                 }
             }
@@ -275,7 +275,7 @@ internal fun V2CourseScreen(
             val progress = if (unit.sessions.isEmpty()) {
                 installLabel(unit)
             } else {
-                "${recordedSessionCount(unit, learner)}/${unit.sessions.size}"
+                "${recordedSessionCount(pack, unit, learner)}/${unit.sessions.size}"
             }
             V2UnitRow(
                 number = unit.number,
@@ -396,10 +396,8 @@ internal fun V2SessionScreen(
     val routeStep = session.steps[index]
     var shownStepId by rememberSaveable(routeStep.id) { mutableStateOf(routeStep.id) }
     val step = if (remedial) pack.step(shownStepId)?.second ?: routeStep else routeStep
-    val recordedSelections = governedSessionSelections(pack, learner)
     fun selectedAnswer(stepId: String, itemId: String): String? {
-        val key = governedSelectionKey(stepId, itemId)
-        return selections[key] ?: recordedSelections[key]
+        return selections[governedSelectionKey(stepId, itemId)]
     }
     val guidedPractice = if (remedial) reviewedGuidedPractice(pack, routeStep.id) else emptyList()
     val guidedIndex = guidedPractice.indexOf(step.id)
@@ -559,6 +557,18 @@ internal fun V2SessionScreen(
             enabled = "tutor:${step.id}" !in pendingKeys,
             tag = "v2-tutor",
         )
+        learner.notes.filter { it.targetId == step.id }.forEach { saved ->
+            Text(
+                "Saved note, not scored: ${saved.text}",
+                modifier = Modifier.semantics { testTag = "v2-saved-note-${saved.id}" },
+            )
+        }
+        learner.tutorItems.filter { it.targetId == step.id }.forEach { saved ->
+            Text(
+                "Tutor question, not scored: ${saved.note}",
+                modifier = Modifier.semantics { testTag = "v2-saved-tutor-${saved.id}" },
+            )
+        }
     }
 }
 

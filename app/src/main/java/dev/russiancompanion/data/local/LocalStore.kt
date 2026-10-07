@@ -730,7 +730,14 @@ internal class LocalStore private constructor(
 
     internal suspend fun v2RecordGovernedAttemptAsync(
         write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite,
-    ) = withContext(ioDispatcher) { writeGovernedAttempt(write) }
+    ) {
+        val duplicate = withContext(ioDispatcher) { governedAttemptIsDuplicate(write) }
+        if (duplicate) return
+        holdGovernedAttemptForTests?.await()
+        withContext(ioDispatcher) {
+            if (!governedAttemptIsDuplicate(write)) insertGovernedAttempt(write)
+        }
+    }
 
     private fun readV2Profile(): dev.russiancompanion.v2.data.V2ProfileEntity {
         val dao = database.v2()
@@ -743,7 +750,26 @@ internal class LocalStore private constructor(
         database.v2().updateProfile(profile)
     }
 
+    @Volatile
+    internal var delayLearnerReadMillisForTests: Long = 0
+
+    @Volatile
+    internal var lastLearnerReadThreadForTests: Thread? = null
+
+    /**
+     * Test seam. An asynchronous governed attempt suspends here after the
+     * duplicate check and before insertion, without occupying the store thread.
+     */
+    @Volatile
+    internal var holdGovernedAttemptForTests: kotlinx.coroutines.CompletableDeferred<Unit>? = null
+
+    internal suspend fun v2LearnerViewForValidation(): dev.russiancompanion.v2.curriculum.V2LearnerView =
+        withContext(ioDispatcher) { readV2Learner() }
+
     private fun readV2Learner(): dev.russiancompanion.v2.curriculum.V2LearnerView {
+        lastLearnerReadThreadForTests = Thread.currentThread()
+        val delay = delayLearnerReadMillisForTests
+        if (delay > 0) Thread.sleep(delay)
         val profile = readV2Profile()
         val dao = database.v2()
         val attempts = dao.attempts()
@@ -768,11 +794,28 @@ internal class LocalStore private constructor(
             attemptSelections = emptyMap(),
             governedAttempts = attempts.map { it.toView() },
             governedStepDigests = steps.associate { it.stepId to it.contentDigest },
+            governedStepSchemas = steps.associate { it.stepId to it.identitySchema },
             resumeContentDigest = profile.resumeContentDigest,
             resumeIdentitySchema = profile.resumeIdentitySchema,
             bookmarks = dao.bookmarks().map { it.toView() },
             notes = dao.notes().map { it.toView() },
             tutorItems = dao.tutorQueue().map { it.toView() },
+        )
+    }
+
+    internal fun v2UpsertStepForTests(
+        stepId: String,
+        contentDigest: String,
+        identitySchema: Int,
+        recordedAtLocal: String,
+    ) = call {
+        database.v2().upsertStep(
+            dev.russiancompanion.v2.data.V2StepProgressEntity(
+                stepId = stepId,
+                completedAtLocal = recordedAtLocal,
+                contentDigest = contentDigest,
+                identitySchema = identitySchema,
+            ),
         )
     }
 
@@ -784,12 +827,16 @@ internal class LocalStore private constructor(
                 stepId = stepId,
                 completedAtLocal = recordedAtLocal,
                 contentDigest = if (governed) contentDigest else dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY,
-                identitySchema = if (governed) dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA else 0,
+                identitySchema = if (governed) dev.russiancompanion.v2.curriculum.STEP_IDENTITY_SCHEMA else 0,
             ),
         )
     }
 
     private fun writeGovernedAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
+        if (!governedAttemptIsDuplicate(write)) insertGovernedAttempt(write)
+    }
+
+    private fun governedAttemptIsDuplicate(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite): Boolean {
         if (write.identitySchema != dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA) error("unverified attempt")
         if (write.attemptRole != dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK &&
             write.attemptRole != dev.russiancompanion.v2.curriculum.OPTIONAL_PRACTICE
@@ -803,16 +850,19 @@ internal class LocalStore private constructor(
         ) {
             error("unverified attempt")
         }
-        val duplicate = database.v2().attempts().any { existing ->
+        val latest = database.v2().attempts().lastOrNull { existing ->
             existing.itemId == write.itemId &&
                 existing.attemptRole == write.attemptRole &&
                 existing.stepId == write.stepId &&
-                existing.selected == write.selected &&
+                existing.identitySchema == write.identitySchema &&
                 existing.itemDigest == write.itemDigest &&
                 existing.ruleDigest == write.ruleDigest &&
                 existing.unitContentDigest == write.unitContentDigest
         }
-        if (duplicate) return
+        return latest != null && latest.selected == write.selected
+    }
+
+    private fun insertGovernedAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
         database.v2().insertAttempt(
             dev.russiancompanion.v2.data.V2AttemptEntity(
                 id = write.id,
@@ -994,7 +1044,14 @@ internal class LocalStore private constructor(
         recordedAtLocal: String,
         nextUnitNumber: Int,
         nextSessionId: String?,
+        nextResumeDigest: String,
+        nextResumeSchema: Int,
     ) = withContext(ioDispatcher) {
+        val digestGoverned = nextResumeDigest.length == 64 &&
+            nextResumeDigest.all { it in '0'..'9' || it in 'a'..'f' }
+        if (nextResumeSchema != dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA || !digestGoverned) {
+            error("unverified position")
+        }
         database.runInTransaction {
             database.v2().upsertUnitCompletion(
                 dev.russiancompanion.v2.data.V2UnitCompletionEntity(unitNumber, recordedAtLocal),
@@ -1009,6 +1066,8 @@ internal class LocalStore private constructor(
                     currentUnitNumber = nextUnitNumber,
                     currentSessionId = nextSessionId,
                     currentStepIndex = 0,
+                    resumeContentDigest = nextResumeDigest,
+                    resumeIdentitySchema = nextResumeSchema,
                 ),
             )
         }
@@ -1150,7 +1209,7 @@ internal class LocalStore private constructor(
     }
 
     private fun referencesResolve(document: GovernedLearnerDocument): Boolean {
-        if (document.profile.id != V2ProfileEntity.LOCAL_ID) return false
+        if (dev.russiancompanion.v2.backup.backupProfileDefects(document.profile) != null) return false
         val bundled = database.bundled()
         val learnerSegment = document.learnerState?.activeSegmentId
         if (learnerSegment != null && bundled.segment(learnerSegment) == null) return false

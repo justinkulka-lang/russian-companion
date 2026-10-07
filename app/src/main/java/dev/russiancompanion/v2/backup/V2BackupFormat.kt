@@ -266,6 +266,7 @@ internal object V2BackupFaults {
     @Volatile var crashAfterFileSwapBeforeCommit: Boolean = false
     @Volatile var failJournalWrite: Boolean = false
     @Volatile var failSnapshotRestore: Boolean = false
+    @Volatile var throwOnRestore: Throwable? = null
 
     fun reset() {
         failWrite = false
@@ -276,6 +277,7 @@ internal object V2BackupFaults {
         crashAfterFileSwapBeforeCommit = false
         failJournalWrite = false
         failSnapshotRestore = false
+        throwOnRestore = null
     }
 }
 
@@ -439,6 +441,9 @@ internal fun readGovernedBackup(
             return BackupReadResult.Rejected(BackupRejection.INCOMPLETE)
         }
         if (duplicateIds(document)) return BackupReadResult.Rejected(BackupRejection.MALFORMED)
+        if (backupProfileDefects(document.profile) != null) {
+            return BackupReadResult.Rejected(BackupRejection.MALFORMED)
+        }
         val stagedRecordings = mutableListOf<StagedRecording>()
         val recordingPaths = document.recordings.map { recordingEntryPath(it.id, it.localFileReference) }
         if (recordingPaths.toSet().size != recordingPaths.size) {
@@ -498,6 +503,37 @@ internal fun allowedBackupEntry(name: String): Boolean {
 internal fun safeRecordingId(id: String): Boolean {
     return id.length in 1..80 && id.all { it.isLetterOrDigit() || it == '_' || it == '-' }
 }
+
+/**
+ * Semantic profile rules checked after the package hash matches and before
+ * any learner record is replaced. A correctly hashed package can still be
+ * rejected here.
+ */
+internal fun backupProfileDefects(profile: BackupProfile): String? {
+    if (profile.id != "local") return "profile id"
+    if (profile.currentUnitNumber !in 1..30) return "unit"
+    if (profile.currentStepIndex !in 0..64) return "step index"
+    if (profile.startingPoint !in setOf("NEW_TO_CYRILLIC", "CAN_READ_CYRILLIC", "RESUME_FROM_BOOK")) {
+        return "starting point"
+    }
+    if (profile.dailyMinutes !in setOf(20, 35, 50)) return "daily minutes"
+    val session = profile.currentSessionId
+    if (session != null && (session.isBlank() || session.length > 80 || session.any { it !in SESSION_ID_CHARS })) {
+        return "session"
+    }
+    return when (profile.resumeIdentitySchema) {
+        0 -> if (profile.resumeContentDigest.isEmpty() || profile.resumeContentDigest == UNRECOVERABLE_GOVERNED_IDENTITY) {
+            null
+        } else {
+            "legacy resume digest"
+        }
+        1 -> if (profile.resumeContentDigest.matches(HEX_64)) null else "resume digest"
+        else -> "resume schema"
+    }
+}
+
+private val SESSION_ID_CHARS = ('a'..'z') + ('A'..'Z') + ('0'..'9') + listOf('_', '-', ':')
+private val HEX_64 = Regex("^[a-f0-9]{64}$")
 
 private fun duplicateIds(document: GovernedLearnerDocument): Boolean {
     fun <T> dup(values: List<T>, id: (T) -> String) = values.size != values.map(id).toSet().size

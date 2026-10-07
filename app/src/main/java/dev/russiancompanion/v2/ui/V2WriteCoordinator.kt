@@ -17,6 +17,7 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.withContext
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import java.util.concurrent.atomic.AtomicInteger
@@ -246,9 +247,19 @@ internal class V2WriteCoordinator(
 
     private fun rebuildSelections(view: V2LearnerView) {
         val pack = curriculumPack
-        val stored = if (pack == null) emptyMap() else governedSessionSelections(pack, view)
         val inFlight = selections.filterKeys { selectionPending(it) }
-        selections = stored + inFlight
+        if (pack == null || V2UiWork.blocking()) {
+            val stored = if (pack == null) emptyMap() else governedSessionSelections(pack, view)
+            selections = stored + inFlight
+            return
+        }
+        scope.launch(Dispatchers.Default) {
+            val stored = governedSessionSelections(pack, view)
+            withContext(Dispatchers.Main.immediate) {
+                if (curriculumPack !== pack) return@withContext
+                selections = stored + selections.filterKeys { selectionPending(it) }
+            }
+        }
     }
 
     override fun onCleared() {

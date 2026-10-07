@@ -453,7 +453,14 @@ internal data class V2Validation(
 
 internal fun V2Unit.installed(): Boolean = installState == "INSTALLED"
 
-internal fun V2Unit.openable(): Boolean = installState == "INSTALLED" || installState == "DEVELOPMENT"
+/**
+ * Development units stay usable in a debug build. A production build opens
+ * only units whose install state is INSTALLED, which still requires the
+ * review and mapping gates in [dev.russiancompanion.v2.curriculum.V2Validator].
+ */
+internal fun V2Unit.openable(
+    developmentVisible: Boolean = dev.russiancompanion.BuildConfig.DEBUG,
+): Boolean = installState == "INSTALLED" || (installState == "DEVELOPMENT" && developmentVisible)
 
 internal fun V2Unit.topicLabel(): String = shortLabel.ifBlank { title }
 

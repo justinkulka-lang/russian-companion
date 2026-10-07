@@ -19,6 +19,7 @@ internal data class V2LearnerView(
     val attemptSelections: Map<String, String> = emptyMap(),
     val governedAttempts: List<GovernedAttemptView>? = null,
     val governedStepDigests: Map<String, String>? = null,
+    val governedStepSchemas: Map<String, Int>? = null,
     val resumeContentDigest: String = "",
     val resumeIdentitySchema: Int = 0,
     val bookmarks: List<GovernedBookmarkView> = emptyList(),
@@ -67,9 +68,9 @@ internal fun readinessLabel(unit: V2Unit): String = when (unit.readiness) {
     else -> ""
 }
 
-internal fun todaysSession(unit: V2Unit, learner: V2LearnerView): V2Session? {
+internal fun todaysSession(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): V2Session? {
     return unit.sessions.firstOrNull { session ->
-        session.steps.any { it.id !in learner.completedStepIds }
+        session.steps.any { !completedStepCounts(pack, learner, it.id) }
     }
 }
 
@@ -87,8 +88,8 @@ internal fun currentObjective(
     } ?: unit.objectives.lastOrNull()
 }
 
-internal fun recordedSessionCount(unit: V2Unit, learner: V2LearnerView): Int {
-    return unit.sessions.count { session -> session.steps.all { it.id in learner.completedStepIds } }
+internal fun recordedSessionCount(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): Int {
+    return unit.sessions.count { session -> session.steps.all { completedStepCounts(pack, learner, it.id) } }
 }
 
 internal fun canOpenUnit(state: V2UnitState): Boolean {
@@ -133,7 +134,7 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
     val resumeId = learner.currentSessionId
     val resumeSession = sessions.firstOrNull { it.id == resumeId } ?: sessions.first()
     val resumeIndex = learner.currentStepIndex.coerceIn(0, resumeSession.steps.lastIndex)
-    val remaining = resumeSession.steps.drop(resumeIndex).firstOrNull { it.id !in learner.completedStepIds }
+    val remaining = resumeSession.steps.drop(resumeIndex).firstOrNull { !completedStepCounts(pack, learner, it.id) }
     if (remaining != null) {
         return V2ContinueTarget(
             title = remaining.title,
@@ -143,9 +144,9 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
             unitNumber = unit.number,
         )
     }
-    val nextSession = sessions.firstOrNull { session -> session.steps.any { it.id !in learner.completedStepIds } }
+    val nextSession = sessions.firstOrNull { session -> session.steps.any { !completedStepCounts(pack, learner, it.id) } }
     if (nextSession != null) {
-        val step = nextSession.steps.first { it.id !in learner.completedStepIds }
+        val step = nextSession.steps.first { !completedStepCounts(pack, learner, it.id) }
         return V2ContinueTarget(
             title = step.title,
             reason = "Next in ${unit.title}: ${nextSession.title}.",
@@ -202,7 +203,7 @@ internal fun objectiveState(
         ?.filter { objective.id in it.objectiveIds }
         ?.flatMap { it.steps }
         .orEmpty()
-    val started = stepsForObjective.any { it.id in learner.completedStepIds } ||
+    val started = stepsForObjective.any { completedStepCounts(pack, learner, it.id) } ||
         relatedItems.any { it in credit }
     if (!started) return V2ObjectiveState.NOT_STARTED
     if (objective.kind == "SELF_ATTESTATION") {
@@ -220,7 +221,7 @@ internal fun objectiveState(
             else -> V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS
         }
     }
-    return if (stepsForObjective.all { it.id in learner.completedStepIds }) {
+    return if (stepsForObjective.all { completedStepCounts(pack, learner, it.id) }) {
         V2ObjectiveState.LEARNING
     } else {
         V2ObjectiveState.LEARNING

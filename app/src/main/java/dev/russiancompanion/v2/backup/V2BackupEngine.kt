@@ -57,6 +57,11 @@ internal fun restoreStoreBackup(
     validated: ValidatedBackup,
     recoveryDir: File,
 ): GovernedReplaceOutcome {
+    val fault = V2BackupFaults.throwOnRestore
+    if (fault != null) {
+        V2BackupFaults.throwOnRestore = null
+        throw fault
+    }
     recoveryDir.mkdirs()
     return store.replaceGovernedLearner(validated.document, validated.recordings)
 }

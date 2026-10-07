@@ -87,7 +87,8 @@ internal fun V2LabScreen(
     val recorded = learner.governedAttempts.orEmpty()
         .filter { it.attemptRole == OPTIONAL_PRACTICE && it.stepId == practiceStepId(labId) && it.itemId == item?.id }
         .lastOrNull()
-    val pending = item != null && "practice:$labId:${item.id}:${chosen.orEmpty()}" in pendingKeys
+    val itemId = item?.id
+    val pending = itemId != null && pendingKeys.any { it.startsWith("practice:$labId:$itemId:") }
     V2Scaffold(
         title = offer?.title ?: "Practice",
         tab = null,

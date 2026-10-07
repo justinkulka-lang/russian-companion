@@ -42,20 +42,19 @@ hash. Reproducible-build equivalence has not been demonstrated.
 | Field | Value |
 |---|---|
 | Application | Russian Companion (`dev.russiancompanion`) |
-| versionName | `1.0.0` |
-| versionCode | `2` |
+| versionName | `2.0.0-dev` |
+| versionCode | `5` |
 | Gradle task | `assembleDebug` |
 | Artifact name | `acceptance-candidate-debug-apk` |
 | Identity file in artifact | `artifact-identity.json` |
-| 1.0.0 candidate | **not frozen** — wait for independent audit of the correction PR |
+| 2.0.0-dev candidate | **not frozen**. `sourceCommit` is null. Artifact status is `NOT_RECORDED`. |
 | Preserved 0.0.0 APK | run `35740338300`, SHA-256 `1a95949ba7e2edd0ca72dea18e728ec105e427a2e5f5c093ff33fe82dfcba33e` |
 | Public release | `NOT_APPROVED` |
 
-Do not download the preserved 0.0.0 APK as the final Galaxy S26 Ultra
-candidate. Keep it as a historical artifact. After the correction PR is
-audited, freeze a new hashed 1.0.0 debug APK from GitHub Actions and
-record it in `release/acceptance/candidate.json` before physical
-execution.
+Do not download the preserved 0.0.0 APK as the Galaxy S26 Ultra
+candidate. Keep it as a historical artifact. Do not freeze this
+candidate, do not fill `sourceCommit`, and do not record an artifact
+hash until a later independent audit says that work is in scope.
 
 `assembleRelease`, `bundleRelease`, `packageRelease`,
 `packageReleaseBundle`, and other release output tasks remain
@@ -108,7 +107,7 @@ install.
    Files app (or the installer you will use) for this one install.
 6. Install the APK. Open App info and confirm:
    - App name: Russian Companion
-   - Version: `1.0.0`
+   - Version: `2.0.0-dev`
 7. Do **not** open the app yet.
 8. Enable Airplane mode from Quick settings. Then open Settings →
    Connections and confirm:
@@ -149,171 +148,132 @@ Exact on-screen labels are quoted.
 ### A. Launch and AT-001 inspection
 
 1. Open **Russian Companion**.
-2. Onboarding page 1 must show:
-   - `This offline companion coordinates your book work, AnkiDroid practice, listening and recording, advancement gates, and local progress.`
-   - `Book work uses your copy.`
-   - `This app does not teach from reproduced book text, connect to AnkiDroid, judge Russian, or certify proficiency.`
-   - `Default gates do not require a tutor. Tutor sign-off can be added later only as stricter evidence you choose. All data stays on this device. Backup is a local export you start.`
+2. Onboarding page `Welcome` must show:
+   - `Russian Companion is a fully offline course companion. It tells you the current unit, what to study in your own book, and what the app can practice with verified material.`
+   - `Your data stays on this device. There is no account and no network.`
    Screenshot: `AT-001-01-identity.png`.
    The phrases `independent adult beginner` and `The New Penguin Russian Course`
    must not appear on screen.
-3. Tap `Next`.
-4. Page 2 is lesson selection. `Confirm lesson` must remain visible
-   without scrolling the 30-lesson list.
+3. Tap `Next` through `Study system`, `Starting point`, and
+   `Daily commitment`. Leave `I have a tutor now` unselected.
+   Daily time choices are `20 minutes`, `35 minutes`, and `50 minutes`.
+   `Resume from a book lesson` must say later units are not yet
+   installed and that the course still begins at Unit 1.
    Screenshot: `AT-001-02-limits.png`.
-5. Scroll the lesson list. Confirm **Lesson 1** through **Lesson 30**
-   are present and selectable. Confirm there is no B1, B2, C1,
-   handwriting, dictionary, media library, social, gamification, or
-   tutor-scheduling entry.
+4. The last page must show `Unit 1 — Learning to read Russian`.
+   Tap `Start Unit 1`.
+5. Open `Course`. Confirm **Unit 1** through **Unit 30** are listed.
+   Units that are still in development must show `In development` or
+   `Not yet installed`. They must not be labeled `Installed`.
+   Confirm there is no B1, B2, C1, handwriting course, dictionary,
+   media library, social, or tutor-scheduling entry.
    Screenshots: `AT-001-03-lesson-1.png`, `AT-001-04-lesson-30.png`.
-6. Confirm the listed roles are available after onboarding: Today's
-   Plan, Practice, Gates, Progress, and Local export (Local export is
-   reached from Progress). Optional drills must **not** appear.
-7. Select `Lesson 1`. The selected row must show immediately.
-   Then tap `Confirm lesson`.
-8. Home must show `Current lesson: Lesson 1` and
-   `Required activities completed: 0 of 3`.
+6. Confirm the tabs are `Today`, `Course`, `Practice`, `Reference`,
+   and `Progress`. Optional drills must **not** appear. Listening,
+   pronunciation, and handwriting must not be offered as scored work.
+7. `Today` must show `Unit 1` and a `Continue` action.
    Screenshot: `AT-001-05-home.png`.
 
-AT-001 expected result: the app offers only the beginner arc
-(Lessons 1–30) and exposes daily conductor, listen-record-compare,
-gates, and progress/local-export roles without a post-book B1, B2,
-or C1 curriculum. On-screen onboarding copy stays generic and does
-not display the banned identity phrases. This procedure remains
-outstanding until a later physical run records a result.
+AT-001 expected result: the installed candidate is version `2.0.0-dev`
+and offers the 30-unit map without describing unreviewed units as
+installed. Onboarding stays on this device and does not display the
+banned identity phrases. This procedure remains outstanding until a
+later physical run records a result.
 
 ### B. AT-030 lesson cycle (also satisfies most of AT-004)
 
 Keep airplane mode on.
 
-#### B1. Plan
+#### B1. Today
 
-1. On Home, confirm `Next required activity` and
-   `Use your copy of the book for this lesson`.
-2. Tap `Today's Plan`.
-3. Confirm these three required lines:
-   - `Use your copy of the book for this lesson`
-   - `Do the assigned AnkiDroid work`
-   - `Listen to the licensed model`
-4. Confirm helper text:
-   - `Grammar practice stays in your copy of the book and its answer key.`
-   - `Vocabulary and forms practice stays in AnkiDroid. The app records only what you report completing.`
-   - `Listen-record-compare practice.`
-5. Tap `Add tutor task`, confirm `Remove tutor task`, then tap
-   `Remove tutor task`. The tutor task must disappear. Do not leave it
-   added.
+1. On `Today`, confirm `Unit 1` and `Continue`.
+2. Tap `Continue` and confirm the first Unit 1 step opens.
+   Do not enter Penguin text.
    Screenshot: `AT-030-01-plan.png`.
 
-#### B2. Book practice and self-attestation
+#### B2. Book work outside the app
 
-1. Using the user's own copy of the book (outside the app), do the
-   Lesson 1 book work. Do not enter Penguin text into the app.
-2. On Today's Plan, tap `Mark complete` for the book row.
-3. Confirm that row shows `Completed` and `Self-attested`.
-4. Optional extra log (AT-004/AT-018 coverage): Home → `Progress` →
-   `Log activity` → `Grammar` → confirm `Book practice.` → duration
-   `15` → `Mark completed` → `Save activity`.
+1. Using the user's own copy of the book, do the Unit 1 book work
+   outside the app. Do not type book text into the app.
+2. Open `Course`, open Unit 1, and tap
+   `I completed the book work for this unit`.
+3. Open `Progress` and confirm the book self-attestation line includes
+   unit 1. This is a self-attestation, not a score and not linguistic
+   acceptance.
 
-#### B3. AnkiDroid practice and self-attestation
+#### B3. Closed-response check
 
-1. Using AnkiDroid if installed, or recording that the work was done
-   as a self-report if AnkiDroid is absent, complete the assigned
-   vocabulary/forms work outside the app. The app must not open,
-   connect to, or verify AnkiDroid.
-2. On Today's Plan, tap `Mark complete` for the AnkiDroid row.
-3. Confirm `Completed` and `Self-attested`.
-4. Optional extra log: `Progress` → `Log activity` →
-   `Vocabulary and forms` → confirm `AnkiDroid practice.` → duration
-   `10` → `Mark completed` → `Save activity`.
+1. Return to the Unit 1 step that asks for a closed response.
+2. Select one displayed option. Confirm the app records that selection.
+3. Confirm the screen does not show a pronunciation score, a
+   transcription, or a fluency claim.
+   Screenshot: `AT-030-02-check-recorded.png`.
 
-#### B4. Listen-record-compare
+#### B4. Practice that must stay unavailable or unscored
 
-1. On Today's Plan, tap `Start listen-record-compare`.
-2. Confirm `Practice session` and `No pronunciation score is provided.`
-3. Confirm a stress-marked source text is shown (catalog headword, not
-   Penguin lesson text).
-4. Tap `Play model`. Confirm local audio plays with airplane mode on.
-5. Tap `Record`. Grant Microphone if prompted. Speak an imitation.
-   Tap `Stop`.
-6. Tap `Replay model`. Tap `Play your recording`. Confirm both play.
-7. Tap `Mark for tutor review`.
-8. Tap `Complete practice`.
-9. Return to Today's Plan / Home. Confirm
-   `Required activities completed: 3 of 3` and
-   `Today's required activities are complete.` and
-   `Completion is recorded work, not proficiency certification.`
-   Screenshot: `AT-030-02-practice-complete.png`.
+1. Open `Practice`.
+2. Confirm `Listening Lab` says mapped audio is not installed and
+   listening practice cannot be completed.
+3. Confirm `Pronunciation Lab` says model audio is not installed and
+   `Pronunciation is not scored.`
+4. Confirm `Handwriting` says handwriting assets are not installed and
+   handwriting is not scored.
+5. Optional alphabet practice, if used, must say that optional practice
+   does not complete a required check. Do not treat it as Unit 1
+   completion.
+   Do not grant Microphone for a scored pronunciation attempt. There is
+   no scored listen-record-compare flow on this candidate.
 
-There must be no pronunciation score, transcription, fluency claim, or
-correctness judgment.
+#### B5. Advancement stays on the displayed rule
 
-#### B5. Gate evidence and decision
+1. Open Unit 1 from `Course`.
+2. Read the advancement requirements on that screen. Do not mark the
+   unit advanced unless every displayed requirement is already met by
+   this run.
+3. If `Advance if requirements are met` is disabled, leave it disabled
+   and record the visible remaining requirements. That is not a failure
+   of the procedure; Unit 1 is still in development.
+   Screenshot: `AT-030-03-advancement.png`.
 
-1. Tap `Gates`. Confirm `Activity gate, not proficiency certification.`
-2. Open the Lesson 1 rule:
-   `Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded`
-3. Confirm labels:
-   - `Book revision score`
-   - `Self-attested — not independently verified`
-   - `AnkiDroid completion or maturity`
-   - `Self-attested — no AnkiDroid integration; not independently verified`
-   - `Prescribed work completion`
-4. Enter book revision score `1`.
-5. Tap `Mature`.
-6. Tap `Confirm prescribed work`.
-7. Tap `Save evidence`.
-8. Confirm `Recorded gate status: Satisfied`.
-   Screenshot: `AT-030-03-gate-satisfied.png`.
-
-Do not add tutor sign-off.
+Do not add tutor sign-off. `Mark a question for a tutor` is optional
+and is not advancement evidence.
 
 #### B6. Progress review
 
 1. Tap `Progress`.
-2. Confirm `Recorded activity is work completed, not certified ability.`
-3. Confirm recorded time/completions reflect the logs from this run.
-4. Confirm category totals exist for the categories you logged
-   (Grammar, Vocabulary and forms, Speaking and pronunciation at
-   minimum).
-5. Confirm there is no fluency, ILR, C1, or certified-proficiency
-   claim.
+2. Confirm `Recorded activity and curriculum state. This is not fluency, mastery, or proficiency.`
+3. Confirm the current unit and any book self-attestation from this run
+   are visible.
+4. Confirm there is no fluency, ILR, C1, or certified-proficiency claim.
    Screenshot: `AT-030-04-progress.png`.
 
-#### B7. Local export
+#### B7. Local backup
 
-1. On Progress, tap `Local export`.
-2. Confirm:
-   `Export will include logs, gate evidence, progress data, and recordings. This is local export, not cloud backup.`
-3. Tap `Choose a local destination`.
-4. In the system file picker, save to device storage as
-   `russian-companion-export.zip` (or the picker default).
-5. Confirm `Export completed.`
+1. On Progress, tap `Back up or restore`.
+2. Confirm `Backup and restore stay on this device. Nothing is uploaded.`
+3. Tap `Create backup`.
+4. In the system file picker, save on this device. Record the filename.
+5. Confirm the backup message says the backup was saved.
 6. Copy that zip off the device (USB) before reboot.
-7. On a computer, unzip and confirm these members exist:
-   - `activity-logs.csv`
-   - `gate-evidence.csv`
-   - `gate-decisions.csv`
-   - `progress.csv`
-   - `recordings.csv`
-   - `recordings/` audio file
-8. Confirm the CSVs contain book and AnkiDroid self-attestation labels,
-   a `SATISFIED` decision, and the recording association.
+7. On a computer, confirm the zip is a local backup package. Do not
+   require `activity-logs.csv`, `gate-evidence.csv`, or a pronunciation
+   recording. This candidate does not export a v1 lesson-cycle archive.
    Screenshot: `AT-030-05-export-completed.png`.
 
-AT-030 expected result: the governed lesson cycle completes offline;
-the gate decision is reproducible from the displayed rule and recorded
-evidence; self-attestations remain labeled; pronunciation is not
-scored; progress remains activity-only; the export contains logs, gate
-evidence, progress, and the recording.
+AT-030 expected result: Today, Course, a closed-response check, book
+self-attestation, Progress, and a local backup can be exercised
+offline. Pronunciation is not scored. Listening and handwriting stay
+unavailable. Advancement is not forced. This procedure remains
+outstanding until a later physical run records a result.
 
 ### B8. AT-002 explicit result (same run)
 
-AT-002 shares this lesson-cycle run. On the same forms, record a
-separate AT-002 result:
+AT-002 shares this run. On the same forms, record a separate AT-002
+result:
 
-- onboarding had no tutor information
-- the tutor task was added and removed and was not left enabled
-- the default gate was satisfied without tutor sign-off
+- onboarding left `I have a tutor now` unselected
+- Unit 1 can be studied without tutor sign-off
+- `Mark a question for a tutor` was not required
 - no dedicated content author, original item bank, or ongoing
   tutor-validation role was required
 
@@ -335,17 +295,16 @@ Still in airplane mode, still on the same install.
 4. Confirm packaged license texts include `CC BY-SA 4.0`,
    `CC BY 3.0 US`, and `CC BY 2.0 FR`.
    Screenshot: `AT-004-01-attributions.png`.
-5. Confirm `Optional drills` does not appear. Skip optional-drill
-   steps; AT-025/026/027 remain `NOT_APPLICABLE`.
-6. Add at least one more Progress log in a category not yet used
-   (for example `Reading`, duration `5`, `Mark completed`,
-   `Save activity`) so AT-004 step 5 is explicit.
-7. Process restart (AT-004 step 9 / AT-019 prelude to AT-020):
+5. Confirm `Optional drills` does not appear. Listening, pronunciation,
+   and handwriting remain unavailable or explicitly unscored.
+6. On `Progress`, confirm the unit and book self-attestation from this
+   run are still visible.
+7. Process restart:
    - Settings → Apps → Russian Companion → Force stop.
    - Confirm airplane mode is still on.
    - Relaunch Russian Companion.
-   - Confirm Home still shows Lesson 1, completed plan, Satisfied gate,
-     playable recording, and Progress totals.
+   - Confirm `Today` still shows Unit 1, the saved step or progress,
+     and `Progress` still shows the book self-attestation.
    Screenshot: `AT-004-02-after-force-stop.png`.
 
 AT-004 expected result: every shipped capability completed without
@@ -358,14 +317,12 @@ usable in airplane mode.
 Before reboot, write these values onto
 `release/acceptance/forms/AT-020.md`:
 
-- Current lesson
-- Required activities completed (expected `3 of 3`)
-- Gate status (expected `Satisfied`)
-- Book score `1`, AnkiDroid `Mature`, prescribed work recorded
-- Progress totals (minutes and completions)
-- Recording: model text shown, tutor-review mark present, both
-  playbacks work
-- Export zip filename, size, and SHA-256 of the copied zip
+- Current unit and step shown on `Today`
+- Book self-attestation shown on `Progress`
+- Closed-response selection still displayed after Force stop
+- Local note or tutor question, if one was saved, still readable and
+  still labeled not scored
+- Backup zip filename, size, and SHA-256 of the copied zip
 - Screenshot set listed above
 
 ### E. AT-020 / MA-073 physical reboot
@@ -376,22 +333,22 @@ Before reboot, write these values onto
    `AT-020-01-airplane-after-reboot.png`.
 4. Open Russian Companion. Do not reinstall. Do not restore from cloud.
 5. Compare with the captured baseline:
-   - Home lesson, plan completion, gate Satisfied
-   - Today's Plan completion marks
-   - Gates evidence values and decision
-   - Progress totals and log entries
-   - Practice: play model and play your recording
-   - The previously copied export zip still exists in Files
-6. Create a second local export after reboot. Confirm it still contains
-   the same governed CSVs and recording bytes. This is the observable
-   check that export history/data survived; the Local export screen
-   does not list prior export rows.
+   - `Today` still shows the same unit
+   - `Continue` opens the saved step
+   - `Progress` still shows the book self-attestation
+   - A saved note or tutor question is still complete and still not
+     scored
+   - The previously copied backup zip still exists in Files
+6. Create a second backup after reboot with `Create backup`. Confirm
+   the new zip can be copied off the device. Do not require a v1 CSV
+   export or a playable pronunciation recording.
    Screenshots: `AT-020-02-home-after-reboot.png`,
-   `AT-020-03-recording-after-reboot.png`.
+   `AT-020-03-saved-work-after-reboot.png`.
 
-AT-020 expected result: plans, logs, gate evidence, gate decisions,
-progress, recording metadata, recording audio, and prior export files
-remain available and unchanged after reboot without network access.
+AT-020 expected result: the saved unit position, book
+self-attestation, notes, tutor questions, and the copied backup file
+remain available after reboot without network access. Pronunciation
+is not scored. This procedure remains outstanding.
 
 ### F. AT-008 complete rights inventory
 
@@ -437,10 +394,11 @@ Do not stop at one Practice Library screenshot.
    issue count is 0.
 3. Confirm excluded / not-acquired / incompatible sources remain
    excluded in source-decisions.
-4. On the device, open Practice and confirm a packaged model plays
-   with its matched stress-marked text. Screenshot
-   `AT-010-01-practice-library.png` is supporting, not the complete
-   result.
+4. On the device, open `Practice`. Confirm Listening Lab and
+   Pronunciation Lab stay unavailable because mapped audio is not
+   installed. Do not record a played model or a pronunciation score.
+   Screenshot `AT-010-01-practice-library.png` is supporting only, and
+   it is not a playback pass.
 5. Fill `release/acceptance/forms/AT-010.md`. Retain both TSVs with
    the form.
 
@@ -486,13 +444,13 @@ release/evidence/screenshots/AT-004-00-airplane-mode.png
 release/evidence/screenshots/AT-004-01-attributions.png
 release/evidence/screenshots/AT-004-02-after-force-stop.png
 release/evidence/screenshots/AT-030-01-plan.png
-release/evidence/screenshots/AT-030-02-practice-complete.png
-release/evidence/screenshots/AT-030-03-gate-satisfied.png
+release/evidence/screenshots/AT-030-02-check-recorded.png
+release/evidence/screenshots/AT-030-03-advancement.png
 release/evidence/screenshots/AT-030-04-progress.png
 release/evidence/screenshots/AT-030-05-export-completed.png
 release/evidence/screenshots/AT-020-01-airplane-after-reboot.png
 release/evidence/screenshots/AT-020-02-home-after-reboot.png
-release/evidence/screenshots/AT-020-03-recording-after-reboot.png
+release/evidence/screenshots/AT-020-03-saved-work-after-reboot.png
 release/evidence/screenshots/AT-008-01-attributions-inventory.png
 release/evidence/screenshots/AT-010-01-practice-library.png
 release/evidence/exports/AT-030-russian-companion-export.zip

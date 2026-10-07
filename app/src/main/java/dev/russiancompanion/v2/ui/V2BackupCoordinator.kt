@@ -11,6 +11,7 @@ import dev.russiancompanion.data.local.ExportRecordEntity
 import dev.russiancompanion.data.local.ExportStatus
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.domain.appearance.AppearancePreference
+import dev.russiancompanion.domain.appearance.appearancePreferenceFromStored
 import dev.russiancompanion.domain.progress.ExportCounts
 import dev.russiancompanion.v2.backup.BACKUP_CANCELLED
 import dev.russiancompanion.v2.backup.BACKUP_FAILED
@@ -30,6 +31,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.cancel
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.File
@@ -71,6 +73,7 @@ internal class V2BackupCoordinator(
     private var appearanceName = AppearancePreference.DARK.name
 
     private var validated: ValidatedBackup? = null
+    private var disposableStaging: File? = null
 
     var phase by mutableStateOf(V2BackupPhase.IDLE)
         private set
@@ -147,30 +150,43 @@ internal class V2BackupCoordinator(
         if (phase != V2BackupPhase.PREPARING || !running.get()) return
         phase = V2BackupPhase.VALIDATING
         scope.launch {
-            val result = withContext(Dispatchers.IO) {
-                if (cancelRequested) return@withContext null
-                val stream = openInput() ?: return@withContext null
-                val staging = File(recoveryDir, "incoming-${System.nanoTime()}").apply { mkdirs() }
-                stream.use { input ->
-                    readGovernedBackup(input, applicationId, packId, packVersion, staging)
+            val opened = try {
+                withContext(Dispatchers.IO) {
+                    if (cancelRequested) return@withContext null
+                    val stream = openInput() ?: return@withContext null
+                    val staging = File(recoveryDir, "incoming-${System.nanoTime()}").apply { mkdirs() }
+                    disposableStaging = staging
+                    stream.use { input ->
+                        readGovernedBackup(input, applicationId, packId, packVersion, staging)
+                    }
                 }
+            } catch (cancelled: CancellationException) {
+                discardDisposableStaging()
+                message = RESTORE_CANCELLED
+                phase = V2BackupPhase.CANCELLED
+                running.set(false)
+                throw cancelled
+            } catch (_: Exception) {
+                null
             }
-            if (cancelRequested || result == null) {
+            if (cancelRequested || opened == null) {
+                discardDisposableStaging()
                 finish(false, RESTORE_FAILED, RESTORE_CANCELLED, RESTORE_DONE)
                 return@launch
             }
-            when (result) {
+            when (opened) {
                 is dev.russiancompanion.v2.backup.BackupReadResult.Rejected -> {
                     validated = null
                     preview = null
+                    discardDisposableStaging()
                     message = RESTORE_FAILED
                     phase = V2BackupPhase.FAILED
                     running.set(false)
                 }
                 is dev.russiancompanion.v2.backup.BackupReadResult.Valid -> {
                     val current = withContext(Dispatchers.IO) { store.governedLearnerDocument() }
-                    validated = result.backup
-                    preview = restorePreview(current, result.backup.document)
+                    validated = opened.backup
+                    preview = restorePreview(current, opened.backup.document)
                     message = dev.russiancompanion.v2.backup.REPLACE_EXPLANATION
                     phase = V2BackupPhase.AWAITING_CONFIRMATION
                 }
@@ -182,37 +198,62 @@ internal class V2BackupCoordinator(
         val accepted = validated ?: return
         if (phase != V2BackupPhase.AWAITING_CONFIRMATION) return
         phase = V2BackupPhase.RESTORING
+        val savedAppearance = appearanceName
         scope.launch {
             val started = !cancelRequested
-            val outcome = if (started) {
-                withContext(Dispatchers.IO) {
-                    restoreStoreBackup(store, accepted, File(recoveryDir, "rollback"))
-                }
-            } else {
+            var touchedStore = false
+            var cancelledRestore: CancellationException? = null
+            val outcome = if (!started) {
                 null
+            } else {
+                try {
+                    touchedStore = true
+                    withContext(Dispatchers.IO) {
+                        restoreStoreBackup(store, accepted, File(recoveryDir, "rollback"))
+                    }
+                } catch (cancelled: CancellationException) {
+                    cancelledRestore = cancelled
+                    null
+                } catch (_: Exception) {
+                    null
+                }
             }
             validated = null
             preview = null
+            discardDisposableStaging()
             when {
-                !started || outcome == null -> {
+                cancelledRestore != null -> {
+                    restoreAppearance(savedAppearance)
                     message = RESTORE_CANCELLED
                     phase = V2BackupPhase.CANCELLED
+                    if (touchedStore) onRestored()
+                }
+                !started -> {
+                    message = RESTORE_CANCELLED
+                    phase = V2BackupPhase.CANCELLED
+                    restoreAppearance(savedAppearance)
                 }
                 outcome == GovernedReplaceOutcome.REPLACED -> {
+                    appearanceStore.set(appearancePreferenceFromStored(accepted.manifest.appearance))
                     message = RESTORE_DONE
                     phase = V2BackupPhase.COMPLETED
                     onRestored()
                 }
                 outcome == GovernedReplaceOutcome.RECOVERY_REQUIRED -> {
+                    restoreAppearance(savedAppearance)
                     message = RESTORE_RECOVERY_REQUIRED
                     phase = V2BackupPhase.FAILED
+                    if (touchedStore) onRestored()
                 }
                 else -> {
-                    message = RESTORE_FAILED
-                    phase = V2BackupPhase.FAILED
+                    restoreAppearance(savedAppearance)
+                    message = if (cancelRequested) RESTORE_CANCELLED else RESTORE_FAILED
+                    phase = if (cancelRequested) V2BackupPhase.CANCELLED else V2BackupPhase.FAILED
+                    if (touchedStore) onRestored()
                 }
             }
             running.set(false)
+            cancelledRestore?.let { throw it }
         }
     }
 
@@ -221,10 +262,20 @@ internal class V2BackupCoordinator(
         if (phase == V2BackupPhase.AWAITING_CONFIRMATION || phase == V2BackupPhase.PREPARING) {
             validated = null
             preview = null
+            discardDisposableStaging()
             message = if (phase == V2BackupPhase.PREPARING) BACKUP_CANCELLED else RESTORE_CANCELLED
             phase = V2BackupPhase.CANCELLED
             running.set(false)
         }
+    }
+
+    private suspend fun restoreAppearance(stored: String) {
+        appearanceStore.set(appearancePreferenceFromStored(stored))
+    }
+
+    private fun discardDisposableStaging() {
+        disposableStaging?.deleteRecursively()
+        disposableStaging = null
     }
 
     override fun onCleared() {

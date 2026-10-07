@@ -3,8 +3,16 @@ package dev.russiancompanion.v2.curriculum
 import dev.russiancompanion.v2.data.V2ProfileEntity
 import java.security.MessageDigest
 
-/** Identity schema written on new attempts, steps, bookmarks, notes, and resume positions. */
+/** Identity schema written on new attempts, bookmarks, notes, and resume positions. */
 internal const val GOVERNED_IDENTITY_SCHEMA = 1
+
+/**
+ * Canonical step identity. Schema 1 hashed only the step id, kind, title,
+ * body, and item digests. Schema 2 also binds the instructional text and
+ * relationships the learner sees. A stored schema-1 step digest is not
+ * rewritten and does not count as the current step.
+ */
+internal const val STEP_IDENTITY_SCHEMA = 2
 
 /**
  * Legacy and unverifiable rows keep this sentinel. It is not a content hash and
@@ -117,7 +125,57 @@ internal fun stepContentDigest(pack: V2CurriculumPack, step: V2Step): String {
         val item = pack.item(id)
         if (item == null) "missing:$id" else V2Validator.checkItemContentDigest(item)
     }
-    return sha256Hex(listOf(step.id, step.kind, step.title, step.body, items).joinToString("\n"))
+    val examples = step.exampleIds.joinToString("\n") { id ->
+        val example = pack.example(id)
+        if (example == null) {
+            "missing:$id"
+        } else {
+            listOf(
+                example.id,
+                example.kind,
+                example.letterId,
+                example.display,
+                example.note,
+                example.objectiveId,
+                example.sourceId,
+            ).joinToString("\u001f")
+        }
+    }
+    val references = step.referenceIds.joinToString("\n") { id ->
+        val entry = pack.reference(id)
+        if (entry == null) "missing:$id" else referenceContentDigest(entry)
+    }
+    val session = pack.step(step.id)?.first
+    val sessionLine = session?.let { current ->
+        current.id + ":" + current.objectiveIds.joinToString(",")
+    }.orEmpty()
+    val relationships = pack.units.flatMap { it.objectives }.mapNotNull { objective ->
+        val roles = listOfNotNull(
+            "instruction".takeIf { step.id in objective.instructionStepIds },
+            "practice".takeIf { step.id in objective.practiceStepIds },
+            "remediation".takeIf { step.id in objective.remediationStepIds },
+        )
+        if (roles.isEmpty()) null else objective.id + ":" + roles.joinToString(",")
+    }.sorted().joinToString("\n")
+    return sha256Hex(
+        listOf(
+            "step-identity-schema:$STEP_IDENTITY_SCHEMA",
+            step.id,
+            step.kind,
+            step.title,
+            step.body,
+            step.dominantAction,
+            step.bookDirection.orEmpty(),
+            step.companionDirection.orEmpty(),
+            step.unavailableReason.orEmpty(),
+            step.remediationStepId.orEmpty(),
+            items,
+            examples,
+            references,
+            sessionLine,
+            relationships,
+        ).joinToString("\n"),
+    )
 }
 
 internal fun resumePositionDigest(pack: V2CurriculumPack, sessionId: String, stepIndex: Int): String? {
@@ -247,12 +305,17 @@ internal fun stepReadyForGovernedCompletion(
     return step.itemIds.all { itemId -> governedSelectionKey(stepId, itemId) in selections }
 }
 
+/** Set by governed completion so tests can see that identity work left the UI thread. */
+@Volatile
+internal var lastGovernedIdentityThreadForTests: Thread? = null
+
 /** Null refuses the schema-1 step write. Teach and orient steps with no items stay completable. */
 internal fun governedStepCompletionDigest(
     pack: V2CurriculumPack,
     learner: V2LearnerView,
     stepId: String,
 ): String? {
+    lastGovernedIdentityThreadForTests = Thread.currentThread()
     if (!stepReadyForGovernedCompletion(pack, learner, stepId)) return null
     val step = pack.step(stepId)?.second ?: return null
     return stepContentDigest(pack, step)
@@ -283,6 +346,8 @@ internal fun completedStepCounts(pack: V2CurriculumPack, learner: V2LearnerView,
     val digests = learner.governedStepDigests ?: return stepId in learner.completedStepIds
     val recorded = digests[stepId] ?: return false
     if (recorded == UNRECOVERABLE_GOVERNED_IDENTITY) return false
+    val schema = learner.governedStepSchemas?.get(stepId)
+    if (learner.governedStepSchemas != null && schema != STEP_IDENTITY_SCHEMA) return false
     val step = pack.step(stepId)?.second ?: return false
     return recorded == stepContentDigest(pack, step)
 }
@@ -403,7 +468,7 @@ internal fun savedWorkEntries(pack: V2CurriculumPack, learner: V2LearnerView): L
                 kind = "STALE",
                 resumable = false,
             )
-        } else if (step.id !in learner.completedStepIds) {
+        } else if (!completedStepCounts(pack, learner, step.id)) {
             entries += SavedWorkEntry(
                 id = "resume:$sessionId",
                 title = step.title,
@@ -419,12 +484,11 @@ internal fun savedWorkEntries(pack: V2CurriculumPack, learner: V2LearnerView): L
         entries += bookmarkEntry(pack, bookmark)
     }
     learner.notes.forEach { note ->
-        val preview = note.text.replace('\n', ' ').take(80)
         val open = savedTarget(pack, note.targetId, "STEP", note.targetDigest, note.identitySchema)
         entries += SavedWorkEntry(
             id = "note:${note.id}",
             title = "Local note",
-            detail = "Not course content. $preview",
+            detail = "Not course content and not scored. ${note.text}",
             kind = "NOTE",
             resumable = open != null,
             sessionId = open?.first,
@@ -437,7 +501,7 @@ internal fun savedWorkEntries(pack: V2CurriculumPack, learner: V2LearnerView): L
         entries += SavedWorkEntry(
             id = "tutor:${item.id}",
             title = "Question for a tutor",
-            detail = "Optional. This is not advancement evidence.",
+            detail = "Optional and not scored. This is not advancement evidence. ${item.note}",
             kind = "TUTOR",
             resumable = open != null,
             sessionId = open?.first,

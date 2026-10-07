@@ -21,7 +21,14 @@ internal interface V2Persistence {
     suspend fun addTutor(targetId: String, note: String, recordedAt: String, targetDigest: String)
     suspend fun attestBook(unitNumber: Int, recordedAt: String)
     suspend fun completeUnit(unitNumber: Int, recordedAt: String)
-    suspend fun advanceUnit(unitNumber: Int, recordedAt: String, nextUnitNumber: Int, nextSessionId: String?)
+    suspend fun advanceUnit(
+        unitNumber: Int,
+        recordedAt: String,
+        nextUnitNumber: Int,
+        nextSessionId: String?,
+        nextResumeDigest: String,
+        nextResumeSchema: Int,
+    )
 }
 
 internal class StoreV2Persistence(private val store: LocalStore) : V2Persistence {
@@ -87,7 +94,21 @@ internal class StoreV2Persistence(private val store: LocalStore) : V2Persistence
         store.awaitStore { store.v2CompleteUnit(unitNumber, recordedAt) }
     }
 
-    override suspend fun advanceUnit(unitNumber: Int, recordedAt: String, nextUnitNumber: Int, nextSessionId: String?) {
-        store.v2AdvanceUnitAsync(unitNumber, recordedAt, nextUnitNumber, nextSessionId)
+    override suspend fun advanceUnit(
+        unitNumber: Int,
+        recordedAt: String,
+        nextUnitNumber: Int,
+        nextSessionId: String?,
+        nextResumeDigest: String,
+        nextResumeSchema: Int,
+    ) {
+        store.v2AdvanceUnitAsync(
+            unitNumber,
+            recordedAt,
+            nextUnitNumber,
+            nextSessionId,
+            nextResumeDigest,
+            nextResumeSchema,
+        )
     }
 }
