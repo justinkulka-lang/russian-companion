@@ -91,8 +91,17 @@ internal object V2Validator {
      * rights, assets, and advancement rule reachable from it. Scope is part of
      * the document so this digest cannot collide with the pack aggregate.
      */
-    internal fun unitContentReviewDigest(pack: V2CurriculumPack, unitNumber: Int): String =
-        sha256(canonicalUnitInstructionalDocument(pack, unitNumber))
+    /** Counts real canonical-unit digest executions, including cache misses. */
+    internal val unitDigestExecutionsForTests = java.util.concurrent.atomic.AtomicInteger(0)
+
+    @Volatile
+    internal var unitDigestExecutionThreadForTests: Thread? = null
+
+    internal fun unitContentReviewDigest(pack: V2CurriculumPack, unitNumber: Int): String {
+        unitDigestExecutionsForTests.incrementAndGet()
+        unitDigestExecutionThreadForTests = Thread.currentThread()
+        return sha256(canonicalUnitInstructionalDocument(pack, unitNumber))
+    }
 
     internal fun instructionalContentDigest(pack: V2CurriculumPack): String = contentReviewDigest(pack)
 
@@ -3842,6 +3851,11 @@ internal object V2Validator {
      * a newline, may sit between the left token and the dash, matching `\s*`.
      * The left token itself still cannot contain a newline or another dash and
      * stays within 90 characters.
+     *
+     * A left side that is only pattern whitespace is still a regex match. Trim
+     * drops it, so this scan consumes that span and does not emit it. The
+     * counterexample is " —bb–b": the first dash consumes "bb", and "bb–b" is
+     * not a second pair.
      */
     private fun linearDashPairs(visible: String): List<Pair<String, String>> {
         val out = ArrayList<Pair<String, String>>()
@@ -3867,29 +3881,22 @@ internal object V2Validator {
                     leftStart--
                     taken++
                 }
+                val rightEnd = dashRightEnd(visible, dash, search)
                 if (taken == 0) {
+                    if (dash > search && rightEnd != null) {
+                        search = rightEnd
+                        matched = true
+                        break
+                    }
                     cursor = dash + 1
                     continue
                 }
-                var right = dash + 1
-                while (right < n && isPatternWhitespace(visible[right])) right++
-                if (right >= n || visible[right] == '\n' || visible[right] == '—' || visible[right] == '–') {
+                if (rightEnd == null) {
                     cursor = dash + 1
                     continue
                 }
-                var rightEnd = right
-                var count = 0
-                while (rightEnd < n && count < 160) {
-                    val rightCharacter = visible[rightEnd]
-                    if (rightCharacter == '\n' || rightCharacter == '—' || rightCharacter == '–') break
-                    rightEnd++
-                    count++
-                }
-                if (count == 0) {
-                    cursor = dash + 1
-                    continue
-                }
-                out += visible.substring(leftStart, leftEnd) to visible.substring(right, rightEnd)
+                val rightStart = dashRightStart(visible, dash)
+                out += visible.substring(leftStart, leftEnd) to visible.substring(rightStart, rightEnd)
                 search = rightEnd
                 matched = true
                 break
@@ -3897,6 +3904,30 @@ internal object V2Validator {
             if (!matched) break
         }
         return out
+    }
+
+    private fun dashRightStart(visible: String, dash: Int): Int {
+        var right = dash + 1
+        while (right < visible.length && isPatternWhitespace(visible[right])) right++
+        return right
+    }
+
+    /** End index of the right token, or null when [DASH_PAIR] would not match. */
+    private fun dashRightEnd(visible: String, dash: Int, search: Int): Int? {
+        if (dash < search) return null
+        val right = dashRightStart(visible, dash)
+        if (right >= visible.length || visible[right] == '\n' || visible[right] == '—' || visible[right] == '–') {
+            return null
+        }
+        var rightEnd = right
+        var count = 0
+        while (rightEnd < visible.length && count < 160) {
+            val rightCharacter = visible[rightEnd]
+            if (rightCharacter == '\n' || rightCharacter == '—' || rightCharacter == '–') break
+            rightEnd++
+            count++
+        }
+        return if (count == 0) null else rightEnd
     }
 
     private fun isPatternWhitespace(character: Char): Boolean {

@@ -281,6 +281,9 @@ internal object V2BackupFaults {
     @Volatile var holdDuringReplacement: java.util.concurrent.CountDownLatch? = null
     @Volatile var holdAfterCommit: kotlinx.coroutines.CompletableDeferred<Unit>? = null
     @Volatile var retainSwapArtifact: Boolean = false
+    @Volatile var boundaryQueuedForTests: java.util.concurrent.CountDownLatch? = null
+    @Volatile var boundaryOpenedForTests: java.util.concurrent.CountDownLatch? = null
+    @Volatile var afterBoundaryBeforeIo: kotlinx.coroutines.CompletableDeferred<Unit>? = null
 
     fun reset() {
         failWrite = false
@@ -298,6 +301,9 @@ internal object V2BackupFaults {
         holdDuringReplacement = null
         holdAfterCommit = null
         retainSwapArtifact = false
+        boundaryQueuedForTests = null
+        boundaryOpenedForTests = null
+        afterBoundaryBeforeIo = null
     }
 }
 
@@ -306,32 +312,76 @@ internal object V2BackupFaults {
  * Every coordinator shares this set. A sweep must not delete a held path.
  */
 internal object BackupWorkRegistry {
-    private val incoming = java.util.concurrent.ConcurrentHashMap.newKeySet<String>()
-    private val recordingInputs = java.util.concurrent.ConcurrentHashMap.newKeySet<String>()
+    private val lock = Any()
+    private val incoming = HashMap<String, Int>()
+    private val recordingInputs = HashMap<String, Int>()
+
+    @Volatile
+    var lastDeleteThreadForTests: Thread? = null
 
     fun holdIncoming(file: File) {
-        incoming += canonical(file)
+        synchronized(lock) { addCount(incoming, canonical(file)) }
+    }
+
+    /**
+     * Own [file] before it exists, then create it under the same lock a sweep
+     * uses to delete. A concurrent sweep cannot observe an unowned directory.
+     */
+    fun createOwnedIncoming(file: File) {
+        synchronized(lock) {
+            file.parentFile?.mkdirs()
+            addCount(incoming, canonical(file))
+            if (!file.isDirectory && !file.mkdirs() && !file.isDirectory) error("staging-directory")
+        }
     }
 
     fun releaseIncoming(file: File) {
-        incoming -= canonical(file)
+        synchronized(lock) { dropCount(incoming, canonical(file)) }
     }
 
-    fun incomingHeld(file: File): Boolean = canonical(file) in incoming
+    fun incomingHeld(file: File): Boolean = synchronized(lock) { (incoming[canonical(file)] ?: 0) > 0 }
 
     fun holdRecordings(files: Collection<File>) {
-        files.forEach { recordingInputs += canonical(it) }
+        synchronized(lock) { files.forEach { addCount(recordingInputs, canonical(it)) } }
     }
 
     fun releaseRecordings(files: Collection<File>) {
-        files.forEach { recordingInputs -= canonical(it) }
+        synchronized(lock) { files.forEach { dropCount(recordingInputs, canonical(it)) } }
     }
 
-    fun recordingHeld(file: File): Boolean = canonical(file) in recordingInputs
+    fun recordingHeld(file: File): Boolean = synchronized(lock) { (recordingInputs[canonical(file)] ?: 0) > 0 }
+
+    fun sweepUnownedIncoming(recoveryDir: File, alsoKeep: File?) {
+        if (!recoveryDir.isDirectory) return
+        val children = recoveryDir.listFiles() ?: return
+        for (child in children) {
+            if (!child.isDirectory || !child.name.startsWith("incoming-")) continue
+            synchronized(lock) {
+                val key = canonical(child)
+                val kept = alsoKeep != null && canonical(alsoKeep) == key
+                if (!kept && (incoming[key] ?: 0) == 0) {
+                    lastDeleteThreadForTests = Thread.currentThread()
+                    child.deleteRecursively()
+                }
+            }
+        }
+    }
 
     fun clearForTests() {
-        incoming.clear()
-        recordingInputs.clear()
+        synchronized(lock) {
+            incoming.clear()
+            recordingInputs.clear()
+        }
+        lastDeleteThreadForTests = null
+    }
+
+    private fun addCount(counts: HashMap<String, Int>, key: String) {
+        counts[key] = (counts[key] ?: 0) + 1
+    }
+
+    private fun dropCount(counts: HashMap<String, Int>, key: String) {
+        val next = (counts[key] ?: 0) - 1
+        if (next <= 0) counts.remove(key) else counts[key] = next
     }
 
     private fun canonical(file: File): String = runCatching { file.canonicalPath }.getOrElse { file.absolutePath }

@@ -43,6 +43,7 @@ import kotlinx.coroutines.withContext
 import java.io.File
 import java.io.InputStream
 import java.io.OutputStream
+import java.util.concurrent.Executors
 import java.util.concurrent.atomic.AtomicBoolean
 import java.util.concurrent.atomic.AtomicInteger
 
@@ -84,6 +85,9 @@ internal class V2BackupCoordinator(
     private val stagingLock = Any()
     private val stagingReaders = AtomicInteger(0)
     private val cleared = AtomicBoolean(false)
+    private val stagingIo = Executors.newSingleThreadExecutor { runnable ->
+        Thread(runnable, "russian-companion-staging").apply { isDaemon = true }
+    }
 
     var phase by mutableStateOf(V2BackupPhase.IDLE)
         private set
@@ -93,7 +97,7 @@ internal class V2BackupCoordinator(
         private set
 
     init {
-        sweepOrphanIncoming(recoveryDir, null)
+        stagingIo.execute { sweepOrphanIncoming(recoveryDir, null) }
         scope.launch {
             appearanceStore.preference.collect { appearanceName = it.name }
         }
@@ -166,7 +170,7 @@ internal class V2BackupCoordinator(
                 val opened = withContext(Dispatchers.IO) {
                     if (cancelRequested) return@withContext null
                     val stream = openInput() ?: return@withContext null
-                    val staging = File(recoveryDir, "incoming-${System.nanoTime()}").apply { mkdirs() }
+                    val staging = File(recoveryDir, "incoming-${System.nanoTime()}")
                     acquireStaging(staging)
                     usingStaging {
                         stream.use { input ->
@@ -234,7 +238,15 @@ internal class V2BackupCoordinator(
         if (phase != V2BackupPhase.AWAITING_CONFIRMATION) return
         phase = V2BackupPhase.RESTORING
         val savedAppearance = appearanceName
-        scope.launch {
+        val leased = synchronized(stagingLock) {
+            if (disposableStaging == null) {
+                false
+            } else {
+                stagingReaders.incrementAndGet()
+                true
+            }
+        }
+        val job = scope.launch {
             val parent = coroutineContext.job
             var openedBoundary = false
             var outcome: GovernedReplaceOutcome? = null
@@ -252,10 +264,13 @@ internal class V2BackupCoordinator(
                         outcome = null
                     } else {
                         outcome = withContext(NonCancellable) {
+                            dev.russiancompanion.v2.backup.V2BackupFaults.boundaryQueuedForTests?.countDown()
                             withContext(store.ioDispatcher) {
                                 store.openLearnerReplacement()
                                 openedBoundary = true
+                                dev.russiancompanion.v2.backup.V2BackupFaults.boundaryOpenedForTests?.countDown()
                             }
+                            dev.russiancompanion.v2.backup.V2BackupFaults.afterBoundaryBeforeIo?.await()
                             withContext(Dispatchers.IO) {
                                 usingStaging {
                                     restoreStoreBackup(store, accepted, File(recoveryDir, "rollback"))
@@ -273,7 +288,6 @@ internal class V2BackupCoordinator(
             withContext(NonCancellable) {
                 validated = null
                 preview = null
-                releaseStaging()
                 if (openedBoundary) {
                     withContext(store.ioDispatcher) { store.closeLearnerReplacement() }
                 }
@@ -316,6 +330,7 @@ internal class V2BackupCoordinator(
                 throw CancellationException("restore-cancelled")
             }
         }
+        job.invokeOnCompletion { releaseConfirmLease(leased) }
     }
 
     internal fun cancelWorkForTests() {
@@ -345,9 +360,9 @@ internal class V2BackupCoordinator(
     }
 
     private fun acquireStaging(file: File) {
+        BackupWorkRegistry.createOwnedIncoming(file)
         synchronized(stagingLock) {
             disposableStaging = file
-            BackupWorkRegistry.holdIncoming(file)
         }
     }
 
@@ -371,23 +386,40 @@ internal class V2BackupCoordinator(
             BackupWorkRegistry.releaseIncoming(current)
             current
         }
-        file.deleteRecursively()
+        deleteOffMain(file)
+    }
+
+    private fun releaseConfirmLease(leased: Boolean) {
+        val file = synchronized(stagingLock) {
+            if (leased) stagingReaders.updateAndGet { (it - 1).coerceAtLeast(0) }
+            if (stagingReaders.get() > 0) return@synchronized null
+            val current = disposableStaging ?: return@synchronized null
+            disposableStaging = null
+            BackupWorkRegistry.releaseIncoming(current)
+            current
+        }
+        if (file != null) deleteOffMain(file)
+    }
+
+    private fun deleteOffMain(file: File) {
+        stagingIo.execute {
+            BackupWorkRegistry.lastDeleteThreadForTests = Thread.currentThread()
+            file.deleteRecursively()
+        }
     }
 
     override fun onCleared() {
         cancelRequested = true
         scope.cancel()
-        synchronized(stagingLock) {
+        val file = synchronized(stagingLock) {
             cleared.set(true)
-            if (stagingReaders.get() == 0) {
-                val current = disposableStaging
-                disposableStaging = null
-                if (current != null) {
-                    BackupWorkRegistry.releaseIncoming(current)
-                    current.deleteRecursively()
-                }
-            }
+            if (stagingReaders.get() > 0) return@synchronized null
+            val current = disposableStaging ?: return@synchronized null
+            disposableStaging = null
+            BackupWorkRegistry.releaseIncoming(current)
+            current
         }
+        if (file != null) deleteOffMain(file)
     }
 
     internal fun sweepOrphansForTests() {
@@ -441,11 +473,5 @@ internal class V2BackupCoordinator(
 }
 
 internal fun sweepOrphanIncoming(recoveryDir: File, active: File?) {
-    if (!recoveryDir.isDirectory) return
-    recoveryDir.listFiles()?.forEach { child ->
-        if (!child.isDirectory || !child.name.startsWith("incoming-")) return@forEach
-        if (BackupWorkRegistry.incomingHeld(child)) return@forEach
-        if (active != null && child.canonicalFile == active.canonicalFile) return@forEach
-        child.deleteRecursively()
-    }
+    BackupWorkRegistry.sweepUnownedIncoming(recoveryDir, active)
 }

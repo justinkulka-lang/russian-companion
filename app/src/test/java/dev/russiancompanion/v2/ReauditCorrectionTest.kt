@@ -245,6 +245,12 @@ class ReauditCorrectionTest {
         assertTrue(instructions.contains("File-backed schema 8 to schema 9"))
         assertTrue(instructions.contains("Journal `COMMITTED`"))
         assertTrue(instructions.contains("Automated checks below are not this physical procedure"))
+        assertTrue(instructions.contains("AT-030-baseline.zip"))
+        assertTrue(instructions.contains("AT-030 note later"))
+        assertTrue(instructions.contains("AT-030-later.zip"))
+        assertTrue(instructions.contains("does not show the saved note or tutor question text"))
+        assertTrue(instructions.contains("wrongUnitSameOptionDoesNotSuppressAfterHashedRestoreAndReopen"))
+        assertTrue(instructions.contains("stagingLeaseSurvivesQueuedBoundaryAndDirectorySweep"))
         assertTrue(instructions.contains("Restore replaces the learner records"))
         assertTrue(instructions.contains("not current prescribed credit"))
         assertTrue(instructions.contains("Physical reboot is a power-cycle"))
@@ -442,7 +448,7 @@ class ReauditCorrectionTest {
         coordinator.openBackup { error("provider-open") }
         awaitPhase(coordinator, V2BackupPhase.FAILED)
         assertEquals(RESTORE_FAILED, coordinator.message)
-        assertTrue(incomingStaging(recovery).isEmpty())
+        awaitIncomingCleared(recovery)
         assertEquals(before, store.governedLearnerFingerprint())
         assertTrue(coordinator.begin(V2BackupPhase.PREPARING))
         coordinator.cancel()
@@ -452,7 +458,7 @@ class ReauditCorrectionTest {
         coordinator.openBackup { backup.inputStream() }
         awaitPhase(coordinator, V2BackupPhase.FAILED)
         assertEquals(RESTORE_FAILED, coordinator.message)
-        assertTrue(incomingStaging(recovery).isEmpty())
+        awaitIncomingCleared(recovery)
         assertEquals(before, store.governedLearnerFingerprint())
         assertEquals(listOf("still here"), store.v2Notes().map { it.text })
         assertTrue(coordinator.begin(V2BackupPhase.PREPARING))
@@ -475,7 +481,7 @@ class ReauditCorrectionTest {
         marker.writeText("keep")
         val appearance = AppearanceStore.failing(AppearancePreference.DARK, writeFails = true)
         val coordinator = V2BackupCoordinator.get(activity, store, APP, pack.packId, pack.packVersion, appearance)
-        assertFalse(orphan.exists())
+        idleUntil("constructor sweep removed the orphan incoming directory") { !orphan.exists() }
         assertEquals("keep", marker.readText())
         assertTrue(coordinator.begin(V2BackupPhase.PREPARING))
         coordinator.openBackup { backup.inputStream() }
@@ -487,7 +493,7 @@ class ReauditCorrectionTest {
         assertFalse(other.exists())
         assertEquals("keep", marker.readText())
         activity.viewModelStore.clear()
-        assertTrue(incomingStaging(recovery).isEmpty())
+        awaitIncomingCleared(recovery)
         assertEquals("keep", marker.readText())
 
         val again = newCoordinator(store, appearance)
@@ -499,7 +505,7 @@ class ReauditCorrectionTest {
         assertEquals(RESTORE_LEARNER_REPLACED_APPEARANCE_FAILED, again.message)
         assertEquals(AppearancePreference.DARK, runBlocking { appearance.preference.first() })
         assertEquals(listOf("backup note"), store.v2Notes().map { it.text })
-        assertTrue(incomingStaging(recovery).isEmpty())
+        awaitIncomingCleared(recovery)
         assertEquals("keep", marker.readText())
         sweepOrphanIncoming(recovery, null)
         assertEquals("keep", marker.readText())
@@ -933,6 +939,10 @@ class ReauditCorrectionTest {
             compose.onAllNodes(androidx.compose.ui.test.hasTestTag(tag), useUnmergedTree = true)
                 .fetchSemanticsNodes().isNotEmpty()
         }
+    }
+
+    private fun awaitIncomingCleared(recovery: File) {
+        idleUntil("incoming staging cleared") { incomingStaging(recovery).isEmpty() }
     }
 
     private fun incomingStaging(recovery: File): List<File> {

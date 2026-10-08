@@ -91,6 +91,20 @@ internal class LocalStore private constructor(
         replacementOpen.updateAndGet { (it - 1).coerceAtLeast(0) }
     }
 
+    /**
+     * Test seam. Occupies the store executor until [release] so a restore can
+     * suspend on the boundary dispatch without the test thread calling [call].
+     */
+    internal fun holdExecutorForTests(
+        entered: java.util.concurrent.CountDownLatch,
+        release: java.util.concurrent.CountDownLatch,
+    ) {
+        io.execute {
+            entered.countDown()
+            if (!release.await(20, java.util.concurrent.TimeUnit.SECONDS)) error("store-executor-hold")
+        }
+    }
+
     internal fun learnerMutationCurrent(capturedEpoch: Long): Boolean {
         return replacementOpen.get() == 0 && capturedEpoch == learnerMutationEpoch.get()
     }
@@ -799,6 +813,9 @@ internal class LocalStore private constructor(
     internal var holdGovernedAttemptForTests: kotlinx.coroutines.CompletableDeferred<Unit>? = null
 
     @Volatile
+    internal var governedAttemptHoldEnteredForTests: java.util.concurrent.CountDownLatch? = null
+
+    @Volatile
     internal var holdBeforeProfileSaveForTests: kotlinx.coroutines.CompletableDeferred<Unit>? = null
 
     @Volatile
@@ -918,8 +935,16 @@ internal class LocalStore private constructor(
         capturedEpoch: Long,
         write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite,
     ): Boolean {
-        val duplicate = withContext(ioDispatcher) { governedAttemptIsDuplicate(write) }
-        if (duplicate) return true
+        val decision = withContext(ioDispatcher) {
+            when {
+                !learnerMutationCurrent(capturedEpoch) -> "stale"
+                governedAttemptIsDuplicate(write) -> "duplicate"
+                else -> "insert"
+            }
+        }
+        if (decision == "stale") return false
+        if (decision == "duplicate") return true
+        governedAttemptHoldEnteredForTests?.countDown()
         holdGovernedAttemptForTests?.await()
         return withContext(ioDispatcher) {
             if (!learnerMutationCurrent(capturedEpoch)) return@withContext false
@@ -957,7 +982,8 @@ internal class LocalStore private constructor(
                     existing.identitySchema == write.identitySchema &&
                     existing.itemDigest == write.itemDigest &&
                     existing.ruleDigest == write.ruleDigest &&
-                    existing.unitContentDigest == write.unitContentDigest
+                    existing.unitContentDigest == write.unitContentDigest &&
+                    existing.unitNumber == write.unitNumber
             }
             .maxByOrNull { it.acceptedOrder }
         return latest != null && latest.selected == write.selected

@@ -36,16 +36,21 @@ import dev.russiancompanion.v2.backup.readGovernedBackup
 import dev.russiancompanion.v2.backup.restoreStoreBackup
 import dev.russiancompanion.v2.backup.writeGovernedBackup
 import dev.russiancompanion.v2.backup.writeStoreBackup
+import dev.russiancompanion.v2.curriculum.IdentityWeakCache
 import dev.russiancompanion.v2.curriculum.OPTIONAL_PRACTICE
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2PackIdentityIndex
+import dev.russiancompanion.v2.curriculum.governedSelectionKey
+import dev.russiancompanion.v2.curriculum.governedSessionSelections
+import dev.russiancompanion.v2.curriculum.optionalPracticeSelection
+import dev.russiancompanion.v2.curriculum.practiceOffers
+import dev.russiancompanion.v2.curriculum.practiceQueue
 import dev.russiancompanion.v2.curriculum.V2PackLoader
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.governedIdentityThreadsForTests
 import dev.russiancompanion.v2.curriculum.lastGovernedIdentityThreadForTests
 import dev.russiancompanion.v2.curriculum.lastGovernedSnapshotLabelForTests
-import dev.russiancompanion.v2.curriculum.optionalPracticeSelection
 import dev.russiancompanion.v2.curriculum.practiceStepId
 import dev.russiancompanion.v2.curriculum.prepareGovernedAttempt
 import dev.russiancompanion.v2.curriculum.resumePositionDigest
@@ -55,7 +60,9 @@ import dev.russiancompanion.v2.data.V2AttemptEntity
 import dev.russiancompanion.v2.ui.V2App
 import dev.russiancompanion.v2.ui.V2BackupCoordinator
 import dev.russiancompanion.v2.ui.V2BackupPhase
+import dev.russiancompanion.v2.ui.V2PracticeScreen
 import dev.russiancompanion.v2.ui.V2UiWork
+import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import org.json.JSONObject
@@ -63,6 +70,7 @@ import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotEquals
+import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Rule
@@ -73,7 +81,9 @@ import org.robolectric.RobolectricTestRunner
 import org.robolectric.Shadows
 import org.robolectric.annotation.Config
 import java.io.File
+import java.lang.ref.WeakReference
 import java.util.concurrent.CountDownLatch
+import java.util.concurrent.atomic.AtomicReference
 
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi")
@@ -89,6 +99,9 @@ class RemainingReauditCorrectionTest {
     @After
     fun tearDown() {
         V2UiWork.blockForTests = null
+        V2UiWork.governedComputeGateForTests = null
+        V2UiWork.governedComputeEnteredForTests = null
+        V2UiWork.governedSnapshotOutcomeForTests = null
         V2BackupFaults.reset()
         BackupWorkRegistry.clearForTests()
         lastGovernedIdentityThreadForTests = null
@@ -482,6 +495,347 @@ class RemainingReauditCorrectionTest {
     }
 
     @Test
+    fun wrongUnitSameOptionDoesNotSuppressAfterHashedRestoreAndReopen() {
+        val located = pack.step("u1-st-vowels-check")!!
+        val step = located.second
+        val item = pack.item(step.itemIds.single())!!
+        val option = item.options[0]
+        val prescribed = prepareGovernedAttempt(
+            pack,
+            item.id,
+            option,
+            dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK,
+            step.id,
+            "2026-10-08T17:00:00",
+        )!!
+        val optional = prepareGovernedAttempt(
+            pack,
+            item.id,
+            option,
+            OPTIONAL_PRACTICE,
+            practiceStepId("alphabet"),
+            "2026-10-08T17:00:01",
+        )!!
+        val source = memory()
+        source.v2RecordGovernedAttempt(prescribed)
+        source.v2RecordGovernedAttempt(optional)
+        val wrongUnit = source.governedLearnerDocument().copy(
+            attempts = source.governedLearnerDocument().attempts.map { it.copy(unitNumber = 2) },
+        )
+        assertTrue(wrongUnit.attempts.all { it.unitNumber == 2 })
+        val zip = hashedBackup(wrongUnit)
+        val read = readGovernedBackup(zip.inputStream(), APP, pack.packId, pack.packVersion, tempDir())
+        assertTrue(read.toString(), read is BackupReadResult.Valid)
+        val name = "wrong-unit-${System.nanoTime()}"
+        val restored = LocalStore.openNamed(context(), name).also { stores += it }
+        assertEquals(
+            GovernedReplaceOutcome.REPLACED,
+            restoreStoreBackup(restored, (read as BackupReadResult.Valid).backup, tempDir()),
+        )
+        restored.close()
+        val reopened = LocalStore.openNamed(context(), name).also { stores += it }
+        val learner = reopened.v2LearnerView()
+        assertNull(optionalPracticeSelection(pack, learner, "alphabet", item.id))
+        assertFalse(governedSessionSelections(pack, learner).containsKey(governedSelectionKey(step.id, item.id)))
+        reopened.v2RecordGovernedAttempt(prescribed.copy(id = "again-prescribed", recordedAtLocal = "2026-10-08T17:05:00"))
+        reopened.v2RecordGovernedAttempt(optional.copy(id = "again-optional", recordedAtLocal = "2026-10-08T17:05:01"))
+        val after = reopened.v2LearnerView()
+        assertEquals(option, optionalPracticeSelection(pack, after, "alphabet", item.id)?.selected)
+        assertEquals(option, governedSessionSelections(pack, after)[governedSelectionKey(step.id, item.id)])
+        assertEquals(4, reopened.v2Attempts().size)
+        assertTrue(reopened.v2Attempts().any { it.unitNumber == 1 && it.acceptedOrder > 0 })
+    }
+
+    @Test
+    fun duplicateAcknowledgementRequiresTheCapturedEpoch() {
+        val located = pack.step("u1-st-vowels-check")!!
+        val step = located.second
+        val item = pack.item(step.itemIds.single())!!
+        val first = item.options[0]
+        val second = item.options[1]
+        fun prescribed(selected: String, at: String) =
+            prepareGovernedAttempt(pack, item.id, selected, dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK, step.id, at)!!
+        val store = memory()
+        val original = prescribed(first, "2026-10-08T18:00:00")
+        store.v2RecordGovernedAttempt(original)
+        val epoch = store.learnerMutationEpoch()
+        store.openLearnerReplacement()
+        assertFalse(runBlocking { store.v2RecordGovernedAttemptIfCurrentAsync(epoch, original) })
+        assertEquals(1, store.v2Attempts().size)
+        store.closeLearnerReplacement()
+        assertFalse(runBlocking { store.v2RecordGovernedAttemptIfCurrentAsync(epoch, original) })
+        assertEquals(1, store.v2Attempts().size)
+        assertTrue(runBlocking { store.v2RecordGovernedAttemptIfCurrentAsync(store.learnerMutationEpoch(), original) })
+        assertEquals(1, store.v2Attempts().size)
+
+        val other = prescribed(second, "2026-10-08T18:00:02")
+        val hold = CompletableDeferred<Unit>()
+        val entered = CountDownLatch(1)
+        store.holdGovernedAttemptForTests = hold
+        store.governedAttemptHoldEnteredForTests = entered
+        val captured = store.learnerMutationEpoch()
+        val result = AtomicReference<Boolean?>()
+        val writer = Thread {
+            result.set(runBlocking { store.v2RecordGovernedAttemptIfCurrentAsync(captured, other) })
+        }
+        writer.start()
+        awaitLatch(entered)
+        store.openLearnerReplacement()
+        hold.complete(Unit)
+        writer.join(8_000)
+        assertEquals(false, result.get())
+        assertEquals(1, store.v2Attempts().size)
+        store.closeLearnerReplacement()
+        store.holdGovernedAttemptForTests = null
+        store.v2RecordGovernedAttempt(other)
+        store.v2RecordGovernedAttempt(prescribed(first, "2026-10-08T18:00:04"))
+        val selections = store.v2Attempts().sortedBy { it.acceptedOrder }.map { it.selected }
+        assertEquals(listOf(first, second, first), selections)
+        assertEquals(listOf(1L, 2L, 3L), store.v2Attempts().map { it.acceptedOrder }.sorted())
+    }
+
+    @Test
+    fun stagingLeaseSurvivesQueuedBoundaryAndDirectorySweep() {
+        val recoveryRoot = tempDir()
+        val owned = File(recoveryRoot, "incoming-owned")
+        BackupWorkRegistry.createOwnedIncoming(owned)
+        File(owned, "marker.txt").writeText("keep")
+        val unowned = File(recoveryRoot, "incoming-unowned").apply { mkdirs() }
+        File(unowned, "marker.txt").writeText("drop")
+        val sweepers = List(4) {
+            Thread {
+                repeat(30) { BackupWorkRegistry.sweepUnownedIncoming(recoveryRoot, null) }
+            }
+        }
+        sweepers.forEach { it.start() }
+        sweepers.forEach { it.join(5_000) }
+        assertEquals("keep", File(owned, "marker.txt").readText())
+        assertFalse(unowned.exists())
+        BackupWorkRegistry.holdIncoming(owned)
+        BackupWorkRegistry.releaseIncoming(owned)
+        BackupWorkRegistry.sweepUnownedIncoming(recoveryRoot, null)
+        assertTrue(owned.isDirectory)
+        BackupWorkRegistry.releaseIncoming(owned)
+        BackupWorkRegistry.sweepUnownedIncoming(recoveryRoot, null)
+        assertFalse(owned.exists())
+
+        val activity = Robolectric.buildActivity(ComponentActivity::class.java).setup().get()
+        val orphanDir = File(activity.applicationContext.filesDir, "backup-recovery")
+        orphanDir.mkdirs()
+        val orphan = File(orphanDir, "incoming-constructor-orphan").apply { mkdirs() }
+        File(orphan, "marker.txt").writeText("gone")
+        BackupWorkRegistry.lastDeleteThreadForTests = null
+        V2BackupCoordinator.get(activity, memory(), APP, pack.packId, pack.packVersion, AppearanceStore.memory(AppearancePreference.DARK))
+        idleUntil("constructor sweep", timeoutMs = 10_000) { !orphan.exists() }
+        val deleteThread = BackupWorkRegistry.lastDeleteThreadForTests
+        assertNotEquals(Looper.getMainLooper().thread, deleteThread)
+        assertEquals("russian-companion-staging", deleteThread!!.name)
+
+        queuedBoundaryKeepsRecording(activity)
+        boundaryOpenedKeepsRecording()
+    }
+
+    @Test
+    fun practiceDigestsRunOffMainAndReuseWarmUnitIdentities() {
+        val located = pack.step("u1-st-vowels-check")!!
+        val step = located.second
+        val item = pack.item(step.itemIds.single())!!
+        val option = item.options[0]
+        val store = memory()
+        val prescribed = prepareGovernedAttempt(
+            pack,
+            item.id,
+            option,
+            dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK,
+            step.id,
+            "2026-10-08T19:00:00",
+        )!!
+        val optional = prepareGovernedAttempt(
+            pack,
+            item.id,
+            option,
+            OPTIONAL_PRACTICE,
+            practiceStepId("alphabet"),
+            "2026-10-08T19:00:01",
+        )!!
+        store.v2RecordGovernedAttempt(prescribed)
+        store.v2RecordGovernedAttempt(optional)
+        store.v2ReplaceAttemptsForTests(store.v2Attempts().map { it.copy(correct = false) })
+        val learner = store.v2LearnerView()
+        V2PackIdentityIndex.clearForTests()
+        V2Validator.unitDigestExecutionsForTests.set(0)
+        val coldError = AtomicReference<Throwable>()
+        val cold = Thread({
+            try {
+                practiceQueue(pack, learner, "mixed")
+                optionalPracticeSelection(pack, learner, "alphabet", item.id)
+            } catch (error: Throwable) {
+                coldError.set(error)
+            }
+        }, "digest-cold")
+        cold.start()
+        cold.join(20_000)
+        assertNull(coldError.get()?.stackTraceToString(), coldError.get())
+        assertTrue(V2Validator.unitDigestExecutionsForTests.get() > 0)
+        assertEquals(cold, V2Validator.unitDigestExecutionThreadForTests)
+        val coldCount = V2Validator.unitDigestExecutionsForTests.get()
+        val warmError = AtomicReference<Throwable>()
+        val warm = Thread({
+            try {
+                V2PackIdentityIndex.warm(pack)
+                val afterWarm = V2Validator.unitDigestExecutionsForTests.get()
+                practiceQueue(pack, learner, "mixed")
+                optionalPracticeSelection(pack, learner, "alphabet", item.id)
+                if (V2Validator.unitDigestExecutionsForTests.get() != afterWarm) {
+                    throw AssertionError("warm unit digest was hashed again")
+                }
+            } catch (error: Throwable) {
+                warmError.set(error)
+            }
+        }, "digest-warm")
+        warm.start()
+        warm.join(20_000)
+        assertNull(warmError.get()?.stackTraceToString(), warmError.get())
+        assertTrue(V2Validator.unitDigestExecutionsForTests.get() > coldCount)
+        val changed = pack.copy()
+        val changedThread = Thread({
+            practiceQueue(changed, learner, "mixed")
+            optionalPracticeSelection(changed, learner, "alphabet", item.id)
+        }, "digest-changed")
+        val beforeChanged = V2Validator.unitDigestExecutionsForTests.get()
+        changedThread.start()
+        changedThread.join(20_000)
+        assertTrue(V2Validator.unitDigestExecutionsForTests.get() > beforeChanged)
+        assertEquals(changedThread, V2Validator.unitDigestExecutionThreadForTests)
+        assertNotEquals(Looper.getMainLooper().thread, changedThread)
+
+        V2PackIdentityIndex.clearForTests()
+        V2Validator.unitDigestExecutionsForTests.set(0)
+        V2UiWork.blockForTests = false
+        compose.setContent {
+            V2PracticeScreen(pack, learner, onTab = {}, onAlphabet = {}, onLab = {}, onSavedWork = {})
+        }
+        idleUntil("practice digest", timeoutMs = 20_000) {
+            V2Validator.unitDigestExecutionsForTests.get() > 0 &&
+                governedIdentityThreadsForTests["practice"] != null
+        }
+        val published = V2Validator.unitDigestExecutionThreadForTests
+        assertNotEquals(Looper.getMainLooper().thread, published)
+        assertFalse(published!!.name.startsWith("russian-companion-store"))
+        assertNotEquals(Looper.getMainLooper().thread, governedIdentityThreadsForTests["practice"])
+        awaitText("Alphabet recognition")
+    }
+
+    @Test
+    fun practiceSnapshotDiscardsAStaleGeneration() {
+        V2UiWork.blockForTests = false
+        val holds = java.util.concurrent.ConcurrentHashMap<Long, CompletableDeferred<Unit>>()
+        val calls = java.util.concurrent.atomic.AtomicInteger(0)
+        val firstEntered = CountDownLatch(1)
+        val secondEntered = CountDownLatch(1)
+        V2UiWork.governedComputeGateForTests = gate@{ label, token ->
+            if (label != "practice") return@gate
+            val hold = CompletableDeferred<Unit>()
+            holds[token] = hold
+            if (calls.incrementAndGet() == 1) firstEntered.countDown() else secondEntered.countDown()
+            hold.await()
+        }
+        val outcomes = java.util.Collections.synchronizedList(mutableListOf<Pair<Long, Boolean>>())
+        val discarded = CountDownLatch(1)
+        val published = CountDownLatch(1)
+        V2UiWork.governedSnapshotOutcomeForTests = outcome@{ label, token, didPublish ->
+            if (label != "practice") return@outcome
+            outcomes.add(token to didPublish)
+            if (didPublish) published.countDown() else discarded.countDown()
+        }
+        val base = memory().v2LearnerView()
+        val secondLearner = base.copy(currentUnitNumber = 30, completedUnitNumbers = setOf(1))
+        assertNotEquals(base, secondLearner)
+        val learner = androidx.compose.runtime.mutableStateOf(base)
+        compose.setContent {
+            V2PracticeScreen(pack, learner.value, onTab = {}, onAlphabet = {}, onLab = {}, onSavedWork = {})
+        }
+        awaitLatch(firstEntered)
+        learner.value = secondLearner
+        androidx.compose.runtime.snapshots.Snapshot.sendApplyNotifications()
+        pumpUntil("second practice generation entered; holds=$holds", timeoutMs = 20_000) {
+            secondEntered.count == 0L
+        }
+        val older = holds.keys.min()
+        val newer = holds.keys.max()
+        assertTrue("tokens $older then $newer", newer > older)
+        holds.getValue(newer).complete(Unit)
+        pumpUntil("newer practice snapshot published; outcomes=$outcomes", timeoutMs = 30_000) {
+            published.count == 0L
+        }
+        holds[older]?.complete(Unit)
+        pumpUntil("older practice snapshot discarded; outcomes=$outcomes", timeoutMs = 20_000) {
+            discarded.count == 0L
+        }
+        assertEquals(false, outcomes.first { it.first == older }.second)
+        assertEquals(true, outcomes.first { it.first == newer }.second)
+        val expected = practiceOffers(pack, secondLearner).first { it.id == "alphabet" }.detail
+        pumpUntil("text $expected") {
+            compose.onAllNodes(androidx.compose.ui.test.hasText(expected, substring = true), useUnmergedTree = true)
+                .fetchSemanticsNodes().isNotEmpty()
+        }
+    }
+
+    @Test
+    fun identityCacheReclaimsDeadPacksWithoutRevisitingBuckets() {
+        val bounded = IdentityWeakCache<ByteArray>(maxRetained = 8)
+        val live = ArrayList<Any>()
+        repeat(20) {
+            val key = Any()
+            live += key
+            bounded.put(key, ByteArray(32))
+        }
+        assertTrue(bounded.retainedValueCountForTests() <= 8)
+        assertNotNull(bounded.get(live.last()))
+        assertNull(bounded.get(live.first()))
+
+        val collected = IdentityWeakCache<ByteArray>(maxRetained = 100)
+        val weaks = ArrayList<WeakReference<Any>>()
+        repeat(30) { orphanIdentity(collected, weaks) }
+        val survivor = Any()
+        collected.put(survivor, byteArrayOf(7))
+        val started = System.currentTimeMillis()
+        while (weaks.any { it.get() != null } && System.currentTimeMillis() - started < 5_000) {
+            System.gc()
+            Runtime.getRuntime().runFinalization()
+            collected.reclaim()
+            Thread.sleep(25)
+        }
+        collected.get(Any())
+        assertTrue(weaks.all { it.get() == null })
+        assertEquals(1, collected.retainedValueCountForTests())
+        assertTrue(collected.get(survivor)!!.contentEquals(byteArrayOf(7)))
+
+        val concurrent = IdentityWeakCache<Int>(maxRetained = 32)
+        val keys = List(16) { Any() }
+        val failures = java.util.Collections.synchronizedList(mutableListOf<Throwable>())
+        val workers = List(8) { worker ->
+            Thread {
+                try {
+                    repeat(40) { step ->
+                        val key = keys[(worker + step) % keys.size]
+                        concurrent.put(key, worker)
+                        concurrent.reclaim()
+                        concurrent.get(key)
+                    }
+                } catch (error: Throwable) {
+                    failures += error
+                }
+            }
+        }
+        workers.forEach { it.start() }
+        workers.forEach { it.join(8_000) }
+        assertTrue(failures.toString(), failures.isEmpty())
+        assertTrue(concurrent.retainedValueCountForTests() <= 32)
+        keys.forEach { key -> assertNotNull(concurrent.get(key)) }
+    }
+
+    @Test
     fun explicitPairsMatchTheRegexAndStayBoundedOnARepresentativeText() {
         val samples = listOf(
             "a — b",
@@ -497,10 +851,31 @@ class RemainingReauditCorrectionTest {
             "left —\nright",
             "word\n— gloss",
             "  " + "я".repeat(95) + " — gloss",
+            " —bb–b",
+            "  —bb–b",
+            "a — b – c",
+            "\u00A0слово — gloss",
+            "«слово» — gloss",
+            "\"кот\" — cat",
+            "слово\u2014gloss",
+            "  \n— gloss",
         )
         samples.forEach { sample ->
             assertEquals(sample, V2Validator.explicitPairsRegexProbe(sample), V2Validator.explicitPairsProbe(sample))
         }
+        var compared = 0
+        pack.provenanceRecords.forEach { record ->
+            val text = record.originalSourceText
+            if (text.length > 8_000) return@forEach
+            if (!text.contains('—') && !text.contains('–')) return@forEach
+            compared += 1
+            assertEquals(
+                text.take(120),
+                V2Validator.explicitPairsRegexProbe(text),
+                V2Validator.explicitPairsProbe(text),
+            )
+        }
+        assertTrue("governed dash corpus compared=$compared", compared > 0)
         val repeated = buildString { repeat(300) { append("слово — gloss\n") } }
         assertEquals(V2Validator.explicitPairsRegexProbe(repeated), V2Validator.explicitPairsProbe(repeated))
         val large = buildString { repeat(4_000) { append("слово — gloss\n") } }
@@ -695,6 +1070,16 @@ class RemainingReauditCorrectionTest {
         assertEquals(0, latch.count)
     }
 
+    private fun pumpUntil(message: String, timeoutMs: Long = 8_000, condition: () -> Boolean) {
+        val started = System.currentTimeMillis()
+        while (!condition() && System.currentTimeMillis() - started < timeoutMs) {
+            compose.mainClock.advanceTimeByFrame()
+            Shadows.shadowOf(Looper.getMainLooper()).idle()
+            Thread.sleep(15)
+        }
+        assertTrue(message, condition())
+    }
+
     private fun idleUntil(message: String, timeoutMs: Long = 8_000, condition: () -> Boolean) {
         val started = System.currentTimeMillis()
         while (!condition() && System.currentTimeMillis() - started < timeoutMs) {
@@ -738,6 +1123,105 @@ class RemainingReauditCorrectionTest {
         var dir = File(checkNotNull(System.getProperty("user.dir")))
         while (!File(dir, "settings.gradle.kts").isFile) dir = checkNotNull(dir.parentFile)
         return dir
+    }
+
+    private fun queuedBoundaryKeepsRecording(activity: ComponentActivity) {
+        val store = recordingStore("queued-boundary")
+        val seeded = seedRecording(store, byteArrayOf(9, 8, 7))
+        store.v2AddNote("kept", "backup note", "2026-10-08T12:00:00")
+        val backup = tempZip()
+        backup.outputStream().use { writeStoreBackup(store, it, APP, pack.packId, pack.packVersion, "DARK") }
+        store.v2AddNote("kept", "live note", "2026-10-08T12:05:00")
+        val queued = CountDownLatch(1)
+        V2BackupFaults.boundaryQueuedForTests = queued
+        val coordinator = V2BackupCoordinator.get(
+            activity,
+            store,
+            APP,
+            pack.packId,
+            pack.packVersion,
+            AppearanceStore.memory(AppearancePreference.DARK),
+        )
+        assertTrue(coordinator.begin(V2BackupPhase.PREPARING))
+        coordinator.openBackup { backup.inputStream() }
+        awaitPhase(coordinator, V2BackupPhase.AWAITING_CONFIRMATION)
+        val staged = incoming(activity).single()
+        val marker = File(staged, "queued-marker.txt").apply { writeText("keep") }
+        val executorEntered = CountDownLatch(1)
+        val executorRelease = CountDownLatch(1)
+        store.holdExecutorForTests(executorEntered, executorRelease)
+        awaitLatch(executorEntered)
+        coordinator.confirmRestore { }
+        awaitLatch(queued)
+        activity.viewModelStore.clear()
+        V2BackupCoordinator.get(
+            activity,
+            memory(),
+            APP,
+            pack.packId,
+            pack.packVersion,
+            AppearanceStore.memory(AppearancePreference.DARK),
+        ).sweepOrphansForTests()
+        assertEquals("keep", marker.readText())
+        executorRelease.countDown()
+        idleUntil("queued boundary replacement", timeoutMs = 15_000) {
+            store.v2Notes().map { it.text } == listOf("backup note") && incoming(activity).isEmpty()
+        }
+        val live = File(checkNotNull(store.recordingDirectory()), File(seeded.localFileReference).name)
+        assertTrue(live.readBytes().contentEquals(byteArrayOf(9, 8, 7)))
+        assertFalse(marker.exists())
+    }
+
+    private fun boundaryOpenedKeepsRecording() {
+        val activity = Robolectric.buildActivity(ComponentActivity::class.java).setup().get()
+        val store = recordingStore("opened-boundary")
+        val seeded = seedRecording(store, byteArrayOf(3, 2, 1))
+        store.v2AddNote("kept", "backup note", "2026-10-08T12:00:00")
+        val backup = tempZip()
+        backup.outputStream().use { writeStoreBackup(store, it, APP, pack.packId, pack.packVersion, "DARK") }
+        store.v2AddNote("kept", "live note", "2026-10-08T12:05:00")
+        val opened = CountDownLatch(1)
+        V2BackupFaults.boundaryOpenedForTests = opened
+        val beforeIo = CompletableDeferred<Unit>()
+        V2BackupFaults.afterBoundaryBeforeIo = beforeIo
+        val coordinator = V2BackupCoordinator.get(
+            activity,
+            store,
+            APP,
+            pack.packId,
+            pack.packVersion,
+            AppearanceStore.memory(AppearancePreference.DARK),
+        )
+        assertTrue(coordinator.begin(V2BackupPhase.PREPARING))
+        coordinator.openBackup { backup.inputStream() }
+        awaitPhase(coordinator, V2BackupPhase.AWAITING_CONFIRMATION)
+        val staged = incoming(activity).single()
+        val marker = File(staged, "opened-marker.txt").apply { writeText("keep") }
+        coordinator.confirmRestore { }
+        awaitLatch(opened)
+        activity.viewModelStore.clear()
+        V2BackupCoordinator.get(
+            activity,
+            memory(),
+            APP,
+            pack.packId,
+            pack.packVersion,
+            AppearanceStore.memory(AppearancePreference.DARK),
+        ).sweepOrphansForTests()
+        assertEquals("keep", marker.readText())
+        beforeIo.complete(Unit)
+        idleUntil("opened boundary replacement", timeoutMs = 15_000) {
+            store.v2Notes().map { it.text } == listOf("backup note") && incoming(activity).isEmpty()
+        }
+        val live = File(checkNotNull(store.recordingDirectory()), File(seeded.localFileReference).name)
+        assertTrue(live.readBytes().contentEquals(byteArrayOf(3, 2, 1)))
+        assertFalse(marker.exists())
+    }
+
+    private fun orphanIdentity(cache: IdentityWeakCache<ByteArray>, weaks: MutableList<WeakReference<Any>>) {
+        val key = Any()
+        weaks += WeakReference(key)
+        cache.put(key, ByteArray(1024))
     }
 
     private companion object {

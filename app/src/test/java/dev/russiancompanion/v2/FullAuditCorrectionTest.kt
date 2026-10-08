@@ -408,7 +408,7 @@ class FullAuditCorrectionTest {
         coordinator.cancel()
         awaitPhase(coordinator, V2BackupPhase.CANCELLED)
         assertEquals(RESTORE_CANCELLED, coordinator.message)
-        assertTrue(incomingStaging(recovery).isEmpty())
+        awaitIncomingCleared(recovery)
         assertEquals("keep", marker.readText())
         assertEquals(before, store.governedLearnerFingerprint())
         assertEquals(AppearancePreference.DARK, appearance.preference.first())
@@ -423,7 +423,7 @@ class FullAuditCorrectionTest {
         awaitPhase(coordinator, V2BackupPhase.FAILED)
         assertEquals(RESTORE_FAILED, coordinator.message)
         assertEquals(1, restored)
-        assertTrue(incomingStaging(recovery).isEmpty())
+        awaitIncomingCleared(recovery)
         assertEquals("keep", marker.readText())
         assertEquals(before, store.governedLearnerFingerprint())
         assertEquals(AppearancePreference.DARK, appearance.preference.first())
@@ -437,7 +437,7 @@ class FullAuditCorrectionTest {
         coordinator.confirmRestore { restored += 1 }
         awaitPhase(coordinator, V2BackupPhase.CANCELLED)
         assertEquals(RESTORE_CANCELLED, coordinator.message)
-        assertTrue(incomingStaging(recovery).isEmpty())
+        awaitIncomingCleared(recovery)
         assertEquals(before, store.governedLearnerFingerprint())
         assertEquals(AppearancePreference.DARK, appearance.preference.first())
         assertTrue(coordinator.begin(V2BackupPhase.PREPARING))
@@ -453,7 +453,7 @@ class FullAuditCorrectionTest {
         val journal = journalFile(store)
         assertTrue(journal.isFile)
         assertTrue(journal.readText().isNotBlank())
-        assertTrue(incomingStaging(recovery).isEmpty())
+        awaitIncomingCleared(recovery)
         assertEquals("keep", marker.readText())
         assertEquals(AppearancePreference.DARK, appearance.preference.first())
         store.sweepOrphanRecordingFiles()
@@ -469,7 +469,7 @@ class FullAuditCorrectionTest {
         awaitPhase(coordinator, V2BackupPhase.COMPLETED)
         assertEquals(RESTORE_DONE, coordinator.message)
         assertEquals(AppearancePreference.FOLLOW_SYSTEM, appearance.preference.first())
-        assertTrue(incomingStaging(recovery).isEmpty())
+        awaitIncomingCleared(recovery)
         assertEquals("keep", marker.readText())
         assertEquals(listOf("live note"), store.v2Notes().map { it.text })
         assertTrue(restored >= 4)
@@ -682,6 +682,15 @@ class FullAuditCorrectionTest {
             Thread.sleep(15)
         }
         assertEquals(phase, coordinator.phase)
+    }
+
+    private fun awaitIncomingCleared(recovery: File) {
+        val started = System.currentTimeMillis()
+        while (incomingStaging(recovery).isNotEmpty() && System.currentTimeMillis() - started < 8_000) {
+            Shadows.shadowOf(Looper.getMainLooper()).idle()
+            Thread.sleep(15)
+        }
+        assertTrue(incomingStaging(recovery).isEmpty())
     }
 
     private fun incomingStaging(recovery: File): List<File> {

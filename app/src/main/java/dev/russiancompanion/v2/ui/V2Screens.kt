@@ -60,7 +60,9 @@ import dev.russiancompanion.v2.curriculum.topicLabel
 import dev.russiancompanion.v2.curriculum.unit
 import dev.russiancompanion.v2.curriculum.unitState
 import dev.russiancompanion.v2.curriculum.visibleReferences
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.withContext
 
 @Composable
@@ -86,12 +88,23 @@ internal fun <T> rememberGoverned(
         if (inline) return@LaunchedEffect
         val token = generation.incrementAndGet()
         recordGovernedIdentityForTests(if (label.isEmpty()) "scheduled" else "$label:scheduled")
-        val computed = withContext(Dispatchers.Default) {
-            recordGovernedIdentityForTests(label)
-            V2PackIdentityIndex.warm(pack)
-            compute()
+        val computed = try {
+            withContext(Dispatchers.Default) {
+                V2UiWork.governedComputeEnteredForTests?.countDown()
+                V2UiWork.governedComputeGateForTests?.invoke(label, token)
+                recordGovernedIdentityForTests(label)
+                V2PackIdentityIndex.warm(pack)
+                compute()
+            }
+        } catch (cancelled: CancellationException) {
+            withContext(NonCancellable) {
+                V2UiWork.governedSnapshotOutcomeForTests?.invoke(label, token, false)
+            }
+            throw cancelled
         }
-        if (token == generation.get()) published = computed
+        val publish = token == generation.get()
+        if (publish) published = computed
+        V2UiWork.governedSnapshotOutcomeForTests?.invoke(label, token, publish)
     }
     return if (inline) inlineValue else published
 }
@@ -646,7 +659,9 @@ internal fun V2PracticeScreen(
     onLab: (String) -> Unit,
     onSavedWork: () -> Unit,
 ) {
-    val offers = practiceOffers(pack, learner)
+    val offers = rememberGoverned(pack, learner, label = "practice") {
+        practiceOffers(pack, learner)
+    }
     V2Scaffold(title = "Practice", tab = V2Tab.PRACTICE, onTab = onTab) {
         Text(
             "Alphabet Lab is the visual practice surface for printed letters.",
@@ -654,6 +669,10 @@ internal fun V2PracticeScreen(
         )
         V2Card("Alphabet Lab", "Letter board, print pairs, and confusable forms.", "Available", onAlphabet)
         V2SecondaryButton("Saved work", onSavedWork, tag = "v2-open-saved-work")
+        if (offers == null) {
+            V2Status("Preparing practice")
+            return@V2Scaffold
+        }
         offers.forEach { offer ->
             if (offer.runnable) {
                 V2Card(offer.title, offer.detail, "Optional", { onLab(offer.id) })

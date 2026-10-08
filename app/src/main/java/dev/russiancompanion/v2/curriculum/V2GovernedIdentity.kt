@@ -307,7 +307,7 @@ internal fun attemptSuppliesStepSelection(
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     val unitNumber = itemUnitNumber(pack, item) ?: return false
     if (attempt.unitNumber != unitNumber || pack.unit(unitNumber) == null) return false
-    if (attempt.unitContentDigest != V2Validator.unitContentReviewDigest(pack, unitNumber)) return false
+    if (attempt.unitContentDigest != currentUnitDigest(pack, unitNumber)) return false
     val step = pack.step(stepId)?.second ?: return false
     return attempt.itemId in step.itemIds
 }
@@ -389,7 +389,7 @@ internal fun attemptGrantsPrescribedCredit(attempt: GovernedAttemptView, pack: V
     val item = pack.item(attempt.itemId) ?: return false
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     if (pack.unit(attempt.unitNumber) == null) return false
-    return attempt.unitContentDigest == V2Validator.unitContentReviewDigest(pack, attempt.unitNumber)
+    return attempt.unitContentDigest == currentUnitDigest(pack, attempt.unitNumber)
 }
 
 internal fun creditItemIds(pack: V2CurriculumPack, learner: V2LearnerView): Set<String> {
@@ -503,6 +503,35 @@ internal fun practiceQueue(pack: V2CurriculumPack, learner: V2LearnerView, labId
 
 internal fun practiceStepId(labId: String): String = "practice:$labId"
 
+internal data class PracticeLabSnapshot(
+    val offer: PracticeOffer?,
+    val items: List<V2CheckItem>,
+    val recordedByItem: Map<String, GovernedAttemptView>,
+)
+
+/** Offers, ranking, and current selections for one lab. Call off the main thread. */
+internal fun practiceLabSnapshot(
+    pack: V2CurriculumPack,
+    learner: V2LearnerView,
+    labId: String,
+): PracticeLabSnapshot {
+    val items = practiceQueue(pack, learner, labId)
+    val recorded = linkedMapOf<String, GovernedAttemptView>()
+    items.forEach { item ->
+        optionalPracticeSelection(pack, learner, labId, item.id)?.let { recorded[item.id] = it }
+    }
+    return PracticeLabSnapshot(
+        offer = practiceOffers(pack, learner).firstOrNull { it.id == labId },
+        items = items,
+        recordedByItem = recorded,
+    )
+}
+
+private fun currentUnitDigest(pack: V2CurriculumPack, unitNumber: Int): String {
+    return V2PackIdentityIndex.unitDigest(pack, unitNumber)
+        ?: V2Validator.unitContentReviewDigest(pack, unitNumber)
+}
+
 /**
  * The latest optional answer for this lab item, only when schema, item,
  * unit-content, rule, role, and practice-context identities match the current
@@ -546,9 +575,7 @@ internal fun attemptMatchesCurrentOptional(
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     val unitNumber = itemUnitNumber(pack, item) ?: return false
     if (attempt.unitNumber != unitNumber || pack.unit(unitNumber) == null) return false
-    val unitDigest = V2PackIdentityIndex.unitDigest(pack, unitNumber)
-        ?: V2Validator.unitContentReviewDigest(pack, unitNumber)
-    return attempt.unitContentDigest == unitDigest
+    return attempt.unitContentDigest == currentUnitDigest(pack, unitNumber)
 }
 
 internal fun savedWorkEntries(pack: V2CurriculumPack, learner: V2LearnerView): List<SavedWorkEntry> {
@@ -735,44 +762,109 @@ internal object V2PackIdentityIndex {
     fun stepDigest(pack: V2CurriculumPack, stepId: String): String? = steps.get(pack)?.get(stepId)
 
     fun unitDigest(pack: V2CurriculumPack, unitNumber: Int): String? = units.get(pack)?.get(unitNumber)
+
+    fun clearForTests() {
+        steps.clear()
+        units.clear()
+    }
 }
 
 /**
  * Weak cache keyed by object identity. [System.identityHashCode] does not
- * walk a data-class structure.
+ * walk a data-class structure. Cleared referents are removed from a
+ * [java.lang.ref.ReferenceQueue] on the next lookup, publication, or
+ * [reclaim], including when the next key hashes to a different bucket.
+ * A live entry past [maxRetained] evicts the oldest so a process cannot
+ * keep every historical digest map.
  */
-internal class IdentityWeakCache<V> {
+internal class IdentityWeakCache<V>(private val maxRetained: Int = 8) {
     private class Node<V>(
-        val referent: java.lang.ref.WeakReference<Any>,
+        referent: Any,
+        queue: java.lang.ref.ReferenceQueue<Any>,
+        val identity: Int,
         val value: V,
-    )
+    ) : java.lang.ref.WeakReference<Any>(referent, queue)
 
-    private val buckets = java.util.concurrent.ConcurrentHashMap<Int, java.util.concurrent.CopyOnWriteArrayList<Node<V>>>()
+    private val queue = java.lang.ref.ReferenceQueue<Any>()
+    private val lock = Any()
+    private val buckets = HashMap<Int, MutableList<Node<V>>>()
+    private val order = ArrayDeque<Node<V>>()
 
     fun get(key: Any): V? {
+        reclaim()
         val id = System.identityHashCode(key)
-        val list = buckets[id] ?: return null
-        var found: V? = null
-        val dead = ArrayList<Node<V>>()
-        for (node in list) {
-            val current = node.referent.get()
-            if (current == null) dead += node
-            else if (current === key) found = node.value
+        synchronized(lock) {
+            val list = buckets[id] ?: return null
+            var found: V? = null
+            val iterator = list.iterator()
+            while (iterator.hasNext()) {
+                val node = iterator.next()
+                val current = node.get()
+                if (current == null) {
+                    iterator.remove()
+                    order.remove(node)
+                } else if (current === key) {
+                    found = node.value
+                }
+            }
+            if (list.isEmpty()) buckets.remove(id)
+            return found
         }
-        if (dead.isNotEmpty()) list.removeAll(dead.toSet())
-        if (list.isEmpty()) buckets.remove(id, list)
-        return found
     }
 
     fun put(key: Any, value: V) {
+        reclaim()
         val id = System.identityHashCode(key)
-        val list = buckets.computeIfAbsent(id) { java.util.concurrent.CopyOnWriteArrayList() }
-        val dead = ArrayList<Node<V>>()
-        for (node in list) {
-            val current = node.referent.get()
-            if (current == null || current === key) dead += node
+        val node = Node(key, queue, id, value)
+        synchronized(lock) {
+            val list = buckets.getOrPut(id) { mutableListOf() }
+            val iterator = list.iterator()
+            while (iterator.hasNext()) {
+                val existing = iterator.next()
+                val current = existing.get()
+                if (current == null || current === key) {
+                    iterator.remove()
+                    order.remove(existing)
+                }
+            }
+            list.add(node)
+            order.add(node)
+            while (order.size > maxRetained) {
+                val oldest = order.removeFirst()
+                val oldestList = buckets[oldest.identity] ?: continue
+                oldestList.remove(oldest)
+                if (oldestList.isEmpty()) buckets.remove(oldest.identity)
+            }
         }
-        if (dead.isNotEmpty()) list.removeAll(dead.toSet())
-        list += Node(java.lang.ref.WeakReference(key), value)
+    }
+
+    fun reclaim() {
+        val cleared = ArrayList<Node<V>>()
+        while (true) {
+            @Suppress("UNCHECKED_CAST")
+            val node = queue.poll() as Node<V>? ?: break
+            cleared.add(node)
+        }
+        if (cleared.isEmpty()) return
+        synchronized(lock) {
+            for (node in cleared) {
+                order.remove(node)
+                val list = buckets[node.identity] ?: continue
+                list.remove(node)
+                if (list.isEmpty()) buckets.remove(node.identity)
+            }
+        }
+    }
+
+    fun clear() {
+        synchronized(lock) {
+            buckets.clear()
+            order.clear()
+        }
+    }
+
+    fun retainedValueCountForTests(): Int {
+        reclaim()
+        synchronized(lock) { return order.size }
     }
 }

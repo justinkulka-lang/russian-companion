@@ -27,9 +27,7 @@ import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.unit.dp
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
-import dev.russiancompanion.v2.curriculum.optionalPracticeSelection
-import dev.russiancompanion.v2.curriculum.practiceOffers
-import dev.russiancompanion.v2.curriculum.practiceQueue
+import dev.russiancompanion.v2.curriculum.practiceLabSnapshot
 import dev.russiancompanion.v2.curriculum.savedWorkEntries
 
 @Composable
@@ -84,12 +82,15 @@ internal fun V2LabScreen(
     onBack: () -> Unit,
     onSubmit: (String, String) -> Boolean,
 ) {
-    val offer = practiceOffers(pack, learner).firstOrNull { it.id == labId }
-    val items = practiceQueue(pack, learner, labId)
+    val snapshot = rememberGoverned(pack, learner, label = "practice-lab") {
+        practiceLabSnapshot(pack, learner, labId)
+    }
+    val offer = snapshot?.offer
+    val items = snapshot?.items.orEmpty()
     var index by rememberSaveable(labId) { mutableIntStateOf(0) }
     var chosen by rememberSaveable(labId, index) { mutableStateOf<String?>(null) }
     val item = items.getOrNull(index.coerceAtMost(items.lastIndex.coerceAtLeast(0)))
-    val recorded = item?.let { optionalPracticeSelection(pack, learner, labId, it.id) }
+    val recorded = item?.let { snapshot?.recordedByItem[it.id] }
     val itemId = item?.id
     val pending = itemId != null && pendingKeys.any { it.startsWith("practice:$labId:$itemId:") }
     V2Scaffold(
@@ -126,6 +127,10 @@ internal fun V2LabScreen(
             }
         },
     ) {
+        if (snapshot == null) {
+            Text("Preparing practice", modifier = Modifier.semantics { testTag = "v2-lab-preparing" })
+            return@V2Scaffold
+        }
         if (offer?.runnable != true) {
             Text(offer?.detail ?: "This practice is unavailable.", modifier = Modifier.semantics { testTag = "v2-lab-blocked" })
             return@V2Scaffold

@@ -251,44 +251,57 @@ and is not advancement evidence.
 4. Confirm there is no fluency, ILR, C1, or certified-proficiency claim.
    Screenshot: `AT-030-04-progress.png`.
 
-#### B7. Local backup and mandatory saved-work retrieval
+#### B7. Saved records, then the baseline backup
 
-1. On Progress, tap `Back up or restore`.
-2. Confirm `Backup and restore stay on this device. Nothing is uploaded.`
-3. Tap `Create backup`.
-4. In the system file picker, save on this device. Record the filename.
-5. Confirm the backup message says the backup was saved.
-6. Copy that zip off the device (USB) before reboot.
-7. On a computer, confirm the zip is a local backup package. Do not
-   require `activity-logs.csv`, `gate-evidence.csv`, or a pronunciation
-   recording. This candidate does not export a v1 lesson-cycle archive.
-   Screenshot: `AT-030-05-export-completed.png`.
-8. Create the saved records before retrieval. Saved work is not a
-   Progress control. From `Today`, tap `Saved work`. The same list is
-   on `Practice` → `Saved work`.
-9. On the Unit 1 step opened by `Continue`, tap `Bookmark this step`.
-   In `Local note — never scored`, enter `AT-030 note alpha` and tap
+Create and retrieve the four saved records before any backup. Saved
+work is not a Progress control. Progress does not show the note or
+tutor-question text.
+
+1. On the Unit 1 step opened by `Continue`, record the resume inventory:
+   the unit, the session title, the step title, and the step number.
+2. Tap `Bookmark this step`.
+3. In `Local note — never scored`, enter `AT-030 note alpha` and tap
    `Save note`. Confirm the step shows
    `Saved note, not scored: AT-030 note alpha`. With that text still in
    the field, tap `Mark a question for a tutor`. Confirm
    `Tutor question, not scored: AT-030 note alpha`. If the field is
    empty, the stored question is `Please review this step.`
-10. Return to `Today` and tap `Saved work`. Retrieval is mandatory for
-    every record this run created: the resume position, the bookmark,
-    the note `AT-030 note alpha`, and the tutor question
-    `AT-030 note alpha`. Confirm each one is readable in full. Notes
-    and tutor questions must stay labeled not scored. Do not skip this
-    step because a record is optional.
+4. From `Today`, tap `Saved work`. The same list is on
+   `Practice` → `Saved work`. Retrieval is mandatory before the baseline
+   backup. Confirm the resume position, the bookmark, the note
+   `AT-030 note alpha`, and the tutor question `AT-030 note alpha`
+   are each readable in full. Notes and tutor questions must stay
+   labeled not scored.
+5. This inventory is the baseline. It contains those four records and
+   does not contain `AT-030 note later`.
+6. Only after that retrieval, on Progress tap `Back up or restore`.
+   Confirm `Backup and restore stay on this device. Nothing is uploaded.`
+7. Tap `Create backup`. In the system file picker, save on this device
+   as `AT-030-baseline.zip`. Record the filename, size, and SHA-256.
+8. Confirm the backup message says the backup was saved. Copy
+   `AT-030-baseline.zip` off the device (USB) before reboot.
+9. On a computer, confirm the zip is a local backup package. Do not
+   require `activity-logs.csv`, `gate-evidence.csv`, or a pronunciation
+   recording. This candidate does not export a v1 lesson-cycle archive.
+   Screenshot: `AT-030-05-export-completed.png`. The baseline zip's
+   inventory is the four records retrieved above.
 
 #### B7a. Restore replacement, rejection, cancellation, and recovery
 
 Still on the device, still in airplane mode. This is a physical
 procedure. An automated unit test does not satisfy it.
 
-1. Save a distinguishable local note, then create a second backup.
-2. Restore the earlier backup and confirm replacement: the later note
-   is gone and the earlier records are present. Restore replaces the learner records.
-   It does not merge them.
+1. On the same step, save a later note whose text is exactly
+   `AT-030 note later`. Create a second backup and save it as
+   `AT-030-later.zip`. Its inventory is the baseline four records plus
+   `AT-030 note later`. It is a different file from `AT-030-baseline.zip`.
+2. Restore `AT-030-baseline.zip` and confirm replacement. From `Today`,
+   tap `Saved work`, and also open `Practice` → `Saved work`. The
+   baseline resume, bookmark, note `AT-030 note alpha`, and tutor
+   question `AT-030 note alpha` are still readable in full. The later
+   note `AT-030 note later` is gone. Restore replaces the learner records.
+   It does not merge them. Progress still does not show that note or
+   tutor-question text.
 3. Attempt to restore a file that is not a valid backup. Confirm the
    app reports failure and the current learner records are unchanged.
 4. Start restore, reach confirmation, and cancel before replacement.
@@ -302,7 +315,15 @@ procedure. An automated unit test does not satisfy it.
    journal and do not delete `rollback/` or an in-progress replacement
    snapshot. A failed confirmation before replacement may remove only
    disposable incoming staging.
-7. Two recovery messages are different. Read the journal phase and the
+7. Observation on the device is the on-screen message plus the Saved
+   work inventory. Do not delete `rollback/` or a replacement journal
+   to make a message disappear. Engineering observation, which is not
+   this physical procedure, reads the journal phase, the learner
+   fingerprint, recording bytes, and whether `incoming-` staging is
+   gone. The automated targets are
+   `recoveryMessagesMatchJournalPhaseAndReopenedRecords` and
+   `stagingLeaseSurvivesQueuedBoundaryAndDirectorySweep`.
+8. Two recovery messages are different. Read the journal phase and the
    learner records after the database is opened again.
    - Journal not `COMMITTED`: the message says local recovery is still
      required and that the next open finishes restoring the learner
@@ -346,14 +367,39 @@ copying a unit-test log, and a unit test does not satisfy AT-030.
    attempts with the same positive `acceptedOrder`, is malformed.
    Restoring it leaves the learner records already on the device
    unchanged. A valid backup may contain repeated order 0 rows.
-5. Optional practice: a recorded selection is restored only when the
-   schema, item, unit-content, rule, role, and practice-context
-   identities match the current content. A stale row that selected the
-   same option must not suppress a new submission of that option.
-   Check this after content invalidation, after backup replacement,
-   and after the database is closed and opened again.
+   The executable target is
+   `importedAcceptedOrderRejectsMalformedHashesAndContinuesAfterReopen`.
+   It builds the schema-8 database from `app/schemas` `8.json` with
+   `user_version` 8, opens that file so the migration adds
+   `acceptedOrder` 0, then records the next answer at order 1. The
+   same test writes a correctly hashed learner document with a
+   negative order and with a duplicate positive order and expects
+   rejection without mutation. Command, from the repository root:
+   `./gradlew :app:testDebugUnitTest --tests dev.russiancompanion.v2.RemainingReauditCorrectionTest.importedAcceptedOrderRejectsMalformedHashesAndContinuesAfterReopen`
+5. Optional and prescribed practice: a recorded selection is restored
+   only when the schema, item, unit-content, rule, role, unit number,
+   and practice-context identities match the current content. A stale
+   row that selected the same option, including a row whose unit
+   number does not match the item, must not suppress a new submission
+   of that option. Check this after content invalidation, after a
+   correctly hashed backup replacement, and after the database is
+   closed and opened again. The executable targets are
+   `staleOptionalAnswerDoesNotSuppressTheSameCurrentOption` and
+   `wrongUnitSameOptionDoesNotSuppressAfterHashedRestoreAndReopen`.
+   Duplicate acknowledgment during an open replacement, and a
+   duplicate submitted with an obsolete epoch, are
+   `duplicateAcknowledgementRequiresTheCapturedEpoch`. A→B→A still
+   records three accepted orders.
 6. Database migration and digest checks in automated tests are not
    this physical procedure. Record them only as automated evidence.
+   Cancellation before mutation, during replacement, and after commit,
+   plus appearance failure, are
+   `r04_realCancellationBeforeDuringAndAfterReplacement` and
+   `recoveryMessagesMatchJournalPhaseAndReopenedRecords`. Staging
+   handoff before the store boundary, after the boundary opens, and
+   during recording replacement is
+   `stagingLeaseSurvivesQueuedBoundaryAndDirectorySweep`. Command:
+   `./gradlew :app:testDebugUnitTest --tests dev.russiancompanion.v2.RemainingReauditCorrectionTest --tests dev.russiancompanion.v2.ReauditCorrectionTest.r04_realCancellationBeforeDuringAndAfterReplacement`
 
 AT-030 expected result: Today, Course, a closed-response check, book
 self-attestation, Progress, and a local backup can be exercised
@@ -405,9 +451,12 @@ Still in airplane mode, still on the same install.
    - Settings → Apps → Russian Companion → Force stop.
    - Confirm airplane mode is still on.
    - Relaunch Russian Companion.
-   - Confirm `Today` still shows Unit 1, the saved step or progress,
-     and `Progress` still shows the book self-attestation and the
-     saved notes and tutor questions.
+   - Confirm `Today` still shows Unit 1 and the saved step or progress.
+   - From `Today`, tap `Saved work`. Confirm the baseline resume,
+     bookmark, note `AT-030 note alpha`, and tutor question
+     `AT-030 note alpha` are still readable in full. `Practice` →
+     `Saved work` shows the same four records. Progress shows the book
+     self-attestation and does not show the saved note or tutor question text.
    Screenshot: `AT-004-02-after-force-stop.png`.
    A passing force-stop does not satisfy AT-020.
 
@@ -424,9 +473,10 @@ Before reboot, write these values onto
 - Current unit and step shown on `Today`
 - Book self-attestation shown on `Progress`
 - Closed-response selection still displayed after Force stop
-- Local note or tutor question, if one was saved, still readable and
-  still labeled not scored
-- Backup zip filename, size, and SHA-256 of the copied zip
+- Baseline resume, bookmark, note `AT-030 note alpha`, and tutor
+  question `AT-030 note alpha`, each still readable in full from
+  `Saved work` and still labeled not scored
+- `AT-030-baseline.zip` filename, size, and SHA-256 of the copied zip
 - Screenshot set listed above
 
 ### E. AT-020 / MA-073 physical reboot
@@ -443,10 +493,12 @@ and not closing and reopening the database inside an automated test.
 5. Compare with the captured baseline:
    - `Today` still shows the same unit
    - `Continue` opens the saved step
-   - `Progress` still shows the book self-attestation
-   - A saved note or tutor question is still complete and still not
-     scored
-   - The previously copied backup zip still exists in Files
+   - `Progress` still shows the book self-attestation and does not show the saved note or tutor question text
+   - From `Today`, tap `Saved work`. The baseline resume, bookmark,
+     note `AT-030 note alpha`, and tutor question
+     `AT-030 note alpha` are still complete and still not scored.
+     `Practice` → `Saved work` shows the same four records.
+   - The previously copied `AT-030-baseline.zip` still exists in Files
 6. Create a second backup after reboot with `Create backup`. Confirm
    the new zip can be copied off the device. Do not require a v1 CSV
    export or a playable pronunciation recording.

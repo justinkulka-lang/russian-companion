@@ -26,6 +26,23 @@ internal object V2UiWork {
     @Volatile
     var reconstructionOutcomeForTests: ((token: Long, published: Boolean) -> Unit)? = null
 
+    /**
+     * Suspends inside a governed snapshot worker. Null in production.
+     * The token is the generation that will be discarded if a newer snapshot starts.
+     */
+    @Volatile
+    var governedComputeGateForTests: (suspend (label: String, token: Long) -> Unit)? = null
+
+    @Volatile
+    var governedComputeEnteredForTests: java.util.concurrent.CountDownLatch? = null
+
+    /**
+     * Fires after a governed snapshot worker finishes or is cancelled.
+     * [published] is true only when that generation stored its snapshot.
+     */
+    @Volatile
+    var governedSnapshotOutcomeForTests: ((label: String, token: Long, published: Boolean) -> Unit)? = null
+
     fun blocking(): Boolean = blockForTests ?: isRobolectricRuntime()
 
     internal suspend fun awaitReconstruction(token: Long) {
