@@ -11,12 +11,12 @@ Unit 16 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
-- Unit content-review SHA-256: 6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: d56aa07087642f91d96563cbff7f3761f4c5d2d05ef27f00c4278d2a89e9d684
 - Mapping-package SHA-256: f74c6fa2206f8faad47ad15e91b8dce61f886293f64d9a3f2e47947b2d5db8e7
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 6635eeffba5ea18c45cd48727478968cc02671da1052d2aaf25e6b4eaaa4e6db
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: ad78170a77fd3e74435948ccbd7c4c5610be1fdf858a44fb4daa2d39496cbaf9
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -342,11 +342,11 @@ remediationStepId=u16-st-rem-inst-sg
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ec7fe3b94a0a4b3899b51c7ed706ca4796c40761128a374c4ea28061e3af2dcc
+- Content hash: aec9e1d82194af4e0962c10443d3588dec31c9cb518d7eb8236a73b19a66e01c
 
 kind=TEACH
 title=Admitted instruction
-body=Nouns ending in о or a consonant have -ом in the instrumental.
+body=The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -768,11 +768,11 @@ steps=u16-st-teach-inst-adj-1,u16-st-guided-inst-adj-1,u16-st-teach-inst-adj-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e31467c4666de1d9cb176ce8d92f170ecb0779f105dfd3fe5d89ed6673c31b91
+- Content hash: 041a839001d1e512f0d60506097c12667e2b364b5859431b303da1b8c72c7a10
 
 kind=TEACH
 title=Admitted lines
-body=хоро́ший — good. хоро́шим — good. 
+body=хоро́ший — good. хоро́шим — good. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -812,11 +812,11 @@ remediationStepId=u16-st-rem-inst-adj
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 558a944bf3590e3735ae27071bd856824bdcba136f617b7927a0237694a6a7c6
+- Content hash: 0b573b92d4127e555365ee5ecd7490138cdb71069c075a72ff2ff11c64f1d466
 
 kind=TEACH
 title=Admitted instruction
-body=To form masculine and neuter adjectives, the ending is -ым.
+body=Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -1084,11 +1084,11 @@ steps=u16-st-teach-inst-prep-1,u16-st-guided-inst-prep-1,u16-st-teach-inst-prep-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9e0b6e34e7ed24c37cc11b1241e66daec22740621d1fdc98ce35f852d6301adb
+- Content hash: 666d322fad970b2c53d6f22033574acd8b94068df72f16b3cfb678b25d8ba107
 
 kind=TEACH
 title=Admitted lines
-body=над — over. под — under. 
+body=над — over. под — under. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -1231,11 +1231,11 @@ steps=u16-st-teach-complements-1,u16-st-guided-complements-1,u16-st-teach-comple
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bdf22c5fd35092a2914e77c30ae4a9dea1553c497b564894532f538fd229ab1d
+- Content hash: 82eafa0418159327387d4eb2580835f8ed97eb3dd9ea60bac058bbb3eedc4ec4
 
 kind=TEACH
 title=Admitted lines
-body=стать — became. остаться — remain. 
+body=стать means to become. остаться means to remain. The infinitive стать is not the past form became.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -1363,12 +1363,12 @@ remediationStepId=u16-st-rem-complements
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6982ccdae73c30fc0b6645a394bc321e06305a8fe0e83e99dc5b655cd26308f0
+- Content hash: 75ae74b298397da3e6718e23a6ca9ae18e04d38c6e97a1502577f569575cd13b
 
 title=Self-attest Lesson 16
 estimatedMinutes=10
 objectives=obj-u16-book
-steps=u16-st-book-work,u16-st-book
+steps=u16-st-book-work,u16-st-book,u16-st-anki-direction,u16-st-binder-direction,u16-st-tutor-direction,u16-st-cumulative-direction
 
 ### STEP `u16-st-book-work`
 
@@ -1378,7 +1378,7 @@ steps=u16-st-book-work,u16-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8a58291d5457930dd200e662d8c52300411acc969002467d9d87a078ea733a66
+- Content hash: 189779e5349e06cdd8b940abdbaaca039227199bf44b622c927ae91ca4be3dd2
 
 kind=BOOK
 title=Work Lesson 16 in your copy
@@ -1388,7 +1388,7 @@ references=ref-u1620-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 16 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 16: printed pages 188-200. PDF indexes 200-212 are file locators, not printed pages. Observed section locators: §16.1 p188 (PDF 200); §16.2 p188 (PDF 200); §16.3 p189 (PDF 201); §16.4 p190 (PDF 202); §16.5 p191 (PDF 203); §16.6 p192 (PDF 204); §16.7 p193 (PDF 205); §16.8 p194 (PDF 206); §16.9 p195 (PDF 207); §16.10 p195 (PDF 207); §16.11 p197 (PDF 209). Observed exercise locators: 16/1 p190/PDF202; 16/2 p191/PDF203; 16/3 p194/PDF206; 16/4 p198/PDF210. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1400,7 +1400,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 07231cdb70205ab3a10a552e73dcef05b5e31a95aa46b9167526416b20b9a3ed
+- Content hash: 4237855f1292aa0250f70d6a89098aebbb0e0c115919beb10a0a92f3418bc16d
 
 kind=BOOK
 title=Record Lesson 16 book work
@@ -1410,8 +1410,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 16 work in your copy.
+bookDirection=Owned-book assignment for Lesson 16: printed pages 188-200. PDF indexes 200-212 are file locators, not printed pages. Observed section locators: §16.1 p188 (PDF 200); §16.2 p188 (PDF 200); §16.3 p189 (PDF 201); §16.4 p190 (PDF 202); §16.5 p191 (PDF 203); §16.6 p192 (PDF 204); §16.7 p193 (PDF 205); §16.8 p194 (PDF 206); §16.9 p195 (PDF 207); §16.10 p195 (PDF 207); §16.11 p197 (PDF 209). Observed exercise locators: 16/1 p190/PDF202; 16/2 p191/PDF203; 16/3 p194/PDF206; 16/4 p198/PDF210. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u16-st-anki-direction`
+
+- Objectives: obj-u16-book
+- Sessions: u16-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3d865bd318fdfc06a5f66c72b5c90b91fd7d6e88f670946057cee28e8082fb05
+
+kind=ANKI
+title=Unit 16 AnkiDroid direction
+body=Unit 16 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u16-st-binder-direction`
+
+- Objectives: obj-u16-book
+- Sessions: u16-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 88bd23a54ca1c5e3aec5ac1d222ee54dc72b687c5ee3b88b75972f98dfbe10a9
+
+kind=BINDER
+title=Unit 16 binder prompt
+body=Unit 16 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u16-st-tutor-direction`
+
+- Objectives: obj-u16-book
+- Sessions: u16-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: faf231d480baa985e8d6a31bb6bf74bf22b6b1318138b39c3ba18c39609e3247
+
+kind=TUTOR
+title=Unit 16 optional tutor
+body=Unit 16 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u16-st-cumulative-direction`
+
+- Objectives: obj-u16-book
+- Sessions: u16-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a172b273ebe369d2363f4b1f7986d276519d1ac2ed630a7ca8ae08318036482e
+
+kind=ORIENT
+title=Unit 16 cumulative review
+body=Unit 16 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 16 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-or-u16-inst-sg-0`
@@ -2034,12 +2122,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7449e2fb76c03c072ac8866a1a133d31735a0bd56b874a250d8e5200b26e80bf
+- Content hash: 22e86eab9d7cdc7b8350df037b7186c17fd66c52620ee41cc856402d4b9787fa
 
 kind=LEXICAL
 letterId=
 display=стать
-note=became
+note=to become
 objectiveId=obj-u16-complements
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -2273,35 +2361,35 @@ responseKind=ENGLISH_CLASSIFICATION
 
 - Objectives: obj-u16-complements
 - Sessions: u16-s-complements
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: dc8afc3287229853a74afdcbcacd6718924df2fe174d881c4fd073b5ea8b267f
+- Content hash: 8ebcca296b382e95d100b3368bf276d8832aa0ffd03026ae539b3dc2d7547202
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written beside the shown form?
+prompt=Choose the English description. Which infinitive meaning is written for the shown form?
 promptLetter=стать
-options=became | remain | turn out to be
-answer=became
-feedback=The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs").
+options=to become | to remain | to turn out to be
+answer=to become
+feedback=стать means to become. The infinitive names becoming; it does not mark a past event.
 objectiveId=obj-u16-complements
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
-testedFeature=COMPLEMENT_BECAME
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | to remain is the meaning of остаться, not стать. | to turn out to be is a different complement verb, not стать.
+testedFeature=INFINITIVE_STAT
+evidenceMode=STATED_APPLICATION
 contrastSetId=u16-complements-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u16-complements-0-en
-distractorSourceIds= | prov-ex-u16-complements-1-en | prov-ex-u16-complements-3-en
-distractorDifference= | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs").
-contrastMembers=became | remain | turn out to be
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u16-complements-0-ru | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en | prov-ex-u16-complements-3-en
+answerSourceIds=prov-ca-repair-16-10742
+distractorSourceIds= | prov-ca-repair-16-10745 | prov-ca-repair-16-10746
+distractorDifference= | to remain is the meaning of остаться, not стать. | to turn out to be is a different complement verb, not стать.
+whyAnswerDemonstratesObjective=стать means to become. The infinitive names becoming; it does not mark a past event.
+contrastMembers=to become | to remain | to turn out to be
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-repair-16-10741 | prov-ca-repair-16-10742 | prov-ca-repair-16-10745 | prov-ca-repair-16-10746
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u16-i-inst-sg-1`
@@ -2741,6 +2829,1298 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=16
 searchTerms=units 16-20 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-16-223`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e62baeebf91d6e4aa0136a8c213531f3b0763d8ffe3a2050f4d2f3b37d38c273
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:ex-u16-complements-0:display
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+shippedText=стать
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb43e109c7a8f72800a6586cd4c57d1d387358a3857bb53c61a4516dac5a5420
+contentHash=42539956f4fc8a4056ae79896c3fc14251b7840dd1344224d2a30b2b98ee71ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-224`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 685b8eb555cd6a43d3c4a99722d7352f74da9434a4f98cdb429b9c9c73ff2261
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:ex-u16-complements-0:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+to become
+shippedText=to become
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b64ed72b0552e87321f7be9ceb671b294fe5b4d24ff6466095e8adda21eeeb2e
+contentHash=ad5d34d31abcc7440c74a7bcca0a3a4485f32cee52e92d484a260ecb203f3e68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-225`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7db52b8a104a6d6c6fdc9d0b574b126ca16e295d6f9ad2e010c8f74a6ac4ecef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:ex-u16-complements-0:pair
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать — to become
+shippedText=стать — to become
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58a206289c3722d0e811104dbc42eade9c39bba3df80c273b73a3cbd4cefeec8
+contentHash=7dff15d641386fe165d7e7b15c7ec383a8baaefcc3558f6aad62fb23d8780967
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-237`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a847e4948813a2e04ec529e49c01956bc5465899b8547ca842c01870a5621a5d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:u16-st-teach-complements-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать means to become. остаться means to remain. The infinitive стать is not the past form became.
+shippedText=стать means to become. остаться means to remain. The infinitive стать is not the past form became.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=87cb771cf2a1cdec5400ce76f75c6c016374a14f59efbdf443ac9863f7b77407
+contentHash=41041d7f528415039587619ad2f2f5293ed4b9ab00b5fcf28038deb7d166dcae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-238`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87640c3e2ecd9f7d68a95324636d70bce2c28c76e3f630de776574f17aa7501e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=стать
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=42539956f4fc8a4056ae79896c3fc14251b7840dd1344224d2a30b2b98ee71ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-239`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af44cb0a48cf4cf1e3fdfa62352902a9c073093d4e54d20bbfec4c3612a109b1
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=to become
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=ad5d34d31abcc7440c74a7bcca0a3a4485f32cee52e92d484a260ecb203f3e68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-240`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 098463d8fd31e078fb9b1a5f40395d1dd87870d109da6495f0c1074cf2bb739e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=Which infinitive meaning is written for the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=7d2da3ff7b3855c8408c3eaa39d4ce8226bb38ed6f33dcbc4f79e67d32a5f2ec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-241`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4026001ad8968a8ede38e4aaeef72d10775174ffc295935a0b07ffc11e715869
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=стать means to become. It is an infinitive, not the past form became.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=2d44311154cf2e7ee0147a125dcad8a48644ca2393657274194105b35087a375
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-242`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42457cc3e384b6d3b70df873ca8e8f2c87d84faef89b4ae13dbcedbf23261ef5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=The infinitive стать means to become, while остаться means to remain.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=04e886d6356faf4d98ecf2f89a992548e7281bed3553263e2432e35e36cd0c5b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-243`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a19824db027298a6b76c0ab68d4e459bfb3229a27c137ec7a27ebb35500975c9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=to remain
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=3a976e7bc7419774f807f79549b9c264d85248dda6fd7aea7369c1a2f09a2061
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-244`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f6443ee78866956b845ce31713d67b904b32edfb3bdc98e5564e4e711bd61ae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=to turn out to be
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=db6516887b6af68f40a555bf4a26aa633c5a3962370b91a788e6ce1daf9b0b9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-245`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 150899d54eb7b9edede64c85a5b3ff00039baf3388f08f98190d079a5234c814
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=to remain is the meaning of остаться, not стать.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=8e7e238f22f8607f5937274bf659d4039f4d335786fceaafd935715a84c04096
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-246`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d58a2a8709c7312e51691efa9f9aa7019c889f4c820ca13d6ef24733d7488a93
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=to turn out to be is a different complement verb, not стать.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=6aed32fa3a307edd54f40282b1fc99b92108fe41347ffcc643cb5d346587f48a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-247`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f3dcdeb2060b9d1383ab703198d445e4cd3809f0c405aac7762fb5ab7b6b5d0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=остаться
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=27ba7bc59b168bcd33285310bfc9517653ad3e8c9fdeb02c330b827e7995cd1c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-248`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c22196829880dad54b4eee7f418e8a576d1ce88814b6c76f551e3987647526a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=остаться,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=2155ed2866e7fb115a8badbe6341ca0920b8d86a8aa5d82b02f371f6e7375f71
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-249`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 873b9726fa60774af091d45f076767b2c1d3d4cd6b2b0244798bc44134d050a5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=стать.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=f0ccf077a0015429a78a0e359dbb9a3e0f1f1d6235ae9ed45b5c213c8d11cebc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-353`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 703989e7e8070a18477d436d60de409beee5a1a8b6ff61b92dc564b7ad9b073a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:u16-st-teach-inst-sg-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal.
+shippedText=The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6922a1ca2a259bc1712ce96b7bfe720981c53d5ef4a9a807e0421164aa3f1db1
+contentHash=1ab18b49b2e462fd534d4eb73d566a1a70bd538f85ecd00d823fb696b7cd0638
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-354`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b72b6ff7bcc6448f2d0d165cc7ee26b774507f20521d3ee030c68981da775752
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:u16-st-teach-inst-adj-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.
+shippedText=Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19feaeacb1859b3934a7d2e8a0973bcae9177ff4c64f64a8834865a6d7529ba7
+contentHash=f7abbdf6a83101cd8122f4e4ad8c84e01b19fecdd6e8bdf829c88352db71676f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-355`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9c781093daf623294873a7cb8aec8ae252a95a1f5a045fae2457e671cf93c5a
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:u16-st-teach-inst-adj-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.
+shippedText=им.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19feaeacb1859b3934a7d2e8a0973bcae9177ff4c64f64a8834865a6d7529ba7
+contentHash=324170e91b77da2a2c860bf2a5cd2ba1564da866a8c043b21beb5a27a068f6ad
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-356`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3ba975930e7ed208dc19013b385f624b39782141fcd75f1a297d7fe81754816
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:u16-st-teach-inst-adj-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.
+shippedText=им
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19feaeacb1859b3934a7d2e8a0973bcae9177ff4c64f64a8834865a6d7529ba7
+contentHash=0d3963c6db63123b42eb66e058981b9a982a7bb01c5c566ee07c8362a15aaf04
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-66`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dfce8f230dab0b2c5fe6be992cd57ffd4cce736471e929e2a46a10d46e9d34b7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:u16-st-teach-inst-adj-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-67`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3bb5437dcae3feb4c0563f691568286896cc58067576f8caf6d68bb1954ca1de
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:u16-st-teach-inst-prep-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-68`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 684d7afbc8a43de572f9376bd2162e1aea051c6bace2fe890e58f582929266c8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:u16-st-teach-complements-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10741`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4b645b07a5e7c5a8790ec58fc5fe42b272f19d300becb56eb1fe9d39a53a296
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=стать
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=42539956f4fc8a4056ae79896c3fc14251b7840dd1344224d2a30b2b98ee71ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10742`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d6ad2a76c79b9f8262a836253633d8ff1f8d62de74c6777e3e271198f0daa5d
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=to become
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=ad5d34d31abcc7440c74a7bcca0a3a4485f32cee52e92d484a260ecb203f3e68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10743`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9276cb325caf27b4c5689823d16e77503a391e6ae582aa24583e46482e980c0e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=Which infinitive meaning is written for the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=7d2da3ff7b3855c8408c3eaa39d4ce8226bb38ed6f33dcbc4f79e67d32a5f2ec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10744`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8830ab21f5a45df34a27f56c6aba1ea664cb42e709dd053a8009ffe9c39f1816
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=стать means to become. The infinitive names becoming; it does not mark a past event.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=5c6671503de2274344b3422b375366fd9b6aadf7de5c51c3317b0cfc1424b1a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10745`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 666e1d113772c639c575e954022dc47339c30bcd78238b007af4c3247c26a665
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=to remain
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=3a976e7bc7419774f807f79549b9c264d85248dda6fd7aea7369c1a2f09a2061
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10746`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6003bd30b478edecbe8841230f7c8266308e540f4e7c9998161414216dcdf280
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=to turn out to be
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=db6516887b6af68f40a555bf4a26aa633c5a3962370b91a788e6ce1daf9b0b9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10747`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ead523e368b99f4de3a9b6e80c4a4f444b724d1f9ca18039a556ec9cfa1e9c6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=to remain is the meaning of остаться, not стать.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=8e7e238f22f8607f5937274bf659d4039f4d335786fceaafd935715a84c04096
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10748`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f25ce1808450fa1abd13d5474fd5a0a55769f878b15d65fd9bd8b2651a2f84cd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=to turn out to be is a different complement verb, not стать.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=6aed32fa3a307edd54f40282b1fc99b92108fe41347ffcc643cb5d346587f48a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10749`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 09d66296b9f8f3dec52030651a634b4a4221fa3b6ebf46771eaac487e4f71d8b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=остаться,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=2155ed2866e7fb115a8badbe6341ca0920b8d86a8aa5d82b02f371f6e7375f71
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10750`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a86a5f5fb9a1062fa7dc7ad06ae4648f8e615d98c0bf450531297cabcdf43e92
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=остаться
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=27ba7bc59b168bcd33285310bfc9517653ad3e8c9fdeb02c330b827e7995cd1c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10751`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ae1fdf453dea0f670b1ae385d45129717657a37d4b307b6083e28449c9c4fd9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=стать.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=f0ccf077a0015429a78a0e359dbb9a3e0f1f1d6235ae9ed45b5c213c8d11cebc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-11109`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db8ecb9719da052013843bf7618da0b6ee9b3bca6b268388736d2680aef9c0d8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u16-g-complements-0:prompt
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Choose the English description. Which infinitive meaning is written for the shown form?
+shippedText=Choose the English description. Which infinitive meaning is written for the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a33e24550813aac11c3a607b5eddc4e9c9284109f62457ff4965142e3c788eaf
+contentHash=ed9443b494f6983c073f14cf2feac8e901b15e4967af94ee3318fb87cee7b168
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u16-inst-adj-0`
 
@@ -5685,6 +7065,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-16-11218`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: baba50ae4e6177af334e535ad426bf38ebefe9e80b93c74fda7fb73aa6fdc710
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 16 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-16-11219`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69f8d8c2475d837b540efac6cf42daa359c5467377344af4a575e8e45bfcc0c5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-16-11220`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9bff6a2bbb34f5c37bc76f0013e5a96d5dd7291b8648bd0e10ef600da65d0dbd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 16 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-16-11221`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd8a8e05f0d9da00b80ee767eadda266581ac668d2fff9f4efcf9145536dd262
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-16-11222`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c1da8b07b09fd93aab4ab4ffe3e5b42fb338c99e7e20e05391d833833d5245f5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 16 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-16-11223`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f61cf46f198cd2fbcac6bd7b08226bedccbbdc27e602cd807166cec7eff51629
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-16-11224`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39beaeb2fad210f32e8cfc583ce8bb38b5ed67af050dc3c446210fd307827950
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 16 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-16-63`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5dc69b69acf7c9d2b3f15753c77bb6eef51d889e92c809515da9a1b9352cce01
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 16: printed pages 188-200. PDF indexes 200-212 are file locators, not printed pages. Observed section locators: §16.1 p188 (PDF 200); §16.2 p188 (PDF 200); §16.3 p189 (PDF 201); §16.4 p190 (PDF 202); §16.5 p191 (PDF 203); §16.6 p192 (PDF 204); §16.7 p193 (PDF 205); §16.8 p194 (PDF 206); §16.9 p195 (PDF 207); §16.10 p195 (PDF 207); §16.11 p197 (PDF 209). Observed exercise locators: 16/1 p190/PDF202; 16/2 p191/PDF203; 16/3 p194/PDF206; 16/4 p198/PDF210. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-16-64`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4f82dcec3da1498f3f761d310eec1d2c18b27f1d8bc5de99aa107ae5594542b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 16 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-16-65`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97498d7a353ebaf0b0349ecb324dca2d0ee8a71e86a67b7c92d528f23d2b6db4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u16-001`
 
 - Objectives: none
@@ -6406,6 +7916,21 @@ CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -6461,6 +7986,20 @@ permitsAppUse=true
 
 src-wikipedia-russian-grammar-1369617627
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -6703,6 +8242,41 @@ permitsAppUse=true
 - `u16-st-check-complements` ITEM `u16-i-complements-2`
 - `u16-s-book` OBJECTIVE `obj-u16-book`
 - `u16-st-book-work` REFERENCE `ref-u1620-attribution`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-223`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-224`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-225`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-237`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-238`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-239`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-240`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-241`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-242`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-243`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-244`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-245`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-246`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-247`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-248`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-249`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-16-353`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-16-354`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-16-355`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-16-356`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-16-66`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-16-67`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-68`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10741`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10742`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10743`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10744`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10745`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10746`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10747`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10748`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10749`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10750`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10751`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-11109`
 - `obj-u16-inst-adj` PROVENANCE `prov-ex-or-u16-inst-adj-0`
 - `obj-u16-inst-adj` PROVENANCE `prov-ex-or-u16-inst-adj-0-gloss`
 - `obj-u16-inst-adj` PROVENANCE `prov-ex-or-u16-inst-adj-1`

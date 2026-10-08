@@ -11,12 +11,12 @@ Unit 6 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: ae777d85fe3616fc8e065890201d40c241d113bc
-- Unit content-review SHA-256: fa6501022bd7ff4a2eca1e47c0ad488d96254cab0eafbecc61a8420835a3ab9c
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 3fd1abccb51da4af108ea3ea85482b6abf64b3cc39682c5dccde68461743f639
 - Mapping-package SHA-256: f95e0c2f351ec7cba23cdb09b87274bb97f2e392dd783ad59c2978ed58f63b15
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 999f779ebea6e3bf9a1c887cc48d0944733214ff600e05cc01855187cc543e59
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 3c91cabdeae68c5e64bcd6c12d619982ebbbe106fbc42567b2e94e26d91227dd
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -317,11 +317,11 @@ steps=u6-st-teach-possessive-1,u6-st-guided-possessive-1,u6-st-teach-possessive-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a3b5c3ad7b34b858384b956bdbe4df8e265f9c315c62561e0b86014d22b1c6cb
+- Content hash: ebeb00f3edb9372ec57630a8199b2d2bd375112079d3947ccf5740e64d1b14bf
 
 kind=TEACH
 title=Admitted lines
-body=мой стол — my table. моя собака — my dog. 
+body=мой стол — my table. моя собака — my dog. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -471,13 +471,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 18fd26ac7c8b817a8fe3fa09be28f1511a1c4228f585dd0ae3e3e307a330b9db
+- Content hash: 60af0831cfe455a2a8b19eb76a6919a90f83da308318d89c460fae46e3dc5894
 
 kind=REMEDIATE
 title=Remediation
 body=the 'my' in 'my dog' ('''моя собака''') and 'my table' ('''мой стол''') are different
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
 examples=ex-u6-possessive-0,ex-u6-possessive-1
 unavailableReason=
@@ -530,11 +530,11 @@ steps=u6-st-teach-third-1,u6-st-guided-third-1,u6-st-teach-third-2,u6-st-teach-t
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b7c725fa5cf406fab5788d669b0fa50576d91283cb9eab17591234251dc7228a
+- Content hash: cdc58636830d8990b5b8b095a32fc9e77435e8c2e7072452ef898493503a8b68
 
 kind=TEACH
 title=Admitted lines
-body=его — его. её — её. 
+body=его — его. её — её. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -618,13 +618,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 28f7f99a2376357b10ef57bff37d7d16749106ef31eac45df12d6cc07e73c931
+- Content hash: 666d2c654b8296abe5a22ce3f74f40f34b376c09e7bfc452516ef8de12cda0b3
 
 kind=REMEDIATE
 title=Remediation
 body=These do not decline according to the gender or number of the modified noun.
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
 examples=ex-u6-third-0,ex-u6-third-1
 unavailableReason=
@@ -677,11 +677,11 @@ steps=u6-st-teach-object-1,u6-st-guided-object-1,u6-st-teach-object-2,u6-st-teac
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0a7277565472ea46cb48d4f5a7cf764d1f662a7f129ca189f729e6a1c82b3d59
+- Content hash: efd8a999a75871b8fa1005acd9f16adb8f4a5eb7a5c6742aa98afa5fea6781a6
 
 kind=TEACH
 title=Admitted lines
-body=Я люблю собак — I like dogs. Я тебя люблю — I love you. 
+body=Я люблю собак — I like dogs. Я тебя люблю — I love you. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -787,13 +787,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 427cb09c61cc37fb81eafe4158616c8539d52ca8e851c0d19d0f8ce757ba5f77
+- Content hash: 4215560b9ff86c8fe2740710c59ad7e7c59b07349cee8b194b02a2177fa7cc38
 
 kind=REMEDIATE
 title=Remediation
 body=I like dogs - '''Я люблю собак'''
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
 examples=ex-u6-object-0,ex-u6-object-1
 unavailableReason=
@@ -890,11 +890,11 @@ remediationStepId=u6-st-rem-feminine
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b842115468dc6d7fb527bca33cae9b7423bb91aafbdab9c2015baedba481c396
+- Content hash: d891ce4776fbd3ce228894e63418fb2c3ca6a132b53c6fdcde2540099523f7f2
 
 kind=TEACH
 title=Admitted instruction
-body=Feminine words are the only words to have their own accusative ending:
+body=Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -956,13 +956,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c997409e291e5621de500ce60bfcaf55300b860430498d76194e45e74f7f2989
+- Content hash: e3d6ca12f03ae3096f8d4993fbfe0d57f85a49d51e522e857380af07c41b4edd
 
 kind=REMEDIATE
 title=Remediation
 body=Feminine words are the only words to have their own accusative ending:
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
 examples=ex-or-u6-feminine-0,ex-or-u6-feminine-1
 unavailableReason=
@@ -1169,13 +1169,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c1fc5bf40d637ef062923f253b558277469e60262fd2a9eb8e25907f68a00aa2
+- Content hash: 901f497b4951ec56e6fdf92e818035a36ada1072b40c5e1fee96e1937787a59e
 
 kind=REMEDIATE
 title=Remediation
 body=If they're animated nouns, they follow the genitive rules
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
 examples=ex-or-u6-animacy-0,ex-or-u6-animacy-1
 unavailableReason=
@@ -1228,11 +1228,11 @@ steps=u6-st-teach-pronoun-1,u6-st-guided-pronoun-1,u6-st-teach-pronoun-2,u6-st-t
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d656f792d7668fb2b20a4bb2a0d249663c0d0ae9edcebe1f75554e3140c2fec9
+- Content hash: 1a15900b503bcfe8ee9f7368cc032eaba8a2f8eabf988e426db650c72ae563ae
 
 kind=TEACH
 title=Admitted lines
-body=Меня — I/me. Нас — We/us. 
+body=Меня — I/me. Нас — We/us. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1360,13 +1360,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e589f83d502128476667e239b58d61b1e5756088ba737add88439d9610dcda44
+- Content hash: 88154d9d77f4a919512e53cbd468d8ecdff21e85169da1d6a40ca9711a71584c
 
 kind=REMEDIATE
 title=Remediation
 body=| I/me || Я || Меня
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
 examples=ex-u6-pronoun-0,ex-u6-pronoun-1
 unavailableReason=
@@ -1529,13 +1529,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 60c8147821d1012250a2b4680afdd685992ac6501c9adcc973431a62e50269bc
+- Content hash: af545977c69c46fd019c191698b013a6fb66bc37d050e3e4e2970f687400e462
 
 kind=REMEDIATE
 title=Remediation
 body=generally the accusative case denotes ''direction''
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
 examples=ex-u6-direction-0,ex-u6-direction-1
 unavailableReason=
@@ -1573,12 +1573,12 @@ remediationStepId=u6-st-rem-direction
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4ee9aefe8e9d38e1098b2082e8a1ed7d4526eaed951de614ec7b6e642769ef67
+- Content hash: 2689b743fd0239fb2bbde39dad25d482453db0fe7bff21134c10e2211df215ca
 
 title=Self-attest Lesson 6
 estimatedMinutes=10
 objectives=obj-u6-book
-steps=u6-st-book-work,u6-st-book
+steps=u6-st-book-work,u6-st-book,u6-st-anki-direction,u6-st-binder-direction,u6-st-tutor-direction,u6-st-cumulative-direction
 
 ### STEP `u6-st-book-work`
 
@@ -1588,7 +1588,7 @@ steps=u6-st-book-work,u6-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4a2f9bb1c11fb5ad10a26f9f851ffff41a07f6112c86c04472a3d9df5f78ea44
+- Content hash: 201146547ca64659274c6ff46615b5e30db46f18e91f395673f673956c35f571
 
 kind=BOOK
 title=Work Lesson 6 in your copy
@@ -1598,7 +1598,7 @@ references=ref-u610-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 6 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 6: printed pages 56-67. PDF indexes 68-79 are file locators, not printed pages. Observed section locators: §6.1 p56 (PDF 68); §6.2 p56 (PDF 68); §6.3 p57 (PDF 69); §6.4 p58 (PDF 70); §6.5 p58 (PDF 70); §6.6 p58 (PDF 70); §6.7 p59 (PDF 71); §6.8 p59 (PDF 71); §6.9 p60 (PDF 72); §6.10 p61 (PDF 73); §6.11 p62 (PDF 74); §6.12 p63 (PDF 75); §6.13 p63 (PDF 75); §6.14 p64 (PDF 76); §6.15 p64 (PDF 76); §6.16 p65 (PDF 77); §6.17 p66 (PDF 78). Observed exercise locators: 6/1 p61/PDF73; 6/2 p61/PDF73; 6/3 p67/PDF79; 6/4 p67/PDF79; 6/5 p67/PDF79. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1610,7 +1610,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 00ac0edad715903e44a16167346e9006ef6d1c16688a4299f353c13b5c7ba582
+- Content hash: 1467cad9ee97ec0bca842d2daaad8f89a25c2ea8648265b3563b58d8bd6e5885
 
 kind=BOOK
 title=Record Lesson 6 book work
@@ -1620,8 +1620,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 6 work in your copy.
+bookDirection=Owned-book assignment for Lesson 6: printed pages 56-67. PDF indexes 68-79 are file locators, not printed pages. Observed section locators: §6.1 p56 (PDF 68); §6.2 p56 (PDF 68); §6.3 p57 (PDF 69); §6.4 p58 (PDF 70); §6.5 p58 (PDF 70); §6.6 p58 (PDF 70); §6.7 p59 (PDF 71); §6.8 p59 (PDF 71); §6.9 p60 (PDF 72); §6.10 p61 (PDF 73); §6.11 p62 (PDF 74); §6.12 p63 (PDF 75); §6.13 p63 (PDF 75); §6.14 p64 (PDF 76); §6.15 p64 (PDF 76); §6.16 p65 (PDF 77); §6.17 p66 (PDF 78). Observed exercise locators: 6/1 p61/PDF73; 6/2 p61/PDF73; 6/3 p67/PDF79; 6/4 p67/PDF79; 6/5 p67/PDF79. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u6-st-anki-direction`
+
+- Objectives: obj-u6-book
+- Sessions: u6-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d13fae4efd0410595165c961698bce1a9147fe28561074ab87625e260438587a
+
+kind=ANKI
+title=Unit 6 AnkiDroid direction
+body=Unit 6 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u6-st-binder-direction`
+
+- Objectives: obj-u6-book
+- Sessions: u6-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 16bde176be98feafdd48c9387b08f16573fa86005541601e138e545c6fc2c648
+
+kind=BINDER
+title=Unit 6 binder prompt
+body=Unit 6 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u6-st-tutor-direction`
+
+- Objectives: obj-u6-book
+- Sessions: u6-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 972d6ca7ad4e76cb8ac73a1c47f7d607bb12c0aff3f36dd90d2abf8bdc2f771b
+
+kind=TUTOR
+title=Unit 6 optional tutor
+body=Unit 6 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u6-st-cumulative-direction`
+
+- Objectives: obj-u6-book
+- Sessions: u6-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4d9012dfe65f6141eea072e08b70a4f7387eb74f5e602810ac13fbd7bb3cacdf
+
+kind=ORIENT
+title=Unit 6 cumulative review
+body=Unit 6 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 6 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u6-possessive-0`
@@ -2329,12 +2417,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 889d11da376b7d7e7a1d2b318d6ef0bdbd04c3483760b87d629164cb6044dff4
+- Content hash: 9f408ea750b8cf40fd93dff47eeacc65611b4c02ab8ef790bb39d94623e0bc6b
 
 kind=LEXICAL
 letterId=
 display=Я шёл в дом
-note=the house
+note=I was walking into the house.
 objectiveId=obj-u6-direction
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -2363,12 +2451,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e2769eb6cca194be2e6f4c55c96a5d6d271c2f126c04fcd76006436a18cbfd5b
+- Content hash: 67937becd999fe8c992e4932ff4bf0b95a6c58d28be09f5d2eedbeff3e0f62ea
 
 kind=LEXICAL
 letterId=
 display=Я шёл на улицу
-note=the street
+note=I was walking out into the street.
 objectiveId=obj-u6-direction
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -2682,35 +2770,36 @@ relationParticipantIds=prov-u6-possessive-x-1 | prov-ex-or-u6-possessive-4 | pro
 
 - Objectives: obj-u6-possessive
 - Sessions: u6-s-possessive
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f0be4001493546e76add8154c03966912bcd636610cd7453935950880df2f45a
+- Content hash: 3fa625112534e997422b4ff587dae9ff2f43a9ad9e59e9331ba151e17e5fe35b
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
-promptLetter=Наш
-options=нашу | Наш | Наши
-answer=нашу
-feedback=Does the admitted record show the governed contrast? нашу.
+prompt=Which object-row phrase agrees with the shown feminine noun phrase?
+promptLetter=на́ша сестра́
+options=на́шу сестру́ | на́шего бра́та | на́ши
+answer=на́шу сестру́
+feedback=на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
 objectiveId=obj-u6-possessive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row. | This form is the plural row of the same word, not the object row.
-testedFeature=POSSESSIVE_AGREEMENT
-evidenceMode=SOURCE_SUPPLIED_PAIR
+distractorRationales= | на́шего бра́та is a masculine animate object phrase, not the feminine phrase. | на́ши is plural and does not mark the feminine singular object row.
+testedFeature=FEMININE_POSSESSIVE_OBJECT
+evidenceMode=STATED_APPLICATION
 contrastSetId=u6-possessive-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u6-possessive-x-2
-distractorSourceIds= | prov-ex-u6-possessive-2-ru | prov-u6-possessive-x-3
-distractorDifference= | This form is the dictionary row of the same word, not the object row. | This form is the plural row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=нашу | Наш | Наши
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u6-possessive-2-ru | prov-u6-possessive-x-2 | prov-ex-u6-possessive-2-ru | prov-u6-possessive-x-3
+answerSourceIds=prov-ca-6-191
+distractorSourceIds= | prov-ca-6-195 | prov-ca-6-196
+distractorDifference= | на́шего бра́та is a masculine animate object phrase, not the feminine phrase. | на́ши is plural and does not mark the feminine singular object row.
+whyAnswerDemonstratesObjective=The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+contrastMembers=на́шу сестру́ | на́шего бра́та | на́ши
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-6-190 | prov-ca-6-191 | prov-ca-6-195 | prov-ca-6-196
+responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u6-i-possessive-3`
 
@@ -3060,31 +3149,31 @@ relationParticipantIds=prov-ex-or-u6-animacy-8 | prov-ex-or-u6-animacy-9 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e0deda75742bafa2584d3919e5813a8b4c7b14cc350339aa9cd5c5da88cebe7d
+- Content hash: f4e3eafffca998301c3cdd215776cc68d202940fc5f9401f9d3af3b437597540
 
 kind=CONTRAST_SELECTION
 language=en
 prompt=Which admitted form is the object row of the shown form?
-promptLetter=учи́теля
-options=учи́тель | учи́теля
-answer=учи́тель
-feedback=Does the admitted record show the governed contrast? учи́тель.
+promptLetter=учи́тель
+options=учи́теля | учи́тель
+answer=учи́теля
+feedback=Does the admitted record show the governed contrast? учи́теля.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the object row of the same word, not the dictionary row.
+distractorRationales= | This form is the dictionary row of the same word, not the object row.
 testedFeature=ANIMACY
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-animacy-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-or-u6-animacy-6
-distractorSourceIds= | prov-ex-or-u6-animacy-7
-distractorDifference= | This form is the object row of the same word, not the dictionary row.
+answerSourceIds=prov-ex-or-u6-animacy-7
+distractorSourceIds= | prov-ex-or-u6-animacy-6
+distractorDifference= | This form is the dictionary row of the same word, not the object row.
 whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=учи́тель | учи́теля
+contrastMembers=учи́теля | учи́тель
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
-relationParticipantIds=prov-ex-or-u6-animacy-7 | prov-ex-or-u6-animacy-6 | prov-ex-or-u6-animacy-7
+relationParticipantIds=prov-ex-or-u6-animacy-6 | prov-ex-or-u6-animacy-7 | prov-ex-or-u6-animacy-6
 
 ### INDEPENDENT_CHECK `u6-i-pronoun-1`
 
@@ -3307,6 +3396,924 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=6
 searchTerms=units 6-10 source notice
 reviewStatus=NOT_REQUIRED
+
+### REFERENCE `ref-ca-cases`
+
+- Objectives: none
+- Sessions: u6-s-possessive, u6-s-third, u6-s-object, u6-s-feminine, u6-s-animacy, u6-s-pronoun, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: LINGUISTIC_INSTRUCTION
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3aeaff2fbf61ab903a79b78fe321547a3d9e547bc3acd38d56a9dfdfc13ab6bd
+
+title=Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.
+summary=Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.
+detail=Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.
+classification=LINGUISTIC_INSTRUCTION
+introducedInUnit=6
+searchTerms=ref-ca-cases
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### PROVENANCE `prov-ca-6-14`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7fef8a52d2eb46c2c31ca96fadb4da057a11431ac5f5365b43c602c116ef2c8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:u6-st-teach-possessive-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-15`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e48d6e4aa3cd8bd655ef6046993ae0cfdb5dfb09612b9472279a57ed0505315
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:u6-st-teach-third-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-16`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ecd8b4124268f950022f95947eeb1a17ebc9d851517d2af6822a3a3f993ee4f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:u6-st-teach-object-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-17`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e99c9f3d70b1b9bbbc0cd8cc2423c1ac58c5f69c27c3eb08f0df9b31a2e0d0c7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:u6-st-teach-pronoun-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-190`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40413c3220c4c647151ef8cd76762589911facbe1abd48f1f85138b375a181ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́ша сестра́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=e5497b8ac464b98373ff7cc9804adb769d077845735e6dbeb6eb698a889d8c9d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-191`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6e6ffbd97c82eedf417011146a7e667deb90cf7badc33cfc46b6a010e99ba245
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́шу сестру́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=a57f7f1342241179831ff7814c9c5dc9952d126284af95a20e896943363047f7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-192`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5ce97111e503b9f3407b42ef58d9c3dfce0efcb3d57e14260cf5093ca325800
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=Which object-row phrase agrees with the shown feminine noun phrase?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=b3ea8e731a74efff1b2e914ae78c9fab0dccd9d864c9c2bd935d071d5eafc272
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-193`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 53163a86d0188c79caa2b5a99fca8a3e351f2e87afdd013675a2e225d1e48fb6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=4c01b4d04b21d5e4332b3f6feadc4b9c5d8d8e05a040de6f2f2012942de0d7fb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-194`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f52c723bc9962aafd593a678d3828ab663fcec9681e21d260c52bc292fbbde0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=a482df3bd8a42811306930b50d069d25b096786abf2f1589693065f9127e25ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-195`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da215e0a8d0834111c40809256e5feb5656393c08b3d03ba2439a1b483d182f3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́шего бра́та
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=9333f978191d50d4c9c84115f8d824324efbb7882d5570faec17110a72ceaf43
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-196`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 670e6c923f430ebc16902c6dd6d5de118e045714d6ad636e4573c61f6d08ff12
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́ши
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=c0eedf84d7b503ff3c810677f0ecd6e05dc49405fa09f3e5d115146b077a2585
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-197`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11de62272fe8013e7c11133d623a5f0fe08c1ed80b140d1de62b1033c95cd3a8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=6067faafce573e3d1b672a6ed27270dd60259bda94e9ef2bc2a1d9094bf4cc0e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-198`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33d8f441cf463424a28b295d71af020c3bd10e6b7db4c6c30fc3af3f41168e23
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́ши is plural and does not mark the feminine singular object row.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=48d30cd2d6b0c75522be0e99ba788237a2201a6522337d8684b044f469dea0e6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-199`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54975563e70c265ac7799199b58b1683f427e9f21c8aeac734b47c36fe68a848
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́шу сестру́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=ae9d2f5a0b357d8ab149aea6f7f8d81cc7536ecbcc4cfe0b5642059cfe3fce97
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-205`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72f520d8ba955fc2657ab4a36c12eafb4347fe3a3bdc582a74a11d925da3188a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:ex-u6-direction-0:display
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Я шёл в дом
+shippedText=Я шёл в дом
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5ac73b3a0203afac49a18b03a155d0add9242cf6bfc392a265df3edc61b59ea8
+contentHash=a11c3505f657e9f78aa8d69f4cef6641f6906a1530ca331821c851e3761028ed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-206`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 19d710be8b3577fc275b86a1a900b694c12ee2012f47f6ec26cd8788d7454b5a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:ex-u6-direction-0:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+I was walking into the house.
+shippedText=I was walking into the house.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3f64c2fbda7be9d98c27051b04369598a3859477510aece78984e0a998620537
+contentHash=4c3701f815cfa14e5e44a3186857a45ce656ac9f642fb9316d64de26d212d9ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-207`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 079218ea56d70ecc7e3f8f50ec9a84793c1c846c86c97292a946543e7fdf002b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:ex-u6-direction-0:pair
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Я шёл в дом — I was walking into the house.
+shippedText=Я шёл в дом — I was walking into the house.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c5c3ff7f595b96fb762cf4b4bca743463bd51c749337a12c8c748268dc3f8d22
+contentHash=21ed52b61511cb39385ed08fd1376a1f0bd0e63af018481eb235efe7937444ca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-208`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31c376312d81c94a3e9adfc09f2c446d4a733fc99cceb5e3236aa14105cd6219
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:ex-u6-direction-2:display
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Я шёл на улицу
+shippedText=Я шёл на улицу
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4839bf99e1ff1929a99cdf74905586f1130d7f54808a09b31b8af4a36071c9e4
+contentHash=6bf26987047592ddac78fb3abe838bc26481495331269a8594e30aafa9bc170f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-209`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd9df5867c534d8dcac4db51501c6ae7d0580471a07e9106626b8f0e12921412
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:ex-u6-direction-2:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+I was walking out into the street.
+shippedText=I was walking out into the street.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce348185aedede1ee34ec8fdceb84ce9decb32417cd9730e278e530df4ac61dd
+contentHash=4e7452815cd7b10d59d0d2ef14920226e82ce645f08a77764f32516d33611a29
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-210`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 632de01171bc5163658f4ebf5894e42c5156903ef17e2ebac8f2f7cda1d255f3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:ex-u6-direction-2:pair
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Я шёл на улицу — I was walking out into the street.
+shippedText=Я шёл на улицу — I was walking out into the street.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=14de4a43219338ac11c851fdcea3506617b4db0a42d051bbb1f5adf012965859
+contentHash=1cc99906133c57ac76639e69fb2a101f195a99a55e32320268a42ebd9075d5bb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-340`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 447e59f975e616d8bd07ddd6a579cb9c29457f7382e17fa66915d9edac643d98
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-st-teach-feminine-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+shippedText=Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcf9f3149117cfad7e780d89bfa6ef9a2fe7189a29796d1a716f484171b88b16
+contentHash=8a5dc8448f410cc0a293665b5f8b4ee5071c33a25f015cc9292507204e657f6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-341`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e184447ea3d3b29afc240419ce3d4d20903ae033c055582c5b8e331ac266075e
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-st-teach-feminine-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+shippedText=а
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcf9f3149117cfad7e780d89bfa6ef9a2fe7189a29796d1a716f484171b88b16
+contentHash=823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-342`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c5ce46165b39f064ba124bf0564733f0f3b6b3a62020a50c19d5be710b5b7e0
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-st-teach-feminine-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+shippedText=я
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcf9f3149117cfad7e780d89bfa6ef9a2fe7189a29796d1a716f484171b88b16
+contentHash=9b21f5cf014c9efb35110dcccf3a74eab7fb903d1ca2f4054b3dad9ffabb7727
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-343`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6e38dee5149f35cefa55a260817606dd3fa4e02a9dc11724e4d4e9ba52e3f47
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-st-teach-feminine-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+shippedText=папа
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcf9f3149117cfad7e780d89bfa6ef9a2fe7189a29796d1a716f484171b88b16
+contentHash=8faf32f669661c73b40b3d6072b1cae3c95641d73a90cdeff2fa3078b4a3b52d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-344`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f8db612106d644c635a8ecc66ab1778ce4e7f315dad30a0b2a173f9731c5a72
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-st-teach-feminine-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+shippedText=дядя,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcf9f3149117cfad7e780d89bfa6ef9a2fe7189a29796d1a716f484171b88b16
+contentHash=ee3465bd74aaf9a0eb0ed20b992722a6477d26b2a3aab2de5a523dcdbbc1b6e9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-345`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0a08f1c6420ea88c13e194d25805e5a15830481a6f0a6387550fdd1a7426f158
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-st-teach-feminine-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+shippedText=дядя
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcf9f3149117cfad7e780d89bfa6ef9a2fe7189a29796d1a716f484171b88b16
+contentHash=a67573ca75737b9e0b9d00b9a59aaf183b5a158306b5602a1f2f5708a86d206b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-629`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b0b892d177c67ae17b8677643f68b0ffd1831dab7afe620fbf6571879a0297c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:ref-ca-cases
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.
+shippedText=Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6544c561da731711bdb1b3fb60517a939f5d4736efe62ca473f3330c4984fa45
+contentHash=eb2653460b15f43d7f85ba48f718005b3595d2b9fa1053c25c893f39499c48d0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u6-animacy-0`
 
@@ -6738,6 +7745,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-6-11`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72424321a3fb03b15295913c8edbe02b38bafaa8da90e93c18d0f16da9b26cd4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 6: printed pages 56-67. PDF indexes 68-79 are file locators, not printed pages. Observed section locators: §6.1 p56 (PDF 68); §6.2 p56 (PDF 68); §6.3 p57 (PDF 69); §6.4 p58 (PDF 70); §6.5 p58 (PDF 70); §6.6 p58 (PDF 70); §6.7 p59 (PDF 71); §6.8 p59 (PDF 71); §6.9 p60 (PDF 72); §6.10 p61 (PDF 73); §6.11 p62 (PDF 74); §6.12 p63 (PDF 75); §6.13 p63 (PDF 75); §6.14 p64 (PDF 76); §6.15 p64 (PDF 76); §6.16 p65 (PDF 77); §6.17 p66 (PDF 78). Observed exercise locators: 6/1 p61/PDF73; 6/2 p61/PDF73; 6/3 p67/PDF79; 6/4 p67/PDF79; 6/5 p67/PDF79. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-6-11148`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f9c79090dc2f34ab2e47f2c570dcd2e2e1f00ea4f2d8bcab13ac20b1c6c0d58
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 6 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-6-11149`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 766165c7a203a947c42e1c793adb63d3c7bf38a3614c453f5ae07d3e1d11a095
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-6-11150`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a41311004854b3b48ab122b079b54c9825e3c2ac80d3b52f1c5c081beb158ad5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 6 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-6-11151`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 919ec3edbe958bfcc10531eb25ded330500db6c667f37ca41ff36a228e4e26a8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-6-11152`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48b6a587f0661e81841117f1ef0e690d7d47df68165028be4732dd2b3e5fa816
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 6 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-6-11153`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 703afea994bc507cb7ee6fd56a81d7bc38ee62379c856cc412966523ce9510b8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-6-11154`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c39af42243ed654d926a8d38261c62b7e9f19150a0b37402c4336720cb00cc51
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 6 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-6-12`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b2c274432c3bb0854aca22f226b3cef03a52805109d4d49e9e2ec082184e7d1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 6 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-6-13`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11609e74bb82f794487f707e74dbcbf78162b75424351b32f4d9808018b5ecbe
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u6-001`
 
 - Objectives: none
@@ -7236,6 +8373,21 @@ CC BY-SA 4.0
 Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 Selected rows, stress-mark formatting, and beginner sense selection. No generated forms.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -7277,6 +8429,20 @@ permitsAppUse=true
 
 src-openrussian-50e210c4
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -7445,6 +8611,7 @@ permitsAppUse=true
 - `u6-st-teach-possessive-6` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-possessive` EXAMPLE `ex-u6-possessive-0`
 - `u6-st-rem-possessive` EXAMPLE `ex-u6-possessive-1`
+- `u6-st-rem-possessive` REFERENCE `ref-ca-cases`
 - `u6-st-check-possessive` REMEDIATION `u6-st-rem-possessive`
 - `u6-st-check-possessive` ITEM `u6-i-possessive-1`
 - `u6-st-check-possessive` ITEM `u6-i-possessive-2`
@@ -7460,6 +8627,7 @@ permitsAppUse=true
 - `u6-st-teach-third-3` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-third` EXAMPLE `ex-u6-third-0`
 - `u6-st-rem-third` EXAMPLE `ex-u6-third-1`
+- `u6-st-rem-third` REFERENCE `ref-ca-cases`
 - `u6-st-check-third` REMEDIATION `u6-st-rem-third`
 - `u6-st-check-third` ITEM `u6-i-third-1`
 - `u6-st-check-third` ITEM `u6-i-third-2`
@@ -7477,6 +8645,7 @@ permitsAppUse=true
 - `u6-st-teach-object-4` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-object` EXAMPLE `ex-u6-object-0`
 - `u6-st-rem-object` EXAMPLE `ex-u6-object-1`
+- `u6-st-rem-object` REFERENCE `ref-ca-cases`
 - `u6-st-check-object` REMEDIATION `u6-st-rem-object`
 - `u6-st-check-object` ITEM `u6-i-object-1`
 - `u6-st-check-object` ITEM `u6-i-object-2`
@@ -7496,6 +8665,7 @@ permitsAppUse=true
 - `u6-st-teach-feminine-4` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-feminine` EXAMPLE `ex-or-u6-feminine-0`
 - `u6-st-rem-feminine` EXAMPLE `ex-or-u6-feminine-1`
+- `u6-st-rem-feminine` REFERENCE `ref-ca-cases`
 - `u6-st-check-feminine` REMEDIATION `u6-st-rem-feminine`
 - `u6-st-check-feminine` ITEM `u6-i-feminine-1`
 - `u6-st-check-feminine` ITEM `u6-i-feminine-2`
@@ -7520,6 +8690,7 @@ permitsAppUse=true
 - `u6-st-teach-animacy-6` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-0`
 - `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-1`
+- `u6-st-rem-animacy` REFERENCE `ref-ca-cases`
 - `u6-st-check-animacy` REMEDIATION `u6-st-rem-animacy`
 - `u6-st-check-animacy` ITEM `u6-i-animacy-1`
 - `u6-st-check-animacy` ITEM `u6-i-animacy-2`
@@ -7541,6 +8712,7 @@ permitsAppUse=true
 - `u6-st-teach-pronoun-5` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-pronoun` EXAMPLE `ex-u6-pronoun-0`
 - `u6-st-rem-pronoun` EXAMPLE `ex-u6-pronoun-1`
+- `u6-st-rem-pronoun` REFERENCE `ref-ca-cases`
 - `u6-st-check-pronoun` REMEDIATION `u6-st-rem-pronoun`
 - `u6-st-check-pronoun` ITEM `u6-i-pronoun-1`
 - `u6-st-check-pronoun` ITEM `u6-i-pronoun-2`
@@ -7559,12 +8731,40 @@ permitsAppUse=true
 - `u6-st-teach-direction-4` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-direction` EXAMPLE `ex-u6-direction-0`
 - `u6-st-rem-direction` EXAMPLE `ex-u6-direction-1`
+- `u6-st-rem-direction` REFERENCE `ref-ca-cases`
 - `u6-st-check-direction` REMEDIATION `u6-st-rem-direction`
 - `u6-st-check-direction` ITEM `u6-i-direction-1`
 - `u6-st-check-direction` ITEM `u6-i-direction-2`
 - `u6-st-check-direction` ITEM `u6-i-direction-3`
 - `u6-s-book` OBJECTIVE `obj-u6-book`
 - `u6-st-book-work` REFERENCE `ref-u610-attribution`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-14`
+- `obj-u6-third` PROVENANCE `prov-ca-6-15`
+- `obj-u6-object` PROVENANCE `prov-ca-6-16`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-6-17`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-190`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-191`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-192`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-193`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-194`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-195`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-196`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-197`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-198`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-199`
+- `obj-u6-direction` PROVENANCE `prov-ca-6-205`
+- `obj-u6-direction` PROVENANCE `prov-ca-6-206`
+- `obj-u6-direction` PROVENANCE `prov-ca-6-207`
+- `obj-u6-direction` PROVENANCE `prov-ca-6-208`
+- `obj-u6-direction` PROVENANCE `prov-ca-6-209`
+- `obj-u6-direction` PROVENANCE `prov-ca-6-210`
+- `obj-u6-feminine` PROVENANCE `prov-ca-6-340`
+- `obj-u6-feminine` PROVENANCE `prov-ca-6-341`
+- `obj-u6-feminine` PROVENANCE `prov-ca-6-342`
+- `obj-u6-feminine` PROVENANCE `prov-ca-6-343`
+- `obj-u6-feminine` PROVENANCE `prov-ca-6-344`
+- `obj-u6-feminine` PROVENANCE `prov-ca-6-345`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-629`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-0`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-0-gloss`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-1`

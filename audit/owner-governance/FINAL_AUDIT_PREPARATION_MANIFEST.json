@@ -5,39 +5,39 @@
   "preparationPath": "audit/owner-governance/FINAL_AUDIT_PREPARATION_MANIFEST.json",
   "modelVersion": "",
   "date": "",
-  "packContentReviewDigest": "ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1",
-  "repositorySourceDigest": "d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914",
+  "packContentReviewDigest": "0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2",
+  "repositorySourceDigest": "74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa",
   "curriculumSourceCommits": {
-    "1": "4a6c21da07b515df226a090cc0ff6b1ff4a78aa1",
-    "2": "4a6c21da07b515df226a090cc0ff6b1ff4a78aa1",
-    "3": "b22fa0cca895a677386a77d03a63301f7454aa07",
-    "4": "b22fa0cca895a677386a77d03a63301f7454aa07",
-    "5": "b22fa0cca895a677386a77d03a63301f7454aa07",
-    "6": "ae777d85fe3616fc8e065890201d40c241d113bc",
-    "7": "ae777d85fe3616fc8e065890201d40c241d113bc",
-    "8": "ae777d85fe3616fc8e065890201d40c241d113bc",
-    "9": "ae777d85fe3616fc8e065890201d40c241d113bc",
-    "10": "ae777d85fe3616fc8e065890201d40c241d113bc",
-    "11": "b22fa0cca895a677386a77d03a63301f7454aa07",
-    "12": "b22fa0cca895a677386a77d03a63301f7454aa07",
-    "13": "b22fa0cca895a677386a77d03a63301f7454aa07",
-    "14": "b22fa0cca895a677386a77d03a63301f7454aa07",
-    "15": "b22fa0cca895a677386a77d03a63301f7454aa07",
-    "16": "100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee",
-    "17": "100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee",
-    "18": "100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee",
-    "19": "100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee",
-    "20": "100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee",
-    "21": "f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7",
-    "22": "f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7",
-    "23": "f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7",
-    "24": "f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7",
-    "25": "f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7",
-    "26": "f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7",
-    "27": "f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7",
-    "28": "f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7",
-    "29": "f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7",
-    "30": "f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7"
+    "1": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "2": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "3": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "4": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "5": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "6": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "7": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "8": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "9": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "10": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "11": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "12": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "13": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "14": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "15": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "16": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "17": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "18": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "19": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "20": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "21": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "22": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "23": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "24": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "25": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "26": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "27": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "28": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "29": "057962d81d14bcf5db9f8740ae2443f29ff618c1",
+    "30": "057962d81d14bcf5db9f8740ae2443f29ff618c1"
   },
   "evidenceClasses": [
     "QUOTED_OR_ADAPTED_SOURCE",
@@ -45,36 +45,156 @@
   ],
   "evidenceRecords": [],
   "unitDispositions": [
-    {"unitNumber": 1, "contentDigest": "9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a", "disposition": ""},
-    {"unitNumber": 2, "contentDigest": "d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b", "disposition": ""},
-    {"unitNumber": 3, "contentDigest": "deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86", "disposition": ""},
-    {"unitNumber": 4, "contentDigest": "5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c", "disposition": ""},
-    {"unitNumber": 5, "contentDigest": "9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d", "disposition": ""},
-    {"unitNumber": 6, "contentDigest": "fa6501022bd7ff4a2eca1e47c0ad488d96254cab0eafbecc61a8420835a3ab9c", "disposition": ""},
-    {"unitNumber": 7, "contentDigest": "ec283b3bc0e58306d84e536947ab747d5ea264cea729bf4838124404ca958359", "disposition": ""},
-    {"unitNumber": 8, "contentDigest": "e1dd456abf8a7b961f2f8471f35d4178961a53147c354f3e410e88d75f025c78", "disposition": ""},
-    {"unitNumber": 9, "contentDigest": "d0f135c408fc429392cf695a8122134013fca69637a4f9c1587db3fec6b3c65f", "disposition": ""},
-    {"unitNumber": 10, "contentDigest": "6845b398da6ad901b06443dd0f56ee6ace4ba4e2da6af9e36d33934dc286c526", "disposition": ""},
-    {"unitNumber": 11, "contentDigest": "7a70c3b29f7c88934d0dcf21f40d531a45f1eff9daa8593f5af09d509bd10324", "disposition": ""},
-    {"unitNumber": 12, "contentDigest": "c610495bf16604d555187f66e456c2cd1cb127c77881ef87097332f5e2d426bb", "disposition": ""},
-    {"unitNumber": 13, "contentDigest": "e8a04394dc8c90059f01a0b7fdf46a57951a98a85ac8050a29781ab1a4a027c5", "disposition": ""},
-    {"unitNumber": 14, "contentDigest": "270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6", "disposition": ""},
-    {"unitNumber": 15, "contentDigest": "1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd", "disposition": ""},
-    {"unitNumber": 16, "contentDigest": "6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5", "disposition": ""},
-    {"unitNumber": 17, "contentDigest": "a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c", "disposition": ""},
-    {"unitNumber": 18, "contentDigest": "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae", "disposition": ""},
-    {"unitNumber": 19, "contentDigest": "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3", "disposition": ""},
-    {"unitNumber": 20, "contentDigest": "01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c", "disposition": ""},
-    {"unitNumber": 21, "contentDigest": "be229fd6909ee2663ef49f2a88741a44b4d1ffddfc93cb916494e505ba853731", "disposition": ""},
-    {"unitNumber": 22, "contentDigest": "5eedc53e9a70ce5450ad9ee6f4925047b94eab0517421114d742d605f730c3e7", "disposition": ""},
-    {"unitNumber": 23, "contentDigest": "c36a981c973461d21ecd043d5206e79176991693633eec901ee912442cc4ef89", "disposition": ""},
-    {"unitNumber": 24, "contentDigest": "d557dba12bf09b845df91a5f49bbc3a91a7008607a9183995c2ae36cbd088221", "disposition": ""},
-    {"unitNumber": 25, "contentDigest": "3c6c42830c7ae91ad1450a91535652175ffa9389e89a21cb26d51591852fbd52", "disposition": ""},
-    {"unitNumber": 26, "contentDigest": "042693573ae94ddc31e1c68c625d854f8495934fbf1d39cd800684afcb078b06", "disposition": ""},
-    {"unitNumber": 27, "contentDigest": "c90818265e294c6c609881e8ede8c3dbde54e1f668da1945cec6dc429b366047", "disposition": ""},
-    {"unitNumber": 28, "contentDigest": "afa29cbd6d710bcb853d74189d012584660996b25270af78c3d23efe35cf1cc5", "disposition": ""},
-    {"unitNumber": 29, "contentDigest": "65252e83ce8d526d768bda90ce2ec9b1d247e229f62dc4e977f65d231c0e68ef", "disposition": ""},
-    {"unitNumber": 30, "contentDigest": "f1b2433f62fd490d7a891335eee139ab7684d90335fbf8ff0744cc7833f9df39", "disposition": ""}
+    {
+      "unitNumber": 1,
+      "contentDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 2,
+      "contentDigest": "4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 3,
+      "contentDigest": "4ac8d4b6ccfefbd5be021d5bcc7c2202ce0b2c3e243755f9ff52017c06a39908",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 4,
+      "contentDigest": "0d3065043d8b3a08997ec6642f2e143edef236a675610a070e4004905b8e9d54",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 5,
+      "contentDigest": "c2e405cf7081d673a39def8e26035bac7a65b608c57c5f4803ba832c2305c744",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 6,
+      "contentDigest": "3fd1abccb51da4af108ea3ea85482b6abf64b3cc39682c5dccde68461743f639",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 7,
+      "contentDigest": "e7eadcebf8776726b55a4e4582925b851df9ce6d8fbc33d00d11870fd6cc5289",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 8,
+      "contentDigest": "520c5d5a6a8f952d743417584aab1c0d627b4105d4c03b5bcda31508cf8024e7",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 9,
+      "contentDigest": "e910e061464deec4c9c2eab392ede33fba94cd3e528e8a142966b28e2d0bb470",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 10,
+      "contentDigest": "284f7aae1c9b34e140f00bb9fb9e39a6e2dd6249e34eb4b792d91a6a84b8ac4d",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 11,
+      "contentDigest": "1b0b2740b6691569dc22c3a09927842f7396a1265797b888751da23507f33688",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 12,
+      "contentDigest": "c449111039257472d3289c0252bd677367480fd0602c89b7741bb8b7aa4c0f99",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 13,
+      "contentDigest": "9500bee72be61030d6822e5a7ccdb1c71ab642dd165945e05ce853faaf322b9f",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 14,
+      "contentDigest": "2f9bbf502b90f2a8c0ef0c8f1fb32b8b5e564290aa16c77e1603f0fa8bbecd39",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 15,
+      "contentDigest": "80225df0cc95cc791d6cc062121b3d1988b66fa4d7c11cf7b234ac38d227b6dc",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 16,
+      "contentDigest": "d56aa07087642f91d96563cbff7f3761f4c5d2d05ef27f00c4278d2a89e9d684",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 17,
+      "contentDigest": "8e9ba936c96d765441b052044af9dfa881a0f260eff16d1cfe8dade5514fc2fa",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 18,
+      "contentDigest": "70366528a23c5d91603f2cb4706dfc449a39c951dd2097ad4ec96aeb9af128fc",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 19,
+      "contentDigest": "0be8a9468befc20a531e8390c737e8a8a0aae401fdadca4a228a5127761febe5",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 20,
+      "contentDigest": "3c3ff0a614d816d1de73e976216cf64ae134c1b8df2d64d277699ffec3c5a28c",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 21,
+      "contentDigest": "d580562d211d044e143f00d28f9a28346cdf6c4e7fd633d73c20c3d2d63f105c",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 22,
+      "contentDigest": "161d899c6b1e86e4b1056a38820ee7fb52ffac016896709fad16526135d081c2",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 23,
+      "contentDigest": "3e9258d3a68cb347b788f600ea671a27079be7feb9852c082218d9a0c7a47bd3",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 24,
+      "contentDigest": "28deca919ea8aff1b176026f9af0abaa4a2c5ec4723ba6a99fe900aea5093ced",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 25,
+      "contentDigest": "7d212ea6b97a8783d43c78cc59dc173ea9817d8825286f60fa4c7788c85bc7b7",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 26,
+      "contentDigest": "9ec3fe2dbfafcdccbcc8d850502ca67ba51096a78a6e6f4db5e716711a9dd2ae",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 27,
+      "contentDigest": "54723739f7288a374b2da57d9c4e3f9ebccabee0cec4030d4b39c1973b365518",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 28,
+      "contentDigest": "b26d10a2654c8ac2d6f30579975c9bdacf935cf517e7dd976d34f8378bc8f58b",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 29,
+      "contentDigest": "d4e92dfd015dffb74690936a4b5091d716aa018d588baa6dff09ff0dbe2372bd",
+      "disposition": ""
+    },
+    {
+      "unitNumber": 30,
+      "contentDigest": "5df4756000729cfaea213937b87807b7ad7f74932335c9bd34b62a71af2e51b3",
+      "disposition": ""
+    }
   ],
   "varianceDecision": "",
   "mappingDecision": ""

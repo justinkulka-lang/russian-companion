@@ -11,12 +11,12 @@ Unit 20 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
-- Unit content-review SHA-256: 01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 3c3ff0a614d816d1de73e976216cf64ae134c1b8df2d64d277699ffec3c5a28c
 - Mapping-package SHA-256: f24f256481096bcc5f47bcb849f053bfda59fc67e670492c6b4e7a42b514a8c9
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 49f62be12999f0378ec7eef08d2193c2a537ae7c6b78efdde6c4db073ec3f324
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 43a4bb1f526cd2e3eb58981f3bd2b67157d057bb0a8207d21722813c5b674c54
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -335,13 +335,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 367ee95fc5e38db4cf1fe852de166e1ee984c9732ba153bfe973527d3dfa53d5
+- Content hash: 1f3c42fe2abaaf976ee7a0ae999c3f3d5166a8554a081c6f6265dbf02867c806
 
 kind=REMEDIATE
 title=Remediation
 body=unidirectional
 dominantAction=Continue
-references=
+references=ref-ca-motion
 items=
 examples=ex-u20-motion-0,ex-u20-motion-1
 unavailableReason=
@@ -379,12 +379,12 @@ remediationStepId=u20-st-rem-motion
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 680c6b53a22c830d6e24231129793c928151941e2a4d133deac0a129d528067e
+- Content hash: 7c335c5e2d441208e232fc3b7b54da69839addb445d65fd182816279317c3c5c
 
 title=Self-attest Lesson 20
 estimatedMinutes=10
 objectives=obj-u20-book
-steps=u20-st-book-work,u20-st-book
+steps=u20-st-book-work,u20-st-book,u20-st-anki-direction,u20-st-binder-direction,u20-st-tutor-direction,u20-st-cumulative-direction
 
 ### STEP `u20-st-book-work`
 
@@ -394,7 +394,7 @@ steps=u20-st-book-work,u20-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: faab65ae00be13eabff56719066c415cd1627bf1ee95931ee08139d3f4714106
+- Content hash: 0b7fee569feeff1d62f33deb0bfaa6667d0be8fd86ebbf2249cfc90cd41f7255
 
 kind=BOOK
 title=Work Lesson 20 in your copy
@@ -404,7 +404,7 @@ references=ref-u1620-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 20 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 20: printed pages 240-256. PDF indexes 252-268 are file locators, not printed pages. Observed section locators: §20.1 p240 (PDF 252); §20.2 p240 (PDF 252); §20.3 p244 (PDF 256); §20.4 p246 (PDF 258); §20.5 p248 (PDF 260); §20.6 p248 (PDF 260); §20.7 p249 (PDF 261); §20.8 p250 (PDF 262); §20.9 p251 (PDF 263); §20.10 p252 (PDF 264); §20.11 p253 (PDF 265). Observed exercise locators: 20/1 p243/PDF255; 20/2 p244/PDF256; 20/3 p246/PDF258; 20/4 p249/PDF261; 20/5 p251/PDF263; 20/6 p254/PDF266; 20/7 p254/PDF266; 20/8 p255/PDF267. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -416,7 +416,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: de0d05bccb26cc2a55fc9c8cc33bcd653885fc93d9fd5b60d3a0bf4f4a07ba11
+- Content hash: fc20ea03d0d59abcc8106f4024ce5d3bcef9e2867a6fefc0bc9ebb1e17d840fb
 
 kind=BOOK
 title=Record Lesson 20 book work
@@ -426,8 +426,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 20 work in your copy.
+bookDirection=Owned-book assignment for Lesson 20: printed pages 240-256. PDF indexes 252-268 are file locators, not printed pages. Observed section locators: §20.1 p240 (PDF 252); §20.2 p240 (PDF 252); §20.3 p244 (PDF 256); §20.4 p246 (PDF 258); §20.5 p248 (PDF 260); §20.6 p248 (PDF 260); §20.7 p249 (PDF 261); §20.8 p250 (PDF 262); §20.9 p251 (PDF 263); §20.10 p252 (PDF 264); §20.11 p253 (PDF 265). Observed exercise locators: 20/1 p243/PDF255; 20/2 p244/PDF256; 20/3 p246/PDF258; 20/4 p249/PDF261; 20/5 p251/PDF263; 20/6 p254/PDF266; 20/7 p254/PDF266; 20/8 p255/PDF267. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u20-st-anki-direction`
+
+- Objectives: obj-u20-book
+- Sessions: u20-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6a2ef336397654a326a803fd67cc3af98c995ef64e1f62a091f6760a5a24c517
+
+kind=ANKI
+title=Unit 20 AnkiDroid direction
+body=Unit 20 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u20-st-binder-direction`
+
+- Objectives: obj-u20-book
+- Sessions: u20-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: abd49a351b05205431cfbc8d2d77423b6f42dcdaab2735b788adc9dc080421f8
+
+kind=BINDER
+title=Unit 20 binder prompt
+body=Unit 20 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u20-st-tutor-direction`
+
+- Objectives: obj-u20-book
+- Sessions: u20-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 345f9fe65d97e7d91d3c3beaff9ce0851c9740ccce3953b41a51cc279a9d33cf
+
+kind=TUTOR
+title=Unit 20 optional tutor
+body=Unit 20 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u20-st-cumulative-direction`
+
+- Objectives: obj-u20-book
+- Sessions: u20-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e5ac98f68d72336a7c41cda4be4d7b247b8882fb644863b02353a12bc2bd31fc
+
+kind=ORIENT
+title=Unit 20 cumulative review
+body=Unit 20 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 20 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u20-motion-0`
@@ -675,70 +763,70 @@ responseKind=ENGLISH_CLASSIFICATION
 
 - Objectives: obj-u20-motion
 - Sessions: u20-s-motion
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1f882174cee6b65a92fde12a37d32e52cd6f3c3ade44e35161c089a4c2b20cc3
+- Content hash: 610246e99b9e0a66d0f7b0e4e7bdab5bc63e487edf93e8b9227c16288da2d483
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written beside the shown form?
+prompt=Choose the English description. Which reading matches the perfective setting-out verb?
 promptLetter=Он пошёл к другу.
-options=beginning of a movement | setting out | He went to a friend's place
-answer=beginning of a movement
-feedback=The frozen source pairs the shown form "Он пошёл к другу." with the admitted gloss "beginning of a movement".
+options=he set off toward a friend | he was already on the way for a long time | he refused to go
+answer=he set off toward a friend
+feedback=Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The source quotes "setting out" as an English restatement. | He went to a friend's place
-testedFeature=MOTION_PO
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | he was already on the way for a long time is an imperfective duration reading. | he refused to go contradicts the motion verb.
+testedFeature=MOTION_SETTING_OUT
+evidenceMode=STATED_APPLICATION
 contrastSetId=u20-motion-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u20-motion-4-en
-distractorSourceIds= | prov-u20-motion-x-5 | prov-ex-u20-motion-5-en
-distractorDifference= | The source quotes "setting out" as an English restatement. | He went to a friend's place
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Он пошёл к другу." with the admitted gloss "beginning of a movement".
-contrastMembers=beginning of a movement | setting out | He went to a friend's place
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u20-motion-4-ru | prov-ex-u20-motion-4-en | prov-u20-motion-x-5 | prov-ex-u20-motion-5-en
+answerSourceIds=prov-ca-repair-20-10962
+distractorSourceIds= | prov-ca-repair-20-10965 | prov-ca-repair-20-10966
+distractorDifference= | he was already on the way for a long time is an imperfective duration reading. | he refused to go contradicts the motion verb.
+whyAnswerDemonstratesObjective=Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+contrastMembers=he set off toward a friend | he was already on the way for a long time | he refused to go
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-repair-20-10954 | prov-ca-repair-20-10962 | prov-ca-repair-20-10965 | prov-ca-repair-20-10966
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u20-i-motion-4`
 
 - Objectives: obj-u20-motion
 - Sessions: u20-s-motion
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3775dca34e40dbab258b823a9e0ae184b600db4def3aece672278727d5a91f2a
+- Content hash: 0ab765653e3f7941c8f672ebeddfd88124d6f7b24048eccecc8f0311a57da5da
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written beside the shown form?
+prompt=Choose the English description. Which translation covers only the shown sentence?
 promptLetter=Мальчик отошёл от незнакомца
-options=The boy stepped back from the stranger who had offered him candy. | They will leave Vladivostok in a month. | The ball flew onto the roof of the house.
-answer=The boy stepped back from the stranger who had offered him candy.
-feedback=The frozen source pairs the shown form "Мальчик отошёл от незнакомца" with the admitted gloss "The boy stepped back from the stranger who had offered him candy.".
+options=The boy stepped back from the stranger. | They will leave Vladivostok in a month. | The ball flew onto the roof of the house.
+answer=The boy stepped back from the stranger.
+feedback=Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | They will leave Vladivostok in a month. | The ball flew onto the roof of the house.
-testedFeature=MOTION_PREFIX
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | They will leave Vladivostok in a month. is a different motion sentence. | The ball flew onto the roof of the house. is a different motion sentence.
+testedFeature=MOTION_NO_ADDED_CLAUSE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u20-motion-4
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u20-motion-x-7
-distractorSourceIds= | prov-ex-u20-motion-6-en | prov-ex-u20-motion-7-en
-distractorDifference= | They will leave Vladivostok in a month. | The ball flew onto the roof of the house.
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Мальчик отошёл от незнакомца" with the admitted gloss "The boy stepped back from the stranger who had offered him candy.".
-contrastMembers=The boy stepped back from the stranger who had offered him candy. | They will leave Vladivostok in a month. | The ball flew onto the roof of the house.
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u20-motion-x-9 | prov-u20-motion-x-7 | prov-ex-u20-motion-6-en | prov-ex-u20-motion-7-en
+answerSourceIds=prov-ca-repair-20-10992
+distractorSourceIds= | prov-ca-repair-20-10988 | prov-ca-repair-20-10990
+distractorDifference= | They will leave Vladivostok in a month. is a different motion sentence. | The ball flew onto the roof of the house. is a different motion sentence.
+whyAnswerDemonstratesObjective=Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+contrastMembers=The boy stepped back from the stranger. | They will leave Vladivostok in a month. | The ball flew onto the roof of the house.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-repair-20-10991 | prov-ca-repair-20-10992 | prov-ca-repair-20-10988 | prov-ca-repair-20-10990
 responseKind=ENGLISH_CLASSIFICATION
 
 ### REFERENCE `ref-u1620-attribution`
@@ -758,6 +846,5081 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=16
 searchTerms=units 16-20 source notice
 reviewStatus=NOT_REQUIRED
+
+### REFERENCE `ref-ca-motion`
+
+- Objectives: none
+- Sessions: u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: LINGUISTIC_INSTRUCTION
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0e9dd9f1522c31dc2a758b41a1a4352e8b30be48a2fd9635f81c0085c4d93a89
+
+title=Offline reference for motion, review-pending. Translate only the motion and destination that the Russian sentence contains.
+summary=Offline reference for motion, review-pending. Translate only the motion and destination that the Russian sentence contains.
+detail=Offline reference for motion, review-pending. Translate only the motion and destination that the Russian sentence contains.
+classification=LINGUISTIC_INSTRUCTION
+introducedInUnit=20
+searchTerms=ref-ca-motion
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### PROVENANCE `prov-ca-20-250`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 20f25201e5c477e408000e899516c6fbcccf7340a8b29fda1153a7b8454f99f5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.
+The Russian sentence contains only the boy stepping back from the stranger.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Мальчик отошёл от незнакомца
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9
+contentHash=f643975be1f829d00f32b576b65f8c2bd8b7a29cad1079df8e62530c9d686386
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-251`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4feedf7a44b59ef3e5172b3d46b0f6c2b73dd3c3dc809c1694db3ade5aefc05b
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.
+The Russian sentence contains only the boy stepping back from the stranger.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=The boy stepped back from the stranger.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9
+contentHash=0462e6892e86db8c18d2dec374c0478fe27d75286f9a11e941cb4d8a8f2faf4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-252`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d70641edb21056763db1ce89acf3bbccaf8995f0cbb7b912086a1f55df339bdb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.
+The Russian sentence contains only the boy stepping back from the stranger.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Which translation covers only the shown sentence?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9
+contentHash=8068d82b01a25f9252416e5c6dd798f079bffea722590da484a446c273d9ba3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-253`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d5f547e1203705136c218e3481349b096d2324cb16eb93921709371cf628249
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.
+The Russian sentence contains only the boy stepping back from the stranger.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Мальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9
+contentHash=10d899961b387a204623b4e6bf8ab269beb636af5d8df223d41919c82820d262
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-254`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1521455e4d4eae531b40667a4d31ef73b553071d0c9f5753b456707c75adbfa7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.
+The Russian sentence contains only the boy stepping back from the stranger.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=The Russian sentence contains only the boy stepping back from the stranger.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9
+contentHash=13767d309173a1ce56ae9e0a5641e55dbf2f890db877e23b5c72d04e0e0539bd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-255`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 98d96cfa9edc64c6e11eaef3cf357d6208e032744547c6f947cf0676bf185cd3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.
+The Russian sentence contains only the boy stepping back from the stranger.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=They will leave Vladivostok in a month.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9
+contentHash=902393f173486c8c2bf8490eda077f8877517965404f86ca76e22b0fbac7b224
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-256`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f06699e9aef3549d46bcc6a2f59a04967de8c8eb96e88c0f5086c1dfe2e8b8a3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.
+The Russian sentence contains only the boy stepping back from the stranger.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=The ball flew onto the roof of the house.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9
+contentHash=400e1a15c98b8cc064cd05ed030ebd4bfe47a8ecd2605b9bb1543c38e2f0a9a3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-257`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 725c0009b12d78d056efccf32604499a78bdd3ba5cf4c019f1b6736dca54eca8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.
+The Russian sentence contains only the boy stepping back from the stranger.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=They will leave Vladivostok in a month. is a different motion sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9
+contentHash=d3e8ab38cce22e5af8e9d59ead0e8d2597235902dc617e04cf5659c033869b27
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-258`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd5de398fe2996972b37a4f8e6c11c88e2ec884000b3aa98bd990281d9ecee3b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.
+The Russian sentence contains only the boy stepping back from the stranger.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=The ball flew onto the roof of the house. is a different motion sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9
+contentHash=e72af2a8186c87151470612bca140ce83839d7ffaec2be96c244d935340821fd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-545`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 018847d5f4c7b56ba1f3708eb765611dc0c66b066e5012288984a92cdb951685
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+пошёл presents setting out toward a friend. A synonym of that same reading is not a second option.
+The perfective пошёл presents the start of the trip, one reading.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+shippedText=Он пошёл к другу.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3
+contentHash=3d8c9926bcea41b886766d3d461ca670ef2c69c0eed6623748d6db87ec664634
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-546`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5461ff831be39fd8215f68c0423559ae4d7367918e4d79325e1f32fdabb8e20
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+пошёл presents setting out toward a friend. A synonym of that same reading is not a second option.
+The perfective пошёл presents the start of the trip, one reading.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+shippedText=he set off toward a friend
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3
+contentHash=2523daeda7b21354c504ea74998053c3b9c2fd32c44465ec0ac4b687aba4bf20
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-547`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8f06491ebe84f3b199a719f94eaad614c90a519709e12ff637fc745f0609dc93
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+пошёл presents setting out toward a friend. A synonym of that same reading is not a second option.
+The perfective пошёл presents the start of the trip, one reading.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+shippedText=Which reading matches the perfective setting-out verb?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3
+contentHash=be851f8c389c05e1f0c520bbde7b1d0200d02332e978cca7c35a75ca2b45a825
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-548`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1a6a7feed1290ff0f8ae62375ac34633fa4cb7cae99b1e49e57022f90e11888e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+пошёл presents setting out toward a friend. A synonym of that same reading is not a second option.
+The perfective пошёл presents the start of the trip, one reading.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+shippedText=пошёл presents setting out toward a friend. A synonym of that same reading is not a second option.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3
+contentHash=b103c87a9e6d46252824548168321781176ad04a1d22193a42cedcd3942a53e0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-549`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3366a7d782ba214599e9da0716add6695f48b73f35eba7fd2f70e39bd117320d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+пошёл presents setting out toward a friend. A synonym of that same reading is not a second option.
+The perfective пошёл presents the start of the trip, one reading.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+shippedText=The perfective пошёл presents the start of the trip, one reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3
+contentHash=d841d3ff169ea8cae9e016c0231d23d01437d5abec57f632cd0249c27ff6bdc6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-550`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 18cbbb4d8e0c63a6367bfa863fc27bf63b677ecc5999e8874986413d8111eaa9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+пошёл presents setting out toward a friend. A synonym of that same reading is not a second option.
+The perfective пошёл presents the start of the trip, one reading.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+shippedText=he was already on the way for a long time
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3
+contentHash=5cd963b28ff24aff8dfde426fce5ea20888c7bbc95d6f8ff21fb857f31254d83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-551`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9070c3a180e9c371542c3ce83869e64d725ec1b97c1c27239255a267a7506692
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+пошёл presents setting out toward a friend. A synonym of that same reading is not a second option.
+The perfective пошёл presents the start of the trip, one reading.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+shippedText=he refused to go
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3
+contentHash=8912d8f39dc28a27ebb14fca6db5e8c99ad7ba80b5c72f4acc45a0dc9a9784df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-552`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef695fa8cdf929d4822edbfde8c8a91c071ebddeffe37cb92edd5a393a6e01a6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+пошёл presents setting out toward a friend. A synonym of that same reading is not a second option.
+The perfective пошёл presents the start of the trip, one reading.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+shippedText=he was already on the way for a long time is an imperfective duration reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3
+contentHash=a67d1fbfd24f723bf86bb9fc4e009eff3e1ea3f163becdce2a13e42da6304d82
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-553`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a21891a25e0a683889b6b7a1df9bb98180ddef2e95e0e3ab83fff85ed143fb19
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+пошёл presents setting out toward a friend. A synonym of that same reading is not a second option.
+The perfective пошёл presents the start of the trip, one reading.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+shippedText=he refused to go contradicts the motion verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3
+contentHash=9b1a676fae33fb978ee63fe743811dc303cb0286b824cd28ff302a9c49280f8a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-554`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f9272e140c13e37eea4f13572c8682f4b8da5cbb1f6ac37bf78385f2065aa81
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+пошёл presents setting out toward a friend. A synonym of that same reading is not a second option.
+The perfective пошёл presents the start of the trip, one reading.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+shippedText=Он пошёл к другу
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3
+contentHash=9e6014b6bfbfa74df6c58ae14e85be78bff3be22d2c9a914bf0a2e0964cf6d64
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-555`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4052bf2a98a4c25e6563fa3e0c64fd9b1466bc6743b816a682b5eeff50d4172a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+пошёл presents setting out toward a friend. A synonym of that same reading is not a second option.
+The perfective пошёл presents the start of the trip, one reading.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+shippedText=пошёл
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3
+contentHash=d8ac752ac5ff00cbd96a17a96fc3378d436e20015151e373a530c2cd0dd1f40a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-20-631`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 147cb7f5bebb591111306185f29a17dca66f3283e4f51f540bc529c4df922223
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:ref-ca-motion
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Offline reference for motion, review-pending. Translate only the motion and destination that the Russian sentence contains.
+shippedText=Offline reference for motion, review-pending. Translate only the motion and destination that the Russian sentence contains.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7654770cb76ed73a75ec756fdaff45195158213ff12b1a0286085be663217a43
+contentHash=32d2fa2d4dc045b6f520f0a142b46f17f8b27a3e4c918e7e68bc0c62ab7ebb9a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10783`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5c6fb54da8dff8c85d44c96e16c4337ab2b13200ed4e1657b1c19f0d76f28b5a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+к другу
+shippedText=Он пошёл к другу.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54922d2fb31ff561c33dd14f3b27212adb12ca80e7852be9a5826b23dacfe39d
+contentHash=3d8c9926bcea41b886766d3d461ca670ef2c69c0eed6623748d6db87ec664634
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10784`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 842542426c15fe7845b5b8cd46ddd44014d7c15defeea71f741119bb144d70ef
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+к другу
+shippedText=he set off toward a friend
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54922d2fb31ff561c33dd14f3b27212adb12ca80e7852be9a5826b23dacfe39d
+contentHash=2523daeda7b21354c504ea74998053c3b9c2fd32c44465ec0ac4b687aba4bf20
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10785`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c38063009f5b7a8f15e33f0f89586f9d074c88d0279ccfcee90f4657e8d33785
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+к другу
+shippedText=Which reading matches the perfective setting-out verb?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54922d2fb31ff561c33dd14f3b27212adb12ca80e7852be9a5826b23dacfe39d
+contentHash=be851f8c389c05e1f0c520bbde7b1d0200d02332e978cca7c35a75ca2b45a825
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10786`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 060f1fc45f663bcf3a494a2f328ab14c140496ceee471c27104a6a16cdb27696
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+к другу
+shippedText=Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54922d2fb31ff561c33dd14f3b27212adb12ca80e7852be9a5826b23dacfe39d
+contentHash=9e4610003a63aebd3eed6b48371c7f0aff789ed5fb3a1fce30b7dae8c6a4a594
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10787`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 917dc3a83dd28b74dba5f79f2c2217869ce6e824388d662432fd653b5f598d6b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+к другу
+shippedText=he was already on the way for a long time
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54922d2fb31ff561c33dd14f3b27212adb12ca80e7852be9a5826b23dacfe39d
+contentHash=5cd963b28ff24aff8dfde426fce5ea20888c7bbc95d6f8ff21fb857f31254d83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10788`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 966b4a4aed181fd3318174acb45a785e3d1c6ee04e0532a01877fc23e1756418
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+к другу
+shippedText=he refused to go
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54922d2fb31ff561c33dd14f3b27212adb12ca80e7852be9a5826b23dacfe39d
+contentHash=8912d8f39dc28a27ebb14fca6db5e8c99ad7ba80b5c72f4acc45a0dc9a9784df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10789`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb93808d8edcd934bf32a38ec235438c8c508ce6ebdd7436467042a2c0ac9ab7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+к другу
+shippedText=he was already on the way for a long time is an imperfective duration reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54922d2fb31ff561c33dd14f3b27212adb12ca80e7852be9a5826b23dacfe39d
+contentHash=a67d1fbfd24f723bf86bb9fc4e009eff3e1ea3f163becdce2a13e42da6304d82
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10790`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 794a28414d85bce9e80239517bd73b383da12859146768bdf0632ad65cf6efda
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+к другу
+shippedText=he refused to go contradicts the motion verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54922d2fb31ff561c33dd14f3b27212adb12ca80e7852be9a5826b23dacfe39d
+contentHash=9b1a676fae33fb978ee63fe743811dc303cb0286b824cd28ff302a9c49280f8a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10791`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 75211966016528786a6a96b86bbb335705de48fdd7f1773dcc7d04a9cd469a41
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+к другу
+shippedText=Он пошёл к другу
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54922d2fb31ff561c33dd14f3b27212adb12ca80e7852be9a5826b23dacfe39d
+contentHash=9e6014b6bfbfa74df6c58ae14e85be78bff3be22d2c9a914bf0a2e0964cf6d64
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10792`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac2b3539eaf604e7d9519628ef8878bab1782e5a329aee283420c63207418d08
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+к другу
+shippedText=пошёл
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54922d2fb31ff561c33dd14f3b27212adb12ca80e7852be9a5826b23dacfe39d
+contentHash=d8ac752ac5ff00cbd96a17a96fc3378d436e20015151e373a530c2cd0dd1f40a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10793`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 95be461f9d929f8229daf2aac3795650d81a327c4342eaed5e6984909a881020
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-3
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Он пошёл к другу.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+Он пошёл к другу
+пошёл
+к другу
+shippedText=к другу
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54922d2fb31ff561c33dd14f3b27212adb12ca80e7852be9a5826b23dacfe39d
+contentHash=731b7b13de2bc797896a15981adf0907fcdea50926352383e8e87463fd7ca961
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10794`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2cd4702e54178927bcd541dbec87c319607ef4572f95f18e158e972d877f000d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Мальчик отошёл от незнакомца
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91e5e65c0c2fe1b9db2bc80d407889614c38c03160f3e5eca42b28f8e7559f66
+contentHash=f643975be1f829d00f32b576b65f8c2bd8b7a29cad1079df8e62530c9d686386
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10795`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 434c73bb096a782ce5db4cc093ac1bf146d403f13dac118a8488bd27eb08b51d
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=The boy stepped back from the stranger.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91e5e65c0c2fe1b9db2bc80d407889614c38c03160f3e5eca42b28f8e7559f66
+contentHash=0462e6892e86db8c18d2dec374c0478fe27d75286f9a11e941cb4d8a8f2faf4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10796`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6687719b2e462bb7848c9954385545548d1cfb1ab122bac2f835ff1991e472d0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Which translation covers only the shown sentence?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91e5e65c0c2fe1b9db2bc80d407889614c38c03160f3e5eca42b28f8e7559f66
+contentHash=8068d82b01a25f9252416e5c6dd798f079bffea722590da484a446c273d9ba3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10797`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 86a1d45fcbf1bd35da2258e30cae96ac9642e13b75aa44006895d16d7f23923c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91e5e65c0c2fe1b9db2bc80d407889614c38c03160f3e5eca42b28f8e7559f66
+contentHash=77101f2fd42e44508d3499f3c3abe89d1d22464838164faadc9b4f6d2b317219
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10798`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e739bfd26f8e4d060e89fae9d0cfe8c9d4e56678972b83d7f57d64b82b883d5b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=They will leave Vladivostok in a month.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91e5e65c0c2fe1b9db2bc80d407889614c38c03160f3e5eca42b28f8e7559f66
+contentHash=902393f173486c8c2bf8490eda077f8877517965404f86ca76e22b0fbac7b224
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10799`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef2d3038d1968e924cf66548f80ae28839af0603357446ff950f2fecec0fce66
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=The ball flew onto the roof of the house.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91e5e65c0c2fe1b9db2bc80d407889614c38c03160f3e5eca42b28f8e7559f66
+contentHash=400e1a15c98b8cc064cd05ed030ebd4bfe47a8ecd2605b9bb1543c38e2f0a9a3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10800`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f94fe740eb118b8d92a72ca7e6c5111ce36645e892535c8177ff08876694ccaa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=They will leave Vladivostok in a month. is a different motion sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91e5e65c0c2fe1b9db2bc80d407889614c38c03160f3e5eca42b28f8e7559f66
+contentHash=d3e8ab38cce22e5af8e9d59ead0e8d2597235902dc617e04cf5659c033869b27
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10801`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0744bb28c93970e0bbe8d016488454006a53e8167bfe28687b5e9c44ec45818
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u20-i-motion-4
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month.
+The ball flew onto the roof of the house.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=The ball flew onto the roof of the house. is a different motion sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91e5e65c0c2fe1b9db2bc80d407889614c38c03160f3e5eca42b28f8e7559f66
+contentHash=e72af2a8186c87151470612bca140ce83839d7ffaec2be96c244d935340821fd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10940`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2fc642675310fb6938c19ac6d50a84864367fc4f1243b50c2024bec81057895
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=c45065083a99e66611a9ab1b9dca550d5a96d33e93373eaf5085f1cc43849fe2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10941`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21a785b5e44e13910c8a6650bf47b384906eca4e2a1951bbb8d2d99f78d9d6ac
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=d9ce55d3f626fe496bdcef1a6017d2ac7f4f5295269a72bbe2b3beb845960320
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10942`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 586b0399cadd4ee8c4c797104eaca06b207779024a5a123dbc10fbc88158baad
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=unidirectional
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=9e3ab54e059856f44e350baee31f54849a20c49541e78d33f7fb1bfb7aada214
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10943`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c5f2ee57a8e045fc600913c06d77e813811fc9f379aeb3c773eeca5006cc4b3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=нести́ — to carry. вести́ — to lead. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=9230af1bd1d6edf82ed3e74fff50b0e6127a763fe3686a8e9950ed4ba390bcba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10944`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 794089f2069ff74b747717a21f993a3a6b587fde4e4fe3c86149c23d2e70324a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=abf08eaa8b4088687b0bc5244aa4515d0b61fd462c14cc448451c19c016ed01c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10945`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e54afa9207efb22e2dd2bcfa48af23ac0bd7a2d628c1733ed020bc1fa9d2058d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=c3a7308256b16677961ba11e9ad40170cad1c26be4e79c146d6e71604592be08
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10946`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d909c9561215938ad5c988e0d8b71732255c5d488be638afb3a644974102228a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=идти́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=c9c68dfd15528de3fc8172fd5caa15324e33df6163213914502b73fc7f070717
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10947`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 522d78dd10ef037ad24ccc095fe060464d039cd7ce766ced88fefe32b9ef1c39
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=to go, walk
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=240c6d9158225eb4ccac97fde1bf2b52091dbe5344e9cef01f6eae0dc214dd57
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10948`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f8adc99f0480037e78ec05455d2160cb50faeb6cb07bf5b0feb012365ef593f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=е́хать
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=be003ed1a1ab72ba7d2f4f019e33d5c45ef9906da9ce436365a03dcf41d50a8e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10949`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 24f8930020ff12f259ae16afa4f6bce945401574ab90c607780e44367d29dfdc
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=to go by vehicle, ride
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=0ef4bb6e9dad68d8112a607e1e48581c9dbc3115945aedd54ffe7407126fd16c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10950`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2278c948f5a5d79d37a1aeb3ffe24eee27278b304a03c16ff6fa10dd63d286e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=нести́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=2879db3cbc4988929ecae126b4bbd96f54e3ca47228523ecafbb8afbd8693591
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10951`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8278576a4d52cf6c53cd6332aad050dd2c10f3f05b65c0d8e73d1740f1a3498
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=to carry
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=51460febaa4217c21e66677311f3dcfbb413b62c11b7272a1ec11665cb58482e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10952`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f1f04668f7d5d0252c74221686e2572859aea04f665b7e54bc6bed8b75807de
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=вести́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=02dd6e774ba4411b36b244a9a7d6929cd650ea2927501baa8f49cfd01aa28512
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10953`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c071b4ea764e6e90d7350ebdadf10f0d9393468acd425fac904ca52aae010892
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=to lead
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=2de2adc60818fe4b09279414ed0596cce1c73d48b5113ecc028bb6a66ebea545
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10954`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b68adafecf77e52ebd622a1f780be067f117ef654fb6b0409e6664cde30d1218
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=Он пошёл к другу.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=3d8c9926bcea41b886766d3d461ca670ef2c69c0eed6623748d6db87ec664634
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10955`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 94f3f1e90adedc4e1fd9fb32b8916db8064200126d83286d1a3a9b863cec0530
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=beginning of a movement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=de728d6753d5481c6024a64e753e71da820c64ec130efeeaba4fa75cb9a6ef72
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10956`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8342b5f9eac4f79752fde52eb8c9141c2646c605215adc0c79e3324d1946e625
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=Он шёл к другу.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=5ad0c9196083c24d5dc74e4db1f4354b3cd6d3fc6b18925d72bfbfa497a97446
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10957`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a6b74de306db2b8f4c2c3373a48d1e50945a3879adfb1b21086d4f05f7b1c94
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=He went to a friend's place
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=71a384219f87213f4e2ef7fb8d9b4a7fad953e821ed9982eb25620715992c93c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10958`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5cb99e54057f51b0bd3b3bb2093a27c8d6ae9b8b2d983439d1b7989456ce121a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=Они у́летят из Владивостока через месяц.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=e0c776290550379273b2fbe7535b2a95c31c95a47ea7b54d0ccbff3ae966a50c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10959`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e7194d6d8756fc9d5a3c9f03b825ca21fbb1b7b16c1c297ae496fa0000c2af4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=They will leave Vladivostok in a month.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=902393f173486c8c2bf8490eda077f8877517965404f86ca76e22b0fbac7b224
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10960`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 670be036cdf1ad29d71e4d6abe5e808db092afe63060247308024126fb197378
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=Мяч залетел на крышу дома.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=02bfafb40697403fc390959d7154af6477b5e95576efa7ed185e2e2b7e063116
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10961`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e36c6cd69b02506dce7fe1160ac4bf65c433494273e080743e412b74fedc6212
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=The ball flew onto the roof of the house.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=400e1a15c98b8cc064cd05ed030ebd4bfe47a8ecd2605b9bb1543c38e2f0a9a3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10962`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70be41e99055c79f80f0c68e29de3612cc93ceef0e8e2cc28731fd6189d31fc1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=he set off toward a friend
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=2523daeda7b21354c504ea74998053c3b9c2fd32c44465ec0ac4b687aba4bf20
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10963`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d6a77253add821bd5dab540b75a313e4dd46f402f4f2754e4e77bf391ea1842
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=Which reading matches the perfective setting-out verb?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=be851f8c389c05e1f0c520bbde7b1d0200d02332e978cca7c35a75ca2b45a825
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10964`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8de5c0ad640b06bd39bae11e80c3969d11b770a443c249d5937312d48191bf3d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=9e4610003a63aebd3eed6b48371c7f0aff789ed5fb3a1fce30b7dae8c6a4a594
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10965`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21e1b1464b2accc4e09554566906a7d265f441095505298ab08e96c4fa80e797
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=he was already on the way for a long time
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=5cd963b28ff24aff8dfde426fce5ea20888c7bbc95d6f8ff21fb857f31254d83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10966`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11e354fa5af91a1685866af5258cbc0d9666c26b7eead930b11a31cba21caf21
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=he refused to go
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=8912d8f39dc28a27ebb14fca6db5e8c99ad7ba80b5c72f4acc45a0dc9a9784df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10967`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2981ee20348374f88e344f96eff57fd8522ba67609abd05f53c70674c49e3eba
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=he was already on the way for a long time is an imperfective duration reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=a67d1fbfd24f723bf86bb9fc4e009eff3e1ea3f163becdce2a13e42da6304d82
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10968`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c3afe21b74b6ffa10728b67b53051a21d75e9bc9ab7d5656166522579165ae15
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.
+shippedText=he refused to go contradicts the motion verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+contentHash=9b1a676fae33fb978ee63fe743811dc303cb0286b824cd28ff302a9c49280f8a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10969`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 185841a394600ca256c3d016be9bd29819e2a3cff866e2ae7b7b5ab12b2e2354
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=c45065083a99e66611a9ab1b9dca550d5a96d33e93373eaf5085f1cc43849fe2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10970`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8751b7e766a90d5f57e246b624ba303a3833434073eff2be748f995063ba16e6
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=d9ce55d3f626fe496bdcef1a6017d2ac7f4f5295269a72bbe2b3beb845960320
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10971`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0717c35de99b18adcef7c66060831e29baf017a656b166076824f657420c134
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=unidirectional
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=9e3ab54e059856f44e350baee31f54849a20c49541e78d33f7fb1bfb7aada214
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10972`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a8e752ce1beda1c2300bf57dfa261833e546fe0d5105640e044b46e0ce752c71
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=нести́ — to carry. вести́ — to lead. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=9230af1bd1d6edf82ed3e74fff50b0e6127a763fe3686a8e9950ed4ba390bcba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10973`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b00f006df50a047a096e8fbd955bccefbd64ac482492bfde2bd6a061a6caf7d4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=abf08eaa8b4088687b0bc5244aa4515d0b61fd462c14cc448451c19c016ed01c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10974`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f705b3b41366a3bb3f2fc02a17bee779cc797583f659366941b078e141f5a45c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=c3a7308256b16677961ba11e9ad40170cad1c26be4e79c146d6e71604592be08
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10975`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8958ae710c292d9c3a6962d3a65d09b4561877facbebbf015e64665a474302c3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=идти́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=c9c68dfd15528de3fc8172fd5caa15324e33df6163213914502b73fc7f070717
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10976`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26daa8a2cb920558548475141e20085fbda0bd0ef5e9cf2b25683de8798097b5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=to go, walk
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=240c6d9158225eb4ccac97fde1bf2b52091dbe5344e9cef01f6eae0dc214dd57
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10977`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ae8f83244735de300f081a31b2e31b53fb1c3024e5a717d5c68533f15397d15
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=е́хать
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=be003ed1a1ab72ba7d2f4f019e33d5c45ef9906da9ce436365a03dcf41d50a8e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10978`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14636be0d0c093b7172c5bdd4a19cf2e00c86ff59f8dc9c9ff434cc914c7457d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=to go by vehicle, ride
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=0ef4bb6e9dad68d8112a607e1e48581c9dbc3115945aedd54ffe7407126fd16c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10979`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc68fedeba49859a75a7d6947e5b4809a280078a570676c058cd4b1690f23b1e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=нести́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=2879db3cbc4988929ecae126b4bbd96f54e3ca47228523ecafbb8afbd8693591
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10980`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ed27e71068875922fbf4c089da2260cfde3dc228fb39a98817c57c022fc6ea0
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=to carry
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=51460febaa4217c21e66677311f3dcfbb413b62c11b7272a1ec11665cb58482e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10981`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbc6832ff8c71b69d9a27f0d3ca0eee8f417566d0acfc2dabf469a3fb90b64e1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=вести́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=02dd6e774ba4411b36b244a9a7d6929cd650ea2927501baa8f49cfd01aa28512
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10982`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f3df8aa3d47c06687a1a31ce5372b8ef8c1ab9785324c9e204c3ee99039118d2
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=to lead
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=2de2adc60818fe4b09279414ed0596cce1c73d48b5113ecc028bb6a66ebea545
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10983`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7687eac7017b192f629498279170c4e3741ad56042dd02bb2ff0c28b7799f71d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Он пошёл к другу.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=3d8c9926bcea41b886766d3d461ca670ef2c69c0eed6623748d6db87ec664634
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10984`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af16fabd92d6828e4d37d9a9676130296a1940d9e9de6b96f7b6904573f3cd6e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=beginning of a movement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=de728d6753d5481c6024a64e753e71da820c64ec130efeeaba4fa75cb9a6ef72
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10985`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e739bfbada5d99cc5c0414b73549857c8c431bdcc55ebc6ec55adafb4e7da2d1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Он шёл к другу.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=5ad0c9196083c24d5dc74e4db1f4354b3cd6d3fc6b18925d72bfbfa497a97446
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10986`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1c72ff43be05a1ba49646b6fd4796ac74229827a1920a0dbcfaf99494884d4a1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=He went to a friend's place
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=71a384219f87213f4e2ef7fb8d9b4a7fad953e821ed9982eb25620715992c93c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10987`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 342e5498bc2638e37f6e91e17c2f62be462de8fe1a445ba6dbbaace54f14a35a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Они у́летят из Владивостока через месяц.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=e0c776290550379273b2fbe7535b2a95c31c95a47ea7b54d0ccbff3ae966a50c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10988`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61a7bc93f455a5143b9b546319577ff3c1feb61dae486b3321c7aac6dbaae53a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=They will leave Vladivostok in a month.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=902393f173486c8c2bf8490eda077f8877517965404f86ca76e22b0fbac7b224
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10989`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bbd1236c60b707041120efc3217f863ee8f4440ad172b60e02856f992dadc4ee
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Мяч залетел на крышу дома.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=02bfafb40697403fc390959d7154af6477b5e95576efa7ed185e2e2b7e063116
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10990`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d6577d5ef93ef673154f105626c158f5e2ceace5af18c7290fb64db6e0066e2f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=The ball flew onto the roof of the house.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=400e1a15c98b8cc064cd05ed030ebd4bfe47a8ecd2605b9bb1543c38e2f0a9a3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10991`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b5b0dfae251c3bfa2d4601af3cdbfb3e760a7afa13e7dd4a75cc9c32e4417f4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Мальчик отошёл от незнакомца
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=f643975be1f829d00f32b576b65f8c2bd8b7a29cad1079df8e62530c9d686386
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10992`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 34beb9f6bb8da8d76b67996fefaf157aa3a6ef1339101de49653cc6f2650b623
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=The boy stepped back from the stranger.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=0462e6892e86db8c18d2dec374c0478fe27d75286f9a11e941cb4d8a8f2faf4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10993`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c65610381d422587d60a61d4e78895588dad3494fe3c282f45537c6d5815917
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Which translation covers only the shown sentence?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=8068d82b01a25f9252416e5c6dd798f079bffea722590da484a446c273d9ba3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10994`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 404f5483471d14fae93c559010a70a7b5c07470ca422a4ff9338800af32a4523
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=77101f2fd42e44508d3499f3c3abe89d1d22464838164faadc9b4f6d2b317219
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10995`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bf6b28c0f50e87be137353dfa376f3f482915ef4bd03dcbf019c330391fe9990
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=They will leave Vladivostok in a month. is a different motion sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=d3e8ab38cce22e5af8e9d59ead0e8d2597235902dc617e04cf5659c033869b27
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-10996`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6fcb74862fca1fff6a3b31457e16fac6d4728e741d4597dcef8368c7c2a54c5c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.
+shippedText=The ball flew onto the roof of the house. is a different motion sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+contentHash=e72af2a8186c87151470612bca140ce83839d7ffaec2be96c244d935340821fd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-11113`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1ff144f20a31d0cfdc52401146fd7e9b3d9a32c7e4317bd19f2ce2c37270a83
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u20-i-motion-3:prompt
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Choose the English description. Which reading matches the perfective setting-out verb?
+shippedText=Choose the English description. Which reading matches the perfective setting-out verb?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1fa30f6a96546def00fe632b27ef3a25f726a871d101236f475f174a30477a7a
+contentHash=e8e0b74ed7df270371dccc31dd05b018b971db6abda7488d1ecd2f3b0c1a9b70
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-20-11114`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d589452f0e4fc4a1839ad43cf1b4da21321df00549db5d877ca6deacb3c381bc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u20-i-motion-4:prompt
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Choose the English description. Which translation covers only the shown sentence?
+shippedText=Choose the English description. Which translation covers only the shown sentence?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fc491d0d14b022def55cafcd7aeff1986474b2c8ed37f97e70297dac7849cd6
+contentHash=968ab73f7b25f5e731d0097dcb049f4c07913ca7ec064dee7332656671c0252c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-u20-motion-0-en`
 
@@ -2216,6 +7379,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-20-11246`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 096cbcafaed713badbc15aaa6afb3f422f0daf68480a762cd50809209f1415e4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 20 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-20-11247`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 01172cd8c69cf6efda2ee020e3cf6874ca7aab91628d4d30a0ade1a5ff7b309c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-20-11248`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec8f05fa211cf532870b68d2262fcc8b87ecc6da7712b85404486db75a9c215f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 20 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-20-11249`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbd8b8968558a17140a429b6118a31519c1ac2558349b9201aa5eac08e1e5dbb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-20-11250`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cc5a72c70a0f0a8996c40844c198620f85c167ec3f31282b1631f5fe608ff539
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 20 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-20-11251`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 92349816277870fdaaa584ceb596834186874caa145b9ea5bc894d4f2eb5740a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-20-11252`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7517b8399b162c28ea55a8d800f88ce7ed3386a7adee569756f6e0214aac21f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 20 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-20-89`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3884deadb765dfc1e5ad563c92f85f7a9d580f0f9df43edd6976da1f344603a1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 20: printed pages 240-256. PDF indexes 252-268 are file locators, not printed pages. Observed section locators: §20.1 p240 (PDF 252); §20.2 p240 (PDF 252); §20.3 p244 (PDF 256); §20.4 p246 (PDF 258); §20.5 p248 (PDF 260); §20.6 p248 (PDF 260); §20.7 p249 (PDF 261); §20.8 p250 (PDF 262); §20.9 p251 (PDF 263); §20.10 p252 (PDF 264); §20.11 p253 (PDF 265). Observed exercise locators: 20/1 p243/PDF255; 20/2 p244/PDF256; 20/3 p246/PDF258; 20/4 p249/PDF261; 20/5 p251/PDF263; 20/6 p254/PDF266; 20/7 p254/PDF266; 20/8 p255/PDF267. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-20-90`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd078f69e851de840aff664c21fd2fbd23e96c853585a40b22b986f4f43e3209
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 20 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-20-91`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cacb63bab5219cf767e0c1c12b3e0f4aed89ed3934da27699005ea376a035f16
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u20-161`
 
 - Objectives: none
@@ -2530,6 +7823,21 @@ CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-wikibooks-russian-cc-by-sa`
 
 - Objectives: none
@@ -2572,6 +7880,20 @@ Original
 
 src-wikipedia-russian-grammar-1369617627
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-wikibooks-russian-cc-by-sa`
@@ -2647,6 +7969,7 @@ permitsAppUse=true
 - `u20-st-teach-motion-5` REFERENCE `ref-u1620-attribution`
 - `u20-st-rem-motion` EXAMPLE `ex-u20-motion-0`
 - `u20-st-rem-motion` EXAMPLE `ex-u20-motion-1`
+- `u20-st-rem-motion` REFERENCE `ref-ca-motion`
 - `u20-st-check-motion` REMEDIATION `u20-st-rem-motion`
 - `u20-st-check-motion` ITEM `u20-i-motion-1`
 - `u20-st-check-motion` ITEM `u20-i-motion-2`
@@ -2654,6 +7977,105 @@ permitsAppUse=true
 - `u20-st-check-motion` ITEM `u20-i-motion-4`
 - `u20-s-book` OBJECTIVE `obj-u20-book`
 - `u20-st-book-work` REFERENCE `ref-u1620-attribution`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-250`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-251`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-252`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-253`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-254`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-255`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-256`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-257`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-258`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-545`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-546`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-547`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-548`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-549`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-550`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-551`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-552`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-553`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-554`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-555`
+- `obj-u20-motion` PROVENANCE `prov-ca-20-631`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10783`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10784`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10785`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10786`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10787`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10788`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10789`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10790`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10791`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10792`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10793`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10794`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10795`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10796`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10797`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10798`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10799`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10800`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10801`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10940`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10941`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10942`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10943`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10944`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10945`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10946`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10947`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10948`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10949`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10950`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10951`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10952`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10953`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10954`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10955`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10956`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10957`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10958`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10959`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10960`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10961`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10962`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10963`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10964`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10965`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10966`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10967`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10968`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10969`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10970`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10971`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10972`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10973`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10974`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10975`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10976`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10977`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10978`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10979`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10980`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10981`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10982`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10983`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10984`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10985`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10986`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10987`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10988`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10989`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10990`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10991`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10992`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10993`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10994`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10995`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10996`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-11113`
+- `obj-u20-motion` PROVENANCE `prov-ca-repair-20-11114`
 - `obj-u20-motion` PROVENANCE `prov-ex-u20-motion-0-en`
 - `obj-u20-motion` PROVENANCE `prov-ex-u20-motion-0-ru`
 - `obj-u20-motion` PROVENANCE `prov-ex-u20-motion-1-en`

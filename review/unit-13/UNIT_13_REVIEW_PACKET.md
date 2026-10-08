@@ -11,12 +11,12 @@ Unit 13 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: b22fa0cca895a677386a77d03a63301f7454aa07
-- Unit content-review SHA-256: e8a04394dc8c90059f01a0b7fdf46a57951a98a85ac8050a29781ab1a4a027c5
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 9500bee72be61030d6822e5a7ccdb1c71ab642dd165945e05ce853faaf322b9f
 - Mapping-package SHA-256: e8ca3b0ba9b6a48acc54ea18e10a6e6fb1291698252fcbc35b02dbf2a820deb4
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 6872877736a62fc0f79e73ecf3b02613e77dc9451acb745bde82ecc29c7cfd65
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 0c5224647df8929c6e2151e55363330d5a1f1c37f2a1462efae8f515d73d9eec
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -304,11 +304,11 @@ remediationStepId=u13-st-rem-past-aspect
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d967873f6a684d686388fb1386030ed7429d769179089b2fa4a4d7cd44648e23
+- Content hash: 8df508b946acb41f1779dac0079384b7dc85ee5659f41bd1ec5ffcc7f9b8a6eb
 
 kind=TEACH
 title=Admitted instruction
-body=So the English ''past progressive'' sentence  "I was reading" would correspond to the Russian imperfective ('''я читал'''), since it refers to an action that wasn't completed. Likewise, the English ''simple past'' sentence "I read" corresponds to the Russian perfective ('''я прочитал''')
+body=Do not treat English past progressive and simple past as a fixed Russian aspect code. The imperfective does not always mean the action was unfinished.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -859,12 +859,12 @@ remediationStepId=u13-st-rem-reported
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 441557df603f8e3263dc0b79d938a90b6fbfec9f4a0b75564041b901864022e6
+- Content hash: 9b2e0fbdddcc6e7e5ddca9f5010ab9a5988565468e70a547fac20875ad17b8a3
 
 title=Self-attest Lesson 13
 estimatedMinutes=10
 objectives=obj-u13-book
-steps=u13-st-book-work,u13-st-book
+steps=u13-st-book-work,u13-st-book,u13-st-anki-direction,u13-st-binder-direction,u13-st-tutor-direction,u13-st-cumulative-direction
 
 ### STEP `u13-st-book-work`
 
@@ -874,7 +874,7 @@ steps=u13-st-book-work,u13-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6dbdd921306eccab365907aa780aa79fe0885fb294083540a9885f7ce9c4b8f7
+- Content hash: 6a93fcf0941bc466a5d01dfe75f62335f6840de2c1dd64aede5950caf6468ba5
 
 kind=BOOK
 title=Work Lesson 13 in your copy
@@ -884,7 +884,7 @@ references=ref-u1115-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 13 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 13: printed pages 149-161. PDF indexes 161-173 are file locators, not printed pages. Observed section locators: §13.1 p149 (PDF 161); §13.2 p150 (PDF 162); §13.3 p152 (PDF 164); §13.4 p152 (PDF 164); §13.5 p153 (PDF 165); §13.6 p154 (PDF 166); §13.7 p155 (PDF 167); §13.8 p156 (PDF 168); §13.9 p158 (PDF 170). Observed exercise locators: 13/1 p153/PDF165; 13/2 p155/PDF167; 13/3 p160/PDF172; 13/4 p160/PDF172; 13/5 p160/PDF172. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -896,7 +896,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2bcf1039711c604c414b2e0619f695ac8fb003b234cb79ce499387b63f0b851f
+- Content hash: 842370726b765f13ea9cf04277cd24641101ad6c5d528d7b7281149e01603de6
 
 kind=BOOK
 title=Record Lesson 13 book work
@@ -906,8 +906,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 13 work in your copy.
+bookDirection=Owned-book assignment for Lesson 13: printed pages 149-161. PDF indexes 161-173 are file locators, not printed pages. Observed section locators: §13.1 p149 (PDF 161); §13.2 p150 (PDF 162); §13.3 p152 (PDF 164); §13.4 p152 (PDF 164); §13.5 p153 (PDF 165); §13.6 p154 (PDF 166); §13.7 p155 (PDF 167); §13.8 p156 (PDF 168); §13.9 p158 (PDF 170). Observed exercise locators: 13/1 p153/PDF165; 13/2 p155/PDF167; 13/3 p160/PDF172; 13/4 p160/PDF172; 13/5 p160/PDF172. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u13-st-anki-direction`
+
+- Objectives: obj-u13-book
+- Sessions: u13-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6dc5490f726007cc70278acec4d567fab14ce373eee8a35e5dd0738c3c835fa6
+
+kind=ANKI
+title=Unit 13 AnkiDroid direction
+body=Unit 13 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u13-st-binder-direction`
+
+- Objectives: obj-u13-book
+- Sessions: u13-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c308b3271127e995c68e22a28110f16a5a870253131abc7b2fe11f5c2b5b21c7
+
+kind=BINDER
+title=Unit 13 binder prompt
+body=Unit 13 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u13-st-tutor-direction`
+
+- Objectives: obj-u13-book
+- Sessions: u13-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2bd1b5488eb48c43a61dbc9dd9b17e8cfd7c676d0bd4ce908010ea035633f8cb
+
+kind=TUTOR
+title=Unit 13 optional tutor
+body=Unit 13 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u13-st-cumulative-direction`
+
+- Objectives: obj-u13-book
+- Sessions: u13-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 95271ab6338fe2f058808bcbba9ec7b93f7c075cb4260719aa22c57e12ec9849
+
+kind=ORIENT
+title=Unit 13 cumulative review
+body=Unit 13 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 13 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u13-past-aspect-0`
@@ -1619,6 +1707,36 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=11
 searchTerms=units 11-15 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-13-370`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-orient, u13-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ade66aadff4edb613153ee62bfb0267cd472f5025fd3d54bead684f634ca074
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-past-aspect:u13-st-teach-past-aspect-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Do not treat English past progressive and simple past as a fixed Russian aspect code. The imperfective does not always mean the action was unfinished.
+shippedText=Do not treat English past progressive and simple past as a fixed Russian aspect code. The imperfective does not always mean the action was unfinished.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=862f4d1a9d8133524e373822de5a02f8c306aa8fdbf58cc716270baf759394de
+contentHash=836034964dcbd33368668452a1e0eccc8070a51cf1408fb029370b16964f1c04
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u13-past-aspect-2`
 
@@ -4023,6 +4141,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-13-11197`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b26a4dbb3fc2afeb24e90400da70cbe811a688fd2a3bb6c7ee8c24a35118bc6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 13 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-13-11198`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0ea6036a44a6db4cfd2600cbab12805bfe23ad8ed650f8ad99ac676ca3a447a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-13-11199`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5c6cae1646296e04d60e4cd02edebd2e91ee0c3d4208fa459abf776c46ea049
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 13 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-13-11200`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7162c31804c39e2cb7475acf14daa1ee4884c9da27e44a13bc4333ab138b2951
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-13-11201`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6883c6d7076a0510d019aadae627f41da808c919db93bbc194623e0b42ee59e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 13 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-13-11202`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7237c4f01a7cc194af45d9a86a1c603f2af01655145fd1ebc7e0a59b19b0a49e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-13-11203`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a693f008b4b06109ba41e41dcd024f58f04d4bd7e48559000d880a08971cd30e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 13 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-13-51`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd60786d2123524606fd6e08de164555829b2e8f54ccb8651328360da00006fe
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 13: printed pages 149-161. PDF indexes 161-173 are file locators, not printed pages. Observed section locators: §13.1 p149 (PDF 161); §13.2 p150 (PDF 162); §13.3 p152 (PDF 164); §13.4 p152 (PDF 164); §13.5 p153 (PDF 165); §13.6 p154 (PDF 166); §13.7 p155 (PDF 167); §13.8 p156 (PDF 168); §13.9 p158 (PDF 170). Observed exercise locators: 13/1 p153/PDF165; 13/2 p155/PDF167; 13/3 p160/PDF172; 13/4 p160/PDF172; 13/5 p160/PDF172. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-13-52`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef2945e92ab7301cf90d620db200422d781dfa4d74c04eada35b0da9fc1328a8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 13 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-13-53`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c538ce45cf88a18337bbe6c2c9fc81517ea179c9c56a8b600f0c751c1a082dba
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u13-080`
 
 - Objectives: none
@@ -4651,6 +4899,21 @@ CC BY-SA 4.0
 Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 Selected rows, stress-mark formatting, and beginner sense selection. No generated forms.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -4692,6 +4955,20 @@ permitsAppUse=true
 
 src-openrussian-50e210c4
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -4830,6 +5107,7 @@ permitsAppUse=true
 - `u13-st-check-reported` ITEM `u13-i-reported-2`
 - `u13-s-book` OBJECTIVE `obj-u13-book`
 - `u13-st-book-work` REFERENCE `ref-u1115-attribution`
+- `obj-u13-past-aspect` PROVENANCE `prov-ca-13-370`
 - `obj-u13-past-aspect` PROVENANCE `prov-ex-or-u13-past-aspect-2`
 - `obj-u13-past-aspect` PROVENANCE `prov-ex-or-u13-past-aspect-2-gloss`
 - `obj-u13-past-aspect` PROVENANCE `prov-ex-or-u13-past-aspect-3`

@@ -11,12 +11,12 @@ Unit 18 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
-- Unit content-review SHA-256: 6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 70366528a23c5d91603f2cb4706dfc449a39c951dd2097ad4ec96aeb9af128fc
 - Mapping-package SHA-256: f195680e986e1c1069418022707886a4b11b4fe9cf8410e9e8b78e71525008bb
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 3e8c338cd955bd5c2c7883bf40364cb112436e44aface81e1141800ac0f2576c
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 3c2d31de8c54108fa8f2adbb9a085044afdd23b43081b4e7859d3adc2e345334
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -222,11 +222,11 @@ steps=u18-st-teach-comparison-1,u18-st-guided-comparison-1,u18-st-teach-comparis
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7ee796f458351a053fe9813b2760a6ed6bf07ecce5891ca41199cab7cc036303
+- Content hash: c9e0c5c3247c6997cfb5dae05f0cf4ec5102e4fb627286fbb86df9c9a9e5ffe6
 
 kind=TEACH
 title=Admitted lines
-body=бо́льший — bigger. лу́чший — better. 
+body=бо́льший — bigger. лу́чший — better. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -501,12 +501,12 @@ remediationStepId=u18-st-rem-relative
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b1f8fccb82434d069b4fb6a4a5915799f7f83d8259e51097bcc9f8082d6c9db2
+- Content hash: 33f6035c499218c3fe78a7136dad8f82d97850ecbb78933f74eb3ecd8d1b8967
 
 title=Self-attest Lesson 18
 estimatedMinutes=10
 objectives=obj-u18-book
-steps=u18-st-book-work,u18-st-book
+steps=u18-st-book-work,u18-st-book,u18-st-anki-direction,u18-st-binder-direction,u18-st-tutor-direction,u18-st-cumulative-direction
 
 ### STEP `u18-st-book-work`
 
@@ -516,7 +516,7 @@ steps=u18-st-book-work,u18-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 170b1028ef00a4dd92829ee3f4e2ffc3f82540677738eae7c2051988e1d03564
+- Content hash: 5bbda4a6c31d26a8cdaa02f4491194d4e0a44c6ea71ca4f6bed45e8ca51f6fc9
 
 kind=BOOK
 title=Work Lesson 18 in your copy
@@ -526,7 +526,7 @@ references=ref-u1620-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 18 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 18: printed pages 215-229. PDF indexes 227-241 are file locators, not printed pages. Observed section locators: §18.1 p215 (PDF 227); §18.2 p215 (PDF 227); §18.3 p217 (PDF 229); §18.4 p219 (PDF 231); §18.5 p220 (PDF 232); §18.6 p220 (PDF 232); §18.7 p221 (PDF 233); §18.8 p221 (PDF 233); §18.9 p222 (PDF 234); §18.10 p224 (PDF 236); §18.11 p224 (PDF 236); §18.12 p225 (PDF 237). Observed exercise locators: 18/1 p218/PDF230; 18/2 p219/PDF231; 18/3 p221/PDF233; 18/4 p223/PDF235; 18/5 p226/PDF238. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -538,7 +538,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 380ac65915d50078e9bab6333e454ebc98b5e0f01423581b5d4f421eed565a19
+- Content hash: a1dea76aeb81510060717aa1659025f5c32576a2b55413410410005c630c84c7
 
 kind=BOOK
 title=Record Lesson 18 book work
@@ -548,8 +548,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 18 work in your copy.
+bookDirection=Owned-book assignment for Lesson 18: printed pages 215-229. PDF indexes 227-241 are file locators, not printed pages. Observed section locators: §18.1 p215 (PDF 227); §18.2 p215 (PDF 227); §18.3 p217 (PDF 229); §18.4 p219 (PDF 231); §18.5 p220 (PDF 232); §18.6 p220 (PDF 232); §18.7 p221 (PDF 233); §18.8 p221 (PDF 233); §18.9 p222 (PDF 234); §18.10 p224 (PDF 236); §18.11 p224 (PDF 236); §18.12 p225 (PDF 237). Observed exercise locators: 18/1 p218/PDF230; 18/2 p219/PDF231; 18/3 p221/PDF233; 18/4 p223/PDF235; 18/5 p226/PDF238. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u18-st-anki-direction`
+
+- Objectives: obj-u18-book
+- Sessions: u18-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b00955b44c10bc2857c094e5693d21919e084539d6a620dd252db952c225559c
+
+kind=ANKI
+title=Unit 18 AnkiDroid direction
+body=Unit 18 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u18-st-binder-direction`
+
+- Objectives: obj-u18-book
+- Sessions: u18-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bfd27125ef88770e78daf9d13e4770db152e1117aeb5ca8067eade2532ee557
+
+kind=BINDER
+title=Unit 18 binder prompt
+body=Unit 18 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u18-st-tutor-direction`
+
+- Objectives: obj-u18-book
+- Sessions: u18-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d9e04ebe19e3e81ab412b5e2bf0e7ba30eb76f55072b8dc4392e78118d287f41
+
+kind=TUTOR
+title=Unit 18 optional tutor
+body=Unit 18 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u18-st-cumulative-direction`
+
+- Objectives: obj-u18-book
+- Sessions: u18-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fba1247087695db7225eae1c85de194575ae0ec644e365d940c5ffa7bdebb7cd
+
+kind=ORIENT
+title=Unit 18 cumulative review
+body=Unit 18 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 18 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u18-comparison-0`
@@ -915,6 +1003,36 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=16
 searchTerms=units 16-20 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-18-82`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb6b05ce07cab9e809e406e47cd8c0dd43c695bb4be6c85b04af0679f6faad50
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u18-comparison:u18-st-teach-comparison-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-u18-comparison-0-en`
 
@@ -2363,6 +2481,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-18-11232`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c36e305b90414aa7b3340101e6deb71f7244db4cb57014184fe9e5720dc5117
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 18 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-18-11233`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a8bff95f1923ab400f361b317f3795ad178613b7bb42c02e53df5127afb26167
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-18-11234`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 09e5d08783a973fccd13831d2e99deacae1dc13e845d4550335e4ba24bcb3981
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 18 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-18-11235`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6e03b6b86459e9a17031e6fcb91ece3775ef1ba983f186d43757e6ff26e3b41d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-18-11236`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b99f439b663af831d2680e5ba0570781c8e7067892a769ded7c66310c4ba6ca9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 18 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-18-11237`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6db9e44420e423fd643424333e911baa98f25676344f7fede5a0580f337ddaa7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-18-11238`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eec170c8a5ac9024621086ba1305726a695925584abbbec82f85e6d0322b4dbe
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 18 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-18-79`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b705d8220805fa068ee155a591a7ea73a10b6d358d1fcf3ebd2c23931cb1803
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 18: printed pages 215-229. PDF indexes 227-241 are file locators, not printed pages. Observed section locators: §18.1 p215 (PDF 227); §18.2 p215 (PDF 227); §18.3 p217 (PDF 229); §18.4 p219 (PDF 231); §18.5 p220 (PDF 232); §18.6 p220 (PDF 232); §18.7 p221 (PDF 233); §18.8 p221 (PDF 233); §18.9 p222 (PDF 234); §18.10 p224 (PDF 236); §18.11 p224 (PDF 236); §18.12 p225 (PDF 237). Observed exercise locators: 18/1 p218/PDF230; 18/2 p219/PDF231; 18/3 p221/PDF233; 18/4 p223/PDF235; 18/5 p226/PDF238. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-18-80`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 504a33eee5a1d026ce4c221c2385d69ea1a76b4b283f2166e36680faff21c5e4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 18 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-18-81`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 51524cec2b8af5274a88ec4cc2ca92f267427841e103a2b70086e7dbf3764e4b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u18-112`
 
 - Objectives: none
@@ -2640,6 +2888,21 @@ CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -2681,6 +2944,20 @@ permitsAppUse=true
 
 src-wikibooks-russian-cc-by-sa
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -2761,6 +3038,7 @@ permitsAppUse=true
 - `u18-st-check-relative` ITEM `u18-i-relative-2`
 - `u18-s-book` OBJECTIVE `obj-u18-book`
 - `u18-st-book-work` REFERENCE `ref-u1620-attribution`
+- `obj-u18-comparison` PROVENANCE `prov-ca-18-82`
 - `obj-u18-comparison` PROVENANCE `prov-ex-u18-comparison-0-en`
 - `obj-u18-comparison` PROVENANCE `prov-ex-u18-comparison-0-ru`
 - `obj-u18-comparison` PROVENANCE `prov-ex-u18-comparison-1-en`

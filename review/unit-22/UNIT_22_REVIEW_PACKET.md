@@ -11,12 +11,12 @@ Unit 22 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
-- Unit content-review SHA-256: 5eedc53e9a70ce5450ad9ee6f4925047b94eab0517421114d742d605f730c3e7
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 161d899c6b1e86e4b1056a38820ee7fb52ffac016896709fad16526135d081c2
 - Mapping-package SHA-256: 135262f03abc4c4ef1dad6c992bbbf53993657e3ce3af4fe789fadcbebbff021
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: cd1ee74347d2315761749d9255bfb071108f7eaec1f67a516bc4df4be60d26c3
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: b09da48e34078f83283b9f10ccfc8b4f6c35f4492a449f6febcc6880696f470c
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -614,11 +614,11 @@ steps=u22-st-teach-declension-1,u22-st-guided-declension-1,u22-st-teach-declensi
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fc339c38812c1a232dfeba6370c4b5457b2231394fe85168d2ac36e54f08c5ad
+- Content hash: 3e28928922ba99e31aa8571669e01e377303360375f475a640fdf87ebab41836
 
 kind=TEACH
 title=Admitted lines
-body=двум — Дательный. двумя — Творительный. 
+body=двум — Дательный. двумя — Творительный. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -761,11 +761,11 @@ steps=u22-st-teach-both-forms-1,u22-st-guided-both-forms-1,u22-st-teach-both-for
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4d7b55a3c778f2fe5a39eec3aa645c2655a7c3ccc718189104a28c53ee3a96e9
+- Content hash: f17b9f310a40020317297b8a7162d54c29bbb49cc6413fb51a21eea23cc860e3
 
 kind=TEACH
 title=Admitted lines
-body=обеим — Дательный. обоим — Дательный. 
+body=обеим — Дательный. обоим — Дательный. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -1055,11 +1055,11 @@ steps=u22-st-teach-collective-1,u22-st-guided-collective-1,u22-st-teach-collecti
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 58406e89d4e2069a1122dc9f429acf3616f58fc23d053f278419320ef81a5e73
+- Content hash: 901a28be090bd3dc8bd28903e02342d6ef8c1fcc12ea9a8692b3c18bfaee77dd
 
 kind=TEACH
 title=Admitted lines
-body=два — дво́е. три — тро́е. 
+body=два — дво́е. три — тро́е. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -1187,12 +1187,12 @@ remediationStepId=u22-st-rem-collective
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 62b3efc1e95356ce6694d2200933e009c55f6cc8e6cb15d60c44b375da4a0120
+- Content hash: 6ae92cdc2c2738c7b0e141b449284953d48a345604d27938633650fad50610f7
 
 title=Self-attest Lesson 22
 estimatedMinutes=10
 objectives=obj-u22-book
-steps=u22-st-book-work,u22-st-book
+steps=u22-st-book-work,u22-st-book,u22-st-anki-direction,u22-st-binder-direction,u22-st-tutor-direction,u22-st-cumulative-direction
 
 ### STEP `u22-st-book-work`
 
@@ -1202,7 +1202,7 @@ steps=u22-st-book-work,u22-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7c8110ed58e0c7d85e2eca5fcf38fc8ffefc41033e4c91fa435589295ae008a3
+- Content hash: 43e32a3132789a65b9d99d7eec3fb5fbf85d3648173e9e911745fbe10f489d01
 
 kind=BOOK
 title=Work Lesson 22 in your copy
@@ -1212,7 +1212,7 @@ references=ref-u2125-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 22 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 22: printed pages 269-282. PDF indexes 281-294 are file locators, not printed pages. Observed section locators: §22.1 p269 (PDF 281); §22.2 p269 (PDF 281); §22.3 p270 (PDF 282); §22.4 p273 (PDF 285); §22.5 p273 (PDF 285); §22.6 p274 (PDF 286); §22.7 p274 (PDF 286); §22.8 p275 (PDF 287); §22.9 p276 (PDF 288); §22.10 p276 (PDF 288); §22.11 p277 (PDF 289); §22.12 p278 (PDF 290); §22.13 p279 (PDF 291); §22.14 p280 (PDF 292); §22.15 p281 (PDF 293). Observed exercise locators: 22/1 p272/PDF284; 22/2 p272/PDF284; 22/3 p275/PDF287; 22/4 p275/PDF287; 22/5 p279/PDF291; 22/6 p280/PDF292. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1224,7 +1224,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 18b82e5301cf34febf9bbfa90798b66f478f8282d8a2e485ad83d559ff6b1778
+- Content hash: 158ea0fc445930d2bb30a0849425084b4c434a1759c546b0f30a37e949be6fed
 
 kind=BOOK
 title=Record Lesson 22 book work
@@ -1234,8 +1234,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 22 work in your copy.
+bookDirection=Owned-book assignment for Lesson 22: printed pages 269-282. PDF indexes 281-294 are file locators, not printed pages. Observed section locators: §22.1 p269 (PDF 281); §22.2 p269 (PDF 281); §22.3 p270 (PDF 282); §22.4 p273 (PDF 285); §22.5 p273 (PDF 285); §22.6 p274 (PDF 286); §22.7 p274 (PDF 286); §22.8 p275 (PDF 287); §22.9 p276 (PDF 288); §22.10 p276 (PDF 288); §22.11 p277 (PDF 289); §22.12 p278 (PDF 290); §22.13 p279 (PDF 291); §22.14 p280 (PDF 292); §22.15 p281 (PDF 293). Observed exercise locators: 22/1 p272/PDF284; 22/2 p272/PDF284; 22/3 p275/PDF287; 22/4 p275/PDF287; 22/5 p279/PDF291; 22/6 p280/PDF292. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u22-st-anki-direction`
+
+- Objectives: obj-u22-book
+- Sessions: u22-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: cdfb75b6857b6e62840330004a9d64afcd17f5e6311e716e6469c3aeaa35de6f
+
+kind=ANKI
+title=Unit 22 AnkiDroid direction
+body=Unit 22 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u22-st-binder-direction`
+
+- Objectives: obj-u22-book
+- Sessions: u22-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8ee08758606bf674ec6b1a9f6d3c641ce778f592d66726c4ffc51ee65876ad78
+
+kind=BINDER
+title=Unit 22 binder prompt
+body=Unit 22 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u22-st-tutor-direction`
+
+- Objectives: obj-u22-book
+- Sessions: u22-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8ca9f20717d4c0ca039985c95dc7df9087912eb0ff126ddebbcfbae01f34b1b9
+
+kind=TUTOR
+title=Unit 22 optional tutor
+body=Unit 22 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u22-st-cumulative-direction`
+
+- Objectives: obj-u22-book
+- Sessions: u22-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3766dab2a0c028ecedd56828b1e77b04667e38bd99692f7055da5fffc0de568e
+
+kind=ORIENT
+title=Unit 22 cumulative review
+body=Unit 22 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 22 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u22-noun-forms-0`
@@ -2337,15 +2425,165 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: d4f0e4425691674ce93b6c64c4c013a0de191d97c2b44ce47eea7ac3adad4be4
+- Content hash: accd09d760074f7ea5ef3d540133f7e0c945332c57a706332cdeadc73119594d
 
 title=Units 21–25 source notice
-summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.
-detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. A separate application chain on that same span uses only names already in the span. It is not a name generator. Completion over a period is not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Scope-sensitive placement is the ReadyRussian Language Generator 3 statement that the modifier negates the following word, and that page's two-sentence contrast, under the ReadyRussian CC BY-SA 4.0 route. Review is pending.
+summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
+detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. A separate application chain on that same span uses only names already in the span. It is not a name generator. Completion over a period is not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Scope-sensitive placement is the ReadyRussian Language Generator 3 statement that the modifier negates the following word, and that page's two-sentence contrast, under the ReadyRussian CC BY-SA 4.0 route. Review is pending. Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=21
 searchTerms=units 21-25 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-22-100`
+
+- Objectives: obj-u22-declension
+- Sessions: u22-s-orient, u22-s-declension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0e6f82245e8d73e82ab48f0bc31ef4eb7a6930efe58cdf5fada7d5f971e1f503
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u22-declension:u22-st-teach-declension-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-22-101`
+
+- Objectives: obj-u22-both-forms
+- Sessions: u22-s-orient, u22-s-both-forms
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3bf8c928f23fbfb74dad87be17e26097c44c344bccdf924045bc50f76599c781
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u22-both-forms:u22-st-teach-both-forms-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-22-102`
+
+- Objectives: obj-u22-collective
+- Sessions: u22-s-orient, u22-s-collective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb21207bbcab9804e0aa660fa112966073da4b3dca207e447f3d7dc1feba57f6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u22-collective:u22-st-teach-collective-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-22-611`
+
+- Objectives: obj-u22-book
+- Sessions: u22-s-orient, u22-s-book
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 813782bfd04b994fafb389605ae4c4e525534a904d1154d8001fd0a4709d5b1a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u22:notice-2125
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
+shippedText=Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5582773b741ee53c022b9ba27c891d756dfae1d526d9150ba90a440b86145a00
+contentHash=cfa29fcc2b75e5259f19b25cdf8cd0acc40a91b5edf1c16bf0d642d4bf6d00d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-22-612`
+
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-orient, u22-s-noun-forms
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e383e9e1794e03425f6e27bc859148c98015274c6341f9e75d12e205992c59f1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u22:notice-2125-summary
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
+shippedText=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f1e5d4ee50b835be66e350280da1d9c2602f1e8394a669277be53ae13933a5c2
+contentHash=413a7a6cef6c60d2a828e503fe1158b52d1e907fcabe86e17a86091d81768bfa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-u22-both-forms-0-en`
 
@@ -7340,6 +7578,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-22-11260`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 908b75f2d4a3abb09eb44090489455621f3c5b631bf15ba18f86b101957bcd6c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 22 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-22-11261`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b94cb95ad1a188d56676d9933e8a7b794192c247273e09ca7da915db6570628
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-22-11262`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1a4baf4164a7e73d756a5c243d151f73f22fb979799372716c5a3e1f33d934e4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 22 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-22-11263`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b93085933d5885da5d315c8ed4d8d108fc6bd87ec2f3a8fa5fad1fc86b4b84a8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-22-11264`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8045f5e183e0c52dd5d1ede9b8edd7763f502eda37b4653c4d8b99ded639a7f1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 22 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-22-11265`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb0b835fdfa1fb65aff692f29c2e36ced2dc5cd5075e4e18f776e0e4d51f0421
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-22-11266`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a08b9745115ce0450f0ac9ebf9e9984c7986f1d20986ae5636f1f5bf3261c8c1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 22 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-22-97`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d34465ffb03c31ab09675d7dfd18882036927091624b1a44265c526a8c2adc24
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 22: printed pages 269-282. PDF indexes 281-294 are file locators, not printed pages. Observed section locators: §22.1 p269 (PDF 281); §22.2 p269 (PDF 281); §22.3 p270 (PDF 282); §22.4 p273 (PDF 285); §22.5 p273 (PDF 285); §22.6 p274 (PDF 286); §22.7 p274 (PDF 286); §22.8 p275 (PDF 287); §22.9 p276 (PDF 288); §22.10 p276 (PDF 288); §22.11 p277 (PDF 289); §22.12 p278 (PDF 290); §22.13 p279 (PDF 291); §22.14 p280 (PDF 292); §22.15 p281 (PDF 293). Observed exercise locators: 22/1 p272/PDF284; 22/2 p272/PDF284; 22/3 p275/PDF287; 22/4 p275/PDF287; 22/5 p279/PDF291; 22/6 p280/PDF292. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-22-98`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b4c6d4d66013d8007822f7715016177dd71064207194cac4e3d9fb3d4c0d238
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 22 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-22-99`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd76a560ccbf6a68a7a5eb9da1fd9c2a03173cc305412c2de41d64e069b6e588
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u22-041`
 
 - Objectives: none
@@ -8180,6 +8548,21 @@ CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -8249,6 +8632,20 @@ permitsAppUse=true
 
 src-wikipedia-russian-grammar-1369617627
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -8445,6 +8842,11 @@ permitsAppUse=true
 - `u22-st-check-collective` ITEM `u22-i-collective-2`
 - `u22-s-book` OBJECTIVE `obj-u22-book`
 - `u22-st-book-work` REFERENCE `ref-u2125-attribution`
+- `obj-u22-declension` PROVENANCE `prov-ca-22-100`
+- `obj-u22-both-forms` PROVENANCE `prov-ca-22-101`
+- `obj-u22-collective` PROVENANCE `prov-ca-22-102`
+- `obj-u22-book` PROVENANCE `prov-ca-22-611`
+- `obj-u22-noun-forms` PROVENANCE `prov-ca-22-612`
 - `obj-u22-both-forms` PROVENANCE `prov-ex-u22-both-forms-0-en`
 - `obj-u22-both-forms` PROVENANCE `prov-ex-u22-both-forms-0-ru`
 - `obj-u22-both-forms` PROVENANCE `prov-ex-u22-both-forms-1-en`

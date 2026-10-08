@@ -11,12 +11,12 @@ Unit 1 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4a6c21da07b515df226a090cc0ff6b1ff4a78aa1
-- Unit content-review SHA-256: 9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7
 - Mapping-package SHA-256: b85c056f7c940f045fcb9270edcfda31371ae36f7277c75b673158fcc52872d0
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 096dfe17480bde2d6f8c78db6bcaf8beb2f26a9228e0d2101bbb16b27e988018
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 45ee234a6d72570600607aac950c9b58481bcc1de774176e25b8a8afe1cac6da
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 1.
 
 ### UNIT `unit-1`
 
-- Objectives: obj-u1-letter-identity, obj-u1-confusable, obj-u1-iotated, obj-u1-signs, obj-u1-print-forms, obj-u1-decoding, obj-u1-pronunciation, obj-u1-stress, obj-u1-book
-- Sessions: u1-s-orient, u1-s-writing-system, u1-s-vowels, u1-s-early-consonants, u1-s-confusable, u1-s-iotated, u1-s-signs, u1-s-print, u1-s-decoding, u1-s-pronunciation, u1-s-stress, u1-s-book, u1-s-companions, u1-s-check
+- Objectives: obj-u1-letter-identity, obj-u1-confusable, obj-u1-iotated, obj-u1-signs, obj-u1-print-forms, obj-u1-decoding, obj-u1-pronunciation, obj-u1-stress, obj-u1-book, obj-u1-letter-names
+- Sessions: u1-s-orient, u1-s-writing-system, u1-s-vowels, u1-s-early-consonants, u1-s-confusable, u1-s-iotated, u1-s-signs, u1-s-print, u1-s-decoding, u1-s-pronunciation, u1-s-stress, u1-s-book, u1-s-companions, u1-s-check, u1-s-letter-names
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 44642b5621e62dddfe93ecacda8301dcb40db3c7f3a72d2655e7f97847434abe
+- Content hash: 8ebe8efe4c40e6427ff2509036951eafd00733187f9a2ab320b8aef9b0271ec7
 
 number=1
 title=Learning to read Russian
@@ -132,14 +132,14 @@ remediation=u1-st-vowels,u1-st-cons
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 53159a07da74f47a6c6346163a87d3f327c3a10ab775219891509aca97a70ed6
+- Content hash: 46c44b36f84f6fdbdc4de0e4e9e7c446cb9dbdd2bea1dab7d576dc3be6d7919d
 
 title=Separate Cyrillic letters from Latin look-alikes
 kind=RECOGNITION
 unitNumber=1
 instruction=u1-st-confusable
 examples=ex-letter-0412,ex-letter-041d,ex-letter-0420,ex-letter-0421,ex-letter-0423,ex-letter-0425
-practice=u1-st-confusable-r,u1-st-confusable-n,u1-st-confusable-s,u1-st-confusable-rest
+practice=u1-st-guided-confusable,u1-st-confusable-r,u1-st-confusable-n,u1-st-confusable-s,u1-st-confusable-rest
 checks=u1-i-р-not-p,u1-i-н-not-h,u1-i-с-not-c,u1-i-в-not-b,u1-i-у-not-y,u1-i-х-not-x
 remediation=u1-st-confusable
 
@@ -151,14 +151,14 @@ remediation=u1-st-confusable
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 221d6c108655548f531650bebe10b25ff8b63721af4698f14c1b42d0e2b859ab
+- Content hash: b7d8bccb98b816c23b62696e556d5585681cd33124d14ec31a8c6287f8b1ceeb
 
 title=Recognize Е Ё Ю Я as a group
 kind=RECOGNITION
 unitNumber=1
 instruction=u1-st-iotated
 examples=ex-letter-0415,ex-letter-0401,ex-letter-042e,ex-letter-042f
-practice=u1-st-iotated-check
+practice=u1-st-guided-iotated,u1-st-iotated-check
 checks=u1-i-е-identity,u1-i-ё-identity,u1-i-ю-identity,u1-i-я-identity
 remediation=u1-st-iotated
 
@@ -170,14 +170,14 @@ remediation=u1-st-iotated
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 650c5e8649a6c6ee0337e9355c4e57cd10f1a9821bd7570ade578f19a3e6a506
+- Content hash: 1ae952bbd7d682cd36b8f63331290e09e838566b1b3bea324df2919a75270346
 
 title=Treat Ь Ъ Й as non-ordinary-vowel letters
 kind=RECOGNITION
 unitNumber=1
 instruction=u1-st-signs
 examples=ex-letter-0419,ex-letter-042a,ex-letter-042c
-practice=u1-st-signs-check,u1-st-hard-check,u1-st-short-i-check
+practice=u1-st-guided-signs,u1-st-signs-check,u1-st-hard-check,u1-st-short-i-check
 checks=u1-i-ь-not-vowel,u1-i-ъ-not-vowel,u1-i-й-not-vowel
 remediation=u1-st-signs
 
@@ -189,14 +189,14 @@ remediation=u1-st-signs
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e3176d209ac80cf63027b3af16eb27bf7b4046c970ebb4b469b9131916c0848f
+- Content hash: 6ab89580e257fa3244b6e35ccb3d3a9c90f1dc2c33d39d15261be3b1cc305990
 
 title=Match uppercase and lowercase print pairs
 kind=RECOGNITION
 unitNumber=1
 instruction=u1-st-print
 examples=ex-print-letter-0410,ex-print-letter-041c
-practice=u1-st-print-check
+practice=u1-st-guided-print,u1-st-print-check
 checks=u1-i-print-pair
 remediation=u1-st-print
 
@@ -208,14 +208,14 @@ remediation=u1-st-print
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9c55a56cbaa27c6bf8f562a53a4263aff452fc1deafbf9123f10ecaa272e3b99
+- Content hash: 43ca162a13212ed9e9c779c7460b6054c968ba4a4658267f8aa761021f2904fa
 
 title=Decode a printed letter pair
 kind=RECOGNITION
 unitNumber=1
 instruction=u1-st-decoding
 examples=ex-print-letter-0410,ex-print-letter-041c
-practice=u1-st-decoding-check
+practice=u1-st-guided-decoding,u1-st-decoding-check
 checks=u1-i-decode-pair
 remediation=u1-st-decoding
 
@@ -275,6 +275,25 @@ examples=
 practice=
 checks=
 remediation=
+
+### OBJECTIVE `obj-u1-letter-names`
+
+- Objectives: obj-u1-letter-names
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 480f56390a5468798a930245d8b2ae5a1013a5785bcbc6c77586815da520594d
+
+title=Name the printed letter
+kind=RECOGNITION
+unitNumber=1
+instruction=u1-st-teach-letter-names
+examples=ex-u1-name-a,ex-u1-name-be
+practice=u1-st-guided-letter-names
+checks=u1-i-name-be
+remediation=u1-st-rem-letter-names
 
 ### SESSION `u1-s-orient`
 
@@ -498,12 +517,12 @@ remediationStepId=u1-st-cons
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2466f3e1b9909fc72d63ab1e1a02ba91311609352db29045927297cb3161e0ee
+- Content hash: 02ac91fb16d30acacdf62ce71b066d3da97693c1cb0654e5b28de2d081e1412b
 
 title=Letters that look like Latin
 estimatedMinutes=15
 objectives=obj-u1-confusable
-steps=u1-st-confusable,u1-st-confusable-r,u1-st-confusable-n,u1-st-confusable-s,u1-st-confusable-rest
+steps=u1-st-confusable,u1-st-guided-confusable,u1-st-confusable-r,u1-st-confusable-n,u1-st-confusable-s,u1-st-confusable-rest
 
 ### STEP `u1-st-confusable`
 
@@ -513,11 +532,11 @@ steps=u1-st-confusable,u1-st-confusable-r,u1-st-confusable-n,u1-st-confusable-s,
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 128016542dfa041319d0651bc7609ea5f02d292ec3160e296cb1d8e17ad94a2c
+- Content hash: b8f17c716cf8110b53ad2846e4c483285c4fedf622e8a5c7a4165ccab684efc6
 
 kind=TEACH
 title=Shape traps
-body=These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity.
+body=These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-confusable
 items=
@@ -526,6 +545,28 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u1-st-guided-confusable`
+
+- Objectives: obj-u1-confusable
+- Sessions: u1-s-confusable
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: da18515ce682de0b8690bb58c0e7df1a0eadc537a7089260e08b57baa7a342be
+
+kind=GUIDED
+title=Guided contrast
+body=These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Choose once with the explanation still in view. This is practice, not the independent check.
+dominantAction=Check
+references=
+items=u1-g-guided-confusable
+examples=ex-letter-0420,ex-letter-041d,ex-letter-0421
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u1-st-confusable
 
 ### STEP `u1-st-confusable-r`
 
@@ -623,12 +664,12 @@ remediationStepId=u1-st-confusable
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8e5759a3c97e6b808ec4bad9c3ab141f78c8c19b45cc1eeacc831a6159449d11
+- Content hash: 1138c6978b6377ebabd4c060accab682fd04b1b71cb49539f01b19611e8de654
 
 title=Iotated vowel letters
 estimatedMinutes=10
 objectives=obj-u1-iotated
-steps=u1-st-iotated,u1-st-iotated-check
+steps=u1-st-iotated,u1-st-guided-iotated,u1-st-iotated-check
 
 ### STEP `u1-st-iotated`
 
@@ -638,11 +679,11 @@ steps=u1-st-iotated,u1-st-iotated-check
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 253b89b14b3d418415f6ebf22e5fbe968225041bfd6edbb225df340947d71878
+- Content hash: 67aba441448b179173358262f9ebd3f72661028a662987d3aecb9d4731340a16
 
 kind=TEACH
 title=Е Ё Ю Я
-body=Recognize these printed forms as a group. Exact phonetics belong in your book.
+body=Recognize these printed forms as a group. Exact phonetics belong in your book. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-iotated
 items=
@@ -651,6 +692,28 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u1-st-guided-iotated`
+
+- Objectives: obj-u1-iotated
+- Sessions: u1-s-iotated
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1c806259e858bda1c36e53f2317dbf58bc91f2e8067af33c7fe46386d36d85f7
+
+kind=GUIDED
+title=Guided contrast
+body=Recognize these printed forms as a group. Exact phonetics belong in your book. Choose once with the explanation still in view. This is practice, not the independent check.
+dominantAction=Check
+references=
+items=u1-g-guided-iotated
+examples=ex-letter-0415,ex-letter-042f
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u1-st-iotated
 
 ### STEP `u1-st-iotated-check`
 
@@ -682,12 +745,12 @@ remediationStepId=u1-st-iotated
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b5e4bd0027f9049879baf64d364a08532995c41f7d9a368cd69321b7a92cf3e4
+- Content hash: 450a95702ecadb742a81947e4f0d1c99bab353180d70e934c336401cf926fd07
 
 title=Soft sign, hard sign, and Й
 estimatedMinutes=10
 objectives=obj-u1-signs
-steps=u1-st-signs,u1-st-signs-check,u1-st-hard-check,u1-st-short-i-check
+steps=u1-st-signs,u1-st-guided-signs,u1-st-signs-check,u1-st-hard-check,u1-st-short-i-check
 
 ### STEP `u1-st-signs`
 
@@ -697,11 +760,11 @@ steps=u1-st-signs,u1-st-signs-check,u1-st-hard-check,u1-st-short-i-check
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: caafbcbba9319dfd95e99995d0d7267a43ef70e94a3241c6582fbd42060ef78f
+- Content hash: 6b88df7bec63d206016ade071a61f0251f08bf13910eb3f209d7f900556c2c6d
 
 kind=TEACH
 title=Marks that are not ordinary vowels
-body=Ь, Ъ, and Й need special attention. Do not invent a spoken vowel for the signs.
+body=Ь, Ъ, and Й need special attention. Do not invent a spoken vowel for the signs. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-signs
 items=
@@ -710,6 +773,28 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u1-st-guided-signs`
+
+- Objectives: obj-u1-signs
+- Sessions: u1-s-signs
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e67beacb7dea7d7df92c6fa42731c86bfcada075afbcad9d7c59df4693697898
+
+kind=GUIDED
+title=Guided contrast
+body=Ь, Ъ, and Й need special attention. Do not invent a spoken vowel for the signs. Choose once with the explanation still in view. This is practice, not the independent check.
+dominantAction=Check
+references=
+items=u1-g-guided-signs
+examples=ex-letter-042c,ex-letter-042a,ex-letter-0419
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u1-st-signs
 
 ### STEP `u1-st-signs-check`
 
@@ -785,12 +870,12 @@ remediationStepId=u1-st-signs
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 88ab3a50ac338cb0d8b73d03b93d0cc76ea29d57eed372894b4c5f8341d54244
+- Content hash: b8596c31d18c136c1772a014016a7d33ae8f6ccb363cc1c893ca95af42961b1c
 
 title=Print forms
 estimatedMinutes=10
 objectives=obj-u1-print-forms
-steps=u1-st-print,u1-st-print-check
+steps=u1-st-print,u1-st-guided-print,u1-st-print-check
 
 ### STEP `u1-st-print`
 
@@ -813,6 +898,28 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u1-st-guided-print`
+
+- Objectives: obj-u1-print-forms
+- Sessions: u1-s-print
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2dac5bcd4d2aedb929bf607107ef0b7b89e120e4a5180c807643566018ca0b87
+
+kind=GUIDED
+title=Guided contrast
+body=Every letter has a print pair. Match them on the letter board. Handwritten forms wait for verified assets. Choose once with the explanation still in view. This is practice, not the independent check.
+dominantAction=Check
+references=
+items=u1-g-guided-print
+examples=ex-print-letter-0410
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u1-st-print
 
 ### STEP `u1-st-print-check`
 
@@ -844,12 +951,12 @@ remediationStepId=u1-st-print
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 253ca3980a3d8a2fc81b5b229a2e1d5acdc3ee268fe7a34590e8802b066cd152
+- Content hash: 1720688bfdbad5751de47e378eb40fbbc30234fd5458835a4bcf16e9f2edc27a
 
 title=Staged decoding
 estimatedMinutes=8
 objectives=obj-u1-decoding
-steps=u1-st-decoding,u1-st-decoding-check
+steps=u1-st-decoding,u1-st-guided-decoding,u1-st-decoding-check
 
 ### STEP `u1-st-decoding`
 
@@ -872,6 +979,28 @@ unavailableReason=
 bookDirection=Use the elementary reading work in your Lesson 1 pages for anything beyond a single letter.
 companionDirection=
 remediationStepId=
+
+### STEP `u1-st-guided-decoding`
+
+- Objectives: obj-u1-decoding
+- Sessions: u1-s-decoding
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9355ab10c2755633540229878327f1f246dc12daca84df8cf4e247cf87ac7d80
+
+kind=GUIDED
+title=Guided contrast
+body=Name the letter, then match its uppercase and lowercase print forms. This unit does not introduce words. Choose once with the explanation still in view. This is practice, not the independent check.
+dominantAction=Check
+references=
+items=u1-g-guided-decoding
+examples=ex-print-letter-0410,ex-print-letter-041c
+unavailableReason=
+bookDirection=Use the elementary reading work in your Lesson 1 pages for anything beyond a single letter.
+companionDirection=
+remediationStepId=u1-st-decoding
 
 ### STEP `u1-st-decoding-check`
 
@@ -992,7 +1121,7 @@ steps=u1-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 78960536ec172893b37a253c3d15fb38a1f0bfa680eec4eba9b2c3573c08ce44
+- Content hash: 18a0a6659097b4e96b9d4a10f4850aa0962534381742fb40c1f9d8ce21e2d6cb
 
 kind=BOOK
 title=Lesson 1 in your copy
@@ -1002,7 +1131,7 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Read and do Lesson 1 in your book. Use the book's answer key, not this app, for book exercises.
+bookDirection=Owned-book assignment for Lesson 1: printed pages 1-11. PDF indexes 13-23 are file locators, not printed pages. Observed section locators: §1.1 p1 (PDF 13); §1.2 p1 (PDF 13); §1.3 p7 (PDF 19); §1.4 p8 (PDF 20); §1.5 p10 (PDF 22). Observed exercise locators: 1/1 p8/PDF20; 1/2 p8/PDF20; 1/3 p9/PDF21. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=Afterward, mark book work complete as a self-attestation. That is not demonstrated in-app ability.
 remediationStepId=
 
@@ -1123,6 +1252,197 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=u1-st-confusable
+
+### SESSION `u1-s-letter-names`
+
+- Objectives: obj-u1-letter-names, obj-u1-pronunciation
+- Sessions: u1-s-letter-names
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ddb7943ab474d33f760e4a86750079d5d7f68ea2ae667a9660f3825e6077b5cf
+
+title=Letter names
+estimatedMinutes=8
+objectives=obj-u1-letter-names,obj-u1-pronunciation
+steps=u1-st-teach-letter-names,u1-st-guided-letter-names,u1-st-rem-letter-names,u1-st-check-letter-names,u1-st-anki-direction,u1-st-binder-direction,u1-st-tutor-direction,u1-st-cumulative-direction
+
+### STEP `u1-st-teach-letter-names`
+
+- Objectives: obj-u1-letter-names, obj-u1-pronunciation
+- Sessions: u1-s-letter-names
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a5d3c2ce469a3d6e30367d9c8e2149c59cbf5a39e59cc6e09eb1b65c84980d96
+
+kind=TEACH
+title=Printed letter names
+body=Unit 1 letter names, review-pending: А is named а; Б is named бэ; В is named вэ; Г is named гэ; Д is named дэ; Е is named е; Ё is named ё; Ж is named жэ; З is named зэ; И is named и; Й is named и краткое; К is named ка; Л is named эль; М is named эм; Н is named эн; О is named о; П is named пэ; Р is named эр; С is named эс; Т is named тэ; У is named у; Ф is named эф; Х is named ха; Ц is named цэ; Ч is named че; Ш is named ша; Щ is named ща; Ъ is named твёрдый знак; Ы is named ы; Ь is named мягкий знак; Э is named э; Ю is named ю; Я is named я.
+dominantAction=Continue
+references=ref-ca-letter-names
+items=
+examples=ex-u1-name-a,ex-u1-name-be
+unavailableReason=
+bookDirection=Use your Lesson 1 pages for the author's pronunciation notes. This list is the app's name inventory.
+companionDirection=
+remediationStepId=
+
+### STEP `u1-st-guided-letter-names`
+
+- Objectives: obj-u1-letter-names, obj-u1-pronunciation
+- Sessions: u1-s-letter-names
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 846039de5d535181bad2afd33063d2a233a7a5ad3eac910b872913881d8f5eb0
+
+kind=GUIDED
+title=Guided letter name
+body=The printed letter А is named а. Choose that name before the independent check.
+dominantAction=Check
+references=ref-ca-letter-names
+items=u1-g-name-a
+examples=ex-u1-name-a
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u1-st-rem-letter-names
+
+### STEP `u1-st-rem-letter-names`
+
+- Objectives: obj-u1-letter-names, obj-u1-pronunciation
+- Sessions: u1-s-letter-names
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d4030fe3123e5c65630cbb36908c37f44b4a37ebaea41743f803d5678d0d4ada
+
+kind=REMEDIATE
+title=Letter-name remediation
+body=Return to the printed name. А is named а. Б is named бэ. Do not use the Latin letter name.
+dominantAction=Return
+references=ref-ca-letter-names
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u1-st-check-letter-names`
+
+- Objectives: obj-u1-letter-names, obj-u1-pronunciation
+- Sessions: u1-s-letter-names
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 44b815893fe6d95bae6d870599214c5c05977ccf5b0ba8369917f45154ccb268
+
+kind=CHECK
+title=Letter-name check
+body=Name the printed letter without looking back at the list.
+dominantAction=Check
+references=
+items=u1-i-name-be
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u1-st-rem-letter-names
+
+### STEP `u1-st-anki-direction`
+
+- Objectives: obj-u1-letter-names, obj-u1-pronunciation
+- Sessions: u1-s-letter-names
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3d016728d47ee19a6fc18ed58cd9b846d7f1990b687edf7f556bcdb13416943a
+
+kind=ANKI
+title=Unit 1 AnkiDroid direction
+body=Unit 1 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u1-st-binder-direction`
+
+- Objectives: obj-u1-letter-names, obj-u1-pronunciation
+- Sessions: u1-s-letter-names
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 37f33ef7334ad40f8aceb22c57c30f3d46ce47580d4355a57d0e0631410f3189
+
+kind=BINDER
+title=Unit 1 binder prompt
+body=Unit 1 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u1-st-tutor-direction`
+
+- Objectives: obj-u1-letter-names, obj-u1-pronunciation
+- Sessions: u1-s-letter-names
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4156f511b5eff37d0649ceb96a5bf089ab23c71eefbd07b5d7f5eaf4bca3e342
+
+kind=TUTOR
+title=Unit 1 optional tutor
+body=Unit 1 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u1-st-cumulative-direction`
+
+- Objectives: obj-u1-letter-names, obj-u1-pronunciation
+- Sessions: u1-s-letter-names
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 355fe24d03ad6e94953158504189d0436fc4eaae21f26e2c03f69121aedbf30f
+
+kind=ORIENT
+title=Unit 1 cumulative review
+body=Unit 1 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=Owned-book assignment for Lesson 1: printed pages 1-11. PDF indexes 13-23 are file locators, not printed pages. Observed section locators: §1.1 p1 (PDF 13); §1.2 p1 (PDF 13); §1.3 p7 (PDF 19); §1.4 p8 (PDF 20); §1.5 p10 (PDF 22). Observed exercise locators: 1/1 p8/PDF20; 1/2 p8/PDF20; 1/3 p9/PDF21. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+companionDirection=Unit 1 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+remediationStepId=
 
 ### EXAMPLE `ex-letter-0410`
 
@@ -1719,6 +2039,40 @@ note=М and м are the same letter in two print cases.
 objectiveId=obj-u1-print-forms
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u1-name-a`
+
+- Objectives: obj-u1-letter-names
+- Sessions: u1-s-letter-names
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 514b41c6c8d43e62380821ae196f986727d5dfe42680dfbb779b0350db6a3357
+
+kind=LEXICAL
+letterId=letter-0410
+display=А
+note=The printed letter А is named а.
+objectiveId=obj-u1-letter-names
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u1-name-be`
+
+- Objectives: obj-u1-letter-names
+- Sessions: u1-s-letter-names
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ec22a03f2f13c86fa081aeac64f6db4e75824fa88daa841efaabaf3cd72634e
+
+kind=LEXICAL
+letterId=letter-0411
+display=Б
+note=The printed letter Б is named бэ.
+objectiveId=obj-u1-letter-names
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### GUIDED_AND_INDEPENDENT_CHECK `u1-i-а-identity`
 
 - Objectives: obj-u1-letter-identity
@@ -1758,6 +2112,132 @@ options=Cyrillic М | Cyrillic Н | Cyrillic Т
 answer=Cyrillic М
 feedback=М is an early consonant letter. It is not Н.
 objectiveId=obj-u1-letter-identity
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### GUIDED_PRACTICE `u1-g-guided-confusable`
+
+- Objectives: obj-u1-confusable
+- Sessions: u1-s-confusable
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5cb48ad0b30b6dc1527cb653700319515d31bdc1086745681a20a6ce904c0de4
+
+kind=CONFUSABLE
+language=en
+prompt=The shape looks like Latin P. Which identity is the Cyrillic letter?
+promptLetter=Р
+options=The Cyrillic letter Р | The Latin letter P | The Cyrillic letter П
+answer=The Cyrillic letter Р
+feedback=Р is the Cyrillic letter, even when the shape looks like Latin P.
+objectiveId=obj-u1-confusable
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### GUIDED_PRACTICE `u1-g-guided-iotated`
+
+- Objectives: obj-u1-iotated
+- Sessions: u1-s-iotated
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d1ce9892d2615e83bd0b51aa0f5a2f26dd12c91962c894fe07e2553e973483d
+
+kind=LETTER_IDENTITY
+language=en
+prompt=Which printed form is the iotated letter named in this group?
+promptLetter=Я
+options=The Cyrillic letter Я | The Cyrillic letter А | The Cyrillic letter И
+answer=The Cyrillic letter Я
+feedback=Я belongs to the iotated group. Exact phonetics stay with the book model you own.
+objectiveId=obj-u1-iotated
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### GUIDED_PRACTICE `u1-g-guided-signs`
+
+- Objectives: obj-u1-signs
+- Sessions: u1-s-signs
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 880e8d4a4f36931e9ea35ac28672262ccf9e87512ef5ba9d63b9320574d00057
+
+kind=SIGN
+language=en
+prompt=What does this sign do?
+promptLetter=Ь
+options=It marks softness and is not a vowel | It is a spoken vowel | It is the Latin letter b
+answer=It marks softness and is not a vowel
+feedback=Ь and Ъ are signs. Do not invent a spoken vowel for them.
+objectiveId=obj-u1-signs
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### GUIDED_PRACTICE `u1-g-guided-print`
+
+- Objectives: obj-u1-print-forms
+- Sessions: u1-s-print
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b0a288d6e275a806170abae33ff1a4e6144a3aeea3cf963186c8bfcc319fb7d
+
+kind=PRINT_PAIR
+language=en
+prompt=Which lowercase print form pairs with this uppercase letter?
+promptLetter=А
+options=а | б | В
+answer=а
+feedback=Match the printed uppercase and lowercase pair. Handwriting assets are not installed.
+objectiveId=obj-u1-print-forms
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### GUIDED_PRACTICE `u1-g-guided-decoding`
+
+- Objectives: obj-u1-decoding
+- Sessions: u1-s-decoding
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e40f55753bdd3a1164bad75045279f29d6efdb49bcadba7e28e63b101f035a7
+
+kind=PRINT_PAIR
+language=en
+prompt=Read the printed pair before any word. Which lowercase form matches?
+promptLetter=М
+options=м | н | т
+answer=м
+feedback=Decode the print pair first. This guided step still does not score a whole word.
+objectiveId=obj-u1-decoding
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### GUIDED_PRACTICE `u1-g-name-a`
+
+- Objectives: obj-u1-letter-names
+- Sessions: u1-s-letter-names
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc377b5eb4826acba1ded0834165687682b80a7855212c3bde98f23e1ceddade
+
+kind=LETTER_IDENTITY
+language=en
+prompt=Which name belongs to this printed letter?
+promptLetter=А
+options=а | бэ | эр
+answer=а
+feedback=The printed letter А is named а.
+objectiveId=obj-u1-letter-names
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -2076,6 +2556,27 @@ objectiveId=obj-u1-decoding
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### INDEPENDENT_CHECK `u1-i-name-be`
+
+- Objectives: obj-u1-letter-names
+- Sessions: u1-s-letter-names
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7199daf378b78cf0d5573aa308856bee21779a8b35dbe282dcb8798df0137189
+
+kind=LETTER_IDENTITY
+language=en
+prompt=Which name belongs to this printed letter?
+promptLetter=Б
+options=бэ | вэ | пэ
+answer=бэ
+feedback=The printed letter Б is named бэ.
+objectiveId=obj-u1-letter-names
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### REFERENCE `ref-transliteration`
 
 - Objectives: none
@@ -2220,15 +2721,33 @@ introducedInUnit=1
 searchTerms=stress notation
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### REFERENCE `ref-ca-letter-names`
+
+- Objectives: none
+- Sessions: u1-s-letter-names
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: LINGUISTIC_INSTRUCTION
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3c9b4a2db950dfe839ebcaba6f37a973416b33e50aa59ef34e02f65cc5e6ff3
+
+title=Printed letter names
+summary=Unit 1 introduces the printed letter names used again in Unit 30.
+detail=Unit 1 letter names, review-pending: А is named а; Б is named бэ; В is named вэ; Г is named гэ; Д is named дэ; Е is named е; Ё is named ё; Ж is named жэ; З is named зэ; И is named и; Й is named и краткое; К is named ка; Л is named эль; М is named эм; Н is named эн; О is named о; П is named пэ; Р is named эр; С is named эс; Т is named тэ; У is named у; Ф is named эф; Х is named ха; Ц is named цэ; Ч is named че; Ш is named ша; Щ is named ща; Ъ is named твёрдый знак; Ы is named ы; Ь is named мягкий знак; Э is named э; Ю is named ю; Я is named я.
+classification=LINGUISTIC_INSTRUCTION
+introducedInUnit=1
+searchTerms=letter name,алфавит
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### LETTER `letter-0410`
 
-- Objectives: obj-u1-letter-identity, obj-u1-print-forms
-- Sessions: u1-s-writing-system, u1-s-vowels, u1-s-print, u1-s-decoding
+- Objectives: obj-u1-letter-identity, obj-u1-print-forms, obj-u1-letter-names
+- Sessions: u1-s-writing-system, u1-s-vowels, u1-s-print, u1-s-decoding, u1-s-letter-names
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d93db6f2f466727cac7ebdc3f212f8cec119e6c5af9c29b4148a3939d6f98b4c
+- Content hash: 64cf5877019c1897e16f5986f4c6f74370c516d20ff4d15741fc460a73a7d208
 
 uppercase=А
 lowercase=а
@@ -2241,13 +2760,13 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### LETTER `letter-0411`
 
-- Objectives: obj-u1-letter-identity, obj-u2-review
-- Sessions: u1-s-early-consonants
+- Objectives: obj-u1-letter-identity, obj-u2-review, obj-u1-letter-names
+- Sessions: u1-s-early-consonants, u1-s-letter-names
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e98757d69387be66a256e3b6c8c12d39a78c79eb9d10bfb1df927d3a8395ecaf
+- Content hash: ac07f726f73ef9117b8ef3e2b1db8ad5734dc29b5e90ed1dfb430d72632dd763
 
 uppercase=Б
 lowercase=б
@@ -2943,6 +3462,7 @@ permitsAppUse=true
 - `obj-u1-confusable` EXAMPLE `ex-letter-0421`
 - `obj-u1-confusable` EXAMPLE `ex-letter-0423`
 - `obj-u1-confusable` EXAMPLE `ex-letter-0425`
+- `obj-u1-confusable` PRACTICE `u1-st-guided-confusable`
 - `obj-u1-confusable` PRACTICE `u1-st-confusable-r`
 - `obj-u1-confusable` PRACTICE `u1-st-confusable-n`
 - `obj-u1-confusable` PRACTICE `u1-st-confusable-s`
@@ -2959,6 +3479,7 @@ permitsAppUse=true
 - `obj-u1-iotated` EXAMPLE `ex-letter-0401`
 - `obj-u1-iotated` EXAMPLE `ex-letter-042e`
 - `obj-u1-iotated` EXAMPLE `ex-letter-042f`
+- `obj-u1-iotated` PRACTICE `u1-st-guided-iotated`
 - `obj-u1-iotated` PRACTICE `u1-st-iotated-check`
 - `obj-u1-iotated` CHECK `u1-i-е-identity`
 - `obj-u1-iotated` CHECK `u1-i-ё-identity`
@@ -2969,6 +3490,7 @@ permitsAppUse=true
 - `obj-u1-signs` EXAMPLE `ex-letter-0419`
 - `obj-u1-signs` EXAMPLE `ex-letter-042a`
 - `obj-u1-signs` EXAMPLE `ex-letter-042c`
+- `obj-u1-signs` PRACTICE `u1-st-guided-signs`
 - `obj-u1-signs` PRACTICE `u1-st-signs-check`
 - `obj-u1-signs` PRACTICE `u1-st-hard-check`
 - `obj-u1-signs` PRACTICE `u1-st-short-i-check`
@@ -2979,18 +3501,26 @@ permitsAppUse=true
 - `obj-u1-print-forms` INSTRUCTION `u1-st-print`
 - `obj-u1-print-forms` EXAMPLE `ex-print-letter-0410`
 - `obj-u1-print-forms` EXAMPLE `ex-print-letter-041c`
+- `obj-u1-print-forms` PRACTICE `u1-st-guided-print`
 - `obj-u1-print-forms` PRACTICE `u1-st-print-check`
 - `obj-u1-print-forms` CHECK `u1-i-print-pair`
 - `obj-u1-print-forms` REMEDIATION `u1-st-print`
 - `obj-u1-decoding` INSTRUCTION `u1-st-decoding`
 - `obj-u1-decoding` EXAMPLE `ex-print-letter-0410`
 - `obj-u1-decoding` EXAMPLE `ex-print-letter-041c`
+- `obj-u1-decoding` PRACTICE `u1-st-guided-decoding`
 - `obj-u1-decoding` PRACTICE `u1-st-decoding-check`
 - `obj-u1-decoding` CHECK `u1-i-decode-pair`
 - `obj-u1-decoding` REMEDIATION `u1-st-decoding`
 - `obj-u1-pronunciation` INSTRUCTION `u1-st-pronunciation`
 - `obj-u1-stress` INSTRUCTION `u1-st-stress`
 - `obj-u1-book` INSTRUCTION `u1-st-book`
+- `obj-u1-letter-names` INSTRUCTION `u1-st-teach-letter-names`
+- `obj-u1-letter-names` EXAMPLE `ex-u1-name-a`
+- `obj-u1-letter-names` EXAMPLE `ex-u1-name-be`
+- `obj-u1-letter-names` PRACTICE `u1-st-guided-letter-names`
+- `obj-u1-letter-names` CHECK `u1-i-name-be`
+- `obj-u1-letter-names` REMEDIATION `u1-st-rem-letter-names`
 - `u1-s-orient` OBJECTIVE `obj-u1-letter-identity`
 - `u1-st-why` REFERENCE `ref-transliteration`
 - `u1-s-writing-system` OBJECTIVE `obj-u1-letter-identity`
@@ -3018,6 +3548,11 @@ permitsAppUse=true
 - `u1-st-confusable` EXAMPLE `ex-letter-041d`
 - `u1-st-confusable` EXAMPLE `ex-letter-0421`
 - `u1-st-confusable` REFERENCE `ref-confusable`
+- `u1-st-guided-confusable` REMEDIATION `u1-st-confusable`
+- `u1-st-guided-confusable` EXAMPLE `ex-letter-0420`
+- `u1-st-guided-confusable` EXAMPLE `ex-letter-041d`
+- `u1-st-guided-confusable` EXAMPLE `ex-letter-0421`
+- `u1-st-guided-confusable` ITEM `u1-g-guided-confusable`
 - `u1-st-confusable-r` REMEDIATION `u1-st-confusable`
 - `u1-st-confusable-r` EXAMPLE `ex-letter-0420`
 - `u1-st-confusable-r` ITEM `u1-i-р-not-p`
@@ -3038,6 +3573,10 @@ permitsAppUse=true
 - `u1-st-iotated` EXAMPLE `ex-letter-0415`
 - `u1-st-iotated` EXAMPLE `ex-letter-042f`
 - `u1-st-iotated` REFERENCE `ref-iotated`
+- `u1-st-guided-iotated` REMEDIATION `u1-st-iotated`
+- `u1-st-guided-iotated` EXAMPLE `ex-letter-0415`
+- `u1-st-guided-iotated` EXAMPLE `ex-letter-042f`
+- `u1-st-guided-iotated` ITEM `u1-g-guided-iotated`
 - `u1-st-iotated-check` REMEDIATION `u1-st-iotated`
 - `u1-st-iotated-check` EXAMPLE `ex-letter-0415`
 - `u1-st-iotated-check` EXAMPLE `ex-letter-0401`
@@ -3052,6 +3591,11 @@ permitsAppUse=true
 - `u1-st-signs` EXAMPLE `ex-letter-042a`
 - `u1-st-signs` EXAMPLE `ex-letter-0419`
 - `u1-st-signs` REFERENCE `ref-signs`
+- `u1-st-guided-signs` REMEDIATION `u1-st-signs`
+- `u1-st-guided-signs` EXAMPLE `ex-letter-042c`
+- `u1-st-guided-signs` EXAMPLE `ex-letter-042a`
+- `u1-st-guided-signs` EXAMPLE `ex-letter-0419`
+- `u1-st-guided-signs` ITEM `u1-g-guided-signs`
 - `u1-st-signs-check` REMEDIATION `u1-st-signs`
 - `u1-st-signs-check` EXAMPLE `ex-letter-042c`
 - `u1-st-signs-check` ITEM `u1-i-ь-not-vowel`
@@ -3064,6 +3608,9 @@ permitsAppUse=true
 - `u1-s-print` OBJECTIVE `obj-u1-print-forms`
 - `u1-st-print` EXAMPLE `ex-print-letter-0410`
 - `u1-st-print` REFERENCE `ref-cyrillic-print`
+- `u1-st-guided-print` REMEDIATION `u1-st-print`
+- `u1-st-guided-print` EXAMPLE `ex-print-letter-0410`
+- `u1-st-guided-print` ITEM `u1-g-guided-print`
 - `u1-st-print-check` REMEDIATION `u1-st-print`
 - `u1-st-print-check` EXAMPLE `ex-print-letter-0410`
 - `u1-st-print-check` ITEM `u1-i-print-pair`
@@ -3071,6 +3618,10 @@ permitsAppUse=true
 - `u1-st-decoding` EXAMPLE `ex-print-letter-0410`
 - `u1-st-decoding` EXAMPLE `ex-print-letter-041c`
 - `u1-st-decoding` REFERENCE `ref-decoding`
+- `u1-st-guided-decoding` REMEDIATION `u1-st-decoding`
+- `u1-st-guided-decoding` EXAMPLE `ex-print-letter-0410`
+- `u1-st-guided-decoding` EXAMPLE `ex-print-letter-041c`
+- `u1-st-guided-decoding` ITEM `u1-g-guided-decoding`
 - `u1-st-decoding-check` REMEDIATION `u1-st-decoding`
 - `u1-st-decoding-check` EXAMPLE `ex-print-letter-0410`
 - `u1-st-decoding-check` ITEM `u1-i-decode-pair`
@@ -3090,14 +3641,29 @@ permitsAppUse=true
 - `u1-st-cumul` ITEM `u1-i-ь-not-vowel`
 - `u1-st-cumul` ITEM `u1-i-print-pair`
 - `u1-st-cumul` ITEM `u1-i-decode-pair`
+- `u1-s-letter-names` OBJECTIVE `obj-u1-letter-names`
+- `u1-s-letter-names` OBJECTIVE `obj-u1-pronunciation`
+- `u1-st-teach-letter-names` EXAMPLE `ex-u1-name-a`
+- `u1-st-teach-letter-names` EXAMPLE `ex-u1-name-be`
+- `u1-st-teach-letter-names` REFERENCE `ref-ca-letter-names`
+- `u1-st-guided-letter-names` REMEDIATION `u1-st-rem-letter-names`
+- `u1-st-guided-letter-names` EXAMPLE `ex-u1-name-a`
+- `u1-st-guided-letter-names` ITEM `u1-g-name-a`
+- `u1-st-guided-letter-names` REFERENCE `ref-ca-letter-names`
+- `u1-st-rem-letter-names` REFERENCE `ref-ca-letter-names`
+- `u1-st-check-letter-names` REMEDIATION `u1-st-rem-letter-names`
+- `u1-st-check-letter-names` ITEM `u1-i-name-be`
 
 ## Book-directed experiences
 
 - `u1-st-orient`
 - `u1-st-decoding`
+- `u1-st-guided-decoding`
 - `u1-st-pronunciation`
 - `u1-st-stress`
 - `u1-st-book`
+- `u1-st-teach-letter-names`
+- `u1-st-cumulative-direction`
 
 ## Unavailable experiences
 

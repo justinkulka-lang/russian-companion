@@ -11,12 +11,12 @@ Unit 5 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: b22fa0cca895a677386a77d03a63301f7454aa07
-- Unit content-review SHA-256: 9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: c2e405cf7081d673a39def8e26035bac7a65b608c57c5f4803ba832c2305c744
 - Mapping-package SHA-256: 2a08c3d25c46aa6820a3798cafb90e415a873dbaa13bb003c42f330d15fe40ec
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 72656d209b503af49da01f36e8cf30400b8e98b2719a28d960fbe774996b5cf7
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 3e8b9c1e7ede3645202a007920446dbef925e3bb79e595ffc397676294e63e54
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -821,12 +821,12 @@ remediationStepId=u5-st-rem-indeclinable
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1a391aa6934d86d57b75d4af381a862149d307200d6b278afb4a4eebaedf4e19
+- Content hash: b8556187576aa6c31722e35d048691ec76222c97b6446c79d78f554897483d2a
 
 title=Self-attest Lesson 5
 estimatedMinutes=10
 objectives=obj-u5-book
-steps=u5-st-book-work,u5-st-book
+steps=u5-st-book-work,u5-st-book,u5-st-anki-direction,u5-st-binder-direction,u5-st-tutor-direction,u5-st-cumulative-direction
 
 ### STEP `u5-st-book-work`
 
@@ -836,7 +836,7 @@ steps=u5-st-book-work,u5-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b95a352ae5e41b9c5cabdabeaef0807af31ff7e36d9369201f4ac309099a351a
+- Content hash: d7792830304075ee56a097ddecbee04647afed90991ea74d1b802dfc42a04ba5
 
 kind=BOOK
 title=Work Lesson 5 in your copy
@@ -846,7 +846,7 @@ references=ref-book-topics,ref-u35-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 5 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 5: printed pages 46-55. PDF indexes 58-67 are file locators, not printed pages. Observed section locators: §5.1 p46 (PDF 58); §5.2 p46 (PDF 58); §5.3 p47 (PDF 59); §5.4 p47 (PDF 59); §5.5 p49 (PDF 61); §5.6 p49 (PDF 61); §5.7 p50 (PDF 62); §5.8 p50 (PDF 62); §5.9 p50 (PDF 62); §5.10 p51 (PDF 63); §5.11 p52 (PDF 64); §5.12 p52 (PDF 64). Observed exercise locators: 5/1 p54/PDF66; 5/2 p54/PDF66; 5/3 p54/PDF66; 5/4 p54/PDF66; 5/5 p54/PDF66. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -858,7 +858,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f107026f965f2b928f4f9a7c4305c66ba0a1cc2b7834c89fe1408deb33cfbe66
+- Content hash: c42c1f68234aa6dac78cd7b7b7d4fc7626a518bc48c1592c4b7d42608cfe4d06
 
 kind=BOOK
 title=Record Lesson 5 book work
@@ -868,8 +868,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 5 work in your copy.
+bookDirection=Owned-book assignment for Lesson 5: printed pages 46-55. PDF indexes 58-67 are file locators, not printed pages. Observed section locators: §5.1 p46 (PDF 58); §5.2 p46 (PDF 58); §5.3 p47 (PDF 59); §5.4 p47 (PDF 59); §5.5 p49 (PDF 61); §5.6 p49 (PDF 61); §5.7 p50 (PDF 62); §5.8 p50 (PDF 62); §5.9 p50 (PDF 62); §5.10 p51 (PDF 63); §5.11 p52 (PDF 64); §5.12 p52 (PDF 64). Observed exercise locators: 5/1 p54/PDF66; 5/2 p54/PDF66; 5/3 p54/PDF66; 5/4 p54/PDF66; 5/5 p54/PDF66. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u5-st-anki-direction`
+
+- Objectives: obj-u5-book
+- Sessions: u5-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4446d66e69b4a2aebf890d07bde90b09f0d2219696dafbbe0b45631cbb5bae42
+
+kind=ANKI
+title=Unit 5 AnkiDroid direction
+body=Unit 5 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u5-st-binder-direction`
+
+- Objectives: obj-u5-book
+- Sessions: u5-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3c45f0418e34fd5924840d0893484e7d80fed78d7888d38cb90560bc8c500808
+
+kind=BINDER
+title=Unit 5 binder prompt
+body=Unit 5 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u5-st-tutor-direction`
+
+- Objectives: obj-u5-book
+- Sessions: u5-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c1b4d80906d68eaa308dbe2123254ea1fd3058444197af30b521dba31d8e44e1
+
+kind=TUTOR
+title=Unit 5 optional tutor
+body=Unit 5 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u5-st-cumulative-direction`
+
+- Objectives: obj-u5-book
+- Sessions: u5-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fd2ffc45c4df7a4af52f266b27ac4fc6d5c5e2af317a190b589e46de996c809a
+
+kind=ORIENT
+title=Unit 5 cumulative review
+body=Unit 5 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 5 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u5-q-kto`
@@ -4605,6 +4693,136 @@ reviewerIdentity=
 reviewerQualification=
 reviewDate=
 reviewedDigest=
+
+### AUTHORED_ENGLISH `en-ca-5-10`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1287dccfb60fc6bc00bd1b8e4a9b9fdc2cb292ff35fb3350ba18f11dbf95cfa
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-5-11141`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5bfb35737e2cc2b797ed2aca075ef5a31261f6816ddc33f53c59403d30a245db
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 5 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-5-11142`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee1dff3669d7c9cec219b851e119cc2f743a180e608ebc0865f9d9fcae7d09f8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-5-11143`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e18a06d76392882bd3297c80aadc9ed989ef9f1f3f4c8b7d98033c5c56338d1f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 5 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-5-11144`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 35460c967f4feb54d830d370ddbbe69889bda21a58f78c12936f6c070ae7c238
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-5-11145`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1a7fc7b4c502890ce81ea1fcf46171abbb8a5a8af4ef145956588f6da66f3bfb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 5 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-5-11146`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c41953e780c7a5c4a32a6c0dd414499b5d9f7ed3ba5d02c604b697e0b972f94f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-5-11147`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c4ac6ae00f92c6972aa41884e09cfb4f6eb183e2f2a10ffd51c165692ba4efd0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 5 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-5-8`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b9cedcbe160d9caef19eb16e9d13eef3c8414662f5b77ee09cf0bc4719f047d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 5: printed pages 46-55. PDF indexes 58-67 are file locators, not printed pages. Observed section locators: §5.1 p46 (PDF 58); §5.2 p46 (PDF 58); §5.3 p47 (PDF 59); §5.4 p47 (PDF 59); §5.5 p49 (PDF 61); §5.6 p49 (PDF 61); §5.7 p50 (PDF 62); §5.8 p50 (PDF 62); §5.9 p50 (PDF 62); §5.10 p51 (PDF 63); §5.11 p52 (PDF 64); §5.12 p52 (PDF 64). Observed exercise locators: 5/1 p54/PDF66; 5/2 p54/PDF66; 5/3 p54/PDF66; 5/4 p54/PDF66; 5/5 p54/PDF66. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-5-9`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 16d9485668dbdec6dbaffd33e75bc06f5c0beab64896166d937e345dd57c4337
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 5 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 
 ### AUTHORED_ENGLISH `en-u5-098`
 

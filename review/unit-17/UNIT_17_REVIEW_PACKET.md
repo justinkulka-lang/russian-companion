@@ -11,12 +11,12 @@ Unit 17 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
-- Unit content-review SHA-256: a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 8e9ba936c96d765441b052044af9dfa881a0f260eff16d1cfe8dade5514fc2fa
 - Mapping-package SHA-256: 724a3220ec28b620687871fbca1639cc8e64b58fed7fcfe8ba1a29bdf39d6328
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: d9f4d90c4b0fffd2a54687eafcf3027ee7291e00f10e80ca0f5c53eb2bd0f540
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 07bcf07ed4b210a5c9bc03fce1fc1f7426d2d080bd9dd3c4c50ea0a975a254f3
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -559,11 +559,11 @@ steps=u17-st-teach-hours-1,u17-st-guided-hours-1,u17-st-teach-hours-2,u17-st-tea
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f85155c5035e2b363f36ac09496d2fa2c297595a08aba1eda76edd43f2b07d44
+- Content hash: 38c2c0a78320397c2e861660e7518cf0c6a41e03b3b2b6dbecee5b9c94aaa3d7
 
 kind=TEACH
 title=Admitted lines
-body=один час — один час. два часа — два часа. 
+body=один час — один час. два часа — два часа. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -706,11 +706,11 @@ steps=u17-st-teach-years-1,u17-st-guided-years-1,u17-st-teach-years-2,u17-st-tea
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 642543ccce976d05c1c7accd4527d061ed0c1cfba172f2e48cc82d4c1172e2b2
+- Content hash: 391c3ceca80e3aa2512dcc759574ffdd2058041a8edf53ef0f52f6eff1b7c44b
 
 kind=TEACH
 title=Admitted lines
-body=один год — один год. два года — два года. 
+body=один год — один год. два года — два года. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -853,11 +853,11 @@ steps=u17-st-teach-minutes-1,u17-st-guided-minutes-1,u17-st-teach-minutes-2,u17-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 293dccbe692109ec8519e7dfffe1c17782cafd0b83c16fc279aa07cf8e99f7df
+- Content hash: 7885a24588f0b2098d618763eede3aadf1db4b3cc2cc4a180b05d5d326d22c25
 
 kind=TEACH
 title=Admitted lines
-body=одна минута — одна минута. две минуты — две минуты. 
+body=одна минута — одна минута. две минуты — две минуты. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1000,11 +1000,11 @@ steps=u17-st-teach-age-1,u17-st-guided-age-1,u17-st-teach-age-2,u17-st-rem-age,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2d2dafec70b1ebe54224228e6896b5b8bcded3f24b98fd8c615e4206da91de0d
+- Content hash: 44029285990fafff1d1d97ce69df854564dc659e8b654f61215b059fb87dbf7b
 
 kind=TEACH
 title=Admitted lines
-body=мне двадцать лет — I am 20 (years old). двадцать лет — 20 years. 
+body=мне двадцать лет — I am 20 (years old). двадцать лет — 20 years. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1125,11 +1125,11 @@ steps=u17-st-teach-weekdays-1,u17-st-guided-weekdays-1,u17-st-teach-weekdays-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7dcb00cb72e36b1dc4432c07cec51ec3726401f09b4c2736c59fc217d7bbc856
+- Content hash: e09cea53d2a0c354bf670797d5e12436f1ddb03e31137a48fa0b7a5eaf69aa92
 
 kind=TEACH
 title=Admitted lines
-body=понедельник — Monday. вторник — Tuesday. 
+body=понедельник — Monday. вторник — Tuesday. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1272,11 +1272,11 @@ steps=u17-st-teach-months-1,u17-st-guided-months-1,u17-st-teach-months-2,u17-st-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2cd8f772ef292e2f0ebb79e8deac4c0caf3123bb95df612f113c5343ad549f9a
+- Content hash: 821676fb23fb33efa837a99708308fd7ebdfdf277c0fada9ceb5f31067812adb
 
 kind=TEACH
 title=Admitted lines
-body=Январь — January. Февраль — February. 
+body=Январь — January. Февраль — February. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1419,11 +1419,11 @@ steps=u17-st-teach-clock-1,u17-st-guided-clock-1,u17-st-teach-clock-2,u17-st-rem
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 18c192047c7916cfe0d6bf48cc9f748e49e3c89485c157284283fe0060c69b52
+- Content hash: f8da3a3b0daab4dcbd64aec9458d02f3eb9f982fd508ade158795447ba849930
 
 kind=TEACH
 title=Admitted lines
-body=Который час? — What time is it? час — time. 
+body=Который час? — What time is it? час — time. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -2143,12 +2143,12 @@ remediationStepId=u17-st-rem-calendar-date
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 66b5c96116bf1f9e39e45506102ca473842ce60dc8b330868cc4282a840aba56
+- Content hash: e2c6287106c84b90d6b08d21b4c9703d733de80efcb2bc4023b0bd6f8fb3355c
 
 title=Self-attest Lesson 17
 estimatedMinutes=10
 objectives=obj-u17-book
-steps=u17-st-book-work,u17-st-book
+steps=u17-st-book-work,u17-st-book,u17-st-anki-direction,u17-st-binder-direction,u17-st-tutor-direction,u17-st-cumulative-direction
 
 ### STEP `u17-st-book-work`
 
@@ -2158,7 +2158,7 @@ steps=u17-st-book-work,u17-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 99f93bba31aaf8349b93ffd7d9bfbdb6e750a659624c583f0fa6d42cb1010131
+- Content hash: 1b6a0237fbbaaef3ac87cfdf67e08cb11d45947af07c21b5931c410073d059db
 
 kind=BOOK
 title=Work Lesson 17 in your copy
@@ -2168,7 +2168,7 @@ references=ref-u17-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 17 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 17: printed pages 201-214. PDF indexes 213-226 are file locators, not printed pages. Observed section locators: §17.1 p201 (PDF 213); §17.2 p201 (PDF 213); §17.3 p202 (PDF 214); §17.4 p202 (PDF 214); §17.5 p203 (PDF 215); §17.6 p203 (PDF 215); §17.7 p205 (PDF 217); §17.8 p205 (PDF 217); §17.9 p206 (PDF 218); §17.10 p206 (PDF 218); §17.11 p207 (PDF 219); §17.12 p208 (PDF 220); §17.13 p209 (PDF 221); §17.14 p210 (PDF 222); §17.15 p211 (PDF 223). Observed exercise locators: 17/1 p204/PDF216; 17/2 p205/PDF217; 17/3 p208/PDF220; 17/4 p209/PDF221; 17/5 p212/PDF224; 17/6 p212/PDF224. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -2180,7 +2180,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ea6201a6bed9ecf167146aba68099802d6b61eea7bc526730aa8be39f28a0e56
+- Content hash: 01fe8182beb3a2d5151f60bf8b8eb64106712349b010ac6f3c4f85301680952d
 
 kind=BOOK
 title=Record Lesson 17 book work
@@ -2190,8 +2190,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 17 work in your copy.
+bookDirection=Owned-book assignment for Lesson 17: printed pages 201-214. PDF indexes 213-226 are file locators, not printed pages. Observed section locators: §17.1 p201 (PDF 213); §17.2 p201 (PDF 213); §17.3 p202 (PDF 214); §17.4 p202 (PDF 214); §17.5 p203 (PDF 215); §17.6 p203 (PDF 215); §17.7 p205 (PDF 217); §17.8 p205 (PDF 217); §17.9 p206 (PDF 218); §17.10 p206 (PDF 218); §17.11 p207 (PDF 219); §17.12 p208 (PDF 220); §17.13 p209 (PDF 221); §17.14 p210 (PDF 222); §17.15 p211 (PDF 223). Observed exercise locators: 17/1 p204/PDF216; 17/2 p205/PDF217; 17/3 p208/PDF220; 17/4 p209/PDF221; 17/5 p212/PDF224; 17/6 p212/PDF224. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u17-st-anki-direction`
+
+- Objectives: obj-u17-book
+- Sessions: u17-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 67e5fc58c3c4fdb9165aea4cb17572ef04d77141935591766f26d208b9298d06
+
+kind=ANKI
+title=Unit 17 AnkiDroid direction
+body=Unit 17 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u17-st-binder-direction`
+
+- Objectives: obj-u17-book
+- Sessions: u17-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d3149ae9b2125777ae2f49b4502f1ed5d2b6add7a6c2add5fa3bcb4e38af0e64
+
+kind=BINDER
+title=Unit 17 binder prompt
+body=Unit 17 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u17-st-tutor-direction`
+
+- Objectives: obj-u17-book
+- Sessions: u17-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 29790b383663165fb1429437bc369fbd532cb10ac2147203f4c7fb24803f30c4
+
+kind=TUTOR
+title=Unit 17 optional tutor
+body=Unit 17 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u17-st-cumulative-direction`
+
+- Objectives: obj-u17-book
+- Sessions: u17-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 7b6d186fd4ed1a0830511d4e1abea9e34f530bbb67bbbbe224a07c6d6ea1e958
+
+kind=ORIENT
+title=Unit 17 cumulative review
+body=Unit 17 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 17 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u17-ordinals-0`
@@ -2253,12 +2341,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b890898afbbf230f08ccec1e6b7565e6e1e9dab3b283485314747a6173fcf23d
+- Content hash: e3dc0518e66d4b2e40cccf32eb9e9be92bd8bc2c7261b81d6966b7fe3adf5614
 
 kind=LEXICAL
 letterId=
 display=восемнадцатую девушку
-note=She just photographed the eighteenth girl
+note=the eighteenth girl, accusative
 objectiveId=obj-u17-ordinals
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -3052,35 +3140,35 @@ responseKind=RUSSIAN_PHRASE
 
 - Objectives: obj-u17-age
 - Sessions: u17-s-age
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7e7269fcd5e69d28021769b24ca8af7116e1d4bed222f1d7b43de61c1312759a
+- Content hash: 7d313658efd41a598405b2034e37a8aa31ed3ab1a495499054a8c98544a74920
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written beside the shown form?
+prompt=Which natural English states the age in the shown phrase?
 promptLetter=мне двадцать лет
-options=I am 20 (years old) | to_me (is) 20 years
-answer=I am 20 (years old)
-feedback=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
+options=I am 20 years old | I own 20 summers | 20 people asked me
+answer=I am 20 years old
+feedback=мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question.
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "to_me (is) 20 years".
-testedFeature=AGE_STATEMENT
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | I own 20 summers invents possession that the age construction does not state. | 20 people asked me invents a different predicate.
+testedFeature=AGE_NATURAL_ENGLISH
+evidenceMode=STATED_APPLICATION
 contrastSetId=u17-age-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u17-age-0-en
-distractorSourceIds= | prov-u17-age-x-0
-distractorDifference= | The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "to_me (is) 20 years".
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
-contrastMembers=I am 20 (years old) | to_me (is) 20 years
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u17-age-0-ru | prov-ex-u17-age-0-en | prov-u17-age-x-0
+answerSourceIds=prov-ca-17-503
+distractorSourceIds= | prov-ca-17-507 | prov-ca-17-508
+distractorDifference= | I own 20 summers invents possession that the age construction does not state. | 20 people asked me invents a different predicate.
+whyAnswerDemonstratesObjective=The age construction мне двадцать лет is natural English I am 20 years old.
+contrastMembers=I am 20 years old | I own 20 summers | 20 people asked me
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-17-502 | prov-ca-17-503 | prov-ca-17-507 | prov-ca-17-508
 responseKind=ENGLISH_CLASSIFICATION
 
 ### GUIDED_PRACTICE `u17-g-weekdays-0`
@@ -3297,35 +3385,35 @@ responseKind=RUSSIAN_PHRASE
 
 - Objectives: obj-u17-calendar-date
 - Sessions: u17-s-calendar-date
-- Source: src-wikipedia-date-notation-russia-1357134172
-- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 74282fafc9c6fade1b99b1fa7f63e806cc9cda4a3e262eb156d1fb9a8dbfaed9
+- Content hash: 98378a8e788efc480dd58f28fd3397feb370626761cf23db4b66f095c5cb6590
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written beside the shown form?
-promptLetter=Двадцать восьмое августа
-options=the month in genitive case | day month year | 28.08.17
-answer=the month in genitive case
-feedback=The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first").
+prompt=Choose the English description. What does the abbreviation г. contribute in a date?
+promptLetter=г.
+options=year, the abbreviation | the month name | the day number
+answer=year, the abbreviation
+feedback=г. is year, the abbreviation used after the year number in a date.
 objectiveId=obj-u17-calendar-date
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
-testedFeature=DATE_SPOKEN
-evidenceMode=EXPLICIT_SOURCE_PAIR
+distractorRationales= | the month name is a separate word in the date, not the abbreviation г. | the day number is a separate part of the date, not the abbreviation г.
+testedFeature=DATE_YEAR_ABBREVIATION
+evidenceMode=STATED_APPLICATION
 contrastSetId=u17-calendar-date-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u17-calendar-date-0-en
-distractorSourceIds= | prov-ex-u17-calendar-date-1-en | prov-u17-calendar-date-x-1
-distractorDifference= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first").
-contrastMembers=the month in genitive case | day month year | 28.08.17
-relationKind=EXPLICIT_SOURCE_PAIR
-relationParticipantIds=prov-ex-u17-calendar-date-0-ru | prov-ex-u17-calendar-date-0-en | prov-ex-u17-calendar-date-1-en | prov-u17-calendar-date-x-1
+answerSourceIds=prov-ca-repair-17-10753
+distractorSourceIds= | prov-ca-repair-17-10756 | prov-ca-repair-17-10757
+distractorDifference= | the month name is a separate word in the date, not the abbreviation г. | the day number is a separate part of the date, not the abbreviation г.
+whyAnswerDemonstratesObjective=г. is year, the abbreviation used after the year number in a date.
+contrastMembers=year, the abbreviation | the month name | the day number
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-repair-17-10752 | prov-ca-repair-17-10753 | prov-ca-repair-17-10756 | prov-ca-repair-17-10757
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u17-i-ordinals-1`
@@ -4172,35 +4260,35 @@ responseKind=ENGLISH_CLASSIFICATION
 
 - Objectives: obj-u17-calendar-date
 - Sessions: u17-s-calendar-date
-- Source: src-wikipedia-date-notation-russia-1357134172
-- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 41f6670b4afca36f4edcf3694d8c8270d737b40ea4a0842d17b14a6810d6caf5
+- Content hash: fdd01cc07791d8b21717b28e0e9b625d95b3697573d21266f4a1573f550437c4
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written beside the shown form?
-promptLetter=28 августа 2017 г.
-options=of the year | day month year | 28.08.17
-answer=of the year
-feedback=The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "of the year" ("is short for").
+prompt=Choose the English description. Which reading translates the whole shown date?
+promptLetter=15 мая 1996 г.
+options=15 May 1996 | the month alone | the year abbreviation alone
+answer=15 May 1996
+feedback=15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
 objectiveId=obj-u17-calendar-date
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
-testedFeature=DATE_YEAR
-evidenceMode=EXPLICIT_SOURCE_PAIR
+distractorRationales= | the month alone drops the day and the year. | the year abbreviation alone drops the day and the month.
+testedFeature=WHOLE_DATE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u17-calendar-date-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u17-calendar-date-x-0
-distractorSourceIds= | prov-ex-u17-calendar-date-1-en | prov-u17-calendar-date-x-1
-distractorDifference= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "of the year" ("is short for").
-contrastMembers=of the year | day month year | 28.08.17
-relationKind=EXPLICIT_SOURCE_PAIR
-relationParticipantIds=prov-ex-u17-calendar-date-1-ru | prov-u17-calendar-date-x-0 | prov-ex-u17-calendar-date-1-en | prov-u17-calendar-date-x-1
+answerSourceIds=prov-ca-repair-17-10762
+distractorSourceIds= | prov-ca-repair-17-10765 | prov-ca-repair-17-10766
+distractorDifference= | the month alone drops the day and the year. | the year abbreviation alone drops the day and the month.
+whyAnswerDemonstratesObjective=15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+contrastMembers=15 May 1996 | the month alone | the year abbreviation alone
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-repair-17-10761 | prov-ca-repair-17-10762 | prov-ca-repair-17-10765 | prov-ca-repair-17-10766
 responseKind=ENGLISH_CLASSIFICATION
 
 ### REFERENCE `ref-u17-attribution`
@@ -4238,6 +4326,2474 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=17
 searchTerms=unit 17 pressbooks notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-17-220`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7054fb6a8dc3b4bc542a65536003be73bfb53ad69a4edb0ebc4107b800ca32e8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:ex-u17-ordinals-3:display
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+восемнадцатую девушку
+shippedText=восемнадцатую девушку
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=935638de079c128027c359365dc32fb5e90775412a1a66bcec461acbefd95f2c
+contentHash=6c44330b2d8623541fdf88a75f2557d734f4594f6f3969c0fcb7dc1347d19235
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-221`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 52aca334a636440dc97a2dcb0994561b7901db6532ee7e080c910345be92e85d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:ex-u17-ordinals-3:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+the eighteenth girl, accusative
+shippedText=the eighteenth girl, accusative
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a642ccd0208a26f9db435023ae43d33562b42e87d757f77d14d87c96ddc19173
+contentHash=d767e93613816d0b4f04095f514533be4def4f14d8ed0f51bcd8355be4a973ee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-222`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21c3af861291d02aadf3bcf35eafd9c846abeb5af5e1234178c62b1cd4ab6167
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:ex-u17-ordinals-3:pair
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+восемнадцатую девушку — the eighteenth girl, accusative
+shippedText=восемнадцатую девушку — the eighteenth girl, accusative
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce86dde9f15531ab79a54fcb0665ca824c9a1279dc0862deeed8820c1b8dcb0a
+contentHash=126713050bddb15c91efc04ab04cd6e9171518a1f2677c9380b9ca6b477d854c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-502`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9bc222e1a2f11f9c529038459830e7a0fbc0737c4d4f6ef1d59df8b4695c8b4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-age-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+мне двадцать лет
+I am 20 years old
+Which natural English states the age in the shown phrase?
+мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question.
+The age construction мне двадцать лет is natural English I am 20 years old.
+I own 20 summers
+20 people asked me
+I own 20 summers invents possession that the age construction does not state.
+20 people asked me invents a different predicate.
+shippedText=мне двадцать лет
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=839ea5775cc02f5e846dc2061fd5ab332532782e851f75e19a24157811f507a0
+contentHash=941a0ccf67a1aaf9501fecd563275bc58a9130f448fcfc9676c6f295d7cb1bf5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-503`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 576e23393b72de8e998ff1a679cf393716ae2ea5f597ceab99b7c080421dac4d
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-age-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+мне двадцать лет
+I am 20 years old
+Which natural English states the age in the shown phrase?
+мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question.
+The age construction мне двадцать лет is natural English I am 20 years old.
+I own 20 summers
+20 people asked me
+I own 20 summers invents possession that the age construction does not state.
+20 people asked me invents a different predicate.
+shippedText=I am 20 years old
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=839ea5775cc02f5e846dc2061fd5ab332532782e851f75e19a24157811f507a0
+contentHash=1e6348fac6c2b24c7bffa46d8cc37d456db929dec8db7cec015ee169f121afe5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-504`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1ca670ede6f48b93091ded97f5cef4d0ce95787069e0b2993b67c6adc4ebb25
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-age-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+мне двадцать лет
+I am 20 years old
+Which natural English states the age in the shown phrase?
+мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question.
+The age construction мне двадцать лет is natural English I am 20 years old.
+I own 20 summers
+20 people asked me
+I own 20 summers invents possession that the age construction does not state.
+20 people asked me invents a different predicate.
+shippedText=Which natural English states the age in the shown phrase?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=839ea5775cc02f5e846dc2061fd5ab332532782e851f75e19a24157811f507a0
+contentHash=31e2652d9eed047083475d148984f123852c557f4839193f34fa77eb6c91111c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-505`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 05a2184b54e8d0022e98f93e01f1ac4fdcea3aa9a453b9c1bfcfe4c77cd7d47c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-age-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+мне двадцать лет
+I am 20 years old
+Which natural English states the age in the shown phrase?
+мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question.
+The age construction мне двадцать лет is natural English I am 20 years old.
+I own 20 summers
+20 people asked me
+I own 20 summers invents possession that the age construction does not state.
+20 people asked me invents a different predicate.
+shippedText=мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=839ea5775cc02f5e846dc2061fd5ab332532782e851f75e19a24157811f507a0
+contentHash=faac0bbe12c8755ac106ac2801a2a88f37476d220fe0118b89cceb6e6585c5e7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-506`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ccc4ebb0570b51e70ccd508cd527edc865102f44f512ecd3dfaecf3b6aa5aea3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-age-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+мне двадцать лет
+I am 20 years old
+Which natural English states the age in the shown phrase?
+мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question.
+The age construction мне двадцать лет is natural English I am 20 years old.
+I own 20 summers
+20 people asked me
+I own 20 summers invents possession that the age construction does not state.
+20 people asked me invents a different predicate.
+shippedText=The age construction мне двадцать лет is natural English I am 20 years old.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=839ea5775cc02f5e846dc2061fd5ab332532782e851f75e19a24157811f507a0
+contentHash=b88ec08a0076ef053290f5fa6d0106064d219f3b4f1f3c0e1536f59c8bcd6413
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-507`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 53257a9e26cb415650b57cb66dcee60c528d829e82934db3973577e117702ef6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-age-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+мне двадцать лет
+I am 20 years old
+Which natural English states the age in the shown phrase?
+мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question.
+The age construction мне двадцать лет is natural English I am 20 years old.
+I own 20 summers
+20 people asked me
+I own 20 summers invents possession that the age construction does not state.
+20 people asked me invents a different predicate.
+shippedText=I own 20 summers
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=839ea5775cc02f5e846dc2061fd5ab332532782e851f75e19a24157811f507a0
+contentHash=96a9af97cc73c8e6b8a907468efb6e345772bf2246c15de18d8580674fee5509
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-508`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6df9732d3aeb5f14f6dad22e6c034fcc3bc4349722eab738c3f61bd668a103d0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-age-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+мне двадцать лет
+I am 20 years old
+Which natural English states the age in the shown phrase?
+мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question.
+The age construction мне двадцать лет is natural English I am 20 years old.
+I own 20 summers
+20 people asked me
+I own 20 summers invents possession that the age construction does not state.
+20 people asked me invents a different predicate.
+shippedText=20 people asked me
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=839ea5775cc02f5e846dc2061fd5ab332532782e851f75e19a24157811f507a0
+contentHash=daede60db97b153958afffc87a48c8b186ec6ad36e327b37eadb396cf1e000de
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-509`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc46aae3438569612b82dc86b44be464b1448b23f320b1c00d648a49d6b26eff
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-age-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+мне двадцать лет
+I am 20 years old
+Which natural English states the age in the shown phrase?
+мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question.
+The age construction мне двадцать лет is natural English I am 20 years old.
+I own 20 summers
+20 people asked me
+I own 20 summers invents possession that the age construction does not state.
+20 people asked me invents a different predicate.
+shippedText=I own 20 summers invents possession that the age construction does not state.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=839ea5775cc02f5e846dc2061fd5ab332532782e851f75e19a24157811f507a0
+contentHash=ade3c6167451f4bb7ee54df86b1dc3243cb4f7152ac8056a8ff642b4a8550490
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-510`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45e41990479f7b79d32f22ac1e6a5284eeccdf29a33d4bb112c9329ff9cc1c6b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-age-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+мне двадцать лет
+I am 20 years old
+Which natural English states the age in the shown phrase?
+мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question.
+The age construction мне двадцать лет is natural English I am 20 years old.
+I own 20 summers
+20 people asked me
+I own 20 summers invents possession that the age construction does not state.
+20 people asked me invents a different predicate.
+shippedText=20 people asked me invents a different predicate.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=839ea5775cc02f5e846dc2061fd5ab332532782e851f75e19a24157811f507a0
+contentHash=c3b73fee170c3dd37823de037b4c696c3bbdfc6032b405f7202f2f830d3f1707
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-511`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0f0a27c73479524b1cc6992b0796ae43af96ec93122910ace704462af98d3ee
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. abbreviates год, year. The rest of a printed date is a separate question.
+The abbreviation г. means year.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+год,
+год
+shippedText=г.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fcad322eac474ac1a5545bcdcc55f02e18b885b1edfee071294809dfcd8694c
+contentHash=4c739afeeefc7cb4ea9af5b046f08480625b2f4363d14c041f1311a1bfb78c40
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-512`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ce39c7605f315a75f5544aaea9ee815f39317e7c0e73fa0b3dcb4aa689cd8954
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. abbreviates год, year. The rest of a printed date is a separate question.
+The abbreviation г. means year.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+год,
+год
+shippedText=year, the abbreviation
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fcad322eac474ac1a5545bcdcc55f02e18b885b1edfee071294809dfcd8694c
+contentHash=38ee20e720c5f863694fe2313dcd3a002f0176720951837d3a1d985e9d441de2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-513`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b63ff183a30655cc897c9dd453c6cffdf9c83b5192fc5af0ba11a2e4cce56732
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. abbreviates год, year. The rest of a printed date is a separate question.
+The abbreviation г. means year.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+год,
+год
+shippedText=What does the abbreviation г. contribute in a date?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fcad322eac474ac1a5545bcdcc55f02e18b885b1edfee071294809dfcd8694c
+contentHash=31fa90713aa56c4a1b29b934f57a61f84f0927e156b19152da5b74afd9860154
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-514`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 938ab8425114741ac14598e8d131f5cbaceaa4d2959af3da86ffe7edbae93615
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. abbreviates год, year. The rest of a printed date is a separate question.
+The abbreviation г. means year.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+год,
+год
+shippedText=г. abbreviates год, year. The rest of a printed date is a separate question.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fcad322eac474ac1a5545bcdcc55f02e18b885b1edfee071294809dfcd8694c
+contentHash=67c8ea3ee2537906a258bcfa901804297e242d751587280d999737a46410a1a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-515`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 66c4563adc0bdaa6ea79d22eabc41f59183c7dec3122e2932351ae0acc1f0a38
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. abbreviates год, year. The rest of a printed date is a separate question.
+The abbreviation г. means year.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+год,
+год
+shippedText=The abbreviation г. means year.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fcad322eac474ac1a5545bcdcc55f02e18b885b1edfee071294809dfcd8694c
+contentHash=eda296bd451c9db510b32387b6606956e0d467e1fb26324d3a63d7b21ecd0b61
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-516`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f0b1d9946047adeb95fddbeb31bb1c970af024a9492eb88c8fc113c3a010afdb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. abbreviates год, year. The rest of a printed date is a separate question.
+The abbreviation г. means year.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+год,
+год
+shippedText=the month name
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fcad322eac474ac1a5545bcdcc55f02e18b885b1edfee071294809dfcd8694c
+contentHash=8a54c5bb58eb4c7cdf2434052c8e9df1b157c0c7387a1b2d4b7f2bb6d7422cf5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-517`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bafddc0f460db501692d02367a501d94242a4ef401c561a15b93887bb3584ce8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. abbreviates год, year. The rest of a printed date is a separate question.
+The abbreviation г. means year.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+год,
+год
+shippedText=the day number
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fcad322eac474ac1a5545bcdcc55f02e18b885b1edfee071294809dfcd8694c
+contentHash=d22157457dc79382f394acdd52bdf590c64556c64a0f90accf809d97fa023a2e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-518`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9ce334acd7a4e584786fdc2f9e8040fdadc37f1696ad23e4df39cde6bfff39a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. abbreviates год, year. The rest of a printed date is a separate question.
+The abbreviation г. means year.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+год,
+год
+shippedText=the month name is a separate word in the date, not the abbreviation г.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fcad322eac474ac1a5545bcdcc55f02e18b885b1edfee071294809dfcd8694c
+contentHash=0b153e67a534120abe145057e8ef6c292e8db4acfd5c58ad4d92b574c36e8eee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-519`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 584576f562751e75c0aad726c60078b974a540c47be88ef4f37acf74f616d5cd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. abbreviates год, year. The rest of a printed date is a separate question.
+The abbreviation г. means year.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+год,
+год
+shippedText=the day number is a separate part of the date, not the abbreviation г.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fcad322eac474ac1a5545bcdcc55f02e18b885b1edfee071294809dfcd8694c
+contentHash=d7ae48e3a5f67e73ada1ee46ad2af35dd90803fd2653a8ea7ab8a7fca70f8199
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-520`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f7fff810f7bc55356cc54f62e23442e2e4776d43e837e3bf6e48359ca9526d8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. abbreviates год, year. The rest of a printed date is a separate question.
+The abbreviation г. means year.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+год,
+год
+shippedText=г
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fcad322eac474ac1a5545bcdcc55f02e18b885b1edfee071294809dfcd8694c
+contentHash=ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-521`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec4d402bf57a0a01af2f52228e32434a5b717eb2c6434e6aed6c850e2ecc3e83
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. abbreviates год, year. The rest of a printed date is a separate question.
+The abbreviation г. means year.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+год,
+год
+shippedText=год,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fcad322eac474ac1a5545bcdcc55f02e18b885b1edfee071294809dfcd8694c
+contentHash=fb040983d56c035a93a1898b32f306f9afa614001a5d58b79eaa51e3eb33a3a4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-522`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d0a4ad5f9483d4c999910b0e95d1343fdc7ac3bcbba71401a2e954cad8a357c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. abbreviates год, year. The rest of a printed date is a separate question.
+The abbreviation г. means year.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+год,
+год
+shippedText=год
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fcad322eac474ac1a5545bcdcc55f02e18b885b1edfee071294809dfcd8694c
+contentHash=9c12635b2be212a5ec57a9adf3ca49ca142589162e18cfaa2c76957b2e2da6f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-523`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 79e24c90c29a373ac75eb8e84227feb2ea9da43198559c0b7f08a3b4f21aed82
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.
+The whole date includes the day, the month, and the year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=15 мая 1996 г.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740
+contentHash=18b97d98bdab1bf893dfe2dba25e13864794788f75d1e6fdf49828ccea6ff0d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-524`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4bebbbe97a3516fb23d5f75b18f6e5d035b8e00319b459dc2625caf9324637b
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.
+The whole date includes the day, the month, and the year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=15 May 1996
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740
+contentHash=fb86d89c504ea942f9aac879fb2a05ef7362c2da98d2c4dbcea135f3140c8704
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-525`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b3aa2d703e03f98d9d78e4a16b8af38312b6c26738c7b0dcf36e9d36caf4a5c8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.
+The whole date includes the day, the month, and the year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=Which reading translates the whole shown date?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740
+contentHash=603ab57fe46780b6345a5e45ed38f3b03354affac91c05c93df6e1cea8c176b1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-526`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 15f3d8df7906d2e2ac2b02c6b22087ad063163c91c5a21aaf13cb5e868f58298
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.
+The whole date includes the day, the month, and the year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740
+contentHash=7717122075a7bd256fb0ec9fe1309adf3cbba0cf168f8763f6aa1128dba1da4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-527`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 28175ef8dc00724cf09b9b4d39195f681deca05eea4e4cc9c715137ede8990c1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.
+The whole date includes the day, the month, and the year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=The whole date includes the day, the month, and the year.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740
+contentHash=4082ea31a4834fa9c93882ab332660fb420fe567145dc2946cd7890d7100ffba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-528`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 224105ab3e6168137d4f36b026834d2e62ae6413b6feea84c06a86906f21b270
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.
+The whole date includes the day, the month, and the year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=the month alone
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740
+contentHash=6d7b19d145e9b18691e49332c04f13ffa37b6403faba671f0742188ea0be0b68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-529`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c933d028debcb6ac518ff23fa89290ec0d91a50566e46d85e48a2919bac5564
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.
+The whole date includes the day, the month, and the year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=the year abbreviation alone
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740
+contentHash=ee8f3dc4b79dc84727f327f2afe6cd21cfe0adb18c21476f136bc629a8fd625f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-530`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c6bc45e15f0675f5e832b4c1abba3afe27a61800f0fb28381d34e3decb20f21
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.
+The whole date includes the day, the month, and the year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=the month alone drops the day and the year.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740
+contentHash=c9bdad60c8f2395279652563ee3392ea525632c7743a0d0eede39f6a7ecd4813
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-531`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45ea6ad003f76443ee2843974ea506574de047636e477ee22470489810f9ad69
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.
+The whole date includes the day, the month, and the year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=the year abbreviation alone drops the day and the month.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740
+contentHash=afdc2d4b1896b0409cdd062d4ea449215497565e4a9ba169a0aa68d2044757e0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-532`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa1da488e528859d607cda8c7626951d7bcb85a3aefc8863b3c8278dd37d090f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.
+The whole date includes the day, the month, and the year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=мая
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740
+contentHash=2869fa115ca7749998b9ae98ef853d63449f68fcb9d7d9a63765a6d429bdfbad
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-533`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d57aa72ec44c515cbdebeacceeddb767d2baf16bac39c9580670e6e86188b12
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.
+The whole date includes the day, the month, and the year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=г.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740
+contentHash=4c739afeeefc7cb4ea9af5b046f08480625b2f4363d14c041f1311a1bfb78c40
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-534`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 890b13e8945ad96bd6602c5048545656ec7474a000ea14f899024cf0e84ae033
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.
+The whole date includes the day, the month, and the year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=г
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740
+contentHash=ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-72`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a6122159e5d51db2895e336e57e89b12542912f9ec648c837fca4de8ed79fc7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:u17-st-teach-hours-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-73`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6ed23af02ff6a7ff45cd26e552120a9a275b4a0694b7969cc743a1c731d4fca2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:u17-st-teach-years-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-74`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 717ef26cdc5feb26c06db8d92a54220f771f1f7fce4f12c364b627baeeb5f4c3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:u17-st-teach-minutes-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-75`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b76cd4b03f15157fc7b93141c21e278b66b62921c7fb9d1d68bb9ed7f67e016
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:u17-st-teach-age-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-76`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a47b734ac2c04c7753b8cd55fa8b698f33022f27df8da3292229407ecb56cf8c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:u17-st-teach-weekdays-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-77`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2ebed6bae9f80225ffda39017b96a8b6fea6ab8ed8e5833ab1b9c285f05cba2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:u17-st-teach-months-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-17-78`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5005a02690ba4bd0861c1d6cef06f8bbac0540204a96f7ac9b63ced56c165384
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:u17-st-teach-clock-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10752`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 607e69efca361dc033eb53ad9f54a71b430dbb2c44aea5e1eb2bcc773995a4ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. is year, the abbreviation used after the year number in a date.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+shippedText=г.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25ef57df1f7508bfdfc6d58d402300adb76f3874a00970678dc10fcc035c266d
+contentHash=4c739afeeefc7cb4ea9af5b046f08480625b2f4363d14c041f1311a1bfb78c40
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10753`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2834a12bb4b58dabce266b50decb91bab0109179759c7c32b1de07df0de893ab
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. is year, the abbreviation used after the year number in a date.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+shippedText=year, the abbreviation
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25ef57df1f7508bfdfc6d58d402300adb76f3874a00970678dc10fcc035c266d
+contentHash=38ee20e720c5f863694fe2313dcd3a002f0176720951837d3a1d985e9d441de2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10754`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c690c46b3c6f8e6d94b78da8692dc85485e02c35660a28ed65ab01a6aa3d3502
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. is year, the abbreviation used after the year number in a date.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+shippedText=What does the abbreviation г. contribute in a date?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25ef57df1f7508bfdfc6d58d402300adb76f3874a00970678dc10fcc035c266d
+contentHash=31fa90713aa56c4a1b29b934f57a61f84f0927e156b19152da5b74afd9860154
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10755`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6a00950ad742a4dc26648afc1e90a95ba6bc6d6cf355c7ef98ec10941bf7a721
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. is year, the abbreviation used after the year number in a date.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+shippedText=г. is year, the abbreviation used after the year number in a date.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25ef57df1f7508bfdfc6d58d402300adb76f3874a00970678dc10fcc035c266d
+contentHash=c54e21156a438da372220024a2a4d095b48e2696172fee76b545aa52c6de16ca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10756`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26ab568bb814e11b3775aa4c7fcb162b0d9690ac2a85d41f85e60d0323ede264
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. is year, the abbreviation used after the year number in a date.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+shippedText=the month name
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25ef57df1f7508bfdfc6d58d402300adb76f3874a00970678dc10fcc035c266d
+contentHash=8a54c5bb58eb4c7cdf2434052c8e9df1b157c0c7387a1b2d4b7f2bb6d7422cf5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10757`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0a98a4a191d0a2d5c84662928929b4b171043053185b6931af33bf7b7adcc4e1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. is year, the abbreviation used after the year number in a date.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+shippedText=the day number
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25ef57df1f7508bfdfc6d58d402300adb76f3874a00970678dc10fcc035c266d
+contentHash=d22157457dc79382f394acdd52bdf590c64556c64a0f90accf809d97fa023a2e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10758`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b527e00294189ecb7cf8d80cea01f8a5e5d143eefae86050ff3bc9c1e3996ffa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. is year, the abbreviation used after the year number in a date.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+shippedText=the month name is a separate word in the date, not the abbreviation г.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25ef57df1f7508bfdfc6d58d402300adb76f3874a00970678dc10fcc035c266d
+contentHash=0b153e67a534120abe145057e8ef6c292e8db4acfd5c58ad4d92b574c36e8eee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10759`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4bb5dad5fe23ebe56a79f030fe9a5a1bd7fd2a17a47ec561bbbf91d05908bb0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. is year, the abbreviation used after the year number in a date.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+shippedText=the day number is a separate part of the date, not the abbreviation г.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25ef57df1f7508bfdfc6d58d402300adb76f3874a00970678dc10fcc035c266d
+contentHash=d7ae48e3a5f67e73ada1ee46ad2af35dd90803fd2653a8ea7ab8a7fca70f8199
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10760`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5ac88ec2357f8c012ef66140fbae1db9c2f47f2bfafad0464b71a09ea16f1e42
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-g-calendar-date-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+г.
+year, the abbreviation
+What does the abbreviation г. contribute in a date?
+г. is year, the abbreviation used after the year number in a date.
+the month name
+the day number
+the month name is a separate word in the date, not the abbreviation г.
+the day number is a separate part of the date, not the abbreviation г.
+г
+shippedText=г
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25ef57df1f7508bfdfc6d58d402300adb76f3874a00970678dc10fcc035c266d
+contentHash=ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10761`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7fbab65a6a25adf570a3405b0bb15d866dce4db17a3bf403f8921b40c3a30c9e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=15 мая 1996 г.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47b15c4eeab2965231515fc1604ce936d2e78debfc1bbd51fddf0ffb12dec617
+contentHash=18b97d98bdab1bf893dfe2dba25e13864794788f75d1e6fdf49828ccea6ff0d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10762`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0edeaade3d2432156883c581060575f321b642f4c030a2904a6d4b18bacf4d82
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=15 May 1996
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47b15c4eeab2965231515fc1604ce936d2e78debfc1bbd51fddf0ffb12dec617
+contentHash=fb86d89c504ea942f9aac879fb2a05ef7362c2da98d2c4dbcea135f3140c8704
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10763`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 766ebeb99ec7d8171ed3fe76235a1a7aa703a8a5953e7f99351d91b1825103e3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=Which reading translates the whole shown date?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47b15c4eeab2965231515fc1604ce936d2e78debfc1bbd51fddf0ffb12dec617
+contentHash=603ab57fe46780b6345a5e45ed38f3b03354affac91c05c93df6e1cea8c176b1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10764`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b277af2661c7f3da373a6fe95a6a46aa3a5dd67b369bff5f660d09979f295c2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47b15c4eeab2965231515fc1604ce936d2e78debfc1bbd51fddf0ffb12dec617
+contentHash=c6e604a7a096d6f9af3aa32056554755ffd2744cc4c378988b359697c6789186
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10765`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec93fe176d1834f13d60eb52cb215a6ebe3abdbc642e0248e35c8e88dba30047
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=the month alone
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47b15c4eeab2965231515fc1604ce936d2e78debfc1bbd51fddf0ffb12dec617
+contentHash=6d7b19d145e9b18691e49332c04f13ffa37b6403faba671f0742188ea0be0b68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10766`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0510cdfe30ad22263d595f6032d79785a578e902a09326da692d38179e8813bd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=the year abbreviation alone
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47b15c4eeab2965231515fc1604ce936d2e78debfc1bbd51fddf0ffb12dec617
+contentHash=ee8f3dc4b79dc84727f327f2afe6cd21cfe0adb18c21476f136bc629a8fd625f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10767`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ef55190609e8d73da9076489b99b82408fe828d48543f8ca12d6ad36076a6b5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=the month alone drops the day and the year.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47b15c4eeab2965231515fc1604ce936d2e78debfc1bbd51fddf0ffb12dec617
+contentHash=c9bdad60c8f2395279652563ee3392ea525632c7743a0d0eede39f6a7ecd4813
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10768`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b6aac4c0f19fd5d32bb75a9def4bc8f91dd53651eaa66af890fc37a336070e6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=the year abbreviation alone drops the day and the month.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47b15c4eeab2965231515fc1604ce936d2e78debfc1bbd51fddf0ffb12dec617
+contentHash=afdc2d4b1896b0409cdd062d4ea449215497565e4a9ba169a0aa68d2044757e0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10769`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6892e440b46fbeaad58d57de733706ee74ba710ec5cab7b4218e17f4ec9a7178
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=мая
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47b15c4eeab2965231515fc1604ce936d2e78debfc1bbd51fddf0ffb12dec617
+contentHash=2869fa115ca7749998b9ae98ef853d63449f68fcb9d7d9a63765a6d429bdfbad
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10770`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6df50df42a7d74bfbf39cf98e2e9695b3550513ef14d1ff0cb0cdb5a2d84599
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=г.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47b15c4eeab2965231515fc1604ce936d2e78debfc1bbd51fddf0ffb12dec617
+contentHash=4c739afeeefc7cb4ea9af5b046f08480625b2f4363d14c041f1311a1bfb78c40
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-10771`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 962c1fbfe91a8e11859418c619b30c41d84e3e0a7d7473e7730f69aaaaf5e6d0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u17-i-calendar-date-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+15 мая 1996 г.
+15 May 1996
+Which reading translates the whole shown date?
+15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+the month alone
+the year abbreviation alone
+the month alone drops the day and the year.
+the year abbreviation alone drops the day and the month.
+мая
+г.
+г
+shippedText=г
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47b15c4eeab2965231515fc1604ce936d2e78debfc1bbd51fddf0ffb12dec617
+contentHash=ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-11110`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9d009c3ac3c277d0681f201267f663c79737da97862c819ae0cb2ddd5692077a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u17-g-calendar-date-0:prompt
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Choose the English description. What does the abbreviation г. contribute in a date?
+shippedText=Choose the English description. What does the abbreviation г. contribute in a date?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7b90f387bbd952dbe7b17207fd04a3d451ba480da50a277ca6fa075992c2f414
+contentHash=a021f6d5570833d25004a0e77f1637fe75cb765f0c4da81d8d69bcb593ee9c97
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-17-11111`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 878d0534252d1d513468afd6f1b4fbb50c208f1faf874b864e928d7212e2a4fe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u17-i-calendar-date-2:prompt
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Choose the English description. Which reading translates the whole shown date?
+shippedText=Choose the English description. Which reading translates the whole shown date?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff717248e7febefa54e474a1ffa59f18433dd9de7e4f1b4e59480bb5bf7cd9c2
+contentHash=19afffbc518f50bfd9fc5419bf7513dd5c4a777302d161c8411b16530d404731
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-u17-age-0-en`
 
@@ -13082,6 +15638,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-17-11225`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9f3a2542e3aa270f91efb331ed73f1660249dc1fc31d46db13322fec7676d08c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 17 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-17-11226`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c7b2f3c993568bbe59e9ead49df8c3c3aab95e3daee9afb9e3e8f26a6c0f73d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-17-11227`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a63e849a2598b369e673440ae05bbf5f3a8b360660b1f3b0ba8c89c49f1307df
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 17 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-17-11228`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f1db293b68d97940f4557eb94248f11acbc7a6a79b90f9d161832b1adac94d6b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-17-11229`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 965251fa2224d7b94842fc813c5bd6365827cf04f365233f5e3d9be0ab9b6c46
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 17 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-17-11230`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 18baf002a34a35c28a4c0854a27a715bcc4c54c2d1be5af2d3094eece3585d04
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-17-11231`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5430beed54db3df2bdd76410b059703d30ef1f1b435472db40444182c8cc1028
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 17 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-17-69`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b57824e89926a70e6c519f6a2562249d7bda0bdfaa8a8e607b1e65ef5f52fa3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 17: printed pages 201-214. PDF indexes 213-226 are file locators, not printed pages. Observed section locators: §17.1 p201 (PDF 213); §17.2 p201 (PDF 213); §17.3 p202 (PDF 214); §17.4 p202 (PDF 214); §17.5 p203 (PDF 215); §17.6 p203 (PDF 215); §17.7 p205 (PDF 217); §17.8 p205 (PDF 217); §17.9 p206 (PDF 218); §17.10 p206 (PDF 218); §17.11 p207 (PDF 219); §17.12 p208 (PDF 220); §17.13 p209 (PDF 221); §17.14 p210 (PDF 222); §17.15 p211 (PDF 223). Observed exercise locators: 17/1 p204/PDF216; 17/2 p205/PDF217; 17/3 p208/PDF220; 17/4 p209/PDF221; 17/5 p212/PDF224; 17/6 p212/PDF224. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-17-70`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f06f770b5348fcf347d92b0bcce85746b90476d4be96d70315effd2e1e1f568d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 17 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-17-71`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8239807c4b909a72ac7b6c4082edc64a5cfc8252a0ff45fd02269aaaa6eb89db
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-003ed81da751`
 
 - Objectives: none
@@ -14004,6 +16690,21 @@ CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -14101,6 +16802,20 @@ permitsAppUse=true
 
 src-wikipedia-date-notation-russia-1357134172
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -14449,6 +17164,71 @@ permitsAppUse=true
 - `u17-st-check-calendar-date` ITEM `u17-i-calendar-date-2`
 - `u17-s-book` OBJECTIVE `obj-u17-book`
 - `u17-st-book-work` REFERENCE `ref-u17-attribution`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-17-220`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-17-221`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-17-222`
+- `obj-u17-age` PROVENANCE `prov-ca-17-502`
+- `obj-u17-age` PROVENANCE `prov-ca-17-503`
+- `obj-u17-age` PROVENANCE `prov-ca-17-504`
+- `obj-u17-age` PROVENANCE `prov-ca-17-505`
+- `obj-u17-age` PROVENANCE `prov-ca-17-506`
+- `obj-u17-age` PROVENANCE `prov-ca-17-507`
+- `obj-u17-age` PROVENANCE `prov-ca-17-508`
+- `obj-u17-age` PROVENANCE `prov-ca-17-509`
+- `obj-u17-age` PROVENANCE `prov-ca-17-510`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-511`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-512`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-513`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-514`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-515`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-516`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-517`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-518`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-519`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-520`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-521`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-522`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-523`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-524`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-525`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-526`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-527`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-528`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-529`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-530`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-531`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-532`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-533`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-17-534`
+- `obj-u17-hours` PROVENANCE `prov-ca-17-72`
+- `obj-u17-years` PROVENANCE `prov-ca-17-73`
+- `obj-u17-minutes` PROVENANCE `prov-ca-17-74`
+- `obj-u17-age` PROVENANCE `prov-ca-17-75`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-17-76`
+- `obj-u17-months` PROVENANCE `prov-ca-17-77`
+- `obj-u17-clock` PROVENANCE `prov-ca-17-78`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10752`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10753`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10754`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10755`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10756`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10757`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10758`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10759`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10760`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10761`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10762`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10763`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10764`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10765`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10766`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10767`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10768`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10769`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10770`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10771`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-11110`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-11111`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-0-en`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-0-ru`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-1-en`

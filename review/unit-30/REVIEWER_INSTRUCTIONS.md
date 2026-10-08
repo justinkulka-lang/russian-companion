@@ -2,18 +2,18 @@
 
 Schema version: 3
 Application: dev.russiancompanion 2.0.0-dev (5)
-Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
-Unit content-review digest: f1b2433f62fd490d7a891335eee139ab7684d90335fbf8ff0744cc7833f9df39
+Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+Unit content-review digest: 5df4756000729cfaea213937b87807b7ad7f74932335c9bd34b62a71af2e51b3
 Mapping-package digest: 97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2
-Pack content-review digest: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-Review-package digest: 18bf856e7f2080299416cd5074a031de475f7f18f12eded099ae2b288dcdc488
-Repository source digest: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+Pack content-review digest: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+Review-package digest: 7dcc10b8fa352268fdb01432d369ca9684540bf5ba0db0525adeb3861c9bfa1f
+Repository source digest: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
-This packet was generated from the packaged curriculum at curriculum source commit f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
+This packet was generated from the packaged curriculum at curriculum source commit 057962d81d14bcf5db9f8740ae2443f29ff618c1. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
 
 ## Digests
 
-`unitContentReviewDigest` (manifest field `contentReviewDigest`) binds the instructional curriculum for Unit 30. It is canonical JSON, digest schema 2, with scope `unit`. It includes this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It excludes review status, reviewer signature fields, the reviewed digest, mapping approval status, install state, and readiness. Recording those workflow values leaves this digest unchanged. A later change to substantive content reachable from this unit changes it and invalidates this unit's approval. A change that this unit cannot reach does not. Approval binds only to version 2.0.0-dev and this unit digest. Signing Unit 30 does not approve any other unit.
+`unitContentReviewDigest` (manifest field `contentReviewDigest`) binds the instructional curriculum for Unit 30. It is canonical JSON, digest schema 3, with scope `unit`. It includes this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It excludes review status, reviewer signature fields, the reviewed digest, mapping approval status, install state, and readiness. Recording those workflow values leaves this digest unchanged. A later change to substantive content reachable from this unit changes it and invalidates this unit's approval. A change that this unit cannot reach does not. Approval binds only to version 2.0.0-dev and this unit digest. Signing Unit 30 does not approve any other unit.
 
 `mappingPackageDigest` binds the proposed edition-mapping facts in fixed order: unit number, mapping record id, edition title, author, publisher imprint, observed-edition notes, proposed lesson number, printed page start, printed page end, topic description, observation source, ISBN observation state, ISBN value or null, and the current mapping disposition. Reviewer identity, reviewer qualification, review date, reviewer notes, correction notes, and signature are outside this digest. Completing those workflow fields does not rewrite the mapping facts. Changing the lesson, page range, title, author, publisher, topic, observation source, ISBN state, or ISBN value changes this digest.
 
@@ -37,7 +37,7 @@ The package marker scan detects only a fixed list of known prohibited mapping-in
 
 ## What approval means
 
-A later OWNER_ACCEPTED disposition applies only to version 2.0.0-dev, unit content-review digest f1b2433f62fd490d7a891335eee139ab7684d90335fbf8ff0744cc7833f9df39, and mapping-package digest 97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2, and only after RESEARCH_VERIFIED, IMPLEMENTED_PENDING_FINAL_AUDIT, FINAL_CURRICULUM_AUDIT_PASSED, and INDEPENDENT_AUDIT_VERIFIED are recorded for that same digest. Confirm review-package digest 18bf856e7f2080299416cd5074a031de475f7f18f12eded099ae2b288dcdc488 and curriculum source commit f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7 before relying on this packet. Any later substantive instructional change reachable from Unit 30 invalidates downstream audit states. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER. CI does not approve that mapping.
+A later OWNER_ACCEPTED disposition applies only to version 2.0.0-dev, unit content-review digest 5df4756000729cfaea213937b87807b7ad7f74932335c9bd34b62a71af2e51b3, and mapping-package digest 97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2, and only after RESEARCH_VERIFIED, IMPLEMENTED_PENDING_FINAL_AUDIT, FINAL_CURRICULUM_AUDIT_PASSED, and INDEPENDENT_AUDIT_VERIFIED are recorded for that same digest. Confirm review-package digest 7dcc10b8fa352268fdb01432d369ca9684540bf5ba0db0525adeb3861c9bfa1f and curriculum source commit 057962d81d14bcf5db9f8740ae2443f29ff618c1 before relying on this packet. Any later substantive instructional change reachable from Unit 30 invalidates downstream audit states. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER. CI does not approve that mapping.
 
 Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit 30 reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 

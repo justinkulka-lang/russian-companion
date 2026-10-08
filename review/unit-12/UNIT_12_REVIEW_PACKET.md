@@ -11,12 +11,12 @@ Unit 12 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: b22fa0cca895a677386a77d03a63301f7454aa07
-- Unit content-review SHA-256: c610495bf16604d555187f66e456c2cd1cb127c77881ef87097332f5e2d426bb
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: c449111039257472d3289c0252bd677367480fd0602c89b7741bb8b7aa4c0f99
 - Mapping-package SHA-256: 0747489371acaab80787db42f08f6d4f5479e6186a2c9415052df484324e37d3
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: b684bbaae8bb6ae71491ef82b8ce1b25f16a468abfc3016aec5d6eafbcc70771
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 4f8c3a8f60c7dc8bb1c5b13b21c4562a2bfbf136969301d0784363d76794ad0b
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -342,11 +342,11 @@ remediationStepId=u12-st-rem-future-imp
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 046526b4738b3eed8b7504c249ff2559a9dd082a139b4b2407a9dc46c868549e
+- Content hash: 8606bdebcb1344cf25171267191a0394c856475da45f252842682646b27995cf
 
 kind=TEACH
 title=Admitted instruction
-body=Imperfective verbs form the future by preceding the imperfective infinitive with the appropriate conjugation of the perfective verb '''быть'''.
+body=быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -386,13 +386,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6d6a76f2ed2ee8c049bb1e3a1a3b8e9710598f71ec3677e45ceba7a9c667d026
+- Content hash: c5d2fc27a09b993c95479090585a84517f8b466b172c604cdc6555900f913c52
 
 kind=REMEDIATE
 title=Remediation
 body=Imperfective verbs form the future by preceding the imperfective infinitive with the appropriate conjugation of the perfective verb '''быть'''.
 dominantAction=Continue
-references=
+references=ref-ca-aspect
 items=
 examples=ex-u12-future-imp-0,ex-u12-future-imp-1
 unavailableReason=
@@ -555,13 +555,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 28c5b3865ab24266173dc9342915555397e9b92c6a24bb4ff7d55deb2181ab94
+- Content hash: 77eef2d30ce4551db118f8b71379a805c62d8ab6317971960ca669a69c14de60
 
 kind=REMEDIATE
 title=Remediation
 body=Forming the future tense with perfective verbs is relative straight-forward: just conjugate the verb according to the standard rules of verbal conjugation.
 dominantAction=Continue
-references=
+references=ref-ca-aspect
 items=
 examples=ex-u12-future-perf-0,ex-u12-future-perf-1
 unavailableReason=
@@ -658,11 +658,11 @@ remediationStepId=u12-st-rem-aspect
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b909718b8b94d6f7c113d5d60edabcde5fb74303c6aa2d5647316bfb1f64c75c
+- Content hash: 682204d2f02bc47252f6521b33aad0ba07ab6b5d7aefc8a95643650c9053d668
 
 kind=TEACH
 title=Admitted instruction
-body=So, verbs in Russian have two words: an ''imperfective'' and a ''perfective'' aspect.
+body=Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -702,13 +702,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1b89319b7be58664bdfc5fd2608f66f87279dd72755602f6dd75563a8def3ee8
+- Content hash: 32f7694f3ecf737031ef8645d3be7cb6812cbf60223b5d69cfb97e36a57ec691
 
 kind=REMEDIATE
 title=Remediation
 body=So, verbs in Russian have two words: an ''imperfective'' and a ''perfective'' aspect.
 dominantAction=Continue
-references=
+references=ref-ca-aspect
 items=
 examples=ex-u12-aspect-0,ex-u12-aspect-1
 unavailableReason=
@@ -915,13 +915,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1c3e61ad1b017807832c5c63419e0fea8aad43787ace58a7686926f9a67d7114
+- Content hash: 38be7f7e580cc537807d6d9bba5578139c872bde203a1ab09fad2969119117a9
 
 kind=REMEDIATE
 title=Remediation
 body=The '''dative case''' is traditionally the third grammatical case, and denotes the indirect object of a verb.
 dominantAction=Continue
-references=
+references=ref-ca-aspect
 items=
 examples=ex-or-u12-dative-0,ex-or-u12-dative-1
 unavailableReason=
@@ -1062,13 +1062,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b7a62d4de28be1f08a3356b2ca8ea55575e7dc03afa6cac7ee22925131fece09
+- Content hash: 552c3a7dc4fd61330d55e62002a3d1d963332bdf3bb568d3597a3427c225bd33
 
 kind=REMEDIATE
 title=Remediation
 body=This states that, if the stem ends in '''ж, ц, ч, ш''', or '''щ''', any unstressed '''o''' in an ending is instead written as '''e'''. For example, 'the good letter' is written '''хорошее письмо''' (and ''not'' '''хорошое письмо''').
 dominantAction=Continue
-references=
+references=ref-ca-aspect
 items=
 examples=ex-or-u12-spelling-0,ex-or-u12-spelling-1
 unavailableReason=
@@ -1275,13 +1275,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 65156a20077e666efa315b9532eca2e929ef090b24fe2fcb08fb7e9ac7855885
+- Content hash: 70debc2b50364ec663a8784d84ec22ffda4f4c9d72fe22234e202833c5366b61
 
 kind=REMEDIATE
 title=Remediation
 body=The two plural endings, '''ах''' and '''ях''', follow the same rules as the [[Russian/Grammar/Instrumental case|instrumental]] and [[Russian/Grammar/Dative case|dative]] plurals: after consonants, '''o''', or '''а''', use the ending '''ах'''.
 dominantAction=Continue
-references=
+references=ref-ca-aspect
 items=
 examples=ex-or-u12-prep-plural-0,ex-or-u12-prep-plural-1
 unavailableReason=
@@ -1319,12 +1319,12 @@ remediationStepId=u12-st-rem-prep-plural
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 43e6a8687d7380078bc5b2d0a269a3e6a472e3c48655c3f7756392e7a796d077
+- Content hash: b06d35ed04da2424196d185aa64a917dfd2a507acae22fd8c1a6ced84a6700a9
 
 title=Self-attest Lesson 12
 estimatedMinutes=10
 objectives=obj-u12-book
-steps=u12-st-book-work,u12-st-book
+steps=u12-st-book-work,u12-st-book,u12-st-anki-direction,u12-st-binder-direction,u12-st-tutor-direction,u12-st-cumulative-direction
 
 ### STEP `u12-st-book-work`
 
@@ -1334,7 +1334,7 @@ steps=u12-st-book-work,u12-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dc212e8a13b2093b7120e8d488ab1a8ec0ee151d8fc857aac273a6766772c0f8
+- Content hash: 5a5994b69b6862b168007b751327c35b89b4dd9d28d9387d15c7fe94ca24fe71
 
 kind=BOOK
 title=Work Lesson 12 in your copy
@@ -1344,7 +1344,7 @@ references=ref-u1115-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 12 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 12: printed pages 133-148. PDF indexes 145-160 are file locators, not printed pages. Observed section locators: §12.1 p133 (PDF 145); §12.2 p133 (PDF 145); §12.3 p134 (PDF 146); §12.4 p134 (PDF 146); §12.5 p136 (PDF 148); §12.6 p137 (PDF 149); §12.7 p137 (PDF 149); §12.8 p138 (PDF 150); §12.9 p138 (PDF 150); §12.10 p139 (PDF 151); §12.11 p140 (PDF 152); §12.12 p140 (PDF 152); §12.13 p141 (PDF 153); §12.14 p142 (PDF 154); §12.15 p142 (PDF 154); §12.16 p143 (PDF 155); §12.17 p143 (PDF 155); §12.18 p144 (PDF 156); §12.19 p146 (PDF 158). Observed exercise locators: 12/1 p135/PDF147; 12/2 p137/PDF149; 12/3 p139/PDF151; 12/4 p143/PDF155; 12/5 p143/PDF155; 12/6 p144/PDF156; 12/7 p147/PDF159. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1356,7 +1356,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a8e059a5916a4e2b5e417ab9b58934360b040901c30aa77efc59e9758a5553cb
+- Content hash: ce4bba6ac9325a0b68ea69366b69a2d419de6a461c67753959af78dd26b0d327
 
 kind=BOOK
 title=Record Lesson 12 book work
@@ -1366,8 +1366,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 12 work in your copy.
+bookDirection=Owned-book assignment for Lesson 12: printed pages 133-148. PDF indexes 145-160 are file locators, not printed pages. Observed section locators: §12.1 p133 (PDF 145); §12.2 p133 (PDF 145); §12.3 p134 (PDF 146); §12.4 p134 (PDF 146); §12.5 p136 (PDF 148); §12.6 p137 (PDF 149); §12.7 p137 (PDF 149); §12.8 p138 (PDF 150); §12.9 p138 (PDF 150); §12.10 p139 (PDF 151); §12.11 p140 (PDF 152); §12.12 p140 (PDF 152); §12.13 p141 (PDF 153); §12.14 p142 (PDF 154); §12.15 p142 (PDF 154); §12.16 p143 (PDF 155); §12.17 p143 (PDF 155); §12.18 p144 (PDF 156); §12.19 p146 (PDF 158). Observed exercise locators: 12/1 p135/PDF147; 12/2 p137/PDF149; 12/3 p139/PDF151; 12/4 p143/PDF155; 12/5 p143/PDF155; 12/6 p144/PDF156; 12/7 p147/PDF159. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u12-st-anki-direction`
+
+- Objectives: obj-u12-book
+- Sessions: u12-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 09d9825f209fe5497f13b5bc8eabdd72738335ddae5cb93954eab68b6ddfc640
+
+kind=ANKI
+title=Unit 12 AnkiDroid direction
+body=Unit 12 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u12-st-binder-direction`
+
+- Objectives: obj-u12-book
+- Sessions: u12-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5303aeef337bb6077f1e5dbbf3d65ff9ca262deb917ce182e23951f38e9351d9
+
+kind=BINDER
+title=Unit 12 binder prompt
+body=Unit 12 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u12-st-tutor-direction`
+
+- Objectives: obj-u12-book
+- Sessions: u12-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0fc3c89ef8df5f7f253af4b1b5e6775b2744c5a5468e231f30c46b64a71f218e
+
+kind=TUTOR
+title=Unit 12 optional tutor
+body=Unit 12 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u12-st-cumulative-direction`
+
+- Objectives: obj-u12-book
+- Sessions: u12-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 73ff414df4c4d01668195f3838dd5dd0ca0f36ff3e13f4853286b0567b52567b
+
+kind=ORIENT
+title=Unit 12 cumulative review
+body=Unit 12 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 12 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u12-future-imp-0`
@@ -2612,6 +2700,504 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=11
 searchTerms=units 11-15 source notice
 reviewStatus=NOT_REQUIRED
+
+### REFERENCE `ref-ca-aspect`
+
+- Objectives: none
+- Sessions: u12-s-future-imp, u12-s-future-perf, u12-s-aspect, u12-s-dative, u12-s-spelling, u12-s-prep-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: LINGUISTIC_INSTRUCTION
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44968248a727e7ea9dd05307e8334cc0e09b5ce2be47ffa16e3ef4064eebb429
+
+title=Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.
+summary=Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.
+detail=Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.
+classification=LINGUISTIC_INSTRUCTION
+introducedInUnit=12
+searchTerms=ref-ca-aspect
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### PROVENANCE `prov-ca-12-357`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72f54baf85005886c870497d9f78a18e42fd8101891dcbb4ae17c978a31aed50
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=9407608e608f2d7b5d77f88601f417bfb884077cead8e95ce3907506a00c5b06
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-358`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 75622a6a3fcb6bbe404c03c6df949159aaa68b6d999d6f3f273fcdf230916c43
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=буду,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=f04b5deb24c5581697f01183b5dca60552e7713920472d342f0e50a9a1ce3ce2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-359`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d80df9893c8048d1e250abe00884faa21182b8b34dac53b672aa7277cc7decb4
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=буду
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=a69a88b459d4e648fbc99e27e9054d2430ce09ef0b37e6e195d726b03a4d643c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-360`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00f71032f70e67697971da2c8690a3bfe975070be5c2bbf56715e29eb94aaa03
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будешь,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=ff6fed455ca09ad9287ff1aed9b5267731d5f080a758de0e5d2b15929731736d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-361`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54ab7970bf7f4e40d2b62287d40fa91f57cbc375026dbf7bf656755afd5400c3
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будешь
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=3b533136d4b83563a005faf83117f1a237e4a5365faf77dba9208482c1179d96
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-362`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 482f8502ffaf7f9067112a4c011ed838b83a3c8072e70c2c71c904565fe6f8a9
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будет,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=4a31865ed51b239df12786a6890f910a38f75164d2b73b39e58ece3451df18e9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-363`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73ca15ed9c4738696ff5ca67bb7f14130e66abfa92eac8292d11c9a07fb04120
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будет
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=07a2e9c8c27b186700fce8661a708c76d6c8c27077bea84625db37a3a5468a4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-364`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b9d49000878a47a0ab510eaa31214aea68c9dac7a573d31c8341bd08f1f70ba
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будем,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=112d04362af5a8aa2c6720fb376e82820eb9dfa1406bfe67f7c27557e63c6a73
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-365`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58d74efce758f59fd270a8fc6490f2243721babe06901bc53e3f021a8d13492a
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будем
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=1817066a4be45fea847564678444681b56950f33f2258bb93ed45067720ffc3d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-366`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41fbfda3066b2dfd04a44460e815a6791ae9e3379753d39a39fd366cd0644351
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будете,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=7e97ca84d2e3181016b8315e997fb77d1d03412407610cf96b2cd9f760e1f67c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-367`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8dc024e66915ba1572cdc4729772cd4ca8ba47ae1ab965c9f7a5d8e884a0b281
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будете
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=cc399f45d2297d96940de1541b1eae325bef4181f10d445af6525a106ee36e95
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-368`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a64ca497d4f755ff78e8735bfd213558b64644707bf5b05f7c2986d20105e9b0
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будут
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=d50e903dda6067445680e8d59c52627dd7afdd0c122556987a216682b19c84ec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-371`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6716acbb3239b13302ca62314c9e2f9d7026c934f8a1c741e1367dc7064957ef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:u12-st-teach-aspect-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.
+shippedText=Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5c802ebb6ad077fbf0dd479a83ce404550b9962d8441767cfd926931fb8c76a4
+contentHash=43e3f83bc81b3c3d5ef52119477e07bad8d132f9613cb64c05ea0fc0e299c895
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-372`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d80db00574be9afd523ecc89968b8913ff478d1d99d50c57e7c74ccab7464d5
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:u12-st-teach-aspect-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.
+shippedText=говорить
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5c802ebb6ad077fbf0dd479a83ce404550b9962d8441767cfd926931fb8c76a4
+contentHash=638abb44738563f127000abca4a2c8df1b89f93217b94b9019c567279b714f32
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-373`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7d9d7919de98ac7610440b59881d3c3021767da6cd4a143cd370dc1660b07ba
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:u12-st-teach-aspect-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.
+shippedText=сказать
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5c802ebb6ad077fbf0dd479a83ce404550b9962d8441767cfd926931fb8c76a4
+contentHash=5ebbc57b6eb689b5070333ba0842b800cb0dc075224d16dd1576acc33082d416
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-630`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b7506ff20b2b718bfa83b57502fe4ff59f75129cc519d491a748968aadfbf5ed
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:ref-ca-aspect
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.
+shippedText=Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=477e42e4d1a0a7531a248233b77a10fb0dad059f4c936a1342f85fb2437145d9
+contentHash=27a9b993e49a778d14f09347fd6f66be61a33535d6eac1aaae71196d01b07450
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u12-dative-0`
 
@@ -5397,6 +5983,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-12-11190`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 30eba62899536daf42fa2b8eae223d92aa1245bd570c6ce043de08953befe1c3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 12 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-12-11191`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70fce0cd0d94f9142bbad7631bd44c05b0a60e7e568df67fd4a71da9a7b3f633
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-12-11192`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4dc5e0e87c28cf68da5f58bcdac8544c85445ce0a87070df1a0526216aa6b034
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 12 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-12-11193`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 18fb9bd18325ed588fbd68a106bcfd7a9baf6e225cc7875051a1ef4b3fe447aa
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-12-11194`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b864c6a39b9313ad58d87e2a8ddf884b5c4b0498626954bab98397d0bd676992
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 12 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-12-11195`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f87700ab3a2d99c2f65427021a735f4fb4c4b74ecf1ba7e6c181bcb85da7592
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-12-11196`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 973aaa11a4dad9127b4b28b0c605eeda1c4e9cc4066bd23ffdd0396c0226d794
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 12 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-12-48`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8fa0d0ca10993b5b01ce30366e0482823e78105bfcac3c94e7d5701db1a9a86d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 12: printed pages 133-148. PDF indexes 145-160 are file locators, not printed pages. Observed section locators: §12.1 p133 (PDF 145); §12.2 p133 (PDF 145); §12.3 p134 (PDF 146); §12.4 p134 (PDF 146); §12.5 p136 (PDF 148); §12.6 p137 (PDF 149); §12.7 p137 (PDF 149); §12.8 p138 (PDF 150); §12.9 p138 (PDF 150); §12.10 p139 (PDF 151); §12.11 p140 (PDF 152); §12.12 p140 (PDF 152); §12.13 p141 (PDF 153); §12.14 p142 (PDF 154); §12.15 p142 (PDF 154); §12.16 p143 (PDF 155); §12.17 p143 (PDF 155); §12.18 p144 (PDF 156); §12.19 p146 (PDF 158). Observed exercise locators: 12/1 p135/PDF147; 12/2 p137/PDF149; 12/3 p139/PDF151; 12/4 p143/PDF155; 12/5 p143/PDF155; 12/6 p144/PDF156; 12/7 p147/PDF159. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-12-49`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 632e7bb0eee8301fd67d17c82495e452a5136e3fec7345b367abd0c669c34dcb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 12 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-12-50`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c460185ae4f2c61c3bbdea7467deefef10071c11f664b0a4f27954b0baea3c0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u12-033`
 
 - Objectives: none
@@ -6038,6 +6754,21 @@ CC BY-SA 4.0
 Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 Selected rows, stress-mark formatting, and beginner sense selection. No generated forms.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -6079,6 +6810,20 @@ permitsAppUse=true
 
 src-openrussian-50e210c4
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -6209,6 +6954,7 @@ permitsAppUse=true
 - `u12-st-teach-future-imp-3` REFERENCE `ref-u1115-attribution`
 - `u12-st-rem-future-imp` EXAMPLE `ex-u12-future-imp-0`
 - `u12-st-rem-future-imp` EXAMPLE `ex-u12-future-imp-1`
+- `u12-st-rem-future-imp` REFERENCE `ref-ca-aspect`
 - `u12-st-check-future-imp` REMEDIATION `u12-st-rem-future-imp`
 - `u12-st-check-future-imp` ITEM `u12-i-future-imp-1`
 - `u12-st-check-future-imp` ITEM `u12-i-future-imp-2`
@@ -6226,6 +6972,7 @@ permitsAppUse=true
 - `u12-st-teach-future-perf-4` REFERENCE `ref-u1115-attribution`
 - `u12-st-rem-future-perf` EXAMPLE `ex-u12-future-perf-0`
 - `u12-st-rem-future-perf` EXAMPLE `ex-u12-future-perf-1`
+- `u12-st-rem-future-perf` REFERENCE `ref-ca-aspect`
 - `u12-st-check-future-perf` REMEDIATION `u12-st-rem-future-perf`
 - `u12-st-check-future-perf` ITEM `u12-i-future-perf-1`
 - `u12-st-check-future-perf` ITEM `u12-i-future-perf-2`
@@ -6241,6 +6988,7 @@ permitsAppUse=true
 - `u12-st-teach-aspect-3` REFERENCE `ref-u1115-attribution`
 - `u12-st-rem-aspect` EXAMPLE `ex-u12-aspect-0`
 - `u12-st-rem-aspect` EXAMPLE `ex-u12-aspect-1`
+- `u12-st-rem-aspect` REFERENCE `ref-ca-aspect`
 - `u12-st-check-aspect` REMEDIATION `u12-st-rem-aspect`
 - `u12-st-check-aspect` ITEM `u12-i-aspect-1`
 - `u12-st-check-aspect` ITEM `u12-i-aspect-2`
@@ -6264,6 +7012,7 @@ permitsAppUse=true
 - `u12-st-teach-dative-6` REFERENCE `ref-u1115-attribution`
 - `u12-st-rem-dative` EXAMPLE `ex-or-u12-dative-0`
 - `u12-st-rem-dative` EXAMPLE `ex-or-u12-dative-1`
+- `u12-st-rem-dative` REFERENCE `ref-ca-aspect`
 - `u12-st-check-dative` REMEDIATION `u12-st-rem-dative`
 - `u12-st-check-dative` ITEM `u12-i-dative-1`
 - `u12-st-check-dative` ITEM `u12-i-dative-2`
@@ -6279,6 +7028,7 @@ permitsAppUse=true
 - `u12-st-teach-spelling-3` REFERENCE `ref-u1115-attribution`
 - `u12-st-rem-spelling` EXAMPLE `ex-or-u12-spelling-0`
 - `u12-st-rem-spelling` EXAMPLE `ex-or-u12-spelling-1`
+- `u12-st-rem-spelling` REFERENCE `ref-ca-aspect`
 - `u12-st-check-spelling` REMEDIATION `u12-st-rem-spelling`
 - `u12-st-check-spelling` ITEM `u12-i-spelling-1`
 - `u12-st-check-spelling` ITEM `u12-i-spelling-2`
@@ -6302,11 +7052,28 @@ permitsAppUse=true
 - `u12-st-teach-prep-plural-6` REFERENCE `ref-u1115-attribution`
 - `u12-st-rem-prep-plural` EXAMPLE `ex-or-u12-prep-plural-0`
 - `u12-st-rem-prep-plural` EXAMPLE `ex-or-u12-prep-plural-1`
+- `u12-st-rem-prep-plural` REFERENCE `ref-ca-aspect`
 - `u12-st-check-prep-plural` REMEDIATION `u12-st-rem-prep-plural`
 - `u12-st-check-prep-plural` ITEM `u12-i-prep-plural-1`
 - `u12-st-check-prep-plural` ITEM `u12-i-prep-plural-2`
 - `u12-s-book` OBJECTIVE `obj-u12-book`
 - `u12-st-book-work` REFERENCE `ref-u1115-attribution`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-357`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-358`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-359`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-360`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-361`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-362`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-363`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-364`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-365`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-366`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-367`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-368`
+- `obj-u12-aspect` PROVENANCE `prov-ca-12-371`
+- `obj-u12-aspect` PROVENANCE `prov-ca-12-372`
+- `obj-u12-aspect` PROVENANCE `prov-ca-12-373`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-630`
 - `obj-u12-dative` PROVENANCE `prov-ex-or-u12-dative-0`
 - `obj-u12-dative` PROVENANCE `prov-ex-or-u12-dative-0-gloss`
 - `obj-u12-dative` PROVENANCE `prov-ex-or-u12-dative-1`

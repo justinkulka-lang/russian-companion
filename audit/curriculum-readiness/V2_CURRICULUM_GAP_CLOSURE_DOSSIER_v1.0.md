@@ -1,11 +1,13 @@
 # V2 Curriculum Gap-Closure Dossier v1.0
 
+> PR64 content correction work is in progress. The prior structural gap-closure conclusions below do not establish closure of the 19-finding content audit. Current schema-3 review packets and readiness reports bind the corrected pack; semantic review, all required assets and approvals remain pending. See `audit/content-corrections/PR64_CHECKPOINT_REPAIR.md`.
+
 **Status:** RESEARCH HANDOFF — NOT AN APPROVAL  
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1`  
-**Repository source digest:** `d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914`  
+**Pack content-review digest:** `0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2`  
+**Repository source digest:** `74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose

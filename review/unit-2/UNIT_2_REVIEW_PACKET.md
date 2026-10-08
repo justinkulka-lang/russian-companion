@@ -11,12 +11,12 @@ Unit 2 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4a6c21da07b515df226a090cc0ff6b1ff4a78aa1
-- Unit content-review SHA-256: d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c
 - Mapping-package SHA-256: def2280a90229cec52750f12cb7dc2f7564df8508c113a69cf6ed585cee1c0c6
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 92aca982a0c0cea09f375adfe9ac9300c2351f930fde8cd9a3a7ce331b4262a5
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 3cdd6cbfb0224a1aa40b594e7cf166c542d1d8838ac3ce7b3f111e97a25b08c2
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -203,7 +203,7 @@ steps=u2-st-hw
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e64f77e7f73a718e6e7a38cf0e823858a1a87113f2f36b898f6e962f0315e1ca
+- Content hash: f8cbc09621d354fd9313aa268397cd006547c029c97a2efa0dd4279d266d0d3d
 
 kind=BOOK
 title=Handwritten forms stay in the owned book
@@ -213,7 +213,7 @@ references=ref-limits
 items=
 examples=
 unavailableReason=
-bookDirection=Copy the handwritten forms from Lesson 2 in your book onto paper. This app does not show or grade them.
+bookDirection=Owned-book assignment for Lesson 2: printed pages 12-23. PDF indexes 24-35 are file locators, not printed pages. Observed section locators: §2.1 p12 (PDF 24); §2.2 p16 (PDF 28); §2.3 p17 (PDF 29); §2.4 p18 (PDF 30); §2.5 p18 (PDF 30); §2.6 p18 (PDF 30); §2.7 p19 (PDF 31); §2.8 p20 (PDF 32); §2.9 p21 (PDF 33); §2.10 p21 (PDF 33); §2.11 p21 (PDF 33); §2.12 p22 (PDF 34). Observed exercise locators: 2/1 p23/PDF35; 2/2 p23/PDF35; 2/3 p23/PDF35. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -240,11 +240,11 @@ steps=u2-st-review,u2-st-review-guided,u2-st-review-v,u2-st-review-u,u2-st-revie
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 070aaa18de576f506919cf847ad979fe8882f958068ddce3a7a94f86fdd3caca
+- Content hash: 0aa2e68716cade7cc7e32df54b764d587accd1e3626d4d0a7890415c38d928f6
 
 kind=TEACH
 title=Keep letter identities available
-body=Review the printed letters from Unit 1, especially Latin look-alikes and print pairs.
+body=Review the printed letters from Unit 1, especially Latin look-alikes and print pairs. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-cyrillic-print,ref-confusable
 items=
@@ -365,7 +365,7 @@ steps=u2-st-pron
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5ce768069cd45ba5d00eb0f96235e44c830abd6223e15b1aa8d24b0936a7a4a0
+- Content hash: 9413f8d7a9619b204331397205271a6248df6df1085ef1ef204f2ca2acc704f8
 
 kind=BOOK
 title=Additional pronunciation stays in the owned book
@@ -375,7 +375,7 @@ references=ref-pronunciation
 items=
 examples=
 unavailableReason=
-bookDirection=Use the Lesson 2 pronunciation notes in your copy. Model audio is not in this app.
+bookDirection=Owned-book assignment for Lesson 2: printed pages 12-23. PDF indexes 24-35 are file locators, not printed pages. Observed section locators: §2.1 p12 (PDF 24); §2.2 p16 (PDF 28); §2.3 p17 (PDF 29); §2.4 p18 (PDF 30); §2.5 p18 (PDF 30); §2.6 p18 (PDF 30); §2.7 p19 (PDF 31); §2.8 p20 (PDF 32); §2.9 p21 (PDF 33); §2.10 p21 (PDF 33); §2.11 p21 (PDF 33); §2.12 p22 (PDF 34). Observed exercise locators: 2/1 p23/PDF35; 2/2 p23/PDF35; 2/3 p23/PDF35. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -476,7 +476,7 @@ steps=u2-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 43a5767c597e0da2b2bbf0bdf264a92b6fd0ba2972d961a445d000ad00d6274e
+- Content hash: d7e0d6896b49bfc1a5ebf4bfa9e22faa0ac832618be0ac77867c78907ea1d641
 
 kind=BOOK
 title=Lesson 2 in your copy
@@ -486,34 +486,34 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Do Lesson 2 in your book, including handwritten-form practice.
+bookDirection=Owned-book assignment for Lesson 2: printed pages 12-23. PDF indexes 24-35 are file locators, not printed pages. Observed section locators: §2.1 p12 (PDF 24); §2.2 p16 (PDF 28); §2.3 p17 (PDF 29); §2.4 p18 (PDF 30); §2.5 p18 (PDF 30); §2.6 p18 (PDF 30); §2.7 p19 (PDF 31); §2.8 p20 (PDF 32); §2.9 p21 (PDF 33); §2.10 p21 (PDF 33); §2.11 p21 (PDF 33); §2.12 p22 (PDF 34). Observed exercise locators: 2/1 p23/PDF35; 2/2 p23/PDF35; 2/3 p23/PDF35. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
 ### SESSION `u2-s-check`
 
-- Objectives: obj-u2-review
+- Objectives: obj-u2-review, obj-u2-book
 - Sessions: u2-s-check
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 408a0c5f5877aee1d7fb81a68502423f19a19aa08dabee826d535d466295a28a
+- Content hash: 55ff52850ce3938b8c08191effbc0430f81fb062980e50b8c34e7c4186184aa3
 
 title=Unit 2 letter check
 estimatedMinutes=8
-objectives=obj-u2-review
-steps=u2-st-check
+objectives=obj-u2-review,obj-u2-book
+steps=u2-st-check,u2-st-anki-direction,u2-st-binder-direction,u2-st-tutor-direction,u2-st-cumulative-direction
 
 ### STEP `u2-st-check`
 
-- Objectives: obj-u2-review
+- Objectives: obj-u2-review, obj-u2-book
 - Sessions: u2-s-check
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 42166e0f4ed6670adf09e0ec210ed6f13a8ea459b2511a568221003150915c95
+- Content hash: cadb1ec2ba8c4bf85309116626d341dbd4794f940bcaeac43a88ed2bc7828159
 
 kind=CHECK
 title=Reviewed letter identities
@@ -526,6 +526,94 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=u2-st-review
+
+### STEP `u2-st-anki-direction`
+
+- Objectives: obj-u2-review, obj-u2-book
+- Sessions: u2-s-check
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: cb833212534ec577644b4fa8fd49830b1a09ea600922018d3d5a9bcefb4ecc82
+
+kind=ANKI
+title=Unit 2 AnkiDroid direction
+body=Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u2-st-binder-direction`
+
+- Objectives: obj-u2-review, obj-u2-book
+- Sessions: u2-s-check
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 842f86737871fda66460593a9ee898bcd30e39cc17d581ee44f16fa2593940ee
+
+kind=BINDER
+title=Unit 2 binder prompt
+body=Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u2-st-tutor-direction`
+
+- Objectives: obj-u2-review, obj-u2-book
+- Sessions: u2-s-check
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5b1148a44f8fb1355f056ba4865eb47ae118d7def938e8e23b65d37ea332b140
+
+kind=TUTOR
+title=Unit 2 optional tutor
+body=Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u2-st-cumulative-direction`
+
+- Objectives: obj-u2-review, obj-u2-book
+- Sessions: u2-s-check
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 253a49b6f9a660aa7b81dd8892da8edd098b772ec456924ed89cfbb292fb815e
+
+kind=ORIENT
+title=Unit 2 cumulative review
+body=Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=Owned-book assignment for Lesson 2: printed pages 12-23. PDF indexes 24-35 are file locators, not printed pages. Observed section locators: §2.1 p12 (PDF 24); §2.2 p16 (PDF 28); §2.3 p17 (PDF 29); §2.4 p18 (PDF 30); §2.5 p18 (PDF 30); §2.6 p18 (PDF 30); §2.7 p19 (PDF 31); §2.8 p20 (PDF 32); §2.9 p21 (PDF 33); §2.10 p21 (PDF 33); §2.11 p21 (PDF 33); §2.12 p22 (PDF 34). Observed exercise locators: 2/1 p23/PDF35; 2/2 p23/PDF35; 2/3 p23/PDF35. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+companionDirection=Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+remediationStepId=
 
 ### EXAMPLE `ex-print-letter-0411`
 
@@ -792,13 +880,13 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### LETTER `letter-0411`
 
-- Objectives: obj-u1-letter-identity, obj-u2-review
+- Objectives: obj-u1-letter-identity, obj-u2-review, obj-u1-letter-names
 - Sessions: u2-s-review
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8a8b44829b083405089bfd905a3fd1829fda225c27035ba6d18a7c9254b7a6b3
+- Content hash: e41c73836ed5c94ecf519b81699cf11182d1825c44e9c3e8751cb8c2881fd60e
 
 uppercase=Б
 lowercase=б
@@ -968,6 +1056,7 @@ permitsAppUse=true
 - `u2-s-record` OBJECTIVE `obj-u2-book`
 - `u2-s-book` OBJECTIVE `obj-u2-book`
 - `u2-s-check` OBJECTIVE `obj-u2-review`
+- `u2-s-check` OBJECTIVE `obj-u2-book`
 - `u2-st-check` REMEDIATION `u2-st-review`
 - `u2-st-check` ITEM `u2-i-в-not-b`
 - `u2-st-check` ITEM `u2-i-print-б`
@@ -980,6 +1069,7 @@ permitsAppUse=true
 - `u2-st-pron`
 - `u2-st-reading`
 - `u2-st-book`
+- `u2-st-cumulative-direction`
 
 ## Unavailable experiences
 

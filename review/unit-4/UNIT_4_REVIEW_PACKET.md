@@ -11,12 +11,12 @@ Unit 4 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: b22fa0cca895a677386a77d03a63301f7454aa07
-- Unit content-review SHA-256: 5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 0d3065043d8b3a08997ec6642f2e143edef236a675610a070e4004905b8e9d54
 - Mapping-package SHA-256: 889c15ed7bf5d3189af391210f35bae5c57a9fd9c9dc3b3a439e8ebc1143b6fd
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 5c83907c84d7bb8caaced3455abde7e30c8c9e415c31c03d807ca67cc33cf5df
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: f26bf8b4247f448b7a0713e8e6129e77ed28609c707d0bac03fee73d2edc460c
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -170,14 +170,14 @@ remediation=u4-st-rem-stress
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 22f10f19825ed15fe01616b7416d33797dbcb099623c916bc2e03698b7f7ee99
+- Content hash: 4425b72b8b72d2196cbb44728d3457f6ae18e5bc62f0d13160937bfde0ea7536
 
 title=Recognize the admitted nominative role
 kind=RECOGNITION
 unitNumber=4
 instruction=u4-st-orient,u4-st-teach-nominative-1,u4-st-teach-nominative-2,u4-st-teach-nominative-3
 examples=ex-u4-nom-muzh,ex-u4-nom-poezd
-practice=u4-st-teach-nominative-1
+practice=u4-st-guided-nominative,u4-st-teach-nominative-1
 checks=u4-i-nom-muzh,u4-i-nom-poezd
 remediation=u4-st-rem-nominative
 
@@ -752,12 +752,12 @@ remediationStepId=u4-st-rem-stress
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8e8a3c8e79d2510edea61680999fa52ed4b098757bb9f56ff1b1c87d6f38b8a2
+- Content hash: f78059ef2af9dcb4fc195022c1a7b40ec1f5248b39e42af83452c5063212f721
 
 title=Recognize the admitted nominative role
 estimatedMinutes=12
 objectives=obj-u4-nominative
-steps=u4-st-teach-nominative-1,u4-st-teach-nominative-2,u4-st-teach-nominative-3,u4-st-rem-nominative,u4-st-check-nominative
+steps=u4-st-teach-nominative-1,u4-st-teach-nominative-2,u4-st-teach-nominative-3,u4-st-guided-nominative,u4-st-rem-nominative,u4-st-check-nominative
 
 ### STEP `u4-st-teach-nominative-1`
 
@@ -825,6 +825,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u4-st-guided-nominative`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-nominative
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 61954be9cb0ba995d7e6ff9751b9aa60cc35810d089468d368fabcafbe3614f8
+
+kind=GUIDED
+title=Guided nominative subject
+body=The nominative case is the default case of a word, as found in dictionaries and when no other case is specifically used. Use that subject form in Муж говорит — The husband is talking. Then answer the guided choice.
+dominantAction=Check
+references=
+items=u4-g-nominative-1
+examples=ex-u4-nom-muzh,ex-u4-nom-poezd
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u4-st-rem-nominative
+
 ### STEP `u4-st-rem-nominative`
 
 - Objectives: obj-u4-nominative
@@ -833,11 +855,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3e1dea1e6004548eed82a9663939f1c82e92599174ce7188bd29676bd12ef067
+- Content hash: 721fac7228c0dc8f90c6787e8364035f42a7930ab36d6dce53eb752f2f069e8b
 
 kind=REMEDIATE
 title=Remediation
-body=Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.
+body=The nominative case is the default case of a word, as found in dictionaries and when no other case is specifically used. Муж говорит — The husband is talking. Return to that subject contrast.
 dominantAction=Continue
 references=
 items=
@@ -877,12 +899,12 @@ remediationStepId=u4-st-rem-nominative
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bdb54047a22b73cd98e8942b8c71c64be6deeeb6a46bd29dcfb43cb26b422eb0
+- Content hash: b98e0ee6f85c53120fce704da62276ea37460d192ef61f83d0a8ded967f1444c
 
 title=Self-attest Lesson 4
 estimatedMinutes=10
 objectives=obj-u4-book
-steps=u4-st-book-work,u4-st-book
+steps=u4-st-book-work,u4-st-book,u4-st-anki-direction,u4-st-binder-direction,u4-st-tutor-direction,u4-st-cumulative-direction
 
 ### STEP `u4-st-book-work`
 
@@ -892,7 +914,7 @@ steps=u4-st-book-work,u4-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cca59187e7b4689cd66b6855dae3d8bc3f3185cfd99347de5fe700ff8d9d2d96
+- Content hash: 56e11c43da3ff4ac7f92273e73e549dbc7d8b72c75dcc3b3bcf7605291708799
 
 kind=BOOK
 title=Work Lesson 4 in your copy
@@ -902,7 +924,7 @@ references=ref-book-topics,ref-u35-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 4 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 4: printed pages 36-45. PDF indexes 48-57 are file locators, not printed pages. Observed section locators: §4.1 p36 (PDF 48); §4.2 p36 (PDF 48); §4.3 p37 (PDF 49); §4.4 p37 (PDF 49); §4.5 p38 (PDF 50); §4.6 p39 (PDF 51); §4.7 p40 (PDF 52); §4.8 p40 (PDF 52); §4.9 p41 (PDF 53); §4.10 p41 (PDF 53); §4.11 p42 (PDF 54); §4.12 p42 (PDF 54); §4.13 p43 (PDF 55). Observed exercise locators: 4/1 p44/PDF56; 4/2 p45/PDF57; 4/3 p45/PDF57. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -914,7 +936,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b00c1e321c4a91179f7f9c8e9bba1a2a4ac67e869c7fcbdc0be04e1e1a5049b9
+- Content hash: 1705e496bc1ecd42b65a68b75f5928b751758b60f7f7e1b75645ef028ceb7a1b
 
 kind=BOOK
 title=Record Lesson 4 book work
@@ -924,8 +946,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 4 work in your copy.
+bookDirection=Owned-book assignment for Lesson 4: printed pages 36-45. PDF indexes 48-57 are file locators, not printed pages. Observed section locators: §4.1 p36 (PDF 48); §4.2 p36 (PDF 48); §4.3 p37 (PDF 49); §4.4 p37 (PDF 49); §4.5 p38 (PDF 50); §4.6 p39 (PDF 51); §4.7 p40 (PDF 52); §4.8 p40 (PDF 52); §4.9 p41 (PDF 53); §4.10 p41 (PDF 53); §4.11 p42 (PDF 54); §4.12 p42 (PDF 54); §4.13 p43 (PDF 55). Observed exercise locators: 4/1 p44/PDF56; 4/2 p45/PDF57; 4/3 p45/PDF57. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u4-st-anki-direction`
+
+- Objectives: obj-u4-book
+- Sessions: u4-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8878a686fb0ecc1782d722f68be3d77b90b9233ade0aab3cf81ddeb7d37a9517
+
+kind=ANKI
+title=Unit 4 AnkiDroid direction
+body=Unit 4 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u4-st-binder-direction`
+
+- Objectives: obj-u4-book
+- Sessions: u4-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b063d879a6199e48d41aa461a2d11ddcc8b9db0d289d83803b0b2cf4c971ea57
+
+kind=BINDER
+title=Unit 4 binder prompt
+body=Unit 4 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u4-st-tutor-direction`
+
+- Objectives: obj-u4-book
+- Sessions: u4-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1b3e23aaebc2457a579c58e857a0e30bf723e9e0c4f192c18fc731d1c79ac974
+
+kind=TUTOR
+title=Unit 4 optional tutor
+body=Unit 4 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u4-st-cumulative-direction`
+
+- Objectives: obj-u4-book
+- Sessions: u4-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1658721277ac71fe41f07df6b8b3078fbab7b30cbe9367733387482c3cc9f8bc
+
+kind=ORIENT
+title=Unit 4 cumulative review
+body=Unit 4 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 4 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u4-я`
@@ -987,12 +1097,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 540ed5ccd950da18bcd7263e75c539d4371b437d4a6a4c4f3dcccff5ac6e6006
+- Content hash: 53c82dc67c3fd244476f0b0ace5e7ea768b4e09fa645a6204cafc422a4a1991b
 
 kind=LEXICAL
 letterId=
 display=вы
-note=you (plural)
+note=you, plural, and also the polite or formal singular
 objectiveId=obj-u4-pronouns
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1285,6 +1395,27 @@ options=1 | 2 | 3 | 4
 answer=2
 feedback=The frozen accented field places the written mark on vowel 2.
 objectiveId=obj-u4-stress
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### GUIDED_PRACTICE `u4-g-nominative-1`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-nominative
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5ede5ab7ce1704b315485a896325b7b700e3626f717a98b8d3a72c17dbbfc055
+
+kind=SOURCE_CASE
+language=en
+prompt=Which admitted example is the shown sentence?
+promptLetter=Муж говорит
+options=The husband is talking | The train is old
+answer=The husband is talking
+feedback=Муж говорит uses the dictionary form as the subject: The husband is talking. Compare that subject with the admitted record before the independent check.
+objectiveId=obj-u4-nominative
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1617,6 +1748,216 @@ classification=OPERATIONAL_GUIDANCE
 introducedInUnit=3
 searchTerms=where lesson bodies are packaged
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-4-1`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1bad653cce13038a8e1171f9c2c188169dacee40713ba7426aa48c8f181f0368
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:guided-feedback
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Муж говорит uses the dictionary form as the subject: The husband is talking. Compare that subject with the admitted record before the independent check.
+shippedText=Муж говорит uses the dictionary form as the subject: The husband is talking. Compare that subject with the admitted record before the independent check.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bcef35940aded6f3fd7a42544a6821e5149d7d729e15d3434d1455a0283f9854
+contentHash=389b64f26cf6ec7eb8129512e7394680e788c7a8c2074731c8b15bbc3c0048b3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-4-229`
+
+- Objectives: obj-u4-pronouns
+- Sessions: u4-s-orient, u4-s-pronouns
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd9880a56c8497507126c6c7584b45f81937daef722a74e47b63e8c73054fce5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-pronouns:ex-u4-вы:display
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+вы
+shippedText=вы
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb6d4d5f75b5dc4f3c106dfded1a628747b450b1dd67f18d1125d19419519ab9
+contentHash=36c93704471d664511dfff7d87fedf624f5706f63a285deaaccfe9c2b598c75d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-4-230`
+
+- Objectives: obj-u4-pronouns
+- Sessions: u4-s-orient, u4-s-pronouns
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a381101cab784276ba481cd10a5fdc7bc6f957a6764b85729a3247cb7c356c27
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-pronouns:ex-u4-вы:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+you, plural, and also the polite or formal singular
+shippedText=you, plural, and also the polite or formal singular
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=39e397d64a41f7a20fec39fdfc6bc1c57f27409cd48502be17f790b7fae31965
+contentHash=f7778721b50b8ca94ec9f16be1b1a20b56666a996f91c0030b5717314882f863
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-4-231`
+
+- Objectives: obj-u4-pronouns
+- Sessions: u4-s-orient, u4-s-pronouns
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 619656faa93eeb3982bf9134f4098bfe15dcf81c6d98709ca4a608ade1d79fb5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-pronouns:ex-u4-вы:pair
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+вы — you, plural, and also the polite or formal singular
+shippedText=вы — you, plural, and also the polite or formal singular
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cd1894f76d53d6a7d1b61eb448800151a0dfa62603d5eb5e8b77edfdefd80011
+contentHash=a248f30d62fc253c837e5fc69627813bcf983e373ab1979f99b0e84936371b48
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-4-11131`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 25ca550c6ce5311bed633c2432ac1f2f4771a05b269fa11fee5e1f694bfce810
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u4-st-guided-nominative:title
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Guided nominative subject
+shippedText=Guided nominative subject
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=859851ade6148b0b5c440fb09df37c8267b6a28f132d11612076400000a5589b
+contentHash=363ad9db0ee37c9eda4986949650914165e2e0f37f4d4ffe3d153e1ff577763f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-4-11132`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5c4e66889a2701732b9369b342fa489b23471a42363cc0899d98bcfb3179c7de
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u4-st-guided-nominative:body
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+The nominative case is the default case of a word, as found in dictionaries and when no other case is specifically used. Use that subject form in Муж говорит — The husband is talking. Then answer the guided choice.
+shippedText=The nominative case is the default case of a word, as found in dictionaries and when no other case is specifically used. Use that subject form in Муж говорит — The husband is talking. Then answer the guided choice.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f2f6368761f2f6b94ce5cb926911134c54e6a22eb0d80291b62ec81a06126bde
+contentHash=7a1a69edc57500cc76ece5c06585deaa352a24e28ddd001f47ef0f8f11b07658
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-4-11133`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4db1ac1265118e6243fee2f5ed0def6f58bfe795780ca6547d132a1fa2f9624
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u4-st-rem-nominative:return-direction
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Return to that subject contrast.
+shippedText=Return to that subject contrast.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a861b1fea6764af7cd81279d59cd4585927fc0642c7793d7896881a33f41d598
+contentHash=80fa8ad0c73701680053b21605d5276bc5226cfbc65c3e7c037a6b0e4e8a72a3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-u4-cases-default`
 
@@ -5069,6 +5410,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-4-11134`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb51d1e9e1b540131319f22e7b219b0d02c5a6aa71c170e0fb922deb02979443
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 4 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-4-11135`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ce69ca555dd649ea4c3c6082639e0b9236898ef02619bc0e225c0d1cf0feb61
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-4-11136`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 309ba104e76951563a8235cd8deaa9c6bdce1d5a58ad002b16023436a363ff12
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 4 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-4-11137`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2fb116a7b658b7b54b6acc9d776c7dbc3daac32d51565be784c0a124c9c341d3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-4-11138`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0f8b0cb139a259fd74e5021a39d14b32ecef962f711a58d66e2d5ab26c9a475
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 4 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-4-11139`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9332cfce99d0ce67e680bcef805322d2b3412efdadf71eea33a112ca7e864ac
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-4-11140`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b0e7a0e361aee1cfdef78ce0971148477d384955cfca7fb58c53bf23820ddb2c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 4 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-4-5`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a83032fb8f07ea6d9eca8c748072e250351883d5a51d487c5ef92964322e70bb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 4: printed pages 36-45. PDF indexes 48-57 are file locators, not printed pages. Observed section locators: §4.1 p36 (PDF 48); §4.2 p36 (PDF 48); §4.3 p37 (PDF 49); §4.4 p37 (PDF 49); §4.5 p38 (PDF 50); §4.6 p39 (PDF 51); §4.7 p40 (PDF 52); §4.8 p40 (PDF 52); §4.9 p41 (PDF 53); §4.10 p41 (PDF 53); §4.11 p42 (PDF 54); §4.12 p42 (PDF 54); §4.13 p43 (PDF 55). Observed exercise locators: 4/1 p44/PDF56; 4/2 p45/PDF57; 4/3 p45/PDF57. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-4-6`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa38d97639fc20c6fcca8640b1aace0aadef39e36fdac640e17de67cbd4cd9e5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 4 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-4-7`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4fafafa63c1038375fcc3c12076ea2499cf1c628169582261dc22d761ae08088
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u4-043`
 
 - Objectives: none
@@ -5829,6 +6300,21 @@ Original app text
 Russian Companion project
 Original
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### RIGHTS `rights-openrussian-50e210c4`
 
 - Objectives: none
@@ -5868,6 +6354,20 @@ permitsAppUse=true
 - Content hash: cc164e7d614d14b84cbae9494b688d1f417a9bec507481d9ce113448fc8598bc
 
 src-app-english-v2
+Original app text
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
 Original app text
 permitsAppUse=true
 
@@ -5925,6 +6425,7 @@ permitsAppUse=true
 - `obj-u4-nominative` INSTRUCTION `u4-st-teach-nominative-3`
 - `obj-u4-nominative` EXAMPLE `ex-u4-nom-muzh`
 - `obj-u4-nominative` EXAMPLE `ex-u4-nom-poezd`
+- `obj-u4-nominative` PRACTICE `u4-st-guided-nominative`
 - `obj-u4-nominative` PRACTICE `u4-st-teach-nominative-1`
 - `obj-u4-nominative` CHECK `u4-i-nom-muzh`
 - `obj-u4-nominative` CHECK `u4-i-nom-poezd`
@@ -6000,6 +6501,10 @@ permitsAppUse=true
 - `u4-st-teach-nominative-3` EXAMPLE `ex-u4-nom-muzh`
 - `u4-st-teach-nominative-3` EXAMPLE `ex-u4-nom-poezd`
 - `u4-st-teach-nominative-3` REFERENCE `ref-u35-attribution`
+- `u4-st-guided-nominative` REMEDIATION `u4-st-rem-nominative`
+- `u4-st-guided-nominative` EXAMPLE `ex-u4-nom-muzh`
+- `u4-st-guided-nominative` EXAMPLE `ex-u4-nom-poezd`
+- `u4-st-guided-nominative` ITEM `u4-g-nominative-1`
 - `u4-st-rem-nominative` EXAMPLE `ex-u4-nom-muzh`
 - `u4-st-rem-nominative` EXAMPLE `ex-u4-nom-poezd`
 - `u4-st-check-nominative` REMEDIATION `u4-st-rem-nominative`
@@ -6008,6 +6513,13 @@ permitsAppUse=true
 - `u4-s-book` OBJECTIVE `obj-u4-book`
 - `u4-st-book-work` REFERENCE `ref-book-topics`
 - `u4-st-book-work` REFERENCE `ref-u35-attribution`
+- `obj-u4-nominative` PROVENANCE `prov-ca-4-1`
+- `obj-u4-pronouns` PROVENANCE `prov-ca-4-229`
+- `obj-u4-pronouns` PROVENANCE `prov-ca-4-230`
+- `obj-u4-pronouns` PROVENANCE `prov-ca-4-231`
+- `obj-u4-nominative` PROVENANCE `prov-ca-repair-4-11131`
+- `obj-u4-nominative` PROVENANCE `prov-ca-repair-4-11132`
+- `obj-u4-nominative` PROVENANCE `prov-ca-repair-4-11133`
 - `obj-u4-nominative` PROVENANCE `prov-u4-cases-default`
 - `obj-u4-nominative` PROVENANCE `prov-u4-cases-six`
 - `obj-u4-present` PROVENANCE `prov-u4-form-видеть-вы`

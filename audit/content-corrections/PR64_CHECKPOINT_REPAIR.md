@@ -18,7 +18,7 @@ A standalone host JVM harness compiled and ran the actual production curriculum 
 
 `ContentAuditCorrectionTest` and `ContentAuditCheckpointRepairTest`: **6 tests passed**, including the two failures from the saved checkpoint. The new tests exercise gerund scope, optional provenance/response shape, and rejection of invalid capability hash/scope/missing-feature/cloned-check bindings.
 
-This is host evidence. It is not a full Android/Robolectric suite, debug build, lint result, release-assembly result, CI result or physical-device evidence. Current Android checks and digest/review-packet reconciliation are still in progress. No READY token is issued.
+This is host evidence. It is not a full Android/Robolectric suite, debug build, lint result, release-assembly result, CI result or physical-device evidence. Thirty unit review packets and current readiness/preparation digests have been regenerated using the production generators. They bind curriculum commit `057962d81d14bcf5db9f8740ae2443f29ff618c1`. Current Android checks remain in progress. No READY token is issued.
 
 ## Content audit remains open
 

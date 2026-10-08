@@ -11,12 +11,12 @@ Unit 25 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
-- Unit content-review SHA-256: 3c6c42830c7ae91ad1450a91535652175ffa9389e89a21cb26d51591852fbd52
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 7d212ea6b97a8783d43c78cc59dc173ea9817d8825286f60fa4c7788c85bc7b7
 - Mapping-package SHA-256: 239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 22c5067564c95caa9f5321f9d3fcaaefba3275e09fe6063b7e1b007c5525e6b8
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 97c69252f64b19cfdf0853eeb9d5dcd587c888c365213354960bb123ccce8994
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -611,11 +611,11 @@ steps=u25-st-teach-courtesy-1,u25-st-guided-courtesy-1,u25-st-teach-courtesy-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 05b0fcd74449811897d9407f798226aac634f20702f8db2192e4826135643f46
+- Content hash: db55e9b876666a11a973db9b18afd605fa3607ad9e1f40106196a17c8e22f503
 
 kind=TEACH
 title=Admitted lines
-body=Пожа́луйста — please. Спаси́бо — thanks. 
+body=Пожа́луйста — please. Спаси́бо — thanks. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -758,11 +758,11 @@ steps=u25-st-teach-name-question-1,u25-st-guided-name-question-1,u25-st-teach-na
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 714878f3144439e50a111f592e9d6f33dcdf97a4613441002f9f445737ad5d42
+- Content hash: c65c9d939d4d67d840eb04eb8f9ebf17b5f1651dab8d7ff56024f9bcb5d82f31
 
 kind=TEACH
 title=Admitted lines
-body=Как Вас зову́т? — What is your name? Меня́ зову́т — My name is... 
+body=Как Вас зову́т? — What is your name? Меня́ зову́т — My name is... Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -905,11 +905,11 @@ steps=u25-st-teach-nickname-rule-1,u25-st-guided-nickname-rule-1,u25-st-teach-ni
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1a0de5da39b00010418fa90e137f8a15c42eb7c9925da2f1cda484e110005448
+- Content hash: 605e2d08875d48b3c198860c8f983293570633a8dae3f9ae1d0d1e087f563107
 
 kind=TEACH
 title=Admitted lines
-body=Марюня — от полной формы имени. Машенька — от краткой формы. 
+body=Марюня — от полной формы имени. Машенька — от краткой формы. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -1052,11 +1052,11 @@ steps=u25-st-teach-address-1,u25-st-guided-address-1,u25-st-teach-address-2,u25-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b293dadd6a9c503c5c8efc369341d3190f317c7f1d428e28129cb8e5d3cb8aab
+- Content hash: 2d57fbd483dd846ca628412761a115db87df1db4e68c78d3d78177aea366d5b7
 
 kind=TEACH
 title=Admitted lines
-body=Ирина — полные имена. Ира — краткие имена. 
+body=Ирина — полные имена. Ира — краткие имена. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -1331,12 +1331,12 @@ remediationStepId=u25-st-rem-name-form
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0345a9e28406cc75329bf37905179dae87b20e89645fe33db0afdd00ddb33eb1
+- Content hash: 60874622fd2811cf729d446b8e315e363f972be5b298ff4524fb9f1f6879d3e7
 
 title=Self-attest Lesson 25
 estimatedMinutes=10
 objectives=obj-u25-book
-steps=u25-st-book-work,u25-st-book
+steps=u25-st-book-work,u25-st-book,u25-st-anki-direction,u25-st-binder-direction,u25-st-tutor-direction,u25-st-cumulative-direction
 
 ### STEP `u25-st-book-work`
 
@@ -1346,7 +1346,7 @@ steps=u25-st-book-work,u25-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5b9aec5f47409264d5510bb046c65ee67579e986f1fba52a42f2e8af57665c2c
+- Content hash: 765961a3e61341a6c5181a14801fd99e2c268b7f5d2b5d2008c0be92af20529b
 
 kind=BOOK
 title=Work Lesson 25 in your copy
@@ -1356,7 +1356,7 @@ references=ref-u2125-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 25 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 25: printed pages 305-319. PDF indexes 317-331 are file locators, not printed pages. Observed section locators: §25.1 p305 (PDF 317); §25.2 p305 (PDF 317); §25.3 p310 (PDF 322); §25.5 p311 (PDF 323); §25.6 p312 (PDF 324); §25.7 p312 (PDF 324); §25.8 p314 (PDF 326). Observed exercise locators: 25/1 p309/PDF321; 25/2 p312/PDF324; 25/3 p313/PDF325; 25/4 p315/PDF327; 25/5 p318/PDF330. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1368,7 +1368,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 12bf82701cb4979f0943a6b5e7d29a123973bbb8679243bb5bf36eafed7c6ea7
+- Content hash: 64102fac9e2170b8d01adeba5cf981139082df779a21eeed3ea47fc426daffbe
 
 kind=BOOK
 title=Record Lesson 25 book work
@@ -1378,8 +1378,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 25 work in your copy.
+bookDirection=Owned-book assignment for Lesson 25: printed pages 305-319. PDF indexes 317-331 are file locators, not printed pages. Observed section locators: §25.1 p305 (PDF 317); §25.2 p305 (PDF 317); §25.3 p310 (PDF 322); §25.5 p311 (PDF 323); §25.6 p312 (PDF 324); §25.7 p312 (PDF 324); §25.8 p314 (PDF 326). Observed exercise locators: 25/1 p309/PDF321; 25/2 p312/PDF324; 25/3 p313/PDF325; 25/4 p315/PDF327; 25/5 p318/PDF330. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u25-st-anki-direction`
+
+- Objectives: obj-u25-book
+- Sessions: u25-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 91c07b7a0bfe0832ddf2eba6ad0ef8e46b26231eed5dac9e30a14634fcbf2acc
+
+kind=ANKI
+title=Unit 25 AnkiDroid direction
+body=Unit 25 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u25-st-binder-direction`
+
+- Objectives: obj-u25-book
+- Sessions: u25-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9af0ba02ec1a7144d69c623437dc91aff49f2c09e62a444dbe01920f5052f284
+
+kind=BINDER
+title=Unit 25 binder prompt
+body=Unit 25 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u25-st-tutor-direction`
+
+- Objectives: obj-u25-book
+- Sessions: u25-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d06b655baf4c47b10518d97229b3c246e085f99883fc68f4b35bdfb3f268a72b
+
+kind=TUTOR
+title=Unit 25 optional tutor
+body=Unit 25 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u25-st-cumulative-direction`
+
+- Objectives: obj-u25-book
+- Sessions: u25-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 018ed6ac3a6c7c642fa731dca2be663e83761bef3b85bd0dbb418d0b47de24ba
+
+kind=ORIENT
+title=Unit 25 cumulative review
+body=Unit 25 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 25 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u25-name-structure-0`
@@ -1543,12 +1631,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c5249daa37838fbef226c67095fef33d4232442daccd5b8f5473c584119a10b2
+- Content hash: dff1f845a5f94793519953e507f7e24365d6309f049e6d0f8139d8bd5cb6f391
 
 kind=LEXICAL
 letterId=
 display=Извини́те
-note=I'm sorry / excuse me (informal)
+note=Извини́те is the polite or plural form. The familiar singular is Извини́.
 objectiveId=obj-u25-courtesy
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -2197,36 +2285,36 @@ responseKind=RUSSIAN_TOKEN
 
 - Objectives: obj-u25-courtesy
 - Sessions: u25-s-courtesy
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: cbcf73126940ba52636a312306912d365e325168db42244cb7e820fc3afc608c
+- Content hash: d8a52d795e53b2afb825dba6c48991f59f55faf87e5541ce210edd26a16b9745
 
 kind=FORM_SELECTION
 language=en
-prompt=The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?
-promptLetter=I'm sorry / excuse me (informal)
-options=Извини́те | Пожа́луйста | Спаси́бо
-answer=Извини́те
-feedback=The frozen list pairs I'm sorry / excuse me (informal) with this form. Извини́те.
+prompt=Choose the English description. Which address does Извини́те mark?
+promptLetter=Извини́те
+options=excuse me, polite or plural | excuse me, familiar singular | thank you
+answer=excuse me, polite or plural
+feedback=Извини́те is polite or plural. The familiar singular is Извини́.
 objectiveId=obj-u25-courtesy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen list says please; also used for a request, not for the informal apology. | The frozen list pairs thanks with a different form.
-testedFeature=COURTESY_PAIR
-evidenceMode=SOURCE_SUPPLIED_PAIR
+distractorRationales= | excuse me, familiar singular is Извини́, without -те. | thank you is a different courtesy formula.
+testedFeature=POLITE_IZVINITE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u25-courtesy-2
-cueLanguage=rule
+cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u25-courtesy-2-ru
-distractorSourceIds= | prov-ex-u25-courtesy-0-ru | prov-ex-u25-courtesy-1-ru
-distractorDifference= | Please is the request word, not the informal apology. | Thanks is not the informal apology.
-whyAnswerDemonstratesObjective=The frozen list pairs I'm sorry / excuse me (informal) with this form.
-contrastMembers=Извини́те | Пожа́луйста | Спаси́бо
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u25-courtesy-2-en | prov-ex-u25-courtesy-2-ru | prov-ex-u25-courtesy-0-ru | prov-ex-u25-courtesy-1-ru
-responseKind=RUSSIAN_TOKEN
+answerSourceIds=prov-ca-25-582
+distractorSourceIds= | prov-ca-25-586 | prov-ca-25-587
+distractorDifference= | excuse me, familiar singular is Извини́, without -те. | thank you is a different courtesy formula.
+whyAnswerDemonstratesObjective=The -те form marks polite or plural address.
+contrastMembers=excuse me, polite or plural | excuse me, familiar singular | thank you
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-25-581 | prov-ca-25-582 | prov-ca-25-586 | prov-ca-25-587
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u25-i-name-question-1`
 
@@ -2586,15 +2674,977 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 0b9381abb6d77deb2e0db7d81849c95ce37c8568f552d8ee52e89f15eadaf46b
+- Content hash: 037d36f2534a6670cdd731adcbeda471b6971a651833a3410486b407e078dca5
 
 title=Units 21–25 source notice
-summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.
-detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. A separate application chain on that same span uses only names already in the span. It is not a name generator. Completion over a period is not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Scope-sensitive placement is the ReadyRussian Language Generator 3 statement that the modifier negates the following word, and that page's two-sentence contrast, under the ReadyRussian CC BY-SA 4.0 route. Review is pending.
+summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
+detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. A separate application chain on that same span uses only names already in the span. It is not a name generator. Completion over a period is not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Scope-sensitive placement is the ReadyRussian Language Generator 3 statement that the modifier negates the following word, and that page's two-sentence contrast, under the ReadyRussian CC BY-SA 4.0 route. Review is pending. Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=21
 searchTerms=units 21-25 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-25-119`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 054aed84f6170e323e04f8a42c5a99b751f91699b8ba1c5f347d0c47e93baea5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:u25-st-teach-courtesy-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-120`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69b10c3e181c7627c96b075e249f48b5510ffe62277342deb0d9f660139332c1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:u25-st-teach-name-question-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-121`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d5a0d564136d87d8ef726fbc9b5ebb89314837ceb1689f6e17325dfe3d0daab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:u25-st-teach-nickname-rule-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-122`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dfc346c9c3a77d09db0c5ab6d345a8e8e78ff254a178c639cdbf521e63c1d4fc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:u25-st-teach-address-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-232`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cdd4b88cddca1ba3b7c815e4296a6a01b079f45ced040bf090a6c20fd6b49eb7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:ex-u25-courtesy-2:display
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+shippedText=Извини́те
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=14ed6b2057c8c0bd982243dcef42dcbb5777e0a3e1fc6339c1baed8bebf006f6
+contentHash=67853b73d74bbdb43069c6675478a014ff97b884f8797e864c0e9390338eb605
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-233`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e46f09dbd37fb74b742cc745af5448329d4ab933c69bafebe5638aa1c7f0712d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:ex-u25-courtesy-2:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те is the polite or plural form. The familiar singular is Извини́.
+shippedText=Извини́те is the polite or plural form. The familiar singular is Извини́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1f933104ede2cba747f288d28895dd375f4af2bde4009ebd80a288ec9d7e2184
+contentHash=2b8b5ff0888cc220547d381beb4c844904b93569e54935d0af506d3abc13fea7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-234`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 178074305d37e54b108f48aae7d6f78ecc007685c4d76c1d8ecac95a33f79a0d
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:ex-u25-courtesy-2:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те is the polite or plural form. The familiar singular is Извини́.
+shippedText=Извини́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1f933104ede2cba747f288d28895dd375f4af2bde4009ebd80a288ec9d7e2184
+contentHash=5f8e9caf77244d7b5af057deac2fffdcba045f2cfd9bd25a100708009c7a3523
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-235`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9489974fde7bfca563a5e63dc58cf42ed947b409402527955127ed72963a763a
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:ex-u25-courtesy-2:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те is the polite or plural form. The familiar singular is Извини́.
+shippedText=Извини́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1f933104ede2cba747f288d28895dd375f4af2bde4009ebd80a288ec9d7e2184
+contentHash=cd4bdede60790b8fa10c68fb20dd70942f37a081a519614ef9726953bd52db50
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-236`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc7fbf7d0544b89aa33d03e13e48288404ff02028c392b9ffa758e6b50452c22
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:ex-u25-courtesy-2:pair
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те — Извини́те is the polite or plural form. The familiar singular is Извини́.
+shippedText=Извини́те — Извини́те is the polite or plural form. The familiar singular is Извини́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d609702cf4ca94430eedb314fd8d22de879f22ab75d89d8ae0a9df25ae07cba2
+contentHash=f1aeee93105dedcf5392ae8e03930f1fc4bc00a4c327bcde54f0cde6d40bdb3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-581`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae80249527a641bc96ea7b750d2067c90bcc7d995d07bdbb99f4fe5dc86219fe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=Извини́те
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=67853b73d74bbdb43069c6675478a014ff97b884f8797e864c0e9390338eb605
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-582`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b3d6777111cae9c13c9b3ef97b0a3e838a76dd202f6be4fbc6c81347c0285194
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=excuse me, polite or plural
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=6facfa93205ca9c072aed29a11c28e9a8fba500b281400b1dfdf739634e8a216
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-583`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 777ed719eba0399de4da8a7ec0dd631b60e4d17759efa95536ae02404222ee87
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=Which address does Извини́те mark?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=3c5ee48a9f69f9e00864c20a456d9bb183d5aadda674e03e38ae27fde38a1c71
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-584`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3e9dc91daf4e2792906a8fec03899c2eebacc526fcf14b481022b6d5bd354424
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=Извини́те is polite or plural. The familiar singular is Извини́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=2fa939e39da9d7e22e0a940d0387f4b62975212dbf18f2e683f45972b5ca59c7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-585`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a556bbd6602059374f91aa82e30c0f80031eced4096e448d1f03adb3a998dd4e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=The -те form marks polite or plural address.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=96f21b3547d676a18ebc38cfa79ba543f6c5bb83bff3435e141a07a6bb8c4535
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-586`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 52cea31af0ab1db63875c4824ef88545d11f86775c4cb668232241f12cbbf20a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=excuse me, familiar singular
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=adfb99a80b555d425f5c8dc8d469263a2350dbe906c0076278e5120c0e4f28cd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-587`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b1e532720e295a7243cfe9c89a63ebba728302cb47f66dfb8090b76d3b05f6e1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=thank you
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=844347e54f00c4b97fe4736909730faaf8365292b076ea5a1378ebd1b0fd3bbb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-588`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 04abb42abe58c68efd856d06de3d89d097462082cf2acfc108b3edfffd801375
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=excuse me, familiar singular is Извини́, without -те.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=06246794d285190d8c39d3e29bc069f32902639f8f44932edc03452d764abff5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-589`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 10c54a1a5cf6efcdc38976ed62b44e7265a21d9978fbbd5dab4bcb822a0ed8da
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=thank you is a different courtesy formula.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=3f397c8d4c37e29a44604d0f861ac489619f77b616900c38f544d3da5cd5cb37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-590`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd472d3654550f34351dcfa9b6917ce1184d87044a26dc1e80e7bd5642185c08
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=Извини́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=5f8e9caf77244d7b5af057deac2fffdcba045f2cfd9bd25a100708009c7a3523
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-591`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42342863a84930e24d85907ccd6ea8f4705fefe6336383d4d91db48df9bf595f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=Извини́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=cd4bdede60790b8fa10c68fb20dd70942f37a081a519614ef9726953bd52db50
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-592`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6129419088d12208e55040d97f25063874d4c7acd37cd9a291154b588f7bb9ac
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=те
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=520e588e7dfccee684f2875589af4d32969d29b06514c83f10f6fef0799c9d1c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-593`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70f96620fc14696ff7f78c178631f5314a690dffdd9e1e1eb79637b6b7cb564d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=Извини́,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=1d6447117ed165e11b00b7d22b33a4e75ee826c71d00c7e6a8136c6c24ffbaa0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-594`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 065d91458e55c95efac41423e85da260ff6fa3e2e286be9c3f04b537835a85f2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u25-i-courtesy-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Извини́те
+excuse me, polite or plural
+Which address does Извини́те mark?
+Извини́те is polite or plural. The familiar singular is Извини́.
+The -те form marks polite or plural address.
+excuse me, familiar singular
+thank you
+excuse me, familiar singular is Извини́, without -те.
+thank you is a different courtesy formula.
+Извини́.
+Извини́
+те
+Извини́,
+те.
+shippedText=те.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f
+contentHash=60c48d1cdcee1e4284839375e83f12426faf521574f871fd66211b8ab3774ef6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-617`
+
+- Objectives: obj-u25-book
+- Sessions: u25-s-orient, u25-s-book
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8f59fff8a94b9498a482a300f93c43a107b1e4ab7743456a7bc282c15606bada
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u25:notice-2125
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
+shippedText=Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5582773b741ee53c022b9ba27c891d756dfae1d526d9150ba90a440b86145a00
+contentHash=cfa29fcc2b75e5259f19b25cdf8cd0acc40a91b5edf1c16bf0d642d4bf6d00d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-25-618`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 978f3d64a1f22807ba4abb7104eeabea80b2b8158739eb134e2354fb4487ae3f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u25:notice-2125-summary
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
+shippedText=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f1e5d4ee50b835be66e350280da1d9c2602f1e8394a669277be53ae13933a5c2
+contentHash=413a7a6cef6c60d2a828e503fe1158b52d1e907fcabe86e17a86091d81768bfa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-25-11120`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 131a5dc9b47f3b0b62c0f5776f5a84bcc3ce1161b1184addd5c402eb2110795e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u25-i-courtesy-2:prompt
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Choose the English description. Which address does Извини́те mark?
+shippedText=Choose the English description. Which address does Извини́те mark?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce59b61bd06e3e560b64fa1c3cd6ce1eb9a05235b58a9ba3e66dfd429f02f018
+contentHash=b213e9b9897981e2ddb063e72eb2321a36001c5557ad87762ad0cb9008308c1d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-u25-address-0-en`
 
@@ -7047,6 +8097,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-25-11281`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8912b48dfe90665feb5604c77c9626b38f6b0299520e060e7dc05de649ee44b9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 25 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-25-11282`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a80642d1a767e97c69376a913db5ad2b394e764d7a4219bd8adc433f82cc5b01
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-25-11283`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 208f0c482f7e3f48d84be3e78b950c0332c1158410e9b00fcc7dad2dd25d612f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 25 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-25-11284`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a9bf721e5ad113498b8a171aa4a5ac1e126ed50702af7b34b96fa805ec8ca67
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-25-11285`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2d744f51860c77250b1c98db14284a8be8475bce20bf9fde64097479eab96150
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 25 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-25-11286`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbd4d48687160ba3b31a9aecd113035a94f99132210d7a181e5dcfdc7cac818c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-25-11287`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 178c6a8838444d4d3ff31b806cfff093f48746fda900096313b58e579a5df6da
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 25 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-25-116`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1aec949b1951c0cc83b0059138992d459e452286c5aa4b81caf69eb602bcb835
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 25: printed pages 305-319. PDF indexes 317-331 are file locators, not printed pages. Observed section locators: §25.1 p305 (PDF 317); §25.2 p305 (PDF 317); §25.3 p310 (PDF 322); §25.5 p311 (PDF 323); §25.6 p312 (PDF 324); §25.7 p312 (PDF 324); §25.8 p314 (PDF 326). Observed exercise locators: 25/1 p309/PDF321; 25/2 p312/PDF324; 25/3 p313/PDF325; 25/4 p315/PDF327; 25/5 p318/PDF330. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-25-117`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7519ccfbfad34a1435162c047b3f8d3dbb0675ece00141d415fa8ce0c7b4d96
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 25 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-25-118`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b9e4d05c6c4cde52ca5621454f81287abadb1e970e7db794a301037c1a0e9b8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u25-187`
 
 - Objectives: none
@@ -8277,6 +9457,21 @@ Original app text
 Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 Original research synthesis. Not a quotation of a third-party page.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -8345,6 +9540,20 @@ permitsAppUse=true
 - Content hash: 65ca0e4f268b6158cbfafc95d43b79c9894d018f538d27b8cf21e7000b24fbed
 
 src-original-research-synthesis
+Original app text
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
 Original app text
 permitsAppUse=true
 
@@ -8556,6 +9765,32 @@ permitsAppUse=true
 - `u25-st-check-name-form` ITEM `u25-i-name-form-3`
 - `u25-s-book` OBJECTIVE `obj-u25-book`
 - `u25-st-book-work` REFERENCE `ref-u2125-attribution`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-119`
+- `obj-u25-name-question` PROVENANCE `prov-ca-25-120`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-25-121`
+- `obj-u25-address` PROVENANCE `prov-ca-25-122`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-232`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-233`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-234`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-235`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-236`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-581`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-582`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-583`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-584`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-585`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-586`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-587`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-588`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-589`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-590`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-591`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-592`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-593`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-25-594`
+- `obj-u25-book` PROVENANCE `prov-ca-25-617`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-25-618`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-repair-25-11120`
 - `obj-u25-address` PROVENANCE `prov-ex-u25-address-0-en`
 - `obj-u25-address` PROVENANCE `prov-ex-u25-address-0-ru`
 - `obj-u25-address` PROVENANCE `prov-ex-u25-address-1-en`

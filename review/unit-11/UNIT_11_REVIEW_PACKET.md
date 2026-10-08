@@ -11,12 +11,12 @@ Unit 11 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: b22fa0cca895a677386a77d03a63301f7454aa07
-- Unit content-review SHA-256: 7a70c3b29f7c88934d0dcf21f40d531a45f1eff9daa8593f5af09d509bd10324
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 1b0b2740b6691569dc22c3a09927842f7396a1265797b888751da23507f33688
 - Mapping-package SHA-256: 61b1d9c77882225528ca0d0f68a44efa13c68605efdaed0e6abb8e1b519db587
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 431331904643089b964a235d5f6f6a138017959b2c48098c8d24abaad5401e7e
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 9b1cc4290a5b0ccdca2413d9bad2bf05afebdd67431e3ea56555543d4bfb7329
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -304,11 +304,11 @@ remediationStepId=u11-st-rem-past-read
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1d65c7c17dc806ad9879d64cc441dfee58ad95841891d6cfb146432ec126886c
+- Content hash: a58dbf60800b43e60ee37fe74fff24d4ec8e07cc4b377740471d3544aa72d6e2
 
 kind=TEACH
 title=Admitted instruction
-body=To form the past tense of either aspect of a verb, remove the ending '''-ть''', and add '''-л'''.
+body=For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -429,11 +429,11 @@ steps=u11-st-teach-past-be-1,u11-st-guided-past-be-1,u11-st-teach-past-be-2,u11-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 011a7ecffeb3e8c16015c78a31139b2a70ecb1a5d5cbd859beb205d3f9abafcb
+- Content hash: b62037cd4d2f5710f5584b6bf1b3bc98bc305c99c0376df8ef80ce88bafef344
 
 kind=TEACH
 title=Admitted lines
-body=бы́л — be. была́ — be. 
+body=бы́л — be. была́ — be. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -642,11 +642,11 @@ remediationStepId=u11-st-rem-past-aspect
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6982e8332a238e82bbdc94c2c3282ea1c38f35ac14485424e2890e66365a4c17
+- Content hash: ad0977d3bfae6669d2e76b6b9e3bbabe334dd8cef96eb5728bd70d3cf05f3180
 
 kind=TEACH
 title=Admitted instruction
-body=So the English ''past progressive'' sentence  "I was reading" would correspond to the Russian imperfective ('''я читал'''), since it refers to an action that wasn't completed. Likewise, the English ''simple past'' sentence "I read" corresponds to the Russian perfective ('''я прочитал''')
+body=An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -965,12 +965,12 @@ remediationStepId=u11-st-rem-reflexive
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d6ba0c2d82c7dd64a569af0e9b0ba5601001ad0e63ac922f03d4f9779aaef931
+- Content hash: f2565f4f28b77a2546d3684761deb48634b55e91f7cc0ae3a309d4d9ad96892d
 
 title=Self-attest Lesson 11
 estimatedMinutes=10
 objectives=obj-u11-book
-steps=u11-st-book-work,u11-st-book
+steps=u11-st-book-work,u11-st-book,u11-st-anki-direction,u11-st-binder-direction,u11-st-tutor-direction,u11-st-cumulative-direction
 
 ### STEP `u11-st-book-work`
 
@@ -980,7 +980,7 @@ steps=u11-st-book-work,u11-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ffc211847fb95ffb5ea32ebc81fc099047397ba8aec73f416085fb842503b94d
+- Content hash: a51a63d9d524025d3e077f8596c2751b2f49edf2247bc4471f88adc8bc402a27
 
 kind=BOOK
 title=Work Lesson 11 in your copy
@@ -990,7 +990,7 @@ references=ref-u1115-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 11 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 11: printed pages 122-132. PDF indexes 134-144 are file locators, not printed pages. Observed section locators: §11.1 p122 (PDF 134); §11.2 p122 (PDF 134); §11.3 p124 (PDF 136); §11.4 p124 (PDF 136); §11.5 p125 (PDF 137); §11.6 p126 (PDF 138); §11.7 p128 (PDF 140); §11.8 p129 (PDF 141); §11.9 p130 (PDF 142). Observed exercise locators: 11/1 p125/PDF137; 11/2 p128/PDF140; 11/3 p131/PDF143. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1002,7 +1002,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8c015d7c2ec402cbd95769ce05a30cdf4c6812f219eabd9a022a43fd39f2b344
+- Content hash: 80877aec35e1097a4619308856194c8165d3cfeaec40727b1816103eb668772a
 
 kind=BOOK
 title=Record Lesson 11 book work
@@ -1012,8 +1012,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 11 work in your copy.
+bookDirection=Owned-book assignment for Lesson 11: printed pages 122-132. PDF indexes 134-144 are file locators, not printed pages. Observed section locators: §11.1 p122 (PDF 134); §11.2 p122 (PDF 134); §11.3 p124 (PDF 136); §11.4 p124 (PDF 136); §11.5 p125 (PDF 137); §11.6 p126 (PDF 138); §11.7 p128 (PDF 140); §11.8 p129 (PDF 141); §11.9 p130 (PDF 142). Observed exercise locators: 11/1 p125/PDF137; 11/2 p128/PDF140; 11/3 p131/PDF143. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u11-st-anki-direction`
+
+- Objectives: obj-u11-book
+- Sessions: u11-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 61938f6e6abbd46b758477b0c337c421b304b5d9ca524cdb7d0fadef1c750386
+
+kind=ANKI
+title=Unit 11 AnkiDroid direction
+body=Unit 11 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u11-st-binder-direction`
+
+- Objectives: obj-u11-book
+- Sessions: u11-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 49a773fc9cceaa261815ef6c3ff358ca7491aaacecad54b145abde1e37383a49
+
+kind=BINDER
+title=Unit 11 binder prompt
+body=Unit 11 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u11-st-tutor-direction`
+
+- Objectives: obj-u11-book
+- Sessions: u11-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f8d24111a13e6f765d0f2de8f5c72771a042e22779e145b4eb18b4e4afe7edb0
+
+kind=TUTOR
+title=Unit 11 optional tutor
+body=Unit 11 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u11-st-cumulative-direction`
+
+- Objectives: obj-u11-book
+- Sessions: u11-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fae78614e744c0cf0bd80f52a1ab3c5eedd3591f562ed5f060525c4e84d22657
+
+kind=ORIENT
+title=Unit 11 cumulative review
+body=Unit 11 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 11 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-or-u11-past-read-0`
@@ -1895,6 +1983,186 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=11
 searchTerms=units 11-15 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-11-349`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eaa5751939c4c58ddc9fee76498f612243584713c9ce865d7bdb4fc2ce899d25
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:u11-st-teach-past-read-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
+shippedText=For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae727bad5723e6238c7babd49917129c78e27b78c56b874e1af6ac66a4cb1c74
+contentHash=b2e85bac9f2102ef31dff27b8b5d0d1dd4388283e8a06fabde5cb729e39c7bff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-11-350`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2bf1a592591ee72865bfd96f1cc6ee9e7f0dfcf34ed16b7ef024174618a47d71
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:u11-st-teach-past-read-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
+shippedText=л,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae727bad5723e6238c7babd49917129c78e27b78c56b874e1af6ac66a4cb1c74
+contentHash=ce1139143104ef235d69fd4d8547985239c3df5437fc8789f7e8c56ed31ba3b2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-11-351`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb5e623a6d03de566cf021406c436a736e79b9c853bcece4e5675d4488858740
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:u11-st-teach-past-read-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
+shippedText=идти
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae727bad5723e6238c7babd49917129c78e27b78c56b874e1af6ac66a4cb1c74
+contentHash=d230ab4b4139e1673f05ca28e9d8310196be5b411115d58d2e3e82eecff26d9f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-11-352`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af0d3e504ecf59cefa5f43c8e9a169329e5ceb069fd471c863c654456f31f655
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:u11-st-teach-past-read-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
+shippedText=быть
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae727bad5723e6238c7babd49917129c78e27b78c56b874e1af6ac66a4cb1c74
+contentHash=8d16c1c96bb6353eeaf628a116fb3f18de40ec0a1e79c79b08fe681cb68390fc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-11-369`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a65ebf04e269f35ea26d155e80d6a966e8cb4f0a4642dee1baf3b9c716dc1ce5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:u11-st-teach-past-aspect-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.
+shippedText=An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d1dce6e0675196107a66686ec78cdaea242d798adcd163c4de6dc0f9732e82bf
+contentHash=2aa8cd5167fa4b09ba575bba85229ed0a0c544ec52f109ce2500c6fb9a713b0e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-11-47`
+
+- Objectives: obj-u11-past-be
+- Sessions: u11-s-orient, u11-s-past-be
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e661f6fd44196efbf53004f2d2405b68446aacd3fbc4b7dc7212cf530244645f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-be:u11-st-teach-past-be-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u11-past-aspect-2`
 
@@ -3980,6 +4248,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-11-11183`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae412bdeb680148b099af8cfbf63bf6a6235290134d5c1d7a995dc1c4702fe95
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 11 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-11-11184`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8cd1ecc393419932b866a65b497e995e632d068838c9b265135d62be3495143
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-11-11185`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 591b5c4af99115f96605ec84f948d2d36520358d4402a755edce8b0d70cca495
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 11 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-11-11186`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c7c3a17d03d03c89079a3f35d15908f36024b9010b4e668ab3ea9cc20628452
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-11-11187`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4808433cca89cd6c6623adc5b478d9fab0477dccbf7946cfb1d775916056d49
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 11 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-11-11188`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c360bd7e475ddbc55e3e122dc0b4bdf911d8b05b19f23d8a2711bbc02be50cf1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-11-11189`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8d144bd22688cd5705ab05efbc1ff3dff2913e3a48cdaac7e153bfa3ed68796
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 11 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-11-44`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a39b63853e2c9b215f4fdaf68fc0d142ef523b6e251990014e91b77b50d20d9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 11: printed pages 122-132. PDF indexes 134-144 are file locators, not printed pages. Observed section locators: §11.1 p122 (PDF 134); §11.2 p122 (PDF 134); §11.3 p124 (PDF 136); §11.4 p124 (PDF 136); §11.5 p125 (PDF 137); §11.6 p126 (PDF 138); §11.7 p128 (PDF 140); §11.8 p129 (PDF 141); §11.9 p130 (PDF 142). Observed exercise locators: 11/1 p125/PDF137; 11/2 p128/PDF140; 11/3 p131/PDF143. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-11-45`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be1d86e18bbf235c037814dc59abf78b9133f7116188e3d578ddc746814c8b2c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 11 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-11-46`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a45bf02411e4fd258452fa9e63f35868b55ee0395dec04fdb7528e9530d6629
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u11-001`
 
 - Objectives: none
@@ -4426,6 +4824,21 @@ CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -4467,6 +4880,20 @@ permitsAppUse=true
 
 src-wikibooks-russian-cc-by-sa
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -4635,6 +5062,12 @@ permitsAppUse=true
 - `u11-st-check-reflexive` ITEM `u11-i-reflexive-2`
 - `u11-s-book` OBJECTIVE `obj-u11-book`
 - `u11-st-book-work` REFERENCE `ref-u1115-attribution`
+- `obj-u11-past-read` PROVENANCE `prov-ca-11-349`
+- `obj-u11-past-read` PROVENANCE `prov-ca-11-350`
+- `obj-u11-past-read` PROVENANCE `prov-ca-11-351`
+- `obj-u11-past-read` PROVENANCE `prov-ca-11-352`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-11-369`
+- `obj-u11-past-be` PROVENANCE `prov-ca-11-47`
 - `obj-u11-past-aspect` PROVENANCE `prov-ex-or-u11-past-aspect-2`
 - `obj-u11-past-aspect` PROVENANCE `prov-ex-or-u11-past-aspect-2-gloss`
 - `obj-u11-past-aspect` PROVENANCE `prov-ex-or-u11-past-aspect-3`

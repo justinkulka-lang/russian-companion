@@ -11,12 +11,12 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: ae777d85fe3616fc8e065890201d40c241d113bc
-- Unit content-review SHA-256: e1dd456abf8a7b961f2f8471f35d4178961a53147c354f3e410e88d75f025c78
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 520c5d5a6a8f952d743417584aab1c0d627b4105d4c03b5bcda31508cf8024e7
 - Mapping-package SHA-256: 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 7a03fc91fa0e207544ffdad50ae43c62828234d0ad0ad2eb372eba83192f62b0
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 8013ac4f9db8b6165e3a1c01a5c56921b99749f4d53774596490081ce7ca91d5
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -536,11 +536,11 @@ steps=u8-st-teach-spelling-1,u8-st-guided-spelling-1,u8-st-teach-spelling-2,u8-s
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ed79fb69671dbb80a1eef7387b2d7a66f589a8ff04797c02c27e7df8178f1fef
+- Content hash: 8fd94ecf5887876c3a9328879ad0c3b6774bfb79bc2715e6a0395611f09a3122
 
 kind=TEACH
 title=Admitted lines
-body=хорошее письмо — good letter. хоро́ший — good. 
+body=хорошее письмо — good letter. хоро́ший — good. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -580,11 +580,11 @@ remediationStepId=u8-st-rem-spelling
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ed4ce468a646dfd841707c47e8ed319ddecf8f4a788e871b26bd821c75ae7d4c
+- Content hash: c71587070be68d3289b188951e1dc37aa4c46f6e94a9ee53c48d1570db3f0640
 
 kind=TEACH
 title=Admitted instruction
-body=you add '''и''', not '''ы'''
+body=After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -727,11 +727,11 @@ steps=u8-st-teach-irregular-1,u8-st-guided-irregular-1,u8-st-teach-irregular-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 235615d254f023366d263a171525ec68534a5fc9773cc2d7f4104235ffe7e02a
+- Content hash: 3fd7fd870c432e009f0f8460fce26f75220fd20460c2d459fc36c4003f090c10
 
 kind=TEACH
 title=Admitted lines
-body=пять столов — five tables. брат — brother. 
+body=пять столов — five tables. брат — brother. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -940,11 +940,11 @@ steps=u8-st-teach-agreement-1,u8-st-guided-agreement-1,u8-st-teach-agreement-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8d5f94477db36a097aba39b5ad13237aedc3d2c8666733db6575f6719f7da457
+- Content hash: e8ba2ddb51fafede054d46bac964131c96fe7e3c766b5121cd8d7f0e7455d3a9
 
 kind=TEACH
 title=Admitted lines
-body=синие книги — the dark blue books. Наши — Our. 
+body=синие книги — the dark blue books. Наши — Our. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1263,12 +1263,12 @@ remediationStepId=u8-st-rem-availability
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8effa6ad4a01127bda80e6115b412daff6de03f05a449871eef78a16af1a22d1
+- Content hash: 3e4c39a4203964d2d42dc1c11192aac3e6bb16f9194639bb830ad6cf1916f935
 
 title=Self-attest Lesson 8
 estimatedMinutes=10
 objectives=obj-u8-book
-steps=u8-st-book-work,u8-st-book
+steps=u8-st-book-work,u8-st-book,u8-st-anki-direction,u8-st-binder-direction,u8-st-tutor-direction,u8-st-cumulative-direction
 
 ### STEP `u8-st-book-work`
 
@@ -1278,7 +1278,7 @@ steps=u8-st-book-work,u8-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 04882e3ae87e6caa321ab39de9d1ea228a2f0a8bc0357b3b27b920e5fd052a83
+- Content hash: 1a0a853f6c45452abdb85d839652ac6565cd19ebfa038e2819b38dd68cf5caa5
 
 kind=BOOK
 title=Work Lesson 8 in your copy
@@ -1288,7 +1288,7 @@ references=ref-u610-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 8 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 8: printed pages 81-91. PDF indexes 93-103 are file locators, not printed pages. Observed section locators: §8.1 p81 (PDF 93); §8.2 p81 (PDF 93); §8.3 p82 (PDF 94); §8.4 p82 (PDF 94); §8.5 p83 (PDF 95); §8.6 p83 (PDF 95); §8.7 p84 (PDF 96); §8.8 p84 (PDF 96); §8.9 p85 (PDF 97); §8.10 p86 (PDF 98); §8.11 p87 (PDF 99); §8.12 p88 (PDF 100). Observed exercise locators: 8/1 p85/PDF97; 8/2 p85/PDF97; 8/4 p89/PDF101. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1300,7 +1300,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 38cb0e086b848ddfd914b1c860c6649233f380e876e8bc3b83ce2ad775f9a740
+- Content hash: 15478266fe456b622f7a428e476da0d176863fe9a9a5ae1b7a2308d7fe4e04e6
 
 kind=BOOK
 title=Record Lesson 8 book work
@@ -1310,8 +1310,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 8 work in your copy.
+bookDirection=Owned-book assignment for Lesson 8: printed pages 81-91. PDF indexes 93-103 are file locators, not printed pages. Observed section locators: §8.1 p81 (PDF 93); §8.2 p81 (PDF 93); §8.3 p82 (PDF 94); §8.4 p82 (PDF 94); §8.5 p83 (PDF 95); §8.6 p83 (PDF 95); §8.7 p84 (PDF 96); §8.8 p84 (PDF 96); §8.9 p85 (PDF 97); §8.10 p86 (PDF 98); §8.11 p87 (PDF 99); §8.12 p88 (PDF 100). Observed exercise locators: 8/1 p85/PDF97; 8/2 p85/PDF97; 8/4 p89/PDF101. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u8-st-anki-direction`
+
+- Objectives: obj-u8-book
+- Sessions: u8-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9720d5fccffc6594deaf0f1c3948ee26d3c726b11215782518df9350c49b0f55
+
+kind=ANKI
+title=Unit 8 AnkiDroid direction
+body=Unit 8 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u8-st-binder-direction`
+
+- Objectives: obj-u8-book
+- Sessions: u8-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b7af733ae0bcf71a81fbc00c15b97ea99a4f4272a8f50e38df4db8f5a18ca8a9
+
+kind=BINDER
+title=Unit 8 binder prompt
+body=Unit 8 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u8-st-tutor-direction`
+
+- Objectives: obj-u8-book
+- Sessions: u8-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9443d0a5827aec4a81a37d412a5586442fa7c043fdc4b507787fb3faf684f3a5
+
+kind=TUTOR
+title=Unit 8 optional tutor
+body=Unit 8 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u8-st-cumulative-direction`
+
+- Objectives: obj-u8-book
+- Sessions: u8-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a1cdf44fd2856dc82cf87665f96e23eac71717e9a4c9d308eb4e83d5705ba0bc
+
+kind=ORIENT
+title=Unit 8 cumulative review
+body=Unit 8 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 8 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-or-u8-plural-0`
@@ -2861,6 +2949,576 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=6
 searchTerms=units 6-10 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-8-29`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50fbff37cfa1a4445d4ff932a50e66bab3219b99a162e45ee3f1db1ff1b13b06
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-30`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26878c69318dff758a2a87f5cab2a3d54f96860a277f99d084c912ac61de9752
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-st-teach-irregular-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-31`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2eef0f1a46ed3827b3cb629016131bbb62c8808300272df0d884255176ed3bb5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-st-teach-agreement-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-324`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb7522890769a8be914d5a8a8e159e15268532055c03ef651ff1600a2cfcc349
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=560242bc7df3c242376f3e6c214e154b38dfcf71bfd2efb937eb3b4cc8ee3137
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-325`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26edb5fe398daf0919c46131e5652fefd7c9e2d51e61b6ed8e972f5b1ec1e130
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=г,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=1294886c60a57539ca543e806b6851b3b2515a0d0fa546a78f95a52324fd4c54
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-326`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbeed19adba31f3f584bf1f8a2f9bee434390d7b8fa6c45da2030745f5ec5a9b
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=г
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-327`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 16b10cacbcbdd599c2c9d731e51be0d31387c00353119bb6e3755e6ee82b75f8
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=к,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=ac6f811664612349bd808b847f041bcbde99a6cf661ecc608415c049111574d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-328`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1075f615c8536535867312ceae346c20d93ca8d6ecf3aa1587839f13e70dc541
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=к
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=5225a95b111d47bf4c85281b89d99e31140bf124048d2b574b189225244da605
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-329`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69d1f871f62f251d1f748377ad433d62c3f4579abe962a42fa9d7c37a51ff3ba
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=х,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=3b5b81628f7ebb2701d49b211da82b158e13c4a1ddc903f90b0a27f314e16f96
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-330`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc64082848ef1dde06b41d4112bf3c61f3e633fd044cba293c5da1c88898ec76
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=х
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=bb69a96efca3303efa0b31c6438eb8da40b5fb4e785e01d07eb99b82aeb66520
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-331`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a87a80cbc10828275eb12b8474b099af1d595856f68ea03941d488c79ed9a1a2
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ж,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=477b354eb1509f9368409ea3324139bfe0c9c8a519ef0fed0ad85d39b13c7a6c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-332`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d49eeaceefae88699d6e144cca35f538de38fcad245ec6d68ebe15309ff774f7
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ж
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=dd591284d827e17f0f15706e4e430548c62b4f93d2847e0fcc7972b4aed83551
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-333`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b1bccca472390bc6632c6bce0339c4dd634660b41649bde54e2b264e989dc99
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ч,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=b9ce14dd963b907c3ec6979845d0a946a7cd443e68490406ba6095f8c1741c51
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-334`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ab6eba9d8da3fde21e75a0976e5731e90b9e0b9a97ca05fbccd701f56647ea2
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ч
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=40831c5d98a57dfcf5017bbb64925e863d0ed9396e3cc0517c23042a9e96ebc8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-335`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e28dbecd0bca85ed08f3b7866e83a458e1d85f9c1a026cd9c34dfa36d8113ab
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ш,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=68bd8326d8a787520847339b3a25efcae0145d822ddf2fc8f1b1421bde5fb07d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-336`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26e28a6e1e09ae2709fa670466f0ee7629f6091c8ccd7fda9cf1ade6f002893b
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ш
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=4f60bd4e24e7dc7f90c8a373bf18b38657abec5fcc8a6f9a3222815245e302de
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-337`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1e934292df348f476cb8e191cd599aa5d19d045abb0e84c3527d8e558abc7ceb
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=щ,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=a705cac2891687185695695dd28fdddfdcdc34a3680961dfca201e995eb2c1ae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-338`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f3ca99bf81426f78800c6f7f7c43aaab4e429a4031413d80ac51d3939fb7b6e3
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=щ
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=bbb369f210d2969fd1b4a6e940daaa7e201ebed37ec70dfc305bc4255328ac78
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-339`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b9da7e38b27ebb776e18dda3d9566a195c63a437f8a21f22389b5bfcea0a09d9
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ы.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=983f8a616b45626660859487c02a52b71e016b4d2c218006761578372ca318a0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u8-agreement-2`
 
@@ -5931,6 +6589,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-8-11162`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69fcd9a191951776c64e1d120b8b8a1cdb5ea0fe2c6cefe8d9d5ef4a81147b33
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 8 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-8-11163`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58a86c8b5e88702ec9fdd44528d1bc4a29ae00afe1aafbb7adf3e59eb97c42ca
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-8-11164`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4adbe3e3f7552d5a8cd5e47ed1d83efbe4b21a977b5a3bdf02eba0e2cefb7f1b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 8 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-8-11165`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9132eef5b084c85385596dd6c090e07f45f45ed37626319dfe629b56c19142d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-8-11166`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 883b7e5578f64b5a78a354dc1487b922d1fe7af82cdb0aad0604b5ed3b4b5f20
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 8 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-8-11167`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7abfedad01c419e435302cb96ddefc387a530184189c6078cbca5aa012c7439
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-8-11168`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd3d6f531e4216f0bbb60c2af8ceffcf90e8404b50b4ebdbfc48bd6f46052b9d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 8 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-8-26`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b92282da8891deb7fbba009e9e12e27049fea953c119ce7ef17f7a6f4c239bb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 8: printed pages 81-91. PDF indexes 93-103 are file locators, not printed pages. Observed section locators: §8.1 p81 (PDF 93); §8.2 p81 (PDF 93); §8.3 p82 (PDF 94); §8.4 p82 (PDF 94); §8.5 p83 (PDF 95); §8.6 p83 (PDF 95); §8.7 p84 (PDF 96); §8.8 p84 (PDF 96); §8.9 p85 (PDF 97); §8.10 p86 (PDF 98); §8.11 p87 (PDF 99); §8.12 p88 (PDF 100). Observed exercise locators: 8/1 p85/PDF97; 8/2 p85/PDF97; 8/4 p89/PDF101. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-8-27`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6a09367b5ebd24a938ee0737e666239bedd2321bcb4548d53ec262e4d3b525b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 8 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-8-28`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9048a3f41b69c3e0ef484b60e4d23a611a2b064f6b6a331fcf070941e723bd5e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u8-086`
 
 - Objectives: none
@@ -6312,6 +7100,21 @@ CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -6353,6 +7156,20 @@ permitsAppUse=true
 
 src-wikibooks-russian-cc-by-sa
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -6603,6 +7420,25 @@ permitsAppUse=true
 - `u8-st-check-availability` ITEM `u8-i-availability-3`
 - `u8-s-book` OBJECTIVE `obj-u8-book`
 - `u8-st-book-work` REFERENCE `ref-u610-attribution`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-29`
+- `obj-u8-irregular` PROVENANCE `prov-ca-8-30`
+- `obj-u8-agreement` PROVENANCE `prov-ca-8-31`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-324`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-325`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-326`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-327`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-328`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-329`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-330`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-331`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-332`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-333`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-334`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-335`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-336`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-337`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-338`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-339`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-2`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-2-gloss`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-3`

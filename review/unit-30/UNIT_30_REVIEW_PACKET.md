@@ -11,12 +11,12 @@ Unit 30 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
-- Unit content-review SHA-256: f1b2433f62fd490d7a891335eee139ab7684d90335fbf8ff0744cc7833f9df39
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 5df4756000729cfaea213937b87807b7ad7f74932335c9bd34b62a71af2e51b3
 - Mapping-package SHA-256: 97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 18bf856e7f2080299416cd5074a031de475f7f18f12eded099ae2b288dcdc488
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 7dcc10b8fa352268fdb01432d369ca9684540bf5ba0db0525adeb3861c9bfa1f
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -280,11 +280,11 @@ steps=u30-st-orient
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2e203cee95dbccef80572dbdf7cff5e18214b58f054cdf8908d3874cddc81ea6
+- Content hash: a5963bfef511358b543fde89a4ff594a0a99fc9ff0c6770b2c47f022de307a2f
 
 kind=ORIENT
 title=Review admitted table names and abbreviation examples
-body=Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Dictionary-field layout is not practical dictionary use. The admitted capstone story is included. Advancement stays blocked. Qualified review is pending.
+body=Unit 1 introduces the printed letter names, and this unit reviews them. It also shows two admitted abbreviation examples and the admitted address marks. The two-entry dictionary task is implemented and review-pending. It is not broad dictionary proficiency. The admitted capstone story is included. Advancement stays blocked until review. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -317,11 +317,11 @@ steps=u30-st-teach-letter-names-1,u30-st-guided-letter-names-1,u30-st-teach-lett
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2d94dba3d8ba792af9525ddb84869fca20990f5522a9fceba6f31858250ef4d0
+- Content hash: 2aaa2e47991742296fe1a838e64b08050ac1208867552fe5dfaa860090afa43c
 
 kind=TEACH
 title=Admitted lines
-body=Read the admitted examples on this card.
+body=Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -442,11 +442,11 @@ steps=u30-st-teach-abbrev-examples-1,u30-st-guided-abbrev-examples-1,u30-st-teac
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 64f8ca495bf5c87c6179a97833d165494b11ee1b0c35a16289138ec57b06aa95
+- Content hash: 1467633ffc3d145cf0ec279cf25e2d05e93dcbe0de78d868d02bf8683e8ecebf
 
 kind=TEACH
 title=Admitted lines
-body=Read the admitted examples on this card.
+body=Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -883,11 +883,11 @@ steps=u30-st-teach-particle-1,u30-st-guided-particle-1,u30-st-teach-particle-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6c05032f172bbf2ce717f8389cefe612be450c544003e7f8ad7e6bd1306e018a
+- Content hash: e1d1cb57c165b2669f1a9719d1a39db9c2b992c3539cd79140c4abcaed46fc02
 
 kind=TEACH
 title=Admitted lines
-body=Read the admitted examples on this card.
+body=Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -1030,11 +1030,11 @@ steps=u30-st-teach-capstone-1,u30-st-guided-capstone-1,u30-st-teach-capstone-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1b0f424eaf75d051b6770e6bb4e212e801a9a067c0526948a66165402b1fcb98
+- Content hash: 7140e570b9fcb8bb1ee8157c7eb4986e4fbd252e0ba6543eef6b6237d34820a1
 
 kind=TEACH
 title=Admitted lines
-body=Read the admitted examples on this card.
+body=Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -1155,7 +1155,7 @@ steps=u30-st-book-work,u30-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 321e6afc2a83e6961fea3efce6d34a15fc3dc8f007363999ddac03700abdff2b
+- Content hash: b3920a5b8d3d5a17a3574632dd6678dd844dceb8dc3fc734418c7195e03418b9
 
 kind=BOOK
 title=Work Lesson 30 in your copy
@@ -1165,7 +1165,7 @@ references=ref-u2630-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 30 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 30: printed pages 368-377. PDF indexes 380-389 are file locators, not printed pages. Observed section locators: §30.1 p368 (PDF 380); §30.2 p368 (PDF 380); §30.3 p368 (PDF 380); §30.4 p370 (PDF 382); §30.5 p371 (PDF 383); §30.6 p375 (PDF 387). Observed exercise locators: . These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1177,7 +1177,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cd220c70ca3ed990f1e9da42293f172cb24b049fe10da1c2a42e94ae6f30485a
+- Content hash: 8d900c0b184d0104d86b3516bc5819b384017113a5c4e504f784da8a86d5cf48
 
 kind=BOOK
 title=Record Lesson 30 book work
@@ -1187,34 +1187,34 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 30 work in your copy.
+bookDirection=Owned-book assignment for Lesson 30: printed pages 368-377. PDF indexes 380-389 are file locators, not printed pages. Observed section locators: §30.1 p368 (PDF 380); §30.2 p368 (PDF 380); §30.3 p368 (PDF 380); §30.4 p370 (PDF 382); §30.5 p371 (PDF 383); §30.6 p375 (PDF 387). Observed exercise locators: . These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
 ### SESSION `u30-s-dictionary`
 
-- Objectives: obj-u30-dictionary
+- Objectives: obj-u30-dictionary, obj-u30-book
 - Sessions: u30-s-dictionary
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c58f0c6cac10436a1da0b533d98b4b6b64f1b92e24b4cb5951fb6a02a3ebc1c0
+- Content hash: ae93accd9e756fcfb1a2a34dd7db927f7f215907ce3b371f55d9904f9f1fe926
 
 title=Use the governed dictionary entry
 estimatedMinutes=10
-objectives=obj-u30-dictionary
-steps=u30-dictionary-teach-1,u30-dictionary-guided,u30-dictionary-teach-2,u30-dictionary-remediate,u30-dictionary-check
+objectives=obj-u30-dictionary,obj-u30-book
+steps=u30-dictionary-teach-1,u30-dictionary-guided,u30-dictionary-teach-2,u30-dictionary-remediate,u30-dictionary-check,u30-st-anki-direction,u30-st-binder-direction,u30-st-tutor-direction,u30-st-cumulative-direction
 
 ### STEP `u30-dictionary-teach-1`
 
-- Objectives: obj-u30-dictionary
+- Objectives: obj-u30-dictionary, obj-u30-book
 - Sessions: u30-s-dictionary
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 830ae7071480fe3ace244ab610bbd970dc08c25c648787e8ec37c1c05800d659
+- Content hash: 6a3390987104ebb0497d594b4debef2ad9e1367d459e23fc5708276a900e1366
 
 kind=TEACH
 title=Admitted instruction
@@ -1234,13 +1234,13 @@ remediationStepId=
 
 ### STEP `u30-dictionary-guided`
 
-- Objectives: obj-u30-dictionary
+- Objectives: obj-u30-dictionary, obj-u30-book
 - Sessions: u30-s-dictionary
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6595ae6c2fe7be309b2f444945fc2ff0825cfbbb0f4ba2d93cf0a8f277a34573
+- Content hash: 4d1c59b8c6e0c5cfe5e214fc7a0871863e5d6b23050190bfef000bc35cc0c290
 
 kind=GUIDED
 title=Guided practice
@@ -1256,13 +1256,13 @@ remediationStepId=u30-dictionary-remediate
 
 ### STEP `u30-dictionary-teach-2`
 
-- Objectives: obj-u30-dictionary
+- Objectives: obj-u30-dictionary, obj-u30-book
 - Sessions: u30-s-dictionary
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 11284693b4b09fafab3fc2b2596cffc749cee55221bc1fc615085dcf63cae96c
+- Content hash: 59e4255a3563ccd721a3aac355a2d0c0c373269845d781f816a6e60550ef148d
 
 kind=TEACH
 title=Admitted instruction
@@ -1282,13 +1282,13 @@ remediationStepId=
 
 ### STEP `u30-dictionary-remediate`
 
-- Objectives: obj-u30-dictionary
+- Objectives: obj-u30-dictionary, obj-u30-book
 - Sessions: u30-s-dictionary
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 92f92404d6495029ae6e67cf895e922e344c8301d7903b0c38b7c7711db48766
+- Content hash: aeb7f9aa5d5021664ef7956411701b785e40e2e0aa7eff822d2bd116015ea857
 
 kind=REMEDIATE
 title=Remediation
@@ -1304,13 +1304,13 @@ remediationStepId=
 
 ### STEP `u30-dictionary-check`
 
-- Objectives: obj-u30-dictionary
+- Objectives: obj-u30-dictionary, obj-u30-book
 - Sessions: u30-s-dictionary
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 04cb1cd1e17c3e6c8e9013f0a5a03f6d9b7eccf38199d93c38cbe6374b170c6a
+- Content hash: 22062ce88c560befdc87a87e7c40600d6a544d2fbce04caf80d74ca9950e10ec
 
 kind=CHECK
 title=Independent checks
@@ -1323,6 +1323,94 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=u30-dictionary-remediate
+
+### STEP `u30-st-anki-direction`
+
+- Objectives: obj-u30-dictionary, obj-u30-book
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5904f04ec0b33d935c81181f443164b15f3d82de1581fa616db126b6225759c4
+
+kind=ANKI
+title=Unit 30 AnkiDroid direction
+body=Unit 30 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u30-st-binder-direction`
+
+- Objectives: obj-u30-dictionary, obj-u30-book
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: df3de8dedbc710c53324ed69f5d9c0f5e6d5d5abc70458e10085b968ac78ee02
+
+kind=BINDER
+title=Unit 30 binder prompt
+body=Unit 30 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u30-st-tutor-direction`
+
+- Objectives: obj-u30-dictionary, obj-u30-book
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d01ed18329b8b2c66ca93e810dd19d3b5afd41dfad49f917db3583cc1510fbb2
+
+kind=TUTOR
+title=Unit 30 optional tutor
+body=Unit 30 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u30-st-cumulative-direction`
+
+- Objectives: obj-u30-dictionary, obj-u30-book
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4e1bcf26cde92a6fd701deacee0591364cea3cb164c8ed36f16cbedd3a2b45e0
+
+kind=ORIENT
+title=Unit 30 cumulative review
+body=Unit 30 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 30 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+remediationStepId=
 
 ### EXAMPLE `ex-u30-letter-names-0`
 
@@ -2537,15 +2625,225 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 7017a5bfcd97b1e46fc4353f1a0458d886cd9bd3e4c5f8ba6b6fb7c1965a50c1
+- Content hash: 418ff4061026a9f9ede8c00ba64992190684f077b0d309a67600a67d3fa628f0
 
 title=Units 26–30 source notice
-summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, participle stress, a general bookish-register claim, and dictionary use are not prepared. ReadyRussian letter conventions cover structure, the Russian and English organizational difference, and the stranger address limit. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
+summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own. Bounded postal, stress, and dictionary tasks are review-pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, participle stress, a general bookish-register claim, and dictionary use are not prepared. ReadyRussian letter conventions cover structure, the Russian and English organizational difference, and the stranger address limit. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending. Bounded postal practice, past-passive stress, and a two-entry dictionary task are implemented and review-pending. They are not complete postal mastery, a general stress rule, or broad dictionary proficiency. Present-passive exploration does not gate Unit 27.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-30-143`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f00840a0e742758ae2ec39ccd627b15636339c5e14e5a91a85dc42989ae1bcfb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:u30-st-teach-letter-names-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-30-144`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d629aaff37affeb4cc58b964b7b1af9995f96e3a1b889aebe2ae5b351ff582e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:u30-st-teach-abbrev-examples-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-30-145`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61518814f777dc338ffc163ab58c5e2eec3e52bd074cd1d05d8ff7415460f28d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-particle:u30-st-teach-particle-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-30-146`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2896b30d81d141cfb225d814c3903945e1247c801fd7347310ba153223ef1211
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-capstone:u30-st-teach-capstone-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-30-608`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 294053839a822302286c9f05e3dffaeac7b0b1bd058c0da823f1b0a24331cd5b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:u30-st-orient
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Unit 1 introduces the printed letter names, and this unit reviews them. It also shows two admitted abbreviation examples and the admitted address marks. The two-entry dictionary task is implemented and review-pending. It is not broad dictionary proficiency. The admitted capstone story is included. Advancement stays blocked until review. Qualified review is pending.
+shippedText=Unit 1 introduces the printed letter names, and this unit reviews them. It also shows two admitted abbreviation examples and the admitted address marks. The two-entry dictionary task is implemented and review-pending. It is not broad dictionary proficiency. The admitted capstone story is included. Advancement stays blocked until review. Qualified review is pending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9efb5add54a764d9db5f7a5453971852b6fddd3ef323cc12d1ce2f7e784564aa
+contentHash=340d9ee5b4766b3ebd3f7ce7fe91a954e286edd17bb2ff00ac346938abf4bc51
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-30-627`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a447c037ee11c3258c077e55a30da3e9d276f99a5be83244b3ec74657efa0695
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u30:notice-2630
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Bounded postal practice, past-passive stress, and a two-entry dictionary task are implemented and review-pending. They are not complete postal mastery, a general stress rule, or broad dictionary proficiency. Present-passive exploration does not gate Unit 27.
+shippedText=Bounded postal practice, past-passive stress, and a two-entry dictionary task are implemented and review-pending. They are not complete postal mastery, a general stress rule, or broad dictionary proficiency. Present-passive exploration does not gate Unit 27.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=32e8a16792219ff5a4c2abdf028157a6c71892e07fce4a95d216879f9b03746c
+contentHash=5e79ae38d1dc0b4695b892e84c8b1d2ef902f8e31a3d63a2eea82593e656d1db
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-30-628`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ac8d1745015b989c0bdd7ac73cac291460079573dcc235313ce897e7149203d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u30:notice-2630-summary
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own. Bounded postal, stress, and dictionary tasks are review-pending.
+shippedText=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own. Bounded postal, stress, and dictionary tasks are review-pending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8cbdd45e7fb070fbf5e42c5458556da7ac5fbb37454d9213aa932d0125d6186c
+contentHash=0afff52ca49d9adc7b3fb39de24b16290d6908faa0a72a4209008f32c863dbbf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-u30-abbrev-examples-0-en`
 
@@ -9696,6 +9994,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-30-11316`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8cb6b594b465073ba5e7a7cb992b18dbbe95856f93435fcbf973ef0a1af84fbf
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 30 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-30-11317`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d96ab0bbfc6203a769f8c9e9d4aae5615d9c07eba10d99b1eb37a201af85d52d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-30-11318`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be6a24172f90157f726e881351f7b3453af06e353ccf59eb8e0cfddeec11ec43
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 30 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-30-11319`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2467a1e636809e4d2f3b4b20c9d1f22f3570f3eaeaff935b44f92302f0a85e3a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-30-11320`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b84b746427d6b877d305b8e9c1ffc91044f9fc0c9d69e46f36e688ded7897157
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 30 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-30-11321`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 843f2f87761ae970316192488325c9601af08d357f2e50564271cde94c935c5f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-30-11322`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e685adc9908e5a2d9df92047e690ceb68931a82f6985de764c0e85d5a9aff0a6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 30 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-30-140`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: beec7de7b7e8251804839262ab24e2ecda30cb4e3ba098592590b06d75400a38
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 30: printed pages 368-377. PDF indexes 380-389 are file locators, not printed pages. Observed section locators: §30.1 p368 (PDF 380); §30.2 p368 (PDF 380); §30.3 p368 (PDF 380); §30.4 p370 (PDF 382); §30.5 p371 (PDF 383); §30.6 p375 (PDF 387). Observed exercise locators: . These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-30-141`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 528408caef5e8a9de720317f0e8be949e1430beceaa3cf9d4eb590c3fc40df73
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 30 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-30-142`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f34eac7ef7b5535f1c15cee6183bd3afd483219d45008e5bf3f9a58cf2cdd5d1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u30-269`
 
 - Objectives: none
@@ -11290,6 +11718,21 @@ Original app text
 Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 Original research synthesis. Not a quotation of a third-party page.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -11386,6 +11829,20 @@ permitsAppUse=true
 - Content hash: 65ca0e4f268b6158cbfafc95d43b79c9894d018f538d27b8cf21e7000b24fbed
 
 src-original-research-synthesis
+Original app text
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
 Original app text
 permitsAppUse=true
 
@@ -11577,6 +12034,7 @@ permitsAppUse=true
 - `u30-s-book` OBJECTIVE `obj-u30-book`
 - `u30-st-book-work` REFERENCE `ref-u2630-attribution`
 - `u30-s-dictionary` OBJECTIVE `obj-u30-dictionary`
+- `u30-s-dictionary` OBJECTIVE `obj-u30-book`
 - `u30-dictionary-teach-1` EXAMPLE `ex-u30-dictionary-1`
 - `u30-dictionary-teach-1` EXAMPLE `ex-u30-dictionary-2`
 - `u30-dictionary-teach-1` REFERENCE `ref-u2630-attribution`
@@ -11592,6 +12050,13 @@ permitsAppUse=true
 - `u30-dictionary-check` ITEM `u30-i-dictionary-4`
 - `u30-dictionary-check` ITEM `u30-i-dictionary-5`
 - `u30-dictionary-check` REFERENCE `ref-u2630-attribution`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-30-143`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-30-144`
+- `obj-u30-particle` PROVENANCE `prov-ca-30-145`
+- `obj-u30-capstone` PROVENANCE `prov-ca-30-146`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-30-608`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-30-627`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-30-628`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-en`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-ru`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-1-en`
@@ -11735,8 +12200,8 @@ No guidance objective is recorded.
 ## Book-directed register
 
 - `u30-st-orient` Open Lesson 30 in the copy you own. The app records do not replace that lesson.
-- `u30-st-book-work` Open Lesson 30 in your copy and complete its lesson work.
-- `u30-st-book` Self-attest only after the Lesson 30 work in your copy.
+- `u30-st-book-work` Owned-book assignment for Lesson 30: printed pages 368-377. PDF indexes 380-389 are file locators, not printed pages. Observed section locators: §30.1 p368 (PDF 380); §30.2 p368 (PDF 380); §30.3 p368 (PDF 380); §30.4 p370 (PDF 382); §30.5 p371 (PDF 383); §30.6 p375 (PDF 387). Observed exercise locators: . These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+- `u30-st-book` Owned-book assignment for Lesson 30: printed pages 368-377. PDF indexes 380-389 are file locators, not printed pages. Observed section locators: §30.1 p368 (PDF 380); §30.2 p368 (PDF 380); §30.3 p368 (PDF 380); §30.4 p370 (PDF 382); §30.5 p371 (PDF 383); §30.6 p375 (PDF 387). Observed exercise locators: . These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 
 ## Optional non-gating register
 

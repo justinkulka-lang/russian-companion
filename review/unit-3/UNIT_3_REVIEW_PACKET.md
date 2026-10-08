@@ -11,12 +11,12 @@ Unit 3 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: b22fa0cca895a677386a77d03a63301f7454aa07
-- Unit content-review SHA-256: deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 4ac8d4b6ccfefbd5be021d5bcc7c2202ce0b2c3e243755f9ff52017c06a39908
 - Mapping-package SHA-256: e40e0ce030f9221b6e2fceba66fe946d85ad172703c47bd34d795e77e43120b4
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 504f29ea76d0a33c0c3171e3fd58e77caa1fd4e0389232abdf81d2cdc8228281
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: f7d4f84fc43bc466fab85e871327d680cf0a2e1ed67ff25665f2dc7767eaf0a4
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -395,11 +395,11 @@ remediationStepId=u3-st-rem-gender
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0fe39146ea3b8356ff33f38b52bfd01be5a3fa6bc8e2c8b93b9c4695d35e7d55
+- Content hash: b49dd2b7dad73eafd9af9b011d8851e4a12adef90b509df6f4bc2ccbd596b7bd
 
 kind=TEACH
 title=Two records the page still places in the first group
-body=These admitted records are listed as masculine. The frozen page says though it has a 'feminine' ending and conjugates like a feminine noun, 'uncle' is 'inherently' masculine. мужчи́на — man. дя́дя — uncle. 
+body=дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
 dominantAction=Continue
 references=ref-u35-attribution
 items=
@@ -755,12 +755,12 @@ remediationStepId=u3-st-rem-naming
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ebc66d9d5ca16d9aca1578faf51fb948e17e729aa37e572116573a557593d030
+- Content hash: acdd90e17608398e7ccbc761714305e4dab6009bd800f4a2c1104000d943ae2a
 
 title=Self-attest Lesson 3
 estimatedMinutes=10
 objectives=obj-u3-book
-steps=u3-st-book-work,u3-st-book
+steps=u3-st-book-work,u3-st-book,u3-st-anki-direction,u3-st-binder-direction,u3-st-tutor-direction,u3-st-cumulative-direction
 
 ### STEP `u3-st-book-work`
 
@@ -770,7 +770,7 @@ steps=u3-st-book-work,u3-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1e0156e68e765c4df7317d5154d0c7d3302478445c6a9efb5f005e0031455fd7
+- Content hash: 394631eab3a6ffbe8dd958a9c19c8f632f13c31a963332e7a682db7b54dc5246
 
 kind=BOOK
 title=Work Lesson 3 in your copy
@@ -780,7 +780,7 @@ references=ref-book-topics,ref-u35-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 3 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 3: printed pages 24-35. PDF indexes 36-47 are file locators, not printed pages. Observed section locators: §3.1 p24 (PDF 36); §3.2 p25 (PDF 37); §3.3 p25 (PDF 37); §3.4 p26 (PDF 38); §3.5 p26 (PDF 38); §3.6 p26 (PDF 38); §3.7 p26 (PDF 38); §3.8 p27 (PDF 39); §3.9 p29 (PDF 41); §3.10 p29 (PDF 41); §3.11 p31 (PDF 43); §3.12 p32 (PDF 44). Observed exercise locators: 3/2 p32/PDF44; 3/3 p33/PDF45; 3/4 p33/PDF45; 3/5 p33/PDF45; 3/6 p33/PDF45. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -792,7 +792,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e9e711e8ec8c20fd5ec3eaa7aff0c55198db67c4bf307faf62a062239c0aa658
+- Content hash: 2e39422443ea578ac6c2ab2bcf9758d62470015f591f0f0462e1a002d9736b1b
 
 kind=BOOK
 title=Record Lesson 3 book work
@@ -802,8 +802,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 3 work in your copy.
+bookDirection=Owned-book assignment for Lesson 3: printed pages 24-35. PDF indexes 36-47 are file locators, not printed pages. Observed section locators: §3.1 p24 (PDF 36); §3.2 p25 (PDF 37); §3.3 p25 (PDF 37); §3.4 p26 (PDF 38); §3.5 p26 (PDF 38); §3.6 p26 (PDF 38); §3.7 p26 (PDF 38); §3.8 p27 (PDF 39); §3.9 p29 (PDF 41); §3.10 p29 (PDF 41); §3.11 p31 (PDF 43); §3.12 p32 (PDF 44). Observed exercise locators: 3/2 p32/PDF44; 3/3 p33/PDF45; 3/4 p33/PDF45; 3/5 p33/PDF45; 3/6 p33/PDF45. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u3-st-anki-direction`
+
+- Objectives: obj-u3-book
+- Sessions: u3-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: dd6c006439f8febdd3829c88ccef3139fe6735fe56d165251ce0bc79ad246579
+
+kind=ANKI
+title=Unit 3 AnkiDroid direction
+body=Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u3-st-binder-direction`
+
+- Objectives: obj-u3-book
+- Sessions: u3-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6c8d9b38456b3eff53f22827ff0f44e832f73abc50e189bfd06c87c5de9792a9
+
+kind=BINDER
+title=Unit 3 binder prompt
+body=Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u3-st-tutor-direction`
+
+- Objectives: obj-u3-book
+- Sessions: u3-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: abda439968b4faf25764d507c1489678e6abddbc752104a4c6eb83492e540f10
+
+kind=TUTOR
+title=Unit 3 optional tutor
+body=Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u3-st-cumulative-direction`
+
+- Objectives: obj-u3-book
+- Sessions: u3-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 41e7c9b1fc5aefc4e9ea07473cced477ee8e739e3715ef4d69944a5115e904c1
+
+kind=ORIENT
+title=Unit 3 cumulative review
+body=Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u3-стол`
@@ -1703,6 +1791,96 @@ classification=OPERATIONAL_GUIDANCE
 introducedInUnit=3
 searchTerms=where lesson bodies are packaged
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-3-346`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7dd6b3ad60d5abfbeb810aee8f0dbaea396097979ec62ca0275e81e742c9f9f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-5
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
+shippedText=дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9a328d2ff90e38c0621fc2504f544fd46075f780399c86c898f8876e8e88c0a8
+contentHash=ef2713a40b21643197b991e4ed4016f8564c9e57ab73a545e1d798930cbfd361
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-3-347`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1afce8070932cce2bd50a5a223d7fe5cec791c4bf984a0077622621837bf1a1a
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-5
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
+shippedText=а,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9a328d2ff90e38c0621fc2504f544fd46075f780399c86c898f8876e8e88c0a8
+contentHash=3dcaa4fdd9e579c37782614b0e535a9f8171a9d26827cdb0d5bca63b55dabf06
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-3-348`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5933153b10f3449fe39100f46c989212545a49d4495e9eb4f30a0fe7c1ffd2c1
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-5
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
+shippedText=а
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9a328d2ff90e38c0621fc2504f544fd46075f780399c86c898f8876e8e88c0a8
+contentHash=823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-u3-dyadya-note`
 
@@ -3937,6 +4115,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-3-11124`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68277413165a79992a2cc0e39fc3af30321e24ff1e585ebb4d8e6f841fa13181
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 3 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-3-11125`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f298c576fb10addbf0cdba57b07339134c55cfb67e53ce8509151a5a245d483
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-3-11126`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b24cadeb04f9f126e017a8c397f0534715a5e175dc12fca12ac991c1eb62bc68
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 3 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-3-11127`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bdd2a04fa777039e1d069f79ccbf5b0e4c7bc97bc884d011a3acddd81cd6e4d7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-3-11128`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11391caa02f8fb8f663f2311a3d37c18c46e06195260d7dd8a5e7b98ea5b7f0b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 3 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-3-11129`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 053945b803b38f9dba9563d5c4177dacac1c63fce7a3849413ee1e9f4eabbc63
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-3-11130`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69d7a93ee7eb90d01273e51297a7227470ad469520cd6d05b50a3df42468241a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 3 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-3-2`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 758647c43dfbe0127aea18d952b6af34a76cc52aa3e47142e59df421c2c2db17
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 3: printed pages 24-35. PDF indexes 36-47 are file locators, not printed pages. Observed section locators: §3.1 p24 (PDF 36); §3.2 p25 (PDF 37); §3.3 p25 (PDF 37); §3.4 p26 (PDF 38); §3.5 p26 (PDF 38); §3.6 p26 (PDF 38); §3.7 p26 (PDF 38); §3.8 p27 (PDF 39); §3.9 p29 (PDF 41); §3.10 p29 (PDF 41); §3.11 p31 (PDF 43); §3.12 p32 (PDF 44). Observed exercise locators: 3/2 p32/PDF44; 3/3 p33/PDF45; 3/4 p33/PDF45; 3/5 p33/PDF45; 3/6 p33/PDF45. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-3-3`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 15384c8e021227574d0fbb6195d770da033d419a55e08411735e7701b9b94eca
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-3-4`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b1020177ef3a9abc16f1f99bf75cdbde6ddc161a4017ac2f6eda2636589047b7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u3-001`
 
 - Objectives: none
@@ -4528,6 +4836,21 @@ Original app text
 Russian Companion project
 Original
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### RIGHTS `rights-openrussian-50e210c4`
 
 - Objectives: none
@@ -4567,6 +4890,20 @@ permitsAppUse=true
 - Content hash: cc164e7d614d14b84cbae9494b688d1f417a9bec507481d9ce113448fc8598bc
 
 src-app-english-v2
+Original app text
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
 Original app text
 permitsAppUse=true
 
@@ -4716,6 +5053,9 @@ permitsAppUse=true
 - `u3-s-book` OBJECTIVE `obj-u3-book`
 - `u3-st-book-work` REFERENCE `ref-book-topics`
 - `u3-st-book-work` REFERENCE `ref-u35-attribution`
+- `obj-u3-gender` PROVENANCE `prov-ca-3-346`
+- `obj-u3-gender` PROVENANCE `prov-ca-3-347`
+- `obj-u3-gender` PROVENANCE `prov-ca-3-348`
 - `obj-u3-gender` PROVENANCE `prov-u3-dyadya-note`
 - `obj-u3-gender` PROVENANCE `prov-u3-gender-sentence`
 - `obj-u3-gender` PROVENANCE `prov-u3-gloss-брат`

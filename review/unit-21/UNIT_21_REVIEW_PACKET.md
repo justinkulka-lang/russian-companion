@@ -11,12 +11,12 @@ Unit 21 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
-- Unit content-review SHA-256: be229fd6909ee2663ef49f2a88741a44b4d1ffddfc93cb916494e505ba853731
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: d580562d211d044e143f00d28f9a28346cdf6c4e7fd633d73c20c3d2d63f105c
 - Mapping-package SHA-256: a81fd110700d8cef3f88b5c34642feb7792e0bc851b2e13f08acba87969eab0e
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: d2163ede64ed5cb72517c0ec85781ee65a89db2eabf0ed53ad04f44dd777987c
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: f88048da49c0e267255754c18451c9d6f796a5808218401672c434ab73609606
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -410,11 +410,11 @@ steps=u21-st-teach-object-reference-1,u21-st-guided-object-reference-1,u21-st-te
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f080562aa7cad360f0076abf386e9cec93392e93a7488bdb4a36e8eaa30abba8
+- Content hash: 3cd3a9ff2292bce17553bc335e98cd120249c98b340709f7af311a70dfe0d268
 
 kind=TEACH
 title=Admitted lines
-body=Я люблю́ себя́ — I love myself. Я люблю́ (свою́) жену́ — I love my wife. 
+body=Я люблю́ себя́ — I love myself. Я люблю́ (свою́) жену́ — I love my wife. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -454,11 +454,11 @@ remediationStepId=u21-st-rem-object-reference
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fd6178c9896ba48fba23cc5847d86d9aa6624f14bc08e82637253967f61e04ae
+- Content hash: 6c1f3ddbf1d449a6904d92fcec77f0a5cbd2fd750c222040667bd82a1cbaf2eb
 
 kind=TEACH
 title=Admitted instruction
-body=жену́ = I love
+body=жену́ is the accusative of жена́, wife. In Я люблю́ свою́ жену́ the whole sentence means I love my wife. The word жену́ by itself does not mean I love.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -535,11 +535,11 @@ steps=u21-st-teach-purpose-1,u21-st-guided-purpose-1,u21-st-teach-purpose-2,u21-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4404e70e43e8469ab56d84df6675f31e2f7fb8b3bc9e15d55847189c7f6b4b0d
+- Content hash: 95be0a54a89b974b67a3129e64df13ead3ed580f93aca8a62fdfb2c1cd6c9341
 
 kind=TEACH
 title=Admitted lines
-body=чтобы — so that. если — if. 
+body=чтобы — so that. если — if. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -579,11 +579,11 @@ remediationStepId=u21-st-rem-purpose
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 51fae9fbe8bd44965429efb05359cca865b6e77a40f27bbeaffda3eb6cec2e93
+- Content hash: b9fbca8e51c3d3b6d1bb392bfad1d768446282242ec061bc69c01999f8250b9c
 
 kind=TEACH
 title=Admitted instruction
-body=(bookish, archaic) 'so that'
+body=чтобы is the ordinary conjunction so that. The bookish or archaic qualifier belongs to дабы, not to чтобы.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -667,12 +667,12 @@ remediationStepId=u21-st-rem-purpose
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 628bb9bd44efec1c08dc97b495e7c980fd893a23b5078a5c81492f9a4390d3c3
+- Content hash: 818b1ee7674e47bcc8b40cd61c213a5e09675ee555afba2d7ca82adca9893b91
 
 title=Self-attest Lesson 21
 estimatedMinutes=10
 objectives=obj-u21-book
-steps=u21-st-book-work,u21-st-book
+steps=u21-st-book-work,u21-st-book,u21-st-anki-direction,u21-st-binder-direction,u21-st-tutor-direction,u21-st-cumulative-direction
 
 ### STEP `u21-st-book-work`
 
@@ -682,7 +682,7 @@ steps=u21-st-book-work,u21-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c0b529098e987b1d1aeb2c422f3d89348bf30e77f456f87dbc673e49a0806267
+- Content hash: f3832c94096f1ea97e02cac0069682a0d69798647c5cb83220fce6263add2f7d
 
 kind=BOOK
 title=Work Lesson 21 in your copy
@@ -692,7 +692,7 @@ references=ref-u2125-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 21 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 21: printed pages 257-268. PDF indexes 269-280 are file locators, not printed pages. Observed section locators: §21.1 p257 (PDF 269); §21.2 p257 (PDF 269); §21.3 p259 (PDF 271); §21.4 p259 (PDF 271); §21.5 p261 (PDF 273); §21.6 p261 (PDF 273); §21.7 p261 (PDF 273); §21.8 p262 (PDF 274); §21.9 p263 (PDF 275); §21.10 p265 (PDF 277). Observed exercise locators: 21/1 p258/PDF270; 21/2 p259/PDF271; 21/3 p260/PDF272; 21/4 p263/PDF275; 21/5 p266/PDF278. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -704,7 +704,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 76fc32221643508482136b039d93ff8600d4317285f62647ac25efad18c04f69
+- Content hash: bc5e0e9291ce4a4b1fe4811cb18e3454c8c9cbc7b93b51bd925d886e0a418733
 
 kind=BOOK
 title=Record Lesson 21 book work
@@ -714,8 +714,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 21 work in your copy.
+bookDirection=Owned-book assignment for Lesson 21: printed pages 257-268. PDF indexes 269-280 are file locators, not printed pages. Observed section locators: §21.1 p257 (PDF 269); §21.2 p257 (PDF 269); §21.3 p259 (PDF 271); §21.4 p259 (PDF 271); §21.5 p261 (PDF 273); §21.6 p261 (PDF 273); §21.7 p261 (PDF 273); §21.8 p262 (PDF 274); §21.9 p263 (PDF 275); §21.10 p265 (PDF 277). Observed exercise locators: 21/1 p258/PDF270; 21/2 p259/PDF271; 21/3 p260/PDF272; 21/4 p263/PDF275; 21/5 p266/PDF278. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u21-st-anki-direction`
+
+- Objectives: obj-u21-book
+- Sessions: u21-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 09a9d20ac71d182c8b32fc4d63aa89aece3c60217ea5b5b1190dd8f9a5c0e4da
+
+kind=ANKI
+title=Unit 21 AnkiDroid direction
+body=Unit 21 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u21-st-binder-direction`
+
+- Objectives: obj-u21-book
+- Sessions: u21-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e4e8eec6c2e07dcb2acc1a2d38362bcfe0be3d1508c6336c385ae45c91f72999
+
+kind=BINDER
+title=Unit 21 binder prompt
+body=Unit 21 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u21-st-tutor-direction`
+
+- Objectives: obj-u21-book
+- Sessions: u21-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 005975943ccf0043c597d0d9cae7ce3a09efdf577592c3e06bda54b121579c6f
+
+kind=TUTOR
+title=Unit 21 optional tutor
+body=Unit 21 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u21-st-cumulative-direction`
+
+- Objectives: obj-u21-book
+- Sessions: u21-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 92f92a0b2d6568e6db361d3afd17e3519be021522352a210a47363dc3b36a290
+
+kind=ORIENT
+title=Unit 21 cumulative review
+body=Unit 21 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 21 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u21-svoy-0`
@@ -996,35 +1084,35 @@ responseKind=ENGLISH_CLASSIFICATION
 
 - Objectives: obj-u21-purpose
 - Sessions: u21-s-purpose
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3a2bd8bfde0981e31b3fcd6873d5bce503e54f237cc12eaed0d9090388e84748
+- Content hash: e335de3cca1fa08a4aa5e3e586a665c380c45dac83e2d9200d7ebba75c3939c4
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written for the shown conjunction?
+prompt=Choose the English description. Which ordinary purpose meaning matches the shown conjunction?
 promptLetter=чтобы
 options=so that | if | because
 answer=so that
-feedback=The frozen source pairs the shown form "чтобы" with the admitted gloss "so that" ("(bookish, archaic)").
+feedback=чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
 objectiveId=obj-u21-purpose
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "если" with the admitted gloss "if" ("meaning 'in case where'"). | The frozen source pairs the shown form "потому что" with the admitted gloss "because" ("for the reason that").
-testedFeature=PURPOSE_SO_THAT
-evidenceMode=EXPLICIT_SOURCE_PAIR
+distractorRationales= | if is the meaning associated with если, not чтобы. | because is the meaning associated with потому что, not чтобы.
+testedFeature=PURPOSE_CHTOBY
+evidenceMode=STATED_APPLICATION
 contrastSetId=u21-purpose-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u21-purpose-0-en
-distractorSourceIds= | prov-ex-u21-purpose-1-en | prov-ex-u21-purpose-2-en
-distractorDifference= | The frozen source pairs the shown form "если" with the admitted gloss "if" ("meaning 'in case where'"). | The frozen source pairs the shown form "потому что" with the admitted gloss "because" ("for the reason that").
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "чтобы" with the admitted gloss "so that" ("(bookish, archaic)").
+answerSourceIds=prov-ca-21-280
+distractorSourceIds= | prov-ca-21-284 | prov-ca-21-285
+distractorDifference= | if is the meaning associated with если, not чтобы. | because is the meaning associated with потому что, not чтобы.
+whyAnswerDemonstratesObjective=чтобы is the normal purpose conjunction and means so that.
 contrastMembers=so that | if | because
-relationKind=EXPLICIT_SOURCE_PAIR
-relationParticipantIds=prov-ex-u21-purpose-0-ru | prov-ex-u21-purpose-0-en | prov-ex-u21-purpose-1-en | prov-ex-u21-purpose-2-en
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-21-279 | prov-ca-21-280 | prov-ca-21-284 | prov-ca-21-285
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u21-i-svoy-1`
@@ -1171,35 +1259,35 @@ responseKind=ENGLISH_CLASSIFICATION
 
 - Objectives: obj-u21-purpose
 - Sessions: u21-s-purpose
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9b6c3fe33dd89c90325126942a16b82646008db18e463b9377bd188a2e39c2db
+- Content hash: 90c771d856979600509f123dcfe3ef6ea685bdf3cb7bb75ba0032afbf32239ce
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Choose the English meaning of the shown word.
+prompt=Choose the English description. Which meaning matches the shown conjunction?
 promptLetter=если
-options=if | so that | although
+options=if | so that | because
 answer=if
-feedback=The frozen source pairs the shown form "если" with the admitted gloss "if" ("meaning 'in case where'").
+feedback=если means if and introduces a condition for the main proposition.
 objectiveId=obj-u21-purpose
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "чтобы" with the admitted gloss "so that" ("(bookish, archaic)"). | The frozen source pairs the shown form "хотя" with the admitted gloss "although" ("although").
-testedFeature=PURPOSE_IF
-evidenceMode=EXPLICIT_SOURCE_PAIR
+distractorRationales= | so that is the ordinary meaning of чтобы, not если. | because is the meaning of потому что, not если.
+testedFeature=CONDITIONAL_ESLI
+evidenceMode=STATED_APPLICATION
 contrastSetId=u21-purpose-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u21-purpose-1-en
-distractorSourceIds= | prov-ex-u21-purpose-0-en | prov-ex-u21-purpose-3-en
-distractorDifference= | The frozen source pairs the shown form "чтобы" with the admitted gloss "so that" ("(bookish, archaic)"). | The frozen source pairs the shown form "хотя" with the admitted gloss "although" ("although").
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "если" with the admitted gloss "if" ("meaning 'in case where'").
-contrastMembers=if | so that | although
-relationKind=EXPLICIT_SOURCE_PAIR
-relationParticipantIds=prov-ex-u21-purpose-1-ru | prov-ex-u21-purpose-1-en | prov-ex-u21-purpose-0-en | prov-ex-u21-purpose-3-en
+answerSourceIds=prov-ca-repair-21-10803
+distractorSourceIds= | prov-ca-repair-21-10806 | prov-ca-repair-21-10807
+distractorDifference= | so that is the ordinary meaning of чтобы, not если. | because is the meaning of потому что, not если.
+whyAnswerDemonstratesObjective=если means if and introduces a condition for the main proposition.
+contrastMembers=if | so that | because
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-repair-21-10802 | prov-ca-repair-21-10803 | prov-ca-repair-21-10806 | prov-ca-repair-21-10807
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u21-i-purpose-2`
@@ -1245,15 +1333,2301 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: ba943729a7dcaa433ae2f2b1ecff040d330d074300350f66b4c9c6e96a38d721
+- Content hash: 31a4b2a0a34220d5f1fa3742477474ba9716d6bc2a54009d5b129898146ad12c
 
 title=Units 21–25 source notice
-summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.
-detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. A separate application chain on that same span uses only names already in the span. It is not a name generator. Completion over a period is not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Scope-sensitive placement is the ReadyRussian Language Generator 3 statement that the modifier negates the following word, and that page's two-sentence contrast, under the ReadyRussian CC BY-SA 4.0 route. Review is pending.
+summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
+detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. A separate application chain on that same span uses only names already in the span. It is not a name generator. Completion over a period is not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Scope-sensitive placement is the ReadyRussian Language Generator 3 statement that the modifier negates the following word, and that page's two-sentence contrast, under the ReadyRussian CC BY-SA 4.0 route. Review is pending. Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=21
 searchTerms=units 21-25 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-21-259`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: edb1eacd48d3792f76c560381fff9d98a24f2a653c5874225c71f3e8328dc90a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-object-reference:u21-st-teach-object-reference-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+жену́ is the accusative of жена́, wife. In Я люблю́ свою́ жену́ the whole sentence means I love my wife. The word жену́ by itself does not mean I love.
+shippedText=жену́ is the accusative of жена́, wife. In Я люблю́ свою́ жену́ the whole sentence means I love my wife. The word жену́ by itself does not mean I love.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cc21f70795a94e16fedad448aafed9935fb596ebf1d1c988c9c22a6e5deb04aa
+contentHash=73c94b13db8327ba300d0d917d69905ce8adaaf54cceff9590ed45b6d66aa2d4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-260`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1de082293baaa9e4619763a224ded28a62644884e78bca0b2497e2392e49a533
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-object-reference:u21-st-teach-object-reference-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+жену́ is the accusative of жена́, wife. In Я люблю́ свою́ жену́ the whole sentence means I love my wife. The word жену́ by itself does not mean I love.
+shippedText=жена́,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cc21f70795a94e16fedad448aafed9935fb596ebf1d1c988c9c22a6e5deb04aa
+contentHash=337418e1ea2dfecefaaebbcb30c6ed59088a5766adcb66fc709fed5baff00436
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-261`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6800cf4c9df4c0cd6280feec46085f09fb27d4d6223f620d7679feb783c84f5
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-object-reference:u21-st-teach-object-reference-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+жену́ is the accusative of жена́, wife. In Я люблю́ свою́ жену́ the whole sentence means I love my wife. The word жену́ by itself does not mean I love.
+shippedText=жена́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cc21f70795a94e16fedad448aafed9935fb596ebf1d1c988c9c22a6e5deb04aa
+contentHash=bfa3f414ad44fec5fa85d88df9c60a4ccdbb9b79b70f3c8729930ea5d9e37203
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-262`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65acd028a7d57f220fe62518fba9e97545fa68ea436d161fdc6bcd90fda476fd
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-object-reference:u21-st-teach-object-reference-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+жену́ is the accusative of жена́, wife. In Я люблю́ свою́ жену́ the whole sentence means I love my wife. The word жену́ by itself does not mean I love.
+shippedText=Я люблю́ свою́ жену́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cc21f70795a94e16fedad448aafed9935fb596ebf1d1c988c9c22a6e5deb04aa
+contentHash=308c93733a6d1d32c8fcc2e08027ca93483bc8888ccc6a8bcd9c65591e2d69bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-275`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 16deafbaf5f8f202a1550a8a908e4fe52530746fab4ad85d7d2f4965af3799a6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-purpose:u21-st-teach-purpose-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы is the ordinary conjunction so that. The bookish or archaic qualifier belongs to дабы, not to чтобы.
+shippedText=чтобы is the ordinary conjunction so that. The bookish or archaic qualifier belongs to дабы, not to чтобы.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=da31eab0cec38186b383e28f04d197291465804e969a003a2e60aa57003a6b1f
+contentHash=bbfe3b8765c2bfe4ce2747f814aed1e483880defb0da78c4171e20adaca14bf3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-276`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 680e3c30155af326bcc4435165ff9a85bc8e9d54734e58edea6e4bdcc5cd2c74
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-purpose:u21-st-teach-purpose-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы is the ordinary conjunction so that. The bookish or archaic qualifier belongs to дабы, not to чтобы.
+shippedText=дабы,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=da31eab0cec38186b383e28f04d197291465804e969a003a2e60aa57003a6b1f
+contentHash=d2835fcc8cc4c2531b31e6be8fd8ce44fafb910f499746c2774d62995b30af9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-277`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbdd4fc62206bac3b77907a821f713fbdb1e1a9b4343af5c7d76593655d57cf0
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-purpose:u21-st-teach-purpose-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы is the ordinary conjunction so that. The bookish or archaic qualifier belongs to дабы, not to чтобы.
+shippedText=дабы
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=da31eab0cec38186b383e28f04d197291465804e969a003a2e60aa57003a6b1f
+contentHash=15c01d82c0c0e7c8a8eb385a40a6744507599316af07c0c976fd6528618d1a2a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-278`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c595e7b5b11a03a4299ffa5fcdaa5e3c6e8076755c96d6fc5571b3e99ff6a20
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-purpose:u21-st-teach-purpose-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы is the ordinary conjunction so that. The bookish or archaic qualifier belongs to дабы, not to чтобы.
+shippedText=чтобы.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=da31eab0cec38186b383e28f04d197291465804e969a003a2e60aa57003a6b1f
+contentHash=64f4c1ce441ef4f9d3524b830e25b5df03720aa2881ae789dd7cb19d9f469ae0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-279`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f40706329cc8e97bab75256371647d09a855ab72b7b69a5fb9a4af0ed6dd1471
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=чтобы
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=1a4fb8750ecb7b8f4a22d415334f9dc59343410d75d5f40fa25084433d87c762
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-280`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef61c277d61b916748e6967c386c29989814152bb1e3f08798edb7c39ff4c41f
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=so that
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=ab6b7abe5e492f9b6d750de7961c627380f376d321fccbb8be082915be4cdf03
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-281`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b84038f2a46e6165aeb3f821e5508da50c803b83267aacfba856ff0dc46e96db
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=Which ordinary purpose meaning matches the shown conjunction?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=5c73b06590c19e90f148e3d86ceb8c9c2511815cfc05151527c95a3023b3dbf4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-282`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0e6561f530f520090e2f34e2bebbd2fdbaabe15a714f7fcdc495eae2b513a39
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=a022b02784c95128e7939f87956f3f49be8a347585b6adc192ef16fe5fea95ee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-283`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 53e09bdf800b4f4923f9ec5aa9da30ee7a4c2b29399deff2e17be48935d64c12
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=чтобы is the normal purpose conjunction and means so that.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=89ffdbf698944d4a4ece5ad0dc7eeafe234f89ce2c27dfd44d6268895e860c3f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-284`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50942bcadb5440fe93839870eb6dfecbe8f362c9793f6f4a131707f95dd3cec0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=if
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=935f68319d4f227e02bfd54a0ddf85b8a242e42a4277aa5ef5eaab691710924e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-285`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 206c9ae5b7c553013290c4eb2c3fdebbf616ed1238ab0928d9f01878cb3ef37e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=because
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=a511aeeeb8a119931a67038a63b7974faee48712de1c79391ebe2c9b929678e9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-286`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8d71030d0235c59f7fef60d33da42f4215129e13742726283f46bebf821341d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=if is the meaning associated with если, not чтобы.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=ca1d999a4da544cd19188843e235d245df845422fcac8150084e424bfddc172c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-287`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 66438362b95f43c1a11bc39fd42c7848545ca1d3ae287993b08d9b6c1dcd2b63
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=because is the meaning associated with потому что, not чтобы.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=1b8746ade2ac44ebc1d4e9612cf4a60e4356c8c4c5d288dfb862a93ed2f37c93
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-288`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed4d92fa8cdb0de966324772ef85049cee3c7d31eddd42244f1e3494dafbad97
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=дабы
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=15c01d82c0c0e7c8a8eb385a40a6744507599316af07c0c976fd6528618d1a2a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-289`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f66bba68f438fd057b78e2f61d09476e0291f9582e1512ca56b919133752bc20
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=если,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=cd155cfc3833a71591963af904cc9781ae2999c5b6cfac730b32b1ed6654da86
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-290`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 46d232f193234308d087fa5361b992c9232fb618779bad58e6e4110916df8598
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=если
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=53934f31f2c8d53db326106715266cd288ad74a7e77d5095138f4126ab57a6bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-291`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4de60a6504db142e95147256491c18f1614abdcbbfd76a186a795d76c6655dba
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=чтобы.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=64f4c1ce441ef4f9d3524b830e25b5df03720aa2881ae789dd7cb19d9f469ae0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-292`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3749e6e7ed221c917ea46d84a44b6462bb70e2edc2e29c9efd5a418815718dbd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=потому что,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=0f4214e2126100ef808bd16440ba1620df9e42fb7c75be9d1e5ebad276b97960
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-293`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 62ecb041acf1a9be05589b38a14e014b7992ec5929f7af21713db2e1d5439424
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-g-purpose-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+чтобы
+so that
+Which ordinary purpose meaning matches the shown conjunction?
+чтобы means so that in ordinary purpose clauses. дабы is the bookish or archaic counterpart.
+чтобы is the normal purpose conjunction and means so that.
+if
+because
+if is the meaning associated with если, not чтобы.
+because is the meaning associated with потому что, not чтобы.
+дабы
+если,
+если
+чтобы.
+потому что,
+потому что
+shippedText=потому что
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f1ced106348aee4be581d39c67a6e26c1ea0c58aa0826cc66d809ef636aae9
+contentHash=0bea65d093ce98b4de850c861201a0bee85a3dfe15dfdf4a3061f0a13e9b82ab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-294`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1926feeaaad03f3012d9921788a0c07f3174519929d9725fd17705331b4ae661
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=если
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=53934f31f2c8d53db326106715266cd288ad74a7e77d5095138f4126ab57a6bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-295`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 57b8a0e483ebff19cc295eee15e43bbad4d328d038136d92a1f0a3f48e828455
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=if
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=935f68319d4f227e02bfd54a0ddf85b8a242e42a4277aa5ef5eaab691710924e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-296`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4b8b983f72e1e7c180abd80ea20408a5dd5c58f67c025503d4cf491cdc283f7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=Which meaning matches the shown conjunction?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=1440bd2742f9d8cbc206b5cecb0ffba72081d70901153fadfaeef5e20effad22
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-297`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ba98808193c662c5d787d5b84043d0da2d178252fa5bc79d74ba2611a3c005a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=если means if. It is not the purpose conjunction чтобы.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=f8eedf21d65403478ca588da6a07b7650ca3d69206b40b1772c5704cf83c93a4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-298`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 88f4c8845b7dbe0300bdd61bf4997c85d1bc23a0a8a4d5c4593837a84bfca297
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=если means if, while чтобы means so that.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=6145310e781dc157827a0905b2312173a914304cd41a6e2f24e336bc997d5e07
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-299`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5b5019053d30f3edf4ce24798a81fd0ae7935ee93eea10f66d11e5e9dd8f058
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=so that
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=ab6b7abe5e492f9b6d750de7961c627380f376d321fccbb8be082915be4cdf03
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-300`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48196034b6d7e4baa7813898826542306278df8337d9dd85b79e157a9dea0c13
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=because
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=a511aeeeb8a119931a67038a63b7974faee48712de1c79391ebe2c9b929678e9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-301`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00865aa2ccf1d0cdc65127ba19bf884501d8c5919bf2971d0431aa2dcf2ec43b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=so that is the ordinary meaning of чтобы, not если.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=abfe59f698b2f278a3855dc06b9996d2b8424e501e520be0f5e83ee102fd4a6b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-302`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39724a2baa462b85b7136de6d95ef28c61f398900551bd004ffe1442a869a0c8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=because is the meaning of потому что, not если.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=8c1bf856bcf0759092aaae055e0e708c4b34dd72090fe3ceec6b24f59721065c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-303`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bbf8e55fc3cbd8da6c224148bee3553aec3bbada88fbe6c9ee5419b006ec09c5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=чтобы.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=64f4c1ce441ef4f9d3524b830e25b5df03720aa2881ae789dd7cb19d9f469ae0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-304`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 443414e124b1a40ba1e1c3ce4dda40ad004683488ba47697034595439bf62016
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=чтобы
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=1a4fb8750ecb7b8f4a22d415334f9dc59343410d75d5f40fa25084433d87c762
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-305`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aae9aa1324478f9df9648a725b1cbcc14c150dab0f0297ac028d702c108991b8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=чтобы,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=aa3dc12b65af81e3cdf9ccd4d93cc5f69c5c4fe09132aa4bf4bed4cc97ec17f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-306`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3852422b708ac9ec96ef33ee4c84daec7e8fc67191f94b382fe73533a4195864
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=если.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=73c5d192eff74887e10af6eb05f9b08718a016555c5a0234ce55dc1417c824de
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-307`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6018ff38069c1f000c5d770c7f40bc4f431af5b4f73dbcab2935573dcc387643
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=потому что,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=0f4214e2126100ef808bd16440ba1620df9e42fb7c75be9d1e5ebad276b97960
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-308`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b61735241568a2bb94d186325dc971762aa04617efac295cb4836aae533d339
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if. It is not the purpose conjunction чтобы.
+если means if, while чтобы means so that.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы.
+чтобы
+чтобы,
+если.
+потому что,
+потому что
+shippedText=потому что
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a78b96fe9d6d97246d7b5fd2cc7eb4fd9485f4014e0af6f84b8d2c99bf6ef8e6
+contentHash=0bea65d093ce98b4de850c861201a0bee85a3dfe15dfdf4a3061f0a13e9b82ab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-609`
+
+- Objectives: obj-u21-book
+- Sessions: u21-s-orient, u21-s-book
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5786ba3639657d0c2e60382adb12a97397252cbf7266a6796a93647ce737ed20
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u21:notice-2125
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
+shippedText=Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5582773b741ee53c022b9ba27c891d756dfae1d526d9150ba90a440b86145a00
+contentHash=cfa29fcc2b75e5259f19b25cdf8cd0acc40a91b5edf1c16bf0d642d4bf6d00d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-610`
+
+- Objectives: obj-u21-svoy
+- Sessions: u21-s-orient, u21-s-svoy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3cbd42dded66e62b4bceba3eb597e9b95efe24ea8942876c955fada99862927f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u21:notice-2125-summary
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
+shippedText=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f1e5d4ee50b835be66e350280da1d9c2602f1e8394a669277be53ae13933a5c2
+contentHash=413a7a6cef6c60d2a828e503fe1158b52d1e907fcabe86e17a86091d81768bfa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-95`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 92597d69cce6dd5e4245f9c1d32b4266f69d17d1dbaccf95d97bbd6652263790
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-object-reference:u21-st-teach-object-reference-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-21-96`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c9864ae16ebf8ca20ce039eba3668c744ec7e36ed35387bc5a1d5dc165ab2af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-purpose:u21-st-teach-purpose-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-10802`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3acce59b1d45052529b9bca401e3de431c170dc24253c3cb079165817349a549
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if and introduces a condition for the main proposition.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы,
+чтобы
+если.
+потому что,
+потому что
+shippedText=если
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25
+contentHash=53934f31f2c8d53db326106715266cd288ad74a7e77d5095138f4126ab57a6bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-10803`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81faf14be831f809fb50d44482802d4577a71581c298fef1ffd89e5902fe2467
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if and introduces a condition for the main proposition.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы,
+чтобы
+если.
+потому что,
+потому что
+shippedText=if
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25
+contentHash=935f68319d4f227e02bfd54a0ddf85b8a242e42a4277aa5ef5eaab691710924e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-10804`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b494959420208bc380bb17641885d0e1a9ce19bd4ca5af76895831acc2c3de65
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if and introduces a condition for the main proposition.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы,
+чтобы
+если.
+потому что,
+потому что
+shippedText=Which meaning matches the shown conjunction?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25
+contentHash=1440bd2742f9d8cbc206b5cecb0ffba72081d70901153fadfaeef5e20effad22
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-10805`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1e2c24de29d43d983ecf2f94a81f34d84b8c1366bda1e6893993b39a4cd3ddd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if and introduces a condition for the main proposition.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы,
+чтобы
+если.
+потому что,
+потому что
+shippedText=если means if and introduces a condition for the main proposition.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25
+contentHash=2efc401bfdd7bab20b2108648640cfbdd1fc1b6d613607104086f83ba9508615
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-10806`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 507087955910303d0ffa9801ec0623ed15060e85d7d5dce5171a9dff0b627be2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if and introduces a condition for the main proposition.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы,
+чтобы
+если.
+потому что,
+потому что
+shippedText=so that
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25
+contentHash=ab6b7abe5e492f9b6d750de7961c627380f376d321fccbb8be082915be4cdf03
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-10807`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 209e4304e09ffef96829da6edd51df8bc2e536dbb6996f21834c06a1e3f1193a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if and introduces a condition for the main proposition.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы,
+чтобы
+если.
+потому что,
+потому что
+shippedText=because
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25
+contentHash=a511aeeeb8a119931a67038a63b7974faee48712de1c79391ebe2c9b929678e9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-10808`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c264fa6bdc6315847b96005667dc32f7b4b177b8cd28ea78ff2fa00ef5eb8f78
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if and introduces a condition for the main proposition.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы,
+чтобы
+если.
+потому что,
+потому что
+shippedText=so that is the ordinary meaning of чтобы, not если.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25
+contentHash=abfe59f698b2f278a3855dc06b9996d2b8424e501e520be0f5e83ee102fd4a6b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-10809`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45e5e7c6e2d5f6d1f192b931492d24e92e6db2f1d97021ecc4385ed51f71c934
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if and introduces a condition for the main proposition.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы,
+чтобы
+если.
+потому что,
+потому что
+shippedText=because is the meaning of потому что, not если.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25
+contentHash=8c1bf856bcf0759092aaae055e0e708c4b34dd72090fe3ceec6b24f59721065c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-10810`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2f8842b529b66e9219bc444504c7679e737538d75f22264d593add23d2b4c8d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if and introduces a condition for the main proposition.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы,
+чтобы
+если.
+потому что,
+потому что
+shippedText=чтобы,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25
+contentHash=aa3dc12b65af81e3cdf9ccd4d93cc5f69c5c4fe09132aa4bf4bed4cc97ec17f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-10811`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 685db1015692b61d70dc5d4b4849d323d85c9921979d988a7de540e0b260d905
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if and introduces a condition for the main proposition.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы,
+чтобы
+если.
+потому что,
+потому что
+shippedText=чтобы
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25
+contentHash=1a4fb8750ecb7b8f4a22d415334f9dc59343410d75d5f40fa25084433d87c762
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-10812`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3587337a1be6f4bfca3de7f1268c04b8a3d9009409d03a77716cd5a6c0d16911
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if and introduces a condition for the main proposition.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы,
+чтобы
+если.
+потому что,
+потому что
+shippedText=если.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25
+contentHash=73c5d192eff74887e10af6eb05f9b08718a016555c5a0234ce55dc1417c824de
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-10813`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f788dd53d8b6de2d8b5dd32eefb9426b52ad37f5d15e2c091771129b24a11af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if and introduces a condition for the main proposition.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы,
+чтобы
+если.
+потому что,
+потому что
+shippedText=потому что,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25
+contentHash=0f4214e2126100ef808bd16440ba1620df9e42fb7c75be9d1e5ebad276b97960
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-10814`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb51e251ccae215e721dc44212563442e7fdd3c347bee5098478c0156246cefd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u21-i-purpose-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+если
+if
+Which meaning matches the shown conjunction?
+если means if and introduces a condition for the main proposition.
+so that
+because
+so that is the ordinary meaning of чтобы, not если.
+because is the meaning of потому что, not если.
+чтобы,
+чтобы
+если.
+потому что,
+потому что
+shippedText=потому что
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25
+contentHash=0bea65d093ce98b4de850c861201a0bee85a3dfe15dfdf4a3061f0a13e9b82ab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-11115`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 649ba2ecb8e57094b063ae748f8dfd17e1f0b9b13938281e4de513e28925852f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u21-g-purpose-0:prompt
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Choose the English description. Which ordinary purpose meaning matches the shown conjunction?
+shippedText=Choose the English description. Which ordinary purpose meaning matches the shown conjunction?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=df17a83309c3d80eaebc9cd74e5844422f9c340d88622a8190da5783f9adec61
+contentHash=78d2791e477c1e84848b4d8bea4cfbb8d79ec05878d609e08c08c3065360fc7a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-21-11116`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3a650605d8174a4e9b3cd6f77ded897b7e9f948063cf0e856e454c56076c0d06
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u21-i-purpose-1:prompt
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Choose the English description. Which meaning matches the shown conjunction?
+shippedText=Choose the English description. Which meaning matches the shown conjunction?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5f914ae77d983b1c4cf8e7116d2452da233fc4806cc74c95edaaeb44e256d0d0
+contentHash=9f6d311b4ef03f9cead5f669f81f9e533cd2934b8c307584f76111bc0bea7308
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-u21-object-reference-0-en`
 
@@ -3095,6 +5469,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-21-11253`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b04df7e6522c5d98119dffbdd120484d9fd25cec89b1dc4de55a8208625ccc91
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 21 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-21-11254`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d624fa0a06e4be2179da9da5e6c30a8d49eb34f11e61d211c04c063e8eda82c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-21-11255`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7f155e4d37ec4dfbc63721d96b754561d9f152f4de22ea8129e3ee43f1d8293
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 21 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-21-11256`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8629619818c6902cf2e5850a9105f450e97a3bd8f355de8954bfd6ca1337f435
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-21-11257`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 987498dd6001ba059e2e16c32cd2ade0d85c98355b1e22a2e8e6fdfe58105336
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 21 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-21-11258`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 706443a5de092deaa80da4b57e0944b20e28d1a666116e06318b9a9019e24dda
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-21-11259`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8263a9643e02a2c028c260725efae6b1b5c30b40f7caa22da0e485703b9790ce
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 21 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-21-92`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f20624aa0844d620ab15575e63c670e4e7db69591d1ff3d5c6e092d3e5b3a6c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 21: printed pages 257-268. PDF indexes 269-280 are file locators, not printed pages. Observed section locators: §21.1 p257 (PDF 269); §21.2 p257 (PDF 269); §21.3 p259 (PDF 271); §21.4 p259 (PDF 271); §21.5 p261 (PDF 273); §21.6 p261 (PDF 273); §21.7 p261 (PDF 273); §21.8 p262 (PDF 274); §21.9 p263 (PDF 275); §21.10 p265 (PDF 277). Observed exercise locators: 21/1 p258/PDF270; 21/2 p259/PDF271; 21/3 p260/PDF272; 21/4 p263/PDF275; 21/5 p266/PDF278. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-21-93`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87f92131adf7ee4755ab4de388a50904c91cdf92cd3bdffa6cd5c41bee304b13
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 21 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-21-94`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3da6c5af8c41e25f964ee56695f62ce53cd839e30e90ffd561d7c6477f115202
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u21-001`
 
 - Objectives: none
@@ -3645,6 +6149,21 @@ CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -3686,6 +6205,20 @@ permitsAppUse=true
 
 src-wikipedia-russian-grammar-1369617627
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -3794,6 +6327,63 @@ permitsAppUse=true
 - `u21-st-check-purpose` ITEM `u21-i-purpose-2`
 - `u21-s-book` OBJECTIVE `obj-u21-book`
 - `u21-st-book-work` REFERENCE `ref-u2125-attribution`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-21-259`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-21-260`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-21-261`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-21-262`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-275`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-276`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-277`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-278`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-279`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-280`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-281`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-282`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-283`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-284`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-285`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-286`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-287`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-288`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-289`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-290`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-291`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-292`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-293`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-294`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-295`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-296`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-297`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-298`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-299`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-300`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-301`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-302`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-303`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-304`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-305`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-306`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-307`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-308`
+- `obj-u21-book` PROVENANCE `prov-ca-21-609`
+- `obj-u21-svoy` PROVENANCE `prov-ca-21-610`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-21-95`
+- `obj-u21-purpose` PROVENANCE `prov-ca-21-96`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-10802`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-10803`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-10804`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-10805`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-10806`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-10807`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-10808`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-10809`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-10810`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-10811`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-10812`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-10813`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-10814`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-11115`
+- `obj-u21-purpose` PROVENANCE `prov-ca-repair-21-11116`
 - `obj-u21-object-reference` PROVENANCE `prov-ex-u21-object-reference-0-en`
 - `obj-u21-object-reference` PROVENANCE `prov-ex-u21-object-reference-0-ru`
 - `obj-u21-object-reference` PROVENANCE `prov-ex-u21-object-reference-1-en`

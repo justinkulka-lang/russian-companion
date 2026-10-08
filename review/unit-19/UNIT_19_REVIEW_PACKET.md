@@ -11,12 +11,12 @@ Unit 19 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
-- Unit content-review SHA-256: 75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3
+- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
+- Unit content-review SHA-256: 0be8a9468befc20a531e8390c737e8a8a0aae401fdadca4a228a5127761febe5
 - Mapping-package SHA-256: 56534b156e7412d1bd8e51bf493e8d80f4b58461446382483a8ed118681dd6b2
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: edc164842c07c454a529f350a8333bc5e4978838a6f810af072e75bc7cb505ef
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
+- Review-package SHA-256: 72ef1613369fa91cbb39833b116b0bc7978cdd74d80f46b5c129b1f2538a5ac9
+- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -260,11 +260,11 @@ steps=u19-st-teach-prefix-caution-1,u19-st-guided-prefix-caution-1,u19-st-teach-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a174a7c75956696a243b5180022af4fcc5a656e65363c718962bc6af4720d46a
+- Content hash: 2106fd4d848af116b6b83b26dd8e0e28a5782d88f8176626e457a73bbc1aac23
 
 kind=TEACH
 title=Admitted lines
-body=отговорить — to dissuade. договориться — to agree. 
+body=отговорить — to dissuade. договориться — to agree. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -407,11 +407,11 @@ steps=u19-st-teach-conditional-1,u19-st-guided-conditional-1,u19-st-teach-condit
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c155e5691cfc9fdc09c5312ebe36e3e5915fc5f61e89b6ab3fdbf6a55cc9b964
+- Content hash: b289c21da4e1fdc53be584abdb24a472363f630c3688e1a2013539b3ba9d44a3
 
 kind=TEACH
 title=Admitted lines
-body=я спал бы — a male speaker. я спала́ бы — a female speaker. 
+body=я спал бы — a male speaker. я спала́ бы — a female speaker. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -554,11 +554,11 @@ steps=u19-st-teach-obligation-1,u19-st-guided-obligation-1,u19-st-teach-obligati
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 50814c177abe620833418e755fba8d537e5bf588497097971c94050290fad88c
+- Content hash: c685770d81e318ce84b6c197d33ac5952e044ad3e53205250e779b6e64b515d8
 
 kind=TEACH
 title=Admitted lines
-body=я должен — I have to. должна — If the subject is feminine. 
+body=я должен — I have to. должна — If the subject is feminine. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -811,12 +811,12 @@ remediationStepId=u19-st-rem-probability
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ea6470eb79bc364f7cb536223538fe0c33608d8e38cfe768af271766daa2a58d
+- Content hash: 7d3b584fc6362fc2230e34f6202a280f733e58330a88890838c532ce3c1759f4
 
 title=Self-attest Lesson 19
 estimatedMinutes=10
 objectives=obj-u19-book
-steps=u19-st-book-work,u19-st-book
+steps=u19-st-book-work,u19-st-book,u19-st-anki-direction,u19-st-binder-direction,u19-st-tutor-direction,u19-st-cumulative-direction
 
 ### STEP `u19-st-book-work`
 
@@ -826,7 +826,7 @@ steps=u19-st-book-work,u19-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8f9c42600cd8f5d99e27a95958420e7192ed7d15e0ba8d95fc268500b42caf29
+- Content hash: 41d1fbc7c7f301cfc4a38afbf742b510600b019bfe8c306229fe09c75528d0a7
 
 kind=BOOK
 title=Work Lesson 19 in your copy
@@ -836,7 +836,7 @@ references=ref-u1620-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 19 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 19: printed pages 230-239. PDF indexes 242-251 are file locators, not printed pages. Observed section locators: §19.1 p230 (PDF 242); §19.2 p230 (PDF 242); §19.3 p232 (PDF 244); §19.4 p232 (PDF 244); §19.5 p233 (PDF 245); §19.6 p233 (PDF 245); §19.7 p237 (PDF 249); §19.8 p237 (PDF 249); §19.9 p238 (PDF 250). Observed exercise locators: 19/1 p231/PDF243; 19/2 p231/PDF243; 19/3 p233/PDF245; 19/4 p236/PDF248; 19/5 p239/PDF251. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -848,7 +848,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b3add24fa2422b4cf39fc230af2edbf90cb1e499f22a9f4b0e9bc3e8507762a6
+- Content hash: 37fa357f36f37bdd972d207ce422c0993a2d01984087d86ebd767360c8cf06d6
 
 kind=BOOK
 title=Record Lesson 19 book work
@@ -858,8 +858,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 19 work in your copy.
+bookDirection=Owned-book assignment for Lesson 19: printed pages 230-239. PDF indexes 242-251 are file locators, not printed pages. Observed section locators: §19.1 p230 (PDF 242); §19.2 p230 (PDF 242); §19.3 p232 (PDF 244); §19.4 p232 (PDF 244); §19.5 p233 (PDF 245); §19.6 p233 (PDF 245); §19.7 p237 (PDF 249); §19.8 p237 (PDF 249); §19.9 p238 (PDF 250). Observed exercise locators: 19/1 p231/PDF243; 19/2 p231/PDF243; 19/3 p233/PDF245; 19/4 p236/PDF248; 19/5 p239/PDF251. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u19-st-anki-direction`
+
+- Objectives: obj-u19-book
+- Sessions: u19-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 263785586c4bba639c9950cfaf2e2d6115db52343fdd5957b4f0662842317fb5
+
+kind=ANKI
+title=Unit 19 AnkiDroid direction
+body=Unit 19 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u19-st-binder-direction`
+
+- Objectives: obj-u19-book
+- Sessions: u19-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 019b9ab66d4a693e5be98c4bf73383837bd4a968a01223b5a2285d3498115dcb
+
+kind=BINDER
+title=Unit 19 binder prompt
+body=Unit 19 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u19-st-tutor-direction`
+
+- Objectives: obj-u19-book
+- Sessions: u19-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 63dc59abde8485614b9d1e645a4361ca0d453bd51101c3c0990c12b20483f5a7
+
+kind=TUTOR
+title=Unit 19 optional tutor
+body=Unit 19 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u19-st-cumulative-direction`
+
+- Objectives: obj-u19-book
+- Sessions: u19-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a1049aa07e1e0083b31194853ab656750eddb14eb88af6fab9ceac87a9f42e62
+
+kind=ORIENT
+title=Unit 19 cumulative review
+body=Unit 19 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 19 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u19-prefix-caution-0`
@@ -1349,35 +1437,35 @@ responseKind=ENGLISH_CLASSIFICATION
 
 - Objectives: obj-u19-conditional
 - Sessions: u19-s-conditional
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1a7ed2c1b67ed288fc7c6075f059b9c23b8c0518a8515a761a3d9ac3af521f3e
+- Content hash: 39d71f0396f0a928652cdb2d0cd54dadcd4e8b19b48bdd2123d74f92286a482d
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written beside the shown form?
+prompt=Choose the English description. What does the past form in я бы поспала́ mark?
 promptLetter=я бы поспала́
-options=a female speaker | a male speaker | I would like to sleep
-answer=a female speaker
-feedback=while a female speaker would say я спала́ бы (or я бы поспала́)
+options=the speaker is marked feminine | the speaker is marked masculine | the sentence is about another person
+answer=the speaker is marked feminine
+feedback=In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
 objectiveId=obj-u19-conditional
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | a male speaker would say я спал бы | I would like to sleep
-testedFeature=CONDITIONAL_FEMALE_ALT
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | the speaker is marked masculine would use a masculine past form. | the sentence is about another person is not what the first-person pronoun states.
+testedFeature=CONDITIONAL_FEMININE_SPEAKER
+evidenceMode=STATED_APPLICATION
 contrastSetId=u19-conditional-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u19-conditional-1-en
-distractorSourceIds= | prov-ex-u19-conditional-0-en | prov-ex-u19-conditional-2-en
-distractorDifference= | a male speaker would say я спал бы | I would like to sleep
-whyAnswerDemonstratesObjective=while a female speaker would say я спала́ бы (or я бы поспала́)
-contrastMembers=a female speaker | a male speaker | I would like to sleep
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u19-conditional-3-ru | prov-ex-u19-conditional-1-en | prov-ex-u19-conditional-0-en | prov-ex-u19-conditional-2-en
+answerSourceIds=prov-ca-repair-19-10773
+distractorSourceIds= | prov-ca-repair-19-10776 | prov-ca-repair-19-10777
+distractorDifference= | the speaker is marked masculine would use a masculine past form. | the sentence is about another person is not what the first-person pronoun states.
+whyAnswerDemonstratesObjective=In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
+contrastMembers=the speaker is marked feminine | the speaker is marked masculine | the sentence is about another person
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-repair-19-10772 | prov-ca-repair-19-10773 | prov-ca-repair-19-10776 | prov-ca-repair-19-10777
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u19-i-obligation-1`
@@ -1555,6 +1643,956 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=19
 searchTerms=unit 19 wiktionary notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-19-535`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 068f8de47e6e0d7994a715e784e0d5231a80c34e7d2dc43b78a3feb79e95793b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+поспала́ marks a feminine speaker. The wish to sleep is a different question.
+The feminine past поспала́ marks the speaker as feminine in this conditional.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+поспала́
+shippedText=я бы поспала́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584
+contentHash=97ecff87f08fcb538f8aec0cd47a6a334947c96746d844413493b356278d4ceb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-19-536`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f1797374f50ef4e6c80f3a91393d3956c40ab4c6bb51afd074e7f651b91870bb
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+поспала́ marks a feminine speaker. The wish to sleep is a different question.
+The feminine past поспала́ marks the speaker as feminine in this conditional.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+поспала́
+shippedText=the speaker is marked feminine
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584
+contentHash=d0b660d3b5fc92caea4bb312953c80c1c78e1f559a6dee0424ad75c57136f5a6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-19-537`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0a00686fae7630f71854e087db1a351d299229a1f2c55407745ca21670eb732
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+поспала́ marks a feminine speaker. The wish to sleep is a different question.
+The feminine past поспала́ marks the speaker as feminine in this conditional.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+поспала́
+shippedText=What does the past form in я бы поспала́ mark?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584
+contentHash=f759a5e1a08905cd724f2985515706fa50ae3a276f375893948387fc8a5f3730
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-19-538`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eca6ed1028d4ab13bfd53d656f328d5527b3dd976d54fdbb8a68738486d7f64c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+поспала́ marks a feminine speaker. The wish to sleep is a different question.
+The feminine past поспала́ marks the speaker as feminine in this conditional.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+поспала́
+shippedText=поспала́ marks a feminine speaker. The wish to sleep is a different question.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584
+contentHash=aa5409940142acf54527ec5ca8b77d37a68023712b3c920ad12cfd1f75e1bb68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-19-539`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 682d66f947226121d9aab2592703d43bd523de5af5087eccc57d97b96dcc978b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+поспала́ marks a feminine speaker. The wish to sleep is a different question.
+The feminine past поспала́ marks the speaker as feminine in this conditional.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+поспала́
+shippedText=The feminine past поспала́ marks the speaker as feminine in this conditional.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584
+contentHash=28d24196e86e2ae758554a3e39bc100030a95ace9e33e882a222d89544f779da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-19-540`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 15f5e160452569eb250224409e000cade1941651bfe1256d46ed9aaa108c4abb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+поспала́ marks a feminine speaker. The wish to sleep is a different question.
+The feminine past поспала́ marks the speaker as feminine in this conditional.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+поспала́
+shippedText=the speaker is marked masculine
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584
+contentHash=5839d5e8fc5f3c51075bd052090f58431b3423eef857c05b5a4878c2efa1def6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-19-541`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3bc2a3e21fdf7ee8e02f4843f63ee448339d853625c56601ccb52ded4b01f747
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+поспала́ marks a feminine speaker. The wish to sleep is a different question.
+The feminine past поспала́ marks the speaker as feminine in this conditional.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+поспала́
+shippedText=the sentence is about another person
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584
+contentHash=4474ba3b613f1bf56981345c90dd0d6aeae9f9720d4b5c948bd603a257a60daf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-19-542`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b07e3f7fdcb8174f0c07efecbe3e7b5403de3a782021f1aac6af6a78d21cc68
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+поспала́ marks a feminine speaker. The wish to sleep is a different question.
+The feminine past поспала́ marks the speaker as feminine in this conditional.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+поспала́
+shippedText=the speaker is marked masculine would use a masculine past form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584
+contentHash=f100815e289892ff0712a25ef78119a4c519c1a68b4af9199d9c1697933309b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-19-543`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6485cc91dd012bb9e1875ab06b3ce94d660937e7be7940ad6c8798429063569b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+поспала́ marks a feminine speaker. The wish to sleep is a different question.
+The feminine past поспала́ marks the speaker as feminine in this conditional.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+поспала́
+shippedText=the sentence is about another person is not what the first-person pronoun states.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584
+contentHash=86cfe3d28822d70285c0e3cbf4a5adf1c153a6586b7a3f0ad2c55436b9616822
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-19-544`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d97c82c3a6e61e635ce9497b3e7b0c7586a42090ebf2a6653cddcbcb750f94fe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+поспала́ marks a feminine speaker. The wish to sleep is a different question.
+The feminine past поспала́ marks the speaker as feminine in this conditional.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+поспала́
+shippedText=поспала́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584
+contentHash=9cc99adef3681742ce4b66e7789256dff952225c939e763e79ea65e3e2c39091
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-19-86`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c91e897ac562d7dea3b3fd602facf2c7430bc4bfb0b41e1b88d46bd6988f76c2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:u19-st-teach-prefix-caution-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-19-87`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 445074d9b0b713732e330a20e2b018206a150ba6caec2d47db8454178ab08c79
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-conditional:u19-st-teach-conditional-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-19-88`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81868e87f82dbf2b21a25fcbc5f2620ace355f3b4398ef58103d4da2afe59290
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-obligation:u19-st-teach-obligation-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-19-10772`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2f51d12a20142d1b6a2c3f966cd25d9f89460c63f54eb7c41b62c2130fdeaf49
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+я бы поспала́,
+поспала́
+я
+shippedText=я бы поспала́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=721bc88c9d58c0f77950aef643230d8530141025427876f44c39ac4c2de9f0c1
+contentHash=97ecff87f08fcb538f8aec0cd47a6a334947c96746d844413493b356278d4ceb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-19-10773`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 155786a8ef56b70ee36815cac9d942fb965c8843b0950997e3c656e81615b75b
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+я бы поспала́,
+поспала́
+я
+shippedText=the speaker is marked feminine
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=721bc88c9d58c0f77950aef643230d8530141025427876f44c39ac4c2de9f0c1
+contentHash=d0b660d3b5fc92caea4bb312953c80c1c78e1f559a6dee0424ad75c57136f5a6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-19-10774`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2bba17a976e6bc2c588c2eddc4cd46a4d076c3b865f4079c57402ab7013902f1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+я бы поспала́,
+поспала́
+я
+shippedText=What does the past form in я бы поспала́ mark?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=721bc88c9d58c0f77950aef643230d8530141025427876f44c39ac4c2de9f0c1
+contentHash=f759a5e1a08905cd724f2985515706fa50ae3a276f375893948387fc8a5f3730
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-19-10775`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 01a91d90672eed5cdc98b06ec26567c99c73d85fa02ea7a99a7e3a4a2e23e6e2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+я бы поспала́,
+поспала́
+я
+shippedText=In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=721bc88c9d58c0f77950aef643230d8530141025427876f44c39ac4c2de9f0c1
+contentHash=706eaadf671c3adf4af18450eb60b201fec4c13bc7d9a0dba6f277e6caa7222d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-19-10776`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e01690df51861c90824490d4b0566a5acbfdc3a3b51e0c7c48a9e4d3c70bceb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+я бы поспала́,
+поспала́
+я
+shippedText=the speaker is marked masculine
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=721bc88c9d58c0f77950aef643230d8530141025427876f44c39ac4c2de9f0c1
+contentHash=5839d5e8fc5f3c51075bd052090f58431b3423eef857c05b5a4878c2efa1def6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-19-10777`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac72fde66f3bfc31e463f04ccc2860471b93a331a6f47cdb5fb97976bce66db5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+я бы поспала́,
+поспала́
+я
+shippedText=the sentence is about another person
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=721bc88c9d58c0f77950aef643230d8530141025427876f44c39ac4c2de9f0c1
+contentHash=4474ba3b613f1bf56981345c90dd0d6aeae9f9720d4b5c948bd603a257a60daf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-19-10778`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f4c976a10983dc92c3f6005724dc8769cd319f166ce49c174882937a8f40248
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+я бы поспала́,
+поспала́
+я
+shippedText=the speaker is marked masculine would use a masculine past form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=721bc88c9d58c0f77950aef643230d8530141025427876f44c39ac4c2de9f0c1
+contentHash=f100815e289892ff0712a25ef78119a4c519c1a68b4af9199d9c1697933309b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-19-10779`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9305ed6a071ff4ee93acfb901bc96ccb879dff9cda99ff5acd133937ca25aac5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+я бы поспала́,
+поспала́
+я
+shippedText=the sentence is about another person is not what the first-person pronoun states.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=721bc88c9d58c0f77950aef643230d8530141025427876f44c39ac4c2de9f0c1
+contentHash=86cfe3d28822d70285c0e3cbf4a5adf1c153a6586b7a3f0ad2c55436b9616822
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-19-10780`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68f77e865c24f0e99e6fe58d7bfe947dd580db4734eb6d477f915f40293ede3a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+я бы поспала́,
+поспала́
+я
+shippedText=я бы поспала́,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=721bc88c9d58c0f77950aef643230d8530141025427876f44c39ac4c2de9f0c1
+contentHash=bee4e94bde196912603a782d3f2c8530edb187a5dda59c7729f9ce51f9b07a0a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-19-10781`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6298823f0fd86dd36ab810c229018ca7f9a667e320eca5ce5926fb40e9a60d24
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+я бы поспала́,
+поспала́
+я
+shippedText=поспала́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=721bc88c9d58c0f77950aef643230d8530141025427876f44c39ac4c2de9f0c1
+contentHash=9cc99adef3681742ce4b66e7789256dff952225c939e763e79ea65e3e2c39091
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-19-10782`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 653c4d4985b7b6017e10ffba68fa071a9ce23c6a34fc717629c9cbcfd28cae7b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u19-i-conditional-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+я бы поспала́
+the speaker is marked feminine
+What does the past form in я бы поспала́ mark?
+In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.
+the speaker is marked masculine
+the sentence is about another person
+the speaker is marked masculine would use a masculine past form.
+the sentence is about another person is not what the first-person pronoun states.
+я бы поспала́,
+поспала́
+я
+shippedText=я
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=721bc88c9d58c0f77950aef643230d8530141025427876f44c39ac4c2de9f0c1
+contentHash=9b21f5cf014c9efb35110dcccf3a74eab7fb903d1ca2f4054b3dad9ffabb7727
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-19-11112`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e8e4de81388789316e33acd45006424468a8001f57772c7b06a8d3aa337da3f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:u19-i-conditional-2:prompt
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Choose the English description. What does the past form in я бы поспала́ mark?
+shippedText=Choose the English description. What does the past form in я бы поспала́ mark?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=439b2fccc3e271e66aa1596c1f68bf203237a3f713948da537667e557ae3ceab
+contentHash=d7fa76024144c455dc6d2ee9803aaae558d141700337b61319cd001028115c81
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-u19-conditional-0-en`
 
@@ -2989,6 +4027,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-19-11239`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 60dd6ab9d7f0fc2d0a963435f51431dce788736490f8700ae14242979d1dfa6c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 19 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-19-11240`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1798441cc9a77def0bcd200976f2440a4c8211e00bb8e96aa6d6fb050b4e272
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-19-11241`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3cf2c1946cbf145726f7c6fb3bea7e771a78bab1f2ea8ff6c32ad1efc618eb01
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 19 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-19-11242`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 66fe130794d829145501924e95c978c11f28bcf8db89c5c775181072935de1c7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-19-11243`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c29781e04d6510328b5527ccd79ba46a985410f36e0e4583e06372a5e0eb9ae9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 19 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-19-11244`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 278e097146d659798f39043726b9abf17a25ad9e19bb03d6df34b7a512728c0d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-19-11245`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a032083f9a93540197d5295250c7a0f57b445d5557c215f3b818aecbb8d2f42
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 19 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-19-83`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 02a141d9d4a231d8c5f944149cb04f6cda0bae6974625932e13e754583ffb428
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 19: printed pages 230-239. PDF indexes 242-251 are file locators, not printed pages. Observed section locators: §19.1 p230 (PDF 242); §19.2 p230 (PDF 242); §19.3 p232 (PDF 244); §19.4 p232 (PDF 244); §19.5 p233 (PDF 245); §19.6 p233 (PDF 245); §19.7 p237 (PDF 249); §19.8 p237 (PDF 249); §19.9 p238 (PDF 250). Observed exercise locators: 19/1 p231/PDF243; 19/2 p231/PDF243; 19/3 p233/PDF245; 19/4 p236/PDF248; 19/5 p239/PDF251. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-19-84`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 768df544e0416964e5151e77c6ae620483f512f6e2c9be4efbbdc916ca35054e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 19 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-19-85`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5ff3f1e3dbbc065209e84a96f5650e74589e5b318198f7a30dd059ce80af0464
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u19-131`
 
 - Objectives: none
@@ -3411,6 +4579,21 @@ CC BY-SA 4.0
 Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 84965088 identifies the contributors. Entry text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -3466,6 +4649,20 @@ permitsAppUse=true
 
 src-enwiktionary-dolzhen-84965088
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -3596,6 +4793,31 @@ permitsAppUse=true
 - `u19-st-check-probability` ITEM `u19-i-probability-2`
 - `u19-s-book` OBJECTIVE `obj-u19-book`
 - `u19-st-book-work` REFERENCE `ref-u1620-attribution`
+- `obj-u19-conditional` PROVENANCE `prov-ca-19-535`
+- `obj-u19-conditional` PROVENANCE `prov-ca-19-536`
+- `obj-u19-conditional` PROVENANCE `prov-ca-19-537`
+- `obj-u19-conditional` PROVENANCE `prov-ca-19-538`
+- `obj-u19-conditional` PROVENANCE `prov-ca-19-539`
+- `obj-u19-conditional` PROVENANCE `prov-ca-19-540`
+- `obj-u19-conditional` PROVENANCE `prov-ca-19-541`
+- `obj-u19-conditional` PROVENANCE `prov-ca-19-542`
+- `obj-u19-conditional` PROVENANCE `prov-ca-19-543`
+- `obj-u19-conditional` PROVENANCE `prov-ca-19-544`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-19-86`
+- `obj-u19-conditional` PROVENANCE `prov-ca-19-87`
+- `obj-u19-obligation` PROVENANCE `prov-ca-19-88`
+- `obj-u19-conditional` PROVENANCE `prov-ca-repair-19-10772`
+- `obj-u19-conditional` PROVENANCE `prov-ca-repair-19-10773`
+- `obj-u19-conditional` PROVENANCE `prov-ca-repair-19-10774`
+- `obj-u19-conditional` PROVENANCE `prov-ca-repair-19-10775`
+- `obj-u19-conditional` PROVENANCE `prov-ca-repair-19-10776`
+- `obj-u19-conditional` PROVENANCE `prov-ca-repair-19-10777`
+- `obj-u19-conditional` PROVENANCE `prov-ca-repair-19-10778`
+- `obj-u19-conditional` PROVENANCE `prov-ca-repair-19-10779`
+- `obj-u19-conditional` PROVENANCE `prov-ca-repair-19-10780`
+- `obj-u19-conditional` PROVENANCE `prov-ca-repair-19-10781`
+- `obj-u19-conditional` PROVENANCE `prov-ca-repair-19-10782`
+- `obj-u19-conditional` PROVENANCE `prov-ca-repair-19-11112`
 - `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-0-en`
 - `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-0-ru`
 - `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-1-en`
