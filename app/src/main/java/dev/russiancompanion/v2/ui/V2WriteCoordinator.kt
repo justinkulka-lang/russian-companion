@@ -51,6 +51,10 @@ internal class V2WriteCoordinator(
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
     private val gate = Mutex()
     private val positionTicket = AtomicInteger()
+    private val activeWrites = AtomicInteger()
+    private val reconstructionToken = java.util.concurrent.atomic.AtomicLong()
+    private val confirmationToken = java.util.concurrent.atomic.AtomicLong()
+    private val confirmedAt = mutableMapOf<String, Confirmation>()
     private var nextGeneration = 0L
     private var appliedGeneration = 0L
     private var outcomeGeneration = 0L
@@ -105,7 +109,15 @@ internal class V2WriteCoordinator(
 
     fun positionStillCurrent(ticket: Int): Boolean = ticket == positionTicket.get()
 
+    fun invalidatePositionTickets() {
+        positionTicket.incrementAndGet()
+    }
+
+    fun hasActiveWork(): Boolean = activeWrites.get() > 0
+
     fun confirmSelection(stepId: String, itemId: String, selected: String) {
+        val stamp = confirmationToken.incrementAndGet()
+        confirmedAt[governedSelectionKey(stepId, itemId)] = Confirmation(stamp, bindingEpoch)
         selections = selections + (governedSelectionKey(stepId, itemId) to selected)
     }
 
@@ -125,32 +137,34 @@ internal class V2WriteCoordinator(
         val generation = ++nextGeneration
         val epoch = bindingEpoch
         if (singleFlight) pending = pending + key
+        activeWrites.incrementAndGet()
         publish(generation, quiet, V2OutcomeStatus.SAVING)
         if (V2UiWork.blocking()) {
             return finishBlocking(key, singleFlight, quiet, generation, epoch, onSuccess, onCommitted, block)
         }
         scope.launch {
-            val write = gate.withLock { runCatching { block() } }
-            if (epoch != bindingEpoch) return@launch
-            if (write.isFailure) {
+            try {
+                val write = gate.withLock { runCatching { block() } }
+                if (epoch != bindingEpoch) return@launch
+                if (write.isFailure) {
+                    publish(generation, quiet, V2OutcomeStatus.REJECTED)
+                    return@launch
+                }
+                onCommitted()
+                val refreshed = runCatching { persistence.learner() }
+                if (epoch != bindingEpoch) return@launch
+                if (refreshed.isSuccess) {
+                    applyLearner(generation, refreshed.getOrThrow())
+                    publish(generation, quiet, V2OutcomeStatus.SAVED)
+                    onSuccess()
+                } else {
+                    if (generation > appliedGeneration) appliedGeneration = generation
+                    publish(generation, quiet, V2OutcomeStatus.REFRESH_FAILED)
+                }
+            } finally {
+                activeWrites.decrementAndGet()
                 if (singleFlight) pending = pending - key
-                publish(generation, quiet, V2OutcomeStatus.REJECTED)
-                return@launch
             }
-            onCommitted()
-            val refreshed = runCatching { persistence.learner() }
-            if (epoch != bindingEpoch) return@launch
-            if (refreshed.isSuccess) {
-                applyLearner(generation, refreshed.getOrThrow())
-                publish(generation, quiet, V2OutcomeStatus.SAVED)
-                onSuccess()
-            } else {
-                // A failed reload still happened after this generation. An older
-                // read must not replace the selection this write already confirmed.
-                if (generation > appliedGeneration) appliedGeneration = generation
-                publish(generation, quiet, V2OutcomeStatus.REFRESH_FAILED)
-            }
-            if (singleFlight) pending = pending - key
         }
         return true
     }
@@ -166,29 +180,33 @@ internal class V2WriteCoordinator(
         block: suspend () -> Unit,
     ): Boolean {
         val write = runCatching { runBlocking { block() } }
-        if (epoch != bindingEpoch) return false
-        if (write.isFailure) {
+        try {
+            if (epoch != bindingEpoch) return false
+            if (write.isFailure) {
+                publish(generation, quiet, V2OutcomeStatus.REJECTED)
+                return false
+            }
+            onCommitted()
+            val refreshed = runCatching { runBlocking { persistence.learner() } }
+            if (epoch != bindingEpoch) return true
+            if (refreshed.isSuccess) {
+                applyLearner(generation, refreshed.getOrThrow())
+                publish(generation, quiet, V2OutcomeStatus.SAVED)
+                onSuccess()
+            } else {
+                if (generation > appliedGeneration) appliedGeneration = generation
+                publish(generation, quiet, V2OutcomeStatus.REFRESH_FAILED)
+            }
+            return true
+        } finally {
+            activeWrites.decrementAndGet()
             if (singleFlight) pending = pending - key
-            publish(generation, quiet, V2OutcomeStatus.REJECTED)
-            return false
         }
-        onCommitted()
-        val refreshed = runCatching { runBlocking { persistence.learner() } }
-        if (epoch != bindingEpoch) return true
-        if (refreshed.isSuccess) {
-            applyLearner(generation, refreshed.getOrThrow())
-            publish(generation, quiet, V2OutcomeStatus.SAVED)
-            onSuccess()
-        } else {
-            if (generation > appliedGeneration) appliedGeneration = generation
-            publish(generation, quiet, V2OutcomeStatus.REFRESH_FAILED)
-        }
-        if (singleFlight) pending = pending - key
-        return true
     }
 
     private fun startLoad() {
         val epoch = ++bindingEpoch
+        positionTicket.incrementAndGet()
         pending = emptySet()
         loadFailed = false
         learner = null
@@ -247,20 +265,37 @@ internal class V2WriteCoordinator(
 
     private fun rebuildSelections(view: V2LearnerView) {
         val pack = curriculumPack
-        val inFlight = selections.filterKeys { selectionPending(it) }
+        val epoch = bindingEpoch
+        val token = reconstructionToken.incrementAndGet()
         if (pack == null || V2UiWork.blocking()) {
             val stored = if (pack == null) emptyMap() else governedSessionSelections(pack, view)
-            selections = stored + inFlight
+            selections = stored + localOverlay(epoch)
             return
         }
         scope.launch(Dispatchers.Default) {
+            V2UiWork.awaitReconstruction()
             val stored = governedSessionSelections(pack, view)
             withContext(Dispatchers.Main.immediate) {
+                if (token != reconstructionToken.get()) return@withContext
+                if (epoch != bindingEpoch) return@withContext
                 if (curriculumPack !== pack) return@withContext
-                selections = stored + selections.filterKeys { selectionPending(it) }
+                selections = stored + localOverlay(epoch)
             }
         }
     }
+
+    /**
+     * Selections confirmed during this binding, and answers whose write is
+     * still in flight, stay ahead of a stored snapshot. A new epoch, such as
+     * restore, does not keep the previous epoch's confirmations.
+     */
+    private fun localOverlay(epoch: Long): Map<String, String> {
+        return selections.filterKeys { key ->
+            selectionPending(key) || confirmedAt[key]?.epoch == epoch
+        }
+    }
+
+    private data class Confirmation(val stamp: Long, val epoch: Long)
 
     override fun onCleared() {
         scope.cancel()

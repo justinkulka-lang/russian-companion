@@ -26,6 +26,8 @@ internal const val RESTORE_FAILED = "Restore failed. The records already on this
 internal const val RESTORE_RECOVERY_REQUIRED =
     "Restore failed. Local recovery is still required. Open the app again to finish restoring the learner records from before this attempt."
 internal const val RESTORE_DONE = "Restore finished. Learner records were replaced with the backup. They were not merged."
+internal const val RESTORE_LEARNER_REPLACED_APPEARANCE_FAILED =
+    "Restore finished. Learner records were replaced with the backup. The appearance preference could not be saved and is unchanged."
 internal const val RESTORE_CANCELLED = "Restore cancelled. The records on this device are unchanged."
 internal const val REPLACE_EXPLANATION =
     "Restoring replaces learner records on this device with this backup. It does not merge. Records only on this device will be removed."
@@ -122,6 +124,7 @@ internal data class BackupAttempt(
     val objectiveId: String = "",
     val unitNumber: Int = 0,
     val stepId: String = "",
+    val acceptedOrder: Long = 0,
 )
 
 @Serializable
@@ -267,6 +270,11 @@ internal object V2BackupFaults {
     @Volatile var failJournalWrite: Boolean = false
     @Volatile var failSnapshotRestore: Boolean = false
     @Volatile var throwOnRestore: Throwable? = null
+    @Volatile var throwOnCurrentDocument: Throwable? = null
+    @Volatile var beforeMutationHold: kotlinx.coroutines.CompletableDeferred<Unit>? = null
+    @Volatile var replacementEntered: java.util.concurrent.CountDownLatch? = null
+    @Volatile var holdDuringReplacement: java.util.concurrent.CountDownLatch? = null
+    @Volatile var holdAfterCommit: kotlinx.coroutines.CompletableDeferred<Unit>? = null
 
     fun reset() {
         failWrite = false
@@ -278,6 +286,11 @@ internal object V2BackupFaults {
         failJournalWrite = false
         failSnapshotRestore = false
         throwOnRestore = null
+        throwOnCurrentDocument = null
+        beforeMutationHold = null
+        replacementEntered = null
+        holdDuringReplacement = null
+        holdAfterCommit = null
     }
 }
 

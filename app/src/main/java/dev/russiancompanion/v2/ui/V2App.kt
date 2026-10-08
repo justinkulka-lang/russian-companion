@@ -27,7 +27,9 @@ import dev.russiancompanion.v2.curriculum.OPTIONAL_PRACTICE
 import dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
+import dev.russiancompanion.v2.curriculum.V2PackIdentityIndex
 import dev.russiancompanion.v2.curriculum.governedStepCompletionDigest
+import dev.russiancompanion.v2.curriculum.lastGovernedIdentityThreadForTests
 import dev.russiancompanion.v2.curriculum.prepareGovernedAttempt
 import dev.russiancompanion.v2.curriculum.practiceStepId
 import dev.russiancompanion.v2.curriculum.resumePositionDigest
@@ -212,37 +214,46 @@ internal fun V2App(
                         }
                     },
                     onCompleteOnboarding = { draft ->
+                        val epoch = store.learnerMutationEpoch()
                         writes.submit("onboarding") {
-                            val current = api.profile()
-                            val sessionId = pack.unit(1)?.sessions?.firstOrNull()?.id
-                            val digest = sessionId?.let { resumePositionDigest(pack, it, 0) }.orEmpty()
-                            api.saveProfile(
-                                current.copy(
-                                    onboardingCompleted = true,
-                                    currentUnitNumber = 1,
-                                    startingPoint = draft.startingPoint.name,
-                                    hasPenguin = draft.hasPenguin,
-                                    hasAnki = draft.hasAnki,
-                                    hasBinder = draft.hasBinder,
-                                    hasTutor = draft.hasTutor,
-                                    dailyMinutes = draft.dailyMinutes,
-                                    transliterationEnabled = draft.startingPoint == V2StartingPoint.NEW_TO_CYRILLIC,
-                                    currentSessionId = sessionId,
-                                    currentStepIndex = 0,
-                                    resumeContentDigest = digest,
-                                    resumeIdentitySchema = if (digest.isEmpty()) 0 else GOVERNED_IDENTITY_SCHEMA,
-                                ),
-                            )
+                            withCapturedLearnerEpoch(epoch) {
+                                val current = api.profile()
+                                val sessionId = pack.unit(1)?.sessions?.firstOrNull()?.id
+                                val digest = sessionId?.let { resumePositionDigest(pack, it, 0) }.orEmpty()
+                                api.saveProfile(
+                                    current.copy(
+                                        onboardingCompleted = true,
+                                        currentUnitNumber = 1,
+                                        startingPoint = draft.startingPoint.name,
+                                        hasPenguin = draft.hasPenguin,
+                                        hasAnki = draft.hasAnki,
+                                        hasBinder = draft.hasBinder,
+                                        hasTutor = draft.hasTutor,
+                                        dailyMinutes = draft.dailyMinutes,
+                                        transliterationEnabled = draft.startingPoint == V2StartingPoint.NEW_TO_CYRILLIC,
+                                        currentSessionId = sessionId,
+                                        currentStepIndex = 0,
+                                        resumeContentDigest = digest,
+                                        resumeIdentitySchema = if (digest.isEmpty()) 0 else GOVERNED_IDENTITY_SCHEMA,
+                                    ),
+                                )
+                            }
                         }
                         Unit
                     },
                     onCompleteStep = { stepId, afterSaved ->
+                        val epoch = store.learnerMutationEpoch()
                         writes.submit("step:$stepId", onSuccess = afterSaved) {
-                            val digest = withContext(Dispatchers.IO) {
+                            val digest = withContext(Dispatchers.Default) {
+                                lastGovernedIdentityThreadForTests = Thread.currentThread()
+                                V2PackIdentityIndex.warm(pack)
                                 val current = store.v2LearnerViewForValidation()
                                 governedStepCompletionDigest(pack, current, stepId)
                             } ?: error("unverified step")
-                            api.completeStep(stepId, recordedAt(), digest)
+                            store.awaitBeforeCompletionWriteForTests()
+                            withCapturedLearnerEpoch(epoch) {
+                                api.completeStep(stepId, recordedAt(), digest)
+                            }
                         }
                         Unit
                     },
@@ -250,84 +261,124 @@ internal fun V2App(
                         if (writes.pending.any { it.startsWith("attempt:$stepId:$itemId:") }) {
                             return@V2NavHost false
                         }
+                        val epoch = store.learnerMutationEpoch()
                         val at = recordedAt()
-                        val write = prepareGovernedAttempt(pack, itemId, selected, PRESCRIBED_CHECK, stepId, at)
-                            ?: return@V2NavHost false
                         writes.submit(
                             key = "attempt:$stepId:$itemId:$selected",
                             onCommitted = { writes.confirmSelection(stepId, itemId, selected) },
                         ) {
-                            api.recordAttempt(write)
+                            val write = withContext(Dispatchers.Default) {
+                                lastGovernedIdentityThreadForTests = Thread.currentThread()
+                                V2PackIdentityIndex.warm(pack)
+                                prepareGovernedAttempt(pack, itemId, selected, PRESCRIBED_CHECK, stepId, at)
+                            } ?: error("unverified attempt")
+                            withCapturedLearnerEpoch(epoch) { api.recordAttempt(write) }
                         }
                     },
                     onPracticeAttempt = { labId, itemId, selected ->
                         if (writes.pending.any { it.startsWith("practice:$labId:$itemId:") }) {
                             return@V2NavHost false
                         }
+                        val epoch = store.learnerMutationEpoch()
                         val at = recordedAt()
-                        val write = prepareGovernedAttempt(
-                            pack,
-                            itemId,
-                            selected,
-                            OPTIONAL_PRACTICE,
-                            practiceStepId(labId),
-                            at,
-                        ) ?: return@V2NavHost false
                         writes.submit(key = "practice:$labId:$itemId:$selected") {
-                            api.recordAttempt(write)
+                            val write = withContext(Dispatchers.Default) {
+                                lastGovernedIdentityThreadForTests = Thread.currentThread()
+                                V2PackIdentityIndex.warm(pack)
+                                prepareGovernedAttempt(
+                                    pack,
+                                    itemId,
+                                    selected,
+                                    OPTIONAL_PRACTICE,
+                                    practiceStepId(labId),
+                                    at,
+                                )
+                            } ?: error("unverified attempt")
+                            withCapturedLearnerEpoch(epoch) { api.recordAttempt(write) }
                         }
                     },
                     onBookmark = { targetId, kind ->
-                        val digest = targetContentDigest(pack, targetId, kind) ?: return@V2NavHost
+                        val epoch = store.learnerMutationEpoch()
                         writes.submit("bookmark:$targetId") {
-                            api.toggleBookmark(targetId, kind, recordedAt(), digest)
+                            val digest = withContext(Dispatchers.Default) {
+                                V2PackIdentityIndex.warm(pack)
+                                targetContentDigest(pack, targetId, kind)
+                            } ?: error("unverified target")
+                            withCapturedLearnerEpoch(epoch) {
+                                api.toggleBookmark(targetId, kind, recordedAt(), digest)
+                            }
                         }
                         Unit
                     },
                     onNoteDraft = { stepId, text -> noteDrafts = noteDrafts + (stepId to text) },
                     onNote = { targetId, text ->
-                        val digest = targetContentDigest(pack, targetId, "STEP") ?: return@V2NavHost
+                        val epoch = store.learnerMutationEpoch()
                         writes.submit("note:$targetId") {
-                            api.addNote(targetId, text, recordedAt(), digest)
+                            val digest = withContext(Dispatchers.Default) {
+                                V2PackIdentityIndex.warm(pack)
+                                targetContentDigest(pack, targetId, "STEP")
+                            } ?: error("unverified target")
+                            withCapturedLearnerEpoch(epoch) {
+                                api.addNote(targetId, text, recordedAt(), digest)
+                            }
                         }
                         Unit
                     },
                     onTutor = { targetId, note ->
-                        val digest = targetContentDigest(pack, targetId, "STEP") ?: return@V2NavHost
+                        val epoch = store.learnerMutationEpoch()
                         writes.submit("tutor:$targetId") {
-                            api.addTutor(targetId, note, recordedAt(), digest)
+                            val digest = withContext(Dispatchers.Default) {
+                                V2PackIdentityIndex.warm(pack)
+                                targetContentDigest(pack, targetId, "STEP")
+                            } ?: error("unverified target")
+                            withCapturedLearnerEpoch(epoch) {
+                                api.addTutor(targetId, note, recordedAt(), digest)
+                            }
                         }
                         Unit
                     },
                     onAttestBook = { unit ->
+                        val epoch = store.learnerMutationEpoch()
                         writes.submit("book:$unit") {
-                            api.attestBook(unit, recordedAt())
+                            withCapturedLearnerEpoch(epoch) { api.attestBook(unit, recordedAt()) }
                         }
                         Unit
                     },
                     onAdvance = { unit ->
+                        val epoch = store.learnerMutationEpoch()
                         writes.submit("advance:$unit") {
                             val nextUnit = (unit + 1).coerceAtMost(30)
                             val nextSessionId = pack.unit(nextUnit)?.sessions?.firstOrNull()?.id
-                            val digest = nextSessionId?.let { resumePositionDigest(pack, it, 0) }
-                                ?: error("unverified position")
-                            api.advanceUnit(
-                                unit,
-                                recordedAt(),
-                                nextUnit,
-                                nextSessionId,
-                                digest,
-                                GOVERNED_IDENTITY_SCHEMA,
-                            )
+                            val digest = withContext(Dispatchers.Default) {
+                                V2PackIdentityIndex.warm(pack)
+                                nextSessionId?.let { resumePositionDigest(pack, it, 0) }
+                            } ?: error("unverified position")
+                            withCapturedLearnerEpoch(epoch) {
+                                api.advanceUnit(
+                                    unit,
+                                    recordedAt(),
+                                    nextUnit,
+                                    nextSessionId,
+                                    digest,
+                                    GOVERNED_IDENTITY_SCHEMA,
+                                )
+                            }
                         }
                         Unit
                     },
                     onResumeAt = { sessionId, index ->
                         val ticket = writes.nextPositionTicket()
-                        val digest = resumePositionDigest(pack, sessionId, index) ?: return@V2NavHost
+                        val epoch = store.learnerMutationEpoch()
                         writes.submit("position:$sessionId:$index", singleFlight = false, quiet = true) {
-                            if (!writes.positionStillCurrent(ticket)) return@submit
+                            val digest = withContext(Dispatchers.Default) {
+                                V2PackIdentityIndex.warm(pack)
+                                resumePositionDigest(pack, sessionId, index)
+                            } ?: return@submit
                             val profile = api.profile()
+                            store.awaitBeforeProfileSaveForTests()
+                            if (!writes.positionStillCurrent(ticket) || !store.learnerMutationCurrent(epoch)) {
+                                return@submit
+                            }
                             if (profile.currentSessionId == sessionId &&
                                 profile.currentStepIndex == index &&
                                 profile.resumeContentDigest == digest &&
@@ -335,27 +386,32 @@ internal fun V2App(
                             ) {
                                 return@submit
                             }
-                            api.saveProfile(
-                                profile.copy(
-                                    currentSessionId = sessionId,
-                                    currentStepIndex = index,
-                                    resumeContentDigest = digest,
-                                    resumeIdentitySchema = GOVERNED_IDENTITY_SCHEMA,
-                                ),
-                            )
+                            withCapturedLearnerEpoch(epoch) {
+                                api.saveProfile(
+                                    profile.copy(
+                                        currentSessionId = sessionId,
+                                        currentStepIndex = index,
+                                        resumeContentDigest = digest,
+                                        resumeIdentitySchema = GOVERNED_IDENTITY_SCHEMA,
+                                    ),
+                                )
+                            }
                         }
                         Unit
                     },
                     onTransliteration = { enabled ->
+                        val epoch = store.learnerMutationEpoch()
                         writes.submit("transliteration") {
-                            val profile = api.profile()
-                            api.saveProfile(profile.copy(transliterationEnabled = enabled))
+                            withCapturedLearnerEpoch(epoch) {
+                                val profile = api.profile()
+                                api.saveProfile(profile.copy(transliterationEnabled = enabled))
+                            }
                         }
                         Unit
                     },
                     backup = backup,
                     recordedAt = recordedAt,
-                    writesBusy = writes.pending.isNotEmpty(),
+                    writesBusy = writes.pending.isNotEmpty() || writes.hasActiveWork(),
                     onRestored = { writes.reloadAfterRestore() },
                 )
             }

@@ -8,6 +8,7 @@ import androidx.navigation.toRoute
 import dev.russiancompanion.domain.appearance.AppearancePreference
 import dev.russiancompanion.v2.curriculum.continueTarget
 import dev.russiancompanion.v2.curriculum.step
+import androidx.compose.material3.Text
 
 @Composable
 internal fun V2NavHost(
@@ -69,10 +70,13 @@ internal fun V2NavHost(
             if (pack == null || learner == null) {
                 V2LocalDataScreen(message = "Today is unavailable.", onRetry = onRetryOpen)
             } else {
-                V2TodayScreen(
+                val target = rememberGoverned(pack, learner, label = "continue") { continueTarget(pack, learner) }
+                if (target == null) {
+                    Text("Preparing today's plan")
+                } else V2TodayScreen(
                     pack = pack,
                     learner = learner,
-                    target = continueTarget(pack, learner),
+                    target = target,
                     onTab = ::goTab,
                     onSavedWork = { navController.navigate(V2SavedWorkRoute) },
                     onContinue = { target ->

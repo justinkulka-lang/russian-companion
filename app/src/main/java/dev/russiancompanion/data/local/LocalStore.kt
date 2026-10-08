@@ -69,6 +69,30 @@ internal class LocalStore private constructor(
     private val database: AppDatabase,
     private val recordingRoot: File? = null,
 ) : AutoCloseable {
+    private val learnerMutationEpoch = java.util.concurrent.atomic.AtomicLong(0)
+    private val replacementOpen = AtomicInteger(0)
+
+    /**
+     * Bumped around replacement so a write that already read the old profile
+     * cannot save it afterwards. [replacementOpen] also rejects work that
+     * starts while replacement is in progress.
+     */
+    internal fun learnerMutationEpoch(): Long = learnerMutationEpoch.get()
+
+    internal fun openLearnerReplacement() {
+        replacementOpen.incrementAndGet()
+        learnerMutationEpoch.incrementAndGet()
+    }
+
+    internal fun closeLearnerReplacement() {
+        learnerMutationEpoch.incrementAndGet()
+        replacementOpen.updateAndGet { (it - 1).coerceAtLeast(0) }
+    }
+
+    internal fun learnerMutationCurrent(capturedEpoch: Long): Boolean {
+        return replacementOpen.get() == 0 && capturedEpoch == learnerMutationEpoch.get()
+    }
+
     private val io = Executors.newSingleThreadExecutor { runnable ->
         Thread(runnable, "russian-companion-store").apply { isDaemon = true }
     }
@@ -763,6 +787,28 @@ internal class LocalStore private constructor(
     @Volatile
     internal var holdGovernedAttemptForTests: kotlinx.coroutines.CompletableDeferred<Unit>? = null
 
+    @Volatile
+    internal var holdBeforeProfileSaveForTests: kotlinx.coroutines.CompletableDeferred<Unit>? = null
+
+    @Volatile
+    internal var holdBeforeCompletionWriteForTests: kotlinx.coroutines.CompletableDeferred<Unit>? = null
+
+    @Volatile
+    internal var profileSaveEnteredForTests: java.util.concurrent.CountDownLatch? = null
+
+    @Volatile
+    internal var completionWriteEnteredForTests: java.util.concurrent.CountDownLatch? = null
+
+    internal suspend fun awaitBeforeProfileSaveForTests() {
+        profileSaveEnteredForTests?.countDown()
+        holdBeforeProfileSaveForTests?.await()
+    }
+
+    internal suspend fun awaitBeforeCompletionWriteForTests() {
+        completionWriteEnteredForTests?.countDown()
+        holdBeforeCompletionWriteForTests?.await()
+    }
+
     internal suspend fun v2LearnerViewForValidation(): dev.russiancompanion.v2.curriculum.V2LearnerView =
         withContext(ioDispatcher) { readV2Learner() }
 
@@ -836,6 +882,47 @@ internal class LocalStore private constructor(
         if (!governedAttemptIsDuplicate(write)) insertGovernedAttempt(write)
     }
 
+    internal suspend fun v2SaveProfileIfCurrentAsync(
+        capturedEpoch: Long,
+        profile: dev.russiancompanion.v2.data.V2ProfileEntity,
+    ): Boolean = withContext(ioDispatcher) {
+        if (!learnerMutationCurrent(capturedEpoch)) return@withContext false
+        writeV2Profile(profile)
+        true
+    }
+
+    internal suspend fun v2CompleteStepIfCurrentAsync(
+        capturedEpoch: Long,
+        stepId: String,
+        recordedAtLocal: String,
+        contentDigest: String,
+    ): Boolean = withContext(ioDispatcher) {
+        if (!learnerMutationCurrent(capturedEpoch)) return@withContext false
+        asyncStepWritesForTests.incrementAndGet()
+        writeV2Step(stepId, recordedAtLocal, contentDigest)
+        true
+    }
+
+    internal suspend fun v2RecordGovernedAttemptIfCurrentAsync(
+        capturedEpoch: Long,
+        write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite,
+    ): Boolean {
+        val duplicate = withContext(ioDispatcher) { governedAttemptIsDuplicate(write) }
+        if (duplicate) return true
+        holdGovernedAttemptForTests?.await()
+        return withContext(ioDispatcher) {
+            if (!learnerMutationCurrent(capturedEpoch)) return@withContext false
+            if (!governedAttemptIsDuplicate(write)) insertGovernedAttempt(write)
+            true
+        }
+    }
+
+    internal fun v2InsertUnorderedAttemptForTests(
+        attempt: dev.russiancompanion.v2.data.V2AttemptEntity,
+    ) = call {
+        database.v2().insertAttempt(attempt.copy(acceptedOrder = 0))
+    }
+
     private fun governedAttemptIsDuplicate(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite): Boolean {
         if (write.identitySchema != dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA) error("unverified attempt")
         if (write.attemptRole != dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK &&
@@ -850,22 +937,29 @@ internal class LocalStore private constructor(
         ) {
             error("unverified attempt")
         }
-        val latest = database.v2().attempts().lastOrNull { existing ->
-            existing.itemId == write.itemId &&
-                existing.attemptRole == write.attemptRole &&
-                existing.stepId == write.stepId &&
-                existing.identitySchema == write.identitySchema &&
-                existing.itemDigest == write.itemDigest &&
-                existing.ruleDigest == write.ruleDigest &&
-                existing.unitContentDigest == write.unitContentDigest
-        }
+        val latest = database.v2().attempts()
+            .filter { existing ->
+                existing.acceptedOrder > 0 &&
+                    existing.itemId == write.itemId &&
+                    existing.attemptRole == write.attemptRole &&
+                    existing.stepId == write.stepId &&
+                    existing.identitySchema == write.identitySchema &&
+                    existing.itemDigest == write.itemDigest &&
+                    existing.ruleDigest == write.ruleDigest &&
+                    existing.unitContentDigest == write.unitContentDigest
+            }
+            .maxByOrNull { it.acceptedOrder }
         return latest != null && latest.selected == write.selected
     }
 
     private fun insertGovernedAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
+        val next = database.v2().maxAcceptedOrder() + 1L
+        // The content key repeats when the same selection is accepted again at the
+        // same wall-clock time. A colliding id gains the accepted-write sequence.
+        val id = if (database.v2().attempts().any { it.id == write.id }) "${write.id}:$next" else write.id
         database.v2().insertAttempt(
             dev.russiancompanion.v2.data.V2AttemptEntity(
-                id = write.id,
+                id = id,
                 itemId = write.itemId,
                 selected = write.selected,
                 correct = write.correct,
@@ -878,6 +972,7 @@ internal class LocalStore private constructor(
                 objectiveId = write.objectiveId,
                 unitNumber = write.unitNumber,
                 stepId = write.stepId,
+                acceptedOrder = next,
             ),
         )
     }
@@ -901,24 +996,45 @@ internal class LocalStore private constructor(
         targetDigest: String = dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY,
         identitySchema: Int = 0,
     ): Boolean = call {
+        writeV2Bookmark(targetId, kind, recordedAtLocal, targetDigest, identitySchema)
+    }
+
+    /** Null means the captured epoch was stale and nothing was written. */
+    internal suspend fun v2ToggleBookmarkIfCurrent(
+        capturedEpoch: Long,
+        targetId: String,
+        kind: String,
+        recordedAtLocal: String,
+        targetDigest: String,
+        identitySchema: Int = dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA,
+    ): Boolean? = withContext(ioDispatcher) {
+        if (!learnerMutationCurrent(capturedEpoch)) return@withContext null
+        writeV2Bookmark(targetId, kind, recordedAtLocal, targetDigest, identitySchema)
+    }
+
+    private fun writeV2Bookmark(
+        targetId: String,
+        kind: String,
+        recordedAtLocal: String,
+        targetDigest: String,
+        identitySchema: Int,
+    ): Boolean {
         val existing = database.v2().bookmarks().any { it.targetId == targetId }
         if (existing) {
             database.v2().deleteBookmark(targetId)
-            false
-        } else if (!acceptedIdentity(identitySchema, targetDigest)) {
-            false
-        } else {
-            database.v2().upsertBookmark(
-                dev.russiancompanion.v2.data.V2BookmarkEntity(
-                    targetId = targetId,
-                    kind = kind,
-                    createdAtLocal = recordedAtLocal,
-                    targetDigest = storedDigest(identitySchema, targetDigest),
-                    identitySchema = identitySchema,
-                ),
-            )
-            true
+            return false
         }
+        if (!acceptedIdentity(identitySchema, targetDigest)) return false
+        database.v2().upsertBookmark(
+            dev.russiancompanion.v2.data.V2BookmarkEntity(
+                targetId = targetId,
+                kind = kind,
+                createdAtLocal = recordedAtLocal,
+                targetDigest = storedDigest(identitySchema, targetDigest),
+                identitySchema = identitySchema,
+            ),
+        )
+        return true
     }
 
     fun v2AddNote(
@@ -928,7 +1044,30 @@ internal class LocalStore private constructor(
         targetDigest: String = dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY,
         identitySchema: Int = 0,
     ) = call {
-        if (!acceptedIdentity(identitySchema, targetDigest)) return@call
+        writeV2Note(targetId, text, recordedAtLocal, targetDigest, identitySchema)
+    }
+
+    internal suspend fun v2AddNoteIfCurrent(
+        capturedEpoch: Long,
+        targetId: String,
+        text: String,
+        recordedAtLocal: String,
+        targetDigest: String,
+        identitySchema: Int = dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA,
+    ): Boolean = withContext(ioDispatcher) {
+        if (!learnerMutationCurrent(capturedEpoch)) return@withContext false
+        writeV2Note(targetId, text, recordedAtLocal, targetDigest, identitySchema)
+        true
+    }
+
+    private fun writeV2Note(
+        targetId: String,
+        text: String,
+        recordedAtLocal: String,
+        targetDigest: String,
+        identitySchema: Int,
+    ) {
+        if (!acceptedIdentity(identitySchema, targetDigest)) return
         database.v2().insertNote(
             dev.russiancompanion.v2.data.V2NoteEntity(
                 id = "$targetId:$recordedAtLocal",
@@ -949,7 +1088,30 @@ internal class LocalStore private constructor(
         targetDigest: String = dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY,
         identitySchema: Int = 0,
     ) = call {
-        if (!acceptedIdentity(identitySchema, targetDigest)) return@call
+        writeV2TutorItem(targetId, note, recordedAtLocal, targetDigest, identitySchema)
+    }
+
+    internal suspend fun v2AddTutorItemIfCurrent(
+        capturedEpoch: Long,
+        targetId: String,
+        note: String,
+        recordedAtLocal: String,
+        targetDigest: String,
+        identitySchema: Int = dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA,
+    ): Boolean = withContext(ioDispatcher) {
+        if (!learnerMutationCurrent(capturedEpoch)) return@withContext false
+        writeV2TutorItem(targetId, note, recordedAtLocal, targetDigest, identitySchema)
+        true
+    }
+
+    private fun writeV2TutorItem(
+        targetId: String,
+        note: String,
+        recordedAtLocal: String,
+        targetDigest: String,
+        identitySchema: Int,
+    ) {
+        if (!acceptedIdentity(identitySchema, targetDigest)) return
         database.v2().insertTutorItem(
             dev.russiancompanion.v2.data.V2TutorItemEntity(
                 id = "$targetId:$recordedAtLocal",
@@ -991,6 +1153,7 @@ internal class LocalStore private constructor(
         objectiveId = objectiveId,
         unitNumber = unitNumber,
         stepId = stepId,
+        acceptedOrder = acceptedOrder,
     )
 
     private fun dev.russiancompanion.v2.data.V2BookmarkEntity.toView() = dev.russiancompanion.v2.curriculum.GovernedBookmarkView(
@@ -1020,6 +1183,20 @@ internal class LocalStore private constructor(
     )
 
     fun v2AttestBook(unitNumber: Int, recordedAtLocal: String) = call {
+        writeV2BookAttestation(unitNumber, recordedAtLocal)
+    }
+
+    internal suspend fun v2AttestBookIfCurrent(
+        capturedEpoch: Long,
+        unitNumber: Int,
+        recordedAtLocal: String,
+    ): Boolean = withContext(ioDispatcher) {
+        if (!learnerMutationCurrent(capturedEpoch)) return@withContext false
+        writeV2BookAttestation(unitNumber, recordedAtLocal)
+        true
+    }
+
+    private fun writeV2BookAttestation(unitNumber: Int, recordedAtLocal: String) {
         database.v2().upsertBookAttestation(
             dev.russiancompanion.v2.data.V2BookAttestationEntity(unitNumber, recordedAtLocal),
         )
@@ -1046,7 +1223,26 @@ internal class LocalStore private constructor(
         nextSessionId: String?,
         nextResumeDigest: String,
         nextResumeSchema: Int,
-    ) = withContext(ioDispatcher) {
+    ) = v2AdvanceUnitIfCurrentAsync(
+        learnerMutationEpoch(),
+        unitNumber,
+        recordedAtLocal,
+        nextUnitNumber,
+        nextSessionId,
+        nextResumeDigest,
+        nextResumeSchema,
+    )
+
+    internal suspend fun v2AdvanceUnitIfCurrentAsync(
+        capturedEpoch: Long,
+        unitNumber: Int,
+        recordedAtLocal: String,
+        nextUnitNumber: Int,
+        nextSessionId: String?,
+        nextResumeDigest: String,
+        nextResumeSchema: Int,
+    ): Boolean = withContext(ioDispatcher) {
+        if (!learnerMutationCurrent(capturedEpoch)) return@withContext false
         val digestGoverned = nextResumeDigest.length == 64 &&
             nextResumeDigest.all { it in '0'..'9' || it in 'a'..'f' }
         if (nextResumeSchema != dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA || !digestGoverned) {
@@ -1071,6 +1267,7 @@ internal class LocalStore private constructor(
                 ),
             )
         }
+        true
     }
 
     fun v2Attempts(): List<dev.russiancompanion.v2.data.V2AttemptEntity> = call { database.v2().attempts() }
@@ -1130,6 +1327,8 @@ internal class LocalStore private constructor(
         recordings: List<StagedRecording>,
     ): GovernedReplaceOutcome = call {
         if (!referencesResolve(document)) return@call GovernedReplaceOutcome.UNCHANGED
+        V2BackupFaults.replacementEntered?.countDown()
+        V2BackupFaults.holdDuringReplacement?.await()
         if (V2BackupFaults.failBeforeMutation) return@call GovernedReplaceOutcome.UNCHANGED
         val root = recordingRoot
         if (root == null) {
@@ -1377,6 +1576,7 @@ internal class LocalStore private constructor(
                     objectiveId = it.objectiveId,
                     unitNumber = it.unitNumber,
                     stepId = it.stepId,
+                    acceptedOrder = it.acceptedOrder,
                 ),
             )
         }
@@ -1782,6 +1982,7 @@ internal class LocalStore private constructor(
                     objectiveId = it.objectiveId,
                     unitNumber = it.unitNumber,
                     stepId = it.stepId,
+                    acceptedOrder = it.acceptedOrder,
                 )
             },
             bookmarks = curriculum.bookmarks().map {
@@ -1902,7 +2103,7 @@ internal class LocalStore private constructor(
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, DATABASE_NAME)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9)
                 .build()
             val store = LocalStore(database, File(appContext.filesDir, "recordings"))
             store.applySeed(readSeed(appContext))
@@ -1920,7 +2121,7 @@ internal class LocalStore private constructor(
         fun openNamed(context: Context, name: String): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, name)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9)
                 .build()
             val store = LocalStore(database, File(appContext.filesDir, "recordings-$name"))
             store.applySeed(null)

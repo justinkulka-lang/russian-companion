@@ -63,7 +63,7 @@ Narrow checks, not comprehensive inspection: `itemsMarkedContainsGeneratedRussia
 | internetPermissionDeclaredInMainManifest | ABSENT |
 | internetPermissionDeclaredInMergedDebugManifest | ABSENT |
 | packContentReviewDigest | ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1 |
-| repositorySourceDigest | 5c86599c70db3ef8ea627deef234b82d891792c7f1cd43d22d792401ab0fba67 |
+| repositorySourceDigest | 81dab22ba0e26d488045a656e786833338464c2e4e266f392cbc3ad0b2ec3f78 |
 | candidateFrozen | false |
 | candidateArtifact | NOT_RECORDED |
 | candidateSourceCommit | null |

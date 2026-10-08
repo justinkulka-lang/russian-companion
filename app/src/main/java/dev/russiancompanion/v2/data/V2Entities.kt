@@ -68,6 +68,8 @@ internal data class V2AttemptEntity(
     @ColumnInfo(defaultValue = "''") val objectiveId: String = "",
     @ColumnInfo(defaultValue = "0") val unitNumber: Int = 0,
     @ColumnInfo(defaultValue = "''") val stepId: String = "",
+    /** 0 means this row predates durable write order. Do not infer order from the clock. */
+    @ColumnInfo(defaultValue = "0") val acceptedOrder: Long = 0,
 )
 
 @Entity(tableName = "v2_bookmarks")

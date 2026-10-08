@@ -242,6 +242,17 @@ internal val MIGRATION_7_8 = object : Migration(7, 8) {
     }
 }
 
+/**
+ * Records accepted-write order separately from wall-clock time. Existing rows
+ * stay at 0. That value means the insertion order is unknown; it is not a
+ * timestamp sort and it is not rewritten into a guessed sequence.
+ */
+internal val MIGRATION_8_9 = object : Migration(8, 9) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL("ALTER TABLE `v2_attempts` ADD COLUMN `acceptedOrder` INTEGER NOT NULL DEFAULT 0")
+    }
+}
+
 private data class LegacyEvidenceRow(
     val id: String,
     val gateId: String,

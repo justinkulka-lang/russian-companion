@@ -169,7 +169,11 @@ Exact on-screen labels are quoted.
    media library, social, or tutor-scheduling entry.
    Screenshots: `AT-001-03-lesson-1.png`, `AT-001-04-lesson-30.png`.
 6. Confirm the tabs are `Today`, `Course`, `Practice`, `Reference`,
-   and `Progress`. Optional drills must **not** appear. Listening,
+   and `Progress`. The obsolete label `Optional drills` must **not**
+   appear. `Practice` does show optional practice cards (`Alphabet recognition`,
+   `Reading Lab`, `Grammar Lab`, `Vocabulary and forms`, and `Mixed review`).
+   Those cards are optional and must say that
+   optional practice does not complete a required check. Listening,
    pronunciation, and handwriting must not be offered as scored work.
 7. `Today` must show `Unit 1` and a `Continue` action.
    Screenshot: `AT-001-05-home.png`.
@@ -247,7 +251,7 @@ and is not advancement evidence.
 4. Confirm there is no fluency, ILR, C1, or certified-proficiency claim.
    Screenshot: `AT-030-04-progress.png`.
 
-#### B7. Local backup
+#### B7. Local backup and mandatory saved-work retrieval
 
 1. On Progress, tap `Back up or restore`.
 2. Confirm `Backup and restore stay on this device. Nothing is uploaded.`
@@ -259,6 +263,49 @@ and is not advancement evidence.
    require `activity-logs.csv`, `gate-evidence.csv`, or a pronunciation
    recording. This candidate does not export a v1 lesson-cycle archive.
    Screenshot: `AT-030-05-export-completed.png`.
+8. Open `Progress` and the saved-work list. Retrieval is mandatory for
+   every record this run created: the resume position, every local
+   note, every tutor question, and every bookmark. Confirm each one is
+   readable in full. Notes and tutor questions must stay labeled not
+   scored. Do not skip this step because a record is optional.
+
+#### B7a. Restore replacement, rejection, cancellation, and recovery
+
+Still on the device, still in airplane mode. This is a physical
+procedure. An automated unit test does not satisfy it.
+
+1. Save a distinguishable local note, then create a second backup.
+2. Restore the earlier backup and confirm replacement: the later note
+   is gone and the earlier records are present. Restore replaces the learner records.
+   It does not merge them.
+3. Attempt to restore a file that is not a valid backup. Confirm the
+   app reports failure and the current learner records are unchanged.
+4. Start restore, reach confirmation, and cancel before replacement.
+   Confirm the learner records are unchanged and disposable incoming
+   staging is not left behind.
+5. Do not treat a message that records are unchanged as true after a
+   replacement has already committed. If replacement finishes and only
+   the appearance preference fails, the learner records were still
+   replaced.
+6. If the app reports that recovery is required, keep the recovery
+   journal and do not delete `rollback/` or an in-progress replacement
+   snapshot. A failed confirmation before replacement may remove only
+   disposable incoming staging.
+
+#### B7b. Legacy, migration, and digest invalidation
+
+1. On `Progress`, confirm the historical line begins
+   `In-app checks marked correct:` and states that the count includes
+   historical rows and is not current prescribed credit. That tally is
+   not governed prescribed credit.
+2. A saved position or completion that does not match the current
+   lesson must not be opened or scored as current work.
+3. Rows whose identity schema is not the current schema, including
+   older step identities and `UNRECOVERABLE` digests, do not count as
+   the current step or the current answer. Do not invent an insertion
+   order for attempts that have no recorded accepted-write order.
+4. Database migration and digest checks in automated tests are not
+   this physical procedure. Record them only as automated evidence.
 
 AT-030 expected result: Today, Course, a closed-response check, book
 self-attestation, Progress, and a local backup can be exercised
@@ -284,28 +331,37 @@ AT-002 without those checks.
 
 Still in airplane mode, still on the same install.
 
-1. Home → `Attributions and licenses`.
+1. `Progress` → `Settings, appearance, and attributions` →
+   `Attributions and licenses`. There is no Home attributions entry.
 2. Confirm the catalog notice is readable offline, including
    `This app does not own the packaged Russian audio or stress-marked text.`
-3. Confirm `Share-alike confirmation: Confirmed` on a source record
-   (`License: …` row). The public-release block
+3. On a source record, confirm the displayed label is `Share-alike:`
+   followed by that source's treatment, next to a `License:` row.
+   The exact sentence `Share-alike confirmation: Confirmed` is not a
+   displayed label. The packaged catalog notice records `CONFIRMED`.
+   The public-release block
    `Public release is blocked until share-alike confirmation is recorded.`
    must **not** appear (confirmation is already recorded; this is still
    not a public-release approval).
 4. Confirm packaged license texts include `CC BY-SA 4.0`,
    `CC BY 3.0 US`, and `CC BY 2.0 FR`.
    Screenshot: `AT-004-01-attributions.png`.
-5. Confirm `Optional drills` does not appear. Listening, pronunciation,
-   and handwriting remain unavailable or explicitly unscored.
+5. Confirm the obsolete label `Optional drills` does not appear.
+   Optional practice cards may appear and must not complete a required
+   check. Listening, pronunciation, and handwriting remain unavailable
+   or explicitly unscored.
 6. On `Progress`, confirm the unit and book self-attestation from this
-   run are still visible.
-7. Process restart:
+   run are still visible, and repeat the mandatory saved-work retrieval
+   from B7.
+7. Process restart, which is not a physical reboot:
    - Settings → Apps → Russian Companion → Force stop.
    - Confirm airplane mode is still on.
    - Relaunch Russian Companion.
    - Confirm `Today` still shows Unit 1, the saved step or progress,
-     and `Progress` still shows the book self-attestation.
+     and `Progress` still shows the book self-attestation and the
+     saved notes and tutor questions.
    Screenshot: `AT-004-02-after-force-stop.png`.
+   A passing force-stop does not satisfy AT-020.
 
 AT-004 expected result: every shipped capability completed without
 sign-in, runtime download, streaming, remote API, cloud, sync, runtime
@@ -326,6 +382,10 @@ Before reboot, write these values onto
 - Screenshot set listed above
 
 ### E. AT-020 / MA-073 physical reboot
+
+Physical reboot is a power-cycle of the device. It is not the
+force-stop process restart in AT-004, not an in-memory screen reload,
+and not closing and reopening the database inside an automated test.
 
 1. Confirm airplane mode is still on (Wi-Fi still off).
 2. Power menu → Restart. Do not connect to a network after boot.
@@ -360,6 +420,7 @@ Do not stop at one attribution screenshot.
    provenance, redistribution basis, license, modification status, and
    the approved share-alike treatment.
 3. On the device, still in airplane mode, open
+   `Progress` → `Settings, appearance, and attributions` →
    `Attributions and licenses`. Compare source rows, catalog notice,
    and packaged license texts with the inventory. Screenshot
    `AT-008-01-attributions-inventory.png` is supporting, not the
@@ -413,7 +474,11 @@ and AT-030:
 - `FAIL` — any expected result failed; describe the first failure
 
 A skipped, partial, or emulator run is not a pass. Automated unit
-tests are not a pass for these procedures.
+tests, including migration, digest, backup, and restart tests, are
+automated evidence only. They are not physical evidence and they are
+not a pass for these procedures. In-memory reload, database reopen,
+process restart, and physical reboot are different events. Only the
+procedure that names one of them can satisfy it.
 
 ## 6. Evidence filenames and repository destinations
 
@@ -458,14 +523,17 @@ release/evidence/exports/AT-020-post-reboot-export.zip
 ```
 
 Each `release/evidence/AT-00N.json` must be a procedure-evidence
-document (`schemaVersion` 2) that records `PASS`, the candidate
-commit, the APK SHA-256, the current source digest from
-`release/acceptance/candidate.json`, `versionName`, `versionCode`,
-`applicationId`, the execution timestamp, the device for physical
-procedures, and referenced artifact hashes. The release gate rejects
-empty files, non-JSON text, paths outside `release/evidence/`,
-boolean flags, and evidence bound to a previous source digest or
-version identity.
+JSON document with `schemaVersion` 2. Do not rename a Markdown form
+or template to `.json`, and do not paste the Markdown into that file.
+Write a JSON object whose fields are `schemaVersion` (the number 2),
+`procedure`, `result` (`PASS` or `FAIL` from the physical run),
+`candidateCommit`, `apkSha256`, `sourceDigest` (the current value in
+`release/acceptance/candidate.json`), `versionName`, `versionCode`,
+`applicationId`, `executedAt`, `deviceModel` for physical procedures,
+and `artifactHashes`. The release gate rejects empty files, non-JSON
+text, paths outside `release/evidence/`, boolean flags, and evidence
+bound to a previous source digest or version identity. Working forms
+in this package stay `NOT_EXECUTED`.
 
 Only after those files exist from a real run may
 `release/retained-evidence.json` change a record from `MISSING` to

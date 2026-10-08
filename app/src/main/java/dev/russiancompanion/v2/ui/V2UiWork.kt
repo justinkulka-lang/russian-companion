@@ -11,5 +11,16 @@ internal object V2UiWork {
     @Volatile
     var blockForTests: Boolean? = null
 
+    @Volatile
+    var reconstructionDelay: (suspend () -> Unit)? = null
+
+    @Volatile
+    var reconstructionEnteredForTests: java.util.concurrent.CountDownLatch? = null
+
     fun blocking(): Boolean = blockForTests ?: isRobolectricRuntime()
+
+    internal suspend fun awaitReconstruction() {
+        reconstructionEnteredForTests?.countDown()
+        reconstructionDelay?.invoke()
+    }
 }

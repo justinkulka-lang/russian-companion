@@ -98,6 +98,8 @@ class FullAuditCorrectionTest {
     @After
     fun tearDown() {
         V2UiWork.blockForTests = null
+        V2UiWork.reconstructionDelay = null
+        V2UiWork.reconstructionEnteredForTests = null
         V2BackupFaults.reset()
         lastGovernedIdentityThreadForTests = null
         LocalStore.holdNextLearnerRefreshForTests?.countDown()
@@ -526,6 +528,7 @@ class FullAuditCorrectionTest {
         store.holdGovernedAttemptForTests = hold
         remember(store, step.id)
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
+        awaitTag("v2-continue")
         compose.onNodeWithTag("v2-continue").performClick()
         compose.onNodeWithTag("v2-option-${item.id}-$first").performScrollTo().performClick()
         compose.onNodeWithTag("v2-option-${item.id}-$second").performScrollTo().assertIsNotEnabled()

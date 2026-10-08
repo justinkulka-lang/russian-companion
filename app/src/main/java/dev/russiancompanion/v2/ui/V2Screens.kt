@@ -49,6 +49,9 @@ import dev.russiancompanion.v2.curriculum.practiceOffers
 import dev.russiancompanion.v2.curriculum.readinessLabel
 import dev.russiancompanion.v2.curriculum.reviewedGuidedPractice
 import dev.russiancompanion.v2.curriculum.step
+import dev.russiancompanion.v2.curriculum.V2PackIdentityIndex
+import dev.russiancompanion.v2.curriculum.lastGovernedIdentityThreadForTests
+import dev.russiancompanion.v2.curriculum.lastGovernedSnapshotLabelForTests
 import dev.russiancompanion.v2.curriculum.recordedSessionCount
 import dev.russiancompanion.v2.curriculum.reference
 import dev.russiancompanion.v2.curriculum.searchReferences
@@ -58,6 +61,39 @@ import dev.russiancompanion.v2.curriculum.topicLabel
 import dev.russiancompanion.v2.curriculum.unit
 import dev.russiancompanion.v2.curriculum.unitState
 import dev.russiancompanion.v2.curriculum.visibleReferences
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+
+@Composable
+internal fun <T> rememberGoverned(
+    pack: V2CurriculumPack,
+    learner: V2LearnerView,
+    label: String = "",
+    compute: () -> T,
+): T? {
+    val inline = V2UiWork.blocking()
+    val inlineValue = remember(pack, learner, inline, label) {
+        if (inline) {
+            V2PackIdentityIndex.warm(pack)
+            compute()
+        } else {
+            null
+        }
+    }
+    // Keep the last worker snapshot so a learner refresh does not blank the screen.
+    var published by remember { mutableStateOf<T?>(null) }
+    LaunchedEffect(pack, learner, inline, label) {
+        if (inline) return@LaunchedEffect
+        val computed = withContext(Dispatchers.Default) {
+            lastGovernedIdentityThreadForTests = Thread.currentThread()
+            lastGovernedSnapshotLabelForTests = label
+            V2PackIdentityIndex.warm(pack)
+            compute()
+        }
+        published = computed
+    }
+    return if (inline) inlineValue else published
+}
 
 @Composable
 internal fun V2LocalDataScreen(message: String, onRetry: () -> Unit) {
@@ -196,9 +232,28 @@ internal fun V2TodayScreen(
     onSavedWork: () -> Unit,
 ) {
     val unit = pack.unit(learner.currentUnitNumber)
-    val objective = unit?.let { currentObjective(pack, it, learner) }
-    val today = unit?.let { todaysSession(pack, it, learner) }
-    val recorded = unit?.let { recordedSessionCount(pack, it, learner) } ?: 0
+    val governed = rememberGoverned(pack, learner, label = "today") {
+        val current = unit
+        Triple(
+            current?.let { currentObjective(pack, it, learner) },
+            current?.let { todaysSession(pack, it, learner) },
+            current?.let { recordedSessionCount(pack, it, learner) } ?: 0,
+        )
+    }
+    val doneSteps = rememberGoverned(pack, learner, label = "today-plan") {
+        unit?.sessions?.associate { session ->
+            session.id to session.steps.all { completedStepCounts(pack, learner, it.id) }
+        } ?: emptyMap()
+    }
+    if (governed == null) {
+        V2Scaffold(title = "Today", tab = V2Tab.TODAY, onTab = onTab) {
+            Text("Preparing today's plan")
+        }
+        return
+    }
+    val objective = governed.first
+    val today = governed.second
+    val recorded = governed.third
     var showPlan by remember { mutableStateOf(false) }
     V2Scaffold(
         title = "Today",
@@ -241,7 +296,7 @@ internal fun V2TodayScreen(
             )
             if (showPlan) {
                 unit.sessions.forEach { session ->
-                    val done = session.steps.all { completedStepCounts(pack, learner, it.id) }
+                    val done = doneSteps?.get(session.id) == true
                     V2Status("${session.title} — ${if (done) "Recorded" else "Not finished"} · ${session.estimatedMinutes} min")
                 }
             }
@@ -256,6 +311,11 @@ internal fun V2CourseScreen(
     onTab: (V2Tab) -> Unit,
     onOpenUnit: (Int) -> Unit,
 ) {
+    val recordedByUnit = rememberGoverned(pack, learner, label = "course") {
+        pack.units.associate { candidate ->
+            candidate.number to recordedSessionCount(pack, candidate, learner)
+        }
+    }
     V2LazyScaffold(title = "Course", tab = V2Tab.COURSE, onTab = onTab) {
         item {
             Text(
@@ -272,10 +332,10 @@ internal fun V2CourseScreen(
                 V2UnitState.LOCKED -> "Locked"
                 V2UnitState.NOT_YET_INSTALLED -> "Not yet installed"
             }
-            val progress = if (unit.sessions.isEmpty()) {
+            val progress = if (unit.sessions.isEmpty() || recordedByUnit == null) {
                 installLabel(unit)
             } else {
-                "${recordedSessionCount(pack, unit, learner)}/${unit.sessions.size}"
+                "${recordedByUnit[unit.number] ?: 0}/${unit.sessions.size}"
             }
             V2UnitRow(
                 number = unit.number,
@@ -301,6 +361,7 @@ internal fun V2UnitScreen(
 ) {
     val unit = pack.unit(unitNumber) ?: return
     val state = unitState(pack, unit, learner)
+    val decision = rememberGoverned(pack, learner, label = "unit") { advancementDecision(pack, unit, learner) }
     V2Scaffold(title = "Unit ${unit.number}", tab = V2Tab.COURSE, onTab = onTab, onBack = onBack) {
         Text(
             unit.topicLabel(),
@@ -353,15 +414,18 @@ internal fun V2UnitScreen(
                 modifier = Modifier.semantics { testTag = "v2-advancement-rule" },
             )
         }
-        val decision = advancementDecision(pack, unit, learner)
-        V2Status(
-            if (decision.allowed) {
-                "Advancement requirements are recorded. This is not proficiency."
-            } else {
-                "Remaining: ${decision.remaining.joinToString("; ")}"
-            },
-        )
-        V2PrimaryButton("Advance if requirements are met", { onAdvance(unit.number) }, enabled = decision.allowed, tag = "v2-advance")
+        if (decision == null) {
+            V2Status("Preparing advancement")
+        } else {
+            V2Status(
+                if (decision.allowed) {
+                    "Advancement requirements are recorded. This is not proficiency."
+                } else {
+                    "Remaining: ${decision.remaining.joinToString("; ")}"
+                },
+            )
+            V2PrimaryButton("Advance if requirements are met", { onAdvance(unit.number) }, enabled = decision.allowed, tag = "v2-advance")
+        }
     }
 }
 
@@ -695,6 +759,11 @@ internal fun V2ProgressScreen(
     onBackup: () -> Unit,
 ) {
     val unit = pack.unit(learner.currentUnitNumber)
+    val objectiveLines = rememberGoverned(pack, learner, label = "progress") {
+        unit?.objectives.orEmpty().map { objective ->
+            "${objective.title}: ${objectiveState(objective, learner, pack).name.replace('_', ' ').lowercase()}"
+        }
+    }
     V2Scaffold(title = "Progress", tab = V2Tab.PROGRESS, onTab = onTab) {
         Text(
             "Recorded activity and curriculum state. This is not fluency, mastery, or proficiency.",
@@ -703,9 +772,11 @@ internal fun V2ProgressScreen(
         V2Status("Current unit: ${unit?.title ?: "Unavailable"}")
         V2Status("Completed units: ${learner.completedUnitNumbers.sorted().joinToString().ifBlank { "none" }}")
         V2Status("Book self-attestations: ${learner.bookAttestedUnits.sorted().joinToString().ifBlank { "none" }}")
-        V2Status("In-app checks marked correct: ${learner.correctItemIds.size}")
-        unit?.objectives.orEmpty().forEach { objective ->
-            V2Status("${objective.title}: ${objectiveState(objective, learner, pack).name.replace('_', ' ').lowercase()}")
+        V2Status("In-app checks marked correct: ${learner.correctItemIds.size}. This count includes historical rows and is not current prescribed credit.")
+        if (objectiveLines == null) {
+            V2Status("Preparing objective state")
+        } else {
+            objectiveLines.forEach { line -> V2Status(line) }
         }
         Text("A local backup is saved only after you start it and it finishes. The app does not claim these records are protected unless that backup succeeded.")
         V2SecondaryButton("Back up or restore", onBackup, tag = "v2-open-backup")

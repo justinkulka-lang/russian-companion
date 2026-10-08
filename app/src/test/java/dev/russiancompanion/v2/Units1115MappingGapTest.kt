@@ -129,7 +129,11 @@ class Units1115MappingGapTest {
         val pack = pack()
         val installed = pack.unit(11)!!.copy(installState = "INSTALLED", readiness = "INSTALLABLE", mappingStatus = "APPROVED")
         val installErrors = V2Validator.validate(replaceUnit(pack, installed)).errors
-        assertTrue(installErrors.joinToString("\n"), installErrors.any { it.contains("Only Units 1-2 may be installed") || it.contains("NOT_PREPARED") || it.contains("APPROVED") })
+        val shown = installErrors.joinToString("\n")
+        assertTrue(shown, installErrors.any { it.contains("review chain is not OWNER_ACCEPTED") })
+        assertTrue(shown, installErrors.any { it.contains("mapping record does not resolve") })
+        assertTrue(shown, installErrors.any { it.contains("requires approved review and mapping") })
+        assertFalse(installErrors.any { it.contains("Only Units 1-2 may be installed") })
         val fakeMapping = V2OwnedEditionMapping(
             id = "map-fake-unit-11",
             unitNumber = 11,

@@ -227,6 +227,7 @@ class RuntimeCorrectionTest {
         compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertIsDisplayed()
         compose.onNodeWithTag("v2-note-draft").performScrollTo().performTextInput("letter draft")
         compose.onNodeWithTag("v2-back").performClick()
+        awaitTag("v2-continue")
         compose.onNodeWithTag("v2-continue").performClick()
         compose.onNodeWithText("letter draft").performScrollTo().assertIsDisplayed()
         compose.onNodeWithTag("v2-option-${item.id}-${wrongOption(item)}").performScrollTo().assertIsSelected()
@@ -240,6 +241,7 @@ class RuntimeCorrectionTest {
         compose.onNodeWithText("Review advancement").assertIsDisplayed()
         compose.onNodeWithTag("v2-continue").performClick()
         compose.onNodeWithTag("v2-advancement-rule").performScrollTo().assertIsDisplayed()
+        awaitTag("v2-advance")
         compose.onNodeWithTag("v2-advance").performScrollTo().assertIsDisplayed()
     }
 
@@ -257,7 +259,7 @@ class RuntimeCorrectionTest {
         persistence.gateAttempts = true
         choose(item, wrong = true)
         choose(item, wrong = true)
-        assertTrue(entered.await(5, TimeUnit.SECONDS))
+        awaitEntered(entered)
         awaitText("Saving")
         assertDoesNotExist("v2-item-feedback-${item.id}")
         compose.onNodeWithTag("v2-note-draft").performScrollTo().performTextInput("still typing")

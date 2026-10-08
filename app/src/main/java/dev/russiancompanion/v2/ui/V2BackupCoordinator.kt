@@ -29,9 +29,12 @@ import dev.russiancompanion.v2.backup.restoreStoreBackup
 import dev.russiancompanion.v2.backup.writeStoreBackup
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.isActive
+import kotlinx.coroutines.job
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.File
@@ -83,6 +86,7 @@ internal class V2BackupCoordinator(
         private set
 
     init {
+        sweepOrphanIncoming(recoveryDir, null)
         scope.launch {
             appearanceStore.preference.collect { appearanceName = it.name }
         }
@@ -150,14 +154,51 @@ internal class V2BackupCoordinator(
         if (phase != V2BackupPhase.PREPARING || !running.get()) return
         phase = V2BackupPhase.VALIDATING
         scope.launch {
-            val opened = try {
-                withContext(Dispatchers.IO) {
+            try {
+                val opened = withContext(Dispatchers.IO) {
                     if (cancelRequested) return@withContext null
                     val stream = openInput() ?: return@withContext null
                     val staging = File(recoveryDir, "incoming-${System.nanoTime()}").apply { mkdirs() }
                     disposableStaging = staging
                     stream.use { input ->
                         readGovernedBackup(input, applicationId, packId, packVersion, staging)
+                    }
+                }
+                if (!coroutineContext.isActive || cancelRequested || opened == null) {
+                    discardDisposableStaging()
+                    finish(false, RESTORE_FAILED, RESTORE_CANCELLED, RESTORE_DONE)
+                    return@launch
+                }
+                when (opened) {
+                    is dev.russiancompanion.v2.backup.BackupReadResult.Rejected -> {
+                        validated = null
+                        preview = null
+                        discardDisposableStaging()
+                        message = RESTORE_FAILED
+                        phase = V2BackupPhase.FAILED
+                        running.set(false)
+                    }
+                    is dev.russiancompanion.v2.backup.BackupReadResult.Valid -> {
+                        if (!coroutineContext.isActive || cancelRequested) {
+                            discardDisposableStaging()
+                            finish(false, RESTORE_FAILED, RESTORE_CANCELLED, RESTORE_DONE)
+                            return@launch
+                        }
+                        val fault = dev.russiancompanion.v2.backup.V2BackupFaults.throwOnCurrentDocument
+                        if (fault != null) {
+                            dev.russiancompanion.v2.backup.V2BackupFaults.throwOnCurrentDocument = null
+                            throw fault
+                        }
+                        val current = withContext(Dispatchers.IO) { store.governedLearnerDocument() }
+                        if (!coroutineContext.isActive || cancelRequested) {
+                            discardDisposableStaging()
+                            finish(false, RESTORE_FAILED, RESTORE_CANCELLED, RESTORE_DONE)
+                            return@launch
+                        }
+                        validated = opened.backup
+                        preview = restorePreview(current, opened.backup.document)
+                        message = dev.russiancompanion.v2.backup.REPLACE_EXPLANATION
+                        phase = V2BackupPhase.AWAITING_CONFIRMATION
                     }
                 }
             } catch (cancelled: CancellationException) {
@@ -167,29 +208,12 @@ internal class V2BackupCoordinator(
                 running.set(false)
                 throw cancelled
             } catch (_: Exception) {
-                null
-            }
-            if (cancelRequested || opened == null) {
+                validated = null
+                preview = null
                 discardDisposableStaging()
-                finish(false, RESTORE_FAILED, RESTORE_CANCELLED, RESTORE_DONE)
-                return@launch
-            }
-            when (opened) {
-                is dev.russiancompanion.v2.backup.BackupReadResult.Rejected -> {
-                    validated = null
-                    preview = null
-                    discardDisposableStaging()
-                    message = RESTORE_FAILED
-                    phase = V2BackupPhase.FAILED
-                    running.set(false)
-                }
-                is dev.russiancompanion.v2.backup.BackupReadResult.Valid -> {
-                    val current = withContext(Dispatchers.IO) { store.governedLearnerDocument() }
-                    validated = opened.backup
-                    preview = restorePreview(current, opened.backup.document)
-                    message = dev.russiancompanion.v2.backup.REPLACE_EXPLANATION
-                    phase = V2BackupPhase.AWAITING_CONFIRMATION
-                }
+                message = RESTORE_FAILED
+                phase = V2BackupPhase.FAILED
+                running.set(false)
             }
         }
     }
@@ -200,61 +224,83 @@ internal class V2BackupCoordinator(
         phase = V2BackupPhase.RESTORING
         val savedAppearance = appearanceName
         scope.launch {
-            val started = !cancelRequested
-            var touchedStore = false
-            var cancelledRestore: CancellationException? = null
-            val outcome = if (!started) {
-                null
-            } else {
-                try {
-                    touchedStore = true
-                    withContext(Dispatchers.IO) {
-                        restoreStoreBackup(store, accepted, File(recoveryDir, "rollback"))
+            val parent = coroutineContext.job
+            var openedBoundary = false
+            var outcome: GovernedReplaceOutcome? = null
+            var failed: Exception? = null
+            try {
+                if (!parent.isActive || cancelRequested) {
+                    outcome = null
+                } else {
+                    try {
+                        dev.russiancompanion.v2.backup.V2BackupFaults.beforeMutationHold?.await()
+                    } catch (cancelled: CancellationException) {
+                        throw cancelled
                     }
-                } catch (cancelled: CancellationException) {
-                    cancelledRestore = cancelled
-                    null
-                } catch (_: Exception) {
-                    null
+                    if (!parent.isActive || cancelRequested) {
+                        outcome = null
+                    } else {
+                        outcome = withContext(NonCancellable) {
+                            withContext(store.ioDispatcher) {
+                                store.openLearnerReplacement()
+                                openedBoundary = true
+                            }
+                            withContext(Dispatchers.IO) {
+                                restoreStoreBackup(store, accepted, File(recoveryDir, "rollback"))
+                            }
+                        }
+                        dev.russiancompanion.v2.backup.V2BackupFaults.holdAfterCommit?.await()
+                    }
                 }
+            } catch (cancelled: CancellationException) {
+                failed = cancelled
+            } catch (error: Exception) {
+                failed = error
             }
-            validated = null
-            preview = null
-            discardDisposableStaging()
-            when {
-                cancelledRestore != null -> {
-                    restoreAppearance(savedAppearance)
-                    message = RESTORE_CANCELLED
-                    phase = V2BackupPhase.CANCELLED
-                    if (touchedStore) onRestored()
+            withContext(NonCancellable) {
+                validated = null
+                preview = null
+                discardDisposableStaging()
+                if (openedBoundary) {
+                    withContext(store.ioDispatcher) { store.closeLearnerReplacement() }
                 }
-                !started -> {
-                    message = RESTORE_CANCELLED
-                    phase = V2BackupPhase.CANCELLED
-                    restoreAppearance(savedAppearance)
+                val committed = outcome == GovernedReplaceOutcome.REPLACED
+                when {
+                    committed -> {
+                        val appearanceSaved = persistAppearance(appearancePreferenceFromStored(accepted.manifest.appearance))
+                        message = if (appearanceSaved) RESTORE_DONE else dev.russiancompanion.v2.backup.RESTORE_LEARNER_REPLACED_APPEARANCE_FAILED
+                        phase = V2BackupPhase.COMPLETED
+                        runCatching { onRestored() }
+                    }
+                    outcome == GovernedReplaceOutcome.RECOVERY_REQUIRED -> {
+                        persistAppearance(appearancePreferenceFromStored(savedAppearance))
+                        message = RESTORE_RECOVERY_REQUIRED
+                        phase = V2BackupPhase.FAILED
+                        runCatching { onRestored() }
+                    }
+                    failed is CancellationException || !parent.isActive || cancelRequested -> {
+                        persistAppearance(appearancePreferenceFromStored(savedAppearance))
+                        message = RESTORE_CANCELLED
+                        phase = V2BackupPhase.CANCELLED
+                        if (openedBoundary) runCatching { onRestored() }
+                    }
+                    else -> {
+                        persistAppearance(appearancePreferenceFromStored(savedAppearance))
+                        message = RESTORE_FAILED
+                        phase = V2BackupPhase.FAILED
+                        if (openedBoundary) runCatching { onRestored() }
+                    }
                 }
-                outcome == GovernedReplaceOutcome.REPLACED -> {
-                    appearanceStore.set(appearancePreferenceFromStored(accepted.manifest.appearance))
-                    message = RESTORE_DONE
-                    phase = V2BackupPhase.COMPLETED
-                    onRestored()
-                }
-                outcome == GovernedReplaceOutcome.RECOVERY_REQUIRED -> {
-                    restoreAppearance(savedAppearance)
-                    message = RESTORE_RECOVERY_REQUIRED
-                    phase = V2BackupPhase.FAILED
-                    if (touchedStore) onRestored()
-                }
-                else -> {
-                    restoreAppearance(savedAppearance)
-                    message = if (cancelRequested) RESTORE_CANCELLED else RESTORE_FAILED
-                    phase = if (cancelRequested) V2BackupPhase.CANCELLED else V2BackupPhase.FAILED
-                    if (touchedStore) onRestored()
-                }
+                running.set(false)
             }
-            running.set(false)
-            cancelledRestore?.let { throw it }
+            if (failed is CancellationException || !parent.isActive) {
+                throw CancellationException("restore-cancelled")
+            }
         }
+    }
+
+    internal fun cancelWorkForTests() {
+        scope.cancel()
     }
 
     fun cancel() {
@@ -269,8 +315,14 @@ internal class V2BackupCoordinator(
         }
     }
 
-    private suspend fun restoreAppearance(stored: String) {
-        appearanceStore.set(appearancePreferenceFromStored(stored))
+    private suspend fun persistAppearance(preference: dev.russiancompanion.domain.appearance.AppearancePreference): Boolean {
+        return try {
+            appearanceStore.set(preference).isSuccess
+        } catch (_: CancellationException) {
+            false
+        } catch (_: Exception) {
+            false
+        }
     }
 
     private fun discardDisposableStaging() {
@@ -280,7 +332,12 @@ internal class V2BackupCoordinator(
 
     override fun onCleared() {
         cancelRequested = true
+        discardDisposableStaging()
         scope.cancel()
+    }
+
+    internal fun sweepOrphansForTests() {
+        sweepOrphanIncoming(recoveryDir, disposableStaging)
     }
 
     private fun finish(succeeded: Boolean, failed: String, cancelled: String, saved: String) {
@@ -326,5 +383,14 @@ internal class V2BackupCoordinator(
             val key = "v2-backup-${System.identityHashCode(store)}"
             return ViewModelProvider(activity, factory)[key, V2BackupCoordinator::class.java]
         }
+    }
+}
+
+internal fun sweepOrphanIncoming(recoveryDir: File, active: File?) {
+    if (!recoveryDir.isDirectory) return
+    recoveryDir.listFiles()?.forEach { child ->
+        if (!child.isDirectory || !child.name.startsWith("incoming-")) return@forEach
+        if (active != null && child.canonicalFile == active.canonicalFile) return@forEach
+        child.deleteRecursively()
     }
 }

@@ -705,9 +705,6 @@ internal object V2Validator {
     }
 
     private fun validateInstalled(pack: V2CurriculumPack, unit: V2Unit, repositoryRoot: File?, errors: MutableList<String>) {
-        if (unit.number !in 1..2) {
-            errors += "Only Units 1-2 may be installed in this pack"
-        }
         val installedReview = unitReview(pack, unit.number)
         val legacyApproved = installedReview?.status == "APPROVED"
         val chainAccepted = installedReview != null &&
@@ -736,10 +733,10 @@ internal object V2Validator {
         if (unit.sessions.any { session -> session.steps.any { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() } }) {
             errors += "Installed unit ${unit.number} still has unavailable required experiences"
         }
-        if (!pronunciationAudioResolves(pack, unit)) {
+        if (installationRequiresPronunciationAudio(unit.number) && !pronunciationAudioResolves(pack, unit)) {
             errors += "Installed unit ${unit.number} requires a mapped pronunciation audio record"
         }
-        if (unit.number == 2 && !handwritingAssetResolves(pack, unit)) {
+        if (installationRequiresHandwritingAsset(unit.number) && !handwritingAssetResolves(pack, unit)) {
             errors += "Installed Unit 2 requires a verified handwriting asset record"
         }
         if (!ownedEditionMappingResolves(pack, unit)) {
@@ -5075,7 +5072,12 @@ internal object V2Validator {
     internal fun activatedAuthorityVariance(unitNumber: Int): Boolean =
         unitNumber in ACTIVATED_AUTHORITY_VARIANCE_UNITS
 
-    /** This pack installs only Units 1–2, and those installed units must resolve pronunciation audio. */
+    /**
+     * Units 1 and 2 teach letter pronunciation, so an installed copy must resolve
+     * a unit-specific audio asset linked to a reachable letter. Later units do
+     * not inherit that letter-audio rule. They still need their own review,
+     * mapping, and any asset that their installed-unit checks name.
+     */
     internal fun installationRequiresPronunciationAudio(unitNumber: Int): Boolean = unitNumber in 1..2
 
     /** Installed Unit 2 is the only unit `validateInstalled` requires a handwriting asset for. */

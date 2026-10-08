@@ -85,8 +85,13 @@ internal fun V2LabScreen(
     var chosen by rememberSaveable(labId, index) { mutableStateOf<String?>(null) }
     val item = items.getOrNull(index.coerceAtMost(items.lastIndex.coerceAtLeast(0)))
     val recorded = learner.governedAttempts.orEmpty()
-        .filter { it.attemptRole == OPTIONAL_PRACTICE && it.stepId == practiceStepId(labId) && it.itemId == item?.id }
-        .lastOrNull()
+        .filter {
+            it.acceptedOrder > 0 &&
+                it.attemptRole == OPTIONAL_PRACTICE &&
+                it.stepId == practiceStepId(labId) &&
+                it.itemId == item?.id
+        }
+        .maxByOrNull { it.acceptedOrder }
     val itemId = item?.id
     val pending = itemId != null && pendingKeys.any { it.startsWith("practice:$labId:$itemId:") }
     V2Scaffold(
