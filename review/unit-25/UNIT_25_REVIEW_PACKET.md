@@ -11,12 +11,12 @@ Unit 25 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
-- Unit content-review SHA-256: 7d212ea6b97a8783d43c78cc59dc173ea9817d8825286f60fa4c7788c85bc7b7
+- Curriculum source commit: 9ccccb16f929ad4a0a08dcd371db9be4269ca4bf
+- Unit content-review SHA-256: 58e8d7f696898fb710e64b5e82b3b5f8b79d8fcda57c1942d6a385dfb197463c
 - Mapping-package SHA-256: 239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31
-- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
-- Review-package SHA-256: 97c69252f64b19cfdf0853eeb9d5dcd587c888c365213354960bb123ccce8994
-- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
+- Pack content-review SHA-256: 7e46c09bd636a00a8e966662c55402683cc597da0667b141bb508c510ab3d315
+- Review-package SHA-256: a62007abd2bb2495e36b44f4ce04f9efbe12c0df8771430df3976f10d28b6062
+- Repository source SHA-256: f40db72d03125071abdadc410ca89f5ee4c17022ba2ef835624c5eff29bf49f1
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -3564,12 +3564,12 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8f59fff8a94b9498a482a300f93c43a107b1e4ab7743456a7bc282c15606bada
+- Content hash: ac604abbc30557d3ff68674971844bc316639f09810606952446a4097678f5a4
 
 recordType=label
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
 sourceRevision=content-audit-2026-10-08
-sourceRecordId=ca-coverage:u25:notice-2125
+sourceRecordId=ca-coverage:obj-u25-book:u25:notice-2125
 originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
 Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
 shippedText=Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
@@ -3594,12 +3594,12 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 978f3d64a1f22807ba4abb7104eeabea80b2b8158739eb134e2354fb4487ae3f
+- Content hash: ed2e7f5383218a39ad4b99152bd894fcd30ede23472f2a304cb4673c569af1dc
 
 recordType=label
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
 sourceRevision=content-audit-2026-10-08
-sourceRecordId=ca-coverage:u25:notice-2125-summary
+sourceRecordId=ca-coverage:obj-u25-name-structure:u25:notice-2125-summary
 originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
 Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
 shippedText=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
@@ -3624,12 +3624,12 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 131a5dc9b47f3b0b62c0f5776f5a84bcc3ce1161b1184addd5c402eb2110795e
+- Content hash: 0112d3552b1684f0261d93f9349f16617b38931246c8849eff107e9e25480e09
 
 recordType=label
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
 sourceRevision=content-audit-2026-10-08
-sourceRecordId=ca-coverage:u25-i-courtesy-2:prompt
+sourceRecordId=ca-coverage:obj-u25-courtesy:u25-i-courtesy-2:prompt
 originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
 Choose the English description. Which address does Извини́те mark?
 shippedText=Choose the English description. Which address does Извини́те mark?

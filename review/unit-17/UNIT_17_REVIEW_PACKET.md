@@ -11,12 +11,12 @@ Unit 17 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
-- Unit content-review SHA-256: 8e9ba936c96d765441b052044af9dfa881a0f260eff16d1cfe8dade5514fc2fa
+- Curriculum source commit: 9ccccb16f929ad4a0a08dcd371db9be4269ca4bf
+- Unit content-review SHA-256: 9723c8b390ccfa95f468a337f8926133acbc155623fa8523c56e0bda2e619a6b
 - Mapping-package SHA-256: 724a3220ec28b620687871fbca1639cc8e64b58fed7fcfe8ba1a29bdf39d6328
-- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
-- Review-package SHA-256: 07bcf07ed4b210a5c9bc03fce1fc1f7426d2d080bd9dd3c4c50ea0a975a254f3
-- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
+- Pack content-review SHA-256: 7e46c09bd636a00a8e966662c55402683cc597da0667b141bb508c510ab3d315
+- Review-package SHA-256: dd67c065b8df5a57a06f7b7557b777541bd390f91ac849c7025d4c4aaddbfdec
+- Repository source SHA-256: f40db72d03125071abdadc410ca89f5ee4c17022ba2ef835624c5eff29bf49f1
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -6743,12 +6743,12 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9d009c3ac3c277d0681f201267f663c79737da97862c819ae0cb2ddd5692077a
+- Content hash: 0a883785b5da15656f6b985b96d308e7a3687568b84400da85dc92ae844265ae
 
 recordType=label
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
 sourceRevision=content-audit-2026-10-08
-sourceRecordId=ca-coverage:u17-g-calendar-date-0:prompt
+sourceRecordId=ca-coverage:obj-u17-calendar-date:u17-g-calendar-date-0:prompt
 originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
 Choose the English description. What does the abbreviation г. contribute in a date?
 shippedText=Choose the English description. What does the abbreviation г. contribute in a date?
@@ -6773,12 +6773,12 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 878d0534252d1d513468afd6f1b4fbb50c208f1faf874b864e928d7212e2a4fe
+- Content hash: 0aa518a5647ad540893e88bbfedb79ed5443bec657d75ee24e591df9ef0d0df8
 
 recordType=label
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
 sourceRevision=content-audit-2026-10-08
-sourceRecordId=ca-coverage:u17-i-calendar-date-2:prompt
+sourceRecordId=ca-coverage:obj-u17-calendar-date:u17-i-calendar-date-2:prompt
 originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
 Choose the English description. Which reading translates the whole shown date?
 shippedText=Choose the English description. Which reading translates the whole shown date?

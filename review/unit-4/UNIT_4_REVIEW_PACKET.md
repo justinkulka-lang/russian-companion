@@ -11,12 +11,12 @@ Unit 4 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
-- Unit content-review SHA-256: 0d3065043d8b3a08997ec6642f2e143edef236a675610a070e4004905b8e9d54
+- Curriculum source commit: 9ccccb16f929ad4a0a08dcd371db9be4269ca4bf
+- Unit content-review SHA-256: 9f255afab766ef14cbf8ef2688a512f74c00d3c45efc772d6b4506a431a21121
 - Mapping-package SHA-256: 889c15ed7bf5d3189af391210f35bae5c57a9fd9c9dc3b3a439e8ebc1143b6fd
-- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
-- Review-package SHA-256: f26bf8b4247f448b7a0713e8e6129e77ed28609c707d0bac03fee73d2edc460c
-- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
+- Pack content-review SHA-256: 7e46c09bd636a00a8e966662c55402683cc597da0667b141bb508c510ab3d315
+- Review-package SHA-256: 8fd08116a8f1a16e58ff8e287f99bdb5f808a0bb1bfc90e70486a0159c781cfe
+- Repository source SHA-256: f40db72d03125071abdadc410ca89f5ee4c17022ba2ef835624c5eff29bf49f1
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1877,12 +1877,12 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 25ca550c6ce5311bed633c2432ac1f2f4771a05b269fa11fee5e1f694bfce810
+- Content hash: c31ab7a8850b2c53c109e8c7a6a28b67af7a3e11f9da4a7550f819edf9b2321a
 
 recordType=label
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
 sourceRevision=content-audit-2026-10-08
-sourceRecordId=ca-coverage:u4-st-guided-nominative:title
+sourceRecordId=ca-coverage:obj-u4-nominative:u4-st-guided-nominative:title
 originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
 Guided nominative subject
 shippedText=Guided nominative subject
@@ -1907,12 +1907,12 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5c4e66889a2701732b9369b342fa489b23471a42363cc0899d98bcfb3179c7de
+- Content hash: 63ffcc964deebc1650b3c7bf06a24ae32d6e1655bf78f1cc5fcb2485e1d8d0e2
 
 recordType=label
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
 sourceRevision=content-audit-2026-10-08
-sourceRecordId=ca-coverage:u4-st-guided-nominative:body
+sourceRecordId=ca-coverage:obj-u4-nominative:u4-st-guided-nominative:body
 originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
 The nominative case is the default case of a word, as found in dictionaries and when no other case is specifically used. Use that subject form in Муж говорит — The husband is talking. Then answer the guided choice.
 shippedText=The nominative case is the default case of a word, as found in dictionaries and when no other case is specifically used. Use that subject form in Муж говорит — The husband is talking. Then answer the guided choice.
@@ -1937,12 +1937,12 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b4db1ac1265118e6243fee2f5ed0def6f58bfe795780ca6547d132a1fa2f9624
+- Content hash: ee20d8977d1daf2ab0636a0cb704338b1b347354ef5fb8318a1f03eb12e55978
 
 recordType=label
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
 sourceRevision=content-audit-2026-10-08
-sourceRecordId=ca-coverage:u4-st-rem-nominative:return-direction
+sourceRecordId=ca-coverage:obj-u4-nominative:u4-st-rem-nominative:return-direction
 originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
 Return to that subject contrast.
 shippedText=Return to that subject contrast.

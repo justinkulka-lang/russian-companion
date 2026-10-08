@@ -11,12 +11,12 @@ Unit 27 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 057962d81d14bcf5db9f8740ae2443f29ff618c1
-- Unit content-review SHA-256: 54723739f7288a374b2da57d9c4e3f9ebccabee0cec4030d4b39c1973b365518
+- Curriculum source commit: 9ccccb16f929ad4a0a08dcd371db9be4269ca4bf
+- Unit content-review SHA-256: 7f9490a90ed32877a1a8f67fd081dbadc6ee2b7a78eda523aac4764248530d0e
 - Mapping-package SHA-256: 3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf652a3bc0
-- Pack content-review SHA-256: 0f6980047cd6ccb27f9917dab7f320d8eb677bd0893d37a549072ce0782a37e2
-- Review-package SHA-256: 201f12c0454d4ac23763ad7a83d1e6c4aca59cc3cd310c267b1cd55e4ab6c512
-- Repository source SHA-256: 74a0376f5f603f8e0344253f5ef2c4739598cc941ed5b0355c3dc39651b592aa
+- Pack content-review SHA-256: 7e46c09bd636a00a8e966662c55402683cc597da0667b141bb508c510ab3d315
+- Review-package SHA-256: 3fa4eb0e702f9c6753eb155ebe948a08e52c9b22d1785b77e6edee56c0edb4fc
+- Repository source SHA-256: f40db72d03125071abdadc410ca89f5ee4c17022ba2ef835624c5eff29bf49f1
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -779,9 +779,9 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a33564a4205f447dcc88bcabbacb20ca99cd680f3d944d98ffc5570e5862b39f
+- Content hash: 6fa1c18929d70bf3c0c841fe0648e37f3e51d820d55ee5b9a0e7b0367b6b50a6
 
-title=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+title=Past-passive stress in the supplied examples; broader patterns remain pending review.
 estimatedMinutes=10
 objectives=obj-u27-stress,obj-u27-book
 steps=u27-stress-teach-1,u27-stress-guided,u27-stress-teach-2,u27-stress-remediate,u27-stress-check,u27-st-anki-direction,u27-st-binder-direction,u27-st-tutor-direction,u27-st-cumulative-direction
@@ -3097,12 +3097,12 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 496fb2e9839b10b861b9783bac9a8e38a5a143e4d067e1734b46b7689c8614a0
+- Content hash: 25522a3a4bb76dfd3062b890a15e1b2965274492a15be5cb078d518b97de60dc
 
 recordType=label
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
 sourceRevision=content-audit-2026-10-08
-sourceRecordId=ca-coverage:u27:notice-2630
+sourceRecordId=ca-coverage:obj-u27-passive:u27:notice-2630
 originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
 Bounded postal practice, past-passive stress, and a two-entry dictionary task are implemented and review-pending. They are not complete postal mastery, a general stress rule, or broad dictionary proficiency. Present-passive exploration does not gate Unit 27.
 shippedText=Bounded postal practice, past-passive stress, and a two-entry dictionary task are implemented and review-pending. They are not complete postal mastery, a general stress rule, or broad dictionary proficiency. Present-passive exploration does not gate Unit 27.
@@ -3127,12 +3127,12 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 13f240e81c1fda7be912e5fbc1cf1a1130bbd9b4ae97f33c6677e1049d620b71
+- Content hash: 3f92ea0acc3da8ccd72e14307ed6d265efe3b7c54d680d2e927c25432a010713
 
 recordType=label
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
 sourceRevision=content-audit-2026-10-08
-sourceRecordId=ca-coverage:u27:notice-2630-summary
+sourceRecordId=ca-coverage:obj-u27-passive:u27:notice-2630-summary
 originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
 Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own. Bounded postal, stress, and dictionary tasks are review-pending.
 shippedText=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own. Bounded postal, stress, and dictionary tasks are review-pending.
@@ -6000,12 +6000,12 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 48db9b5e701d0976fe359144c09545bf9551e0cb1114f3b60a9e58439a1864b3
+- Content hash: 3069f42a1d6a1ad702c5ab48b466332fb0a54c33d3e653b79a300046838f6405
 
 recordType=label
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
 sourceRevision=content-audit-2026-10-08
-sourceRecordId=ca-coverage:u27-i-comp-2:prompt
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-i-comp-2:prompt
 originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
 Choose the English description. Which reading keeps the reader of the letter unspecified?
 shippedText=Choose the English description. Which reading keeps the reader of the letter unspecified?
@@ -12685,6 +12685,19 @@ text=Unit 27 AnkiDroid self-attestation uses only cards you are allowed to make.
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-repair-u27-stress-session-title`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78ca3160a6a968ee86a791c5449b2ca0babc47b339d9f5f2a592fd26bce11e1b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Past-passive stress in the supplied examples; broader patterns remain pending review.
 
 ### AUTHORED_ENGLISH `en-u27-092`
 
