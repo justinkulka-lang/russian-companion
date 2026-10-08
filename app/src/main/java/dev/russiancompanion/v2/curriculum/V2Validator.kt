@@ -3777,7 +3777,30 @@ internal object V2Validator {
         }
     }
 
+    private val explicitPairCache = object : LinkedHashMap<String, Map<String, Set<String>>>(64, 0.75f, true) {
+        override fun removeEldestEntry(eldest: MutableMap.MutableEntry<String, Map<String, Set<String>>>): Boolean {
+            return size > 128
+        }
+    }
+
     private fun explicitPairs(original: String): Map<String, Set<String>> {
+        synchronized(explicitPairCache) {
+            explicitPairCache[original]?.let { return it }
+        }
+        val computed = computeExplicitPairs(original, linearDashes = true)
+        synchronized(explicitPairCache) {
+            explicitPairCache[original] = computed
+        }
+        return computed
+    }
+
+    internal fun explicitPairsProbe(original: String): Map<String, Set<String>> = explicitPairs(original)
+
+    internal fun explicitPairsRegexProbe(original: String): Map<String, Set<String>> {
+        return computeExplicitPairs(original, linearDashes = false)
+    }
+
+    private fun computeExplicitPairs(original: String, linearDashes: Boolean): Map<String, Set<String>> {
         val visible = BatchARemainingSources.htmlVisible(unfoldWikiLabels(original))
         val found = linkedMapOf<String, MutableSet<String>>()
         fun add(left: String, right: String) {
@@ -3787,9 +3810,10 @@ internal object V2Validator {
                 found.getOrPut(key) { linkedSetOf() }.add(value)
             }
         }
-        DASH_PAIR.findAll(visible).forEach { match ->
-            val left = match.groupValues[1].substringAfterLast("}}")
-            val right = match.groupValues[2].trim()
+        val dashes = if (linearDashes) linearDashPairs(visible) else regexDashPairs(visible)
+        dashes.forEach { (leftRaw, rightRaw) ->
+            val left = leftRaw.substringAfterLast("}}")
+            val right = rightRaw.trim()
             val paren = Regex("""^([^()]{1,140}?)\s*\(([^()]*)\)\s*$""").find(right)
             if (paren != null) {
                 add(left, paren.groupValues[1])
@@ -3806,6 +3830,78 @@ internal object V2Validator {
             }
         }
         return found
+    }
+
+    private fun regexDashPairs(visible: String): List<Pair<String, String>> {
+        return DASH_PAIR.findAll(visible).map { it.groupValues[1] to it.groupValues[2] }.toList()
+    }
+
+    /**
+     * Same non-overlapping pairs as [DASH_PAIR], without the bounded backtracking
+     * of a greedy `{1,90}` scan at every character. Pattern whitespace, including
+     * a newline, may sit between the left token and the dash, matching `\s*`.
+     * The left token itself still cannot contain a newline or another dash and
+     * stays within 90 characters.
+     */
+    private fun linearDashPairs(visible: String): List<Pair<String, String>> {
+        val out = ArrayList<Pair<String, String>>()
+        var search = 0
+        val n = visible.length
+        while (search < n) {
+            var cursor = search
+            var matched = false
+            while (cursor < n) {
+                val character = visible[cursor]
+                if (character != '—' && character != '–') {
+                    cursor++
+                    continue
+                }
+                val dash = cursor
+                var leftEnd = dash
+                while (leftEnd > search && isPatternWhitespace(visible[leftEnd - 1])) leftEnd--
+                var leftStart = leftEnd
+                var taken = 0
+                while (leftStart > search && taken < 90) {
+                    val leftCharacter = visible[leftStart - 1]
+                    if (leftCharacter == '\n' || leftCharacter == '—' || leftCharacter == '–') break
+                    leftStart--
+                    taken++
+                }
+                if (taken == 0) {
+                    cursor = dash + 1
+                    continue
+                }
+                var right = dash + 1
+                while (right < n && isPatternWhitespace(visible[right])) right++
+                if (right >= n || visible[right] == '\n' || visible[right] == '—' || visible[right] == '–') {
+                    cursor = dash + 1
+                    continue
+                }
+                var rightEnd = right
+                var count = 0
+                while (rightEnd < n && count < 160) {
+                    val rightCharacter = visible[rightEnd]
+                    if (rightCharacter == '\n' || rightCharacter == '—' || rightCharacter == '–') break
+                    rightEnd++
+                    count++
+                }
+                if (count == 0) {
+                    cursor = dash + 1
+                    continue
+                }
+                out += visible.substring(leftStart, leftEnd) to visible.substring(right, rightEnd)
+                search = rightEnd
+                matched = true
+                break
+            }
+            if (!matched) break
+        }
+        return out
+    }
+
+    private fun isPatternWhitespace(character: Char): Boolean {
+        return character == ' ' || character == '\t' || character == '\n' ||
+            character == '\u000B' || character == '\u000C' || character == '\r'
     }
 
     private val READY_RUSSIAN_MEDIA = Regex(

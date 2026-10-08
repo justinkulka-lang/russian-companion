@@ -348,6 +348,21 @@ internal var lastGovernedIdentityThreadForTests: Thread? = null
 @Volatile
 internal var lastGovernedSnapshotLabelForTests: String? = null
 
+/**
+ * Thread that last prepared each labeled snapshot. Later screens do not erase
+ * an earlier label, so a test can wait for one screen without a last-writer race.
+ */
+internal val governedIdentityThreadsForTests = java.util.concurrent.ConcurrentHashMap<String, Thread>()
+
+internal fun recordGovernedIdentityForTests(label: String) {
+    val thread = Thread.currentThread()
+    lastGovernedIdentityThreadForTests = thread
+    if (label.isNotEmpty()) {
+        lastGovernedSnapshotLabelForTests = label
+        governedIdentityThreadsForTests[label] = thread
+    }
+}
+
 /** Null refuses the schema-1 step write. Teach and orient steps with no items stay completable. */
 internal fun governedStepCompletionDigest(
     pack: V2CurriculumPack,
@@ -474,7 +489,10 @@ internal fun practiceQueue(pack: V2CurriculumPack, learner: V2LearnerView, labId
         .filter {
             it.acceptedOrder > 0 &&
                 !it.correct &&
-                (it.attemptRole == PRESCRIBED_CHECK || it.attemptRole == OPTIONAL_PRACTICE)
+                (
+                    attemptSuppliesStepSelection(it, pack, it.stepId) ||
+                        (it.attemptRole == OPTIONAL_PRACTICE && attemptMatchesCurrentOptional(it, pack, it.stepId))
+                    )
         }
         .sortedByDescending { it.acceptedOrder }
         .map { it.itemId }
@@ -484,6 +502,54 @@ internal fun practiceQueue(pack: V2CurriculumPack, learner: V2LearnerView, labId
 }
 
 internal fun practiceStepId(labId: String): String = "practice:$labId"
+
+/**
+ * The latest optional answer for this lab item, only when schema, item,
+ * unit-content, rule, role, and practice-context identities match the current
+ * pack. A stale row that selected the same option does not count.
+ */
+internal fun optionalPracticeSelection(
+    pack: V2CurriculumPack,
+    learner: V2LearnerView,
+    labId: String,
+    itemId: String,
+): GovernedAttemptView? {
+    if (pack.schemaVersion != 1 || itemId.isBlank()) return null
+    val stepId = practiceStepId(labId)
+    return learner.governedAttempts.orEmpty()
+        .filter { attempt ->
+            attempt.acceptedOrder > 0 &&
+                attempt.itemId == itemId &&
+                attemptMatchesCurrentOptional(attempt, pack, stepId)
+        }
+        .maxByOrNull { it.acceptedOrder }
+}
+
+internal fun attemptMatchesCurrentOptional(
+    attempt: GovernedAttemptView,
+    pack: V2CurriculumPack,
+    stepId: String,
+): Boolean {
+    if (attempt.attemptRole != OPTIONAL_PRACTICE) return false
+    if (attempt.identitySchema != GOVERNED_IDENTITY_SCHEMA) return false
+    if (attempt.stepId != stepId || stepId.isBlank()) return false
+    if (attempt.selected.isBlank()) return false
+    if (attempt.itemDigest == UNRECOVERABLE_GOVERNED_IDENTITY ||
+        attempt.ruleDigest == UNRECOVERABLE_GOVERNED_IDENTITY ||
+        attempt.unitContentDigest == UNRECOVERABLE_GOVERNED_IDENTITY
+    ) {
+        return false
+    }
+    if (attempt.ruleDigest != closedResponseRuleDigest()) return false
+    val item = pack.item(attempt.itemId) ?: return false
+    if (attempt.selected !in item.options) return false
+    if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
+    val unitNumber = itemUnitNumber(pack, item) ?: return false
+    if (attempt.unitNumber != unitNumber || pack.unit(unitNumber) == null) return false
+    val unitDigest = V2PackIdentityIndex.unitDigest(pack, unitNumber)
+        ?: V2Validator.unitContentReviewDigest(pack, unitNumber)
+    return attempt.unitContentDigest == unitDigest
+}
 
 internal fun savedWorkEntries(pack: V2CurriculumPack, learner: V2LearnerView): List<SavedWorkEntry> {
     val entries = mutableListOf<SavedWorkEntry>()
@@ -646,25 +712,67 @@ private fun sha256Hex(text: String): String {
 }
 
 /**
- * Immutable pack digests. Production warms this on a worker before learner-dependent
- * work. A lookup misses until [warm] has finished for that pack instance.
+ * Immutable pack digests. Keys are the pack instance, not its structural hash.
+ * A data-class hash walks the whole curriculum. Production warms this on a
+ * worker before learner-dependent work. A lookup misses until [warm] has
+ * finished for that pack instance.
  */
 internal object V2PackIdentityIndex {
-    private val steps = java.util.Collections.synchronizedMap(java.util.WeakHashMap<V2CurriculumPack, Map<String, String>>())
-    private val units = java.util.Collections.synchronizedMap(java.util.WeakHashMap<V2CurriculumPack, Map<Int, String>>())
+    private val steps = IdentityWeakCache<Map<String, String>>()
+    private val units = IdentityWeakCache<Map<Int, String>>()
 
     fun warm(pack: V2CurriculumPack) {
-        if (steps.containsKey(pack) && units.containsKey(pack)) return
+        if (steps.get(pack) != null && units.get(pack) != null) return
         val stepMap = pack.units.flatMap { it.sessions }.flatMap { it.steps }
             .associate { step -> step.id to rawStepContentDigest(pack, step) }
         val unitMap = pack.units.associate { unit ->
             unit.number to V2Validator.unitContentReviewDigest(pack, unit.number)
         }
-        steps[pack] = stepMap
-        units[pack] = unitMap
+        steps.put(pack, stepMap)
+        units.put(pack, unitMap)
     }
 
-    fun stepDigest(pack: V2CurriculumPack, stepId: String): String? = steps[pack]?.get(stepId)
+    fun stepDigest(pack: V2CurriculumPack, stepId: String): String? = steps.get(pack)?.get(stepId)
 
-    fun unitDigest(pack: V2CurriculumPack, unitNumber: Int): String? = units[pack]?.get(unitNumber)
+    fun unitDigest(pack: V2CurriculumPack, unitNumber: Int): String? = units.get(pack)?.get(unitNumber)
+}
+
+/**
+ * Weak cache keyed by object identity. [System.identityHashCode] does not
+ * walk a data-class structure.
+ */
+internal class IdentityWeakCache<V> {
+    private class Node<V>(
+        val referent: java.lang.ref.WeakReference<Any>,
+        val value: V,
+    )
+
+    private val buckets = java.util.concurrent.ConcurrentHashMap<Int, java.util.concurrent.CopyOnWriteArrayList<Node<V>>>()
+
+    fun get(key: Any): V? {
+        val id = System.identityHashCode(key)
+        val list = buckets[id] ?: return null
+        var found: V? = null
+        val dead = ArrayList<Node<V>>()
+        for (node in list) {
+            val current = node.referent.get()
+            if (current == null) dead += node
+            else if (current === key) found = node.value
+        }
+        if (dead.isNotEmpty()) list.removeAll(dead.toSet())
+        if (list.isEmpty()) buckets.remove(id, list)
+        return found
+    }
+
+    fun put(key: Any, value: V) {
+        val id = System.identityHashCode(key)
+        val list = buckets.computeIfAbsent(id) { java.util.concurrent.CopyOnWriteArrayList() }
+        val dead = ArrayList<Node<V>>()
+        for (node in list) {
+            val current = node.referent.get()
+            if (current == null || current === key) dead += node
+        }
+        if (dead.isNotEmpty()) list.removeAll(dead.toSet())
+        list += Node(java.lang.ref.WeakReference(key), value)
+    }
 }

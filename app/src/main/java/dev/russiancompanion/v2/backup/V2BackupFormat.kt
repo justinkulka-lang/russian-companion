@@ -25,6 +25,10 @@ internal const val BACKUP_CANCELLED = "Backup cancelled. The records on this dev
 internal const val RESTORE_FAILED = "Restore failed. The records already on this device are unchanged."
 internal const val RESTORE_RECOVERY_REQUIRED =
     "Restore failed. Local recovery is still required. Open the app again to finish restoring the learner records from before this attempt."
+internal const val RESTORE_CLEANUP_PENDING =
+    "Restore finished. Learner records were replaced with the backup. Recording cleanup is still required. Open the app again to finish removing the replaced recording files. The learner records were not rolled back."
+internal const val RESTORE_CLEANUP_PENDING_APPEARANCE_FAILED =
+    "Restore finished. Learner records were replaced with the backup. Recording cleanup is still required. The appearance preference could not be saved and is unchanged. Open the app again to finish removing the replaced recording files. The learner records were not rolled back."
 internal const val RESTORE_DONE = "Restore finished. Learner records were replaced with the backup. They were not merged."
 internal const val RESTORE_LEARNER_REPLACED_APPEARANCE_FAILED =
     "Restore finished. Learner records were replaced with the backup. The appearance preference could not be saved and is unchanged."
@@ -246,6 +250,7 @@ internal enum class GovernedReplaceOutcome {
     REPLACED,
     UNCHANGED,
     RECOVERY_REQUIRED,
+    CLEANUP_PENDING,
 }
 
 internal enum class BackupRejection {
@@ -275,6 +280,7 @@ internal object V2BackupFaults {
     @Volatile var replacementEntered: java.util.concurrent.CountDownLatch? = null
     @Volatile var holdDuringReplacement: java.util.concurrent.CountDownLatch? = null
     @Volatile var holdAfterCommit: kotlinx.coroutines.CompletableDeferred<Unit>? = null
+    @Volatile var retainSwapArtifact: Boolean = false
 
     fun reset() {
         failWrite = false
@@ -291,7 +297,60 @@ internal object V2BackupFaults {
         replacementEntered = null
         holdDuringReplacement = null
         holdAfterCommit = null
+        retainSwapArtifact = false
     }
+}
+
+/**
+ * Incoming staging and recording inputs that a restore is still reading.
+ * Every coordinator shares this set. A sweep must not delete a held path.
+ */
+internal object BackupWorkRegistry {
+    private val incoming = java.util.concurrent.ConcurrentHashMap.newKeySet<String>()
+    private val recordingInputs = java.util.concurrent.ConcurrentHashMap.newKeySet<String>()
+
+    fun holdIncoming(file: File) {
+        incoming += canonical(file)
+    }
+
+    fun releaseIncoming(file: File) {
+        incoming -= canonical(file)
+    }
+
+    fun incomingHeld(file: File): Boolean = canonical(file) in incoming
+
+    fun holdRecordings(files: Collection<File>) {
+        files.forEach { recordingInputs += canonical(it) }
+    }
+
+    fun releaseRecordings(files: Collection<File>) {
+        files.forEach { recordingInputs -= canonical(it) }
+    }
+
+    fun recordingHeld(file: File): Boolean = canonical(file) in recordingInputs
+
+    fun clearForTests() {
+        incoming.clear()
+        recordingInputs.clear()
+    }
+
+    private fun canonical(file: File): String = runCatching { file.canonicalPath }.getOrElse { file.absolutePath }
+}
+
+/**
+ * Checked after the package hash matches and before any learner row is replaced.
+ * Order 0 may repeat: it is historical and has no recorded sequence. A negative
+ * order or a repeated positive order is malformed.
+ */
+internal fun acceptedOrderDefects(attempts: List<BackupAttempt>): String? {
+    val positives = HashSet<Long>()
+    for (attempt in attempts) {
+        val order = attempt.acceptedOrder
+        if (order < 0L) return "negative accepted order"
+        if (order == 0L) continue
+        if (!positives.add(order)) return "duplicate accepted order"
+    }
+    return null
 }
 
 @Serializable
@@ -454,6 +513,9 @@ internal fun readGovernedBackup(
             return BackupReadResult.Rejected(BackupRejection.INCOMPLETE)
         }
         if (duplicateIds(document)) return BackupReadResult.Rejected(BackupRejection.MALFORMED)
+        if (acceptedOrderDefects(document.attempts) != null) {
+            return BackupReadResult.Rejected(BackupRejection.MALFORMED)
+        }
         if (backupProfileDefects(document.profile) != null) {
             return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         }

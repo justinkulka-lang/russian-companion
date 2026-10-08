@@ -273,13 +273,14 @@ internal class V2WriteCoordinator(
             return
         }
         scope.launch(Dispatchers.Default) {
-            V2UiWork.awaitReconstruction()
+            V2UiWork.awaitReconstruction(token)
             val stored = governedSessionSelections(pack, view)
             withContext(Dispatchers.Main.immediate) {
-                if (token != reconstructionToken.get()) return@withContext
-                if (epoch != bindingEpoch) return@withContext
-                if (curriculumPack !== pack) return@withContext
-                selections = stored + localOverlay(epoch)
+                val publish = token == reconstructionToken.get() &&
+                    epoch == bindingEpoch &&
+                    curriculumPack === pack
+                if (publish) selections = stored + localOverlay(epoch)
+                V2UiWork.reconstructionOutcomeForTests?.invoke(token, publish)
             }
         }
     }

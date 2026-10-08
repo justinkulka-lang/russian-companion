@@ -30,6 +30,7 @@ import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2PackIdentityIndex
 import dev.russiancompanion.v2.curriculum.governedStepCompletionDigest
 import dev.russiancompanion.v2.curriculum.lastGovernedIdentityThreadForTests
+import dev.russiancompanion.v2.curriculum.recordGovernedIdentityForTests
 import dev.russiancompanion.v2.curriculum.prepareGovernedAttempt
 import dev.russiancompanion.v2.curriculum.practiceStepId
 import dev.russiancompanion.v2.curriculum.resumePositionDigest
@@ -216,10 +217,16 @@ internal fun V2App(
                     onCompleteOnboarding = { draft ->
                         val epoch = store.learnerMutationEpoch()
                         writes.submit("onboarding") {
-                            withCapturedLearnerEpoch(epoch) {
-                                val current = api.profile()
+                            val prepared = withContext(Dispatchers.Default) {
+                                recordGovernedIdentityForTests("onboarding-resume")
+                                V2PackIdentityIndex.warm(pack)
                                 val sessionId = pack.unit(1)?.sessions?.firstOrNull()?.id
                                 val digest = sessionId?.let { resumePositionDigest(pack, it, 0) }.orEmpty()
+                                sessionId to digest
+                            }
+                            val (sessionId, digest) = prepared
+                            withCapturedLearnerEpoch(epoch) {
+                                val current = api.profile()
                                 api.saveProfile(
                                     current.copy(
                                         onboardingCompleted = true,

@@ -25,12 +25,11 @@ import androidx.compose.ui.semantics.selected
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.unit.dp
-import dev.russiancompanion.v2.curriculum.OPTIONAL_PRACTICE
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
+import dev.russiancompanion.v2.curriculum.optionalPracticeSelection
 import dev.russiancompanion.v2.curriculum.practiceOffers
 import dev.russiancompanion.v2.curriculum.practiceQueue
-import dev.russiancompanion.v2.curriculum.practiceStepId
 import dev.russiancompanion.v2.curriculum.savedWorkEntries
 
 @Composable
@@ -41,12 +40,18 @@ internal fun V2SavedWorkScreen(
     onResume: (String, Int) -> Unit,
     onOpenReference: (String) -> Unit,
 ) {
-    val entries = savedWorkEntries(pack, learner)
+    val entries = rememberGoverned(pack, learner, label = "saved-work") {
+        savedWorkEntries(pack, learner)
+    }
     V2Scaffold(title = "Saved work", tab = null, onTab = {}, onBack = onBack) {
         Text(
             "Resume a saved lesson, bookmark, note, or tutor question. Completed checks are not listed here.",
             modifier = Modifier.semantics { testTag = "v2-saved-heading" },
         )
+        if (entries == null) {
+            V2Status("Preparing saved work")
+            return@V2Scaffold
+        }
         if (entries.isEmpty()) {
             V2Status("No saved work yet.")
         }
@@ -84,14 +89,7 @@ internal fun V2LabScreen(
     var index by rememberSaveable(labId) { mutableIntStateOf(0) }
     var chosen by rememberSaveable(labId, index) { mutableStateOf<String?>(null) }
     val item = items.getOrNull(index.coerceAtMost(items.lastIndex.coerceAtLeast(0)))
-    val recorded = learner.governedAttempts.orEmpty()
-        .filter {
-            it.acceptedOrder > 0 &&
-                it.attemptRole == OPTIONAL_PRACTICE &&
-                it.stepId == practiceStepId(labId) &&
-                it.itemId == item?.id
-        }
-        .maxByOrNull { it.acceptedOrder }
+    val recorded = item?.let { optionalPracticeSelection(pack, learner, labId, it.id) }
     val itemId = item?.id
     val pending = itemId != null && pendingKeys.any { it.startsWith("practice:$labId:$itemId:") }
     V2Scaffold(

@@ -68,6 +68,7 @@ import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotEquals
+import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
@@ -78,7 +79,6 @@ import org.robolectric.Shadows
 import org.robolectric.annotation.Config
 import java.io.File
 import java.util.concurrent.CountDownLatch
-import java.util.concurrent.LinkedBlockingQueue
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.AtomicInteger
 
@@ -98,6 +98,7 @@ class ReauditCorrectionTest {
         V2UiWork.blockForTests = null
         V2UiWork.reconstructionDelay = null
         V2UiWork.reconstructionEnteredForTests = null
+        V2UiWork.reconstructionOutcomeForTests = null
         V2BackupFaults.reset()
         lastGovernedIdentityThreadForTests = null
         lastGovernedSnapshotLabelForTests = null
@@ -236,6 +237,14 @@ class ReauditCorrectionTest {
         assertTrue(instructions.contains("optional practice does not complete a required check"))
         assertTrue(instructions.contains("Obsolete label `Optional drills`") || instructions.contains("obsolete label `Optional drills`"))
         assertTrue(instructions.contains("Retrieval is mandatory"))
+        assertTrue(instructions.contains("From `Today`, tap `Saved work`"))
+        assertTrue(instructions.contains("`Practice` → `Saved work`"))
+        assertTrue(instructions.contains("Bookmark this step"))
+        assertTrue(instructions.contains("AT-030 note alpha"))
+        assertTrue(instructions.contains("negative `acceptedOrder`"))
+        assertTrue(instructions.contains("File-backed schema 8 to schema 9"))
+        assertTrue(instructions.contains("Journal `COMMITTED`"))
+        assertTrue(instructions.contains("Automated checks below are not this physical procedure"))
         assertTrue(instructions.contains("Restore replaces the learner records"))
         assertTrue(instructions.contains("not current prescribed credit"))
         assertTrue(instructions.contains("Physical reboot is a power-cycle"))
@@ -354,27 +363,49 @@ class ReauditCorrectionTest {
         assertTrue(coordinator.submit("refresh-fail", onCommitted = { committed = true }) { })
         idleUntil("refresh failed") { committed && coordinator.banner == V2OutcomeStatus.REFRESH_FAILED }
         assertEquals(second, coordinator.selections[key])
+        val finished = CountDownLatch(1)
+        var finishedToken = -1L
+        var finishedPublished: Boolean? = null
+        V2UiWork.reconstructionOutcomeForTests = { token, published ->
+            finishedToken = token
+            finishedPublished = published
+            finished.countDown()
+        }
         older.complete(Unit)
-        idleUntil("older reconstruction settled") { coordinator.selections[key] == second }
+        awaitLatch(finished)
+        assertNotNull(finishedPublished)
+        assertTrue(finishedToken > 0L)
         assertEquals(second, coordinator.selections[key])
         assertEquals(V2OutcomeStatus.REFRESH_FAILED, coordinator.banner)
 
-        val firstHold = CompletableDeferred<Unit>()
-        val secondHold = CompletableDeferred<Unit>()
-        val queue = LinkedBlockingQueue<CompletableDeferred<Unit>>()
-        queue.add(firstHold)
-        queue.add(secondHold)
+        val holds = java.util.concurrent.ConcurrentHashMap<Long, CompletableDeferred<Unit>>()
         val both = CountDownLatch(2)
-        V2UiWork.reconstructionEnteredForTests = both
-        V2UiWork.reconstructionDelay = { queue.take().await() }
+        V2UiWork.reconstructionEnteredForTests = null
+        V2UiWork.reconstructionDelay = {
+            val token = V2UiWork.currentReconstructionTokenForTests()
+            val hold = CompletableDeferred<Unit>()
+            holds[token] = hold
+            both.countDown()
+            hold.await()
+        }
         coordinator.bindCurriculum(pack.copy())
         coordinator.bindCurriculum(pack.copy())
         awaitLatch(both)
+        val newer = holds.keys.max()
+        val olderToken = holds.keys.min()
+        assertTrue(newer > olderToken)
         coordinator.confirmSelection(step.id, item.id, second)
-        secondHold.complete(Unit)
-        idleUntil("newer reconstruction published") { coordinator.selections[key] == second }
-        firstHold.complete(Unit)
-        idleUntil("older reconstruction discarded") { coordinator.selections[key] == second }
+        val published = CountDownLatch(1)
+        val obsolete = CountDownLatch(1)
+        V2UiWork.reconstructionOutcomeForTests = { token, didPublish ->
+            if (token == newer && didPublish) published.countDown()
+            if (token == olderToken && !didPublish) obsolete.countDown()
+        }
+        holds.getValue(newer).complete(Unit)
+        awaitLatch(published)
+        assertEquals(second, coordinator.selections[key])
+        holds.getValue(olderToken).complete(Unit)
+        awaitLatch(obsolete)
         assertEquals(second, coordinator.selections[key])
 
         coordinator.confirmSelection(step.id, item.id, second)

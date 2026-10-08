@@ -263,11 +263,22 @@ and is not advancement evidence.
    require `activity-logs.csv`, `gate-evidence.csv`, or a pronunciation
    recording. This candidate does not export a v1 lesson-cycle archive.
    Screenshot: `AT-030-05-export-completed.png`.
-8. Open `Progress` and the saved-work list. Retrieval is mandatory for
-   every record this run created: the resume position, every local
-   note, every tutor question, and every bookmark. Confirm each one is
-   readable in full. Notes and tutor questions must stay labeled not
-   scored. Do not skip this step because a record is optional.
+8. Create the saved records before retrieval. Saved work is not a
+   Progress control. From `Today`, tap `Saved work`. The same list is
+   on `Practice` → `Saved work`.
+9. On the Unit 1 step opened by `Continue`, tap `Bookmark this step`.
+   In `Local note — never scored`, enter `AT-030 note alpha` and tap
+   `Save note`. Confirm the step shows
+   `Saved note, not scored: AT-030 note alpha`. With that text still in
+   the field, tap `Mark a question for a tutor`. Confirm
+   `Tutor question, not scored: AT-030 note alpha`. If the field is
+   empty, the stored question is `Please review this step.`
+10. Return to `Today` and tap `Saved work`. Retrieval is mandatory for
+    every record this run created: the resume position, the bookmark,
+    the note `AT-030 note alpha`, and the tutor question
+    `AT-030 note alpha`. Confirm each one is readable in full. Notes
+    and tutor questions must stay labeled not scored. Do not skip this
+    step because a record is optional.
 
 #### B7a. Restore replacement, rejection, cancellation, and recovery
 
@@ -291,20 +302,57 @@ procedure. An automated unit test does not satisfy it.
    journal and do not delete `rollback/` or an in-progress replacement
    snapshot. A failed confirmation before replacement may remove only
    disposable incoming staging.
+7. Two recovery messages are different. Read the journal phase and the
+   learner records after the database is opened again.
+   - Journal not `COMMITTED`: the message says local recovery is still
+     required and that the next open finishes restoring the learner
+     records from before this attempt. After reopen, the records are
+     the ones from before the attempt. The message must not say the
+     backup replacement finished.
+   - Journal `COMMITTED` with recording cleanup still required: the
+     message says learner records were replaced with the backup and
+     recording cleanup is still required. After reopen, the records
+     are the backup, not the earlier copy. The message must not say
+     the earlier records were restored.
+   - If appearance persistence fails after either committed outcome,
+     the learner records stay the backup and the appearance message
+     says the preference could not be saved.
+   - Cancelling before mutation leaves records unchanged. Cancelling
+     after a committed replacement does not report that records are
+     unchanged.
 
 #### B7b. Legacy, migration, and digest invalidation
+
+Automated checks below are not this physical procedure. Record them
+only as automated evidence. A physical run does not satisfy them by
+copying a unit-test log, and a unit test does not satisfy AT-030.
 
 1. On `Progress`, confirm the historical line begins
    `In-app checks marked correct:` and states that the count includes
    historical rows and is not current prescribed credit. That tally is
    not governed prescribed credit.
 2. A saved position or completion that does not match the current
-   lesson must not be opened or scored as current work.
+   lesson must not be opened or scored as current work. On `Saved work`,
+   that resume says it will not be opened or scored.
 3. Rows whose identity schema is not the current schema, including
    older step identities and `UNRECOVERABLE` digests, do not count as
    the current step or the current answer. Do not invent an insertion
    order for attempts that have no recorded accepted-write order.
-4. Database migration and digest checks in automated tests are not
+4. File-backed schema 8 to schema 9 migration: existing attempts gain
+   `acceptedOrder` 0 and stay historical. They are not renumbered from
+   their timestamps. The next accepted answer receives the next
+   positive order. Order 0 may repeat. A backup whose zip hashes match
+   but whose learner document has a negative `acceptedOrder`, or two
+   attempts with the same positive `acceptedOrder`, is malformed.
+   Restoring it leaves the learner records already on the device
+   unchanged. A valid backup may contain repeated order 0 rows.
+5. Optional practice: a recorded selection is restored only when the
+   schema, item, unit-content, rule, role, and practice-context
+   identities match the current content. A stale row that selected the
+   same option must not suppress a new submission of that option.
+   Check this after content invalidation, after backup replacement,
+   and after the database is closed and opened again.
+6. Database migration and digest checks in automated tests are not
    this physical procedure. Record them only as automated evidence.
 
 AT-030 expected result: Today, Course, a closed-response check, book

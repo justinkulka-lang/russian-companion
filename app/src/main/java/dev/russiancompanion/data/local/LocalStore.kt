@@ -17,6 +17,8 @@ import dev.russiancompanion.domain.progress.exportCompletionAccepted
 import dev.russiancompanion.domain.progress.reproduceProgress
 import dev.russiancompanion.domain.navigation.LicenseNoticeOption
 import dev.russiancompanion.v2.backup.BACKUP_SCHEMA_VERSION
+import dev.russiancompanion.v2.backup.BackupWorkRegistry
+import dev.russiancompanion.v2.backup.acceptedOrderDefects
 import dev.russiancompanion.v2.backup.BackupActivityLog
 import dev.russiancompanion.v2.backup.BackupAttempt
 import dev.russiancompanion.v2.backup.BackupBookAttestation
@@ -551,6 +553,15 @@ internal class LocalStore private constructor(
 
     fun sweepOrphanRecordingFiles() = call { sweepOrphanRecordingFilesLocked() }
 
+    /**
+     * Test seam. Runs the sweep on the caller thread so a test can observe the
+     * replacement guard while the store executor is parked inside that replacement.
+     * Production sweeps stay on the store executor.
+     */
+    internal fun sweepOrphanRecordingFilesBypassingExecutorForTests() {
+        sweepOrphanRecordingFilesLocked()
+    }
+
     fun saveExport(record: ExportRecordEntity, packageCounts: ExportCounts? = null): ExportRecordEntity = call {
         val admission = exportCompletionAccepted(
             statusName = record.status.name,
@@ -952,29 +963,77 @@ internal class LocalStore private constructor(
         return latest != null && latest.selected == write.selected
     }
 
+    private val acceptedOrderLock = Any()
+
+    @Volatile
+    internal var acceptedOrderReadEnteredForTests: java.util.concurrent.CountDownLatch? = null
+
+    @Volatile
+    internal var acceptedOrderReadHoldForTests: java.util.concurrent.CountDownLatch? = null
+
+    /**
+     * Test seam. Contends on the allocation lock from a caller thread so two
+     * allocations cannot read the same maximum and both insert it.
+     */
+    internal fun v2AllocateGovernedAttemptOffExecutorForTests(
+        write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite,
+    ) {
+        insertGovernedAttempt(write)
+    }
+
+    /** Test seam. Inserts the row's order as given so exhaustion can be reached. */
+    internal fun v2InsertSequencedAttemptForTests(
+        attempt: dev.russiancompanion.v2.data.V2AttemptEntity,
+    ) = call {
+        database.v2().insertAttempt(attempt)
+    }
+
+    internal fun v2RetargetAttemptDigestForTests(id: String, itemDigest: String) = call {
+        val rows = database.v2().attempts()
+        database.v2().deleteAttempts()
+        rows.forEach { row ->
+            database.v2().insertAttempt(if (row.id == id) row.copy(itemDigest = itemDigest) else row)
+        }
+    }
+
+    internal fun v2ReplaceAttemptsForTests(rows: List<dev.russiancompanion.v2.data.V2AttemptEntity>) = call {
+        database.v2().deleteAttempts()
+        rows.forEach { database.v2().insertAttempt(it) }
+    }
+
     private fun insertGovernedAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
-        val next = database.v2().maxAcceptedOrder() + 1L
-        // The content key repeats when the same selection is accepted again at the
-        // same wall-clock time. A colliding id gains the accepted-write sequence.
-        val id = if (database.v2().attempts().any { it.id == write.id }) "${write.id}:$next" else write.id
-        database.v2().insertAttempt(
-            dev.russiancompanion.v2.data.V2AttemptEntity(
-                id = id,
-                itemId = write.itemId,
-                selected = write.selected,
-                correct = write.correct,
-                recordedAtLocal = write.recordedAtLocal,
-                itemDigest = write.itemDigest,
-                unitContentDigest = write.unitContentDigest,
-                ruleDigest = write.ruleDigest,
-                identitySchema = write.identitySchema,
-                attemptRole = write.attemptRole,
-                objectiveId = write.objectiveId,
-                unitNumber = write.unitNumber,
-                stepId = write.stepId,
-                acceptedOrder = next,
-            ),
-        )
+        synchronized(acceptedOrderLock) {
+            val max = database.v2().maxAcceptedOrder()
+            acceptedOrderReadEnteredForTests?.countDown()
+            val hold = acceptedOrderReadHoldForTests
+            if (hold != null && !hold.await(10, java.util.concurrent.TimeUnit.SECONDS)) {
+                error("accepted-order-hold")
+            }
+            if (max == Long.MAX_VALUE) error("accepted-order-exhausted")
+            val next = max + 1L
+            if (next <= 0L) error("accepted-order-exhausted")
+            // The content key repeats when the same selection is accepted again at the
+            // same wall-clock time. A colliding id gains the accepted-write sequence.
+            val id = if (database.v2().attempts().any { it.id == write.id }) "${write.id}:$next" else write.id
+            database.v2().insertAttempt(
+                dev.russiancompanion.v2.data.V2AttemptEntity(
+                    id = id,
+                    itemId = write.itemId,
+                    selected = write.selected,
+                    correct = write.correct,
+                    recordedAtLocal = write.recordedAtLocal,
+                    itemDigest = write.itemDigest,
+                    unitContentDigest = write.unitContentDigest,
+                    ruleDigest = write.ruleDigest,
+                    identitySchema = write.identitySchema,
+                    attemptRole = write.attemptRole,
+                    objectiveId = write.objectiveId,
+                    unitNumber = write.unitNumber,
+                    stepId = write.stepId,
+                    acceptedOrder = next,
+                ),
+            )
+        }
     }
 
     private fun writeV2Attempt(itemId: String, selected: String, correct: Boolean, recordedAtLocal: String) {
@@ -1296,12 +1355,14 @@ internal class LocalStore private constructor(
     }
 
     private fun sweepOrphanRecordingFilesLocked() {
+        if (replacementOpen.get() > 0) return
         recoverInterruptedReplacementLocked()
         val root = recordingRoot ?: return
         if (!root.isDirectory) return
+        if (replacementPending(root)) return
         val referenced = database.users().recordings().map { File(it.localFileReference).name }.toSet()
         root.listFiles()?.forEach { file ->
-            if (file.isFile && file.name !in referenced) {
+            if (file.isFile && file.name !in referenced && !BackupWorkRegistry.recordingHeld(file)) {
                 file.delete()
             }
         }
@@ -1326,42 +1387,56 @@ internal class LocalStore private constructor(
         document: GovernedLearnerDocument,
         recordings: List<StagedRecording>,
     ): GovernedReplaceOutcome = call {
-        if (!referencesResolve(document)) return@call GovernedReplaceOutcome.UNCHANGED
+        if (acceptedOrderDefects(document.attempts) != null) return@call GovernedReplaceOutcome.UNCHANGED
+        val inputs = recordings.map { it.file }
+        BackupWorkRegistry.holdRecordings(inputs)
+        try {
+            replaceGovernedLearnerBody(document, recordings)
+        } finally {
+            BackupWorkRegistry.releaseRecordings(inputs)
+        }
+    }
+
+    private fun replaceGovernedLearnerBody(
+        document: GovernedLearnerDocument,
+        recordings: List<StagedRecording>,
+    ): GovernedReplaceOutcome {
+        if (!referencesResolve(document)) return GovernedReplaceOutcome.UNCHANGED
         V2BackupFaults.replacementEntered?.countDown()
         V2BackupFaults.holdDuringReplacement?.await()
-        if (V2BackupFaults.failBeforeMutation) return@call GovernedReplaceOutcome.UNCHANGED
+        if (V2BackupFaults.failBeforeMutation) return GovernedReplaceOutcome.UNCHANGED
         val root = recordingRoot
         if (root == null) {
-            if (document.recordings.isNotEmpty() || recordings.isNotEmpty()) return@call GovernedReplaceOutcome.UNCHANGED
-            return@call replaceDocumentOnly(document)
+            if (document.recordings.isNotEmpty() || recordings.isNotEmpty()) return GovernedReplaceOutcome.UNCHANGED
+            return replaceDocumentOnly(document)
         }
-        if (!root.exists() && !root.mkdirs()) return@call GovernedReplaceOutcome.UNCHANGED
+        if (!root.exists() && !root.mkdirs()) return GovernedReplaceOutcome.UNCHANGED
         recoverInterruptedReplacementLocked()
-        if (replacementPending(root)) return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
+        if (replacementPending(root)) return GovernedReplaceOutcome.RECOVERY_REQUIRED
         val workspace = replacementWorkspace(root)
         val snapshotDir = File(workspace, "snapshot")
         workspace.deleteRecursively()
-        if (!snapshotDir.mkdirs()) return@call GovernedReplaceOutcome.UNCHANGED
+        if (!snapshotDir.mkdirs()) return GovernedReplaceOutcome.UNCHANGED
         val previous = readGovernedLearnerDocument()
         val previousExports = database.users().exports()
         if (!copyRecordingFiles(root, snapshotDir)) {
             workspace.deleteRecursively()
-            return@call GovernedReplaceOutcome.UNCHANGED
+            return GovernedReplaceOutcome.UNCHANGED
         }
         val staged = try {
             stageIncomingRecordings(document, recordings, File(workspace, "staged"))
         } catch (_: IOException) {
             workspace.deleteRecursively()
-            return@call GovernedReplaceOutcome.UNCHANGED
+            return GovernedReplaceOutcome.UNCHANGED
         }
         if (!publishStagedRecordings(root, staged)) {
-            return@call rollbackReplacementFiles(root, snapshotDir, workspace)
+            return rollbackReplacementFiles(root, snapshotDir, workspace)
         }
         if (!writeReplacementJournal(root, previous, document, previousExports, snapshotDir)) {
-            return@call rollbackReplacementFiles(root, snapshotDir, workspace)
+            return rollbackReplacementFiles(root, snapshotDir, workspace)
         }
         if (V2BackupFaults.crashAfterFileSwapBeforeCommit) {
-            return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
+            return GovernedReplaceOutcome.RECOVERY_REQUIRED
         }
         val committed = try {
             database.runInTransaction {
@@ -1376,21 +1451,24 @@ internal class LocalStore private constructor(
         }
         if (!committed || V2BackupFaults.failAfterCommit) {
             if (committed && !reapplyPreviousDocument(previous, previousExports)) {
-                return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
+                return GovernedReplaceOutcome.RECOVERY_REQUIRED
             }
-            return@call rollbackReplacementFiles(root, snapshotDir, workspace)
+            return rollbackReplacementFiles(root, snapshotDir, workspace)
         }
         if (!markReplacementJournalCommitted(root)) {
             if (!reapplyPreviousDocument(previous, previousExports)) {
-                return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
+                return GovernedReplaceOutcome.RECOVERY_REQUIRED
             }
-            return@call rollbackReplacementFiles(root, snapshotDir, workspace)
+            return rollbackReplacementFiles(root, snapshotDir, workspace)
         }
         deleteRetiredRecordings(root, staged.map { it.first }.toSet())
-        if (swapArtifactsRemain(root)) return@call GovernedReplaceOutcome.RECOVERY_REQUIRED
+        if (V2BackupFaults.retainSwapArtifact) {
+            File(root, "held.incoming").writeBytes(byteArrayOf(1))
+        }
+        if (swapArtifactsRemain(root)) return GovernedReplaceOutcome.CLEANUP_PENDING
         deleteReplacementJournal(root)
         workspace.deleteRecursively()
-        GovernedReplaceOutcome.REPLACED
+        return GovernedReplaceOutcome.REPLACED
     }
 
     private fun replaceDocumentOnly(document: GovernedLearnerDocument): GovernedReplaceOutcome {

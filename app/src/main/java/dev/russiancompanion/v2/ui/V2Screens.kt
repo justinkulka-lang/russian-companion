@@ -50,8 +50,7 @@ import dev.russiancompanion.v2.curriculum.readinessLabel
 import dev.russiancompanion.v2.curriculum.reviewedGuidedPractice
 import dev.russiancompanion.v2.curriculum.step
 import dev.russiancompanion.v2.curriculum.V2PackIdentityIndex
-import dev.russiancompanion.v2.curriculum.lastGovernedIdentityThreadForTests
-import dev.russiancompanion.v2.curriculum.lastGovernedSnapshotLabelForTests
+import dev.russiancompanion.v2.curriculum.recordGovernedIdentityForTests
 import dev.russiancompanion.v2.curriculum.recordedSessionCount
 import dev.russiancompanion.v2.curriculum.reference
 import dev.russiancompanion.v2.curriculum.searchReferences
@@ -82,15 +81,17 @@ internal fun <T> rememberGoverned(
     }
     // Keep the last worker snapshot so a learner refresh does not blank the screen.
     var published by remember { mutableStateOf<T?>(null) }
+    val generation = remember { java.util.concurrent.atomic.AtomicLong(0) }
     LaunchedEffect(pack, learner, inline, label) {
         if (inline) return@LaunchedEffect
+        val token = generation.incrementAndGet()
+        recordGovernedIdentityForTests(if (label.isEmpty()) "scheduled" else "$label:scheduled")
         val computed = withContext(Dispatchers.Default) {
-            lastGovernedIdentityThreadForTests = Thread.currentThread()
-            lastGovernedSnapshotLabelForTests = label
+            recordGovernedIdentityForTests(label)
             V2PackIdentityIndex.warm(pack)
             compute()
         }
-        published = computed
+        if (token == generation.get()) published = computed
     }
     return if (inline) inlineValue else published
 }

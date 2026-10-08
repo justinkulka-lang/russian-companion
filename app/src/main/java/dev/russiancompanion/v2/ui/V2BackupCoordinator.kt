@@ -17,7 +17,10 @@ import dev.russiancompanion.v2.backup.BACKUP_CANCELLED
 import dev.russiancompanion.v2.backup.BACKUP_FAILED
 import dev.russiancompanion.v2.backup.BACKUP_SAVED
 import dev.russiancompanion.v2.backup.GovernedReplaceOutcome
+import dev.russiancompanion.v2.backup.BackupWorkRegistry
 import dev.russiancompanion.v2.backup.RESTORE_CANCELLED
+import dev.russiancompanion.v2.backup.RESTORE_CLEANUP_PENDING
+import dev.russiancompanion.v2.backup.RESTORE_CLEANUP_PENDING_APPEARANCE_FAILED
 import dev.russiancompanion.v2.backup.RESTORE_DONE
 import dev.russiancompanion.v2.backup.RESTORE_FAILED
 import dev.russiancompanion.v2.backup.RESTORE_RECOVERY_REQUIRED
@@ -41,6 +44,7 @@ import java.io.File
 import java.io.InputStream
 import java.io.OutputStream
 import java.util.concurrent.atomic.AtomicBoolean
+import java.util.concurrent.atomic.AtomicInteger
 
 internal enum class V2BackupPhase {
     IDLE,
@@ -77,6 +81,9 @@ internal class V2BackupCoordinator(
 
     private var validated: ValidatedBackup? = null
     private var disposableStaging: File? = null
+    private val stagingLock = Any()
+    private val stagingReaders = AtomicInteger(0)
+    private val cleared = AtomicBoolean(false)
 
     var phase by mutableStateOf(V2BackupPhase.IDLE)
         private set
@@ -154,18 +161,20 @@ internal class V2BackupCoordinator(
         if (phase != V2BackupPhase.PREPARING || !running.get()) return
         phase = V2BackupPhase.VALIDATING
         scope.launch {
+            var keepStaging = false
             try {
                 val opened = withContext(Dispatchers.IO) {
                     if (cancelRequested) return@withContext null
                     val stream = openInput() ?: return@withContext null
                     val staging = File(recoveryDir, "incoming-${System.nanoTime()}").apply { mkdirs() }
-                    disposableStaging = staging
-                    stream.use { input ->
-                        readGovernedBackup(input, applicationId, packId, packVersion, staging)
+                    acquireStaging(staging)
+                    usingStaging {
+                        stream.use { input ->
+                            readGovernedBackup(input, applicationId, packId, packVersion, staging)
+                        }
                     }
                 }
                 if (!coroutineContext.isActive || cancelRequested || opened == null) {
-                    discardDisposableStaging()
                     finish(false, RESTORE_FAILED, RESTORE_CANCELLED, RESTORE_DONE)
                     return@launch
                 }
@@ -173,14 +182,12 @@ internal class V2BackupCoordinator(
                     is dev.russiancompanion.v2.backup.BackupReadResult.Rejected -> {
                         validated = null
                         preview = null
-                        discardDisposableStaging()
                         message = RESTORE_FAILED
                         phase = V2BackupPhase.FAILED
                         running.set(false)
                     }
                     is dev.russiancompanion.v2.backup.BackupReadResult.Valid -> {
                         if (!coroutineContext.isActive || cancelRequested) {
-                            discardDisposableStaging()
                             finish(false, RESTORE_FAILED, RESTORE_CANCELLED, RESTORE_DONE)
                             return@launch
                         }
@@ -191,7 +198,10 @@ internal class V2BackupCoordinator(
                         }
                         val current = withContext(Dispatchers.IO) { store.governedLearnerDocument() }
                         if (!coroutineContext.isActive || cancelRequested) {
-                            discardDisposableStaging()
+                            finish(false, RESTORE_FAILED, RESTORE_CANCELLED, RESTORE_DONE)
+                            return@launch
+                        }
+                        if (cleared.get()) {
                             finish(false, RESTORE_FAILED, RESTORE_CANCELLED, RESTORE_DONE)
                             return@launch
                         }
@@ -199,10 +209,10 @@ internal class V2BackupCoordinator(
                         preview = restorePreview(current, opened.backup.document)
                         message = dev.russiancompanion.v2.backup.REPLACE_EXPLANATION
                         phase = V2BackupPhase.AWAITING_CONFIRMATION
+                        keepStaging = disposableStaging != null
                     }
                 }
             } catch (cancelled: CancellationException) {
-                discardDisposableStaging()
                 message = RESTORE_CANCELLED
                 phase = V2BackupPhase.CANCELLED
                 running.set(false)
@@ -210,10 +220,11 @@ internal class V2BackupCoordinator(
             } catch (_: Exception) {
                 validated = null
                 preview = null
-                discardDisposableStaging()
                 message = RESTORE_FAILED
                 phase = V2BackupPhase.FAILED
                 running.set(false)
+            } finally {
+                if (!keepStaging) releaseStaging()
             }
         }
     }
@@ -246,7 +257,9 @@ internal class V2BackupCoordinator(
                                 openedBoundary = true
                             }
                             withContext(Dispatchers.IO) {
-                                restoreStoreBackup(store, accepted, File(recoveryDir, "rollback"))
+                                usingStaging {
+                                    restoreStoreBackup(store, accepted, File(recoveryDir, "rollback"))
+                                }
                             }
                         }
                         dev.russiancompanion.v2.backup.V2BackupFaults.holdAfterCommit?.await()
@@ -260,15 +273,21 @@ internal class V2BackupCoordinator(
             withContext(NonCancellable) {
                 validated = null
                 preview = null
-                discardDisposableStaging()
+                releaseStaging()
                 if (openedBoundary) {
                     withContext(store.ioDispatcher) { store.closeLearnerReplacement() }
                 }
-                val committed = outcome == GovernedReplaceOutcome.REPLACED
+                val replaced = outcome == GovernedReplaceOutcome.REPLACED ||
+                    outcome == GovernedReplaceOutcome.CLEANUP_PENDING
                 when {
-                    committed -> {
+                    replaced -> {
                         val appearanceSaved = persistAppearance(appearancePreferenceFromStored(accepted.manifest.appearance))
-                        message = if (appearanceSaved) RESTORE_DONE else dev.russiancompanion.v2.backup.RESTORE_LEARNER_REPLACED_APPEARANCE_FAILED
+                        message = when {
+                            outcome == GovernedReplaceOutcome.CLEANUP_PENDING && appearanceSaved -> RESTORE_CLEANUP_PENDING
+                            outcome == GovernedReplaceOutcome.CLEANUP_PENDING -> RESTORE_CLEANUP_PENDING_APPEARANCE_FAILED
+                            appearanceSaved -> RESTORE_DONE
+                            else -> dev.russiancompanion.v2.backup.RESTORE_LEARNER_REPLACED_APPEARANCE_FAILED
+                        }
                         phase = V2BackupPhase.COMPLETED
                         runCatching { onRestored() }
                     }
@@ -308,7 +327,7 @@ internal class V2BackupCoordinator(
         if (phase == V2BackupPhase.AWAITING_CONFIRMATION || phase == V2BackupPhase.PREPARING) {
             validated = null
             preview = null
-            discardDisposableStaging()
+            releaseStaging()
             message = if (phase == V2BackupPhase.PREPARING) BACKUP_CANCELLED else RESTORE_CANCELLED
             phase = V2BackupPhase.CANCELLED
             running.set(false)
@@ -325,15 +344,50 @@ internal class V2BackupCoordinator(
         }
     }
 
-    private fun discardDisposableStaging() {
-        disposableStaging?.deleteRecursively()
-        disposableStaging = null
+    private fun acquireStaging(file: File) {
+        synchronized(stagingLock) {
+            disposableStaging = file
+            BackupWorkRegistry.holdIncoming(file)
+        }
+    }
+
+    private fun <T> usingStaging(block: () -> T): T {
+        synchronized(stagingLock) { stagingReaders.incrementAndGet() }
+        try {
+            return block()
+        } finally {
+            val releaseAfter = synchronized(stagingLock) {
+                stagingReaders.decrementAndGet()
+                cleared.get() && stagingReaders.get() == 0
+            }
+            if (releaseAfter) releaseStaging()
+        }
+    }
+
+    private fun releaseStaging() {
+        val file = synchronized(stagingLock) {
+            val current = disposableStaging ?: return
+            disposableStaging = null
+            BackupWorkRegistry.releaseIncoming(current)
+            current
+        }
+        file.deleteRecursively()
     }
 
     override fun onCleared() {
         cancelRequested = true
-        discardDisposableStaging()
         scope.cancel()
+        synchronized(stagingLock) {
+            cleared.set(true)
+            if (stagingReaders.get() == 0) {
+                val current = disposableStaging
+                disposableStaging = null
+                if (current != null) {
+                    BackupWorkRegistry.releaseIncoming(current)
+                    current.deleteRecursively()
+                }
+            }
+        }
     }
 
     internal fun sweepOrphansForTests() {
@@ -390,6 +444,7 @@ internal fun sweepOrphanIncoming(recoveryDir: File, active: File?) {
     if (!recoveryDir.isDirectory) return
     recoveryDir.listFiles()?.forEach { child ->
         if (!child.isDirectory || !child.name.startsWith("incoming-")) return@forEach
+        if (BackupWorkRegistry.incomingHeld(child)) return@forEach
         if (active != null && child.canonicalFile == active.canonicalFile) return@forEach
         child.deleteRecursively()
     }
