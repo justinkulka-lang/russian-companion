@@ -5106,7 +5106,8 @@ internal object V2Validator {
         ) {
             errors += "Provenance ${record.itemId} content-audit identity does not match"
         }
-        val synthesis = record.synthesis ?: return errors
+        val synthesis = record.synthesis
+            ?: return errors + "Provenance ${record.itemId} content-audit evidence is incomplete"
         if (synthesis.bibliography.isBlank() ||
             synthesis.authorshipDeclaration.isBlank() ||
             synthesis.objectiveOrClaimBinding.isBlank()
@@ -5129,7 +5130,8 @@ internal object V2Validator {
         ) {
             errors += "Provenance ${record.itemId} records a final audit before the final audit"
         }
-        if (synthesis.applications.isEmpty()) {
+        val coverageOnly = record.sourceRecordId.startsWith("ca-coverage:${record.objectiveId}:")
+        if (synthesis.applications.isEmpty() && !coverageOnly) {
             errors += "Provenance ${record.itemId} content-audit contrast has no stated applications"
         }
         synthesis.applications.forEach { application ->

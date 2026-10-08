@@ -12,6 +12,34 @@ from copy import deepcopy
 from apply_content_audit_corrections import Pack, PACK_PATH, SOURCE_ID
 
 
+def complete_coverage_evidence(data):
+    """Structure the authorship/bibliography already retained in coverage notes.
+
+    Coverage records make no answer-key application. A contrast still needs
+    its separately stated, same-span application; this adds no approval.
+    """
+    for record in data["provenanceRecords"]:
+        if record["sourceId"] != SOURCE_ID or record.get("synthesis") is not None:
+            continue
+        if not record["sourceRecordId"].startswith("ca-coverage:"):
+            raise ValueError("Missing synthesis on non-coverage record " + record["itemId"])
+        binding = record["sourceRecordId"].removeprefix("ca-coverage:")
+        if not binding.startswith(record["objectiveId"] + ":"):
+            binding = record["objectiveId"] + ":" + binding
+        record["sourceRecordId"] = "ca-coverage:" + binding
+        header = record["originalSourceText"].split("\n", 1)[0]
+        if "Bibliography" not in header or "Authorship: independently authored for Russian Companion." not in header:
+            raise ValueError("Coverage note has no retained research declaration " + record["itemId"])
+        record["synthesis"] = {
+            "bibliography": header,
+            "sourceDateOrVersion": "2026-10-08",
+            "authorshipDeclaration": "Authorship: independently authored for Russian Companion.",
+            "objectiveOrClaimBinding": binding,
+            "finalAudit": {key: "" for key in ("artifactIdentity", "artifactDigest", "auditedContentDigest", "disposition", "modelVersion", "date")},
+            "applications": [],
+        }
+
+
 def main():
     data = json.loads(PACK_PATH.read_text(encoding="utf-8"))
     if any(r["itemId"].startswith("prov-ca-repair-") for r in data["provenanceRecords"]):
@@ -48,6 +76,10 @@ def main():
         why="For си́ний, this unit supplies no documented manner-adverb counterpart, so a learner must consult a reliable lexical source rather than invent a form.",
         rationales={"the unit establishes a general conversion rule": "the unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs."},
         tested_feature="REJECTED_ARBITRARY_ADVERB")
+
+    stress_title = "Past-passive stress in the supplied examples; broader patterns remain pending review."
+    next(s for s in pack.units[27]["sessions"] if s["id"] == "u27-s-stress")["title"] = stress_title
+    pack.add_authored(27, stress_title)
 
     # A manner-adverb objective must not introduce an unapproved later
     # predicative construction as its supposedly independent application.
@@ -266,6 +298,7 @@ internal object ContentAuditCapabilityPins {
         for field in ("answerSourceIds", "distractorSourceIds", "relationParticipantIds"):
             if field in assessment:
                 assessment[field] = [renamed.get(x, x) for x in assessment[field]]
+    complete_coverage_evidence(data)
     output = PACK_PATH.with_suffix(".json.tmp")
     output.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     output.replace(PACK_PATH)

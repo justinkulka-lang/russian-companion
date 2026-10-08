@@ -55,6 +55,19 @@ class ContentAuditCheckpointRepairTest {
         assertTrue(correctedCapabilityDefects(duplicated, cap).any { "duplicates" in it })
     }
 
+    @Test fun researchAdmissionCannotOmitItsSynthesisEvidence() {
+        val pack = pack()
+        val record = pack.provenanceRecords.first {
+            it.sourceId == ContentAuditSources.SOURCE_ID && it.sourceRecordId.startsWith("ca-contrast:") && it.synthesis != null
+        }
+        val missingEvidence = pack.copy(provenanceRecords = pack.provenanceRecords.map {
+            if (it.itemId == record.itemId) it.copy(synthesis = null) else it
+        })
+        assertTrue(V2Validator.validate(missingEvidence).errors.any {
+            record.itemId in it && "content-audit evidence is incomplete" in it
+        })
+    }
+
     private fun pack(): V2CurriculumPack {
         val root = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
         return V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText())
