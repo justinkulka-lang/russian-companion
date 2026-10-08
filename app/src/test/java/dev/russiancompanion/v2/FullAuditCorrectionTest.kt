@@ -542,10 +542,13 @@ class FullAuditCorrectionTest {
         val labHold = kotlinx.coroutines.CompletableDeferred<Unit>()
         store.holdGovernedAttemptForTests = labHold
         compose.onNodeWithTag("v2-back").performClick()
+        awaitText("Practice")
         compose.onNodeWithText("Practice").performClick()
+        awaitText("Alphabet recognition")
         compose.onNodeWithText("Alphabet recognition").performScrollTo().performClick()
         val labA = labItem.options[0]
         val labB = labItem.options[1]
+        awaitTag("v2-lab-option-$labA")
         chooseLab(labA)
         compose.onNodeWithTag("v2-lab-submit").performClick()
         compose.onNodeWithTag("v2-lab-option-$labB").performScrollTo().assertIsNotEnabled()
@@ -648,6 +651,16 @@ class FullAuditCorrectionTest {
             Thread.sleep(20)
         }
         assertEquals(count, store.v2Attempts().size)
+    }
+
+    private fun awaitText(text: String) {
+        val started = System.currentTimeMillis()
+        while (System.currentTimeMillis() - started < 8_000) {
+            compose.waitForIdle()
+            if (compose.onAllNodesWithText(text, substring = true).fetchSemanticsNodes().isNotEmpty()) return
+            Thread.sleep(20)
+        }
+        compose.onNodeWithText(text, substring = true).assertIsDisplayed()
     }
 
     private fun awaitTag(tag: String) {

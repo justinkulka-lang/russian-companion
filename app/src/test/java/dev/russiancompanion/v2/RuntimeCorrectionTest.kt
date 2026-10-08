@@ -853,18 +853,21 @@ class RuntimeCorrectionTest {
         val start = System.currentTimeMillis()
         var stable = 0
         var last = -1
-        while (System.currentTimeMillis() - start < 5_000) {
+        while (System.currentTimeMillis() - start < 20_000) {
             compose.waitForIdle()
             val calls = gate.refreshCalls.get()
             val flight = gate.refreshInFlight.get()
-            if (flight == 0 && calls >= 2 && calls == last) {
+            // Opening a session submits two position writes after the initial load.
+            // A write can still be inside its block while no refresh is in flight, so
+            // wait until that third refresh has finished before arming the next gate.
+            if (flight == 0 && calls >= 3 && calls == last) {
                 stable += 1
                 if (stable >= 3) return
             } else {
                 stable = 0
             }
             last = calls
-            Thread.sleep(20)
+            Thread.sleep(30)
         }
         throw AssertionError("learner refresh did not settle; calls=${gate.refreshCalls.get()} inFlight=${gate.refreshInFlight.get()}")
     }
