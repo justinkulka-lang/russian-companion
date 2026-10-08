@@ -2,6 +2,7 @@ package dev.russiancompanion.data.local
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
+import dev.russiancompanion.RussianCompanionApplication
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
 import dev.russiancompanion.domain.gate.AnkiStatusValue
 import dev.russiancompanion.domain.gate.PRESENCE_RECORDED
@@ -27,6 +28,7 @@ class PackagedPathwayStoreTest {
     @Test
     fun packagedCompletePathwayCompletesATutorFreeLessonCycleOnce() {
         val context = ApplicationProvider.getApplicationContext<Context>()
+        (context.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
         context.deleteDatabase(LocalStore.DATABASE_NAME)
         LocalStore.open(context).use { store ->
             val segments = store.eligibleSegments()

@@ -25,12 +25,9 @@ import androidx.compose.ui.semantics.selected
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.unit.dp
-import dev.russiancompanion.v2.curriculum.OPTIONAL_PRACTICE
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
-import dev.russiancompanion.v2.curriculum.practiceOffers
-import dev.russiancompanion.v2.curriculum.practiceQueue
-import dev.russiancompanion.v2.curriculum.practiceStepId
+import dev.russiancompanion.v2.curriculum.practiceLabSnapshot
 import dev.russiancompanion.v2.curriculum.savedWorkEntries
 
 @Composable
@@ -41,12 +38,18 @@ internal fun V2SavedWorkScreen(
     onResume: (String, Int) -> Unit,
     onOpenReference: (String) -> Unit,
 ) {
-    val entries = savedWorkEntries(pack, learner)
+    val entries = rememberGoverned(pack, learner, label = "saved-work") {
+        savedWorkEntries(pack, learner)
+    }
     V2Scaffold(title = "Saved work", tab = null, onTab = {}, onBack = onBack) {
         Text(
             "Resume a saved lesson, bookmark, note, or tutor question. Completed checks are not listed here.",
             modifier = Modifier.semantics { testTag = "v2-saved-heading" },
         )
+        if (entries == null) {
+            V2Status("Preparing saved work")
+            return@V2Scaffold
+        }
         if (entries.isEmpty()) {
             V2Status("No saved work yet.")
         }
@@ -79,15 +82,17 @@ internal fun V2LabScreen(
     onBack: () -> Unit,
     onSubmit: (String, String) -> Boolean,
 ) {
-    val offer = practiceOffers(pack, learner).firstOrNull { it.id == labId }
-    val items = practiceQueue(pack, learner, labId)
+    val snapshot = rememberGoverned(pack, learner, label = "practice-lab") {
+        practiceLabSnapshot(pack, learner, labId)
+    }
+    val offer = snapshot?.offer
+    val items = snapshot?.items.orEmpty()
     var index by rememberSaveable(labId) { mutableIntStateOf(0) }
     var chosen by rememberSaveable(labId, index) { mutableStateOf<String?>(null) }
     val item = items.getOrNull(index.coerceAtMost(items.lastIndex.coerceAtLeast(0)))
-    val recorded = learner.governedAttempts.orEmpty()
-        .filter { it.attemptRole == OPTIONAL_PRACTICE && it.stepId == practiceStepId(labId) && it.itemId == item?.id }
-        .lastOrNull()
-    val pending = item != null && "practice:$labId:${item.id}:${chosen.orEmpty()}" in pendingKeys
+    val recorded = item?.let { snapshot?.recordedByItem[it.id] }
+    val itemId = item?.id
+    val pending = itemId != null && pendingKeys.any { it.startsWith("practice:$labId:$itemId:") }
     V2Scaffold(
         title = offer?.title ?: "Practice",
         tab = null,
@@ -122,6 +127,10 @@ internal fun V2LabScreen(
             }
         },
     ) {
+        if (snapshot == null) {
+            Text("Preparing practice", modifier = Modifier.semantics { testTag = "v2-lab-preparing" })
+            return@V2Scaffold
+        }
         if (offer?.runnable != true) {
             Text(offer?.detail ?: "This practice is unavailable.", modifier = Modifier.semantics { testTag = "v2-lab-blocked" })
             return@V2Scaffold

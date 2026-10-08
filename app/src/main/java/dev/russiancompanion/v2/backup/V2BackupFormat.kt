@@ -25,7 +25,13 @@ internal const val BACKUP_CANCELLED = "Backup cancelled. The records on this dev
 internal const val RESTORE_FAILED = "Restore failed. The records already on this device are unchanged."
 internal const val RESTORE_RECOVERY_REQUIRED =
     "Restore failed. Local recovery is still required. Open the app again to finish restoring the learner records from before this attempt."
+internal const val RESTORE_CLEANUP_PENDING =
+    "Restore finished. Learner records were replaced with the backup. Recording cleanup is still required. Open the app again to finish removing the replaced recording files. The learner records were not rolled back."
+internal const val RESTORE_CLEANUP_PENDING_APPEARANCE_FAILED =
+    "Restore finished. Learner records were replaced with the backup. Recording cleanup is still required. The appearance preference could not be saved and is unchanged. Open the app again to finish removing the replaced recording files. The learner records were not rolled back."
 internal const val RESTORE_DONE = "Restore finished. Learner records were replaced with the backup. They were not merged."
+internal const val RESTORE_LEARNER_REPLACED_APPEARANCE_FAILED =
+    "Restore finished. Learner records were replaced with the backup. The appearance preference could not be saved and is unchanged."
 internal const val RESTORE_CANCELLED = "Restore cancelled. The records on this device are unchanged."
 internal const val REPLACE_EXPLANATION =
     "Restoring replaces learner records on this device with this backup. It does not merge. Records only on this device will be removed."
@@ -122,6 +128,7 @@ internal data class BackupAttempt(
     val objectiveId: String = "",
     val unitNumber: Int = 0,
     val stepId: String = "",
+    val acceptedOrder: Long = 0,
 )
 
 @Serializable
@@ -243,6 +250,7 @@ internal enum class GovernedReplaceOutcome {
     REPLACED,
     UNCHANGED,
     RECOVERY_REQUIRED,
+    CLEANUP_PENDING,
 }
 
 internal enum class BackupRejection {
@@ -266,6 +274,25 @@ internal object V2BackupFaults {
     @Volatile var crashAfterFileSwapBeforeCommit: Boolean = false
     @Volatile var failJournalWrite: Boolean = false
     @Volatile var failSnapshotRestore: Boolean = false
+    @Volatile var throwOnRestore: Throwable? = null
+    @Volatile var throwOnCurrentDocument: Throwable? = null
+    @Volatile var beforeMutationHold: kotlinx.coroutines.CompletableDeferred<Unit>? = null
+    @Volatile var replacementEntered: java.util.concurrent.CountDownLatch? = null
+    @Volatile var holdDuringReplacement: java.util.concurrent.CountDownLatch? = null
+    @Volatile var holdAfterCommit: kotlinx.coroutines.CompletableDeferred<Unit>? = null
+    @Volatile var retainSwapArtifact: Boolean = false
+    @Volatile var boundaryQueuedForTests: java.util.concurrent.CountDownLatch? = null
+    @Volatile var boundaryOpenedForTests: java.util.concurrent.CountDownLatch? = null
+    @Volatile var afterBoundaryBeforeIo: kotlinx.coroutines.CompletableDeferred<Unit>? = null
+    @Volatile var stagingCreateEntered: java.util.concurrent.CountDownLatch? = null
+    @Volatile var stagingCreateHold: java.util.concurrent.CountDownLatch? = null
+    @Volatile var failStagingCreate: Boolean = false
+
+    /** Counts down on the staging worker immediately before a queued incoming delete waits. */
+    @Volatile var stagingDeleteEntered: java.util.concurrent.CountDownLatch? = null
+
+    /** When set, the staging worker waits here before the ownership check and delete. */
+    @Volatile var stagingDeleteHold: java.util.concurrent.CountDownLatch? = null
 
     fun reset() {
         failWrite = false
@@ -276,7 +303,155 @@ internal object V2BackupFaults {
         crashAfterFileSwapBeforeCommit = false
         failJournalWrite = false
         failSnapshotRestore = false
+        throwOnRestore = null
+        throwOnCurrentDocument = null
+        beforeMutationHold = null
+        replacementEntered = null
+        holdDuringReplacement = null
+        holdAfterCommit = null
+        retainSwapArtifact = false
+        boundaryQueuedForTests = null
+        boundaryOpenedForTests = null
+        afterBoundaryBeforeIo = null
+        stagingCreateEntered = null
+        stagingCreateHold?.countDown()
+        stagingCreateHold = null
+        failStagingCreate = false
+        stagingDeleteEntered = null
+        stagingDeleteHold?.countDown()
+        stagingDeleteHold = null
     }
+}
+
+/**
+ * Incoming staging and recording inputs that a restore is still reading.
+ * Every coordinator shares this set. A sweep must not delete a held path.
+ */
+internal object BackupWorkRegistry {
+    private val lock = Any()
+    private val incoming = HashMap<String, Int>()
+    private val recordingInputs = HashMap<String, Int>()
+
+    @Volatile
+    var lastDeleteThreadForTests: Thread? = null
+
+    fun holdIncoming(file: File) {
+        synchronized(lock) { addCount(incoming, canonical(file)) }
+    }
+
+    /**
+     * Own [file] before it exists, then create it under the same lock a sweep
+     * uses to delete. A concurrent sweep cannot observe an unowned directory.
+     * A failed creation drops exactly the lease this call acquired.
+     */
+    fun createOwnedIncoming(file: File) {
+        val key = canonical(file)
+        synchronized(lock) {
+            file.parentFile?.mkdirs()
+            addCount(incoming, key)
+            try {
+                if (!file.isDirectory && !file.mkdirs() && !file.isDirectory) error("staging-directory")
+            } catch (error: Throwable) {
+                dropCount(incoming, key)
+                throw error
+            }
+        }
+        try {
+            V2BackupFaults.stagingCreateEntered?.countDown()
+            val hold = V2BackupFaults.stagingCreateHold
+            if (hold != null && !hold.await(20, java.util.concurrent.TimeUnit.SECONDS)) {
+                error("staging-create-hold")
+            }
+            if (V2BackupFaults.failStagingCreate) error("staging-directory")
+        } catch (error: Throwable) {
+            synchronized(lock) { dropCount(incoming, key) }
+            throw error
+        }
+    }
+
+    fun incomingOwnershipForTests(file: File): Int = synchronized(lock) { incoming[canonical(file)] ?: 0 }
+
+    fun incomingOwnershipTotalForTests(): Int = synchronized(lock) { incoming.values.sum() }
+
+    fun releaseIncoming(file: File) {
+        synchronized(lock) { dropCount(incoming, canonical(file)) }
+    }
+
+    /**
+     * Delete [file] only when it currently has no incoming owner.
+     * The check and the delete share the acquisition/sweep lock, so a lease
+     * taken before this runs cannot observe a half-deleted directory.
+     * Callers that clean up after release must invoke this when the worker
+     * executes, not when the cleanup is scheduled.
+     */
+    fun deleteIncomingIfUnowned(file: File) {
+        synchronized(lock) { deleteIncomingIfUnownedLocked(file) }
+    }
+
+    fun incomingHeld(file: File): Boolean = synchronized(lock) { (incoming[canonical(file)] ?: 0) > 0 }
+
+    fun holdRecordings(files: Collection<File>) {
+        synchronized(lock) { files.forEach { addCount(recordingInputs, canonical(it)) } }
+    }
+
+    fun releaseRecordings(files: Collection<File>) {
+        synchronized(lock) { files.forEach { dropCount(recordingInputs, canonical(it)) } }
+    }
+
+    fun recordingHeld(file: File): Boolean = synchronized(lock) { (recordingInputs[canonical(file)] ?: 0) > 0 }
+
+    fun sweepUnownedIncoming(recoveryDir: File, alsoKeep: File?) {
+        if (!recoveryDir.isDirectory) return
+        val children = recoveryDir.listFiles() ?: return
+        for (child in children) {
+            if (!child.isDirectory || !child.name.startsWith("incoming-")) continue
+            synchronized(lock) {
+                val kept = alsoKeep != null && canonical(alsoKeep) == canonical(child)
+                if (!kept) deleteIncomingIfUnownedLocked(child)
+            }
+        }
+    }
+
+    fun clearForTests() {
+        synchronized(lock) {
+            incoming.clear()
+            recordingInputs.clear()
+        }
+        lastDeleteThreadForTests = null
+    }
+
+    private fun addCount(counts: HashMap<String, Int>, key: String) {
+        counts[key] = (counts[key] ?: 0) + 1
+    }
+
+    private fun dropCount(counts: HashMap<String, Int>, key: String) {
+        val next = (counts[key] ?: 0) - 1
+        if (next <= 0) counts.remove(key) else counts[key] = next
+    }
+
+    private fun deleteIncomingIfUnownedLocked(file: File) {
+        if ((incoming[canonical(file)] ?: 0) != 0) return
+        lastDeleteThreadForTests = Thread.currentThread()
+        file.deleteRecursively()
+    }
+
+    private fun canonical(file: File): String = runCatching { file.canonicalPath }.getOrElse { file.absolutePath }
+}
+
+/**
+ * Checked after the package hash matches and before any learner row is replaced.
+ * Order 0 may repeat: it is historical and has no recorded sequence. A negative
+ * order or a repeated positive order is malformed.
+ */
+internal fun acceptedOrderDefects(attempts: List<BackupAttempt>): String? {
+    val positives = HashSet<Long>()
+    for (attempt in attempts) {
+        val order = attempt.acceptedOrder
+        if (order < 0L) return "negative accepted order"
+        if (order == 0L) continue
+        if (!positives.add(order)) return "duplicate accepted order"
+    }
+    return null
 }
 
 @Serializable
@@ -439,6 +614,12 @@ internal fun readGovernedBackup(
             return BackupReadResult.Rejected(BackupRejection.INCOMPLETE)
         }
         if (duplicateIds(document)) return BackupReadResult.Rejected(BackupRejection.MALFORMED)
+        if (acceptedOrderDefects(document.attempts) != null) {
+            return BackupReadResult.Rejected(BackupRejection.MALFORMED)
+        }
+        if (backupProfileDefects(document.profile) != null) {
+            return BackupReadResult.Rejected(BackupRejection.MALFORMED)
+        }
         val stagedRecordings = mutableListOf<StagedRecording>()
         val recordingPaths = document.recordings.map { recordingEntryPath(it.id, it.localFileReference) }
         if (recordingPaths.toSet().size != recordingPaths.size) {
@@ -498,6 +679,37 @@ internal fun allowedBackupEntry(name: String): Boolean {
 internal fun safeRecordingId(id: String): Boolean {
     return id.length in 1..80 && id.all { it.isLetterOrDigit() || it == '_' || it == '-' }
 }
+
+/**
+ * Semantic profile rules checked after the package hash matches and before
+ * any learner record is replaced. A correctly hashed package can still be
+ * rejected here.
+ */
+internal fun backupProfileDefects(profile: BackupProfile): String? {
+    if (profile.id != "local") return "profile id"
+    if (profile.currentUnitNumber !in 1..30) return "unit"
+    if (profile.currentStepIndex !in 0..64) return "step index"
+    if (profile.startingPoint !in setOf("NEW_TO_CYRILLIC", "CAN_READ_CYRILLIC", "RESUME_FROM_BOOK")) {
+        return "starting point"
+    }
+    if (profile.dailyMinutes !in setOf(20, 35, 50)) return "daily minutes"
+    val session = profile.currentSessionId
+    if (session != null && (session.isBlank() || session.length > 80 || session.any { it !in SESSION_ID_CHARS })) {
+        return "session"
+    }
+    return when (profile.resumeIdentitySchema) {
+        0 -> if (profile.resumeContentDigest.isEmpty() || profile.resumeContentDigest == UNRECOVERABLE_GOVERNED_IDENTITY) {
+            null
+        } else {
+            "legacy resume digest"
+        }
+        1 -> if (profile.resumeContentDigest.matches(HEX_64)) null else "resume digest"
+        else -> "resume schema"
+    }
+}
+
+private val SESSION_ID_CHARS = ('a'..'z') + ('A'..'Z') + ('0'..'9') + listOf('_', '-', ':')
+private val HEX_64 = Regex("^[a-f0-9]{64}$")
 
 private fun duplicateIds(document: GovernedLearnerDocument): Boolean {
     fun <T> dup(values: List<T>, id: (T) -> String) = values.size != values.map(id).toSet().size

@@ -29,8 +29,11 @@ internal interface V2Dao {
     @Insert
     fun insertAttempt(attempt: V2AttemptEntity)
 
-    @Query("SELECT * FROM v2_attempts ORDER BY recordedAtLocal, id")
+    @Query("SELECT * FROM v2_attempts ORDER BY acceptedOrder ASC, id ASC")
     fun attempts(): List<V2AttemptEntity>
+
+    @Query("SELECT COALESCE(MAX(acceptedOrder), 0) FROM v2_attempts")
+    fun maxAcceptedOrder(): Long
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun upsertBookmark(bookmark: V2BookmarkEntity)

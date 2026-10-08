@@ -742,7 +742,7 @@ class V2RebuildTest {
         val pack = pack()
         val store = LocalStore.openInMemory(context()).also { stores += it }
         store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, dailyMinutes = 35))
-        val today = todaysSession(pack.unit(1)!!, store.v2LearnerView())
+        val today = todaysSession(pack, pack.unit(1)!!, store.v2LearnerView())
         assertEquals(pack.unit(1)!!.sessions.first().id, today?.id)
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
         compose.onNodeWithTag("v2-today-unit").assertIsDisplayed()

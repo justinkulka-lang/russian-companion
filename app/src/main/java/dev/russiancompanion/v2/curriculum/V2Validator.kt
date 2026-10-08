@@ -91,8 +91,17 @@ internal object V2Validator {
      * rights, assets, and advancement rule reachable from it. Scope is part of
      * the document so this digest cannot collide with the pack aggregate.
      */
-    internal fun unitContentReviewDigest(pack: V2CurriculumPack, unitNumber: Int): String =
-        sha256(canonicalUnitInstructionalDocument(pack, unitNumber))
+    /** Counts real canonical-unit digest executions, including cache misses. */
+    internal val unitDigestExecutionsForTests = java.util.concurrent.atomic.AtomicInteger(0)
+
+    @Volatile
+    internal var unitDigestExecutionThreadForTests: Thread? = null
+
+    internal fun unitContentReviewDigest(pack: V2CurriculumPack, unitNumber: Int): String {
+        unitDigestExecutionsForTests.incrementAndGet()
+        unitDigestExecutionThreadForTests = Thread.currentThread()
+        return sha256(canonicalUnitInstructionalDocument(pack, unitNumber))
+    }
 
     internal fun instructionalContentDigest(pack: V2CurriculumPack): String = contentReviewDigest(pack)
 
@@ -705,9 +714,6 @@ internal object V2Validator {
     }
 
     private fun validateInstalled(pack: V2CurriculumPack, unit: V2Unit, repositoryRoot: File?, errors: MutableList<String>) {
-        if (unit.number !in 1..2) {
-            errors += "Only Units 1-2 may be installed in this pack"
-        }
         val installedReview = unitReview(pack, unit.number)
         val legacyApproved = installedReview?.status == "APPROVED"
         val chainAccepted = installedReview != null &&
@@ -736,10 +742,10 @@ internal object V2Validator {
         if (unit.sessions.any { session -> session.steps.any { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() } }) {
             errors += "Installed unit ${unit.number} still has unavailable required experiences"
         }
-        if (!pronunciationAudioResolves(pack, unit)) {
+        if (installationRequiresPronunciationAudio(unit.number) && !pronunciationAudioResolves(pack, unit)) {
             errors += "Installed unit ${unit.number} requires a mapped pronunciation audio record"
         }
-        if (unit.number == 2 && !handwritingAssetResolves(pack, unit)) {
+        if (installationRequiresHandwritingAsset(unit.number) && !handwritingAssetResolves(pack, unit)) {
             errors += "Installed Unit 2 requires a verified handwriting asset record"
         }
         if (!ownedEditionMappingResolves(pack, unit)) {
@@ -3766,6 +3772,11 @@ internal object V2Validator {
         return errors
     }
 
+    /** The production relationship predicate, so a lost dash pair cannot hide a rejection. */
+    internal fun unsupportedRelationshipErrorsForTests(item: V2CheckItem, originals: List<String>): List<String> {
+        return falseRelationshipErrors(item, originals)
+    }
+
     private fun pairSupported(rights: Set<String>, claimed: String): Boolean {
         return rights.any { gloss ->
             gloss == claimed ||
@@ -3780,7 +3791,42 @@ internal object V2Validator {
         }
     }
 
+    private val explicitPairCache = object : LinkedHashMap<String, Map<String, Set<String>>>(64, 0.75f, true) {
+        override fun removeEldestEntry(eldest: MutableMap.MutableEntry<String, Map<String, Set<String>>>): Boolean {
+            return size > 128
+        }
+    }
+
     private fun explicitPairs(original: String): Map<String, Set<String>> {
+        synchronized(explicitPairCache) {
+            explicitPairCache[original]?.let { return it }
+        }
+        val computed = computeExplicitPairs(original, linearDashes = true)
+        synchronized(explicitPairCache) {
+            explicitPairCache[original] = computed
+        }
+        return computed
+    }
+
+    internal fun explicitPairsProbe(original: String): Map<String, Set<String>> = explicitPairs(original)
+
+    internal fun explicitPairsRegexProbe(original: String): Map<String, Set<String>> {
+        return computeExplicitPairs(original, linearDashes = false)
+    }
+
+    /** Raw scanner pairs, without the explicit-pair cache or trim. */
+    internal fun dashPairsProbe(visible: String): List<Pair<String, String>> = linearDashPairs(visible)
+
+    /** Raw JVM regex pairs for the same pattern the scanner implements. */
+    internal fun dashPairsRegexProbe(visible: String): List<Pair<String, String>> = regexDashPairs(visible)
+
+    internal fun dashScanOperationsForTests(): Long = dashScanOperations.get()
+
+    internal fun resetDashScanOperationsForTests() {
+        dashScanOperations.set(0)
+    }
+
+    private fun computeExplicitPairs(original: String, linearDashes: Boolean): Map<String, Set<String>> {
         val visible = BatchARemainingSources.htmlVisible(unfoldWikiLabels(original))
         val found = linkedMapOf<String, MutableSet<String>>()
         fun add(left: String, right: String) {
@@ -3790,9 +3836,10 @@ internal object V2Validator {
                 found.getOrPut(key) { linkedSetOf() }.add(value)
             }
         }
-        DASH_PAIR.findAll(visible).forEach { match ->
-            val left = match.groupValues[1].substringAfterLast("}}")
-            val right = match.groupValues[2].trim()
+        val dashes = if (linearDashes) linearDashPairs(visible) else regexDashPairs(visible)
+        dashes.forEach { (leftRaw, rightRaw) ->
+            val left = leftRaw.substringAfterLast("}}")
+            val right = rightRaw.trim()
             val paren = Regex("""^([^()]{1,140}?)\s*\(([^()]*)\)\s*$""").find(right)
             if (paren != null) {
                 add(left, paren.groupValues[1])
@@ -3809,6 +3856,191 @@ internal object V2Validator {
             }
         }
         return found
+    }
+
+    private fun regexDashPairs(visible: String): List<Pair<String, String>> {
+        return DASH_PAIR.findAll(visible).map { it.groupValues[1] to it.groupValues[2] }.toList()
+    }
+
+    private val dashScanOperations = java.util.concurrent.atomic.AtomicLong()
+
+    /**
+     * Same non-overlapping pairs as [DASH_PAIR].
+     *
+     * Java's `Matcher.find` counts `[^\n—–]{1,90}` and `{1,160}` in code points
+     * (`Character.codePointAt` / `charCount`), so a supplementary character is
+     * one capture unit and is never split. Search still resumes on UTF-16
+     * boundaries after each match. A dash is the separator: the leftmost start
+     * that reaches it with greedy `A{1,90}\s*` owns that dash, and the right
+     * side is `\s*` with backtracking onto non-newline whitespace. Failed
+     * starts do not rescan the remaining suffix; a string with no dash is one
+     * forward pass.
+     */
+    private fun linearDashPairs(visible: String): List<Pair<String, String>> {
+        val out = ArrayList<Pair<String, String>>()
+        var search = 0
+        val length = visible.length
+        while (search < length) {
+            val dash = findNextDash(visible, search)
+            if (dash < 0) break
+            val left = leftmostLeftCapture(visible, search, dash)
+            if (left == null) {
+                search = dash + 1
+                continue
+            }
+            val right = matchDashRight(visible, dash)
+            if (right == null) {
+                search = dash + 1
+                continue
+            }
+            out += visible.substring(left.first, left.second) to visible.substring(right.first, right.second)
+            search = right.second
+        }
+        return out
+    }
+
+    private fun findNextDash(text: String, from: Int): Int {
+        var index = from
+        val length = text.length
+        while (index < length) {
+            dashScanOperations.incrementAndGet()
+            val character = text[index]
+            if (character == '—' || character == '–') return index
+            index++
+        }
+        return -1
+    }
+
+    /**
+     * Left capture bounds for the leftmost start at or after [search] whose
+     * greedy left side lands on [dash]. Null when no such start exists.
+     */
+    private fun leftmostLeftCapture(text: String, search: Int, dash: Int): Pair<Int, Int>? {
+        var whitespace = dash
+        while (whitespace > search && isPatternWhitespace(text[whitespace - 1])) {
+            dashScanOperations.incrementAndGet()
+            whitespace--
+        }
+        var runStart = whitespace
+        while (runStart > search) {
+            dashScanOperations.incrementAndGet()
+            val previous = runStart - 1
+            var codeStart = previous
+            if (text[previous].isLowSurrogate() && previous > search && text[previous - 1].isHighSurrogate()) {
+                codeStart = previous - 1
+            }
+            if (codeStart < search) break
+            if (!isDashCaptureCodePoint(Character.codePointAt(text, codeStart))) break
+            runStart = codeStart
+        }
+        if (search >= dash) return null
+        if (search > runStart && search >= whitespace) {
+            var start = search
+            while (start < dash && !isDashCaptureCodePoint(Character.codePointAt(text, start))) {
+                dashScanOperations.incrementAndGet()
+                start++
+            }
+            if (start >= dash) return null
+            return greedyLeftCapture(text, start, start, dash)
+        }
+        if (runStart == whitespace) {
+            var start = maxOf(runStart, search)
+            while (start < dash && !isDashCaptureCodePoint(Character.codePointAt(text, start))) {
+                dashScanOperations.incrementAndGet()
+                start++
+            }
+            if (start >= dash) return null
+            return greedyLeftCapture(text, start, whitespace, dash)
+        }
+        val region = maxOf(runStart, search)
+        return greedyLeftCapture(text, region, whitespace, dash)
+    }
+
+    private fun greedyLeftCapture(text: String, start: Int, whitespace: Int, dash: Int): Pair<Int, Int>? {
+        var index = start
+        var count = 0
+        var end = start
+        while (index < dash && count < 90) {
+            dashScanOperations.incrementAndGet()
+            val codePoint = Character.codePointAt(text, index)
+            if (!isDashCaptureCodePoint(codePoint)) break
+            val next = index + Character.charCount(codePoint)
+            if (next > dash) break
+            index = next
+            count++
+            end = index
+            if (count == 90 && end < whitespace) return startForLeftEnd(text, start, whitespace)
+        }
+        if (count == 0) return null
+        var rest = end
+        while (rest < dash) {
+            dashScanOperations.incrementAndGet()
+            if (!isPatternWhitespace(text[rest])) return null
+            rest++
+        }
+        return start to end
+    }
+
+    private fun startForLeftEnd(text: String, region: Int, limit: Int): Pair<Int, Int>? {
+        val starts = ArrayList<Int>()
+        var index = region
+        while (index < limit) {
+            dashScanOperations.incrementAndGet()
+            starts += index
+            index += Character.charCount(Character.codePointAt(text, index))
+        }
+        if (starts.size < 90) return null
+        return starts[starts.size - 90] to limit
+    }
+
+    /**
+     * `\s*([^\n—–]{1,160})` after a dash. Greedy whitespace is kept when the
+     * following code point can start the right capture. Otherwise whitespace
+     * backtracks to the rightmost code point the capture can take, including
+     * non-newline whitespace. The capture counts code points and does not
+     * split a surrogate pair.
+     */
+    private fun matchDashRight(visible: String, dash: Int): Pair<Int, Int>? {
+        val length = visible.length
+        var whitespaceEnd = dash + 1
+        while (whitespaceEnd < length && isPatternWhitespace(visible[whitespaceEnd])) {
+            dashScanOperations.incrementAndGet()
+            whitespaceEnd++
+        }
+        if (whitespaceEnd < length && isDashCaptureCodePoint(Character.codePointAt(visible, whitespaceEnd))) {
+            return whitespaceEnd to consumeDashCapture(visible, whitespaceEnd)
+        }
+        var rightStart = whitespaceEnd - 1
+        while (rightStart > dash) {
+            dashScanOperations.incrementAndGet()
+            if (isDashCaptureCodePoint(Character.codePointAt(visible, rightStart))) {
+                return rightStart to consumeDashCapture(visible, rightStart)
+            }
+            rightStart--
+        }
+        return null
+    }
+
+    private fun consumeDashCapture(visible: String, start: Int): Int {
+        var end = start
+        var count = 0
+        while (end < visible.length && count < 160) {
+            dashScanOperations.incrementAndGet()
+            val codePoint = Character.codePointAt(visible, end)
+            if (!isDashCaptureCodePoint(codePoint)) break
+            end += Character.charCount(codePoint)
+            count++
+        }
+        return end
+    }
+
+    private fun isDashCaptureCodePoint(codePoint: Int): Boolean {
+        return codePoint != '\n'.code && codePoint != '—'.code && codePoint != '–'.code
+    }
+
+    private fun isPatternWhitespace(character: Char): Boolean {
+        return character == ' ' || character == '\t' || character == '\n' ||
+            character == '\u000B' || character == '\u000C' || character == '\r'
     }
 
     private val READY_RUSSIAN_MEDIA = Regex(
@@ -4221,7 +4453,9 @@ internal object V2Validator {
     }
 
     private fun validateReachableSessions(pack: V2CurriculumPack, errors: MutableList<String>) {
-        pack.units.filter { it.openable() }.forEach { unit ->
+        // Structural check for every development or installed unit. The release
+        // gate runs without Android BuildConfig, so the debug default is not used.
+        pack.units.filter { it.openable(developmentVisible = true) }.forEach { unit ->
             unit.sessions.forEach { session ->
                 if (session.steps.isEmpty()) {
                     errors += "Session ${session.id} is not reachable because it has no steps"
@@ -5073,7 +5307,12 @@ internal object V2Validator {
     internal fun activatedAuthorityVariance(unitNumber: Int): Boolean =
         unitNumber in ACTIVATED_AUTHORITY_VARIANCE_UNITS
 
-    /** This pack installs only Units 1–2, and those installed units must resolve pronunciation audio. */
+    /**
+     * Units 1 and 2 teach letter pronunciation, so an installed copy must resolve
+     * a unit-specific audio asset linked to a reachable letter. Later units do
+     * not inherit that letter-audio rule. They still need their own review,
+     * mapping, and any asset that their installed-unit checks name.
+     */
     internal fun installationRequiresPronunciationAudio(unitNumber: Int): Boolean = unitNumber in 1..2
 
     /** Installed Unit 2 is the only unit `validateInstalled` requires a handwriting asset for. */

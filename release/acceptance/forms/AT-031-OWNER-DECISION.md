@@ -25,13 +25,13 @@ results.
 
 ## Owner checklist (leave blank)
 
-1. Confirm all four primary capabilities are complete:
-2. Confirm licensed native audio and matching metadata preparation is complete:
-3. Confirm all shipped capabilities pass offline testing:
-4. Confirm local export passes:
+1. Confirm Today, Course, Practice, Reference, and Progress on the 2.0.0-dev candidate:
+2. Confirm mapped audio is still absent and was not treated as installed:
+3. Confirm shipped screens pass offline testing:
+4. Confirm local backup and restore:
 5. Confirm rights records, attributions, and share-alike disposition are complete:
-6. Confirm the full lesson cycle passes:
-7. Confirm optional drills, if any, pass conditional criteria and are not treated as release dependencies:
+6. Confirm the Unit 1 study cycle, without scoring pronunciation:
+7. Confirm unavailable listening, pronunciation, and handwriting are not scored and are not treated as release dependencies:
 8. Inspect for any substitution of missing required content:
 
 ## Decision

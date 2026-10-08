@@ -59,6 +59,7 @@ internal enum class ReleaseBlocker(val message: String) {
     LINGUISTIC_REVIEW_ABSENT("Qualified linguistic review is not recorded."),
     PENGUIN_MAPPING_UNAPPROVED("Penguin edition mappings are not reviewer-approved."),
     V2_MAPPED_AUDIO_ABSENT("Units 1-2 have no reviewer-mapped licensed audio."),
+    CURRICULUM_VALIDATION_FAILED("The packaged curriculum does not pass full validation."),
 }
 
 internal data class ReleaseAssessment(
@@ -650,5 +651,8 @@ internal fun curriculumBlockers(pack: V2CurriculumPack, repositoryRoot: File): L
         }
     }
     if (!hasMappedAudio) blockers += ReleaseBlocker.V2_MAPPED_AUDIO_ABSENT
+    if (!V2Validator.validate(pack, repositoryRoot).ok) {
+        blockers += ReleaseBlocker.CURRICULUM_VALIDATION_FAILED
+    }
     return blockers
 }

@@ -33,6 +33,16 @@ class RussianCompanionApplication : Application() {
         startup.execute { awaitLocalStore() }
     }
 
+    /**
+     * File-database tests own `russian-companion.db`. Startup opens that same file
+     * on a background thread and would reseed the packaged catalog under them.
+     * Waiting here finishes that open, and closing the store leaves [localStore]
+     * set so startup does not open the file again.
+     */
+    internal fun closeStartupStoreForTests() {
+        awaitLocalStore()?.close()
+    }
+
     internal fun awaitLocalStore(force: Boolean = false): LocalStore? {
         if (force) {
             retryOpen()

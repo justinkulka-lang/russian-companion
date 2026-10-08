@@ -8,6 +8,7 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.test.core.app.ApplicationProvider
+import dev.russiancompanion.RussianCompanionApplication
 import dev.russiancompanion.data.export.readAppRecording
 import dev.russiancompanion.data.local.ActivityCategory
 import dev.russiancompanion.data.local.CompletionState
@@ -145,6 +146,7 @@ class AcceptanceBehaviorTest {
     @Test
     fun at019_closedStoreReopensWithTheSameUserRecordsAndRecordingBytes() {
         val context = ApplicationProvider.getApplicationContext<Context>()
+        (context.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
         context.deleteDatabase(LocalStore.DATABASE_NAME)
         val reference = "recordings/at019.m4a"
         val bytes = byteArrayOf(3, 1, 4, 1, 5)

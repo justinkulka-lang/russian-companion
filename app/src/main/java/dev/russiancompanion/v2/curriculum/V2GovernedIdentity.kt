@@ -3,8 +3,18 @@ package dev.russiancompanion.v2.curriculum
 import dev.russiancompanion.v2.data.V2ProfileEntity
 import java.security.MessageDigest
 
-/** Identity schema written on new attempts, steps, bookmarks, notes, and resume positions. */
+/** Identity schema written on new attempts, bookmarks, notes, and resume positions. */
 internal const val GOVERNED_IDENTITY_SCHEMA = 1
+
+/**
+ * Canonical step identity. Schema 1 hashed only the step id, kind, title,
+ * body, and item digests. Schema 2 added instructional text with ambiguous
+ * newline joins. Schema 3 is an unambiguous length-prefixed encoding and
+ * binds the displayed session id, title, and objective ids. A stored schema
+ * 1 or 2 digest is not rewritten and does not count as the current step.
+ * Session estimated minutes are a schedule budget and are outside this identity.
+ */
+internal const val STEP_IDENTITY_SCHEMA = 3
 
 /**
  * Legacy and unverifiable rows keep this sentinel. It is not a content hash and
@@ -47,6 +57,8 @@ internal data class GovernedAttemptView(
     val objectiveId: String,
     val unitNumber: Int,
     val stepId: String,
+    /** 0 means the historical insertion order was not recorded and must not be invented. */
+    val acceptedOrder: Long = 0,
 )
 
 internal data class GovernedBookmarkView(
@@ -112,12 +124,83 @@ internal data class SavedWorkEntry(
 
 internal fun closedResponseRuleDigest(): String = sha256Hex(CLOSED_RESPONSE_RULE_DOCUMENT)
 
+/** Length-prefixed text. Field boundaries stay unambiguous when a value contains separators. */
+internal fun canonicalText(value: String): String {
+    val size = value.toByteArray(Charsets.UTF_8).size
+    return "$size:$value"
+}
+
+internal fun canonicalParts(parts: List<String>): String {
+    return parts.size.toString() + "{" + parts.joinToString(";") { canonicalText(it) } + "}"
+}
+
 internal fun stepContentDigest(pack: V2CurriculumPack, step: V2Step): String {
-    val items = step.itemIds.joinToString("\n") { id ->
+    V2PackIdentityIndex.stepDigest(pack, step.id)?.let { return it }
+    return rawStepContentDigest(pack, step)
+}
+
+internal fun rawStepContentDigest(pack: V2CurriculumPack, step: V2Step): String {
+    val items = canonicalParts(step.itemIds.map { id ->
         val item = pack.item(id)
-        if (item == null) "missing:$id" else V2Validator.checkItemContentDigest(item)
+        if (item == null) canonicalText("missing:$id") else V2Validator.checkItemContentDigest(item)
+    })
+    val examples = canonicalParts(step.exampleIds.map { id ->
+        val example = pack.example(id)
+        if (example == null) {
+            canonicalText("missing:$id")
+        } else {
+            canonicalParts(
+                listOf(
+                    example.id,
+                    example.kind,
+                    example.letterId,
+                    example.display,
+                    example.note,
+                    example.objectiveId,
+                    example.sourceId,
+                ),
+            )
+        }
+    })
+    val references = canonicalParts(step.referenceIds.map { id ->
+        val entry = pack.reference(id)
+        if (entry == null) canonicalText("missing:$id") else rawReferenceContentDigest(entry)
+    })
+    val session = pack.step(step.id)?.first
+    val sessionContext = if (session == null) {
+        canonicalParts(listOf("session-absent"))
+    } else {
+        canonicalParts(listOf(session.id, session.title, canonicalParts(session.objectiveIds)))
     }
-    return sha256Hex(listOf(step.id, step.kind, step.title, step.body, items).joinToString("\n"))
+    val relationships = canonicalParts(pack.units.flatMap { it.objectives }.mapNotNull { objective ->
+        val roles = listOfNotNull(
+            "instruction".takeIf { step.id in objective.instructionStepIds },
+            "practice".takeIf { step.id in objective.practiceStepIds },
+            "remediation".takeIf { step.id in objective.remediationStepIds },
+        )
+        if (roles.isEmpty()) null else canonicalParts(listOf(objective.id, canonicalParts(roles)))
+    }.sorted())
+    return sha256Hex(
+        canonicalParts(
+            listOf(
+                "step-identity-schema:$STEP_IDENTITY_SCHEMA",
+                step.id,
+                step.kind,
+                step.title,
+                step.body,
+                step.dominantAction,
+                step.bookDirection.orEmpty(),
+                step.companionDirection.orEmpty(),
+                step.unavailableReason.orEmpty(),
+                step.remediationStepId.orEmpty(),
+                items,
+                examples,
+                references,
+                sessionContext,
+                relationships,
+            ),
+        ),
+    )
 }
 
 internal fun resumePositionDigest(pack: V2CurriculumPack, sessionId: String, stepIndex: Int): String? {
@@ -126,8 +209,12 @@ internal fun resumePositionDigest(pack: V2CurriculumPack, sessionId: String, ste
     return stepContentDigest(pack, step)
 }
 
-internal fun referenceContentDigest(entry: V2ReferenceEntry): String {
-    return sha256Hex(listOf(entry.id, entry.title, entry.summary, entry.detail).joinToString("\n"))
+internal fun referenceContentDigest(entry: V2ReferenceEntry): String = rawReferenceContentDigest(entry)
+
+internal fun rawReferenceContentDigest(entry: V2ReferenceEntry): String {
+    return sha256Hex(
+        canonicalParts(listOf("reference-identity-schema:1", entry.id, entry.title, entry.summary, entry.detail)),
+    )
 }
 
 internal fun targetContentDigest(pack: V2CurriculumPack, targetId: String, kind: String): String? {
@@ -171,7 +258,8 @@ internal fun prepareGovernedAttempt(
     val unit = pack.unit(unitNumber) ?: return null
     if (!unit.openable()) return null
     val itemDigest = V2Validator.checkItemContentDigest(item)
-    val unitDigest = V2Validator.unitContentReviewDigest(pack, unitNumber)
+    val unitDigest = V2PackIdentityIndex.unitDigest(pack, unitNumber)
+        ?: V2Validator.unitContentReviewDigest(pack, unitNumber)
     val ruleDigest = closedResponseRuleDigest()
     return GovernedAttemptWrite(
         id = "$itemId:$role:$stepId:$recordedAt:${selected.hashCode()}",
@@ -219,20 +307,25 @@ internal fun attemptSuppliesStepSelection(
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     val unitNumber = itemUnitNumber(pack, item) ?: return false
     if (attempt.unitNumber != unitNumber || pack.unit(unitNumber) == null) return false
-    if (attempt.unitContentDigest != V2Validator.unitContentReviewDigest(pack, unitNumber)) return false
+    if (attempt.unitContentDigest != currentUnitDigest(pack, unitNumber)) return false
     val step = pack.step(stepId)?.second ?: return false
     return attempt.itemId in step.itemIds
 }
 
-/** Last matching prescribed attempt wins. Keys are step plus item, never item alone. */
+/**
+ * The latest sequenced prescribed attempt wins. Rows with acceptedOrder 0 have
+ * no recorded insertion order and do not become the current selection.
+ */
 internal fun governedSessionSelections(pack: V2CurriculumPack, learner: V2LearnerView): Map<String, String> {
     val attempts = learner.governedAttempts ?: return emptyMap()
     val selections = linkedMapOf<String, String>()
-    attempts.forEach { attempt ->
-        if (attemptSuppliesStepSelection(attempt, pack, attempt.stepId)) {
-            selections[governedSelectionKey(attempt.stepId, attempt.itemId)] = attempt.selected
+    attempts.filter { it.acceptedOrder > 0 }
+        .sortedBy { it.acceptedOrder }
+        .forEach { attempt ->
+            if (attemptSuppliesStepSelection(attempt, pack, attempt.stepId)) {
+                selections[governedSelectionKey(attempt.stepId, attempt.itemId)] = attempt.selected
+            }
         }
-    }
     return selections
 }
 
@@ -247,18 +340,43 @@ internal fun stepReadyForGovernedCompletion(
     return step.itemIds.all { itemId -> governedSelectionKey(stepId, itemId) in selections }
 }
 
+/** Set by governed completion so tests can see that identity work left the UI thread. */
+@Volatile
+internal var lastGovernedIdentityThreadForTests: Thread? = null
+
+/** Labels the latest worker snapshot so a test can tell which screen published it. */
+@Volatile
+internal var lastGovernedSnapshotLabelForTests: String? = null
+
+/**
+ * Thread that last prepared each labeled snapshot. Later screens do not erase
+ * an earlier label, so a test can wait for one screen without a last-writer race.
+ */
+internal val governedIdentityThreadsForTests = java.util.concurrent.ConcurrentHashMap<String, Thread>()
+
+internal fun recordGovernedIdentityForTests(label: String) {
+    val thread = Thread.currentThread()
+    lastGovernedIdentityThreadForTests = thread
+    if (label.isNotEmpty()) {
+        lastGovernedSnapshotLabelForTests = label
+        governedIdentityThreadsForTests[label] = thread
+    }
+}
+
 /** Null refuses the schema-1 step write. Teach and orient steps with no items stay completable. */
 internal fun governedStepCompletionDigest(
     pack: V2CurriculumPack,
     learner: V2LearnerView,
     stepId: String,
 ): String? {
+    lastGovernedIdentityThreadForTests = Thread.currentThread()
     if (!stepReadyForGovernedCompletion(pack, learner, stepId)) return null
     val step = pack.step(stepId)?.second ?: return null
     return stepContentDigest(pack, step)
 }
 
 internal fun attemptGrantsPrescribedCredit(attempt: GovernedAttemptView, pack: V2CurriculumPack): Boolean {
+    if (attempt.acceptedOrder <= 0) return false
     if (attempt.attemptRole != PRESCRIBED_CHECK) return false
     if (attempt.identitySchema != GOVERNED_IDENTITY_SCHEMA || !attempt.correct) return false
     if (attempt.itemDigest == UNRECOVERABLE_GOVERNED_IDENTITY ||
@@ -271,7 +389,7 @@ internal fun attemptGrantsPrescribedCredit(attempt: GovernedAttemptView, pack: V
     val item = pack.item(attempt.itemId) ?: return false
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     if (pack.unit(attempt.unitNumber) == null) return false
-    return attempt.unitContentDigest == V2Validator.unitContentReviewDigest(pack, attempt.unitNumber)
+    return attempt.unitContentDigest == currentUnitDigest(pack, attempt.unitNumber)
 }
 
 internal fun creditItemIds(pack: V2CurriculumPack, learner: V2LearnerView): Set<String> {
@@ -283,6 +401,8 @@ internal fun completedStepCounts(pack: V2CurriculumPack, learner: V2LearnerView,
     val digests = learner.governedStepDigests ?: return stepId in learner.completedStepIds
     val recorded = digests[stepId] ?: return false
     if (recorded == UNRECOVERABLE_GOVERNED_IDENTITY) return false
+    val schema = learner.governedStepSchemas?.get(stepId)
+    if (learner.governedStepSchemas != null && schema != STEP_IDENTITY_SCHEMA) return false
     val step = pack.step(stepId)?.second ?: return false
     return recorded == stepContentDigest(pack, step)
 }
@@ -366,8 +486,15 @@ internal fun practiceQueue(pack: V2CurriculumPack, learner: V2LearnerView, labId
     }
     if (labId != "mixed") return pool.sortedBy { it.id }
     val recentWrong = learner.governedAttempts.orEmpty()
-        .asReversed()
-        .filter { !it.correct && (it.attemptRole == PRESCRIBED_CHECK || it.attemptRole == OPTIONAL_PRACTICE) }
+        .filter {
+            it.acceptedOrder > 0 &&
+                !it.correct &&
+                (
+                    attemptSuppliesStepSelection(it, pack, it.stepId) ||
+                        (it.attemptRole == OPTIONAL_PRACTICE && attemptMatchesCurrentOptional(it, pack, it.stepId))
+                    )
+        }
+        .sortedByDescending { it.acceptedOrder }
         .map { it.itemId }
         .distinct()
     val rank = recentWrong.withIndex().associate { it.value to it.index }
@@ -375,6 +502,81 @@ internal fun practiceQueue(pack: V2CurriculumPack, learner: V2LearnerView, labId
 }
 
 internal fun practiceStepId(labId: String): String = "practice:$labId"
+
+internal data class PracticeLabSnapshot(
+    val offer: PracticeOffer?,
+    val items: List<V2CheckItem>,
+    val recordedByItem: Map<String, GovernedAttemptView>,
+)
+
+/** Offers, ranking, and current selections for one lab. Call off the main thread. */
+internal fun practiceLabSnapshot(
+    pack: V2CurriculumPack,
+    learner: V2LearnerView,
+    labId: String,
+): PracticeLabSnapshot {
+    val items = practiceQueue(pack, learner, labId)
+    val recorded = linkedMapOf<String, GovernedAttemptView>()
+    items.forEach { item ->
+        optionalPracticeSelection(pack, learner, labId, item.id)?.let { recorded[item.id] = it }
+    }
+    return PracticeLabSnapshot(
+        offer = practiceOffers(pack, learner).firstOrNull { it.id == labId },
+        items = items,
+        recordedByItem = recorded,
+    )
+}
+
+private fun currentUnitDigest(pack: V2CurriculumPack, unitNumber: Int): String {
+    return V2PackIdentityIndex.unitDigest(pack, unitNumber)
+        ?: V2Validator.unitContentReviewDigest(pack, unitNumber)
+}
+
+/**
+ * The latest optional answer for this lab item, only when schema, item,
+ * unit-content, rule, role, and practice-context identities match the current
+ * pack. A stale row that selected the same option does not count.
+ */
+internal fun optionalPracticeSelection(
+    pack: V2CurriculumPack,
+    learner: V2LearnerView,
+    labId: String,
+    itemId: String,
+): GovernedAttemptView? {
+    if (pack.schemaVersion != 1 || itemId.isBlank()) return null
+    val stepId = practiceStepId(labId)
+    return learner.governedAttempts.orEmpty()
+        .filter { attempt ->
+            attempt.acceptedOrder > 0 &&
+                attempt.itemId == itemId &&
+                attemptMatchesCurrentOptional(attempt, pack, stepId)
+        }
+        .maxByOrNull { it.acceptedOrder }
+}
+
+internal fun attemptMatchesCurrentOptional(
+    attempt: GovernedAttemptView,
+    pack: V2CurriculumPack,
+    stepId: String,
+): Boolean {
+    if (attempt.attemptRole != OPTIONAL_PRACTICE) return false
+    if (attempt.identitySchema != GOVERNED_IDENTITY_SCHEMA) return false
+    if (attempt.stepId != stepId || stepId.isBlank()) return false
+    if (attempt.selected.isBlank()) return false
+    if (attempt.itemDigest == UNRECOVERABLE_GOVERNED_IDENTITY ||
+        attempt.ruleDigest == UNRECOVERABLE_GOVERNED_IDENTITY ||
+        attempt.unitContentDigest == UNRECOVERABLE_GOVERNED_IDENTITY
+    ) {
+        return false
+    }
+    if (attempt.ruleDigest != closedResponseRuleDigest()) return false
+    val item = pack.item(attempt.itemId) ?: return false
+    if (attempt.selected !in item.options) return false
+    if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
+    val unitNumber = itemUnitNumber(pack, item) ?: return false
+    if (attempt.unitNumber != unitNumber || pack.unit(unitNumber) == null) return false
+    return attempt.unitContentDigest == currentUnitDigest(pack, unitNumber)
+}
 
 internal fun savedWorkEntries(pack: V2CurriculumPack, learner: V2LearnerView): List<SavedWorkEntry> {
     val entries = mutableListOf<SavedWorkEntry>()
@@ -403,7 +605,7 @@ internal fun savedWorkEntries(pack: V2CurriculumPack, learner: V2LearnerView): L
                 kind = "STALE",
                 resumable = false,
             )
-        } else if (step.id !in learner.completedStepIds) {
+        } else if (!completedStepCounts(pack, learner, step.id)) {
             entries += SavedWorkEntry(
                 id = "resume:$sessionId",
                 title = step.title,
@@ -419,12 +621,11 @@ internal fun savedWorkEntries(pack: V2CurriculumPack, learner: V2LearnerView): L
         entries += bookmarkEntry(pack, bookmark)
     }
     learner.notes.forEach { note ->
-        val preview = note.text.replace('\n', ' ').take(80)
         val open = savedTarget(pack, note.targetId, "STEP", note.targetDigest, note.identitySchema)
         entries += SavedWorkEntry(
             id = "note:${note.id}",
             title = "Local note",
-            detail = "Not course content. $preview",
+            detail = "Not course content and not scored. ${note.text}",
             kind = "NOTE",
             resumable = open != null,
             sessionId = open?.first,
@@ -437,7 +638,7 @@ internal fun savedWorkEntries(pack: V2CurriculumPack, learner: V2LearnerView): L
         entries += SavedWorkEntry(
             id = "tutor:${item.id}",
             title = "Question for a tutor",
-            detail = "Optional. This is not advancement evidence.",
+            detail = "Optional and not scored. This is not advancement evidence. ${item.note}",
             kind = "TUTOR",
             resumable = open != null,
             sessionId = open?.first,
@@ -535,4 +736,135 @@ private fun itemUnitNumber(pack: V2CurriculumPack, item: V2CheckItem): Int? {
 private fun sha256Hex(text: String): String {
     val digest = MessageDigest.getInstance("SHA-256").digest(text.toByteArray(Charsets.UTF_8))
     return digest.joinToString("") { byte -> "%02x".format(byte) }
+}
+
+/**
+ * Immutable pack digests. Keys are the pack instance, not its structural hash.
+ * A data-class hash walks the whole curriculum. Production warms this on a
+ * worker before learner-dependent work. A lookup misses until [warm] has
+ * finished for that pack instance.
+ */
+internal object V2PackIdentityIndex {
+    private val steps = IdentityWeakCache<Map<String, String>>()
+    private val units = IdentityWeakCache<Map<Int, String>>()
+
+    fun warm(pack: V2CurriculumPack) {
+        if (steps.get(pack) != null && units.get(pack) != null) return
+        val stepMap = pack.units.flatMap { it.sessions }.flatMap { it.steps }
+            .associate { step -> step.id to rawStepContentDigest(pack, step) }
+        val unitMap = pack.units.associate { unit ->
+            unit.number to V2Validator.unitContentReviewDigest(pack, unit.number)
+        }
+        steps.put(pack, stepMap)
+        units.put(pack, unitMap)
+    }
+
+    fun stepDigest(pack: V2CurriculumPack, stepId: String): String? = steps.get(pack)?.get(stepId)
+
+    fun unitDigest(pack: V2CurriculumPack, unitNumber: Int): String? = units.get(pack)?.get(unitNumber)
+
+    fun clearForTests() {
+        steps.clear()
+        units.clear()
+    }
+}
+
+/**
+ * Weak cache keyed by object identity. [System.identityHashCode] does not
+ * walk a data-class structure. Cleared referents are removed from a
+ * [java.lang.ref.ReferenceQueue] on the next lookup, publication, or
+ * [reclaim], including when the next key hashes to a different bucket.
+ * A live entry past [maxRetained] evicts the oldest so a process cannot
+ * keep every historical digest map.
+ */
+internal class IdentityWeakCache<V>(private val maxRetained: Int = 8) {
+    private class Node<V>(
+        referent: Any,
+        queue: java.lang.ref.ReferenceQueue<Any>,
+        val identity: Int,
+        val value: V,
+    ) : java.lang.ref.WeakReference<Any>(referent, queue)
+
+    private val queue = java.lang.ref.ReferenceQueue<Any>()
+    private val lock = Any()
+    private val buckets = HashMap<Int, MutableList<Node<V>>>()
+    private val order = ArrayDeque<Node<V>>()
+
+    fun get(key: Any): V? {
+        reclaim()
+        val id = System.identityHashCode(key)
+        synchronized(lock) {
+            val list = buckets[id] ?: return null
+            var found: V? = null
+            val iterator = list.iterator()
+            while (iterator.hasNext()) {
+                val node = iterator.next()
+                val current = node.get()
+                if (current == null) {
+                    iterator.remove()
+                    order.remove(node)
+                } else if (current === key) {
+                    found = node.value
+                }
+            }
+            if (list.isEmpty()) buckets.remove(id)
+            return found
+        }
+    }
+
+    fun put(key: Any, value: V) {
+        reclaim()
+        val id = System.identityHashCode(key)
+        val node = Node(key, queue, id, value)
+        synchronized(lock) {
+            val list = buckets.getOrPut(id) { mutableListOf() }
+            val iterator = list.iterator()
+            while (iterator.hasNext()) {
+                val existing = iterator.next()
+                val current = existing.get()
+                if (current == null || current === key) {
+                    iterator.remove()
+                    order.remove(existing)
+                }
+            }
+            list.add(node)
+            order.add(node)
+            while (order.size > maxRetained) {
+                val oldest = order.removeFirst()
+                val oldestList = buckets[oldest.identity] ?: continue
+                oldestList.remove(oldest)
+                if (oldestList.isEmpty()) buckets.remove(oldest.identity)
+            }
+        }
+    }
+
+    fun reclaim() {
+        val cleared = ArrayList<Node<V>>()
+        while (true) {
+            @Suppress("UNCHECKED_CAST")
+            val node = queue.poll() as Node<V>? ?: break
+            cleared.add(node)
+        }
+        if (cleared.isEmpty()) return
+        synchronized(lock) {
+            for (node in cleared) {
+                order.remove(node)
+                val list = buckets[node.identity] ?: continue
+                list.remove(node)
+                if (list.isEmpty()) buckets.remove(node.identity)
+            }
+        }
+    }
+
+    fun clear() {
+        synchronized(lock) {
+            buckets.clear()
+            order.clear()
+        }
+    }
+
+    fun retainedValueCountForTests(): Int {
+        reclaim()
+        synchronized(lock) { return order.size }
+    }
 }

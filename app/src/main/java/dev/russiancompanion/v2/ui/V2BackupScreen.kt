@@ -57,6 +57,7 @@ internal fun V2BackupScreen(
             V2PrimaryButton(
                 text = "Replace learner data",
                 onClick = { coordinator.confirmRestore(onRestored) },
+                enabled = !writesBusy,
                 tag = "v2-backup-confirm",
             )
         }

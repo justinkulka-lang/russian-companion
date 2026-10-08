@@ -20,6 +20,7 @@ import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextInput
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.LocalStore
+import dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA
 import dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK
 import dev.russiancompanion.v2.curriculum.governedSelectionKey
 import dev.russiancompanion.v2.curriculum.governedSessionSelections
@@ -171,7 +172,7 @@ class RuntimeCorrectionTest {
         val store = openedStore()
         val unit = pack.unit(1)!!
         unit.sessions.flatMap { it.steps }.forEach { step ->
-            store.v2CompleteStep(step.id, "2026-10-02T12:00")
+            store.v2CompleteGovernedStep(step.id, stepContentDigest(pack, step), "2026-10-02T12:00")
         }
         store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 1))
         val target = continueTarget(pack, store.v2LearnerView())
@@ -196,7 +197,7 @@ class RuntimeCorrectionTest {
         val check = pack.session("u1-s-iotated")!!.steps.last()
         unit.sessions.flatMap { it.steps }
             .filter { it.id != iotated.id && it.id != check.id }
-            .forEach { store.v2CompleteStep(it.id, "2026-10-02T12:00") }
+            .forEach { store.v2CompleteGovernedStep(it.id, stepContentDigest(pack, it), "2026-10-02T12:00") }
         store.v2SaveProfile(
             store.v2Profile().copy(
                 onboardingCompleted = true,
@@ -226,6 +227,7 @@ class RuntimeCorrectionTest {
         compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertIsDisplayed()
         compose.onNodeWithTag("v2-note-draft").performScrollTo().performTextInput("letter draft")
         compose.onNodeWithTag("v2-back").performClick()
+        awaitTag("v2-continue")
         compose.onNodeWithTag("v2-continue").performClick()
         compose.onNodeWithText("letter draft").performScrollTo().assertIsDisplayed()
         compose.onNodeWithTag("v2-option-${item.id}-${wrongOption(item)}").performScrollTo().assertIsSelected()
@@ -239,6 +241,7 @@ class RuntimeCorrectionTest {
         compose.onNodeWithText("Review advancement").assertIsDisplayed()
         compose.onNodeWithTag("v2-continue").performClick()
         compose.onNodeWithTag("v2-advancement-rule").performScrollTo().assertIsDisplayed()
+        awaitTag("v2-advance")
         compose.onNodeWithTag("v2-advance").performScrollTo().assertIsDisplayed()
     }
 
@@ -256,7 +259,7 @@ class RuntimeCorrectionTest {
         persistence.gateAttempts = true
         choose(item, wrong = true)
         choose(item, wrong = true)
-        assertTrue(entered.await(5, TimeUnit.SECONDS))
+        awaitEntered(entered)
         awaitText("Saving")
         assertDoesNotExist("v2-item-feedback-${item.id}")
         compose.onNodeWithTag("v2-note-draft").performScrollTo().performTextInput("still typing")
@@ -516,7 +519,7 @@ class RuntimeCorrectionTest {
         assertEquals(1, store.v2Notes().size)
         assertEquals(0, store.v2TutorQueue().size)
         tutorRelease.countDown()
-        awaitText("Saved")
+        awaitExactText("Saved")
         assertEquals(1, store.v2TutorQueue().size)
         assertEquals(1, store.v2Notes().size)
         assertEquals(1, compose.onAllNodesWithText("Saved").fetchSemanticsNodes().size)
@@ -675,16 +678,22 @@ class RuntimeCorrectionTest {
         val store = openedStore()
         store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 1))
         store.failAdvanceAfterCompletionForTests = true
-        val failed = runCatching { store.v2AdvanceUnitAsync(1, "2026-10-02T12:00", 2, "u2-s-next") }
+        val failed = runCatching {
+            store.v2AdvanceUnitAsync(1, "2026-10-02T12:00", 2, "u2-s-next", "a".repeat(64), GOVERNED_IDENTITY_SCHEMA)
+        }
         assertTrue(failed.isFailure)
         assertFalse(store.failAdvanceAfterCompletionForTests)
         assertFalse(1 in store.v2LearnerView().completedUnitNumbers)
         assertEquals(1, store.v2Profile().currentUnitNumber)
         assertEquals(0, store.v2Profile().currentStepIndex)
-        store.v2AdvanceUnitAsync(1, "2026-10-02T12:01", 2, "u2-s-next")
+        assertEquals("", store.v2Profile().resumeContentDigest)
+        assertEquals(0, store.v2Profile().resumeIdentitySchema)
+        store.v2AdvanceUnitAsync(1, "2026-10-02T12:01", 2, "u2-s-next", "b".repeat(64), GOVERNED_IDENTITY_SCHEMA)
         assertTrue(1 in store.v2LearnerView().completedUnitNumbers)
         assertEquals(2, store.v2Profile().currentUnitNumber)
         assertEquals("u2-s-next", store.v2Profile().currentSessionId)
+        assertEquals("b".repeat(64), store.v2Profile().resumeContentDigest)
+        assertEquals(GOVERNED_IDENTITY_SCHEMA, store.v2Profile().resumeIdentitySchema)
     }
 
     @Test
@@ -810,6 +819,16 @@ class RuntimeCorrectionTest {
         compose.onNodeWithTag(tag).assertDoesNotExist()
     }
 
+    private fun awaitExactText(text: String) {
+        val start = System.currentTimeMillis()
+        while (System.currentTimeMillis() - start < 5_000) {
+            compose.waitForIdle()
+            if (compose.onAllNodesWithText(text).fetchSemanticsNodes().isNotEmpty()) return
+            Thread.sleep(20)
+        }
+        compose.onNodeWithText(text).assertIsDisplayed()
+    }
+
     private fun awaitText(text: String) {
         val start = System.currentTimeMillis()
         while (System.currentTimeMillis() - start < 5_000) {
@@ -834,18 +853,21 @@ class RuntimeCorrectionTest {
         val start = System.currentTimeMillis()
         var stable = 0
         var last = -1
-        while (System.currentTimeMillis() - start < 5_000) {
+        while (System.currentTimeMillis() - start < 20_000) {
             compose.waitForIdle()
             val calls = gate.refreshCalls.get()
             val flight = gate.refreshInFlight.get()
-            if (flight == 0 && calls >= 2 && calls == last) {
+            // Opening a session submits two position writes after the initial load.
+            // A write can still be inside its block while no refresh is in flight, so
+            // wait until that third refresh has finished before arming the next gate.
+            if (flight == 0 && calls >= 3 && calls == last) {
                 stable += 1
                 if (stable >= 3) return
             } else {
                 stable = 0
             }
             last = calls
-            Thread.sleep(20)
+            Thread.sleep(30)
         }
         throw AssertionError("learner refresh did not settle; calls=${gate.refreshCalls.get()} inFlight=${gate.refreshInFlight.get()}")
     }
