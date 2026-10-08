@@ -1167,6 +1167,9 @@ internal object V2Validator {
      * governed claim. Keyword text in an unrelated licensed record does not.
      */
     private fun capabilityDefects(pack: V2CurriculumPack, capability: V2SourceCapability): List<String> {
+        if (capability.sourceId == ContentAuditSources.SOURCE_ID) {
+            return correctedCapabilityDefects(pack, capability)
+        }
         val errors = mutableListOf<String>()
         val binding = REQUIRED_SOURCE_CAPABILITIES[capability.unitNumber].orEmpty().firstOrNull {
             it.objectiveId == capability.objectiveId && it.claim == capability.supportedClaim
@@ -3172,9 +3175,12 @@ internal object V2Validator {
         if (cue.sourceId != ContentAuditSources.SOURCE_ID) return ""
         val applications = cue.synthesis?.applications.orEmpty()
         if (applications.isEmpty()) return ""
-        val spec = applications.firstOrNull { it.cue == cue.shippedText } ?: return ""
         val group = listOf(cue, answer) + distractors
         val distractorTexts = distractors.map { it.shippedText }.toSet()
+        val spec = applications.firstOrNull {
+            it.cue == cue.shippedText && it.answer == answer.shippedText &&
+                it.distractors.toSet() == distractorTexts
+        } ?: return ""
         if (
             answer.shippedText == spec.answer &&
             distractorTexts == spec.distractors.toSet() &&
