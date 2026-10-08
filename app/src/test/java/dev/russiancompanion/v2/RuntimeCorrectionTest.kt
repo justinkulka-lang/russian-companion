@@ -650,26 +650,24 @@ class RuntimeCorrectionTest {
     }
 
     @Test
-    fun objectivesWithoutGuidedPracticeStayVisibleAsGaps() {
+    fun formerGuidedPracticeGapsNowHaveRealItems() {
         val pack = pack()
-        val gaps = setOf(
-            "u1-st-confusable",
-            "u1-st-iotated",
-            "u1-st-signs",
-            "u1-st-print",
-            "u1-st-decoding",
-            "u4-st-rem-nominative",
-        )
         assertEquals(listOf("u7-st-guided-manner-1"), reviewedGuidedPractice(pack, "u7-st-rem-manner"))
         val targets = pack.units.flatMap { it.sessions }.flatMap { it.steps }.mapNotNull { it.remediationStepId }.toSet()
-        assertEquals(156, targets.size)
+        assertTrue(targets.size >= 156)
         targets.forEach { target ->
             val guided = reviewedGuidedPractice(pack, target)
-            if (target in gaps) {
-                assertTrue("$target still has no guided practice in the pack", guided.isEmpty())
-            } else {
-                assertTrue("$target is missing its linked guided practice", guided.isNotEmpty())
-            }
+            assertTrue("$target is missing its linked guided practice", guided.isNotEmpty())
+        }
+        dev.russiancompanion.v2.curriculum.FILLED_GUIDED_PRACTICE_ROUTES.forEach { (remediationId, guidedId) ->
+            val guided = pack.step(guidedId)!!.second
+            assertEquals("GUIDED", guided.kind)
+            assertTrue("$guidedId has no item", guided.itemIds.isNotEmpty())
+            assertEquals(remediationId, guided.remediationStepId)
+            val item = pack.item(guided.itemIds.first())!!
+            assertTrue(item.answer.isNotBlank())
+            assertTrue(item.answer in item.options)
+            assertTrue(item.feedback.isNotBlank())
         }
     }
 

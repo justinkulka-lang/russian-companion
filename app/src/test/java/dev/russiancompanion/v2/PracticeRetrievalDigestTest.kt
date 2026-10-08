@@ -130,8 +130,11 @@ class PracticeRetrievalDigestTest {
         assertTrue(offers.all { !it.runnable })
         assertTrue(practiceQueue(pack.copy(schemaVersion = 2), store.v2LearnerView(), "alphabet").isEmpty())
         assertNull(prepareGovernedAttempt(pack, "missing", "x", OPTIONAL_PRACTICE, "practice:alphabet", "t"))
-        GUIDED_PRACTICE_GAP_STEP_IDS.forEach { id ->
-            assertTrue(pack.step(id)!!.second.itemIds.isEmpty())
+        assertTrue(GUIDED_PRACTICE_GAP_STEP_IDS.isEmpty())
+        dev.russiancompanion.v2.curriculum.FILLED_GUIDED_PRACTICE_ROUTES.values.forEach { id ->
+            val step = pack.step(id)!!.second
+            assertEquals("GUIDED", step.kind)
+            assertTrue(step.itemIds.isNotEmpty())
         }
     }
 

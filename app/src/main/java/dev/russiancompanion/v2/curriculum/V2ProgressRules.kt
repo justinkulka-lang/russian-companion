@@ -255,6 +255,18 @@ internal fun distinctCorrectCheckCount(
         .size
 }
 
+/**
+ * Orient and teach steps that gate advancement.
+ * A step listed only on a non-gating objective is optional and does not block the unit.
+ */
+internal fun requiredInstructionSteps(unit: V2Unit): List<V2Step> {
+    val requiredIds = unit.objectives.filter { it.gating }.flatMap { it.instructionStepIds }.toSet()
+    val optionalOnly = unit.objectives.filter { !it.gating }.flatMap { it.instructionStepIds }.toSet() - requiredIds
+    return unit.sessions.flatMap { it.steps }.filter { step ->
+        step.kind in setOf("ORIENT", "TEACH") && step.id !in optionalOnly
+    }
+}
+
 internal fun advancementDecision(
     pack: V2CurriculumPack,
     unit: V2Unit,
@@ -270,7 +282,7 @@ internal fun advancementDecision(
     }
     remaining += V2Validator.unresolvedPartialUnitAdvancementBlockers(pack, unit)
     if (rule.requireInstruction) {
-        val instructionSteps = unit.sessions.flatMap { it.steps }.filter { it.kind in setOf("ORIENT", "TEACH") }
+        val instructionSteps = requiredInstructionSteps(unit)
         if (instructionSteps.any { !completedStepCounts(pack, learner, it.id) }) {
             remaining += "Finish the required instruction steps"
         }

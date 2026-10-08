@@ -153,7 +153,7 @@ internal object V2Validator {
         return digest.joinToString("") { byte -> "%02x".format(byte) }
     }
 
-    internal const val CONTENT_REVIEW_DIGEST_SCHEMA = 2
+    internal const val CONTENT_REVIEW_DIGEST_SCHEMA = 3
 
     internal const val INSTRUCTIONAL_DIGEST_SCHEMA = CONTENT_REVIEW_DIGEST_SCHEMA
 
@@ -463,6 +463,7 @@ internal object V2Validator {
                     "practiceStepIds" to canonArr(objective.practiceStepIds.map(::canonStr)),
                     "checkItemIds" to canonArr(objective.checkItemIds.map(::canonStr)),
                     "remediationStepIds" to canonArr(objective.remediationStepIds.map(::canonStr)),
+                    "gating" to canonBool(objective.gating),
                 )
             }),
             "sessions" to canonArr(unit.sessions.map { session ->
@@ -3158,6 +3159,36 @@ internal object V2Validator {
     }
 
     /**
+     * Content-audit synthesis states each corrected cue, answer, and distractor set.
+     * Null means the cue is not a content-audit record. Empty means the proposed
+     * relationship is not one of the stated applications.
+     */
+    private fun contentAuditRelation(
+        cue: V2ProvenanceRecord,
+        answer: V2ProvenanceRecord,
+        distractors: List<V2ProvenanceRecord>,
+    ): String? {
+        if (cue.transformation != ContentAuditSources.TRANSFORMATION) return null
+        if (cue.sourceId != ContentAuditSources.SOURCE_ID) return ""
+        val applications = cue.synthesis?.applications.orEmpty()
+        if (applications.isEmpty()) return ""
+        val spec = applications.firstOrNull { it.cue == cue.shippedText } ?: return ""
+        val group = listOf(cue, answer) + distractors
+        val distractorTexts = distractors.map { it.shippedText }.toSet()
+        if (
+            answer.shippedText == spec.answer &&
+            distractorTexts == spec.distractors.toSet() &&
+            spec.distractors.isNotEmpty() &&
+            spec.answer !in distractorTexts &&
+            group.all { sameFrozenSpan(cue, it) } &&
+            group.all { displayedInFrozen(it) }
+        ) {
+            return "STATED_APPLICATION"
+        }
+        return ""
+    }
+
+    /**
      * Original synthesis states each cue, answer, and distractor set.
      * Co-occurrence on the same span is not that application.
      * Null means the cue is not original synthesis. Empty means the proposed
@@ -3252,6 +3283,9 @@ internal object V2Validator {
         answer: V2ProvenanceRecord,
         distractors: List<V2ProvenanceRecord>,
     ): String? {
+        val audit = contentAuditRelation(cue, answer, distractors)
+        if (audit == "") return null
+        if (audit != null) return audit
         val synthesis = originalSynthesisRelation(cue, answer, distractors)
         if (synthesis == "") return null
         if (synthesis != null) return synthesis
@@ -4849,6 +4883,9 @@ internal object V2Validator {
             if (record.sourceId == Phase2Sources.SOURCE_ID || record.transformation == Phase2Sources.TRANSFORMATION) {
                 errors += originalSynthesisProvenanceErrors(record)
             }
+            if (record.sourceId == ContentAuditSources.SOURCE_ID || record.transformation == ContentAuditSources.TRANSFORMATION) {
+                errors += contentAuditProvenanceErrors(record)
+            }
             if (record.transformation == "sense selection" && !isDelimitedSense(record.originalSourceText, record.shippedText)) {
                 errors += "Provenance ${record.itemId} sense selection is not a delimited source sense"
             }
@@ -5048,6 +5085,62 @@ internal object V2Validator {
     }
 
     /**
+     * A content-audit correction keeps its research note frozen for this revision
+     * and does not record a final audit. Coverage spans may omit applications.
+     * A contrast cue must state the application inside that same note.
+     */
+    private fun contentAuditProvenanceErrors(record: V2ProvenanceRecord): List<String> {
+        val errors = mutableListOf<String>()
+        if (record.sourceId != ContentAuditSources.SOURCE_ID ||
+            record.transformation != ContentAuditSources.TRANSFORMATION ||
+            record.sourceRevision != ContentAuditSources.REVISION ||
+            record.licenseId != ContentAuditSources.LICENSE ||
+            record.shippedText.isBlank() ||
+            record.shippedText !in record.originalSourceText
+        ) {
+            errors += "Provenance ${record.itemId} content-audit identity does not match"
+        }
+        val synthesis = record.synthesis ?: return errors
+        if (synthesis.bibliography.isBlank() ||
+            synthesis.authorshipDeclaration.isBlank() ||
+            synthesis.objectiveOrClaimBinding.isBlank()
+        ) {
+            errors += "Provenance ${record.itemId} content-audit evidence is incomplete"
+        }
+        if (synthesis.sourceDateOrVersion != ContentAuditSources.DATE) {
+            errors += "Provenance ${record.itemId} content-audit date does not match"
+        }
+        if (!synthesis.objectiveOrClaimBinding.startsWith(record.objectiveId + ":")) {
+            errors += "Provenance ${record.itemId} content-audit binding does not match"
+        }
+        val audit = synthesis.finalAudit
+        if (audit.artifactIdentity.isNotBlank() ||
+            audit.artifactDigest.isNotBlank() ||
+            audit.auditedContentDigest.isNotBlank() ||
+            audit.disposition.isNotBlank() ||
+            audit.modelVersion.isNotBlank() ||
+            audit.date.isNotBlank()
+        ) {
+            errors += "Provenance ${record.itemId} records a final audit before the final audit"
+        }
+        if (synthesis.applications.isEmpty()) {
+            errors += "Provenance ${record.itemId} content-audit contrast has no stated applications"
+        }
+        synthesis.applications.forEach { application ->
+            val outside = application.cue.isBlank() ||
+                application.answer.isBlank() ||
+                application.distractors.isEmpty() ||
+                application.cue !in record.originalSourceText ||
+                application.answer !in record.originalSourceText ||
+                application.distractors.any { it !in record.originalSourceText }
+            if (outside) {
+                errors += "Provenance ${record.itemId} content-audit application is outside the research note"
+            }
+        }
+        return errors
+    }
+
+    /**
      * Original synthesis is admitted only for the Phase 2 source identity.
      * A quoted page cannot borrow the transformation, and the synthesis cannot
      * record a final audit that has not happened.
@@ -5130,6 +5223,7 @@ internal object V2Validator {
     private fun retainedWorkLicense(license: String, sourceId: String): Boolean {
         if (isShareAlikeLicense(license)) return sourceId != RemainingSources.VECHERA_SOURCE
         if (license == "Original app text" && sourceId == Phase2Sources.SOURCE_ID) return true
+        if (license == "Original app text" && sourceId == ContentAuditSources.SOURCE_ID) return true
         return license == "Public domain" && sourceId == RemainingSources.VECHERA_SOURCE
     }
 

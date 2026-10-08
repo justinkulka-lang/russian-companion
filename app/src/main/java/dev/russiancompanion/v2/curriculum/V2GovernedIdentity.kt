@@ -29,15 +29,20 @@ internal const val LEGACY_UNVERIFIED = "LEGACY_UNVERIFIED"
 internal const val CLOSED_RESPONSE_RULE_ID = "closed-response-exact-option"
 
 /**
- * The six guided-practice curriculum gaps. Practice must not invent items for them.
+ * Guided-practice routes that still have no reviewed item.
+ * The six foundation and nominative gaps now have their own guided steps, so this set is empty.
+ * Do not put a step here to hide a missing item.
  */
-internal val GUIDED_PRACTICE_GAP_STEP_IDS = setOf(
-    "u1-st-confusable",
-    "u1-st-iotated",
-    "u1-st-signs",
-    "u1-st-print",
-    "u1-st-decoding",
-    "u4-st-rem-nominative",
+internal val GUIDED_PRACTICE_GAP_STEP_IDS = emptySet<String>()
+
+/** Concepts that previously had no guided route. Tests require a real guided item for each. */
+internal val FILLED_GUIDED_PRACTICE_ROUTES = mapOf(
+    "u1-st-confusable" to "u1-st-guided-confusable",
+    "u1-st-iotated" to "u1-st-guided-iotated",
+    "u1-st-signs" to "u1-st-guided-signs",
+    "u1-st-print" to "u1-st-guided-print",
+    "u1-st-decoding" to "u1-st-guided-decoding",
+    "u4-st-rem-nominative" to "u4-st-guided-nominative",
 )
 
 private const val CLOSED_RESPONSE_RULE_DOCUMENT =
