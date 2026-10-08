@@ -3814,6 +3814,18 @@ internal object V2Validator {
         return computeExplicitPairs(original, linearDashes = false)
     }
 
+    /** Raw scanner pairs, without the explicit-pair cache or trim. */
+    internal fun dashPairsProbe(visible: String): List<Pair<String, String>> = linearDashPairs(visible)
+
+    /** Raw JVM regex pairs for the same pattern the scanner implements. */
+    internal fun dashPairsRegexProbe(visible: String): List<Pair<String, String>> = regexDashPairs(visible)
+
+    internal fun dashScanOperationsForTests(): Long = dashScanOperations.get()
+
+    internal fun resetDashScanOperationsForTests() {
+        dashScanOperations.set(0)
+    }
+
     private fun computeExplicitPairs(original: String, linearDashes: Boolean): Map<String, Set<String>> {
         val visible = BatchARemainingSources.htmlVisible(unfoldWikiLabels(original))
         val found = linkedMapOf<String, MutableSet<String>>()
@@ -3850,67 +3862,158 @@ internal object V2Validator {
         return DASH_PAIR.findAll(visible).map { it.groupValues[1] to it.groupValues[2] }.toList()
     }
 
+    private val dashScanOperations = java.util.concurrent.atomic.AtomicLong()
+
     /**
-     * Same non-overlapping pairs as [DASH_PAIR]. Each capture excludes newline
-     * and both dashes, and each requires at least one character, capped at 90
-     * and 160. `\s*` before the right capture backtracks so a whitespace-only
-     * right side still matches and consumes its span. A newline is not a left
-     * capture, so it does not consume the following pair. A whitespace-only
-     * left capture is still a match: trim drops it later, and the scan does
-     * not look inside the consumed span.
+     * Same non-overlapping pairs as [DASH_PAIR].
+     *
+     * Java's `Matcher.find` counts `[^\n—–]{1,90}` and `{1,160}` in code points
+     * (`Character.codePointAt` / `charCount`), so a supplementary character is
+     * one capture unit and is never split. Search still resumes on UTF-16
+     * boundaries after each match. A dash is the separator: the leftmost start
+     * that reaches it with greedy `A{1,90}\s*` owns that dash, and the right
+     * side is `\s*` with backtracking onto non-newline whitespace. Failed
+     * starts do not rescan the remaining suffix; a string with no dash is one
+     * forward pass.
      */
     private fun linearDashPairs(visible: String): List<Pair<String, String>> {
-        val out = ArrayList<Triple<String, String, Int>>()
+        val out = ArrayList<Pair<String, String>>()
         var search = 0
-        val n = visible.length
-        while (search < n) {
-            var start = search
-            while (start < n && !isDashCaptureChar(visible[start])) start++
-            if (start >= n) break
-            val match = matchDashPairAt(visible, start)
-            if (match == null) {
-                search = start + 1
+        val length = visible.length
+        while (search < length) {
+            val dash = findNextDash(visible, search)
+            if (dash < 0) break
+            val left = leftmostLeftCapture(visible, search, dash)
+            if (left == null) {
+                search = dash + 1
                 continue
             }
-            out += match
-            search = match.third
+            val right = matchDashRight(visible, dash)
+            if (right == null) {
+                search = dash + 1
+                continue
+            }
+            out += visible.substring(left.first, left.second) to visible.substring(right.first, right.second)
+            search = right.second
         }
-        return out.map { it.first to it.second }
+        return out
     }
 
-    /** Left text, right text, and the exclusive end index of the match. */
-    private fun matchDashPairAt(visible: String, start: Int): Triple<String, String, Int>? {
-        val n = visible.length
-        var leftEnd = start
-        var taken = 0
-        while (leftEnd < n && taken < 90 && isDashCaptureChar(visible[leftEnd])) {
-            leftEnd++
-            taken++
+    private fun findNextDash(text: String, from: Int): Int {
+        var index = from
+        val length = text.length
+        while (index < length) {
+            dashScanOperations.incrementAndGet()
+            val character = text[index]
+            if (character == '—' || character == '–') return index
+            index++
         }
-        if (taken == 0) return null
-        var dash = leftEnd
-        while (dash < n && isPatternWhitespace(visible[dash])) dash++
-        if (dash >= n || (visible[dash] != '—' && visible[dash] != '–')) return null
-        val right = matchDashRight(visible, dash) ?: return null
-        return Triple(visible.substring(start, leftEnd), visible.substring(right.first, right.second), right.second)
+        return -1
+    }
+
+    /**
+     * Left capture bounds for the leftmost start at or after [search] whose
+     * greedy left side lands on [dash]. Null when no such start exists.
+     */
+    private fun leftmostLeftCapture(text: String, search: Int, dash: Int): Pair<Int, Int>? {
+        var whitespace = dash
+        while (whitespace > search && isPatternWhitespace(text[whitespace - 1])) {
+            dashScanOperations.incrementAndGet()
+            whitespace--
+        }
+        var runStart = whitespace
+        while (runStart > search) {
+            dashScanOperations.incrementAndGet()
+            val previous = runStart - 1
+            var codeStart = previous
+            if (text[previous].isLowSurrogate() && previous > search && text[previous - 1].isHighSurrogate()) {
+                codeStart = previous - 1
+            }
+            if (codeStart < search) break
+            if (!isDashCaptureCodePoint(Character.codePointAt(text, codeStart))) break
+            runStart = codeStart
+        }
+        if (search >= dash) return null
+        if (search > runStart && search >= whitespace) {
+            var start = search
+            while (start < dash && !isDashCaptureCodePoint(Character.codePointAt(text, start))) {
+                dashScanOperations.incrementAndGet()
+                start++
+            }
+            if (start >= dash) return null
+            return greedyLeftCapture(text, start, start, dash)
+        }
+        if (runStart == whitespace) {
+            var start = maxOf(runStart, search)
+            while (start < dash && !isDashCaptureCodePoint(Character.codePointAt(text, start))) {
+                dashScanOperations.incrementAndGet()
+                start++
+            }
+            if (start >= dash) return null
+            return greedyLeftCapture(text, start, whitespace, dash)
+        }
+        val region = maxOf(runStart, search)
+        return greedyLeftCapture(text, region, whitespace, dash)
+    }
+
+    private fun greedyLeftCapture(text: String, start: Int, whitespace: Int, dash: Int): Pair<Int, Int>? {
+        var index = start
+        var count = 0
+        var end = start
+        while (index < dash && count < 90) {
+            dashScanOperations.incrementAndGet()
+            val codePoint = Character.codePointAt(text, index)
+            if (!isDashCaptureCodePoint(codePoint)) break
+            val next = index + Character.charCount(codePoint)
+            if (next > dash) break
+            index = next
+            count++
+            end = index
+            if (count == 90 && end < whitespace) return startForLeftEnd(text, start, whitespace)
+        }
+        if (count == 0) return null
+        var rest = end
+        while (rest < dash) {
+            dashScanOperations.incrementAndGet()
+            if (!isPatternWhitespace(text[rest])) return null
+            rest++
+        }
+        return start to end
+    }
+
+    private fun startForLeftEnd(text: String, region: Int, limit: Int): Pair<Int, Int>? {
+        val starts = ArrayList<Int>()
+        var index = region
+        while (index < limit) {
+            dashScanOperations.incrementAndGet()
+            starts += index
+            index += Character.charCount(Character.codePointAt(text, index))
+        }
+        if (starts.size < 90) return null
+        return starts[starts.size - 90] to limit
     }
 
     /**
      * `\s*([^\n—–]{1,160})` after a dash. Greedy whitespace is kept when the
-     * following character can start the right capture. Otherwise whitespace
-     * backtracks to the rightmost character the capture can take, including a
-     * non-newline whitespace character.
+     * following code point can start the right capture. Otherwise whitespace
+     * backtracks to the rightmost code point the capture can take, including
+     * non-newline whitespace. The capture counts code points and does not
+     * split a surrogate pair.
      */
     private fun matchDashRight(visible: String, dash: Int): Pair<Int, Int>? {
-        val n = visible.length
+        val length = visible.length
         var whitespaceEnd = dash + 1
-        while (whitespaceEnd < n && isPatternWhitespace(visible[whitespaceEnd])) whitespaceEnd++
-        if (whitespaceEnd < n && isDashCaptureChar(visible[whitespaceEnd])) {
+        while (whitespaceEnd < length && isPatternWhitespace(visible[whitespaceEnd])) {
+            dashScanOperations.incrementAndGet()
+            whitespaceEnd++
+        }
+        if (whitespaceEnd < length && isDashCaptureCodePoint(Character.codePointAt(visible, whitespaceEnd))) {
             return whitespaceEnd to consumeDashCapture(visible, whitespaceEnd)
         }
         var rightStart = whitespaceEnd - 1
         while (rightStart > dash) {
-            if (isDashCaptureChar(visible[rightStart])) {
+            dashScanOperations.incrementAndGet()
+            if (isDashCaptureCodePoint(Character.codePointAt(visible, rightStart))) {
                 return rightStart to consumeDashCapture(visible, rightStart)
             }
             rightStart--
@@ -3921,15 +4024,18 @@ internal object V2Validator {
     private fun consumeDashCapture(visible: String, start: Int): Int {
         var end = start
         var count = 0
-        while (end < visible.length && count < 160 && isDashCaptureChar(visible[end])) {
-            end++
+        while (end < visible.length && count < 160) {
+            dashScanOperations.incrementAndGet()
+            val codePoint = Character.codePointAt(visible, end)
+            if (!isDashCaptureCodePoint(codePoint)) break
+            end += Character.charCount(codePoint)
             count++
         }
         return end
     }
 
-    private fun isDashCaptureChar(character: Char): Boolean {
-        return character != '\n' && character != '—' && character != '–'
+    private fun isDashCaptureCodePoint(codePoint: Int): Boolean {
+        return codePoint != '\n'.code && codePoint != '—'.code && codePoint != '–'.code
     }
 
     private fun isPatternWhitespace(character: Char): Boolean {

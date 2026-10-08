@@ -364,9 +364,7 @@ internal class V2BackupCoordinator(
         try {
             BackupWorkRegistry.createOwnedIncoming(file)
         } catch (error: Throwable) {
-            if (!BackupWorkRegistry.incomingHeld(file) && file.isDirectory) {
-                deleteOffMain(file)
-            }
+            deleteOffMain(file)
             throw error
         }
         synchronized(stagingLock) {
@@ -411,9 +409,24 @@ internal class V2BackupCoordinator(
 
     private fun deleteOffMain(file: File) {
         stagingIo.execute {
-            BackupWorkRegistry.lastDeleteThreadForTests = Thread.currentThread()
-            file.deleteRecursively()
+            val entered = dev.russiancompanion.v2.backup.V2BackupFaults.stagingDeleteEntered
+            val hold = dev.russiancompanion.v2.backup.V2BackupFaults.stagingDeleteHold
+            entered?.countDown()
+            if (hold != null && !hold.await(20, java.util.concurrent.TimeUnit.SECONDS)) {
+                error("staging-delete-hold")
+            }
+            BackupWorkRegistry.deleteIncomingIfUnowned(file)
         }
+    }
+
+    internal fun acquireOwnedStagingForTests(file: File) = acquireStaging(file)
+
+    internal fun releaseOwnedStagingForTests() = releaseStaging()
+
+    internal fun teardownForTests() = onCleared()
+
+    internal fun enqueueStagingBarrierForTests(done: java.util.concurrent.CountDownLatch) {
+        stagingIo.execute { done.countDown() }
     }
 
     override fun onCleared() {

@@ -1069,6 +1069,400 @@ class RemainingReauditCorrectionTest {
     }
 
     @Test
+    fun twoOwnersOfOneIncomingPathKeepFilesUntilTheLastRelease() {
+        val store = recordingStore("two-owners-${System.nanoTime()}")
+        store.v2AddNote("kept", "stay", "2026-10-08T20:00:00")
+        val seeded = seedRecording(store, byteArrayOf(4, 4, 4))
+        val backup = tempZip()
+        backup.outputStream().use { writeStoreBackup(store, it, APP, pack.packId, pack.packVersion, "DARK") }
+        val activity = Robolectric.buildActivity(ComponentActivity::class.java).setup().get()
+        val recovery = File(activity.applicationContext.filesDir, "backup-recovery")
+        recovery.mkdirs()
+        val recoveryBytes = byteArrayOf(9, 1, 1)
+        val recoveryFile = File(recovery, "rollback/keep-recovery.txt")
+        recoveryFile.parentFile?.mkdirs()
+        recoveryFile.writeBytes(recoveryBytes)
+        val recordingFile = File(recovery, "recording-input.bin")
+        val recordingBytes = byteArrayOf(5, 5, 5)
+        recordingFile.writeBytes(recordingBytes)
+        BackupWorkRegistry.holdRecordings(listOf(recordingFile))
+        val coordinator = V2BackupCoordinator.get(
+            activity,
+            store,
+            APP,
+            pack.packId,
+            pack.packVersion,
+            AppearanceStore.memory(AppearancePreference.DARK),
+        )
+        assertTrue(coordinator.begin(V2BackupPhase.PREPARING))
+        coordinator.openBackup { backup.inputStream() }
+        awaitPhase(coordinator, V2BackupPhase.AWAITING_CONFIRMATION)
+        val staged = incoming(activity).single()
+        val marker = byteArrayOf(1, 2, 3, 4)
+        File(staged, "shared-marker.bin").writeBytes(marker)
+        val second = directCoordinator(recovery)
+        second.acquireOwnedStagingForTests(staged)
+        val secondBytes = byteArrayOf(8, 8, 8, 8)
+        File(staged, "second-owner.bin").writeBytes(secondBytes)
+        assertEquals(2, BackupWorkRegistry.incomingOwnershipForTests(staged))
+        val hold = CountDownLatch(1)
+        val entered = CountDownLatch(1)
+        V2BackupFaults.stagingDeleteHold = hold
+        V2BackupFaults.stagingDeleteEntered = entered
+        coordinator.confirmRestore { }
+        awaitPhase(coordinator, V2BackupPhase.COMPLETED)
+        awaitLatch(entered, timeoutMs = 15_000)
+        assertEquals(1, BackupWorkRegistry.incomingOwnershipForTests(staged))
+        assertTrue(marker.contentEquals(File(staged, "shared-marker.bin").readBytes()))
+        assertTrue(secondBytes.contentEquals(File(staged, "second-owner.bin").readBytes()))
+        assertTrue(recoveryBytes.contentEquals(recoveryFile.readBytes()))
+        assertTrue(recordingBytes.contentEquals(recordingFile.readBytes()))
+        assertTrue(BackupWorkRegistry.recordingHeld(recordingFile))
+        val drained = CountDownLatch(1)
+        coordinator.enqueueStagingBarrierForTests(drained)
+        hold.countDown()
+        awaitLatch(drained, timeoutMs = 15_000)
+        assertEquals(1, BackupWorkRegistry.incomingOwnershipForTests(staged))
+        assertTrue(marker.contentEquals(File(staged, "shared-marker.bin").readBytes()))
+        assertTrue(secondBytes.contentEquals(File(staged, "second-owner.bin").readBytes()))
+        V2BackupFaults.stagingDeleteHold = null
+        V2BackupFaults.stagingDeleteEntered = null
+        BackupWorkRegistry.lastDeleteThreadForTests = null
+        second.releaseOwnedStagingForTests()
+        val finished = CountDownLatch(1)
+        second.enqueueStagingBarrierForTests(finished)
+        awaitLatch(finished, timeoutMs = 15_000)
+        assertFalse(staged.exists())
+        assertEquals(0, BackupWorkRegistry.incomingOwnershipForTests(staged))
+        val deleter = BackupWorkRegistry.lastDeleteThreadForTests
+        assertNotNull(deleter)
+        assertNotEquals(Looper.getMainLooper().thread, deleter)
+        assertEquals("russian-companion-staging", deleter!!.name)
+        assertTrue(recoveryBytes.contentEquals(recoveryFile.readBytes()))
+        assertTrue(recordingBytes.contentEquals(recordingFile.readBytes()))
+        assertTrue(BackupWorkRegistry.recordingHeld(recordingFile))
+        val live = File(checkNotNull(store.recordingDirectory()), File(seeded.localFileReference).name)
+        assertTrue(live.readBytes().contentEquals(byteArrayOf(4, 4, 4)))
+        val againActivity = Robolectric.buildActivity(ComponentActivity::class.java).setup().get()
+        val again = V2BackupCoordinator.get(
+            againActivity,
+            memory(),
+            APP,
+            pack.packId,
+            pack.packVersion,
+            AppearanceStore.memory(AppearancePreference.DARK),
+        )
+        assertTrue(again.begin(V2BackupPhase.PREPARING))
+        again.openBackup { backup.inputStream() }
+        awaitPhase(again, V2BackupPhase.AWAITING_CONFIRMATION)
+        again.cancel()
+        awaitPhase(again, V2BackupPhase.CANCELLED)
+        idleUntil("later incoming cleared", timeoutMs = 15_000) { incoming(againActivity).isEmpty() }
+        assertFalse(staged.exists())
+        assertTrue(recoveryBytes.contentEquals(recoveryFile.readBytes()))
+    }
+
+    @Test
+    fun queuedCleanupDoesNotDeleteAPathReacquiredWhileTheWorkerIsBlocked() {
+        val store = memory()
+        store.v2AddNote("kept", "stay", "2026-10-08T20:10:00")
+        val backup = tempZip()
+        backup.outputStream().use { writeStoreBackup(store, it, APP, pack.packId, pack.packVersion, "DARK") }
+        val recovery = tempDir()
+        val recoveryBytes = byteArrayOf(2, 2, 2)
+        val recoveryFile = File(recovery, "rollback/keep-recovery.txt")
+        recoveryFile.parentFile?.mkdirs()
+        recoveryFile.writeBytes(recoveryBytes)
+        val recordingFile = File(recovery, "recording-input.bin")
+        val recordingBytes = byteArrayOf(6, 6)
+        recordingFile.writeBytes(recordingBytes)
+        BackupWorkRegistry.holdRecordings(listOf(recordingFile))
+        val coordinator = directCoordinator(recovery)
+        val ready = CountDownLatch(1)
+        coordinator.enqueueStagingBarrierForTests(ready)
+        awaitLatch(ready)
+        val path = File(recovery, "incoming-reacquire")
+        val hold = CountDownLatch(1)
+        val entered = CountDownLatch(1)
+        V2BackupFaults.stagingDeleteHold = hold
+        V2BackupFaults.stagingDeleteEntered = entered
+        V2BackupFaults.failStagingCreate = true
+        var failed = false
+        try {
+            coordinator.acquireOwnedStagingForTests(path)
+        } catch (error: IllegalStateException) {
+            failed = error.message == "staging-directory"
+        }
+        assertTrue(failed)
+        assertEquals(0, BackupWorkRegistry.incomingOwnershipForTests(path))
+        assertTrue(path.isDirectory)
+        awaitLatch(entered, timeoutMs = 15_000)
+        V2BackupFaults.failStagingCreate = false
+        val reacquired = byteArrayOf(7, 7, 7, 7)
+        coordinator.acquireOwnedStagingForTests(path)
+        File(path, "reacquired.bin").writeBytes(reacquired)
+        assertEquals(1, BackupWorkRegistry.incomingOwnershipForTests(path))
+        val drained = CountDownLatch(1)
+        coordinator.enqueueStagingBarrierForTests(drained)
+        hold.countDown()
+        awaitLatch(drained, timeoutMs = 15_000)
+        assertEquals(1, BackupWorkRegistry.incomingOwnershipForTests(path))
+        assertTrue(reacquired.contentEquals(File(path, "reacquired.bin").readBytes()))
+        assertTrue(recoveryBytes.contentEquals(recoveryFile.readBytes()))
+        assertTrue(recordingBytes.contentEquals(recordingFile.readBytes()))
+        assertTrue(BackupWorkRegistry.recordingHeld(recordingFile))
+        V2BackupFaults.stagingDeleteHold = null
+        V2BackupFaults.stagingDeleteEntered = null
+        BackupWorkRegistry.lastDeleteThreadForTests = null
+        coordinator.releaseOwnedStagingForTests()
+        val finished = CountDownLatch(1)
+        coordinator.enqueueStagingBarrierForTests(finished)
+        awaitLatch(finished, timeoutMs = 15_000)
+        assertFalse(path.exists())
+        assertEquals(0, BackupWorkRegistry.incomingOwnershipForTests(path))
+        val deleter = BackupWorkRegistry.lastDeleteThreadForTests
+        assertNotNull(deleter)
+        assertNotEquals(Looper.getMainLooper().thread, deleter)
+        assertEquals("russian-companion-staging", deleter!!.name)
+        assertTrue(recoveryBytes.contentEquals(recoveryFile.readBytes()))
+        assertTrue(recordingBytes.contentEquals(recordingFile.readBytes()))
+        assertTrue(coordinator.begin(V2BackupPhase.PREPARING))
+        coordinator.openBackup { backup.inputStream() }
+        awaitPhase(coordinator, V2BackupPhase.AWAITING_CONFIRMATION)
+        assertTrue(recoveryBytes.contentEquals(recoveryFile.readBytes()))
+        coordinator.cancel()
+        awaitPhase(coordinator, V2BackupPhase.CANCELLED)
+        val cleared = CountDownLatch(1)
+        coordinator.enqueueStagingBarrierForTests(cleared)
+        awaitLatch(cleared, timeoutMs = 15_000)
+        assertTrue(recovery.listFiles().orEmpty().none { it.isDirectory && it.name.startsWith("incoming-") })
+    }
+
+    @Test
+    fun concurrentSweepCancellationAndTeardownKeepTheRemainingOwner() {
+        val store = recordingStore("sweep-cancel-${System.nanoTime()}")
+        store.v2AddNote("kept", "stay", "2026-10-08T20:20:00")
+        val seeded = seedRecording(store, byteArrayOf(3, 3, 3))
+        val backup = tempZip()
+        backup.outputStream().use { writeStoreBackup(store, it, APP, pack.packId, pack.packVersion, "DARK") }
+        val activity = Robolectric.buildActivity(ComponentActivity::class.java).setup().get()
+        val recovery = File(activity.applicationContext.filesDir, "backup-recovery")
+        recovery.mkdirs()
+        val recoveryBytes = byteArrayOf(1, 9, 8)
+        val recoveryFile = File(recovery, "rollback/keep-recovery.txt")
+        recoveryFile.parentFile?.mkdirs()
+        recoveryFile.writeBytes(recoveryBytes)
+        val recordingFile = File(recovery, "recording-input.bin")
+        val recordingBytes = byteArrayOf(4, 2)
+        recordingFile.writeBytes(recordingBytes)
+        BackupWorkRegistry.holdRecordings(listOf(recordingFile))
+        val coordinator = V2BackupCoordinator.get(
+            activity,
+            store,
+            APP,
+            pack.packId,
+            pack.packVersion,
+            AppearanceStore.memory(AppearancePreference.DARK),
+        )
+        assertTrue(coordinator.begin(V2BackupPhase.PREPARING))
+        coordinator.openBackup { backup.inputStream() }
+        awaitPhase(coordinator, V2BackupPhase.AWAITING_CONFIRMATION)
+        val staged = incoming(activity).single()
+        val marker = byteArrayOf(9, 9, 9)
+        File(staged, "cancel-marker.bin").writeBytes(marker)
+        val second = directCoordinator(recovery)
+        second.acquireOwnedStagingForTests(staged)
+        assertEquals(2, BackupWorkRegistry.incomingOwnershipForTests(staged))
+        val hold = CountDownLatch(1)
+        val entered = CountDownLatch(1)
+        V2BackupFaults.stagingDeleteHold = hold
+        V2BackupFaults.stagingDeleteEntered = entered
+        val sweeps = List(4) {
+            Thread {
+                repeat(25) {
+                    coordinator.sweepOrphansForTests()
+                    second.sweepOrphansForTests()
+                }
+            }
+        }
+        sweeps.forEach { it.start() }
+        coordinator.cancel()
+        activity.viewModelStore.clear()
+        sweeps.forEach { it.join(8_000) }
+        assertTrue(sweeps.all { !it.isAlive })
+        awaitLatch(entered, timeoutMs = 15_000)
+        assertEquals(V2BackupPhase.CANCELLED, coordinator.phase)
+        assertEquals(1, BackupWorkRegistry.incomingOwnershipForTests(staged))
+        assertTrue(marker.contentEquals(File(staged, "cancel-marker.bin").readBytes()))
+        assertTrue(recoveryBytes.contentEquals(recoveryFile.readBytes()))
+        assertTrue(recordingBytes.contentEquals(recordingFile.readBytes()))
+        assertTrue(BackupWorkRegistry.recordingHeld(recordingFile))
+        val drained = CountDownLatch(1)
+        coordinator.enqueueStagingBarrierForTests(drained)
+        hold.countDown()
+        awaitLatch(drained, timeoutMs = 15_000)
+        assertEquals(1, BackupWorkRegistry.incomingOwnershipForTests(staged))
+        assertTrue(marker.contentEquals(File(staged, "cancel-marker.bin").readBytes()))
+        assertTrue(staged.isDirectory)
+        V2BackupFaults.stagingDeleteHold = null
+        V2BackupFaults.stagingDeleteEntered = null
+        BackupWorkRegistry.lastDeleteThreadForTests = null
+        second.releaseOwnedStagingForTests()
+        val finished = CountDownLatch(1)
+        second.enqueueStagingBarrierForTests(finished)
+        awaitLatch(finished, timeoutMs = 15_000)
+        assertFalse(staged.exists())
+        assertEquals(0, BackupWorkRegistry.incomingOwnershipForTests(staged))
+        val deleter = BackupWorkRegistry.lastDeleteThreadForTests
+        assertNotNull(deleter)
+        assertNotEquals(Looper.getMainLooper().thread, deleter)
+        assertEquals("russian-companion-staging", deleter!!.name)
+        assertTrue(recoveryBytes.contentEquals(recoveryFile.readBytes()))
+        assertTrue(recordingBytes.contentEquals(recordingFile.readBytes()))
+        val live = File(checkNotNull(store.recordingDirectory()), File(seeded.localFileReference).name)
+        assertTrue(live.readBytes().contentEquals(byteArrayOf(3, 3, 3)))
+        val againActivity = Robolectric.buildActivity(ComponentActivity::class.java).setup().get()
+        val again = V2BackupCoordinator.get(
+            againActivity,
+            memory(),
+            APP,
+            pack.packId,
+            pack.packVersion,
+            AppearanceStore.memory(AppearancePreference.DARK),
+        )
+        assertTrue(again.begin(V2BackupPhase.PREPARING))
+        again.openBackup { backup.inputStream() }
+        awaitPhase(again, V2BackupPhase.AWAITING_CONFIRMATION)
+        again.cancel()
+        awaitPhase(again, V2BackupPhase.CANCELLED)
+        idleUntil("later incoming cleared", timeoutMs = 15_000) { incoming(againActivity).isEmpty() }
+        assertTrue(recoveryBytes.contentEquals(recoveryFile.readBytes()))
+    }
+
+    @Test
+    fun explicitPairsKeepCodePointCapturesAndBoundedScans() {
+        val emoji = "\uD83D\uDE00"
+        val deseret = "\uD801\uDC00"
+        val samples = listOf(
+            "кот—" + "a".repeat(159) + emoji,
+            deseret.repeat(46) + "—gloss",
+            "a".repeat(89) + emoji + "—gloss",
+            "кот—" + emoji.repeat(81),
+            deseret.repeat(91) + "—gloss",
+            "a".repeat(90) + emoji + "—x",
+            "кот—" + emoji.repeat(161),
+            "a— \n—кот–cat",
+            "\n—кот–cat",
+            " —bb–b",
+            "a \n —b",
+            "\uD83D—b",
+            "a\uDE00—b",
+            emoji + "—b",
+            "\uDE00\uD83D—b",
+        )
+        samples.forEach { sample ->
+            assertEquals(sample, V2Validator.dashPairsRegexProbe(sample), V2Validator.dashPairsProbe(sample))
+        }
+        val rightEmoji = V2Validator.dashPairsProbe("кот—" + "a".repeat(159) + emoji).single().second
+        assertEquals(160, rightEmoji.codePointCount(0, rightEmoji.length))
+        assertEquals(161, rightEmoji.length)
+        assertTrue(rightEmoji.endsWith(emoji))
+        val leftDeseret = V2Validator.dashPairsProbe(deseret.repeat(46) + "—gloss").single().first
+        assertEquals(46, leftDeseret.codePointCount(0, leftDeseret.length))
+        assertTrue(leftDeseret.startsWith(deseret))
+        val leftMixed = V2Validator.dashPairsProbe("a".repeat(89) + emoji + "—gloss").single().first
+        assertEquals(90, leftMixed.codePointCount(0, leftMixed.length))
+        assertTrue(leftMixed.endsWith(emoji))
+        assertFalse(leftMixed.last().isLowSurrogate() && !leftMixed[leftMixed.lastIndex - 1].isHighSurrogate())
+        val rightOnlyEmoji = V2Validator.dashPairsProbe("кот—" + emoji.repeat(81)).single().second
+        assertEquals(81, rightOnlyEmoji.codePointCount(0, rightOnlyEmoji.length))
+        assertTrue(rightOnlyEmoji.startsWith(emoji) && rightOnlyEmoji.endsWith(emoji))
+        val capped = V2Validator.dashPairsProbe(deseret.repeat(91) + "—gloss").single().first
+        assertEquals(90, capped.codePointCount(0, capped.length))
+        assertTrue(capped.startsWith(deseret))
+        val truncatedRight = V2Validator.dashPairsProbe("кот—" + emoji.repeat(161)).single().second
+        assertEquals(160, truncatedRight.codePointCount(0, truncatedRight.length))
+        assertTrue(truncatedRight.endsWith(emoji))
+        assertFalse(truncatedRight.last().isHighSurrogate())
+
+        val random = Random(20261008)
+        val atoms = arrayOf("a", " ", "\n", "\t", "—", "–", "к", "о", "т", emoji, deseret, "b", "x", "\r", "\u000B")
+        repeat(800) { index ->
+            val text = buildString {
+                repeat(1 + random.nextInt(80)) { append(atoms[random.nextInt(atoms.size)]) }
+            }
+            assertEquals(
+                "mixed-$index",
+                V2Validator.dashPairsRegexProbe(text),
+                V2Validator.dashPairsProbe(text),
+            )
+        }
+        val bounds = listOf("", "a", emoji, deseret, "\n", " ", "a".repeat(89), "a".repeat(90), "a".repeat(91), emoji.repeat(46))
+        val mids = listOf("", " ", "\n", " \n ")
+        for (left in bounds) {
+            for (mid in mids) {
+                for (right in bounds) {
+                    for (dash in charArrayOf('—', '–')) {
+                        val text = left + mid + dash + mid + right
+                        assertEquals(text, V2Validator.dashPairsRegexProbe(text), V2Validator.dashPairsProbe(text))
+                    }
+                }
+            }
+        }
+
+        val completeLeft = "a".repeat(89) + emoji
+        val source = "$completeLeft—gloss"
+        assertEquals(completeLeft, V2Validator.dashPairsProbe(source).single().first)
+        assertEquals(setOf(completeLeft), V2Validator.explicitPairsProbe(source).keys)
+        assertEquals(V2Validator.explicitPairsRegexProbe(source), V2Validator.explicitPairsProbe(source))
+        val item = pack.items.first { it.assessment != null }
+        val rejected = V2Validator.unsupportedRelationshipErrorsForTests(
+            relationshipClaim(item, """The frozen source pairs "$completeLeft" with "dog"."""),
+            listOf(source),
+        )
+        assertTrue(
+            rejected.joinToString(),
+            rejected.any { it.contains(item.id) && it.contains("unsupported by the cited frozen record") },
+        )
+        val supported = V2Validator.unsupportedRelationshipErrorsForTests(
+            relationshipClaim(item, """The frozen source pairs "$completeLeft" with "gloss"."""),
+            listOf(source),
+        )
+        assertFalse(
+            supported.joinToString(),
+            supported.any { it.contains("unsupported by the cited frozen record") },
+        )
+
+        fun coldOperations(size: Int): Long {
+            V2Validator.resetDashScanOperationsForTests()
+            val text = " ".repeat(size)
+            assertTrue(V2Validator.dashPairsProbe(text).isEmpty())
+            return V2Validator.dashScanOperationsForTests()
+        }
+        val cold = coldOperations(16_000)
+        V2Validator.resetDashScanOperationsForTests()
+        assertTrue(V2Validator.dashPairsProbe(" ".repeat(16_000)).isEmpty())
+        val coldAgain = V2Validator.dashScanOperationsForTests()
+        assertEquals(16_000L, cold)
+        assertEquals(cold, coldAgain)
+        val scaled = listOf(1_000, 2_000, 4_000, 8_000, 16_000).map { size -> size to coldOperations(size) }
+        scaled.forEach { (size, operations) ->
+            assertEquals("no-dash visits at $size", size.toLong(), operations)
+        }
+        val growth = scaled.last().second.toDouble() / scaled.first().second.toDouble()
+        assertTrue("operation growth $growth counts=$scaled", growth < 20.0)
+        val quadraticAt16k = (16_000L - 90L) * (16_000L - 89L) / 2L
+        assertTrue(cold < quadraticAt16k / 100L)
+        V2Validator.resetDashScanOperationsForTests()
+        val spaced = " ".repeat(16_000) + "—b"
+        assertEquals(V2Validator.dashPairsRegexProbe(spaced), V2Validator.dashPairsProbe(spaced))
+        val spacedOps = V2Validator.dashScanOperationsForTests()
+        println("dashScan cold16k=$cold repeated=$coldAgain scaled=$scaled dashSuffixOps=$spacedOps")
+        assertTrue("dash suffix visits $spacedOps", spacedOps > 16_000L * 2L && spacedOps < 16_000L * 4L)
+        assertTrue(spacedOps < quadraticAt16k / 100L)
+    }
+
+    @Test
     fun explicitPairsMatchTheRegexAndStayBoundedOnARepresentativeText() {
         val samples = listOf(
             "a — b",
@@ -1308,6 +1702,17 @@ class RemainingReauditCorrectionTest {
         val file = journalFile(store)
         if (!file.isFile) return null
         return backupJson.decodeFromString(ReplacementJournal.serializer(), file.readText()).phase
+    }
+
+    private fun directCoordinator(recovery: File): V2BackupCoordinator {
+        return V2BackupCoordinator(
+            memory(),
+            APP,
+            pack.packId,
+            pack.packVersion,
+            AppearanceStore.memory(AppearancePreference.DARK),
+            recovery,
+        )
     }
 
     private fun incoming(activity: ComponentActivity): List<File> {

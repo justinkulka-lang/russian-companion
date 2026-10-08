@@ -288,6 +288,12 @@ internal object V2BackupFaults {
     @Volatile var stagingCreateHold: java.util.concurrent.CountDownLatch? = null
     @Volatile var failStagingCreate: Boolean = false
 
+    /** Counts down on the staging worker immediately before a queued incoming delete waits. */
+    @Volatile var stagingDeleteEntered: java.util.concurrent.CountDownLatch? = null
+
+    /** When set, the staging worker waits here before the ownership check and delete. */
+    @Volatile var stagingDeleteHold: java.util.concurrent.CountDownLatch? = null
+
     fun reset() {
         failWrite = false
         failBeforeMutation = false
@@ -311,6 +317,9 @@ internal object V2BackupFaults {
         stagingCreateHold?.countDown()
         stagingCreateHold = null
         failStagingCreate = false
+        stagingDeleteEntered = null
+        stagingDeleteHold?.countDown()
+        stagingDeleteHold = null
     }
 }
 
@@ -368,6 +377,17 @@ internal object BackupWorkRegistry {
         synchronized(lock) { dropCount(incoming, canonical(file)) }
     }
 
+    /**
+     * Delete [file] only when it currently has no incoming owner.
+     * The check and the delete share the acquisition/sweep lock, so a lease
+     * taken before this runs cannot observe a half-deleted directory.
+     * Callers that clean up after release must invoke this when the worker
+     * executes, not when the cleanup is scheduled.
+     */
+    fun deleteIncomingIfUnowned(file: File) {
+        synchronized(lock) { deleteIncomingIfUnownedLocked(file) }
+    }
+
     fun incomingHeld(file: File): Boolean = synchronized(lock) { (incoming[canonical(file)] ?: 0) > 0 }
 
     fun holdRecordings(files: Collection<File>) {
@@ -386,12 +406,8 @@ internal object BackupWorkRegistry {
         for (child in children) {
             if (!child.isDirectory || !child.name.startsWith("incoming-")) continue
             synchronized(lock) {
-                val key = canonical(child)
-                val kept = alsoKeep != null && canonical(alsoKeep) == key
-                if (!kept && (incoming[key] ?: 0) == 0) {
-                    lastDeleteThreadForTests = Thread.currentThread()
-                    child.deleteRecursively()
-                }
+                val kept = alsoKeep != null && canonical(alsoKeep) == canonical(child)
+                if (!kept) deleteIncomingIfUnownedLocked(child)
             }
         }
     }
@@ -411,6 +427,12 @@ internal object BackupWorkRegistry {
     private fun dropCount(counts: HashMap<String, Int>, key: String) {
         val next = (counts[key] ?: 0) - 1
         if (next <= 0) counts.remove(key) else counts[key] = next
+    }
+
+    private fun deleteIncomingIfUnownedLocked(file: File) {
+        if ((incoming[canonical(file)] ?: 0) != 0) return
+        lastDeleteThreadForTests = Thread.currentThread()
+        file.deleteRecursively()
     }
 
     private fun canonical(file: File): String = runCatching { file.canonicalPath }.getOrElse { file.absolutePath }
