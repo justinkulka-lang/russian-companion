@@ -3772,6 +3772,11 @@ internal object V2Validator {
         return errors
     }
 
+    /** The production relationship predicate, so a lost dash pair cannot hide a rejection. */
+    internal fun unsupportedRelationshipErrorsForTests(item: V2CheckItem, originals: List<String>): List<String> {
+        return falseRelationshipErrors(item, originals)
+    }
+
     private fun pairSupported(rights: Set<String>, claimed: String): Boolean {
         return rights.any { gloss ->
             gloss == claimed ||
@@ -3846,88 +3851,85 @@ internal object V2Validator {
     }
 
     /**
-     * Same non-overlapping pairs as [DASH_PAIR], without the bounded backtracking
-     * of a greedy `{1,90}` scan at every character. Pattern whitespace, including
-     * a newline, may sit between the left token and the dash, matching `\s*`.
-     * The left token itself still cannot contain a newline or another dash and
-     * stays within 90 characters.
-     *
-     * A left side that is only pattern whitespace is still a regex match. Trim
-     * drops it, so this scan consumes that span and does not emit it. The
-     * counterexample is " —bb–b": the first dash consumes "bb", and "bb–b" is
-     * not a second pair.
+     * Same non-overlapping pairs as [DASH_PAIR]. Each capture excludes newline
+     * and both dashes, and each requires at least one character, capped at 90
+     * and 160. `\s*` before the right capture backtracks so a whitespace-only
+     * right side still matches and consumes its span. A newline is not a left
+     * capture, so it does not consume the following pair. A whitespace-only
+     * left capture is still a match: trim drops it later, and the scan does
+     * not look inside the consumed span.
      */
     private fun linearDashPairs(visible: String): List<Pair<String, String>> {
-        val out = ArrayList<Pair<String, String>>()
+        val out = ArrayList<Triple<String, String, Int>>()
         var search = 0
         val n = visible.length
         while (search < n) {
-            var cursor = search
-            var matched = false
-            while (cursor < n) {
-                val character = visible[cursor]
-                if (character != '—' && character != '–') {
-                    cursor++
-                    continue
-                }
-                val dash = cursor
-                var leftEnd = dash
-                while (leftEnd > search && isPatternWhitespace(visible[leftEnd - 1])) leftEnd--
-                var leftStart = leftEnd
-                var taken = 0
-                while (leftStart > search && taken < 90) {
-                    val leftCharacter = visible[leftStart - 1]
-                    if (leftCharacter == '\n' || leftCharacter == '—' || leftCharacter == '–') break
-                    leftStart--
-                    taken++
-                }
-                val rightEnd = dashRightEnd(visible, dash, search)
-                if (taken == 0) {
-                    if (dash > search && rightEnd != null) {
-                        search = rightEnd
-                        matched = true
-                        break
-                    }
-                    cursor = dash + 1
-                    continue
-                }
-                if (rightEnd == null) {
-                    cursor = dash + 1
-                    continue
-                }
-                val rightStart = dashRightStart(visible, dash)
-                out += visible.substring(leftStart, leftEnd) to visible.substring(rightStart, rightEnd)
-                search = rightEnd
-                matched = true
-                break
+            var start = search
+            while (start < n && !isDashCaptureChar(visible[start])) start++
+            if (start >= n) break
+            val match = matchDashPairAt(visible, start)
+            if (match == null) {
+                search = start + 1
+                continue
             }
-            if (!matched) break
+            out += match
+            search = match.third
         }
-        return out
+        return out.map { it.first to it.second }
     }
 
-    private fun dashRightStart(visible: String, dash: Int): Int {
-        var right = dash + 1
-        while (right < visible.length && isPatternWhitespace(visible[right])) right++
-        return right
+    /** Left text, right text, and the exclusive end index of the match. */
+    private fun matchDashPairAt(visible: String, start: Int): Triple<String, String, Int>? {
+        val n = visible.length
+        var leftEnd = start
+        var taken = 0
+        while (leftEnd < n && taken < 90 && isDashCaptureChar(visible[leftEnd])) {
+            leftEnd++
+            taken++
+        }
+        if (taken == 0) return null
+        var dash = leftEnd
+        while (dash < n && isPatternWhitespace(visible[dash])) dash++
+        if (dash >= n || (visible[dash] != '—' && visible[dash] != '–')) return null
+        val right = matchDashRight(visible, dash) ?: return null
+        return Triple(visible.substring(start, leftEnd), visible.substring(right.first, right.second), right.second)
     }
 
-    /** End index of the right token, or null when [DASH_PAIR] would not match. */
-    private fun dashRightEnd(visible: String, dash: Int, search: Int): Int? {
-        if (dash < search) return null
-        val right = dashRightStart(visible, dash)
-        if (right >= visible.length || visible[right] == '\n' || visible[right] == '—' || visible[right] == '–') {
-            return null
+    /**
+     * `\s*([^\n—–]{1,160})` after a dash. Greedy whitespace is kept when the
+     * following character can start the right capture. Otherwise whitespace
+     * backtracks to the rightmost character the capture can take, including a
+     * non-newline whitespace character.
+     */
+    private fun matchDashRight(visible: String, dash: Int): Pair<Int, Int>? {
+        val n = visible.length
+        var whitespaceEnd = dash + 1
+        while (whitespaceEnd < n && isPatternWhitespace(visible[whitespaceEnd])) whitespaceEnd++
+        if (whitespaceEnd < n && isDashCaptureChar(visible[whitespaceEnd])) {
+            return whitespaceEnd to consumeDashCapture(visible, whitespaceEnd)
         }
-        var rightEnd = right
+        var rightStart = whitespaceEnd - 1
+        while (rightStart > dash) {
+            if (isDashCaptureChar(visible[rightStart])) {
+                return rightStart to consumeDashCapture(visible, rightStart)
+            }
+            rightStart--
+        }
+        return null
+    }
+
+    private fun consumeDashCapture(visible: String, start: Int): Int {
+        var end = start
         var count = 0
-        while (rightEnd < visible.length && count < 160) {
-            val rightCharacter = visible[rightEnd]
-            if (rightCharacter == '\n' || rightCharacter == '—' || rightCharacter == '–') break
-            rightEnd++
+        while (end < visible.length && count < 160 && isDashCaptureChar(visible[end])) {
+            end++
             count++
         }
-        return if (count == 0) null else rightEnd
+        return end
+    }
+
+    private fun isDashCaptureChar(character: Char): Boolean {
+        return character != '\n' && character != '—' && character != '–'
     }
 
     private fun isPatternWhitespace(character: Char): Boolean {

@@ -170,10 +170,11 @@ internal class V2BackupCoordinator(
                 val opened = withContext(Dispatchers.IO) {
                     if (cancelRequested) return@withContext null
                     val stream = openInput() ?: return@withContext null
-                    val staging = File(recoveryDir, "incoming-${System.nanoTime()}")
-                    acquireStaging(staging)
-                    usingStaging {
-                        stream.use { input ->
+                    stream.use { input ->
+                        if (cancelRequested) return@use null
+                        val staging = File(recoveryDir, "incoming-${System.nanoTime()}")
+                        acquireStaging(staging)
+                        usingStaging {
                             readGovernedBackup(input, applicationId, packId, packVersion, staging)
                         }
                     }
@@ -360,7 +361,14 @@ internal class V2BackupCoordinator(
     }
 
     private fun acquireStaging(file: File) {
-        BackupWorkRegistry.createOwnedIncoming(file)
+        try {
+            BackupWorkRegistry.createOwnedIncoming(file)
+        } catch (error: Throwable) {
+            if (!BackupWorkRegistry.incomingHeld(file) && file.isDirectory) {
+                deleteOffMain(file)
+            }
+            throw error
+        }
         synchronized(stagingLock) {
             disposableStaging = file
         }

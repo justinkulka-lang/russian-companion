@@ -26,6 +26,7 @@ import dev.russiancompanion.v2.backup.BackupRejection
 import dev.russiancompanion.v2.backup.BackupWorkRegistry
 import dev.russiancompanion.v2.backup.GovernedReplaceOutcome
 import dev.russiancompanion.v2.backup.RESTORE_CANCELLED
+import dev.russiancompanion.v2.backup.RESTORE_FAILED
 import dev.russiancompanion.v2.backup.RESTORE_CLEANUP_PENDING
 import dev.russiancompanion.v2.backup.RESTORE_CLEANUP_PENDING_APPEARANCE_FAILED
 import dev.russiancompanion.v2.backup.RESTORE_RECOVERY_REQUIRED
@@ -53,8 +54,11 @@ import dev.russiancompanion.v2.curriculum.lastGovernedIdentityThreadForTests
 import dev.russiancompanion.v2.curriculum.lastGovernedSnapshotLabelForTests
 import dev.russiancompanion.v2.curriculum.practiceStepId
 import dev.russiancompanion.v2.curriculum.prepareGovernedAttempt
+import dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA
 import dev.russiancompanion.v2.curriculum.resumePositionDigest
+import dev.russiancompanion.v2.curriculum.savedWorkEntries
 import dev.russiancompanion.v2.curriculum.step
+import dev.russiancompanion.v2.curriculum.stepContentDigest
 import dev.russiancompanion.v2.curriculum.unit
 import dev.russiancompanion.v2.data.V2AttemptEntity
 import dev.russiancompanion.v2.ui.V2App
@@ -80,10 +84,14 @@ import org.robolectric.Robolectric
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.Shadows
 import org.robolectric.annotation.Config
+import java.io.ByteArrayInputStream
 import java.io.File
+import java.io.InputStream
 import java.lang.ref.WeakReference
 import java.util.concurrent.CountDownLatch
+import java.util.concurrent.atomic.AtomicBoolean
 import java.util.concurrent.atomic.AtomicReference
+import kotlin.random.Random
 
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi")
@@ -836,6 +844,231 @@ class RemainingReauditCorrectionTest {
     }
 
     @Test
+    fun explicitPairsMatchTheRegexOnCounterexamplesAndRandomDashText() {
+        val samples = listOf(
+            "a— \n—кот–cat",
+            "\n—кот–cat",
+            "a— \n",
+            "a— \t\n—x",
+            "\n\n—кот–cat",
+            "  \n—кот–cat",
+            "a— \n—кот–cat\nb— \n—пёс–dog",
+            "я—" + "б".repeat(161) + "–х",
+            "а".repeat(91) + "—б–в",
+            " \n — \n—кот–cat",
+        )
+        samples.forEach { sample ->
+            assertEquals(sample, V2Validator.explicitPairsRegexProbe(sample), V2Validator.explicitPairsProbe(sample))
+        }
+        assertEquals(setOf("cat"), V2Validator.explicitPairsProbe("a— \n—кот–cat")["кот"])
+        assertEquals(setOf("cat"), V2Validator.explicitPairsProbe("\n—кот–cat")["кот"])
+        val random = Random(20261008)
+        val alphabet = charArrayOf('a', ' ', '\n', '\t', '\r', '—', '–', 'к', 'о', 'т', 'b', 'x', '"', '—')
+        repeat(200) { index ->
+            val text = buildString {
+                repeat(1 + random.nextInt(80)) { append(alphabet[random.nextInt(alphabet.size)]) }
+            }
+            assertEquals(
+                "random-$index:${text.replace("\n", "\\n")}",
+                V2Validator.explicitPairsRegexProbe(text),
+                V2Validator.explicitPairsProbe(text),
+            )
+        }
+    }
+
+    @Test
+    fun unsupportedDashPairsStayRejected() {
+        val item = pack.items.first { it.assessment != null }
+        listOf("a— \n—кот–cat", "\n—кот–cat").forEach { source ->
+            assertEquals(setOf("cat"), V2Validator.explicitPairsRegexProbe(source)["кот"])
+            val rejected = V2Validator.unsupportedRelationshipErrorsForTests(
+                relationshipClaim(item, """The frozen source pairs "кот" with "dog"."""),
+                listOf(source),
+            )
+            assertTrue(
+                rejected.joinToString(),
+                rejected.any { it.contains(item.id) && it.contains("unsupported by the cited frozen record") },
+            )
+            val supported = V2Validator.unsupportedRelationshipErrorsForTests(
+                relationshipClaim(item, """The frozen source pairs "кот" with "cat"."""),
+                listOf(source),
+            )
+            assertFalse(
+                supported.joinToString(),
+                supported.any { it.contains("unsupported by the cited frozen record") },
+            )
+        }
+    }
+
+    @Test
+    fun failedStagingParentClosesTheStreamAndAllowsRetry() {
+        val store = memory()
+        store.v2AddNote("kept", "stay", "2026-10-08T19:00:00")
+        val before = store.governedLearnerFingerprint()
+        val backup = tempZip()
+        backup.outputStream().use { writeStoreBackup(store, it, APP, pack.packId, pack.packVersion, "DARK") }
+        val activity = Robolectric.buildActivity(ComponentActivity::class.java).setup().get()
+        val recovery = File(activity.applicationContext.filesDir, "backup-recovery")
+        val preserved = File(activity.applicationContext.filesDir, "preserved-recovery.bin")
+        val preservedBytes = byteArrayOf(2, 7, 1, 8)
+        try {
+            if (recovery.exists()) recovery.deleteRecursively()
+            assertTrue(recovery.createNewFile())
+            preserved.writeBytes(preservedBytes)
+            val coordinator = V2BackupCoordinator.get(
+                activity,
+                store,
+                APP,
+                pack.packId,
+                pack.packVersion,
+                AppearanceStore.memory(AppearancePreference.DARK),
+            )
+            val stream = ClosingStream(ByteArrayInputStream(byteArrayOf(1, 2, 3)))
+            assertTrue(coordinator.begin(V2BackupPhase.PREPARING))
+            coordinator.openBackup { stream }
+            awaitPhase(coordinator, V2BackupPhase.FAILED)
+            assertEquals(RESTORE_FAILED, coordinator.message)
+            assertTrue(stream.closed.get())
+            assertEquals(0, BackupWorkRegistry.incomingOwnershipTotalForTests())
+            assertEquals(before, store.governedLearnerFingerprint())
+            assertEquals(listOf("stay"), store.v2Notes().map { it.text })
+            assertTrue(preservedBytes.contentEquals(preserved.readBytes()))
+            assertTrue(recovery.delete())
+            assertTrue(recovery.mkdirs())
+            assertTrue(coordinator.begin(V2BackupPhase.PREPARING))
+            coordinator.openBackup { backup.inputStream() }
+            awaitPhase(coordinator, V2BackupPhase.AWAITING_CONFIRMATION)
+            assertEquals(before, store.governedLearnerFingerprint())
+            assertTrue(preservedBytes.contentEquals(preserved.readBytes()))
+            assertEquals(listOf("stay"), store.v2Notes().map { it.text })
+            coordinator.cancel()
+            awaitPhase(coordinator, V2BackupPhase.CANCELLED)
+            idleUntil("retry staging cleared") { incoming(activity).isEmpty() }
+        } finally {
+            if (recovery.isFile) recovery.delete()
+            preserved.delete()
+        }
+    }
+
+    @Test
+    fun failedStagingAcquisitionReleasesTheLeaseAndClosesTheStream() {
+        val store = memory()
+        store.v2AddNote("kept", "stay", "2026-10-08T19:10:00")
+        val before = store.governedLearnerFingerprint()
+        val backup = tempZip()
+        backup.outputStream().use { writeStoreBackup(store, it, APP, pack.packId, pack.packVersion, "DARK") }
+        val activity = Robolectric.buildActivity(ComponentActivity::class.java).setup().get()
+        val recovery = File(activity.applicationContext.filesDir, "backup-recovery")
+        if (recovery.isFile) recovery.delete()
+        recovery.mkdirs()
+        val marker = File(recovery, "rollback/keep-recovery.txt")
+        marker.parentFile?.mkdirs()
+        val recoveryBytes = byteArrayOf(3, 1, 4, 1, 5)
+        marker.writeBytes(recoveryBytes)
+        val other = File(recovery, "incoming-other-owner")
+        other.mkdirs()
+        val ownedBytes = byteArrayOf(8, 6, 7)
+        File(other, "owned.bin").writeBytes(ownedBytes)
+        BackupWorkRegistry.holdIncoming(other)
+        val coordinator = V2BackupCoordinator.get(
+            activity,
+            store,
+            APP,
+            pack.packId,
+            pack.packVersion,
+            AppearanceStore.memory(AppearancePreference.DARK),
+        )
+        val entered = CountDownLatch(1)
+        val release = CountDownLatch(1)
+        V2BackupFaults.stagingCreateEntered = entered
+        V2BackupFaults.stagingCreateHold = release
+        val stream = ClosingStream(backup.inputStream())
+        assertTrue(coordinator.begin(V2BackupPhase.PREPARING))
+        coordinator.openBackup { stream }
+        awaitLatch(entered)
+        val partial = incoming(activity).single {
+            it.name != other.name && BackupWorkRegistry.incomingOwnershipForTests(it) == 1
+        }
+        assertTrue(partial.isDirectory)
+        assertEquals(1, BackupWorkRegistry.incomingOwnershipForTests(partial))
+        assertFalse(stream.closed.get())
+        coordinator.cancelWorkForTests()
+        V2BackupFaults.failStagingCreate = true
+        release.countDown()
+        idleUntil("failed staging removed off Main", timeoutMs = 15_000) {
+            stream.closed.get() &&
+                !partial.exists() &&
+                BackupWorkRegistry.incomingOwnershipForTests(partial) == 0
+        }
+        val deleter = BackupWorkRegistry.lastDeleteThreadForTests
+        assertNotNull(deleter)
+        assertNotEquals(Looper.getMainLooper().thread, deleter)
+        assertEquals("russian-companion-staging", deleter!!.name)
+        assertTrue(other.isDirectory)
+        assertTrue(ownedBytes.contentEquals(File(other, "owned.bin").readBytes()))
+        assertTrue(BackupWorkRegistry.incomingHeld(other))
+        assertTrue(recoveryBytes.contentEquals(marker.readBytes()))
+        assertEquals(before, store.governedLearnerFingerprint())
+        assertEquals(listOf("stay"), store.v2Notes().map { it.text })
+        assertFalse(incoming(activity).any { it.name == partial.name })
+
+        V2BackupFaults.failStagingCreate = false
+        V2BackupFaults.stagingCreateEntered = null
+        V2BackupFaults.stagingCreateHold = null
+        val again = V2BackupCoordinator.get(
+            Robolectric.buildActivity(ComponentActivity::class.java).setup().get(),
+            store,
+            APP,
+            pack.packId,
+            pack.packVersion,
+            AppearanceStore.memory(AppearancePreference.DARK),
+        )
+        assertTrue(again.begin(V2BackupPhase.PREPARING))
+        again.openBackup { backup.inputStream() }
+        awaitPhase(again, V2BackupPhase.AWAITING_CONFIRMATION)
+        assertEquals(before, store.governedLearnerFingerprint())
+        assertTrue(recoveryBytes.contentEquals(marker.readBytes()))
+        assertTrue(ownedBytes.contentEquals(File(other, "owned.bin").readBytes()))
+        assertTrue(BackupWorkRegistry.incomingHeld(other))
+        again.cancel()
+        awaitPhase(again, V2BackupPhase.CANCELLED)
+        BackupWorkRegistry.releaseIncoming(other)
+        other.deleteRecursively()
+        idleUntil("acquisition fixtures cleared") { incoming(activity).isEmpty() }
+        assertTrue(recoveryBytes.contentEquals(marker.readBytes()))
+    }
+
+    @Test
+    fun baselineSavedRecordsSurviveRestoreAndReopen() {
+        val lesson = pack.unit(1)!!.sessions.first()
+        val step = lesson.steps.first { it.kind != "CHECK" }
+        val digest = stepContentDigest(pack, step)
+        val name = "baseline-four-${System.nanoTime()}"
+        val store = LocalStore.openNamed(context(), name).also { stores += it }
+        place(store, lesson.id, lesson.steps.indexOf(step))
+        assertTrue(store.v2ToggleBookmark(step.id, "STEP", "2026-10-08T19:20:00", digest, GOVERNED_IDENTITY_SCHEMA))
+        store.v2AddNote(step.id, "AT-030 note alpha", "2026-10-08T19:20:01", digest, GOVERNED_IDENTITY_SCHEMA)
+        store.v2AddTutorItem(step.id, "AT-030 note alpha", "2026-10-08T19:20:02", digest, GOVERNED_IDENTITY_SCHEMA)
+        assertBaselineSavedRecords(store)
+        val baseline = hashedBackup(store.governedLearnerDocument())
+        store.v2AddNote(step.id, "AT-030 note later", "2026-10-08T19:21:00", digest, GOVERNED_IDENTITY_SCHEMA)
+        val later = hashedBackup(store.governedLearnerDocument())
+        val laterRead = readGovernedBackup(later.inputStream(), APP, pack.packId, pack.packVersion, tempDir())
+        assertTrue(laterRead is BackupReadResult.Valid)
+        assertTrue((laterRead as BackupReadResult.Valid).backup.document.notes.any { it.text == "AT-030 note later" })
+        val baselineRead = readGovernedBackup(baseline.inputStream(), APP, pack.packId, pack.packVersion, tempDir())
+        assertEquals(
+            GovernedReplaceOutcome.REPLACED,
+            restoreStoreBackup(store, (baselineRead as BackupReadResult.Valid).backup, tempDir()),
+        )
+        stores.remove(store)
+        store.close()
+        val reopened = LocalStore.openNamed(context(), name).also { stores += it }
+        assertBaselineSavedRecords(reopened)
+        assertFalse(reopened.v2Notes().any { it.text == "AT-030 note later" })
+    }
+
+    @Test
     fun explicitPairsMatchTheRegexAndStayBoundedOnARepresentativeText() {
         val samples = listOf(
             "a — b",
@@ -903,6 +1136,41 @@ class RemainingReauditCorrectionTest {
         val structuralMs = (System.nanoTime() - structuralStart) / 1_000_000
         println("pack identityKey1000Ms=$identityMs structuralHashOnceMs=$structuralMs")
         assertTrue(identityMs <= structuralMs + 50)
+    }
+
+    private fun relationshipClaim(
+        item: dev.russiancompanion.v2.curriculum.V2CheckItem,
+        claim: String,
+    ): dev.russiancompanion.v2.curriculum.V2CheckItem {
+        val assessment = checkNotNull(item.assessment)
+        return item.copy(
+            feedback = claim,
+            distractorRationales = listOf(claim),
+            assessment = assessment.copy(
+                whyAnswerDemonstratesObjective = claim,
+                distractorDifference = listOf(claim),
+            ),
+        )
+    }
+
+    private fun assertBaselineSavedRecords(store: LocalStore) {
+        val entries = savedWorkEntries(pack, store.v2LearnerView())
+        assertTrue(entries.any { it.kind == "RESUME" && it.resumable })
+        assertTrue(entries.any { it.kind == "BOOKMARK" && it.resumable })
+        assertTrue(entries.any { it.kind == "NOTE" && it.detail.contains("AT-030 note alpha") })
+        assertTrue(entries.any { it.kind == "TUTOR" && it.detail.contains("AT-030 note alpha") })
+        assertFalse(entries.any { it.detail.contains("AT-030 note later") })
+        assertEquals(listOf("AT-030 note alpha"), store.v2Notes().map { it.text })
+    }
+
+    private class ClosingStream(private val source: InputStream) : InputStream() {
+        val closed = AtomicBoolean(false)
+        override fun read(): Int = source.read()
+        override fun read(buffer: ByteArray, offset: Int, length: Int): Int = source.read(buffer, offset, length)
+        override fun close() {
+            closed.set(true)
+            source.close()
+        }
     }
 
     private fun migrateFileBackedSchemaEight() {

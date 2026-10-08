@@ -284,6 +284,9 @@ internal object V2BackupFaults {
     @Volatile var boundaryQueuedForTests: java.util.concurrent.CountDownLatch? = null
     @Volatile var boundaryOpenedForTests: java.util.concurrent.CountDownLatch? = null
     @Volatile var afterBoundaryBeforeIo: kotlinx.coroutines.CompletableDeferred<Unit>? = null
+    @Volatile var stagingCreateEntered: java.util.concurrent.CountDownLatch? = null
+    @Volatile var stagingCreateHold: java.util.concurrent.CountDownLatch? = null
+    @Volatile var failStagingCreate: Boolean = false
 
     fun reset() {
         failWrite = false
@@ -304,6 +307,10 @@ internal object V2BackupFaults {
         boundaryQueuedForTests = null
         boundaryOpenedForTests = null
         afterBoundaryBeforeIo = null
+        stagingCreateEntered = null
+        stagingCreateHold?.countDown()
+        stagingCreateHold = null
+        failStagingCreate = false
     }
 }
 
@@ -326,14 +333,36 @@ internal object BackupWorkRegistry {
     /**
      * Own [file] before it exists, then create it under the same lock a sweep
      * uses to delete. A concurrent sweep cannot observe an unowned directory.
+     * A failed creation drops exactly the lease this call acquired.
      */
     fun createOwnedIncoming(file: File) {
+        val key = canonical(file)
         synchronized(lock) {
             file.parentFile?.mkdirs()
-            addCount(incoming, canonical(file))
-            if (!file.isDirectory && !file.mkdirs() && !file.isDirectory) error("staging-directory")
+            addCount(incoming, key)
+            try {
+                if (!file.isDirectory && !file.mkdirs() && !file.isDirectory) error("staging-directory")
+            } catch (error: Throwable) {
+                dropCount(incoming, key)
+                throw error
+            }
+        }
+        try {
+            V2BackupFaults.stagingCreateEntered?.countDown()
+            val hold = V2BackupFaults.stagingCreateHold
+            if (hold != null && !hold.await(20, java.util.concurrent.TimeUnit.SECONDS)) {
+                error("staging-create-hold")
+            }
+            if (V2BackupFaults.failStagingCreate) error("staging-directory")
+        } catch (error: Throwable) {
+            synchronized(lock) { dropCount(incoming, key) }
+            throw error
         }
     }
+
+    fun incomingOwnershipForTests(file: File): Int = synchronized(lock) { incoming[canonical(file)] ?: 0 }
+
+    fun incomingOwnershipTotalForTests(): Int = synchronized(lock) { incoming.values.sum() }
 
     fun releaseIncoming(file: File) {
         synchronized(lock) { dropCount(incoming, canonical(file)) }
