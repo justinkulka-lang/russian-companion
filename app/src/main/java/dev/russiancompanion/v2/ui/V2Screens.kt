@@ -48,6 +48,7 @@ import dev.russiancompanion.v2.curriculum.objectiveState
 import dev.russiancompanion.v2.curriculum.practiceOffers
 import dev.russiancompanion.v2.curriculum.readinessLabel
 import dev.russiancompanion.v2.curriculum.reviewedGuidedPractice
+import dev.russiancompanion.v2.curriculum.stepCompletionItemIds
 import dev.russiancompanion.v2.curriculum.step
 import dev.russiancompanion.v2.curriculum.V2PackIdentityIndex
 import dev.russiancompanion.v2.curriculum.recordGovernedIdentityForTests
@@ -474,6 +475,7 @@ internal fun V2SessionScreen(
     val routeStep = session.steps[index]
     var shownStepId by rememberSaveable(routeStep.id) { mutableStateOf(routeStep.id) }
     val step = if (remedial) pack.step(shownStepId)?.second ?: routeStep else routeStep
+    val requiredItemIds = remember(pack, step.id) { stepCompletionItemIds(pack, step.id).toSet() }
     fun selectedAnswer(stepId: String, itemId: String): String? {
         return selections[governedSelectionKey(stepId, itemId)]
     }
@@ -516,11 +518,11 @@ internal fun V2SessionScreen(
                         tag = "v2-return-to-check",
                     )
                 } else {
-                    val unanswered = step.itemIds.any { selectedAnswer(step.id, it) == null }
+                    val unanswered = requiredItemIds.any { selectedAnswer(step.id, it) == null }
                     V2PrimaryButton(
                         text = if (index == session.steps.lastIndex) "Finish session" else step.dominantAction,
                         onClick = {
-                            if (step.itemIds.any { selectedAnswer(step.id, it) == null }) return@V2PrimaryButton
+                            if (requiredItemIds.any { selectedAnswer(step.id, it) == null }) return@V2PrimaryButton
                             val stepId = step.id
                             onCompleteStep(stepId) {
                                 if (!navigationOpen.value || !consumedSteps.add(stepId)) return@onCompleteStep
@@ -537,8 +539,12 @@ internal fun V2SessionScreen(
         Text(step.title, style = MaterialTheme.typography.headlineSmall, modifier = Modifier.semantics { heading(); testTag = "v2-step-title" })
         V2Status("Step ${index + 1} of ${session.steps.size} · ${step.kind}")
             Text(step.body)
-            if (step.itemIds.any { selectedAnswer(step.id, it) == null }) {
-                V2Status("Answer each item before this step is recorded.")
+            if (requiredItemIds.any { selectedAnswer(step.id, it) == null }) {
+                V2Status(if (requiredItemIds.size == step.itemIds.size) {
+                    "Answer each item before this step is recorded."
+                } else {
+                    "Answer each required item before this step is recorded."
+                })
             }
         step.exampleIds.forEach { exampleId ->
             val example = pack.example(exampleId) ?: return@forEach
@@ -562,6 +568,7 @@ internal fun V2SessionScreen(
         }
         step.itemIds.forEach { itemId ->
             val item = pack.item(itemId) ?: return@forEach
+            if (itemId !in requiredItemIds) V2Status("Optional practice · not required to complete this step")
             val selected = selectedAnswer(step.id, item.id)
             val locked = item.id in lockedItemIds
             item.promptLetter?.let { glyph ->

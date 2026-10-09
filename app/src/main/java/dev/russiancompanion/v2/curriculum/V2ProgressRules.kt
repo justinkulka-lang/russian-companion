@@ -69,8 +69,16 @@ internal fun readinessLabel(unit: V2Unit): String = when (unit.readiness) {
 }
 
 internal fun todaysSession(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): V2Session? {
-    return unit.sessions.firstOrNull { session ->
+    return requiredPathSessions(unit).firstOrNull { session ->
         session.steps.any { !completedStepCounts(pack, learner, it.id) }
+    }
+}
+
+/** Unknown or shared objective ownership remains on the required path. */
+internal fun requiredPathSessions(unit: V2Unit): List<V2Session> {
+    val optionalIds = unit.objectives.filter { !it.gating }.map { it.id }.toSet()
+    return unit.sessions.filter { session ->
+        session.objectiveIds.isEmpty() || session.objectiveIds.any { it !in optionalIds }
     }
 }
 
@@ -79,13 +87,14 @@ internal fun currentObjective(
     unit: V2Unit,
     learner: V2LearnerView,
 ): V2Objective? {
-    return unit.objectives.firstOrNull { objective ->
+    val requiredObjectives = unit.objectives.filter { it.gating }
+    return requiredObjectives.firstOrNull { objective ->
         objectiveState(objective, learner, pack) in setOf(
             V2ObjectiveState.NOT_STARTED,
             V2ObjectiveState.LEARNING,
             V2ObjectiveState.REVIEW_REQUIRED,
         )
-    } ?: unit.objectives.lastOrNull()
+    } ?: requiredObjectives.lastOrNull()
 }
 
 internal fun recordedSessionCount(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): Int {
@@ -132,7 +141,16 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
         )
     }
     val resumeId = learner.currentSessionId
-    val resumeSession = sessions.firstOrNull { it.id == resumeId } ?: sessions.first()
+    val resumeSession = sessions.firstOrNull { it.id == resumeId }
+        ?: requiredPathSessions(unit).firstOrNull()
+        ?: return V2ContinueTarget(
+            title = "Review advancement",
+            reason = "This unit has no required sessions. Check advancement before moving on.",
+            sessionId = null,
+            stepIndex = 0,
+            unitNumber = unit.number,
+            opensUnitReview = true,
+        )
     val resumeIndex = learner.currentStepIndex.coerceIn(0, resumeSession.steps.lastIndex)
     val remaining = resumeSession.steps.drop(resumeIndex).firstOrNull { !completedStepCounts(pack, learner, it.id) }
     if (remaining != null) {
@@ -144,7 +162,7 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
             unitNumber = unit.number,
         )
     }
-    val nextSession = sessions.firstOrNull { session -> session.steps.any { !completedStepCounts(pack, learner, it.id) } }
+    val nextSession = requiredPathSessions(unit).firstOrNull { session -> session.steps.any { !completedStepCounts(pack, learner, it.id) } }
     if (nextSession != null) {
         val step = nextSession.steps.first { !completedStepCounts(pack, learner, it.id) }
         return V2ContinueTarget(
@@ -291,7 +309,9 @@ internal fun advancementDecision(
         remaining += "Self-attest the book work for this unit"
     }
     if (rule.requireAppChecks) {
+        val requiredObjectiveIds = unit.objectives.filter { it.gating }.map { it.id }.toSet()
         val checkIds = unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }.distinct()
+            .filter { pack.item(it)?.objectiveId in requiredObjectiveIds }
         val correct = distinctCorrectCheckCount(pack, checkIds, creditItemIds(pack, learner))
         if (correct < rule.minimumDistinctChecks) {
             remaining += "Demonstrate at least ${rule.minimumDistinctChecks} distinct in-app checks"
@@ -328,3 +348,4 @@ internal fun searchReferences(entries: List<V2ReferenceEntry>, query: String): L
             entry.searchTerms.any { it.contains(needle) }
     }
 }
+

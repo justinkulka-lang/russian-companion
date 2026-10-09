@@ -155,6 +155,7 @@ class RuntimeCorrectionTest {
         target.exampleIds.forEach { id ->
             compose.onNodeWithTag("v2-example-$id").performScrollTo().assertIsDisplayed()
         }
+        completeRemediationPractice(pack, target.id)
         compose.onNodeWithTag("v2-return-to-check").performClick()
         compose.onNodeWithText(step.title).assertIsDisplayed()
         compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertIsDisplayed()
@@ -214,6 +215,12 @@ class RuntimeCorrectionTest {
             compose.onNodeWithTag("v2-example-$id").performScrollTo().assertIsDisplayed()
         }
         compose.onNodeWithTag("v2-session-continue").performClick()
+        val intervening = pack.session("u1-s-iotated")!!.steps.drop(1).dropLast(1)
+        intervening.forEach { guided ->
+            awaitText(guided.title)
+            guided.itemIds.forEach { id -> choose(pack.item(id)!!, wrong = false) }
+            compose.onNodeWithTag("v2-session-continue").performClick()
+        }
         awaitText(check.title)
         val item = pack.item(check.itemIds.first())!!
         choose(item, wrong = true)
@@ -223,6 +230,7 @@ class RuntimeCorrectionTest {
         iotated.exampleIds.forEach { id ->
             compose.onNodeWithTag("v2-example-$id").performScrollTo().assertIsDisplayed()
         }
+        completeRemediationPractice(pack, iotated.id)
         compose.onNodeWithTag("v2-return-to-check").performClick()
         compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertIsDisplayed()
         compose.onNodeWithTag("v2-note-draft").performScrollTo().performTextInput("letter draft")
@@ -811,6 +819,23 @@ class RuntimeCorrectionTest {
         compose.onNodeWithTag("v2-option-${item.id}-$option").performScrollTo().performClick()
     }
 
+    private fun completeRemediationPractice(pack: V2CurriculumPack, targetId: String) {
+        val guidedIds = reviewedGuidedPractice(pack, targetId)
+        if (guidedIds.isEmpty()) return
+        compose.onNodeWithTag("v2-review-practice").performClick()
+        guidedIds.forEachIndexed { index, id ->
+            val guided = pack.step(id)!!.second
+            awaitText(guided.title)
+            guided.itemIds.forEach { itemId ->
+                val item = pack.item(itemId)!!
+                compose.onNodeWithTag("v2-item-prompt-${item.id}").performScrollTo().assertIsDisplayed()
+                choose(item, wrong = false)
+                awaitTag("v2-item-feedback-${item.id}")
+            }
+            if (index < guidedIds.lastIndex) compose.onNodeWithTag("v2-next-practice").performClick()
+        }
+    }
+
     private fun wrongOption(item: V2CheckItem): String = item.options.first { it != item.answer }
 
     private fun assertDoesNotExist(tag: String) {
@@ -957,3 +982,4 @@ private class GatedPersistence(
         delegate.addTutor(targetId, note, recordedAt, targetDigest)
     }
 }
+

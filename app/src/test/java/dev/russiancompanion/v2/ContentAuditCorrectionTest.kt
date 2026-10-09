@@ -9,6 +9,7 @@ import dev.russiancompanion.v2.curriculum.advancementDecision
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.requiredInstructionSteps
 import dev.russiancompanion.v2.curriculum.step
+import dev.russiancompanion.v2.curriculum.stepCompletionItemIds
 import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -80,6 +81,10 @@ class ContentAuditCorrectionTest {
         assertFalse("u27-st-teach-present-passive-2" in requiredSteps)
         assertTrue("u27-st-teach-passive-2" in requiredSteps)
         val optionalObjectiveIds = unit.objectives.filter { !it.gating }.map { it.id }.toSet()
+        unit.sessions.filter { session -> session.objectiveIds.any { it !in optionalObjectiveIds } }
+            .flatMap { it.steps }.forEach { step ->
+                assertTrue(stepCompletionItemIds(pack, step.id).none { pack.item(it)!!.objectiveId in optionalObjectiveIds })
+            }
         val requiredItems = pack.items.filter { it.objectiveId !in optionalObjectiveIds && it.objectiveId.startsWith("obj-u27-") }.map { it.id }.toSet()
         val learner = V2LearnerView(
             onboardingCompleted = true,

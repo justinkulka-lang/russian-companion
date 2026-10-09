@@ -340,9 +340,20 @@ internal fun stepReadyForGovernedCompletion(
     stepId: String,
 ): Boolean {
     val step = pack.step(stepId)?.second ?: return false
-    if (step.itemIds.isEmpty()) return true
+    val requiredItemIds = stepCompletionItemIds(pack, stepId)
+    if (requiredItemIds.isEmpty()) return true
     val selections = governedSessionSelections(pack, learner)
-    return step.itemIds.all { itemId -> governedSelectionKey(stepId, itemId) in selections }
+    return requiredItemIds.all { itemId -> governedSelectionKey(stepId, itemId) in selections }
+}
+
+/** Optional questions in a required session do not become a step-completion obligation. */
+internal fun stepCompletionItemIds(pack: V2CurriculumPack, stepId: String): List<String> {
+    val (session, step) = pack.step(stepId) ?: return emptyList()
+    val unit = pack.units.firstOrNull { candidate -> candidate.sessions.any { it.id == session.id } }
+        ?: return step.itemIds
+    val optionalIds = unit.objectives.filter { !it.gating }.map { it.id }.toSet()
+    if (session.objectiveIds.isNotEmpty() && session.objectiveIds.all { it in optionalIds }) return step.itemIds
+    return step.itemIds.filter { pack.item(it)?.objectiveId !in optionalIds }
 }
 
 /** Set by governed completion so tests can see that identity work left the UI thread. */
