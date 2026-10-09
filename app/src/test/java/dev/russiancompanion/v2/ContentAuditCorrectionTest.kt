@@ -45,7 +45,8 @@ class ContentAuditCorrectionTest {
     @Test
     fun reorderedSessionsRejectResumeIdentityBoundToThePreviousPosition() {
         val current = pack()
-        listOf(6 to "possessive", 21 to "purpose", 28 to "imperfective-adverb", 28 to "perfective-adverb").forEach { (number, topic) ->
+        listOf(6 to "possessive", 21 to "purpose", 28 to "imperfective-adverb", 28 to "perfective-adverb",
+            6 to "feminine", 7 to "spelling", 8 to "spelling", 12 to "aspect", 16 to "inst-sg", 16 to "inst-adj").forEach { (number, topic) ->
             val sessionId = "u$number-s-$topic"
             val session = current.unit(number)!!.sessions.single { it.id == sessionId }
             val teaching = session.steps.filter { it.kind == "TEACH" }
@@ -70,6 +71,36 @@ class ContentAuditCorrectionTest {
             assertFalse("A saved guided position must not reopen a different teaching card", resumeIsCurrent(current, learner))
             assertTrue(resumeIsCurrent(current, learner.copy(resumeContentDigest = resumePositionDigest(current, sessionId, 1)!!)))
         }
+    }
+
+    @Test
+    fun accusativeDeclensionExplanationPrecedesTheNounChoice() {
+        assertPrerequisiteTeachingBeforeGuided(6, "feminine", 4)
+    }
+
+    @Test
+    fun adjectivePluralFormPrecedesTheSpellingChoice() {
+        assertPrerequisiteTeachingBeforeGuided(7, "spelling", 4)
+    }
+
+    @Test
+    fun nounPluralFormAndSevenLetterRulePrecedeTheChoice() {
+        assertPrerequisiteTeachingBeforeGuided(8, "spelling", 5)
+    }
+
+    @Test
+    fun aspectCounterpartExplanationPrecedesThePartnerChoice() {
+        assertPrerequisiteTeachingBeforeGuided(12, "aspect", 3)
+    }
+
+    @Test
+    fun instrumentalNounExplanationPrecedesTheCaseChoice() {
+        assertPrerequisiteTeachingBeforeGuided(16, "inst-sg", 7)
+    }
+
+    @Test
+    fun instrumentalAdjectiveExplanationPrecedesTheCaseChoice() {
+        assertPrerequisiteTeachingBeforeGuided(16, "inst-adj", 4)
     }
 
     private fun assertPrerequisiteTeachingBeforeGuided(number: Int, topic: String, teachingCount: Int) {

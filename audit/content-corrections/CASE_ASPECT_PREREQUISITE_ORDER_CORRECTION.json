@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "previousHead": "86a2ed63989e38ae5b36ac64e5e8f347bfe076ae",
+  "beforeCurriculumFileSha256": "b6e1513788c7b5dd328047728384a02e222c00c5b9351a4b66e155fc31ea6796",
+  "afterCurriculumFileSha256": "26ceb006dd9f9f1fd6548706b9197c0c550a18ae457ad9c51228516cf268c9dd",
+  "scope": "Only existing step order changes in six cue-reviewed sessions; teaching and non-teaching relative order are each retained.",
+  "limitation": "This fixes access to existing prerequisite teaching. It does not attest to linguistic accuracy, complete worked-example coverage, UI behavior or semantic audit closure.",
+  "rows": [
+    {
+      "unitNumber": 6,
+      "sessionId": "u6-s-feminine",
+      "guidedItemIds": [
+        "u6-g-feminine-0"
+      ],
+      "reason": "The guided item requests the accusative singular, but the first card gives only book glosses. The existing accusative-declension explanation follows practice.",
+      "previousStepOrder": [
+        "u6-st-teach-feminine-1",
+        "u6-st-guided-feminine-1",
+        "u6-st-teach-feminine-2",
+        "u6-st-teach-feminine-3",
+        "u6-st-teach-feminine-4",
+        "u6-st-rem-feminine",
+        "u6-st-check-feminine"
+      ],
+      "correctedStepOrder": [
+        "u6-st-teach-feminine-1",
+        "u6-st-teach-feminine-2",
+        "u6-st-teach-feminine-3",
+        "u6-st-teach-feminine-4",
+        "u6-st-guided-feminine-1",
+        "u6-st-rem-feminine",
+        "u6-st-check-feminine"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 7,
+      "sessionId": "u7-s-spelling",
+      "guidedItemIds": [
+        "u7-g-spelling-0"
+      ],
+      "reason": "The guided choice requests хоро́шие; that exact plural form and the ending-spelling explanation appear on later cards.",
+      "previousStepOrder": [
+        "u7-st-teach-spelling-1",
+        "u7-st-guided-spelling-1",
+        "u7-st-teach-spelling-2",
+        "u7-st-teach-spelling-3",
+        "u7-st-teach-spelling-4",
+        "u7-st-rem-spelling",
+        "u7-st-check-spelling"
+      ],
+      "correctedStepOrder": [
+        "u7-st-teach-spelling-1",
+        "u7-st-teach-spelling-2",
+        "u7-st-teach-spelling-3",
+        "u7-st-teach-spelling-4",
+        "u7-st-guided-spelling-1",
+        "u7-st-rem-spelling",
+        "u7-st-check-spelling"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 8,
+      "sessionId": "u8-s-spelling",
+      "guidedItemIds": [
+        "u8-g-spelling-0"
+      ],
+      "reason": "The guided choice requests кни́ги; that plural form and the seven-letter spelling explanation appear on later cards.",
+      "previousStepOrder": [
+        "u8-st-teach-spelling-1",
+        "u8-st-guided-spelling-1",
+        "u8-st-teach-spelling-2",
+        "u8-st-teach-spelling-3",
+        "u8-st-teach-spelling-4",
+        "u8-st-teach-spelling-5",
+        "u8-st-rem-spelling",
+        "u8-st-check-spelling"
+      ],
+      "correctedStepOrder": [
+        "u8-st-teach-spelling-1",
+        "u8-st-teach-spelling-2",
+        "u8-st-teach-spelling-3",
+        "u8-st-teach-spelling-4",
+        "u8-st-teach-spelling-5",
+        "u8-st-guided-spelling-1",
+        "u8-st-rem-spelling",
+        "u8-st-check-spelling"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 12,
+      "sessionId": "u12-s-aspect",
+      "guidedItemIds": [
+        "u12-g-aspect-0"
+      ],
+      "reason": "The guided item requests an aspect counterpart, but the first card gives only identical English glosses. The context-dependent counterpart explanation follows practice.",
+      "previousStepOrder": [
+        "u12-st-teach-aspect-1",
+        "u12-st-guided-aspect-1",
+        "u12-st-teach-aspect-2",
+        "u12-st-teach-aspect-3",
+        "u12-st-rem-aspect",
+        "u12-st-check-aspect"
+      ],
+      "correctedStepOrder": [
+        "u12-st-teach-aspect-1",
+        "u12-st-teach-aspect-2",
+        "u12-st-teach-aspect-3",
+        "u12-st-guided-aspect-1",
+        "u12-st-rem-aspect",
+        "u12-st-check-aspect"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 16,
+      "sessionId": "u16-s-inst-sg",
+      "guidedItemIds": [
+        "u16-g-inst-sg-0"
+      ],
+      "reason": "The guided item asks for instrumental singular among case forms. The hard-stem ending explanation and distractor-form cards follow practice.",
+      "previousStepOrder": [
+        "u16-st-teach-inst-sg-1",
+        "u16-st-guided-inst-sg-1",
+        "u16-st-teach-inst-sg-2",
+        "u16-st-teach-inst-sg-3",
+        "u16-st-teach-inst-sg-4",
+        "u16-st-teach-inst-sg-5",
+        "u16-st-teach-inst-sg-6",
+        "u16-st-teach-inst-sg-7",
+        "u16-st-rem-inst-sg",
+        "u16-st-check-inst-sg"
+      ],
+      "correctedStepOrder": [
+        "u16-st-teach-inst-sg-1",
+        "u16-st-teach-inst-sg-2",
+        "u16-st-teach-inst-sg-3",
+        "u16-st-teach-inst-sg-4",
+        "u16-st-teach-inst-sg-5",
+        "u16-st-teach-inst-sg-6",
+        "u16-st-teach-inst-sg-7",
+        "u16-st-guided-inst-sg-1",
+        "u16-st-rem-inst-sg",
+        "u16-st-check-inst-sg"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 16,
+      "sessionId": "u16-s-inst-adj",
+      "guidedItemIds": [
+        "u16-g-inst-adj-0"
+      ],
+      "reason": "The guided item asks for masculine instrumental among adjective forms. The instrumental-ending explanation and distractor-form cards follow practice.",
+      "previousStepOrder": [
+        "u16-st-teach-inst-adj-1",
+        "u16-st-guided-inst-adj-1",
+        "u16-st-teach-inst-adj-2",
+        "u16-st-teach-inst-adj-3",
+        "u16-st-teach-inst-adj-4",
+        "u16-st-rem-inst-adj",
+        "u16-st-check-inst-adj"
+      ],
+      "correctedStepOrder": [
+        "u16-st-teach-inst-adj-1",
+        "u16-st-teach-inst-adj-2",
+        "u16-st-teach-inst-adj-3",
+        "u16-st-teach-inst-adj-4",
+        "u16-st-guided-inst-adj-1",
+        "u16-st-rem-inst-adj",
+        "u16-st-check-inst-adj"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    }
+  ]
+}
