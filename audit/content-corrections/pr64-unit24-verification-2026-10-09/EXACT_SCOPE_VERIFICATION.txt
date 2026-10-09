@@ -1,0 +1,4 @@
+PASS: only Unit 24, its one absence check and one example note changed; all keys, options, cues, objectives, gates and all other units are unchanged
+PASS: all original provenance/source records preserved; appended records=7
+PASS: only Unit 24 instructional digest changes; all mapping digests unchanged; pending review packets bind the real implementation ancestor
+curriculum SHA256=2053cfad5fa7e0ce7787184c14a4ef3676770a32e21cad857c587bb2fafa26aa

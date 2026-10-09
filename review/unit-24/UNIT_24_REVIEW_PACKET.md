@@ -11,12 +11,12 @@ Unit 24 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: a9f565f4f2b0c10269210fe8c163624946fffff3
-- Unit content-review SHA-256: e2168f15e2fff92bb38f46c1feb687b44553885c3242dc98cc1434ed8b0e7a5f
+- Curriculum source commit: d9a4542ce7915ff3860a537ebc959d905fbf56ff
+- Unit content-review SHA-256: a324a03af783fb573ea017fe1e0f3e472e83212857831d0b7aa2f28232366194
 - Mapping-package SHA-256: dc6f9ac41a8520dc647df90313e05e547245bfa31fe3b2e883821f3591a24248
-- Pack content-review SHA-256: 37c30d910d888fd721f2b492bce239926fe4be25fa85028496f837f9d96c6470
-- Review-package SHA-256: de5bbe3e7cddb115c615c076a613fed170f17b0de185fdf5f396eb7c522ef3cb
-- Repository source SHA-256: dc243b2e937d2b81f8df25154f76b228ee94b0666e8f96ec56c140ae65dfc234
+- Pack content-review SHA-256: 2dd74eb256a8d466dded80ad88070ed242024e965f0f2a8d8dee0c3ece948045
+- Review-package SHA-256: 40700d03c2043095e0f22f2b834a3056bcffd1b07789f94cfc454a1846635125
+- Repository source SHA-256: a0ef5519616e89aa7e699ffa44ec2208d73d4782a27a9646238d4d16e88563d2
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -743,12 +743,12 @@ remediationStepId=u24-st-rem-alternation
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bbd3f33778809c74b0b345d088f5da487f0b807953f0e9bd5aec03aa17d171fa
+- Content hash: 6b615db6a1e16daad05f23c7f0778dc35e162490ac55fb0452b40993accb5b23
 
 title=Choose the negative-pronoun form built from the shown word
 estimatedMinutes=12
 objectives=obj-u24-stand-ins
-steps=u24-st-teach-stand-ins-1,u24-st-guided-stand-ins-1,u24-st-teach-stand-ins-2,u24-st-teach-stand-ins-3,u24-st-rem-stand-ins,u24-st-check-stand-ins
+steps=u24-st-teach-stand-ins-1,u24-st-teach-stand-ins-2,u24-st-teach-stand-ins-3,u24-st-guided-stand-ins-1,u24-st-rem-stand-ins,u24-st-check-stand-ins
 
 ### STEP `u24-st-teach-stand-ins-1`
 
@@ -771,28 +771,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u24-st-guided-stand-ins-1`
-
-- Objectives: obj-u24-stand-ins
-- Sessions: u24-s-stand-ins
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 414dc34905704e933be823d75649530b838e49ebaf5456788bfe9884ea0c3503
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u24-g-stand-ins-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u24-st-rem-stand-ins
 
 ### STEP `u24-st-teach-stand-ins-2`
 
@@ -824,11 +802,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9979d24e24c903317b94f4fe770ef969a276e7fb10de4c4f86be4613fd5b9e8a
+- Content hash: d1da86b348ac0d33cf8f43948f1ebe23edac824b8d5212ce346f5bc06cbdcdfa
 
 kind=TEACH
 title=Admitted lines
-body=не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form such as не́кого for the genitive, не́кому for the dative, or не́кем for the instrumental. There is no nominative некого.
+body=не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -838,6 +816,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u24-st-guided-stand-ins-1`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-stand-ins
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 414dc34905704e933be823d75649530b838e49ebaf5456788bfe9884ea0c3503
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u24-g-stand-ins-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u24-st-rem-stand-ins
+
 ### STEP `u24-st-rem-stand-ins`
 
 - Objectives: obj-u24-stand-ins
@@ -846,15 +846,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ad479a69df1d2c5abaff259d835be6c8771c6810ca4dff4e29e279d5890c992b
+- Content hash: 61ec5d55a03e20d5f5ac8baecaecc08f58a5a2e325eb4f209bedb601de47a91d
 
 kind=REMEDIATE
 title=Remediation
-body=не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form such as не́кого for the genitive, не́кому for the dative, or не́кем for the instrumental. There is no nominative некого.
+body=не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm.
 dominantAction=Continue
 references=
 items=
-examples=ex-u24-stand-ins-0,ex-u24-stand-ins-1
+examples=ex-u24-stand-ins-0,ex-u24-stand-ins-1,ex-u24-stand-ins-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1616,12 +1616,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a500aec7154f05cd328690fe80fe2b72549fc785913851aaee016838d8aaa79e
+- Content hash: 02c6fb26683fba1bd9dc5ef3ec7c8a65e5e34ed38fc9eb63e4877ccaee281967
 
 kind=LEXICAL
 letterId=
 display=не́кого спросить
-note=there is nobody to ask, genitive absence
+note=there is nobody to ask; negative absence construction
 objectiveId=obj-u24-stand-ins
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -2225,11 +2225,11 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a4cf774af58bcfdc7756f5ce72119d16eb6b86847c11ea1342e8b0ff05cc3789
+- Content hash: 10e93f8aae0790d7cf499d01edcf6e0597785cf05e97e420cbc110bbce6970a6
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Choose the English description. Which reading is the genitive absence construction?
+prompt=Choose the English description. Which reading expresses absence of a person available for the action?
 promptLetter=не́кого спросить
 options=there is nobody to ask | an unspecified person | there is nothing to ask
 answer=there is nobody to ask
@@ -2238,18 +2238,18 @@ objectiveId=obj-u24-stand-ins
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | an unspecified person is the reading of не́кто, not of не́кого. | there is nothing to ask would be a нечего construction, not не́кого.
-testedFeature=GENITIVE_ABSENCE_NEKOGO
+testedFeature=NEGATIVE_ABSENCE_NEKOGO
 evidenceMode=STATED_APPLICATION
 contrastSetId=u24-stand-ins-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ca-repair-24-10841
-distractorSourceIds= | prov-ca-repair-24-10844 | prov-ca-repair-24-10845
+answerSourceIds=prov-ca-u24-absence-participant-1
+distractorSourceIds= | prov-ca-u24-absence-participant-2 | prov-ca-u24-absence-participant-3
 distractorDifference= | an unspecified person is the reading of не́кто, not of не́кого. | there is nothing to ask would be a нечего construction, not не́кого.
 whyAnswerDemonstratesObjective=не́кого спросить means there is nobody to ask. не́кого expresses absence of a person available for the infinitive action.
 contrastMembers=there is nobody to ask | an unspecified person | there is nothing to ask
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-ca-repair-24-10840 | prov-ca-repair-24-10841 | prov-ca-repair-24-10844 | prov-ca-repair-24-10845
+relationParticipantIds=prov-ca-u24-absence-participant-0 | prov-ca-u24-absence-participant-1 | prov-ca-u24-absence-participant-2 | prov-ca-u24-absence-participant-3
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u24-i-concord-1`
@@ -6484,6 +6484,228 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ca-u24-absence-example-note`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4670d90373c7226e6402d29698ddf8d0548234e1a6d53d3cb0d52ec766d4e4f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:example-note
+originalSourceText=Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.
+there is nobody to ask; negative absence construction
+shippedText=there is nobody to ask; negative absence construction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8153b7180018827c032d5e0a718c7a85adcedc617c11691c5e82eef9f79bf4a6
+contentHash=7200956554beb1dc9e367dbd598b5e197ac2904e800401d1a8fae7f3363339c5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-absence-explanation`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c7d72d2f3bd9526ebb9669350140b7cffc7d03f9566eb362c846cb5ae6f8e64
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:explanation
+originalSourceText=Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.
+не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm.
+shippedText=не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=282d8ed792fc1c4d03efa72d9afc285d1f1fd5e5569fa0a8e796b109704cda1f
+contentHash=0f1cb2b3b06be61a72bc4aa4ef8db555066be83434b7fdaeb92aeb3cdc7e8764
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-absence-participant-0`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42ce5a537053e6877892dcd09af80b14f170b81d3cf615db311a08901b64fe4a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u24-absence
+originalSourceText=Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.
+не́кого спросить
+there is nobody to ask
+an unspecified person
+there is nothing to ask
+shippedText=не́кого спросить
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f2606ada3d31486a59c24db3b33c8e384360772f69c6f8fb6befd2848fca67af
+contentHash=8d149b9f1c7ffba78b3ad1a831eb37ddf9f83afe3719dabaca29c884107a5c6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-absence-participant-1`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b44d0312aaf19eefb6187878ea4ccf8a4c9c0a88ad85f9efb35b4f5d459d4bf9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u24-absence
+originalSourceText=Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.
+не́кого спросить
+there is nobody to ask
+an unspecified person
+there is nothing to ask
+shippedText=there is nobody to ask
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f2606ada3d31486a59c24db3b33c8e384360772f69c6f8fb6befd2848fca67af
+contentHash=e13cc4abda51694101eb07a4a6360280df0561869955ef48a5677c76772bd0ea
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-absence-participant-2`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ab24888ca4bc33482c35826993cb63f95f4076988f3c71f469fe42d4f0fe085
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u24-absence
+originalSourceText=Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.
+не́кого спросить
+there is nobody to ask
+an unspecified person
+there is nothing to ask
+shippedText=an unspecified person
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f2606ada3d31486a59c24db3b33c8e384360772f69c6f8fb6befd2848fca67af
+contentHash=f79dc2083a550dff39627a9144b2c2f60029d398f28a89b9d2deea25c40f1b35
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-absence-participant-3`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eea6ec68bb2c9bbb0cacee5108ed9e7dec85dc51e64b7458665eea04e35624c7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u24-absence
+originalSourceText=Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.
+не́кого спросить
+there is nobody to ask
+an unspecified person
+there is nothing to ask
+shippedText=there is nothing to ask
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f2606ada3d31486a59c24db3b33c8e384360772f69c6f8fb6befd2848fca67af
+contentHash=12abc1cdffb9a255dc7a728e2e5469fb597fe8af1d14282754232bcc1cd0dea3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-absence-prompt`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec477e0fa42b68aa2ea73b5e6618df6964629c3e10e3b0e4da033e578b712cd1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:prompt
+originalSourceText=Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.
+Choose the English description. Which reading expresses absence of a person available for the action?
+shippedText=Choose the English description. Which reading expresses absence of a person available for the action?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d62affac6cbacfaa1928e34e8a9910bbc28b84043ef866bfee24522fd6601d53
+contentHash=7b752c9d7fe939a28acabf1ebd9c998d10085ece58572278168a8a5319cf4de4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-u24-absence-0-en`
 
 - Objectives: obj-u24-absence
@@ -10698,13 +10920,14 @@ permitsAppUse=true
 - `u24-st-teach-stand-ins-1` EXAMPLE `ex-u24-stand-ins-0`
 - `u24-st-teach-stand-ins-1` EXAMPLE `ex-u24-stand-ins-1`
 - `u24-st-teach-stand-ins-1` REFERENCE `ref-u2125-attribution`
-- `u24-st-guided-stand-ins-1` REMEDIATION `u24-st-rem-stand-ins`
-- `u24-st-guided-stand-ins-1` ITEM `u24-g-stand-ins-0`
 - `u24-st-teach-stand-ins-2` REFERENCE `ref-u2125-attribution`
 - `u24-st-teach-stand-ins-3` EXAMPLE `ex-u24-stand-ins-2`
 - `u24-st-teach-stand-ins-3` REFERENCE `ref-u2125-attribution`
+- `u24-st-guided-stand-ins-1` REMEDIATION `u24-st-rem-stand-ins`
+- `u24-st-guided-stand-ins-1` ITEM `u24-g-stand-ins-0`
 - `u24-st-rem-stand-ins` EXAMPLE `ex-u24-stand-ins-0`
 - `u24-st-rem-stand-ins` EXAMPLE `ex-u24-stand-ins-1`
+- `u24-st-rem-stand-ins` EXAMPLE `ex-u24-stand-ins-2`
 - `u24-st-check-stand-ins` REMEDIATION `u24-st-rem-stand-ins`
 - `u24-st-check-stand-ins` ITEM `u24-i-stand-ins-1`
 - `u24-st-check-stand-ins` ITEM `u24-i-stand-ins-2`
@@ -10849,6 +11072,13 @@ permitsAppUse=true
 - `obj-u24-alternation` PROVENANCE `prov-ca-repair-24-11117`
 - `obj-u24-alternation` PROVENANCE `prov-ca-repair-24-11118`
 - `obj-u24-stand-ins` PROVENANCE `prov-ca-repair-24-11119`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-absence-example-note`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-absence-explanation`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-absence-participant-0`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-absence-participant-1`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-absence-participant-2`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-absence-participant-3`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-absence-prompt`
 - `obj-u24-absence` PROVENANCE `prov-ex-u24-absence-0-en`
 - `obj-u24-absence` PROVENANCE `prov-ex-u24-absence-0-ru`
 - `obj-u24-absence` PROVENANCE `prov-ex-u24-absence-1-en`

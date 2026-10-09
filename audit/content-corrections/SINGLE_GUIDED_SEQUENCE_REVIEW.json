@@ -1,0 +1,1950 @@
+{
+  "schemaVersion": 1,
+  "curriculumFileSha256": "2053cfad5fa7e0ce7787184c14a4ef3676770a32e21cad857c587bb2fafa26aa",
+  "candidateCount": 140,
+  "affectedUnits": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "scope": "Exactly one GUIDED step per session; flag later TEACH steps. Multi-guided sessions are outside this scan.",
+  "limitation": "Ordering alone is not proof of a defect. Inspect each guided cue, answer and distractor against prior teaching. This is not semantic closure or approval.",
+  "rows": [
+    {
+      "unitNumber": 3,
+      "sessionId": "u3-s-phrases",
+      "guidedStepId": "u3-st-guided-phrases-1",
+      "guidedItemIds": [
+        "u3-i-phrase-здравствуйте",
+        "u3-i-phrase-спасибо"
+      ],
+      "laterTeachingStepIds": [
+        "u3-st-teach-phrases-2",
+        "u3-st-teach-phrases-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 3,
+      "sessionId": "u3-s-naming",
+      "guidedStepId": "u3-st-guided-naming-1",
+      "guidedItemIds": [
+        "u3-i-name-moy-stol"
+      ],
+      "laterTeachingStepIds": [
+        "u3-st-teach-naming-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 4,
+      "sessionId": "u4-s-pronouns",
+      "guidedStepId": "u4-st-guided-pronouns-1",
+      "guidedItemIds": [
+        "u4-i-pronoun-я",
+        "u4-i-pronoun-мы"
+      ],
+      "laterTeachingStepIds": [
+        "u4-st-teach-pronouns-2",
+        "u4-st-teach-pronouns-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 5,
+      "sessionId": "u5-s-indeclinable",
+      "guidedStepId": "u5-st-guided-indeclinable-1",
+      "guidedItemIds": [
+        "u5-i-indecl-радио"
+      ],
+      "laterTeachingStepIds": [
+        "u5-st-teach-indeclinable-2",
+        "u5-st-teach-indeclinable-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 6,
+      "sessionId": "u6-s-possessive",
+      "guidedStepId": "u6-st-guided-possessive-1",
+      "guidedItemIds": [
+        "u6-g-possessive-0"
+      ],
+      "laterTeachingStepIds": [
+        "u6-st-teach-possessive-2",
+        "u6-st-teach-possessive-3",
+        "u6-st-teach-possessive-4",
+        "u6-st-teach-possessive-5",
+        "u6-st-teach-possessive-6"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 6,
+      "sessionId": "u6-s-third",
+      "guidedStepId": "u6-st-guided-third-1",
+      "guidedItemIds": [
+        "u6-g-third-0"
+      ],
+      "laterTeachingStepIds": [
+        "u6-st-teach-third-2",
+        "u6-st-teach-third-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 6,
+      "sessionId": "u6-s-object",
+      "guidedStepId": "u6-st-guided-object-1",
+      "guidedItemIds": [
+        "u6-g-object-0"
+      ],
+      "laterTeachingStepIds": [
+        "u6-st-teach-object-2",
+        "u6-st-teach-object-3",
+        "u6-st-teach-object-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 6,
+      "sessionId": "u6-s-feminine",
+      "guidedStepId": "u6-st-guided-feminine-1",
+      "guidedItemIds": [
+        "u6-g-feminine-0"
+      ],
+      "laterTeachingStepIds": [
+        "u6-st-teach-feminine-2",
+        "u6-st-teach-feminine-3",
+        "u6-st-teach-feminine-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 6,
+      "sessionId": "u6-s-animacy",
+      "guidedStepId": "u6-st-guided-animacy-1",
+      "guidedItemIds": [
+        "u6-g-animacy-0"
+      ],
+      "laterTeachingStepIds": [
+        "u6-st-teach-animacy-2",
+        "u6-st-teach-animacy-3",
+        "u6-st-teach-animacy-4",
+        "u6-st-teach-animacy-5",
+        "u6-st-teach-animacy-6"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 6,
+      "sessionId": "u6-s-pronoun",
+      "guidedStepId": "u6-st-guided-pronoun-1",
+      "guidedItemIds": [
+        "u6-g-pronoun-0"
+      ],
+      "laterTeachingStepIds": [
+        "u6-st-teach-pronoun-2",
+        "u6-st-teach-pronoun-3",
+        "u6-st-teach-pronoun-4",
+        "u6-st-teach-pronoun-5"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 6,
+      "sessionId": "u6-s-direction",
+      "guidedStepId": "u6-st-guided-direction-1",
+      "guidedItemIds": [
+        "u6-g-direction-0"
+      ],
+      "laterTeachingStepIds": [
+        "u6-st-teach-direction-2",
+        "u6-st-teach-direction-3",
+        "u6-st-teach-direction-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 7,
+      "sessionId": "u7-s-default",
+      "guidedStepId": "u7-st-guided-default-1",
+      "guidedItemIds": [
+        "u7-g-default-0"
+      ],
+      "laterTeachingStepIds": [
+        "u7-st-teach-default-2",
+        "u7-st-teach-default-3",
+        "u7-st-teach-default-4",
+        "u7-st-teach-default-5",
+        "u7-st-teach-default-6"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 7,
+      "sessionId": "u7-s-endings",
+      "guidedStepId": "u7-st-guided-endings-1",
+      "guidedItemIds": [
+        "u7-g-endings-0"
+      ],
+      "laterTeachingStepIds": [
+        "u7-st-teach-endings-2",
+        "u7-st-teach-endings-3",
+        "u7-st-teach-endings-4",
+        "u7-st-teach-endings-5",
+        "u7-st-teach-endings-6",
+        "u7-st-teach-endings-7"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 7,
+      "sessionId": "u7-s-spelling",
+      "guidedStepId": "u7-st-guided-spelling-1",
+      "guidedItemIds": [
+        "u7-g-spelling-0"
+      ],
+      "laterTeachingStepIds": [
+        "u7-st-teach-spelling-2",
+        "u7-st-teach-spelling-3",
+        "u7-st-teach-spelling-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 7,
+      "sessionId": "u7-s-question",
+      "guidedStepId": "u7-st-guided-question-1",
+      "guidedItemIds": [
+        "u7-g-question-0"
+      ],
+      "laterTeachingStepIds": [
+        "u7-st-teach-question-2",
+        "u7-st-teach-question-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 7,
+      "sessionId": "u7-s-demonstrative",
+      "guidedStepId": "u7-st-guided-demonstrative-1",
+      "guidedItemIds": [
+        "u7-g-demonstrative-0"
+      ],
+      "laterTeachingStepIds": [
+        "u7-st-teach-demonstrative-2",
+        "u7-st-teach-demonstrative-3",
+        "u7-st-teach-demonstrative-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 7,
+      "sessionId": "u7-s-place",
+      "guidedStepId": "u7-st-guided-place-1",
+      "guidedItemIds": [
+        "u7-g-place-0"
+      ],
+      "laterTeachingStepIds": [
+        "u7-st-teach-place-2",
+        "u7-st-teach-place-3",
+        "u7-st-teach-place-4",
+        "u7-st-teach-place-5"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 7,
+      "sessionId": "u7-s-objectadj",
+      "guidedStepId": "u7-st-guided-objectadj-1",
+      "guidedItemIds": [
+        "u7-g-objectadj-0"
+      ],
+      "laterTeachingStepIds": [
+        "u7-st-teach-objectadj-2",
+        "u7-st-teach-objectadj-3",
+        "u7-st-teach-objectadj-4",
+        "u7-st-teach-objectadj-5"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 7,
+      "sessionId": "u7-s-adverb",
+      "guidedStepId": "u7-st-guided-adverb-1",
+      "guidedItemIds": [
+        "u7-g-adverb-0"
+      ],
+      "laterTeachingStepIds": [
+        "u7-st-teach-adverb-2",
+        "u7-st-teach-adverb-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 7,
+      "sessionId": "u7-s-adverb-invariance",
+      "guidedStepId": "u7-st-guided-adverb-invariance-1",
+      "guidedItemIds": [
+        "u7-g-adverb-invariance-0"
+      ],
+      "laterTeachingStepIds": [
+        "u7-st-teach-adverb-invariance-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 7,
+      "sessionId": "u7-s-adverb-pairs",
+      "guidedStepId": "u7-st-guided-adverb-pairs-1",
+      "guidedItemIds": [
+        "u7-g-adverb-pairs-0"
+      ],
+      "laterTeachingStepIds": [
+        "u7-st-teach-adverb-pairs-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 7,
+      "sessionId": "u7-s-gap-adverb-paradigm",
+      "guidedStepId": "u7-st-guided-manner-1",
+      "guidedItemIds": [
+        "u7-g-manner-1"
+      ],
+      "laterTeachingStepIds": [
+        "u7-st-teach-manner-2",
+        "u7-st-teach-manner-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 8,
+      "sessionId": "u8-s-plural",
+      "guidedStepId": "u8-st-guided-plural-1",
+      "guidedItemIds": [
+        "u8-g-plural-0"
+      ],
+      "laterTeachingStepIds": [
+        "u8-st-teach-plural-2",
+        "u8-st-teach-plural-3",
+        "u8-st-teach-plural-4",
+        "u8-st-teach-plural-5",
+        "u8-st-teach-plural-6",
+        "u8-st-teach-plural-7",
+        "u8-st-teach-plural-8"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 8,
+      "sessionId": "u8-s-spelling",
+      "guidedStepId": "u8-st-guided-spelling-1",
+      "guidedItemIds": [
+        "u8-g-spelling-0"
+      ],
+      "laterTeachingStepIds": [
+        "u8-st-teach-spelling-2",
+        "u8-st-teach-spelling-3",
+        "u8-st-teach-spelling-4",
+        "u8-st-teach-spelling-5"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 8,
+      "sessionId": "u8-s-irregular",
+      "guidedStepId": "u8-st-guided-irregular-1",
+      "guidedItemIds": [
+        "u8-g-irregular-0"
+      ],
+      "laterTeachingStepIds": [
+        "u8-st-teach-irregular-2",
+        "u8-st-teach-irregular-3",
+        "u8-st-teach-irregular-4",
+        "u8-st-teach-irregular-5",
+        "u8-st-teach-irregular-6"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 8,
+      "sessionId": "u8-s-agreement",
+      "guidedStepId": "u8-st-guided-agreement-1",
+      "guidedItemIds": [
+        "u8-g-agreement-0"
+      ],
+      "laterTeachingStepIds": [
+        "u8-st-teach-agreement-2",
+        "u8-st-teach-agreement-3",
+        "u8-st-teach-agreement-4",
+        "u8-st-teach-agreement-5"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 8,
+      "sessionId": "u8-s-availability",
+      "guidedStepId": "u8-st-guided-availability-1",
+      "guidedItemIds": [
+        "u8-g-availability-0"
+      ],
+      "laterTeachingStepIds": [
+        "u8-st-teach-availability-2",
+        "u8-st-teach-availability-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 9,
+      "sessionId": "u9-s-cardinal",
+      "guidedStepId": "u9-st-guided-cardinal-1",
+      "guidedItemIds": [
+        "u9-g-cardinal-0"
+      ],
+      "laterTeachingStepIds": [
+        "u9-st-teach-cardinal-2",
+        "u9-st-teach-cardinal-3",
+        "u9-st-teach-cardinal-4",
+        "u9-st-teach-cardinal-5",
+        "u9-st-teach-cardinal-6",
+        "u9-st-teach-cardinal-7"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 9,
+      "sessionId": "u9-s-teens",
+      "guidedStepId": "u9-st-guided-teens-1",
+      "guidedItemIds": [
+        "u9-g-teens-0"
+      ],
+      "laterTeachingStepIds": [
+        "u9-st-teach-teens-2",
+        "u9-st-teach-teens-3",
+        "u9-st-teach-teens-4",
+        "u9-st-teach-teens-5",
+        "u9-st-teach-teens-6"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 9,
+      "sessionId": "u9-s-tens",
+      "guidedStepId": "u9-st-guided-tens-1",
+      "guidedItemIds": [
+        "u9-g-tens-0"
+      ],
+      "laterTeachingStepIds": [
+        "u9-st-teach-tens-2",
+        "u9-st-teach-tens-3",
+        "u9-st-teach-tens-4",
+        "u9-st-teach-tens-5"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 9,
+      "sessionId": "u9-s-hundreds",
+      "guidedStepId": "u9-st-guided-hundreds-1",
+      "guidedItemIds": [
+        "u9-g-hundreds-0"
+      ],
+      "laterTeachingStepIds": [
+        "u9-st-teach-hundreds-2",
+        "u9-st-teach-hundreds-3",
+        "u9-st-teach-hundreds-4",
+        "u9-st-teach-hundreds-5",
+        "u9-st-teach-hundreds-6"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 9,
+      "sessionId": "u9-s-thousands",
+      "guidedStepId": "u9-st-guided-thousands-1",
+      "guidedItemIds": [
+        "u9-g-thousands-0"
+      ],
+      "laterTeachingStepIds": [
+        "u9-st-teach-thousands-2",
+        "u9-st-teach-thousands-3",
+        "u9-st-teach-thousands-4",
+        "u9-st-teach-thousands-5"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 9,
+      "sessionId": "u9-s-odindva",
+      "guidedStepId": "u9-st-guided-odindva-1",
+      "guidedItemIds": [
+        "u9-g-odindva-0"
+      ],
+      "laterTeachingStepIds": [
+        "u9-st-teach-odindva-2",
+        "u9-st-teach-odindva-3",
+        "u9-st-teach-odindva-4",
+        "u9-st-teach-odindva-5",
+        "u9-st-teach-odindva-6"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 9,
+      "sessionId": "u9-s-quantity",
+      "guidedStepId": "u9-st-guided-quantity-1",
+      "guidedItemIds": [
+        "u9-g-quantity-0"
+      ],
+      "laterTeachingStepIds": [
+        "u9-st-teach-quantity-2",
+        "u9-st-teach-quantity-3",
+        "u9-st-teach-quantity-4",
+        "u9-st-teach-quantity-5",
+        "u9-st-teach-quantity-6",
+        "u9-st-teach-quantity-7",
+        "u9-st-teach-quantity-8",
+        "u9-st-teach-quantity-9",
+        "u9-st-teach-quantity-10"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 9,
+      "sessionId": "u9-s-pattern",
+      "guidedStepId": "u9-st-guided-pattern-1",
+      "guidedItemIds": [
+        "u9-g-pattern-0"
+      ],
+      "laterTeachingStepIds": [
+        "u9-st-teach-pattern-2",
+        "u9-st-teach-pattern-3",
+        "u9-st-teach-pattern-4",
+        "u9-st-teach-pattern-5"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 10,
+      "sessionId": "u10-s-have",
+      "guidedStepId": "u10-st-guided-have-1",
+      "guidedItemIds": [
+        "u10-g-have-0"
+      ],
+      "laterTeachingStepIds": [
+        "u10-st-teach-have-2",
+        "u10-st-teach-have-3",
+        "u10-st-teach-have-4",
+        "u10-st-teach-have-5"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 10,
+      "sessionId": "u10-s-absence",
+      "guidedStepId": "u10-st-guided-absence-1",
+      "guidedItemIds": [
+        "u10-g-absence-0"
+      ],
+      "laterTeachingStepIds": [
+        "u10-st-teach-absence-2",
+        "u10-st-teach-absence-3",
+        "u10-st-teach-absence-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 10,
+      "sessionId": "u10-s-pronoun",
+      "guidedStepId": "u10-st-guided-pronoun-1",
+      "guidedItemIds": [
+        "u10-g-pronoun-0"
+      ],
+      "laterTeachingStepIds": [
+        "u10-st-teach-pronoun-2",
+        "u10-st-teach-pronoun-3",
+        "u10-st-teach-pronoun-4",
+        "u10-st-teach-pronoun-5",
+        "u10-st-teach-pronoun-6",
+        "u10-st-teach-pronoun-7",
+        "u10-st-teach-pronoun-8",
+        "u10-st-teach-pronoun-9"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 10,
+      "sessionId": "u10-s-preposition",
+      "guidedStepId": "u10-st-guided-preposition-1",
+      "guidedItemIds": [
+        "u10-g-preposition-0"
+      ],
+      "laterTeachingStepIds": [
+        "u10-st-teach-preposition-2",
+        "u10-st-teach-preposition-3",
+        "u10-st-teach-preposition-4",
+        "u10-st-teach-preposition-5",
+        "u10-st-teach-preposition-6",
+        "u10-st-teach-preposition-7",
+        "u10-st-teach-preposition-8",
+        "u10-st-teach-preposition-9",
+        "u10-st-teach-preposition-10",
+        "u10-st-teach-preposition-11"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 10,
+      "sessionId": "u10-s-adjective",
+      "guidedStepId": "u10-st-guided-adjective-1",
+      "guidedItemIds": [
+        "u10-g-adjective-0"
+      ],
+      "laterTeachingStepIds": [
+        "u10-st-teach-adjective-2",
+        "u10-st-teach-adjective-3",
+        "u10-st-teach-adjective-4",
+        "u10-st-teach-adjective-5",
+        "u10-st-teach-adjective-6"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 10,
+      "sessionId": "u10-s-animate",
+      "guidedStepId": "u10-st-guided-animate-1",
+      "guidedItemIds": [
+        "u10-g-animate-0"
+      ],
+      "laterTeachingStepIds": [
+        "u10-st-teach-animate-2",
+        "u10-st-teach-animate-3",
+        "u10-st-teach-animate-4",
+        "u10-st-teach-animate-5"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 11,
+      "sessionId": "u11-s-past-read",
+      "guidedStepId": "u11-st-guided-past-read-1",
+      "guidedItemIds": [
+        "u11-g-past-read-0"
+      ],
+      "laterTeachingStepIds": [
+        "u11-st-teach-past-read-2",
+        "u11-st-teach-past-read-3",
+        "u11-st-teach-past-read-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 11,
+      "sessionId": "u11-s-past-be",
+      "guidedStepId": "u11-st-guided-past-be-1",
+      "guidedItemIds": [
+        "u11-g-past-be-0"
+      ],
+      "laterTeachingStepIds": [
+        "u11-st-teach-past-be-2",
+        "u11-st-teach-past-be-3",
+        "u11-st-teach-past-be-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 11,
+      "sessionId": "u11-s-past-aspect",
+      "guidedStepId": "u11-st-guided-past-aspect-1",
+      "guidedItemIds": [
+        "u11-g-past-aspect-0"
+      ],
+      "laterTeachingStepIds": [
+        "u11-st-teach-past-aspect-2",
+        "u11-st-teach-past-aspect-3",
+        "u11-st-teach-past-aspect-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 11,
+      "sessionId": "u11-s-reflexive",
+      "guidedStepId": "u11-st-guided-reflexive-1",
+      "guidedItemIds": [
+        "u11-g-reflexive-0"
+      ],
+      "laterTeachingStepIds": [
+        "u11-st-teach-reflexive-2",
+        "u11-st-teach-reflexive-3",
+        "u11-st-teach-reflexive-4",
+        "u11-st-teach-reflexive-5",
+        "u11-st-teach-reflexive-6"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 12,
+      "sessionId": "u12-s-future-imp",
+      "guidedStepId": "u12-st-guided-future-imp-1",
+      "guidedItemIds": [
+        "u12-g-future-imp-0"
+      ],
+      "laterTeachingStepIds": [
+        "u12-st-teach-future-imp-2",
+        "u12-st-teach-future-imp-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 12,
+      "sessionId": "u12-s-future-perf",
+      "guidedStepId": "u12-st-guided-future-perf-1",
+      "guidedItemIds": [
+        "u12-g-future-perf-0"
+      ],
+      "laterTeachingStepIds": [
+        "u12-st-teach-future-perf-2",
+        "u12-st-teach-future-perf-3",
+        "u12-st-teach-future-perf-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 12,
+      "sessionId": "u12-s-aspect",
+      "guidedStepId": "u12-st-guided-aspect-1",
+      "guidedItemIds": [
+        "u12-g-aspect-0"
+      ],
+      "laterTeachingStepIds": [
+        "u12-st-teach-aspect-2",
+        "u12-st-teach-aspect-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 12,
+      "sessionId": "u12-s-dative",
+      "guidedStepId": "u12-st-guided-dative-1",
+      "guidedItemIds": [
+        "u12-g-dative-0"
+      ],
+      "laterTeachingStepIds": [
+        "u12-st-teach-dative-2",
+        "u12-st-teach-dative-3",
+        "u12-st-teach-dative-4",
+        "u12-st-teach-dative-5",
+        "u12-st-teach-dative-6"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 12,
+      "sessionId": "u12-s-spelling",
+      "guidedStepId": "u12-st-guided-spelling-1",
+      "guidedItemIds": [
+        "u12-g-spelling-0"
+      ],
+      "laterTeachingStepIds": [
+        "u12-st-teach-spelling-2",
+        "u12-st-teach-spelling-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 12,
+      "sessionId": "u12-s-prep-plural",
+      "guidedStepId": "u12-st-guided-prep-plural-1",
+      "guidedItemIds": [
+        "u12-g-prep-plural-0"
+      ],
+      "laterTeachingStepIds": [
+        "u12-st-teach-prep-plural-2",
+        "u12-st-teach-prep-plural-3",
+        "u12-st-teach-prep-plural-4",
+        "u12-st-teach-prep-plural-5",
+        "u12-st-teach-prep-plural-6"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 13,
+      "sessionId": "u13-s-past-aspect",
+      "guidedStepId": "u13-st-guided-past-aspect-1",
+      "guidedItemIds": [
+        "u13-g-past-aspect-0"
+      ],
+      "laterTeachingStepIds": [
+        "u13-st-teach-past-aspect-2",
+        "u13-st-teach-past-aspect-3",
+        "u13-st-teach-past-aspect-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 13,
+      "sessionId": "u13-s-tense-keep",
+      "guidedStepId": "u13-st-guided-tense-keep-1",
+      "guidedItemIds": [
+        "u13-g-tense-keep-0"
+      ],
+      "laterTeachingStepIds": [
+        "u13-st-teach-tense-keep-2",
+        "u13-st-teach-tense-keep-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 13,
+      "sessionId": "u13-s-infinitive",
+      "guidedStepId": "u13-st-guided-infinitive-1",
+      "guidedItemIds": [
+        "u13-g-infinitive-0"
+      ],
+      "laterTeachingStepIds": [
+        "u13-st-teach-infinitive-2",
+        "u13-st-teach-infinitive-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 13,
+      "sessionId": "u13-s-reported",
+      "guidedStepId": "u13-st-guided-reported-1",
+      "guidedItemIds": [
+        "u13-g-reported-0"
+      ],
+      "laterTeachingStepIds": [
+        "u13-st-teach-reported-2",
+        "u13-st-teach-reported-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 14,
+      "sessionId": "u14-s-future-aspect",
+      "guidedStepId": "u14-st-guided-future-aspect-1",
+      "guidedItemIds": [
+        "u14-g-future-aspect-0"
+      ],
+      "laterTeachingStepIds": [
+        "u14-st-teach-future-aspect-2",
+        "u14-st-teach-future-aspect-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 14,
+      "sessionId": "u14-s-future-person",
+      "guidedStepId": "u14-st-guided-future-person-1",
+      "guidedItemIds": [
+        "u14-g-future-person-0"
+      ],
+      "laterTeachingStepIds": [
+        "u14-st-teach-future-person-2",
+        "u14-st-teach-future-person-3",
+        "u14-st-teach-future-person-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 14,
+      "sessionId": "u14-s-impersonal",
+      "guidedStepId": "u14-st-guided-impersonal-1",
+      "guidedItemIds": [
+        "u14-g-impersonal-0"
+      ],
+      "laterTeachingStepIds": [
+        "u14-st-teach-impersonal-2",
+        "u14-st-teach-impersonal-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 15,
+      "sessionId": "u15-s-imperative",
+      "guidedStepId": "u15-st-guided-imperative-1",
+      "guidedItemIds": [
+        "u15-g-imperative-0"
+      ],
+      "laterTeachingStepIds": [
+        "u15-st-teach-imperative-2",
+        "u15-st-teach-imperative-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 15,
+      "sessionId": "u15-s-say-request",
+      "guidedStepId": "u15-st-guided-say-request-1",
+      "guidedItemIds": [
+        "u15-g-say-request-0"
+      ],
+      "laterTeachingStepIds": [
+        "u15-st-teach-say-request-2",
+        "u15-st-teach-say-request-3",
+        "u15-st-teach-say-request-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 15,
+      "sessionId": "u15-s-aspect-consolidate",
+      "guidedStepId": "u15-st-guided-aspect-consolidate-1",
+      "guidedItemIds": [
+        "u15-g-aspect-consolidate-0"
+      ],
+      "laterTeachingStepIds": [
+        "u15-st-teach-aspect-consolidate-2",
+        "u15-st-teach-aspect-consolidate-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 16,
+      "sessionId": "u16-s-inst-sg",
+      "guidedStepId": "u16-st-guided-inst-sg-1",
+      "guidedItemIds": [
+        "u16-g-inst-sg-0"
+      ],
+      "laterTeachingStepIds": [
+        "u16-st-teach-inst-sg-2",
+        "u16-st-teach-inst-sg-3",
+        "u16-st-teach-inst-sg-4",
+        "u16-st-teach-inst-sg-5",
+        "u16-st-teach-inst-sg-6",
+        "u16-st-teach-inst-sg-7"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 16,
+      "sessionId": "u16-s-inst-pl",
+      "guidedStepId": "u16-st-guided-inst-pl-1",
+      "guidedItemIds": [
+        "u16-g-inst-pl-0"
+      ],
+      "laterTeachingStepIds": [
+        "u16-st-teach-inst-pl-2",
+        "u16-st-teach-inst-pl-3",
+        "u16-st-teach-inst-pl-4",
+        "u16-st-teach-inst-pl-5",
+        "u16-st-teach-inst-pl-6",
+        "u16-st-teach-inst-pl-7"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 16,
+      "sessionId": "u16-s-inst-adj",
+      "guidedStepId": "u16-st-guided-inst-adj-1",
+      "guidedItemIds": [
+        "u16-g-inst-adj-0"
+      ],
+      "laterTeachingStepIds": [
+        "u16-st-teach-inst-adj-2",
+        "u16-st-teach-inst-adj-3",
+        "u16-st-teach-inst-adj-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 16,
+      "sessionId": "u16-s-inst-means",
+      "guidedStepId": "u16-st-guided-inst-means-1",
+      "guidedItemIds": [
+        "u16-g-inst-means-0"
+      ],
+      "laterTeachingStepIds": [
+        "u16-st-teach-inst-means-2",
+        "u16-st-teach-inst-means-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 16,
+      "sessionId": "u16-s-inst-prep",
+      "guidedStepId": "u16-st-guided-inst-prep-1",
+      "guidedItemIds": [
+        "u16-g-inst-prep-0"
+      ],
+      "laterTeachingStepIds": [
+        "u16-st-teach-inst-prep-2",
+        "u16-st-teach-inst-prep-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 16,
+      "sessionId": "u16-s-complements",
+      "guidedStepId": "u16-st-guided-complements-1",
+      "guidedItemIds": [
+        "u16-g-complements-0"
+      ],
+      "laterTeachingStepIds": [
+        "u16-st-teach-complements-2",
+        "u16-st-teach-complements-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 17,
+      "sessionId": "u17-s-ordinals",
+      "guidedStepId": "u17-st-guided-ordinals-1",
+      "guidedItemIds": [
+        "u17-g-ordinals-0"
+      ],
+      "laterTeachingStepIds": [
+        "u17-st-teach-ordinals-2",
+        "u17-st-teach-ordinals-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 17,
+      "sessionId": "u17-s-hours",
+      "guidedStepId": "u17-st-guided-hours-1",
+      "guidedItemIds": [
+        "u17-g-hours-0"
+      ],
+      "laterTeachingStepIds": [
+        "u17-st-teach-hours-2",
+        "u17-st-teach-hours-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 17,
+      "sessionId": "u17-s-years",
+      "guidedStepId": "u17-st-guided-years-1",
+      "guidedItemIds": [
+        "u17-g-years-0"
+      ],
+      "laterTeachingStepIds": [
+        "u17-st-teach-years-2",
+        "u17-st-teach-years-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 17,
+      "sessionId": "u17-s-minutes",
+      "guidedStepId": "u17-st-guided-minutes-1",
+      "guidedItemIds": [
+        "u17-g-minutes-0"
+      ],
+      "laterTeachingStepIds": [
+        "u17-st-teach-minutes-2",
+        "u17-st-teach-minutes-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 17,
+      "sessionId": "u17-s-age",
+      "guidedStepId": "u17-st-guided-age-1",
+      "guidedItemIds": [
+        "u17-g-age-0"
+      ],
+      "laterTeachingStepIds": [
+        "u17-st-teach-age-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 17,
+      "sessionId": "u17-s-weekdays",
+      "guidedStepId": "u17-st-guided-weekdays-1",
+      "guidedItemIds": [
+        "u17-g-weekdays-0"
+      ],
+      "laterTeachingStepIds": [
+        "u17-st-teach-weekdays-2",
+        "u17-st-teach-weekdays-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 17,
+      "sessionId": "u17-s-months",
+      "guidedStepId": "u17-st-guided-months-1",
+      "guidedItemIds": [
+        "u17-g-months-0"
+      ],
+      "laterTeachingStepIds": [
+        "u17-st-teach-months-2",
+        "u17-st-teach-months-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 17,
+      "sessionId": "u17-s-clock",
+      "guidedStepId": "u17-st-guided-clock-1",
+      "guidedItemIds": [
+        "u17-g-clock-0"
+      ],
+      "laterTeachingStepIds": [
+        "u17-st-teach-clock-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 17,
+      "sessionId": "u17-s-clock-answers",
+      "guidedStepId": "u17-st-guided-clock-answers-1",
+      "guidedItemIds": [
+        "u17-g-clock-answers-0"
+      ],
+      "laterTeachingStepIds": [
+        "u17-st-teach-clock-answers-2",
+        "u17-st-teach-clock-answers-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 17,
+      "sessionId": "u17-s-quarter-hour",
+      "guidedStepId": "u17-st-guided-quarter-hour-1",
+      "guidedItemIds": [
+        "u17-g-quarter-hour-0"
+      ],
+      "laterTeachingStepIds": [
+        "u17-st-teach-quarter-hour-2",
+        "u17-st-teach-quarter-hour-3",
+        "u17-st-teach-quarter-hour-4",
+        "u17-st-teach-quarter-hour-5"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 17,
+      "sessionId": "u17-s-clock-productive",
+      "guidedStepId": "u17-st-guided-clock-productive-1",
+      "guidedItemIds": [
+        "u17-g-clock-productive-0"
+      ],
+      "laterTeachingStepIds": [
+        "u17-st-teach-clock-productive-2",
+        "u17-st-teach-clock-productive-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 17,
+      "sessionId": "u17-s-calendar-date",
+      "guidedStepId": "u17-st-guided-calendar-date-1",
+      "guidedItemIds": [
+        "u17-g-calendar-date-0"
+      ],
+      "laterTeachingStepIds": [
+        "u17-st-teach-calendar-date-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 18,
+      "sessionId": "u18-s-comparison",
+      "guidedStepId": "u18-st-guided-comparison-1",
+      "guidedItemIds": [
+        "u18-g-comparison-0"
+      ],
+      "laterTeachingStepIds": [
+        "u18-st-teach-comparison-2",
+        "u18-st-teach-comparison-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 18,
+      "sessionId": "u18-s-relative",
+      "guidedStepId": "u18-st-guided-relative-1",
+      "guidedItemIds": [
+        "u18-g-relative-0"
+      ],
+      "laterTeachingStepIds": [
+        "u18-st-teach-relative-2",
+        "u18-st-teach-relative-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 19,
+      "sessionId": "u19-s-prefix-caution",
+      "guidedStepId": "u19-st-guided-prefix-caution-1",
+      "guidedItemIds": [
+        "u19-g-prefix-caution-0"
+      ],
+      "laterTeachingStepIds": [
+        "u19-st-teach-prefix-caution-2",
+        "u19-st-teach-prefix-caution-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 19,
+      "sessionId": "u19-s-conditional",
+      "guidedStepId": "u19-st-guided-conditional-1",
+      "guidedItemIds": [
+        "u19-g-conditional-0"
+      ],
+      "laterTeachingStepIds": [
+        "u19-st-teach-conditional-2",
+        "u19-st-teach-conditional-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 19,
+      "sessionId": "u19-s-obligation",
+      "guidedStepId": "u19-st-guided-obligation-1",
+      "guidedItemIds": [
+        "u19-g-obligation-0"
+      ],
+      "laterTeachingStepIds": [
+        "u19-st-teach-obligation-2",
+        "u19-st-teach-obligation-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 19,
+      "sessionId": "u19-s-probability",
+      "guidedStepId": "u19-st-guided-probability-1",
+      "guidedItemIds": [
+        "u19-g-probability-0"
+      ],
+      "laterTeachingStepIds": [
+        "u19-st-teach-probability-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 20,
+      "sessionId": "u20-s-motion",
+      "guidedStepId": "u20-st-guided-motion-1",
+      "guidedItemIds": [
+        "u20-g-motion-0"
+      ],
+      "laterTeachingStepIds": [
+        "u20-st-teach-motion-2",
+        "u20-st-teach-motion-3",
+        "u20-st-teach-motion-4",
+        "u20-st-teach-motion-5"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 21,
+      "sessionId": "u21-s-svoy",
+      "guidedStepId": "u21-st-guided-svoy-1",
+      "guidedItemIds": [
+        "u21-g-svoy-0"
+      ],
+      "laterTeachingStepIds": [
+        "u21-st-teach-svoy-2",
+        "u21-st-teach-svoy-3",
+        "u21-st-teach-svoy-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 21,
+      "sessionId": "u21-s-object-reference",
+      "guidedStepId": "u21-st-guided-object-reference-1",
+      "guidedItemIds": [
+        "u21-g-object-reference-0"
+      ],
+      "laterTeachingStepIds": [
+        "u21-st-teach-object-reference-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 21,
+      "sessionId": "u21-s-purpose",
+      "guidedStepId": "u21-st-guided-purpose-1",
+      "guidedItemIds": [
+        "u21-g-purpose-0"
+      ],
+      "laterTeachingStepIds": [
+        "u21-st-teach-purpose-2",
+        "u21-st-teach-purpose-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 22,
+      "sessionId": "u22-s-noun-forms",
+      "guidedStepId": "u22-st-guided-noun-forms-1",
+      "guidedItemIds": [
+        "u22-g-noun-forms-0"
+      ],
+      "laterTeachingStepIds": [
+        "u22-st-teach-noun-forms-2",
+        "u22-st-teach-noun-forms-3",
+        "u22-st-teach-noun-forms-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 22,
+      "sessionId": "u22-s-compounds",
+      "guidedStepId": "u22-st-guided-compounds-1",
+      "guidedItemIds": [
+        "u22-g-compounds-0"
+      ],
+      "laterTeachingStepIds": [
+        "u22-st-teach-compounds-2",
+        "u22-st-teach-compounds-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 22,
+      "sessionId": "u22-s-declension",
+      "guidedStepId": "u22-st-guided-declension-1",
+      "guidedItemIds": [
+        "u22-g-declension-0"
+      ],
+      "laterTeachingStepIds": [
+        "u22-st-teach-declension-2",
+        "u22-st-teach-declension-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 22,
+      "sessionId": "u22-s-both-forms",
+      "guidedStepId": "u22-st-guided-both-forms-1",
+      "guidedItemIds": [
+        "u22-g-both-forms-0"
+      ],
+      "laterTeachingStepIds": [
+        "u22-st-teach-both-forms-2",
+        "u22-st-teach-both-forms-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 22,
+      "sessionId": "u22-s-half-forms",
+      "guidedStepId": "u22-st-guided-half-forms-1",
+      "guidedItemIds": [
+        "u22-g-half-forms-0"
+      ],
+      "laterTeachingStepIds": [
+        "u22-st-teach-half-forms-2",
+        "u22-st-teach-half-forms-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 22,
+      "sessionId": "u22-s-collective",
+      "guidedStepId": "u22-st-guided-collective-1",
+      "guidedItemIds": [
+        "u22-g-collective-0"
+      ],
+      "laterTeachingStepIds": [
+        "u22-st-teach-collective-2",
+        "u22-st-teach-collective-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 23,
+      "sessionId": "u23-s-ranges",
+      "guidedStepId": "u23-st-guided-ranges-1",
+      "guidedItemIds": [
+        "u23-g-ranges-0"
+      ],
+      "laterTeachingStepIds": [
+        "u23-st-teach-ranges-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 23,
+      "sessionId": "u23-s-beginning",
+      "guidedStepId": "u23-st-guided-beginning-1",
+      "guidedItemIds": [
+        "u23-g-beginning-0"
+      ],
+      "laterTeachingStepIds": [
+        "u23-st-teach-beginning-2",
+        "u23-st-teach-beginning-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 23,
+      "sessionId": "u23-s-during-event",
+      "guidedStepId": "u23-st-guided-during-event-1",
+      "guidedItemIds": [
+        "u23-g-during-event-0"
+      ],
+      "laterTeachingStepIds": [
+        "u23-st-teach-during-event-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 23,
+      "sessionId": "u23-s-duration",
+      "guidedStepId": "u23-st-guided-duration-1",
+      "guidedItemIds": [
+        "u23-g-duration-0"
+      ],
+      "laterTeachingStepIds": [
+        "u23-st-teach-duration-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 23,
+      "sessionId": "u23-s-elapsed",
+      "guidedStepId": "u23-st-guided-elapsed-1",
+      "guidedItemIds": [
+        "u23-g-elapsed-0"
+      ],
+      "laterTeachingStepIds": [
+        "u23-st-teach-elapsed-2",
+        "u23-st-teach-elapsed-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 23,
+      "sessionId": "u23-s-gap-completion",
+      "guidedStepId": "u23-st-guided-completion-1",
+      "guidedItemIds": [
+        "u23-g-completion-1"
+      ],
+      "laterTeachingStepIds": [
+        "u23-st-teach-completion-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 24,
+      "sessionId": "u24-s-verbal-ne",
+      "guidedStepId": "u24-st-guided-verbal-ne-1",
+      "guidedItemIds": [
+        "u24-g-verbal-ne-0"
+      ],
+      "laterTeachingStepIds": [
+        "u24-st-teach-verbal-ne-2",
+        "u24-st-teach-verbal-ne-3",
+        "u24-st-teach-verbal-ne-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 24,
+      "sessionId": "u24-s-absence",
+      "guidedStepId": "u24-st-guided-absence-1",
+      "guidedItemIds": [
+        "u24-g-absence-0"
+      ],
+      "laterTeachingStepIds": [
+        "u24-st-teach-absence-2",
+        "u24-st-teach-absence-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 24,
+      "sessionId": "u24-s-alternation",
+      "guidedStepId": "u24-st-guided-alternation-1",
+      "guidedItemIds": [
+        "u24-g-alternation-0"
+      ],
+      "laterTeachingStepIds": [
+        "u24-st-teach-alternation-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 24,
+      "sessionId": "u24-s-concord",
+      "guidedStepId": "u24-st-guided-concord-1",
+      "guidedItemIds": [
+        "u24-g-concord-0"
+      ],
+      "laterTeachingStepIds": [
+        "u24-st-teach-concord-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 24,
+      "sessionId": "u24-s-word-order-contrast",
+      "guidedStepId": "u24-st-guided-word-order-contrast-1",
+      "guidedItemIds": [
+        "u24-g-word-order-contrast-0"
+      ],
+      "laterTeachingStepIds": [
+        "u24-st-teach-word-order-contrast-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 24,
+      "sessionId": "u24-s-placement",
+      "guidedStepId": "u24-st-guided-placement-1",
+      "guidedItemIds": [
+        "u24-g-placement-0"
+      ],
+      "laterTeachingStepIds": [
+        "u24-st-teach-placement-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 25,
+      "sessionId": "u25-s-name-structure",
+      "guidedStepId": "u25-st-guided-name-structure-1",
+      "guidedItemIds": [
+        "u25-g-name-structure-0"
+      ],
+      "laterTeachingStepIds": [
+        "u25-st-teach-name-structure-2",
+        "u25-st-teach-name-structure-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 25,
+      "sessionId": "u25-s-diminutives",
+      "guidedStepId": "u25-st-guided-diminutives-1",
+      "guidedItemIds": [
+        "u25-g-diminutives-0"
+      ],
+      "laterTeachingStepIds": [
+        "u25-st-teach-diminutives-2",
+        "u25-st-teach-diminutives-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 25,
+      "sessionId": "u25-s-name-question",
+      "guidedStepId": "u25-st-guided-name-question-1",
+      "guidedItemIds": [
+        "u25-g-name-question-0"
+      ],
+      "laterTeachingStepIds": [
+        "u25-st-teach-name-question-2",
+        "u25-st-teach-name-question-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 25,
+      "sessionId": "u25-s-nickname-rule",
+      "guidedStepId": "u25-st-guided-nickname-rule-1",
+      "guidedItemIds": [
+        "u25-g-nickname-rule-0"
+      ],
+      "laterTeachingStepIds": [
+        "u25-st-teach-nickname-rule-2",
+        "u25-st-teach-nickname-rule-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 25,
+      "sessionId": "u25-s-address",
+      "guidedStepId": "u25-st-guided-address-1",
+      "guidedItemIds": [
+        "u25-g-address-0"
+      ],
+      "laterTeachingStepIds": [
+        "u25-st-teach-address-2",
+        "u25-st-teach-address-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 25,
+      "sessionId": "u25-s-documented-name-form",
+      "guidedStepId": "u25-st-guided-name-form-1",
+      "guidedItemIds": [
+        "u25-g-name-form-1"
+      ],
+      "laterTeachingStepIds": [
+        "u25-st-teach-name-form-2",
+        "u25-st-teach-name-form-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 26,
+      "sessionId": "u26-s-word-order",
+      "guidedStepId": "u26-st-guided-word-order-1",
+      "guidedItemIds": [
+        "u26-g-word-order-0"
+      ],
+      "laterTeachingStepIds": [
+        "u26-st-teach-word-order-2",
+        "u26-st-teach-word-order-3",
+        "u26-st-teach-word-order-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 26,
+      "sessionId": "u26-s-vy-capital",
+      "guidedStepId": "u26-st-guided-vy-capital-1",
+      "guidedItemIds": [
+        "u26-g-vy-capital-0"
+      ],
+      "laterTeachingStepIds": [
+        "u26-st-teach-vy-capital-2",
+        "u26-st-teach-vy-capital-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 26,
+      "sessionId": "u26-s-address-notation",
+      "guidedStepId": "u26-st-guided-address-notation-1",
+      "guidedItemIds": [
+        "u26-g-address-notation-0"
+      ],
+      "laterTeachingStepIds": [
+        "u26-st-teach-address-notation-2",
+        "u26-st-teach-address-notation-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 26,
+      "sessionId": "u26-s-indefinite",
+      "guidedStepId": "u26-st-guided-indefinite-1",
+      "guidedItemIds": [
+        "u26-g-indefinite-0"
+      ],
+      "laterTeachingStepIds": [
+        "u26-st-teach-indefinite-2",
+        "u26-st-teach-indefinite-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 26,
+      "sessionId": "u26-s-letter-writing",
+      "guidedStepId": "u26-st-guided-letter-writing-1",
+      "guidedItemIds": [
+        "u26-g-letter-writing-0"
+      ],
+      "laterTeachingStepIds": [
+        "u26-st-teach-letter-writing-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 26,
+      "sessionId": "u26-s-correspondence",
+      "guidedStepId": "u26-st-guided-correspondence-1",
+      "guidedItemIds": [
+        "u26-g-correspondence-0"
+      ],
+      "laterTeachingStepIds": [
+        "u26-st-teach-correspondence-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 26,
+      "sessionId": "u26-s-gap-postal-address",
+      "guidedStepId": "u26-postal-guided",
+      "guidedItemIds": [
+        "u26-g-postal-1"
+      ],
+      "laterTeachingStepIds": [
+        "u26-postal-teach-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 27,
+      "sessionId": "u27-s-passive",
+      "guidedStepId": "u27-st-guided-passive-1",
+      "guidedItemIds": [
+        "u27-g-passive-0"
+      ],
+      "laterTeachingStepIds": [
+        "u27-st-teach-passive-2",
+        "u27-st-teach-passive-3",
+        "u27-st-teach-passive-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 27,
+      "sessionId": "u27-s-present-passive",
+      "guidedStepId": "u27-st-guided-present-passive-1",
+      "guidedItemIds": [
+        "u27-g-present-passive-0",
+        "u27-g-stress-1"
+      ],
+      "laterTeachingStepIds": [
+        "u27-st-teach-present-passive-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 27,
+      "sessionId": "u27-s-gap-comprehension",
+      "guidedStepId": "u27-comp-guided",
+      "guidedItemIds": [
+        "u27-g-comp-1"
+      ],
+      "laterTeachingStepIds": [
+        "u27-comp-teach-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 27,
+      "sessionId": "u27-s-stress",
+      "guidedStepId": "u27-stress-guided",
+      "guidedItemIds": [
+        "u27-g-stress-past"
+      ],
+      "laterTeachingStepIds": [
+        "u27-stress-teach-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 28,
+      "sessionId": "u28-s-imperfective-adverb",
+      "guidedStepId": "u28-st-guided-imperfective-adverb-1",
+      "guidedItemIds": [
+        "u28-g-imperfective-adverb-0"
+      ],
+      "laterTeachingStepIds": [
+        "u28-st-teach-imperfective-adverb-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 28,
+      "sessionId": "u28-s-perfective-adverb",
+      "guidedStepId": "u28-st-guided-perfective-adverb-1",
+      "guidedItemIds": [
+        "u28-g-perfective-adverb-0"
+      ],
+      "laterTeachingStepIds": [
+        "u28-st-teach-perfective-adverb-2",
+        "u28-st-teach-perfective-adverb-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 28,
+      "sessionId": "u28-s-readings",
+      "guidedStepId": "u28-st-guided-readings-1",
+      "guidedItemIds": [
+        "u28-g-readings-0"
+      ],
+      "laterTeachingStepIds": [
+        "u28-st-teach-readings-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 29,
+      "sessionId": "u29-s-active",
+      "guidedStepId": "u29-st-guided-active-1",
+      "guidedItemIds": [
+        "u29-g-active-0"
+      ],
+      "laterTeachingStepIds": [
+        "u29-st-teach-active-2",
+        "u29-st-teach-active-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 29,
+      "sessionId": "u29-s-short-adjective",
+      "guidedStepId": "u29-st-guided-short-adjective-1",
+      "guidedItemIds": [
+        "u29-g-short-adjective-0"
+      ],
+      "laterTeachingStepIds": [
+        "u29-st-teach-short-adjective-2",
+        "u29-st-teach-short-adjective-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 29,
+      "sessionId": "u29-s-bookish-note",
+      "guidedStepId": "u29-st-guided-bookish-note-1",
+      "guidedItemIds": [
+        "u29-g-bookish-note-0"
+      ],
+      "laterTeachingStepIds": [
+        "u29-st-teach-bookish-note-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 29,
+      "sessionId": "u29-s-punctuation",
+      "guidedStepId": "u29-st-guided-punctuation-1",
+      "guidedItemIds": [
+        "u29-g-punctuation-0"
+      ],
+      "laterTeachingStepIds": [
+        "u29-st-teach-punctuation-2",
+        "u29-st-teach-punctuation-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 29,
+      "sessionId": "u29-s-gap-register",
+      "guidedStepId": "u29-register-guided",
+      "guidedItemIds": [
+        "u29-g-register-1"
+      ],
+      "laterTeachingStepIds": [
+        "u29-register-teach-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 29,
+      "sessionId": "u29-s-gap-reading",
+      "guidedStepId": "u29-reading-guided",
+      "guidedItemIds": [
+        "u29-g-reading-1"
+      ],
+      "laterTeachingStepIds": [
+        "u29-reading-teach-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 30,
+      "sessionId": "u30-s-letter-names",
+      "guidedStepId": "u30-st-guided-letter-names-1",
+      "guidedItemIds": [
+        "u30-g-letter-names-0"
+      ],
+      "laterTeachingStepIds": [
+        "u30-st-teach-letter-names-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 30,
+      "sessionId": "u30-s-abbrev-examples",
+      "guidedStepId": "u30-st-guided-abbrev-examples-1",
+      "guidedItemIds": [
+        "u30-g-abbrev-examples-0"
+      ],
+      "laterTeachingStepIds": [
+        "u30-st-teach-abbrev-examples-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 30,
+      "sessionId": "u30-s-address-marks",
+      "guidedStepId": "u30-st-guided-address-marks-1",
+      "guidedItemIds": [
+        "u30-g-address-marks-0"
+      ],
+      "laterTeachingStepIds": [
+        "u30-st-teach-address-marks-2",
+        "u30-st-teach-address-marks-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 30,
+      "sessionId": "u30-s-abbreviation",
+      "guidedStepId": "u30-st-guided-abbreviation-1",
+      "guidedItemIds": [
+        "u30-g-abbreviation-0"
+      ],
+      "laterTeachingStepIds": [
+        "u30-st-teach-abbreviation-2",
+        "u30-st-teach-abbreviation-3",
+        "u30-st-teach-abbreviation-4"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 30,
+      "sessionId": "u30-s-particle",
+      "guidedStepId": "u30-st-guided-particle-1",
+      "guidedItemIds": [
+        "u30-g-particle-0"
+      ],
+      "laterTeachingStepIds": [
+        "u30-st-teach-particle-2",
+        "u30-st-teach-particle-3"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 30,
+      "sessionId": "u30-s-capstone",
+      "guidedStepId": "u30-st-guided-capstone-1",
+      "guidedItemIds": [
+        "u30-g-capstone-0"
+      ],
+      "laterTeachingStepIds": [
+        "u30-st-teach-capstone-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    },
+    {
+      "unitNumber": 30,
+      "sessionId": "u30-s-dictionary",
+      "guidedStepId": "u30-dictionary-guided",
+      "guidedItemIds": [
+        "u30-g-dictionary-1"
+      ],
+      "laterTeachingStepIds": [
+        "u30-dictionary-teach-2"
+      ],
+      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
+    }
+  ]
+}

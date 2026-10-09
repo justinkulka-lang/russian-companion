@@ -41,7 +41,7 @@ class ContentAuditCorrectionTest {
         val guidedIndex = session.steps.indexOfFirst { it.kind == "GUIDED" }
         assertTrue(session.steps.take(guidedIndex).count { it.kind == "TEACH" } == 3)
         assertTrue(session.steps.drop(guidedIndex).none { it.kind == "TEACH" })
-        assertEquals(6, unit.advancement.minimumDistinctChecks)
+        assertEquals(6, unit.advancement!!.minimumDistinctChecks)
         assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
     }
 

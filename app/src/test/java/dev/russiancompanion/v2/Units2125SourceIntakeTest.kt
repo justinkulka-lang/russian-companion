@@ -260,7 +260,16 @@ class Units2125SourceIntakeTest {
             supplementalByOldid[page.getValue("oldid").jsonPrimitive.content] = bytes.toString(Charsets.UTF_8)
         }
         val intake = pack.provenanceRecords.filter { it.unitNumber in 21..25 }
-        assertEquals(571, intake.size)
+        assertEquals(578, intake.size)
+        assertEquals(
+            setOf(
+                "prov-ca-u24-absence-participant-0", "prov-ca-u24-absence-participant-1",
+                "prov-ca-u24-absence-participant-2", "prov-ca-u24-absence-participant-3",
+                "prov-ca-u24-absence-prompt", "prov-ca-u24-absence-example-note",
+                "prov-ca-u24-absence-explanation",
+            ),
+            intake.filter { it.itemId.startsWith("prov-ca-u24-absence-") }.map { it.itemId }.toSet(),
+        )
         assertEquals(setOf(21, 22, 23, 24, 25), intake.map { it.unitNumber }.toSet())
         assertTrue(intake.none { it.sourceId == "src-openrussian-50e210c4" })
         assertTrue(intake.all { it.audioAssetId == null })
