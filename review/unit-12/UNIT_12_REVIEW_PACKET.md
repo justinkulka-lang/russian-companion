@@ -11,12 +11,12 @@ Unit 12 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 8ff440be0691161ffaf053961d0fdfec1863856b
-- Unit content-review SHA-256: c1f05ea41b0b1842f881553f17bcb68b63c450dfff29784695e63219a40f84a3
+- Curriculum source commit: 0e763dfd4284587065fbb48aae5c5ee5add54f8f
+- Unit content-review SHA-256: e742be35e87a478befba9e7e01b7d2e47aba98af3e2e4a4b6948ed6f0974fada
 - Mapping-package SHA-256: 0747489371acaab80787db42f08f6d4f5479e6186a2c9415052df484324e37d3
-- Pack content-review SHA-256: 20e41143b4550fcb20e92589fbf36b56ec072514ba653f2363a5ad34b6a1d82d
-- Review-package SHA-256: 7dcf29bc6d7da1a97d40e31b93fd2d41de4539b65b314c992cfbc8b1c0e4ef42
-- Repository source SHA-256: a97b0b94acec8e829de55d86e1d8db99eacfd540d6225dd45a78774595fc28cf
+- Pack content-review SHA-256: d1d74b79987cf9d789d845a9d6e8d444d4c60bb03b12734acec5800b8a1b64ca
+- Review-package SHA-256: 9f4cc8efcd91dd06a505e893a1b765c54149af19dd31f8f0ba5a697bbc89fea8
+- Repository source SHA-256: b41ea55aababf208fcf77117905725c6bd19d944dc67f358b6da1dd55ecde15f
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -599,12 +599,12 @@ remediationStepId=u12-st-rem-future-perf
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d60dc560d5bf4261bf13add3331242e94d0d1580c13d90a21ddd10f36dde3416
+- Content hash: bc18524f6368859759c4005a461273f3cb9f3bada93d3f85d16f4e9e73283907
 
 title=Choose the admitted aspect partner
 estimatedMinutes=12
 objectives=obj-u12-aspect
-steps=u12-st-teach-aspect-1,u12-st-guided-aspect-1,u12-st-teach-aspect-2,u12-st-teach-aspect-3,u12-st-rem-aspect,u12-st-check-aspect
+steps=u12-st-teach-aspect-1,u12-st-teach-aspect-2,u12-st-teach-aspect-3,u12-st-guided-aspect-1,u12-st-rem-aspect,u12-st-check-aspect
 
 ### STEP `u12-st-teach-aspect-1`
 
@@ -627,28 +627,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u12-st-guided-aspect-1`
-
-- Objectives: obj-u12-aspect
-- Sessions: u12-s-aspect
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c356b7f1bc6cbb23f23a568b317f8fe0b5010c515154db4a787c291c13a5d5f5
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u12-g-aspect-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u12-st-rem-aspect
 
 ### STEP `u12-st-teach-aspect-2`
 
@@ -693,6 +671,28 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u12-st-guided-aspect-1`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-aspect
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c356b7f1bc6cbb23f23a568b317f8fe0b5010c515154db4a787c291c13a5d5f5
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u12-g-aspect-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u12-st-rem-aspect
 
 ### STEP `u12-st-rem-aspect`
 
@@ -6980,12 +6980,12 @@ permitsAppUse=true
 - `u12-st-teach-aspect-1` EXAMPLE `ex-u12-aspect-0`
 - `u12-st-teach-aspect-1` EXAMPLE `ex-u12-aspect-1`
 - `u12-st-teach-aspect-1` REFERENCE `ref-u1115-attribution`
-- `u12-st-guided-aspect-1` REMEDIATION `u12-st-rem-aspect`
-- `u12-st-guided-aspect-1` ITEM `u12-g-aspect-0`
 - `u12-st-teach-aspect-2` REFERENCE `ref-u1115-attribution`
 - `u12-st-teach-aspect-3` EXAMPLE `ex-u12-aspect-2`
 - `u12-st-teach-aspect-3` EXAMPLE `ex-u12-aspect-3`
 - `u12-st-teach-aspect-3` REFERENCE `ref-u1115-attribution`
+- `u12-st-guided-aspect-1` REMEDIATION `u12-st-rem-aspect`
+- `u12-st-guided-aspect-1` ITEM `u12-g-aspect-0`
 - `u12-st-rem-aspect` EXAMPLE `ex-u12-aspect-0`
 - `u12-st-rem-aspect` EXAMPLE `ex-u12-aspect-1`
 - `u12-st-rem-aspect` REFERENCE `ref-ca-aspect`

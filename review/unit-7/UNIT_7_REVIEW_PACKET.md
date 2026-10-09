@@ -11,12 +11,12 @@ Unit 7 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 8ff440be0691161ffaf053961d0fdfec1863856b
-- Unit content-review SHA-256: f6a19dea12eae270c0af0760d148d34d8bbcc328fd3940cc91f9e9257f1d80fd
+- Curriculum source commit: 0e763dfd4284587065fbb48aae5c5ee5add54f8f
+- Unit content-review SHA-256: 6682eeb69cde215f49d82799fb56f71b2f70a4ab9084843aa2c399462297f096
 - Mapping-package SHA-256: e39515585eea5b131797f0c93ce3508ee99b27206cc21070675d06aa975373c0
-- Pack content-review SHA-256: 20e41143b4550fcb20e92589fbf36b56ec072514ba653f2363a5ad34b6a1d82d
-- Review-package SHA-256: 25ff98336935d54249258cd9a43d192ccfd70985b5ff79f8a01f42a3bf0f22e7
-- Repository source SHA-256: a97b0b94acec8e829de55d86e1d8db99eacfd540d6225dd45a78774595fc28cf
+- Pack content-review SHA-256: d1d74b79987cf9d789d845a9d6e8d444d4c60bb03b12734acec5800b8a1b64ca
+- Review-package SHA-256: e17e8cd45ce0e15ac8097e69f0f9e23d70320f5c7d65917f278bb1a53b039d24
+- Repository source SHA-256: b41ea55aababf208fcf77117905725c6bd19d944dc67f358b6da1dd55ecde15f
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -826,12 +826,12 @@ remediationStepId=u7-st-rem-endings
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 97c24c080d26caf2b9b83cf6b4502695f191db33fdcf2adb7ac63c8cd2833ae9
+- Content hash: 0c2144a3cac5a9ab63c4205b92419ff181f6095006775e64d904e6d227f485c7
 
 title=Identify the admitted spelling
 estimatedMinutes=12
 objectives=obj-u7-spelling
-steps=u7-st-teach-spelling-1,u7-st-guided-spelling-1,u7-st-teach-spelling-2,u7-st-teach-spelling-3,u7-st-teach-spelling-4,u7-st-rem-spelling,u7-st-check-spelling
+steps=u7-st-teach-spelling-1,u7-st-teach-spelling-2,u7-st-teach-spelling-3,u7-st-teach-spelling-4,u7-st-guided-spelling-1,u7-st-rem-spelling,u7-st-check-spelling
 
 ### STEP `u7-st-teach-spelling-1`
 
@@ -854,28 +854,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u7-st-guided-spelling-1`
-
-- Objectives: obj-u7-spelling
-- Sessions: u7-s-spelling
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d0adc31f11d8b8e28ec45ccca56c1f73e8118da5b0ce18b1431d70399561cc36
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u7-g-spelling-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u7-st-rem-spelling
 
 ### STEP `u7-st-teach-spelling-2`
 
@@ -942,6 +920,28 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u7-st-guided-spelling-1`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-spelling
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d0adc31f11d8b8e28ec45ccca56c1f73e8118da5b0ce18b1431d70399561cc36
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u7-g-spelling-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u7-st-rem-spelling
 
 ### STEP `u7-st-rem-spelling`
 
@@ -20748,14 +20748,14 @@ permitsAppUse=true
 - `u7-st-teach-spelling-1` EXAMPLE `ex-u7-spelling-0`
 - `u7-st-teach-spelling-1` EXAMPLE `ex-or-u7-spelling-1`
 - `u7-st-teach-spelling-1` REFERENCE `ref-u610-attribution`
-- `u7-st-guided-spelling-1` REMEDIATION `u7-st-rem-spelling`
-- `u7-st-guided-spelling-1` ITEM `u7-g-spelling-0`
 - `u7-st-teach-spelling-2` REFERENCE `ref-u610-attribution`
 - `u7-st-teach-spelling-3` EXAMPLE `ex-or-u7-spelling-2`
 - `u7-st-teach-spelling-3` EXAMPLE `ex-or-u7-spelling-3`
 - `u7-st-teach-spelling-3` REFERENCE `ref-u610-attribution`
 - `u7-st-teach-spelling-4` EXAMPLE `ex-or-u7-spelling-4`
 - `u7-st-teach-spelling-4` REFERENCE `ref-u610-attribution`
+- `u7-st-guided-spelling-1` REMEDIATION `u7-st-rem-spelling`
+- `u7-st-guided-spelling-1` ITEM `u7-g-spelling-0`
 - `u7-st-rem-spelling` EXAMPLE `ex-u7-spelling-0`
 - `u7-st-rem-spelling` EXAMPLE `ex-or-u7-spelling-1`
 - `u7-st-check-spelling` REMEDIATION `u7-st-rem-spelling`

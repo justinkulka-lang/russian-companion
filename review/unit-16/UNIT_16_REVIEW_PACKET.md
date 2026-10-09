@@ -11,12 +11,12 @@ Unit 16 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 8ff440be0691161ffaf053961d0fdfec1863856b
-- Unit content-review SHA-256: 8befb184732c0a725e374dbbfb594dd2cc5056811d1bd06a121c5dc125de25c9
+- Curriculum source commit: 0e763dfd4284587065fbb48aae5c5ee5add54f8f
+- Unit content-review SHA-256: 2b4588a5b794e7ccbb91c3489262a9e87b75d2e8095f369ae55d934167ca4c08
 - Mapping-package SHA-256: f74c6fa2206f8faad47ad15e91b8dce61f886293f64d9a3f2e47947b2d5db8e7
-- Pack content-review SHA-256: 20e41143b4550fcb20e92589fbf36b56ec072514ba653f2363a5ad34b6a1d82d
-- Review-package SHA-256: acb912afc290aa1042c3235d162b6e3d7141c573d07b5ad35bf61f9874ee843d
-- Repository source SHA-256: a97b0b94acec8e829de55d86e1d8db99eacfd540d6225dd45a78774595fc28cf
+- Pack content-review SHA-256: d1d74b79987cf9d789d845a9d6e8d444d4c60bb03b12734acec5800b8a1b64ca
+- Review-package SHA-256: dd487d20662ea12fbd1dfd822441462aa5f5d894a1952d17e232c6621dae2bac
+- Repository source SHA-256: b41ea55aababf208fcf77117905725c6bd19d944dc67f358b6da1dd55ecde15f
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -283,12 +283,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0b68ed1bf329ca07aa6b71c487d655242f1c05a88307c51798c407ce5ba4cf10
+- Content hash: a30ec761db8833a6d65d505b5bb852541f5ce4b7ef82eef1f286d56de7fa3de9
 
 title=Choose the admitted instrumental singular row
 estimatedMinutes=12
 objectives=obj-u16-inst-sg
-steps=u16-st-teach-inst-sg-1,u16-st-guided-inst-sg-1,u16-st-teach-inst-sg-2,u16-st-teach-inst-sg-3,u16-st-teach-inst-sg-4,u16-st-teach-inst-sg-5,u16-st-teach-inst-sg-6,u16-st-teach-inst-sg-7,u16-st-rem-inst-sg,u16-st-check-inst-sg
+steps=u16-st-teach-inst-sg-1,u16-st-teach-inst-sg-2,u16-st-teach-inst-sg-3,u16-st-teach-inst-sg-4,u16-st-teach-inst-sg-5,u16-st-teach-inst-sg-6,u16-st-teach-inst-sg-7,u16-st-guided-inst-sg-1,u16-st-rem-inst-sg,u16-st-check-inst-sg
 
 ### STEP `u16-st-teach-inst-sg-1`
 
@@ -311,28 +311,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u16-st-guided-inst-sg-1`
-
-- Objectives: obj-u16-inst-sg
-- Sessions: u16-s-inst-sg
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9767038a3c6a40852818a4b0210cc1dc320ac55764af8c11d3e8c9ec515dc1fd
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u16-g-inst-sg-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u16-st-rem-inst-sg
 
 ### STEP `u16-st-teach-inst-sg-2`
 
@@ -465,6 +443,28 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u16-st-guided-inst-sg-1`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-inst-sg
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9767038a3c6a40852818a4b0210cc1dc320ac55764af8c11d3e8c9ec515dc1fd
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u16-g-inst-sg-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u16-st-rem-inst-sg
 
 ### STEP `u16-st-rem-inst-sg`
 
@@ -753,12 +753,12 @@ remediationStepId=u16-st-rem-inst-pl
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8c43d937b6dee6f5b86b074c6917c5c0e36a69996498b28fa2d402c96d480bb8
+- Content hash: 0d19c054e1ef8e25c0b1071386d3ce781306539e8de7f2720a8105755111f064
 
 title=Choose the admitted instrumental adjective row
 estimatedMinutes=12
 objectives=obj-u16-inst-adj
-steps=u16-st-teach-inst-adj-1,u16-st-guided-inst-adj-1,u16-st-teach-inst-adj-2,u16-st-teach-inst-adj-3,u16-st-teach-inst-adj-4,u16-st-rem-inst-adj,u16-st-check-inst-adj
+steps=u16-st-teach-inst-adj-1,u16-st-teach-inst-adj-2,u16-st-teach-inst-adj-3,u16-st-teach-inst-adj-4,u16-st-guided-inst-adj-1,u16-st-rem-inst-adj,u16-st-check-inst-adj
 
 ### STEP `u16-st-teach-inst-adj-1`
 
@@ -781,28 +781,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u16-st-guided-inst-adj-1`
-
-- Objectives: obj-u16-inst-adj
-- Sessions: u16-s-inst-adj
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 18dff2502d6189d897ac37f50c1a7adec46850faebd661f840913032442d4a2d
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u16-g-inst-adj-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u16-st-rem-inst-adj
 
 ### STEP `u16-st-teach-inst-adj-2`
 
@@ -869,6 +847,28 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u16-st-guided-inst-adj-1`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-inst-adj
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 18dff2502d6189d897ac37f50c1a7adec46850faebd661f840913032442d4a2d
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u16-g-inst-adj-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u16-st-rem-inst-adj
 
 ### STEP `u16-st-rem-inst-adj`
 
@@ -8129,8 +8129,6 @@ permitsAppUse=true
 - `u16-st-teach-inst-sg-1` EXAMPLE `ex-or-u16-inst-sg-0`
 - `u16-st-teach-inst-sg-1` EXAMPLE `ex-or-u16-inst-sg-1`
 - `u16-st-teach-inst-sg-1` REFERENCE `ref-u1620-attribution`
-- `u16-st-guided-inst-sg-1` REMEDIATION `u16-st-rem-inst-sg`
-- `u16-st-guided-inst-sg-1` ITEM `u16-g-inst-sg-0`
 - `u16-st-teach-inst-sg-2` REFERENCE `ref-u1620-attribution`
 - `u16-st-teach-inst-sg-3` EXAMPLE `ex-or-u16-inst-sg-2`
 - `u16-st-teach-inst-sg-3` EXAMPLE `ex-or-u16-inst-sg-3`
@@ -8146,6 +8144,8 @@ permitsAppUse=true
 - `u16-st-teach-inst-sg-6` REFERENCE `ref-u1620-attribution`
 - `u16-st-teach-inst-sg-7` EXAMPLE `ex-u16-inst-sg-10`
 - `u16-st-teach-inst-sg-7` REFERENCE `ref-u1620-attribution`
+- `u16-st-guided-inst-sg-1` REMEDIATION `u16-st-rem-inst-sg`
+- `u16-st-guided-inst-sg-1` ITEM `u16-g-inst-sg-0`
 - `u16-st-rem-inst-sg` EXAMPLE `ex-or-u16-inst-sg-0`
 - `u16-st-rem-inst-sg` EXAMPLE `ex-or-u16-inst-sg-1`
 - `u16-st-check-inst-sg` REMEDIATION `u16-st-rem-inst-sg`
@@ -8182,8 +8182,6 @@ permitsAppUse=true
 - `u16-st-teach-inst-adj-1` EXAMPLE `ex-or-u16-inst-adj-0`
 - `u16-st-teach-inst-adj-1` EXAMPLE `ex-or-u16-inst-adj-1`
 - `u16-st-teach-inst-adj-1` REFERENCE `ref-u1620-attribution`
-- `u16-st-guided-inst-adj-1` REMEDIATION `u16-st-rem-inst-adj`
-- `u16-st-guided-inst-adj-1` ITEM `u16-g-inst-adj-0`
 - `u16-st-teach-inst-adj-2` REFERENCE `ref-u1620-attribution`
 - `u16-st-teach-inst-adj-3` EXAMPLE `ex-or-u16-inst-adj-2`
 - `u16-st-teach-inst-adj-3` EXAMPLE `ex-or-u16-inst-adj-3`
@@ -8191,6 +8189,8 @@ permitsAppUse=true
 - `u16-st-teach-inst-adj-4` EXAMPLE `ex-or-u16-inst-adj-4`
 - `u16-st-teach-inst-adj-4` EXAMPLE `ex-or-u16-inst-adj-5`
 - `u16-st-teach-inst-adj-4` REFERENCE `ref-u1620-attribution`
+- `u16-st-guided-inst-adj-1` REMEDIATION `u16-st-rem-inst-adj`
+- `u16-st-guided-inst-adj-1` ITEM `u16-g-inst-adj-0`
 - `u16-st-rem-inst-adj` EXAMPLE `ex-or-u16-inst-adj-0`
 - `u16-st-rem-inst-adj` EXAMPLE `ex-or-u16-inst-adj-1`
 - `u16-st-check-inst-adj` REMEDIATION `u16-st-rem-inst-adj`

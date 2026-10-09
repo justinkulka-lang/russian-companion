@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "curriculumFileSha256": "b6e1513788c7b5dd328047728384a02e222c00c5b9351a4b66e155fc31ea6796",
-  "candidateCount": 136,
+  "curriculumFileSha256": "26ceb006dd9f9f1fd6548706b9197c0c550a18ae457ad9c51228516cf268c9dd",
+  "candidateCount": 130,
   "affectedUnits": [
     3,
     4,
@@ -117,20 +117,6 @@
     },
     {
       "unitNumber": 6,
-      "sessionId": "u6-s-feminine",
-      "guidedStepId": "u6-st-guided-feminine-1",
-      "guidedItemIds": [
-        "u6-g-feminine-0"
-      ],
-      "laterTeachingStepIds": [
-        "u6-st-teach-feminine-2",
-        "u6-st-teach-feminine-3",
-        "u6-st-teach-feminine-4"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 6,
       "sessionId": "u6-s-animacy",
       "guidedStepId": "u6-st-guided-animacy-1",
       "guidedItemIds": [
@@ -204,20 +190,6 @@
         "u7-st-teach-endings-5",
         "u7-st-teach-endings-6",
         "u7-st-teach-endings-7"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 7,
-      "sessionId": "u7-s-spelling",
-      "guidedStepId": "u7-st-guided-spelling-1",
-      "guidedItemIds": [
-        "u7-g-spelling-0"
-      ],
-      "laterTeachingStepIds": [
-        "u7-st-teach-spelling-2",
-        "u7-st-teach-spelling-3",
-        "u7-st-teach-spelling-4"
       ],
       "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
     },
@@ -343,21 +315,6 @@
         "u8-st-teach-plural-6",
         "u8-st-teach-plural-7",
         "u8-st-teach-plural-8"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 8,
-      "sessionId": "u8-s-spelling",
-      "guidedStepId": "u8-st-guided-spelling-1",
-      "guidedItemIds": [
-        "u8-g-spelling-0"
-      ],
-      "laterTeachingStepIds": [
-        "u8-st-teach-spelling-2",
-        "u8-st-teach-spelling-3",
-        "u8-st-teach-spelling-4",
-        "u8-st-teach-spelling-5"
       ],
       "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
     },
@@ -722,19 +679,6 @@
     },
     {
       "unitNumber": 12,
-      "sessionId": "u12-s-aspect",
-      "guidedStepId": "u12-st-guided-aspect-1",
-      "guidedItemIds": [
-        "u12-g-aspect-0"
-      ],
-      "laterTeachingStepIds": [
-        "u12-st-teach-aspect-2",
-        "u12-st-teach-aspect-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 12,
       "sessionId": "u12-s-dative",
       "guidedStepId": "u12-st-guided-dative-1",
       "guidedItemIds": [
@@ -913,23 +857,6 @@
     },
     {
       "unitNumber": 16,
-      "sessionId": "u16-s-inst-sg",
-      "guidedStepId": "u16-st-guided-inst-sg-1",
-      "guidedItemIds": [
-        "u16-g-inst-sg-0"
-      ],
-      "laterTeachingStepIds": [
-        "u16-st-teach-inst-sg-2",
-        "u16-st-teach-inst-sg-3",
-        "u16-st-teach-inst-sg-4",
-        "u16-st-teach-inst-sg-5",
-        "u16-st-teach-inst-sg-6",
-        "u16-st-teach-inst-sg-7"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 16,
       "sessionId": "u16-s-inst-pl",
       "guidedStepId": "u16-st-guided-inst-pl-1",
       "guidedItemIds": [
@@ -942,20 +869,6 @@
         "u16-st-teach-inst-pl-5",
         "u16-st-teach-inst-pl-6",
         "u16-st-teach-inst-pl-7"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 16,
-      "sessionId": "u16-s-inst-adj",
-      "guidedStepId": "u16-st-guided-inst-adj-1",
-      "guidedItemIds": [
-        "u16-g-inst-adj-0"
-      ],
-      "laterTeachingStepIds": [
-        "u16-st-teach-inst-adj-2",
-        "u16-st-teach-inst-adj-3",
-        "u16-st-teach-inst-adj-4"
       ],
       "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
     },

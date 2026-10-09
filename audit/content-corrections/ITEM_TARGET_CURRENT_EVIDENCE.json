@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "b6e1513788c7b5dd328047728384a02e222c00c5b9351a4b66e155fc31ea6796",
+    "curriculumFileSha256": "26ceb006dd9f9f1fd6548706b9197c0c550a18ae457ad9c51228516cf268c9dd",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -5113,25 +5113,6 @@
         {
           "sessionId": "u7-s-spelling",
           "step": {
-            "id": "u7-st-guided-spelling-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u7-g-spelling-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u7-st-rem-spelling"
-          }
-        },
-        {
-          "sessionId": "u7-s-spelling",
-          "step": {
             "id": "u7-st-teach-spelling-2",
             "kind": "TEACH",
             "title": "Admitted instruction",
@@ -5189,6 +5170,25 @@
             "bookDirection": null,
             "companionDirection": null,
             "remediationStepId": null
+          }
+        },
+        {
+          "sessionId": "u7-s-spelling",
+          "step": {
+            "id": "u7-st-guided-spelling-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u7-g-spelling-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u7-st-rem-spelling"
           }
         },
         {
@@ -5331,25 +5331,6 @@
         {
           "sessionId": "u8-s-spelling",
           "step": {
-            "id": "u8-st-guided-spelling-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u8-g-spelling-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u8-st-rem-spelling"
-          }
-        },
-        {
-          "sessionId": "u8-s-spelling",
-          "step": {
             "id": "u8-st-teach-spelling-2",
             "kind": "TEACH",
             "title": "Admitted instruction",
@@ -5429,6 +5410,25 @@
             "bookDirection": null,
             "companionDirection": null,
             "remediationStepId": null
+          }
+        },
+        {
+          "sessionId": "u8-s-spelling",
+          "step": {
+            "id": "u8-st-guided-spelling-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u8-g-spelling-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u8-st-rem-spelling"
           }
         },
         {
@@ -5567,25 +5567,6 @@
         {
           "sessionId": "u6-s-feminine",
           "step": {
-            "id": "u6-st-guided-feminine-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u6-g-feminine-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u6-st-rem-feminine"
-          }
-        },
-        {
-          "sessionId": "u6-s-feminine",
-          "step": {
             "id": "u6-st-teach-feminine-2",
             "kind": "TEACH",
             "title": "Admitted instruction",
@@ -5644,6 +5625,25 @@
             "bookDirection": null,
             "companionDirection": null,
             "remediationStepId": null
+          }
+        },
+        {
+          "sessionId": "u6-s-feminine",
+          "step": {
+            "id": "u6-st-guided-feminine-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u6-g-feminine-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u6-st-rem-feminine"
           }
         },
         {
@@ -6326,25 +6326,6 @@
         {
           "sessionId": "u16-s-inst-sg",
           "step": {
-            "id": "u16-st-guided-inst-sg-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u16-g-inst-sg-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u16-st-rem-inst-sg"
-          }
-        },
-        {
-          "sessionId": "u16-s-inst-sg",
-          "step": {
             "id": "u16-st-teach-inst-sg-2",
             "kind": "TEACH",
             "title": "Admitted instruction",
@@ -6468,6 +6449,25 @@
             "bookDirection": null,
             "companionDirection": null,
             "remediationStepId": null
+          }
+        },
+        {
+          "sessionId": "u16-s-inst-sg",
+          "step": {
+            "id": "u16-st-guided-inst-sg-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u16-g-inst-sg-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u16-st-rem-inst-sg"
           }
         },
         {
@@ -6606,25 +6606,6 @@
         {
           "sessionId": "u16-s-inst-adj",
           "step": {
-            "id": "u16-st-guided-inst-adj-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u16-g-inst-adj-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u16-st-rem-inst-adj"
-          }
-        },
-        {
-          "sessionId": "u16-s-inst-adj",
-          "step": {
             "id": "u16-st-teach-inst-adj-2",
             "kind": "TEACH",
             "title": "Admitted instruction",
@@ -6683,6 +6664,25 @@
             "bookDirection": null,
             "companionDirection": null,
             "remediationStepId": null
+          }
+        },
+        {
+          "sessionId": "u16-s-inst-adj",
+          "step": {
+            "id": "u16-st-guided-inst-adj-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u16-g-inst-adj-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u16-st-rem-inst-adj"
           }
         },
         {
@@ -7437,25 +7437,6 @@
         {
           "sessionId": "u12-s-aspect",
           "step": {
-            "id": "u12-st-guided-aspect-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u12-g-aspect-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u12-st-rem-aspect"
-          }
-        },
-        {
-          "sessionId": "u12-s-aspect",
-          "step": {
             "id": "u12-st-teach-aspect-2",
             "kind": "TEACH",
             "title": "Admitted instruction",
@@ -7492,6 +7473,25 @@
             "bookDirection": null,
             "companionDirection": null,
             "remediationStepId": null
+          }
+        },
+        {
+          "sessionId": "u12-s-aspect",
+          "step": {
+            "id": "u12-st-guided-aspect-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u12-g-aspect-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u12-st-rem-aspect"
           }
         },
         {
@@ -10111,25 +10111,6 @@
         {
           "sessionId": "u7-s-spelling",
           "step": {
-            "id": "u7-st-guided-spelling-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u7-g-spelling-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u7-st-rem-spelling"
-          }
-        },
-        {
-          "sessionId": "u7-s-spelling",
-          "step": {
             "id": "u7-st-teach-spelling-2",
             "kind": "TEACH",
             "title": "Admitted instruction",
@@ -10187,6 +10168,25 @@
             "bookDirection": null,
             "companionDirection": null,
             "remediationStepId": null
+          }
+        },
+        {
+          "sessionId": "u7-s-spelling",
+          "step": {
+            "id": "u7-st-guided-spelling-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u7-g-spelling-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u7-st-rem-spelling"
           }
         },
         {

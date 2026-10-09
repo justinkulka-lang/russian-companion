@@ -1,8 +1,8 @@
 # Single-guided session sequence-review candidates
 
-Curriculum file SHA-256: `b6e1513788c7b5dd328047728384a02e222c00c5b9351a4b66e155fc31ea6796`.
+Curriculum file SHA-256: `26ceb006dd9f9f1fd6548706b9197c0c550a18ae457ad9c51228516cf268c9dd`.
 
-**136 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
+**130 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
 
 The Unit 24 absence session and Unit 25 courtesy session no longer have this ordering flag. Their implemented corrections remain pending final semantic audit. This inventory does not close CA009/CA010 or approve any other session.
 
@@ -14,13 +14,11 @@ The Unit 24 absence session and Unit 25 courtesy session no longer have this ord
 | 5 | `u5-s-indeclinable` | `u5-st-guided-indeclinable-1` | `u5-st-teach-indeclinable-2`, `u5-st-teach-indeclinable-3` |
 | 6 | `u6-s-third` | `u6-st-guided-third-1` | `u6-st-teach-third-2`, `u6-st-teach-third-3` |
 | 6 | `u6-s-object` | `u6-st-guided-object-1` | `u6-st-teach-object-2`, `u6-st-teach-object-3`, `u6-st-teach-object-4` |
-| 6 | `u6-s-feminine` | `u6-st-guided-feminine-1` | `u6-st-teach-feminine-2`, `u6-st-teach-feminine-3`, `u6-st-teach-feminine-4` |
 | 6 | `u6-s-animacy` | `u6-st-guided-animacy-1` | `u6-st-teach-animacy-2`, `u6-st-teach-animacy-3`, `u6-st-teach-animacy-4`, `u6-st-teach-animacy-5`, `u6-st-teach-animacy-6` |
 | 6 | `u6-s-pronoun` | `u6-st-guided-pronoun-1` | `u6-st-teach-pronoun-2`, `u6-st-teach-pronoun-3`, `u6-st-teach-pronoun-4`, `u6-st-teach-pronoun-5` |
 | 6 | `u6-s-direction` | `u6-st-guided-direction-1` | `u6-st-teach-direction-2`, `u6-st-teach-direction-3`, `u6-st-teach-direction-4` |
 | 7 | `u7-s-default` | `u7-st-guided-default-1` | `u7-st-teach-default-2`, `u7-st-teach-default-3`, `u7-st-teach-default-4`, `u7-st-teach-default-5`, `u7-st-teach-default-6` |
 | 7 | `u7-s-endings` | `u7-st-guided-endings-1` | `u7-st-teach-endings-2`, `u7-st-teach-endings-3`, `u7-st-teach-endings-4`, `u7-st-teach-endings-5`, `u7-st-teach-endings-6`, `u7-st-teach-endings-7` |
-| 7 | `u7-s-spelling` | `u7-st-guided-spelling-1` | `u7-st-teach-spelling-2`, `u7-st-teach-spelling-3`, `u7-st-teach-spelling-4` |
 | 7 | `u7-s-question` | `u7-st-guided-question-1` | `u7-st-teach-question-2`, `u7-st-teach-question-3` |
 | 7 | `u7-s-demonstrative` | `u7-st-guided-demonstrative-1` | `u7-st-teach-demonstrative-2`, `u7-st-teach-demonstrative-3`, `u7-st-teach-demonstrative-4` |
 | 7 | `u7-s-place` | `u7-st-guided-place-1` | `u7-st-teach-place-2`, `u7-st-teach-place-3`, `u7-st-teach-place-4`, `u7-st-teach-place-5` |
@@ -30,7 +28,6 @@ The Unit 24 absence session and Unit 25 courtesy session no longer have this ord
 | 7 | `u7-s-adverb-pairs` | `u7-st-guided-adverb-pairs-1` | `u7-st-teach-adverb-pairs-2` |
 | 7 | `u7-s-gap-adverb-paradigm` | `u7-st-guided-manner-1` | `u7-st-teach-manner-2`, `u7-st-teach-manner-3` |
 | 8 | `u8-s-plural` | `u8-st-guided-plural-1` | `u8-st-teach-plural-2`, `u8-st-teach-plural-3`, `u8-st-teach-plural-4`, `u8-st-teach-plural-5`, `u8-st-teach-plural-6`, `u8-st-teach-plural-7`, `u8-st-teach-plural-8` |
-| 8 | `u8-s-spelling` | `u8-st-guided-spelling-1` | `u8-st-teach-spelling-2`, `u8-st-teach-spelling-3`, `u8-st-teach-spelling-4`, `u8-st-teach-spelling-5` |
 | 8 | `u8-s-irregular` | `u8-st-guided-irregular-1` | `u8-st-teach-irregular-2`, `u8-st-teach-irregular-3`, `u8-st-teach-irregular-4`, `u8-st-teach-irregular-5`, `u8-st-teach-irregular-6` |
 | 8 | `u8-s-agreement` | `u8-st-guided-agreement-1` | `u8-st-teach-agreement-2`, `u8-st-teach-agreement-3`, `u8-st-teach-agreement-4`, `u8-st-teach-agreement-5` |
 | 8 | `u8-s-availability` | `u8-st-guided-availability-1` | `u8-st-teach-availability-2`, `u8-st-teach-availability-3` |
@@ -54,7 +51,6 @@ The Unit 24 absence session and Unit 25 courtesy session no longer have this ord
 | 11 | `u11-s-reflexive` | `u11-st-guided-reflexive-1` | `u11-st-teach-reflexive-2`, `u11-st-teach-reflexive-3`, `u11-st-teach-reflexive-4`, `u11-st-teach-reflexive-5`, `u11-st-teach-reflexive-6` |
 | 12 | `u12-s-future-imp` | `u12-st-guided-future-imp-1` | `u12-st-teach-future-imp-2`, `u12-st-teach-future-imp-3` |
 | 12 | `u12-s-future-perf` | `u12-st-guided-future-perf-1` | `u12-st-teach-future-perf-2`, `u12-st-teach-future-perf-3`, `u12-st-teach-future-perf-4` |
-| 12 | `u12-s-aspect` | `u12-st-guided-aspect-1` | `u12-st-teach-aspect-2`, `u12-st-teach-aspect-3` |
 | 12 | `u12-s-dative` | `u12-st-guided-dative-1` | `u12-st-teach-dative-2`, `u12-st-teach-dative-3`, `u12-st-teach-dative-4`, `u12-st-teach-dative-5`, `u12-st-teach-dative-6` |
 | 12 | `u12-s-spelling` | `u12-st-guided-spelling-1` | `u12-st-teach-spelling-2`, `u12-st-teach-spelling-3` |
 | 12 | `u12-s-prep-plural` | `u12-st-guided-prep-plural-1` | `u12-st-teach-prep-plural-2`, `u12-st-teach-prep-plural-3`, `u12-st-teach-prep-plural-4`, `u12-st-teach-prep-plural-5`, `u12-st-teach-prep-plural-6` |
@@ -68,9 +64,7 @@ The Unit 24 absence session and Unit 25 courtesy session no longer have this ord
 | 15 | `u15-s-imperative` | `u15-st-guided-imperative-1` | `u15-st-teach-imperative-2`, `u15-st-teach-imperative-3` |
 | 15 | `u15-s-say-request` | `u15-st-guided-say-request-1` | `u15-st-teach-say-request-2`, `u15-st-teach-say-request-3`, `u15-st-teach-say-request-4` |
 | 15 | `u15-s-aspect-consolidate` | `u15-st-guided-aspect-consolidate-1` | `u15-st-teach-aspect-consolidate-2`, `u15-st-teach-aspect-consolidate-3` |
-| 16 | `u16-s-inst-sg` | `u16-st-guided-inst-sg-1` | `u16-st-teach-inst-sg-2`, `u16-st-teach-inst-sg-3`, `u16-st-teach-inst-sg-4`, `u16-st-teach-inst-sg-5`, `u16-st-teach-inst-sg-6`, `u16-st-teach-inst-sg-7` |
 | 16 | `u16-s-inst-pl` | `u16-st-guided-inst-pl-1` | `u16-st-teach-inst-pl-2`, `u16-st-teach-inst-pl-3`, `u16-st-teach-inst-pl-4`, `u16-st-teach-inst-pl-5`, `u16-st-teach-inst-pl-6`, `u16-st-teach-inst-pl-7` |
-| 16 | `u16-s-inst-adj` | `u16-st-guided-inst-adj-1` | `u16-st-teach-inst-adj-2`, `u16-st-teach-inst-adj-3`, `u16-st-teach-inst-adj-4` |
 | 16 | `u16-s-inst-means` | `u16-st-guided-inst-means-1` | `u16-st-teach-inst-means-2`, `u16-st-teach-inst-means-3` |
 | 16 | `u16-s-inst-prep` | `u16-st-guided-inst-prep-1` | `u16-st-teach-inst-prep-2`, `u16-st-teach-inst-prep-3` |
 | 16 | `u16-s-complements` | `u16-st-guided-complements-1` | `u16-st-teach-complements-2`, `u16-st-teach-complements-3` |

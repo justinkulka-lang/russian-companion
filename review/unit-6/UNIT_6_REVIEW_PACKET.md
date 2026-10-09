@@ -11,12 +11,12 @@ Unit 6 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 8ff440be0691161ffaf053961d0fdfec1863856b
-- Unit content-review SHA-256: a9aa3117e82201373679079f03d624e38c8584047b773cdd78e4c31c528517f5
+- Curriculum source commit: 0e763dfd4284587065fbb48aae5c5ee5add54f8f
+- Unit content-review SHA-256: 5611a39298dce59ab9aea870cfc469f9a848ac0bf40c31b3b6f8f9221917b8ef
 - Mapping-package SHA-256: f95e0c2f351ec7cba23cdb09b87274bb97f2e392dd783ad59c2978ed58f63b15
-- Pack content-review SHA-256: 20e41143b4550fcb20e92589fbf36b56ec072514ba653f2363a5ad34b6a1d82d
-- Review-package SHA-256: 167b7cb707f060da1087cc1cf982fc90815fd1d1c0d25ab59b0fb706b5fcf1a3
-- Repository source SHA-256: a97b0b94acec8e829de55d86e1d8db99eacfd540d6225dd45a78774595fc28cf
+- Pack content-review SHA-256: d1d74b79987cf9d789d845a9d6e8d444d4c60bb03b12734acec5800b8a1b64ca
+- Review-package SHA-256: e73b286daceff07b6ca25e1c346d28cbe6210e35aafd94a121eef1774522b21f
+- Repository source SHA-256: b41ea55aababf208fcf77117905725c6bd19d944dc67f358b6da1dd55ecde15f
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -831,12 +831,12 @@ remediationStepId=u6-st-rem-object
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 828934e500321e15e1962ffb956a14711f2fc3fe7ddf0d40919959c011a83269
+- Content hash: 60d30df5f12d0854a99ca9cafc4b53ec611534edf896e83c9a655231dc4c5cb8
 
 title=Choose the admitted object form
 estimatedMinutes=12
 objectives=obj-u6-feminine
-steps=u6-st-teach-feminine-1,u6-st-guided-feminine-1,u6-st-teach-feminine-2,u6-st-teach-feminine-3,u6-st-teach-feminine-4,u6-st-rem-feminine,u6-st-check-feminine
+steps=u6-st-teach-feminine-1,u6-st-teach-feminine-2,u6-st-teach-feminine-3,u6-st-teach-feminine-4,u6-st-guided-feminine-1,u6-st-rem-feminine,u6-st-check-feminine
 
 ### STEP `u6-st-teach-feminine-1`
 
@@ -859,28 +859,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u6-st-guided-feminine-1`
-
-- Objectives: obj-u6-feminine
-- Sessions: u6-s-feminine
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 69adfc0bd5b5c760e4e82a72a7b850ba365a11560c5b1e9a07990659083261a8
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u6-g-feminine-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u6-st-rem-feminine
 
 ### STEP `u6-st-teach-feminine-2`
 
@@ -947,6 +925,28 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u6-st-guided-feminine-1`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-feminine
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 69adfc0bd5b5c760e4e82a72a7b850ba365a11560c5b1e9a07990659083261a8
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u6-g-feminine-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u6-st-rem-feminine
 
 ### STEP `u6-st-rem-feminine`
 
@@ -9164,8 +9164,6 @@ permitsAppUse=true
 - `u6-st-teach-feminine-1` EXAMPLE `ex-or-u6-feminine-0`
 - `u6-st-teach-feminine-1` EXAMPLE `ex-or-u6-feminine-1`
 - `u6-st-teach-feminine-1` REFERENCE `ref-u610-attribution`
-- `u6-st-guided-feminine-1` REMEDIATION `u6-st-rem-feminine`
-- `u6-st-guided-feminine-1` ITEM `u6-g-feminine-0`
 - `u6-st-teach-feminine-2` REFERENCE `ref-u610-attribution`
 - `u6-st-teach-feminine-3` EXAMPLE `ex-or-u6-feminine-2`
 - `u6-st-teach-feminine-3` EXAMPLE `ex-or-u6-feminine-3`
@@ -9173,6 +9171,8 @@ permitsAppUse=true
 - `u6-st-teach-feminine-4` EXAMPLE `ex-or-u6-feminine-4`
 - `u6-st-teach-feminine-4` EXAMPLE `ex-or-u6-feminine-5`
 - `u6-st-teach-feminine-4` REFERENCE `ref-u610-attribution`
+- `u6-st-guided-feminine-1` REMEDIATION `u6-st-rem-feminine`
+- `u6-st-guided-feminine-1` ITEM `u6-g-feminine-0`
 - `u6-st-rem-feminine` EXAMPLE `ex-or-u6-feminine-0`
 - `u6-st-rem-feminine` EXAMPLE `ex-or-u6-feminine-1`
 - `u6-st-rem-feminine` REFERENCE `ref-ca-cases`
