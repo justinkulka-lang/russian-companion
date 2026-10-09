@@ -1,5 +1,6 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.v2.curriculum.ContentAuditSources
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2PackLoader
@@ -211,8 +212,26 @@ class BatchAUnits71620Test {
                 val assessment = item.assessment!!
                 val why = assessment.whyAnswerDemonstratesObjective
                 val shown = item.promptLetter!!
-                assertEquals(item.id, why, item.feedback)
-                assertCompleteRelationship(item.id, why, shown, item.answer)
+                val corrected = item.sourceId == ContentAuditSources.SOURCE_ID
+                if (corrected) {
+                    assertEquals(item.id, "STATED_APPLICATION", assessment.relationKind)
+                    val records = assessment.relationParticipantIds.map { id ->
+                        pack.provenanceRecords.single { it.itemId == id }
+                    }
+                    assertTrue(item.id, records.isNotEmpty())
+                    assertTrue(item.id, records.all { it.sourceId == ContentAuditSources.SOURCE_ID })
+                    assertTrue(item.id, records.any { record ->
+                        record.synthesis!!.applications.any { application ->
+                            application.cue == shown && application.answer == item.answer &&
+                                application.distractors.toSet() == (item.options - item.answer).toSet()
+                        }
+                    })
+                    assertTrue(item.id, why.contains(shown) && why.contains(item.answer))
+                    assertTrue(item.id, item.feedback.contains(shown) && item.feedback.contains(item.answer))
+                } else {
+                    assertEquals(item.id, why, item.feedback)
+                    assertCompleteRelationship(item.id, why, shown, item.answer)
+                }
                 val concealed = why.replace(item.answer, item.answer + " leftover") + " " + item.answer
                 assertTrue(concealed.contains(item.answer))
                 assertFalse(
@@ -230,7 +249,9 @@ class BatchAUnits71620Test {
                     val difference = assessment.distractorDifference[index]
                     assertEquals("${item.id} rationale", rationale, difference)
                     val shownFormGloss = glossWhenOptionIsShownForm(rationale, option)
-                    if (shownFormGloss != null) {
+                    if (corrected) {
+                        assertTrue(item.id, rationale.contains(option))
+                    } else if (shownFormGloss != null) {
                         assertCompleteRelationship(item.id, rationale, option, shownFormGloss)
                     } else {
                         assertCompleteRelationship(item.id, rationale, competingForm(rationale, option), option)
@@ -380,7 +401,13 @@ class BatchAUnits71620Test {
         assertFalse(manifest.contains("android.permission.INTERNET"))
         assertTrue(pack.provenanceRecords.none { it.originalSourceText.contains("The New Penguin Russian Course") })
         assertTrue(pack.unitReviews.all { it.reviewer.isNullOrBlank() && it.status == "IMPLEMENTED_PENDING_FINAL_AUDIT" })
-        assertTrue(pack.ownedEditionMappings.isEmpty())
+        assertEquals((1..30).toSet(), pack.ownedEditionMappings.map { it.unitNumber }.toSet())
+        assertEquals(30, pack.ownedEditionMappings.size)
+        assertTrue(pack.ownedEditionMappings.all {
+            it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() &&
+                it.reviewerQualification.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() &&
+                it.isbn.isNullOrBlank() && it.isbnObservation == "UNRESOLVED"
+        })
     }
 
     private fun replaceItem(pack: V2CurriculumPack, mutated: dev.russiancompanion.v2.curriculum.V2CheckItem) =

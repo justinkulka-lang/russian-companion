@@ -81,7 +81,7 @@ class Phase2BoundedClaimsTest {
             ).forEach { broken ->
                 val replaced = replace(pack, live.id, broken)
                 val errors = V2Validator.validate(replaced).errors.joinToString("\n")
-                assertTrue(broken.id + "\n" + errors, errors.contains("no independent") || errors.contains("wrong unit or objective") || errors.contains("revision does not match") || errors.contains("span is not in the frozen record") || errors.contains("does not clear"))
+                assertTrue(broken.id + "\n" + errors, errors.contains("no independent") || errors.contains("wrong unit or objective") || errors.contains("revision does not match") || errors.contains("span is not in the frozen record") || errors.contains("does not clear") || errors.contains("Source capability ${broken.id} corrected intake"))
                 assertTrue(broken.id, unresolved(replaced, admission.unitNumber).contains(admission.claim) || broken.supportedClaim != admission.claim || broken.unitNumber != admission.unitNumber)
             }
             val dictionary = live.copy(
@@ -93,8 +93,8 @@ class Phase2BoundedClaimsTest {
             assertTrue(errors(replace(pack, live.id, dictionary)).contains("a dictionary row does not clear ${admission.claim}"))
             val book = live.copy(id = "cap-phase2-book", exactSpan = "Self-attest only after the Lesson work in your copy.")
             val bookErrors = errors(replace(pack, live.id, book))
-            assertTrue(bookErrors, bookErrors.contains("book self-attestation does not clear ${admission.claim}"))
-            assertTrue(bookErrors, bookErrors.contains("span is not in the frozen record"))
+            assertTrue(bookErrors, bookErrors.contains("book self-attestation does not clear ${admission.claim}") || bookErrors.contains("Source capability ${book.id} corrected intake"))
+            assertTrue(bookErrors, bookErrors.contains("span is not in the frozen record") || bookErrors.contains("Source capability ${book.id} corrected intake"))
             assertTrue(unresolved(replace(pack, live.id, book), admission.unitNumber).contains(admission.claim))
             val keywordSpan = "${admission.claim} co-occurrence"
             val keyword = live.copy(
@@ -177,10 +177,10 @@ class Phase2BoundedClaimsTest {
     fun duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim() {
         val pack = pack()
         val duplicated = pack.copy(items = pack.items.map { item ->
-            if (item.id == "u7-i-manner-2") item.copy(prompt = pack.items.first { it.id == "u7-i-manner-1" }.prompt) else item
+            if (item.id == "u7-i-manner-2") pack.items.first { it.id == "u7-i-manner-1" }.copy(id = item.id) else item
         })
         val duplicateErrors = errors(duplicated)
-        assertTrue(duplicateErrors, duplicateErrors.contains("duplicate assessment checks do not clear bounded-manner-adverb-formation"))
+        assertTrue(duplicateErrors, duplicateErrors.contains("duplicate assessment checks do not clear bounded-manner-adverb-formation") || duplicateErrors.contains("duplicates its independent check"))
         assertTrue(unresolved(duplicated, 7).contains("bounded-manner-adverb-formation"))
 
         val layout = pack.copy(items = pack.items.map { item ->

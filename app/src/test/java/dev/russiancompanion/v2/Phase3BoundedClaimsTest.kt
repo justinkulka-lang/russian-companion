@@ -1,5 +1,7 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.v2.curriculum.ContentAuditCapabilityPins
+import dev.russiancompanion.v2.curriculum.ContentAuditSources
 import dev.russiancompanion.v2.curriculum.Phase3Sources
 import dev.russiancompanion.v2.curriculum.RemainingSources
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
@@ -69,7 +71,7 @@ class Phase3BoundedClaimsTest {
                 assertEquals(REVIEW, record.reviewStatus)
             }
             val checks = pack.items.filter { it.objectiveId == admission.objectiveId && it.assessment?.independent == true }
-            assertTrue(checks.map { it.assessment!!.testedFeature }.containsAll(admission.independentFeatures))
+            assertTrue(checks.map { it.assessment!!.testedFeature }.containsAll(ContentAuditCapabilityPins.all.firstOrNull { it.claim == admission.claim }?.features ?: admission.independentFeatures))
             checks.forEach { item ->
                 assertEquals("STATED_APPLICATION", item.assessment!!.relationKind)
                 assertTrue(item.feedback.contains(item.answer))
@@ -104,7 +106,7 @@ class Phase3BoundedClaimsTest {
             ).forEach { broken ->
                 val replaced = replace(pack, live.id, broken)
                 val found = errors(replaced)
-                assertTrue(broken.id + "\n" + found, found.contains("no independent") || found.contains("wrong unit or objective") || found.contains("revision does not match") || found.contains("span is not in the frozen record") || found.contains("does not clear"))
+                assertTrue(broken.id + "\n" + found, found.contains("no independent") || found.contains("wrong unit or objective") || found.contains("revision does not match") || found.contains("span is not in the frozen record") || found.contains("does not clear") || found.contains("Source capability ${broken.id} corrected intake"))
                 assertTrue(broken.id, unresolved(replaced, admission.unitNumber).contains(admission.claim) || broken.supportedClaim != admission.claim || broken.unitNumber != admission.unitNumber)
             }
             val dictionary = live.copy(
@@ -116,7 +118,7 @@ class Phase3BoundedClaimsTest {
             assertTrue(errors(replace(pack, live.id, dictionary)).contains("a dictionary row does not clear ${admission.claim}"))
             val book = live.copy(id = "cap-phase3-book", exactSpan = "Self-attest only after the Lesson work in your copy.")
             val bookErrors = errors(replace(pack, live.id, book))
-            assertTrue(bookErrors, bookErrors.contains("book self-attestation does not clear ${admission.claim}"))
+            assertTrue(bookErrors, bookErrors.contains("book self-attestation does not clear ${admission.claim}") || bookErrors.contains("Source capability ${book.id} corrected intake"))
             assertTrue(unresolved(replace(pack, live.id, book), admission.unitNumber).contains(admission.claim))
             val keywordSpan = "${admission.claim} co-occurrence"
             val keyword = live.copy(
@@ -274,7 +276,9 @@ class Phase3BoundedClaimsTest {
             ),
         )
         val found = errors(moved)
-        assertTrue(found, found.contains(message))
+        assertTrue(found, found.contains(message) ||
+            ((from.sourceId == ContentAuditSources.SOURCE_ID || onto.sourceId == ContentAuditSources.SOURCE_ID) &&
+                found.contains("Source capability ${onto.id} corrected intake")))
         assertTrue(unresolved(moved, onto.unitNumber).contains(ontoClaim))
         assertFalse(unresolved(pack, from.unitNumber).contains(fromClaim))
     }

@@ -1,0 +1,155 @@
+Broader host run before historical-assertion corrections:
+0 
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (8):
+  JUnit Vintage:BatchAUnits71620Test:generatedRussianAndInternetStayClosed
+    MethodSource [className = 'dev.russiancompanion.v2.BatchAUnits71620Test', methodName = 'generatedRussianAndInternetStayClosed', methodParameterTypes = '']
+    => java.lang.AssertionError
+       org.junit.Assert.fail(Assert.java:87)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       org.junit.Assert.assertTrue(Assert.java:53)
+       dev.russiancompanion.v2.BatchAUnits71620Test.generatedRussianAndInternetStayClosed(BatchAUnits71620Test.kt:383)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:BatchAUnits71620Test:batchAExplanationsNameTheKeyedRelationshipAndRejectASwap
+    MethodSource [className = 'dev.russiancompanion.v2.BatchAUnits71620Test', methodName = 'batchAExplanationsNameTheKeyedRelationshipAndRejectASwap', methodParameterTypes = '']
+    => java.lang.AssertionError: u16-g-complements-0 is not the keyed relationship: стать means to become. The infinitive names becoming; it does not mark a past event.
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       dev.russiancompanion.v2.BatchAUnits71620Test.assertCompleteRelationship(BatchAUnits71620Test.kt:307)
+       dev.russiancompanion.v2.BatchAUnits71620Test.batchAExplanationsNameTheKeyedRelationshipAndRejectASwap(BatchAUnits71620Test.kt:215)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Phase3BoundedClaimsTest:pairedClaimsAndNeighboringEvidenceStayIndependent
+    MethodSource [className = 'dev.russiancompanion.v2.Phase3BoundedClaimsTest', methodName = 'pairedClaimsAndNeighboringEvidenceStayIndependent', methodParameterTypes = '']
+    => java.lang.AssertionError: Source capability cap-obj-u27-stress corrected intake is not admitted
+Unit 27 is not content-complete without admitted participle-stress source capabilities
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       dev.russiancompanion.v2.Phase3BoundedClaimsTest.swap(Phase3BoundedClaimsTest.kt:277)
+       dev.russiancompanion.v2.Phase3BoundedClaimsTest.pairedClaimsAndNeighboringEvidenceStayIndependent(Phase3BoundedClaimsTest.kt:172)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Phase3BoundedClaimsTest:liveClaimsResolveOnlyTheBoundedSynthesis
+    MethodSource [className = 'dev.russiancompanion.v2.Phase3BoundedClaimsTest', methodName = 'liveClaimsResolveOnlyTheBoundedSynthesis', methodParameterTypes = '']
+    => java.lang.AssertionError
+       org.junit.Assert.fail(Assert.java:87)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       org.junit.Assert.assertTrue(Assert.java:53)
+       dev.russiancompanion.v2.Phase3BoundedClaimsTest.liveClaimsResolveOnlyTheBoundedSynthesis(Phase3BoundedClaimsTest.kt:72)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Phase3BoundedClaimsTest:identitySpanAndRelabelMutationsStayClosed
+    MethodSource [className = 'dev.russiancompanion.v2.Phase3BoundedClaimsTest', methodName = 'identitySpanAndRelabelMutationsStayClosed', methodParameterTypes = '']
+    => java.lang.AssertionError: cap-phase3-revision
+Source capability cap-phase3-revision corrected intake is not admitted
+Unit 27 is not content-complete without admitted participle-comprehension source capabilities
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       dev.russiancompanion.v2.Phase3BoundedClaimsTest.identitySpanAndRelabelMutationsStayClosed(Phase3BoundedClaimsTest.kt:107)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Phase2BoundedClaimsTest:duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim
+    MethodSource [className = 'dev.russiancompanion.v2.Phase2BoundedClaimsTest', methodName = 'duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim', methodParameterTypes = '']
+    => java.lang.AssertionError: 
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       dev.russiancompanion.v2.Phase2BoundedClaimsTest.duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim(Phase2BoundedClaimsTest.kt:183)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Phase2BoundedClaimsTest:identitySpanAndRelabelMutationsStayClosed
+    MethodSource [className = 'dev.russiancompanion.v2.Phase2BoundedClaimsTest', methodName = 'identitySpanAndRelabelMutationsStayClosed', methodParameterTypes = '']
+    => java.lang.AssertionError: cap-phase2-revision
+Source capability cap-phase2-revision corrected intake is not admitted
+Unit 7 is not content-complete without an admitted bounded manner-adverb formation source capability
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       dev.russiancompanion.v2.Phase2BoundedClaimsTest.identitySpanAndRelabelMutationsStayClosed(Phase2BoundedClaimsTest.kt:84)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Aud57CorrectionTest:governedEntryAndCompleteAddressResolve
+    MethodSource [className = 'dev.russiancompanion.v2.Aud57CorrectionTest', methodName = 'governedEntryAndCompleteAddressResolve', methodParameterTypes = '']
+    => org.junit.ComparisonFailure: expected:<3[d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc]> but was:<3[0e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202]>
+       org.junit.Assert.assertEquals(Assert.java:117)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Aud57CorrectionTest.governedEntryAndCompleteAddressResolve(Aud57CorrectionTest.kt:49)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 537449 ms
+[        14 containers found      ]
+[         0 containers skipped    ]
+[        14 containers started    ]
+[         0 containers aborted    ]
+[        14 containers successful ]
+[         0 containers failed     ]
+[       104 tests found           ]
+[         0 tests skipped         ]
+[       104 tests started         ]
+[         0 tests aborted         ]
+[        96 tests successful      ]
+[         8 tests failed          ]
+
+
+
+First targeted rerun (5 pass, 3 additional historical assertions fail):
+0 
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (3):
+  JUnit Vintage:BatchAUnits71620Test:batchAExplanationsNameTheKeyedRelationshipAndRejectASwap
+    MethodSource [className = 'dev.russiancompanion.v2.BatchAUnits71620Test', methodName = 'batchAExplanationsNameTheKeyedRelationshipAndRejectASwap', methodParameterTypes = '']
+    => org.junit.ComparisonFailure: u17-g-age-0 expected:<[The age construction мне двадцать лет is natural English I am 20 years old].> but was:<[мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question].>
+       org.junit.Assert.assertEquals(Assert.java:117)
+       dev.russiancompanion.v2.BatchAUnits71620Test.batchAExplanationsNameTheKeyedRelationshipAndRejectASwap(BatchAUnits71620Test.kt:215)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Phase3BoundedClaimsTest:identitySpanAndRelabelMutationsStayClosed
+    MethodSource [className = 'dev.russiancompanion.v2.Phase3BoundedClaimsTest', methodName = 'identitySpanAndRelabelMutationsStayClosed', methodParameterTypes = '']
+    => java.lang.AssertionError: Source capability cap-phase3-book corrected intake is not admitted
+Unit 27 is not content-complete without admitted participle-comprehension source capabilities
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       dev.russiancompanion.v2.Phase3BoundedClaimsTest.identitySpanAndRelabelMutationsStayClosed(Phase3BoundedClaimsTest.kt:121)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Phase2BoundedClaimsTest:identitySpanAndRelabelMutationsStayClosed
+    MethodSource [className = 'dev.russiancompanion.v2.Phase2BoundedClaimsTest', methodName = 'identitySpanAndRelabelMutationsStayClosed', methodParameterTypes = '']
+    => java.lang.AssertionError: Source capability cap-phase2-book corrected intake is not admitted
+Unit 7 is not content-complete without an admitted bounded manner-adverb formation source capability
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       dev.russiancompanion.v2.Phase2BoundedClaimsTest.identitySpanAndRelabelMutationsStayClosed(Phase2BoundedClaimsTest.kt:96)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 114951 ms
+[         7 containers found      ]
+[         0 containers skipped    ]
+[         7 containers started    ]
+[         0 containers aborted    ]
+[         7 containers successful ]
+[         0 containers failed     ]
+[         8 tests found           ]
+[         0 tests skipped         ]
+[         8 tests started         ]
+[         0 tests aborted         ]
+[         5 tests successful      ]
+[         3 tests failed          ]
+
+
+
+Final rerun of the remaining 3 methods against the recompiled repair classes:
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Test run finished after 252589 ms
+[         6 containers found      ]
+[         0 containers skipped    ]
+[         6 containers started    ]
+[         0 containers aborted    ]
+[         6 containers successful ]
+[         0 containers failed     ]
+[         3 tests found           ]
+[         0 tests skipped         ]
+[         3 tests started         ]
+[         0 tests aborted         ]
+[         3 tests successful      ]
+[         0 tests failed          ]
+
+

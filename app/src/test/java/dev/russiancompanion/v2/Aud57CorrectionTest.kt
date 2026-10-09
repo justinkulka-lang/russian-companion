@@ -1,5 +1,6 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.v2.curriculum.ContentAuditCapabilityPins
 import dev.russiancompanion.v2.curriculum.Phase3Sources
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2PackLoader
@@ -46,7 +47,8 @@ class Aud57CorrectionTest {
         assertTrue(complete.answer.contains("region"))
         assertTrue(complete.answer.contains("country"))
         assertEquals(Phase3Sources.STRESS.sourceHash, pack.sourceCapabilities.single { it.supportedClaim == "participle-stress" }.sourceHash)
-        assertEquals(Phase3Sources.COMPREHENSION.sourceHash, pack.sourceCapabilities.single { it.supportedClaim == "participle-comprehension" }.sourceHash)
+        assertEquals(ContentAuditCapabilityPins.all.single { it.claim == "participle-comprehension" }.hash,
+            pack.sourceCapabilities.single { it.supportedClaim == "participle-comprehension" }.sourceHash)
         assertEquals(Phase3Sources.REGISTER.sourceHash, pack.sourceCapabilities.single { it.supportedClaim == "bookish-register" }.sourceHash)
         assertEquals(Phase3Sources.READING.sourceHash, pack.sourceCapabilities.single { it.supportedClaim == "bookish-reading" }.sourceHash)
     }
