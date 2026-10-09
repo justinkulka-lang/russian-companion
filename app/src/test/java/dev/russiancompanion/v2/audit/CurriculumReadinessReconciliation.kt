@@ -282,7 +282,9 @@ internal fun renderCurriculumReadinessMarkdown(model: CurriculumReadinessReconci
         append("`internetPermissionDeclaredInMainManifest` reads only `app/src/main/AndroidManifest.xml`. ")
         append("`internetPermissionDeclaredInMergedDebugManifest` reads only the debug merged manifest at ")
         append("`app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml` ")
-        append("when that build output exists, and is `NOT_GENERATED` when it does not. ")
+        append("in live reconciliation when that build output exists, and is `NOT_GENERATED` when it does not. ")
+        append("Committed source snapshots use `NOT_OBSERVED_IN_SOURCE_SNAPSHOT` for this build-dependent observation; ")
+        append("the Android tests inspect the actual merged manifest separately. ")
         append("These are narrow structural or known-marker checks. They are not comprehensive authorship, ")
         append("copyright, or merged-manifest analysis.\n\n")
         append("## Global reconciliation\n\n")
@@ -395,8 +397,14 @@ internal fun renderCurriculumReadinessJson(model: CurriculumReadinessReconciliat
     }
 }
 
+/** A committed source snapshot cannot attest to an ephemeral Android build output. */
+internal fun sourceReadinessSnapshot(repositoryRoot: File): CurriculumReadinessReconciliation =
+    reconcileCurriculumReadiness(repositoryRoot).copy(
+        internetPermissionDeclaredInMergedDebugManifest = "NOT_OBSERVED_IN_SOURCE_SNAPSHOT",
+    )
+
 internal fun writeCurriculumReadinessReports(repositoryRoot: File): Pair<String, String> {
-    val model = reconcileCurriculumReadiness(repositoryRoot)
+    val model = sourceReadinessSnapshot(repositoryRoot)
     val markdown = renderCurriculumReadinessMarkdown(model)
     val jsonText = renderCurriculumReadinessJson(model)
     val directory = File(repositoryRoot, CURRICULUM_READINESS_DIRECTORY)

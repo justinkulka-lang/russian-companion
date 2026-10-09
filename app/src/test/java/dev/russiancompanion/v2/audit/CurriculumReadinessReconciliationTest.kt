@@ -26,7 +26,7 @@ import java.io.File
 class CurriculumReadinessReconciliationTest {
     @Test
     fun committedReportsMatchTheGeneratorAndStayByteIdentical() {
-        val model = liveModel()
+        val model = sourceReadinessSnapshot(root())
         val markdown = renderCurriculumReadinessMarkdown(model)
         val jsonText = renderCurriculumReadinessJson(model)
         assertEquals(markdown, renderCurriculumReadinessMarkdown(model))
@@ -53,6 +53,21 @@ class CurriculumReadinessReconciliationTest {
         markdownTable(markdown, "| Total |").forEach { row ->
             assertEquals(row.getValue("Value"), totals.getValue(row.getValue("Total")).jsonPrimitive.content)
         }
+    }
+
+    @Test
+    fun sourceSnapshotDoesNotAttestToAnEphemeralMergedManifest() {
+        val live = liveModel()
+        val snapshot = sourceReadinessSnapshot(root())
+        assertEquals(
+            live.copy(internetPermissionDeclaredInMergedDebugManifest = "NOT_OBSERVED_IN_SOURCE_SNAPSHOT"),
+            snapshot,
+        )
+        val parsed = Json.parseToJsonElement(renderCurriculumReadinessJson(snapshot)).jsonObject
+        assertEquals("NOT_OBSERVED_IN_SOURCE_SNAPSHOT", parsed.getValue("internetPermissionDeclaredInMergedDebugManifest").jsonPrimitive.content)
+        assertTrue(renderCurriculumReadinessMarkdown(snapshot).contains("Android tests inspect the actual merged manifest separately"))
+        // matrixUsesCanonicalDigestsReviewsAndDoesNotInventApproval keeps its
+        // separate ABSENT assertion against the actual Android merged manifest.
     }
 
     @Test

@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "89d7d6aa7bc7900407b2f011d3a0d18efa7e8e1f221f77a3252548950aa9397f",
+    "curriculumFileSha256": "1cf09b6d1b91c05a031d1a7fa9d96a15224727e2c5f74bc4ab111ae461794b35",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -6907,13 +6907,15 @@
       "contentKind": "steps",
       "reportedIssue": "English tense labels and non-completion are treated as categorical aspect correspondences.",
       "proposedCorrection": "Teach contextual process/habit/general-factual versus bounded-event readings; IPF need not assert non-completion.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "body"
+      ],
       "currentObject": {
         "id": "u11-st-teach-past-aspect-2",
         "kind": "TEACH",
         "title": "Admitted instruction",
-        "body": "An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.",
+        "body": "Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.",
         "dominantAction": "Continue",
         "referenceIds": [
           "ref-u1115-attribution"
@@ -6929,7 +6931,7 @@
         {
           "id": "obj-u11-past-aspect",
           "unitNumber": 11,
-          "title": "Choose the admitted completed past line",
+          "title": "Choose past-tense gender agreement",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u11-st-orient",
@@ -6939,8 +6941,6 @@
             "u11-st-teach-past-aspect-4"
           ],
           "exampleIds": [
-            "ex-u11-past-aspect-0",
-            "ex-u11-past-aspect-1",
             "ex-or-u11-past-aspect-2",
             "ex-or-u11-past-aspect-3",
             "ex-or-u11-past-aspect-4"
@@ -6983,15 +6983,16 @@
             "id": "u11-st-teach-past-aspect-1",
             "kind": "TEACH",
             "title": "Admitted lines",
-            "body": "я читал — I was reading. я прочитал — I read. ",
+            "body": "In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1115-attribution"
             ],
             "itemIds": [],
             "exampleIds": [
-              "ex-u11-past-aspect-0",
-              "ex-u11-past-aspect-1"
+              "ex-or-u11-past-aspect-2",
+              "ex-or-u11-past-aspect-3",
+              "ex-or-u11-past-aspect-4"
             ],
             "unavailableReason": null,
             "bookDirection": null,
@@ -7024,7 +7025,7 @@
             "id": "u11-st-teach-past-aspect-2",
             "kind": "TEACH",
             "title": "Admitted instruction",
-            "body": "An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.",
+            "body": "Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1115-attribution"
@@ -7043,7 +7044,7 @@
             "id": "u11-st-teach-past-aspect-3",
             "kind": "TEACH",
             "title": "Admitted lines",
-            "body": "прочита́л — read. прочита́ла — read. ",
+            "body": "The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1115-attribution"
@@ -7065,7 +7066,7 @@
             "id": "u11-st-teach-past-aspect-4",
             "kind": "TEACH",
             "title": "Admitted lines",
-            "body": "прочита́ло — read. ",
+            "body": "The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1115-attribution"
@@ -7086,7 +7087,7 @@
             "id": "u11-st-rem-past-aspect",
             "kind": "REMEDIATE",
             "title": "Remediation",
-            "body": "An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.",
+            "body": "Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
@@ -12862,7 +12863,7 @@
       "currentObject": {
         "id": "obj-u11-past-aspect",
         "unitNumber": 11,
-        "title": "Choose the admitted completed past line",
+        "title": "Choose past-tense gender agreement",
         "kind": "RECOGNITION",
         "instructionStepIds": [
           "u11-st-orient",
@@ -12872,8 +12873,6 @@
           "u11-st-teach-past-aspect-4"
         ],
         "exampleIds": [
-          "ex-u11-past-aspect-0",
-          "ex-u11-past-aspect-1",
           "ex-or-u11-past-aspect-2",
           "ex-or-u11-past-aspect-3",
           "ex-or-u11-past-aspect-4"
@@ -12893,7 +12892,7 @@
         {
           "id": "obj-u11-past-aspect",
           "unitNumber": 11,
-          "title": "Choose the admitted completed past line",
+          "title": "Choose past-tense gender agreement",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u11-st-orient",
@@ -12903,8 +12902,6 @@
             "u11-st-teach-past-aspect-4"
           ],
           "exampleIds": [
-            "ex-u11-past-aspect-0",
-            "ex-u11-past-aspect-1",
             "ex-or-u11-past-aspect-2",
             "ex-or-u11-past-aspect-3",
             "ex-or-u11-past-aspect-4"
@@ -12947,15 +12944,16 @@
             "id": "u11-st-teach-past-aspect-1",
             "kind": "TEACH",
             "title": "Admitted lines",
-            "body": "я читал — I was reading. я прочитал — I read. ",
+            "body": "In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1115-attribution"
             ],
             "itemIds": [],
             "exampleIds": [
-              "ex-u11-past-aspect-0",
-              "ex-u11-past-aspect-1"
+              "ex-or-u11-past-aspect-2",
+              "ex-or-u11-past-aspect-3",
+              "ex-or-u11-past-aspect-4"
             ],
             "unavailableReason": null,
             "bookDirection": null,
@@ -12988,7 +12986,7 @@
             "id": "u11-st-teach-past-aspect-2",
             "kind": "TEACH",
             "title": "Admitted instruction",
-            "body": "An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.",
+            "body": "Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1115-attribution"
@@ -13007,7 +13005,7 @@
             "id": "u11-st-teach-past-aspect-3",
             "kind": "TEACH",
             "title": "Admitted lines",
-            "body": "прочита́л — read. прочита́ла — read. ",
+            "body": "The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1115-attribution"
@@ -13029,7 +13027,7 @@
             "id": "u11-st-teach-past-aspect-4",
             "kind": "TEACH",
             "title": "Admitted lines",
-            "body": "прочита́ло — read. ",
+            "body": "The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1115-attribution"
@@ -13050,7 +13048,7 @@
             "id": "u11-st-rem-past-aspect",
             "kind": "REMEDIATE",
             "title": "Remediation",
-            "body": "An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.",
+            "body": "Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],

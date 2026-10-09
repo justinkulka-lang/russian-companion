@@ -42,16 +42,19 @@ class ContentAuditCorrectionTest {
         }
         val required = unit.objectives.filter { it.gating }.flatMap { it.checkItemIds }.toSet()
         assertEquals(8, required.size)
-        assertEquals(8, unit.advancement.minimumDistinctChecks)
+        assertEquals(8, unit.advancement!!.minimumDistinctChecks)
+        val correct = pack.items.filter { it.objectiveId in unit.objectives.filter { objective -> objective.gating }.map { objective -> objective.id } }
+            .map { it.id }.toSet()
         val learner = V2LearnerView(
             onboardingCompleted = true, currentUnitNumber = 11, startingPoint = V2StartingPoint.NEW_TO_CYRILLIC,
             hasPenguin = true, hasAnki = false, hasBinder = false, hasTutor = false, dailyMinutes = 25,
             transliterationEnabled = false, currentSessionId = null, currentStepIndex = 0,
-            completedStepIds = requiredInstructionSteps(unit).map { it.id }.toSet(), correctItemIds = required,
+            completedStepIds = requiredInstructionSteps(unit).map { it.id }.toSet(), correctItemIds = correct,
             bookAttestedUnits = setOf(11), completedUnitNumbers = emptySet(),
         )
-        assertTrue(advancementDecision(pack, unit, learner).allowed)
-        assertFalse(advancementDecision(pack, unit, learner.copy(correctItemIds = required - "u11-i-past-aspect-1")).allowed)
+        val decision = advancementDecision(pack, unit, learner)
+        assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+        assertFalse(advancementDecision(pack, unit, learner.copy(correctItemIds = correct - "u11-i-past-aspect-1")).allowed)
         assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
     }
 

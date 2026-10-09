@@ -103,7 +103,7 @@ def main():
         "All 75 target IDs resolve uniquely in the current curriculum. This is implementation evidence, not a semantic audit pass. All 75 dispositions remain pending semantic review.", "",
         f"Snapshot comparison: {counts['UNCHANGED']} unchanged, {counts['CHANGED']} changed, {counts['SNAPSHOT_ABSENT']} absent in the retained snapshot.", "",
         "The four absent snapshots are objective entries that the previous snapshot did not capture. Their absence does not mean those objectives were removed. The current evidence includes their exact gating and check assignments, related steps and provenance, and unit advancement rules.", "",
-        "The two changed items have updated declension explanations. Unchanged objects may already contain preliminary repairs; unchanged does not mean the original issue remains or that it is accepted.", "",
+        "Changed objects reflect ongoing correction work. Unchanged objects may already contain preliminary repairs; unchanged does not mean the original issue remains or that it is accepted.", "",
         f"Curriculum file SHA-256: `{digest(pack_bytes)}`. This is a raw file hash, distinct from the production canonical content-review digest.", "",
         f"Retained target snapshot SHA-256: `{digest(targets_bytes)}`.", "",
         "The JSON companion contains the issue, proposed correction, current object, related objectives and steps, provenance, and advancement context for every target. The retained CSV is unchanged.", "",

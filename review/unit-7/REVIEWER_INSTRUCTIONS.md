@@ -2,14 +2,14 @@
 
 Schema version: 3
 Application: dev.russiancompanion 2.0.0-dev (5)
-Curriculum source commit: 1e3c622131689cf11966efe3475d6f135c08dc02
+Curriculum source commit: 9dc153e77b0d1733225c3a4753225d5ab494b82b
 Unit content-review digest: f6a19dea12eae270c0af0760d148d34d8bbcc328fd3940cc91f9e9257f1d80fd
 Mapping-package digest: e39515585eea5b131797f0c93ce3508ee99b27206cc21070675d06aa975373c0
-Pack content-review digest: 2115dd2ce4e2db46bca1bd3066147eb26c850c3f07ce1bdbde4ea453e432cbdc
-Review-package digest: a686c64ae1c0a34dfa261ba4bc53a3365b641453da92b633448fb541f03567e5
-Repository source digest: f107a29d434c4ba786bd5563d0908c1c426805dec1bd230bd4b396dcbbd834ac
+Pack content-review digest: c16a259508444906c058c642a7ece9d8eb6a0d39d21c14280afbe39671d9fad3
+Review-package digest: 83cf5cc6f47d2149139cdc1b2fd4756eaf072e09e5616e84dd7b80e79c46165e
+Repository source digest: 9ad2b27a8712bdae97911a850cf2b2b3291d5f6b4c631cdd9030015b08e275dd
 
-This packet was generated from the packaged curriculum at curriculum source commit 1e3c622131689cf11966efe3475d6f135c08dc02. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
+This packet was generated from the packaged curriculum at curriculum source commit 9dc153e77b0d1733225c3a4753225d5ab494b82b. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
 
 ## Digests
 
@@ -37,7 +37,7 @@ The package marker scan detects only a fixed list of known prohibited mapping-in
 
 ## What approval means
 
-A later OWNER_ACCEPTED disposition applies only to version 2.0.0-dev, unit content-review digest f6a19dea12eae270c0af0760d148d34d8bbcc328fd3940cc91f9e9257f1d80fd, and mapping-package digest e39515585eea5b131797f0c93ce3508ee99b27206cc21070675d06aa975373c0, and only after RESEARCH_VERIFIED, IMPLEMENTED_PENDING_FINAL_AUDIT, FINAL_CURRICULUM_AUDIT_PASSED, and INDEPENDENT_AUDIT_VERIFIED are recorded for that same digest. Confirm review-package digest a686c64ae1c0a34dfa261ba4bc53a3365b641453da92b633448fb541f03567e5 and curriculum source commit 1e3c622131689cf11966efe3475d6f135c08dc02 before relying on this packet. Any later substantive instructional change reachable from Unit 7 invalidates downstream audit states. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER. CI does not approve that mapping.
+A later OWNER_ACCEPTED disposition applies only to version 2.0.0-dev, unit content-review digest f6a19dea12eae270c0af0760d148d34d8bbcc328fd3940cc91f9e9257f1d80fd, and mapping-package digest e39515585eea5b131797f0c93ce3508ee99b27206cc21070675d06aa975373c0, and only after RESEARCH_VERIFIED, IMPLEMENTED_PENDING_FINAL_AUDIT, FINAL_CURRICULUM_AUDIT_PASSED, and INDEPENDENT_AUDIT_VERIFIED are recorded for that same digest. Confirm review-package digest 83cf5cc6f47d2149139cdc1b2fd4756eaf072e09e5616e84dd7b80e79c46165e and curriculum source commit 9dc153e77b0d1733225c3a4753225d5ab494b82b before relying on this packet. Any later substantive instructional change reachable from Unit 7 invalidates downstream audit states. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER. CI does not approve that mapping.
 
 Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit 7 reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 
