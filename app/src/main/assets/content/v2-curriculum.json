@@ -30111,7 +30111,7 @@
       "distractorRationales": [
         "",
         "The frozen list pairs thanks with a different form.",
-        "The frozen list pairs I'm sorry / excuse me (informal) with a different form."
+        "Извини́те is the polite or plural form. The familiar singular is Извини́."
       ],
       "assessment": {
         "testedFeature": "COURTESY_PAIR",
@@ -30130,7 +30130,7 @@
         "distractorDifference": [
           "",
           "Thanks is a different courtesy word.",
-          "The informal apology is a different courtesy word."
+          "Извини́те is the polite or plural form. The familiar singular is Извини́."
         ],
         "whyAnswerDemonstratesObjective": "The frozen list says please; also used for a request and pairs that word with this form.",
         "contrastMembers": [
@@ -62248,22 +62248,6 @@
               "remediationStepId": null
             },
             {
-              "id": "u25-st-guided-courtesy-1",
-              "kind": "GUIDED",
-              "title": "Guided practice",
-              "body": "Choose the admitted record. The feedback states the frozen field.",
-              "dominantAction": "Continue",
-              "referenceIds": [],
-              "itemIds": [
-                "u25-g-courtesy-0"
-              ],
-              "exampleIds": [],
-              "unavailableReason": null,
-              "bookDirection": null,
-              "companionDirection": null,
-              "remediationStepId": "u25-st-rem-courtesy"
-            },
-            {
               "id": "u25-st-teach-courtesy-2",
               "kind": "TEACH",
               "title": "Admitted instruction",
@@ -62283,7 +62267,7 @@
               "id": "u25-st-teach-courtesy-3",
               "kind": "TEACH",
               "title": "Admitted lines",
-              "body": "Извини́те — I'm sorry / excuse me (informal). ",
+              "body": "Извини́те is the polite or plural form. The familiar singular is Извини́.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u2125-attribution"
@@ -62298,16 +62282,33 @@
               "remediationStepId": null
             },
             {
+              "id": "u25-st-guided-courtesy-1",
+              "kind": "GUIDED",
+              "title": "Guided practice",
+              "body": "Choose the admitted record. The feedback states the frozen field.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u25-g-courtesy-0"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u25-st-rem-courtesy"
+            },
+            {
               "id": "u25-st-rem-courtesy",
               "kind": "REMEDIATE",
               "title": "Remediation",
-              "body": ";Пожа́луйста (Pozhalusta) :please",
+              "body": "Извини́те is the polite or plural form. The familiar singular is Извини́.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
               "exampleIds": [
                 "ex-u25-courtesy-0",
-                "ex-u25-courtesy-1"
+                "ex-u25-courtesy-1",
+                "ex-u25-courtesy-2"
               ],
               "unavailableReason": null,
               "bookDirection": null,

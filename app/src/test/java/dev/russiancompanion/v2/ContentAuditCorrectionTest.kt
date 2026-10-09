@@ -20,6 +20,33 @@ import java.io.File
 
 class ContentAuditCorrectionTest {
     @Test
+    fun courtesyRegisterCorrectionIsTaughtBeforePracticeAndSurvivesRemediation() {
+        val pack = pack()
+        val unit = pack.unit(25)!!
+        val session = unit.sessions.single { it.id == "u25-s-courtesy" }
+        val worked = session.steps.single { it.id == "u25-st-teach-courtesy-3" }
+        val guidedIndex = session.steps.indexOfFirst { it.kind == "GUIDED" }
+        assertTrue(session.steps.indexOf(worked) < guidedIndex)
+        assertTrue(session.steps.drop(guidedIndex).none { it.kind == "TEACH" })
+        val corrected = "Извини́те is the polite or plural form. The familiar singular is Извини́."
+        assertEquals(corrected, worked.body)
+        val remediation = pack.step("u25-st-rem-courtesy")!!.second
+        assertEquals(corrected, remediation.body)
+        assertEquals(setOf("ex-u25-courtesy-0", "ex-u25-courtesy-1", "ex-u25-courtesy-2"), remediation.exampleIds.toSet())
+        val guided = pack.item("u25-g-courtesy-0")!!
+        assertEquals("Пожа́луйста", guided.answer)
+        assertEquals(corrected, guided.distractorRationales[2])
+        assertEquals(corrected, guided.assessment!!.distractorDifference[2])
+        assertEquals("excuse me, polite or plural", pack.item("u25-i-courtesy-2")!!.answer)
+        assertTrue(pack.provenanceRecords.any {
+            it.unitNumber == 25 && it.objectiveId == "obj-u25-courtesy" && it.shippedText == corrected
+        })
+        assertTrue(unit.objectives.single { it.id == "obj-u25-courtesy" }.gating)
+        assertEquals(listOf("u25-i-courtesy-1", "u25-i-courtesy-2"),
+            unit.objectives.single { it.id == "obj-u25-courtesy" }.checkItemIds)
+    }
+
+    @Test
     fun unitElevenChecksPastAgreementBeforeAspectIntroductionWithoutLoweringItsGate() {
         val pack = pack()
         val unit = pack.unit(11)!!

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "findingId": "CA016",
+  "unitNumber": 25,
+  "scope": "Reuse existing register correction in teaching, guided feedback and remediation; teaching precedes guided practice",
+  "existingProvenanceIds": [
+    "prov-ca-25-233"
+  ],
+  "beforeCurriculumFileSha256": "1cf09b6d1b91c05a031d1a7fa9d96a15224727e2c5f74bc4ab111ae461794b35",
+  "afterCurriculumFileSha256": "bd8f0cccdc1bf68e63dbd35de9635b7f9940c588140d440545e2a0b5a05e90f8",
+  "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+}
