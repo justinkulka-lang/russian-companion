@@ -32,3 +32,13 @@ Schema-3 pack content-review digest: `d28094322a590bd83f08a5d38f03eb1bfddcf728d5
 The 19-finding preliminary content audit is still open. Structural validation and host tests do not establish semantic closure of the 75 targets or full curriculum coverage. Broader novice instruction, primary-reference verification, all 30 Penguin objective/exercise mappings, mapped pronunciation audio, handwriting assets, a retained comprehensive final curriculum audit, independent verification, and owner/device acceptance remain outstanding.
 
 PR64 stays draft. Units stay DEVELOPMENT / CONTENT_COMPLETE_REVIEW_PENDING. The candidate stays unfrozen, `sourceCommit: null`, artifact NOT_RECORDED, public release NOT_APPROVED. Acceptance forms remain NOT_EXECUTED. No audit-readiness token, merge, freeze, review approval, or release approval is issued.
+
+## Android compilation follow-up and target reconciliation
+
+The `ae5804b` push run `37951085157` (job `113889721577`) and pull-request run `37951091356` failed during test Kotlin compilation. The observed error was `RuntimeCorrectionTest.kt:204:80`: a `V2Step` was passed to `stepCompletionItemIds`, which requires a `String` step ID. Unit tests did not execute in those runs. This does not invalidate the earlier 36-test host result, whose harness does not compile that Android test.
+
+Commit `d40f56a78f05b456e61ea25f81e624bd05a3d0ac` changes the argument to `completed.id`. Fresh Android runs `37952679276` (push) and `37952684783` (pull request) were started. Full Android results remain pending at the time this follow-up is authored.
+
+A fresh production-domain fixture probe confirms that the actual pack opens the unfinished iotated teaching step, the guided step, then the independent check. After all required steps have governed completion records, the route opens advancement review even when the independent answers were wrong. This verifies navigation and fixture preparation only; it does not award objective mastery or exercise Compose, persistence, or remediation UI. The probe source and successful output are retained alongside the earlier host evidence.
+
+`ITEM_TARGET_CURRENT_EVIDENCE.json` and its Markdown index reconcile all 75 retained target IDs against current content. All resolve uniquely: 69 objects match the retained preliminary implementation snapshot, two item explanations changed, and four objective entries were absent from that snapshot. The current evidence now includes those objectives and their related steps, provenance, and advancement context. All 75 targets remain pending semantic review. `reconcile_item_targets.py --check` verifies deterministic evidence against exact raw input hashes without modifying content or approval state.
