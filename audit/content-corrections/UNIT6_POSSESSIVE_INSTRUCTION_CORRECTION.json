@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "previousHead": "278afd701b775624924893ce11afc92a5c10bae3",
+  "unitNumber": 6,
+  "objectiveId": "obj-u6-possessive",
+  "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+  "beforeCurriculumFileSha256": "26ceb006dd9f9f1fd6548706b9197c0c550a18ae457ad9c51228516cf268c9dd",
+  "afterCurriculumFileSha256": "87cac892c60b768e2eb00520ea7ef37d10b9441800d919b917d137ec9bb13a44",
+  "addedProvenanceIds": [
+    "prov-ca-u6-worked-teach-1-body",
+    "prov-ca-u6-worked-teach-1-title",
+    "prov-ca-u6-worked-teach-2-body",
+    "prov-ca-u6-worked-teach-2-title",
+    "prov-ca-u6-worked-teach-3-body",
+    "prov-ca-u6-worked-teach-3-title",
+    "prov-ca-u6-worked-teach-4-body",
+    "prov-ca-u6-worked-teach-4-title",
+    "prov-ca-u6-worked-teach-5-body",
+    "prov-ca-u6-worked-teach-5-title",
+    "prov-ca-u6-worked-teach-6-body",
+    "prov-ca-u6-worked-teach-6-title",
+    "prov-ca-u6-worked-rem-body",
+    "prov-ca-u6-worked-rem-title",
+    "prov-ca-u6-worked-guided-body",
+    "prov-ca-u6-worked-check-body",
+    "prov-ca-u6-worked-guided-prompt",
+    "prov-ca-u6-worked-guided-feedback",
+    "prov-ca-u6-worked-guided-distractor-1",
+    "prov-ca-u6-worked-guided-distractor-2",
+    "prov-ca-u6-worked-check-1-prompt",
+    "prov-ca-u6-worked-check-1-feedback",
+    "prov-ca-u6-worked-check-1-distractor-1"
+  ],
+  "changedItemIds": [
+    "u6-g-possessive-0",
+    "u6-i-possessive-1"
+  ],
+  "bibliography": "Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.",
+  "scope": "Existing possessive session explanations, titles, remediation examples and two items English prompt/feedback/rationale fields only; keys, Russian forms and advancement unchanged.",
+  "retainedRecordIds": [
+    "prov-ex-u6-possessive-0-ru",
+    "prov-ex-u6-possessive-1-ru",
+    "prov-ca-6-190",
+    "prov-ca-6-191",
+    "prov-ca-6-195",
+    "prov-ca-6-196"
+  ]
+}

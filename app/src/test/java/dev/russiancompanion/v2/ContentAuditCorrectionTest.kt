@@ -121,6 +121,79 @@ class ContentAuditCorrectionTest {
     }
 
     @Test
+    fun possessiveInstructionLabelsFormsAndWorksTheRetainedFeminineCaseChange() {
+        val pack = pack()
+        val unit = pack.unit(6)!!
+        val session = unit.sessions.single { it.id == "u6-s-possessive" }
+        val rule = session.steps.single { it.id == "u6-st-teach-possessive-2" }.body
+        assertTrue("Possessive instruction must state the agreement rule", rule.contains("gender, number and case"))
+        assertTrue(rule.contains("noun, not from the gender of its owner"))
+        val forms = session.steps.filter { it.kind == "TEACH" }.joinToString("\n") { it.body }
+        assertTrue(forms.contains("мо́й is masculine and моя́ is feminine"))
+        assertTrue(forms.contains("моё is the neuter singular nominative"))
+        assertTrue(forms.contains("мои́ is the plural nominative"))
+        assertTrue(forms.contains("тво́й is masculine singular nominative; твоя́ is feminine singular nominative"))
+        val worked = session.steps.single { it.id == "u6-st-teach-possessive-3" }
+        assertTrue(worked.body.contains("на́ша сестра́ becomes на́шу сестру́"))
+        assertTrue(worked.body.contains("change both words"))
+        assertTrue(worked.body.contains("на́шего бра́та changes the referent"))
+        assertTrue(worked.body.contains("на́ши is plural"))
+        assertTrue(session.steps.indexOf(worked) < session.steps.indexOfFirst { it.kind == "GUIDED" })
+        assertEquals(18, unit.advancement!!.minimumDistinctChecks)
+    }
+
+    @Test
+    fun possessiveFeedbackAndRemediationExplainTheSameGenderNumberAndCaseRule() {
+        val pack = pack()
+        val unit = pack.unit(6)!!
+        val session = unit.sessions.single { it.id == "u6-s-possessive" }
+        val guided = pack.item("u6-g-possessive-0")!!
+        assertTrue("Guided feedback must explain why the feminine form fits", guided.feedback.contains("собака is feminine singular"))
+        assertEquals("моя́", guided.answer)
+        assertEquals(listOf("моя́", "мо́й", "мои́"), guided.options)
+        assertTrue(guided.distractorRationales[1].contains("masculine singular nominative"))
+        assertTrue(guided.distractorRationales[2].contains("plural nominative; the noun here is singular"))
+        assertEquals(guided.distractorRationales, guided.assessment!!.distractorDifference)
+        assertEquals(guided.feedback, guided.assessment!!.whyAnswerDemonstratesObjective)
+        val masculine = pack.item("u6-i-possessive-1")!!
+        assertEquals("мо́й", masculine.answer)
+        assertTrue(masculine.feedback.contains("стол is masculine singular"))
+        assertTrue(masculine.distractorRationales[1].contains("feminine singular nominative"))
+        val rem = session.steps.single { it.kind == "REMEDIATE" }
+        val teaching = session.steps.filter { it.kind == "TEACH" }
+        assertTrue(teaching.all { rem.body.contains(it.body) })
+        assertEquals(unit.objectives.single { it.id == "obj-u6-possessive" }.exampleIds.toSet(), rem.exampleIds.toSet())
+        assertTrue(session.steps.filter { it.kind == "GUIDED" || it.kind == "CHECK" }.all { it.remediationStepId == rem.id })
+        assertEquals("на́шу сестру́", pack.item("u6-i-possessive-2")!!.answer)
+        assertEquals("твоя́", pack.item("u6-i-possessive-3")!!.answer)
+    }
+
+    @Test
+    fun possessiveWorkedExplanationRecordsStayPendingAndRejectAChangedHash() {
+        val pack = pack()
+        val records = pack.provenanceRecords.filter { it.itemId.startsWith("prov-ca-u6-worked-") }
+        assertEquals("New explanations need exact pending coverage records", 23, records.size)
+        records.forEach { record ->
+            assertContentAuditResearch(record)
+            assertEquals(6, record.unitNumber)
+            assertEquals("obj-u6-possessive", record.objectiveId)
+            assertTrue(record.synthesis!!.bibliography.contains("Leed_Less_9-12.pdf"))
+            assertTrue(record.synthesis!!.bibliography.contains("printed pages 31 and 37"))
+            listOf("prov-ex-u6-possessive-0-ru", "prov-ex-u6-possessive-1-ru", "prov-ca-6-190",
+                "prov-ca-6-191", "prov-ca-6-195", "prov-ca-6-196").forEach { id ->
+                assertTrue(record.synthesis!!.bibliography.contains(id))
+                assertTrue("Unresolved retained record $id", pack.provenanceRecords.any { it.itemId == id })
+            }
+        }
+        val valid = V2Validator.validate(pack)
+        assertTrue(valid.errors.joinToString("\n"), valid.ok)
+        val bad = pack.copy(provenanceRecords = pack.provenanceRecords.map {
+            if (it.itemId != records.first().itemId) it else it.copy(contentHash = "0".repeat(64))
+        })
+        assertTrue(V2Validator.validate(bad).errors.any { it.contains(records.first().itemId) && it.contains("source hash") })
+    }
+
+    @Test
     fun negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm() {
         val pack = pack()
         val unit = pack.unit(24)!!
