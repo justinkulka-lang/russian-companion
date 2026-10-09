@@ -20,6 +20,41 @@ import java.io.File
 
 class ContentAuditCorrectionTest {
     @Test
+    fun wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation() {
+        val pack = pack()
+        val targets = listOf(
+            Triple(3, "gender", 5), Triple(6, "feminine", 2), Triple(7, "spelling", 2),
+            Triple(8, "spelling", 2), Triple(11, "past-read", 2), Triple(11, "past-aspect", 2),
+            Triple(12, "future-imp", 2), Triple(12, "aspect", 2), Triple(13, "past-aspect", 2),
+            Triple(16, "inst-sg", 2), Triple(16, "inst-adj", 2),
+            Triple(28, "imperfective-adverb", 2), Triple(28, "perfective-adverb", 2),
+            Triple(24, "stand-ins", 3), Triple(24, "word-order-contrast", 2),
+            Triple(26, "letter-writing", 2), Triple(21, "purpose", 2), Triple(16, "complements", 1),
+        )
+        targets.forEach { (number, topic, suffix) ->
+            val teach = pack.step("u$number-st-teach-$topic-$suffix")!!.second
+            val remediation = pack.step("u$number-st-rem-$topic")!!.second
+            val objective = pack.unit(number)!!.objectives.single {
+                teach.id in it.instructionStepIds && remediation.id in it.remediationStepIds
+            }
+            assertEquals(remediation.id, teach.body, remediation.body)
+            assertTrue("Missing exact objective-bound coverage for ${remediation.id}", pack.provenanceRecords.any {
+                it.unitNumber == number && it.objectiveId == objective.id && it.shippedText == remediation.body
+            })
+        }
+        val future = pack.step("u12-st-rem-future-imp")!!.second.body
+        assertTrue(future.contains("быть is imperfective"))
+        assertFalse(future.contains("perfective verb"))
+        assertTrue(pack.step("u12-st-rem-aspect")!!.second.body.contains("not every verb"))
+        listOf(11, 13).forEach { number ->
+            assertFalse(pack.step("u$number-st-rem-past-aspect")!!.second.body.contains("wasn't completed"))
+        }
+        assertTrue(pack.step("u7-st-rem-spelling")!!.second.body.contains("After ж, ц, ч, ш, or щ"))
+        assertTrue(pack.step("u8-st-rem-spelling")!!.second.body.contains("seven-letter condition"))
+        assertFalse(pack.step("u28-st-rem-perfective-adverb")!!.second.body.contains("can only be past"))
+    }
+
+    @Test
     fun auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement() {
         val pack = pack()
         val teacher = pack.item("u6-i-animacy-3")!!

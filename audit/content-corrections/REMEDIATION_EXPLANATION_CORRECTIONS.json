@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "scope": "Propagate existing corrections to remediation; no new Russian or approval",
+  "beforeCurriculumFileSha256": "234556f45f0c6276b2bf2c92dec8746aacbf5318ad55571023663052c2a1cf27",
+  "afterCurriculumFileSha256": "89d7d6aa7bc7900407b2f011d3a0d18efa7e8e1f221f77a3252548950aa9397f",
+  "changes": [
+    {
+      "unitNumber": 3,
+      "objectiveId": "obj-u3-gender",
+      "teachingStepId": "u3-st-teach-gender-5",
+      "remediationStepId": "u3-st-rem-gender",
+      "before": "Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.",
+      "after": "дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.",
+      "existingProvenanceIds": [
+        "prov-ca-3-346"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-feminine",
+      "teachingStepId": "u6-st-teach-feminine-2",
+      "remediationStepId": "u6-st-rem-feminine",
+      "before": "Feminine words are the only words to have their own accusative ending:",
+      "after": "Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.",
+      "existingProvenanceIds": [
+        "prov-ca-6-340"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 7,
+      "objectiveId": "obj-u7-spelling",
+      "teachingStepId": "u7-st-teach-spelling-2",
+      "remediationStepId": "u7-st-rem-spelling",
+      "before": "any unstressed '''o''' in an ending is instead written as '''e'''",
+      "after": "After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о.",
+      "existingProvenanceIds": [
+        "prov-ca-7-309"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 8,
+      "objectiveId": "obj-u8-spelling",
+      "teachingStepId": "u8-st-teach-spelling-2",
+      "remediationStepId": "u8-st-rem-spelling",
+      "before": "you add '''и''', not '''ы'''",
+      "after": "After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.",
+      "existingProvenanceIds": [
+        "prov-ca-8-324"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-read",
+      "teachingStepId": "u11-st-teach-past-read-2",
+      "remediationStepId": "u11-st-rem-past-read",
+      "before": "To form the past tense of either aspect of a verb, remove the ending '''-ть''', and add '''-л'''.",
+      "after": "For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.",
+      "existingProvenanceIds": [
+        "prov-ca-11-349"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "teachingStepId": "u11-st-teach-past-aspect-2",
+      "remediationStepId": "u11-st-rem-past-aspect",
+      "before": "So the English ''past progressive'' sentence  \"I was reading\" would correspond to the Russian imperfective ('''я читал'''), since it refers to an action that wasn't completed. Likewise, the English ''simple past'' sentence \"I read\" corresponds to the Russian perfective ('''я прочитал''')",
+      "after": "An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.",
+      "existingProvenanceIds": [
+        "prov-ca-11-369"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 12,
+      "objectiveId": "obj-u12-future-imp",
+      "teachingStepId": "u12-st-teach-future-imp-2",
+      "remediationStepId": "u12-st-rem-future-imp",
+      "before": "Imperfective verbs form the future by preceding the imperfective infinitive with the appropriate conjugation of the perfective verb '''быть'''.",
+      "after": "быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.",
+      "existingProvenanceIds": [
+        "prov-ca-12-357"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 12,
+      "objectiveId": "obj-u12-aspect",
+      "teachingStepId": "u12-st-teach-aspect-2",
+      "remediationStepId": "u12-st-rem-aspect",
+      "before": "So, verbs in Russian have two words: an ''imperfective'' and a ''perfective'' aspect.",
+      "after": "Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.",
+      "existingProvenanceIds": [
+        "prov-ca-12-371"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 13,
+      "objectiveId": "obj-u13-past-aspect",
+      "teachingStepId": "u13-st-teach-past-aspect-2",
+      "remediationStepId": "u13-st-rem-past-aspect",
+      "before": "So the English ''past progressive'' sentence  \"I was reading\" would correspond to the Russian imperfective ('''я читал'''), since it refers to an action that wasn't completed. Likewise, the English ''simple past'' sentence \"I read\" corresponds to the Russian perfective ('''я прочитал''')",
+      "after": "Do not treat English past progressive and simple past as a fixed Russian aspect code. The imperfective does not always mean the action was unfinished.",
+      "existingProvenanceIds": [
+        "prov-ca-13-370"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 16,
+      "objectiveId": "obj-u16-inst-sg",
+      "teachingStepId": "u16-st-teach-inst-sg-2",
+      "remediationStepId": "u16-st-rem-inst-sg",
+      "before": "Nouns ending in о or a consonant have -ом in the instrumental.",
+      "after": "The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal.",
+      "existingProvenanceIds": [
+        "prov-ca-16-353"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 16,
+      "objectiveId": "obj-u16-inst-adj",
+      "teachingStepId": "u16-st-teach-inst-adj-2",
+      "remediationStepId": "u16-st-rem-inst-adj",
+      "before": "To form masculine and neuter adjectives, the ending is -ым.",
+      "after": "Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.",
+      "existingProvenanceIds": [
+        "prov-ca-16-354"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-imperfective-adverb",
+      "teachingStepId": "u28-st-teach-imperfective-adverb-2",
+      "remediationStepId": "u28-st-rem-imperfective-adverb",
+      "before": "imperfective ones are usually present, while perfective ones can only be past",
+      "after": "An imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.",
+      "existingProvenanceIds": [
+        "prov-ca-28-374",
+        "prov-ca-repair-28-10999"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-perfective-adverb",
+      "teachingStepId": "u28-st-teach-perfective-adverb-2",
+      "remediationStepId": "u28-st-rem-perfective-adverb",
+      "before": "usually present, while perfective ones can only be past",
+      "after": "A perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.",
+      "existingProvenanceIds": [
+        "prov-ca-28-375",
+        "prov-ca-repair-28-11022"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-stand-ins",
+      "teachingStepId": "u24-st-teach-stand-ins-3",
+      "remediationStepId": "u24-st-rem-stand-ins",
+      "before": "не́кто is an indefinite pronoun, an unspecified person. In не́кого спросить, there is nobody to ask: не́кого is the negative construction, not не́кто. Choose the construction and case from its sentence rather than changing a nominative mechanically.",
+      "after": "не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form such as не́кого for the genitive, не́кому for the dative, or не́кем for the instrumental. There is no nominative некого.",
+      "existingProvenanceIds": [
+        "prov-ca-24-163"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-word-order-contrast",
+      "teachingStepId": "u24-st-teach-word-order-contrast-2",
+      "remediationStepId": "u24-st-rem-word-order-contrast",
+      "before": "alternative word order can change the meaning entirely",
+      "after": "Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence.",
+      "existingProvenanceIds": [
+        "prov-ca-24-376"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 26,
+      "objectiveId": "obj-u26-letter-writing",
+      "teachingStepId": "u26-st-teach-letter-writing-2",
+      "remediationStepId": "u26-st-rem-letter-writing",
+      "before": "They have the same basic elements:\n\nSender’s address and date\nGreeting\nBody\nClosing and signature",
+      "after": "One reviewed letter genre can open with the sender address and date, then a greeting, a body, and a closing. That order is not a universal rule for every Russian letter, and a ban on dear is not universal.",
+      "existingProvenanceIds": [
+        "prov-ca-26-377"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 21,
+      "objectiveId": "obj-u21-purpose",
+      "teachingStepId": "u21-st-teach-purpose-2",
+      "remediationStepId": "u21-st-rem-purpose",
+      "before": "(bookish, archaic) 'so that'",
+      "after": "чтобы is the ordinary conjunction so that. The bookish or archaic qualifier belongs to дабы, not to чтобы.",
+      "existingProvenanceIds": [
+        "prov-ca-21-275"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "unitNumber": 16,
+      "objectiveId": "obj-u16-complements",
+      "teachingStepId": "u16-st-teach-complements-1",
+      "remediationStepId": "u16-st-rem-complements",
+      "before": "associates of connective verbs",
+      "after": "стать means to become. остаться means to remain. The infinitive стать is not the past form became.",
+      "existingProvenanceIds": [
+        "prov-ca-16-237"
+      ],
+      "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    }
+  ]
+}
