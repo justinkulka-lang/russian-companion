@@ -52,7 +52,7 @@ class Units2630SourceIntakeTest {
         22 to "cbb3460f1ec5df7dfe64f7ec9c87004cfb3b09492db993239695f6fb509108d3",
         23 to "99c0eacf02011ffb88c0d7e35900d446492bff20e38c126e8745a8a8f7f066fb",
         24 to "e2168f15e2fff92bb38f46c1feb687b44553885c3242dc98cc1434ed8b0e7a5f",
-        25 to "58e8d7f696898fb710e64b5e82b3b5f8b79d8fcda57c1942d6a385dfb197463c",
+        25 to "4f6aa3777c7e6b3c8b57932d77a4ce6073b8523a00922e1e28bbd286d2bed669",
     )
 
     private val preservedMappingDigests = mapOf(

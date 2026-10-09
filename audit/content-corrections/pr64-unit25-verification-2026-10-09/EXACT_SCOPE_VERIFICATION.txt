@@ -1,0 +1,3 @@
+PASS: only Unit 25 and one guided item changed; other units, source/provenance records, keys, options, advancement and all mapping digests preserved
+PASS: only Unit 25 content digest changes; all review-package digests rebind the real implementation commit
+curriculum SHA256=bd8f0cccdc1bf68e63dbd35de9635b7f9940c588140d440545e2a0b5a05e90f8

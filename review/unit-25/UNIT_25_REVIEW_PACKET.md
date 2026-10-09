@@ -11,12 +11,12 @@ Unit 25 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9dc153e77b0d1733225c3a4753225d5ab494b82b
-- Unit content-review SHA-256: 58e8d7f696898fb710e64b5e82b3b5f8b79d8fcda57c1942d6a385dfb197463c
+- Curriculum source commit: a9f565f4f2b0c10269210fe8c163624946fffff3
+- Unit content-review SHA-256: 4f6aa3777c7e6b3c8b57932d77a4ce6073b8523a00922e1e28bbd286d2bed669
 - Mapping-package SHA-256: 239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31
-- Pack content-review SHA-256: c16a259508444906c058c642a7ece9d8eb6a0d39d21c14280afbe39671d9fad3
-- Review-package SHA-256: ec80ddaafb13f7733624049e6d7049c9d2f7a82ad3c27843d86dd3c1e7d53fe0
-- Repository source SHA-256: 9ad2b27a8712bdae97911a850cf2b2b3291d5f6b4c631cdd9030015b08e275dd
+- Pack content-review SHA-256: 37c30d910d888fd721f2b492bce239926fe4be25fa85028496f837f9d96c6470
+- Review-package SHA-256: d8bed420565c98f355de404f597805bc6a05b35ba3eb4acfd6860597f010c499
+- Repository source SHA-256: dc243b2e937d2b81f8df25154f76b228ee94b0666e8f96ec56c140ae65dfc234
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -596,12 +596,12 @@ remediationStepId=u25-st-rem-diminutives
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 81d8c1bec5dc7d597d4380ca8b199670067f41cd7985c43fa7c8bee7a9a8c4ae
+- Content hash: 8ecd78e7c7333ce77cd62e186f9f6ec078b3117510609b280aee3ad43c31233f
 
 title=Choose the admitted form paired with the shown courtesy word
 estimatedMinutes=12
 objectives=obj-u25-courtesy
-steps=u25-st-teach-courtesy-1,u25-st-guided-courtesy-1,u25-st-teach-courtesy-2,u25-st-teach-courtesy-3,u25-st-rem-courtesy,u25-st-check-courtesy
+steps=u25-st-teach-courtesy-1,u25-st-teach-courtesy-2,u25-st-teach-courtesy-3,u25-st-guided-courtesy-1,u25-st-rem-courtesy,u25-st-check-courtesy
 
 ### STEP `u25-st-teach-courtesy-1`
 
@@ -624,28 +624,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u25-st-guided-courtesy-1`
-
-- Objectives: obj-u25-courtesy
-- Sessions: u25-s-courtesy
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f83e11702f7324d84233039e4676405926b5a6bec47b2c544619656722cfaf1e
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u25-g-courtesy-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u25-st-rem-courtesy
 
 ### STEP `u25-st-teach-courtesy-2`
 
@@ -677,11 +655,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 45863db8549da5122b1bf78c612276499e3da44232ac331d391f0a5e7ed70472
+- Content hash: 4cf121f3cdf3bea9de11ec6097dbceeea7f041c524a4532637d12676f1baae42
 
 kind=TEACH
 title=Admitted lines
-body=Извини́те — I'm sorry / excuse me (informal). 
+body=Извини́те is the polite or plural form. The familiar singular is Извини́.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -691,6 +669,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u25-st-guided-courtesy-1`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-courtesy
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f83e11702f7324d84233039e4676405926b5a6bec47b2c544619656722cfaf1e
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u25-g-courtesy-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u25-st-rem-courtesy
+
 ### STEP `u25-st-rem-courtesy`
 
 - Objectives: obj-u25-courtesy
@@ -699,15 +699,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cb5a011c5340e4f32ed620a7fbd9aea7143e6bc99248c2373921fe959e685969
+- Content hash: 1b9d2ffe11b72f415f865feae7ca9842b0f5d312b914711f8dd997cc359c1932
 
 kind=REMEDIATE
 title=Remediation
-body=;Пожа́луйста (Pozhalusta) :please
+body=Извини́те is the polite or plural form. The familiar singular is Извини́.
 dominantAction=Continue
 references=
 items=
-examples=ex-u25-courtesy-0,ex-u25-courtesy-1
+examples=ex-u25-courtesy-0,ex-u25-courtesy-1,ex-u25-courtesy-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1939,7 +1939,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a6d9d829fa0212179643722b48445af2cb0bbd05f4440685429c418de1528491
+- Content hash: bdd440ded3146d85d418aa86d1c414bfad117c147dc209a7d1ff9cf41bcb27ea
 
 kind=FORM_SELECTION
 language=en
@@ -1951,7 +1951,7 @@ feedback=The frozen list says please; also used for a request and pairs that wor
 objectiveId=obj-u25-courtesy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen list pairs thanks with a different form. | The frozen list pairs I'm sorry / excuse me (informal) with a different form.
+distractorRationales= | The frozen list pairs thanks with a different form. | Извини́те is the polite or plural form. The familiar singular is Извини́.
 testedFeature=COURTESY_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-courtesy-0
@@ -1959,7 +1959,7 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u25-courtesy-0-ru
 distractorSourceIds= | prov-ex-u25-courtesy-1-ru | prov-ex-u25-courtesy-2-ru
-distractorDifference= | Thanks is a different courtesy word. | The informal apology is a different courtesy word.
+distractorDifference= | Thanks is a different courtesy word. | Извини́те is the polite or plural form. The familiar singular is Извини́.
 whyAnswerDemonstratesObjective=The frozen list says please; also used for a request and pairs that word with this form.
 contrastMembers=Пожа́луйста | Спаси́бо | Извини́те
 relationKind=SOURCE_SUPPLIED_PAIR
@@ -9696,13 +9696,14 @@ permitsAppUse=true
 - `u25-st-teach-courtesy-1` EXAMPLE `ex-u25-courtesy-0`
 - `u25-st-teach-courtesy-1` EXAMPLE `ex-u25-courtesy-1`
 - `u25-st-teach-courtesy-1` REFERENCE `ref-u2125-attribution`
-- `u25-st-guided-courtesy-1` REMEDIATION `u25-st-rem-courtesy`
-- `u25-st-guided-courtesy-1` ITEM `u25-g-courtesy-0`
 - `u25-st-teach-courtesy-2` REFERENCE `ref-u2125-attribution`
 - `u25-st-teach-courtesy-3` EXAMPLE `ex-u25-courtesy-2`
 - `u25-st-teach-courtesy-3` REFERENCE `ref-u2125-attribution`
+- `u25-st-guided-courtesy-1` REMEDIATION `u25-st-rem-courtesy`
+- `u25-st-guided-courtesy-1` ITEM `u25-g-courtesy-0`
 - `u25-st-rem-courtesy` EXAMPLE `ex-u25-courtesy-0`
 - `u25-st-rem-courtesy` EXAMPLE `ex-u25-courtesy-1`
+- `u25-st-rem-courtesy` EXAMPLE `ex-u25-courtesy-2`
 - `u25-st-check-courtesy` REMEDIATION `u25-st-rem-courtesy`
 - `u25-st-check-courtesy` ITEM `u25-i-courtesy-1`
 - `u25-st-check-courtesy` ITEM `u25-i-courtesy-2`
