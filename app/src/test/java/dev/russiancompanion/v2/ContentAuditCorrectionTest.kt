@@ -20,6 +20,34 @@ import java.io.File
 
 class ContentAuditCorrectionTest {
     @Test
+    fun auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement() {
+        val pack = pack()
+        val teacher = pack.item("u6-i-animacy-3")!!
+        assertEquals("учи́тель", teacher.promptLetter)
+        assertEquals("учи́теля", teacher.answer)
+        assertTrue(teacher.prompt.contains("singular accusative"))
+        assertTrue(teacher.prompt.contains("masculine animate"))
+        assertTrue(teacher.feedback.contains("same form as the genitive"))
+        assertTrue(teacher.distractorRationales[1].contains("singular nominative"))
+        val feminine = pack.item("u7-i-objectadj-3")!!
+        assertEquals("но́вая", feminine.promptLetter)
+        assertEquals("но́вую", feminine.answer)
+        assertTrue(feminine.prompt.contains("feminine singular accusative"))
+        assertTrue(feminine.feedback.contains("Keep feminine singular agreement"))
+        assertTrue(feminine.distractorRationales[1].contains("masculine singular nominative"))
+        val masculine = pack.item("u7-g-objectadj-0")!!
+        assertTrue(masculine.prompt.contains("masculine animate"))
+        assertTrue(masculine.feedback.contains("accusative singular"))
+        assertTrue(masculine.feedback.contains("same form as the masculine singular genitive"))
+        val generic = pack.items.filter {
+            it.assessment?.relationKind == "SAME_LEMMA_DIFFERENT_FIELD" &&
+                it.objectiveId.startsWith("obj-u")
+        }
+        assertTrue(generic.isNotEmpty())
+        assertFalse(generic.any { it.feedback.startsWith("Does the admitted record show") })
+    }
+
+    @Test
     fun packValidatesAndRejectsTheAuditedFalseKeys() {
         val pack = pack()
         val result = V2Validator.validate(pack)
