@@ -223,11 +223,11 @@ class UnitReviewPipelineTest {
         val prior = mappingPackageDigest(facts)
         val pending = buildUnitReviewPackage(pack, 1)
         assertEquals(prior, pending.mappingPackageDigest)
-        assertEquals("9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a", pending.contentReviewDigest)
-        assertEquals("d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b", V2Validator.unitContentReviewDigest(pack, 2))
-        assertEquals("deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86", V2Validator.unitContentReviewDigest(pack, 3))
-        assertEquals("5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c", V2Validator.unitContentReviewDigest(pack, 4))
-        assertEquals("9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d", V2Validator.unitContentReviewDigest(pack, 5))
+        assertEquals("161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7", pending.contentReviewDigest)
+        assertEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(pack, 2))
+        assertEquals("4ac8d4b6ccfefbd5be021d5bcc7c2202ce0b2c3e243755f9ff52017c06a39908", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("9f255afab766ef14cbf8ef2688a512f74c00d3c45efc772d6b4506a431a21121", V2Validator.unitContentReviewDigest(pack, 4))
+        assertEquals("c2e405cf7081d673a39def8e26035bac7a65b608c57c5f4803ba832c2305c744", V2Validator.unitContentReviewDigest(pack, 5))
         val mutations = listOf(
             "lesson number" to facts.copy(proposedLessonNumber = 9),
             "printed page start" to facts.copy(printedPageStart = 2),
@@ -316,65 +316,17 @@ class UnitReviewPipelineTest {
         val predating = "08663616a79af9009c657ecfb66d7f6d42a531bf"
         val rejected = curriculumSourceCommitErrors(predating, root, 2)
         assertTrue(rejected.joinToString("\n"), rejected.any { it.contains("Unit 2 content-review digest") || it.contains("readable curriculum") })
-        (1..2).forEach { number ->
+        (1..30).forEach { number ->
+            val pin = curriculumCommitForUnit(number)
             val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_1_5_CURRICULUM_COMMIT))
+            assertTrue(manifest.contains(pin))
             assertFalse(manifest.contains(predating))
-            assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, number).isEmpty())
+            val errors = curriculumSourceCommitErrors(pin, root, number)
+            assertTrue(errors.joinToString("\n"), errors.isEmpty())
         }
-        (3..5).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_11_15_CURRICULUM_COMMIT))
-            assertFalse(manifest.contains(UNITS_1_5_CURRICULUM_COMMIT))
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, number).isNotEmpty())
-        }
-        (6..10).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_6_10_CURRICULUM_COMMIT))
-            assertFalse(manifest.contains(UNITS_1_5_CURRICULUM_COMMIT))
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, number).isNotEmpty())
-        }
-        assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, 10).isNotEmpty())
-        (11..15).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_11_15_CURRICULUM_COMMIT))
-            assertFalse(manifest.contains(UNITS_6_10_CURRICULUM_COMMIT))
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors("c9f23afd219681319554d90424f2d59fd550cadc", root, number).isNotEmpty())
-        }
-        listOf(16, 17, 18, 19, 20).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_16_20_CURRICULUM_COMMIT))
-            assertFalse(manifest.contains(UNITS_11_15_CURRICULUM_COMMIT))
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_16_20_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_16_20_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isNotEmpty())
-        }
-        listOf(21, 22, 23, 24, 25).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_21_25_CURRICULUM_COMMIT))
-            if (UNITS_21_25_CURRICULUM_COMMIT != UNITS_16_20_CURRICULUM_COMMIT) {
-                assertFalse(manifest.contains(UNITS_16_20_CURRICULUM_COMMIT))
-            }
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_21_25_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_21_25_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors("55ac696b9e9dd1c695f7fcc2b7ccb6c47444d511", root, number).isNotEmpty())
-        }
+        assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, 1).isNotEmpty())
+        assertTrue(curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, 7).isNotEmpty())
+        assertTrue(curriculumSourceCommitErrors(UNITS_26_30_CURRICULUM_COMMIT, root, 27).isNotEmpty())
     }
 
     private fun reachableLetters(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, unitNumber: Int): Set<String> {

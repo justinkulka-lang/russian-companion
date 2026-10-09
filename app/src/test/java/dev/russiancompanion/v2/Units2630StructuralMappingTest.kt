@@ -98,7 +98,8 @@ class Units2630StructuralMappingTest {
             assertEquals("PENDING_CURRICULUM_REVIEWER", facts.mappingDisposition)
             assertEquals("UNRESOLVED", facts.isbnObservation)
             assertNull(facts.isbn)
-            assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
+            assertTrue(pack.ownedEditionMappings.filter { it.unitNumber == number }.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
+            assertEquals(1, pack.ownedEditionMappings.count { it.unitNumber == number })
             val decision = advancementDecision(pack, unit, learner(number, book = true))
             assertFalse(decision.allowed)
             assertFalse(decision.remaining.any { it == "This unit is not prepared" })
@@ -118,14 +119,14 @@ class Units2630StructuralMappingTest {
     }
 
     @Test
-    fun packagedCurriculumOmitsUnits2630PageRanges() {
+    fun packagedCurriculumRecordsPendingPageRangesWithoutApprovingAssignments() {
         val root = repo()
         val curriculum = File(root, "app/src/main/assets/content/v2-curriculum.json").readText()
         val generator = File(root, "catalog/build_v2_curriculum.py").readText()
         val pack = pack()
         pages.forEach { (number, range) ->
             val unit = pack.unit(number)!!
-            assertFalse(curriculum.contains(range))
+            assertTrue(curriculum.contains(range))
             assertFalse(generator.contains(range))
             assertFalse(unit.mappingNote.contains(range))
             assertFalse(unit.title.contains(range))

@@ -33,11 +33,11 @@ class Units1620SourceIntakeTest {
     )
 
     private val preservedContentDigests = mapOf(
-        11 to "7a70c3b29f7c88934d0dcf21f40d531a45f1eff9daa8593f5af09d509bd10324",
-        12 to "c610495bf16604d555187f66e456c2cd1cb127c77881ef87097332f5e2d426bb",
-        13 to "e8a04394dc8c90059f01a0b7fdf46a57951a98a85ac8050a29781ab1a4a027c5",
-        14 to "270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6",
-        15 to "1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd",
+        11 to "1b0b2740b6691569dc22c3a09927842f7396a1265797b888751da23507f33688",
+        12 to "c449111039257472d3289c0252bd677367480fd0602c89b7741bb8b7aa4c0f99",
+        13 to "9500bee72be61030d6822e5a7ccdb1c71ab642dd165945e05ce853faaf322b9f",
+        14 to "2f9bbf502b90f2a8c0ef0c8f1fb32b8b5e564290aa16c77e1603f0fa8bbecd39",
+        15 to "80225df0cc95cc791d6cc062121b3d1988b66fa4d7c11cf7b234ac38d227b6dc",
     )
 
     @Test
@@ -60,7 +60,8 @@ class Units1620SourceIntakeTest {
             assertEquals("PENDING_CURRICULUM_REVIEWER", facts.mappingDisposition)
             assertEquals("UNRESOLVED", facts.isbnObservation)
             assertNull(facts.isbn)
-            assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
+            assertTrue(pack.ownedEditionMappings.filter { it.unitNumber == number }.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
+            assertEquals(1, pack.ownedEditionMappings.count { it.unitNumber == number })
             assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", pack.unitReviews.first { it.unitNumber == number }.status)
             assertTrue(pack.unitReviews.first { it.unitNumber == number }.reviewer.isNullOrBlank())
         }
@@ -157,6 +158,8 @@ class Units1620SourceIntakeTest {
                 } else {
                     assertTrue(record.itemId, page.contains(record.originalSourceText))
                 }
+            } else if (record.sourceId == "src-content-audit-research") {
+                assertContentAuditResearch(record)
             } else {
                 assertTrue(record.sourceRevision.startsWith("50e210c4803237779cb562bc1abcea529066031c"))
             }

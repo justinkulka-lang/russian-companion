@@ -120,7 +120,8 @@ class PostPr53ReadinessReconciliationTest {
         assertTrue(candidateText.contains(report.getValue("preservedFailedCandidateSourceDigest").jsonPrimitive.content))
         assertTrue(candidateText.contains(report.getValue("preservedFrozenCandidateSourceDigest").jsonPrimitive.content))
 
-        assertEquals(0, pack.ownedEditionMappings.size)
+        assertEquals(30, pack.ownedEditionMappings.size)
+        assertTrue(pack.ownedEditionMappings.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
         assertEquals(0, report.getValue("ownedEditionMappingCount").jsonPrimitive.content.toInt())
         assertEquals(0, report.getValue("approvedOwnedEditionMappingCount").jsonPrimitive.content.toInt())
         assertEquals(30, report.getValue("mappingWorksheetCount").jsonPrimitive.content.toInt())

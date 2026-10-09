@@ -195,10 +195,20 @@ class RuntimeCorrectionTest {
         val store = openedStore()
         val unit = pack.unit(1)!!
         val iotated = pack.step("u1-st-iotated")!!.second
-        val check = pack.session("u1-s-iotated")!!.steps.last()
+        val session = pack.session("u1-s-iotated")!!
+        val check = session.steps.last()
+        val activeStepIds = session.steps.map { it.id }.toSet()
         unit.sessions.flatMap { it.steps }
-            .filter { it.id != iotated.id && it.id != check.id }
-            .forEach { store.v2CompleteGovernedStep(it.id, stepContentDigest(pack, it), "2026-10-02T12:00") }
+            .filter { it.id !in activeStepIds }
+            .forEach { completed ->
+                dev.russiancompanion.v2.curriculum.stepCompletionItemIds(pack, completed).forEach { itemId ->
+                    val priorItem = pack.item(itemId)!!
+                    store.v2RecordGovernedAttempt(
+                        prepareGovernedAttempt(pack, itemId, priorItem.answer, PRESCRIBED_CHECK, completed.id, "2026-10-02T12:00")!!,
+                    )
+                }
+                store.v2CompleteGovernedStep(completed.id, stepContentDigest(pack, completed), "2026-10-02T12:00")
+            }
         store.v2SaveProfile(
             store.v2Profile().copy(
                 onboardingCompleted = true,

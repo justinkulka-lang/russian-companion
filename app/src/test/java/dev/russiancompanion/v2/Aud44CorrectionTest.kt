@@ -281,7 +281,8 @@ class Aud44CorrectionTest {
             it.status == "IMPLEMENTED_PENDING_FINAL_AUDIT" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank()
         })
         assertTrue(pack.units.all { it.mappingStatus == "PENDING_CURRICULUM_REVIEWER" })
-        assertTrue(pack.ownedEditionMappings.isEmpty())
+        assertEquals(30, pack.ownedEditionMappings.size)
+        assertTrue(pack.ownedEditionMappings.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
         val candidate = readAcceptanceCandidate(repo())
         assertEquals("NOT_APPROVED", candidate?.publicRelease)
         assertEquals(false, candidate?.frozen)
@@ -431,10 +432,10 @@ class Aud44CorrectionTest {
 
     private companion object {
         val PRIOR_CONTENT_DIGESTS = mapOf(
-            16 to "6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5",
-            18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
-            19 to "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3",
-            20 to "01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c",
+            16 to "549c88b30a3b16e5824dca7c51ad0640f86aa432f823cf15e24ff26951cb01ce",
+            18 to "70366528a23c5d91603f2cb4706dfc449a39c951dd2097ad4ec96aeb9af128fc",
+            19 to "a8a783a1e491fcf657402905553510000ed86b8780795ceb89ea71bf7988e7a0",
+            20 to "16a66abe6fa5f1d8191ef9e0547375a17781f334b6e36bbdf4f8dc8c13359a46",
         )
     }
 }

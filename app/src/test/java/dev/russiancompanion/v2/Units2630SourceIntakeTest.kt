@@ -28,31 +28,31 @@ import java.security.MessageDigest
 
 class Units2630SourceIntakeTest {
     private val preservedContentDigests = mapOf(
-        1 to "9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a",
-        2 to "d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b",
-        3 to "deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86",
-        4 to "5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c",
-        5 to "9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d",
-        6 to "fa6501022bd7ff4a2eca1e47c0ad488d96254cab0eafbecc61a8420835a3ab9c",
-        7 to "ec283b3bc0e58306d84e536947ab747d5ea264cea729bf4838124404ca958359",
-        8 to "e1dd456abf8a7b961f2f8471f35d4178961a53147c354f3e410e88d75f025c78",
-        9 to "d0f135c408fc429392cf695a8122134013fca69637a4f9c1587db3fec6b3c65f",
-        10 to "6845b398da6ad901b06443dd0f56ee6ace4ba4e2da6af9e36d33934dc286c526",
-        11 to "7a70c3b29f7c88934d0dcf21f40d531a45f1eff9daa8593f5af09d509bd10324",
-        12 to "c610495bf16604d555187f66e456c2cd1cb127c77881ef87097332f5e2d426bb",
-        13 to "e8a04394dc8c90059f01a0b7fdf46a57951a98a85ac8050a29781ab1a4a027c5",
-        14 to "270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6",
-        15 to "1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd",
-        16 to "6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5",
-        17 to "a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c",
-        18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
-        19 to "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3",
-        20 to "01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c",
-        21 to "be229fd6909ee2663ef49f2a88741a44b4d1ffddfc93cb916494e505ba853731",
-        22 to "5eedc53e9a70ce5450ad9ee6f4925047b94eab0517421114d742d605f730c3e7",
-        23 to "c36a981c973461d21ecd043d5206e79176991693633eec901ee912442cc4ef89",
-        24 to "d557dba12bf09b845df91a5f49bbc3a91a7008607a9183995c2ae36cbd088221",
-        25 to "3c6c42830c7ae91ad1450a91535652175ffa9389e89a21cb26d51591852fbd52",
+        1 to "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+        2 to "4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c",
+        3 to "4ac8d4b6ccfefbd5be021d5bcc7c2202ce0b2c3e243755f9ff52017c06a39908",
+        4 to "9f255afab766ef14cbf8ef2688a512f74c00d3c45efc772d6b4506a431a21121",
+        5 to "c2e405cf7081d673a39def8e26035bac7a65b608c57c5f4803ba832c2305c744",
+        6 to "5cd5ff2f4f0ab136c7c16b16a29fcdcd61ac274d0c5ac9f477e453def44ca604",
+        7 to "ba381c4d19692bb7a07f4b4ad35b91c48f9144f15519f5c84f08d7f8fb8b0036",
+        8 to "eb56e36a2b2fe8da0de183b6d636d6b6654cbfb8cb4b720d38037842d79a8d18",
+        9 to "e910e061464deec4c9c2eab392ede33fba94cd3e528e8a142966b28e2d0bb470",
+        10 to "5a3dfebe2aa8946dfd4038b863aa2eeb53b6a9c27202391186bc65cd152fd744",
+        11 to "1b0b2740b6691569dc22c3a09927842f7396a1265797b888751da23507f33688",
+        12 to "c449111039257472d3289c0252bd677367480fd0602c89b7741bb8b7aa4c0f99",
+        13 to "9500bee72be61030d6822e5a7ccdb1c71ab642dd165945e05ce853faaf322b9f",
+        14 to "2f9bbf502b90f2a8c0ef0c8f1fb32b8b5e564290aa16c77e1603f0fa8bbecd39",
+        15 to "80225df0cc95cc791d6cc062121b3d1988b66fa4d7c11cf7b234ac38d227b6dc",
+        16 to "549c88b30a3b16e5824dca7c51ad0640f86aa432f823cf15e24ff26951cb01ce",
+        17 to "9723c8b390ccfa95f468a337f8926133acbc155623fa8523c56e0bda2e619a6b",
+        18 to "70366528a23c5d91603f2cb4706dfc449a39c951dd2097ad4ec96aeb9af128fc",
+        19 to "a8a783a1e491fcf657402905553510000ed86b8780795ceb89ea71bf7988e7a0",
+        20 to "16a66abe6fa5f1d8191ef9e0547375a17781f334b6e36bbdf4f8dc8c13359a46",
+        21 to "260b1d293e962bc5290f2bce207c674a138ee112d354e80ec8fb62354ad4afde",
+        22 to "cbb3460f1ec5df7dfe64f7ec9c87004cfb3b09492db993239695f6fb509108d3",
+        23 to "99c0eacf02011ffb88c0d7e35900d446492bff20e38c126e8745a8a8f7f066fb",
+        24 to "1989cdea31ca80d331de5fe504182606c3bc98f8505e9fa7384a7ff9fbd6b786",
+        25 to "58e8d7f696898fb710e64b5e82b3b5f8b79d8fcda57c1942d6a385dfb197463c",
     )
 
     private val preservedMappingDigests = mapOf(
@@ -192,6 +192,8 @@ class Units2630SourceIntakeTest {
                 assertFalse(host.attribution.contains("Wiktionary:Copyrights"))
                 assertTrue(host.sourceUrl.contains("readyrussian.org"))
                 assertNull(host.audioAssetId)
+            } else if (host.sourceId == "src-content-audit-research") {
+                assertContentAuditResearch(host)
             } else if (host.sourceId == "src-original-research-synthesis") {
                 assertEquals("Original app text", host.licenseId)
                 assertEquals("urn:russian-companion:license:original-app-text", host.licenseUrl)
@@ -864,6 +866,10 @@ class Units2630SourceIntakeTest {
     private fun V2SourceCapability.sourceUrlBound(pack: V2CurriculumPack): Boolean {
         return pack.provenanceRecords.any {
             it.sourceId == sourceId && it.sourceRevision == sourceRevision && (
+                (it.sourceId == "src-content-audit-research" &&
+                    it.sourceUrl == "urn:russian-companion:content-audit-research:2026-10-08" &&
+                    sourceRevision == "content-audit-2026-10-08" &&
+                    it.synthesis != null) ||
                 it.sourceUrl.contains("oldid=$sourceRevision") ||
                     (it.sourceId.startsWith("src-readyrussian-") &&
                         it.sourceUrl.contains("readyrussian.org") &&

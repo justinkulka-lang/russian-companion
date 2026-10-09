@@ -1,5 +1,7 @@
 package dev.russiancompanion.v2
 
+import androidx.compose.ui.test.performScrollToNode
+
 import android.content.Context
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.v2.createAndroidComposeRule
@@ -511,9 +513,9 @@ class BackupLicenseTest {
         compose.waitUntil(timeoutMillis = 10_000) {
             compose.onAllNodes(androidx.compose.ui.test.hasText(PENGUIN_NOT_REDISTRIBUTED)).fetchSemanticsNodes().isNotEmpty()
         }
-        compose.onNodeWithTag("v2-content").performScrollToIndex(5)
+        compose.onNodeWithTag("v2-content").performScrollToNode(androidx.compose.ui.test.hasText("Badestrand/russian-dictionary contributors", substring = true))
         compose.onNodeWithText("Badestrand/russian-dictionary contributors", substring = true).assertIsDisplayed()
-        compose.onNodeWithTag("v2-content").performScrollToIndex(37)
+        compose.onNodeWithTag("v2-content").performScrollToNode(androidx.compose.ui.test.hasText("Creative Commons Corporation", substring = true))
         compose.onNodeWithText("Creative Commons Corporation", substring = true).assertIsDisplayed()
         compose.onNodeWithTag("v2-back").performClick()
         compose.onNodeWithTag("v2-settings-heading").assertIsDisplayed()

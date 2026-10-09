@@ -53,10 +53,13 @@ class Units35SourceIntakeTest {
             "src-enwiktionary-russian-entry-guidelines-92541199",
             "src-ruwikisource-vechera-5336197",
             "src-original-research-synthesis",
+            "src-content-audit-research",
         )
         pack.provenanceRecords.forEach { record ->
             assertTrue(record.itemId, record.sourceId in admitted)
-            if (record.sourceId.startsWith("src-readyrussian-")) {
+            if (record.sourceId == "src-content-audit-research") {
+                assertContentAuditResearch(record)
+            } else if (record.sourceId.startsWith("src-readyrussian-")) {
                 assertTrue(record.itemId, record.sourceUrl.contains("readyrussian.org"))
             } else if (record.sourceId == "src-original-research-synthesis") {
                 assertEquals(
@@ -72,7 +75,7 @@ class Units35SourceIntakeTest {
             assertTrue(record.attribution.isNotBlank())
             if (record.sourceId == "src-ruwikisource-vechera-5336197") {
                 assertEquals("Public domain", record.licenseId)
-            } else if (record.sourceId == "src-original-research-synthesis") {
+            } else if (record.sourceId in setOf("src-original-research-synthesis", "src-content-audit-research")) {
                 assertEquals("Original app text", record.licenseId)
                 assertEquals("urn:russian-companion:license:original-app-text", record.licenseUrl)
             } else {
@@ -85,7 +88,7 @@ class Units35SourceIntakeTest {
             assertEquals(null, record.audioAssetId)
             val expectedLicense = when (record.sourceId) {
                 "src-ruwikisource-vechera-5336197" -> "Public domain"
-                "src-original-research-synthesis" -> "Original app text"
+                "src-original-research-synthesis", "src-content-audit-research" -> "Original app text"
                 else -> "CC BY-SA 4.0"
             }
             assertTrue(pack.sources.any { it.id == record.sourceId && it.license == expectedLicense })

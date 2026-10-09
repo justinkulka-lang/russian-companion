@@ -11,12 +11,12 @@ Unit 6 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9ccccb16f929ad4a0a08dcd371db9be4269ca4bf
-- Unit content-review SHA-256: 3fd1abccb51da4af108ea3ea85482b6abf64b3cc39682c5dccde68461743f639
+- Curriculum source commit: 061b8d678ae76531092767da78a837f9d2b67930
+- Unit content-review SHA-256: 5cd5ff2f4f0ab136c7c16b16a29fcdcd61ac274d0c5ac9f477e453def44ca604
 - Mapping-package SHA-256: f95e0c2f351ec7cba23cdb09b87274bb97f2e392dd783ad59c2978ed58f63b15
-- Pack content-review SHA-256: 7e46c09bd636a00a8e966662c55402683cc597da0667b141bb508c510ab3d315
-- Review-package SHA-256: d339422f496e7d6e53ff29899d711aae4764e832335b0df42fbb7f316019030b
-- Repository source SHA-256: 24769c7187f82db5f121e58f437f3efe926445876506adc84b2ad117a88306d2
+- Pack content-review SHA-256: d28094322a590bd83f08a5d38f03eb1bfddcf728d51304fa579e322dfac1803f
+- Review-package SHA-256: 116801048e5aac4f86d5e9912712b9bf662920c1722f6ed3c6c0740ccf98af60
+- Repository source SHA-256: 3c8a7ffd929bcaafbb593e64f1ee7580485077949539431b7a1e4a0c87b9b6c6
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -2604,19 +2604,19 @@ relationParticipantIds=prov-ex-u6-object-2-ru | prov-ex-u6-object-1-ru | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d80e9ca2117826f98f08be17ed942df9d12ea0f2b8b9228dae1b74ed92c300ac
+- Content hash: b45b76f0bd23c8c52b1bfe5e6a013996c33b86ed0ef0687f3b8ca17f4ebce9bc
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which singular accusative form of the same noun corresponds to the shown form?
 promptLetter=кни́га
 options=кни́гу | кни́га
 answer=кни́гу
-feedback=Does the admitted record show the governed contrast? кни́гу.
+feedback=кни́га is the singular nominative form; кни́гу is the singular accusative form of the same noun.
 objectiveId=obj-u6-feminine
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row.
+distractorRationales= | кни́га is the singular nominative form, so it does not supply the requested singular accusative form.
 testedFeature=FEMININE_ACCUSATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-feminine-0
@@ -2624,8 +2624,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u6-feminine-1
 distractorSourceIds= | prov-ex-or-u6-feminine-0
-distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | кни́га is the singular nominative form, so it does not supply the requested singular accusative form.
+whyAnswerDemonstratesObjective=кни́га is the singular nominative form; кни́гу is the singular accusative form of the same noun.
 contrastMembers=кни́гу | кни́га
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-feminine-0 | prov-ex-or-u6-feminine-1 | prov-ex-or-u6-feminine-0
@@ -2638,19 +2638,19 @@ relationParticipantIds=prov-ex-or-u6-feminine-0 | prov-ex-or-u6-feminine-1 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: addbcb80fd4e44882683ef3ce91d07b503ce7cbf140559e6cb79784ec7d0e8cb
+- Content hash: d87184873ff723d712e9be5612423068b8707490cc667ca5312c653706ae5af2
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which singular accusative form is used when the shown masculine animate noun is the direct object?
 promptLetter=брат
 options=бра́та | брат
 answer=бра́та
-feedback=Does the admitted record show the governed contrast? бра́та.
+feedback=брат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row.
+distractorRationales= | брат is the singular nominative form, so it does not supply the requested singular accusative form.
 testedFeature=ANIMACY
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-animacy-0
@@ -2658,8 +2658,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u6-animacy-5
 distractorSourceIds= | prov-ex-or-u6-animacy-4
-distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | брат is the singular nominative form, so it does not supply the requested singular accusative form.
+whyAnswerDemonstratesObjective=брат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 contrastMembers=бра́та | брат
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-animacy-4 | prov-ex-or-u6-animacy-5 | prov-ex-or-u6-animacy-4
@@ -2809,19 +2809,19 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 126b4845f056743433e04098e8d56fcc32e5e2b936b72dd390f4000ae9d082ff
+- Content hash: f33fbe339ba8410c134db526bb9c61335d28cd253398418c35db978c4331b088
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the other agreement row of the shown form?
+prompt=Which feminine singular nominative form of the same adjective corresponds to the shown form?
 promptLetter=тво́й
 options=твоя́ | тво́й
 answer=твоя́
-feedback=Does the admitted record show the governed contrast? твоя́.
+feedback=тво́й is the masculine singular nominative form; твоя́ is the feminine singular nominative form of the same adjective.
 objectiveId=obj-u6-possessive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the other agreement row.
+distractorRationales= | тво́й is the masculine singular nominative form, so it does not supply the requested feminine singular nominative form.
 testedFeature=POSSESSIVE_AGREEMENT
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-possessive-3
@@ -2829,8 +2829,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u6-possessive-9
 distractorSourceIds= | prov-ex-or-u6-possessive-8
-distractorDifference= | This form is the dictionary row of the same word, not the other agreement row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | тво́й is the masculine singular nominative form, so it does not supply the requested feminine singular nominative form.
+whyAnswerDemonstratesObjective=тво́й is the masculine singular nominative form; твоя́ is the feminine singular nominative form of the same adjective.
 contrastMembers=твоя́ | тво́й
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-possessive-8 | prov-ex-or-u6-possessive-9 | prov-ex-or-u6-possessive-8
@@ -3013,19 +3013,19 @@ relationParticipantIds=prov-ex-u6-object-4-ru | prov-ex-u6-object-3-ru | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 92523a6f315f9519bd7bfb9174778258a5c9ce9d89ba6315e85132f545161af4
+- Content hash: cf123145057c7b5f71f033f3b1b8376973f6933b7b29dab453c1667e4ad78ab4
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which singular accusative form of the same noun corresponds to the shown form?
 promptLetter=ма́ма
 options=ма́му | ма́ма
 answer=ма́му
-feedback=Does the admitted record show the governed contrast? ма́му.
+feedback=ма́ма is the singular nominative form; ма́му is the singular accusative form of the same noun.
 objectiveId=obj-u6-feminine
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row.
+distractorRationales= | ма́ма is the singular nominative form, so it does not supply the requested singular accusative form.
 testedFeature=FEMININE_ACCUSATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-feminine-1
@@ -3033,8 +3033,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u6-feminine-3
 distractorSourceIds= | prov-ex-or-u6-feminine-2
-distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | ма́ма is the singular nominative form, so it does not supply the requested singular accusative form.
+whyAnswerDemonstratesObjective=ма́ма is the singular nominative form; ма́му is the singular accusative form of the same noun.
 contrastMembers=ма́му | ма́ма
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-feminine-2 | prov-ex-or-u6-feminine-3 | prov-ex-or-u6-feminine-2
@@ -3047,19 +3047,19 @@ relationParticipantIds=prov-ex-or-u6-feminine-2 | prov-ex-or-u6-feminine-3 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b6e1344f78def2810aa000c956af0b990e18ca1e8619fdedf2b390e57f9ad1eb
+- Content hash: 3cc342387f43adeefaf8be0da9ce4cf54609d2021535a0b485e2489e1e839720
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which singular accusative form of the same noun corresponds to the shown form?
 promptLetter=же́нщина
 options=же́нщину | же́нщина
 answer=же́нщину
-feedback=Does the admitted record show the governed contrast? же́нщину.
+feedback=же́нщина is the singular nominative form; же́нщину is the singular accusative form of the same noun.
 objectiveId=obj-u6-feminine
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row.
+distractorRationales= | же́нщина is the singular nominative form, so it does not supply the requested singular accusative form.
 testedFeature=FEMININE_ACCUSATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-feminine-2
@@ -3067,8 +3067,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u6-feminine-5
 distractorSourceIds= | prov-ex-or-u6-feminine-4
-distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | же́нщина is the singular nominative form, so it does not supply the requested singular accusative form.
+whyAnswerDemonstratesObjective=же́нщина is the singular nominative form; же́нщину is the singular accusative form of the same noun.
 contrastMembers=же́нщину | же́нщина
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-feminine-4 | prov-ex-or-u6-feminine-5 | prov-ex-or-u6-feminine-4
@@ -3081,19 +3081,19 @@ relationParticipantIds=prov-ex-or-u6-feminine-4 | prov-ex-or-u6-feminine-5 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: cc64236397fe214d3b4991c3d5307f1157e2994ad0efed9771c218f1131d08f0
+- Content hash: be2e6306a3f9ebbfa945a259d1324cfc65da347178f08681f4714a11acbb3fda
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which singular accusative form is used when the shown masculine animate noun is the direct object?
 promptLetter=учи́тель
 options=учи́теля | учи́тель
 answer=учи́теля
-feedback=Does the admitted record show the governed contrast? учи́теля.
+feedback=учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row.
+distractorRationales= | учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.
 testedFeature=ANIMACY
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-animacy-1
@@ -3101,8 +3101,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u6-animacy-7
 distractorSourceIds= | prov-ex-or-u6-animacy-6
-distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.
+whyAnswerDemonstratesObjective=учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 contrastMembers=учи́теля | учи́тель
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-animacy-6 | prov-ex-or-u6-animacy-7 | prov-ex-or-u6-animacy-6
@@ -3115,19 +3115,19 @@ relationParticipantIds=prov-ex-or-u6-animacy-6 | prov-ex-or-u6-animacy-7 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6d19b1ba06da0768fe6acaa2eb9e0125c17d6f5772565bca43d83e098b4ae43a
+- Content hash: 5fe5a034346d47e2da1f867951c494389b363c9ff8b21b3c251cb9b6bef8d059
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which singular accusative form is used when the shown masculine animate noun is the direct object?
 promptLetter=друг
 options=дру́га | друг
 answer=дру́га
-feedback=Does the admitted record show the governed contrast? дру́га.
+feedback=друг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row.
+distractorRationales= | друг is the singular nominative form, so it does not supply the requested singular accusative form.
 testedFeature=ANIMACY
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-animacy-2
@@ -3135,8 +3135,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u6-animacy-9
 distractorSourceIds= | prov-ex-or-u6-animacy-8
-distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | друг is the singular nominative form, so it does not supply the requested singular accusative form.
+whyAnswerDemonstratesObjective=друг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 contrastMembers=дру́га | друг
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-animacy-8 | prov-ex-or-u6-animacy-9 | prov-ex-or-u6-animacy-8
@@ -3149,19 +3149,19 @@ relationParticipantIds=prov-ex-or-u6-animacy-8 | prov-ex-or-u6-animacy-9 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f4e3eafffca998301c3cdd215776cc68d202940fc5f9401f9d3af3b437597540
+- Content hash: d3d085b25ec2ddaefd81ba9ff18f5553a5d7cfa4bc505f05ec2e1dd009040ccc
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which singular accusative form is used when the shown masculine animate noun is the direct object?
 promptLetter=учи́тель
 options=учи́теля | учи́тель
 answer=учи́теля
-feedback=Does the admitted record show the governed contrast? учи́теля.
+feedback=учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row.
+distractorRationales= | учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.
 testedFeature=ANIMACY
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-animacy-3
@@ -3169,8 +3169,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u6-animacy-7
 distractorSourceIds= | prov-ex-or-u6-animacy-6
-distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.
+whyAnswerDemonstratesObjective=учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 contrastMembers=учи́теля | учи́тель
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-animacy-6 | prov-ex-or-u6-animacy-7 | prov-ex-or-u6-animacy-6
@@ -4309,6 +4309,516 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=6544c561da731711bdb1b3fb60517a939f5d4736efe62ca473f3330c4984fa45
 contentHash=eb2653460b15f43d7f85ba48f718005b3595d2b9fa1053c25c893f39499c48d0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-g-animacy-0-0`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4c31a14048dacb73e24a04c1df0b52f4fcd9a3730ea4ff3c7ab677b39fcd4783
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-g-animacy-0:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#sg_acc; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which singular accusative form is used when the shown masculine animate noun is the direct object?
+shippedText=Which singular accusative form is used when the shown masculine animate noun is the direct object?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ee0a61182bcef6d9d32b9bf1afbdce6d4c822d3ec7e97e34e5a603152657bbab
+contentHash=103e38b146ac39f0b56994d99056ed51b70372fc37917792db6be3f448409516
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-g-animacy-0-1`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2bbfb083aa0ab2d8a9b867276ba3026cc899016867ed9f47cb54621f2d1111d1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-g-animacy-0:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#sg_acc; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+брат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
+shippedText=брат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=22a027091c6f3216cec7d13b7a9f14634e264dbeb4e6f03f42361aaf2078df68
+contentHash=77ff91ad3ec9875895e2ee2ea5ebb89076a992d1c4f0bdd56d9e6de932e97c34
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-g-animacy-0-3`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72a5df8e05d7cf556e3f144bc25df9b12a4fd783433ff2fdbd459b5f17cad437
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-g-animacy-0:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#sg_acc; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+брат is the singular nominative form, so it does not supply the requested singular accusative form.
+shippedText=брат is the singular nominative form, so it does not supply the requested singular accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bffda3214d60d4f3cad4f1edfda55be0a6d41c390c4bf72aeea61d5a3e2e937a
+contentHash=5b7dccf3c2a8d1284829478e141af7831a4268f124c95ea220c50d09f1fcced8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-g-feminine-0-0`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 815d4560d3c272deb5e88270001728bde160a320950f29a944196ca211fe2440
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-g-feminine-0:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#sg_nom; nouns.csv:книга#sg_acc; nouns.csv:книга#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which singular accusative form of the same noun corresponds to the shown form?
+shippedText=Which singular accusative form of the same noun corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7560b617e4498eb62e8762fd0dd61b966205c71298bf93069b60726f1243edc9
+contentHash=ecc998d54e93453b15d3407d1b3267034ffc064055b435d556766f9dd3932359
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-g-feminine-0-1`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bfee75426d47ccaf280c35e0e10e523767fb3ff952a31170c088781d99cdf85
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-g-feminine-0:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#sg_nom; nouns.csv:книга#sg_acc; nouns.csv:книга#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+кни́га is the singular nominative form; кни́гу is the singular accusative form of the same noun.
+shippedText=кни́га is the singular nominative form; кни́гу is the singular accusative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=32d8c979155ced772a2da2590f6fa4e394583b969975bd46643bd03f21191016
+contentHash=4e5987ea4331fb61625e831a119baab5590f27794b7ebe31614b330e4bd09b1d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-g-feminine-0-3`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6333a991d07628ce11dcb81e875e423553234c4f2ecbe30dbc811379cd213602
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-g-feminine-0:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#sg_nom; nouns.csv:книга#sg_acc; nouns.csv:книга#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+кни́га is the singular nominative form, so it does not supply the requested singular accusative form.
+shippedText=кни́га is the singular nominative form, so it does not supply the requested singular accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=34a757d0a17bc9845a4f58d86812b80110c03cdafd5f495c307f8a2ee2fa1e23
+contentHash=9e23a0655beb4f2299beda5eba444460c830a8be3a5c00e90b7454623ff7f74e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-animacy-1-1`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 53dbe6d81846cdd10948ab300755281def41cb81045e00d93857303fdca4f6b7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-i-animacy-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:учитель#sg_nom; nouns.csv:учитель#sg_acc; nouns.csv:учитель#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
+shippedText=учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=66aed515eaeb4def382cfb7135a436ce7edc36ad8335ac16f369390b32090bc8
+contentHash=d96b48435ebc695e34e57047546ed1126a9ec16aeaeccf58eb20ee64f63fadf8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-animacy-1-3`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1146d4824e77b9debb7a79c964bd6fc59d28949fbed423b3e285f7169041e22b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-i-animacy-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:учитель#sg_nom; nouns.csv:учитель#sg_acc; nouns.csv:учитель#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.
+shippedText=учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=00c17f7a8fe4f38e1bf301cfb6d76d5c5fc2d0ab3517fae29eba8b12fd6e1010
+contentHash=a205e4b5966e4ca94c7342cfe47510936bf46f39cb107030842fff829897f17c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-animacy-2-1`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 420d946377e1925dd53df4784f0144323bc6b935a9e5c02b715d0310efc033d3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-i-animacy-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#sg_acc; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+друг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
+shippedText=друг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2802eff92e8df93414f1b5a3316f7e2c4d36385dd9d417307e2e1e33bb149a99
+contentHash=82fcb6d797a8346a2e157fb66923e861da1fda304253ede65a78566e2ef0c334
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-animacy-2-3`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cfca65d818b710fe4918bff31a1ffc42f0a0680083fa6022b44783d006e7ed0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-i-animacy-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#sg_acc; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+друг is the singular nominative form, so it does not supply the requested singular accusative form.
+shippedText=друг is the singular nominative form, so it does not supply the requested singular accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e1bf4568eb34294084165d014647e6ac895be3966829c2d6a23544ffe23d2213
+contentHash=fbc84deea21d0e1e60bf2e263230b56671f10969b564814d7099484f15337355
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-feminine-1-1`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3a89656692f2c4ec630d4efee3282697d2e6429d06526e4010064128670a211d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-i-feminine-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:мама#sg_nom; nouns.csv:мама#sg_acc; nouns.csv:мама#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+ма́ма is the singular nominative form; ма́му is the singular accusative form of the same noun.
+shippedText=ма́ма is the singular nominative form; ма́му is the singular accusative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=46d28940dff5067494011dfde2441874d733eefd9f6b500e47d80dd095ac2c22
+contentHash=365bf01ac0dafada3a4dc0f0a1f3bc6eaeaea023bede17031c7133c882d6cc60
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-feminine-1-3`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50541d2e7b98679a3b9604fa8903173781765d6dae9d8a32e0e11d9add08f818
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-i-feminine-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:мама#sg_nom; nouns.csv:мама#sg_acc; nouns.csv:мама#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+ма́ма is the singular nominative form, so it does not supply the requested singular accusative form.
+shippedText=ма́ма is the singular nominative form, so it does not supply the requested singular accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c5270501fb250645fbbbacc30b89b63f136b4cfa6249bf4099b29f23633d8185
+contentHash=dd9e42b747a0a6db530ab3009decc533cb16cb00f1ce5b3ec20006ab188a5dbc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-feminine-2-1`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b485fa6043eb2abda87fb4d6031287f7d1080c658d5343e347561ce8ed0976d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-i-feminine-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:женщина#sg_nom; nouns.csv:женщина#sg_acc; nouns.csv:женщина#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+же́нщина is the singular nominative form; же́нщину is the singular accusative form of the same noun.
+shippedText=же́нщина is the singular nominative form; же́нщину is the singular accusative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=607d86b4d24f4195c81aac9f061c3a27644a2055abe8a7b5bc1626ace980840b
+contentHash=3edd27811aa25c5ccce6de38fc3e93cc555f6cda01868a6f990fc16165c74853
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-feminine-2-3`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97b2640ec87070bf77fe3d07ccd92fefd341f70ff78a46864bdda26f45d5dc96
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-i-feminine-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:женщина#sg_nom; nouns.csv:женщина#sg_acc; nouns.csv:женщина#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+же́нщина is the singular nominative form, so it does not supply the requested singular accusative form.
+shippedText=же́нщина is the singular nominative form, so it does not supply the requested singular accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7cb3f624deef808f1472027877ac6e04200a514e5027456d26b262160fc234be
+contentHash=7bd2fc98cbaa9c11110e41e49d7f40a52b5ed10f4160413387b99089ad7a6aa7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-possessive-3-0`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87483c19cadeb3f4562b1d8b2572556cbac281a805a4e55fafe02126792622d3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:u6-i-possessive-3:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:твой#decl_m_nom; adjectives.csv:твой#decl_f_nom; adjectives.csv:твой#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which feminine singular nominative form of the same adjective corresponds to the shown form?
+shippedText=Which feminine singular nominative form of the same adjective corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2611ffc6779280a04b1cb6c85fc7c3e3181f3bfefbdb813cff1ab40d5dece680
+contentHash=fb19218f7977dedc06e601cd85d900bb5f9e37bad12b8b7fb27ed3f9c8872fd5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-possessive-3-1`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b6df6a790e1a78443b37274b5313ecc1318ef46a98f319916dbb2979a6012d58
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:u6-i-possessive-3:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:твой#decl_m_nom; adjectives.csv:твой#decl_f_nom; adjectives.csv:твой#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+тво́й is the masculine singular nominative form; твоя́ is the feminine singular nominative form of the same adjective.
+shippedText=тво́й is the masculine singular nominative form; твоя́ is the feminine singular nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0eae445bb625f5e18a30b5b388af02b24db7e1bdec16a8ac02a3d8aafd1ccdd2
+contentHash=dbea2f957b476ebf856a269ebd8828be6315ef931e2b26f51a6b85949fcd7e8a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-possessive-3-3`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f572390b4a5b651590590c0b49d2899ae0216b12d93dd9d7bd875a25fa3ed9da
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:u6-i-possessive-3:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:твой#decl_m_nom; adjectives.csv:твой#decl_f_nom; adjectives.csv:твой#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+тво́й is the masculine singular nominative form, so it does not supply the requested feminine singular nominative form.
+shippedText=тво́й is the masculine singular nominative form, so it does not supply the requested feminine singular nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa129a14220bca02e6275ec53cf52eceb11456f354426f259b83c12f70a8837c
+contentHash=bb0bfc4784cc98146560ce28f1cae39155903bca94367dca64c8f348956d8ef2
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -8765,6 +9275,23 @@ permitsAppUse=true
 - `obj-u6-feminine` PROVENANCE `prov-ca-6-344`
 - `obj-u6-feminine` PROVENANCE `prov-ca-6-345`
 - `obj-u6-possessive` PROVENANCE `prov-ca-6-629`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-g-animacy-0-0`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-g-animacy-0-1`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-g-animacy-0-3`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-g-feminine-0-0`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-g-feminine-0-1`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-g-feminine-0-3`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-i-animacy-1-1`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-i-animacy-1-3`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-i-animacy-2-1`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-i-animacy-2-3`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-i-feminine-1-1`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-i-feminine-1-3`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-i-feminine-2-1`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-i-feminine-2-3`
+- `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-0`
+- `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-1`
+- `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-3`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-0`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-0-gloss`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-1`

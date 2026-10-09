@@ -11,12 +11,12 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9ccccb16f929ad4a0a08dcd371db9be4269ca4bf
-- Unit content-review SHA-256: 520c5d5a6a8f952d743417584aab1c0d627b4105d4c03b5bcda31508cf8024e7
+- Curriculum source commit: 061b8d678ae76531092767da78a837f9d2b67930
+- Unit content-review SHA-256: eb56e36a2b2fe8da0de183b6d636d6b6654cbfb8cb4b720d38037842d79a8d18
 - Mapping-package SHA-256: 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1
-- Pack content-review SHA-256: 7e46c09bd636a00a8e966662c55402683cc597da0667b141bb508c510ab3d315
-- Review-package SHA-256: 0fef41f6ec64a6cf8ffd8f7dd34bb46a014f48d5c6101ceb2ab7e7dc094dc6cf
-- Repository source SHA-256: 24769c7187f82db5f121e58f437f3efe926445876506adc84b2ad117a88306d2
+- Pack content-review SHA-256: d28094322a590bd83f08a5d38f03eb1bfddcf728d51304fa579e322dfac1803f
+- Review-package SHA-256: 745c2c6f7ee3ba6460ca66595475710cc1dd52fcf2c71e266715cb7cac78ade7
+- Repository source SHA-256: 3c8a7ffd929bcaafbb593e64f1ee7580485077949539431b7a1e4a0c87b9b6c6
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -2124,19 +2124,19 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a84995cc519390388fe64a2ab0cc407c8f65e7fee9384222e9a0c766c6ebc65c
+- Content hash: 6d487eeafc686585063c554bd7c0edb805a1805608a95d4c821e1c83565fd168
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=сто́л
 options=столы́ | сто́л
 answer=столы́
-feedback=Does the admitted record show the governed contrast? столы́.
+feedback=сто́л is the singular nominative form; столы́ is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | сто́л is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-0
@@ -2144,8 +2144,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u8-plural-1
 distractorSourceIds= | prov-ex-or-u8-plural-0
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | сто́л is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=сто́л is the singular nominative form; столы́ is the plural nominative form of the same noun.
 contrastMembers=столы́ | сто́л
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-0 | prov-ex-or-u8-plural-1 | prov-ex-or-u8-plural-0
@@ -2158,19 +2158,19 @@ relationParticipantIds=prov-ex-or-u8-plural-0 | prov-ex-or-u8-plural-1 | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: cb4b49c93eae15f7530a13aa301d9831e3b4a3b9e5a4c05304ef8449563caf46
+- Content hash: 89115bedbcdb0f9c58acbbe062b3341f4b60b29e844e8dbaf2251506848e30a5
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=кни́га
 options=кни́ги | кни́га
 answer=кни́ги
-feedback=Does the admitted record show the governed contrast? кни́ги.
+feedback=кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | кни́га is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_SPELLING
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-0
@@ -2178,8 +2178,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u8-spelling-4
 distractorSourceIds= | prov-ex-or-u8-spelling-3
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | кни́га is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.
 contrastMembers=кни́ги | кни́га
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-spelling-3 | prov-ex-or-u8-spelling-4 | prov-ex-or-u8-spelling-3
@@ -2192,19 +2192,19 @@ relationParticipantIds=prov-ex-or-u8-spelling-3 | prov-ex-or-u8-spelling-4 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8855ef0f2bf23e796d4758bc8e7239f9682f3188706c9abaac27a84721c203c4
+- Content hash: a9ba0f0e7415b704b3f7697c0ab39d3c21105eea2131fcccf67c7496fb3a9ee4
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=брат
 options=бра́тья | брат
 answer=бра́тья
-feedback=Does the admitted record show the governed contrast? бра́тья.
+feedback=брат is the singular nominative form; бра́тья is the plural nominative form of the same noun.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | брат is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=IRREGULAR_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-irregular-0
@@ -2212,8 +2212,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u8-irregular-2
 distractorSourceIds= | prov-ex-or-u8-irregular-1
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | брат is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=брат is the singular nominative form; бра́тья is the plural nominative form of the same noun.
 contrastMembers=бра́тья | брат
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-irregular-1 | prov-ex-or-u8-irregular-2 | prov-ex-or-u8-irregular-1
@@ -2226,19 +2226,19 @@ relationParticipantIds=prov-ex-or-u8-irregular-1 | prov-ex-or-u8-irregular-2 | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c0ccbb094f659420ab708bd67757f72e4dc27a2d56db40957783330887ba984e
+- Content hash: 45af40994a9f9a4382972d4eae42ae0a483819e36e0407982007cc9b623d5451
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same adjective corresponds to the shown form?
 promptLetter=но́вый
 options=но́вые | но́вый
 answer=но́вые
-feedback=Does the admitted record show the governed contrast? но́вые.
+feedback=но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_AGREEMENT
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-agreement-0
@@ -2246,8 +2246,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u8-agreement-5
 distractorSourceIds= | prov-ex-or-u8-agreement-4
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.
 contrastMembers=но́вые | но́вый
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-agreement-4 | prov-ex-or-u8-agreement-5 | prov-ex-or-u8-agreement-4
@@ -2294,19 +2294,19 @@ relationParticipantIds=prov-ex-u8-availability-0-ru | prov-u8-availability-x-0 |
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d75594e8fc52ba1507c5d803f1d8136bd3def1832ae347499e759dce841f6d19
+- Content hash: d5f9c1a2403196393e551ae951b35496bdb544bdbe7c9c4e1366b22bb0075709
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=го́род
 options=города́ | го́род
 answer=города́
-feedback=Does the admitted record show the governed contrast? города́.
+feedback=го́род is the singular nominative form; города́ is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | го́род is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-1
@@ -2314,8 +2314,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-3
 distractorSourceIds= | prov-ex-or-u8-plural-2
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | го́род is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=го́род is the singular nominative form; города́ is the plural nominative form of the same noun.
 contrastMembers=города́ | го́род
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-2 | prov-ex-or-u8-plural-3 | prov-ex-or-u8-plural-2
@@ -2328,19 +2328,19 @@ relationParticipantIds=prov-ex-or-u8-plural-2 | prov-ex-or-u8-plural-3 | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 71a16f358419dca6779516360f59d2a0dd6d6cbd970ada8b49b0d1ea6a4c827c
+- Content hash: f19eda9527f1d37b933b154344b7c15f07fe056538d99bf58c182bd77cb0bfbc
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=окно́
 options=о́кна | окно́
 answer=о́кна
-feedback=Does the admitted record show the governed contrast? о́кна.
+feedback=окно́ is the singular nominative form; о́кна is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | окно́ is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-2
@@ -2348,8 +2348,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-7
 distractorSourceIds= | prov-ex-or-u8-plural-6
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | окно́ is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=окно́ is the singular nominative form; о́кна is the plural nominative form of the same noun.
 contrastMembers=о́кна | окно́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-6 | prov-ex-or-u8-plural-7 | prov-ex-or-u8-plural-6
@@ -2362,19 +2362,19 @@ relationParticipantIds=prov-ex-or-u8-plural-6 | prov-ex-or-u8-plural-7 | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4ce9c9c4a83fb5e1381b585301d0e8f6b9de9face7f559a99d8ca5e0dc293398
+- Content hash: cb7e2dfe84ed1d67f0f93c6c8711e8de0761c96a6b168a4604a7741220109271
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=ма́ма
 options=ма́мы | ма́ма
 answer=ма́мы
-feedback=Does the admitted record show the governed contrast? ма́мы.
+feedback=ма́ма is the singular nominative form; ма́мы is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | ма́ма is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-3
@@ -2382,8 +2382,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-9
 distractorSourceIds= | prov-ex-or-u8-plural-8
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | ма́ма is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=ма́ма is the singular nominative form; ма́мы is the plural nominative form of the same noun.
 contrastMembers=ма́мы | ма́ма
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-8 | prov-ex-or-u8-plural-9 | prov-ex-or-u8-plural-8
@@ -2396,19 +2396,19 @@ relationParticipantIds=prov-ex-or-u8-plural-8 | prov-ex-or-u8-plural-9 | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c68fbfa6b5542ad1012ef0803159d0c6ca56de3096f46daa304e3a20e689d842
+- Content hash: 3be961c32c7bee70c7e6e8e6afb2b7234316c48738da3f7633d9d976d53a65a2
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=до́м
 options=дома́ | до́м
 answer=дома́
-feedback=Does the admitted record show the governed contrast? дома́.
+feedback=до́м is the singular nominative form; дома́ is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | до́м is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-4
@@ -2416,8 +2416,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-11
 distractorSourceIds= | prov-ex-or-u8-plural-10
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | до́м is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=до́м is the singular nominative form; дома́ is the plural nominative form of the same noun.
 contrastMembers=дома́ | до́м
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-10 | prov-ex-or-u8-plural-11 | prov-ex-or-u8-plural-10
@@ -2430,19 +2430,19 @@ relationParticipantIds=prov-ex-or-u8-plural-10 | prov-ex-or-u8-plural-11 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8622b5b1f7ccd8a8125bb1f72244d3a1948312ebbda093b6d134070f30de689f
+- Content hash: 2ba25ae5ec56be263a62f5249f20863bd2c5f9fec07a5a56e0ccb7c80f4a3b9b
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=сло́во
 options=слова́ | сло́во
 answer=слова́
-feedback=Does the admitted record show the governed contrast? слова́.
+feedback=сло́во is the singular nominative form; слова́ is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | сло́во is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-5
@@ -2450,8 +2450,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-13
 distractorSourceIds= | prov-ex-or-u8-plural-12
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | сло́во is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=сло́во is the singular nominative form; слова́ is the plural nominative form of the same noun.
 contrastMembers=слова́ | сло́во
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-12 | prov-ex-or-u8-plural-13 | prov-ex-or-u8-plural-12
@@ -2464,19 +2464,19 @@ relationParticipantIds=prov-ex-or-u8-plural-12 | prov-ex-or-u8-plural-13 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 75a8492870f72c1bf33569ad8e737a5cea5862cd045572cc126719bd9f342e20
+- Content hash: 518086108a91b114e9cc79d6abf903804574c2a85faed04edf8cc2fb8ab1d725
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=кни́га
 options=кни́ги | кни́га
 answer=кни́ги
-feedback=Does the admitted record show the governed contrast? кни́ги.
+feedback=кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | кни́га is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-6
@@ -2484,8 +2484,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-5
 distractorSourceIds= | prov-ex-or-u8-plural-4
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | кни́га is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.
 contrastMembers=кни́ги | кни́га
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-4 | prov-ex-or-u8-plural-5 | prov-ex-or-u8-plural-4
@@ -2498,19 +2498,19 @@ relationParticipantIds=prov-ex-or-u8-plural-4 | prov-ex-or-u8-plural-5 | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 560cd1c4b46316336714a84c7b1d9c3e982dcabfc36df5e5e86396e7a89bcced
+- Content hash: 2fd31709268f209537c97e92ce13130f643e103a58d66b39ced33660d1176a36
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted form is the dictionary row of the shown form?
+prompt=Which singular nominative form of the same noun corresponds to the shown form?
 promptLetter=кни́ги
 options=кни́га | кни́ги
 answer=кни́га
-feedback=Does the admitted record show the governed contrast? кни́га.
+feedback=кни́ги is the plural nominative form; кни́га is the singular nominative form of the same noun.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the plural row of the same word, not the dictionary row.
+distractorRationales= | кни́ги is the plural nominative form, so it does not supply the requested singular nominative form.
 testedFeature=PLURAL_SPELLING
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-1
@@ -2518,8 +2518,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-spelling-3
 distractorSourceIds= | prov-ex-or-u8-spelling-4
-distractorDifference= | This form is the plural row of the same word, not the dictionary row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | кни́ги is the plural nominative form, so it does not supply the requested singular nominative form.
+whyAnswerDemonstratesObjective=кни́ги is the plural nominative form; кни́га is the singular nominative form of the same noun.
 contrastMembers=кни́га | кни́ги
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-spelling-4 | prov-ex-or-u8-spelling-3 | prov-ex-or-u8-spelling-4
@@ -2532,19 +2532,19 @@ relationParticipantIds=prov-ex-or-u8-spelling-4 | prov-ex-or-u8-spelling-3 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d33723414c6e9adb799a1494d4cfbb4eb426e188a4187260b68afe4ea0b8da53
+- Content hash: 194053018346cb34dc015bfac1f88e0f2239fed574c1160f85ecf4ec71e80c59
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same adjective corresponds to the shown form?
 promptLetter=хоро́шее
 options=хоро́шие | хоро́шее
 answer=хоро́шие
-feedback=Does the admitted record show the governed contrast? хоро́шие.
+feedback=хоро́шее is the neuter singular nominative form; хоро́шие is the plural nominative form of the same adjective.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other row of the same word, not the plural row.
+distractorRationales= | хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_SPELLING
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-2
@@ -2552,8 +2552,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-spelling-2
 distractorSourceIds= | prov-ex-or-u8-spelling-6
-distractorDifference= | This form is the other row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=хоро́шее is the neuter singular nominative form; хоро́шие is the plural nominative form of the same adjective.
 contrastMembers=хоро́шие | хоро́шее
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-2 | prov-ex-or-u8-spelling-6
@@ -2566,19 +2566,19 @@ relationParticipantIds=prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-2 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 45756a4f8079ce539d236dd4f0a375ddd90a13822a708538d3050f08509a1467
+- Content hash: 2fd2f16c285fe8c1acb0d8754d4108f45bccb01e939f7a5a1ed27f56ac300a9f
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted form is the other row of the shown form?
+prompt=Which neuter singular nominative form of the same adjective corresponds to the shown form?
 promptLetter=хоро́шие
 options=хоро́шее | хоро́шие
 answer=хоро́шее
-feedback=Does the admitted record show the governed contrast? хоро́шее.
+feedback=хоро́шие is the plural nominative form; хоро́шее is the neuter singular nominative form of the same adjective.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the plural row of the same word, not the other row.
+distractorRationales= | хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form.
 testedFeature=PLURAL_SPELLING
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-3
@@ -2586,8 +2586,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-spelling-6
 distractorSourceIds= | prov-ex-or-u8-spelling-2
-distractorDifference= | This form is the plural row of the same word, not the other row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form.
+whyAnswerDemonstratesObjective=хоро́шие is the plural nominative form; хоро́шее is the neuter singular nominative form of the same adjective.
 contrastMembers=хоро́шее | хоро́шие
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-spelling-2 | prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-2
@@ -2600,19 +2600,19 @@ relationParticipantIds=prov-ex-or-u8-spelling-2 | prov-ex-or-u8-spelling-6 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 43182daf22424cf8adaceffd1df90199927e0a0ef9777ccf8638faef01641842
+- Content hash: 4e37a5cac163e32542c7bea81aecb15372300ccabf01714d0058fce02e4a8a96
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted form is the dictionary row of the shown form?
+prompt=Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?
 promptLetter=хоро́шее
 options=хоро́ший | хоро́шие
 answer=хоро́ший
-feedback=Does the admitted record show the governed contrast? хоро́ший.
+feedback=хоро́шее is the neuter singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the plural row of the same word, not the dictionary row.
+distractorRationales= | хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form.
 testedFeature=PLURAL_SPELLING
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-4
@@ -2620,8 +2620,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-spelling-1
 distractorSourceIds= | prov-ex-or-u8-spelling-2
-distractorDifference= | This form is the plural row of the same word, not the dictionary row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form.
+whyAnswerDemonstratesObjective=хоро́шее is the neuter singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.
 contrastMembers=хоро́ший | хоро́шие
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-1 | prov-ex-or-u8-spelling-2
@@ -2634,19 +2634,19 @@ relationParticipantIds=prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-1 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8b6fb396a7fc386d8f234ebe9b36be20f911871c703561aa8ee49f1039a83d8d
+- Content hash: ca5d91e1a50f1c55981bd20081eccf8fe1c0d79e1412adc2c26ef73a6f9a2843
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=челове́к
 options=лю́ди | челове́к
 answer=лю́ди
-feedback=Does the admitted record show the governed contrast? лю́ди.
+feedback=челове́к is the singular nominative form; лю́ди is the plural nominative form of the same noun.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | челове́к is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=IRREGULAR_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-irregular-1
@@ -2654,8 +2654,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-irregular-6
 distractorSourceIds= | prov-ex-or-u8-irregular-5
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | челове́к is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=челове́к is the singular nominative form; лю́ди is the plural nominative form of the same noun.
 contrastMembers=лю́ди | челове́к
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-irregular-5 | prov-ex-or-u8-irregular-6 | prov-ex-or-u8-irregular-5
@@ -2668,19 +2668,19 @@ relationParticipantIds=prov-ex-or-u8-irregular-5 | prov-ex-or-u8-irregular-6 | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 648ee7ebad995a9d9983a59581f0ec4635a8b8b0c72b3c2235d2c5b3590cd316
+- Content hash: e72971013a919e8ce12760c5bb23b5f12781b4e17547e80ec4e2f0ae3ddc8125
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=друг
 options=друзья́ | друг
 answer=друзья́
-feedback=Does the admitted record show the governed contrast? друзья́.
+feedback=друг is the singular nominative form; друзья́ is the plural nominative form of the same noun.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | друг is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=IRREGULAR_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-irregular-2
@@ -2688,8 +2688,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-irregular-4
 distractorSourceIds= | prov-ex-or-u8-irregular-3
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | друг is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=друг is the singular nominative form; друзья́ is the plural nominative form of the same noun.
 contrastMembers=друзья́ | друг
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-irregular-3 | prov-ex-or-u8-irregular-4 | prov-ex-or-u8-irregular-3
@@ -2702,19 +2702,19 @@ relationParticipantIds=prov-ex-or-u8-irregular-3 | prov-ex-or-u8-irregular-4 | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9c38dfeb87c37204384e789666c4dc4c9bb2a65ce8de2dc7c8cb503b167c3b8f
+- Content hash: 5f0961062c0bac56de2302a99197881058be302492327fc332d6d764e96cf233
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=сы́н
 options=сыновья́ | сы́н
 answer=сыновья́
-feedback=Does the admitted record show the governed contrast? сыновья́.
+feedback=сы́н is the singular nominative form; сыновья́ is the plural nominative form of the same noun.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | сы́н is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=IRREGULAR_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-irregular-3
@@ -2722,8 +2722,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-irregular-8
 distractorSourceIds= | prov-ex-or-u8-irregular-7
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | сы́н is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=сы́н is the singular nominative form; сыновья́ is the plural nominative form of the same noun.
 contrastMembers=сыновья́ | сы́н
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-irregular-7 | prov-ex-or-u8-irregular-8 | prov-ex-or-u8-irregular-7
@@ -2736,19 +2736,19 @@ relationParticipantIds=prov-ex-or-u8-irregular-7 | prov-ex-or-u8-irregular-8 | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9cd3d284e5ce67b79e45d961996d0618e55b1cfb8711715c5a1f34d67115902d
+- Content hash: 90e3985d8840706585378430ca0339d05d8d03c18be0117e7482e3dd9a3bf401
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same adjective corresponds to the shown form?
 promptLetter=мо́й
 options=мои́ | мо́й
 answer=мои́
-feedback=Does the admitted record show the governed contrast? мои́.
+feedback=мо́й is the masculine singular nominative form; мои́ is the plural nominative form of the same adjective.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | мо́й is the masculine singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_AGREEMENT
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-agreement-1
@@ -2756,8 +2756,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-agreement-3
 distractorSourceIds= | prov-ex-or-u8-agreement-2
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | мо́й is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=мо́й is the masculine singular nominative form; мои́ is the plural nominative form of the same adjective.
 contrastMembers=мои́ | мо́й
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-agreement-2 | prov-ex-or-u8-agreement-3 | prov-ex-or-u8-agreement-2
@@ -2770,19 +2770,19 @@ relationParticipantIds=prov-ex-or-u8-agreement-2 | prov-ex-or-u8-agreement-3 | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f53ec79cc20519777889c3dbce0dbf292e08794de58a5ae4564db1924bbbf991
+- Content hash: 866fcf843d408a48544dd13311c65319cc3c1a21254b67abdc4ea4d694884f77
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same adjective corresponds to the shown form?
 promptLetter=э́та
 options=э́ти | э́та
 answer=э́ти
-feedback=Does the admitted record show the governed contrast? э́ти.
+feedback=э́та is the feminine singular nominative form; э́ти is the plural nominative form of the same adjective.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other row of the same word, not the plural row.
+distractorRationales= | э́та is the feminine singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_AGREEMENT
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-agreement-2
@@ -2790,8 +2790,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-agreement-7
 distractorSourceIds= | prov-ex-or-u8-agreement-6
-distractorDifference= | This form is the other row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | э́та is the feminine singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=э́та is the feminine singular nominative form; э́ти is the plural nominative form of the same adjective.
 contrastMembers=э́ти | э́та
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-agreement-6 | prov-ex-or-u8-agreement-7 | prov-ex-or-u8-agreement-6
@@ -2804,19 +2804,19 @@ relationParticipantIds=prov-ex-or-u8-agreement-6 | prov-ex-or-u8-agreement-7 | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d9b7340c6fc6c4da4d27919780fc9f65f510877dcd96015248b0d73d8bf0067a
+- Content hash: 7ad80d37e9c44c27f620b92a734e6e91ef8d0583508b29d1edb5a47292cafe5a
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same adjective corresponds to the shown form?
 promptLetter=но́вый
 options=но́вые | но́вый
 answer=но́вые
-feedback=Does the admitted record show the governed contrast? но́вые.
+feedback=но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_AGREEMENT
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-agreement-3
@@ -2824,8 +2824,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-agreement-5
 distractorSourceIds= | prov-ex-or-u8-agreement-4
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.
 contrastMembers=но́вые | но́вый
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-agreement-4 | prov-ex-or-u8-agreement-5 | prov-ex-or-u8-agreement-4
@@ -3514,6 +3514,1236 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
 contentHash=983f8a616b45626660859487c02a52b71e016b4d2c218006761578372ca318a0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-agreement-0-1`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff452932b90ff57df3e3aa38030764ea065cdc24444ece8cc0713ff0982a4440
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-g-agreement-0:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:новый#decl_m_nom; adjectives.csv:новый#decl_pl_nom; adjectives.csv:новый#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.
+shippedText=но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5eb0a9d4838fb7f152fc9dddaeac2ce28823d868ac1024ad26ac1d27961e7bda
+contentHash=0c63edf4287d415c186e068f75487151740c772f5630dad6a9c6772d7dd88cd6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-agreement-0-3`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b773c729ac32f38095f4884b6d69e18075f06441efcb6594e233801201ad783
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-g-agreement-0:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:новый#decl_m_nom; adjectives.csv:новый#decl_pl_nom; adjectives.csv:новый#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=109e7cd0026b9f920b304b8ec7607a3ad9b98592b4c9af218ced1c0ac4b4bcd3
+contentHash=bcd3973a1172752c1d2bab389a63aa8ed7c081c41c3c60f22aec8790dbb2d1e5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-irregular-0-1`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 88a3405c3327fcd3073f2f05fe42c5f3ce69e470fff626fcab6df89b99a23070
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-g-irregular-0:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#pl_nom; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+брат is the singular nominative form; бра́тья is the plural nominative form of the same noun.
+shippedText=брат is the singular nominative form; бра́тья is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0ef03ce56d70fef21f7f6a878d6f357310a05e1f4889af9f00bc967fcbf2e0e4
+contentHash=beba449ae8d1661b650b7934ed21bf6ee753e4ea0c9a3bb402156c0e586db03e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-irregular-0-3`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eea9628eee9fd5cc4f0a84cb69890ad9ab9a72b972ddd3907e252a718b5779de
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-g-irregular-0:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#pl_nom; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+брат is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=брат is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2d7302d07c7cd7162ffd20b21aa44a90b4bcf7bf58d9ce6c14c1cef4b3419c9b
+contentHash=1b53b2a2bbead80b73c0f93394c40b95aeb727aaccae261f935a0f2d49e842f4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-plural-0-0`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fef08fb11a5d69d06f724502bf71cb62d589bb5ff521d01c123391707e9416fe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-g-plural-0:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:стол#sg_nom; nouns.csv:стол#pl_nom; nouns.csv:стол#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which plural nominative form of the same noun corresponds to the shown form?
+shippedText=Which plural nominative form of the same noun corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=61b3ed696f66f676f8def5ce61fcc4ec7f349cc426403ebe8266841fbead3762
+contentHash=63dad78d8f28e9f91cdb6055e229babc4af0575490f1dbd00ea7b61c8a243196
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-plural-0-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a96ad65f4ddab0755e3571619c124083d057d7c60a56060bc9d8490225679a8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-g-plural-0:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:стол#sg_nom; nouns.csv:стол#pl_nom; nouns.csv:стол#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+сто́л is the singular nominative form; столы́ is the plural nominative form of the same noun.
+shippedText=сто́л is the singular nominative form; столы́ is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=be27803904cfdb76f6000738fcbf9d7a1e0526f647f20ed9c8968d6233b8d961
+contentHash=8f88c50a9abecb53c88c5ed3da99bd115159c84bfd5d723804c085e11ff58b2c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-plural-0-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8989753bb1f88884b96189f4d6c6220d8f7b02d7d28ccdf981ed8e59e014d5f7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-g-plural-0:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:стол#sg_nom; nouns.csv:стол#pl_nom; nouns.csv:стол#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+сто́л is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=сто́л is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1a1340fc31b00d7eeba96d1737b844ea6bc97ee1fcd8b87137f2981828f15cc6
+contentHash=042f52940612d6103eaed315c16ef8e46d535d78a949d9307bafb15ba5853e24
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-agreement-1-1`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c505517cb3c567b2a045a38e5f09ed7d5148d271c0c8d8d2d8de4f9b016a9f9c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-i-agreement-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:мой#decl_m_nom; adjectives.csv:мой#decl_pl_nom; adjectives.csv:мой#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+мо́й is the masculine singular nominative form; мои́ is the plural nominative form of the same adjective.
+shippedText=мо́й is the masculine singular nominative form; мои́ is the plural nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e9ed01a71fb62337227e35f9389fb16a063d57b603a15645c0956c8c2be96ef7
+contentHash=1ef1bf924222df7bfc4139f8a1674cdfdc65baff900df1a7d1de79f1f2c23dac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-agreement-1-3`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a98e0d6c0f78c02927b070a3f0888d87813462decf3f3d667dd65b97691fe21
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-i-agreement-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:мой#decl_m_nom; adjectives.csv:мой#decl_pl_nom; adjectives.csv:мой#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+мо́й is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=мо́й is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cd58589b81b3f494c5638e2fd2f51e7730af6dd4482a242aafd210d06164f8e7
+contentHash=b3488fbd11038658440539d5272572d01873b7f7cddf707903099395e9cb02ee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-agreement-2-1`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c95dd45841b06c576bd7a2737eb194ec2a92b8f98f63004d3860872e3626adb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-i-agreement-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:этот#decl_f_nom; adjectives.csv:этот#decl_pl_nom; adjectives.csv:этот#decl_f_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+э́та is the feminine singular nominative form; э́ти is the plural nominative form of the same adjective.
+shippedText=э́та is the feminine singular nominative form; э́ти is the plural nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91468c68ac82b5498ebd4d757993ec41a83ff23d36ba623cb91faa58cac1e99c
+contentHash=23b97065eb682eb9b97370b59cf9e0299b89220987156fed08f3a45e9ecc1db7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-agreement-2-3`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0afb510e13a28fcc526066a532ce3487d20c24a582eace3777a491480d6c901b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-i-agreement-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:этот#decl_f_nom; adjectives.csv:этот#decl_pl_nom; adjectives.csv:этот#decl_f_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+э́та is the feminine singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=э́та is the feminine singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3b61a0e53dcdc0b1d871d6cfa0d051a7df30daba21cbf3e9e28ee683537e851b
+contentHash=00852d48fce6df06e6c5a14ce41ff0cf2405f92e693162e91b20a29bd206943d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-irregular-1-1`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b1d73ea0f3183c452eae566ef50d3c26d4e43c97d7c53b1ccdf4436b8a32109d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-i-irregular-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:человек#sg_nom; nouns.csv:человек#pl_nom; nouns.csv:человек#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+челове́к is the singular nominative form; лю́ди is the plural nominative form of the same noun.
+shippedText=челове́к is the singular nominative form; лю́ди is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf84478477aaf6e27fc036688cbad4d91ee38f6660dfef0a6a487c690f7bf276
+contentHash=2047298692a91e9c3edd84ee1eb93cb528a8d841ef6368095331cfbd657fcef7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-irregular-1-3`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ffe509772a0c49bb508f634737826620e3fbc0847453fee67c47d3606164bea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-i-irregular-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:человек#sg_nom; nouns.csv:человек#pl_nom; nouns.csv:человек#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+челове́к is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=челове́к is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa12939d10b6695ca921aa6a7692fdc67ff499ff67c38513b137d31a9df8385d
+contentHash=967017877e8c9dc9a7c57b0b58dddce904045bd42d563a0e31450d6f9c96548c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-irregular-2-1`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5aa4b387ae29aca29545dcb402ed9ee970c1516bc3d21bbf86973d5802c095d4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-i-irregular-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#pl_nom; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+друг is the singular nominative form; друзья́ is the plural nominative form of the same noun.
+shippedText=друг is the singular nominative form; друзья́ is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=553049ae42168986f5921731477a8a97dd7226efbc274e7e57f55b662e4e2b84
+contentHash=b618385f8fa04c7117055fc4a236db0c0fbec281585ba72b471c1778ae8c2f5e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-irregular-2-3`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4bbc8b19c8d4041a2b050b1025eeca0cfa0a5956b081ab3bd1cb8a88e769395f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-i-irregular-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#pl_nom; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+друг is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=друг is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=65fb4f640e05241607f2ada158a0a71f283680f366b3cd1f039a8c79b83b1d3a
+contentHash=39e36baae7ba9eb58d481f7972afacc6eb4ae8be5f9930c18262eadbc8e9b81f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-irregular-3-1`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 62eb23f7dcdc20dd3aaa078fac1a91f620414d037e1592eb8f4a1dffebfac05a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-i-irregular-3:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:сын#sg_nom; nouns.csv:сын#pl_nom; nouns.csv:сын#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+сы́н is the singular nominative form; сыновья́ is the plural nominative form of the same noun.
+shippedText=сы́н is the singular nominative form; сыновья́ is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e5d538091ffd11638fe2e602681876b0c2ca436322d2186fa3c598acb6c9a316
+contentHash=04eb1022d313a7f951cfacb058c3f2dc9b3c7e03fbb09ec8b0ed397da0da299e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-irregular-3-3`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 91a363178422377bf8567a3f0867113221751ed390dcdf8d0a3f71ac49314300
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-i-irregular-3:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:сын#sg_nom; nouns.csv:сын#pl_nom; nouns.csv:сын#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+сы́н is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=сы́н is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=99e38c92d76757375bd38cc3309dd10666f88312e1d9d58b8796a4b521442fcb
+contentHash=4886de55de3e4af98a78374cc08782d4a51b0a09d2dd742b8a14a5bc1e9a68c2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-1-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 88d86fc0f00d5a422d4e4f900e7700b1192d95f61ad5ddb49e62987301e03818
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:город#sg_nom; nouns.csv:город#pl_nom; nouns.csv:город#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+го́род is the singular nominative form; города́ is the plural nominative form of the same noun.
+shippedText=го́род is the singular nominative form; города́ is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d45978afacef5db026fb93b7362e93b539ffd6643dcc0f2b89acd18b65e7c994
+contentHash=b0520552b2bff6e63da6c2cece8eda97a59012ea537262995c0a3126e281a091
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-1-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0afc07190266c091d7b9f5740b816115c738313d34e46781ff304abd1ea86564
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:город#sg_nom; nouns.csv:город#pl_nom; nouns.csv:город#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+го́род is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=го́род is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=197a8f575bf6892259721529c0b1e717f7095d479d11767b093309a3c5a46005
+contentHash=130e24123795015a989a558abd602c8e6328dbcbdac988b03d3f6c324e96d919
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-2-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b66924ec2e0a68882dff7ecbc2785562d887e1d52da9aa7fdf374661001b7cdd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:окно#sg_nom; nouns.csv:окно#pl_nom; nouns.csv:окно#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+окно́ is the singular nominative form; о́кна is the plural nominative form of the same noun.
+shippedText=окно́ is the singular nominative form; о́кна is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a343478b952bd3ae259ab9277b80eef5052a454824d3af246efde094ec079a03
+contentHash=42e124231f0ff99d465a24bb1b5f5d2edc5333ef56883b52289b22aed98b4495
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-2-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f74d8ea1e0eddd4c9663fceb32d1cd12211385c417de068a30c419fb9ed444c6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:окно#sg_nom; nouns.csv:окно#pl_nom; nouns.csv:окно#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+окно́ is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=окно́ is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2557f82fb80f6fcd101d0e338a1155f923a0b9ddd7713c21ad3a1513cd79de8d
+contentHash=47c0ac9a1b93b545d63254f768daff44454165bdc3c34a792cadfbfe0b72fe4d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-3-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8133b44caa3418ab0e234ddd241b5197714c90c6264b9c37e946c703013f1c17
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-3:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:мама#sg_nom; nouns.csv:мама#pl_nom; nouns.csv:мама#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+ма́ма is the singular nominative form; ма́мы is the plural nominative form of the same noun.
+shippedText=ма́ма is the singular nominative form; ма́мы is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4118050fc9d52347b92fb4b2cbb5c27ff582b937e6dde419fec8611203a1c761
+contentHash=2f123c83635f1549f85af92892be033d0b4dee93fb913f17ec0c15bbe5b5fefb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-3-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f5b808c004e246901481b8d91fde4261aba9798db57c9b5aa440cef95b8c3f48
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-3:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:мама#sg_nom; nouns.csv:мама#pl_nom; nouns.csv:мама#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+ма́ма is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=ма́ма is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8d3ec09e6a28bfe588c88097b43baccd306f38bbf2b0be5f8207532213a14224
+contentHash=f176800b7e772f4012219ed7a12d7c20ef9d71d309b133ae1b92c1696f3d178a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-4-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69294355a83f5b3015b7c5778796fef8c6cfc410c975d47f7a64d6b2d55ad4d2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-4:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:дом#sg_nom; nouns.csv:дом#pl_nom; nouns.csv:дом#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+до́м is the singular nominative form; дома́ is the plural nominative form of the same noun.
+shippedText=до́м is the singular nominative form; дома́ is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=61dfbaf62bdb5d4289b66b5fd8fa9ff7f54a4452286f33b279a04a607329c122
+contentHash=7fe7d49cd34748e36c366fcff4838238de7ef0ac61b9b33336813243828dea4b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-4-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a9967b0ffd8ea5b0025549bebc14e1cda22ad1ca3c4432bc245e338a55550fe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-4:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:дом#sg_nom; nouns.csv:дом#pl_nom; nouns.csv:дом#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+до́м is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=до́м is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=41a3ea1a8b144add983d9e15e2b89640a40bd684209fa3205ac1047470de9c0d
+contentHash=14b12826a33c34d2d289e2fa5852851d7dfe3cfbf456906dc0b10b52610d5bba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-5-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 05fff67cf13e7d1ad6e7e60afa3cac81d76649c10c597ce8d6c3fc0e441dd734
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-5:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:слово#sg_nom; nouns.csv:слово#pl_nom; nouns.csv:слово#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+сло́во is the singular nominative form; слова́ is the plural nominative form of the same noun.
+shippedText=сло́во is the singular nominative form; слова́ is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f7b7a5d42af0d3604f3ada359c8538f83c807e556ff4e2754dd00e1863ae7445
+contentHash=ccdd07dc9dcb70c846f7315de538566adb4f380e517ae87740587f9ca9a21a88
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-5-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13e8f530894e54166b8c0cdb5f4c21c55aa62a73f9bfe48ef1096e37c8a0e0e4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-5:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:слово#sg_nom; nouns.csv:слово#pl_nom; nouns.csv:слово#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+сло́во is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=сло́во is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=82935750032d1ebd6256cb877eaeaacc95637e9b557a0c8f6ea98f94c69caca5
+contentHash=4a2149979b06d6110d12a776619ec0d7ba73dbea67bc8e76b31f8801c3224b27
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-6-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4ad95dd53415446e3753fccf437e2115676e454b447a4bbb9e9ae639852c46d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-6:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#sg_nom; nouns.csv:книга#pl_nom; nouns.csv:книга#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.
+shippedText=кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=38eeee627701c29b41a32cbfa4d8f4f3349edd36951c53e25307799ef4d225e0
+contentHash=ad1cc0a443593fd6a1467847c08b030d7312c65109cfccd81c17880f942d8f3b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-6-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f8ed364b4df77ef9b584c73e606618f0f4395f7410f248693e79d3360f69b44
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-6:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#sg_nom; nouns.csv:книга#pl_nom; nouns.csv:книга#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+кни́га is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=кни́га is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8450f181b8bbf16ff65391ba417e33dd3e21c52fa28da39819ef049ef85a3751
+contentHash=2f8bd598faef291032725f1aa8c4813767294ea4d437cb8f1dbcac8f93be7009
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-1-0`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9f967f2b14964938d32baade4000bc6d4f79504d90ad15a0e2d5e0b9fd9de2a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-1:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#pl_nom; nouns.csv:книга#sg_nom; nouns.csv:книга#pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which singular nominative form of the same noun corresponds to the shown form?
+shippedText=Which singular nominative form of the same noun corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=480101a9315b328435bcddcdebb556799e965ebc69b35e892da0f42f5470400b
+contentHash=ebaeb143a7ea31323af2bdf4e6fa77acacde951b690415a47b04e803bb622da7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-1-1`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e8f87a50fec10b8f9a8bd3ee1906989120e698fe175c074cbadfd406830775f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#pl_nom; nouns.csv:книга#sg_nom; nouns.csv:книга#pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+кни́ги is the plural nominative form; кни́га is the singular nominative form of the same noun.
+shippedText=кни́ги is the plural nominative form; кни́га is the singular nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ed8119b2920e1642b8fbede309d99251048f266e19dccce8c50093fa6578a5f1
+contentHash=164df15d8c33f32311b613d9ca6f295f4ee9bebebd1a5f25aade10309f182007
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-1-3`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b7f56764362ce161ea18181d7865dc2a7de529dc4702abaa4550b1544c10d342
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#pl_nom; nouns.csv:книга#sg_nom; nouns.csv:книга#pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+кни́ги is the plural nominative form, so it does not supply the requested singular nominative form.
+shippedText=кни́ги is the plural nominative form, so it does not supply the requested singular nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=819c91c9c5f6c6a12b67a53743d22943a2a89d6ff92c9e8afd5b58666729a627
+contentHash=0b55756f51d3f84ab81bb89b608d2ce4993e94cb282769725295bfb4937390a0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-2-0`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e8c89556c511a09a139c504510e10320313af26611847a62ef34db8f8763e79
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-2:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_pl_nom; adjectives.csv:хороший#decl_n_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which plural nominative form of the same adjective corresponds to the shown form?
+shippedText=Which plural nominative form of the same adjective corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c3fe7eba29b2d92087103e5efed1138ff79c4bd45a3e092a695e11a98ab2fbc2
+contentHash=357a5585c9b8542969f16cb41a54327157ad68d6e1ca3037b8512759ddabec71
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-2-1`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6dfe364aff791ae72f929bf7bb6ef2421f2025e07d75fc49a2711f15fbc2e83f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_pl_nom; adjectives.csv:хороший#decl_n_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шее is the neuter singular nominative form; хоро́шие is the plural nominative form of the same adjective.
+shippedText=хоро́шее is the neuter singular nominative form; хоро́шие is the plural nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=73cf3e2e9d002961859df5c0fc16eec0e74dc99f7977d05e9228761d7d608cf9
+contentHash=e0ca7c66a03cc2a061e5985826a06ae1112ca60725a7decedd11e9c1770827fe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-2-3`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 16bd8d6835049ef24c34ca62d41a3d742f54e2ec101162d69d3aab0037b25297
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_pl_nom; adjectives.csv:хороший#decl_n_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f26810291da6ceaa775c27ef6d922a1c5801e4b9c4deddb1bb116e41aaa93fb9
+contentHash=b3b34c3fa727684d49f8dc26d532dbdf75c60b8b8ebb488750359421b22bc21a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-3-0`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b153076e5497892fd344ddc433606b9953952f874009b88c6786aae046a550d5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-3:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_pl_nom; adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which neuter singular nominative form of the same adjective corresponds to the shown form?
+shippedText=Which neuter singular nominative form of the same adjective corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=392aab164e218c9959387ce3d5d73d01a1b1849aa107da443ee78313641d39ef
+contentHash=03d4bc77a9ae90cb9cdaa652db06ed66ed7bfe86e67e954c1a177261ba1518ee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-3-1`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3b9179d90575d5e54a1334c811d3fbcd6e3ed87f7935e11602e880abae9ee3e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-3:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_pl_nom; adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шие is the plural nominative form; хоро́шее is the neuter singular nominative form of the same adjective.
+shippedText=хоро́шие is the plural nominative form; хоро́шее is the neuter singular nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a347ecccf0deff12fc6b4eb14cd7f60e9b5fa3550fbfca66dc19ed44b28d4f77
+contentHash=9aed9c4841ecfd243993a11f76d348e6a41d28a9deb1764a8e3b5c04137aea86
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-3-3`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c84dc18c28a1c2d4d92354d88eef6f18b069da2e34d2b3bccc7b5001becaaa32
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-3:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_pl_nom; adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form.
+shippedText=хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ca8e6599123a788a527e73e664a66b2d7baf53abf935b569f2f104a5a716dc1d
+contentHash=c53f0dc71edcfe3d49b3d801546bf83af6be6dab5a5b0a3bd5e272d8034ffab9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-4-0`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a723c763e3fa7187ad47721d7eb95d0dd238d1ab249f3a003da5b3e2ace4d06
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-4:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_m_nom; adjectives.csv:хороший#decl_pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?
+shippedText=Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3e9ead8cf7a1ec4c4c7b910aaecae4911712f041601513fc8f78a1d17761642d
+contentHash=52d076797bee9ff08907e23f4ed5ebee71db99d7d4d294ba32f8ee19797c3176
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-4-1`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 93f65c9844e8f9d1513432ff16717f7751c830907fbefc2b6c3b7b16bc7ff0e9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-4:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_m_nom; adjectives.csv:хороший#decl_pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шее is the neuter singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.
+shippedText=хоро́шее is the neuter singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=50c943eacb99d44bb96c92bf27d20eb0311e15ca0506b472decb5f35d53f9113
+contentHash=0420df45dd3c502240af22bfa9bd396843764f004047514f6b0f61d1841bd7dc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-4-3`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4429b2c7165f1cd79fb7e35689c49ac8b10c991b697a18a0a4fa6190cef90644
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-4:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_m_nom; adjectives.csv:хороший#decl_pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form.
+shippedText=хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2359c20c6ef86fb2404e96b2e1c5c6de27cd108a072d6472039740fe2ca7369e
+contentHash=34edd732b8317165d3ca0a0e7a44f87572460756491e6bfcabcc599684922056
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7439,6 +8669,47 @@ permitsAppUse=true
 - `obj-u8-spelling` PROVENANCE `prov-ca-8-337`
 - `obj-u8-spelling` PROVENANCE `prov-ca-8-338`
 - `obj-u8-spelling` PROVENANCE `prov-ca-8-339`
+- `obj-u8-agreement` PROVENANCE `prov-ca-declension-u8-g-agreement-0-1`
+- `obj-u8-agreement` PROVENANCE `prov-ca-declension-u8-g-agreement-0-3`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-g-irregular-0-1`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-g-irregular-0-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-g-plural-0-0`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-g-plural-0-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-g-plural-0-3`
+- `obj-u8-agreement` PROVENANCE `prov-ca-declension-u8-i-agreement-1-1`
+- `obj-u8-agreement` PROVENANCE `prov-ca-declension-u8-i-agreement-1-3`
+- `obj-u8-agreement` PROVENANCE `prov-ca-declension-u8-i-agreement-2-1`
+- `obj-u8-agreement` PROVENANCE `prov-ca-declension-u8-i-agreement-2-3`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-i-irregular-1-1`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-i-irregular-1-3`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-i-irregular-2-1`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-i-irregular-2-3`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-i-irregular-3-1`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-i-irregular-3-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-1-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-1-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-2-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-2-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-3-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-3-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-4-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-4-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-5-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-5-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-6-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-6-3`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-1-0`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-1-1`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-1-3`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-2-0`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-2-1`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-2-3`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-3-0`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-3-1`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-3-3`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-4-0`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-4-1`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-4-3`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-2`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-2-gloss`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-3`

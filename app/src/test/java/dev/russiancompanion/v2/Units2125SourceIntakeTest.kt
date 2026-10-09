@@ -44,26 +44,26 @@ class Units2125SourceIntakeTest {
     )
 
     private val preservedContentDigests = mapOf(
-        1 to "9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a",
-        2 to "d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b",
-        3 to "deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86",
-        4 to "5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c",
-        5 to "9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d",
-        6 to "fa6501022bd7ff4a2eca1e47c0ad488d96254cab0eafbecc61a8420835a3ab9c",
-        7 to "ec283b3bc0e58306d84e536947ab747d5ea264cea729bf4838124404ca958359",
-        8 to "e1dd456abf8a7b961f2f8471f35d4178961a53147c354f3e410e88d75f025c78",
-        9 to "d0f135c408fc429392cf695a8122134013fca69637a4f9c1587db3fec6b3c65f",
-        10 to "6845b398da6ad901b06443dd0f56ee6ace4ba4e2da6af9e36d33934dc286c526",
-        11 to "7a70c3b29f7c88934d0dcf21f40d531a45f1eff9daa8593f5af09d509bd10324",
-        12 to "c610495bf16604d555187f66e456c2cd1cb127c77881ef87097332f5e2d426bb",
-        13 to "e8a04394dc8c90059f01a0b7fdf46a57951a98a85ac8050a29781ab1a4a027c5",
-        14 to "270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6",
-        15 to "1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd",
-        16 to "6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5",
-        17 to "a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c",
-        18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
-        19 to "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3",
-        20 to "01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c",
+        1 to "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+        2 to "4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c",
+        3 to "4ac8d4b6ccfefbd5be021d5bcc7c2202ce0b2c3e243755f9ff52017c06a39908",
+        4 to "9f255afab766ef14cbf8ef2688a512f74c00d3c45efc772d6b4506a431a21121",
+        5 to "c2e405cf7081d673a39def8e26035bac7a65b608c57c5f4803ba832c2305c744",
+        6 to "5cd5ff2f4f0ab136c7c16b16a29fcdcd61ac274d0c5ac9f477e453def44ca604",
+        7 to "ba381c4d19692bb7a07f4b4ad35b91c48f9144f15519f5c84f08d7f8fb8b0036",
+        8 to "eb56e36a2b2fe8da0de183b6d636d6b6654cbfb8cb4b720d38037842d79a8d18",
+        9 to "e910e061464deec4c9c2eab392ede33fba94cd3e528e8a142966b28e2d0bb470",
+        10 to "5a3dfebe2aa8946dfd4038b863aa2eeb53b6a9c27202391186bc65cd152fd744",
+        11 to "1b0b2740b6691569dc22c3a09927842f7396a1265797b888751da23507f33688",
+        12 to "c449111039257472d3289c0252bd677367480fd0602c89b7741bb8b7aa4c0f99",
+        13 to "9500bee72be61030d6822e5a7ccdb1c71ab642dd165945e05ce853faaf322b9f",
+        14 to "2f9bbf502b90f2a8c0ef0c8f1fb32b8b5e564290aa16c77e1603f0fa8bbecd39",
+        15 to "80225df0cc95cc791d6cc062121b3d1988b66fa4d7c11cf7b234ac38d227b6dc",
+        16 to "549c88b30a3b16e5824dca7c51ad0640f86aa432f823cf15e24ff26951cb01ce",
+        17 to "9723c8b390ccfa95f468a337f8926133acbc155623fa8523c56e0bda2e619a6b",
+        18 to "70366528a23c5d91603f2cb4706dfc449a39c951dd2097ad4ec96aeb9af128fc",
+        19 to "a8a783a1e491fcf657402905553510000ed86b8780795ceb89ea71bf7988e7a0",
+        20 to "16a66abe6fa5f1d8191ef9e0547375a17781f334b6e36bbdf4f8dc8c13359a46",
     )
 
     private val preservedMappingDigests = mapOf(
@@ -126,7 +126,8 @@ class Units2125SourceIntakeTest {
             assertTrue(comparison.contains("Binary-identity continuity is not established"))
             assertTrue(comparison.contains("not evidence of altered instructional content"))
             assertFalse(notes.substringBefore("Reference-file comparison").contains("2bcc0c45"))
-            assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
+            assertTrue(pack.ownedEditionMappings.filter { it.unitNumber == number }.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
+            assertEquals(1, pack.ownedEditionMappings.count { it.unitNumber == number })
             val review = pack.unitReviews.first { it.unitNumber == number }
             assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", review.status)
             assertTrue(review.reviewer.isNullOrBlank())
@@ -259,7 +260,7 @@ class Units2125SourceIntakeTest {
             supplementalByOldid[page.getValue("oldid").jsonPrimitive.content] = bytes.toString(Charsets.UTF_8)
         }
         val intake = pack.provenanceRecords.filter { it.unitNumber in 21..25 }
-        assertEquals(374, intake.size)
+        assertEquals(571, intake.size)
         assertEquals(setOf(21, 22, 23, 24, 25), intake.map { it.unitNumber }.toSet())
         assertTrue(intake.none { it.sourceId == "src-openrussian-50e210c4" })
         assertTrue(intake.all { it.audioAssetId == null })
@@ -267,7 +268,9 @@ class Units2125SourceIntakeTest {
             assertEquals(sha256(record.originalSourceText), record.sourceHash)
             assertEquals(sha256(record.shippedText), record.contentHash)
             assertTrue(record.sourceRevision.isNotBlank())
-            if (record.sourceId == "src-original-research-synthesis") {
+            if (record.sourceId == "src-content-audit-research") {
+                assertContentAuditResearch(record)
+            } else if (record.sourceId == "src-original-research-synthesis") {
                 assertEquals("urn:russian-companion:original-research-synthesis:phase2-2026-09-29", record.sourceUrl)
                 assertEquals("phase2-2026-09-29", record.sourceRevision)
                 assertEquals("Original app text", record.licenseId)
