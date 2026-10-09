@@ -7945,7 +7945,7 @@
       "kind": "LEXICAL",
       "letterId": "",
       "display": "не́кого спросить",
-      "note": "there is nobody to ask, genitive absence",
+      "note": "there is nobody to ask; negative absence construction",
       "sourceId": "src-ruwiki-otritsatelnye-141256493",
       "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
       "objectiveId": "obj-u24-stand-ins"
@@ -29201,7 +29201,7 @@
       "id": "u24-i-stand-ins-2",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Choose the English description. Which reading is the genitive absence construction?",
+      "prompt": "Choose the English description. Which reading expresses absence of a person available for the action?",
       "promptLetter": "не́кого спросить",
       "options": [
         "there is nobody to ask",
@@ -29220,18 +29220,18 @@
         "there is nothing to ask would be a нечего construction, not не́кого."
       ],
       "assessment": {
-        "testedFeature": "GENITIVE_ABSENCE_NEKOGO",
+        "testedFeature": "NEGATIVE_ABSENCE_NEKOGO",
         "evidenceMode": "STATED_APPLICATION",
         "contrastSetId": "u24-stand-ins-2",
         "cueLanguage": "ru",
         "independent": true,
         "answerSourceIds": [
-          "prov-ca-repair-24-10841"
+          "prov-ca-u24-absence-participant-1"
         ],
         "distractorSourceIds": [
           "",
-          "prov-ca-repair-24-10844",
-          "prov-ca-repair-24-10845"
+          "prov-ca-u24-absence-participant-2",
+          "prov-ca-u24-absence-participant-3"
         ],
         "distractorDifference": [
           "",
@@ -29246,10 +29246,10 @@
         ],
         "relationKind": "STATED_APPLICATION",
         "relationParticipantIds": [
-          "prov-ca-repair-24-10840",
-          "prov-ca-repair-24-10841",
-          "prov-ca-repair-24-10844",
-          "prov-ca-repair-24-10845"
+          "prov-ca-u24-absence-participant-0",
+          "prov-ca-u24-absence-participant-1",
+          "prov-ca-u24-absence-participant-2",
+          "prov-ca-u24-absence-participant-3"
         ],
         "responseKind": "ENGLISH_CLASSIFICATION"
       }
@@ -61261,22 +61261,6 @@
               "remediationStepId": null
             },
             {
-              "id": "u24-st-guided-stand-ins-1",
-              "kind": "GUIDED",
-              "title": "Guided practice",
-              "body": "Choose the admitted record. The feedback states the frozen field.",
-              "dominantAction": "Continue",
-              "referenceIds": [],
-              "itemIds": [
-                "u24-g-stand-ins-0"
-              ],
-              "exampleIds": [],
-              "unavailableReason": null,
-              "bookDirection": null,
-              "companionDirection": null,
-              "remediationStepId": "u24-st-rem-stand-ins"
-            },
-            {
               "id": "u24-st-teach-stand-ins-2",
               "kind": "TEACH",
               "title": "Admitted instruction",
@@ -61296,7 +61280,7 @@
               "id": "u24-st-teach-stand-ins-3",
               "kind": "TEACH",
               "title": "Admitted lines",
-              "body": "не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form such as не́кого for the genitive, не́кому for the dative, or не́кем for the instrumental. There is no nominative некого.",
+              "body": "не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u2125-attribution"
@@ -61311,16 +61295,33 @@
               "remediationStepId": null
             },
             {
+              "id": "u24-st-guided-stand-ins-1",
+              "kind": "GUIDED",
+              "title": "Guided practice",
+              "body": "Choose the admitted record. The feedback states the frozen field.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u24-g-stand-ins-0"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u24-st-rem-stand-ins"
+            },
+            {
               "id": "u24-st-rem-stand-ins",
               "kind": "REMEDIATE",
               "title": "Remediation",
-              "body": "не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form such as не́кого for the genitive, не́кому for the dative, or не́кем for the instrumental. There is no nominative некого.",
+              "body": "не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
               "exampleIds": [
                 "ex-u24-stand-ins-0",
-                "ex-u24-stand-ins-1"
+                "ex-u24-stand-ins-1",
+                "ex-u24-stand-ins-2"
               ],
               "unavailableReason": null,
               "bookDirection": null,
@@ -217599,6 +217600,322 @@
         "sourceDateOrVersion": "2026-10-08",
         "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
         "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:u11-i-past-aspect-2-distractor",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u24-absence-participant-0",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-stand-ins",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-contrast:u24-absence",
+      "originalSourceText": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.\nне́кого спросить\nthere is nobody to ask\nan unspecified person\nthere is nothing to ask",
+      "shippedText": "не́кого спросить",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "f2606ada3d31486a59c24db3b33c8e384360772f69c6f8fb6befd2848fca67af",
+      "contentHash": "8d149b9f1c7ffba78b3ad1a831eb37ddf9f83afe3719dabaca29c884107a5c6d",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; no new Russian form is introduced.",
+        "objectiveOrClaimBinding": "obj-u24-stand-ins:NEGATIVE_ABSENCE_NEKOGO",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": [
+          {
+            "cue": "не́кого спросить",
+            "answer": "there is nobody to ask",
+            "distractors": [
+              "an unspecified person",
+              "there is nothing to ask"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "prov-ca-u24-absence-participant-1",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-stand-ins",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-contrast:u24-absence",
+      "originalSourceText": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.\nне́кого спросить\nthere is nobody to ask\nan unspecified person\nthere is nothing to ask",
+      "shippedText": "there is nobody to ask",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "f2606ada3d31486a59c24db3b33c8e384360772f69c6f8fb6befd2848fca67af",
+      "contentHash": "e13cc4abda51694101eb07a4a6360280df0561869955ef48a5677c76772bd0ea",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; no new Russian form is introduced.",
+        "objectiveOrClaimBinding": "obj-u24-stand-ins:NEGATIVE_ABSENCE_NEKOGO",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": [
+          {
+            "cue": "не́кого спросить",
+            "answer": "there is nobody to ask",
+            "distractors": [
+              "an unspecified person",
+              "there is nothing to ask"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "prov-ca-u24-absence-participant-2",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-stand-ins",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-contrast:u24-absence",
+      "originalSourceText": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.\nне́кого спросить\nthere is nobody to ask\nan unspecified person\nthere is nothing to ask",
+      "shippedText": "an unspecified person",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "f2606ada3d31486a59c24db3b33c8e384360772f69c6f8fb6befd2848fca67af",
+      "contentHash": "f79dc2083a550dff39627a9144b2c2f60029d398f28a89b9d2deea25c40f1b35",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; no new Russian form is introduced.",
+        "objectiveOrClaimBinding": "obj-u24-stand-ins:NEGATIVE_ABSENCE_NEKOGO",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": [
+          {
+            "cue": "не́кого спросить",
+            "answer": "there is nobody to ask",
+            "distractors": [
+              "an unspecified person",
+              "there is nothing to ask"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "prov-ca-u24-absence-participant-3",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-stand-ins",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-contrast:u24-absence",
+      "originalSourceText": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.\nне́кого спросить\nthere is nobody to ask\nan unspecified person\nthere is nothing to ask",
+      "shippedText": "there is nothing to ask",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "f2606ada3d31486a59c24db3b33c8e384360772f69c6f8fb6befd2848fca67af",
+      "contentHash": "12abc1cdffb9a255dc7a728e2e5469fb597fe8af1d14282754232bcc1cd0dea3",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; no new Russian form is introduced.",
+        "objectiveOrClaimBinding": "obj-u24-stand-ins:NEGATIVE_ABSENCE_NEKOGO",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": [
+          {
+            "cue": "не́кого спросить",
+            "answer": "there is nobody to ask",
+            "distractors": [
+              "an unspecified person",
+              "there is nothing to ask"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "prov-ca-u24-absence-prompt",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-stand-ins",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u24-stand-ins:prompt",
+      "originalSourceText": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.\nChoose the English description. Which reading expresses absence of a person available for the action?",
+      "shippedText": "Choose the English description. Which reading expresses absence of a person available for the action?",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "d62affac6cbacfaa1928e34e8a9910bbc28b84043ef866bfee24522fd6601d53",
+      "contentHash": "7b752c9d7fe939a28acabf1ebd9c998d10085ece58572278168a8a5319cf4de4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; no new Russian form is introduced.",
+        "objectiveOrClaimBinding": "obj-u24-stand-ins:NEGATIVE_ABSENCE_NEKOGO",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u24-absence-example-note",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-stand-ins",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u24-stand-ins:example-note",
+      "originalSourceText": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.\nthere is nobody to ask; negative absence construction",
+      "shippedText": "there is nobody to ask; negative absence construction",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "8153b7180018827c032d5e0a718c7a85adcedc617c11691c5e82eef9f79bf4a6",
+      "contentHash": "7200956554beb1dc9e367dbd598b5e197ac2904e800401d1a8fae7f3363339c5",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; no new Russian form is introduced.",
+        "objectiveOrClaimBinding": "obj-u24-stand-ins:NEGATIVE_ABSENCE_NEKOGO",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u24-absence-explanation",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-stand-ins",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u24-stand-ins:explanation",
+      "originalSourceText": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.\nне́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm.",
+      "shippedText": "не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "282d8ed792fc1c4d03efa72d9afc285d1f1fd5e5569fa0a8e796b109704cda1f",
+      "contentHash": "0f1cb2b3b06be61a72bc4aa4ef8db555066be83434b7fdaeb92aeb3cdc7e8764",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "Existing admitted construction and meaning: prov-ca-repair-24-10841. Gramota dictionary search for некого: https://gramota.ru/poisk?mode=slovari&query=некого; Gramota reference answer 317459, 2024-09-26: https://gramota.ru/spravka/vopros/317459. Search excerpts checked 2026-10-09; direct page retrieval returned HTTP 403. The reference distinguishes a missing nominative from genitive/accusative form identity. Follow-up inference: shape and absence meaning alone do not identify a case in this English meaning check. This repair removes the unsupported genitive classification and retains the existing Russian construction. Independently authored 2026-10-09 within the content-audit-2026-10-08 batch; final semantic audit pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; no new Russian form is introduced.",
+        "objectiveOrClaimBinding": "obj-u24-stand-ins:NEGATIVE_ABSENCE_NEKOGO",
         "finalAudit": {
           "artifactIdentity": "",
           "artifactDigest": "",

@@ -20,6 +20,32 @@ import java.io.File
 
 class ContentAuditCorrectionTest {
     @Test
+    fun negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm() {
+        val pack = pack()
+        val unit = pack.unit(24)!!
+        val session = unit.sessions.single { it.id == "u24-s-stand-ins" }
+        val item = pack.item("u24-i-stand-ins-2")!!
+        assertEquals("не́кого спросить", item.promptLetter)
+        assertEquals("there is nobody to ask", item.answer)
+        assertEquals(listOf("there is nobody to ask", "an unspecified person", "there is nothing to ask"), item.options)
+        assertEquals("NEGATIVE_ABSENCE_NEKOGO", item.assessment!!.testedFeature)
+        assertFalse(item.prompt.contains("genitive", ignoreCase = true))
+        val example = pack.examples.single { it.id == "ex-u24-stand-ins-2" }
+        assertEquals("there is nobody to ask; negative absence construction", example.note)
+        val explanation = session.steps.single { it.id == "u24-st-teach-stand-ins-3" }.body
+        assertTrue(explanation.contains("same form in the genitive and accusative"))
+        assertTrue(explanation.contains("sentence determines the case"))
+        val remediation = session.steps.single { it.id == "u24-st-rem-stand-ins" }
+        assertEquals(explanation, remediation.body)
+        assertTrue(remediation.exampleIds.contains(example.id))
+        val guidedIndex = session.steps.indexOfFirst { it.kind == "GUIDED" }
+        assertTrue(session.steps.take(guidedIndex).count { it.kind == "TEACH" } == 3)
+        assertTrue(session.steps.drop(guidedIndex).none { it.kind == "TEACH" })
+        assertEquals(6, unit.advancement.minimumDistinctChecks)
+        assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
+    }
+
+    @Test
     fun courtesyRegisterCorrectionIsTaughtBeforePracticeAndSurvivesRemediation() {
         val pack = pack()
         val unit = pack.unit(25)!!
