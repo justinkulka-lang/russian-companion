@@ -11,12 +11,12 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 061b8d678ae76531092767da78a837f9d2b67930
-- Unit content-review SHA-256: eb56e36a2b2fe8da0de183b6d636d6b6654cbfb8cb4b720d38037842d79a8d18
+- Curriculum source commit: 1e3c622131689cf11966efe3475d6f135c08dc02
+- Unit content-review SHA-256: ae8a7c04e75897c9a50e86b726ee4d0b1b310769f647a561eb5b090c8b98b1d0
 - Mapping-package SHA-256: 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1
-- Pack content-review SHA-256: d28094322a590bd83f08a5d38f03eb1bfddcf728d51304fa579e322dfac1803f
-- Review-package SHA-256: 745c2c6f7ee3ba6460ca66595475710cc1dd52fcf2c71e266715cb7cac78ade7
-- Repository source SHA-256: 3c8a7ffd929bcaafbb593e64f1ee7580485077949539431b7a1e4a0c87b9b6c6
+- Pack content-review SHA-256: 2115dd2ce4e2db46bca1bd3066147eb26c850c3f07ce1bdbde4ea453e432cbdc
+- Review-package SHA-256: d0b55b736924239710819c754e41e66628a977e9878ca40c59120b36c12ff7ec
+- Repository source SHA-256: f107a29d434c4ba786bd5563d0908c1c426805dec1bd230bd4b396dcbbd834ac
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -668,11 +668,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3343526bf2d9881dd9443064ec6d096e8cd57e3848316c2e547928bd9c944516
+- Content hash: 5fd6ec07ae85dd4a48eaebf9688142d0bc6aba5434bdcef8fc66f079e4e3c57a
 
 kind=REMEDIATE
 title=Remediation
-body=you add '''и''', not '''ы'''
+body=After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
 dominantAction=Continue
 references=
 items=

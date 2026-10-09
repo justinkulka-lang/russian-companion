@@ -11,12 +11,12 @@ Unit 16 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 061b8d678ae76531092767da78a837f9d2b67930
-- Unit content-review SHA-256: 549c88b30a3b16e5824dca7c51ad0640f86aa432f823cf15e24ff26951cb01ce
+- Curriculum source commit: 1e3c622131689cf11966efe3475d6f135c08dc02
+- Unit content-review SHA-256: 8befb184732c0a725e374dbbfb594dd2cc5056811d1bd06a121c5dc125de25c9
 - Mapping-package SHA-256: f74c6fa2206f8faad47ad15e91b8dce61f886293f64d9a3f2e47947b2d5db8e7
-- Pack content-review SHA-256: d28094322a590bd83f08a5d38f03eb1bfddcf728d51304fa579e322dfac1803f
-- Review-package SHA-256: 51dbf6e7ec0c3da87993d4b28f49a177d62d1c68e1f8f76bf50d48751ffe9c56
-- Repository source SHA-256: 3c8a7ffd929bcaafbb593e64f1ee7580485077949539431b7a1e4a0c87b9b6c6
+- Pack content-review SHA-256: 2115dd2ce4e2db46bca1bd3066147eb26c850c3f07ce1bdbde4ea453e432cbdc
+- Review-package SHA-256: c8e63387f44373bf524153c754b3590842611ae5568ea8a287d9aeb7d97e9de0
+- Repository source SHA-256: f107a29d434c4ba786bd5563d0908c1c426805dec1bd230bd4b396dcbbd834ac
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -474,11 +474,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1034ff2dbc3a027e44af8c7d28564595bb52d7fe6390068c2a5e1ff2cfab0ebf
+- Content hash: 968c72d595cabe49583c46a8023077e3e92ca008be0e749eb0f3a84da3121450
 
 kind=REMEDIATE
 title=Remediation
-body=Nouns ending in о or a consonant have -ом in the instrumental.
+body=The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal.
 dominantAction=Continue
 references=
 items=
@@ -878,11 +878,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a266edaabb2b44498ca1bc133a56f7290193073863ad85a0fc79b527cef59f23
+- Content hash: c1bcbe9dfca87bcef658519e7c30d07217020ef800cb222d0fd73f680996236e
 
 kind=REMEDIATE
 title=Remediation
-body=To form masculine and neuter adjectives, the ending is -ым.
+body=Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.
 dominantAction=Continue
 references=
 items=
@@ -1319,11 +1319,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: baa7ac2be4d54d65b93eb54920839a6590bac11dc785a0e8060709904059f73f
+- Content hash: 26f82f12376a86cc3e452461bbeb84dd901ba5a8f4ad439375f1288566fa3ce8
 
 kind=REMEDIATE
 title=Remediation
-body=associates of connective verbs
+body=стать means to become. остаться means to remain. The infinitive стать is not the past form became.
 dominantAction=Continue
 references=
 items=

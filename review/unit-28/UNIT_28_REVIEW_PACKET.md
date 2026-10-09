@@ -11,12 +11,12 @@ Unit 28 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 061b8d678ae76531092767da78a837f9d2b67930
-- Unit content-review SHA-256: 5fcf6f7a36365600a316115a5f5966a5fa442db0b299ba6a226f888c19d81828
+- Curriculum source commit: 1e3c622131689cf11966efe3475d6f135c08dc02
+- Unit content-review SHA-256: c44ee224d88dae6b726748411cf7de876f841d7bcd55e92ce84f6c3022ef5b68
 - Mapping-package SHA-256: 0fb9199bfef05acc54935be340710bd53e19fcd6066349300e09c29fb4b035e8
-- Pack content-review SHA-256: d28094322a590bd83f08a5d38f03eb1bfddcf728d51304fa579e322dfac1803f
-- Review-package SHA-256: 8068f951b066d981ea9fec89458eb9fc7affd741f2187f23335faa957cef1c93
-- Repository source SHA-256: 3c8a7ffd929bcaafbb593e64f1ee7580485077949539431b7a1e4a0c87b9b6c6
+- Pack content-review SHA-256: 2115dd2ce4e2db46bca1bd3066147eb26c850c3f07ce1bdbde4ea453e432cbdc
+- Review-package SHA-256: 50d58fdad08d60d87f1184527ea8b0ac5e2bcd18e5d54f8bd63a007a57afc76c
+- Repository source SHA-256: f107a29d434c4ba786bd5563d0908c1c426805dec1bd230bd4b396dcbbd834ac
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -307,11 +307,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a3f8ce49fe64d8b7e32f5ed49a35dbb05820845de7fb3a43492479ea049e73cf
+- Content hash: 802ecd81212bb669376d4ab4b41b869e1a1c5bb6e2faed1ec8e02442c3e539b7
 
 kind=REMEDIATE
 title=Remediation
-body=imperfective ones are usually present, while perfective ones can only be past
+body=An imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.
 dominantAction=Continue
 references=ref-ca-verbal-adverb
 items=
@@ -454,11 +454,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c4a2b21504e40609a0681e40ec367553172f4a0ab122fbdb849afb9542b94e68
+- Content hash: 67ba603384afd2d5f83ec5721db563ded4e7788e10a252ab6da498b39ad5fd9d
 
 kind=REMEDIATE
 title=Remediation
-body=usually present, while perfective ones can only be past
+body=A perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.
 dominantAction=Continue
 references=ref-ca-verbal-adverb
 items=

@@ -11,12 +11,12 @@ Unit 24 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 061b8d678ae76531092767da78a837f9d2b67930
-- Unit content-review SHA-256: 1989cdea31ca80d331de5fe504182606c3bc98f8505e9fa7384a7ff9fbd6b786
+- Curriculum source commit: 1e3c622131689cf11966efe3475d6f135c08dc02
+- Unit content-review SHA-256: e2168f15e2fff92bb38f46c1feb687b44553885c3242dc98cc1434ed8b0e7a5f
 - Mapping-package SHA-256: dc6f9ac41a8520dc647df90313e05e547245bfa31fe3b2e883821f3591a24248
-- Pack content-review SHA-256: d28094322a590bd83f08a5d38f03eb1bfddcf728d51304fa579e322dfac1803f
-- Review-package SHA-256: d095b9476ae6e53fdfc328f01805c4257ba9418c1103e8e90f8fd9e8a26fdaa3
-- Repository source SHA-256: 3c8a7ffd929bcaafbb593e64f1ee7580485077949539431b7a1e4a0c87b9b6c6
+- Pack content-review SHA-256: 2115dd2ce4e2db46bca1bd3066147eb26c850c3f07ce1bdbde4ea453e432cbdc
+- Review-package SHA-256: ad6912971ef9aef44aa9530b6b3a29df3bd7fa975d2b04e0801ee124ceab0eef
+- Repository source SHA-256: f107a29d434c4ba786bd5563d0908c1c426805dec1bd230bd4b396dcbbd834ac
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -846,11 +846,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 73dc07c1f2087cd2c9a8dd1aaf9e5684b63d4caa4f5cb0f7f4199cd8fc1e7cca
+- Content hash: ad479a69df1d2c5abaff259d835be6c8771c6810ca4dff4e29e279d5890c992b
 
 kind=REMEDIATE
 title=Remediation
-body=не́кто is an indefinite pronoun, an unspecified person. In не́кого спросить, there is nobody to ask: не́кого is the negative construction, not не́кто. Choose the construction and case from its sentence rather than changing a nominative mechanically.
+body=не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form such as не́кого for the genitive, не́кому for the dative, or не́кем for the instrumental. There is no nominative некого.
 dominantAction=Continue
 references=
 items=
@@ -1096,11 +1096,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0fbe14497e1fa0b2a93a0f5522def3e23904c9228e2dfb1e7308857c9c64d72a
+- Content hash: ba248b484f9bbbb6a5e53c1f6463dd45eb571461c8a3e9102502ac44691938d9
 
 kind=REMEDIATE
 title=Remediation
-body=alternative word order can change the meaning entirely
+body=Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence.
 dominantAction=Continue
 references=
 items=

@@ -11,12 +11,12 @@ Unit 11 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 061b8d678ae76531092767da78a837f9d2b67930
-- Unit content-review SHA-256: 1b0b2740b6691569dc22c3a09927842f7396a1265797b888751da23507f33688
+- Curriculum source commit: 1e3c622131689cf11966efe3475d6f135c08dc02
+- Unit content-review SHA-256: 7c9059640871bdadc529e9ec8efb205390c53e7cb127b011e0e0a05a602b6e0e
 - Mapping-package SHA-256: 61b1d9c77882225528ca0d0f68a44efa13c68605efdaed0e6abb8e1b519db587
-- Pack content-review SHA-256: d28094322a590bd83f08a5d38f03eb1bfddcf728d51304fa579e322dfac1803f
-- Review-package SHA-256: 0c06ddf70bc63ceb560a01f59e389bc1ab164ece43c431ea95122a841e8e2212
-- Repository source SHA-256: 3c8a7ffd929bcaafbb593e64f1ee7580485077949539431b7a1e4a0c87b9b6c6
+- Pack content-review SHA-256: 2115dd2ce4e2db46bca1bd3066147eb26c850c3f07ce1bdbde4ea453e432cbdc
+- Review-package SHA-256: c4067f624a46d93cd6f636593e5b1d9bb8d97abf9b806f4fa40020e7cc675fbc
+- Repository source SHA-256: f107a29d434c4ba786bd5563d0908c1c426805dec1bd230bd4b396dcbbd834ac
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -370,11 +370,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2ca300283cd98e031767fb0e4eb63b42e536f301b26b3268ed9e492b02aa8db7
+- Content hash: 5625c78a2add593fb9b32eb121acf93ac37e329dbe35193b834ca6dd9ab14c19
 
 kind=REMEDIATE
 title=Remediation
-body=To form the past tense of either aspect of a verb, remove the ending '''-ть''', and add '''-л'''.
+body=For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
 dominantAction=Continue
 references=
 items=
@@ -708,11 +708,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5674550b600432df849967f0c0867082d3cce89b7677b4914dd4beab93225d0b
+- Content hash: 2572927cb1f491d80b3821dc689af5addea845429f1a56774bf717584e190e29
 
 kind=REMEDIATE
 title=Remediation
-body=So the English ''past progressive'' sentence  "I was reading" would correspond to the Russian imperfective ('''я читал'''), since it refers to an action that wasn't completed. Likewise, the English ''simple past'' sentence "I read" corresponds to the Russian perfective ('''я прочитал''')
+body=An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.
 dominantAction=Continue
 references=
 items=

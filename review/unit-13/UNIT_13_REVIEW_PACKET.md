@@ -11,12 +11,12 @@ Unit 13 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 061b8d678ae76531092767da78a837f9d2b67930
-- Unit content-review SHA-256: 9500bee72be61030d6822e5a7ccdb1c71ab642dd165945e05ce853faaf322b9f
+- Curriculum source commit: 1e3c622131689cf11966efe3475d6f135c08dc02
+- Unit content-review SHA-256: a83baf7bb4a5839fb36bb8e7c335a7b6e185718397626d58fa01ace4359fe35d
 - Mapping-package SHA-256: e8ca3b0ba9b6a48acc54ea18e10a6e6fb1291698252fcbc35b02dbf2a820deb4
-- Pack content-review SHA-256: d28094322a590bd83f08a5d38f03eb1bfddcf728d51304fa579e322dfac1803f
-- Review-package SHA-256: ef9cbf149a302df112b7ae058c73a96e740e7e80e70fff095d4d0e8b05ecb024
-- Repository source SHA-256: 3c8a7ffd929bcaafbb593e64f1ee7580485077949539431b7a1e4a0c87b9b6c6
+- Pack content-review SHA-256: 2115dd2ce4e2db46bca1bd3066147eb26c850c3f07ce1bdbde4ea453e432cbdc
+- Review-package SHA-256: 3cc796ef0949abb89f7525d4c6b247ca1d69c921d20bdd3692a6ca93e96db5af
+- Repository source SHA-256: f107a29d434c4ba786bd5563d0908c1c426805dec1bd230bd4b396dcbbd834ac
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -370,11 +370,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 55f9df0dbe39543fba3e35a00d3728dd48ce6963999d0a10d3b9b88866af2837
+- Content hash: 92b6e624669b2f2f52df81660488cae1677493be9708423e611c53521d36ef74
 
 kind=REMEDIATE
 title=Remediation
-body=So the English ''past progressive'' sentence  "I was reading" would correspond to the Russian imperfective ('''я читал'''), since it refers to an action that wasn't completed. Likewise, the English ''simple past'' sentence "I read" corresponds to the Russian perfective ('''я прочитал''')
+body=Do not treat English past progressive and simple past as a fixed Russian aspect code. The imperfective does not always mean the action was unfinished.
 dominantAction=Continue
 references=
 items=

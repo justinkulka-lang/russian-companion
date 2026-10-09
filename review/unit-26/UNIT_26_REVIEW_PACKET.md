@@ -11,12 +11,12 @@ Unit 26 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 061b8d678ae76531092767da78a837f9d2b67930
-- Unit content-review SHA-256: 49d89668ad8d7cabc51c0356a2b62a3bbae549989771dd97e24e17525b891815
+- Curriculum source commit: 1e3c622131689cf11966efe3475d6f135c08dc02
+- Unit content-review SHA-256: 64812803d45e4bad57dca03ad3622e809001a8a84435a218a85c0be58bdc642c
 - Mapping-package SHA-256: c15db22cc82dcfa6c49d6d0e50beea0f90b16dfc4db90777623e99d540790489
-- Pack content-review SHA-256: d28094322a590bd83f08a5d38f03eb1bfddcf728d51304fa579e322dfac1803f
-- Review-package SHA-256: d5888b7efdf3ff62d5ece552e897bd3b7aba471022d66e3c80db6a013c738528
-- Repository source SHA-256: 3c8a7ffd929bcaafbb593e64f1ee7580485077949539431b7a1e4a0c87b9b6c6
+- Pack content-review SHA-256: 2115dd2ce4e2db46bca1bd3066147eb26c850c3f07ce1bdbde4ea453e432cbdc
+- Review-package SHA-256: cd6ff3e3cb6de631d9baf9ab0baf98ad6dd0b73ce9f67c3106e131e66c67baf1
+- Repository source SHA-256: f107a29d434c4ba786bd5563d0908c1c426805dec1bd230bd4b396dcbbd834ac
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -993,16 +993,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3e077017c09ecb3031a382cd223bb0f652bb59268491a84783729e853b617e12
+- Content hash: 374fbf8b7cae90aaa9073c9a3ffcb4b9361746599f359b61de29f8f91c07ee0d
 
 kind=REMEDIATE
 title=Remediation
-body=They have the same basic elements:
-
-Sender’s address and date
-Greeting
-Body
-Closing and signature
+body=One reviewed letter genre can open with the sender address and date, then a greeting, a body, and a closing. That order is not a universal rule for every Russian letter, and a ban on dear is not universal.
 dominantAction=Continue
 references=
 items=

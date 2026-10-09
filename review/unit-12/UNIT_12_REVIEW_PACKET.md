@@ -11,12 +11,12 @@ Unit 12 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 061b8d678ae76531092767da78a837f9d2b67930
-- Unit content-review SHA-256: c449111039257472d3289c0252bd677367480fd0602c89b7741bb8b7aa4c0f99
+- Curriculum source commit: 1e3c622131689cf11966efe3475d6f135c08dc02
+- Unit content-review SHA-256: c1f05ea41b0b1842f881553f17bcb68b63c450dfff29784695e63219a40f84a3
 - Mapping-package SHA-256: 0747489371acaab80787db42f08f6d4f5479e6186a2c9415052df484324e37d3
-- Pack content-review SHA-256: d28094322a590bd83f08a5d38f03eb1bfddcf728d51304fa579e322dfac1803f
-- Review-package SHA-256: c3add231af4f6e00b91b57490319062fc8752342a6210794578ef8d2fae801eb
-- Repository source SHA-256: 3c8a7ffd929bcaafbb593e64f1ee7580485077949539431b7a1e4a0c87b9b6c6
+- Pack content-review SHA-256: 2115dd2ce4e2db46bca1bd3066147eb26c850c3f07ce1bdbde4ea453e432cbdc
+- Review-package SHA-256: 26915ce3619ce926b3a6c6362689bf45bde05a908569f35f4eb869abccc8e115
+- Repository source SHA-256: f107a29d434c4ba786bd5563d0908c1c426805dec1bd230bd4b396dcbbd834ac
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -386,11 +386,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c5d2fc27a09b993c95479090585a84517f8b466b172c604cdc6555900f913c52
+- Content hash: 5d2bda80711a8b7ce1771d5679b829bdb2f80ec4bd7d6bd4b36a93f43a760df2
 
 kind=REMEDIATE
 title=Remediation
-body=Imperfective verbs form the future by preceding the imperfective infinitive with the appropriate conjugation of the perfective verb '''быть'''.
+body=быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
 dominantAction=Continue
 references=ref-ca-aspect
 items=
@@ -702,11 +702,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 32f7694f3ecf737031ef8645d3be7cb6812cbf60223b5d69cfb97e36a57ec691
+- Content hash: 2d1519b214c3c1d12e99fe913584485e44d39cfe3da4f6198e057852ec4440ae
 
 kind=REMEDIATE
 title=Remediation
-body=So, verbs in Russian have two words: an ''imperfective'' and a ''perfective'' aspect.
+body=Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.
 dominantAction=Continue
 references=ref-ca-aspect
 items=
