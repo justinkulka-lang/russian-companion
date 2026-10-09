@@ -201,7 +201,7 @@ class RuntimeCorrectionTest {
         unit.sessions.flatMap { it.steps }
             .filter { it.id !in activeStepIds }
             .forEach { completed ->
-                dev.russiancompanion.v2.curriculum.stepCompletionItemIds(pack, completed).forEach { itemId ->
+                dev.russiancompanion.v2.curriculum.stepCompletionItemIds(pack, completed.id).forEach { itemId ->
                     val priorItem = pack.item(itemId)!!
                     store.v2RecordGovernedAttempt(
                         prepareGovernedAttempt(pack, itemId, priorItem.answer, PRESCRIBED_CHECK, completed.id, "2026-10-02T12:00")!!,
