@@ -1,0 +1,14 @@
+{
+  "changedScope": [
+    "item:u11-g-past-aspect-0",
+    "item:u11-i-past-aspect-1",
+    "item:u11-i-past-aspect-2",
+    "unit:11",
+    "15 appended Unit 11 provenance records"
+  ],
+  "existingProvenanceUnchanged": true,
+  "advancementRuleUnchanged": true,
+  "requiredChecks": 8,
+  "newRussianForms": 0,
+  "semanticReview": "PENDING"
+}

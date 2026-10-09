@@ -19118,123 +19118,123 @@
       "id": "u11-g-past-aspect-0",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted line is the perfective past?",
-      "promptLetter": "I read",
-      "options": [
-        "я прочитал",
-        "я читал"
-      ],
-      "answer": "я прочитал",
-      "feedback": "Does this answer show the perfective past? я прочитал.",
-      "objectiveId": "obj-u11-past-aspect",
-      "sourceId": "src-wikibooks-russian-cc-by-sa",
-      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
-      "containsGeneratedRussian": false,
-      "distractorRationales": [
-        "",
-        "Does this row fail the perfective past?"
-      ],
-      "assessment": {
-        "testedFeature": "PERFECTIVE_PAST",
-        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
-        "contrastSetId": "u11-past-aspect-0",
-        "cueLanguage": "rule",
-        "independent": false,
-        "answerSourceIds": [
-          "prov-ex-u11-past-aspect-1-ru"
-        ],
-        "distractorSourceIds": [
-          "",
-          "prov-ex-u11-past-aspect-0-ru"
-        ],
-        "distractorDifference": [
-          "",
-          "Does this row fail the perfective past?"
-        ],
-        "whyAnswerDemonstratesObjective": "Does this answer show the perfective past?",
-        "contrastMembers": [
-          "я прочитал",
-          "я читал"
-        ],
-        "relationKind": "SOURCE_SUPPLIED_PAIR",
-        "relationParticipantIds": [
-          "prov-ex-u11-past-aspect-1-en",
-          "prov-ex-u11-past-aspect-1-ru",
-          "prov-ex-u11-past-aspect-0-ru"
-        ],
-        "responseKind": "RUSSIAN_CLAUSE"
-      }
-    },
-    {
-      "id": "u11-i-past-aspect-1",
-      "kind": "CONTRAST_SELECTION",
-      "language": "en",
-      "prompt": "Which admitted line is the imperfective past?",
-      "promptLetter": "I was reading",
-      "options": [
-        "я читал",
-        "я прочитал"
-      ],
-      "answer": "я читал",
-      "feedback": "Does this answer show the imperfective past? я читал.",
-      "objectiveId": "obj-u11-past-aspect",
-      "sourceId": "src-wikibooks-russian-cc-by-sa",
-      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
-      "containsGeneratedRussian": false,
-      "distractorRationales": [
-        "",
-        "Does this row fail the imperfective past?"
-      ],
-      "assessment": {
-        "testedFeature": "IMPERFECTIVE_PAST",
-        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
-        "contrastSetId": "u11-past-aspect-1",
-        "cueLanguage": "rule",
-        "independent": true,
-        "answerSourceIds": [
-          "prov-ex-u11-past-aspect-0-ru"
-        ],
-        "distractorSourceIds": [
-          "",
-          "prov-ex-u11-past-aspect-1-ru"
-        ],
-        "distractorDifference": [
-          "",
-          "Does this row fail the imperfective past?"
-        ],
-        "whyAnswerDemonstratesObjective": "Does this answer show the imperfective past?",
-        "contrastMembers": [
-          "я читал",
-          "я прочитал"
-        ],
-        "relationKind": "SOURCE_SUPPLIED_PAIR",
-        "relationParticipantIds": [
-          "prov-ex-u11-past-aspect-0-en",
-          "prov-ex-u11-past-aspect-0-ru",
-          "prov-ex-u11-past-aspect-1-ru"
-        ],
-        "responseKind": "RUSSIAN_CLAUSE"
-      }
-    },
-    {
-      "id": "u11-i-past-aspect-2",
-      "kind": "CONTRAST_SELECTION",
-      "language": "en",
-      "prompt": "Which admitted row is the feminine past?",
+      "prompt": "Which neuter past form (singular) of the same verb corresponds to the shown masculine form?",
       "promptLetter": "прочита́л",
       "options": [
-        "прочита́ла",
-        "прочита́ло"
+        "прочита́ло",
+        "прочита́ла"
       ],
-      "answer": "прочита́ла",
-      "feedback": "Does this answer show the feminine past? прочита́ла.",
+      "answer": "прочита́ло",
+      "feedback": "прочита́л is masculine past (singular); прочита́ло is neuter past (singular) of the same verb.",
       "objectiveId": "obj-u11-past-aspect",
       "sourceId": "src-openrussian-50e210c4",
       "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "Does this row fail the feminine past?"
+        "прочита́ла is feminine past (singular), so it does not supply the requested neuter past form."
+      ],
+      "assessment": {
+        "testedFeature": "NEUTER_PAST",
+        "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+        "contrastSetId": "u11-past-aspect-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-or-u11-past-aspect-4"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-or-u11-past-aspect-3"
+        ],
+        "distractorDifference": [
+          "",
+          "прочита́ла is feminine past (singular), so it does not supply the requested neuter past form."
+        ],
+        "whyAnswerDemonstratesObjective": "прочита́л is masculine past (singular); прочита́ло is neuter past (singular) of the same verb.",
+        "contrastMembers": [
+          "прочита́ло",
+          "прочита́ла"
+        ],
+        "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+        "relationParticipantIds": [
+          "prov-ex-or-u11-past-aspect-2",
+          "prov-ex-or-u11-past-aspect-4",
+          "prov-ex-or-u11-past-aspect-3"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u11-i-past-aspect-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which masculine past form (singular) of the same verb corresponds to the shown neuter form?",
+      "promptLetter": "прочита́ло",
+      "options": [
+        "прочита́л",
+        "прочита́ла"
+      ],
+      "answer": "прочита́л",
+      "feedback": "прочита́ло is neuter past (singular); прочита́л is masculine past (singular) of the same verb.",
+      "objectiveId": "obj-u11-past-aspect",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "прочита́ла is feminine past (singular), so it does not supply the requested masculine past form."
+      ],
+      "assessment": {
+        "testedFeature": "MASCULINE_PAST",
+        "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+        "contrastSetId": "u11-past-aspect-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-or-u11-past-aspect-2"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-or-u11-past-aspect-3"
+        ],
+        "distractorDifference": [
+          "",
+          "прочита́ла is feminine past (singular), so it does not supply the requested masculine past form."
+        ],
+        "whyAnswerDemonstratesObjective": "прочита́ло is neuter past (singular); прочита́л is masculine past (singular) of the same verb.",
+        "contrastMembers": [
+          "прочита́л",
+          "прочита́ла"
+        ],
+        "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+        "relationParticipantIds": [
+          "prov-ex-or-u11-past-aspect-4",
+          "prov-ex-or-u11-past-aspect-2",
+          "prov-ex-or-u11-past-aspect-3"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u11-i-past-aspect-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which feminine past form (singular) of the same verb corresponds to the shown masculine form?",
+      "promptLetter": "прочита́л",
+      "options": [
+        "прочита́ла",
+        "прочита́ло"
+      ],
+      "answer": "прочита́ла",
+      "feedback": "прочита́л is masculine past (singular); прочита́ла is feminine past (singular) of the same verb.",
+      "objectiveId": "obj-u11-past-aspect",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "прочита́ло is neuter past (singular), so it does not supply the requested feminine past form."
       ],
       "assessment": {
         "testedFeature": "FEMININE_PAST",
@@ -19251,9 +19251,9 @@
         ],
         "distractorDifference": [
           "",
-          "Does this row fail the feminine past?"
+          "прочита́ло is neuter past (singular), so it does not supply the requested feminine past form."
         ],
-        "whyAnswerDemonstratesObjective": "Does this answer show the feminine past?",
+        "whyAnswerDemonstratesObjective": "прочита́л is masculine past (singular); прочита́ла is feminine past (singular) of the same verb.",
         "contrastMembers": [
           "прочита́ла",
           "прочита́ло"
@@ -49544,7 +49544,7 @@
         {
           "id": "obj-u11-past-aspect",
           "unitNumber": 11,
-          "title": "Choose the admitted completed past line",
+          "title": "Choose past-tense gender agreement",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u11-st-orient",
@@ -49554,8 +49554,6 @@
             "u11-st-teach-past-aspect-4"
           ],
           "exampleIds": [
-            "ex-u11-past-aspect-0",
-            "ex-u11-past-aspect-1",
             "ex-or-u11-past-aspect-2",
             "ex-or-u11-past-aspect-3",
             "ex-or-u11-past-aspect-4"
@@ -49921,7 +49919,7 @@
         },
         {
           "id": "u11-s-past-aspect",
-          "title": "Choose the admitted completed past line",
+          "title": "Choose past-tense gender agreement",
           "estimatedMinutes": 12,
           "objectiveIds": [
             "obj-u11-past-aspect"
@@ -49931,15 +49929,16 @@
               "id": "u11-st-teach-past-aspect-1",
               "kind": "TEACH",
               "title": "Admitted lines",
-              "body": "я читал — I was reading. я прочитал — I read. ",
+              "body": "In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u1115-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
-                "ex-u11-past-aspect-0",
-                "ex-u11-past-aspect-1"
+                "ex-or-u11-past-aspect-2",
+                "ex-or-u11-past-aspect-3",
+                "ex-or-u11-past-aspect-4"
               ],
               "unavailableReason": null,
               "bookDirection": null,
@@ -49966,7 +49965,7 @@
               "id": "u11-st-teach-past-aspect-2",
               "kind": "TEACH",
               "title": "Admitted instruction",
-              "body": "An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.",
+              "body": "Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u1115-attribution"
@@ -49982,7 +49981,7 @@
               "id": "u11-st-teach-past-aspect-3",
               "kind": "TEACH",
               "title": "Admitted lines",
-              "body": "прочита́л — read. прочита́ла — read. ",
+              "body": "The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u1115-attribution"
@@ -50001,7 +50000,7 @@
               "id": "u11-st-teach-past-aspect-4",
               "kind": "TEACH",
               "title": "Admitted lines",
-              "body": "прочита́ло — read. ",
+              "body": "The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u1115-attribution"
@@ -50019,7 +50018,7 @@
               "id": "u11-st-rem-past-aspect",
               "kind": "REMEDIATE",
               "title": "Remediation",
-              "body": "An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.",
+              "body": "Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
@@ -50098,7 +50097,7 @@
               "id": "u11-st-teach-reflexive-2",
               "kind": "TEACH",
               "title": "Admitted instruction",
-              "body": "Some verbs, such as the imperfective '''улыба́ться''' ('to smile'), have the reflexive ending '''-сь/ся'''",
+              "body": "Keep the reflexive ending with the verb. The recorded infinitive is улыба́ться, to smile. Compare the past forms in the worked examples.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u1115-attribution"
@@ -50189,7 +50188,7 @@
               "id": "u11-st-rem-reflexive",
               "kind": "REMEDIATE",
               "title": "Remediation",
-              "body": "Some verbs, such as the imperfective '''улыба́ться''' ('to smile'), have the reflexive ending '''-сь/ся'''",
+              "body": "Keep the reflexive ending with the verb. The recorded infinitive is улыба́ться, to smile. Compare the past forms in the worked examples.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
@@ -216999,6 +216998,606 @@
         "sourceDateOrVersion": "2026-10-08",
         "authorshipDeclaration": "Independently authored English explanation for Russian Companion; inflected Russian cells remain the separately frozen OpenRussian records.",
         "objectiveOrClaimBinding": "obj-u10-animate:u10-i-animate-3:declension-explanation:3",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-title",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:title",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nChoose past-tense gender agreement",
+      "shippedText": "Choose past-tense gender agreement",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "c131ec94df0cd439d279d8d7b6bdce40893a6fd12d4a904fefe9464a204096df",
+      "contentHash": "565b97b63d80fa787692fff3a0485d4594389e5062feb740bb646668c80d6ee1",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:title",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-teach-1",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:teach-1",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nIn the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.",
+      "shippedText": "In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "1a0795ad45a3b2030bc85392890780caaa0a88bfbfed93c0ca4b0f98f0830b6c",
+      "contentHash": "0c7a1a324504a6af958e5fd9d53ab5059287bac2db98430b3ebca5ca7c80e6b6",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:teach-1",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-teach-2",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:teach-2",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nUse the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.",
+      "shippedText": "Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "4836856dc61876191c5b75b570efea3490da376e78b4bde75904cd39ffd7f93a",
+      "contentHash": "e052a6b073072b0a81b685429e862516059b305bda586fd6a0f96e4800a4c8cd",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:teach-2",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-teach-3",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:teach-3",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nThe recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.",
+      "shippedText": "The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "f183119255e49aafd0a446413f9df1af4fdc0598cd627850de0fb0193acca689",
+      "contentHash": "ba1e5d8fb4fe47c8b7355a6243381d17cd8a46f485ac9fd6ba94927ab0da60bd",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:teach-3",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-teach-4",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:teach-4",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nThe recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.",
+      "shippedText": "The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "e8dc43731958cf97bf7f69b34a65efd1500706540fc406090912a27dab0079f7",
+      "contentHash": "bb6d37f7f4671ee856be487ff608d008150480ca7d8cf52826fbdae749035cf7",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:teach-4",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-reflexive",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-reflexive",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-reflexive:past-agreement:reflexive",
+      "originalSourceText": "OpenRussian frozen record verbs.csv:улыба'ться#accented and its translations_en cell; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. The infinitive and its smile gloss are separately admitted records. Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch; final semantic review pending.\nKeep the reflexive ending with the verb. The recorded infinitive is улыба́ться, to smile. Compare the past forms in the worked examples.",
+      "shippedText": "Keep the reflexive ending with the verb. The recorded infinitive is улыба́ться, to smile. Compare the past forms in the worked examples.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "f9c17dd1eed776c57a55145e7bc123834f34fdd5e49ce5ada1816208cb71394f",
+      "contentHash": "1e43f837fbfcbdc7d7e5c157df05e79afc9f4a889a33f20286c012ba68134b94",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen record verbs.csv:улыба'ться#accented and its translations_en cell; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. The infinitive and its smile gloss are separately admitted records. Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch; final semantic review pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-reflexive:past-agreement:reflexive",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-u11-g-past-aspect-0-prompt",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:u11-g-past-aspect-0-prompt",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nWhich neuter past form (singular) of the same verb corresponds to the shown masculine form?",
+      "shippedText": "Which neuter past form (singular) of the same verb corresponds to the shown masculine form?",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "0ae9e16c54fa90c548b9964f894a14a9092540164358d00448f977884a4534db",
+      "contentHash": "3d84b64f482af108ae28a587870b5872c3196429bdd128affea5d8faf6c55787",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:u11-g-past-aspect-0-prompt",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-u11-g-past-aspect-0-feedback",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:u11-g-past-aspect-0-feedback",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nпрочита́л is masculine past (singular); прочита́ло is neuter past (singular) of the same verb.",
+      "shippedText": "прочита́л is masculine past (singular); прочита́ло is neuter past (singular) of the same verb.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "9a494e45d96a1ec95cbc9d00910fa0d53a1b32631376bc69cfdcaeef1cb8f045",
+      "contentHash": "db194cfe91a42de2b10cf1693f4b0400e561f66fb37b152c6cc16bef0040c32d",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:u11-g-past-aspect-0-feedback",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-u11-g-past-aspect-0-distractor",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:u11-g-past-aspect-0-distractor",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nпрочита́ла is feminine past (singular), so it does not supply the requested neuter past form.",
+      "shippedText": "прочита́ла is feminine past (singular), so it does not supply the requested neuter past form.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "6e2d1afe05f64e28540805e6e4624c1c935dcb7915b5d499a5f36bb974829b25",
+      "contentHash": "9a3fa31891c54eece1fb3594a78bfeaabdc26a3a75b93aef9223a9cafd9de17b",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:u11-g-past-aspect-0-distractor",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-u11-i-past-aspect-1-prompt",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:u11-i-past-aspect-1-prompt",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nWhich masculine past form (singular) of the same verb corresponds to the shown neuter form?",
+      "shippedText": "Which masculine past form (singular) of the same verb corresponds to the shown neuter form?",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "d90b3c32dbebd6d6a404879304cb678463d8003dca44260e15a4d89a6e9e456b",
+      "contentHash": "5c1fb49511784273474a8df3e3fe62d0705927eb465dda6ece30cabd4f827a6d",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:u11-i-past-aspect-1-prompt",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-u11-i-past-aspect-1-feedback",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:u11-i-past-aspect-1-feedback",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nпрочита́ло is neuter past (singular); прочита́л is masculine past (singular) of the same verb.",
+      "shippedText": "прочита́ло is neuter past (singular); прочита́л is masculine past (singular) of the same verb.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "78cd557a2078f0716c9cc1a8088ce865b4faad9d1c4ae0db7e69d3c6dbc7bee6",
+      "contentHash": "8c21c8d231fcfcaa4a3da73b071d582531e7d45fdb811684174c25f6bd530fc3",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:u11-i-past-aspect-1-feedback",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-u11-i-past-aspect-1-distractor",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:u11-i-past-aspect-1-distractor",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nпрочита́ла is feminine past (singular), so it does not supply the requested masculine past form.",
+      "shippedText": "прочита́ла is feminine past (singular), so it does not supply the requested masculine past form.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "79926d5715c21ff8b291f1868200c9e64ff9bbb5d40032c3b4dc586301d1540c",
+      "contentHash": "b795acaf7b11c8e7109f22574718fe6b7c3f487ac5cf1be0729faae86e64625a",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:u11-i-past-aspect-1-distractor",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-u11-i-past-aspect-2-prompt",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:u11-i-past-aspect-2-prompt",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nWhich feminine past form (singular) of the same verb corresponds to the shown masculine form?",
+      "shippedText": "Which feminine past form (singular) of the same verb corresponds to the shown masculine form?",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "34f0e084f1ac41c9444b33f227a20be3a51049b43acfeb49c9f65ca8f8b1af20",
+      "contentHash": "04ab5dfbf585729152690d0d2eeea65f7592b91bbb202381ffed41c1558961db",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:u11-i-past-aspect-2-prompt",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-u11-i-past-aspect-2-feedback",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:u11-i-past-aspect-2-feedback",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nпрочита́л is masculine past (singular); прочита́ла is feminine past (singular) of the same verb.",
+      "shippedText": "прочита́л is masculine past (singular); прочита́ла is feminine past (singular) of the same verb.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "0ca79cea4275334feeb369463cc177536a16f46909587ab9d3f1257953ce31ff",
+      "contentHash": "04e582e5db69e9bd62179c9826bb85569f78f12e393fac9fbaaf1aac6eee556e",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:u11-i-past-aspect-2-feedback",
+        "finalAudit": {
+          "artifactIdentity": "",
+          "artifactDigest": "",
+          "auditedContentDigest": "",
+          "disposition": "",
+          "modelVersion": "",
+          "date": ""
+        },
+        "applications": []
+      }
+    },
+    {
+      "itemId": "prov-ca-u11-agreement-u11-i-past-aspect-2-distractor",
+      "unitNumber": 11,
+      "objectiveId": "obj-u11-past-aspect",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u11-past-aspect:past-agreement:u11-i-past-aspect-2-distractor",
+      "originalSourceText": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.\nпрочита́ло is neuter past (singular), so it does not supply the requested feminine past form.",
+      "shippedText": "прочита́ло is neuter past (singular), so it does not supply the requested feminine past form.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "19a70f9b59d6efb2d2cb4d061b8b940e2171553f78cba3ec4cfd35ea8f9c508f",
+      "contentHash": "2e5d431cf4e3a3894add9c1f116742050b23638687b0821a5031f26ad46dccdc",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null,
+      "synthesis": {
+        "bibliography": "OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-09; Russian cells retain their separate frozen provenance.",
+        "objectiveOrClaimBinding": "obj-u11-past-aspect:past-agreement:u11-i-past-aspect-2-distractor",
         "finalAudit": {
           "artifactIdentity": "",
           "artifactDigest": "",

@@ -20,6 +20,42 @@ import java.io.File
 
 class ContentAuditCorrectionTest {
     @Test
+    fun unitElevenChecksPastAgreementBeforeAspectIntroductionWithoutLoweringItsGate() {
+        val pack = pack()
+        val unit = pack.unit(11)!!
+        val earlyTerms = Regex("\\b(aspect|imperfective|perfective)\\b", RegexOption.IGNORE_CASE)
+        val hosts = unit.objectives.map { it.title } + unit.sessions.flatMap { session ->
+            listOf(session.title) + session.steps.flatMap { listOf(it.title, it.body) }
+        } + pack.items.filter { it.objectiveId.startsWith("obj-u11-") }.flatMap {
+            listOf(it.prompt, it.feedback) + it.distractorRationales
+        }
+        assertFalse("Unit 11 still introduces an aspect label", hosts.any { earlyTerms.containsMatchIn(it) })
+        assertTrue(pack.items.any { it.objectiveId.startsWith("obj-u12-") && it.assessment?.testedFeature?.contains("PERFECTIVE") == true })
+        val checks = listOf("u11-g-past-aspect-0", "u11-i-past-aspect-1", "u11-i-past-aspect-2").map { pack.item(it)!! }
+        assertEquals(listOf("NEUTER_PAST", "MASCULINE_PAST", "FEMININE_PAST"), checks.map { it.assessment!!.testedFeature })
+        checks.forEach { item ->
+            val assessment = item.assessment!!
+            assertEquals("SAME_LEMMA_DIFFERENT_FIELD", assessment.relationKind)
+            val participants = assessment.relationParticipantIds.map { id -> pack.provenanceRecords.single { it.itemId == id } }
+            assertEquals(setOf("verbs.csv:прочита'ть"), participants.map { it.sourceRecordId.substringBefore('#') }.toSet())
+            assertEquals(item.answer, pack.provenanceRecords.single { it.itemId == assessment.answerSourceIds.single() }.shippedText)
+        }
+        val required = unit.objectives.filter { it.gating }.flatMap { it.checkItemIds }.toSet()
+        assertEquals(8, required.size)
+        assertEquals(8, unit.advancement.minimumDistinctChecks)
+        val learner = V2LearnerView(
+            onboardingCompleted = true, currentUnitNumber = 11, startingPoint = V2StartingPoint.NEW_TO_CYRILLIC,
+            hasPenguin = true, hasAnki = false, hasBinder = false, hasTutor = false, dailyMinutes = 25,
+            transliterationEnabled = false, currentSessionId = null, currentStepIndex = 0,
+            completedStepIds = requiredInstructionSteps(unit).map { it.id }.toSet(), correctItemIds = required,
+            bookAttestedUnits = setOf(11), completedUnitNumbers = emptySet(),
+        )
+        assertTrue(advancementDecision(pack, unit, learner).allowed)
+        assertFalse(advancementDecision(pack, unit, learner.copy(correctItemIds = required - "u11-i-past-aspect-1")).allowed)
+        assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
+    }
+
+    @Test
     fun wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation() {
         val pack = pack()
         val targets = listOf(

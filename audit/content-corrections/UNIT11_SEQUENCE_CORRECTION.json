@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "findingId": "CA010",
+  "unitNumber": 11,
+  "scope": "Retarget the existing early-aspect objective to past agreement; stable IDs and eight required checks retained",
+  "beforeCurriculumFileSha256": "89d7d6aa7bc7900407b2f011d3a0d18efa7e8e1f221f77a3252548950aa9397f",
+  "afterCurriculumFileSha256": "1cf09b6d1b91c05a031d1a7fa9d96a15224727e2c5f74bc4ab111ae461794b35",
+  "objectiveId": "obj-u11-past-aspect",
+  "sourceCells": [
+    "prov-ex-or-u11-past-aspect-2",
+    "prov-ex-or-u11-past-aspect-3",
+    "prov-ex-or-u11-past-aspect-4"
+  ],
+  "addedCoverageIds": [
+    "prov-ca-u11-agreement-title",
+    "prov-ca-u11-agreement-teach-1",
+    "prov-ca-u11-agreement-teach-2",
+    "prov-ca-u11-agreement-teach-3",
+    "prov-ca-u11-agreement-teach-4",
+    "prov-ca-u11-agreement-reflexive",
+    "prov-ca-u11-agreement-u11-g-past-aspect-0-prompt",
+    "prov-ca-u11-agreement-u11-g-past-aspect-0-feedback",
+    "prov-ca-u11-agreement-u11-g-past-aspect-0-distractor",
+    "prov-ca-u11-agreement-u11-i-past-aspect-1-prompt",
+    "prov-ca-u11-agreement-u11-i-past-aspect-1-feedback",
+    "prov-ca-u11-agreement-u11-i-past-aspect-1-distractor",
+    "prov-ca-u11-agreement-u11-i-past-aspect-2-prompt",
+    "prov-ca-u11-agreement-u11-i-past-aspect-2-feedback",
+    "prov-ca-u11-agreement-u11-i-past-aspect-2-distractor"
+  ],
+  "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+}
