@@ -41797,22 +41797,6 @@
               "remediationStepId": null
             },
             {
-              "id": "u6-st-guided-possessive-1",
-              "kind": "GUIDED",
-              "title": "Guided practice",
-              "body": "Choose the admitted record. The feedback states the frozen field.",
-              "dominantAction": "Continue",
-              "referenceIds": [],
-              "itemIds": [
-                "u6-g-possessive-0"
-              ],
-              "exampleIds": [],
-              "unavailableReason": null,
-              "bookDirection": null,
-              "companionDirection": null,
-              "remediationStepId": "u6-st-rem-possessive"
-            },
-            {
               "id": "u6-st-teach-possessive-2",
               "kind": "TEACH",
               "title": "Admitted instruction",
@@ -41903,6 +41887,22 @@
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
+            },
+            {
+              "id": "u6-st-guided-possessive-1",
+              "kind": "GUIDED",
+              "title": "Guided practice",
+              "body": "Choose the admitted record. The feedback states the frozen field.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u6-g-possessive-0"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u6-st-rem-possessive"
             },
             {
               "id": "u6-st-rem-possessive",
@@ -58480,22 +58480,6 @@
               "remediationStepId": null
             },
             {
-              "id": "u21-st-guided-purpose-1",
-              "kind": "GUIDED",
-              "title": "Guided practice",
-              "body": "Choose the admitted record. The feedback states the frozen field.",
-              "dominantAction": "Continue",
-              "referenceIds": [],
-              "itemIds": [
-                "u21-g-purpose-0"
-              ],
-              "exampleIds": [],
-              "unavailableReason": null,
-              "bookDirection": null,
-              "companionDirection": null,
-              "remediationStepId": "u21-st-rem-purpose"
-            },
-            {
               "id": "u21-st-teach-purpose-2",
               "kind": "TEACH",
               "title": "Admitted instruction",
@@ -58529,6 +58513,22 @@
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
+            },
+            {
+              "id": "u21-st-guided-purpose-1",
+              "kind": "GUIDED",
+              "title": "Guided practice",
+              "body": "Choose the admitted record. The feedback states the frozen field.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u21-g-purpose-0"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u21-st-rem-purpose"
             },
             {
               "id": "u21-st-rem-purpose",
@@ -64950,22 +64950,6 @@
               "remediationStepId": null
             },
             {
-              "id": "u28-st-guided-imperfective-adverb-1",
-              "kind": "GUIDED",
-              "title": "Guided practice",
-              "body": "Choose the admitted record. The feedback states the frozen field.",
-              "dominantAction": "Continue",
-              "referenceIds": [],
-              "itemIds": [
-                "u28-g-imperfective-adverb-0"
-              ],
-              "exampleIds": [],
-              "unavailableReason": null,
-              "bookDirection": null,
-              "companionDirection": null,
-              "remediationStepId": "u28-st-rem-imperfective-adverb"
-            },
-            {
               "id": "u28-st-teach-imperfective-adverb-2",
               "kind": "TEACH",
               "title": "Admitted instruction",
@@ -64980,6 +64964,22 @@
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
+            },
+            {
+              "id": "u28-st-guided-imperfective-adverb-1",
+              "kind": "GUIDED",
+              "title": "Guided practice",
+              "body": "Choose the admitted record. The feedback states the frozen field.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u28-g-imperfective-adverb-0"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u28-st-rem-imperfective-adverb"
             },
             {
               "id": "u28-st-rem-imperfective-adverb",
@@ -65047,22 +65047,6 @@
               "remediationStepId": null
             },
             {
-              "id": "u28-st-guided-perfective-adverb-1",
-              "kind": "GUIDED",
-              "title": "Guided practice",
-              "body": "Choose the admitted record. The feedback states the frozen field.",
-              "dominantAction": "Continue",
-              "referenceIds": [],
-              "itemIds": [
-                "u28-g-perfective-adverb-0"
-              ],
-              "exampleIds": [],
-              "unavailableReason": null,
-              "bookDirection": null,
-              "companionDirection": null,
-              "remediationStepId": "u28-st-rem-perfective-adverb"
-            },
-            {
               "id": "u28-st-teach-perfective-adverb-2",
               "kind": "TEACH",
               "title": "Admitted instruction",
@@ -65095,6 +65079,22 @@
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
+            },
+            {
+              "id": "u28-st-guided-perfective-adverb-1",
+              "kind": "GUIDED",
+              "title": "Guided practice",
+              "body": "Choose the admitted record. The feedback states the frozen field.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u28-g-perfective-adverb-0"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u28-st-rem-perfective-adverb"
             },
             {
               "id": "u28-st-rem-perfective-adverb",

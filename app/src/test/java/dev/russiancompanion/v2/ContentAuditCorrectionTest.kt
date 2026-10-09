@@ -20,6 +20,43 @@ import java.io.File
 
 class ContentAuditCorrectionTest {
     @Test
+    fun possessiveFormsAreAvailableBeforeTheGuidedAgreementChoice() {
+        assertPrerequisiteTeachingBeforeGuided(6, "possessive", 6)
+    }
+
+    @Test
+    fun purposeRegisterExplanationPrecedesTheOrdinaryPurposeChoice() {
+        assertPrerequisiteTeachingBeforeGuided(21, "purpose", 3)
+    }
+
+    @Test
+    fun imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice() {
+        assertPrerequisiteTeachingBeforeGuided(28, "imperfective-adverb", 2)
+    }
+
+    @Test
+    fun perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice() {
+        assertPrerequisiteTeachingBeforeGuided(28, "perfective-adverb", 3)
+    }
+
+    private fun assertPrerequisiteTeachingBeforeGuided(number: Int, topic: String, teachingCount: Int) {
+        val unit = pack().unit(number)!!
+        val session = unit.sessions.single { it.id == "u$number-s-$topic" }
+        val guidedIndex = session.steps.indexOfFirst { it.kind == "GUIDED" }
+        assertEquals("Prerequisite teaching still follows guided practice in ${session.id}",
+            teachingCount, session.steps.take(guidedIndex).count { it.kind == "TEACH" })
+        assertTrue(session.steps.drop(guidedIndex).none { it.kind == "TEACH" })
+        assertEquals((1..teachingCount).map { "u$number-st-teach-$topic-$it" },
+            session.steps.take(guidedIndex).map { it.id })
+        assertEquals(listOf("GUIDED", "REMEDIATE", "CHECK"), session.steps.drop(guidedIndex).map { it.kind })
+        assertEquals(listOf("u$number-g-$topic-0"), session.steps[guidedIndex].itemIds)
+        val objective = unit.objectives.single { it.id == "obj-u$number-$topic" }
+        assertTrue(objective.gating)
+        assertTrue(objective.checkItemIds.isNotEmpty())
+        assertTrue(objective.checkItemIds.all { id -> session.steps.last().itemIds.contains(id) })
+    }
+
+    @Test
     fun negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm() {
         val pack = pack()
         val unit = pack.unit(24)!!
