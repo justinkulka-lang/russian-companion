@@ -1,0 +1,5 @@
+PASS: only Unit 6 possessive session text/remediation example selection and two items English explanatory fields change
+PASS: all keys, options, Russian cues, examples, step order/IDs, objectives, assessment source relations and advancement requirements are unchanged
+PASS: all original provenance/source/rights records preserved; exactly 23 pending coverage records appended; no new Russian token introduced
+PASS: only Unit 6 instructional digest changes; all mapping digests unchanged; all 30 packets bind the actual implementation ancestor
+curriculum SHA256=87cac892c60b768e2eb00520ea7ef37d10b9441800d919b917d137ec9bb13a44

@@ -33,7 +33,7 @@ class Units2630SourceIntakeTest {
         3 to "29121dfbfb6a2e07d413e86b01462a76a62b9659f52597300ccd91c569224d7c",
         4 to "9f255afab766ef14cbf8ef2688a512f74c00d3c45efc772d6b4506a431a21121",
         5 to "c2e405cf7081d673a39def8e26035bac7a65b608c57c5f4803ba832c2305c744",
-        6 to "5611a39298dce59ab9aea870cfc469f9a848ac0bf40c31b3b6f8f9221917b8ef",
+        6 to "eec14a80567c2d2902442ea1a8abb8c40407602d191963e475efcb8747046f47",
         7 to "6682eeb69cde215f49d82799fb56f71b2f70a4ab9084843aa2c399462297f096",
         8 to "f4c77518183534d708ac27cb97b075d1ca50277822d571ea9d611197aac74b1f",
         9 to "e910e061464deec4c9c2eab392ede33fba94cd3e528e8a142966b28e2d0bb470",
@@ -495,7 +495,25 @@ class Units2630SourceIntakeTest {
         assertTrue(generatedErrors.joinToString("\n"), generatedErrors.any { it.contains("generated") || it.contains(generated.id) })
         val curriculum = File(root, "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(curriculum.contains("The New Penguin Russian Course"))
-        assertFalse(curriculum.contains(".pdf"))
+        // A verified primary-reference URL in research metadata is not a bundled PDF.
+        val cornellReference = "https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf"
+        assertFalse(curriculum.replace(cornellReference, "").contains(".pdf"))
+        assertTrue(pack.provenanceRecords.filter { it.originalSourceText.contains(cornellReference) }.all {
+            it.itemId.startsWith("prov-ca-u6-worked-") && it.sourceId == "src-content-audit-research"
+        })
+        assertTrue(pack.provenanceRecords.none { it.shippedText.contains(".pdf") })
+        assertTrue(pack.units.flatMap { it.sessions }.flatMap { it.steps }.none { step ->
+            listOf(step.title, step.body, step.bookDirection.orEmpty(), step.companionDirection.orEmpty())
+                .any { it.contains(".pdf") }
+        })
+        assertTrue(pack.items.none { item ->
+            (listOf(item.prompt, item.promptLetter.orEmpty(), item.feedback, item.answer) +
+                item.options + item.distractorRationales).any { it.contains(".pdf") }
+        })
+        assertTrue(pack.examples.none { it.display.contains(".pdf") || it.note.contains(".pdf") })
+        assertFalse(File(root, "app/src/main/assets").walkTopDown().any {
+            it.isFile && it.extension.equals("pdf", ignoreCase = true)
+        })
         assertFalse(curriculum.contains("not vital"))
         assertFalse(curriculum.contains("predictible"))
         assertFalse(File(root, "app/src/main/AndroidManifest.xml").readText().contains("android.permission.INTERNET"))

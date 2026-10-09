@@ -1,0 +1,1 @@
+PASS: corrected repair script reproduces the exact current asset from the preceding head and leaves it byte-identical on a second run

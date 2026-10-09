@@ -11,12 +11,12 @@ Unit 6 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 0e763dfd4284587065fbb48aae5c5ee5add54f8f
-- Unit content-review SHA-256: 5611a39298dce59ab9aea870cfc469f9a848ac0bf40c31b3b6f8f9221917b8ef
+- Curriculum source commit: 72c8bb4680ad0c0e1c3284ee85f90824059b78aa
+- Unit content-review SHA-256: eec14a80567c2d2902442ea1a8abb8c40407602d191963e475efcb8747046f47
 - Mapping-package SHA-256: f95e0c2f351ec7cba23cdb09b87274bb97f2e392dd783ad59c2978ed58f63b15
-- Pack content-review SHA-256: d1d74b79987cf9d789d845a9d6e8d444d4c60bb03b12734acec5800b8a1b64ca
-- Review-package SHA-256: e73b286daceff07b6ca25e1c346d28cbe6210e35aafd94a121eef1774522b21f
-- Repository source SHA-256: b41ea55aababf208fcf77117905725c6bd19d944dc67f358b6da1dd55ecde15f
+- Pack content-review SHA-256: c429b991d19e1f2d2c2f14b2d3645b1e752d3aed823237e71927c201a019a2e9
+- Review-package SHA-256: f1bc190c6b0880ef6b78b1a975fb88c6250dafb53d70282ecbcbc63d321aade3
+- Repository source SHA-256: e9f6cd33b885bd82572735ba1ac5950ea7e7c278b0263d051617c59565ccb780
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -317,11 +317,11 @@ steps=u6-st-teach-possessive-1,u6-st-teach-possessive-2,u6-st-teach-possessive-3
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ebeb00f3edb9372ec57630a8199b2d2bd375112079d3947ccf5740e64d1b14bf
+- Content hash: a59976373bd4a5c281555e1acab5320849c21dd9e7c2ef84bf15eea488471aaa
 
 kind=TEACH
-title=Admitted lines
-body=мой стол — my table. моя собака — my dog. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=My: agreement with the noun
+body=In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -339,11 +339,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 22f6630135ab05503b3f58dbb40a1c872d45b0bff53208a365323b2e9fc5c0d1
+- Content hash: 7438660cb50656c8eba5b40134e2c63bbd6bfe8e10fd1211d73a13f50faef647
 
 kind=TEACH
-title=Admitted instruction
-body=the 'my' in 'my dog' ('''моя собака''') and 'my table' ('''мой стол''') are different
+title=Match gender, number and case
+body=Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -361,11 +361,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e140c84d960cfae346515d0d90aba008907bf26e14bab13567d2bf021794c7e2
+- Content hash: 5f9508627e4f50b01f84f5ce60ac6052b6c909319e72b210b91e30a316987ff9
 
 kind=TEACH
-title=Admitted lines
-body=Наш — Our. Ваш — Your. 
+title=Our: a worked case change
+body=Наш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -383,11 +383,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 46e04e78c8604cb8e0f3c32715a695a8004360b7d77a7df82c3a8688ce93dc51
+- Content hash: 50da710efe941f372179fef34ef26bc279db4d462e304cea90f9876aaac82c65
 
 kind=TEACH
-title=Admitted lines
-body=мо́й — my. моя́ — my. 
+title=Masculine and feminine forms
+body=In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -405,11 +405,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 654ab292bc918077edf882978b43635b74e40807a8b42f177f813d4b5ebbb725
+- Content hash: e1f247112366fcea634b8e6492fb251af86af52f901797729ee96ba02cafdd31
 
 kind=TEACH
-title=Admitted lines
-body=моё — my. мои́ — my. 
+title=Neuter and plural forms
+body=моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -427,11 +427,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c0f331e3023ffe522dbd4ae2376093a48947b55269d9f5c913dfda1e41031309
+- Content hash: e6d4aadbb5bde546b401ae66209c8a1f09176db895641d3e052d3ade02aeeaa5
 
 kind=TEACH
-title=Admitted lines
-body=тво́й — your. твоя́ — your. 
+title=Your: masculine and feminine
+body=тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -449,11 +449,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b6f77c830927f795a4d93865a4b85eab235c051062df73eed1d828f25f044d5e
+- Content hash: 938e558f551334cee2f77fa498f2dde37dd10ccd3f0a03f297e1da881d563bd9
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Choose the form that matches the noun. Then read why the other forms do not fit.
 dominantAction=Continue
 references=
 items=u6-g-possessive-0
@@ -471,15 +471,25 @@ remediationStepId=u6-st-rem-possessive
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 60af0831cfe455a2a8b19eb76a6919a90f83da308318d89c460fae46e3dc5894
+- Content hash: a2d54a8a1882a6fefd8ed83751e886a5f2d2ef6713d416ca810fd220c3ec7d6d
 
 kind=REMEDIATE
-title=Remediation
-body=the 'my' in 'my dog' ('''моя собака''') and 'my table' ('''мой стол''') are different
+title=Review the agreement rule
+body=Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
+
+In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
+
+In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
+
+моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.
+
+Наш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.
+
+тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.
 dominantAction=Continue
 references=ref-ca-cases
 items=
-examples=ex-u6-possessive-0,ex-u6-possessive-1
+examples=ex-u6-possessive-0,ex-u6-possessive-1,ex-u6-possessive-2,ex-u6-possessive-3,ex-or-u6-possessive-4,ex-or-u6-possessive-5,ex-or-u6-possessive-6,ex-or-u6-possessive-7,ex-or-u6-possessive-8,ex-or-u6-possessive-9
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -493,11 +503,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dd5af19403a6b6c22bfc511be475300955d86ca002f7c21e11f3ff9e577ad6bf
+- Content hash: 122b4b44534dc3a018ff8313d515efc9605e22d04313a057a0a20de06071d0d9
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use gender, number and case to choose a form. If you miss a check, review the explanation.
 dominantAction=Continue
 references=
 items=u6-i-possessive-1,u6-i-possessive-2,u6-i-possessive-3
@@ -2502,19 +2512,19 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 677bc80edafc0fdb891d3c57db6fb350167808128f1ca0e720e897147a706ffd
+- Content hash: 5eddb7f4c888612b4ce46e1649f13e48bc71be6c4476738da20c35cde733780f
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form agrees with the shown word?
+prompt=Which nominative form meaning my agrees with the shown feminine singular noun?
 promptLetter=собака
 options=моя́ | мо́й | мои́
 answer=моя́
-feedback=Does the admitted record show the governed contrast? моя́.
+feedback=собака is feminine singular, so the nominative form is моя́.
 objectiveId=obj-u6-possessive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other agreement row of the same word. | This form is the plural row of the same word.
+distractorRationales= | мо́й is masculine singular nominative; it does not agree with the feminine singular noun. | мои́ is plural nominative; the noun here is singular.
 testedFeature=POSSESSIVE_AGREEMENT
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u6-possessive-0
@@ -2522,8 +2532,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u6-possessive-5
 distractorSourceIds= | prov-ex-or-u6-possessive-4 | prov-ex-or-u6-possessive-7
-distractorDifference= | This form is the other agreement row of the same word. | This form is the plural row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | мо́й is masculine singular nominative; it does not agree with the feminine singular noun. | мои́ is plural nominative; the noun here is singular.
+whyAnswerDemonstratesObjective=собака is feminine singular, so the nominative form is моя́.
 contrastMembers=моя́ | мо́й | мои́
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u6-possessive-x-0 | prov-ex-or-u6-possessive-5 | prov-ex-or-u6-possessive-4 | prov-ex-or-u6-possessive-7
@@ -2740,19 +2750,19 @@ relationParticipantIds=prov-ex-u6-direction-0-ru | prov-u6-direction-x-0 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 52a04947ac905250ab6262fe0f4baba37f239d28388a05646641cfa599896b74
+- Content hash: 1bdeed8b09f7d634c25cbd94725a09e452dbcc22b21bb8e46ae8cc85dfca4f54
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form agrees with the shown word?
+prompt=Which nominative form meaning my agrees with the shown masculine singular noun?
 promptLetter=стол
 options=мо́й | моя́
 answer=мо́й
-feedback=Does the admitted record show the governed contrast? мо́й.
+feedback=стол is masculine singular, so the nominative form is мо́й.
 objectiveId=obj-u6-possessive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other agreement row of the same word.
+distractorRationales= | моя́ is feminine singular nominative; it does not agree with the masculine singular noun.
 testedFeature=POSSESSIVE_AGREEMENT
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u6-possessive-1
@@ -2760,8 +2770,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u6-possessive-4
 distractorSourceIds= | prov-ex-or-u6-possessive-5
-distractorDifference= | This form is the other agreement row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | моя́ is feminine singular nominative; it does not agree with the masculine singular noun.
+whyAnswerDemonstratesObjective=стол is masculine singular, so the nominative form is мо́й.
 contrastMembers=мо́й | моя́
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u6-possessive-x-1 | prov-ex-or-u6-possessive-4 | prov-ex-or-u6-possessive-5
@@ -4819,6 +4829,716 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=fa129a14220bca02e6275ec53cf52eceb11456f354426f259b83c12f70a8837c
 contentHash=bb0bfc4784cc98146560ce28f1cae39155903bca94367dca64c8f348956d8ef2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-check-1-distractor-1`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f9b08c50ae50d2dd385734140bc61152cd6a4156ed3b8b21e6c8d8c47f2a6f0e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:check-1-distractor-1
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+моя́ is feminine singular nominative; it does not agree with the masculine singular noun.
+shippedText=моя́ is feminine singular nominative; it does not agree with the masculine singular noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=31e7b36e322ff4bcd3dba03e6272c589b24c2cb13e1d635208009640fa91d68d
+contentHash=ec0ef26bc7c3a2416bc27c153ac709c52937a3cf9e24f58d19177943c403d9d3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-check-1-feedback`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c161d1faa30de081ae49beea1fdeb4e0cc02327b8524a142836633b7b7471784
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:check-1-feedback
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+стол is masculine singular, so the nominative form is мо́й.
+shippedText=стол is masculine singular, so the nominative form is мо́й.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ba1b587508fabe88b1b38959644c2f3337d2f90ecead5c475d10572c01744043
+contentHash=cab4fbf70d882e3af9d93c91666d2edd086d6f7cdab8acc7cd8ba9edd8bcf23b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-check-1-prompt`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78e624e8d1c8f86405f88db2081593db7fbd7a9515862271eee9312187545b05
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:check-1-prompt
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Which nominative form meaning my agrees with the shown masculine singular noun?
+shippedText=Which nominative form meaning my agrees with the shown masculine singular noun?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=114e5b33ea339ba3cb5b1e3414dc7272c1c5cc6c63a2c669f48821ada3673f1c
+contentHash=e129b6e5d1a03862550832f628dbc5aa6bc04ca7b7b34dffa856dff598821f60
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-check-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36fe941b4c6e510ca58a062b7617f8c8d452b918567c09f0c82558acf97241bc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:check-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Use gender, number and case to choose a form. If you miss a check, review the explanation.
+shippedText=Use gender, number and case to choose a form. If you miss a check, review the explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4ec85fd65d78a26d7429760af0d645957f3d4fd72449731fa63a57f809eba3ed
+contentHash=1836b32de1c44d547cf36d65706134d374850ae8a681a8dc21b80e8d806e1391
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-guided-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0eaada1655476b6cecc9e12cc3c27211059814365c57f073b697ee8e85a1035a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:guided-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Choose the form that matches the noun. Then read why the other forms do not fit.
+shippedText=Choose the form that matches the noun. Then read why the other forms do not fit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d12e90a6c4f5d71a9f42828ff71d836b2d1927a3e82a530cd587d24cd51523a3
+contentHash=45ceda4d47d8f5a3a9487795262b2401ddfe49cf330bf12bd31510120fb0acc9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-guided-distractor-1`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00f9a0deaf579420c3b24855c9ba9851bd9b798369a433e4a102751c8478abfd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:guided-distractor-1
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+мо́й is masculine singular nominative; it does not agree with the feminine singular noun.
+shippedText=мо́й is masculine singular nominative; it does not agree with the feminine singular noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7138116ace193843c3ee5ac33318ec34bfc2dd5c244b82e8fafbc5a80832593b
+contentHash=ce5e97f2a0641da6cf1d5c3dfad144f0f9ba13ad514feb6a0dc3be7e039a0be1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-guided-distractor-2`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c0f34538552b5f150be9199eab49904fe9b21778b8f8a28bd25af111680de36
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:guided-distractor-2
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+мои́ is plural nominative; the noun here is singular.
+shippedText=мои́ is plural nominative; the noun here is singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=38e47111b2a2e5b54f6b79f2b231083f1441584fa82044d1f32dbc30d4fb8e41
+contentHash=6e4c01a3ce6cb9c0f049be0de3339a42c3aecc9d8485ce91c4dc8411f9f9465a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-guided-feedback`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa4a62fa4f2af92f9ab3c34659b8cfe69c949e7326ce48835bcd479fd0cfd60f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:guided-feedback
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+собака is feminine singular, so the nominative form is моя́.
+shippedText=собака is feminine singular, so the nominative form is моя́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=41dc92fd6b81180c6348e0c6c5c80642fb632e0c4855386ea882efe7420c85a6
+contentHash=1d89d0dab92e3c65344216a0aa25f0083157560a8bd9408b27bdb06bf56ab330
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-guided-prompt`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aec9f4b2e1e8e195563fe405414949a589f01dcb38d6cab88599a970fabf95f5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:guided-prompt
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Which nominative form meaning my agrees with the shown feminine singular noun?
+shippedText=Which nominative form meaning my agrees with the shown feminine singular noun?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1f0946188ff444c781cf5bf4a177b1496b0d642d582b2ab4992a6ccc0059f9c3
+contentHash=30a13f7728cb12d598fe9c202884be954ee4f0c5865036fe0e1c0e3ad9fecd75
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-rem-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a482d9e170b285649a51c07c5f4fa0b975e71aeb4bd290eabf80caa4c618e38c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:rem-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
+
+In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
+
+In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
+
+моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.
+
+Наш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.
+
+тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.
+shippedText=Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
+
+In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
+
+In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
+
+моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.
+
+Наш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.
+
+тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=639fa0a4c577a051b6af864d2171923eccc0194b73ca0c3602b48b8af2df1603
+contentHash=9357ead967ec235a2b1c9a86e310cff859017a669c6c414689ce39b53e162f8f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-rem-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5455283fe96542b250e301d0129892c6a6475ec4d8196ab12d24d3a16dfc2c46
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:rem-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Review the agreement rule
+shippedText=Review the agreement rule
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=81218baa0913e06190f2c2f388e74e25e6c092c59e927ef22e2b5032ecc02b62
+contentHash=a56edfd67705c3b389834354a88c606012d13137fe30b50aeac8a6d6d98caad5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-1-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b11bba14ea4a70b2ceea69a1fcf67501960babfb6160e56c84e23be7a832ec9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-1-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
+shippedText=In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9c77193adf60d9017ea370a5b5c707568b0fe3a020cf6b932671928f1edbb50b
+contentHash=2814e2a772cd3bdd6c4cf0d4cd572fe33d1f955dd39add3650e28aac551fcb66
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-1-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fabd8979489869046032a82ab3450641c403a26dc303fa24f22aace1fa0268de
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-1-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+My: agreement with the noun
+shippedText=My: agreement with the noun
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=29d6915bffe0a205ef5b7a0bf04171cb2f746f3863f207b9f927c4fcc113e5ca
+contentHash=62e977dfb37c655355d8c17ed15d0c138481921767e6ec551477c440dba35ec7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-2-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 06b29dfbfb3040cf31e448885ace4c291923cf74acb47d0218b3ff9f4c5e7a82
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-2-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
+shippedText=Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1f4562a9404f65214c6c2b6348dadb12ef8ae0ecf2bddc153c8ce08dcf46be45
+contentHash=3acc3640933af15092568a53abf807cb29930e6bbbf62ea144a51873974fbea5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-2-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7b606c5bac674cb4444264f8a6431d309fec930168dec0ff85e045d9e361b0f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-2-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Match gender, number and case
+shippedText=Match gender, number and case
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9766295df813f26da17606254a094bce736cff2b5b2c8a01189616e3cc8f71b9
+contentHash=633ae7282b78fa602b0acb7181c146705e39a5ee7a01e660ea720932faf05b65
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-3-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4382b1dd6ae28e24f538e23fd867e5f419c955243fb9ea5a0962c8702b95104
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-3-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Наш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.
+shippedText=Наш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c035884a527c6779e27e0315dcb58d93ebfc400e6ad5178d8c87bad984876dfa
+contentHash=8f3a3be363a00940f5406ebaf73f83404d98dbfb45ed38662d8e42eb7ac9e21b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-3-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4f279ec0ed25a319c4dbfdb77b7ea7b8fe96f6b5b0d777240df6aa03557a82e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-3-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Our: a worked case change
+shippedText=Our: a worked case change
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=725be040f952d26a99e13270c9218d5527437984a9531b416c98620fa3173a5d
+contentHash=226044d3f455a80efe7e37cd6f0e7f9c16c1dc7d238b3d3251603dc0c7a162a4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-4-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d485d2c23dd547255fc2488ff35fd14ffdab847d8ec505dfc88eb2484b4735a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-4-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
+shippedText=In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0daa0c476d2c99049de7da04958234046b1eab7bfbf7cc01d01029bb87e39233
+contentHash=e630dc47d7c04147ce37c13f9d6eada0c6857f68e7dfdf9f30762aa29367f797
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-4-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a5d79daaf6f447407b1be293dd159d37ee2bcc52640e3d7f153672ae3c9b507
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-4-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Masculine and feminine forms
+shippedText=Masculine and feminine forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=92dd3e3ee04bfcf931ee4e1394b275a412f839184162fddbd39fc500f18746a8
+contentHash=b7cd8c50a4cc72b616cff54a74f4043fc43b5a4a0c4e1425133eeae2a044cc91
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-5-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 503babd2d83edc41072f7c13de825640693729cae9ee093d99314fbe257521a9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-5-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.
+shippedText=моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=652813344601ad6957466ae5dc5a8b9768df9a2011ca343d08655391830dd50b
+contentHash=b54f3731082953a3e458abc3c3b09e670c002e95fbf0776d248681a79dac1fc5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-5-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b45ffd4ccc11051231b10c2a14596620f7bf678df7660fdcd5efa4cc393ba9f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-5-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Neuter and plural forms
+shippedText=Neuter and plural forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7471dac6d806d0836c7938af9494bd6b2cf5c8af276183b6953028e5124a61ce
+contentHash=9ba3f30adf8f5d82714242009394b93f41309c43c0c6774c43f6bb91f54ffd7d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-6-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 08b728eb03554278fdd382098be4a2c2597056c594cac96c861a3282d356e621
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-6-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.
+shippedText=тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7eb6ce914866857c966a2901c5d61efa7cf7db37130714b74f78eec556e37437
+contentHash=e3a8232f0cb9460a1c5eae02d36cc5fa95204fcbd8a917e8053a39137c58912b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-6-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e39ad5277c307f93f81d6acfb9b6d743f7e98b0fb0eb4e9dd7ab57b709b047aa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-6-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Your: masculine and feminine
+shippedText=Your: masculine and feminine
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dca564fc893027ed62c35c55feeda9285092bf803a14b2ef714a1de5139e8969
+contentHash=d5e7382e0a4c8f34f0b6f978f5bf73437b2d4dde5f60611d8d1deb19ad353213
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -9121,6 +9841,14 @@ permitsAppUse=true
 - `u6-st-guided-possessive-1` ITEM `u6-g-possessive-0`
 - `u6-st-rem-possessive` EXAMPLE `ex-u6-possessive-0`
 - `u6-st-rem-possessive` EXAMPLE `ex-u6-possessive-1`
+- `u6-st-rem-possessive` EXAMPLE `ex-u6-possessive-2`
+- `u6-st-rem-possessive` EXAMPLE `ex-u6-possessive-3`
+- `u6-st-rem-possessive` EXAMPLE `ex-or-u6-possessive-4`
+- `u6-st-rem-possessive` EXAMPLE `ex-or-u6-possessive-5`
+- `u6-st-rem-possessive` EXAMPLE `ex-or-u6-possessive-6`
+- `u6-st-rem-possessive` EXAMPLE `ex-or-u6-possessive-7`
+- `u6-st-rem-possessive` EXAMPLE `ex-or-u6-possessive-8`
+- `u6-st-rem-possessive` EXAMPLE `ex-or-u6-possessive-9`
 - `u6-st-rem-possessive` REFERENCE `ref-ca-cases`
 - `u6-st-check-possessive` REMEDIATION `u6-st-rem-possessive`
 - `u6-st-check-possessive` ITEM `u6-i-possessive-1`
@@ -9292,6 +10020,29 @@ permitsAppUse=true
 - `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-0`
 - `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-1`
 - `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-3`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-check-1-distractor-1`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-check-1-feedback`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-check-1-prompt`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-check-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-guided-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-guided-distractor-1`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-guided-distractor-2`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-guided-feedback`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-guided-prompt`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-rem-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-rem-title`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-1-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-1-title`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-2-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-2-title`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-3-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-3-title`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-4-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-4-title`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-5-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-5-title`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-6-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-6-title`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-0`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-0-gloss`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-1`

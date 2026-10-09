@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "26ceb006dd9f9f1fd6548706b9197c0c550a18ae457ad9c51228516cf268c9dd",
+    "curriculumFileSha256": "87cac892c60b768e2eb00520ea7ef37d10b9441800d919b917d137ec9bb13a44",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -773,8 +773,8 @@
           "step": {
             "id": "u6-st-teach-possessive-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "мой стол — my table. моя собака — my dog. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "My: agreement with the noun",
+            "body": "In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -795,8 +795,8 @@
           "step": {
             "id": "u6-st-teach-possessive-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "the 'my' in 'my dog' ('''моя собака''') and 'my table' ('''мой стол''') are different",
+            "title": "Match gender, number and case",
+            "body": "Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -814,8 +814,8 @@
           "step": {
             "id": "u6-st-teach-possessive-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Наш — Our. Ваш — Your. ",
+            "title": "Our: a worked case change",
+            "body": "Наш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -836,8 +836,8 @@
           "step": {
             "id": "u6-st-teach-possessive-4",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "мо́й — my. моя́ — my. ",
+            "title": "Masculine and feminine forms",
+            "body": "In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -858,8 +858,8 @@
           "step": {
             "id": "u6-st-teach-possessive-5",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "моё — my. мои́ — my. ",
+            "title": "Neuter and plural forms",
+            "body": "моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -880,8 +880,8 @@
           "step": {
             "id": "u6-st-teach-possessive-6",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "тво́й — your. твоя́ — your. ",
+            "title": "Your: masculine and feminine",
+            "body": "тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -903,7 +903,7 @@
             "id": "u6-st-guided-possessive-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Choose the form that matches the noun. Then read why the other forms do not fit.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [
@@ -921,8 +921,8 @@
           "step": {
             "id": "u6-st-rem-possessive",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "the 'my' in 'my dog' ('''моя собака''') and 'my table' ('''мой стол''') are different",
+            "title": "Review the agreement rule",
+            "body": "Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.\n\nIn мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.\n\nIn the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.\n\nмоё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.\n\nНаш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.\n\nтво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-ca-cases"
@@ -930,7 +930,15 @@
             "itemIds": [],
             "exampleIds": [
               "ex-u6-possessive-0",
-              "ex-u6-possessive-1"
+              "ex-u6-possessive-1",
+              "ex-u6-possessive-2",
+              "ex-u6-possessive-3",
+              "ex-or-u6-possessive-4",
+              "ex-or-u6-possessive-5",
+              "ex-or-u6-possessive-6",
+              "ex-or-u6-possessive-7",
+              "ex-or-u6-possessive-8",
+              "ex-or-u6-possessive-9"
             ],
             "unavailableReason": null,
             "bookDirection": null,
@@ -944,7 +952,7 @@
             "id": "u6-st-check-possessive",
             "kind": "CHECK",
             "title": "Independent checks",
-            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "body": "Use gender, number and case to choose a form. If you miss a check, review the explanation.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [
