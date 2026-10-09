@@ -11,12 +11,12 @@ Unit 6 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: d9a4542ce7915ff3860a537ebc959d905fbf56ff
-- Unit content-review SHA-256: 1f3351cfd28ea08f643d4dfab5c9bab6f4df2269c36567b0e7ebe7e622670b3d
+- Curriculum source commit: 8ff440be0691161ffaf053961d0fdfec1863856b
+- Unit content-review SHA-256: a9aa3117e82201373679079f03d624e38c8584047b773cdd78e4c31c528517f5
 - Mapping-package SHA-256: f95e0c2f351ec7cba23cdb09b87274bb97f2e392dd783ad59c2978ed58f63b15
-- Pack content-review SHA-256: 2dd74eb256a8d466dded80ad88070ed242024e965f0f2a8d8dee0c3ece948045
-- Review-package SHA-256: 82d4be4cbaafa4bb06b244df151b5cfd7ac1e71dd4665be1abf55b0a7f36df5f
-- Repository source SHA-256: a0ef5519616e89aa7e699ffa44ec2208d73d4782a27a9646238d4d16e88563d2
+- Pack content-review SHA-256: 20e41143b4550fcb20e92589fbf36b56ec072514ba653f2363a5ad34b6a1d82d
+- Review-package SHA-256: 167b7cb707f060da1087cc1cf982fc90815fd1d1c0d25ab59b0fb706b5fcf1a3
+- Repository source SHA-256: a97b0b94acec8e829de55d86e1d8db99eacfd540d6225dd45a78774595fc28cf
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -302,12 +302,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1f665f525cf1a620f1b672d8c7ded41c840d516d7fb83886a53ea86ee851c238
+- Content hash: 74a5226ac5146add6528a1473bd5e3011e709c752ffcd6d25930dc67eefb7504
 
 title=Choose the admitted possessive form
 estimatedMinutes=12
 objectives=obj-u6-possessive
-steps=u6-st-teach-possessive-1,u6-st-guided-possessive-1,u6-st-teach-possessive-2,u6-st-teach-possessive-3,u6-st-teach-possessive-4,u6-st-teach-possessive-5,u6-st-teach-possessive-6,u6-st-rem-possessive,u6-st-check-possessive
+steps=u6-st-teach-possessive-1,u6-st-teach-possessive-2,u6-st-teach-possessive-3,u6-st-teach-possessive-4,u6-st-teach-possessive-5,u6-st-teach-possessive-6,u6-st-guided-possessive-1,u6-st-rem-possessive,u6-st-check-possessive
 
 ### STEP `u6-st-teach-possessive-1`
 
@@ -330,28 +330,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u6-st-guided-possessive-1`
-
-- Objectives: obj-u6-possessive
-- Sessions: u6-s-possessive
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b6f77c830927f795a4d93865a4b85eab235c051062df73eed1d828f25f044d5e
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u6-g-possessive-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u6-st-rem-possessive
 
 ### STEP `u6-st-teach-possessive-2`
 
@@ -462,6 +440,28 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u6-st-guided-possessive-1`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-possessive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b6f77c830927f795a4d93865a4b85eab235c051062df73eed1d828f25f044d5e
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u6-g-possessive-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u6-st-rem-possessive
 
 ### STEP `u6-st-rem-possessive`
 
@@ -9104,8 +9104,6 @@ permitsAppUse=true
 - `u6-st-teach-possessive-1` EXAMPLE `ex-u6-possessive-0`
 - `u6-st-teach-possessive-1` EXAMPLE `ex-u6-possessive-1`
 - `u6-st-teach-possessive-1` REFERENCE `ref-u610-attribution`
-- `u6-st-guided-possessive-1` REMEDIATION `u6-st-rem-possessive`
-- `u6-st-guided-possessive-1` ITEM `u6-g-possessive-0`
 - `u6-st-teach-possessive-2` REFERENCE `ref-u610-attribution`
 - `u6-st-teach-possessive-3` EXAMPLE `ex-u6-possessive-2`
 - `u6-st-teach-possessive-3` EXAMPLE `ex-u6-possessive-3`
@@ -9119,6 +9117,8 @@ permitsAppUse=true
 - `u6-st-teach-possessive-6` EXAMPLE `ex-or-u6-possessive-8`
 - `u6-st-teach-possessive-6` EXAMPLE `ex-or-u6-possessive-9`
 - `u6-st-teach-possessive-6` REFERENCE `ref-u610-attribution`
+- `u6-st-guided-possessive-1` REMEDIATION `u6-st-rem-possessive`
+- `u6-st-guided-possessive-1` ITEM `u6-g-possessive-0`
 - `u6-st-rem-possessive` EXAMPLE `ex-u6-possessive-0`
 - `u6-st-rem-possessive` EXAMPLE `ex-u6-possessive-1`
 - `u6-st-rem-possessive` REFERENCE `ref-ca-cases`

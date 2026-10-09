@@ -1,8 +1,8 @@
 # Single-guided session sequence-review candidates
 
-Curriculum file SHA-256: `2053cfad5fa7e0ce7787184c14a4ef3676770a32e21cad857c587bb2fafa26aa`.
+Curriculum file SHA-256: `b6e1513788c7b5dd328047728384a02e222c00c5b9351a4b66e155fc31ea6796`.
 
-**140 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
+**136 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
 
 The Unit 24 absence session and Unit 25 courtesy session no longer have this ordering flag. Their implemented corrections remain pending final semantic audit. This inventory does not close CA009/CA010 or approve any other session.
 
@@ -12,7 +12,6 @@ The Unit 24 absence session and Unit 25 courtesy session no longer have this ord
 | 3 | `u3-s-naming` | `u3-st-guided-naming-1` | `u3-st-teach-naming-2` |
 | 4 | `u4-s-pronouns` | `u4-st-guided-pronouns-1` | `u4-st-teach-pronouns-2`, `u4-st-teach-pronouns-3` |
 | 5 | `u5-s-indeclinable` | `u5-st-guided-indeclinable-1` | `u5-st-teach-indeclinable-2`, `u5-st-teach-indeclinable-3` |
-| 6 | `u6-s-possessive` | `u6-st-guided-possessive-1` | `u6-st-teach-possessive-2`, `u6-st-teach-possessive-3`, `u6-st-teach-possessive-4`, `u6-st-teach-possessive-5`, `u6-st-teach-possessive-6` |
 | 6 | `u6-s-third` | `u6-st-guided-third-1` | `u6-st-teach-third-2`, `u6-st-teach-third-3` |
 | 6 | `u6-s-object` | `u6-st-guided-object-1` | `u6-st-teach-object-2`, `u6-st-teach-object-3`, `u6-st-teach-object-4` |
 | 6 | `u6-s-feminine` | `u6-st-guided-feminine-1` | `u6-st-teach-feminine-2`, `u6-st-teach-feminine-3`, `u6-st-teach-feminine-4` |
@@ -96,7 +95,6 @@ The Unit 24 absence session and Unit 25 courtesy session no longer have this ord
 | 20 | `u20-s-motion` | `u20-st-guided-motion-1` | `u20-st-teach-motion-2`, `u20-st-teach-motion-3`, `u20-st-teach-motion-4`, `u20-st-teach-motion-5` |
 | 21 | `u21-s-svoy` | `u21-st-guided-svoy-1` | `u21-st-teach-svoy-2`, `u21-st-teach-svoy-3`, `u21-st-teach-svoy-4` |
 | 21 | `u21-s-object-reference` | `u21-st-guided-object-reference-1` | `u21-st-teach-object-reference-2` |
-| 21 | `u21-s-purpose` | `u21-st-guided-purpose-1` | `u21-st-teach-purpose-2`, `u21-st-teach-purpose-3` |
 | 22 | `u22-s-noun-forms` | `u22-st-guided-noun-forms-1` | `u22-st-teach-noun-forms-2`, `u22-st-teach-noun-forms-3`, `u22-st-teach-noun-forms-4` |
 | 22 | `u22-s-compounds` | `u22-st-guided-compounds-1` | `u22-st-teach-compounds-2`, `u22-st-teach-compounds-3` |
 | 22 | `u22-s-declension` | `u22-st-guided-declension-1` | `u22-st-teach-declension-2`, `u22-st-teach-declension-3` |
@@ -132,8 +130,6 @@ The Unit 24 absence session and Unit 25 courtesy session no longer have this ord
 | 27 | `u27-s-present-passive` | `u27-st-guided-present-passive-1` | `u27-st-teach-present-passive-2` |
 | 27 | `u27-s-gap-comprehension` | `u27-comp-guided` | `u27-comp-teach-2` |
 | 27 | `u27-s-stress` | `u27-stress-guided` | `u27-stress-teach-2` |
-| 28 | `u28-s-imperfective-adverb` | `u28-st-guided-imperfective-adverb-1` | `u28-st-teach-imperfective-adverb-2` |
-| 28 | `u28-s-perfective-adverb` | `u28-st-guided-perfective-adverb-1` | `u28-st-teach-perfective-adverb-2`, `u28-st-teach-perfective-adverb-3` |
 | 28 | `u28-s-readings` | `u28-st-guided-readings-1` | `u28-st-teach-readings-2` |
 | 29 | `u29-s-active` | `u29-st-guided-active-1` | `u29-st-teach-active-2`, `u29-st-teach-active-3` |
 | 29 | `u29-s-short-adjective` | `u29-st-guided-short-adjective-1` | `u29-st-teach-short-adjective-2`, `u29-st-teach-short-adjective-3` |

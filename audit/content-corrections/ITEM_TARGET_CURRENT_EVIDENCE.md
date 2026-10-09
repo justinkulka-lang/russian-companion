@@ -10,7 +10,7 @@ The four absent snapshots are objective entries that the previous snapshot did n
 
 Changed objects reflect ongoing correction work. Unchanged objects may already contain preliminary repairs; unchanged does not mean the original issue remains or that it is accepted.
 
-Curriculum file SHA-256: `2053cfad5fa7e0ce7787184c14a4ef3676770a32e21cad857c587bb2fafa26aa`. This is a raw file hash, distinct from the production canonical content-review digest.
+Curriculum file SHA-256: `b6e1513788c7b5dd328047728384a02e222c00c5b9351a4b66e155fc31ea6796`. This is a raw file hash, distinct from the production canonical content-review digest.
 
 Retained target snapshot SHA-256: `ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f`.
 

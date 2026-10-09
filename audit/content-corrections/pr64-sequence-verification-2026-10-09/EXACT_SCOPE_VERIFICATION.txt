@@ -1,0 +1,5 @@
+PASS: exactly four reviewed sessions change; step contents and IDs are byte-equivalent as parsed objects
+PASS: all other sessions, items, keys, options, examples, Russian cues, objectives, advancement and provenance remain unchanged
+PASS: only Units 6, 21 and 28 instructional digests change; all mapping-package digests remain unchanged
+PASS: all 30 pending review packets bind the actual implementation ancestor 8ff440be0691161ffaf053961d0fdfec1863856b
+curriculum SHA256=b6e1513788c7b5dd328047728384a02e222c00c5b9351a4b66e155fc31ea6796

@@ -11,12 +11,12 @@ Unit 21 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: d9a4542ce7915ff3860a537ebc959d905fbf56ff
-- Unit content-review SHA-256: 42156a0e7af0457e7156b060c119e408c88fb2e64e98bdc17dbe8e5a21df71f5
+- Curriculum source commit: 8ff440be0691161ffaf053961d0fdfec1863856b
+- Unit content-review SHA-256: 1f78bbc71dd6838477cb1e7aa13daf6d1a1951ce104f5f9f67e32c8490e22fc5
 - Mapping-package SHA-256: a81fd110700d8cef3f88b5c34642feb7792e0bc851b2e13f08acba87969eab0e
-- Pack content-review SHA-256: 2dd74eb256a8d466dded80ad88070ed242024e965f0f2a8d8dee0c3ece948045
-- Review-package SHA-256: ab4be4e96e00bccd6e4fa0111e9b2344f8bb86a190bf0e7b34a2d1d233dee953
-- Repository source SHA-256: a0ef5519616e89aa7e699ffa44ec2208d73d4782a27a9646238d4d16e88563d2
+- Pack content-review SHA-256: 20e41143b4550fcb20e92589fbf36b56ec072514ba653f2363a5ad34b6a1d82d
+- Review-package SHA-256: 50da01725663293638ba98fe0c5132c37cbb5fb042bc05b1512054135e51bade
+- Repository source SHA-256: a97b0b94acec8e829de55d86e1d8db99eacfd540d6225dd45a78774595fc28cf
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -520,12 +520,12 @@ remediationStepId=u21-st-rem-object-reference
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8bd6ec437396e5a5a2727ce099b1e64f870d38b4575e1932967defb377858b81
+- Content hash: f3d0757f43bd0d1cb7680abe3eb7990ace1309e759878535e56c878cd8321ff2
 
 title=Choose the English meaning of the shown word
 estimatedMinutes=12
 objectives=obj-u21-purpose
-steps=u21-st-teach-purpose-1,u21-st-guided-purpose-1,u21-st-teach-purpose-2,u21-st-teach-purpose-3,u21-st-rem-purpose,u21-st-check-purpose
+steps=u21-st-teach-purpose-1,u21-st-teach-purpose-2,u21-st-teach-purpose-3,u21-st-guided-purpose-1,u21-st-rem-purpose,u21-st-check-purpose
 
 ### STEP `u21-st-teach-purpose-1`
 
@@ -548,28 +548,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u21-st-guided-purpose-1`
-
-- Objectives: obj-u21-purpose
-- Sessions: u21-s-purpose
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 656afee3a6965b7313f28719543bf038db4f4f94f9f69eddea74ea5ba91294de
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u21-g-purpose-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u21-st-rem-purpose
 
 ### STEP `u21-st-teach-purpose-2`
 
@@ -614,6 +592,28 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u21-st-guided-purpose-1`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 656afee3a6965b7313f28719543bf038db4f4f94f9f69eddea74ea5ba91294de
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u21-g-purpose-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u21-st-rem-purpose
 
 ### STEP `u21-st-rem-purpose`
 
@@ -6314,12 +6314,12 @@ permitsAppUse=true
 - `u21-st-teach-purpose-1` EXAMPLE `ex-u21-purpose-0`
 - `u21-st-teach-purpose-1` EXAMPLE `ex-u21-purpose-1`
 - `u21-st-teach-purpose-1` REFERENCE `ref-u2125-attribution`
-- `u21-st-guided-purpose-1` REMEDIATION `u21-st-rem-purpose`
-- `u21-st-guided-purpose-1` ITEM `u21-g-purpose-0`
 - `u21-st-teach-purpose-2` REFERENCE `ref-u2125-attribution`
 - `u21-st-teach-purpose-3` EXAMPLE `ex-u21-purpose-2`
 - `u21-st-teach-purpose-3` EXAMPLE `ex-u21-purpose-3`
 - `u21-st-teach-purpose-3` REFERENCE `ref-u2125-attribution`
+- `u21-st-guided-purpose-1` REMEDIATION `u21-st-rem-purpose`
+- `u21-st-guided-purpose-1` ITEM `u21-g-purpose-0`
 - `u21-st-rem-purpose` EXAMPLE `ex-u21-purpose-0`
 - `u21-st-rem-purpose` EXAMPLE `ex-u21-purpose-1`
 - `u21-st-check-purpose` REMEDIATION `u21-st-rem-purpose`

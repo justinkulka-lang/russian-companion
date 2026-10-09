@@ -11,12 +11,12 @@ Unit 28 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: d9a4542ce7915ff3860a537ebc959d905fbf56ff
-- Unit content-review SHA-256: c44ee224d88dae6b726748411cf7de876f841d7bcd55e92ce84f6c3022ef5b68
+- Curriculum source commit: 8ff440be0691161ffaf053961d0fdfec1863856b
+- Unit content-review SHA-256: e979faa95a8b8acf8e2d03cce0760f24953b652da2d4f663ce1a169342593312
 - Mapping-package SHA-256: 0fb9199bfef05acc54935be340710bd53e19fcd6066349300e09c29fb4b035e8
-- Pack content-review SHA-256: 2dd74eb256a8d466dded80ad88070ed242024e965f0f2a8d8dee0c3ece948045
-- Review-package SHA-256: 608704997156e69d0c939cedf14ae5acb7bfabdad018b960364d209bd1973e5f
-- Repository source SHA-256: a0ef5519616e89aa7e699ffa44ec2208d73d4782a27a9646238d4d16e88563d2
+- Pack content-review SHA-256: 20e41143b4550fcb20e92589fbf36b56ec072514ba653f2363a5ad34b6a1d82d
+- Review-package SHA-256: f16bfbbfc4cc9374c062d996946176c26423e3b919eeffd53cebeac15d399474
+- Repository source SHA-256: a97b0b94acec8e829de55d86e1d8db99eacfd540d6225dd45a78774595fc28cf
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -226,12 +226,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f587201c25ee26d8387582dd44c47a1f9bcabd02ceb0ee95a3d52d52802e3f5c
+- Content hash: 73bd5f6d7b803ef954fb8b3e99926065fe20d6de1ad56b25e3fe32d76f1886c4
 
 title=Choose the time relationship the source states for imperfective adverbial forms
 estimatedMinutes=12
 objectives=obj-u28-imperfective-adverb
-steps=u28-st-teach-imperfective-adverb-1,u28-st-guided-imperfective-adverb-1,u28-st-teach-imperfective-adverb-2,u28-st-rem-imperfective-adverb,u28-st-check-imperfective-adverb
+steps=u28-st-teach-imperfective-adverb-1,u28-st-teach-imperfective-adverb-2,u28-st-guided-imperfective-adverb-1,u28-st-rem-imperfective-adverb,u28-st-check-imperfective-adverb
 
 ### STEP `u28-st-teach-imperfective-adverb-1`
 
@@ -250,6 +250,28 @@ dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=ex-u28-imperfective-adverb-0,ex-u28-imperfective-adverb-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u28-st-teach-imperfective-adverb-2`
+
+- Objectives: obj-u28-imperfective-adverb
+- Sessions: u28-s-imperfective-adverb
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 01ad7960f3cefbc20241a58fb4598495ccc9ca8a2918c68ce8fcec2ec6097bdf
+
+kind=TEACH
+title=Admitted instruction
+body=An imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -276,28 +298,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=u28-st-rem-imperfective-adverb
-
-### STEP `u28-st-teach-imperfective-adverb-2`
-
-- Objectives: obj-u28-imperfective-adverb
-- Sessions: u28-s-imperfective-adverb
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 01ad7960f3cefbc20241a58fb4598495ccc9ca8a2918c68ce8fcec2ec6097bdf
-
-kind=TEACH
-title=Admitted instruction
-body=An imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
 
 ### STEP `u28-st-rem-imperfective-adverb`
 
@@ -351,12 +351,12 @@ remediationStepId=u28-st-rem-imperfective-adverb
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dd1b9437ce9a27a13a936efc45ad5bfbf47289459946ca4ed9c77fb4afff0994
+- Content hash: e5326bc1bc4325b28aa8e51796650db1844ffaaddbc8d77c75083851fda0900f
 
 title=Choose the time relationship the source states for perfective adverbial forms
 estimatedMinutes=12
 objectives=obj-u28-perfective-adverb
-steps=u28-st-teach-perfective-adverb-1,u28-st-guided-perfective-adverb-1,u28-st-teach-perfective-adverb-2,u28-st-teach-perfective-adverb-3,u28-st-rem-perfective-adverb,u28-st-check-perfective-adverb
+steps=u28-st-teach-perfective-adverb-1,u28-st-teach-perfective-adverb-2,u28-st-teach-perfective-adverb-3,u28-st-guided-perfective-adverb-1,u28-st-rem-perfective-adverb,u28-st-check-perfective-adverb
 
 ### STEP `u28-st-teach-perfective-adverb-1`
 
@@ -379,28 +379,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u28-st-guided-perfective-adverb-1`
-
-- Objectives: obj-u28-perfective-adverb
-- Sessions: u28-s-perfective-adverb
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 316fbe833fe6bd8e917c44c6afa6e997ebad7d36df7d169330ac264ada18c135
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u28-g-perfective-adverb-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u28-st-rem-perfective-adverb
 
 ### STEP `u28-st-teach-perfective-adverb-2`
 
@@ -445,6 +423,28 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u28-st-guided-perfective-adverb-1`
+
+- Objectives: obj-u28-perfective-adverb
+- Sessions: u28-s-perfective-adverb
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 316fbe833fe6bd8e917c44c6afa6e997ebad7d36df7d169330ac264ada18c135
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u28-g-perfective-adverb-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u28-st-rem-perfective-adverb
 
 ### STEP `u28-st-rem-perfective-adverb`
 
@@ -15151,9 +15151,9 @@ permitsAppUse=true
 - `u28-st-teach-imperfective-adverb-1` EXAMPLE `ex-u28-imperfective-adverb-0`
 - `u28-st-teach-imperfective-adverb-1` EXAMPLE `ex-u28-imperfective-adverb-1`
 - `u28-st-teach-imperfective-adverb-1` REFERENCE `ref-u2630-attribution`
+- `u28-st-teach-imperfective-adverb-2` REFERENCE `ref-u2630-attribution`
 - `u28-st-guided-imperfective-adverb-1` REMEDIATION `u28-st-rem-imperfective-adverb`
 - `u28-st-guided-imperfective-adverb-1` ITEM `u28-g-imperfective-adverb-0`
-- `u28-st-teach-imperfective-adverb-2` REFERENCE `ref-u2630-attribution`
 - `u28-st-rem-imperfective-adverb` EXAMPLE `ex-u28-imperfective-adverb-0`
 - `u28-st-rem-imperfective-adverb` EXAMPLE `ex-u28-imperfective-adverb-1`
 - `u28-st-rem-imperfective-adverb` REFERENCE `ref-ca-verbal-adverb`
@@ -15164,11 +15164,11 @@ permitsAppUse=true
 - `u28-st-teach-perfective-adverb-1` EXAMPLE `ex-u28-perfective-adverb-0`
 - `u28-st-teach-perfective-adverb-1` EXAMPLE `ex-u28-perfective-adverb-1`
 - `u28-st-teach-perfective-adverb-1` REFERENCE `ref-u2630-attribution`
-- `u28-st-guided-perfective-adverb-1` REMEDIATION `u28-st-rem-perfective-adverb`
-- `u28-st-guided-perfective-adverb-1` ITEM `u28-g-perfective-adverb-0`
 - `u28-st-teach-perfective-adverb-2` REFERENCE `ref-u2630-attribution`
 - `u28-st-teach-perfective-adverb-3` EXAMPLE `ex-u28-perfective-adverb-2`
 - `u28-st-teach-perfective-adverb-3` REFERENCE `ref-u2630-attribution`
+- `u28-st-guided-perfective-adverb-1` REMEDIATION `u28-st-rem-perfective-adverb`
+- `u28-st-guided-perfective-adverb-1` ITEM `u28-g-perfective-adverb-0`
 - `u28-st-rem-perfective-adverb` EXAMPLE `ex-u28-perfective-adverb-0`
 - `u28-st-rem-perfective-adverb` EXAMPLE `ex-u28-perfective-adverb-1`
 - `u28-st-rem-perfective-adverb` REFERENCE `ref-ca-verbal-adverb`

@@ -1,0 +1,56 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (4):
+  JUnit Vintage:ContentAuditCorrectionTest:purposeRegisterExplanationPrecedesTheOrdinaryPurposeChoice
+    MethodSource [className = 'dev.russiancompanion.v2.ContentAuditCorrectionTest', methodName = 'purposeRegisterExplanationPrecedesTheOrdinaryPurposeChoice', methodParameterTypes = '']
+    => java.lang.AssertionError: Prerequisite teaching still follows guided practice in u21-s-purpose expected:<3> but was:<1>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       dev.russiancompanion.v2.ContentAuditCorrectionTest.assertPrerequisiteTeachingBeforeGuided(ContentAuditCorrectionTest.kt:79)
+       dev.russiancompanion.v2.ContentAuditCorrectionTest.purposeRegisterExplanationPrecedesTheOrdinaryPurposeChoice(ContentAuditCorrectionTest.kt:32)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:ContentAuditCorrectionTest:imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice
+    MethodSource [className = 'dev.russiancompanion.v2.ContentAuditCorrectionTest', methodName = 'imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice', methodParameterTypes = '']
+    => java.lang.AssertionError: Prerequisite teaching still follows guided practice in u28-s-imperfective-adverb expected:<2> but was:<1>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       dev.russiancompanion.v2.ContentAuditCorrectionTest.assertPrerequisiteTeachingBeforeGuided(ContentAuditCorrectionTest.kt:79)
+       dev.russiancompanion.v2.ContentAuditCorrectionTest.imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice(ContentAuditCorrectionTest.kt:37)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:ContentAuditCorrectionTest:possessiveFormsAreAvailableBeforeTheGuidedAgreementChoice
+    MethodSource [className = 'dev.russiancompanion.v2.ContentAuditCorrectionTest', methodName = 'possessiveFormsAreAvailableBeforeTheGuidedAgreementChoice', methodParameterTypes = '']
+    => java.lang.AssertionError: Prerequisite teaching still follows guided practice in u6-s-possessive expected:<6> but was:<1>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       dev.russiancompanion.v2.ContentAuditCorrectionTest.assertPrerequisiteTeachingBeforeGuided(ContentAuditCorrectionTest.kt:79)
+       dev.russiancompanion.v2.ContentAuditCorrectionTest.possessiveFormsAreAvailableBeforeTheGuidedAgreementChoice(ContentAuditCorrectionTest.kt:27)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:ContentAuditCorrectionTest:perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice
+    MethodSource [className = 'dev.russiancompanion.v2.ContentAuditCorrectionTest', methodName = 'perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice', methodParameterTypes = '']
+    => java.lang.AssertionError: Prerequisite teaching still follows guided practice in u28-s-perfective-adverb expected:<3> but was:<1>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       dev.russiancompanion.v2.ContentAuditCorrectionTest.assertPrerequisiteTeachingBeforeGuided(ContentAuditCorrectionTest.kt:79)
+       dev.russiancompanion.v2.ContentAuditCorrectionTest.perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice(ContentAuditCorrectionTest.kt:42)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 550 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         4 tests found           ]
+[         0 tests skipped         ]
+[         4 tests started         ]
+[         0 tests aborted         ]
+[         0 tests successful      ]
+[         4 tests failed          ]
+

@@ -9,6 +9,9 @@ import dev.russiancompanion.v2.curriculum.advancementDecision
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.requiredInstructionSteps
 import dev.russiancompanion.v2.curriculum.step
+import dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA
+import dev.russiancompanion.v2.curriculum.resumePositionDigest
+import dev.russiancompanion.v2.curriculum.resumeIsCurrent
 import dev.russiancompanion.v2.curriculum.stepCompletionItemIds
 import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
@@ -37,6 +40,36 @@ class ContentAuditCorrectionTest {
     @Test
     fun perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice() {
         assertPrerequisiteTeachingBeforeGuided(28, "perfective-adverb", 3)
+    }
+
+    @Test
+    fun reorderedSessionsRejectResumeIdentityBoundToThePreviousPosition() {
+        val current = pack()
+        listOf(6 to "possessive", 21 to "purpose", 28 to "imperfective-adverb", 28 to "perfective-adverb").forEach { (number, topic) ->
+            val sessionId = "u$number-s-$topic"
+            val session = current.unit(number)!!.sessions.single { it.id == sessionId }
+            val teaching = session.steps.filter { it.kind == "TEACH" }
+            val guided = session.steps.single { it.kind == "GUIDED" }
+            val previousOrder = listOf(teaching.first(), guided) + teaching.drop(1) +
+                session.steps.filter { it.kind != "TEACH" && it.kind != "GUIDED" }
+            val previous = current.copy(units = current.units.map { unit ->
+                if (unit.number != number) unit else unit.copy(sessions = unit.sessions.map {
+                    if (it.id != sessionId) it else it.copy(steps = previousOrder)
+                })
+            })
+            val previousDigest = resumePositionDigest(previous, sessionId, 1)!!
+            val learner = V2LearnerView(
+                onboardingCompleted = true, currentUnitNumber = number, startingPoint = V2StartingPoint.NEW_TO_CYRILLIC,
+                hasPenguin = true, hasAnki = false, hasBinder = false, hasTutor = false, dailyMinutes = 25,
+                transliterationEnabled = false, currentSessionId = sessionId, currentStepIndex = 1,
+                completedStepIds = emptySet(), correctItemIds = emptySet(), bookAttestedUnits = emptySet(),
+                completedUnitNumbers = emptySet(), resumeIdentitySchema = GOVERNED_IDENTITY_SCHEMA,
+                resumeContentDigest = previousDigest,
+            )
+            assertTrue(resumeIsCurrent(previous, learner))
+            assertFalse("A saved guided position must not reopen a different teaching card", resumeIsCurrent(current, learner))
+            assertTrue(resumeIsCurrent(current, learner.copy(resumeContentDigest = resumePositionDigest(current, sessionId, 1)!!)))
+        }
     }
 
     private fun assertPrerequisiteTeachingBeforeGuided(number: Int, topic: String, teachingCount: Int) {
