@@ -325,6 +325,74 @@ class ContentAuditCorrectionTest {
     }
 
     @Test
+    fun unitTwelveAspectTeachingLabelsPairsAndAvoidsAnUnfinishedActionRule() {
+        val pack = pack()
+        val unit = pack.unit(12)!!
+        val session = unit.sessions.single { it.id == "u12-s-aspect" }
+        val teaching = session.steps.takeWhile { it.kind != "GUIDED" }
+        assertEquals(3, teaching.count { it.kind == "TEACH" })
+        val text = teaching.joinToString("\n") { it.body }
+        assertTrue(text.contains("Aspect describes how an action is viewed, not when it happens"))
+        assertTrue(text.contains("Imperfective does not by itself mean unfinished"))
+        assertTrue(text.contains("говори́ть is imperfective; сказа́ть is perfective"))
+        assertTrue(text.contains("де́лать is imperfective; сде́лать is perfective"))
+        assertTrue(text.contains("not a universal pair for the English verb speak"))
+        assertTrue(text.contains("not choose aspect in a sentence"))
+        assertTrue(text.contains("Given де́лать and a request for its perfective counterpart, choose сде́лать"))
+        assertTrue(text.contains("rather than assuming every prefix changes only aspect"))
+        assertEquals(12, unit.advancement!!.minimumDistinctChecks)
+    }
+
+    @Test
+    fun unitTwelveAspectFeedbackExplainsBothOptionsAndRemediationRetainsThePairs() {
+        val pack = pack()
+        val ids = listOf("u12-g-aspect-0", "u12-i-aspect-1", "u12-i-aspect-2")
+        val answers = listOf("сказа́ть", "говори́ть", "сде́лать")
+        val differences = listOf("де́лать is imperfective", "сде́лать is perfective", "говори́ть is imperfective")
+        ids.forEachIndexed { index, id ->
+            val item = pack.item(id)!!
+            assertEquals(answers[index], item.answer)
+            assertTrue(item.prompt.contains(if (index < 2) "saying/telling pair shown here" else "doing/making pair shown here"))
+            assertTrue(item.feedback.contains("partner of"))
+            assertTrue(item.distractorRationales[1].contains(differences[index]))
+            assertEquals(item.feedback, item.assessment!!.whyAnswerDemonstratesObjective)
+            assertEquals(item.distractorRationales, item.assessment!!.distractorDifference)
+            assertEquals("SOURCE_SUPPLIED_PAIR", item.assessment!!.relationKind)
+            assertEquals(index != 0, item.assessment!!.independent)
+        }
+        val unit = pack.unit(12)!!
+        val session = unit.sessions.single { it.id == "u12-s-aspect" }
+        val remediation = session.steps.single { it.kind == "REMEDIATE" }
+        assertTrue(session.steps.filter { it.kind == "TEACH" }.all { remediation.body.contains(it.body) })
+        assertEquals(unit.objectives.single { it.id == "obj-u12-aspect" }.exampleIds, remediation.exampleIds)
+        assertEquals(4, remediation.exampleIds.size)
+        assertTrue(session.steps.filter { it.kind == "GUIDED" || it.kind == "CHECK" }.all { it.remediationStepId == remediation.id })
+    }
+
+    @Test
+    fun unitTwelveAspectCoverageResolvesOriginalPairsAndRejectsTamperedHashes() {
+        val pack = pack()
+        val records = pack.provenanceRecords.filter { it.itemId.startsWith("prov-ca-u12-worked-") }
+        assertEquals(20, records.size)
+        records.forEach { record ->
+            assertContentAuditResearch(record)
+            assertEquals(12, record.unitNumber)
+            assertEquals("obj-u12-aspect", record.objectiveId)
+            assertTrue(record.synthesis!!.bibliography.contains("https://russian.cornell.edu/grammar/html/gr04_d.htm"))
+            (listOf("prov-ca-12-371") + (0..3).map { "prov-ex-u12-aspect-$it-ru" }).forEach { id ->
+                assertTrue(record.synthesis!!.bibliography.contains(id))
+                assertTrue("Unresolved retained record $id", pack.provenanceRecords.any { it.itemId == id })
+            }
+        }
+        val valid = V2Validator.validate(pack)
+        assertTrue(valid.errors.joinToString("\n"), valid.ok)
+        val bad = pack.copy(provenanceRecords = pack.provenanceRecords.map {
+            if (it.itemId != records.first().itemId) it else it.copy(contentHash = "0".repeat(64))
+        })
+        assertTrue(V2Validator.validate(bad).errors.any { it.contains(records.first().itemId) && it.contains("source hash") })
+    }
+
+    @Test
     fun negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm() {
         val pack = pack()
         val unit = pack.unit(24)!!
@@ -434,7 +502,7 @@ class ContentAuditCorrectionTest {
             val objective = pack.unit(number)!!.objectives.single {
                 teach.id in it.instructionStepIds && remediation.id in it.remediationStepIds
             }
-            if (number in listOf(7, 8) && topic == "spelling") assertTrue(remediation.body.contains(teach.body))
+            if ((number in listOf(7, 8) && topic == "spelling") || (number == 12 && topic == "aspect")) assertTrue(remediation.body.contains(teach.body))
             else assertEquals(remediation.id, teach.body, remediation.body)
             assertTrue("Missing exact objective-bound coverage for ${remediation.id}", pack.provenanceRecords.any {
                 it.unitNumber == number && it.objectiveId == objective.id && it.shippedText == remediation.body
