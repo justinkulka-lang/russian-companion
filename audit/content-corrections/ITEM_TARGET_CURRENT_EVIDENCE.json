@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "5c0f88bc08065ce7aa7e03e992f3f46cc7381ee9fb9413f95f5c9aefcd34bebc",
+    "curriculumFileSha256": "8646565555a80bd593713826006e06f9dc1262b990e89a9fd438959b6bb7e26b",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -2933,7 +2933,7 @@
         {
           "id": "obj-u16-complements",
           "unitNumber": 16,
-          "title": "Choose the admitted gloss beside the shown complement",
+          "title": "Recognize verbs used with instrumental complements",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u16-st-orient",
@@ -2984,8 +2984,8 @@
           "step": {
             "id": "u16-st-teach-complements-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "стать means to become. остаться means to remain. The infinitive стать is not the past form became.",
+            "title": "Becoming and remaining",
+            "body": "стать means to become. остаться means to remain. Both are infinitives: they name an action or state without marking a past event. Becoming expresses a change; remaining expresses continuation. For the first form choose to become. For the second form choose remain among the displayed choices. The English past-tense word became does not correctly label either infinitive.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -3004,29 +3004,10 @@
         {
           "sessionId": "u16-s-complements",
           "step": {
-            "id": "u16-st-guided-complements-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u16-g-complements-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u16-st-rem-complements"
-          }
-        },
-        {
-          "sessionId": "u16-s-complements",
-          "step": {
             "id": "u16-st-teach-complements-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "associates of connective verbs",
+            "title": "What a complement describes",
+            "body": "An instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action. The verbs shown in this lesson can occur in that construction. These checks show only the verbs and ask for their meanings. Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -3044,8 +3025,8 @@
           "step": {
             "id": "u16-st-teach-complements-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "казаться — appear to be. оказаться — turn out to be. ",
+            "title": "Appearance and discovery",
+            "body": "казаться — appear to be. оказаться — turn out to be. The first concerns how something seems; the second concerns what it proves to be. Work the second choice by selecting turn out to be, rather than the meaning of continuation. A displayed infinitive still does not specify a past event. Keep these meanings distinct from becoming and remaining.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -3064,16 +3045,37 @@
         {
           "sessionId": "u16-s-complements",
           "step": {
+            "id": "u16-st-guided-complements-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u16-g-complements-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u16-st-rem-complements"
+          }
+        },
+        {
+          "sessionId": "u16-s-complements",
+          "step": {
             "id": "u16-st-rem-complements",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "стать means to become. остаться means to remain. The infinitive стать is not the past form became.",
+            "title": "Review meanings and roles",
+            "body": "стать means to become. остаться means to remain. Both are infinitives: they name an action or state without marking a past event. Becoming expresses a change; remaining expresses continuation. For the first form choose to become. For the second form choose remain among the displayed choices. The English past-tense word became does not correctly label either infinitive.\n\nAn instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action. The verbs shown in this lesson can occur in that construction. These checks show only the verbs and ask for their meanings. Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.\n\nказаться — appear to be. оказаться — turn out to be. The first concerns how something seems; the second concerns what it proves to be. Work the second choice by selecting turn out to be, rather than the meaning of continuation. A displayed infinitive still does not specify a past event. Keep these meanings distinct from becoming and remaining.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
             "exampleIds": [
               "ex-u16-complements-0",
-              "ex-u16-complements-1"
+              "ex-u16-complements-1",
+              "ex-u16-complements-2",
+              "ex-u16-complements-3"
             ],
             "unavailableReason": null,
             "bookDirection": null,
@@ -3101,13 +3103,16 @@
       "contentKind": "steps",
       "reportedIssue": "An infinitive is glossed as a past form.",
       "proposedCorrection": "Use to become for стать and make the question compare equivalent infinitive meanings.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "body",
+        "title"
+      ],
       "currentObject": {
         "id": "u16-st-teach-complements-1",
         "kind": "TEACH",
-        "title": "Admitted lines",
-        "body": "стать means to become. остаться means to remain. The infinitive стать is not the past form became.",
+        "title": "Becoming and remaining",
+        "body": "стать means to become. остаться means to remain. Both are infinitives: they name an action or state without marking a past event. Becoming expresses a change; remaining expresses continuation. For the first form choose to become. For the second form choose remain among the displayed choices. The English past-tense word became does not correctly label either infinitive.",
         "dominantAction": "Continue",
         "referenceIds": [
           "ref-u1620-attribution"
@@ -3126,7 +3131,7 @@
         {
           "id": "obj-u16-complements",
           "unitNumber": 16,
-          "title": "Choose the admitted gloss beside the shown complement",
+          "title": "Recognize verbs used with instrumental complements",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u16-st-orient",
@@ -3177,8 +3182,8 @@
           "step": {
             "id": "u16-st-teach-complements-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "стать means to become. остаться means to remain. The infinitive стать is not the past form became.",
+            "title": "Becoming and remaining",
+            "body": "стать means to become. остаться means to remain. Both are infinitives: they name an action or state without marking a past event. Becoming expresses a change; remaining expresses continuation. For the first form choose to become. For the second form choose remain among the displayed choices. The English past-tense word became does not correctly label either infinitive.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -3197,29 +3202,10 @@
         {
           "sessionId": "u16-s-complements",
           "step": {
-            "id": "u16-st-guided-complements-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u16-g-complements-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u16-st-rem-complements"
-          }
-        },
-        {
-          "sessionId": "u16-s-complements",
-          "step": {
             "id": "u16-st-teach-complements-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "associates of connective verbs",
+            "title": "What a complement describes",
+            "body": "An instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action. The verbs shown in this lesson can occur in that construction. These checks show only the verbs and ask for their meanings. Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -3237,8 +3223,8 @@
           "step": {
             "id": "u16-st-teach-complements-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "казаться — appear to be. оказаться — turn out to be. ",
+            "title": "Appearance and discovery",
+            "body": "казаться — appear to be. оказаться — turn out to be. The first concerns how something seems; the second concerns what it proves to be. Work the second choice by selecting turn out to be, rather than the meaning of continuation. A displayed infinitive still does not specify a past event. Keep these meanings distinct from becoming and remaining.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -3257,16 +3243,37 @@
         {
           "sessionId": "u16-s-complements",
           "step": {
+            "id": "u16-st-guided-complements-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u16-g-complements-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u16-st-rem-complements"
+          }
+        },
+        {
+          "sessionId": "u16-s-complements",
+          "step": {
             "id": "u16-st-rem-complements",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "стать means to become. остаться means to remain. The infinitive стать is not the past form became.",
+            "title": "Review meanings and roles",
+            "body": "стать means to become. остаться means to remain. Both are infinitives: they name an action or state without marking a past event. Becoming expresses a change; remaining expresses continuation. For the first form choose to become. For the second form choose remain among the displayed choices. The English past-tense word became does not correctly label either infinitive.\n\nAn instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action. The verbs shown in this lesson can occur in that construction. These checks show only the verbs and ask for their meanings. Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.\n\nказаться — appear to be. оказаться — turn out to be. The first concerns how something seems; the second concerns what it proves to be. Work the second choice by selecting turn out to be, rather than the meaning of continuation. A displayed infinitive still does not specify a past event. Keep these meanings distinct from becoming and remaining.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
             "exampleIds": [
               "ex-u16-complements-0",
-              "ex-u16-complements-1"
+              "ex-u16-complements-1",
+              "ex-u16-complements-2",
+              "ex-u16-complements-3"
             ],
             "unavailableReason": null,
             "bookDirection": null,
@@ -3294,13 +3301,18 @@
       "contentKind": "items",
       "reportedIssue": "An infinitive is glossed as a past form.",
       "proposedCorrection": "Use to become for стать and make the question compare equivalent infinitive meanings.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "assessment",
+        "distractorRationales",
+        "feedback",
+        "prompt"
+      ],
       "currentObject": {
         "id": "u16-g-complements-0",
         "kind": "CONTRAST_SELECTION",
         "language": "en",
-        "prompt": "Choose the English description. Which infinitive meaning is written for the shown form?",
+        "prompt": "Which English meaning fits the shown infinitive?",
         "promptLetter": "стать",
         "options": [
           "to become",
@@ -3308,15 +3320,15 @@
           "to turn out to be"
         ],
         "answer": "to become",
-        "feedback": "стать means to become. The infinitive names becoming; it does not mark a past event.",
+        "feedback": "стать means to become: the infinitive expresses a change without marking a past event.",
         "objectiveId": "obj-u16-complements",
         "sourceId": "src-content-audit-research",
         "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
         "containsGeneratedRussian": false,
         "distractorRationales": [
           "",
-          "to remain is the meaning of остаться, not стать.",
-          "to turn out to be is a different complement verb, not стать."
+          "to remain expresses continuation, not a change of state.",
+          "to turn out to be expresses what something proves to be, not becoming."
         ],
         "assessment": {
           "testedFeature": "INFINITIVE_STAT",
@@ -3334,10 +3346,10 @@
           ],
           "distractorDifference": [
             "",
-            "to remain is the meaning of остаться, not стать.",
-            "to turn out to be is a different complement verb, not стать."
+            "to remain expresses continuation, not a change of state.",
+            "to turn out to be expresses what something proves to be, not becoming."
           ],
-          "whyAnswerDemonstratesObjective": "стать means to become. The infinitive names becoming; it does not mark a past event.",
+          "whyAnswerDemonstratesObjective": "стать means to become: the infinitive expresses a change without marking a past event.",
           "contrastMembers": [
             "to become",
             "to remain",
@@ -3357,7 +3369,7 @@
         {
           "id": "obj-u16-complements",
           "unitNumber": 16,
-          "title": "Choose the admitted gloss beside the shown complement",
+          "title": "Recognize verbs used with instrumental complements",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u16-st-orient",
@@ -3408,8 +3420,8 @@
           "step": {
             "id": "u16-st-teach-complements-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "стать means to become. остаться means to remain. The infinitive стать is not the past form became.",
+            "title": "Becoming and remaining",
+            "body": "стать means to become. остаться means to remain. Both are infinitives: they name an action or state without marking a past event. Becoming expresses a change; remaining expresses continuation. For the first form choose to become. For the second form choose remain among the displayed choices. The English past-tense word became does not correctly label either infinitive.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -3428,29 +3440,10 @@
         {
           "sessionId": "u16-s-complements",
           "step": {
-            "id": "u16-st-guided-complements-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u16-g-complements-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u16-st-rem-complements"
-          }
-        },
-        {
-          "sessionId": "u16-s-complements",
-          "step": {
             "id": "u16-st-teach-complements-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "associates of connective verbs",
+            "title": "What a complement describes",
+            "body": "An instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action. The verbs shown in this lesson can occur in that construction. These checks show only the verbs and ask for their meanings. Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -3468,8 +3461,8 @@
           "step": {
             "id": "u16-st-teach-complements-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "казаться — appear to be. оказаться — turn out to be. ",
+            "title": "Appearance and discovery",
+            "body": "казаться — appear to be. оказаться — turn out to be. The first concerns how something seems; the second concerns what it proves to be. Work the second choice by selecting turn out to be, rather than the meaning of continuation. A displayed infinitive still does not specify a past event. Keep these meanings distinct from becoming and remaining.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -3488,16 +3481,37 @@
         {
           "sessionId": "u16-s-complements",
           "step": {
+            "id": "u16-st-guided-complements-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u16-g-complements-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u16-st-rem-complements"
+          }
+        },
+        {
+          "sessionId": "u16-s-complements",
+          "step": {
             "id": "u16-st-rem-complements",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "стать means to become. остаться means to remain. The infinitive стать is not the past form became.",
+            "title": "Review meanings and roles",
+            "body": "стать means to become. остаться means to remain. Both are infinitives: they name an action or state without marking a past event. Becoming expresses a change; remaining expresses continuation. For the first form choose to become. For the second form choose remain among the displayed choices. The English past-tense word became does not correctly label either infinitive.\n\nAn instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action. The verbs shown in this lesson can occur in that construction. These checks show only the verbs and ask for their meanings. Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.\n\nказаться — appear to be. оказаться — turn out to be. The first concerns how something seems; the second concerns what it proves to be. Work the second choice by selecting turn out to be, rather than the meaning of continuation. A displayed infinitive still does not specify a past event. Keep these meanings distinct from becoming and remaining.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
             "exampleIds": [
               "ex-u16-complements-0",
-              "ex-u16-complements-1"
+              "ex-u16-complements-1",
+              "ex-u16-complements-2",
+              "ex-u16-complements-3"
             ],
             "unavailableReason": null,
             "bookDirection": null,

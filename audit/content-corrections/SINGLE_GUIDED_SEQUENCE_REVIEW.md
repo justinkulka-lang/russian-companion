@@ -1,8 +1,8 @@
 # Single-guided session sequence-review candidates
 
-Curriculum file SHA-256: `5c0f88bc08065ce7aa7e03e992f3f46cc7381ee9fb9413f95f5c9aefcd34bebc`.
+Curriculum file SHA-256: `8646565555a80bd593713826006e06f9dc1262b990e89a9fd438959b6bb7e26b`.
 
-**129 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
+**126 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
 
 The Unit 24 absence session and Unit 25 courtesy session no longer have this ordering flag. Their implemented corrections remain pending final semantic audit. This inventory does not close CA009/CA010 or approve any other session.
 
@@ -64,9 +64,6 @@ The Unit 24 absence session and Unit 25 courtesy session no longer have this ord
 | 15 | `u15-s-imperative` | `u15-st-guided-imperative-1` | `u15-st-teach-imperative-2`, `u15-st-teach-imperative-3` |
 | 15 | `u15-s-say-request` | `u15-st-guided-say-request-1` | `u15-st-teach-say-request-2`, `u15-st-teach-say-request-3`, `u15-st-teach-say-request-4` |
 | 15 | `u15-s-aspect-consolidate` | `u15-st-guided-aspect-consolidate-1` | `u15-st-teach-aspect-consolidate-2`, `u15-st-teach-aspect-consolidate-3` |
-| 16 | `u16-s-inst-means` | `u16-st-guided-inst-means-1` | `u16-st-teach-inst-means-2`, `u16-st-teach-inst-means-3` |
-| 16 | `u16-s-inst-prep` | `u16-st-guided-inst-prep-1` | `u16-st-teach-inst-prep-2`, `u16-st-teach-inst-prep-3` |
-| 16 | `u16-s-complements` | `u16-st-guided-complements-1` | `u16-st-teach-complements-2`, `u16-st-teach-complements-3` |
 | 17 | `u17-s-ordinals` | `u17-st-guided-ordinals-1` | `u17-st-teach-ordinals-2`, `u17-st-teach-ordinals-3` |
 | 17 | `u17-s-hours` | `u17-st-guided-hours-1` | `u17-st-teach-hours-2`, `u17-st-teach-hours-3` |
 | 17 | `u17-s-years` | `u17-st-guided-years-1` | `u17-st-teach-years-2`, `u17-st-teach-years-3` |

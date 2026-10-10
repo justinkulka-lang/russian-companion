@@ -1,0 +1,29 @@
+NOTE: Picked up JDK_JAVA_OPTIONS: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (1):
+  JUnit Vintage:Unit16InstrumentalUsesTest:prepositionQuestionsDoNotSupplyTheAnswerAndMutationsFail
+    MethodSource [className = 'dev.russiancompanion.v2.Unit16InstrumentalUsesTest', methodName = 'prepositionQuestionsDoNotSupplyTheAnswerAndMutationsFail', methodParameterTypes = '']
+    => java.lang.AssertionError
+       org.junit.Assert.fail(Assert.java:87)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       org.junit.Assert.assertTrue(Assert.java:53)
+       dev.russiancompanion.v2.Unit16InstrumentalUsesTest.prepositionQuestionsDoNotSupplyTheAnswerAndMutationsFail(Unit16InstrumentalUsesTest.kt:66)
+       java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+Test run finished after 5311 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         4 tests found           ]
+[         0 tests skipped         ]
+[         4 tests started         ]
+[         0 tests aborted         ]
+[         3 tests successful      ]
+[         1 tests failed          ]
+

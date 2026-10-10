@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "curriculumFileSha256": "5c0f88bc08065ce7aa7e03e992f3f46cc7381ee9fb9413f95f5c9aefcd34bebc",
-  "candidateCount": 129,
+  "curriculumFileSha256": "8646565555a80bd593713826006e06f9dc1262b990e89a9fd438959b6bb7e26b",
+  "candidateCount": 126,
   "affectedUnits": [
     3,
     4,
@@ -16,7 +16,6 @@
     13,
     14,
     15,
-    16,
     17,
     18,
     19,
@@ -852,45 +851,6 @@
       "laterTeachingStepIds": [
         "u15-st-teach-aspect-consolidate-2",
         "u15-st-teach-aspect-consolidate-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 16,
-      "sessionId": "u16-s-inst-means",
-      "guidedStepId": "u16-st-guided-inst-means-1",
-      "guidedItemIds": [
-        "u16-g-inst-means-0"
-      ],
-      "laterTeachingStepIds": [
-        "u16-st-teach-inst-means-2",
-        "u16-st-teach-inst-means-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 16,
-      "sessionId": "u16-s-inst-prep",
-      "guidedStepId": "u16-st-guided-inst-prep-1",
-      "guidedItemIds": [
-        "u16-g-inst-prep-0"
-      ],
-      "laterTeachingStepIds": [
-        "u16-st-teach-inst-prep-2",
-        "u16-st-teach-inst-prep-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 16,
-      "sessionId": "u16-s-complements",
-      "guidedStepId": "u16-st-guided-complements-1",
-      "guidedItemIds": [
-        "u16-g-complements-0"
-      ],
-      "laterTeachingStepIds": [
-        "u16-st-teach-complements-2",
-        "u16-st-teach-complements-3"
       ],
       "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
     },

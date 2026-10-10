@@ -1,0 +1,31 @@
+NOTE: Picked up JDK_JAVA_OPTIONS: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (1):
+  JUnit Vintage:ContentAuditCorrectionTest:wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation
+    MethodSource [className = 'dev.russiancompanion.v2.ContentAuditCorrectionTest', methodName = 'wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation', methodParameterTypes = '']
+    => org.junit.ComparisonFailure: u16-st-rem-complements expected:<...l either infinitive.[]> but was:<...l either infinitive.[
+
+An instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action. The verbs shown in this lesson can occur in that construction. These checks show only the verbs and ask for their meanings. Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.
+
+казаться — appear to be. оказаться — turn out to be. The first concerns how something seems; the second concerns what it proves to be. Work the second choice by selecting turn out to be, rather than the meaning of continuation. A displayed infinitive still does not specify a past event. Keep these meanings distinct from becoming and remaining.]>
+       org.junit.Assert.assertEquals(Assert.java:117)
+       dev.russiancompanion.v2.ContentAuditCorrectionTest.wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation(ContentAuditCorrectionTest.kt:507)
+       java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+Test run finished after 24464 ms
+[         7 containers found      ]
+[         0 containers skipped    ]
+[         7 containers started    ]
+[         0 containers aborted    ]
+[         7 containers successful ]
+[         0 containers failed     ]
+[        41 tests found           ]
+[         0 tests skipped         ]
+[        41 tests started         ]
+[         0 tests aborted         ]
+[        40 tests successful      ]
+[         1 tests failed          ]
+
