@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "0688beb5c58b6f84302ea955295082f87b26d91513f24472cbc2c13bca5e6f9b",
+    "curriculumFileSha256": "5c0f88bc08065ce7aa7e03e992f3f46cc7381ee9fb9413f95f5c9aefcd34bebc",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -6244,13 +6244,16 @@
       "contentKind": "steps",
       "reportedIssue": "Instrumental ending recipe is insufficiently bounded.",
       "proposedCorrection": "Limit -ом to the appropriate hard-stem classes and teach the soft/other declension endings.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "body",
+        "title"
+      ],
       "currentObject": {
         "id": "u16-st-teach-inst-sg-2",
         "kind": "TEACH",
-        "title": "Admitted instruction",
-        "body": "The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal.",
+        "title": "A bounded noun ending",
+        "body": "The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal. Here, keep the stem of сто́л and add -ом to obtain столо́м. Learn the stress with the whole form.",
         "dominantAction": "Continue",
         "referenceIds": [
           "ref-u1620-attribution"
@@ -6266,7 +6269,7 @@
         {
           "id": "obj-u16-inst-sg",
           "unitNumber": 16,
-          "title": "Choose the admitted instrumental singular row",
+          "title": "Recognize instrumental singular nouns",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u16-st-orient",
@@ -6328,8 +6331,8 @@
           "step": {
             "id": "u16-st-teach-inst-sg-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "сто́л — table. столо́м — table. ",
+            "title": "One noun, different cases",
+            "body": "The instrumental case can mark the means used to do something. These checks first teach its forms. сто́л is the dictionary form, meaning table; столо́м is instrumental singular. The word still names a table: the ending marks its grammatical role, not a new vocabulary meaning.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -6350,8 +6353,8 @@
           "step": {
             "id": "u16-st-teach-inst-sg-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal.",
+            "title": "A bounded noun ending",
+            "body": "The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal. Here, keep the stem of сто́л and add -ом to obtain столо́м. Learn the stress with the whole form.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -6369,8 +6372,8 @@
           "step": {
             "id": "u16-st-teach-inst-sg-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "столу́ — table. столе́ — table. ",
+            "title": "Compare the other cases",
+            "body": "столу́ is dative singular and столе́ is prepositional singular. Both belong to the same noun, but neither has the instrumental singular ending. For an instrumental singular request, select столо́м rather than selecting a form merely because its English gloss is table.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -6391,8 +6394,8 @@
           "step": {
             "id": "u16-st-teach-inst-sg-4",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "до́м — house. до́мом — house. ",
+            "title": "Work the house form",
+            "body": "до́м means house in its dictionary form. до́мом is instrumental singular: keep the stem and add -ом. Given до́м and an instrumental singular request, choose до́мом. This is the same ending pattern as the table form.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -6413,8 +6416,8 @@
           "step": {
             "id": "u16-st-teach-inst-sg-5",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "до́му — house. до́ме — house. ",
+            "title": "Check case before choosing",
+            "body": "до́му is dative singular; до́ме is prepositional singular. They do not answer an instrumental singular request. Compare the entire ending with до́мом, and notice that this noun keeps its stem stress.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -6435,8 +6438,8 @@
           "step": {
             "id": "u16-st-teach-inst-sg-6",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "поездом — Train. карандашом — Pencil. ",
+            "title": "Meaning and form together",
+            "body": "поездом is instrumental singular of the noun meaning train; карандашом is instrumental singular of the noun meaning pencil. The pencil check asks for that meaning as well as the case. Its other options refer to train and husband. A correct case alone does not identify the requested noun.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -6457,8 +6460,8 @@
           "step": {
             "id": "u16-st-teach-inst-sg-7",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "книгой — Book. ",
+            "title": "A different singular pattern",
+            "body": "книгой is the instrumental singular form for book. This noun has a different ending from the -ом shown for table and house. Do not attach the same ending to every noun. These examples introduce selected singular patterns, not the full instrumental paradigm.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -6479,7 +6482,7 @@
             "id": "u16-st-guided-inst-sg-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [
@@ -6497,14 +6500,23 @@
           "step": {
             "id": "u16-st-rem-inst-sg",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal.",
+            "title": "Review the instrumental contrasts",
+            "body": "The instrumental case can mark the means used to do something. These checks first teach its forms. сто́л is the dictionary form, meaning table; столо́м is instrumental singular. The word still names a table: the ending marks its grammatical role, not a new vocabulary meaning.\n\nThe instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal. Here, keep the stem of сто́л and add -ом to obtain столо́м. Learn the stress with the whole form.\n\nстолу́ is dative singular and столе́ is prepositional singular. Both belong to the same noun, but neither has the instrumental singular ending. For an instrumental singular request, select столо́м rather than selecting a form merely because its English gloss is table.\n\nдо́м means house in its dictionary form. до́мом is instrumental singular: keep the stem and add -ом. Given до́м and an instrumental singular request, choose до́мом. This is the same ending pattern as the table form.\n\nдо́му is dative singular; до́ме is prepositional singular. They do not answer an instrumental singular request. Compare the entire ending with до́мом, and notice that this noun keeps its stem stress.\n\nпоездом is instrumental singular of the noun meaning train; карандашом is instrumental singular of the noun meaning pencil. The pencil check asks for that meaning as well as the case. Its other options refer to train and husband. A correct case alone does not identify the requested noun.\n\nкнигой is the instrumental singular form for book. This noun has a different ending from the -ом shown for table and house. Do not attach the same ending to every noun. These examples introduce selected singular patterns, not the full instrumental paradigm.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
             "exampleIds": [
               "ex-or-u16-inst-sg-0",
-              "ex-or-u16-inst-sg-1"
+              "ex-or-u16-inst-sg-1",
+              "ex-or-u16-inst-sg-2",
+              "ex-or-u16-inst-sg-3",
+              "ex-or-u16-inst-sg-4",
+              "ex-or-u16-inst-sg-5",
+              "ex-or-u16-inst-sg-6",
+              "ex-or-u16-inst-sg-7",
+              "ex-u16-inst-sg-8",
+              "ex-u16-inst-sg-9",
+              "ex-u16-inst-sg-10"
             ],
             "unavailableReason": null,
             "bookDirection": null,
@@ -6532,13 +6544,16 @@
       "contentKind": "steps",
       "reportedIssue": "Instrumental ending recipe is insufficiently bounded.",
       "proposedCorrection": "Explain -ым/-им and the applicable spelling/soft-stem restrictions.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "body",
+        "title"
+      ],
       "currentObject": {
         "id": "u16-st-teach-inst-adj-2",
         "kind": "TEACH",
-        "title": "Admitted instruction",
-        "body": "Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.",
+        "title": "Adjective endings differ",
+        "body": "Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings. хоро́шим uses -им because of the spelling restriction after its stem-final consonant. Do not apply the noun ending -ом to this adjective.",
         "dominantAction": "Continue",
         "referenceIds": [
           "ref-u1620-attribution"
@@ -6554,7 +6569,7 @@
         {
           "id": "obj-u16-inst-adj",
           "unitNumber": 16,
-          "title": "Choose the admitted instrumental adjective row",
+          "title": "Recognize instrumental adjective agreement",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u16-st-orient",
@@ -6608,8 +6623,8 @@
           "step": {
             "id": "u16-st-teach-inst-adj-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "хоро́ший — good. хоро́шим — good. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "Adjective agreement",
+            "body": "An adjective agrees with its noun in case and number, and in gender in the singular. хоро́ший is the masculine dictionary form for good. хоро́шим is its masculine or neuter instrumental singular form. Here the check requests masculine instrumental; it does not ask for an English gloss.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -6630,8 +6645,8 @@
           "step": {
             "id": "u16-st-teach-inst-adj-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.",
+            "title": "Adjective endings differ",
+            "body": "Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings. хоро́шим uses -им because of the spelling restriction after its stem-final consonant. Do not apply the noun ending -ом to this adjective.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -6649,8 +6664,8 @@
           "step": {
             "id": "u16-st-teach-inst-adj-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "хоро́шему — good. хоро́шие — good. ",
+            "title": "Compare dative and plural",
+            "body": "хоро́шему is dative masculine or neuter singular. хоро́шие is nominative plural. Neither is the masculine instrumental singular form requested here. Work the choice by selecting хоро́шим.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -6671,8 +6686,8 @@
           "step": {
             "id": "u16-st-teach-inst-adj-4",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "хоро́шими — good. хоро́шая — good. ",
+            "title": "Instrumental plural agreement",
+            "body": "хоро́шими is instrumental plural, with a plural adjective ending. хоро́шая is feminine nominative singular. For a plural instrumental request select хоро́шими; хоро́шим has singular number. Recognizing these forms does not by itself demonstrate using adjective agreement in a sentence.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -6694,7 +6709,7 @@
             "id": "u16-st-guided-inst-adj-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [
@@ -6712,14 +6727,18 @@
           "step": {
             "id": "u16-st-rem-inst-adj",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.",
+            "title": "Review the instrumental contrasts",
+            "body": "An adjective agrees with its noun in case and number, and in gender in the singular. хоро́ший is the masculine dictionary form for good. хоро́шим is its masculine or neuter instrumental singular form. Here the check requests masculine instrumental; it does not ask for an English gloss.\n\nHard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings. хоро́шим uses -им because of the spelling restriction after its stem-final consonant. Do not apply the noun ending -ом to this adjective.\n\nхоро́шему is dative masculine or neuter singular. хоро́шие is nominative plural. Neither is the masculine instrumental singular form requested here. Work the choice by selecting хоро́шим.\n\nхоро́шими is instrumental plural, with a plural adjective ending. хоро́шая is feminine nominative singular. For a plural instrumental request select хоро́шими; хоро́шим has singular number. Recognizing these forms does not by itself demonstrate using adjective agreement in a sentence.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
             "exampleIds": [
               "ex-or-u16-inst-adj-0",
-              "ex-or-u16-inst-adj-1"
+              "ex-or-u16-inst-adj-1",
+              "ex-or-u16-inst-adj-2",
+              "ex-or-u16-inst-adj-3",
+              "ex-or-u16-inst-adj-4",
+              "ex-or-u16-inst-adj-5"
             ],
             "unavailableReason": null,
             "bookDirection": null,

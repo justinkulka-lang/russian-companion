@@ -3,7 +3,7 @@
 import argparse,hashlib,json,re
 from pathlib import Path
 HERE=Path(__file__).resolve().parent; ROOT=HERE.parents[1]
-a=argparse.ArgumentParser();a.add_argument('--baseline',type=Path,required=True);args=a.parse_args()
+a=argparse.ArgumentParser();a.add_argument('--baseline',type=Path,required=True);a.add_argument('--baseline-manifests',type=Path);args=a.parse_args()
 braw=args.baseline.read_bytes();raw=(ROOT/'app/src/main/assets/content/v2-curriculum.json').read_bytes()
 b=json.loads(braw);p=json.loads(raw);e=json.loads((HERE/'UNIT16_INSTRUMENTAL_INSTRUCTION_CORRECTION.json').read_text(encoding='utf-8'))
 assert hashlib.sha256(braw).hexdigest()==e['beforeCurriculumFileSha256']
@@ -19,15 +19,18 @@ for r in added:
  assert r['sourceHash']==hashlib.sha256(r['originalSourceText'].encode()).hexdigest()
  assert r['contentHash']==hashlib.sha256(r['shippedText'].encode()).hexdigest()
 slugs=['inst-sg','inst-pl','inst-adj']
+assert len(b['units'])==len(p['units']) and len(b['items'])==len(p['items'])
 for ub,up in zip(b['units'],p['units']):
  if ub['number']!=16:assert ub==up;continue
  assert {k:v for k,v in ub.items() if k not in ('sessions','objectives')}=={k:v for k,v in up.items() if k not in ('sessions','objectives')}
+ assert len(ub['objectives'])==len(up['objectives']) and len(ub['sessions'])==len(up['sessions'])
  for ob,op in zip(ub['objectives'],up['objectives']):
   assert {k:v for k,v in ob.items() if k!='title'}=={k:v for k,v in op.items() if k!='title'}
   if ob['id'] not in ['obj-u16-'+slug for slug in slugs]:assert ob==op
  for sb,sp in zip(ub['sessions'],up['sessions']):
   if sb['id'] not in ['u16-s-'+slug for slug in slugs]:assert sb==sp;continue
   assert {k:v for k,v in sb.items() if k not in ('steps','title')}=={k:v for k,v in sp.items() if k not in ('steps','title')}
+  assert len(sb['steps'])==len(sp['steps'])
   assert set(st['id'] for st in sb['steps'])==set(st['id'] for st in sp['steps'])
   if sb['id']!='u16-s-inst-pl':assert [st['id'] for st in sb['steps']]==[st['id'] for st in sp['steps']]
   else:assert [st['id'] for st in sp['steps']]==[st['id'] for st in sb['steps'] if st['kind']=='TEACH']+[st['id'] for st in sb['steps'] if st['kind']!='TEACH']
@@ -49,3 +52,10 @@ assert not tokens(p)-tokens(b),'New Russian tokens'
 print('PASS: only three Unit 16 form lessons, their objective titles, complete remediation and nine item English fields change')
 print('PASS: plural teaching precedes guided practice; other step order, all identities, keys, options, cues, examples, source relations and advancement preserved')
 print('PASS: all other units and original source/rights/provenance records unchanged; exactly 87 pending evidence records; no new Russian token')
+if args.baseline_manifests:
+ old=json.loads(args.baseline_manifests.read_text(encoding='utf-8'))
+ new={str(n):json.loads((ROOT/f'review/unit-{n}/UNIT_{n}_REVIEW_MANIFEST.json').read_text(encoding='utf-8')) for n in range(1,31)}
+ assert [n for n in old if old[n]['contentReviewDigest']!=new[n]['contentReviewDigest']]==['16']
+ assert all(old[n]['mappingPackageDigest']==new[n]['mappingPackageDigest'] for n in old)
+ assert all(new[n]['curriculumSourceCommit']=='bf610f06c9f1ec2a8ea7ec5c8307f80899b53444' for n in new)
+ print('PASS: only Unit 16 instructional digest changes; all mapping digests preserved; all 30 packets bind implementation ancestor')

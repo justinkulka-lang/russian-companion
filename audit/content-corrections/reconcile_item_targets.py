@@ -91,8 +91,8 @@ def main():
         })
     output = {
         "schemaVersion": 1, "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
-        "inputs": {"curriculumPath": str(PACK.relative_to(ROOT)), "curriculumFileSha256": digest(pack_bytes),
-                   "targetSnapshotPath": str(TARGETS.relative_to(ROOT)), "targetSnapshotFileSha256": digest(targets_bytes)},
+        "inputs": {"curriculumPath": PACK.relative_to(ROOT).as_posix(), "curriculumFileSha256": digest(pack_bytes),
+                   "targetSnapshotPath": TARGETS.relative_to(ROOT).as_posix(), "targetSnapshotFileSha256": digest(targets_bytes)},
         "targetCount": len(evidence), "semanticAcceptedCount": 0, "targets": evidence,
     }
     output_text = json.dumps(output, ensure_ascii=False, indent=2) + "\n"
@@ -116,7 +116,7 @@ def main():
             if not path.is_file() or path.read_bytes() != expected.encode("utf-8"):
                 raise SystemExit(f"Stale evidence: {path.relative_to(ROOT)}; rerun without --check")
         else:
-            path.write_text(expected, encoding="utf-8")
+            path.write_bytes(expected.encode("utf-8"))
     print(json.dumps({"targets": len(evidence), "comparisonCounts": counts, "semanticAccepted": 0}))
 
 
