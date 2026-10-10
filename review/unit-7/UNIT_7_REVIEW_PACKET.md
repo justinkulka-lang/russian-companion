@@ -11,12 +11,12 @@ Unit 7 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 72c8bb4680ad0c0e1c3284ee85f90824059b78aa
-- Unit content-review SHA-256: 6682eeb69cde215f49d82799fb56f71b2f70a4ab9084843aa2c399462297f096
+- Curriculum source commit: f904cd3adfdeb619481fe84dd43c6bcb3b0bd707
+- Unit content-review SHA-256: 46332a8e69325d3f187746e3e0d68b010a3662a980257bde7de05fd0636757fb
 - Mapping-package SHA-256: e39515585eea5b131797f0c93ce3508ee99b27206cc21070675d06aa975373c0
-- Pack content-review SHA-256: c429b991d19e1f2d2c2f14b2d3645b1e752d3aed823237e71927c201a019a2e9
-- Review-package SHA-256: 83e3f132dddb807e0b96a3af6e944eae84bd5a9852765429267e5e3ff843d2b9
-- Repository source SHA-256: e9f6cd33b885bd82572735ba1ac5950ea7e7c278b0263d051617c59565ccb780
+- Pack content-review SHA-256: 1116d26be8202a6eaee67b7b556f879e0c4f5bc3961feb9f42f8ea5a8195063f
+- Review-package SHA-256: feec2669bd5a577b018c16e69245eaec13108b311fd3ec6c98d066cd78acd721
+- Repository source SHA-256: d44fab5b5167a8291d6daff1b4192ff46a8fd95a22c12881115654ce39b501ba
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -151,9 +151,9 @@ remediation=u7-st-rem-endings
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a1fafa6adafc704af11a65c745fb9d604013dc2dfdc01eb4850dd9d2e46fd77c
+- Content hash: f8dff0c0ae203e10b0d545ff2103076c449d476ff05d119335a8fcb82b78768d
 
-title=Identify the admitted spelling
+title=Recognize adjective forms after ш
 kind=RECOGNITION
 unitNumber=7
 instruction=u7-st-orient,u7-st-teach-spelling-1,u7-st-teach-spelling-2,u7-st-teach-spelling-3,u7-st-teach-spelling-4
@@ -826,9 +826,9 @@ remediationStepId=u7-st-rem-endings
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0c2144a3cac5a9ab63c4205b92419ff181f6095006775e64d904e6d227f485c7
+- Content hash: 3b942d8969e9d7546d5b1798475470f10b41175e3f3908647910e2ccdffe9413
 
-title=Identify the admitted spelling
+title=Recognize adjective forms after ш
 estimatedMinutes=12
 objectives=obj-u7-spelling
 steps=u7-st-teach-spelling-1,u7-st-teach-spelling-2,u7-st-teach-spelling-3,u7-st-teach-spelling-4,u7-st-guided-spelling-1,u7-st-rem-spelling,u7-st-check-spelling
@@ -841,11 +841,11 @@ steps=u7-st-teach-spelling-1,u7-st-teach-spelling-2,u7-st-teach-spelling-3,u7-st
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 095d2865875ebc2f0d9b4f42cb04787ecf6774a10400e48511cdfc718127a754
+- Content hash: 43e9f4de77b1354f958004a0efab7d8297849739b0aee8095cb7aff06dd1edf4
 
 kind=TEACH
-title=Admitted lines
-body=хорошее письмо — good letter. хоро́ший — good. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=One adjective, several forms
+body=An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -863,11 +863,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b4fdeba2f6c2f777d6d3d7c2a61d8f445ad82c109aafb492264455c1f0781440
+- Content hash: d1f550876109654c14e140d7dd8b50411d0a4afb45375c401418ac3ab602b892
 
 kind=TEACH
-title=Admitted instruction
-body=After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о.
+title=Two spelling conditions
+body=After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -885,11 +885,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4e5e340bbb9d9c0a613b510a8f442aea41bf1d10a0962d86de83080033384992
+- Content hash: 8aa03464da14272804507d60f85412f677dd98ead3199effbea69c44799816c6
 
 kind=TEACH
-title=Admitted lines
-body=хоро́шая — good. хоро́шее — good. 
+title=Gender and a worked case change
+body=хоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -907,11 +907,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6f76c2121bb7f9a88ca6a232db9d96153e200d12605b3939a4afbf61b1d85c41
+- Content hash: 3743f8eaaa3161fc69f6e66cf37448ccdf84106c3f88ff1b4dfaf6c364d17707
 
 kind=TEACH
-title=Admitted lines
-body=хоро́шие — good. 
+title=Singular, plural and dictionary form
+body=хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -929,11 +929,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d0adc31f11d8b8e28ec45ccca56c1f73e8118da5b0ce18b1431d70399561cc36
+- Content hash: e1ebfaca3af1758c3de8283afe6c578c94277c15cecfc8d7e7d2811a46d4afd5
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Choose the requested adjective form. Use its gender, number and case, then read the explanation.
 dominantAction=Continue
 references=
 items=u7-g-spelling-0
@@ -951,15 +951,21 @@ remediationStepId=u7-st-rem-spelling
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9735107de0fdee00b15371e4d4096d6145498e38d7ae51e62598730a64234bd3
+- Content hash: 3b1e17e2fffc0a8cd335120c2687e6ab19f8222fb067db1143ed79078148223a
 
 kind=REMEDIATE
-title=Remediation
-body=After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о.
+title=Review forms and spelling
+body=An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.
+
+After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.
+
+хоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.
+
+хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.
 dominantAction=Continue
 references=
 items=
-examples=ex-u7-spelling-0,ex-or-u7-spelling-1
+examples=ex-u7-spelling-0,ex-or-u7-spelling-1,ex-or-u7-spelling-2,ex-or-u7-spelling-3,ex-or-u7-spelling-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -973,11 +979,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 72c596cfc412c857b42308fd2e58f3e00462cb736e62b18d6813210da4acc69b
+- Content hash: 07cc396f4f9f9edce79c06cc72ce7612b526d4ac24a1cc9e72390074cc68ffb5
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Choose the requested nominative form or feminine singular accusative phrase. A missed check returns to the explanation.
 dominantAction=Continue
 references=
 items=u7-i-spelling-1,u7-i-spelling-2,u7-i-spelling-3
@@ -3456,7 +3462,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 83f9e5c5190bb6022b6de5738d45ca31f3cffd28eceb40bd460cd5ad1ed4bd30
+- Content hash: 63460b0de3936a7ac8f605259d652c74592e5c04825161b3d131e6ed224b3309
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -3469,7 +3475,7 @@ objectiveId=obj-u7-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form.
-testedFeature=ADJECTIVE_SPELLING
+testedFeature=ADJECTIVE_NOMINATIVE_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-spelling-0
 cueLanguage=ru
@@ -4039,7 +4045,7 @@ relationParticipantIds=prov-u7-endings-x-1 | prov-ex-or-u7-endings-8 | prov-ex-o
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2f9829ec39425f1050820e51dd3571f03d0431d978bef8f5df8cf0fb753c7cb5
+- Content hash: e5177d670cac0ddd976ca2a3f349c28921e8896b1e1cead66b9d894bfc9487f2
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -4052,7 +4058,7 @@ objectiveId=obj-u7-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form.
-testedFeature=ADJECTIVE_SPELLING
+testedFeature=ADJECTIVE_NOMINATIVE_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-spelling-1
 cueLanguage=ru
@@ -4073,7 +4079,7 @@ relationParticipantIds=prov-ex-or-u7-spelling-4 | prov-ex-or-u7-spelling-3 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1dd8c25c7ebbf4b72aa443b7055f5527a969529ecc3da2da0bb1e34edf596bdc
+- Content hash: cde51574f73f9c44fdc30213387880432627d921f9d9331ec6e03ee508f83754
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -4086,7 +4092,7 @@ objectiveId=obj-u7-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form.
-testedFeature=ADJECTIVE_SPELLING
+testedFeature=ADJECTIVE_NOMINATIVE_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-spelling-2
 cueLanguage=ru
@@ -4107,20 +4113,20 @@ relationParticipantIds=prov-ex-or-u7-spelling-3 | prov-ex-or-u7-spelling-1 | pro
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f4fe1c90bc282f6016c4b430d115f9ff6f74ba76727b22e825b6d2912c331f4e
+- Content hash: 6d581facf7e422bbd6babbcdf0d7ebd185f1ed522e2141f691b76e3118e398a2
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which feminine object phrase matches the shown nominative after ш?
+prompt=Which feminine singular accusative phrase corresponds to the shown nominative phrase?
 promptLetter=хоро́шая книга
 options=хоро́шую книгу | хоро́шего друга | хоро́шие книги
 answer=хоро́шую книгу
-feedback=хоро́шая книга takes хоро́шую книгу. The spelling condition is separate from the gender.
+feedback=To put хоро́шая книга in the accusative singular, choose хоро́шую книгу. Both words change while the same noun and feminine singular agreement are kept.
 objectiveId=obj-u7-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | хоро́шего друга is masculine animate, not the feminine object phrase. | хоро́шие книги is plural, not the feminine singular object phrase.
-testedFeature=FEMININE_HUSHER_OBJECT
+testedFeature=FEMININE_ADJECTIVE_ACCUSATIVE
 evidenceMode=STATED_APPLICATION
 contrastSetId=u7-spelling-3
 cueLanguage=ru
@@ -4128,7 +4134,7 @@ independent=true
 answerSourceIds=prov-ca-7-490
 distractorSourceIds= | prov-ca-7-494 | prov-ca-7-495
 distractorDifference= | хоро́шего друга is masculine animate, not the feminine object phrase. | хоро́шие книги is plural, not the feminine singular object phrase.
-whyAnswerDemonstratesObjective=The feminine noun книга selects the feminine object ending.
+whyAnswerDemonstratesObjective=To put хоро́шая книга in the accusative singular, choose хоро́шую книгу. Both words change while the same noun and feminine singular agreement are kept.
 contrastMembers=хоро́шую книгу | хоро́шего друга | хоро́шие книги
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-ca-7-489 | prov-ca-7-490 | prov-ca-7-494 | prov-ca-7-495
@@ -13354,6 +13360,528 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ca-u7-worked-accusative-feature`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a160923db609d04b3f0d57269269ae00cfe63d7860618eb837e0b3f819a2d9a3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:accusative-feature
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+FEMININE_ADJECTIVE_ACCUSATIVE
+shippedText=FEMININE_ADJECTIVE_ACCUSATIVE
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=43eef5bf3fe1bf5a55aba03ac739f55b2ca8a47b25a9dc8c2082fcdaa49edadc
+contentHash=8d0f5f4f783bc037759f535a96e27c38583073361103252c97b91bb0e43eb74e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-check-3-feedback`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8981945dc3ee9d0bb4d4f764aecc60d87a8dfc82e4f97ea36ce9f62694d29c1a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:check-3-feedback
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+To put хоро́шая книга in the accusative singular, choose хоро́шую книгу. Both words change while the same noun and feminine singular agreement are kept.
+shippedText=To put хоро́шая книга in the accusative singular, choose хоро́шую книгу. Both words change while the same noun and feminine singular agreement are kept.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fb60101289d746d32342b343a21ff16e2f4177bf8a936fbab1fd4630164b963f
+contentHash=93f2d51caae5effaead31db101267d90f5aaa57bf8c2f2a247b459abfeb33b3e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-check-3-prompt`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cec54a8622a8a679e00dc9e81c5e2c684a63b6b1049b8080804be761077cc35c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:check-3-prompt
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Which feminine singular accusative phrase corresponds to the shown nominative phrase?
+shippedText=Which feminine singular accusative phrase corresponds to the shown nominative phrase?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ea910e7416fb34120ddf50ac802f38a1c90d0d56e66043a54d4db5e1a5c91579
+contentHash=f18e1b63caa90b0df21565e899a8c85a611346995c71ea3cd26ed708e745437c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-check-body`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c278fb405db768e704ddd7f8c4198f2f9f01576510545401ac9d19c450fc9c72
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:check-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Choose the requested nominative form or feminine singular accusative phrase. A missed check returns to the explanation.
+shippedText=Choose the requested nominative form or feminine singular accusative phrase. A missed check returns to the explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=50393d8b6b0e52142319f65caf9e8bb209d33dea5665b2a49d993f9d2249360a
+contentHash=a31e2899c52d6eeb9b761827f53c0b71baea196eaa6dd21ed297fc70abf1c673
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-guided-body`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0d3bda93b442803126c9aed104b163f3591c30a23d8e59f589a0b1b094209fe1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:guided-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Choose the requested adjective form. Use its gender, number and case, then read the explanation.
+shippedText=Choose the requested adjective form. Use its gender, number and case, then read the explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=84c02bd1ce2b0da7807cbf689a92331855c0298e9e835851fc0fb32dfa9e1f66
+contentHash=30dd94e00f12bb0f51149059c33d5b882416ba06b56be482acbec14bf91c5a77
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-nominative-feature`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: de90575a89f7387f74c3776a63560d6d55b27a40f8f8ca86f0d94cb851c6420a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:nominative-feature
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+ADJECTIVE_NOMINATIVE_FORM
+shippedText=ADJECTIVE_NOMINATIVE_FORM
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=314330c9f7f8cfadacab7394d562f4150539d6206e061ae3b23849127115831b
+contentHash=eef3ac3332364c33e64121a97d481c1147eb015a82797fca89b0d1c5df615d9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-objective-title`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d7e137448db2f9555a3c7bd36b977375ed223aaf74eb284fb2061b1d652ed888
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:objective-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Recognize adjective forms after ш
+shippedText=Recognize adjective forms after ш
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=57d391572108d4ac9b4bdd3365120739dc712cfe7e1364e4c38ccce5bbad5ce8
+contentHash=622500682d9ce1e2bc655d5db2b99801f198c17dc2a4305c7ae9b42a2c028423
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-rem-body`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 51f8b63e0042c23cfd52dd104285d9eb1bd80d01f7169c8bde50a5eccae9fb17
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:rem-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.
+
+After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.
+
+хоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.
+
+хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.
+shippedText=An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.
+
+After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.
+
+хоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.
+
+хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dfd46432012eb177e2141afb475d4baa59f351b84fdd3072bf409f7d2ae1dce7
+contentHash=c0ba60902a06f499863237d3cb8d5609fe273381998fd00054930d4f8088ff54
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-rem-title`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b84e82310163021747a78af7792deac2c7b5e2f995dbb4fb6104e44fb2e4e3b1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:rem-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Review forms and spelling
+shippedText=Review forms and spelling
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad78b6048bcb4e1e7559f01468af28527e3e53ab3f0494a01933dd1a4756b247
+contentHash=1d89ec17fe6ca9c29c808e3ac597eb4e2ada8ff38ec7fd1ff9365640e60ef43a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-teach-1-body`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6fb38493a29eae5160d64cfb322ea46032c5b23c8df68d694f44e8c2ce6b32a3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:teach-1-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.
+shippedText=An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7cbde47fc22d27eda2be1b57456b8665fa4f01533057b0b80e8aa784d9c4b988
+contentHash=d6149bc123ab221c2ab5163ee2a9840b39711c9a99efc2b8efb7871a89eefc78
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-teach-1-title`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5fd08c2b154de4dbc6ebc989f219434ba2379b5ae4f457570593e9a80aa1699b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:teach-1-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+One adjective, several forms
+shippedText=One adjective, several forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c582fbe59fec64b7959b2d78feb47c3e027aa9c938b89095c85d21e8530683c2
+contentHash=ab72b79c67ff53578614565c62821ebb9be5fe5b3f660dc6b0fe2d2c3794a98f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-teach-2-body`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5ae400825925680a104551cc680c5c3cdf35c3670d4f241b45674d9d7f9d836
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:teach-2-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.
+shippedText=After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0077c35bc71fd2715685fd429a187cec6f55ef8dbdaf1abd4296a646625393ed
+contentHash=f61bbcba3a1e8e28fffe742f3a04d4bb0108b95b1572cadfbaa4bcec99dc0fda
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-teach-2-title`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f88326f0ea66691737f37d820eb99efa63af35d7cd5000ef7fa38f2e38d7dd25
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:teach-2-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Two spelling conditions
+shippedText=Two spelling conditions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3b2e99a3c777c812a49e15ee647519f4d03f3157f54b73147ecb1fbb87383eb2
+contentHash=ded0905ff0275429e2db8c98a7d2699871e1e936eaaba94ecfa0b8c18b360da6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-teach-3-body`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ff483b09f27289b9aa5fdd91b73cfc6218e7f5ab05c8f4b5171fb1dfd24c909
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:teach-3-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+хоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.
+shippedText=хоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19d2bc17c7338e75b41651a76aee5654d8b7163b436e333f5d649c8e131df150
+contentHash=098a9a3516e23c7b3ab14d2692bd2c640c8d05cad5b47b53de2b01e096cea2b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-teach-3-title`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 57d62ed36fe200f2005ce29adeffec10df92b6bc14762edbd44171b3cc531bc0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:teach-3-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Gender and a worked case change
+shippedText=Gender and a worked case change
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0fb04a810cd8b9a84b11086fe2e66505b3f4af647b99ab95f0a80ae6bd8f2c62
+contentHash=45a35cee1a8a3131355f0d0213c780c2c037d5dcd10cf9293d951193999f0a35
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-teach-4-body`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e3be3344430f4355c6c712c318bdd403832798f0eabb655783e77fc32be8a55a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:teach-4-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.
+shippedText=хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=24c0a3d4d019d5a8750db821e0a01a063513d48e41cb7ffa7ca960fc291c9c7b
+contentHash=7ef7f0adb7d02f3c067c5359f3d7d32bc1ed46af4da11dbabe942057b9cd9aed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-worked-teach-4-title`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42905db258578f6b68e6a796aaa4f3f2914a14dd8ccd5fc63d5bb2daa2849caf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-spelling:worked:teach-4-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 33 and 37 (PDF pages 3 and 7), text retrieved 2026-10-09: adjective nominative/accusative endings and agreement in gender, number and case. Gramota, Rules of Russian Orthography and Punctuation (1956), vowels after hushers, https://gramota.ru/biblioteka/spravochniki/pravila-russkoj-orfografii-i-punktuacii/glasnye-posle-shipyashchih: primary search excerpts retrieved 2026-10-09 for spelling with и after ш; direct page retrieval returned HTTP 403. Retained five-letter unstressed о/е condition remains unchanged. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_f_nom, #decl_n_nom and #decl_pl_nom; existing labels and phrases supplied by prov-ex-u7-spelling-0-ru, prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ca-7-489, prov-ca-7-490, prov-ca-7-494 and prov-ca-7-495. Application inference: apply those rules to the retained forms; form-selection questions do not isolate spelling ability. Independently authored English on 2026-10-09 within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Singular, plural and dictionary form
+shippedText=Singular, plural and dictionary form
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1d4226b56778a35abdc05a279f3965903bedfb69c94ca5f123d227497c2669f3
+contentHash=e2715a1de63fc771c9f8e013780fba9133aeb7cf8a24925c298748dc08b2afcc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-or-u7-default-0`
 
 - Objectives: obj-u7-default
@@ -20758,6 +21286,9 @@ permitsAppUse=true
 - `u7-st-guided-spelling-1` ITEM `u7-g-spelling-0`
 - `u7-st-rem-spelling` EXAMPLE `ex-u7-spelling-0`
 - `u7-st-rem-spelling` EXAMPLE `ex-or-u7-spelling-1`
+- `u7-st-rem-spelling` EXAMPLE `ex-or-u7-spelling-2`
+- `u7-st-rem-spelling` EXAMPLE `ex-or-u7-spelling-3`
+- `u7-st-rem-spelling` EXAMPLE `ex-or-u7-spelling-4`
 - `u7-st-check-spelling` REMEDIATION `u7-st-rem-spelling`
 - `u7-st-check-spelling` ITEM `u7-i-spelling-1`
 - `u7-st-check-spelling` ITEM `u7-i-spelling-2`
@@ -21098,6 +21629,23 @@ permitsAppUse=true
 - `obj-u7-adverb-paradigm` PROVENANCE `prov-ca-repair-7-11078`
 - `obj-u7-adverb-paradigm` PROVENANCE `prov-ca-repair-7-11079`
 - `obj-u7-objectadj` PROVENANCE `prov-ca-u7-objectadj-f-nom`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-accusative-feature`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-check-3-feedback`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-check-3-prompt`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-check-body`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-guided-body`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-nominative-feature`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-objective-title`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-rem-body`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-rem-title`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-teach-1-body`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-teach-1-title`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-teach-2-body`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-teach-2-title`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-teach-3-body`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-teach-3-title`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-teach-4-body`
+- `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-teach-4-title`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-0`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-0-gloss`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-1`

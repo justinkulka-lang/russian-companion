@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "87cac892c60b768e2eb00520ea7ef37d10b9441800d919b917d137ec9bb13a44",
+    "curriculumFileSha256": "d0c62b1166c2bbece8cd45e7c18e87c974274db5c1debc3b5b17a27cc8ad6d49",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -5025,13 +5025,16 @@
       "contentKind": "steps",
       "reportedIssue": "Unstressed о → е lacks its preceding-letter condition.",
       "proposedCorrection": "Restore after ж, ц, ч, ш, щ in the relevant ending and use reviewed contrasts; do not make this a rule for every unstressed о.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "body",
+        "title"
+      ],
       "currentObject": {
         "id": "u7-st-teach-spelling-2",
         "kind": "TEACH",
-        "title": "Admitted instruction",
-        "body": "After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о.",
+        "title": "Two spelling conditions",
+        "body": "After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.",
         "dominantAction": "Continue",
         "referenceIds": [
           "ref-u610-attribution"
@@ -5047,7 +5050,7 @@
         {
           "id": "obj-u7-spelling",
           "unitNumber": 7,
-          "title": "Identify the admitted spelling",
+          "title": "Recognize adjective forms after ш",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u7-st-orient",
@@ -5101,8 +5104,8 @@
           "step": {
             "id": "u7-st-teach-spelling-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "хорошее письмо — good letter. хоро́ший — good. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "One adjective, several forms",
+            "body": "An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -5123,8 +5126,8 @@
           "step": {
             "id": "u7-st-teach-spelling-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о.",
+            "title": "Two spelling conditions",
+            "body": "After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -5142,8 +5145,8 @@
           "step": {
             "id": "u7-st-teach-spelling-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "хоро́шая — good. хоро́шее — good. ",
+            "title": "Gender and a worked case change",
+            "body": "хоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -5164,8 +5167,8 @@
           "step": {
             "id": "u7-st-teach-spelling-4",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "хоро́шие — good. ",
+            "title": "Singular, plural and dictionary form",
+            "body": "хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -5186,7 +5189,7 @@
             "id": "u7-st-guided-spelling-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Choose the requested adjective form. Use its gender, number and case, then read the explanation.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [
@@ -5204,14 +5207,17 @@
           "step": {
             "id": "u7-st-rem-spelling",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о.",
+            "title": "Review forms and spelling",
+            "body": "An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.\n\nAfter ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.\n\nхоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.\n\nхоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
             "exampleIds": [
               "ex-u7-spelling-0",
-              "ex-or-u7-spelling-1"
+              "ex-or-u7-spelling-1",
+              "ex-or-u7-spelling-2",
+              "ex-or-u7-spelling-3",
+              "ex-or-u7-spelling-4"
             ],
             "unavailableReason": null,
             "bookDirection": null,
@@ -9982,13 +9988,17 @@
       "contentKind": "items",
       "reportedIssue": "Other row does not disambiguate valid feminine/neuter forms.",
       "proposedCorrection": "Specify feminine or neuter singular nominative and show a suitable noun.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "assessment",
+        "feedback",
+        "prompt"
+      ],
       "currentObject": {
         "id": "u7-i-spelling-3",
         "kind": "PATTERN_CLASSIFICATION",
         "language": "en",
-        "prompt": "Which feminine object phrase matches the shown nominative after ш?",
+        "prompt": "Which feminine singular accusative phrase corresponds to the shown nominative phrase?",
         "promptLetter": "хоро́шая книга",
         "options": [
           "хоро́шую книгу",
@@ -9996,7 +10006,7 @@
           "хоро́шие книги"
         ],
         "answer": "хоро́шую книгу",
-        "feedback": "хоро́шая книга takes хоро́шую книгу. The spelling condition is separate from the gender.",
+        "feedback": "To put хоро́шая книга in the accusative singular, choose хоро́шую книгу. Both words change while the same noun and feminine singular agreement are kept.",
         "objectiveId": "obj-u7-spelling",
         "sourceId": "src-content-audit-research",
         "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
@@ -10007,7 +10017,7 @@
           "хоро́шие книги is plural, not the feminine singular object phrase."
         ],
         "assessment": {
-          "testedFeature": "FEMININE_HUSHER_OBJECT",
+          "testedFeature": "FEMININE_ADJECTIVE_ACCUSATIVE",
           "evidenceMode": "STATED_APPLICATION",
           "contrastSetId": "u7-spelling-3",
           "cueLanguage": "ru",
@@ -10025,7 +10035,7 @@
             "хоро́шего друга is masculine animate, not the feminine object phrase.",
             "хоро́шие книги is plural, not the feminine singular object phrase."
           ],
-          "whyAnswerDemonstratesObjective": "The feminine noun книга selects the feminine object ending.",
+          "whyAnswerDemonstratesObjective": "To put хоро́шая книга in the accusative singular, choose хоро́шую книгу. Both words change while the same noun and feminine singular agreement are kept.",
           "contrastMembers": [
             "хоро́шую книгу",
             "хоро́шего друга",
@@ -10045,7 +10055,7 @@
         {
           "id": "obj-u7-spelling",
           "unitNumber": 7,
-          "title": "Identify the admitted spelling",
+          "title": "Recognize adjective forms after ш",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u7-st-orient",
@@ -10099,8 +10109,8 @@
           "step": {
             "id": "u7-st-teach-spelling-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "хорошее письмо — good letter. хоро́ший — good. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "One adjective, several forms",
+            "body": "An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -10121,8 +10131,8 @@
           "step": {
             "id": "u7-st-teach-spelling-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о.",
+            "title": "Two spelling conditions",
+            "body": "After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -10140,8 +10150,8 @@
           "step": {
             "id": "u7-st-teach-spelling-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "хоро́шая — good. хоро́шее — good. ",
+            "title": "Gender and a worked case change",
+            "body": "хоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -10162,8 +10172,8 @@
           "step": {
             "id": "u7-st-teach-spelling-4",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "хоро́шие — good. ",
+            "title": "Singular, plural and dictionary form",
+            "body": "хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -10184,7 +10194,7 @@
             "id": "u7-st-guided-spelling-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Choose the requested adjective form. Use its gender, number and case, then read the explanation.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [
@@ -10202,14 +10212,17 @@
           "step": {
             "id": "u7-st-rem-spelling",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о.",
+            "title": "Review forms and spelling",
+            "body": "An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.\n\nAfter ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.\n\nхоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.\n\nхоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
             "exampleIds": [
               "ex-u7-spelling-0",
-              "ex-or-u7-spelling-1"
+              "ex-or-u7-spelling-1",
+              "ex-or-u7-spelling-2",
+              "ex-or-u7-spelling-3",
+              "ex-or-u7-spelling-4"
             ],
             "unavailableReason": null,
             "bookDirection": null,
@@ -10223,7 +10236,7 @@
             "id": "u7-st-check-spelling",
             "kind": "CHECK",
             "title": "Independent checks",
-            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "body": "Choose the requested nominative form or feminine singular accusative phrase. A missed check returns to the explanation.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [

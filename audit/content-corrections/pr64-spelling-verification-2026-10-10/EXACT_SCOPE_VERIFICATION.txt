@@ -1,0 +1,5 @@
+PASS: only Unit 7 spelling-session instruction/remediation, objective/session title, four feature labels and one check English explanation change
+PASS: all keys, options, Russian cues, examples, step order/IDs, objective identities/requirements, assessment source relations and advancement requirements are unchanged
+PASS: all original provenance/source/rights records preserved; exactly 17 pending coverage records appended; no new Russian token introduced
+PASS: only Unit 7 instructional digest changes; all mapping digests unchanged; all 30 packets bind the actual implementation ancestor
+curriculum SHA256=d0c62b1166c2bbece8cd45e7c18e87c974274db5c1debc3b5b17a27cc8ad6d49

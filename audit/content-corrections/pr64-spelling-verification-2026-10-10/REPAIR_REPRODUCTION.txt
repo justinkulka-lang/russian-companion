@@ -1,0 +1,3 @@
+Added Unit 7 form explanations; 17 pending coverage records; keys and Russian forms unchanged
+Already repaired; retained evidence unchanged
+PASS: exact reproduction from prior curriculum and byte-identical second run
