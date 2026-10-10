@@ -1,0 +1,85 @@
+NOTE: Picked up JDK_JAVA_OPTIONS: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (4):
+  JUnit Vintage:UnitReviewPipelineTest:unitOneAndUnitTwoPackagesStayIsolated
+    MethodSource [className = 'dev.russiancompanion.v2.review.UnitReviewPipelineTest', methodName = 'unitOneAndUnitTwoPackagesStayIsolated', methodParameterTypes = '']
+    => java.io.IOException: Cannot run program "git" (in directory "."): \dev\null (The system cannot find the path specified)
+       java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+       java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+       dev.russiancompanion.v2.review.Unit1ReviewPackageKt.gitExit(Unit1ReviewPackage.kt:1965)
+       dev.russiancompanion.v2.review.Unit1ReviewPackageKt.curriculumSourceCommitErrors(Unit1ReviewPackage.kt:1929)
+       dev.russiancompanion.v2.review.Unit1ReviewPackageKt.validateUnitReviewFiles(Unit1ReviewPackage.kt:891)
+       [...]
+     Caused by: java.io.FileNotFoundException: \dev\null (The system cannot find the path specified)
+       java.base/java.io.FileOutputStream.open0(Native Method)
+       java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+       java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+       java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+       java.base/java.lang.ProcessImpl.newFileOutputStream(ProcessImpl.java:94)
+       [...]
+  JUnit Vintage:UnitReviewPipelineTest:committedUnitPackagesMatchTheGenerator
+    MethodSource [className = 'dev.russiancompanion.v2.review.UnitReviewPipelineTest', methodName = 'committedUnitPackagesMatchTheGenerator', methodParameterTypes = '']
+    => java.io.IOException: Cannot run program "git" (in directory "."): \dev\null (The system cannot find the path specified)
+       java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+       java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+       dev.russiancompanion.v2.review.Unit1ReviewPackageKt.gitExit(Unit1ReviewPackage.kt:1965)
+       dev.russiancompanion.v2.review.Unit1ReviewPackageKt.curriculumSourceCommitErrors(Unit1ReviewPackage.kt:1929)
+       dev.russiancompanion.v2.review.Unit1ReviewPackageKt.validateUnitReviewFiles(Unit1ReviewPackage.kt:891)
+       [...]
+     Caused by: java.io.FileNotFoundException: \dev\null (The system cannot find the path specified)
+       java.base/java.io.FileOutputStream.open0(Native Method)
+       java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+       java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+       java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+       java.base/java.lang.ProcessImpl.newFileOutputStream(ProcessImpl.java:94)
+       [...]
+  JUnit Vintage:UnitReviewPipelineTest:curriculumSourceCommitMustContainTheGovernedCurriculum
+    MethodSource [className = 'dev.russiancompanion.v2.review.UnitReviewPipelineTest', methodName = 'curriculumSourceCommitMustContainTheGovernedCurriculum', methodParameterTypes = '']
+    => java.io.IOException: Cannot run program "git" (in directory "."): \dev\null (The system cannot find the path specified)
+       java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+       java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+       dev.russiancompanion.v2.review.Unit1ReviewPackageKt.gitExit(Unit1ReviewPackage.kt:1965)
+       dev.russiancompanion.v2.review.Unit1ReviewPackageKt.curriculumSourceCommitErrors(Unit1ReviewPackage.kt:1929)
+       dev.russiancompanion.v2.review.UnitReviewPipelineTest.curriculumSourceCommitMustContainTheGovernedCurriculum(UnitReviewPipelineTest.kt:315)
+       [...]
+     Caused by: java.io.FileNotFoundException: \dev\null (The system cannot find the path specified)
+       java.base/java.io.FileOutputStream.open0(Native Method)
+       java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+       java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+       java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+       java.base/java.lang.ProcessImpl.newFileOutputStream(ProcessImpl.java:94)
+       [...]
+  JUnit Vintage:UnitReviewPipelineTest:mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields
+    MethodSource [className = 'dev.russiancompanion.v2.review.UnitReviewPipelineTest', methodName = 'mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields', methodParameterTypes = '']
+    => java.io.IOException: Cannot run program "git" (in directory "."): \dev\null (The system cannot find the path specified)
+       java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+       java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+       dev.russiancompanion.v2.review.Unit1ReviewPackageKt.gitExit(Unit1ReviewPackage.kt:1965)
+       dev.russiancompanion.v2.review.Unit1ReviewPackageKt.curriculumSourceCommitErrors(Unit1ReviewPackage.kt:1929)
+       dev.russiancompanion.v2.review.Unit1ReviewPackageKt.validateUnitReviewFiles(Unit1ReviewPackage.kt:891)
+       [...]
+     Caused by: java.io.FileNotFoundException: \dev\null (The system cannot find the path specified)
+       java.base/java.io.FileOutputStream.open0(Native Method)
+       java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+       java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+       java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+       java.base/java.lang.ProcessImpl.newFileOutputStream(ProcessImpl.java:94)
+       [...]
+
+Test run finished after 92839 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         4 tests found           ]
+[         0 tests skipped         ]
+[         4 tests started         ]
+[         0 tests aborted         ]
+[         0 tests successful      ]
+[         4 tests failed          ]
+

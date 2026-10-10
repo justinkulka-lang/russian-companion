@@ -1960,7 +1960,7 @@ private fun gitOutput(root: File, vararg args: String): String? {
 private fun gitExit(root: File, vararg args: String): Int {
     val process = ProcessBuilder(listOf("git") + args)
         .directory(root)
-        .redirectOutput(File("/dev/null"))
+        .redirectOutput(ProcessBuilder.Redirect.DISCARD)
         .redirectError(ProcessBuilder.Redirect.DISCARD)
         .start()
     return process.waitFor()

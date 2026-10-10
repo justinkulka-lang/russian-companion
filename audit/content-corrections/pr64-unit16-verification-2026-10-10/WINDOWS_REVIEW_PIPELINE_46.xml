@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Vintage" tests="46" skipped="0" failures="0" errors="4" time="232.286" hostname="DESKTOP-Q5U9DI0" timestamp="2026-10-10T09:14:43">
+<properties>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.separator" value="\"/>
+<property name="java.class.path" value="C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\classes;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\allopen-compiler-plugin.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\annotations-13.0.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\assignment-compiler-plugin.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\compose-compiler-plugin.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\jvm-abi-gen.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-annotation-processing-cli.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-annotation-processing-runtime.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-annotation-processing.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-annotations-jvm-sources.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-annotations-jvm.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-ant.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-compiler.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-daemon-client.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-daemon.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-main-kts.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-metadata-jvm-sources.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-metadata-jvm.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-preloader.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-reflect-sources.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-reflect.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-runner.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-script-runtime-sources.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-script-runtime.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-scripting-common.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-scripting-compiler-impl.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-scripting-compiler.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-scripting-jvm.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-serialization-compiler-plugin.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-stdlib-jdk7-sources.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-stdlib-jdk7.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-stdlib-jdk8-sources.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-stdlib-jdk8.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-stdlib-js-sources.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-stdlib-sources.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-stdlib.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-test-js-sources.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-test-junit-sources.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-test-junit.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-test-junit5-sources.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-test-junit5.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-test-sources.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-test-testng-sources.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-test-testng.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlin-test.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlinx-coroutines-core-jvm.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\kotlinx-serialization-compiler-plugin.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\lombok-compiler-plugin.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\mutability-annotations-compat.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\noarg-compiler-plugin.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\parcelize-compiler.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\parcelize-runtime.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\power-assert-compiler-plugin.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\sam-with-receiver-compiler-plugin.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\kotlinc\lib\scripting-compiler.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\serialization-core.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\serialization-json.jar;C:\Users\Justin\Documents\Codex\2026-10-10\re\work\host\..\toolchain\junit.jar"/>
+<property name="java.class.version" value="65.0"/>
+<property name="java.home" value="C:\Users\Justin\Documents\Codex\2026-10-10\re\work\toolchain\jdk-21.0.12.1+1"/>
+<property name="java.io.tmpdir" value="C:\Users\Justin\AppData\Local\Packages\sandbox.{06edeb9a-feb1-4faa-8150-01eea886bf9d}\AC\Temp\"/>
+<property name="java.library.path" value="C:\Users\Justin\Documents\Codex\2026-10-10\re\work\toolchain\jdk-21.0.12.1+1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Justin\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\Justin\.codex\tmp\arg0\codex-arg08Jjae1;C:\Users\Justin\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin;C:\Users\Justin\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin;C:\Users\Justin\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin;C:\Users\Justin\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\Justin\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\Justin\AppData\Local\Microsoft\WindowsApps;C:\Users\Justin\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\Justin\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback;C:\Users\Justin\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin;C:\Users\Justin\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd;C:\Users\Justin\AppData\Local\OpenAI\Codex\bin\9a7ba4b9ea0c44a3;C:\Users\Justin\AppData\Local\OpenAI\Codex\bin\2e5e00daee91c61d;."/>
+<property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+<property name="java.runtime.version" value="21.0.12.1+1-LTS"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="21"/>
+<property name="java.vendor" value="Eclipse Adoptium"/>
+<property name="java.vendor.url" value="https://adoptium.net/"/>
+<property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+<property name="java.vendor.version" value="Temurin-21.0.12.1+1"/>
+<property name="java.version" value="21.0.12.1"/>
+<property name="java.version.date" value="2026-08-18"/>
+<property name="java.vm.compressedOopsMode" value="32-bit"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="21"/>
+<property name="java.vm.vendor" value="Eclipse Adoptium"/>
+<property name="java.vm.version" value="21.0.12.1+1-LTS"/>
+<property name="jdk.debug" value="release"/>
+<property name="junit.docs.version" value="1.13.4"/>
+<property name="line.separator" value="&#13;&#10;"/>
+<property name="native.encoding" value="Cp1252"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Windows 11"/>
+<property name="os.version" value="10.0"/>
+<property name="path.separator" value=";"/>
+<property name="stderr.encoding" value="UTF-8"/>
+<property name="stdout.encoding" value="UTF-8"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="C:\Users\Justin\Documents\Codex\2026-10-10\re\work\toolchain\jdk-21.0.12.1+1\bin"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.cpu.isalist" value="amd64"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="org.junit.platform.console.ConsoleLauncher execute --select-class dev.russiancompanion.v2.ContentAuditCorrectionTest --select-class dev.russiancompanion.v2.ContentAuditCheckpointRepairTest --select-class dev.russiancompanion.v2.Unit16InstrumentalInstructionTest --select-class dev.russiancompanion.v2.review.UnitReviewPipelineTest --select-class dev.russiancompanion.v2.audit.GapClosureDossierTest --reports-dir ../host/results --details summary"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="Cp1252"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="sun.os.patch.level" value=""/>
+<property name="user.country" value="US"/>
+<property name="user.dir" value="C:\Users\Justin\Documents\Codex\2026-10-10\re\work\source"/>
+<property name="user.home" value="C:\Users\Justin"/>
+<property name="user.language" value="en"/>
+<property name="user.name" value="Justin"/>
+<property name="user.script" value=""/>
+<property name="user.timezone" value="America/Chicago"/>
+<property name="user.variant" value=""/>
+</properties>
+<testcase name="spellingInstructionExplainsFormsBeforePracticeAndWorksTheAccusative" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.111">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:spellingInstructionExplainsFormsBeforePracticeAndWorksTheAccusative(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: spellingInstructionExplainsFormsBeforePracticeAndWorksTheAccusative
+]]></system-out>
+</testcase>
+<testcase name="dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease" classname="dev.russiancompanion.v2.audit.GapClosureDossierTest" time="87.449">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.audit.GapClosureDossierTest]/[test:dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease(dev.russiancompanion.v2.audit.GapClosureDossierTest)]
+display-name: dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease
+]]></system-out>
+</testcase>
+<testcase name="remediationRetainsEveryExplanationAndCaseSpecificFeedback" classname="dev.russiancompanion.v2.Unit16InstrumentalInstructionTest" time="0.089">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit16InstrumentalInstructionTest]/[test:remediationRetainsEveryExplanationAndCaseSpecificFeedback(dev.russiancompanion.v2.Unit16InstrumentalInstructionTest)]
+display-name: remediationRetainsEveryExplanationAndCaseSpecificFeedback
+]]></system-out>
+</testcase>
+<testcase name="aLaterUnitMutationDoesNotApproveOrInvalidateAnEarlierUnit" classname="dev.russiancompanion.v2.review.UnitReviewPipelineTest" time="5.698">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.review.UnitReviewPipelineTest]/[test:aLaterUnitMutationDoesNotApproveOrInvalidateAnEarlierUnit(dev.russiancompanion.v2.review.UnitReviewPipelineTest)]
+display-name: aLaterUnitMutationDoesNotApproveOrInvalidateAnEarlierUnit
+]]></system-out>
+</testcase>
+<testcase name="researchAdmissionCannotOmitItsSynthesisEvidence" classname="dev.russiancompanion.v2.ContentAuditCheckpointRepairTest" time="1.962">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCheckpointRepairTest]/[test:researchAdmissionCannotOmitItsSynthesisEvidence(dev.russiancompanion.v2.ContentAuditCheckpointRepairTest)]
+display-name: researchAdmissionCannotOmitItsSynthesisEvidence
+]]></system-out>
+</testcase>
+<testcase name="unitEightTeachingWorksTheNounPluralAndSeparatesOtherPatterns" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.123">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:unitEightTeachingWorksTheNounPluralAndSeparatesOtherPatterns(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: unitEightTeachingWorksTheNounPluralAndSeparatesOtherPatterns
+]]></system-out>
+</testcase>
+<testcase name="mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields" classname="dev.russiancompanion.v2.review.UnitReviewPipelineTest" time="63.633">
+<error message="Cannot run program &quot;git&quot; (in directory &quot;.&quot;): \dev\null (The system cannot find the path specified)" type="java.io.IOException"><![CDATA[java.io.IOException: Cannot run program "git" (in directory "."): \dev\null (The system cannot find the path specified)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at dev.russiancompanion.v2.review.Unit1ReviewPackageKt.gitOutput(Unit1ReviewPackage.kt:1955)
+	at dev.russiancompanion.v2.review.Unit1ReviewPackageKt.curriculumSourceCommitErrors(Unit1ReviewPackage.kt:1921)
+	at dev.russiancompanion.v2.review.Unit1ReviewPackageKt.validateUnitReviewFiles(Unit1ReviewPackage.kt:891)
+	at dev.russiancompanion.v2.review.UnitReviewPipelineTest.mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields(UnitReviewPipelineTest.kt:279)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+Caused by: java.io.FileNotFoundException: \dev\null (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at java.base/java.lang.ProcessImpl.newFileOutputStream(ProcessImpl.java:94)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:153)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 6 more
+]]></error>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.review.UnitReviewPipelineTest]/[test:mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields(dev.russiancompanion.v2.review.UnitReviewPipelineTest)]
+display-name: mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields
+]]></system-out>
+</testcase>
+<testcase name="possessiveFormsAreAvailableBeforeTheGuidedAgreementChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.103">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:possessiveFormsAreAvailableBeforeTheGuidedAgreementChoice(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: possessiveFormsAreAvailableBeforeTheGuidedAgreementChoice
+]]></system-out>
+</testcase>
+<testcase name="curriculumSourceCommitMustContainTheGovernedCurriculum" classname="dev.russiancompanion.v2.review.UnitReviewPipelineTest" time="0.092">
+<error message="Cannot run program &quot;git&quot; (in directory &quot;.&quot;): \dev\null (The system cannot find the path specified)" type="java.io.IOException"><![CDATA[java.io.IOException: Cannot run program "git" (in directory "."): \dev\null (The system cannot find the path specified)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at dev.russiancompanion.v2.review.UnitReviewPipelineTest.curriculumSourceCommitMustContainTheGovernedCurriculum(UnitReviewPipelineTest.kt:309)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+Caused by: java.io.FileNotFoundException: \dev\null (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at java.base/java.lang.ProcessImpl.newFileOutputStream(ProcessImpl.java:94)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:153)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 3 more
+]]></error>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.review.UnitReviewPipelineTest]/[test:curriculumSourceCommitMustContainTheGovernedCurriculum(dev.russiancompanion.v2.review.UnitReviewPipelineTest)]
+display-name: curriculumSourceCommitMustContainTheGovernedCurriculum
+]]></system-out>
+</testcase>
+<testcase name="unitElevenChecksPastAgreementBeforeAspectIntroductionWithoutLoweringItsGate" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="3.921">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:unitElevenChecksPastAgreementBeforeAspectIntroductionWithoutLoweringItsGate(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: unitElevenChecksPastAgreementBeforeAspectIntroductionWithoutLoweringItsGate
+]]></system-out>
+</testcase>
+<testcase name="courtesyRegisterCorrectionIsTaughtBeforePracticeAndSurvivesRemediation" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.094">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:courtesyRegisterCorrectionIsTaughtBeforePracticeAndSurvivesRemediation(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: courtesyRegisterCorrectionIsTaughtBeforePracticeAndSurvivesRemediation
+]]></system-out>
+</testcase>
+<testcase name="unitsOutsideThePreparedPairCannotApproveOrSkipMissingRecords" classname="dev.russiancompanion.v2.review.UnitReviewPipelineTest" time="10.464">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.review.UnitReviewPipelineTest]/[test:unitsOutsideThePreparedPairCannotApproveOrSkipMissingRecords(dev.russiancompanion.v2.review.UnitReviewPipelineTest)]
+display-name: unitsOutsideThePreparedPairCannotApproveOrSkipMissingRecords
+]]></system-out>
+</testcase>
+<testcase name="possessiveWorkedExplanationRecordsStayPendingAndRejectAChangedHash" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="3.897">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:possessiveWorkedExplanationRecordsStayPendingAndRejectAChangedHash(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: possessiveWorkedExplanationRecordsStayPendingAndRejectAChangedHash
+]]></system-out>
+</testcase>
+<testcase name="nounPluralFormAndSevenLetterRulePrecedeTheChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.099">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:nounPluralFormAndSevenLetterRulePrecedeTheChoice(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: nounPluralFormAndSevenLetterRulePrecedeTheChoice
+]]></system-out>
+</testcase>
+<testcase name="committedUnitPackagesMatchTheGenerator" classname="dev.russiancompanion.v2.review.UnitReviewPipelineTest" time="5.694">
+<error message="Cannot run program &quot;git&quot; (in directory &quot;.&quot;): \dev\null (The system cannot find the path specified)" type="java.io.IOException"><![CDATA[java.io.IOException: Cannot run program "git" (in directory "."): \dev\null (The system cannot find the path specified)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at dev.russiancompanion.v2.review.Unit1ReviewPackageKt.gitOutput(Unit1ReviewPackage.kt:1955)
+	at dev.russiancompanion.v2.review.Unit1ReviewPackageKt.curriculumSourceCommitErrors(Unit1ReviewPackage.kt:1921)
+	at dev.russiancompanion.v2.review.Unit1ReviewPackageKt.validateUnitReviewFiles(Unit1ReviewPackage.kt:891)
+	at dev.russiancompanion.v2.review.UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator(UnitReviewPipelineTest.kt:106)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+Caused by: java.io.FileNotFoundException: \dev\null (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at java.base/java.lang.ProcessImpl.newFileOutputStream(ProcessImpl.java:94)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:153)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 6 more
+]]></error>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.review.UnitReviewPipelineTest]/[test:committedUnitPackagesMatchTheGenerator(dev.russiancompanion.v2.review.UnitReviewPipelineTest)]
+display-name: committedUnitPackagesMatchTheGenerator
+]]></system-out>
+</testcase>
+<testcase name="reorderedSessionsRejectResumeIdentityBoundToThePreviousPosition" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.109">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:reorderedSessionsRejectResumeIdentityBoundToThePreviousPosition(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: reorderedSessionsRejectResumeIdentityBoundToThePreviousPosition
+]]></system-out>
+</testcase>
+<testcase name="unitTwelveAspectCoverageResolvesOriginalPairsAndRejectsTamperedHashes" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="3.908">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:unitTwelveAspectCoverageResolvesOriginalPairsAndRejectsTamperedHashes(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: unitTwelveAspectCoverageResolvesOriginalPairsAndRejectsTamperedHashes
+]]></system-out>
+</testcase>
+<testcase name="unitEightExplanationCoverageStaysPendingAndRejectsTamperedHashes" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="3.984">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:unitEightExplanationCoverageStaysPendingAndRejectsTamperedHashes(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: unitEightExplanationCoverageStaysPendingAndRejectsTamperedHashes
+]]></system-out>
+</testcase>
+<testcase name="unitTwoOnlyMutationLeavesUnitOneDigestUntouched" classname="dev.russiancompanion.v2.review.UnitReviewPipelineTest" time="6.168">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.review.UnitReviewPipelineTest]/[test:unitTwoOnlyMutationLeavesUnitOneDigestUntouched(dev.russiancompanion.v2.review.UnitReviewPipelineTest)]
+display-name: unitTwoOnlyMutationLeavesUnitOneDigestUntouched
+]]></system-out>
+</testcase>
+<testcase name="instrumentalAdjectiveExplanationPrecedesTheCaseChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.135">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:instrumentalAdjectiveExplanationPrecedesTheCaseChoice(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: instrumentalAdjectiveExplanationPrecedesTheCaseChoice
+]]></system-out>
+</testcase>
+<testcase name="negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="4.383">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm
+]]></system-out>
+</testcase>
+<testcase name="unitOneAndUnitTwoPackagesStayIsolated" classname="dev.russiancompanion.v2.review.UnitReviewPipelineTest" time="16.033">
+<error message="Cannot run program &quot;git&quot; (in directory &quot;.&quot;): \dev\null (The system cannot find the path specified)" type="java.io.IOException"><![CDATA[java.io.IOException: Cannot run program "git" (in directory "."): \dev\null (The system cannot find the path specified)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at dev.russiancompanion.v2.review.Unit1ReviewPackageKt.gitOutput(Unit1ReviewPackage.kt:1955)
+	at dev.russiancompanion.v2.review.Unit1ReviewPackageKt.curriculumSourceCommitErrors(Unit1ReviewPackage.kt:1921)
+	at dev.russiancompanion.v2.review.Unit1ReviewPackageKt.validateUnitReviewFiles(Unit1ReviewPackage.kt:891)
+	at dev.russiancompanion.v2.review.UnitReviewPipelineTest.unitOneAndUnitTwoPackagesStayIsolated(UnitReviewPipelineTest.kt:46)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+Caused by: java.io.FileNotFoundException: \dev\null (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at java.base/java.lang.ProcessImpl.newFileOutputStream(ProcessImpl.java:94)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:153)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 6 more
+]]></error>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.review.UnitReviewPipelineTest]/[test:unitOneAndUnitTwoPackagesStayIsolated(dev.russiancompanion.v2.review.UnitReviewPipelineTest)]
+display-name: unitOneAndUnitTwoPackagesStayIsolated
+]]></system-out>
+</testcase>
+<testcase name="imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.101">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice
+]]></system-out>
+</testcase>
+<testcase name="unitTwelveAspectTeachingLabelsPairsAndAvoidsAnUnfinishedActionRule" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.097">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:unitTwelveAspectTeachingLabelsPairsAndAvoidsAnUnfinishedActionRule(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: unitTwelveAspectTeachingLabelsPairsAndAvoidsAnUnfinishedActionRule
+]]></system-out>
+</testcase>
+<testcase name="possessiveInstructionLabelsFormsAndWorksTheRetainedFeminineCaseChange" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.14">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:possessiveInstructionLabelsFormsAndWorksTheRetainedFeminineCaseChange(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: possessiveInstructionLabelsFormsAndWorksTheRetainedFeminineCaseChange
+]]></system-out>
+</testcase>
+<testcase name="unitEightChecksAssessNominativeFormsAndRetainCompleteRemediation" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.091">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:unitEightChecksAssessNominativeFormsAndRetainCompleteRemediation(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: unitEightChecksAssessNominativeFormsAndRetainCompleteRemediation
+]]></system-out>
+</testcase>
+<testcase name="aspectCounterpartExplanationPrecedesThePartnerChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.085">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:aspectCounterpartExplanationPrecedesThePartnerChoice(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: aspectCounterpartExplanationPrecedesThePartnerChoice
+]]></system-out>
+</testcase>
+<testcase name="adjectivePluralFormPrecedesTheSpellingChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.102">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:adjectivePluralFormPrecedesTheSpellingChoice(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: adjectivePluralFormPrecedesTheSpellingChoice
+]]></system-out>
+</testcase>
+<testcase name="possessiveFeedbackAndRemediationExplainTheSameGenderNumberAndCaseRule" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.125">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:possessiveFeedbackAndRemediationExplainTheSameGenderNumberAndCaseRule(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: possessiveFeedbackAndRemediationExplainTheSameGenderNumberAndCaseRule
+]]></system-out>
+</testcase>
+<testcase name="spellingQuestionsNameTheActualFormEvidenceAndRemediationRetainsAllTeaching" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.101">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:spellingQuestionsNameTheActualFormEvidenceAndRemediationRetainsAllTeaching(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: spellingQuestionsNameTheActualFormEvidenceAndRemediationRetainsAllTeaching
+]]></system-out>
+</testcase>
+<testcase name="optionalStressHasItsOwnProvenanceAndActualResponseShape" classname="dev.russiancompanion.v2.ContentAuditCheckpointRepairTest" time="0.08">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCheckpointRepairTest]/[test:optionalStressHasItsOwnProvenanceAndActualResponseShape(dev.russiancompanion.v2.ContentAuditCheckpointRepairTest)]
+display-name: optionalStressHasItsOwnProvenanceAndActualResponseShape
+]]></system-out>
+</testcase>
+<testcase name="newExplanationsHavePendingEvidenceAndNoAcceptance" classname="dev.russiancompanion.v2.Unit16InstrumentalInstructionTest" time="2.16">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit16InstrumentalInstructionTest]/[test:newExplanationsHavePendingEvidenceAndNoAcceptance(dev.russiancompanion.v2.Unit16InstrumentalInstructionTest)]
+display-name: newExplanationsHavePendingEvidenceAndNoAcceptance
+]]></system-out>
+</testcase>
+<testcase name="unit27AdvancesWithoutOptionalPresentPassive" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.13">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:unit27AdvancesWithoutOptionalPresentPassive(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: unit27AdvancesWithoutOptionalPresentPassive
+]]></system-out>
+</testcase>
+<testcase name="packValidatesAndRejectsTheAuditedFalseKeys" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="1.947">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:packValidatesAndRejectsTheAuditedFalseKeys(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: packValidatesAndRejectsTheAuditedFalseKeys
+]]></system-out>
+</testcase>
+<testcase name="gatingChangeInvalidatesUnitAndPackIdentitiesOnly" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.841">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:gatingChangeInvalidatesUnitAndPackIdentitiesOnly(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: gatingChangeInvalidatesUnitAndPackIdentitiesOnly
+]]></system-out>
+</testcase>
+<testcase name="purposeRegisterExplanationPrecedesTheOrdinaryPurposeChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.109">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:purposeRegisterExplanationPrecedesTheOrdinaryPurposeChoice(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: purposeRegisterExplanationPrecedesTheOrdinaryPurposeChoice
+]]></system-out>
+</testcase>
+<testcase name="instrumentalNounExplanationPrecedesTheCaseChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.1">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:instrumentalNounExplanationPrecedesTheCaseChoice(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: instrumentalNounExplanationPrecedesTheCaseChoice
+]]></system-out>
+</testcase>
+<testcase name="unitTwelveAspectFeedbackExplainsBothOptionsAndRemediationRetainsThePairs" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.093">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:unitTwelveAspectFeedbackExplainsBothOptionsAndRemediationRetainsThePairs(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: unitTwelveAspectFeedbackExplainsBothOptionsAndRemediationRetainsThePairs
+]]></system-out>
+</testcase>
+<testcase name="spellingExplanationRecordsResolveRetainedFormsAndStayPending" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="7.092">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:spellingExplanationRecordsResolveRetainedFormsAndStayPending(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: spellingExplanationRecordsResolveRetainedFormsAndStayPending
+]]></system-out>
+</testcase>
+<testcase name="perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.103">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice
+]]></system-out>
+</testcase>
+<testcase name="caseAndNumberAreExplainedBeforeGuidedChoices" classname="dev.russiancompanion.v2.Unit16InstrumentalInstructionTest" time="0.098">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit16InstrumentalInstructionTest]/[test:caseAndNumberAreExplainedBeforeGuidedChoices(dev.russiancompanion.v2.Unit16InstrumentalInstructionTest)]
+display-name: caseAndNumberAreExplainedBeforeGuidedChoices
+]]></system-out>
+</testcase>
+<testcase name="wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.106">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation
+]]></system-out>
+</testcase>
+<testcase name="imperfectiveChecksAssessTheirOwnAspectAndASeparateSubjectContrast" classname="dev.russiancompanion.v2.ContentAuditCheckpointRepairTest" time="0.084">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCheckpointRepairTest]/[test:imperfectiveChecksAssessTheirOwnAspectAndASeparateSubjectContrast(dev.russiancompanion.v2.ContentAuditCheckpointRepairTest)]
+display-name: imperfectiveChecksAssessTheirOwnAspectAndASeparateSubjectContrast
+]]></system-out>
+</testcase>
+<testcase name="correctedAdmissionRejectsHashScopeMissingFeatureAndClonedCheck" classname="dev.russiancompanion.v2.ContentAuditCheckpointRepairTest" time="0.113">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCheckpointRepairTest]/[test:correctedAdmissionRejectsHashScopeMissingFeatureAndClonedCheck(dev.russiancompanion.v2.ContentAuditCheckpointRepairTest)]
+display-name: correctedAdmissionRejectsHashScopeMissingFeatureAndClonedCheck
+]]></system-out>
+</testcase>
+<testcase name="accusativeDeclensionExplanationPrecedesTheNounChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.097">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:accusativeDeclensionExplanationPrecedesTheNounChoice(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: accusativeDeclensionExplanationPrecedesTheNounChoice
+]]></system-out>
+</testcase>
+<testcase name="auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.089">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.ContentAuditCorrectionTest]/[test:auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement(dev.russiancompanion.v2.ContentAuditCorrectionTest)]
+display-name: auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]
+display-name: JUnit Vintage
+]]></system-out>
+</testsuite>
