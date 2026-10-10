@@ -4268,8 +4268,16 @@ internal object V2Validator {
             errors += observableDistinctionErrors(pack, item)
         } else {
             val phrase = TARGET_PHRASES[feature]
-            if (feature.isBlank() || phrase == null || !item.prompt.contains(phrase)) {
+            // A meaning check must not reveal its English answer in the question.
+            // Keep this alternative limited to the three source-bound Unit 16 prepositions.
+            val prepositionMeaningTarget = item.objectiveId == "obj-u16-inst-prep" &&
+                feature in setOf("OVER_LABEL", "UNDER_LABEL", "BEFORE_LABEL") &&
+                item.prompt == "Which English spatial meaning fits the shown preposition?"
+            if (feature.isBlank() || phrase == null || (!item.prompt.contains(phrase) && !prepositionMeaningTarget)) {
                 errors += "Item ${item.id} has no explicit target"
+            }
+            if (item.objectiveId == "obj-u16-inst-prep" && item.prompt.contains(item.answer, ignoreCase = true)) {
+                errors += "Item ${item.id} prompt discloses the preposition meaning"
             }
             if (phrase != null && !assessment.whyAnswerDemonstratesObjective.contains(phrase)) {
                 errors += "Item ${item.id} answer rationale is not tied to the target"
@@ -4545,7 +4553,8 @@ internal object V2Validator {
                 }
             }
             val governedUnit = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
-            if (governedUnit in 6..15 || governedUnit in 21..30 || item.objectiveId in BATCH_A_OBJECTIVES) {
+            if (governedUnit in 6..15 || governedUnit in 21..30 || item.objectiveId in BATCH_A_OBJECTIVES ||
+                item.objectiveId == "obj-u16-inst-prep") {
                 errors += structureValid(pack, item)
             }
         }

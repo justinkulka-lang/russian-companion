@@ -285,7 +285,7 @@ class UnitReviewPipelineTest {
 
         val listed = ProcessBuilder(listOf("git", "ls-files", "*.pdf", "*.PDF"))
             .directory(repo())
-            .redirectError(ProcessBuilder.Redirect.DISCARD)
+            .redirectError(File(if (System.getProperty("os.name").startsWith("Windows", ignoreCase = true)) "NUL" else "/dev/null"))
             .start()
             .let { process ->
                 val text = process.inputStream.bufferedReader().readText()
@@ -305,7 +305,7 @@ class UnitReviewPipelineTest {
         val root = repo()
         val head = ProcessBuilder("git", "rev-parse", "HEAD")
             .directory(root)
-            .redirectError(ProcessBuilder.Redirect.DISCARD)
+            .redirectError(File(if (System.getProperty("os.name").startsWith("Windows", ignoreCase = true)) "NUL" else "/dev/null"))
             .start()
             .let { process ->
                 val text = process.inputStream.bufferedReader().readText().trim()

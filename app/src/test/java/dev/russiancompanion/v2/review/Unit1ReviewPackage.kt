@@ -1951,7 +1951,7 @@ internal fun curriculumSourceCommitErrors(recorded: String, repositoryRoot: File
 private fun gitOutput(root: File, vararg args: String): String? {
     val process = ProcessBuilder(listOf("git") + args)
         .directory(root)
-        .redirectError(ProcessBuilder.Redirect.DISCARD)
+        .redirectError(File(if (System.getProperty("os.name").startsWith("Windows", ignoreCase = true)) "NUL" else "/dev/null"))
         .start()
     val text = process.inputStream.bufferedReader().readText()
     return if (process.waitFor() == 0) text else null
@@ -1960,8 +1960,8 @@ private fun gitOutput(root: File, vararg args: String): String? {
 private fun gitExit(root: File, vararg args: String): Int {
     val process = ProcessBuilder(listOf("git") + args)
         .directory(root)
-        .redirectOutput(ProcessBuilder.Redirect.DISCARD)
-        .redirectError(ProcessBuilder.Redirect.DISCARD)
+        .redirectOutput(File(if (System.getProperty("os.name").startsWith("Windows", ignoreCase = true)) "NUL" else "/dev/null"))
+        .redirectError(File(if (System.getProperty("os.name").startsWith("Windows", ignoreCase = true)) "NUL" else "/dev/null"))
         .start()
     return process.waitFor()
 }
