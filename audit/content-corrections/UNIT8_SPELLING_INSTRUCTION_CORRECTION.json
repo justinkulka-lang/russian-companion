@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "previousHead": "8547d99246ee5eeaaebd965f26a5ceab90217f07",
+  "unitNumber": 8,
+  "objectiveId": "obj-u8-spelling",
+  "disposition": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+  "beforeCurriculumFileSha256": "d0c62b1166c2bbece8cd45e7c18e87c974274db5c1debc3b5b17a27cc8ad6d49",
+  "afterCurriculumFileSha256": "114f519d3c6d1a748073c1558af6a86cb18fdc9bc0d1742f6247f6988d019d7f",
+  "addedProvenanceIds": [
+    "prov-ca-u8-worked-teach-1-body",
+    "prov-ca-u8-worked-teach-1-title",
+    "prov-ca-u8-worked-teach-2-body",
+    "prov-ca-u8-worked-teach-2-title",
+    "prov-ca-u8-worked-teach-3-body",
+    "prov-ca-u8-worked-teach-3-title",
+    "prov-ca-u8-worked-teach-4-body",
+    "prov-ca-u8-worked-teach-4-title",
+    "prov-ca-u8-worked-teach-5-body",
+    "prov-ca-u8-worked-teach-5-title",
+    "prov-ca-u8-worked-objective-title",
+    "prov-ca-u8-worked-rem-body",
+    "prov-ca-u8-worked-rem-title",
+    "prov-ca-u8-worked-guided-body",
+    "prov-ca-u8-worked-check-body",
+    "prov-ca-u8-worked-noun-feature",
+    "prov-ca-u8-worked-adjective-feature"
+  ],
+  "retainedRecordIds": [
+    "prov-ex-u8-spelling-0-ru",
+    "prov-ex-or-u8-spelling-1",
+    "prov-ex-or-u8-spelling-2",
+    "prov-ex-or-u8-spelling-3",
+    "prov-ex-or-u8-spelling-4",
+    "prov-ex-or-u8-spelling-5",
+    "prov-ex-or-u8-spelling-6",
+    "prov-ca-8-324"
+  ],
+  "changedItemIds": [
+    "u8-g-spelling-0",
+    "u8-i-spelling-1",
+    "u8-i-spelling-2",
+    "u8-i-spelling-3",
+    "u8-i-spelling-4"
+  ],
+  "bibliography": "Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.",
+  "scope": "Existing spelling-session instruction, titles, complete remediation; objective/session title; five tested-feature labels only. Keys, Russian forms, source relations and advancement unchanged."
+}

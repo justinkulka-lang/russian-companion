@@ -262,6 +262,69 @@ class ContentAuditCorrectionTest {
     }
 
     @Test
+    fun unitEightTeachingWorksTheNounPluralAndSeparatesOtherPatterns() {
+        val pack = pack()
+        val unit = pack.unit(8)!!
+        val session = unit.sessions.single { it.id == "u8-s-spelling" }
+        val text = session.steps.takeWhile { it.kind != "GUIDED" }.joinToString("\n") { it.body }
+        assertEquals(5, session.steps.takeWhile { it.kind != "GUIDED" }.count { it.kind == "TEACH" })
+        assertTrue(text.contains("After г, к, х, ж, ч, ш, or щ, write и rather than ы"))
+        assertTrue(text.contains("кни́га becomes кни́ги"))
+        assertTrue(text.contains("stem ends in г"))
+        assertTrue(text.contains("хоро́шее is neuter singular nominative; хоро́шие is plural nominative"))
+        assertTrue(text.contains("хоро́ший is the dictionary form: masculine singular nominative"))
+        assertTrue(text.contains("дни is also plural nominative and means days"))
+        assertTrue(text.contains("и does not follow a letter in the seven-letter set"))
+        assertTrue(text.contains("Not every plural ending in и comes from the seven-letter rule"))
+        assertTrue(text.contains("All these options are correctly spelled"))
+        assertEquals(18, unit.advancement!!.minimumDistinctChecks)
+    }
+
+    @Test
+    fun unitEightChecksAssessNominativeFormsAndRetainCompleteRemediation() {
+        val pack = pack()
+        val ids = listOf("u8-g-spelling-0", "u8-i-spelling-1", "u8-i-spelling-2", "u8-i-spelling-3", "u8-i-spelling-4")
+        val answers = listOf("кни́ги", "кни́га", "хоро́шие", "хоро́шее", "хоро́ший")
+        ids.forEachIndexed { index, id ->
+            val item = pack.item(id)!!
+            assertEquals(if (index < 2) "NOUN_NOMINATIVE_NUMBER_FORM" else "ADJECTIVE_NOMINATIVE_FORM", item.assessment!!.testedFeature)
+            assertEquals(answers[index], item.answer)
+            assertEquals("SAME_LEMMA_DIFFERENT_FIELD", item.assessment!!.relationKind)
+            assertEquals(index != 0, item.assessment!!.independent)
+        }
+        val unit = pack.unit(8)!!
+        val session = unit.sessions.single { it.id == "u8-s-spelling" }
+        val remediation = session.steps.single { it.kind == "REMEDIATE" }
+        assertTrue(session.steps.filter { it.kind == "TEACH" }.all { remediation.body.contains(it.body) })
+        assertEquals(unit.objectives.single { it.id == "obj-u8-spelling" }.exampleIds, remediation.exampleIds)
+        assertEquals(7, remediation.exampleIds.size)
+        assertTrue(session.steps.filter { it.kind == "GUIDED" || it.kind == "CHECK" }.all { it.remediationStepId == remediation.id })
+    }
+
+    @Test
+    fun unitEightExplanationCoverageStaysPendingAndRejectsTamperedHashes() {
+        val pack = pack()
+        val records = pack.provenanceRecords.filter { it.itemId.startsWith("prov-ca-u8-worked-") }
+        assertEquals(17, records.size)
+        records.forEach { record ->
+            assertContentAuditResearch(record)
+            assertEquals(8, record.unitNumber)
+            assertEquals("obj-u8-spelling", record.objectiveId)
+            assertTrue(record.synthesis!!.bibliography.contains("https://russian.cornell.edu/grammar/html/spelling_rules.htm"))
+            (listOf("prov-ex-u8-spelling-0-ru", "prov-ca-8-324") + (1..6).map { "prov-ex-or-u8-spelling-$it" }).forEach { id ->
+                assertTrue(record.synthesis!!.bibliography.contains(id))
+                assertTrue("Unresolved retained record $id", pack.provenanceRecords.any { it.itemId == id })
+            }
+        }
+        val valid = V2Validator.validate(pack)
+        assertTrue(valid.errors.joinToString("\n"), valid.ok)
+        val bad = pack.copy(provenanceRecords = pack.provenanceRecords.map {
+            if (it.itemId != records.first().itemId) it else it.copy(contentHash = "0".repeat(64))
+        })
+        assertTrue(V2Validator.validate(bad).errors.any { it.contains(records.first().itemId) && it.contains("source hash") })
+    }
+
+    @Test
     fun negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm() {
         val pack = pack()
         val unit = pack.unit(24)!!
@@ -371,7 +434,7 @@ class ContentAuditCorrectionTest {
             val objective = pack.unit(number)!!.objectives.single {
                 teach.id in it.instructionStepIds && remediation.id in it.remediationStepIds
             }
-            if (number == 7 && topic == "spelling") assertTrue(remediation.body.contains(teach.body))
+            if (number in listOf(7, 8) && topic == "spelling") assertTrue(remediation.body.contains(teach.body))
             else assertEquals(remediation.id, teach.body, remediation.body)
             assertTrue("Missing exact objective-bound coverage for ${remediation.id}", pack.provenanceRecords.any {
                 it.unitNumber == number && it.objectiveId == objective.id && it.shippedText == remediation.body
