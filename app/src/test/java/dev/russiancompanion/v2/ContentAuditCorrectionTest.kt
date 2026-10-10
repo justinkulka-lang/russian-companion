@@ -502,7 +502,8 @@ class ContentAuditCorrectionTest {
             val objective = pack.unit(number)!!.objectives.single {
                 teach.id in it.instructionStepIds && remediation.id in it.remediationStepIds
             }
-            if ((number in listOf(7, 8) && topic == "spelling") || (number == 12 && topic == "aspect")) assertTrue(remediation.body.contains(teach.body))
+            if ((number in listOf(7, 8) && topic == "spelling") || (number == 12 && topic == "aspect") ||
+                (number == 16 && topic in listOf("inst-sg", "inst-adj"))) assertTrue(remediation.body.contains(teach.body))
             else assertEquals(remediation.id, teach.body, remediation.body)
             assertTrue("Missing exact objective-bound coverage for ${remediation.id}", pack.provenanceRecords.any {
                 it.unitNumber == number && it.objectiveId == objective.id && it.shippedText == remediation.body

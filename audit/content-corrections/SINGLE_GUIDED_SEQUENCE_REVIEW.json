@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "curriculumFileSha256": "0688beb5c58b6f84302ea955295082f87b26d91513f24472cbc2c13bca5e6f9b",
-  "candidateCount": 130,
+  "curriculumFileSha256": "5c0f88bc08065ce7aa7e03e992f3f46cc7381ee9fb9413f95f5c9aefcd34bebc",
+  "candidateCount": 129,
   "affectedUnits": [
     3,
     4,
@@ -852,23 +852,6 @@
       "laterTeachingStepIds": [
         "u15-st-teach-aspect-consolidate-2",
         "u15-st-teach-aspect-consolidate-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 16,
-      "sessionId": "u16-s-inst-pl",
-      "guidedStepId": "u16-st-guided-inst-pl-1",
-      "guidedItemIds": [
-        "u16-g-inst-pl-0"
-      ],
-      "laterTeachingStepIds": [
-        "u16-st-teach-inst-pl-2",
-        "u16-st-teach-inst-pl-3",
-        "u16-st-teach-inst-pl-4",
-        "u16-st-teach-inst-pl-5",
-        "u16-st-teach-inst-pl-6",
-        "u16-st-teach-inst-pl-7"
       ],
       "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
     },
