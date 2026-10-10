@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "d0c62b1166c2bbece8cd45e7c18e87c974274db5c1debc3b5b17a27cc8ad6d49",
+    "curriculumFileSha256": "114f519d3c6d1a748073c1558af6a86cb18fdc9bc0d1742f6247f6988d019d7f",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -5245,13 +5245,16 @@
       "contentKind": "steps",
       "reportedIssue": "Add и not ы lacks its seven-letter stem condition.",
       "proposedCorrection": "State the relevant г, к, х, ж, ч, ш, щ condition and its application to the taught forms.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "body",
+        "title"
+      ],
       "currentObject": {
         "id": "u8-st-teach-spelling-2",
         "kind": "TEACH",
-        "title": "Admitted instruction",
-        "body": "After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.",
+        "title": "The seven-letter spelling rule",
+        "body": "After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.",
         "dominantAction": "Continue",
         "referenceIds": [
           "ref-u610-attribution"
@@ -5267,7 +5270,7 @@
         {
           "id": "obj-u8-spelling",
           "unitNumber": 8,
-          "title": "Identify the admitted plural spelling",
+          "title": "Recognize nominative forms and plural spelling",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u8-st-orient",
@@ -5325,8 +5328,8 @@
           "step": {
             "id": "u8-st-teach-spelling-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "хорошее письмо — good letter. хоро́ший — good. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "Singular and plural forms",
+            "body": "Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -5347,8 +5350,8 @@
           "step": {
             "id": "u8-st-teach-spelling-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.",
+            "title": "The seven-letter spelling rule",
+            "body": "After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -5366,8 +5369,8 @@
           "step": {
             "id": "u8-st-teach-spelling-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "хоро́шие — good. кни́га — book. ",
+            "title": "A worked noun plural",
+            "body": "For these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -5388,8 +5391,8 @@
           "step": {
             "id": "u8-st-teach-spelling-4",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "кни́ги — book. дни — day. ",
+            "title": "Two plural forms, different patterns",
+            "body": "кни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -5410,8 +5413,8 @@
           "step": {
             "id": "u8-st-teach-spelling-5",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "хоро́шее — good. ",
+            "title": "Adjective number and dictionary form",
+            "body": "хоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u610-attribution"
@@ -5432,7 +5435,7 @@
             "id": "u8-st-guided-spelling-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Choose the requested singular or plural nominative form. Then read why the other form does not fit.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [
@@ -5450,14 +5453,19 @@
           "step": {
             "id": "u8-st-rem-spelling",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.",
+            "title": "Review nominative forms and spelling",
+            "body": "Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.\n\nAfter г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.\n\nFor these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.\n\nкни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.\n\nхоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
             "exampleIds": [
               "ex-u8-spelling-0",
-              "ex-or-u8-spelling-1"
+              "ex-or-u8-spelling-1",
+              "ex-or-u8-spelling-2",
+              "ex-or-u8-spelling-3",
+              "ex-or-u8-spelling-4",
+              "ex-or-u8-spelling-5",
+              "ex-or-u8-spelling-6"
             ],
             "unavailableReason": null,
             "bookDirection": null,

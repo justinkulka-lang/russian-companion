@@ -399,7 +399,15 @@ class Units2630StructuralMappingTest {
         assertEquals("", listed.trim())
         val curriculum = File(root, "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(curriculum.contains("The New Penguin Russian Course"))
-        assertFalse(curriculum.contains(".pdf"))
+        // Bibliographic metadata does not redistribute the referenced PDF.
+        // Learner-facing PDF references and assets are also rejected by the source-intake test.
+        val cornellReference = "https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf"
+        assertFalse(curriculum.replace(cornellReference, "").contains(".pdf"))
+        assertTrue(pack.provenanceRecords.filter { it.originalSourceText.contains(cornellReference) }.all {
+            ((it.itemId.startsWith("prov-ca-u6-worked-") && it.unitNumber == 6 && it.objectiveId == "obj-u6-possessive") ||
+                (it.itemId.startsWith("prov-ca-u7-worked-") && it.unitNumber == 7 && it.objectiveId == "obj-u7-spelling")) &&
+                it.sourceId == "src-content-audit-research"
+        })
         assertEquals(0, pack.admissions.penguinProseAssets)
         assertEquals(0, pack.admissions.generatedRussianWords)
         val proposal = File(root, "docs/governance/UNITS_26_30_AUTHORITY_VARIANCE_PROPOSAL.md").readText()

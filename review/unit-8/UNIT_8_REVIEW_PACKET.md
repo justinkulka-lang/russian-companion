@@ -11,12 +11,12 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: f904cd3adfdeb619481fe84dd43c6bcb3b0bd707
-- Unit content-review SHA-256: f4c77518183534d708ac27cb97b075d1ca50277822d571ea9d611197aac74b1f
+- Curriculum source commit: ef657761cffddb102c342654a931496c9c73ffe7
+- Unit content-review SHA-256: 1becf268113474664067b55e5e98f7bcd8e7566e7910f6562f09ddb23f032f0a
 - Mapping-package SHA-256: 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1
-- Pack content-review SHA-256: 1116d26be8202a6eaee67b7b556f879e0c4f5bc3961feb9f42f8ea5a8195063f
-- Review-package SHA-256: 3b331cf7c190414b733921c9e0285d88111b37dfd2805b1e2c763b686e994378
-- Repository source SHA-256: d44fab5b5167a8291d6daff1b4192ff46a8fd95a22c12881115654ce39b501ba
+- Pack content-review SHA-256: 555fbcbd77a23501113743497f9bada68803de5528891ccc56b57c55459ce7f8
+- Review-package SHA-256: 31f8994d20918ebd2d22c9e32ffa6cdfc57b28b6f0a473bb2ea5bd1c92201647
+- Repository source SHA-256: 8362076c2fd14b48091ab98aa58351e6f1f7655f600b85fefc371aa0d8ba66d9
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -132,9 +132,9 @@ remediation=u8-st-rem-plural
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 626a941515f473e43e8ff54b586b4ee0bb6ab8d02b48393e635c128fb50a91ce
+- Content hash: 39a721d1f831daf41eff26389062acf0824d27010e2e532ca6322186c471ac2a
 
-title=Identify the admitted plural spelling
+title=Recognize nominative forms and plural spelling
 kind=RECOGNITION
 unitNumber=8
 instruction=u8-st-orient,u8-st-teach-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3,u8-st-teach-spelling-4,u8-st-teach-spelling-5
@@ -521,9 +521,9 @@ remediationStepId=u8-st-rem-plural
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a8bcfbf48fc24e351a4752f74a1e43ae812e9c9d2057bb0a6cd3c7a2365538cc
+- Content hash: fb6f5cd080ff9537ecf09aba0d94652c3385b03bada87e5cc6c5077fccda2e30
 
-title=Identify the admitted plural spelling
+title=Recognize nominative forms and plural spelling
 estimatedMinutes=12
 objectives=obj-u8-spelling
 steps=u8-st-teach-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3,u8-st-teach-spelling-4,u8-st-teach-spelling-5,u8-st-guided-spelling-1,u8-st-rem-spelling,u8-st-check-spelling
@@ -536,11 +536,11 @@ steps=u8-st-teach-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3,u8-st
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8fd94ecf5887876c3a9328879ad0c3b6774bfb79bc2715e6a0395611f09a3122
+- Content hash: 43846172be817f78b64b99e32da38ec246497773c73447ac90c1e13a28a4d894
 
 kind=TEACH
-title=Admitted lines
-body=хорошее письмо — good letter. хоро́ший — good. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Singular and plural forms
+body=Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -558,11 +558,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c71587070be68d3289b188951e1dc37aa4c46f6e94a9ee53c48d1570db3f0640
+- Content hash: c7041944af2d3ca5551e8ef93a06ce9fa7be14ebbdb12582387d5a771611d49b
 
 kind=TEACH
-title=Admitted instruction
-body=After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+title=The seven-letter spelling rule
+body=After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -580,11 +580,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b0c92f39defe4918f84a731890ae0a770b279e6ebbd08137be1f79018237fefc
+- Content hash: bcb0a9be317f23bedebe65536de1278b2b556a8f55e16b96d33ef49c87a16e8e
 
 kind=TEACH
-title=Admitted lines
-body=хоро́шие — good. кни́га — book. 
+title=A worked noun plural
+body=For these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -602,11 +602,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9222e3d9aef92816cd8f48c375fa61b3f7e1c4eb55e64049f0c664827dccb9ae
+- Content hash: 3e85d1f7b9833e0ffc0e14d7468bb80eaa7906d20f179fc2a92a1be185d0f15a
 
 kind=TEACH
-title=Admitted lines
-body=кни́ги — book. дни — day. 
+title=Two plural forms, different patterns
+body=кни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -624,11 +624,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2d32c3cfb5df49fb11a9fb172378957f12d552c380752112d41e46b6fd212a29
+- Content hash: dd1488e0da99264fefce874ed9f32c2926f4314a69a1073bedfa36bc6483cf94
 
 kind=TEACH
-title=Admitted lines
-body=хоро́шее — good. 
+title=Adjective number and dictionary form
+body=хоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -646,11 +646,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 881e79f48a861dbbc56188f498846248f41968ec99a13d7bbdd90e729363422d
+- Content hash: 5cbd7120f61c9682d24dce297e5ff60b46fced994eed17f84a98175d6359e7a3
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Choose the requested singular or plural nominative form. Then read why the other form does not fit.
 dominantAction=Continue
 references=
 items=u8-g-spelling-0
@@ -668,15 +668,23 @@ remediationStepId=u8-st-rem-spelling
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5fd6ec07ae85dd4a48eaebf9688142d0bc6aba5434bdcef8fc66f079e4e3c57a
+- Content hash: bf79e1c662b9bcfb9c8a8922e62b4155c86906b34f1252f3cf22b21d18d74ed8
 
 kind=REMEDIATE
-title=Remediation
-body=After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+title=Review nominative forms and spelling
+body=Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.
+
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.
+
+For these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.
+
+кни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.
+
+хоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.
 dominantAction=Continue
 references=
 items=
-examples=ex-u8-spelling-0,ex-or-u8-spelling-1
+examples=ex-u8-spelling-0,ex-or-u8-spelling-1,ex-or-u8-spelling-2,ex-or-u8-spelling-3,ex-or-u8-spelling-4,ex-or-u8-spelling-5,ex-or-u8-spelling-6
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -690,11 +698,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 55d823bca13affca9612cd08e46a1ecfd4ba61d36f1d67df8fb0cd7666f3154d
+- Content hash: c2f0b1dfbf88790d1e2b926ca2037ed0230d8045e8cf0cd7f90cb3501b97d22f
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Choose the requested noun or adjective nominative form. A missed check returns to the explanations and examples.
 dominantAction=Continue
 references=
 items=u8-i-spelling-1,u8-i-spelling-2,u8-i-spelling-3,u8-i-spelling-4
@@ -2158,7 +2166,7 @@ relationParticipantIds=prov-ex-or-u8-plural-0 | prov-ex-or-u8-plural-1 | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 89115bedbcdb0f9c58acbbe062b3341f4b60b29e844e8dbaf2251506848e30a5
+- Content hash: 8687c633a00dad961a665fee789e5344c0dfc6b8ac76773d7d4c35f9c8387103
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -2171,7 +2179,7 @@ objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | кни́га is the singular nominative form, so it does not supply the requested plural nominative form.
-testedFeature=PLURAL_SPELLING
+testedFeature=NOUN_NOMINATIVE_NUMBER_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-0
 cueLanguage=ru
@@ -2498,7 +2506,7 @@ relationParticipantIds=prov-ex-or-u8-plural-4 | prov-ex-or-u8-plural-5 | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2fd31709268f209537c97e92ce13130f643e103a58d66b39ced33660d1176a36
+- Content hash: 2789204042f0864e071939f8519b2c2386e061093d418a08e0144b4f5b78c11f
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -2511,7 +2519,7 @@ objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | кни́ги is the plural nominative form, so it does not supply the requested singular nominative form.
-testedFeature=PLURAL_SPELLING
+testedFeature=NOUN_NOMINATIVE_NUMBER_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-1
 cueLanguage=ru
@@ -2532,7 +2540,7 @@ relationParticipantIds=prov-ex-or-u8-spelling-4 | prov-ex-or-u8-spelling-3 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 194053018346cb34dc015bfac1f88e0f2239fed574c1160f85ecf4ec71e80c59
+- Content hash: 2cfe480bb4c613f98a63ac257d172542bebd3c7140e32d285fb4ce40ef9ca3e2
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -2545,7 +2553,7 @@ objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form.
-testedFeature=PLURAL_SPELLING
+testedFeature=ADJECTIVE_NOMINATIVE_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-2
 cueLanguage=ru
@@ -2566,7 +2574,7 @@ relationParticipantIds=prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-2 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2fd2f16c285fe8c1acb0d8754d4108f45bccb01e939f7a5a1ed27f56ac300a9f
+- Content hash: 8fc580a4600f377816c6e6e07f7202054d74aec5a54a9bb09914252b0cd41a56
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -2579,7 +2587,7 @@ objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form.
-testedFeature=PLURAL_SPELLING
+testedFeature=ADJECTIVE_NOMINATIVE_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-3
 cueLanguage=ru
@@ -2600,7 +2608,7 @@ relationParticipantIds=prov-ex-or-u8-spelling-2 | prov-ex-or-u8-spelling-6 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4e37a5cac163e32542c7bea81aecb15372300ccabf01714d0058fce02e4a8a96
+- Content hash: cc41252bafa322e645aedbe453e601b18b13707cb4b5b2d14feb6fe36130411a
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -2613,7 +2621,7 @@ objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 distractorRationales= | хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form.
-testedFeature=PLURAL_SPELLING
+testedFeature=ADJECTIVE_NOMINATIVE_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-4
 cueLanguage=ru
@@ -4744,6 +4752,532 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=2359c20c6ef86fb2404e96b2e1c5c6de27cd108a072d6472039740fe2ca7369e
 contentHash=34edd732b8317165d3ca0a0e7a44f87572460756491e6bfcabcc599684922056
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-adjective-feature`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d052e3ca10240a46a6c84af9fb76397c1a4acc4cce10691ef5ce1d5979e0906
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:adjective-feature
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+ADJECTIVE_NOMINATIVE_FORM
+shippedText=ADJECTIVE_NOMINATIVE_FORM
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=03ebb496509046dd5e3d6e53c525f664265ab98559f140cdacee5fb4cdc2f809
+contentHash=eef3ac3332364c33e64121a97d481c1147eb015a82797fca89b0d1c5df615d9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-check-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61e97f0a23bf7b907256ac19b98b52c3a432a1d09129d64cd97c26d1dd908df9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:check-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Choose the requested noun or adjective nominative form. A missed check returns to the explanations and examples.
+shippedText=Choose the requested noun or adjective nominative form. A missed check returns to the explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58eb845264845a7ca997ac366cdd9de15626a04660ac117d5ecfe5b6b417ba79
+contentHash=22a97c8fec395e332f5004d1c8c4a5db2be21d90792c6c3280628fddf48bb11c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-guided-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1e7726daad5bc3f487014bb779962cc1b56c14eb9ded8f9b0a3feccd9dacd3e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:guided-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Choose the requested singular or plural nominative form. Then read why the other form does not fit.
+shippedText=Choose the requested singular or plural nominative form. Then read why the other form does not fit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d22e73af502328465f3a294ee8984bf8509fab603e79f77d4ecc2c7c03cb38ff
+contentHash=81d2400e584449c92ead65e43f24d66d2a2b3f6532f139164f83e299bfac8523
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-noun-feature`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea14189b74a1b1fd69df8e106b799c873fa6926ab8e3d168336f392bf740d936
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:noun-feature
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+NOUN_NOMINATIVE_NUMBER_FORM
+shippedText=NOUN_NOMINATIVE_NUMBER_FORM
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d9fe4737e57322c493462f85e9cf6ca59bb0e5368fb046ea3ebac817bd5676e9
+contentHash=792363e8ee9816e459ec4edfdc1444d1942271dd4b40da4e6f1ef573954bcaac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-objective-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c00481cb05921c80ed57c78fedae4f0dff4e0db307ab63d62ebaaa3387a89c9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:objective-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Recognize nominative forms and plural spelling
+shippedText=Recognize nominative forms and plural spelling
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b6f10337da17db01802492dc5cf9afeb9c38ac3b8f1ca89e3d5b7ac90af67a7f
+contentHash=b6865f67aa195628ab67ba26405911b06c263fefc731e6d43a89082fab0c5680
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-rem-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: de99f154fc60d68f357cfdabf1eaaecfabcee7e40f9de7eb54ab1d682baece5d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:rem-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.
+
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.
+
+For these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.
+
+кни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.
+
+хоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.
+shippedText=Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.
+
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.
+
+For these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.
+
+кни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.
+
+хоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e067528bfe4b4635c24627a13c43a92d61184a8eab273f4bb43b913eb3735d2f
+contentHash=aa6862bba3bda1335ee6504c631ec8d75d1f63bdf0e56e4e6f07608e7471579c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-rem-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48457f2f5c51d0fa1938fdc71b0143714f196a443206bd2edb32cfbd15a07f00
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:rem-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Review nominative forms and spelling
+shippedText=Review nominative forms and spelling
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=03578b8b1be352ca8aebbc5afc43c181baf2c0c153ec41e57f463d5b0df82648
+contentHash=d2bf55cf1c7651783a80751b532286ca91c6c191226507406bef89ed13a746bd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-1-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a986b0b9f4c80c047ba0b75e21ea8df57a378355ca7f698b9a4068e04f1ae011
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-1-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.
+shippedText=Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3b97a20beae03dd3af4ccb8c7bb94e10477ffde3c95f152cd85747dbee8677f3
+contentHash=7b035403e82b2138bda9d5bdf229839bf333015e765f02852209d4c80b648ba1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-1-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1d206ead0e9ed28a9a31aa67f9d1b19094cb7df9b8590ba7f92252c86c9be04
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-1-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Singular and plural forms
+shippedText=Singular and plural forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=108b3bb48fdfb118968d157c44aec21bd6bd166e582e134eed0e859a2dda6ee8
+contentHash=7ef0f8783ed67a48ac377435b2dd5d46eb30d39344c3d636a5fefab92c2f3660
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-2-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff6e47d6b5e878265fa626138affe26ecb4c3ba65c170dd7b0ea46f7429e2bd2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-2-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.
+shippedText=After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=abb2c10f7db1299677eb5724ed6357d67643ece6393112568bf36d9ca2b6f066
+contentHash=a0fd6bee82a447edba32e8396154742d54e1cd6863694930fe1cfcd920621ca7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-2-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d8205237f3b03d3e6b5451e037feb487297eef0bb4e517703c32dfcd9b77dc17
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-2-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+The seven-letter spelling rule
+shippedText=The seven-letter spelling rule
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=266be24ba05d0a0e7c5cce5b8b6d853a51df6eec9dd4ecc9a4f91366953727ac
+contentHash=91becfa09c99f7efebbd8cbefec62dfdebbdf4506c2f6bc8f34c0b5318b116dc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-3-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 264834b8499091112e35067993a210729b091c4f3b2b1452b05828c7dfb5378e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-3-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+For these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.
+shippedText=For these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb4148ca585f601dbf997402d9433bba6e22850a96844f0787348ba6777a02c9
+contentHash=41f8cd774b7e30784c944a06fd73ac8ab81569b1a2f42e3a9acf4cc7977594ce
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-3-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33d2d47dca22f8ad475078c37320aa3ee44a2f0e56850789631b3adec8c21a13
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-3-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+A worked noun plural
+shippedText=A worked noun plural
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0653856a4c0fee4a30c5be2675000a7cd7806e4af08e3afbf20ae1bc5b877d10
+contentHash=3cbfc2e15f1b292eb59c5c1ba723e39d8d51a5121f6270eadc4ae6a73ab89172
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-4-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5c88a08fc6ee1dfb089aa9f9c22033e73961f46127e61735eb63873625fd2a1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-4-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+кни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.
+shippedText=кни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9b8feaa93afe69b4220a3fc96ed40de999b3dc6428ee930431bf299e060748d7
+contentHash=8faf6c59ebcea4fde7beeef995497e8455a87d5f7c1b93d01f643dad39f56b7d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-4-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 707442fd3bc9ec52b50665becd840a3d5d961f1818cef3b831a71f10b07cd586
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-4-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Two plural forms, different patterns
+shippedText=Two plural forms, different patterns
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4a1420f8014f011f2b9fb597dc0554171c71f07aed50b481213959868c192e9c
+contentHash=39ae1dfe97fc51d984cccbe8aec8ac13aa9335123ffe4f78d7a841ec6af4545f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-5-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c09539612666e1e452880bcb9e8089c4f7bca913cfa190527442a68513e525d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-5-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+хоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.
+shippedText=хоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa1729e72e74b480b1f3d11ae9bd4e16e9bcb98c4613ef78aa9ce7b356b28be2
+contentHash=27f6cad87b9e5e2dc0a6634eec84d115cc36929b7f3c6cc4ff9aa67c127f1c36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-5-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8daa2e5067efb9a1fdacb8b99e2269661a2ad8d8620f84a02925f70aac836c79
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-5-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Adjective number and dictionary form
+shippedText=Adjective number and dictionary form
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=35909441b304d87259b7bc28c9741fbb56a1a9e0cf3b970d6a92b0ae73d87fdb
+contentHash=2c936cbc34245a8f07488b3bd3d9ece2f32adbb4916c8fffd9cf94b1230c027f
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -8581,6 +9115,11 @@ permitsAppUse=true
 - `u8-st-guided-spelling-1` ITEM `u8-g-spelling-0`
 - `u8-st-rem-spelling` EXAMPLE `ex-u8-spelling-0`
 - `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-1`
+- `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-2`
+- `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-3`
+- `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-4`
+- `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-5`
+- `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-6`
 - `u8-st-check-spelling` REMEDIATION `u8-st-rem-spelling`
 - `u8-st-check-spelling` ITEM `u8-i-spelling-1`
 - `u8-st-check-spelling` ITEM `u8-i-spelling-2`
@@ -8710,6 +9249,23 @@ permitsAppUse=true
 - `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-4-0`
 - `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-4-1`
 - `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-4-3`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-adjective-feature`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-check-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-guided-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-noun-feature`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-objective-title`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-rem-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-rem-title`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-1-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-1-title`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-2-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-2-title`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-3-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-3-title`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-4-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-4-title`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-5-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-5-title`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-2`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-2-gloss`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-3`

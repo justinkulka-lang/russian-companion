@@ -1,6 +1,6 @@
 # Single-guided session sequence-review candidates
 
-Curriculum file SHA-256: `d0c62b1166c2bbece8cd45e7c18e87c974274db5c1debc3b5b17a27cc8ad6d49`.
+Curriculum file SHA-256: `114f519d3c6d1a748073c1558af6a86cb18fdc9bc0d1742f6247f6988d019d7f`.
 
 **130 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
 

@@ -1,0 +1,3 @@
+Added Unit 8 form explanations; 17 pending coverage records; keys and Russian forms unchanged
+Already repaired; retained evidence unchanged
+PASS: exact repair reproduction and byte-identical second run; JSON indentation reduced without further semantic changes

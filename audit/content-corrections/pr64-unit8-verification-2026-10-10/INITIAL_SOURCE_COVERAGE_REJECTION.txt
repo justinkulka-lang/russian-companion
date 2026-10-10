@@ -1,0 +1,7 @@
+
+Exception in thread "main" java.lang.IllegalStateException: Russian text has no admitted source record: а
+Russian text has no admitted source record: н,
+Russian text has no admitted source record: а
+Russian text has no admitted source record: н,
+	at dev.russiancompanion.v2.review.RegenerateAllKt.main(RegenerateAll.kt:11)
+
