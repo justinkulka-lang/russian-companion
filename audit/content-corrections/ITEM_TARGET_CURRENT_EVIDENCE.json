@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "114f519d3c6d1a748073c1558af6a86cb18fdc9bc0d1742f6247f6988d019d7f",
+    "curriculumFileSha256": "0688beb5c58b6f84302ea955295082f87b26d91513f24472cbc2c13bca5e6f9b",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -7366,13 +7366,16 @@
       "contentKind": "steps",
       "reportedIssue": "Every verb has two words overstates aspect pairing.",
       "proposedCorrection": "Say many verbs have contextual aspect counterparts, with bounded examples and later exceptions.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "body",
+        "title"
+      ],
       "currentObject": {
         "id": "u12-st-teach-aspect-2",
         "kind": "TEACH",
-        "title": "Admitted instruction",
-        "body": "Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.",
+        "title": "The saying and telling pair",
+        "body": "Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.",
         "dominantAction": "Continue",
         "referenceIds": [
           "ref-u1115-attribution"
@@ -7388,7 +7391,7 @@
         {
           "id": "obj-u12-aspect",
           "unitNumber": 12,
-          "title": "Choose the admitted aspect partner",
+          "title": "Recognize the two taught aspect pairs",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u12-st-orient",
@@ -7439,8 +7442,8 @@
           "step": {
             "id": "u12-st-teach-aspect-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "говори́ть — to speak. сказа́ть — to speak. ",
+            "title": "Aspect and time",
+            "body": "Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1115-attribution"
@@ -7461,8 +7464,8 @@
           "step": {
             "id": "u12-st-teach-aspect-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.",
+            "title": "The saying and telling pair",
+            "body": "Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1115-attribution"
@@ -7480,8 +7483,8 @@
           "step": {
             "id": "u12-st-teach-aspect-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "де́лать — to do. сде́лать — to do. ",
+            "title": "A worked doing and making pair",
+            "body": "де́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1115-attribution"
@@ -7503,7 +7506,7 @@
             "id": "u12-st-guided-aspect-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Choose the counterpart from the saying/telling pair. Then compare its aspect and meaning with the other option.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [
@@ -7521,8 +7524,8 @@
           "step": {
             "id": "u12-st-rem-aspect",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.",
+            "title": "Review the two aspect pairs",
+            "body": "Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.\n\nMany Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.\n\nде́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-ca-aspect"
@@ -7530,7 +7533,9 @@
             "itemIds": [],
             "exampleIds": [
               "ex-u12-aspect-0",
-              "ex-u12-aspect-1"
+              "ex-u12-aspect-1",
+              "ex-u12-aspect-2",
+              "ex-u12-aspect-3"
             ],
             "unavailableReason": null,
             "bookDirection": null,

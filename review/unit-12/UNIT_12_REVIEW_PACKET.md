@@ -11,12 +11,12 @@ Unit 12 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: ef657761cffddb102c342654a931496c9c73ffe7
-- Unit content-review SHA-256: e742be35e87a478befba9e7e01b7d2e47aba98af3e2e4a4b6948ed6f0974fada
+- Curriculum source commit: d9e5c39d50f0cb028b0ab6e71e17ef897123691b
+- Unit content-review SHA-256: 5d36c3dea6b2217a568c338cf1a8d2d05a67132d1b21c9652cd1356ad34458f5
 - Mapping-package SHA-256: 0747489371acaab80787db42f08f6d4f5479e6186a2c9415052df484324e37d3
-- Pack content-review SHA-256: 555fbcbd77a23501113743497f9bada68803de5528891ccc56b57c55459ce7f8
-- Review-package SHA-256: 67dd133c88be8f103e5cc546d7a0fb8db20e12aa27837c15af844be8519fcd6e
-- Repository source SHA-256: 8362076c2fd14b48091ab98aa58351e6f1f7655f600b85fefc371aa0d8ba66d9
+- Pack content-review SHA-256: dc4fa632972b09818a9661179b94d682679fea502445d7079d6991b4d5412ff9
+- Review-package SHA-256: ffea1d03de2e013e4a58aee79ccf2ae5f047df6b62df80c8336140bdeb28f095
+- Repository source SHA-256: 83f9c52beb2ecb06eb82e0fb14de1824ce39fe69992c9eba12444106bed40121
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -151,9 +151,9 @@ remediation=u12-st-rem-future-perf
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3e78f93db42f6a520b7357c6acc0721cfe38b9f8b27312ded160c4c8c158aec0
+- Content hash: da1a0b06d27bd1a03eba5fb3df2125687354b79e7219dba8edf2d818c92c327e
 
-title=Choose the admitted aspect partner
+title=Recognize the two taught aspect pairs
 kind=RECOGNITION
 unitNumber=12
 instruction=u12-st-orient,u12-st-teach-aspect-1,u12-st-teach-aspect-2,u12-st-teach-aspect-3
@@ -599,9 +599,9 @@ remediationStepId=u12-st-rem-future-perf
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bc18524f6368859759c4005a461273f3cb9f3bada93d3f85d16f4e9e73283907
+- Content hash: a3956c99af60fe4a8b3cf0a1c9eaf35bc68ecc8bbecd24adc2c9861f34e00a09
 
-title=Choose the admitted aspect partner
+title=Recognize the two taught aspect pairs
 estimatedMinutes=12
 objectives=obj-u12-aspect
 steps=u12-st-teach-aspect-1,u12-st-teach-aspect-2,u12-st-teach-aspect-3,u12-st-guided-aspect-1,u12-st-rem-aspect,u12-st-check-aspect
@@ -614,11 +614,11 @@ steps=u12-st-teach-aspect-1,u12-st-teach-aspect-2,u12-st-teach-aspect-3,u12-st-g
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9cec20ef943069bb220d4dd5093e7f365e3b39b3cc07a77b8a55acac85f36b04
+- Content hash: 207bdd051cae9336dc389f42a7cb561e433376af9b5d33324aadec5f1f2d80ed
 
 kind=TEACH
-title=Admitted lines
-body=говори́ть — to speak. сказа́ть — to speak. 
+title=Aspect and time
+body=Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -636,11 +636,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 682204d2f02bc47252f6521b33aad0ba07ab6b5d7aefc8a95643650c9053d668
+- Content hash: 0d040dbf05fec8f26a88661585039280bdd3c0afb759640cd60e48e2d3f6f844
 
 kind=TEACH
-title=Admitted instruction
-body=Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.
+title=The saying and telling pair
+body=Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -658,11 +658,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a07b890f364cb45d6b42b7aca996a21610c3122f1cd4d5b16767561ec419926a
+- Content hash: d81c05d12e91853b8a60fd70af95a17496b6c815e5f4b10741e3a9699475f544
 
 kind=TEACH
-title=Admitted lines
-body=де́лать — to do. сде́лать — to do. 
+title=A worked doing and making pair
+body=де́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -680,11 +680,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c356b7f1bc6cbb23f23a568b317f8fe0b5010c515154db4a787c291c13a5d5f5
+- Content hash: 10227ba91623dbe273a1a65462cf05ba2786adde79d2a4d7c9ae3f1df5e1492d
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Choose the counterpart from the saying/telling pair. Then compare its aspect and meaning with the other option.
 dominantAction=Continue
 references=
 items=u12-g-aspect-0
@@ -702,15 +702,19 @@ remediationStepId=u12-st-rem-aspect
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2d1519b214c3c1d12e99fe913584485e44d39cfe3da4f6198e057852ec4440ae
+- Content hash: 9159677e6209ff7fef324811f5e838e5b9fb57e05f4bd88f9f406b3cc718a336
 
 kind=REMEDIATE
-title=Remediation
-body=Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.
+title=Review the two aspect pairs
+body=Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.
+
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.
+
+де́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.
 dominantAction=Continue
 references=ref-ca-aspect
 items=
-examples=ex-u12-aspect-0,ex-u12-aspect-1
+examples=ex-u12-aspect-0,ex-u12-aspect-1,ex-u12-aspect-2,ex-u12-aspect-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -724,11 +728,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 878557fe7c93343dc1a54c157cd2c8292f1eca1a52b9dfe16c755cd0bc7b6e00
+- Content hash: 38ff45cfc754e7564e0802aaed0b9307f48a51171ba070948e860ddd6a650e45
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Recognize the two taught aspect pairs. A missed check returns to the explanations and examples.
 dominantAction=Continue
 references=
 items=u12-i-aspect-1,u12-i-aspect-2
@@ -2131,19 +2135,19 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 187f2552b396b043f55c1042ba0cb70318bd463c5e1df57e9ce566253ca50e41
+- Content hash: 18bb9352c7a0ed76b9a4847d917805418851abbe180b83d80345e7a6bb92de61
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the perfective partner?
+prompt=For the saying/telling pair shown here, which verb is the perfective partner?
 promptLetter=говори́ть
 options=сказа́ть | де́лать
 answer=сказа́ть
-feedback=Does this answer show the perfective partner? сказа́ть.
+feedback=сказа́ть is the perfective partner of говори́ть in the saying/telling pair shown here.
 objectiveId=obj-u12-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the perfective partner?
+distractorRationales= | де́лать is imperfective and concerns doing/making, not this saying/telling partner.
 testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-aspect-0
@@ -2151,8 +2155,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u12-aspect-1-ru
 distractorSourceIds= | prov-ex-u12-aspect-2-ru
-distractorDifference= | Does this row fail the perfective partner?
-whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
+distractorDifference= | де́лать is imperfective and concerns doing/making, not this saying/telling partner.
+whyAnswerDemonstratesObjective=сказа́ть is the perfective partner of говори́ть in the saying/telling pair shown here.
 contrastMembers=сказа́ть | де́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-aspect-0-ru | prov-ex-u12-aspect-1-ru | prov-ex-u12-aspect-2-ru
@@ -2411,19 +2415,19 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 979dc875897371c79d1e0946ae0d17e80621501d1e74b029ee17ed0fad9ae532
+- Content hash: 27eab2cd53ad76cc07d88b203ad22be4e97887ce4a1ab5114746a680bc144da3
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the imperfective partner?
+prompt=For the saying/telling pair shown here, which verb is the imperfective partner?
 promptLetter=сказа́ть
 options=говори́ть | сде́лать
 answer=говори́ть
-feedback=Does this answer show the imperfective partner? говори́ть.
+feedback=говори́ть is the imperfective partner of сказа́ть in the saying/telling pair shown here.
 objectiveId=obj-u12-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the imperfective partner?
+distractorRationales= | сде́лать is perfective and concerns doing/making, not this saying/telling partner.
 testedFeature=IMPERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-aspect-1
@@ -2431,8 +2435,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u12-aspect-0-ru
 distractorSourceIds= | prov-ex-u12-aspect-3-ru
-distractorDifference= | Does this row fail the imperfective partner?
-whyAnswerDemonstratesObjective=Does this answer show the imperfective partner?
+distractorDifference= | сде́лать is perfective and concerns doing/making, not this saying/telling partner.
+whyAnswerDemonstratesObjective=говори́ть is the imperfective partner of сказа́ть in the saying/telling pair shown here.
 contrastMembers=говори́ть | сде́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-aspect-1-ru | prov-ex-u12-aspect-0-ru | prov-ex-u12-aspect-3-ru
@@ -2446,19 +2450,19 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e9b09fc299397cff6fe8022d3046615461cddba38fae65ec7bc5771b818118ad
+- Content hash: b556374004db8287086d4ed936161405134e2321290fe98a5f8a1db65143dd54
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the perfective partner?
+prompt=For the doing/making pair shown here, which verb is the perfective partner?
 promptLetter=де́лать
 options=сде́лать | говори́ть
 answer=сде́лать
-feedback=Does this answer show the perfective partner? сде́лать.
+feedback=сде́лать is the perfective partner of де́лать in the doing/making pair shown here.
 objectiveId=obj-u12-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the perfective partner?
+distractorRationales= | говори́ть is imperfective and concerns speaking/saying, not this doing/making partner.
 testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-aspect-2
@@ -2466,8 +2470,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u12-aspect-3-ru
 distractorSourceIds= | prov-ex-u12-aspect-0-ru
-distractorDifference= | Does this row fail the perfective partner?
-whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
+distractorDifference= | говори́ть is imperfective and concerns speaking/saying, not this doing/making partner.
+whyAnswerDemonstratesObjective=сде́лать is the perfective partner of де́лать in the doing/making pair shown here.
 contrastMembers=сде́лать | говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-aspect-2-ru | prov-ex-u12-aspect-3-ru | prov-ex-u12-aspect-0-ru
@@ -3193,6 +3197,614 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=477e42e4d1a0a7531a248233b77a10fb0dad059f4c936a1342f85fb2437145d9
 contentHash=27a9b993e49a778d14f09347fd6f66be61a33535d6eac1aaae71196d01b07450
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-check-body`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: afe084a70827f1d6685a856628a43ed1c2bc7658cd5be5ab8004e6e9370098c4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:check-body
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Recognize the two taught aspect pairs. A missed check returns to the explanations and examples.
+shippedText=Recognize the two taught aspect pairs. A missed check returns to the explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ca952ac7b398040f3da4d1db1d9cc2bc439b1eb2611192282a9524ae6c04ca79
+contentHash=4646e65f86d1096b7f275f634c67d29f689e05227559cc9ec6cebf0fc485b8b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-guided-body`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c3d53785e1ac6412ddf2a5d9d26534ad0e8f0b16b070e987144ec10a5c7beff
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:guided-body
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Choose the counterpart from the saying/telling pair. Then compare its aspect and meaning with the other option.
+shippedText=Choose the counterpart from the saying/telling pair. Then compare its aspect and meaning with the other option.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=83fea5dbee5907d2f86ff6eb2325a590c982f64cd58daabb9572d896aa70e47d
+contentHash=71f1a3dc13d023e45dc858142f3dc2a855ee67c65a2498e61d573150ba220f2e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-objective-title`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e8d57f2eea94c4b9e9840e76e960730363c8611eb627dd6ed0719ae9aab40147
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:objective-title
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Recognize the two taught aspect pairs
+shippedText=Recognize the two taught aspect pairs
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a0d30c95948f43d647fbb321b5b4311a370f01c161276c3ffcde55042ae17db
+contentHash=2571ea9b85b3a4daebffd2746629d62c6b18971259e051ace0ed0275f7479d91
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-rem-body`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 905bdabf31ea7bf2de5edba2edba04780e5b47d2d677046fff54f82321baef2e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:rem-body
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.
+
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.
+
+де́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.
+shippedText=Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.
+
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.
+
+де́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6e65666450481dd7e7444025f8bd23c8b7754a779a16d5ca0541654821b6274c
+contentHash=656b97a08b07f439b6609b7b80e1367ac363c77261af9cea43174d496c444719
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-rem-title`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e489253b78c912c199a173a3d0ec4e96c4eab957d232560d0107caee60edd821
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:rem-title
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Review the two aspect pairs
+shippedText=Review the two aspect pairs
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8eef80be31574cee16419eef35cc31915c91b4eb0c34ba41680601e0977223f1
+contentHash=da15237e365ba08f59474e623a956f6aa774b7fa3f86810668ea56386434efac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-teach-1-body`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4317e9a3ba47e1ea0590411128a6aa87aa0d917844ad5de5fa3b242481fa4937
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:teach-1-body
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.
+shippedText=Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=33ae34fa833c515fa0a10b0866348bbe70280676aa132e369c28ba03e581dcdc
+contentHash=0846b9e4c649e0078e9b03f87dc3662ea78f1befa2f8232209a8f66e9d541e60
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-teach-1-title`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f38d526506e45163f6c822516612615b0e3111c9bcdc2ce8f5e32d686fd7cddc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:teach-1-title
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Aspect and time
+shippedText=Aspect and time
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dcf76e05469b449942efe7d730e41ee8f7d928717073d7bd969390c3ca5f72a7
+contentHash=20631f88fe8e6cc227fb07229e512c3c295c900dd9d02b7b320a0d131e910889
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-teach-2-body`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 251225281a69baa161952389d8fe79c4e301f94383560379347b36536dcd7d08
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:teach-2-body
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.
+shippedText=Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=998cd09a44ad41240ae5a14fd7be3339adecd51b59130f3c349618230dfdbb84
+contentHash=390411581ba322a192646152d426eb1916ec6b767e62768edb546a4a35f124fa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-teach-2-title`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff7accfc28118bd9e9292bd89031c3b90d67d966fbd34fb587b54816d9d2711d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:teach-2-title
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+The saying and telling pair
+shippedText=The saying and telling pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=45560d883126f529d8bf663d4d216afc990fc1a09fd6ce052a7785dd509d7292
+contentHash=8e75ca06599f175d7674c4b836278186afe504938838ab11489f1261abf17b93
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-teach-3-body`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31f33f4ebfa56d5e26398df1042f505f6fccfc4a628fd35bacc9ab78adac3e89
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:teach-3-body
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+де́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.
+shippedText=де́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=389ea0abf2c381834db7af15be81397d50c38d4025680437f52de7823abd3ad3
+contentHash=ead32a9e67366d28da0608931b975538c3c886722a883223db89129557f0c793
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-teach-3-title`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40b76b4b3951d3c7d7c3ebdba594d6cadd7145c3d8a70cdd5d629daca4496dab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:teach-3-title
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+A worked doing and making pair
+shippedText=A worked doing and making pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3b077abe9554a66e8af0ae4ee9487cb44869c54cc78f1f1ced723d7d2fb596c4
+contentHash=146c37f4e8bddda19b9c9f43108706bb49fff76d60bd8ef84afb3a3af53ff547
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-g-aspect-0-distractor`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 427f6d1fd74352a597b1eb04e7386ec95f70091b0d7d9a86c8e749093fe32ee8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-g-aspect-0-distractor
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+де́лать is imperfective and concerns doing/making, not this saying/telling partner.
+shippedText=де́лать is imperfective and concerns doing/making, not this saying/telling partner.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=62ce59db8ed382d23edfd4e0e72859aa1484731b6ea32459a4c8089197e4eb85
+contentHash=11f565e79af27987553373c133b8b6557c11dc95d6e2329f17cc75956eb4e800
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-g-aspect-0-feedback`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8e448a422862267e2e1a95c1172e5cb231a633667d0cfe9764c415c72f30d065
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-g-aspect-0-feedback
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+сказа́ть is the perfective partner of говори́ть in the saying/telling pair shown here.
+shippedText=сказа́ть is the perfective partner of говори́ть in the saying/telling pair shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cae377bd7e32db44857b4e415522606ca6eb0c46b3531cdb6e505f21a2daec84
+contentHash=c3e7720d8a4f4061e75a88b65dabf71673eb46777b84703def6534575bac3f1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-g-aspect-0-prompt`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0414ea0f14b72e506e18b43dafd4128975056362599282b2986a3ce97e96c468
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-g-aspect-0-prompt
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+For the saying/telling pair shown here, which verb is the perfective partner?
+shippedText=For the saying/telling pair shown here, which verb is the perfective partner?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb359933228e554b3f0e5fc12f659c467ed815627af7c729ea14199834cf873b
+contentHash=1a988c2edb6a5fb762217fab5da28853d0cbbeae531ea74a649a687f36781eec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-i-aspect-1-distractor`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1d8d633e808b447593f8053393ed52f77bbc3a2b55bcea89a8001dc5d14e016
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-i-aspect-1-distractor
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+сде́лать is perfective and concerns doing/making, not this saying/telling partner.
+shippedText=сде́лать is perfective and concerns doing/making, not this saying/telling partner.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8c6fb2e093fb9ffc222857e3b6ad448d19dd6807ab73f4f5483f43ca0225ecd6
+contentHash=2ba921018c14a4dd3a3bb76bd5de76920c524afaf7662ea07ee8a5fab092e3fe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-i-aspect-1-feedback`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb12d82225a9d1bdf62f212f0b5fc9f83c4aad14ed4a8789bfd0436969cc0b4d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-i-aspect-1-feedback
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+говори́ть is the imperfective partner of сказа́ть in the saying/telling pair shown here.
+shippedText=говори́ть is the imperfective partner of сказа́ть in the saying/telling pair shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2811699cdc38ec4a92d7554f2b3b79787f6e1cab204425fffbe3adcdf78b0e8a
+contentHash=83e9879a97b233ed5958f3ffaedf8578fe158f720e650c2253eb8b55709cb151
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-i-aspect-1-prompt`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21f81b31ea0ffa5a7761d309c097c5645ccb69ee3dfe0a39900d94b05378ee30
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-i-aspect-1-prompt
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+For the saying/telling pair shown here, which verb is the imperfective partner?
+shippedText=For the saying/telling pair shown here, which verb is the imperfective partner?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b1ccb182c72d7fb6ff726a80b53439d388cde0a6564817edeaf0a8857e1a47af
+contentHash=71d868740e888e4cceed0c8b66e3ebbe86b4dc999a1680a6af47a40c060abef1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-i-aspect-2-distractor`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7395eafbb76d10a51181f3ca23a511ea494c43a65f4793e6e076615890555db8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-i-aspect-2-distractor
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+говори́ть is imperfective and concerns speaking/saying, not this doing/making partner.
+shippedText=говори́ть is imperfective and concerns speaking/saying, not this doing/making partner.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=71e3db5e910c908ce73adbb3e202ca5682a27d7b2dc96ed9bf747770964e31dc
+contentHash=39c80e6943e296d15f1b9405d96adea90e09c42dd5eeee578e94ef286244ad57
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-i-aspect-2-feedback`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa30491588b696357a2b267c39e8cda5b249a3c97cc88d2d322d60efd1b18d64
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-i-aspect-2-feedback
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+сде́лать is the perfective partner of де́лать in the doing/making pair shown here.
+shippedText=сде́лать is the perfective partner of де́лать in the doing/making pair shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ac1812d577e37995306aca9db26828a07cb117ba9fe75ebf829189c01deb333b
+contentHash=2b9dd065f1a4cff8e7b3f1671467261a9f44ccda0a847c3d07a7990532232f0a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-i-aspect-2-prompt`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0feff9714895cc1b2cf5cecff80ff4cf547a0c79ea23242572c01406b2b3be72
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-i-aspect-2-prompt
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+For the doing/making pair shown here, which verb is the perfective partner?
+shippedText=For the doing/making pair shown here, which verb is the perfective partner?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8420276839dac58dd74171876b0c91c36c828654cbb42507acd6354d663a7035
+contentHash=60c0ae42dee1b8d4064b5359d2266bfae518e05d92bad6d1ccde692fb52d9f72
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6988,6 +7600,8 @@ permitsAppUse=true
 - `u12-st-guided-aspect-1` ITEM `u12-g-aspect-0`
 - `u12-st-rem-aspect` EXAMPLE `ex-u12-aspect-0`
 - `u12-st-rem-aspect` EXAMPLE `ex-u12-aspect-1`
+- `u12-st-rem-aspect` EXAMPLE `ex-u12-aspect-2`
+- `u12-st-rem-aspect` EXAMPLE `ex-u12-aspect-3`
 - `u12-st-rem-aspect` REFERENCE `ref-ca-aspect`
 - `u12-st-check-aspect` REMEDIATION `u12-st-rem-aspect`
 - `u12-st-check-aspect` ITEM `u12-i-aspect-1`
@@ -7074,6 +7688,26 @@ permitsAppUse=true
 - `obj-u12-aspect` PROVENANCE `prov-ca-12-372`
 - `obj-u12-aspect` PROVENANCE `prov-ca-12-373`
 - `obj-u12-future-imp` PROVENANCE `prov-ca-12-630`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-check-body`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-guided-body`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-objective-title`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-rem-body`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-rem-title`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-teach-1-body`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-teach-1-title`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-teach-2-body`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-teach-2-title`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-teach-3-body`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-teach-3-title`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-g-aspect-0-distractor`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-g-aspect-0-feedback`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-g-aspect-0-prompt`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-i-aspect-1-distractor`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-i-aspect-1-feedback`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-i-aspect-1-prompt`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-i-aspect-2-distractor`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-i-aspect-2-feedback`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-i-aspect-2-prompt`
 - `obj-u12-dative` PROVENANCE `prov-ex-or-u12-dative-0`
 - `obj-u12-dative` PROVENANCE `prov-ex-or-u12-dative-0-gloss`
 - `obj-u12-dative` PROVENANCE `prov-ex-or-u12-dative-1`

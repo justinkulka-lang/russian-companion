@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Explain the retained adjective contrasts without changing keys or Russian forms."""
+"""Explain the retained aspect-pair contrasts without changing keys or Russian forms."""
 import hashlib,json
 from copy import deepcopy
 from pathlib import Path
