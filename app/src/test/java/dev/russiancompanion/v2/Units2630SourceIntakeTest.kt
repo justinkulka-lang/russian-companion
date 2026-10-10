@@ -499,7 +499,9 @@ class Units2630SourceIntakeTest {
         val cornellReference = "https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf"
         assertFalse(curriculum.replace(cornellReference, "").contains(".pdf"))
         assertTrue(pack.provenanceRecords.filter { it.originalSourceText.contains(cornellReference) }.all {
-            it.itemId.startsWith("prov-ca-u6-worked-") && it.sourceId == "src-content-audit-research"
+            ((it.itemId.startsWith("prov-ca-u6-worked-") && it.unitNumber == 6 && it.objectiveId == "obj-u6-possessive") ||
+                (it.itemId.startsWith("prov-ca-u7-worked-") && it.unitNumber == 7 && it.objectiveId == "obj-u7-spelling")) &&
+                it.sourceId == "src-content-audit-research"
         })
         assertTrue(pack.provenanceRecords.none { it.shippedText.contains(".pdf") })
         assertTrue(pack.units.flatMap { it.sessions }.flatMap { it.steps }.none { step ->

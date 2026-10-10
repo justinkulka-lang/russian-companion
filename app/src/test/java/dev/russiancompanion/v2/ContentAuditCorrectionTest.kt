@@ -194,6 +194,74 @@ class ContentAuditCorrectionTest {
     }
 
     @Test
+    fun spellingInstructionExplainsFormsBeforePracticeAndWorksTheAccusative() {
+        val pack = pack()
+        val unit = pack.unit(7)!!
+        val session = unit.sessions.single { it.id == "u7-s-spelling" }
+        val guided = session.steps.indexOfFirst { it.kind == "GUIDED" }
+        val teaching = session.steps.take(guided).filter { it.kind == "TEACH" }
+        assertEquals(4, teaching.size)
+        val text = teaching.joinToString("\n") { it.body }
+        assertTrue(text.contains("gender, number and case"))
+        assertTrue(text.contains("хоро́ший is the dictionary form: masculine singular nominative"))
+        assertTrue(text.contains("хоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative"))
+        assertTrue(text.contains("хоро́шие is plural nominative"))
+        assertTrue(text.contains("an unstressed о in an ending is written е"))
+        assertTrue(text.contains("write и rather than ы after ш"))
+        assertTrue(text.contains("хоро́шая книга becomes хоро́шую книгу"))
+        assertTrue(text.contains("change both words"))
+        assertTrue(text.contains("all the options are already correctly spelled"))
+        assertEquals(22, unit.advancement!!.minimumDistinctChecks)
+    }
+
+    @Test
+    fun spellingQuestionsNameTheActualFormEvidenceAndRemediationRetainsAllTeaching() {
+        val pack = pack()
+        listOf("u7-g-spelling-0", "u7-i-spelling-1", "u7-i-spelling-2").forEach { id ->
+            val item = pack.item(id)!!
+            assertEquals("ADJECTIVE_NOMINATIVE_FORM", item.assessment!!.testedFeature)
+            assertEquals("SAME_LEMMA_DIFFERENT_FIELD", item.assessment!!.relationKind)
+        }
+        val item = pack.item("u7-i-spelling-3")!!
+        assertEquals("FEMININE_ADJECTIVE_ACCUSATIVE", item.assessment!!.testedFeature)
+        assertTrue(item.prompt.contains("feminine singular accusative"))
+        assertTrue(item.feedback.contains("Both words change"))
+        assertEquals(item.feedback, item.assessment!!.whyAnswerDemonstratesObjective)
+        assertEquals("хоро́шая книга", item.promptLetter)
+        assertEquals("хоро́шую книгу", item.answer)
+        assertEquals(listOf("хоро́шую книгу", "хоро́шего друга", "хоро́шие книги"), item.options)
+        assertEquals(listOf("prov-ca-7-489", "prov-ca-7-490", "prov-ca-7-494", "prov-ca-7-495"), item.assessment!!.relationParticipantIds)
+        val unit = pack.unit(7)!!
+        val session = unit.sessions.single { it.id == "u7-s-spelling" }
+        val remediation = session.steps.single { it.kind == "REMEDIATE" }
+        assertTrue(session.steps.filter { it.kind == "TEACH" }.all { remediation.body.contains(it.body) })
+        assertEquals(unit.objectives.single { it.id == "obj-u7-spelling" }.exampleIds, remediation.exampleIds)
+        assertTrue(session.steps.filter { it.kind == "GUIDED" || it.kind == "CHECK" }.all { it.remediationStepId == remediation.id })
+    }
+
+    @Test
+    fun spellingExplanationRecordsResolveRetainedFormsAndStayPending() {
+        val pack = pack()
+        val records = pack.provenanceRecords.filter { it.itemId.startsWith("prov-ca-u7-worked-") }
+        assertEquals(17, records.size)
+        records.forEach { record ->
+            assertContentAuditResearch(record)
+            assertEquals(7, record.unitNumber)
+            assertEquals("obj-u7-spelling", record.objectiveId)
+            listOf("prov-ex-u7-spelling-0-ru", "prov-ex-or-u7-spelling-1", "prov-ex-or-u7-spelling-2", "prov-ex-or-u7-spelling-3", "prov-ex-or-u7-spelling-4", "prov-ca-7-489", "prov-ca-7-490", "prov-ca-7-494", "prov-ca-7-495").forEach { id ->
+                assertTrue(record.synthesis!!.bibliography.contains(id))
+                assertTrue("Unresolved retained record $id", pack.provenanceRecords.any { it.itemId == id })
+            }
+        }
+        val valid = V2Validator.validate(pack)
+        assertTrue(valid.errors.joinToString("\n"), valid.ok)
+        val bad = pack.copy(provenanceRecords = pack.provenanceRecords.map {
+            if (it.itemId != records.first().itemId) it else it.copy(contentHash = "0".repeat(64))
+        })
+        assertTrue(V2Validator.validate(bad).errors.any { it.contains(records.first().itemId) && it.contains("source hash") })
+    }
+
+    @Test
     fun negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm() {
         val pack = pack()
         val unit = pack.unit(24)!!
@@ -303,7 +371,8 @@ class ContentAuditCorrectionTest {
             val objective = pack.unit(number)!!.objectives.single {
                 teach.id in it.instructionStepIds && remediation.id in it.remediationStepIds
             }
-            assertEquals(remediation.id, teach.body, remediation.body)
+            if (number == 7 && topic == "spelling") assertTrue(remediation.body.contains(teach.body))
+            else assertEquals(remediation.id, teach.body, remediation.body)
             assertTrue("Missing exact objective-bound coverage for ${remediation.id}", pack.provenanceRecords.any {
                 it.unitNumber == number && it.objectiveId == objective.id && it.shippedText == remediation.body
             })
