@@ -1,0 +1,4 @@
+PASS: only three Unit 19 conditional/obligation/likelihood lessons, their objective titles, complete remediation and nine item English explanation fields change
+PASS: all teaching precedes guided practice; all identities, keys, options, cues, examples, source relations and advancement preserved
+PASS: all other units and original source/rights/provenance records unchanged; exactly 73 pending evidence records; no new Russian token
+PASS: exact asset and ledger reproduction; idempotence, verified in an isolated copy of the repository during the host run.

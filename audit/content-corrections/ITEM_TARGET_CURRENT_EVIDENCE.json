@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "248c6713c9b637903f47b1f9ccd39c7ddf25a7c4f23b56afc3a93675591c8a87",
+    "curriculumFileSha256": "1c76b1add7e9a893ead6c6aba0053552ccb8af06aaefc8e8239bb285d186411b",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -10969,8 +10969,12 @@
       "contentKind": "items",
       "reportedIssue": "Speaker-gender classification and semantic gloss can both be true.",
       "proposedCorrection": "Ask specifically for gender or for meaning; do not make valid information the distractor.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "assessment",
+        "distractorRationales",
+        "feedback"
+      ],
       "currentObject": {
         "id": "u19-i-conditional-2",
         "kind": "CONTRAST_SELECTION",
@@ -10983,15 +10987,15 @@
           "the sentence is about another person"
         ],
         "answer": "the speaker is marked feminine",
-        "feedback": "In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.",
+        "feedback": "Choose the speaker is marked feminine. The first-person pronoun identifies the speaker; the feminine past form marks feminine agreement.",
         "objectiveId": "obj-u19-conditional",
         "sourceId": "src-content-audit-research",
         "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
         "containsGeneratedRussian": false,
         "distractorRationales": [
           "",
-          "the speaker is marked masculine would use a masculine past form.",
-          "the sentence is about another person is not what the first-person pronoun states."
+          "the speaker is marked masculine would require masculine past agreement.",
+          "the sentence is about another person does not match the first-person pronoun."
         ],
         "assessment": {
           "testedFeature": "CONDITIONAL_FEMININE_SPEAKER",
@@ -11009,10 +11013,10 @@
           ],
           "distractorDifference": [
             "",
-            "the speaker is marked masculine would use a masculine past form.",
-            "the sentence is about another person is not what the first-person pronoun states."
+            "the speaker is marked masculine would require masculine past agreement.",
+            "the sentence is about another person does not match the first-person pronoun."
           ],
-          "whyAnswerDemonstratesObjective": "In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.",
+          "whyAnswerDemonstratesObjective": "In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.\nChoose the speaker is marked feminine. The first-person pronoun identifies the speaker; the feminine past form marks feminine agreement.",
           "contrastMembers": [
             "the speaker is marked feminine",
             "the speaker is marked masculine",
@@ -11032,7 +11036,7 @@
         {
           "id": "obj-u19-conditional",
           "unitNumber": 19,
-          "title": "Choose the admitted gloss beside the shown conditional",
+          "title": "Interpret conditional structure and speaker agreement",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u19-st-orient",
@@ -11083,8 +11087,8 @@
           "step": {
             "id": "u19-st-teach-conditional-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "я спал бы — a male speaker. я спала́ бы — a female speaker. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "The past form with a conditional particle",
+            "body": "я спал бы is used by a male speaker; я спала́ бы is used by a female speaker. These labels describe the speaker marked by the past-form agreement; they are not translations of the whole expressions. Both use the first-person pronoun, a past-form verb and the conditional particle. In this construction the past form need not report an actual past event: it can express a hypothetical situation, such as I would sleep. Context supplies the time reference.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -11103,29 +11107,10 @@
         {
           "sessionId": "u19-s-conditional",
           "step": {
-            "id": "u19-st-guided-conditional-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u19-g-conditional-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u19-st-rem-conditional"
-          }
-        },
-        {
-          "sessionId": "u19-s-conditional",
-          "step": {
             "id": "u19-st-teach-conditional-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "a male speaker",
+            "title": "Read agreement rather than an English sentence label",
+            "body": "Compare the two retained forms я спал бы and я спала́ бы. The feminine past form has a final vowel that the masculine form lacks. For the first choose a male speaker; for the second choose a female speaker. I would like to sleep is a sentence meaning, not a label identifying the gender marked by the shown past form. Speaker agreement and sentence meaning are different questions.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -11143,8 +11128,8 @@
           "step": {
             "id": "u19-st-teach-conditional-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "я бы поспа́л — I would like to sleep. я бы поспала́ — a female speaker. ",
+            "title": "A wish and a different position for the particle",
+            "body": "я бы поспа́л — I would like to sleep. я бы поспала́ has feminine speaker agreement: the speaker is marked feminine. The first-person pronoun identifies the speaker, rather than another person. These retained wish expressions have the conditional particle before the verb, whereas the earlier examples put it after the verb. It cannot begin its clause. The wish reading comes from the construction and context, not from translating every conditional particle as would like. These choices do not demonstrate independently forming a conditional sentence or an aspect choice.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u1620-attribution"
@@ -11163,16 +11148,37 @@
         {
           "sessionId": "u19-s-conditional",
           "step": {
+            "id": "u19-st-guided-conditional-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the shown form and select the requested English speaker description using the agreement explained above. A missed check returns to the complete explanation and examples.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u19-g-conditional-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u19-st-rem-conditional"
+          }
+        },
+        {
+          "sessionId": "u19-s-conditional",
+          "step": {
             "id": "u19-st-rem-conditional",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "a male speaker",
+            "title": "Review the complete contrast",
+            "body": "я спал бы is used by a male speaker; я спала́ бы is used by a female speaker. These labels describe the speaker marked by the past-form agreement; they are not translations of the whole expressions. Both use the first-person pronoun, a past-form verb and the conditional particle. In this construction the past form need not report an actual past event: it can express a hypothetical situation, such as I would sleep. Context supplies the time reference.\n\nCompare the two retained forms я спал бы and я спала́ бы. The feminine past form has a final vowel that the masculine form lacks. For the first choose a male speaker; for the second choose a female speaker. I would like to sleep is a sentence meaning, not a label identifying the gender marked by the shown past form. Speaker agreement and sentence meaning are different questions.\n\nя бы поспа́л — I would like to sleep. я бы поспала́ has feminine speaker agreement: the speaker is marked feminine. The first-person pronoun identifies the speaker, rather than another person. These retained wish expressions have the conditional particle before the verb, whereas the earlier examples put it after the verb. It cannot begin its clause. The wish reading comes from the construction and context, not from translating every conditional particle as would like. These choices do not demonstrate independently forming a conditional sentence or an aspect choice.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
             "exampleIds": [
               "ex-u19-conditional-0",
-              "ex-u19-conditional-1"
+              "ex-u19-conditional-1",
+              "ex-u19-conditional-2",
+              "ex-u19-conditional-3"
             ],
             "unavailableReason": null,
             "bookDirection": null,
@@ -11186,7 +11192,7 @@
             "id": "u19-st-check-conditional",
             "kind": "CHECK",
             "title": "Independent checks",
-            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "body": "Read the shown form and select the requested English speaker description using the agreement explained above. A missed check returns to the complete explanation and examples.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [

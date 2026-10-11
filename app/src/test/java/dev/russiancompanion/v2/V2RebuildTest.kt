@@ -1,6 +1,9 @@
 package dev.russiancompanion.v2
 
 import android.content.Context
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonPrimitive
+import kotlinx.serialization.json.jsonObject
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.getBoundsInRoot
 import androidx.compose.ui.test.getUnclippedBoundsInRoot
@@ -531,9 +534,10 @@ class V2RebuildTest {
         assertEquals("rev-pending-v2-curriculum", pack.linguisticReview.id)
         assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", pack.linguisticReview.status)
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
-        assertTrue(seed.contains("\"packId\": \"v2-curriculum-foundation\""))
-        assertTrue(seed.contains("\"packVersion\": 3"))
-        assertTrue(seed.contains("\"id\": \"rev-pending-v2-curriculum\""))
+        val identity = Json.parseToJsonElement(seed).jsonObject
+        assertEquals(JsonPrimitive("v2-curriculum-foundation"), identity["packId"])
+        assertEquals(JsonPrimitive(3), identity["packVersion"])
+        assertEquals(JsonPrimitive("rev-pending-v2-curriculum"), identity["linguisticReview"]!!.jsonObject["id"])
         assertFalse(seed.contains("v2-units-1-2-foundation"))
         assertFalse(seed.contains("rev-pending-units-1-2"))
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(1)!!.readiness)

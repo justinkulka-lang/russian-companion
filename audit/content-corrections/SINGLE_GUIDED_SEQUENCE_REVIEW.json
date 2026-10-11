@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "curriculumFileSha256": "248c6713c9b637903f47b1f9ccd39c7ddf25a7c4f23b56afc3a93675591c8a87",
-  "candidateCount": 112,
+  "curriculumFileSha256": "1c76b1add7e9a893ead6c6aba0053552ccb8af06aaefc8e8239bb285d186411b",
+  "candidateCount": 109,
   "affectedUnits": [
     3,
     4,
@@ -862,44 +862,6 @@
       "laterTeachingStepIds": [
         "u19-st-teach-prefix-caution-2",
         "u19-st-teach-prefix-caution-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 19,
-      "sessionId": "u19-s-conditional",
-      "guidedStepId": "u19-st-guided-conditional-1",
-      "guidedItemIds": [
-        "u19-g-conditional-0"
-      ],
-      "laterTeachingStepIds": [
-        "u19-st-teach-conditional-2",
-        "u19-st-teach-conditional-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 19,
-      "sessionId": "u19-s-obligation",
-      "guidedStepId": "u19-st-guided-obligation-1",
-      "guidedItemIds": [
-        "u19-g-obligation-0"
-      ],
-      "laterTeachingStepIds": [
-        "u19-st-teach-obligation-2",
-        "u19-st-teach-obligation-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 19,
-      "sessionId": "u19-s-probability",
-      "guidedStepId": "u19-st-guided-probability-1",
-      "guidedItemIds": [
-        "u19-g-probability-0"
-      ],
-      "laterTeachingStepIds": [
-        "u19-st-teach-probability-2"
       ],
       "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
     },

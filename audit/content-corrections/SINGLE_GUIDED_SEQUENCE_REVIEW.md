@@ -1,8 +1,8 @@
 # Single-guided session sequence-review candidates
 
-Curriculum file SHA-256: `248c6713c9b637903f47b1f9ccd39c7ddf25a7c4f23b56afc3a93675591c8a87`.
+Curriculum file SHA-256: `1c76b1add7e9a893ead6c6aba0053552ccb8af06aaefc8e8239bb285d186411b`.
 
-**112 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
+**109 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
 
 The Unit 24 absence session and Unit 25 courtesy session no longer have this ordering flag. Their implemented corrections remain pending final semantic audit. This inventory does not close CA009/CA010 or approve any other session.
 
@@ -65,9 +65,6 @@ The Unit 24 absence session and Unit 25 courtesy session no longer have this ord
 | 15 | `u15-s-say-request` | `u15-st-guided-say-request-1` | `u15-st-teach-say-request-2`, `u15-st-teach-say-request-3`, `u15-st-teach-say-request-4` |
 | 15 | `u15-s-aspect-consolidate` | `u15-st-guided-aspect-consolidate-1` | `u15-st-teach-aspect-consolidate-2`, `u15-st-teach-aspect-consolidate-3` |
 | 19 | `u19-s-prefix-caution` | `u19-st-guided-prefix-caution-1` | `u19-st-teach-prefix-caution-2`, `u19-st-teach-prefix-caution-3` |
-| 19 | `u19-s-conditional` | `u19-st-guided-conditional-1` | `u19-st-teach-conditional-2`, `u19-st-teach-conditional-3` |
-| 19 | `u19-s-obligation` | `u19-st-guided-obligation-1` | `u19-st-teach-obligation-2`, `u19-st-teach-obligation-3` |
-| 19 | `u19-s-probability` | `u19-st-guided-probability-1` | `u19-st-teach-probability-2` |
 | 20 | `u20-s-motion` | `u20-st-guided-motion-1` | `u20-st-teach-motion-2`, `u20-st-teach-motion-3`, `u20-st-teach-motion-4`, `u20-st-teach-motion-5` |
 | 21 | `u21-s-svoy` | `u21-st-guided-svoy-1` | `u21-st-teach-svoy-2`, `u21-st-teach-svoy-3`, `u21-st-teach-svoy-4` |
 | 21 | `u21-s-object-reference` | `u21-st-guided-object-reference-1` | `u21-st-teach-object-reference-2` |
