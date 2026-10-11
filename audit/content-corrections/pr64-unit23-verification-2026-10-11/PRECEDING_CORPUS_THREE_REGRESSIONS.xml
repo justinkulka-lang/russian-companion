@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Vintage" tests="4" skipped="0" failures="3" errors="0" time="1.652" hostname="496774da912c" timestamp="2026-10-11T18:10:02">
+<properties>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.separator" value="/"/>
+<property name="java.class.path" value="/workspace/scratch/80cc9aca57ee/audit_work/tools/junit-platform-console-standalone-1.11.4.jar"/>
+<property name="java.class.version" value="61.0"/>
+<property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+<property name="java.io.tmpdir" value="/tmp"/>
+<property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+<property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+<property name="java.runtime.version" value="17.0.20+8-1-24.04-Ubuntu"/>
+<property name="java.specification.maintenance.version" value="1"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="17"/>
+<property name="java.vendor" value="Ubuntu"/>
+<property name="java.vendor.url" value="https://ubuntu.com/"/>
+<property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
+<property name="java.version" value="17.0.20"/>
+<property name="java.version.date" value="2026-07-21"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="17"/>
+<property name="java.vm.vendor" value="Ubuntu"/>
+<property name="java.vm.version" value="17.0.20+8-1-24.04-Ubuntu"/>
+<property name="jdk.debug" value="release"/>
+<property name="junit.docs.version" value="1.11.4"/>
+<property name="line.separator" value="&#10;"/>
+<property name="native.encoding" value="UTF-8"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Linux"/>
+<property name="os.version" value="6.18.44"/>
+<property name="path.separator" value=":"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="/workspace/scratch/80cc9aca57ee/audit_work/tools/junit-platform-console-standalone-1.11.4.jar execute --class-path /workspace/scratch/af145931b52c/current-ci/u23-baseline-host-tests.jar:/workspace/scratch/af145931b52c/host-verification/current-tests.jar:/workspace/scratch/af145931b52c/host-verification/tests.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-test-junit5-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-test-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlinx-coroutines-core-jvm-1.6.4.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-stdlib-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-compiler-embeddable-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/annotations-13.0.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-reflect-1.6.10.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/trove4j-1.0.20200330.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-daemon-embeddable-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/junit-platform-console-standalone-1.11.4.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-script-runtime-2.0.21.jar:/workspace/scratch/af145931b52c/host-tools/kotlinx-serialization-core-jvm-1.7.3.jar:/workspace/scratch/af145931b52c/host-tools/kotlin-serialization-compiler-plugin-embeddable-2.0.21.jar:/workspace/scratch/af145931b52c/host-tools/kotlinx-serialization-json-jvm-1.7.3.jar --details summary --reports-dir /workspace/scratch/af145931b52c/current-ci/u23-baseline-reports --select-class dev.russiancompanion.v2.Unit23TimeInstructionTest"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="UTF-8"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="unit23.instruction.baseline" value="/workspace/scratch/af145931b52c/current-ci/u23-baseline.json"/>
+<property name="user.dir" value="/workspace/scratch/af145931b52c/current-ci/repo"/>
+<property name="user.home" value="/root"/>
+<property name="user.language" value="en"/>
+<property name="user.name" value="root"/>
+<property name="user.timezone" value="America/New_York"/>
+</properties>
+<testcase name="eachTemporalContrastPrecedesPracticeAndReturnsInCompleteRemediation" classname="dev.russiancompanion.v2.Unit23TimeInstructionTest" time="0.078">
+<failure message="ranges expected:&lt;2&gt; but was:&lt;1&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ranges expected:<2> but was:<1>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at dev.russiancompanion.v2.Unit23TimeInstructionTest.eachTemporalContrastPrecedesPracticeAndReturnsInCompleteRemediation(Unit23TimeInstructionTest.kt:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit23TimeInstructionTest]/[test:eachTemporalContrastPrecedesPracticeAndReturnsInCompleteRemediation(dev.russiancompanion.v2.Unit23TimeInstructionTest)]
+display-name: eachTemporalContrastPrecedesPracticeAndReturnsInCompleteRemediation
+]]></system-out>
+</testcase>
+<testcase name="checkedMeaningsKeepAdmittedRelationshipsAndWrongKeysStillFail" classname="dev.russiancompanion.v2.Unit23TimeInstructionTest" time="0.16">
+<failure message="u23-g-completion-1" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: u23-g-completion-1
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at dev.russiancompanion.v2.Unit23TimeInstructionTest.checkedMeaningsKeepAdmittedRelationshipsAndWrongKeysStillFail(Unit23TimeInstructionTest.kt:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit23TimeInstructionTest]/[test:checkedMeaningsKeepAdmittedRelationshipsAndWrongKeysStillFail(dev.russiancompanion.v2.Unit23TimeInstructionTest)]
+display-name: checkedMeaningsKeepAdmittedRelationshipsAndWrongKeysStillFail
+]]></system-out>
+</testcase>
+<testcase name="intervalCaseAndCompletionAreNotConfusedWithDurationOrNoncompletion" classname="dev.russiancompanion.v2.Unit23TimeInstructionTest" time="0.088">
+<failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at dev.russiancompanion.v2.Unit23TimeInstructionTest.intervalCaseAndCompletionAreNotConfusedWithDurationOrNoncompletion(Unit23TimeInstructionTest.kt:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit23TimeInstructionTest]/[test:intervalCaseAndCompletionAreNotConfusedWithDurationOrNoncompletion(dev.russiancompanion.v2.Unit23TimeInstructionTest)]
+display-name: intervalCaseAndCompletionAreNotConfusedWithDurationOrNoncompletion
+]]></system-out>
+</testcase>
+<testcase name="omittedContinueAndEmptyStepListsHaveIdenticalTypedMeaning" classname="dev.russiancompanion.v2.Unit23TimeInstructionTest" time="1.315">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit23TimeInstructionTest]/[test:omittedContinueAndEmptyStepListsHaveIdenticalTypedMeaning(dev.russiancompanion.v2.Unit23TimeInstructionTest)]
+display-name: omittedContinueAndEmptyStepListsHaveIdenticalTypedMeaning
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]
+display-name: JUnit Vintage
+]]></system-out>
+</testsuite>

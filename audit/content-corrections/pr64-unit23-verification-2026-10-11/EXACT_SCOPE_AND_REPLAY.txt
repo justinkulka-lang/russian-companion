@@ -1,0 +1,2 @@
+PASS:81 pending additions; all original records/source hashes/rights/capabilities and mappings preserved. Only Unit23 instruction and18 English explanations change. All existing Russian cues/options/keys/prompts/relationships and other-unit content stay unchanged modulo Continue/empty-array step defaults.
+PASS exact baseline replay and idempotence in isolated reproduction; only Unit23 content digest changes; all30 mapping digests unchanged.

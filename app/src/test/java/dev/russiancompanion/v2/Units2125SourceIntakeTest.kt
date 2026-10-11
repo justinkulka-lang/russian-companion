@@ -260,10 +260,11 @@ class Units2125SourceIntakeTest {
             supplementalByOldid[page.getValue("oldid").jsonPrimitive.content] = bytes.toString(Charsets.UTF_8)
         }
         val intake = pack.provenanceRecords.filter { it.unitNumber in 21..25 }
-        val instructionSupplements = intake.filter { it.itemId.startsWith("prov-ca-u21-") || it.itemId.startsWith("prov-ca-u22-") }
+        val instructionSupplements = intake.filter { it.itemId.startsWith("prov-ca-u21-") || it.itemId.startsWith("prov-ca-u22-") || it.itemId.startsWith("prov-ca-u23-") }
         assertEquals(578, intake.size - instructionSupplements.size)
         assertEquals(75, instructionSupplements.count { it.unitNumber == 21 })
         assertEquals(116, instructionSupplements.count { it.unitNumber == 22 })
+        assertEquals(81, instructionSupplements.count { it.unitNumber == 23 })
         instructionSupplements.forEach { assertContentAuditResearch(it) }
         assertEquals(
             setOf(
