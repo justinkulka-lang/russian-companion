@@ -13,3 +13,9 @@ Single-guided sequence-review candidates decrease from 114 to 112; Unit 18 has n
 Focused host run: all 20 checks pass, including four new Unit 18 regression checks and unchanged Unit 17/source-intake coverage.
 
 All four new regression checks reject the exact preceding curriculum.
+
+Implementation ancestor: `3a03f4c735939a1c8713e174e3d511c8e88a4ec8`. All 30 packets bind this ancestor; only Unit 18 instructional digest changes; all mapping digests are preserved. Review-package digest expectations are refreshed because the implementation commit is a package input.
+
+Repository-source digest: `bc9237b659e76794e13ad70f5c3a8e68c8c68f765042fc5eb0c7ba5815720989`. Pack content-review digest: `679f391a40e56b27b5cf5ff6da94ee43f8ee8a61f8468a1ae8211c38a8520814`.
+
+All 28 final host source/review/governance checks pass. Together with the 20 focused checks, 48 checks passed across two runs. Source ancestry, all 30 generated packets, per-unit isolation, readiness, dossier, unsigned governance, later-unit digest guards and release/device gates are verified. Android CI is still pending separately.

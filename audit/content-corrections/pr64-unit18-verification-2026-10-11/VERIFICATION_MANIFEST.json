@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "dateUtc": "2026-10-11",
+  "previousHead": "1f26a6c2eb064d3b6b585c9a45612a318b18fc84",
+  "implementationCommit": "3a03f4c735939a1c8713e174e3d511c8e88a4ec8",
+  "sourceDigest": "bc9237b659e76794e13ad70f5c3a8e68c8c68f765042fc5eb0c7ba5815720989",
+  "packDigest": "679f391a40e56b27b5cf5ff6da94ee43f8ee8a61f8468a1ae8211c38a8520814",
+  "unit18Digest": "5041c377116988ac5906d4147af957b744742e28b9a3e44dd9489527648d62e3",
+  "pinFiles": [
+    "app/src/test/java/dev/russiancompanion/v2/Units2125SourceIntakeTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Units610SourceIntakeTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Aud44CorrectionTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt"
+  ],
+  "curriculumFileSha256": "248c6713c9b637903f47b1f9ccd39c7ddf25a7c4f23b56afc3a93675591c8a87",
+  "focusedHostChecksPassed": 20,
+  "bindingHostChecksPassed": 28,
+  "baselineChecksExpectedFailures": 4,
+  "boundedScope": "PASS",
+  "reproduction": "EXACT",
+  "idempotence": "PASS",
+  "semanticAcceptance": "PENDING_QUALIFIED_REVIEW",
+  "contextualGloss": "better/best pending; key unchanged",
+  "sourceAdmissionValidatorErrors": 0,
+  "runtime": "Kotlin 2.0.21; serialization 1.7.3; JUnit Platform 1.11.4; explicit Android and Room stubs",
+  "notExecuted": [
+    "Android UI",
+    "Android persistence",
+    "APK execution",
+    "physical devices"
+  ],
+  "governance": {
+    "draft": true,
+    "all30Units": "DEVELOPMENT/REVIEW_PENDING",
+    "mappingSignatures": "PENDING",
+    "candidateFrozen": false,
+    "candidateSourceCommit": null,
+    "artifact": "NOT_RECORDED",
+    "publicRelease": "NOT_APPROVED"
+  },
+  "files": {
+    "BASELINE_4_EXPECTED_FAILURES.txt": "41e8790cfd6559b58305ef1b8de060b2d673780942b7cea36d9a632d8d54e15e",
+    "BASELINE_4_EXPECTED_FAILURES.xml": "e4658692c0cf31c1357e7c0ba51ce686887a723eab2fd887b68d143c10e7540e",
+    "EXACT_SCOPE_AND_REPRODUCTION.txt": "d1ab10dad9591357d26678892f4a41f934ae0163db185160bde4749a3cfcc3d4",
+    "FOCUSED_20_PASS.txt": "aa79d4d802f0a92aff3c644dd003dc44893cf4a0b07df9c4decefc958bd70f4f",
+    "FOCUSED_20_PASS.xml": "ce3f39785f567a39762dd5e6f8d9a4ed98e8be826ce7b27c37cc6461be94abd2",
+    "INITIAL_ADMISSION_FAILURE.txt": "dd5226aa0a5c0870669a835fe8e8c5b197dbeb16708ee7e6cfbcdaeeebf075e5",
+    "INITIAL_ADMISSION_FAILURE.xml": "3dfcc740325794116d93ea51a4a4f38b426fbfc1778ec509411d92429e0a9181",
+    "PRODUCTION_VALIDATION_AND_READINESS.txt": "dd60fff0057231d178edc3d798de04203077bf9579fe19cf0612807fa8818c55",
+    "SOURCE_REVIEW_BINDING_SCOPE.txt": "98b615f39ecf741edb4d99315a6d42206368cda13506a5eb7edb42d5034deef5",
+    "SOURCE_REVIEW_GOVERNANCE_28_PASS.txt": "c11953da75ff4d2c0f70c3afedc11567db2ee491830418329be9824b4c67895d",
+    "SOURCE_REVIEW_GOVERNANCE_28_PASS.xml": "ae6192e22c161a549399c3c56785f40472c0f552efc1f3e7cfb229263a8e92c0"
+  }
+}
