@@ -15,3 +15,9 @@ Single-guided sequence-review candidates decrease from 112 to 109. Unit 19's pre
 All 25 focused host checks pass, including four new Unit 19 checks, previous Units 17/18/source-intake coverage and the corrected pure identity method.
 
 All four new regression checks reject the exact preceding curriculum.
+
+Implementation ancestor: `ea13e82d2999b79a0234f0999c9478efc17e1df5`. All 30 packets bind this ancestor; only Unit 19 instructional digest changes; all mapping digests are preserved. Review-package digest expectations are refreshed because the implementation commit is a package input.
+
+Repository-source digest: `bfc192446981a9d9b78c067d7987e2661ee31c1b67139e8dcb5f8f172419f24a`. Pack content-review digest: `6d1249456ad2dd1e06583560ffb919183443957bda2d6e2395faf30cccfe76ce`.
+
+All 28 final host source/review/governance checks pass. Together with the 25 focused checks, 53 checks passed across two runs. Authentic source ancestry, all 30 generated packages, per-unit isolation, readiness, dossier, unsigned governance, later-unit digest guards and release/device gates are verified. Full Android CI remains separate.
