@@ -1,0 +1,29 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (1):
+  JUnit Vintage:Units2125SourceIntakeTest:frozenSourceIdentityAndProvenanceSpansAreRequired
+    MethodSource [className = 'dev.russiancompanion.v2.Units2125SourceIntakeTest', methodName = 'frozenSourceIdentityAndProvenanceSpansAreRequired', methodParameterTypes = '']
+    => java.lang.AssertionError: expected:<578> but was:<769>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Units2125SourceIntakeTest.frozenSourceIdentityAndProvenanceSpansAreRequired(Units2125SourceIntakeTest.kt:263)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 246349 ms
+[        13 containers found      ]
+[         0 containers skipped    ]
+[        13 containers started    ]
+[         0 containers aborted    ]
+[        13 containers successful ]
+[         0 containers failed     ]
+[        35 tests found           ]
+[         0 tests skipped         ]
+[        35 tests started         ]
+[         0 tests aborted         ]
+[        34 tests successful      ]
+[         1 tests failed          ]
+

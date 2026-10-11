@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "previousHead": "95a170755ef2cffc9fc63378b67c452579097e46",
+  "implementationCommit": "7fe9965a25fa12819c133de63fedccb63c45b0b6",
+  "sourceDigest": "8627540f7e99303f03cbbdbcc19fbc32d5b3bdac1554eee8d6887cdc6638ec6a",
+  "packDigest": "1d7b31a6dab1e888f4ecb418fad75bdba3b0c7408392f8a3998a675c20f56bc8",
+  "unit22Digest": "9232b92c43cf3f957ad31da882d5e53e481e5df4fb99b21e824dd3674414002b",
+  "verification": "63 distinct host methods pass across final runs: 34 focused, 28 binding (including the corrected exact intake-count method), and the final post-PR53 check. Three new checks reject the exact preceding corpus. Four new checks pass on the repaired corpus. Production validation reports zero issues. Exact replay, idempotence, scope and Kotlin typed/default-omission equality pass.",
+  "initialFailures": "Metadata/date and two unadmitted live forms corrected without relaxing source rules. A test incorrectly required guided items to qualify as independent checks; its assertion now applies to independent items. The exact original intake count of578 is preserved, with75 Unit21 and116 Unit22 supplements checked separately. The first broad trial read a changing working copy and is excluded. A post53 trial rejected newly untracked evidence; staging it and rerunning the exact check passes. All trial evidence is retained.",
+  "fullAndroidCI": "Preceding95a170 runs38178019617/38178015081 were still in progress at the last read. Full Android CI at the final published Unit22 head remains to be checked; no Android UI pass is claimed by these host checks.",
+  "review": "All30 units remain development/review pending and unsigned. Candidate unfrozen/sourceCommitnull/artifactNOT_RECORDED/publicReleaseNOT_APPROVED. No qualified acceptance, merge or release."
+}

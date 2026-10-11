@@ -1,0 +1,27 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (1):
+  JUnit Vintage:PostPr53ReadinessReconciliationTest:reportMatrixMatchesTheLiveCurriculum
+    MethodSource [className = 'dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest', methodName = 'reportMatrixMatchesTheLiveCurriculum', methodParameterTypes = '']
+    => java.lang.AssertionError: entries=[(M, app/src/test/java/dev/russiancompanion/v2/audit/PostPr53ReadinessReconciliationTest.kt), (M, audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.json), (M, audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.md)] untracked=[audit/content-corrections/pr64-unit22-verification-2026-10-11/EXCLUDED_INITIAL_FOCUSED_TRIAL.txt, audit/content-corrections/pr64-unit22-verification-2026-10-11/FOCUSED_34_PASS_STALE_COUNT_FAILURE.txt, audit/content-corrections/pr64-unit22-verification-2026-10-11/FOCUSED_34_PASS_STALE_COUNT_FAILURE.xml, audit/content-corrections/pr64-unit22-verification-2026-10-11/INITIAL_GUIDED_INDEPENDENCE_ASSERTION_FAILURE.txt] diff=5fabfb0d55d4290dab0c173cd65e7623f5a8329b7ed0bbf73677073d38dd055b
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest.reportMatrixMatchesTheLiveCurriculum(PostPr53ReadinessReconciliationTest.kt:60)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 109649 ms
+[        14 containers found      ]
+[         0 containers skipped    ]
+[        14 containers started    ]
+[         0 containers aborted    ]
+[        14 containers successful ]
+[         0 containers failed     ]
+[        29 tests found           ]
+[         0 tests skipped         ]
+[        29 tests started         ]
+[         0 tests aborted         ]
+[        28 tests successful      ]
+[         1 tests failed          ]
+

@@ -14,3 +14,11 @@ Research references, consulted 2026-10-11:
 - Gramota Pismovnik, numeral usage: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pravilno-upotreblyat-chislitelnye ; https://gramota.ru/biblioteka/spravochniki/imya-chislitelnoe . These support gender and bounded collective usage; no Russian example combinations were imported.
 
 All units remain in development with review pending. Qualified signatures remain unsigned. The candidate stays unfrozen; public release is not approved. This repair is not qualified acceptance, device acceptance, merge or release.
+
+Implementation ancestor: `7fe9965a25fa12819c133de63fedccb63c45b0b6`. All 30 packets bind this ancestor; only Unit 22 instructional digest changes; all mapping digests are preserved. Review-package digest expectations are refreshed because the implementation commit is a package input.
+
+Repository-source digest: `8627540f7e99303f03cbbdbcc19fbc32d5b3bdac1554eee8d6887cdc6638ec6a`. Pack content-review digest: `1d7b31a6dab1e888f4ecb418fad75bdba3b0c7408392f8a3998a675c20f56bc8`.
+
+The broader focused run passed 34 of 35 checks and exposed a stale total of 578 intake records. The test now preserves that exact original-intake count and checks the 75 Unit21 and 116 Unit22 supplements separately; all records still undergo the original source, license, hash and unsigned-review assertions. The exact method is rerun with the binding checks.
+
+Final verification: 63 distinct host methods pass across the focused and binding runs plus the exact post-PR53 rerun. Three new checks reject the preceding corpus; four new checks pass on the repaired corpus. Production validation reports zero issues. The initial post-PR53 run rejected untracked late evidence files; after staging them, the exact check passes. Android CI remains separate.
