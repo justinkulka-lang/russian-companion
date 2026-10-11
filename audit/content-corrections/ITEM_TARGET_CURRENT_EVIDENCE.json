@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "f33d9a9806d28949e234180d5b056ccae7ac4c561735402ce9f80f264d922449",
+    "curriculumFileSha256": "f8d5f1c3a2c7878db261807f1c08bcba912fc935956c5e6a140befe5897a331c",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -10319,8 +10319,12 @@
       "contentKind": "items",
       "reportedIssue": "Idiomatic translation and literal grammatical analysis both fit the phrase.",
       "proposedCorrection": "Ask for the natural English equivalent versus an explicitly labeled literal analysis, or replace the competing correct distractor.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "assessment",
+        "distractorRationales",
+        "feedback"
+      ],
       "currentObject": {
         "id": "u17-g-age-0",
         "kind": "CONTRAST_SELECTION",
@@ -10333,15 +10337,15 @@
           "20 people asked me"
         ],
         "answer": "I am 20 years old",
-        "feedback": "мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question.",
+        "feedback": "мне двадцать лет states I am 20 years old. The person whose age is given is in the dative case; the present-time Russian construction has no expressed verb.",
         "objectiveId": "obj-u17-age",
         "sourceId": "src-content-audit-research",
         "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
         "containsGeneratedRussian": false,
         "distractorRationales": [
           "",
-          "I own 20 summers invents possession that the age construction does not state.",
-          "20 people asked me invents a different predicate."
+          "I own 20 summers invents ownership; the shown construction gives an age.",
+          "20 people asked me invents people performing an action; the shown construction gives an age."
         ],
         "assessment": {
           "testedFeature": "AGE_NATURAL_ENGLISH",
@@ -10359,10 +10363,10 @@
           ],
           "distractorDifference": [
             "",
-            "I own 20 summers invents possession that the age construction does not state.",
-            "20 people asked me invents a different predicate."
+            "I own 20 summers invents ownership; the shown construction gives an age.",
+            "20 people asked me invents people performing an action; the shown construction gives an age."
           ],
-          "whyAnswerDemonstratesObjective": "The age construction мне двадцать лет is natural English I am 20 years old.",
+          "whyAnswerDemonstratesObjective": "The age construction мне двадцать лет is natural English I am 20 years old.\nмне двадцать лет states I am 20 years old. The person whose age is given is in the dative case; the present-time Russian construction has no expressed verb.",
           "contrastMembers": [
             "I am 20 years old",
             "I own 20 summers",
@@ -10382,7 +10386,7 @@
         {
           "id": "obj-u17-age",
           "unitNumber": 17,
-          "title": "Choose the admitted gloss beside the shown age line",
+          "title": "Understand the shown age construction",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u17-st-orient",
@@ -10430,8 +10434,8 @@
           "step": {
             "id": "u17-st-teach-age-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "мне двадцать лет — I am 20 (years old). двадцать лет — 20 years. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "A person in the dative",
+            "body": "мне двадцать лет — I am 20 years old. The person whose age is stated is in the dative case: the first word means to me in a literal description. The remaining phrase counts twenty years. The present-time Russian construction has no expressed verb, whereas natural English uses am. This is an age statement, not a statement of ownership.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u17-attribution"
@@ -10450,29 +10454,10 @@
         {
           "sessionId": "u17-s-age",
           "step": {
-            "id": "u17-st-guided-age-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u17-g-age-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u17-st-rem-age"
-          }
-        },
-        {
-          "sessionId": "u17-s-age",
-          "step": {
             "id": "u17-st-teach-age-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "I am 20 (years old)",
+            "title": "Work the whole phrase and the quantity",
+            "body": "Compare мне двадцать лет with двадцать лет. The full age statement is I am 20 (years old); the shorter quantity phrase is 20 years and does not by itself identify whose age is meant. The section label age statements names the topic; it is not a translation of either phrase. For a natural-English choice, select I am 20 years old. Ownership of summers and a group of people asking a question would describe different events. These choices recognize this construction; they do not demonstrate independently forming ages for other people or numbers.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u17-attribution"
@@ -10488,10 +10473,29 @@
         {
           "sessionId": "u17-s-age",
           "step": {
+            "id": "u17-st-guided-age-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u17-g-age-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u17-st-rem-age"
+          }
+        },
+        {
+          "sessionId": "u17-s-age",
+          "step": {
             "id": "u17-st-rem-age",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "I am 20 (years old)",
+            "title": "Review ages and calendar names",
+            "body": "мне двадцать лет — I am 20 years old. The person whose age is stated is in the dative case: the first word means to me in a literal description. The remaining phrase counts twenty years. The present-time Russian construction has no expressed verb, whereas natural English uses am. This is an age statement, not a statement of ownership.\n\nCompare мне двадцать лет with двадцать лет. The full age statement is I am 20 (years old); the shorter quantity phrase is 20 years and does not by itself identify whose age is meant. The section label age statements names the topic; it is not a translation of either phrase. For a natural-English choice, select I am 20 years old. Ownership of summers and a group of people asking a question would describe different events. These choices recognize this construction; they do not demonstrate independently forming ages for other people or numbers.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
@@ -10525,8 +10529,12 @@
       "contentKind": "items",
       "reportedIssue": "Question/gloss scope does not match the whole date displayed.",
       "proposedCorrection": "Ask what the abbreviated г. means, or translate/read the whole date consistently.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "assessment",
+        "distractorRationales",
+        "feedback"
+      ],
       "currentObject": {
         "id": "u17-g-calendar-date-0",
         "kind": "CONTRAST_SELECTION",
@@ -10539,15 +10547,15 @@
           "the day number"
         ],
         "answer": "year, the abbreviation",
-        "feedback": "г. is year, the abbreviation used after the year number in a date.",
+        "feedback": "г. corresponds to year, the abbreviation. Read the relevant date components and distinguish the whole date from an individual component.",
         "objectiveId": "obj-u17-calendar-date",
         "sourceId": "src-content-audit-research",
         "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
         "containsGeneratedRussian": false,
         "distractorRationales": [
           "",
-          "the month name is a separate word in the date, not the abbreviation г.",
-          "the day number is a separate part of the date, not the abbreviation г."
+          "the month name is a different meaning or construction and does not match the requested reading of the shown form.",
+          "the day number is a different meaning or construction and does not match the requested reading of the shown form."
         ],
         "assessment": {
           "testedFeature": "DATE_YEAR_ABBREVIATION",
@@ -10565,10 +10573,10 @@
           ],
           "distractorDifference": [
             "",
-            "the month name is a separate word in the date, not the abbreviation г.",
-            "the day number is a separate part of the date, not the abbreviation г."
+            "the month name is a different meaning or construction and does not match the requested reading of the shown form.",
+            "the day number is a different meaning or construction and does not match the requested reading of the shown form."
           ],
-          "whyAnswerDemonstratesObjective": "г. is year, the abbreviation used after the year number in a date.",
+          "whyAnswerDemonstratesObjective": "г. is year, the abbreviation used after the year number in a date.\nг. corresponds to year, the abbreviation. Read the relevant date components and distinguish the whole date from an individual component.",
           "contrastMembers": [
             "year, the abbreviation",
             "the month name",
@@ -10588,7 +10596,7 @@
         {
           "id": "obj-u17-calendar-date",
           "unitNumber": 17,
-          "title": "Choose the admitted date relation beside the shown form",
+          "title": "Interpret retained dates and year abbreviation",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u17-st-orient",
@@ -10636,8 +10644,8 @@
           "step": {
             "id": "u17-st-teach-calendar-date-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Двадцать восьмое августа — the month in genitive case. 28 августа 2017 г. — day month year. ",
+            "title": "Read every part of the date",
+            "body": "28 августа 2017 г. gives day month year: 28 August 2017. The abbreviation г. marks the year after its number. 15 мая 1996 г. means 15 May 1996. To translate the whole date, include the day, month and year; identifying only the month or abbreviation leaves part of the meaning out.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u17-attribution"
@@ -10656,29 +10664,10 @@
         {
           "sessionId": "u17-s-calendar-date",
           "step": {
-            "id": "u17-st-guided-calendar-date-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u17-g-calendar-date-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u17-st-rem-calendar-date"
-          }
-        },
-        {
-          "sessionId": "u17-s-calendar-date",
-          "step": {
             "id": "u17-st-teach-calendar-date-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "In Russia, dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"28.08.17\") and the expanded form (for example \"28 августа 2017 г.\"); the trailing \"г\" is short for \"года\" (goda, \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"28.08.2017\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example \"Двадцать восьмое августа\").",
+            "title": "Month case and date naming",
+            "body": "Двадцать восьмое августа names the twenty-eighth of August. This standalone date naming uses a neuter ordinal for the day and a genitive month name. A sentence saying when something happens can require a different ordinal case; these checks do not assess that change. The month form in a date differs from its dictionary form. Numeric day-month-year order and the year abbreviation are separate from speaking a complete year in words.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u17-attribution"
@@ -10694,10 +10683,29 @@
         {
           "sessionId": "u17-s-calendar-date",
           "step": {
+            "id": "u17-st-guided-calendar-date-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u17-g-calendar-date-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u17-st-rem-calendar-date"
+          }
+        },
+        {
+          "sessionId": "u17-s-calendar-date",
+          "step": {
             "id": "u17-st-rem-calendar-date",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "In Russia, dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"28.08.17\") and the expanded form (for example \"28 августа 2017 г.\"); the trailing \"г\" is short for \"года\" (goda, \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"28.08.2017\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example \"Двадцать восьмое августа\").",
+            "title": "Review ages and calendar names",
+            "body": "28 августа 2017 г. gives day month year: 28 August 2017. The abbreviation г. marks the year after its number. 15 мая 1996 г. means 15 May 1996. To translate the whole date, include the day, month and year; identifying only the month or abbreviation leaves part of the meaning out.\n\nДвадцать восьмое августа names the twenty-eighth of August. This standalone date naming uses a neuter ordinal for the day and a genitive month name. A sentence saying when something happens can require a different ordinal case; these checks do not assess that change. The month form in a date differs from its dictionary form. Numeric day-month-year order and the year abbreviation are separate from speaking a complete year in words.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
@@ -10731,8 +10739,12 @@
       "contentKind": "items",
       "reportedIssue": "Question/gloss scope does not match the whole date displayed.",
       "proposedCorrection": "Ask what the abbreviated г. means, or translate/read the whole date consistently.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "assessment",
+        "distractorRationales",
+        "feedback"
+      ],
       "currentObject": {
         "id": "u17-i-calendar-date-2",
         "kind": "CONTRAST_SELECTION",
@@ -10745,15 +10757,15 @@
           "the year abbreviation alone"
         ],
         "answer": "15 May 1996",
-        "feedback": "15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.",
+        "feedback": "15 мая 1996 г. corresponds to 15 May 1996. Read the relevant date components and distinguish the whole date from an individual component.",
         "objectiveId": "obj-u17-calendar-date",
         "sourceId": "src-content-audit-research",
         "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
         "containsGeneratedRussian": false,
         "distractorRationales": [
           "",
-          "the month alone drops the day and the year.",
-          "the year abbreviation alone drops the day and the month."
+          "the month alone is a different meaning or construction and does not match the requested reading of the shown form.",
+          "the year abbreviation alone is a different meaning or construction and does not match the requested reading of the shown form."
         ],
         "assessment": {
           "testedFeature": "WHOLE_DATE",
@@ -10771,10 +10783,10 @@
           ],
           "distractorDifference": [
             "",
-            "the month alone drops the day and the year.",
-            "the year abbreviation alone drops the day and the month."
+            "the month alone is a different meaning or construction and does not match the requested reading of the shown form.",
+            "the year abbreviation alone is a different meaning or construction and does not match the requested reading of the shown form."
           ],
-          "whyAnswerDemonstratesObjective": "15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.",
+          "whyAnswerDemonstratesObjective": "15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.\n15 мая 1996 г. corresponds to 15 May 1996. Read the relevant date components and distinguish the whole date from an individual component.",
           "contrastMembers": [
             "15 May 1996",
             "the month alone",
@@ -10794,7 +10806,7 @@
         {
           "id": "obj-u17-calendar-date",
           "unitNumber": 17,
-          "title": "Choose the admitted date relation beside the shown form",
+          "title": "Interpret retained dates and year abbreviation",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u17-st-orient",
@@ -10842,8 +10854,8 @@
           "step": {
             "id": "u17-st-teach-calendar-date-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Двадцать восьмое августа — the month in genitive case. 28 августа 2017 г. — day month year. ",
+            "title": "Read every part of the date",
+            "body": "28 августа 2017 г. gives day month year: 28 August 2017. The abbreviation г. marks the year after its number. 15 мая 1996 г. means 15 May 1996. To translate the whole date, include the day, month and year; identifying only the month or abbreviation leaves part of the meaning out.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u17-attribution"
@@ -10862,29 +10874,10 @@
         {
           "sessionId": "u17-s-calendar-date",
           "step": {
-            "id": "u17-st-guided-calendar-date-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u17-g-calendar-date-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u17-st-rem-calendar-date"
-          }
-        },
-        {
-          "sessionId": "u17-s-calendar-date",
-          "step": {
             "id": "u17-st-teach-calendar-date-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "In Russia, dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"28.08.17\") and the expanded form (for example \"28 августа 2017 г.\"); the trailing \"г\" is short for \"года\" (goda, \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"28.08.2017\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example \"Двадцать восьмое августа\").",
+            "title": "Month case and date naming",
+            "body": "Двадцать восьмое августа names the twenty-eighth of August. This standalone date naming uses a neuter ordinal for the day and a genitive month name. A sentence saying when something happens can require a different ordinal case; these checks do not assess that change. The month form in a date differs from its dictionary form. Numeric day-month-year order and the year abbreviation are separate from speaking a complete year in words.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u17-attribution"
@@ -10900,10 +10893,29 @@
         {
           "sessionId": "u17-s-calendar-date",
           "step": {
+            "id": "u17-st-guided-calendar-date-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u17-g-calendar-date-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u17-st-rem-calendar-date"
+          }
+        },
+        {
+          "sessionId": "u17-s-calendar-date",
+          "step": {
             "id": "u17-st-rem-calendar-date",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "In Russia, dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"28.08.17\") and the expanded form (for example \"28 августа 2017 г.\"); the trailing \"г\" is short for \"года\" (goda, \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"28.08.2017\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example \"Двадцать восьмое августа\").",
+            "title": "Review ages and calendar names",
+            "body": "28 августа 2017 г. gives day month year: 28 August 2017. The abbreviation г. marks the year after its number. 15 мая 1996 г. means 15 May 1996. To translate the whole date, include the day, month and year; identifying only the month or abbreviation leaves part of the meaning out.\n\nДвадцать восьмое августа names the twenty-eighth of August. This standalone date naming uses a neuter ordinal for the day and a genitive month name. A sentence saying when something happens can require a different ordinal case; these checks do not assess that change. The month form in a date differs from its dictionary form. Numeric day-month-year order and the year abbreviation are separate from speaking a complete year in words.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
@@ -10923,7 +10935,7 @@
             "id": "u17-st-check-calendar-date",
             "kind": "CHECK",
             "title": "Independent checks",
-            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "body": "Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [

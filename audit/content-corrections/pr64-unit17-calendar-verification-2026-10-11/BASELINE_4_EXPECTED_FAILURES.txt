@@ -1,0 +1,55 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (4):
+  JUnit Vintage:Unit17AgeCalendarInstructionTest:checkedNamesAndAgeStructureAreTaughtBeforePractice
+    MethodSource [className = 'dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest', methodName = 'checkedNamesAndAgeStructureAreTaughtBeforePractice', methodParameterTypes = '']
+    => java.lang.AssertionError: expected:<2> but was:<1>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest.checkedNamesAndAgeStructureAreTaughtBeforePractice(Unit17AgeCalendarInstructionTest.kt:14)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit17AgeCalendarInstructionTest:clockAndDateTargetsHaveCompletePriorInstruction
+    MethodSource [className = 'dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest', methodName = 'clockAndDateTargetsHaveCompletePriorInstruction', methodParameterTypes = '']
+    => java.lang.AssertionError: expected:<2> but was:<1>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest.clockAndDateTargetsHaveCompletePriorInstruction(Unit17AgeCalendarInstructionTest.kt:56)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit17AgeCalendarInstructionTest:learnerFeedbackExplainsMeaningsAndRetainsSourceCitation
+    MethodSource [className = 'dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest', methodName = 'learnerFeedbackExplainsMeaningsAndRetainsSourceCitation', methodParameterTypes = '']
+    => java.lang.AssertionError
+       org.junit.Assert.fail(Assert.java:87)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       org.junit.Assert.assertTrue(Assert.java:53)
+       dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest.learnerFeedbackExplainsMeaningsAndRetainsSourceCitation(Unit17AgeCalendarInstructionTest.kt:36)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit17AgeCalendarInstructionTest:newCoverageIsPendingAndSourceRelationshipsStillValidate
+    MethodSource [className = 'dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest', methodName = 'newCoverageIsPendingAndSourceRelationshipsStillValidate', methodParameterTypes = '']
+    => java.lang.AssertionError: expected:<203> but was:<0>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest.newCoverageIsPendingAndSourceRelationshipsStillValidate(Unit17AgeCalendarInstructionTest.kt:45)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 801 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         4 tests found           ]
+[         0 tests skipped         ]
+[         4 tests started         ]
+[         0 tests aborted         ]
+[         0 tests successful      ]
+[         4 tests failed          ]
+

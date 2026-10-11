@@ -1,8 +1,8 @@
 # Single-guided session sequence-review candidates
 
-Curriculum file SHA-256: `f33d9a9806d28949e234180d5b056ccae7ac4c561735402ce9f80f264d922449`.
+Curriculum file SHA-256: `f8d5f1c3a2c7878db261807f1c08bcba912fc935956c5e6a140befe5897a331c`.
 
-**122 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
+**114 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
 
 The Unit 24 absence session and Unit 25 courtesy session no longer have this ordering flag. Their implemented corrections remain pending final semantic audit. This inventory does not close CA009/CA010 or approve any other session.
 
@@ -64,14 +64,6 @@ The Unit 24 absence session and Unit 25 courtesy session no longer have this ord
 | 15 | `u15-s-imperative` | `u15-st-guided-imperative-1` | `u15-st-teach-imperative-2`, `u15-st-teach-imperative-3` |
 | 15 | `u15-s-say-request` | `u15-st-guided-say-request-1` | `u15-st-teach-say-request-2`, `u15-st-teach-say-request-3`, `u15-st-teach-say-request-4` |
 | 15 | `u15-s-aspect-consolidate` | `u15-st-guided-aspect-consolidate-1` | `u15-st-teach-aspect-consolidate-2`, `u15-st-teach-aspect-consolidate-3` |
-| 17 | `u17-s-age` | `u17-st-guided-age-1` | `u17-st-teach-age-2` |
-| 17 | `u17-s-weekdays` | `u17-st-guided-weekdays-1` | `u17-st-teach-weekdays-2`, `u17-st-teach-weekdays-3` |
-| 17 | `u17-s-months` | `u17-st-guided-months-1` | `u17-st-teach-months-2`, `u17-st-teach-months-3` |
-| 17 | `u17-s-clock` | `u17-st-guided-clock-1` | `u17-st-teach-clock-2` |
-| 17 | `u17-s-clock-answers` | `u17-st-guided-clock-answers-1` | `u17-st-teach-clock-answers-2`, `u17-st-teach-clock-answers-3` |
-| 17 | `u17-s-quarter-hour` | `u17-st-guided-quarter-hour-1` | `u17-st-teach-quarter-hour-2`, `u17-st-teach-quarter-hour-3`, `u17-st-teach-quarter-hour-4`, `u17-st-teach-quarter-hour-5` |
-| 17 | `u17-s-clock-productive` | `u17-st-guided-clock-productive-1` | `u17-st-teach-clock-productive-2`, `u17-st-teach-clock-productive-3` |
-| 17 | `u17-s-calendar-date` | `u17-st-guided-calendar-date-1` | `u17-st-teach-calendar-date-2` |
 | 18 | `u18-s-comparison` | `u18-st-guided-comparison-1` | `u18-st-teach-comparison-2`, `u18-st-teach-comparison-3` |
 | 18 | `u18-s-relative` | `u18-st-guided-relative-1` | `u18-st-teach-relative-2`, `u18-st-teach-relative-3` |
 | 19 | `u19-s-prefix-caution` | `u19-st-guided-prefix-caution-1` | `u19-st-teach-prefix-caution-2`, `u19-st-teach-prefix-caution-3` |
