@@ -320,7 +320,9 @@ class Units1620SourceIntakeTest {
         }
         val instrumental = pack.unit(16)!!.sessions.flatMap { it.steps }.first { it.body.contains("-ом") }.body
         assertFalse(mediaWiki(instrumental))
-        assertFalse(instrumental.contains("\u0301"))
+        // Whole-word stress marks are taught explicitly; the suffix itself is unstressed.
+        assertTrue(instrumental.contains("-ом"))
+        assertFalse(instrumental.contains("-о\u0301м"))
         assertTrue(instrumental.contains("\u043e"))
         listOf(16, 18, 20).forEach { number ->
             val unit = pack.unit(number)!!

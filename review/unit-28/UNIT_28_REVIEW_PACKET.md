@@ -16,7 +16,7 @@ Unit 28 remains in development. Its readiness is content-complete and review-pen
 - Mapping-package SHA-256: 0fb9199bfef05acc54935be340710bd53e19fcd6066349300e09c29fb4b035e8
 - Pack content-review SHA-256: dc35c660a31a95c00d9378fbd16f82c2557890d613a20760f554f69104790c6e
 - Review-package SHA-256: 22e05fab8ac510a18b0c848c6b462de2391c48aa3f41c4edaf387ed4f7391f3f
-- Repository source SHA-256: 2e45b41dcc9cae3d05828dae3bcd357ad9f099a563d9a2d7de690204e6f0a5ae
+- Repository source SHA-256: 402ec4c0244647ecdb7c5fc5997a3fe43afc915dc9e87d4786d807ef3cc804ae
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 

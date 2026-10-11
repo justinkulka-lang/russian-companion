@@ -213,6 +213,9 @@ class BatchAUnits71620Test {
                 val why = assessment.whyAnswerDemonstratesObjective
                 val shown = item.promptLetter!!
                 val corrected = item.sourceId == ContentAuditSources.SOURCE_ID
+                val expandedExplanation = pack.provenanceRecords.singleOrNull {
+                    it.itemId == "prov-ca-u16-uses-${item.id}-feedback" && it.shippedText == why
+                }
                 if (corrected) {
                     assertEquals(item.id, "STATED_APPLICATION", assessment.relationKind)
                     val records = assessment.relationParticipantIds.map { id ->
@@ -228,6 +231,10 @@ class BatchAUnits71620Test {
                     })
                     assertTrue(item.id, why.contains(shown) && why.contains(item.answer))
                     assertTrue(item.id, item.feedback.contains(shown) && item.feedback.contains(item.answer))
+                } else if (expandedExplanation != null) {
+                    assertContentAuditResearch(expandedExplanation)
+                    assertEquals(item.id, why, item.feedback)
+                    assertTrue(item.id, why.contains(shown) && why.contains(item.answer))
                 } else {
                     assertEquals(item.id, why, item.feedback)
                     assertCompleteRelationship(item.id, why, shown, item.answer)
@@ -249,7 +256,7 @@ class BatchAUnits71620Test {
                     val difference = assessment.distractorDifference[index]
                     assertEquals("${item.id} rationale", rationale, difference)
                     val shownFormGloss = glossWhenOptionIsShownForm(rationale, option)
-                    if (corrected) {
+                    if (corrected || expandedExplanation != null) {
                         assertTrue(item.id, rationale.contains(option))
                     } else if (shownFormGloss != null) {
                         assertCompleteRelationship(item.id, rationale, option, shownFormGloss)

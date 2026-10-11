@@ -359,16 +359,16 @@ class BatchECapabilityResearchTest {
             30 to "97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2",
         )
         val reviewPackages = mapOf(
-            7 to "07b4a851058ee3b3abf053c70e31d5247dfdd9e4d2955c0a4aa0e34119168066",
-            17 to "b6cf3cfb42be9a6641813106893cf09a132d501c27e0ae0eca9c802f04b27526",
-            23 to "a4177a0de2806a77b6c7640158c615077a2a2447e1c3d60ccbbd14862cdfe21c",
-            24 to "676505837f3cf295c113a33f72beb09a3c3900783c066324979ed0286189da41",
-            25 to "7ddb87dff6a379962f60120b986559ebd8165d3214303cfd7fc405bf7d40f59f",
-            26 to "87e4b5f47c5a78fee812c15c4ebfbb0a2f9282c4aa5d3b05da975a469ab55001",
-            27 to "79c0cef2053bbfc224acd480b313747745fd49b3f446e6ee536d2b8c72b5ca05",
-            28 to "5fd414910cc1370e69f9043ca94ee9eea482bab0a764c6c0fe6d68b32448b832",
-            29 to "0b2586fb56e6715474057126aaa0c6813504d13a280a17a7703ddc7913dd6a84",
-            30 to "f6f36e94cded4acde57a480b7c6f77c7d59601a913a82b0524d8c675d485abdf",
+            7 to "7022e8a2c3a53d077264f28b6d31fd4d4ecd1da10a655fbeb083144ea6acc1c7",
+            17 to "dd082a827b29e3d094b63f9905cf7b502cf10129a4dbcc696adc3751b62efc7d",
+            23 to "131fab9b69a907e86ad29d123f30e2254df2c4f42bc90b21393d049b48d647c7",
+            24 to "4a69eb8839211268d595734f2223f8764a92f1635cb26f3b5fc774916676e21a",
+            25 to "66966711449c59e57c907c6b48a321d5d787da0cdd872e186e3bd6032a36608d",
+            26 to "2c2a24514810a5362ff0aa6170e0b776f96cc9dcaf3d6fff3c490e31101da89d",
+            27 to "311339267772b55a36c45223940e104ce1064d4d32359ebd0ea1669c5d880b5f",
+            28 to "22e05fab8ac510a18b0c848c6b462de2391c48aa3f41c4edaf387ed4f7391f3f",
+            29 to "bbb8ba67285ae86e06912f00d92946945a2b29c2946661aa509d18b991642dd4",
+            30 to "9f169db6ca3cbf9d5a80a186d3247731bfced7e4673903223501351c2e8eea29",
         )
         (content.keys).forEach { number ->
             val row = model.units.single { it.unitNumber == number }

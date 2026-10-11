@@ -1,0 +1,84 @@
+{
+  "runId": 38061390437,
+  "head": "2ec77840719ed4ae7ba04062f692c1653a9e93ba",
+  "tests": 632,
+  "failed": 12,
+  "skipped": 1,
+  "reportArtifactId": 11674246498,
+  "reportArchiveSha256": "e2f2fdd292141a9d210aea976f7d46d79f10fc26a8de885b7df6869673c54d78",
+  "sourceArtifactId": 11673985098,
+  "sourceArtifactSha256": "f7b1a55199c847a9eff7d6287ee7751f95367519623f47589e9f9d2a69964af7",
+  "sourceIdentity": {
+    "schemaVersion": 1,
+    "kind": "engineering-verification-source",
+    "checkoutCommit": "d795c79c4ce218e8a3c926737b8fd69212a93787",
+    "tree": "764932b376dba0fd27a8c1d9809feeae995e265e",
+    "runId": "38061390437",
+    "event": "pull_request",
+    "archiveBytes": 31236601,
+    "archiveSha256": "4dca9e403a3f9301cf24d92665bb71ef8c28356d1bca0938230f394d1ee6e136",
+    "publicRelease": "NOT_APPROVED"
+  },
+  "failures": [
+    {
+      "class": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "method": "digestsGovernanceAndLaterUnitsStayUnchanged",
+      "message": "org.junit.ComparisonFailure: expected:<[2e45b41dcc9cae3d05828dae3bcd357ad9f099a563d9a2d7de690204e6f0a5]ae> but was:<[402ec4c0244647ecdb7c5fc5997a3fe43afc915dc9e87d4786d807ef3cc804]ae>"
+    },
+    {
+      "class": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "learnerFacingTextDropsWikibooksEmphasisAndKeepsTheFrozenSource",
+      "message": "java.lang.AssertionError"
+    },
+    {
+      "class": "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest",
+      "method": "physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease",
+      "message": "org.junit.ComparisonFailure: expected:<[402ec4c0244647ecdb7c5fc5997a3fe43afc915dc9e87d4786d807ef3cc804]ae> but was:<[2e45b41dcc9cae3d05828dae3bcd357ad9f099a563d9a2d7de690204e6f0a5]ae>"
+    },
+    {
+      "class": "dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest",
+      "method": "reportMatrixMatchesTheLiveCurriculum",
+      "message": "org.junit.ComparisonFailure: expected:<[402ec4c0244647ecdb7c5fc5997a3fe43afc915dc9e87d4786d807ef3cc804]ae> but was:<[2e45b41dcc9cae3d05828dae3bcd357ad9f099a563d9a2d7de690204e6f0a5]ae>"
+    },
+    {
+      "class": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "earlierUnitDigestsStayPutAndLaterUnitsStayIsolated",
+      "message": "org.junit.ComparisonFailure: expected:<[8633c7756320921b405705c095526f0d1df225effac28e3a2050f427f8fde9cb]> but was:<[ff773232faf85dc03742e639b0f6b2b1b81be103a62d2bd60e4a1595d71f94bf]>"
+    },
+    {
+      "class": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "method": "committedUnitPackagesMatchTheGenerator",
+      "message": "java.lang.AssertionError: Repository source digest does not match the release binding\nReview file UNIT_1_REVIEW_PACKET.md is not the deterministic rendering\nReview file UNIT_1_REVIEW_MANIFEST.json is not the deterministic rendering\nReview file REVIEWER_INSTRUCTIONS.md is not the deterministic rendering"
+    },
+    {
+      "class": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "method": "preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+      "message": "org.junit.ComparisonFailure: expected:<...torySourceDigest\": \"[402ec4c0244647ecdb7c5fc5997a3fe43afc915dc9e87d4786d807ef3cc804]ae\",\n  \"curriculumSo...> but was:<...torySourceDigest\": \"[2e45b41dcc9cae3d05828dae3bcd357ad9f099a563d9a2d7de690204e6f0a5]ae\",\n  \"curriculumSo...>"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BatchAUnits71620Test",
+      "method": "batchAExplanationsNameTheKeyedRelationshipAndRejectASwap",
+      "message": "java.lang.AssertionError: u16-i-complements-1 is not the keyed relationship: \u043e\u0441\u0442\u0430\u0442\u044c\u0441\u044f means to remain; choose remain for continuation of a state. It belongs to the connective verbs introduced here."
+    },
+    {
+      "class": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "committedReportsMatchTheGeneratorAndStayByteIdentical",
+      "message": "org.junit.ComparisonFailure: expected:<...itorySourceDigest | [402ec4c0244647ecdb7c5fc5997a3fe43afc915dc9e87d4786d807ef3cc804ae |\n| candidateFrozen | false |\n| candidateArtifact | NOT_RECORDED |\n| candidateSourceCommit | null |\n| publicRelease | NOT_APPROVED |\n| retainedEvidence | MISSING |\n| at031 | UNEXECUTED |\n| releaseDecision | NOT_APPROVED |\n| releaseGateBlockers | INSTALLATION_NOT_RETAINED, NAVIGATION_NOT_RETAINED, OFFLINE_VERIFICATION_NOT_RETAINED, ATTRIBUTIONS_NOT_RETAINED, DEVICE_GATE_NOT_RETAINED, CATALOG_LICENSE_NOT_RETAINED, REBOOT_EVIDENCE_NOT_RETAINED, LESSON_CYCLE_NOT_RETAINED, OWNER_RELEASE_DECISION_NOT_RETAINED, SOURCE_DIGEST_MISMATCH, CANDIDATE_NOT_FROZEN, V2_UNITS_NOT_INSTALLED, LINGUISTIC_REVIEW_ABSENT, PENGUIN_MAPPING_UNAPPROVED, V2_MAPPED_AUDIO_ABSENT |\n| varianceProposalStatus | PROPOSED_NOT_ACTIVATED |\n| varianceResolutionStatus | PROPOSED_NOT_ACTIVATED |\n\n`totalExamples` and `totalIndependentChecks` sum unit rows. A row sum minus the count of shared records does not prove catalog coverage. `packagedExampleRecords` = `reachableExampleRecords` + `orphanedExampleRecords`. `exampleCrossUnitReferenceExcess` adds one for every unit beyond the first that references a record, so a record shared by three units contributes 2. `exampleDuplicateUnitReferenceExcess` counts repeated references to the same record inside one unit. The same identities apply to check items. Orphaned example ids: ex-u4-verb-\u0437\u043d\u0430\u0442\u044c, ex-u4-verb-\u0440\u0430\u0431\u043e\u0442\u0430\u0442\u044c. Orphaned check-item ids: NONE.\n`to"
+    },
+    {
+      "class": "dev.russiancompanion.v2.review.Unit1ReviewPackageTest",
+      "method": "committedPackageMatchesTheCurriculumTraversal",
+      "message": "java.lang.AssertionError: Repository source digest does not match the release binding\nReview file UNIT_1_REVIEW_PACKET.md is not the deterministic rendering\nReview file UNIT_1_REVIEW_MANIFEST.json is not the deterministic rendering\nReview file REVIEWER_INSTRUCTIONS.md is not the deterministic rendering"
+    },
+    {
+      "class": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "method": "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+      "message": "java.lang.AssertionError"
+    },
+    {
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "method": "committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+      "message": "org.junit.ComparisonFailure: expected:<[402ec4c0244647ecdb7c5fc5997a3fe43afc915dc9e87d4786d807ef3cc804]ae> but was:<[2e45b41dcc9cae3d05828dae3bcd357ad9f099a563d9a2d7de690204e6f0a5]ae>"
+    }
+  ]
+}

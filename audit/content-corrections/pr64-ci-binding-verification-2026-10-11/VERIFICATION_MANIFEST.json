@@ -1,0 +1,34 @@
+{
+  "baselineHead": "2ec77840719ed4ae7ba04062f692c1653a9e93ba",
+  "exactSourceTree": "764932b376dba0fd27a8c1d9809feeae995e265e",
+  "oldSourceDigest": "2e45b41dcc9cae3d05828dae3bcd357ad9f099a563d9a2d7de690204e6f0a5ae",
+  "sourceDigest": "402ec4c0244647ecdb7c5fc5997a3fe43afc915dc9e87d4786d807ef3cc804ae",
+  "packContentReviewDigest": "dc35c660a31a95c00d9378fbd16f82c2557890d613a20760f554f69104790c6e",
+  "rawCurriculumSha256": "8646565555a80bd593713826006e06f9dc1262b990e89a9fd438959b6bb7e26b",
+  "productionSourceUnchanged": true,
+  "manifestChangedFields": [
+    "repositorySourceDigest"
+  ],
+  "reviewManifestsChecked": 30,
+  "formerlyFailingMethodsVerifiedAcrossRepairRuns": 12,
+  "separateUnit16AndBindingRun": 21,
+  "uniquePassingMethodsAcrossRuns": 32,
+  "hostCompiler": "Kotlin 2.0.21",
+  "hostSerialization": "1.7.3",
+  "hostJUnitPlatform": "1.11.4",
+  "scope": "Production curriculum and release code with Android asset and Room annotation stubs. Exact archived source tree and 100 imported authentic Git commits verified by object SHA. No Compose, database, APK or physical-device execution. Android CI remains a separate check.",
+  "publicRelease": "NOT_APPROVED",
+  "candidateFrozen": false,
+  "auditFindingsOpen": 19,
+  "semanticTargetsPending": 75,
+  "sequenceFlagsUnresolved": 126,
+  "files": {
+    "REMAINING_4_PASS.xml": "903fe88ac2cd97c9626720ca6df3b44bdb471cd46f26303995e67482a2bd4ba7",
+    "INITIAL_HOST_REPAIR_8_PASS_4_FAIL.xml": "8e79cab02bd1c2f5f9695b42ba2e7b2be8315f05ec76eb85a8701073c1fbba28",
+    "REMAINING_4_PASS.txt": "d6b74e3d388bfcacdd38ab3f71867db6361a0c4430aa2144cdb5161e9b43cd16",
+    "INITIAL_HOST_REPAIR_8_PASS_4_FAIL.txt": "9767326e2085a4ee8c9860f73c99fbfeb4b29fd1eba7a41b707cd005d6b14774",
+    "UNIT16_AND_SOURCE_BINDING_21_PASS.xml": "db88ac3314ac6cc1b5dc3f7fa94c932ce72a6bf4474455e2161f996e316ff136",
+    "ANDROID_CI_BASELINE_FAILURES.json": "8db230ae096ed1fb378e2920a1c5d7fc969778594f6ff2bf67835f6de800f2a5",
+    "UNIT16_AND_SOURCE_BINDING_21_PASS.txt": "3d2661a1774648967e6d2e1118c40b0de9863937ad8232a84af13741c832517c"
+  }
+}

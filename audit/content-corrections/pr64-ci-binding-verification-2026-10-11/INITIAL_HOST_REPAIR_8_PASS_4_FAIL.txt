@@ -1,0 +1,50 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (4):
+  JUnit Vintage:BatchECapabilityResearchTest:digestsGovernanceAndLaterUnitsStayUnchanged
+    MethodSource [className = 'dev.russiancompanion.v2.BatchECapabilityResearchTest', methodName = 'digestsGovernanceAndLaterUnitsStayUnchanged', methodParameterTypes = '']
+    => org.junit.ComparisonFailure: expected:<[07b4a851058ee3b3abf053c70e31d5247dfdd9e4d2955c0a4aa0e34119168066]> but was:<[7022e8a2c3a53d077264f28b6d31fd4d4ecd1da10a655fbeb083144ea6acc1c7]>
+       org.junit.Assert.assertEquals(Assert.java:117)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged(BatchECapabilityResearchTest.kt:377)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:PostPr53ReadinessReconciliationTest:reportMatrixMatchesTheLiveCurriculum
+    MethodSource [className = 'dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest', methodName = 'reportMatrixMatchesTheLiveCurriculum', methodParameterTypes = '']
+    => java.lang.AssertionError: expected:<0> but was:<128>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest.reportMatrixMatchesTheLiveCurriculum(PostPr53ReadinessReconciliationTest.kt:45)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:UnitReviewPipelineTest:committedUnitPackagesMatchTheGenerator
+    MethodSource [className = 'dev.russiancompanion.v2.review.UnitReviewPipelineTest', methodName = 'committedUnitPackagesMatchTheGenerator', methodParameterTypes = '']
+    => java.lang.AssertionError: Curriculum source commit does not contain the packaged curriculum
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       dev.russiancompanion.v2.review.UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator(UnitReviewPipelineTest.kt:107)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit1ReviewPackageTest:committedPackageMatchesTheCurriculumTraversal
+    MethodSource [className = 'dev.russiancompanion.v2.review.Unit1ReviewPackageTest', methodName = 'committedPackageMatchesTheCurriculumTraversal', methodParameterTypes = '']
+    => java.lang.AssertionError: Curriculum source commit does not contain the packaged curriculum
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       dev.russiancompanion.v2.review.Unit1ReviewPackageTest.committedPackageMatchesTheCurriculumTraversal(Unit1ReviewPackageTest.kt:27)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 242715 ms
+[        15 containers found      ]
+[         0 containers skipped    ]
+[        15 containers started    ]
+[         0 containers aborted    ]
+[        15 containers successful ]
+[         0 containers failed     ]
+[        12 tests found           ]
+[         0 tests skipped         ]
+[        12 tests started         ]
+[         0 tests aborted         ]
+[         8 tests successful      ]
+[         4 tests failed          ]
+
