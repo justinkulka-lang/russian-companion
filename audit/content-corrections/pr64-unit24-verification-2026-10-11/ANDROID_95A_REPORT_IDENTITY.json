@@ -1,0 +1,46 @@
+{
+  "head": "95a170755ef2cffc9fc63378b67c452579097e46",
+  "runId": 38178019617,
+  "jobId": 114584430849,
+  "artifactId": 11717757315,
+  "archiveSha256": "eeb4b8c133f14ee0cae9fc300315df039b77d8a2e7cd3186f877d9152219fde5",
+  "counts": [
+    657,
+    2,
+    1
+  ],
+  "selected": [
+    {
+      "classname": "dev.russiancompanion.v2.BatchAUnits71620Test",
+      "name": "batchAExplanationsNameTheKeyedRelationshipAndRejectASwap",
+      "status": "PASS",
+      "xmlFile": "current-ci/android-95a-reports/test-results/testDebugUnitTest/TEST-dev.russiancompanion.v2.BatchAUnits71620Test.xml",
+      "xmlSha256": "a990986b6e25d07afd3c2920658d2c32655f28e42328f2784bbd43e23767bbc2"
+    },
+    {
+      "classname": "dev.russiancompanion.v2.ContentAuditCorrectionTest",
+      "name": "wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation",
+      "status": "FAIL",
+      "xmlFile": "current-ci/android-95a-reports/test-results/testDebugUnitTest/TEST-dev.russiancompanion.v2.ContentAuditCorrectionTest.xml",
+      "xmlSha256": "d4ad040ec38b9532c3592d284ad81f4aacd274caadf4218af22d99973a3afe27"
+    },
+    {
+      "classname": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+      "name": "frozenSourceIdentityAndProvenanceSpansAreRequired",
+      "status": "FAIL",
+      "xmlFile": "current-ci/android-95a-reports/test-results/testDebugUnitTest/TEST-dev.russiancompanion.v2.Units2125SourceIntakeTest.xml",
+      "xmlSha256": "b9a770026083d22f49ed77b8f1db5870f19a9ff17c9b8189f0c49187f3adb726"
+    },
+    {
+      "classname": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "name": "unitOneSequenceKeepsDraftsThroughRemediationResumeAndAdvancement",
+      "status": "PASS",
+      "xmlFile": "current-ci/android-95a-reports/test-results/testDebugUnitTest/TEST-dev.russiancompanion.v2.RuntimeCorrectionTest.xml",
+      "xmlSha256": "a4839d9173f0a23ff795a1f0733b2a2c73248bd71036ce638591cdedd2a46a06"
+    }
+  ],
+  "failures": [
+    "dev.russiancompanion.v2.ContentAuditCorrectionTest#wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation",
+    "dev.russiancompanion.v2.Units2125SourceIntakeTest#frozenSourceIdentityAndProvenanceSpansAreRequired"
+  ]
+}

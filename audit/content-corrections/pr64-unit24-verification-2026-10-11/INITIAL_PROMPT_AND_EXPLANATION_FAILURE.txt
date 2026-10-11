@@ -1,0 +1,13 @@
+Exception in thread "main" java.lang.IllegalStateException: Unit 24 objective obj-u24-concord has no independent feature-valid check
+Item u24-g-absence-0 prompt discloses its classification
+Item u24-g-absence-0 tests line-label recall
+Item u24-i-absence-1 prompt discloses its classification
+Item u24-i-absence-1 tests line-label recall
+Item u24-g-stand-ins-0 explanation names a different gloss
+Item u24-g-concord-0 explanation names a different gloss
+Item u24-g-concord-0 explanation names a different gloss
+Item u24-i-concord-1 explanation names a different gloss
+Item u24-i-concord-1 explanation names a different gloss
+Item u24-i-concord-2 explanation names a different gloss
+Item u24-i-concord-2 explanation names a different gloss
+	at dev.russiancompanion.v2.review.RegenerateAllKt.main(RegenerateAll.kt:11)

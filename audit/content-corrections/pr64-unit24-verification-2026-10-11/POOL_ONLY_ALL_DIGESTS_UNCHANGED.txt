@@ -1,0 +1,1 @@
+PASS pooling alone preserves pack, all30 unit content and all30 mapping digests. Python expansion equals exact baseline; deterministic pooling is idempotent.
