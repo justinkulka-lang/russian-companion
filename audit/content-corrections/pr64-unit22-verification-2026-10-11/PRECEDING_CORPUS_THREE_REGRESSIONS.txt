@@ -1,0 +1,43 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (3):
+  JUnit Vintage:Unit22NumberInstructionTest:everyCheckedNumberContrastIsTaughtBeforePracticeAndRestoredOnAMiss
+    MethodSource [className = 'dev.russiancompanion.v2.Unit22NumberInstructionTest', methodName = 'everyCheckedNumberContrastIsTaughtBeforePracticeAndRestoredOnAMiss', methodParameterTypes = '']
+    => java.lang.AssertionError: noun-forms complete instruction before practice expected:<4> but was:<1>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       dev.russiancompanion.v2.Unit22NumberInstructionTest.everyCheckedNumberContrastIsTaughtBeforePracticeAndRestoredOnAMiss(Unit22NumberInstructionTest.kt:15)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit22NumberInstructionTest:admittedAnswersStayBoundAndWrongKeysStillFailProductionValidation
+    MethodSource [className = 'dev.russiancompanion.v2.Unit22NumberInstructionTest', methodName = 'admittedAnswersStayBoundAndWrongKeysStillFailProductionValidation', methodParameterTypes = '']
+    => java.lang.AssertionError: u22-g-noun-forms-0 wrong feedback
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       dev.russiancompanion.v2.Unit22NumberInstructionTest.admittedAnswersStayBoundAndWrongKeysStillFailProductionValidation(Unit22NumberInstructionTest.kt:49)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit22NumberInstructionTest:ruleScopeDistinguishesTeensGenderCaseAmbiguityAndCollectiveUsage
+    MethodSource [className = 'dev.russiancompanion.v2.Unit22NumberInstructionTest', methodName = 'ruleScopeDistinguishesTeensGenderCaseAmbiguityAndCollectiveUsage', methodParameterTypes = '']
+    => java.lang.AssertionError
+       org.junit.Assert.fail(Assert.java:87)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       org.junit.Assert.assertTrue(Assert.java:53)
+       dev.russiancompanion.v2.Unit22NumberInstructionTest.ruleScopeDistinguishesTeensGenderCaseAmbiguityAndCollectiveUsage(Unit22NumberInstructionTest.kt:29)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 1731 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         4 tests found           ]
+[         0 tests skipped         ]
+[         4 tests started         ]
+[         0 tests aborted         ]
+[         1 tests successful      ]
+[         3 tests failed          ]
+
