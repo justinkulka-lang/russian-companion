@@ -11,12 +11,12 @@ Unit 19 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: ea13e82d2999b79a0234f0999c9478efc17e1df5
-- Unit content-review SHA-256: 4713d43394b04cc2e0dfdede15b6d5211735239e8b5bde504de4d7b7b4c80560
+- Curriculum source commit: 22f3746d28fe42997c6a8fc3926360444ddba016
+- Unit content-review SHA-256: 5bec5c89d70f5928b6d7e03ab4ca35ad1b226451abe832e915b0f6f72f0e7907
 - Mapping-package SHA-256: 56534b156e7412d1bd8e51bf493e8d80f4b58461446382483a8ed118681dd6b2
-- Pack content-review SHA-256: 6d1249456ad2dd1e06583560ffb919183443957bda2d6e2395faf30cccfe76ce
-- Review-package SHA-256: 860f79770786d7bdc651c8f264fbf1fa143bcae5d196d6ff228f84ae9d5cc50c
-- Repository source SHA-256: bfc192446981a9d9b78c067d7987e2661ee31c1b67139e8dcb5f8f172419f24a
+- Pack content-review SHA-256: f36fab94cfc970f15b4543fc806188ad3eea7b47302faa4b4490c5441a68d132
+- Review-package SHA-256: 186d87e18059791b683040b1cbb3dcb054852a04856a703150dd990dbd117df8
+- Repository source SHA-256: 09bccb7533f9d314fd179b2de642564b19fd3baa6c8e0647447497430bbf2b05
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,9 +113,9 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f7d9de9fc5b47569660575fa9277b733db0dc6afc51e424be13949bf778899c8
+- Content hash: a22369cc9b3c88aaab02cefcb2eaa4ec4c616849ed4af49549d3ec3e250bdc19
 
-title=Choose the admitted prefix caution
+title=Distinguish changed meanings and genuine aspect partners
 kind=RECOGNITION
 unitNumber=19
 instruction=u19-st-orient,u19-st-teach-prefix-caution-1,u19-st-teach-prefix-caution-2,u19-st-teach-prefix-caution-3
@@ -245,12 +245,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 02d9fce5e4f098126fcb2a0d668c1463681cbd9863755324c785f0cade611e5f
+- Content hash: 32382cd207527f215d1edc39c583d606277be43892ddc843f2be4d6c8be9c997
 
-title=Choose the admitted prefix caution
+title=Distinguish changed meanings and genuine aspect partners
 estimatedMinutes=12
 objectives=obj-u19-prefix-caution
-steps=u19-st-teach-prefix-caution-1,u19-st-guided-prefix-caution-1,u19-st-teach-prefix-caution-2,u19-st-teach-prefix-caution-3,u19-st-rem-prefix-caution,u19-st-check-prefix-caution
+steps=u19-st-teach-prefix-caution-1,u19-st-teach-prefix-caution-2,u19-st-teach-prefix-caution-3,u19-st-guided-prefix-caution-1,u19-st-rem-prefix-caution,u19-st-check-prefix-caution
 
 ### STEP `u19-st-teach-prefix-caution-1`
 
@@ -260,11 +260,11 @@ steps=u19-st-teach-prefix-caution-1,u19-st-guided-prefix-caution-1,u19-st-teach-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2106fd4d848af116b6b83b26dd8e0e28a5782d88f8176626e457a73bbc1aac23
+- Content hash: 9dc40bcb00fcca911653d02819067f94d2ae0ef2094555f23eac5a0efa725d14
 
 kind=TEACH
-title=Admitted lines
-body=отговорить — to dissuade. договориться — to agree. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Different prefixes can change the meaning
+body=отговорить — to dissuade. договориться — to agree. These are different meanings, even though the words share material with a verb of speaking. A prefix is not always just an aspect marker: learn the whole verb and its meaning.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -274,28 +274,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u19-st-guided-prefix-caution-1`
-
-- Objectives: obj-u19-prefix-caution
-- Sessions: u19-s-prefix-caution
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4648aa5a038957981741116acad90e416dd78ef8dce949ed35954129f638ab67
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u19-g-prefix-caution-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u19-st-rem-prefix-caution
-
 ### STEP `u19-st-teach-prefix-caution-2`
 
 - Objectives: obj-u19-prefix-caution
@@ -304,11 +282,11 @@ remediationStepId=u19-st-rem-prefix-caution
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b8644c10c5b0f0cd4ff3f0881078ca738d2626532d5102f8036e56ce00f1703b
+- Content hash: 4410f5062f6cb82ebed3eb25f67af35da54c00ecc456886d50682844a00476af
 
 kind=TEACH
-title=Admitted instruction
-body=some prefixes can create whole new verbs.
+title=The actual dissuade aspect pair
+body=отговаривать is the imperfective partner of perfective отговорить: both concern dissuading. The retained source explicitly identifies this pair. сказать belongs to a separate speaking pair; it is not the imperfective partner of отговорить. For a question asking for the perfective partner of отговаривать, select отговорить. договориться is a different verb meaning to agree.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -326,11 +304,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f18ac7e559614a1c13120aae0fcd2d2f7d77b14738dbbf9b07a07831ab004e24
+- Content hash: a3e8f4eb27ad7a0608606415c73534da53001e54ea1369e80b0af60a6d62e3b0
 
 kind=TEACH
-title=Admitted lines
-body=написать — to write. сделать — to do. 
+title=Keep the other meanings separate
+body=написать — to write. сделать — to do. Neither expresses dissuading or agreeing. When a question asks for a meaning, translate the displayed verb. When it asks for an aspect partner, preserve the lexical meaning while changing aspect. These selections do not demonstrate creating new prefixed verbs or using aspect in a sentence.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -340,6 +318,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u19-st-guided-prefix-caution-1`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-prefix-caution
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 30f0734eeb9814aa99a7b7a2589510c74130b1de651531e18bdf600f6ed81698
+
+kind=GUIDED
+title=Guided practice
+body=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+dominantAction=Continue
+references=
+items=u19-g-prefix-caution-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u19-st-rem-prefix-caution
+
 ### STEP `u19-st-rem-prefix-caution`
 
 - Objectives: obj-u19-prefix-caution
@@ -348,15 +348,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7c60a6a6f3e3badcb09a8db901a0482b74ea5277f2d2d5c5b10c176229b6150b
+- Content hash: 0a643ea237c856e5295da7352c206d43e88c3e65207489f74543cb71de80a581
 
 kind=REMEDIATE
-title=Remediation
-body=some prefixes can create whole new verbs.
+title=Review the complete contrast
+body=отговорить — to dissuade. договориться — to agree. These are different meanings, even though the words share material with a verb of speaking. A prefix is not always just an aspect marker: learn the whole verb and its meaning.
+
+отговаривать is the imperfective partner of perfective отговорить: both concern dissuading. The retained source explicitly identifies this pair. сказать belongs to a separate speaking pair; it is not the imperfective partner of отговорить. For a question asking for the perfective partner of отговаривать, select отговорить. договориться is a different verb meaning to agree.
+
+написать — to write. сделать — to do. Neither expresses dissuading or agreeing. When a question asks for a meaning, translate the displayed verb. When it asks for an aspect partner, preserve the lexical meaning while changing aspect. These selections do not demonstrate creating new prefixed verbs or using aspect in a sentence.
 dominantAction=Continue
 references=
 items=
-examples=ex-u19-prefix-caution-0,ex-u19-prefix-caution-1
+examples=ex-u19-prefix-caution-0,ex-u19-prefix-caution-1,ex-u19-prefix-caution-2,ex-u19-prefix-caution-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -370,11 +374,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f68425fc868b1cec9eebfae0211cad343be6f0cace11d0d0184993e48b421e43
+- Content hash: 90e535241317c2745a406233ff2ff47653efdd4f3dd081dc5cccf25d420e38e0
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u19-i-prefix-caution-1,u19-i-prefix-caution-2
@@ -709,11 +713,11 @@ steps=u19-st-teach-probability-1,u19-st-teach-probability-2,u19-st-guided-probab
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fc6083998ceb9ef54d16f479e68ac435605e16e0f7a535542ff66747574bee23
+- Content hash: 9f54045a5fb7fb18319149b7a7aaa777f8c24e561ed0348350ad84abab8425f7
 
 kind=TEACH
 title=An expected eclipse
-body=Затме́ние должно́ наступи́ть в три часа́. — The eclipse should occur at three o'clock. Here should expresses an expected event, not a duty imposed on the eclipse. The short adjective agrees with the neuter singular subject; the following infinitive names the event. The retained source description is (with a verb) Used to express likelihood. Usually translated as "should".
+body=Затме́ние должно́ наступи́ть в три часа́. — The eclipse should occur at three o'clock. Here should expresses an expected event, not a duty imposed on the eclipse. The short adjective agrees with the neuter subject and the infinitive names the event. The retained usage description is (with a verb) Used to express likelihood. Usually translated as "should".
 dominantAction=Continue
 references=ref-u19-wiktionary-attribution
 items=
@@ -731,11 +735,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4b8b0d3313da163cf1e5c3fb1b0f0daa68a3e3722a5aec30682be4e37e3f8030
+- Content hash: 98a08a7ce6f994673ca9efd6b1162fb0b7b6d74e45a002cd17440be0b68b196c
 
 kind=TEACH
-title=A duty and the limits of the current checks
-body=Слу́жащие должны́ во́время явля́ться на рабо́ту. — Employees must report to work on time. This example states an obligation for plural employees rather than predicting an eclipse. Meaning comes from context as well as the shared adjective-plus-infinitive structure. In the likelihood selection choose the eclipse example. For its full English meaning choose the entire sentence, not the dictionary usage label (with a verb). Both independent checks currently repeat this same eclipse sentence; recognizing it twice does not demonstrate broader sense discrimination or independent sentence production.
+title=An employee obligation
+body=Слу́жащие должны́ во́время явля́ться на рабо́ту. — Employees must report to work on time. This states an obligation for plural employees. The English label an obligation describes a required action; an expected event describes a prediction such as the eclipse. Context determines which sense the shared adjective-plus-infinitive structure expresses. One independent check asks for the eclipse sentence meaning; the other classifies the employee obligation. These two examples do not demonstrate independent sentence production or every use of the adjective.
 dominantAction=Continue
 references=ref-u19-wiktionary-attribution
 items=
@@ -753,11 +757,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e121fb6b90751f8dfdc157ee950afaeefbfbbcf97c93f0e0ae8ea162b612e2d4
+- Content hash: 3f7337dff7ca205cd8944f302295b773553d545280ce821190ddb703c52f3a77
 
 kind=GUIDED
 title=Guided practice
-body=Compare the expected-event and employee-obligation examples, then select the requested example or complete English meaning. A missed check returns to the complete explanation and examples.
+body=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u19-g-probability-0
@@ -775,13 +779,13 @@ remediationStepId=u19-st-rem-probability
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c351ab4a83a46013b7068e7994daa60c042dd46c1dd52f79f07e3b88200d3c87
+- Content hash: acc259723091051abcd78bb9506a691d957bd2092d814f527000b759b2d1ea66
 
 kind=REMEDIATE
 title=Review the complete contrast
-body=Затме́ние должно́ наступи́ть в три часа́. — The eclipse should occur at three o'clock. Here should expresses an expected event, not a duty imposed on the eclipse. The short adjective agrees with the neuter singular subject; the following infinitive names the event. The retained source description is (with a verb) Used to express likelihood. Usually translated as "should".
+body=Затме́ние должно́ наступи́ть в три часа́. — The eclipse should occur at three o'clock. Here should expresses an expected event, not a duty imposed on the eclipse. The short adjective agrees with the neuter subject and the infinitive names the event. The retained usage description is (with a verb) Used to express likelihood. Usually translated as "should".
 
-Слу́жащие должны́ во́время явля́ться на рабо́ту. — Employees must report to work on time. This example states an obligation for plural employees rather than predicting an eclipse. Meaning comes from context as well as the shared adjective-plus-infinitive structure. In the likelihood selection choose the eclipse example. For its full English meaning choose the entire sentence, not the dictionary usage label (with a verb). Both independent checks currently repeat this same eclipse sentence; recognizing it twice does not demonstrate broader sense discrimination or independent sentence production.
+Слу́жащие должны́ во́время явля́ться на рабо́ту. — Employees must report to work on time. This states an obligation for plural employees. The English label an obligation describes a required action; an expected event describes a prediction such as the eclipse. Context determines which sense the shared adjective-plus-infinitive structure expresses. One independent check asks for the eclipse sentence meaning; the other classifies the employee obligation. These two examples do not demonstrate independent sentence production or every use of the adjective.
 dominantAction=Continue
 references=
 items=
@@ -799,11 +803,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ab12259223fc6e5b6b016c501ccffaa40aa6e431328f51fbedbbed28aa01dc21
+- Content hash: 4b4674346440556d96def3f5599590036c0c67bcdde419c2d604ac038945b811
 
 kind=CHECK
 title=Independent checks
-body=Compare the expected-event and employee-obligation examples, then select the requested example or complete English meaning. A missed check returns to the complete explanation and examples.
+body=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u19-i-probability-1,u19-i-probability-2
@@ -1206,19 +1210,19 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5834b05f792a5fbfc3031d1942250d9d5c04f6db3febbba6b0aaf25cb24fa0c4
+- Content hash: 514c5e077ad10e3374a5c3f0c92c4a71e3e02de7017443c472525508fb72b644
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is the dissuade meaning?
+prompt=Which English meaning matches the shown Russian verb?
 promptLetter=отговорить
 options=to dissuade | to agree | to write
 answer=to dissuade
-feedback=Does this answer show the dissuade meaning? to dissuade.
+feedback=отговорить has the dissuade meaning: to dissuade; it concerns persuading someone against an action.
 objectiveId=obj-u19-prefix-caution
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the dissuade meaning? | Does this row fail the dissuade meaning?
+distractorRationales= | to agree is the meaning of the agreement verb. | to write is the meaning of the writing verb.
 testedFeature=DISSUADE_MEANING
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u19-prefix-caution-0
@@ -1226,8 +1230,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u19-prefix-caution-0-en
 distractorSourceIds= | prov-ex-u19-prefix-caution-1-en | prov-ex-u19-prefix-caution-2-en
-distractorDifference= | Does this row fail the dissuade meaning? | Does this row fail the dissuade meaning?
-whyAnswerDemonstratesObjective=Does this answer show the dissuade meaning?
+distractorDifference= | to agree is the meaning of the agreement verb. | to write is the meaning of the writing verb.
+whyAnswerDemonstratesObjective=отговорить has the dissuade meaning: to dissuade; it concerns persuading someone against an action.
 contrastMembers=to dissuade | to agree | to write
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u19-prefix-caution-0-ru | prov-ex-u19-prefix-caution-0-en | prov-ex-u19-prefix-caution-1-en | prov-ex-u19-prefix-caution-2-en
@@ -1349,19 +1353,19 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1cf8994090078bb6b2df325440d52bfe076dfc38b3cacc205c31f300c9c06d0f
+- Content hash: 9a08184431fe19c572b5f6992800ccb84bd55360e8dbb4ba1cd158b2c4bab8b2
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is the agree meaning?
+prompt=Which English meaning matches the shown Russian verb?
 promptLetter=договориться
 options=to agree | to dissuade | to do
 answer=to agree
-feedback=Does this answer show the agree meaning? to agree.
+feedback=договориться has the agree meaning: to agree; it expresses reaching an agreement.
 objectiveId=obj-u19-prefix-caution
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the agree meaning? | Does this row fail the agree meaning?
+distractorRationales= | to dissuade is the meaning of a different prefixed verb. | to do is the meaning of the doing verb.
 testedFeature=AGREE_MEANING
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u19-prefix-caution-1
@@ -1369,8 +1373,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u19-prefix-caution-1-en
 distractorSourceIds= | prov-ex-u19-prefix-caution-0-en | prov-ex-u19-prefix-caution-3-en
-distractorDifference= | Does this row fail the agree meaning? | Does this row fail the agree meaning?
-whyAnswerDemonstratesObjective=Does this answer show the agree meaning?
+distractorDifference= | to dissuade is the meaning of a different prefixed verb. | to do is the meaning of the doing verb.
+whyAnswerDemonstratesObjective=договориться has the agree meaning: to agree; it expresses reaching an agreement.
 contrastMembers=to agree | to dissuade | to do
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u19-prefix-caution-1-ru | prov-ex-u19-prefix-caution-1-en | prov-ex-u19-prefix-caution-0-en | prov-ex-u19-prefix-caution-3-en
@@ -1384,31 +1388,31 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 45b0aa80715df792b508283b304a2c50337aea7ec69e693dffb53ee4d8274d47
+- Content hash: 0d9eb9edce2b8f3480dcef015ada05c1824cb4f19f3da28aaa312250063f6ee3
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the dissuade perfective?
-promptLetter=сказать
+prompt=Which Russian verb is the perfective partner of the shown imperfective?
+promptLetter=отговаривать
 options=отговорить | договориться | сделать
 answer=отговорить
-feedback=Does this answer show the dissuade perfective? отговорить.
+feedback=отговаривать has the perfective partner отговорить. The retained source explicitly pairs these two verbs with the same dissuading meaning.
 objectiveId=obj-u19-prefix-caution
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the dissuade perfective? | Does this row fail the dissuade perfective?
-testedFeature=DISSUADE_PERFECTIVE
+distractorRationales= | договориться expresses reaching an agreement, a different lexical meaning. | сделать means to do, a different lexical meaning.
+testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u19-prefix-caution-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u19-prefix-caution-0-ru
 distractorSourceIds= | prov-ex-u19-prefix-caution-1-ru | prov-ex-u19-prefix-caution-3-ru
-distractorDifference= | Does this row fail the dissuade perfective? | Does this row fail the dissuade perfective?
-whyAnswerDemonstratesObjective=Does this answer show the dissuade perfective?
+distractorDifference= | договориться expresses reaching an agreement, a different lexical meaning. | сделать means to do, a different lexical meaning.
+whyAnswerDemonstratesObjective=отговаривать has the perfective partner отговорить. The retained source explicitly pairs these two verbs with the same dissuading meaning.
 contrastMembers=отговорить | договориться | сделать
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-u19-prefix-caution-x-0 | prov-ex-u19-prefix-caution-0-ru | prov-ex-u19-prefix-caution-1-ru | prov-ex-u19-prefix-caution-3-ru
+relationParticipantIds=prov-u1920-prefix-imperfective | prov-ex-u19-prefix-caution-0-ru | prov-ex-u19-prefix-caution-1-ru | prov-ex-u19-prefix-caution-3-ru
 responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u19-i-conditional-1`
@@ -1595,36 +1599,35 @@ responseKind=ENGLISH_CLASSIFICATION
 
 - Objectives: obj-u19-probability
 - Sessions: u19-s-probability
-- Source: src-enwiktionary-dolzhen-84965088
-- Rights: rights-enwiktionary-dolzhen-84965088
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 52519e667c70a96b35ed37f03487a19280090912ccbb39eb6ffa2e99740aa837
+- Content hash: b4beb4735731320c128879bddb8ec697944030fa2af4618d03e489c65f8a590d
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English meaning matches the shown form?
-promptLetter=Затме́ние должно́ наступи́ть в три часа́.
-options=The eclipse should occur at three o'clock. | (with a verb)
-answer=The eclipse should occur at three o'clock.
-feedback=Choose The eclipse should occur at three o'clock. The complete sentence gives an expected eclipse and its time.
+prompt=Which English label describes the use of the adjective in the shown sentence?
+promptLetter=Слу́жащие должны́ во́время явля́ться на рабо́ту.
+options=an obligation | an expected event
+answer=an obligation
+feedback=Слу́жащие должны́ во́время явля́ться на рабо́ту. expresses an obligation: the employees must report on time.
 objectiveId=obj-u19-probability
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | (with a verb) is a dictionary usage label, not the full sentence meaning.
-testedFeature=LIKELIHOOD_GLOSS_LABEL
-evidenceMode=EXPLICIT_SOURCE_PAIR
+distractorRationales= | an expected event describes a prediction rather than the required employee action.
+testedFeature=OBLIGATION_VS_EXPECTATION
+evidenceMode=STATED_APPLICATION
 contrastSetId=u19-probability-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u19-probability-0-en
-distractorSourceIds= | prov-u19-probability-x-1
-distractorDifference= | (with a verb) is a dictionary usage label, not the full sentence meaning.
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Затме́ние должно́ наступи́ть в три часа́." with the admitted gloss "The eclipse should occur at three o'clock.".
-Choose The eclipse should occur at three o'clock. The complete sentence gives an expected eclipse and its time.
-contrastMembers=The eclipse should occur at three o'clock. | (with a verb)
-relationKind=EXPLICIT_SOURCE_PAIR
-relationParticipantIds=prov-ex-u19-probability-0-ru | prov-ex-u19-probability-0-en | prov-u19-probability-x-1
+answerSourceIds=prov-ca-u1920-probability-contrast-1
+distractorSourceIds= | prov-ca-u1920-probability-contrast-2
+distractorDifference= | an expected event describes a prediction rather than the required employee action.
+whyAnswerDemonstratesObjective=Слу́жащие должны́ во́время явля́ться на рабо́ту. expresses an obligation: the employees must report on time.
+contrastMembers=an obligation | an expected event
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u1920-probability-contrast-0 | prov-ca-u1920-probability-contrast-1 | prov-ca-u1920-probability-contrast-2
 responseKind=ENGLISH_CLASSIFICATION
 
 ### REFERENCE `ref-u1620-attribution`
@@ -4841,6 +4844,1167 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ca-u1920-prefix-check`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 039df6ae9f452450e68b6548f7f0d6baf69878798692414ac3c2776c87a1d8ea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:prefix-check
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+shippedText=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fe8946fc3feb15f273bf502bdab1f2936ff3743558d2b4bb2e8f47ba0edd69ca
+contentHash=3387d77b869f0e259d20167a37bd9fe33457c4cf6c7bd18502c569d15c3bdd13
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-prefix-guided`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5471c8ec23560a1496e2ea0216f4fa6742b8bac7abc10010391504bc40b7d7d9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:prefix-guided
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+shippedText=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fe8946fc3feb15f273bf502bdab1f2936ff3743558d2b4bb2e8f47ba0edd69ca
+contentHash=3387d77b869f0e259d20167a37bd9fe33457c4cf6c7bd18502c569d15c3bdd13
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-prefix-objective`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed4c879be658e9d6fa748fc2f9da7b6f25d4ce473ebf2cda14ca535025f34a81
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:prefix-objective
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Distinguish changed meanings and genuine aspect partners
+shippedText=Distinguish changed meanings and genuine aspect partners
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e245e92130f2251c4cf194ce06e7ad4d8d56c84938e286e81355784a3a78fb44
+contentHash=5bfffdd6c441f30e501e4c47fbaab63d50f6cec54ed49d61a3519551804612cd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-prefix-rem-body`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5781b9af92b1adb8a381ba951ac136a10ebca3e925714a9a863eb38006b3b9d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:prefix-rem-body
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+отговорить — to dissuade. договориться — to agree. These are different meanings, even though the words share material with a verb of speaking. A prefix is not always just an aspect marker: learn the whole verb and its meaning.
+
+отговаривать is the imperfective partner of perfective отговорить: both concern dissuading. The retained source explicitly identifies this pair. сказать belongs to a separate speaking pair; it is not the imperfective partner of отговорить. For a question asking for the perfective partner of отговаривать, select отговорить. договориться is a different verb meaning to agree.
+
+написать — to write. сделать — to do. Neither expresses dissuading or agreeing. When a question asks for a meaning, translate the displayed verb. When it asks for an aspect partner, preserve the lexical meaning while changing aspect. These selections do not demonstrate creating new prefixed verbs or using aspect in a sentence.
+shippedText=отговорить — to dissuade. договориться — to agree. These are different meanings, even though the words share material with a verb of speaking. A prefix is not always just an aspect marker: learn the whole verb and its meaning.
+
+отговаривать is the imperfective partner of perfective отговорить: both concern dissuading. The retained source explicitly identifies this pair. сказать belongs to a separate speaking pair; it is not the imperfective partner of отговорить. For a question asking for the perfective partner of отговаривать, select отговорить. договориться is a different verb meaning to agree.
+
+написать — to write. сделать — to do. Neither expresses dissuading or agreeing. When a question asks for a meaning, translate the displayed verb. When it asks for an aspect partner, preserve the lexical meaning while changing aspect. These selections do not demonstrate creating new prefixed verbs or using aspect in a sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e83481d9f103154df900771b51f0fe1b105d45c4959101f3f747006231d45491
+contentHash=4ea6f679f3d1583b807c6c063e54c445c9ae901ec7ea25cf8c91a089946defe9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-prefix-rem-title`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f5efde5ffbacf48c97def1209a4f70e0fada38fd14fefef02d3cf85ed5dafadf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:prefix-rem-title
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Review the complete contrast
+shippedText=Review the complete contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2dadd789e6983a2deac8d4fc7ad50e749e0b874ab70bf33be0189c61b163202b
+contentHash=053fb587bb355e16305ff4283b70333c9e7a4652b5e28bd2a0dbe78cec7fe279
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-prefix-teach-1-body`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 027816041217e3af4bdb11d0d9c030130f34fc79a4e031db232a318d20081db5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:prefix-teach-1-body
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+отговорить — to dissuade. договориться — to agree. These are different meanings, even though the words share material with a verb of speaking. A prefix is not always just an aspect marker: learn the whole verb and its meaning.
+shippedText=отговорить — to dissuade. договориться — to agree. These are different meanings, even though the words share material with a verb of speaking. A prefix is not always just an aspect marker: learn the whole verb and its meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=297512a2b9ac9d13360e85272e23889c955df66abdf2e0b77067dd818d9f141b
+contentHash=2d4777ba559b11d5aa7ece67a40a006d16e19df87afff6e73c89d7da28f87cd9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-prefix-teach-1-title`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 732606f36834bfc29615c7356be47e719ed12e4fe90bd8ae81f51610ba5b7149
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:prefix-teach-1-title
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Different prefixes can change the meaning
+shippedText=Different prefixes can change the meaning
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=48662203b0aa916185085db850292a22f3c7a9dc860986d0237f11091a9b643d
+contentHash=963e8d51fb0285644234fc62d6abb78bec953704c2170cc8817561cb2f9815b0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-prefix-teach-2-body`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e27cef8b85364e3662d3108af4c32fcc0f7c78169fd52b5bad9f8cb85a64bac3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:prefix-teach-2-body
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+отговаривать is the imperfective partner of perfective отговорить: both concern dissuading. The retained source explicitly identifies this pair. сказать belongs to a separate speaking pair; it is not the imperfective partner of отговорить. For a question asking for the perfective partner of отговаривать, select отговорить. договориться is a different verb meaning to agree.
+shippedText=отговаривать is the imperfective partner of perfective отговорить: both concern dissuading. The retained source explicitly identifies this pair. сказать belongs to a separate speaking pair; it is not the imperfective partner of отговорить. For a question asking for the perfective partner of отговаривать, select отговорить. договориться is a different verb meaning to agree.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=22b698015c3f20823523495c4e04f030d5c678119f6fb8f1d8524b900c4f8a14
+contentHash=0643f4d5ec8e8ae74a0e45972f97a298684b12ec009ab476ef3d1487dfe4a943
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-prefix-teach-2-title`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e157812491ec9ecd6baf9e35805d14d75ba8ac324466786c44a6106807e7469
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:prefix-teach-2-title
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+The actual dissuade aspect pair
+shippedText=The actual dissuade aspect pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab46f46ba95ceff290a114b6e870ed4a48e903eaa92f06eae5c00bf2168f02a6
+contentHash=0222e6fe428d2eb3b8794e67ce957116a267fd253c485c331bb09c4e0a541920
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-prefix-teach-3-body`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa566471dc90e641e9fdbab86cc13e63b133bfdcfcf9174e5ac575c776e70dbe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:prefix-teach-3-body
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+написать — to write. сделать — to do. Neither expresses dissuading or agreeing. When a question asks for a meaning, translate the displayed verb. When it asks for an aspect partner, preserve the lexical meaning while changing aspect. These selections do not demonstrate creating new prefixed verbs or using aspect in a sentence.
+shippedText=написать — to write. сделать — to do. Neither expresses dissuading or agreeing. When a question asks for a meaning, translate the displayed verb. When it asks for an aspect partner, preserve the lexical meaning while changing aspect. These selections do not demonstrate creating new prefixed verbs or using aspect in a sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d88fc5ea4537f42626ed963dd3567341c51e7534d459edb6a51b380efdf78617
+contentHash=18eb54f9c587fd4bb3b756f963ddc04ee00ed4858f99925ae5f581f26af04eca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-prefix-teach-3-title`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e125b427af1e385976097aee895ad24161e44d89dac45de7844583db362aeb5e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:prefix-teach-3-title
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Keep the other meanings separate
+shippedText=Keep the other meanings separate
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=905243daf7f02b86de92988fadaded4d1274ea8c46cc70d83b71ba44c8e54d07
+contentHash=fba55f4beef3f9139d71db8054e49702b0ae70ee314572bd8ab5568f68933a85
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-probability-check`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 153f41a275fde07ec67d502e2c0f3b3001b8586f88da7b798f192540febcd6fd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:probability-check
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+shippedText=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fe8946fc3feb15f273bf502bdab1f2936ff3743558d2b4bb2e8f47ba0edd69ca
+contentHash=3387d77b869f0e259d20167a37bd9fe33457c4cf6c7bd18502c569d15c3bdd13
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-probability-contrast-0`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 90dc92f59200adee5057033b54c0705d42dc643739be9791e57c592a15c94f0e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:employee-contrast
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Слу́жащие должны́ во́время явля́ться на рабо́ту.
+an obligation
+an expected event
+The employees are required to report on time; this use imposes a duty rather than predicts an event.
+shippedText=Слу́жащие должны́ во́время явля́ться на рабо́ту.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ba0751926455f7e0f56193a8a032362c70e74da35e462a4ea77fe8c17bdb1630
+contentHash=5658954536672669d3a241990de0315262de6b1b8ecdac50e66c350e1409fd4c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-probability-contrast-1`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a304cb984255de5cadbd6b642f1ca6339b6d900736c3d4a5c84720ac33805c1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:employee-contrast
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Слу́жащие должны́ во́время явля́ться на рабо́ту.
+an obligation
+an expected event
+The employees are required to report on time; this use imposes a duty rather than predicts an event.
+shippedText=an obligation
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ba0751926455f7e0f56193a8a032362c70e74da35e462a4ea77fe8c17bdb1630
+contentHash=b6d032ed3bc35f36c0d72c84c6e17c40388742ae1aaba99faafb8c9d98ef8422
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-probability-contrast-2`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5fe616817ddd4b43762ca3994182911ec5223fbece5b52ff970b80f8a882d37
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:employee-contrast
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Слу́жащие должны́ во́время явля́ться на рабо́ту.
+an obligation
+an expected event
+The employees are required to report on time; this use imposes a duty rather than predicts an event.
+shippedText=an expected event
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ba0751926455f7e0f56193a8a032362c70e74da35e462a4ea77fe8c17bdb1630
+contentHash=bc3a2a66db074371104272a28bdf35f87a05bbf2eb42ebe8a076449da39feebf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-probability-guided`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4bfaca8dff0db8ca0927d45942f3b18520080025b865ff024db2a0f695d5616
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:probability-guided
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+shippedText=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fe8946fc3feb15f273bf502bdab1f2936ff3743558d2b4bb2e8f47ba0edd69ca
+contentHash=3387d77b869f0e259d20167a37bd9fe33457c4cf6c7bd18502c569d15c3bdd13
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-probability-objective`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c9da67cb0598f5b8a1363f8bf24f49c933e8895a5b6b7a30e90c544b4d3c3fb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:probability-objective
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Distinguish expected events from obligation
+shippedText=Distinguish expected events from obligation
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0b751da3d7ee7caf74a05728e7a9b8f091a00afedd964bcc74dffb9ef4730292
+contentHash=b7c7477ce4cce1cf52af92f00205196c362c384bc9b49bb488bd11320602f383
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-probability-rem-body`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd87f35ae4e64d8cd8c1f08b620682624b3ca55f8752712c42bdc47a14e41568
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:probability-rem-body
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Затме́ние должно́ наступи́ть в три часа́. — The eclipse should occur at three o'clock. Here should expresses an expected event, not a duty imposed on the eclipse. The short adjective agrees with the neuter subject and the infinitive names the event. The retained usage description is (with a verb) Used to express likelihood. Usually translated as "should".
+
+Слу́жащие должны́ во́время явля́ться на рабо́ту. — Employees must report to work on time. This states an obligation for plural employees. The English label an obligation describes a required action; an expected event describes a prediction such as the eclipse. Context determines which sense the shared adjective-plus-infinitive structure expresses. One independent check asks for the eclipse sentence meaning; the other classifies the employee obligation. These two examples do not demonstrate independent sentence production or every use of the adjective.
+shippedText=Затме́ние должно́ наступи́ть в три часа́. — The eclipse should occur at three o'clock. Here should expresses an expected event, not a duty imposed on the eclipse. The short adjective agrees with the neuter subject and the infinitive names the event. The retained usage description is (with a verb) Used to express likelihood. Usually translated as "should".
+
+Слу́жащие должны́ во́время явля́ться на рабо́ту. — Employees must report to work on time. This states an obligation for plural employees. The English label an obligation describes a required action; an expected event describes a prediction such as the eclipse. Context determines which sense the shared adjective-plus-infinitive structure expresses. One independent check asks for the eclipse sentence meaning; the other classifies the employee obligation. These two examples do not demonstrate independent sentence production or every use of the adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=51a5e0990566d5497d7405aa7b4eef234b000a61c7de32aef5278d0262d13119
+contentHash=fd79486a88c35b19b03d62389c2d26162d07abb43a10e8d89d2c5c1c5d784d52
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-probability-rem-title`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a4981cb7ef4a0e044c48c1d2afc07af4871dbc6faa9c2da536d5426e13e762d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:probability-rem-title
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Review the complete contrast
+shippedText=Review the complete contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2dadd789e6983a2deac8d4fc7ad50e749e0b874ab70bf33be0189c61b163202b
+contentHash=053fb587bb355e16305ff4283b70333c9e7a4652b5e28bd2a0dbe78cec7fe279
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-probability-teach-1-body`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14b9ee98796d762fee8b9ce3f8daff3df09b447e64a0d0afff72ab2742987a31
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:probability-teach-1-body
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Затме́ние должно́ наступи́ть в три часа́. — The eclipse should occur at three o'clock. Here should expresses an expected event, not a duty imposed on the eclipse. The short adjective agrees with the neuter subject and the infinitive names the event. The retained usage description is (with a verb) Used to express likelihood. Usually translated as "should".
+shippedText=Затме́ние должно́ наступи́ть в три часа́. — The eclipse should occur at three o'clock. Here should expresses an expected event, not a duty imposed on the eclipse. The short adjective agrees with the neuter subject and the infinitive names the event. The retained usage description is (with a verb) Used to express likelihood. Usually translated as "should".
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f242d5258beadaa762698a7f27432531245ab35280c1bfdbae547a6df5952938
+contentHash=80e4794c6d50824a5d5cb905eeb1095b2ce959991fe225df8ab93f2e86e88698
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-probability-teach-1-title`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9dc39015012921b893a4f7462fdaa4964217131ff624d8c983133d85db08fa13
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:probability-teach-1-title
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+An expected eclipse
+shippedText=An expected eclipse
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8fb2e0ee47575bcfbcb39f6a7795f3d0429327a27773b1a2ded5b3bac3628678
+contentHash=87e40ff27472a6d0c70ba980b33275b0ddbbddae0b73a0fe03db6e7eae5a1a9e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-probability-teach-2-body`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d87132f43a8f36514445ac3ceb7df9802040e4df69d4db34b18fe82bf99dcca3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:probability-teach-2-body
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Слу́жащие должны́ во́время явля́ться на рабо́ту. — Employees must report to work on time. This states an obligation for plural employees. The English label an obligation describes a required action; an expected event describes a prediction such as the eclipse. Context determines which sense the shared adjective-plus-infinitive structure expresses. One independent check asks for the eclipse sentence meaning; the other classifies the employee obligation. These two examples do not demonstrate independent sentence production or every use of the adjective.
+shippedText=Слу́жащие должны́ во́время явля́ться на рабо́ту. — Employees must report to work on time. This states an obligation for plural employees. The English label an obligation describes a required action; an expected event describes a prediction such as the eclipse. Context determines which sense the shared adjective-plus-infinitive structure expresses. One independent check asks for the eclipse sentence meaning; the other classifies the employee obligation. These two examples do not demonstrate independent sentence production or every use of the adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff39f844b1537fa4226d2aca98e47eab848864cefedf8e5e1102be2e2c18e34d
+contentHash=a0b7c52379982441e842bc17bf9ec7679c2e926affb82d50e4aa65a4db84ebd8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-probability-teach-2-title`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0fa2c3d701488be71507928ae419f7b4c41e2b61ab1cb8f60c30d42daf94ca0e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:probability-teach-2-title
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+An employee obligation
+shippedText=An employee obligation
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bab0ef9bb348f7da13a0625d93aad3632a6b14166b9f940a105f71bed242a9fa
+contentHash=d1466b11aa7d3fc12e1a1d8645d9338335151e6578d243486e1570c4aaaacd4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-g-prefix-caution-0-feedback`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 197667fd83b96515948792e8eaf78e340fc51ceb529691ef154d508656cb735b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:u19-g-prefix-caution-0-feedback
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+отговорить has the dissuade meaning: to dissuade; it concerns persuading someone against an action.
+shippedText=отговорить has the dissuade meaning: to dissuade; it concerns persuading someone against an action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=18ab7ecb76c430598a2541e0267436b09961ad82d29f04f23dd02d5a6aeb73ad
+contentHash=98bad0e470f9843f374994dd1f4d6117b99256b7b2b4992b501794e263e7b187
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-g-prefix-caution-0-prompt`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd10266781097a455077c08c3ba2d45717a89e5a12f7cb0b64a5a9a95f803d83
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:u19-g-prefix-caution-0-prompt
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Which English meaning matches the shown Russian verb?
+shippedText=Which English meaning matches the shown Russian verb?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=be70d7482ed6f6cf6804790338416dca42e9cc57258fbe417d7b00d21c6f7d3a
+contentHash=7b60d03306e638ba814ed23cca6de159e4007020ead66d4816c5e36d7eb2798c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-g-prefix-caution-0-wrong-0`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ef795e4c8ae89a4a0a453d2f6cb405d2be9e41f09e91d5a68407511f3e55067
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:u19-g-prefix-caution-0-wrong-0
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+to agree is the meaning of the agreement verb.
+shippedText=to agree is the meaning of the agreement verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3e8c1a303155f8466059d7e718c3a0de24842d30bba1c8b1ef320e4b8d6de230
+contentHash=f3c640699f4f98ca8f54f14f422b61a413c5e0c587ea0a19003e6eb37132731c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-g-prefix-caution-0-wrong-1`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f26a7857fb6116b97243ab5d6283b0d3bd93b7145904b124e2490dc8176520f1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:u19-g-prefix-caution-0-wrong-1
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+to write is the meaning of the writing verb.
+shippedText=to write is the meaning of the writing verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=198f5c6d70123e76b12750791dfa0c96c78b36bcd2a2b2086a095f9951fb4f38
+contentHash=d8183ee39b5b6dbd97913af2bf7bb80ec18816b8bf50868f350e62e25a7f9f8f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-1-feedback`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42ac7886e9f406934c0975804aac33bf3e8f8314429adf9c0b08a04c817a75c3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:u19-i-prefix-caution-1-feedback
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+договориться has the agree meaning: to agree; it expresses reaching an agreement.
+shippedText=договориться has the agree meaning: to agree; it expresses reaching an agreement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c8ab9d258c83df9cb8adebfdb4ba1561d72553980d83987f2de4f07b4d49bcd1
+contentHash=196b8cf5f85f87e8fc02c907f8abf217710db967f51fab83c89840603e6eab85
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-1-prompt`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f1e085c8987121668169d340a8023f01e5c8783a6c7d12d62dc88d9f5954075d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:u19-i-prefix-caution-1-prompt
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Which English meaning matches the shown Russian verb?
+shippedText=Which English meaning matches the shown Russian verb?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=be70d7482ed6f6cf6804790338416dca42e9cc57258fbe417d7b00d21c6f7d3a
+contentHash=7b60d03306e638ba814ed23cca6de159e4007020ead66d4816c5e36d7eb2798c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-1-wrong-0`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 32770a5d625570f4abb39de441507b8a14fd4b30878b44519dcceafe4423f549
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:u19-i-prefix-caution-1-wrong-0
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+to dissuade is the meaning of a different prefixed verb.
+shippedText=to dissuade is the meaning of a different prefixed verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d1b8106be5536fe05fc0f35dc299282a0993999f277230327667aa48c0d321a4
+contentHash=b0cbbcb1c807827f63a6089f98d0e2dee15a913c709aa6c0651c0b6232dc6c0b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-1-wrong-1`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae1ffb75bf936615ea8e3f6bc0f143be45e07895670b78bb70bb3a51061bf70b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:u19-i-prefix-caution-1-wrong-1
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+to do is the meaning of the doing verb.
+shippedText=to do is the meaning of the doing verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5869f9b8462492ad0d21c837c18be8622a0df44c10ad91acb6b4d9b73b5337d8
+contentHash=2e35ef00d2335e64cd8180c237b79ef92aff98ccbda77cce17bfe484f65b5d31
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-2-feedback`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 665e0d6df7a845ce7bc2e8540853f32f0c3669d052539e167fdad3cc5727e32f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:u19-i-prefix-caution-2-feedback
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+отговаривать has the perfective partner отговорить. The retained source explicitly pairs these two verbs with the same dissuading meaning.
+shippedText=отговаривать has the perfective partner отговорить. The retained source explicitly pairs these two verbs with the same dissuading meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d999d1e46997c304d0e202dc39401ef1318eb1e9ff187a02e5baf55d9c895872
+contentHash=13cd2f06c5590a8f7e8ff39ed80584c069074839211528e2aaf94a25b3e4ff6b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-2-prompt`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6dcfa554636ece79879b312f18d470c0eab4ea4f972035240d41f4902add1876
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:u19-i-prefix-caution-2-prompt
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Which Russian verb is the perfective partner of the shown imperfective?
+shippedText=Which Russian verb is the perfective partner of the shown imperfective?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=284c15c6003601f0d97a98b4e0eca97c4ce48c5920f34697bfaafe6466a106ad
+contentHash=c88f58fd168f7ded4116fbefec17dca470c871f36828a9f46c657a0a3e32df1c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-2-wrong-0`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68bd2163fdf1affe6f90b266f99a970b7d654726d703b218e8f75e0f1498a4d2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:u19-i-prefix-caution-2-wrong-0
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+договориться expresses reaching an agreement, a different lexical meaning.
+shippedText=договориться expresses reaching an agreement, a different lexical meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=45fe1c8d2e4fc72aca3b82f7a2dcdfbee1018bd708b0669b84194672819f8733
+contentHash=798c3d59ac923af68fb4279a5064dce174ae522f958e22afa67f5461bbff97de
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-2-wrong-1`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e3657f0bf4708d7a48f598ff785c3614d14675cdccbc6ef9bc578fa1e3963ca
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-prefix-caution:u19-i-prefix-caution-2-wrong-1
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+сделать means to do, a different lexical meaning.
+shippedText=сделать means to do, a different lexical meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=49e5583830f5de62d8c09596dff5d5a592e60111ba0368999699aa30b27d67fd
+contentHash=fcaa751120a151fb67e24731a02e1eff716d47490904e24f9976a85f7ef48dc0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-i-probability-2-feedback`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00612fa081767c0937d2ff3419cb8357c6db1328ed364e3a7ecfa9fb510377d8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:u19-i-probability-2-feedback
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Слу́жащие должны́ во́время явля́ться на рабо́ту. expresses an obligation: the employees must report on time.
+shippedText=Слу́жащие должны́ во́время явля́ться на рабо́ту. expresses an obligation: the employees must report on time.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c22831fd63412f1021f04fc5d38c205398f37cd17e8bdc8f6a3e0c4059aed481
+contentHash=77e4f59116294cdd0fd369323c6b722fe886045cfcb73c4fd6b7fb6e8cd88e83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-i-probability-2-prompt`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 82085ebeffaf28206c2e8913e5bd20213a33e114e09a8996b796b9ea448c5235
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:u19-i-probability-2-prompt
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Which English label describes the use of the adjective in the shown sentence?
+shippedText=Which English label describes the use of the adjective in the shown sentence?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1b9ec20a1edac7bff409b0843eae27b4739550c34ab7349636116b29b28fe95c
+contentHash=25f90da852596671a69c6e923f9f2177fab57e4faa1cd7c20d80802cefae56d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u19-i-probability-2-wrong-0`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da0e572e72c8abb4c4e1cb552439609ba193d3242c5b9fb9b5e2ea36c608fafe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u19-probability:u19-i-probability-2-wrong-0
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+an expected event describes a prediction rather than the required employee action.
+shippedText=an expected event describes a prediction rather than the required employee action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=82e48e8e37a3532c23bb8a008cf08004c312b249393ac0e98fd15c3f0cc2d255
+contentHash=c0fdf649fb499080750550b315754ea4d5fe1a79c01877a95cabf562fc7658b4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-u19-conditional-0-en`
 
 - Objectives: obj-u19-conditional
@@ -6274,6 +7438,41 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u1920-prefix-imperfective`
+
+- Objectives: obj-u19-prefix-caution
+- Sessions: u19-s-orient, u19-s-prefix-caution
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 445c582d312314e3f98e56063d86b1b0cdc22fd702fdac2fe2d58f3deaeaefac
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
+sourceRevision=4059032
+sourceRecordId=aspect:Many verbs come in pairs like '''делать/сделать''', with the perfective variant 
+originalSourceText=Many verbs come in pairs like '''делать/сделать''', with the perfective variant simply being the imperfective with a prefix. For instance, '''написать''' is the perfective of '''писать''' ('to write'), '''посмотреть''' is the perfective of '''смотреть''' ('to watch'), and we've already seen the imperfective '''делать''' and the perfective '''сделать''' ('to do'). For such verbs, the aspectual pair will often be given in dictionaries as a prefix indicated in parentheses: '''(с)делать, (по)смотреть, (на)писать''', etc. Such pairs of aspects are easy to learn, as the perfective also conjugates the same as the imperfective, only with a prefix.
+
+However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be applied to an imperfective to make a whole new verbal pair. For instance, we can add the prefix '''от''' to the imperfective '''говорить''' to make the new perfective '''отговорить''', meaning 'to dissuade'. From this, we can derive a new imperfective aspect, '''отговаривать'''. Another aspectual pair we can derive from '''говорить''' is '''договариваться''' (impf.) and '''договориться''' (perf.), meaning "to agree". So we have three pairs derived using prefixes:
+: '''говорить''' (impf.) and '''сказать''' (pf.)
+: '''отговаривать''' (impf.) and '''отговорить''' (pf.)
+: '''договариваться''' (impf.) and '''договориться''' (pf.)
+In other words, the easiest way to remember aspectual pairs is to learn the imperfective and learn the 'perfective prefix'. The prefix itself is largely unpredictable (the most common is '''по-''', and others are '''про-''', '''на-''', '''за-''', etc), not all verbs form their perfective aspect with a prefix, and some prefixes can create whole new verbs.
+shippedText=отговаривать
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=cd3e167b469b3cef92fc14fd6b16cb592deae02ce690d74ca62808dffb7fe70c
+contentHash=e5dd25a937834f238c0277ebf2ebeb7b25b7b45b4acb4096031730d21e72aec1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### AUTHORED_ENGLISH `en-ca-19-11239`
 
 - Objectives: none
@@ -6985,14 +8184,16 @@ permitsAppUse=true
 - `u19-st-teach-prefix-caution-1` EXAMPLE `ex-u19-prefix-caution-0`
 - `u19-st-teach-prefix-caution-1` EXAMPLE `ex-u19-prefix-caution-1`
 - `u19-st-teach-prefix-caution-1` REFERENCE `ref-u1620-attribution`
-- `u19-st-guided-prefix-caution-1` REMEDIATION `u19-st-rem-prefix-caution`
-- `u19-st-guided-prefix-caution-1` ITEM `u19-g-prefix-caution-0`
 - `u19-st-teach-prefix-caution-2` REFERENCE `ref-u1620-attribution`
 - `u19-st-teach-prefix-caution-3` EXAMPLE `ex-u19-prefix-caution-2`
 - `u19-st-teach-prefix-caution-3` EXAMPLE `ex-u19-prefix-caution-3`
 - `u19-st-teach-prefix-caution-3` REFERENCE `ref-u1620-attribution`
+- `u19-st-guided-prefix-caution-1` REMEDIATION `u19-st-rem-prefix-caution`
+- `u19-st-guided-prefix-caution-1` ITEM `u19-g-prefix-caution-0`
 - `u19-st-rem-prefix-caution` EXAMPLE `ex-u19-prefix-caution-0`
 - `u19-st-rem-prefix-caution` EXAMPLE `ex-u19-prefix-caution-1`
+- `u19-st-rem-prefix-caution` EXAMPLE `ex-u19-prefix-caution-2`
+- `u19-st-rem-prefix-caution` EXAMPLE `ex-u19-prefix-caution-3`
 - `u19-st-check-prefix-caution` REMEDIATION `u19-st-rem-prefix-caution`
 - `u19-st-check-prefix-caution` ITEM `u19-i-prefix-caution-1`
 - `u19-st-check-prefix-caution` ITEM `u19-i-prefix-caution-2`
@@ -7142,6 +8343,44 @@ permitsAppUse=true
 - `obj-u19-probability` PROVENANCE `prov-ca-u19-instruction-u19-i-probability-2-feedback`
 - `obj-u19-probability` PROVENANCE `prov-ca-u19-instruction-u19-i-probability-2-prompt`
 - `obj-u19-probability` PROVENANCE `prov-ca-u19-instruction-u19-i-probability-2-rationale`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-prefix-check`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-prefix-guided`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-prefix-objective`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-prefix-rem-body`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-prefix-rem-title`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-prefix-teach-1-body`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-prefix-teach-1-title`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-prefix-teach-2-body`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-prefix-teach-2-title`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-prefix-teach-3-body`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-prefix-teach-3-title`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-probability-check`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-probability-contrast-0`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-probability-contrast-1`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-probability-contrast-2`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-probability-guided`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-probability-objective`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-probability-rem-body`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-probability-rem-title`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-probability-teach-1-body`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-probability-teach-1-title`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-probability-teach-2-body`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-probability-teach-2-title`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-u19-g-prefix-caution-0-feedback`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-u19-g-prefix-caution-0-prompt`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-u19-g-prefix-caution-0-wrong-0`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-u19-g-prefix-caution-0-wrong-1`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-1-feedback`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-1-prompt`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-1-wrong-0`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-1-wrong-1`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-2-feedback`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-2-prompt`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-2-wrong-0`
+- `obj-u19-prefix-caution` PROVENANCE `prov-ca-u1920-u19-i-prefix-caution-2-wrong-1`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-u19-i-probability-2-feedback`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-u19-i-probability-2-prompt`
+- `obj-u19-probability` PROVENANCE `prov-ca-u1920-u19-i-probability-2-wrong-0`
 - `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-0-en`
 - `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-0-ru`
 - `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-1-en`
@@ -7189,6 +8428,7 @@ permitsAppUse=true
 - `obj-u19-probability` PROVENANCE `prov-u19-probability-rem`
 - `obj-u19-probability` PROVENANCE `prov-u19-probability-x-0`
 - `obj-u19-probability` PROVENANCE `prov-u19-probability-x-1`
+- `obj-u19-prefix-caution` PROVENANCE `prov-u1920-prefix-imperfective`
 
 ## Book-directed experiences
 

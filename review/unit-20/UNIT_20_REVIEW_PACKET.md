@@ -11,12 +11,12 @@ Unit 20 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: ea13e82d2999b79a0234f0999c9478efc17e1df5
-- Unit content-review SHA-256: 16a66abe6fa5f1d8191ef9e0547375a17781f334b6e36bbdf4f8dc8c13359a46
+- Curriculum source commit: 22f3746d28fe42997c6a8fc3926360444ddba016
+- Unit content-review SHA-256: bb408265fb5239daeb86d43c007061bff330e02a0a9afc1aa677526ccf57302b
 - Mapping-package SHA-256: f24f256481096bcc5f47bcb849f053bfda59fc67e670492c6b4e7a42b514a8c9
-- Pack content-review SHA-256: 6d1249456ad2dd1e06583560ffb919183443957bda2d6e2395faf30cccfe76ce
-- Review-package SHA-256: 78d51ba2063e920e51702f7cf0ded8698fc3fe7ad12297ce90482ca68487b5da
-- Repository source SHA-256: bfc192446981a9d9b78c067d7987e2661ee31c1b67139e8dcb5f8f172419f24a
+- Pack content-review SHA-256: f36fab94cfc970f15b4543fc806188ad3eea7b47302faa4b4490c5441a68d132
+- Review-package SHA-256: e7333cc06f12fd6cd0e68aa91cc0fe692b5e0863e7802549ff2fc6b0d5deb3c9
+- Repository source SHA-256: 09bccb7533f9d314fd179b2de642564b19fd3baa6c8e0647447497430bbf2b05
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,9 +113,9 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f8e24104c784a56a51dd5d9a429e1271fc3bed21882ab301999fc72360628611
+- Content hash: 5eb6d338da898128809f96d1a16ed131034f9e8f5439e5bbea15b3c432f9416e
 
-title=Choose the admitted gloss beside the shown motion line
+title=Distinguish motion meaning, directionality and setting out
 kind=RECOGNITION
 unitNumber=20
 instruction=u20-st-orient,u20-st-teach-motion-1,u20-st-teach-motion-2,u20-st-teach-motion-3,u20-st-teach-motion-4,u20-st-teach-motion-5
@@ -188,12 +188,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f9e6b7e083dca16fd2ab77689561ec90f3dca1c24d755eb6ed32c336deaf483f
+- Content hash: c0942e61a2e8997daa3e7a5984cfb8985b9b24fba90b99d96cc1646c25a348cb
 
-title=Choose the admitted gloss beside the shown motion line
+title=Distinguish motion meaning, directionality and setting out
 estimatedMinutes=12
 objectives=obj-u20-motion
-steps=u20-st-teach-motion-1,u20-st-guided-motion-1,u20-st-teach-motion-2,u20-st-teach-motion-3,u20-st-teach-motion-4,u20-st-teach-motion-5,u20-st-rem-motion,u20-st-check-motion
+steps=u20-st-teach-motion-1,u20-st-teach-motion-2,u20-st-teach-motion-3,u20-st-teach-motion-4,u20-st-teach-motion-5,u20-st-guided-motion-1,u20-st-rem-motion,u20-st-check-motion
 
 ### STEP `u20-st-teach-motion-1`
 
@@ -203,11 +203,11 @@ steps=u20-st-teach-motion-1,u20-st-guided-motion-1,u20-st-teach-motion-2,u20-st-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e49f5b101e8d69faa7a909d4bb62ba4be8136f613bac5cc77534849286f52388
+- Content hash: 6f7e92313d5ee9c0ee6c94f5f8d10636d8d09c3d1344abcf91df416c16b99b2b
 
 kind=TEACH
-title=Admitted lines
-body=идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+title=Walking and travelling by vehicle
+body=идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -217,28 +217,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u20-st-guided-motion-1`
-
-- Objectives: obj-u20-motion
-- Sessions: u20-s-motion
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 952a93a00ea23b2bc094b0868cc842619d9cf3ef3139127e8e046cdbb673deb0
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u20-g-motion-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u20-st-rem-motion
-
 ### STEP `u20-st-teach-motion-2`
 
 - Objectives: obj-u20-motion
@@ -247,11 +225,11 @@ remediationStepId=u20-st-rem-motion
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 475babb55712bcfa1d1b535d8aeacb6dc5c25491208322f206205dd51f1d3fdf
+- Content hash: 350655663ef335b4e735b9359a28077be4d9981752b0abdfe00db44671a52112
 
 kind=TEACH
-title=Admitted instruction
-body=unidirectional
+title=Directionality is separate from aspect
+body=The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -269,11 +247,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bf28d4632b28e309a152ca944e3dff1480542e6e85d1fcd7b303f129aac86ff7
+- Content hash: cd4caa4cc2c924de2c4a1c4b47e7bc791a559baeda27420f8c00d42c2812b0a1
 
 kind=TEACH
-title=Admitted lines
-body=нести́ — to carry. вести́ — to lead. 
+title=Carrying, leading and transporting
+body=нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -291,11 +269,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 328b9836671a02fbd8c1b5f8bf6a2d7b7947059e189fcf7e4ad25e270f301507
+- Content hash: ef54afd6d8500f85e2e02a0541a89da2d2ea4312327bec6c4fe413882197f028
 
 kind=TEACH
-title=Admitted lines
-body=Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+title=Setting out does not assert arrival
+body=Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -313,11 +291,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cc8d23c5a983617b77e0c11b3e4ca32e9f4abc02791d1a23e346645d0ec2c5f1
+- Content hash: aef80c13a2d481886a7da9e8543e8518122399200b5c3d35b21ca8813d01af61
 
 kind=TEACH
-title=Admitted lines
-body=Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+title=Read the path and only the displayed clause
+body=Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -327,6 +305,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u20-st-guided-motion-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ea7686533afd137927f765905f6dca0bc510ee7362505e4421dca772c263ea47
+
+kind=GUIDED
+title=Guided practice
+body=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+dominantAction=Continue
+references=
+items=u20-g-motion-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u20-st-rem-motion
+
 ### STEP `u20-st-rem-motion`
 
 - Objectives: obj-u20-motion
@@ -335,15 +335,23 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1f3c42fe2abaaf976ee7a0ae999c3f3d5166a8554a081c6f6265dbf02867c806
+- Content hash: daff8e9b98700bb15ae451ee29774b08d2bd0d8c34265bdee26c03d243926b5b
 
 kind=REMEDIATE
-title=Remediation
-body=unidirectional
+title=Review the complete contrast
+body=идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 dominantAction=Continue
 references=ref-ca-motion
 items=
-examples=ex-u20-motion-0,ex-u20-motion-1
+examples=ex-u20-motion-0,ex-u20-motion-1,ex-u20-motion-2,ex-u20-motion-3,ex-u20-motion-4,ex-u20-motion-5,ex-u20-motion-6,ex-u20-motion-7
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -357,11 +365,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cd5beb0c5de65ad3884a8c0a58e2ce7c45d60423edec37112a083b3d2d02083a
+- Content hash: efec555aca2bafa10afd3b747f219ea5257a3f419b4d4dac21cf8289270b2412
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u20-i-motion-1,u20-i-motion-2,u20-i-motion-3,u20-i-motion-4
@@ -662,19 +670,19 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3fcd2484544f7e2285b28197541b719a909d4d3c500a0f1caafea48bd0f47117
+- Content hash: 1db23457047b836fc610fb004306b1fb80890f4ce4b4729424ed2296d01fcad3
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written beside the shown form?
+prompt=Which English directionality label applies to the shown unprefixed motion verb?
 promptLetter=идти́
 options=unidirectional | multidirectional
 answer=unidirectional
-feedback=The frozen source pairs the shown form "идти́" with the admitted gloss "unidirectional".
+feedback=идти́ is unidirectional in the retained table: it describes motion in one direction. This label identifies directionality, not aspect.
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The table header "multidirectional" names the other motion column.
+distractorRationales= | multidirectional is the other motion column, covering different-direction or repeated movement according to context.
 testedFeature=MOTION_DIRECTION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u20-motion-0
@@ -682,8 +690,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-u20-motion-rem
 distractorSourceIds= | prov-u20-motion-x-1
-distractorDifference= | The table header "multidirectional" names the other motion column.
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "идти́" with the admitted gloss "unidirectional".
+distractorDifference= | multidirectional is the other motion column, covering different-direction or repeated movement according to context.
+whyAnswerDemonstratesObjective=идти́ is unidirectional in the retained table: it describes motion in one direction. This label identifies directionality, not aspect.
 contrastMembers=unidirectional | multidirectional
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u20-motion-0-ru | prov-u20-motion-rem | prov-u20-motion-x-1
@@ -697,19 +705,19 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5e4e87a215c55e95d61f7426f4f27c73803869676da724aed9213204329d134b
+- Content hash: 703119370da2fc341feef85c4c05c90f4e4f40caf6f2aa8214f3abaf17361e6d
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written beside the shown form?
+prompt=Which English meaning matches the shown motion verb?
 promptLetter=идти́
 options=to go, walk | to go by vehicle, ride | to carry
 answer=to go, walk
-feedback=| to go, walk || идти́
+feedback=идти́ means to go, walk: movement on foot.
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | | to go by vehicle, ride || е́хать | | to carry || нести́
+distractorRationales= | to go by vehicle, ride describes movement by vehicle. | to carry describes carrying something on foot.
 testedFeature=MOTION_FOOT
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u20-motion-1
@@ -717,8 +725,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u20-motion-0-en
 distractorSourceIds= | prov-ex-u20-motion-1-en | prov-ex-u20-motion-2-en
-distractorDifference= | | to go by vehicle, ride || е́хать | | to carry || нести́
-whyAnswerDemonstratesObjective=| to go, walk || идти́
+distractorDifference= | to go by vehicle, ride describes movement by vehicle. | to carry describes carrying something on foot.
+whyAnswerDemonstratesObjective=идти́ means to go, walk: movement on foot.
 contrastMembers=to go, walk | to go by vehicle, ride | to carry
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u20-motion-0-ru | prov-ex-u20-motion-0-en | prov-ex-u20-motion-1-en | prov-ex-u20-motion-2-en
@@ -732,19 +740,19 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 20ad4fb31ed0a71aa730555d406f359fb6e38a797e1b6fc5f3af4197dccb6335
+- Content hash: ef672f0e83ddf1c9f58e8648d70e275352b1a71afad752d45cfe987346746b61
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written beside the shown form?
+prompt=Which English meaning matches the shown motion verb?
 promptLetter=нести́
 options=to carry | to lead | to convey, transport
 answer=to carry
-feedback=| to carry || нести́
+feedback=нести́ means to carry: the carrying-on-foot meaning.
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | | to lead || вести́ | | to convey, transport || везти́
+distractorRationales= | to lead describes leading someone. | to convey, transport describes transporting by vehicle.
 testedFeature=MOTION_CARRY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u20-motion-2
@@ -752,8 +760,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u20-motion-2-en
 distractorSourceIds= | prov-ex-u20-motion-3-en | prov-u20-motion-x-3
-distractorDifference= | | to lead || вести́ | | to convey, transport || везти́
+distractorDifference= | to lead describes leading someone. | to convey, transport describes transporting by vehicle.
 whyAnswerDemonstratesObjective=| to carry || нести́
+нести́ means to carry: the carrying-on-foot meaning.
 contrastMembers=to carry | to lead | to convey, transport
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u20-motion-2-ru | prov-ex-u20-motion-2-en | prov-ex-u20-motion-3-en | prov-u20-motion-x-3
@@ -2421,7 +2430,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a2fc642675310fb6938c19ac6d50a84864367fc4f1243b50c2024bec81057895
+- Content hash: 54263499867035aac6daf9c9359e5c9f7ecb1238e80d0c1d7b2709fe58d3b272
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -2459,14 +2468,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=c45065083a99e66611a9ab1b9dca550d5a96d33e93373eaf5085f1cc43849fe2
 audioAssetId=
 reviewerIdentity=
@@ -2482,7 +2499,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 21a785b5e44e13910c8a6650bf47b384906eca4e2a1951bbb8d2d99f78d9d6ac
+- Content hash: f81e05ce7ca1325e3fc0f868e892a7b25b4b3783e410e1b5872dc6a3756111d6
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -2520,14 +2537,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=идти́ — to go, walk. е́хать — to go by vehicle, ride. 
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=d9ce55d3f626fe496bdcef1a6017d2ac7f4f5295269a72bbe2b3beb845960320
 audioAssetId=
 reviewerIdentity=
@@ -2543,7 +2568,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 586b0399cadd4ee8c4c797104eaca06b207779024a5a123dbc10fbc88158baad
+- Content hash: 20bf763a17edba49a5a93d3e491bf30603b5cc3264ee30032a2d811136c40679
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -2581,14 +2606,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=unidirectional
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=9e3ab54e059856f44e350baee31f54849a20c49541e78d33f7fb1bfb7aada214
 audioAssetId=
 reviewerIdentity=
@@ -2604,7 +2637,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6c5f2ee57a8e045fc600913c06d77e813811fc9f379aeb3c773eeca5006cc4b3
+- Content hash: 07d907c73b169bc213c919f1d83491bbe0ca87292e41d7b95f4a1ce620c61830
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -2642,14 +2675,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=нести́ — to carry. вести́ — to lead. 
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=9230af1bd1d6edf82ed3e74fff50b0e6127a763fe3686a8e9950ed4ba390bcba
 audioAssetId=
 reviewerIdentity=
@@ -2665,7 +2706,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 794089f2069ff74b747717a21f993a3a6b587fde4e4fe3c86149c23d2e70324a
+- Content hash: 5927447a1920b0e1496bd7b5d7fd470049f2484424083850fe95acb54b66d8be
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -2703,14 +2744,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=abf08eaa8b4088687b0bc5244aa4515d0b61fd462c14cc448451c19c016ed01c
 audioAssetId=
 reviewerIdentity=
@@ -2726,7 +2775,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e54afa9207efb22e2dd2bcfa48af23ac0bd7a2d628c1733ed020bc1fa9d2058d
+- Content hash: fe03922cb3b5fd4f5dcd31523899b01b030d666750ca04f1b6396a0ad6860448
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -2764,14 +2813,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=c3a7308256b16677961ba11e9ad40170cad1c26be4e79c146d6e71604592be08
 audioAssetId=
 reviewerIdentity=
@@ -2787,7 +2844,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d909c9561215938ad5c988e0d8b71732255c5d488be638afb3a644974102228a
+- Content hash: d343be32b88ca1fdc9fe85807e5e61ca5e2a0f90477725fedfed970bdc6d303b
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -2825,14 +2882,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=идти́
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=c9c68dfd15528de3fc8172fd5caa15324e33df6163213914502b73fc7f070717
 audioAssetId=
 reviewerIdentity=
@@ -2848,7 +2913,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 522d78dd10ef037ad24ccc095fe060464d039cd7ce766ced88fefe32b9ef1c39
+- Content hash: 1551138d3ae4e7236c5055eabb0678d68387951fc6770fc275467fc5cc76c8fc
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -2886,14 +2951,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=to go, walk
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=240c6d9158225eb4ccac97fde1bf2b52091dbe5344e9cef01f6eae0dc214dd57
 audioAssetId=
 reviewerIdentity=
@@ -2909,7 +2982,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1f8adc99f0480037e78ec05455d2160cb50faeb6cb07bf5b0feb012365ef593f
+- Content hash: 1cc51280094a511a28eb88866f83c5e5487742b163c7c865e410390ebe54fe69
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -2947,14 +3020,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=е́хать
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=be003ed1a1ab72ba7d2f4f019e33d5c45ef9906da9ce436365a03dcf41d50a8e
 audioAssetId=
 reviewerIdentity=
@@ -2970,7 +3051,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 24f8930020ff12f259ae16afa4f6bce945401574ab90c607780e44367d29dfdc
+- Content hash: d7d48c5df3109e63444a214e077aea15fb8ef14f92000be8abf5f9444734f365
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3008,14 +3089,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=to go by vehicle, ride
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=0ef4bb6e9dad68d8112a607e1e48581c9dbc3115945aedd54ffe7407126fd16c
 audioAssetId=
 reviewerIdentity=
@@ -3031,7 +3120,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f2278c948f5a5d79d37a1aeb3ffe24eee27278b304a03c16ff6fa10dd63d286e
+- Content hash: 97c0f1af951b4102264315cf45fe4a8e80e7463e48f843b01a49971371a0fcaf
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3069,14 +3158,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=нести́
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=2879db3cbc4988929ecae126b4bbd96f54e3ca47228523ecafbb8afbd8693591
 audioAssetId=
 reviewerIdentity=
@@ -3092,7 +3189,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c8278576a4d52cf6c53cd6332aad050dd2c10f3f05b65c0d8e73d1740f1a3498
+- Content hash: 88493b064f39a5f594fcc149ec2155a25a9a8a3b7c77351717b7776dd60c90df
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3130,14 +3227,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=to carry
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=51460febaa4217c21e66677311f3dcfbb413b62c11b7272a1ec11665cb58482e
 audioAssetId=
 reviewerIdentity=
@@ -3153,7 +3258,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3f1f04668f7d5d0252c74221686e2572859aea04f665b7e54bc6bed8b75807de
+- Content hash: e09ac30e2ec2eea38a49fb99b35de9a3bcd7ce5a2325be0d3a994727fa2e40d4
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3191,14 +3296,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=вести́
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=02dd6e774ba4411b36b244a9a7d6929cd650ea2927501baa8f49cfd01aa28512
 audioAssetId=
 reviewerIdentity=
@@ -3214,7 +3327,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c071b4ea764e6e90d7350ebdadf10f0d9393468acd425fac904ca52aae010892
+- Content hash: 5d28339d299020d146d27efd955b4b7bec100f7fdcfc60f8821ba867eff7ef6c
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3252,14 +3365,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=to lead
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=2de2adc60818fe4b09279414ed0596cce1c73d48b5113ecc028bb6a66ebea545
 audioAssetId=
 reviewerIdentity=
@@ -3275,7 +3396,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b68adafecf77e52ebd622a1f780be067f117ef654fb6b0409e6664cde30d1218
+- Content hash: 715f1cee35300978aee8743a475eba4d8f7cd98ca6e464e35776731dda9bd36c
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3313,14 +3434,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Он пошёл к другу.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=3d8c9926bcea41b886766d3d461ca670ef2c69c0eed6623748d6db87ec664634
 audioAssetId=
 reviewerIdentity=
@@ -3336,7 +3465,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 94f3f1e90adedc4e1fd9fb32b8916db8064200126d83286d1a3a9b863cec0530
+- Content hash: 42746036c5febc25f7ac9a883c948e8da31c428467aae76af7e21d35fe3dc07d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3374,14 +3503,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=beginning of a movement
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=de728d6753d5481c6024a64e753e71da820c64ec130efeeaba4fa75cb9a6ef72
 audioAssetId=
 reviewerIdentity=
@@ -3397,7 +3534,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8342b5f9eac4f79752fde52eb8c9141c2646c605215adc0c79e3324d1946e625
+- Content hash: fa7f547ef156e4ac923d0379dd1bce497c467d3c02fbd74e97bb6958a39b0ea3
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3435,14 +3572,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Он шёл к другу.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=5ad0c9196083c24d5dc74e4db1f4354b3cd6d3fc6b18925d72bfbfa497a97446
 audioAssetId=
 reviewerIdentity=
@@ -3458,7 +3603,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8a6b74de306db2b8f4c2c3373a48d1e50945a3879adfb1b21086d4f05f7b1c94
+- Content hash: b1a2d1ea474407e21102a3e2a3a57ae255eb4062f90c7afdc40b07dff59fc331
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3496,14 +3641,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=He went to a friend's place
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=71a384219f87213f4e2ef7fb8d9b4a7fad953e821ed9982eb25620715992c93c
 audioAssetId=
 reviewerIdentity=
@@ -3519,7 +3672,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5cb99e54057f51b0bd3b3bb2093a27c8d6ae9b8b2d983439d1b7989456ce121a
+- Content hash: e40a5c1edef550bee29485b16b406c463f21fee9eafc265673ecf8423e3b038e
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3557,14 +3710,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Они у́летят из Владивостока через месяц.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=e0c776290550379273b2fbe7535b2a95c31c95a47ea7b54d0ccbff3ae966a50c
 audioAssetId=
 reviewerIdentity=
@@ -3580,7 +3741,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5e7194d6d8756fc9d5a3c9f03b825ca21fbb1b7b16c1c297ae496fa0000c2af4
+- Content hash: 5a03360a8bf68a9f40c5f3ac0d265e630aace6229e6f1a1a640f4f87ebfb0236
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3618,14 +3779,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=They will leave Vladivostok in a month.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=902393f173486c8c2bf8490eda077f8877517965404f86ca76e22b0fbac7b224
 audioAssetId=
 reviewerIdentity=
@@ -3641,7 +3810,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 670be036cdf1ad29d71e4d6abe5e808db092afe63060247308024126fb197378
+- Content hash: 7451b9eb2bc788b8f6fd9a9c32c5b1b542defd4cbb0e7d90079e62633b91a551
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3679,14 +3848,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Мяч залетел на крышу дома.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=02bfafb40697403fc390959d7154af6477b5e95576efa7ed185e2e2b7e063116
 audioAssetId=
 reviewerIdentity=
@@ -3702,7 +3879,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e36c6cd69b02506dce7fe1160ac4bf65c433494273e080743e412b74fedc6212
+- Content hash: f74390f31230df7a3453eb1c363305e182bfe59a70457a6b597f73486af48c97
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3740,14 +3917,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=The ball flew onto the roof of the house.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=400e1a15c98b8cc064cd05ed030ebd4bfe47a8ecd2605b9bb1543c38e2f0a9a3
 audioAssetId=
 reviewerIdentity=
@@ -3763,7 +3948,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 70be41e99055c79f80f0c68e29de3612cc93ceef0e8e2cc28731fd6189d31fc1
+- Content hash: f31427ba9184698e76d79cd33eb51b300227b587a84085344662eb9feb52f32d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3801,14 +3986,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=he set off toward a friend
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=2523daeda7b21354c504ea74998053c3b9c2fd32c44465ec0ac4b687aba4bf20
 audioAssetId=
 reviewerIdentity=
@@ -3824,7 +4017,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3d6a77253add821bd5dab540b75a313e4dd46f402f4f2754e4e77bf391ea1842
+- Content hash: 5353fac74a4b6c4d112cf307731e3a6ea2702643058337c065b0214f719643e9
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3862,14 +4055,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Which reading matches the perfective setting-out verb?
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=be851f8c389c05e1f0c520bbde7b1d0200d02332e978cca7c35a75ca2b45a825
 audioAssetId=
 reviewerIdentity=
@@ -3885,7 +4086,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8de5c0ad640b06bd39bae11e80c3969d11b770a443c249d5937312d48191bf3d
+- Content hash: f7b841d67f0b2d810472f34492b663579d6f53ccedaab71e2ee56b564efde1de
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3923,14 +4124,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=9e4610003a63aebd3eed6b48371c7f0aff789ed5fb3a1fce30b7dae8c6a4a594
 audioAssetId=
 reviewerIdentity=
@@ -3946,7 +4155,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 21e1b1464b2accc4e09554566906a7d265f441095505298ab08e96c4fa80e797
+- Content hash: 4dfc59439e303cc980998ef817fc34d329337d1a0a35d5f254729ed8158b62cf
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -3984,14 +4193,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=he was already on the way for a long time
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=5cd963b28ff24aff8dfde426fce5ea20888c7bbc95d6f8ff21fb857f31254d83
 audioAssetId=
 reviewerIdentity=
@@ -4007,7 +4224,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 11e354fa5af91a1685866af5258cbc0d9666c26b7eead930b11a31cba21caf21
+- Content hash: 5043aaf9d7a68f3efe26e354a041feead1f73fde76ab8592a08b76d1b16ecb0c
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4045,14 +4262,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=he refused to go
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=8912d8f39dc28a27ebb14fca6db5e8c99ad7ba80b5c72f4acc45a0dc9a9784df
 audioAssetId=
 reviewerIdentity=
@@ -4068,7 +4293,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2981ee20348374f88e344f96eff57fd8522ba67609abd05f53c70674c49e3eba
+- Content hash: d027566cdcb4647a77987d0e16f3df980d2db7a5da652c6aa7df3b0af470de0b
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4106,14 +4331,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=he was already on the way for a long time is an imperfective duration reading.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=a67d1fbfd24f723bf86bb9fc4e009eff3e1ea3f163becdce2a13e42da6304d82
 audioAssetId=
 reviewerIdentity=
@@ -4129,7 +4362,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c3afe21b74b6ffa10728b67b53051a21d75e9bc9ab7d5656166522579165ae15
+- Content hash: 37fbbdf611efb74b617096852c05d9d22c82c5e50d3faad547620d555c724ab9
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4167,14 +4400,22 @@ Which reading matches the perfective setting-out verb?
 he was already on the way for a long time
 he refused to go
 he was already on the way for a long time is an imperfective duration reading.
-he refused to go contradicts the motion verb.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=he refused to go contradicts the motion verb.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=a54fc1be4b51edd65b4c248fd52afc504b299f42b962c1748bf8ce094e453abf
+sourceHash=3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e
 contentHash=9b1a676fae33fb978ee63fe743811dc303cb0286b824cd28ff302a9c49280f8a
 audioAssetId=
 reviewerIdentity=
@@ -4190,7 +4431,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 185841a394600ca256c3d016be9bd29819e2a3cff866e2ae7b7b5ab12b2e2354
+- Content hash: 32a36988710f6114f5dc9c18f554f6a9463d6711d13c52e0358ed5da1cc6f3e9
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4227,14 +4468,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=c45065083a99e66611a9ab1b9dca550d5a96d33e93373eaf5085f1cc43849fe2
 audioAssetId=
 reviewerIdentity=
@@ -4250,7 +4499,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8751b7e766a90d5f57e246b624ba303a3833434073eff2be748f995063ba16e6
+- Content hash: 3de22101dc887ec60a16b31934b463ae9db485d8b8034aa57a2674fdd091912d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4287,14 +4536,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=идти́ — to go, walk. е́хать — to go by vehicle, ride. 
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=d9ce55d3f626fe496bdcef1a6017d2ac7f4f5295269a72bbe2b3beb845960320
 audioAssetId=
 reviewerIdentity=
@@ -4310,7 +4567,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c0717c35de99b18adcef7c66060831e29baf017a656b166076824f657420c134
+- Content hash: 0b052295dffed0a285a8f41bd39c4010c1dae2830047bf8a1a5d1a530bc8ea2a
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4347,14 +4604,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=unidirectional
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=9e3ab54e059856f44e350baee31f54849a20c49541e78d33f7fb1bfb7aada214
 audioAssetId=
 reviewerIdentity=
@@ -4370,7 +4635,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a8e752ce1beda1c2300bf57dfa261833e546fe0d5105640e044b46e0ce752c71
+- Content hash: eca1a9a240a4bdcdad05d724e691fa87c7d6f42eea247f3e1099f9ebb5c4e66b
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4407,14 +4672,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=нести́ — to carry. вести́ — to lead. 
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=9230af1bd1d6edf82ed3e74fff50b0e6127a763fe3686a8e9950ed4ba390bcba
 audioAssetId=
 reviewerIdentity=
@@ -4430,7 +4703,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b00f006df50a047a096e8fbd955bccefbd64ac482492bfde2bd6a061a6caf7d4
+- Content hash: 3e4ec8847b25fdbd20bed69fbed1cb8a35cee12a831680c856f2a1d6c983ca3d
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4467,14 +4740,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=abf08eaa8b4088687b0bc5244aa4515d0b61fd462c14cc448451c19c016ed01c
 audioAssetId=
 reviewerIdentity=
@@ -4490,7 +4771,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f705b3b41366a3bb3f2fc02a17bee779cc797583f659366941b078e141f5a45c
+- Content hash: 1aab64ba23b355f3020ae4a604ea4b7010222365ec76cf7fa8f4b23c65da5673
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4527,14 +4808,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=c3a7308256b16677961ba11e9ad40170cad1c26be4e79c146d6e71604592be08
 audioAssetId=
 reviewerIdentity=
@@ -4550,7 +4839,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8958ae710c292d9c3a6962d3a65d09b4561877facbebbf015e64665a474302c3
+- Content hash: 514dcd82ce552c712ece608d946a4c3fd22e1f9d5d3f4d68bcd075e09c3a6566
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4587,14 +4876,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=идти́
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=c9c68dfd15528de3fc8172fd5caa15324e33df6163213914502b73fc7f070717
 audioAssetId=
 reviewerIdentity=
@@ -4610,7 +4907,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 26daa8a2cb920558548475141e20085fbda0bd0ef5e9cf2b25683de8798097b5
+- Content hash: 4ed209ad595be6a9e63b2a87b567a549cacc4c99db55c26250914213d1c2d9c9
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4647,14 +4944,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=to go, walk
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=240c6d9158225eb4ccac97fde1bf2b52091dbe5344e9cef01f6eae0dc214dd57
 audioAssetId=
 reviewerIdentity=
@@ -4670,7 +4975,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7ae8f83244735de300f081a31b2e31b53fb1c3024e5a717d5c68533f15397d15
+- Content hash: e0fbf9607748ac23556d6c907a3583bce52617e1a07715e35a34d22c13b981d7
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4707,14 +5012,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=е́хать
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=be003ed1a1ab72ba7d2f4f019e33d5c45ef9906da9ce436365a03dcf41d50a8e
 audioAssetId=
 reviewerIdentity=
@@ -4730,7 +5043,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 14636be0d0c093b7172c5bdd4a19cf2e00c86ff59f8dc9c9ff434cc914c7457d
+- Content hash: e98379141e4057254011c8be4d20beee4bd0a59b6de15657cc46ddaabaa5dcd3
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4767,14 +5080,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=to go by vehicle, ride
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=0ef4bb6e9dad68d8112a607e1e48581c9dbc3115945aedd54ffe7407126fd16c
 audioAssetId=
 reviewerIdentity=
@@ -4790,7 +5111,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: bc68fedeba49859a75a7d6947e5b4809a280078a570676c058cd4b1690f23b1e
+- Content hash: 8d8785b332b70cd53ff109bba911a58f8eaef8e484d169172314d8d5086f1d73
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4827,14 +5148,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=нести́
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=2879db3cbc4988929ecae126b4bbd96f54e3ca47228523ecafbb8afbd8693591
 audioAssetId=
 reviewerIdentity=
@@ -4850,7 +5179,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 0ed27e71068875922fbf4c089da2260cfde3dc228fb39a98817c57c022fc6ea0
+- Content hash: 164f64622a0003941cabc996c05853f65786c42c14ddc24afa47ea31c58768e4
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4887,14 +5216,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=to carry
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=51460febaa4217c21e66677311f3dcfbb413b62c11b7272a1ec11665cb58482e
 audioAssetId=
 reviewerIdentity=
@@ -4910,7 +5247,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: dbc6832ff8c71b69d9a27f0d3ca0eee8f417566d0acfc2dabf469a3fb90b64e1
+- Content hash: 66719c610ffb8ddaf7342bbd61a8e7baa995d7fcc84474110e5261073bf62582
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -4947,14 +5284,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=вести́
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=02dd6e774ba4411b36b244a9a7d6929cd650ea2927501baa8f49cfd01aa28512
 audioAssetId=
 reviewerIdentity=
@@ -4970,7 +5315,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f3df8aa3d47c06687a1a31ce5372b8ef8c1ab9785324c9e204c3ee99039118d2
+- Content hash: 23fd3cab8157e74acf58ef814be18b8e3450a31843c8ca1fe0fee94933005be6
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5007,14 +5352,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=to lead
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=2de2adc60818fe4b09279414ed0596cce1c73d48b5113ecc028bb6a66ebea545
 audioAssetId=
 reviewerIdentity=
@@ -5030,7 +5383,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7687eac7017b192f629498279170c4e3741ad56042dd02bb2ff0c28b7799f71d
+- Content hash: e752b71dbaaba4ca86da286de329cb82c862a9cece7ed79473f0f1a2b2e7a283
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5067,14 +5420,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Он пошёл к другу.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=3d8c9926bcea41b886766d3d461ca670ef2c69c0eed6623748d6db87ec664634
 audioAssetId=
 reviewerIdentity=
@@ -5090,7 +5451,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: af16fabd92d6828e4d37d9a9676130296a1940d9e9de6b96f7b6904573f3cd6e
+- Content hash: 8923507c10dbf024b28971a78baf529e9b2a89b302ea91e3c82a8025077ae7a1
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5127,14 +5488,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=beginning of a movement
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=de728d6753d5481c6024a64e753e71da820c64ec130efeeaba4fa75cb9a6ef72
 audioAssetId=
 reviewerIdentity=
@@ -5150,7 +5519,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e739bfbada5d99cc5c0414b73549857c8c431bdcc55ebc6ec55adafb4e7da2d1
+- Content hash: a9f80394afe76c38771fa78f1e8f264c9ca8c2627acbe1990c26ebcc44d0a73e
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5187,14 +5556,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Он шёл к другу.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=5ad0c9196083c24d5dc74e4db1f4354b3cd6d3fc6b18925d72bfbfa497a97446
 audioAssetId=
 reviewerIdentity=
@@ -5210,7 +5587,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1c72ff43be05a1ba49646b6fd4796ac74229827a1920a0dbcfaf99494884d4a1
+- Content hash: e088b2efb9300e9cbec3aa574b512a696e911b39f3bdf72b38a97317c66dafeb
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5247,14 +5624,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=He went to a friend's place
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=71a384219f87213f4e2ef7fb8d9b4a7fad953e821ed9982eb25620715992c93c
 audioAssetId=
 reviewerIdentity=
@@ -5270,7 +5655,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 342e5498bc2638e37f6e91e17c2f62be462de8fe1a445ba6dbbaace54f14a35a
+- Content hash: 9591d1b1cb85fc944f7c376aa07cecb9534b256fb37b9db3ea9a94d957bac7eb
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5307,14 +5692,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Они у́летят из Владивостока через месяц.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=e0c776290550379273b2fbe7535b2a95c31c95a47ea7b54d0ccbff3ae966a50c
 audioAssetId=
 reviewerIdentity=
@@ -5330,7 +5723,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 61a7bc93f455a5143b9b546319577ff3c1feb61dae486b3321c7aac6dbaae53a
+- Content hash: eb188035053b19892ed3326c7ddd4751914462bd55020192a9e4191492d36056
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5367,14 +5760,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=They will leave Vladivostok in a month.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=902393f173486c8c2bf8490eda077f8877517965404f86ca76e22b0fbac7b224
 audioAssetId=
 reviewerIdentity=
@@ -5390,7 +5791,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: bbd1236c60b707041120efc3217f863ee8f4440ad172b60e02856f992dadc4ee
+- Content hash: 38ec714ac23d8f62f0ca70269e394e1475b3e341b75a46b6e1c9ad36aa93f206
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5427,14 +5828,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Мяч залетел на крышу дома.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=02bfafb40697403fc390959d7154af6477b5e95576efa7ed185e2e2b7e063116
 audioAssetId=
 reviewerIdentity=
@@ -5450,7 +5859,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d6577d5ef93ef673154f105626c158f5e2ceace5af18c7290fb64db6e0066e2f
+- Content hash: a1d20787d4938e4e62efef47f071f8e430ae04a16562d69b690745ae9259da71
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5487,14 +5896,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=The ball flew onto the roof of the house.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=400e1a15c98b8cc064cd05ed030ebd4bfe47a8ecd2605b9bb1543c38e2f0a9a3
 audioAssetId=
 reviewerIdentity=
@@ -5510,7 +5927,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8b5b0dfae251c3bfa2d4601af3cdbfb3e760a7afa13e7dd4a75cc9c32e4417f4
+- Content hash: 23fd68a82199d7dcddbe32821e54ca677b9c8e70c35083ca7ed89947f09a73b7
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5547,14 +5964,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Мальчик отошёл от незнакомца
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=f643975be1f829d00f32b576b65f8c2bd8b7a29cad1079df8e62530c9d686386
 audioAssetId=
 reviewerIdentity=
@@ -5570,7 +5995,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 34beb9f6bb8da8d76b67996fefaf157aa3a6ef1339101de49653cc6f2650b623
+- Content hash: 0a7b7e829ce83517d1fe9fedcfa37715318cc5b532d9315be84fd0d5d1597479
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5607,14 +6032,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=The boy stepped back from the stranger.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=0462e6892e86db8c18d2dec374c0478fe27d75286f9a11e941cb4d8a8f2faf4e
 audioAssetId=
 reviewerIdentity=
@@ -5630,7 +6063,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7c65610381d422587d60a61d4e78895588dad3494fe3c282f45537c6d5815917
+- Content hash: 88dd5e129413ffc1eceea7e7eeb75f88c353294f2ae56b8c60aacf4d33b8105b
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5667,14 +6100,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Which translation covers only the shown sentence?
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=8068d82b01a25f9252416e5c6dd798f079bffea722590da484a446c273d9ba3c
 audioAssetId=
 reviewerIdentity=
@@ -5690,7 +6131,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 404f5483471d14fae93c559010a70a7b5c07470ca422a4ff9338800af32a4523
+- Content hash: f598916fdfeee0fc3044431c706c89f2710bc76e75c73b02f6b3b6a5de53d63c
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5727,14 +6168,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=77101f2fd42e44508d3499f3c3abe89d1d22464838164faadc9b4f6d2b317219
 audioAssetId=
 reviewerIdentity=
@@ -5750,7 +6199,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: bf6b28c0f50e87be137353dfa376f3f482915ef4bd03dcbf019c330391fe9990
+- Content hash: 8a518049a5281ffcb2800685c9658e29aa979de2f2fae5c79db9d7b1b04896da
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5787,14 +6236,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=They will leave Vladivostok in a month. is a different motion sentence.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=d3e8ab38cce22e5af8e9d59ead0e8d2597235902dc617e04cf5659c033869b27
 audioAssetId=
 reviewerIdentity=
@@ -5810,7 +6267,7 @@ reviewedDigest=
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6fcb74862fca1fff6a3b31457e16fac6d4728e741d4597dcef8368c7c2a54c5c
+- Content hash: 6758f053a6abe4d67bcdf52609de2e2125859d24f75761088e299b78fa1f1d18
 
 recordType=original-synthesis
 sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
@@ -5847,14 +6304,22 @@ The boy stepped back from the stranger.
 Which translation covers only the shown sentence?
 Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 They will leave Vladivostok in a month. is a different motion sentence.
-The ball flew onto the roof of the house. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
 shippedText=The ball flew onto the roof of the house. is a different motion sentence.
 transformation=content-audit research synthesis
 licenseId=Original app text
 licenseUrl=urn:russian-companion:license:original-app-text
 attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
-sourceHash=1104e32f10aed0bf6954dbe92b28f1299bc5047ca84dab81f9e8074aa152c95f
+sourceHash=971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52
 contentHash=e72af2a8186c87151470612bca140ce83839d7ffaec2be96c244d935340821fd
 audioAssetId=
 reviewerIdentity=
@@ -5916,6 +6381,802 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=7fc491d0d14b022def55cafcd7aeff1986474b2c8ed37f97e70297dac7849cd6
 contentHash=968ab73f7b25f5e731d0097dcb049f4c07913ca7ec064dee7332656671c0252c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-check`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b99d9d522f509dfc1d5c17509545b179218f4e7d24112613f9be826d7f6ea805
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-check
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+shippedText=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fe8946fc3feb15f273bf502bdab1f2936ff3743558d2b4bb2e8f47ba0edd69ca
+contentHash=3387d77b869f0e259d20167a37bd9fe33457c4cf6c7bd18502c569d15c3bdd13
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-guided`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0753c2f123ddcded93981b911c106ae2d909ad7598ab326535df35532e1d65d9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-guided
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+shippedText=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fe8946fc3feb15f273bf502bdab1f2936ff3743558d2b4bb2e8f47ba0edd69ca
+contentHash=3387d77b869f0e259d20167a37bd9fe33457c4cf6c7bd18502c569d15c3bdd13
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-objective`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 039bf722201d37b033a970c546496f99c4c1d03e2efe63645d749e537c529b99
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-objective
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Distinguish motion meaning, directionality and setting out
+shippedText=Distinguish motion meaning, directionality and setting out
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7f8e1e475ede4996fc1e60e73a708617f05d99e0d8f212389c12a01c61b5bfdd
+contentHash=62eaa869e852a0a9d30fab96b10199e88d7b699824f1a11c4c386af22f5b0e0d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-rem-body`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb33a9e871bebe6a04e1700fc564219954cff6710ef2096ef71a3f2a16c7b71e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-rem-body
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+shippedText=идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=36ba926baea06f7eee6241656beada2d0cda41c245148d6471affa9f800dd0e6
+contentHash=55e1d62dba1eee941c7bf0ce927387f5fb7d3c83b058b5f32edc5eed7a8e663f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-rem-title`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e665403c0042c767965d11de3f9858dbe5893ecfee271239c8c4be3fd94826af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-rem-title
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Review the complete contrast
+shippedText=Review the complete contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2dadd789e6983a2deac8d4fc7ad50e749e0b874ab70bf33be0189c61b163202b
+contentHash=053fb587bb355e16305ff4283b70333c9e7a4652b5e28bd2a0dbe78cec7fe279
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-teach-1-body`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5243a0e4d36c6e5ae410c140e096528261d94f451623e55cd5724c3a38458eb2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-teach-1-body
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+shippedText=идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0f182164b8ace5781a889a7afbe83a6f6d55d43973a741e7fb9c80a0bff0d552
+contentHash=d066266a555fd2ddfbf4e6f67307317afc52e4dede561d50c2d83a30c2abf9fd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-teach-1-title`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb8c7906e8d0e293927b33af5f2f69ffe411a8a3f440a825801b55d5b5654d19
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-teach-1-title
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Walking and travelling by vehicle
+shippedText=Walking and travelling by vehicle
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8e6cd993dbc242b405d0babcc861940908156c1cad75931298def2cab0b588e7
+contentHash=ff8ffacc19534446f32babe3b407b9de56e538aa40b5bbcabcf5b625d988bbdb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-teach-2-body`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dae03de10d8e1fbb24ccf3969ebf4bab84031554d23c1af4978f4487992e28a1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-teach-2-body
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+shippedText=The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e944c53b47f68209ce07eca39f79eb6d388cd7fd96a48ae5409bd2644d0aefc1
+contentHash=27dffd34684dd2940c55f8f32ed185252d9da076c43be47069afd1c78cc30f4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-teach-2-title`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dca09312f7708e278edb6b348e166c7e223c5caf0b9901d0bfc8b2d3380ea3a6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-teach-2-title
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Directionality is separate from aspect
+shippedText=Directionality is separate from aspect
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6d5c5e419f5341642a09d5d2f4c2b706fd35e8dd301895918f80ebccfd600821
+contentHash=fd4257d8ac2c489dbb37ae8ec9417a1eb54a8494dd2201bf8629d2238ff537b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-teach-3-body`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d5b52e809c64e01d31cc81ace121bf3685349b4ff02970deb4ae2c48b8739d03
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-teach-3-body
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+shippedText=нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dc0f21ce27823ecdb42f8afd3c5ac7665f92734e367e22a3754e163165d048b6
+contentHash=aa585d009b89385e416d4c534544bf62a761750c74352633ab17e9041cf20625
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-teach-3-title`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef2f8b718e2699eec01ed7c2cbb57e7b3c377088a68524eac5fcf56845ed783d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-teach-3-title
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Carrying, leading and transporting
+shippedText=Carrying, leading and transporting
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5b713b3b197103aa6dc62eaf0f25bbe3e07e492680d2549c178828dd1dbf7a60
+contentHash=d8b280f2401b6412ca0366cb0a6e03b0fcf5792a021f4fc8018245145f015d08
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-teach-4-body`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64011a7f0e4462f604909c20f9292dc2916101e3b5c3a0706c4b2f0e9d3058e9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-teach-4-body
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+shippedText=Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7e7106d66b57343fe3a9e42cdf7e3136f5d2b10358dab462c37945ed6b485622
+contentHash=a5d53483ac6f840cdd62c1554e01acea2e7e77d811347e1d43f23a0a4a8b5370
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-teach-4-title`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0133d2b23827305091729dddb666f4efa0bf3f18f26c6c382f907814206d8531
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-teach-4-title
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Setting out does not assert arrival
+shippedText=Setting out does not assert arrival
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8a523e7df6210942b74cfd97a26ed6e9b7cf2fb3ac646e587788acf45d2dc262
+contentHash=873aac33a37ba847848fb8e607809e1ab3722025a89819812cff9d2a93ad9925
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-teach-5-body`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5608dc2482c3493a7e49e3e81d17fff9f61b6f74f84179acaa51b94c01f698d6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-teach-5-body
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+shippedText=Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=83383243289ec3832aa0fe093a754d304b34207f8165f0e90fb55673fe39c15e
+contentHash=a014f097c473c2bf0070e0af1e565fc61376947afa3660ab8ea8e8fae7018451
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-motion-teach-5-title`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a617fd59b4aba5d806b7968bdbb1e43d729663002ef1fb31419e5248eec28d68
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:motion-teach-5-title
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Read the path and only the displayed clause
+shippedText=Read the path and only the displayed clause
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fc60c09e5f5d293ec48c17ac1a9b60a62794dbc072c93b3a535e8a2bbacc3e51
+contentHash=a96ec76f1508570323f52ded722b3a136d4bdc708aeddf5d140e63080cf058f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u20-g-motion-0-feedback`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2f4b65ed4d1baf157b7a569d2589ef4d251808d2753e7590860019fb10ba8584
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:u20-g-motion-0-feedback
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+идти́ is unidirectional in the retained table: it describes motion in one direction. This label identifies directionality, not aspect.
+shippedText=идти́ is unidirectional in the retained table: it describes motion in one direction. This label identifies directionality, not aspect.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f53a9daf86a2e6ce8412b4b8fc935fd107390bae7cd879f0006a5d32af6d5247
+contentHash=64ccd8955a0026623a00a9d89ace2a9179433e8396623ac09f8435017edf7a27
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u20-g-motion-0-prompt`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be95cb3f205db789a13dcf2f1b12f0d66e0cacefe85da65cfd424177be186b52
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:u20-g-motion-0-prompt
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Which English directionality label applies to the shown unprefixed motion verb?
+shippedText=Which English directionality label applies to the shown unprefixed motion verb?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a3b0ae67cd4812681e01c28b343b70ae28f0a1dbbf613592f18232afc8af7de8
+contentHash=0b3ff35a4e5e2612ef7bb3772a4331faf46d40719fab40674fbe0cb68f8527b1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u20-g-motion-0-wrong-0`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d556e3f95f4c901539ae863341bf25776e9669b9803141eb4e702bd3d5a166bc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:u20-g-motion-0-wrong-0
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+multidirectional is the other motion column, covering different-direction or repeated movement according to context.
+shippedText=multidirectional is the other motion column, covering different-direction or repeated movement according to context.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=00d2928252d597fb96b8c4ff39ae09e423935b22391659dbc966ba2db8f166fb
+contentHash=828b6346fbeae19919d668edeb45e46be07be67ce5ab5875fc34a2d524baf907
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u20-i-motion-1-feedback`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff41c0486d3da970b84a5fa81a9476b108222eae96ecdac0d657e1a29e32a397
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:u20-i-motion-1-feedback
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+идти́ means to go, walk: movement on foot.
+shippedText=идти́ means to go, walk: movement on foot.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c39feb4f58a48bb5b2c384d6488daee6b9b296732f4eb9b275bdd09828299fc7
+contentHash=c6f5e1d8927287d997e622a9ac23b354dfe858a63fa5580f70e2144c564f4407
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u20-i-motion-1-prompt`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: acc4c8024a30fd13c3fa3be8fbfe31f965da21fd5cbae345f203339d3ae97c0e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:u20-i-motion-1-prompt
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Which English meaning matches the shown motion verb?
+shippedText=Which English meaning matches the shown motion verb?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=880507d072e89b807da851830b6ad538a62225097140beadeddd69c5187690a6
+contentHash=e73541f01ec5f8787ceb4548f5d770b5c5d098600365c161151732f31b24b049
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u20-i-motion-1-wrong-0`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c4932555c537b3c976885c78c93ce8a3c07e3ca74b21205daa30d49d6eec6bc7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:u20-i-motion-1-wrong-0
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+to go by vehicle, ride describes movement by vehicle.
+shippedText=to go by vehicle, ride describes movement by vehicle.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=170aa3adfa57d9041b0ae96d51f75876e2708e441497765618e40eaf5d7250b0
+contentHash=bf73d8ae2b6ac0ca88582571beb87a286bbc2ae890552561202590fb3ce79b1d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u20-i-motion-1-wrong-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c32386964e5dd9b23f82a62120d1f115bf5cee0c1a5f86d6221b13c7bd6b581
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:u20-i-motion-1-wrong-1
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+to carry describes carrying something on foot.
+shippedText=to carry describes carrying something on foot.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=817c21e30609dc70199aa0f6ec146e50c705e7d3bcca3e76001fd766b11b0f5b
+contentHash=3ce64e54a412f0b03c156fa3d1a32dfa81252658b65dcbebc005db0c008bc625
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u20-i-motion-2-feedback`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a85764b3661f09f5ce8f61720a502ded761b2801ca6c73bcb7b3e9974b8dd29
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:u20-i-motion-2-feedback
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+нести́ means to carry: the carrying-on-foot meaning.
+shippedText=нести́ means to carry: the carrying-on-foot meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8e65a2c9dfff82b69ac637a064baadaba30bb7e6d3922ec554441ce8122047a5
+contentHash=8989a774e99b79061f0d0e2e0b69232bd4916372e13e2bc4c13eafe85be93f91
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u20-i-motion-2-prompt`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 260e89ac7ae117c18b8ff22d6a1c889f8ff6c3fa974c4fbb56107c27b6d28d0e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:u20-i-motion-2-prompt
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+Which English meaning matches the shown motion verb?
+shippedText=Which English meaning matches the shown motion verb?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=880507d072e89b807da851830b6ad538a62225097140beadeddd69c5187690a6
+contentHash=e73541f01ec5f8787ceb4548f5d770b5c5d098600365c161151732f31b24b049
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u20-i-motion-2-wrong-0`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4167ec58e4e947a7db5e277ec71cdd6c2e58675b21888ac754699a210ed9518a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:u20-i-motion-2-wrong-0
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+to lead describes leading someone.
+shippedText=to lead describes leading someone.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9b13989b882efd8ffcebdbc42027d27a2e47bd4e1a4dd54791e88d95792c567e
+contentHash=eb7cba86762555152f2262c5347354475f1b3bb234423ae56b9e330d774b8230
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u1920-u20-i-motion-2-wrong-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3854a4a6760b110ce8860e387fcc2764ed08106e18badc91685b2109a7d1bf4e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:u20-i-motion-2-wrong-1
+originalSourceText=Retained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.
+to convey, transport describes transporting by vehicle.
+shippedText=to convey, transport describes transporting by vehicle.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a2c589e8a71680082265e1e22815133a06e4d7d4ced81965ee506469623d3ac6
+contentHash=b515232229b9fbc5dfa8d6745d6858d128ce3cf6e88040c3e42a8da31af706c7
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7955,8 +9216,6 @@ permitsAppUse=true
 - `u20-st-teach-motion-1` EXAMPLE `ex-u20-motion-0`
 - `u20-st-teach-motion-1` EXAMPLE `ex-u20-motion-1`
 - `u20-st-teach-motion-1` REFERENCE `ref-u1620-attribution`
-- `u20-st-guided-motion-1` REMEDIATION `u20-st-rem-motion`
-- `u20-st-guided-motion-1` ITEM `u20-g-motion-0`
 - `u20-st-teach-motion-2` REFERENCE `ref-u1620-attribution`
 - `u20-st-teach-motion-3` EXAMPLE `ex-u20-motion-2`
 - `u20-st-teach-motion-3` EXAMPLE `ex-u20-motion-3`
@@ -7967,8 +9226,16 @@ permitsAppUse=true
 - `u20-st-teach-motion-5` EXAMPLE `ex-u20-motion-6`
 - `u20-st-teach-motion-5` EXAMPLE `ex-u20-motion-7`
 - `u20-st-teach-motion-5` REFERENCE `ref-u1620-attribution`
+- `u20-st-guided-motion-1` REMEDIATION `u20-st-rem-motion`
+- `u20-st-guided-motion-1` ITEM `u20-g-motion-0`
 - `u20-st-rem-motion` EXAMPLE `ex-u20-motion-0`
 - `u20-st-rem-motion` EXAMPLE `ex-u20-motion-1`
+- `u20-st-rem-motion` EXAMPLE `ex-u20-motion-2`
+- `u20-st-rem-motion` EXAMPLE `ex-u20-motion-3`
+- `u20-st-rem-motion` EXAMPLE `ex-u20-motion-4`
+- `u20-st-rem-motion` EXAMPLE `ex-u20-motion-5`
+- `u20-st-rem-motion` EXAMPLE `ex-u20-motion-6`
+- `u20-st-rem-motion` EXAMPLE `ex-u20-motion-7`
 - `u20-st-rem-motion` REFERENCE `ref-ca-motion`
 - `u20-st-check-motion` REMEDIATION `u20-st-rem-motion`
 - `u20-st-check-motion` ITEM `u20-i-motion-1`
@@ -8076,6 +9343,32 @@ permitsAppUse=true
 - `obj-u20-motion` PROVENANCE `prov-ca-repair-20-10996`
 - `obj-u20-motion` PROVENANCE `prov-ca-repair-20-11113`
 - `obj-u20-motion` PROVENANCE `prov-ca-repair-20-11114`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-check`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-guided`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-objective`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-rem-body`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-rem-title`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-teach-1-body`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-teach-1-title`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-teach-2-body`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-teach-2-title`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-teach-3-body`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-teach-3-title`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-teach-4-body`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-teach-4-title`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-teach-5-body`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-motion-teach-5-title`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-g-motion-0-feedback`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-g-motion-0-prompt`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-g-motion-0-wrong-0`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-i-motion-1-feedback`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-i-motion-1-prompt`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-i-motion-1-wrong-0`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-i-motion-1-wrong-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-i-motion-2-feedback`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-i-motion-2-prompt`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-i-motion-2-wrong-0`
+- `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-i-motion-2-wrong-1`
 - `obj-u20-motion` PROVENANCE `prov-ex-u20-motion-0-en`
 - `obj-u20-motion` PROVENANCE `prov-ex-u20-motion-0-ru`
 - `obj-u20-motion` PROVENANCE `prov-ex-u20-motion-1-en`

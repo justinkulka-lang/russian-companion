@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Vintage" tests="4" skipped="0" failures="4" errors="0" time="0.566" hostname="f823a5d75e4b" timestamp="2026-10-11T22:33:39">
+<properties>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.separator" value="/"/>
+<property name="java.class.path" value="/workspace/scratch/80cc9aca57ee/audit_work/tools/junit-platform-console-standalone-1.11.4.jar"/>
+<property name="java.class.version" value="61.0"/>
+<property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+<property name="java.io.tmpdir" value="/tmp"/>
+<property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+<property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+<property name="java.runtime.version" value="17.0.20+8-1-24.04-Ubuntu"/>
+<property name="java.specification.maintenance.version" value="1"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="17"/>
+<property name="java.vendor" value="Ubuntu"/>
+<property name="java.vendor.url" value="https://ubuntu.com/"/>
+<property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
+<property name="java.version" value="17.0.20"/>
+<property name="java.version.date" value="2026-07-21"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="17"/>
+<property name="java.vm.vendor" value="Ubuntu"/>
+<property name="java.vm.version" value="17.0.20+8-1-24.04-Ubuntu"/>
+<property name="jdk.debug" value="release"/>
+<property name="junit.docs.version" value="1.11.4"/>
+<property name="line.separator" value="&#10;"/>
+<property name="native.encoding" value="UTF-8"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Linux"/>
+<property name="os.version" value="6.18.44"/>
+<property name="path.separator" value=":"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="/workspace/scratch/80cc9aca57ee/audit_work/tools/junit-platform-console-standalone-1.11.4.jar execute --class-path /workspace/scratch/af145931b52c/current-ci/current.jar:/workspace/scratch/af145931b52c/host-verification/current-tests.jar:/workspace/scratch/af145931b52c/host-verification/tests.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-daemon-embeddable-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/junit-platform-console-standalone-1.11.4.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/trove4j-1.0.20200330.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-reflect-1.6.10.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-stdlib-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/annotations-13.0.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-script-runtime-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-test-junit5-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlinx-coroutines-core-jvm-1.6.4.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-test-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-compiler-embeddable-2.0.21.jar:/workspace/scratch/af145931b52c/host-tools/kotlinx-serialization-core-jvm-1.7.3.jar:/workspace/scratch/af145931b52c/host-tools/kotlin-serialization-compiler-plugin-embeddable-2.0.21.jar:/workspace/scratch/af145931b52c/host-tools/kotlinx-serialization-json-jvm-1.7.3.jar --details summary --reports-dir /workspace/scratch/af145931b52c/current-ci/u1920-baseline-reports --select-method dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest#dissuadeCueUsesItsExplicitLicensedAspectPartnerWithoutAnswerLeak --select-method dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest#independentLikelihoodChecksHaveDistinctCuesAndFeatures --select-method dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest#completePrefixAndMotionInstructionPrecedesPracticeAndRemediation --select-method dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest#sourceAndApplicationChainsValidateAndReviewRemainsPending"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="UTF-8"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="unit1920.instruction.baseline" value="/workspace/scratch/af145931b52c/current-ci/u1920-baseline.json"/>
+<property name="user.dir" value="/workspace/scratch/af145931b52c/current-ci/repo"/>
+<property name="user.home" value="/root"/>
+<property name="user.language" value="en"/>
+<property name="user.name" value="root"/>
+<property name="user.timezone" value="Europe/Vienna"/>
+</properties>
+<testcase name="independentLikelihoodChecksHaveDistinctCuesAndFeatures" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="0.097">
+<failure message="Values should be different. Actual: Затме́ние должно́ наступи́ть в три часа́." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Values should be different. Actual: Затме́ние должно́ наступи́ть в три часа́.
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failEquals(Assert.java:187)
+	at org.junit.Assert.assertNotEquals(Assert.java:163)
+	at org.junit.Assert.assertNotEquals(Assert.java:177)
+	at dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest.independentLikelihoodChecksHaveDistinctCuesAndFeatures(Unit19PrefixUnit20MotionInstructionTest.kt:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest]/[test:independentLikelihoodChecksHaveDistinctCuesAndFeatures(dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest)]
+display-name: independentLikelihoodChecksHaveDistinctCuesAndFeatures
+]]></system-out>
+</testcase>
+<testcase name="sourceAndApplicationChainsValidateAndReviewRemainsPending" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="0.258">
+<failure message="expected:&lt;64&gt; but was:&lt;0&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<64> but was:<0>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest.sourceAndApplicationChainsValidateAndReviewRemainsPending(Unit19PrefixUnit20MotionInstructionTest.kt:59)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest]/[test:sourceAndApplicationChainsValidateAndReviewRemainsPending(dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest)]
+display-name: sourceAndApplicationChainsValidateAndReviewRemainsPending
+]]></system-out>
+</testcase>
+<testcase name="dissuadeCueUsesItsExplicitLicensedAspectPartnerWithoutAnswerLeak" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="0.084">
+<failure message="expected:&lt;[отговарив]ать&gt; but was:&lt;[сказ]ать&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[отговарив]ать> but was:<[сказ]ать>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest.dissuadeCueUsesItsExplicitLicensedAspectPartnerWithoutAnswerLeak(Unit19PrefixUnit20MotionInstructionTest.kt:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest]/[test:dissuadeCueUsesItsExplicitLicensedAspectPartnerWithoutAnswerLeak(dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest)]
+display-name: dissuadeCueUsesItsExplicitLicensedAspectPartnerWithoutAnswerLeak
+]]></system-out>
+</testcase>
+<testcase name="completePrefixAndMotionInstructionPrecedesPracticeAndRemediation" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="0.116">
+<failure message="expected:&lt;3&gt; but was:&lt;1&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<3> but was:<1>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest.completePrefixAndMotionInstructionPrecedesPracticeAndRemediation(Unit19PrefixUnit20MotionInstructionTest.kt:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest]/[test:completePrefixAndMotionInstructionPrecedesPracticeAndRemediation(dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest)]
+display-name: completePrefixAndMotionInstructionPrecedesPracticeAndRemediation
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]
+display-name: JUnit Vintage
+]]></system-out>
+</testsuite>

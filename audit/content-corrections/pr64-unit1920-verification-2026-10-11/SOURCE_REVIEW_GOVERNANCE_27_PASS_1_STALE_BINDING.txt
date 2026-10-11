@@ -1,0 +1,27 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (1):
+  JUnit Vintage:OwnerGovernanceDecisionTest:preparationManifestBindsFactsAndDoesNotPassAFinalAudit
+    MethodSource [className = 'dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest', methodName = 'preparationManifestBindsFactsAndDoesNotPassAFinalAudit', methodParameterTypes = '']
+    => org.junit.ComparisonFailure: expected:<..., "contentDigest": "[bb408265fb5239daeb86d43c007061bff330e02a0a9afc1aa677526ccf57302b]", "disposition": ""...> but was:<..., "contentDigest": "[16a66abe6fa5f1d8191ef9e0547375a17781f334b6e36bbdf4f8dc8c13359a46]", "disposition": ""...>
+       org.junit.Assert.assertEquals(Assert.java:117)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit(OwnerGovernanceDecisionTest.kt:188)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 106205 ms
+[        14 containers found      ]
+[         0 containers skipped    ]
+[        14 containers started    ]
+[         0 containers aborted    ]
+[        14 containers successful ]
+[         0 containers failed     ]
+[        28 tests found           ]
+[         0 tests skipped         ]
+[        28 tests started         ]
+[         0 tests aborted         ]
+[        27 tests successful      ]
+[         1 tests failed          ]
+
