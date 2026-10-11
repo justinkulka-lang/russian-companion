@@ -1,0 +1,13 @@
+# Unit 25 name, register and courtesy instruction
+
+Seven sessions now show all 21 teaching cards before guided practice. Remediation repeats the full explanation and retains every worked-example identity. English instruction explains first name, patronymic and family name; conventional short forms; request, thanks and apology; the name question and unfinished reply opening; derivational bases versus social coloring; full, short and affectionate name categories; and the limits of the supplied address register.
+
+The two-part name example is now explained as a first name and patronymic with no surname shown. Its frozen example and original fragment remain retained; no new Russian formation is introduced. The address explanation distinguishes a register label from a semi-official setting. Source classification of dismissive coloring is kept bounded to its documented examples, with context and relationship limits. The documented-name-form lesson now teaches every checked example and the dictionary-verification rule. Its questions no longer disclose full/short derivation or disparaging coloring.
+
+All 23 existing answers, options, cues, assessment relationships and participant identities remain unchanged. 21 English prompts and all correct/wrong explanations improve. 135 new English records remain IMPLEMENTED_PENDING_FINAL_AUDIT. Every original provenance record, exact source text/hash, license, attribution and capability is retained; all examples and mappings stay unchanged. Only Unit25 content-review digest changes. Existing name capabilities continue to support documented recognition, not arbitrary productive name formation.
+
+Research uses retained licensed Wikibooks name/courtesy spans, frozen Russian Wikipedia personal-name and address revisions, and the existing Gramota names-dictionary synthesis consulted 2026-09-29. Fresh attempts to open both Gramota pages returned 403 on 2026-10-11; no fresh verification is claimed. New English is independently authored; no owned-book prose is copied.
+
+The first validation trial rejected the missing English response marker and duplicate name-form question prompts. These were corrected in content. No production validator rule was relaxed. Regression checks reject the exact preceding corpus; source/key mutation checks remain closed. Exact replay/idempotence and lossless pooled-storage scope checks pass.
+
+All units remain in development with review pending and unsigned signatures. The candidate remains unfrozen and public release unapproved. This work records no qualified audit, device acceptance, merge or release. Full Android CI is separate from the host verification.

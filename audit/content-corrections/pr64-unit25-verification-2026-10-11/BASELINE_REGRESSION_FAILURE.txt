@@ -1,0 +1,43 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (3):
+  JUnit Vintage:Unit25NameInstructionTest:allNameAndCourtesyContrastsAreTaughtBeforePracticeAndRepeatedAfterAMiss
+    MethodSource [className = 'dev.russiancompanion.v2.Unit25NameInstructionTest', methodName = 'allNameAndCourtesyContrastsAreTaughtBeforePracticeAndRepeatedAfterAMiss', methodParameterTypes = '']
+    => java.lang.AssertionError: name-structure expected:<3> but was:<1>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       dev.russiancompanion.v2.Unit25NameInstructionTest.allNameAndCourtesyContrastsAreTaughtBeforePracticeAndRepeatedAfterAMiss(Unit25NameInstructionTest.kt:14)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit25NameInstructionTest:keysStayBoundAndNameFormationAndReleaseRestrictionsStayClosed
+    MethodSource [className = 'dev.russiancompanion.v2.Unit25NameInstructionTest', methodName = 'keysStayBoundAndNameFormationAndReleaseRestrictionsStayClosed', methodParameterTypes = '']
+    => java.lang.AssertionError: u25-g-name-structure-0
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       dev.russiancompanion.v2.Unit25NameInstructionTest.keysStayBoundAndNameFormationAndReleaseRestrictionsStayClosed(Unit25NameInstructionTest.kt:41)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit25NameInstructionTest:questionsDoNotRevealNameClassificationAndInstructionExplainsTheLimits
+    MethodSource [className = 'dev.russiancompanion.v2.Unit25NameInstructionTest', methodName = 'questionsDoNotRevealNameClassificationAndInstructionExplainsTheLimits', methodParameterTypes = '']
+    => java.lang.AssertionError: Which English description matches the shown name derived in the admitted full-form pattern?
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       org.junit.Assert.assertFalse(Assert.java:65)
+       dev.russiancompanion.v2.Unit25NameInstructionTest.questionsDoNotRevealNameClassificationAndInstructionExplainsTheLimits(Unit25NameInstructionTest.kt:26)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 951 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         3 tests found           ]
+[         0 tests skipped         ]
+[         3 tests started         ]
+[         0 tests aborted         ]
+[         0 tests successful      ]
+[         3 tests failed          ]
+
